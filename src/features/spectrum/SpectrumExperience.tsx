@@ -12,7 +12,7 @@ type Point = { x: number; y: number };
 
 const initialPoint: Point = { x: .5, y: .5 };
 const awakeningSessionKey = 'project-b-side:immigrant-union-awakening-depth-v2';
-const flowerHues = [318, 42, 274, 188, 224, 346];
+const flowerHues = [326, 18, 48, 92, 158, 188, 218, 258, 286, 344];
 
 function listeningEmbedUrl(trackId?: string) {
   if (!trackId || !/^\d+$/.test(trackId)) return null;
@@ -29,6 +29,7 @@ function flowerStyle(song: SpectrumRelease, index: number): CSSProperties {
     '--stream-sway': String(-28 + ((index * 19) % 57)) + 'px',
     '--stream-turn': String(-18 + ((index * 31) % 37)) + 'deg',
     '--flower-hue': String(flowerHues[index % flowerHues.length]),
+    '--flower-hue-alt': String((flowerHues[index % flowerHues.length] + 34 + (index % 3) * 18) % 360),
     '--flower-scale': String(.78 + ((index * 13) % 25) / 100),
     '--rest-rise': String(-(10 + song.y * 80)) + 'vh',
   } as CSSProperties;
@@ -46,6 +47,7 @@ export function SpectrumExperience() {
   const [dragging, setDragging] = useState(false);
   const [awakening, setAwakening] = useState(false);
   const [titleVisible, setTitleVisible] = useState(false);
+  const [hasCaughtFlower, setHasCaughtFlower] = useState(false);
   const [litSongId, setLitSongId] = useState('');
   const [selected, setSelected] = useState<SpectrumRelease | null>(null);
   const [announcement, setAnnouncement] = useState('Move through the dark stream. A passing flower carries a song.');
@@ -133,6 +135,7 @@ export function SpectrumExperience() {
   }
 
   function revealSong(song: SpectrumRelease, origin: Point) {
+    setHasCaughtFlower(true);
     setSelectedPoint(origin);
     setSelected(song);
     setLitSongId('');
@@ -245,13 +248,23 @@ export function SpectrumExperience() {
       </button>
 
       {titleVisible ? (
-        <div
-          className={'awakening-title ' + (awakening ? 'is-rising' : 'is-settled') + (dragging ? ' is-exploring' : '')}
-          style={fieldStyle}
-          aria-hidden="true"
-        >
-          <span>Immigrant Union</span>
-        </div>
+        <>
+          <div
+            className={'awakening-title ' + (awakening ? 'is-rising' : 'is-settled') + (dragging ? ' is-exploring' : '')}
+            style={fieldStyle}
+            aria-hidden="true"
+          >
+            <span>Immigrant Union</span>
+          </div>
+          {!hasCaughtFlower && !selected ? (
+            <p
+              className={'flower-instruction ' + (awakening ? 'is-waking' : 'is-ready') + (dragging ? ' is-following' : '')}
+              aria-hidden="true"
+            >
+              Catch a flower
+            </p>
+          ) : null}
+        </>
       ) : null}
 
       {selected ? (

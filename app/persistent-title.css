@@ -30,14 +30,14 @@
     transform: translate3d(0, 2px, -62px) scale(.98);
   }
   100% {
-    opacity: .58;
-    filter: blur(2.4px) brightness(1);
+    opacity: .72;
+    filter: blur(1.8px) brightness(1.08);
     transform: translate3d(0, 0, -28px) scale(1.01);
   }
 }
 
 .awakening-title.is-settled {
-  transform: translate3d(0, calc(-50svh + 58px + env(safe-area-inset-top)), 0) scale(.72);
+  transform: translate3d(0, calc(-50svh + 66px + env(safe-area-inset-top)), 0) scale(.76);
 }
 
 .awakening-title.is-settled::after {
@@ -46,37 +46,37 @@
 }
 
 .awakening-title.is-settled span {
-  opacity: .18;
-  filter: blur(1.8px) brightness(.7);
-  transform: translate3d(0, 0, -42px) scale(1);
+  opacity: .34;
+  filter: blur(1.15px) brightness(.88);
+  transform: translate3d(0, 0, -30px) scale(1);
   animation: none;
   transition: opacity 900ms ease, filter 1200ms ease, transform 1400ms ease;
 }
 
 .awakening-title.is-settled.is-exploring span {
-  animation: exploring-title-depth 7.2s cubic-bezier(.45, .05, .28, .98) infinite;
+  animation: exploring-title-depth 9s cubic-bezier(.45, .05, .28, .98) infinite;
 }
 
 @keyframes exploring-title-depth {
   0%, 100% {
-    opacity: .18;
-    filter: blur(1.8px) brightness(.7);
-    transform: translate3d(0, 0, -42px) scale(1);
+    opacity: .34;
+    filter: blur(1.15px) brightness(.88);
+    transform: translate3d(0, 0, -30px) scale(1);
   }
   28% {
-    opacity: .09;
-    filter: blur(6px) brightness(.48);
-    transform: translate3d(0, 3px, -145px) scale(.94);
+    opacity: .21;
+    filter: blur(4px) brightness(.66);
+    transform: translate3d(0, 3px, -105px) scale(.96);
   }
   48% {
-    opacity: .025;
-    filter: blur(12px) brightness(.3);
-    transform: translate3d(0, 7px, -250px) scale(.87);
+    opacity: .12;
+    filter: blur(8px) brightness(.48);
+    transform: translate3d(0, 6px, -190px) scale(.91);
   }
   72% {
-    opacity: .15;
-    filter: blur(2.8px) brightness(.66);
-    transform: translate3d(0, 1px, -65px) scale(.985);
+    opacity: .4;
+    filter: blur(.9px) brightness(.96);
+    transform: translate3d(0, 1px, -20px) scale(1.01);
   }
 }
 
@@ -96,6 +96,6 @@
 
 @media (max-height: 700px) {
   .awakening-title.is-settled {
-    transform: translate3d(0, calc(-50svh + 48px + env(safe-area-inset-top)), 0) scale(.64);
+    transform: translate3d(0, calc(-50svh + 54px + env(safe-area-inset-top)), 0) scale(.68);
   }
 }

@@ -5,9 +5,10 @@ import './artist-spectrum.css';
 import './mystery-spectrum.css';
 import './persistent-title.css';
 import './flower-stream.css';
+import './flower-instruction.css';
 
 const title = 'Immigrant Union Song Spectrum — PROJECT B-SIDE';
-const description = 'A wordless deep-blue field of forty Immigrant Union songs. Touch the dark, illuminate a star, and continue on Bandcamp.';
+const description = 'A deep-blue stream of forty Immigrant Union songs. Catch a drifting flower to discover a song, then listen and support on Bandcamp.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-b-side.raggedya.chatgpt.site'),
