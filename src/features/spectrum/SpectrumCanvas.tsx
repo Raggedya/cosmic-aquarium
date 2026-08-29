@@ -93,40 +93,6 @@ void main() {
   colour -= vec3(0.0, 0.012, 0.035) * trough * 0.55;
   colour += mix(vec3(0.22, 0.58, 1.0), touchFog, 0.62) * fingertip * 0.42;
 
-  float portalRadius = 0.205 + 0.012 * sin(uTime * 0.46);
-  float portalRing = exp(-abs(pointerDistance - portalRadius) * 58.0) * uActive;
-  float innerRim = exp(-abs(pointerDistance - (portalRadius - 0.018)) * 92.0) * uActive;
-  float outerRim = exp(-abs(pointerDistance - (portalRadius + 0.038)) * 18.0) * uActive;
-
-  float swirlTurn = polar + (0.32 - pointerDistance) * 4.4 + (eddy - 0.5) * 2.8 - uTime * 0.13;
-  vec2 swirlCoord = vec2(cos(swirlTurn), sin(swirlTurn)) * pointerDistance * 8.6;
-  float liquid = fbm(swirlCoord + vec2(uTime * 0.09, -uTime * 0.075));
-  float liquidFine = fbm(swirlCoord * 2.15 + vec2(-uTime * 0.12, uTime * 0.08));
-  float currentBands = 0.5 + 0.5 * sin(
-    polar * 5.2 - pointerDistance * 34.0 + liquid * 8.4 + liquidFine * 3.2 + uTime * 0.38
-  );
-
-  vec3 neonPink = vec3(1.0, 0.015, 0.52);
-  vec3 neonCyan = vec3(0.0, 0.72, 1.0);
-  vec3 neonOrange = vec3(1.0, 0.19, 0.015);
-  vec3 neonViolet = vec3(0.48, 0.035, 1.0);
-  vec3 liquidColour = mix(neonPink, neonCyan, smoothstep(0.18, 0.82, liquid));
-  liquidColour = mix(liquidColour, neonOrange, smoothstep(0.61, 0.96, currentBands));
-  liquidColour = mix(liquidColour, neonViolet, smoothstep(0.7, 1.0, liquidFine) * 0.55);
-
-  float vortexAura = exp(-pointerDistance * 1.8)
-    * smoothstep(0.035, 0.15, pointerDistance)
-    * uActive;
-  colour += liquidColour * vortexAura * (0.075 + currentBands * 0.24 + liquidFine * 0.08);
-  colour += mix(neonPink, neonViolet, liquid) * portalRing * 0.98;
-  colour += neonCyan * innerRim * 0.34;
-  colour += liquidColour * outerRim * (0.08 + currentBands * 0.13);
-
-  float portalVoid = (1.0 - smoothstep(portalRadius * 0.34, portalRadius * 0.88, pointerDistance)) * uActive;
-  colour = mix(colour, abyss * 0.28, portalVoid * 0.94);
-  float portalCore = exp(-pointerDistance * 40.0) * uActive;
-  colour += vec3(0.18, 0.27, 0.5) * portalCore * 0.22;
-
   float awakeningProgress = clamp(uAwakening, 0.0, 1.0);
   float awakeningRadius = mix(0.012, 0.74, awakeningProgress);
   float awakeningEnvelope = 1.0 - smoothstep(0.62, 1.0, awakeningProgress);
