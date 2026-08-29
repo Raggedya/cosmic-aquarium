@@ -127,7 +127,7 @@ export function SpectrumExperience() {
       lastLitSongRef.current = nextId;
       if (lit) {
         setAnnouncement(lit.title + ' is flowering. Release or press Enter to open it.');
-        if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(5);
+        if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate([8, 22, 12]);
       }
     }
   }
@@ -241,6 +241,7 @@ export function SpectrumExperience() {
           />
         ))}
         <span className="field-atmosphere" aria-hidden="true" />
+        {illuminated ? <span className="capture-bloom" aria-hidden="true"><i /></span> : null}
       </button>
 
       {titleVisible ? (

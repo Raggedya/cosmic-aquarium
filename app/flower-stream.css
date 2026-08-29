@@ -34,7 +34,8 @@
   box-shadow: 0 0 17px 4px hsla(var(--flower-hue), 72%, 62%, .07);
   animation: flower-upstream var(--stream-duration) linear infinite;
   animation-delay: var(--stream-delay);
-  transition: filter 180ms ease, box-shadow 220ms ease, opacity 140ms ease;
+  scale: 1;
+  transition: filter 180ms ease, box-shadow 220ms ease, opacity 140ms ease, scale 220ms cubic-bezier(.2, .9, .25, 1.25);
 }
 
 .song-flower::before {
@@ -44,6 +45,7 @@
   border-radius: 50%;
   background: rgba(255, 242, 185, .5);
   box-shadow: 0 0 5px rgba(255, 225, 128, .3);
+  transition: inset 180ms ease, background 180ms ease, box-shadow 180ms ease;
 }
 
 .song-flower::after {
@@ -69,7 +71,9 @@
 }
 
 .song-flower.is-near {
+  z-index: 5;
   opacity: .98 !important;
+  scale: 1.46;
   filter: blur(.18px) saturate(1.08) brightness(1.42);
   box-shadow:
     0 0 18px 5px hsla(var(--flower-hue), 86%, 73%, .26),
@@ -77,6 +81,11 @@
   animation-play-state: paused;
 }
 
+.song-flower.is-near::before {
+  inset: 34%;
+  background: rgba(255, 252, 224, .96);
+  box-shadow: 0 0 9px 3px rgba(255, 224, 116, .66);
+}
 .song-flower.is-near::after {
   opacity: 1;
   animation: flower-caught 900ms ease-in-out infinite alternate;
@@ -114,7 +123,84 @@
   to { opacity: 1; transform: rotate(180deg) scale(1.18); filter: blur(7px) saturate(1.55) hue-rotate(100deg); }
 }
 
+.capture-bloom {
+  position: absolute;
+  z-index: 4;
+  left: var(--pick-x);
+  top: var(--pick-y);
+  width: 112px;
+  height: 112px;
+  transform: translate3d(-50%, -50%, 0);
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.capture-bloom::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 25deg,
+    rgba(255, 47, 175, .7),
+    rgba(255, 174, 35, .62),
+    rgba(171, 255, 56, .6),
+    rgba(24, 241, 216, .68),
+    rgba(50, 111, 255, .7),
+    rgba(191, 50, 255, .7),
+    rgba(255, 47, 175, .7)
+  );
+  mask-image: radial-gradient(circle, transparent 0 21%, rgba(0, 0, 0, .92) 32%, rgba(0, 0, 0, .38) 54%, transparent 72%);
+  -webkit-mask-image: radial-gradient(circle, transparent 0 21%, rgba(0, 0, 0, .92) 32%, rgba(0, 0, 0, .38) 54%, transparent 72%);
+  filter: blur(7px) saturate(1.45);
+  animation: capture-petals 680ms cubic-bezier(.16, .92, .25, 1.12) both, capture-breathe 1450ms 680ms ease-in-out infinite alternate;
+}
+
+.capture-bloom::after {
+  content: '';
+  position: absolute;
+  inset: 27px;
+  border: 1px solid rgba(225, 244, 255, .54);
+  border-radius: 50%;
+  box-shadow: 0 0 13px rgba(129, 208, 255, .38), inset 0 0 12px rgba(255, 104, 212, .18);
+  animation: capture-ring 900ms cubic-bezier(.15, .7, .25, 1) both;
+}
+
+.capture-bloom i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  border-radius: 50%;
+  background: rgba(250, 253, 255, .94);
+  box-shadow: 0 0 9px 4px rgba(154, 218, 255, .72), 0 0 25px 8px rgba(203, 73, 255, .28);
+}
+
+@keyframes capture-petals {
+  0% { opacity: 0; transform: rotate(-50deg) scale(.2); }
+  68% { opacity: 1; transform: rotate(8deg) scale(1.1); }
+  100% { opacity: .82; transform: rotate(0deg) scale(1); }
+}
+
+@keyframes capture-breathe {
+  from { opacity: .68; transform: rotate(0deg) scale(.95); filter: blur(8px) saturate(1.35) hue-rotate(0deg); }
+  to { opacity: 1; transform: rotate(42deg) scale(1.07); filter: blur(6px) saturate(1.65) hue-rotate(95deg); }
+}
+
+@keyframes capture-ring {
+  0% { opacity: 0; transform: scale(.28); }
+  55% { opacity: 1; transform: scale(1.08); }
+  100% { opacity: .56; transform: scale(.92); }
+}
 @media (prefers-reduced-motion: reduce) {
+  .capture-bloom::before,
+  .capture-bloom::after {
+    animation: none;
+  }
+
   .song-flower {
     display: none;
     animation: none;
