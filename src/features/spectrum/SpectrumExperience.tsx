@@ -60,8 +60,6 @@ export function SpectrumExperience() {
   const [selectedPoint, setSelectedPoint] = useState<Point>(initialPoint);
   const [dragging, setDragging] = useState(false);
   const [awakening, setAwakening] = useState(false);
-  const [titleVisible, setTitleVisible] = useState(false);
-  const [hasCaughtFlower, setHasCaughtFlower] = useState(false);
   const [litSongId, setLitSongId] = useState('');
   const [selected, setSelected] = useState<SpectrumRelease | null>(null);
   const [announcement, setAnnouncement] = useState('Move through the dark stream. A passing flower carries a song.');
@@ -80,7 +78,6 @@ export function SpectrumExperience() {
   useEffect(() => {
     try {
       introSeenRef.current = window.sessionStorage.getItem(awakeningSessionKey) === 'seen';
-      setTitleVisible(introSeenRef.current);
     } catch {
       introSeenRef.current = false;
     }
@@ -163,7 +160,6 @@ export function SpectrumExperience() {
   }
 
   function revealSong(song: SpectrumRelease, origin: Point) {
-    setHasCaughtFlower(true);
     setSelectedPoint(origin);
     setSelected(song);
     setLitSongId('');
@@ -179,7 +175,6 @@ export function SpectrumExperience() {
       try { window.sessionStorage.setItem(awakeningSessionKey, 'seen'); } catch { /* Session storage is optional. */ }
       setPoint(next);
       setAwakening(true);
-      setTitleVisible(true);
       setAnnouncement('Immigrant Union. The hidden song stream is awake.');
       awakeningTimerRef.current = window.setTimeout(() => setAwakening(false), awakeningDurationMs);
       if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(8);
@@ -278,21 +273,13 @@ export function SpectrumExperience() {
           />
         ))}
         <span className="field-atmosphere" aria-hidden="true" />
-        <span
-          className={'immigrant-union-frame ' + (titleVisible ? 'is-awake' : 'is-submerged') + (awakening ? ' is-rising' : '') + (dragging ? ' is-exploring' : '')}
-          aria-hidden="true"
-        />
+        <span className="immigrant-union-frame" aria-hidden="true" />
         {illuminated ? <span className="capture-bloom" aria-hidden="true"><i /></span> : null}
       </button>
 
-      {titleVisible && !hasCaughtFlower && !selected ? (
-        <p
-          className={'flower-instruction ' + (awakening ? 'is-waking' : 'is-ready') + (dragging ? ' is-following' : '')}
-          aria-hidden="true"
-        >
-          Catch a flower
-        </p>
-      ) : null}
+      <p className="flower-instruction" aria-hidden="true">
+        Catch a flower
+      </p>
 
       {selected ? (
         <section
