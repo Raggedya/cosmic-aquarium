@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent, type PointerEvent } from 'react';
 import { validateBandcampUrl } from '@/src/adapters/bandcamp-link-adapter';
 import { spectrumReleases } from '@/src/data/spectrum-releases';
-import { clampUnit, illuminatedSpectrumRelease, nearestSpectrumRelease } from '@/src/discovery/spectrum';
+import { clampUnit, nearestSpectrumRelease } from '@/src/discovery/spectrum';
 import { SpectrumCanvas } from '@/src/features/spectrum/SpectrumCanvas';
 import { awakeningDurationMs } from '@/src/features/spectrum/awakening';
 import type { SpectrumRelease } from '@/src/types/spectrum';
@@ -12,15 +12,32 @@ type Point = { x: number; y: number };
 
 const initialPoint: Point = { x: .5, y: .5 };
 const awakeningSessionKey = 'project-b-side:immigrant-union-awakening-depth-v2';
+const flowerHues = [318, 42, 274, 188, 224, 346];
 
 function listeningEmbedUrl(trackId?: string) {
   if (!trackId || !/^\d+$/.test(trackId)) return null;
   return 'https://bandcamp.com/EmbeddedPlayer/track=' + trackId + '/size=large/bgcol=030817/linkcol=9fd6ff/tracklist=false/artwork=small/transparent=true/';
 }
 
+function flowerStyle(song: SpectrumRelease, index: number): CSSProperties {
+  const duration = 12 + ((index * 7) % 11) * 1.05;
+  const phase = ((index * 43) % 100) / 100;
+  return {
+    '--stream-x': String(8 + ((index * 37) % 84)) + '%',
+    '--stream-duration': duration.toFixed(2) + 's',
+    '--stream-delay': (-phase * duration).toFixed(2) + 's',
+    '--stream-sway': String(-28 + ((index * 19) % 57)) + 'px',
+    '--stream-turn': String(-18 + ((index * 31) % 37)) + 'deg',
+    '--flower-hue': String(flowerHues[index % flowerHues.length]),
+    '--flower-scale': String(.78 + ((index * 13) % 25) / 100),
+    '--rest-rise': String(-(10 + song.y * 80)) + 'vh',
+  } as CSSProperties;
+}
+
 export function SpectrumExperience() {
   const fieldRef = useRef<HTMLButtonElement | null>(null);
   const closeRef = useRef<HTMLButtonElement | null>(null);
+  const flowerRefs = useRef(new Map<string, HTMLSpanElement>());
   const lastLitSongRef = useRef('');
   const introSeenRef = useRef(false);
   const awakeningTimerRef = useRef<number | null>(null);
@@ -29,14 +46,13 @@ export function SpectrumExperience() {
   const [dragging, setDragging] = useState(false);
   const [awakening, setAwakening] = useState(false);
   const [titleVisible, setTitleVisible] = useState(false);
-  const [keyboardExploring, setKeyboardExploring] = useState(false);
+  const [litSongId, setLitSongId] = useState('');
   const [selected, setSelected] = useState<SpectrumRelease | null>(null);
-  const [announcement, setAnnouncement] = useState('Move through the dark field. A nearby song will brighten.');
+  const [announcement, setAnnouncement] = useState('Move through the dark stream. A passing flower carries a song.');
 
-  const exploring = dragging || keyboardExploring;
   const illuminated = useMemo(
-    () => exploring ? illuminatedSpectrumRelease(spectrumReleases, point.x, point.y) : null,
-    [exploring, point],
+    () => spectrumReleases.find((song) => song.id === litSongId) ?? null,
+    [litSongId],
   );
   const destination = selected ? validateBandcampUrl(selected.bandcampUrl) : null;
   const embedUrl = listeningEmbedUrl(selected?.bandcampEmbedTrackId);
@@ -70,6 +86,7 @@ export function SpectrumExperience() {
       document.body.classList.remove('spectrum-locked-root');
     };
   }, []);
+
   function pointFromPointer(event: PointerEvent<HTMLButtonElement>): Point {
     const bounds = event.currentTarget.getBoundingClientRect();
     return {
@@ -78,14 +95,38 @@ export function SpectrumExperience() {
     };
   }
 
-  function setLivePoint(next: Point) {
+  function flowingSongAt(next: Point): SpectrumRelease | null {
+    const field = fieldRef.current;
+    if (!field) return null;
+    const bounds = field.getBoundingClientRect();
+    const pointerX = bounds.left + next.x * bounds.width;
+    const pointerY = bounds.top + next.y * bounds.height;
+    let nearest: { song: SpectrumRelease; distance: number } | null = null;
+
+    for (const song of spectrumReleases) {
+      const flower = flowerRefs.current.get(song.id);
+      if (!flower) continue;
+      const flowerBounds = flower.getBoundingClientRect();
+      const distance = Math.hypot(
+        flowerBounds.left + flowerBounds.width / 2 - pointerX,
+        flowerBounds.top + flowerBounds.height / 2 - pointerY,
+      );
+      if (!nearest || distance < nearest.distance) nearest = { song, distance };
+    }
+
+    const forgivingRadius = Math.max(44, Math.min(56, bounds.width * .13));
+    return nearest && nearest.distance <= forgivingRadius ? nearest.song : null;
+  }
+
+  function setLivePoint(next: Point, explicitSong?: SpectrumRelease | null) {
     setPoint(next);
-    const lit = illuminatedSpectrumRelease(spectrumReleases, next.x, next.y);
+    const lit = explicitSong === undefined ? flowingSongAt(next) : explicitSong;
     const nextId = lit?.id ?? '';
+    setLitSongId(nextId);
     if (nextId !== lastLitSongRef.current) {
       lastLitSongRef.current = nextId;
       if (lit) {
-        setAnnouncement(lit.title + ' is glowing. Release or press Enter to open it.');
+        setAnnouncement(lit.title + ' is flowering. Release or press Enter to open it.');
         if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(5);
       }
     }
@@ -94,6 +135,7 @@ export function SpectrumExperience() {
   function revealSong(song: SpectrumRelease, origin: Point) {
     setSelectedPoint(origin);
     setSelected(song);
+    setLitSongId('');
     setAnnouncement(song.title + ' by Immigrant Union. From ' + song.albumTitle + ', ' + song.year + '.');
     if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate([12, 35, 8]);
   }
@@ -107,13 +149,12 @@ export function SpectrumExperience() {
       setPoint(next);
       setAwakening(true);
       setTitleVisible(true);
-      setAnnouncement('Immigrant Union. The hidden song field is awake.');
+      setAnnouncement('Immigrant Union. The hidden song stream is awake.');
       awakeningTimerRef.current = window.setTimeout(() => setAwakening(false), awakeningDurationMs);
       if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(8);
       return;
     }
     event.currentTarget.setPointerCapture(event.pointerId);
-    setKeyboardExploring(false);
     setDragging(true);
     setLivePoint(next);
   }
@@ -127,12 +168,13 @@ export function SpectrumExperience() {
     event.preventDefault();
     if (!dragging) return;
     const next = pointFromPointer(event);
-    const song = illuminatedSpectrumRelease(spectrumReleases, next.x, next.y);
+    const song = flowingSongAt(next) ?? illuminated;
     setPoint(next);
     setDragging(false);
+    setLitSongId('');
     lastLitSongRef.current = '';
     if (song) revealSong(song, next);
-    else setAnnouncement('The surface is dark again. Move toward another faint star.');
+    else setAnnouncement('The flower drifted on. Another will rise through the stream.');
   }
 
   function onKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
@@ -143,22 +185,21 @@ export function SpectrumExperience() {
     };
     if (movement[event.key]) {
       event.preventDefault();
-      setKeyboardExploring(true);
-      setLivePoint({
+      const next = {
         x: clampUnit(point.x + movement[event.key].x),
         y: clampUnit(point.y + movement[event.key].y),
-      });
+      };
+      setLivePoint(next, nearestSpectrumRelease(spectrumReleases, next.x, next.y));
     }
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
-      setKeyboardExploring(true);
       revealSong(illuminated ?? nearestSpectrumRelease(spectrumReleases, point.x, point.y), point);
     }
   }
 
   function closeDiscovery() {
     setSelected(null);
-    setKeyboardExploring(false);
+    setLitSongId('');
     window.setTimeout(() => fieldRef.current?.focus(), 0);
   }
 
@@ -173,7 +214,7 @@ export function SpectrumExperience() {
   } as CSSProperties;
 
   return (
-    <main className="spectrum-app artist-spectrum mystery-spectrum">
+    <main className="spectrum-app artist-spectrum mystery-spectrum flower-stream-spectrum">
       <button
         ref={fieldRef}
         className={'spectrum-field ' + (dragging ? 'is-dragging' : '')}
@@ -182,23 +223,24 @@ export function SpectrumExperience() {
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
-        onPointerCancel={() => { setDragging(false); lastLitSongRef.current = ''; }}
+        onPointerCancel={() => { setDragging(false); setLitSongId(''); lastLitSongRef.current = ''; }}
         onKeyDown={onKeyDown}
-        aria-label="A wordless Immigrant Union song field. Drag across the dark surface. A hidden song will brighten when you approach; release to open it. Use arrow keys and Enter on a keyboard."
+        aria-label="A wordless Immigrant Union song stream. Drag through the dark water. Passing flowers carry hidden songs; approach one and release to open it. Use arrow keys and Enter on a keyboard."
       >
         <SpectrumCanvas point={point} active={dragging} awakening={awakening} />
-        <span className="field-atmosphere" aria-hidden="true" />
-        {spectrumReleases.map((song) => (
+        {spectrumReleases.map((song, index) => (
           <span
             key={song.id}
-            className={'release-star song-star ' + (illuminated?.id === song.id ? 'is-near' : '')}
-            style={{
-              left: String(song.x * 100) + '%',
-              top: String(song.y * 100) + '%',
-            } as CSSProperties}
+            ref={(node) => {
+              if (node) flowerRefs.current.set(song.id, node);
+              else flowerRefs.current.delete(song.id);
+            }}
+            className={'release-star song-flower ' + (illuminated?.id === song.id ? 'is-near' : '')}
+            style={flowerStyle(song, index)}
             aria-hidden="true"
           />
         ))}
+        <span className="field-atmosphere" aria-hidden="true" />
       </button>
 
       {titleVisible ? (
@@ -224,10 +266,10 @@ export function SpectrumExperience() {
           <span className="reveal-orbit reveal-orbit-one" aria-hidden="true" />
           <span className="reveal-orbit reveal-orbit-two" aria-hidden="true" />
           <span className="origin-signal" aria-hidden="true" />
-          <button ref={closeRef} className="discovery-close" type="button" onClick={closeDiscovery} aria-label="Return to the song field">×</button>
+          <button ref={closeRef} className="discovery-close" type="button" onClick={closeDiscovery} aria-label="Return to the song stream">×</button>
           <article className="record-reveal song-reveal">
             <p className="record-index"><span>PROJECT B-SIDE · UNOFFICIAL</span> · track {selected.trackNumber} · {selected.albumTitle}</p>
-            <p className="record-coordinate">A song illuminated in the dark</p>
+            <p className="record-coordinate">Caught while flowering through the stream</p>
             <h2 id="discovery-title">{selected.title}</h2>
             <p className="record-artist">Immigrant Union <span>· {selected.year} · {selected.duration}</span></p>
             <p className="record-note">{selected.note}</p>
@@ -247,7 +289,7 @@ export function SpectrumExperience() {
                 <span>Support / open this song</span><b>Bandcamp ↗</b>
               </a>
             ) : null}
-            <button className="return-action" type="button" onClick={closeDiscovery}>Return to the dark</button>
+            <button className="return-action" type="button" onClick={closeDiscovery}>Return to the stream</button>
           </article>
         </section>
       ) : null}

@@ -1,0 +1,132 @@
+.flower-stream-spectrum .field-atmosphere {
+  z-index: 3;
+  opacity: .5;
+  background-image:
+    radial-gradient(circle at var(--pick-x) var(--pick-y), rgba(83, 120, 255, .1), transparent 28%),
+    radial-gradient(circle at 18% 82%, rgba(182, 63, 196, .075), transparent 34%),
+    radial-gradient(circle at 78% 22%, rgba(41, 188, 178, .065), transparent 31%),
+    linear-gradient(180deg, rgba(0, 8, 26, .08), rgba(0, 3, 17, .42));
+  backdrop-filter: blur(.55px);
+}
+
+.song-flower {
+  position: absolute;
+  z-index: 2;
+  left: var(--stream-x);
+  bottom: -42px;
+  width: 30px;
+  height: 30px;
+  margin-left: -15px;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform, opacity, filter;
+  mix-blend-mode: screen;
+  background:
+    radial-gradient(ellipse at 50% 17%, hsla(var(--flower-hue), 78%, 86%, .5) 0 15%, transparent 21%),
+    radial-gradient(ellipse at 79% 38%, hsla(var(--flower-hue), 74%, 81%, .44) 0 15%, transparent 22%),
+    radial-gradient(ellipse at 68% 75%, hsla(var(--flower-hue), 76%, 84%, .42) 0 15%, transparent 22%),
+    radial-gradient(ellipse at 32% 75%, hsla(var(--flower-hue), 72%, 82%, .44) 0 15%, transparent 22%),
+    radial-gradient(ellipse at 21% 38%, hsla(var(--flower-hue), 76%, 86%, .46) 0 15%, transparent 22%),
+    radial-gradient(circle at 50% 50%, rgba(255, 232, 159, .54) 0 8%, rgba(255, 218, 111, .16) 9% 16%, transparent 19%);
+  filter: blur(.45px) saturate(.86) brightness(.82);
+  box-shadow: 0 0 17px 4px hsla(var(--flower-hue), 72%, 62%, .07);
+  animation: flower-upstream var(--stream-duration) linear infinite;
+  animation-delay: var(--stream-delay);
+  transition: filter 180ms ease, box-shadow 220ms ease, opacity 140ms ease;
+}
+
+.song-flower::before {
+  content: '';
+  position: absolute;
+  inset: 41%;
+  border-radius: 50%;
+  background: rgba(255, 242, 185, .5);
+  box-shadow: 0 0 5px rgba(255, 225, 128, .3);
+}
+
+.song-flower::after {
+  content: '';
+  position: absolute;
+  inset: -11px;
+  border-radius: 50%;
+  opacity: 0;
+  background: radial-gradient(circle, hsla(var(--flower-hue), 85%, 78%, .2), transparent 68%);
+  transition: opacity 180ms ease;
+}
+
+.song-flower.is-near {
+  opacity: .98 !important;
+  filter: blur(.18px) saturate(1.08) brightness(1.42);
+  box-shadow:
+    0 0 18px 5px hsla(var(--flower-hue), 86%, 73%, .26),
+    0 0 54px 14px hsla(var(--flower-hue), 72%, 58%, .16);
+  animation-play-state: paused;
+}
+
+.song-flower.is-near::after {
+  opacity: 1;
+  animation: flower-caught 900ms ease-in-out infinite alternate;
+}
+
+@keyframes flower-upstream {
+  0%, 73% {
+    opacity: 0;
+    transform: translate3d(0, 14vh, 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+  76% {
+    opacity: .04;
+    transform: translate3d(var(--stream-sway), 7vh, 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+  80% {
+    opacity: .22;
+    transform: translate3d(0, -10vh, 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+  88% {
+    opacity: .27;
+    transform: translate3d(var(--stream-sway), -56vh, 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+  96% {
+    opacity: .17;
+    transform: translate3d(var(--stream-sway), -108vh, 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, -124vh, 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+}
+
+@keyframes flower-caught {
+  from { transform: scale(.92); }
+  to { transform: scale(1.12); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .song-flower {
+    display: none;
+    animation: none;
+    transform: translate3d(0, var(--rest-rise), 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+
+  .song-flower:nth-of-type(4n + 1) {
+    display: block;
+    opacity: .13;
+  }
+
+  .song-flower.is-near,
+  .song-flower.is-near::after {
+    display: block;
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .song-flower {
+    background: CanvasText;
+  }
+
+  .song-flower.is-near {
+    outline: 3px solid Highlight;
+  }
+}

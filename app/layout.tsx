@@ -4,6 +4,7 @@ import './spectrum-luxe.css';
 import './artist-spectrum.css';
 import './mystery-spectrum.css';
 import './persistent-title.css';
+import './flower-stream.css';
 
 const title = 'Immigrant Union Song Spectrum — PROJECT B-SIDE';
 const description = 'A wordless deep-blue field of forty Immigrant Union songs. Touch the dark, illuminate a star, and continue on Bandcamp.';

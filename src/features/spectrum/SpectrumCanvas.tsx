@@ -62,8 +62,19 @@ void main() {
   vec3 colour = mix(abyss, midnight, depth * 0.78);
   colour += vec3(0.0, 0.012, 0.042) * smoothstep(0.35, 0.88, fine);
 
+  float mist = fbm(centred * 2.2 + vec2(-slowTime * 1.8, slowTime * 1.15));
+  float colourPhase = mist * 1.4 + current * 0.65 + slowTime * 0.28;
+  vec3 prismaticFog = 0.5 + 0.5 * cos(6.2831853 * (vec3(0.03, 0.37, 0.69) + colourPhase));
+  prismaticFog = mix(prismaticFog, vec3(0.08, 0.18, 0.29), 0.58);
+  colour += prismaticFog * smoothstep(0.38, 0.84, mist) * 0.028;
+
   vec2 pointerDelta = (uv - uPointer) * aspect;
   float pointerDistance = length(pointerDelta);
+  float eddy = fbm(pointerDelta * 7.5 + vec2(slowTime * 7.0, -slowTime * 5.0));
+  float psychedelicPulse = 0.5 + 0.5 * sin(eddy * 8.0 + uTime * 0.7 + pointerDistance * 17.0);
+  vec3 touchFog = 0.5 + 0.5 * cos(6.2831853 * (vec3(0.0, 0.31, 0.63) + eddy * 0.46 + slowTime));
+  float fogMask = exp(-pointerDistance * 4.2) * uActive;
+  colour += touchFog * fogMask * (0.025 + 0.055 * psychedelicPulse);
   float rippleOne = sin(pointerDistance * 118.0 - uTime * 9.4);
   float rippleTwo = sin(pointerDistance * 71.0 - uTime * 6.8 + 1.2);
   float envelope = exp(-pointerDistance * 8.0) * smoothstep(0.34, 0.015, pointerDistance);
