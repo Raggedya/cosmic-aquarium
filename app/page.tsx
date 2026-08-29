@@ -1,5 +1,5 @@
-import { ThreadsExperience } from '@/src/features/threads/ThreadsExperience';
+import { SpectrumExperience } from '@/src/features/spectrum/SpectrumExperience';
 
 export default function Home() {
-  return <ThreadsExperience />;
+  return <SpectrumExperience />;
 }
