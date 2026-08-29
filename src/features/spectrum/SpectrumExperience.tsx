@@ -10,6 +10,7 @@ import type { SpectrumRelease } from '@/src/types/spectrum';
 type Point = { x: number; y: number };
 
 const initialPoint: Point = { x: .5, y: .5 };
+const awakeningSessionKey = 'project-b-side:immigrant-union-awakening';
 
 function listeningEmbedUrl(trackId?: string) {
   if (!trackId || !/^\d+$/.test(trackId)) return null;
@@ -20,9 +21,12 @@ export function SpectrumExperience() {
   const fieldRef = useRef<HTMLButtonElement | null>(null);
   const closeRef = useRef<HTMLButtonElement | null>(null);
   const lastLitSongRef = useRef('');
+  const introSeenRef = useRef(false);
+  const awakeningTimerRef = useRef<number | null>(null);
   const [point, setPoint] = useState<Point>(initialPoint);
   const [selectedPoint, setSelectedPoint] = useState<Point>(initialPoint);
   const [dragging, setDragging] = useState(false);
+  const [awakening, setAwakening] = useState(false);
   const [keyboardExploring, setKeyboardExploring] = useState(false);
   const [selected, setSelected] = useState<SpectrumRelease | null>(null);
   const [announcement, setAnnouncement] = useState('Move through the dark field. A nearby song will brighten.');
@@ -38,6 +42,17 @@ export function SpectrumExperience() {
   useEffect(() => {
     if (selected) closeRef.current?.focus();
   }, [selected]);
+
+  useEffect(() => {
+    try {
+      introSeenRef.current = window.sessionStorage.getItem(awakeningSessionKey) === 'seen';
+    } catch {
+      introSeenRef.current = false;
+    }
+    return () => {
+      if (awakeningTimerRef.current !== null) window.clearTimeout(awakeningTimerRef.current);
+    };
+  }, []);
 
   function pointFromPointer(event: PointerEvent<HTMLButtonElement>): Point {
     const bounds = event.currentTarget.getBoundingClientRect();
@@ -68,8 +83,18 @@ export function SpectrumExperience() {
   }
 
   function onPointerDown(event: PointerEvent<HTMLButtonElement>) {
-    event.currentTarget.setPointerCapture(event.pointerId);
     const next = pointFromPointer(event);
+    if (!introSeenRef.current) {
+      introSeenRef.current = true;
+      try { window.sessionStorage.setItem(awakeningSessionKey, 'seen'); } catch { /* Session storage is optional. */ }
+      setPoint(next);
+      setAwakening(true);
+      setAnnouncement('Immigrant Union. The hidden song field is awake.');
+      awakeningTimerRef.current = window.setTimeout(() => setAwakening(false), 3200);
+      if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(8);
+      return;
+    }
+    event.currentTarget.setPointerCapture(event.pointerId);
     setKeyboardExploring(false);
     setDragging(true);
     setLivePoint(next);
@@ -139,9 +164,9 @@ export function SpectrumExperience() {
         onPointerUp={onPointerUp}
         onPointerCancel={() => { setDragging(false); lastLitSongRef.current = ''; }}
         onKeyDown={onKeyDown}
-        aria-label="A wordless Immigrant Union song field. Drag across the stars. A nearby song will brighten; release to open it. Use arrow keys and Enter on a keyboard."
+        aria-label="A wordless Immigrant Union song field. Drag across the dark surface. A hidden song will brighten when you approach; release to open it. Use arrow keys and Enter on a keyboard."
       >
-        <SpectrumCanvas point={point} active={dragging} />
+        <SpectrumCanvas point={point} active={dragging} awakening={awakening} />
         <span className="field-atmosphere" aria-hidden="true" />
         {spectrumReleases.map((song) => (
           <span
@@ -155,6 +180,8 @@ export function SpectrumExperience() {
           />
         ))}
       </button>
+
+      {awakening ? <div className="awakening-title" aria-hidden="true"><span>Immigrant Union</span></div> : null}
 
       {selected ? (
         <section

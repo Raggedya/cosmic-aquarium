@@ -51,9 +51,9 @@
   margin: -1.5px 0 0 -1.5px;
   border: 0;
   border-radius: 50%;
-  opacity: .24;
+  opacity: 0;
   background: rgba(177, 217, 255, .7);
-  box-shadow: 0 0 6px rgba(86, 160, 255, .34);
+  box-shadow: none;
   transform: translateZ(0) scale(1);
   transition:
     width 160ms cubic-bezier(.2, .8, .2, 1),
@@ -64,8 +64,8 @@
     background 120ms ease;
 }
 
-.mystery-spectrum .song-star:nth-of-type(3n) { opacity: .17; }
-.mystery-spectrum .song-star:nth-of-type(5n) { width: 2px; height: 2px; }
+.mystery-spectrum .song-star:nth-of-type(3n),
+.mystery-spectrum .song-star:nth-of-type(5n) { opacity: 0; }
 
 .mystery-spectrum .song-star.is-near {
   width: 13px;
@@ -83,6 +83,37 @@
 @keyframes star-breathe {
   from { transform: scale(.88); }
   to { transform: scale(1.08); }
+}
+
+.awakening-title {
+  position: fixed;
+  z-index: 8;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.awakening-title span {
+  color: rgba(205, 229, 255, .46);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(22px, 7vw, 36px);
+  font-weight: 400;
+  letter-spacing: .2em;
+  text-indent: .2em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow: 0 0 22px rgba(89, 161, 255, .32), 0 0 58px rgba(27, 88, 182, .22);
+  animation: submerged-name 3.2s cubic-bezier(.22, .61, .36, 1) both;
+}
+
+@keyframes submerged-name {
+  0% { opacity: 0; filter: blur(18px); transform: scale(.985) translateY(4px); }
+  24% { opacity: .18; filter: blur(8px); }
+  46% { opacity: .72; filter: blur(1.5px); transform: scale(1) translateY(0); }
+  68% { opacity: .38; filter: blur(3px); }
+  100% { opacity: 0; filter: blur(13px); transform: scale(1.012) translateY(-2px); }
 }
 
 .mystery-spectrum .discovery-layer {
@@ -127,8 +158,15 @@
     transition: none;
     animation: none;
   }
+  .awakening-title span {
+    animation: submerged-name-reduced 3.2s ease both;
+  }
 }
 
+@keyframes submerged-name-reduced {
+  0%, 100% { opacity: 0; }
+  35%, 65% { opacity: .46; }
+}
 @media (forced-colors: active) {
   .mystery-spectrum .song-star { opacity: .75; background: CanvasText; }
   .mystery-spectrum .song-star.is-near { outline: 3px solid Highlight; }

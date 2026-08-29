@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react';
 interface SpectrumCanvasProps {
   point: { x: number; y: number };
   active: boolean;
+  awakening: boolean;
 }
 
 const vertexShader = `
@@ -19,6 +20,7 @@ uniform vec2 uResolution;
 uniform vec2 uPointer;
 uniform float uTime;
 uniform float uActive;
+uniform float uAwakening;
 
 float hash(vec2 p) {
   return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453123);
@@ -73,6 +75,14 @@ void main() {
   colour -= vec3(0.0, 0.012, 0.035) * trough * 0.55;
   colour += vec3(0.22, 0.58, 1.0) * fingertip * 0.28;
 
+  float awakeningProgress = clamp(uAwakening, 0.0, 1.0);
+  float awakeningRadius = mix(0.012, 0.74, awakeningProgress);
+  float awakeningEnvelope = 1.0 - smoothstep(0.62, 1.0, awakeningProgress);
+  float awakeningRing = exp(-abs(pointerDistance - awakeningRadius) * 48.0) * awakeningEnvelope;
+  float awakeningWake = exp(-pointerDistance * 3.7) * sin(pointerDistance * 68.0 - awakeningProgress * 17.0);
+  colour += vec3(0.045, 0.24, 0.68) * awakeningRing * 0.82;
+  colour += vec3(0.018, 0.095, 0.28) * max(0.0, awakeningWake) * awakeningEnvelope * 0.25;
+
   float edge = smoothstep(0.36, 0.78, length((uv - 0.5) * vec2(0.82, 1.0)));
   colour *= 1.0 - edge * 0.42;
   float grain = hash(gl_FragCoord.xy + floor(uTime * 12.0)) - 0.5;
@@ -92,13 +102,21 @@ function compile(gl: WebGLRenderingContext, type: number, source: string) {
   return shader;
 }
 
-export function SpectrumCanvas({ point, active }: SpectrumCanvasProps) {
+export function SpectrumCanvas({ point, active, awakening }: SpectrumCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const pointRef = useRef(point);
   const activeRef = useRef(active);
+  const awakeningRef = useRef(awakening);
+  const awakeningStartedAtRef = useRef(0);
+  const redrawRef = useRef<() => void>(() => undefined);
 
-  useEffect(() => { pointRef.current = point; }, [point]);
-  useEffect(() => { activeRef.current = active; }, [active]);
+  useEffect(() => { pointRef.current = point; redrawRef.current(); }, [point]);
+  useEffect(() => { activeRef.current = active; redrawRef.current(); }, [active]);
+  useEffect(() => {
+    if (awakening && !awakeningRef.current) awakeningStartedAtRef.current = performance.now();
+    awakeningRef.current = awakening;
+    redrawRef.current();
+  }, [awakening]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -128,6 +146,7 @@ export function SpectrumCanvas({ point, active }: SpectrumCanvasProps) {
     const pointer = gl.getUniformLocation(program, 'uPointer');
     const time = gl.getUniformLocation(program, 'uTime');
     const activeUniform = gl.getUniformLocation(program, 'uActive');
+    const awakeningUniform = gl.getUniformLocation(program, 'uAwakening');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let frame = 0;
     let visible = document.visibilityState === 'visible';
@@ -149,6 +168,10 @@ export function SpectrumCanvas({ point, active }: SpectrumCanvasProps) {
       gl.uniform2f(pointer, pointRef.current.x, pointRef.current.y);
       gl.uniform1f(time, reducedMotion.matches ? 0 : now / 1000);
       gl.uniform1f(activeUniform, activeRef.current ? 1 : 0);
+      const awakeningProgress = awakeningRef.current
+        ? (reducedMotion.matches ? .24 : Math.min(1, (now - awakeningStartedAtRef.current) / 3200))
+        : 2;
+      gl.uniform1f(awakeningUniform, awakeningProgress);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
       if (visible && !reducedMotion.matches) frame = window.requestAnimationFrame(draw);
     };
@@ -162,12 +185,14 @@ export function SpectrumCanvas({ point, active }: SpectrumCanvasProps) {
       if (visible) restart();
       else window.cancelAnimationFrame(frame);
     };
+    redrawRef.current = restart;
     reducedMotion.addEventListener('change', restart);
     document.addEventListener('visibilitychange', onVisibility);
     restart();
 
     return () => {
       window.cancelAnimationFrame(frame);
+      redrawRef.current = () => undefined;
       reducedMotion.removeEventListener('change', restart);
       document.removeEventListener('visibilitychange', onVisibility);
       gl.deleteBuffer(buffer);
