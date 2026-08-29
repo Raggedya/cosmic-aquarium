@@ -5,6 +5,7 @@ import { validateBandcampUrl } from '@/src/adapters/bandcamp-link-adapter';
 import { spectrumReleases } from '@/src/data/spectrum-releases';
 import { clampUnit, illuminatedSpectrumRelease, nearestSpectrumRelease } from '@/src/discovery/spectrum';
 import { SpectrumCanvas } from '@/src/features/spectrum/SpectrumCanvas';
+import { awakeningDurationMs } from '@/src/features/spectrum/awakening';
 import type { SpectrumRelease } from '@/src/types/spectrum';
 
 type Point = { x: number; y: number };
@@ -54,6 +55,19 @@ export function SpectrumExperience() {
     };
   }, []);
 
+  useEffect(() => {
+    const field = fieldRef.current;
+    if (!field) return;
+    const preventViewportDrag = (event: TouchEvent) => event.preventDefault();
+    document.documentElement.classList.add('spectrum-locked-root');
+    document.body.classList.add('spectrum-locked-root');
+    field.addEventListener('touchmove', preventViewportDrag, { passive: false });
+    return () => {
+      field.removeEventListener('touchmove', preventViewportDrag);
+      document.documentElement.classList.remove('spectrum-locked-root');
+      document.body.classList.remove('spectrum-locked-root');
+    };
+  }, []);
   function pointFromPointer(event: PointerEvent<HTMLButtonElement>): Point {
     const bounds = event.currentTarget.getBoundingClientRect();
     return {
@@ -83,6 +97,7 @@ export function SpectrumExperience() {
   }
 
   function onPointerDown(event: PointerEvent<HTMLButtonElement>) {
+    event.preventDefault();
     const next = pointFromPointer(event);
     if (!introSeenRef.current) {
       introSeenRef.current = true;
@@ -90,7 +105,7 @@ export function SpectrumExperience() {
       setPoint(next);
       setAwakening(true);
       setAnnouncement('Immigrant Union. The hidden song field is awake.');
-      awakeningTimerRef.current = window.setTimeout(() => setAwakening(false), 3200);
+      awakeningTimerRef.current = window.setTimeout(() => setAwakening(false), awakeningDurationMs);
       if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(8);
       return;
     }
@@ -101,10 +116,12 @@ export function SpectrumExperience() {
   }
 
   function onPointerMove(event: PointerEvent<HTMLButtonElement>) {
+    event.preventDefault();
     if (dragging) setLivePoint(pointFromPointer(event));
   }
 
   function onPointerUp(event: PointerEvent<HTMLButtonElement>) {
+    event.preventDefault();
     if (!dragging) return;
     const next = pointFromPointer(event);
     const song = illuminatedSpectrumRelease(spectrumReleases, next.x, next.y);
@@ -181,7 +198,7 @@ export function SpectrumExperience() {
         ))}
       </button>
 
-      {awakening ? <div className="awakening-title" aria-hidden="true"><span>Immigrant Union</span></div> : null}
+      {awakening ? <div className="awakening-title" style={fieldStyle} aria-hidden="true"><span>Immigrant Union</span></div> : null}
 
       {selected ? (
         <section

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import { awakeningDurationMs } from '@/src/features/spectrum/awakening';
 
 interface SpectrumCanvasProps {
   point: { x: number; y: number };
@@ -169,7 +170,7 @@ export function SpectrumCanvas({ point, active, awakening }: SpectrumCanvasProps
       gl.uniform1f(time, reducedMotion.matches ? 0 : now / 1000);
       gl.uniform1f(activeUniform, activeRef.current ? 1 : 0);
       const awakeningProgress = awakeningRef.current
-        ? (reducedMotion.matches ? .24 : Math.min(1, (now - awakeningStartedAtRef.current) / 3200))
+        ? (reducedMotion.matches ? .24 : Math.min(1, (now - awakeningStartedAtRef.current) / awakeningDurationMs))
         : 2;
       gl.uniform1f(awakeningUniform, awakeningProgress);
       gl.drawArrays(gl.TRIANGLES, 0, 3);
