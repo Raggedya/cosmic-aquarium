@@ -11,7 +11,7 @@ import type { SpectrumRelease } from '@/src/types/spectrum';
 type Point = { x: number; y: number };
 
 const initialPoint: Point = { x: .5, y: .5 };
-const awakeningSessionKey = 'project-b-side:immigrant-union-awakening';
+const awakeningSessionKey = 'project-b-side:immigrant-union-awakening-depth-v2';
 
 function listeningEmbedUrl(trackId?: string) {
   if (!trackId || !/^\d+$/.test(trackId)) return null;
@@ -28,6 +28,7 @@ export function SpectrumExperience() {
   const [selectedPoint, setSelectedPoint] = useState<Point>(initialPoint);
   const [dragging, setDragging] = useState(false);
   const [awakening, setAwakening] = useState(false);
+  const [titleVisible, setTitleVisible] = useState(false);
   const [keyboardExploring, setKeyboardExploring] = useState(false);
   const [selected, setSelected] = useState<SpectrumRelease | null>(null);
   const [announcement, setAnnouncement] = useState('Move through the dark field. A nearby song will brighten.');
@@ -47,6 +48,7 @@ export function SpectrumExperience() {
   useEffect(() => {
     try {
       introSeenRef.current = window.sessionStorage.getItem(awakeningSessionKey) === 'seen';
+      setTitleVisible(introSeenRef.current);
     } catch {
       introSeenRef.current = false;
     }
@@ -104,6 +106,7 @@ export function SpectrumExperience() {
       try { window.sessionStorage.setItem(awakeningSessionKey, 'seen'); } catch { /* Session storage is optional. */ }
       setPoint(next);
       setAwakening(true);
+      setTitleVisible(true);
       setAnnouncement('Immigrant Union. The hidden song field is awake.');
       awakeningTimerRef.current = window.setTimeout(() => setAwakening(false), awakeningDurationMs);
       if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(8);
@@ -198,7 +201,15 @@ export function SpectrumExperience() {
         ))}
       </button>
 
-      {awakening ? <div className="awakening-title" style={fieldStyle} aria-hidden="true"><span>Immigrant Union</span></div> : null}
+      {titleVisible ? (
+        <div
+          className={'awakening-title ' + (awakening ? 'is-rising' : 'is-settled') + (dragging ? ' is-exploring' : '')}
+          style={fieldStyle}
+          aria-hidden="true"
+        >
+          <span>Immigrant Union</span>
+        </div>
+      ) : null}
 
       {selected ? (
         <section

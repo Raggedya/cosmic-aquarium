@@ -1,0 +1,101 @@
+.awakening-title {
+  transform: translate3d(0, 0, 0) scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 1800ms cubic-bezier(.22, .61, .36, 1);
+}
+
+.awakening-title.is-rising span {
+  animation: title-rise-to-surface 4s cubic-bezier(.22, .61, .36, 1) both;
+}
+
+@keyframes title-rise-to-surface {
+  0% {
+    opacity: 0;
+    filter: blur(30px) brightness(.3);
+    transform: translate3d(0, 18px, -380px) scale(.8);
+  }
+  24% {
+    opacity: .08;
+    filter: blur(20px) brightness(.42);
+    transform: translate3d(0, 12px, -270px) scale(.85);
+  }
+  52% {
+    opacity: .24;
+    filter: blur(10px) brightness(.62);
+    transform: translate3d(0, 6px, -150px) scale(.92);
+  }
+  78% {
+    opacity: .46;
+    filter: blur(4px) brightness(.86);
+    transform: translate3d(0, 2px, -62px) scale(.98);
+  }
+  100% {
+    opacity: .58;
+    filter: blur(2.4px) brightness(1);
+    transform: translate3d(0, 0, -28px) scale(1.01);
+  }
+}
+
+.awakening-title.is-settled {
+  transform: translate3d(0, calc(-50svh + 58px + env(safe-area-inset-top)), 0) scale(.72);
+}
+
+.awakening-title.is-settled::after {
+  opacity: 0;
+  animation: none;
+}
+
+.awakening-title.is-settled span {
+  opacity: .18;
+  filter: blur(1.8px) brightness(.7);
+  transform: translate3d(0, 0, -42px) scale(1);
+  animation: none;
+  transition: opacity 900ms ease, filter 1200ms ease, transform 1400ms ease;
+}
+
+.awakening-title.is-settled.is-exploring span {
+  animation: exploring-title-depth 7.2s cubic-bezier(.45, .05, .28, .98) infinite;
+}
+
+@keyframes exploring-title-depth {
+  0%, 100% {
+    opacity: .18;
+    filter: blur(1.8px) brightness(.7);
+    transform: translate3d(0, 0, -42px) scale(1);
+  }
+  28% {
+    opacity: .09;
+    filter: blur(6px) brightness(.48);
+    transform: translate3d(0, 3px, -145px) scale(.94);
+  }
+  48% {
+    opacity: .025;
+    filter: blur(12px) brightness(.3);
+    transform: translate3d(0, 7px, -250px) scale(.87);
+  }
+  72% {
+    opacity: .15;
+    filter: blur(2.8px) brightness(.66);
+    transform: translate3d(0, 1px, -65px) scale(.985);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .awakening-title {
+    transition-duration: 1ms;
+  }
+
+  .awakening-title.is-rising span {
+    animation: submerged-name-reduced 4s ease both;
+  }
+
+  .awakening-title.is-settled.is-exploring span {
+    animation: none;
+  }
+}
+
+@media (max-height: 700px) {
+  .awakening-title.is-settled {
+    transform: translate3d(0, calc(-50svh + 48px + env(safe-area-inset-top)), 0) scale(.64);
+  }
+}
