@@ -34,55 +34,49 @@ float noise(vec2 p) {
 
 float fbm(vec2 p) {
   float value = 0.0;
-  float amplitude = 0.52;
+  float amplitude = 0.54;
   for (int i = 0; i < 4; i++) {
     value += amplitude * noise(p);
-    p = p * 2.03 + vec2(7.1, 3.7);
+    p = p * 2.04 + vec2(4.7, 8.3);
     amplitude *= 0.48;
   }
   return value;
-}
-
-vec3 palette(float t) {
-  vec3 a = vec3(0.53, 0.47, 0.51);
-  vec3 b = vec3(0.48, 0.46, 0.44);
-  vec3 c = vec3(1.0);
-  vec3 d = vec3(0.11, 0.30, 0.56);
-  return a + b * cos(6.2831853 * (c * t + d));
 }
 
 void main() {
   vec2 uv = gl_FragCoord.xy / uResolution.xy;
   uv.y = 1.0 - uv.y;
   vec2 aspect = vec2(uResolution.x / uResolution.y, 1.0);
-  vec2 p = (uv - vec2(0.5, 0.53)) * aspect;
-  float radius = length(p);
-  float angle = atan(p.y, p.x) / 6.2831853 + 0.5;
+  vec2 centred = (uv - 0.5) * aspect;
 
-  float drift = uTime * 0.018;
-  float current = fbm(vec2(angle * 9.0 + drift, radius * 7.0 - drift * 1.6));
-  float fine = fbm(p * 8.0 + vec2(-drift, drift));
-  float warpedAngle = angle + (current - 0.5) * 0.095 + (fine - 0.5) * 0.028;
-  vec3 colour = palette(warpedAngle + 0.07);
-  colour *= 0.72 + current * 0.55;
+  float slowTime = uTime * 0.045;
+  float current = fbm(centred * 3.1 + vec2(slowTime, -slowTime * 0.7));
+  float fine = fbm(centred * 7.0 + vec2(-slowTime * 0.8, slowTime));
+  float depth = smoothstep(-0.24, 0.78, current * 0.72 + fine * 0.28);
 
-  float core = smoothstep(0.055, 0.34, radius);
-  core *= 0.91 + 0.09 * smoothstep(0.1, 0.7, fine);
-  colour *= core;
-
-  float outerLight = smoothstep(0.18, 0.69, radius);
-  colour *= 0.72 + outerLight * 0.42;
+  vec3 abyss = vec3(0.002, 0.006, 0.018);
+  vec3 midnight = vec3(0.005, 0.027, 0.085);
+  vec3 colour = mix(abyss, midnight, depth * 0.78);
+  colour += vec3(0.0, 0.012, 0.042) * smoothstep(0.35, 0.88, fine);
 
   vec2 pointerDelta = (uv - uPointer) * aspect;
   float pointerDistance = length(pointerDelta);
-  float lens = exp(-pointerDistance * 15.0);
-  float halo = exp(-abs(pointerDistance - 0.055) * 92.0);
-  colour += vec3(0.42, 0.48, 0.55) * lens * (0.12 + uActive * 0.28);
-  colour += vec3(0.72, 0.82, 1.0) * halo * (0.035 + uActive * 0.07);
+  float rippleOne = sin(pointerDistance * 118.0 - uTime * 9.4);
+  float rippleTwo = sin(pointerDistance * 71.0 - uTime * 6.8 + 1.2);
+  float envelope = exp(-pointerDistance * 8.0) * smoothstep(0.34, 0.015, pointerDistance);
+  float rings = (rippleOne * 0.62 + rippleTwo * 0.38) * envelope * uActive;
+  float crest = max(0.0, rings);
+  float trough = max(0.0, -rings);
+  float fingertip = exp(-pointerDistance * 34.0) * uActive;
 
-  float grain = hash(gl_FragCoord.xy + uTime) - 0.5;
-  colour += grain * 0.018;
-  colour *= 1.0 - smoothstep(0.38, 0.84, length((uv - 0.5) * vec2(0.78, 1.0))) * 0.16;
+  colour += vec3(0.035, 0.19, 0.52) * crest * 0.62;
+  colour -= vec3(0.0, 0.012, 0.035) * trough * 0.55;
+  colour += vec3(0.22, 0.58, 1.0) * fingertip * 0.28;
+
+  float edge = smoothstep(0.36, 0.78, length((uv - 0.5) * vec2(0.82, 1.0)));
+  colour *= 1.0 - edge * 0.42;
+  float grain = hash(gl_FragCoord.xy + floor(uTime * 12.0)) - 0.5;
+  colour += grain * 0.007;
   gl_FragColor = vec4(max(colour, 0.0), 1.0);
 }`;
 

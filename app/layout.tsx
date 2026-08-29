@@ -2,9 +2,10 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import './spectrum-luxe.css';
 import './artist-spectrum.css';
+import './mystery-spectrum.css';
 
 const title = 'Immigrant Union Song Spectrum — PROJECT B-SIDE';
-const description = 'Explore forty Immigrant Union songs across four releases in one living, unofficial Bandcamp spectrum.';
+const description = 'A wordless deep-blue field of forty Immigrant Union songs. Touch the dark, illuminate a star, and continue on Bandcamp.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-b-side.raggedya.chatgpt.site'),
@@ -28,7 +29,7 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
-  themeColor: '#09090b',
+  themeColor: '#01040d',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

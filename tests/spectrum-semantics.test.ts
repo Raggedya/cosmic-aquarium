@@ -1,27 +1,25 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { immigrantUnionAlbums } from '../src/data/immigrant-union-catalogue.ts';
-import { readSpectrum } from '../src/discovery/spectrum-semantics.ts';
+import { immigrantUnionSongs } from '../src/data/immigrant-union-catalogue.ts';
+import { illuminatedSpectrumRelease, illuminationRadius } from '../src/discovery/spectrum.ts';
 
-test('the black centre explicitly means any song from any era', () => {
-  const reading = readSpectrum(.5, .5);
-  assert.equal(reading.label, 'ANY SONG');
-  assert.equal(reading.depthLabel, 'catalogue wildcard');
-  assert.equal(reading.certainty, 0);
+test('a finger directly over a song illuminates that exact star', () => {
+  const song = immigrantUnionSongs[13];
+  assert.equal(illuminatedSpectrumRelease(immigrantUnionSongs, song.x, song.y)?.id, song.id);
 });
 
-test('each album anchor resolves to its factual album era', () => {
-  for (const album of immigrantUnionAlbums) {
-    const reading = readSpectrum(album.x, album.y);
-    assert.equal(reading.primary, album.name);
-    assert.equal(reading.secondary, null);
-    assert.equal(reading.depthLabel, 'album current');
-  }
+test('a song remains dark when the finger is beyond its illumination radius', () => {
+  const song = immigrantUnionSongs[0];
+  assert.equal(
+    illuminatedSpectrumRelease([song], song.x + illuminationRadius * 1.01, song.y),
+    null,
+  );
 });
 
-test('the space between two album anchors is described as between eras', () => {
-  const reading = readSpectrum(.5, .275);
-  assert.match(reading.label, /The Winter EP/);
-  assert.match(reading.label, /Immigrant Union/);
-  assert.equal(reading.depthLabel, 'between eras');
+test('the glow begins just inside the illumination radius', () => {
+  const song = immigrantUnionSongs[0];
+  assert.equal(
+    illuminatedSpectrumRelease([song], song.x + illuminationRadius * .99, song.y)?.id,
+    song.id,
+  );
 });

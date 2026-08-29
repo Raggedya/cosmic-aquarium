@@ -1,0 +1,135 @@
+.mystery-spectrum {
+  min-height: 100svh;
+  background: #01040d;
+  color: #eaf7ff;
+  overflow: hidden;
+}
+
+.mystery-spectrum .spectrum-field {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background: #01040d;
+  cursor: crosshair;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.mystery-spectrum .spectrum-field:focus-visible {
+  outline: 2px solid rgba(159, 214, 255, .92);
+  outline-offset: -8px;
+}
+
+.mystery-spectrum .spectrum-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mystery-spectrum .field-atmosphere {
+  position: absolute;
+  inset: 0;
+  opacity: .34;
+  pointer-events: none;
+  background-image:
+    radial-gradient(circle at 50% 42%, rgba(17, 73, 159, .13), transparent 45%),
+    radial-gradient(circle at 18% 82%, rgba(36, 109, 212, .08), transparent 32%),
+    radial-gradient(circle at 82% 15%, rgba(57, 135, 255, .055), transparent 27%),
+    linear-gradient(180deg, rgba(0, 0, 0, .08), rgba(0, 2, 13, .44));
+  mix-blend-mode: screen;
+}
+
+.mystery-spectrum .song-star {
+  position: absolute;
+  z-index: 2;
+  width: 3px;
+  height: 3px;
+  margin: -1.5px 0 0 -1.5px;
+  border: 0;
+  border-radius: 50%;
+  opacity: .24;
+  background: rgba(177, 217, 255, .7);
+  box-shadow: 0 0 6px rgba(86, 160, 255, .34);
+  transform: translateZ(0) scale(1);
+  transition:
+    width 160ms cubic-bezier(.2, .8, .2, 1),
+    height 160ms cubic-bezier(.2, .8, .2, 1),
+    margin 160ms cubic-bezier(.2, .8, .2, 1),
+    opacity 120ms ease,
+    box-shadow 180ms ease,
+    background 120ms ease;
+}
+
+.mystery-spectrum .song-star:nth-of-type(3n) { opacity: .17; }
+.mystery-spectrum .song-star:nth-of-type(5n) { width: 2px; height: 2px; }
+
+.mystery-spectrum .song-star.is-near {
+  width: 13px;
+  height: 13px;
+  margin: -6.5px 0 0 -6.5px;
+  opacity: 1;
+  background: #f5fbff;
+  box-shadow:
+    0 0 0 7px rgba(137, 204, 255, .08),
+    0 0 18px 3px rgba(123, 196, 255, .86),
+    0 0 50px 11px rgba(30, 111, 255, .34);
+  animation: star-breathe 1.15s ease-in-out infinite alternate;
+}
+
+@keyframes star-breathe {
+  from { transform: scale(.88); }
+  to { transform: scale(1.08); }
+}
+
+.mystery-spectrum .discovery-layer {
+  z-index: 20;
+  color: #edf8ff;
+  background:
+    radial-gradient(circle at var(--origin-x) var(--origin-y), rgba(72, 151, 255, .22) 0 1px, rgba(13, 67, 151, .08) 9%, transparent 30%),
+    linear-gradient(155deg, rgba(2, 12, 35, .83), rgba(0, 2, 10, .985));
+  backdrop-filter: blur(18px) saturate(115%);
+}
+
+.mystery-spectrum .record-reveal {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, .7);
+}
+
+.mystery-spectrum .record-coordinate,
+.mystery-spectrum .record-note,
+.mystery-spectrum .record-artist span,
+.mystery-spectrum .bandcamp-embed-shell > span {
+  color: rgba(200, 225, 246, .55);
+}
+
+.mystery-spectrum .bandcamp-embed-shell {
+  border-color: rgba(159, 214, 255, .16);
+  background: rgba(0, 5, 19, .62);
+}
+
+.mystery-spectrum .bandcamp-action {
+  border-color: rgba(159, 214, 255, .36);
+  color: #eaf7ff;
+  background: rgba(16, 74, 151, .17);
+}
+
+.mystery-spectrum .return-action,
+.mystery-spectrum .discovery-close {
+  color: rgba(222, 240, 255, .72);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mystery-spectrum .song-star,
+  .mystery-spectrum .song-star.is-near {
+    transition: none;
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .mystery-spectrum .song-star { opacity: .75; background: CanvasText; }
+  .mystery-spectrum .song-star.is-near { outline: 3px solid Highlight; }
+}

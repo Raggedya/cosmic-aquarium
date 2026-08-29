@@ -1,6 +1,7 @@
 import type { SpectrumRelease } from '@/src/types/spectrum';
 
 export const unknownRadius = .135;
+export const illuminationRadius = .062;
 
 export function clampUnit(value: number): number {
   return Math.max(0, Math.min(1, value));
@@ -19,6 +20,19 @@ export function nearestSpectrumRelease(releases: SpectrumRelease[], x: number, y
     const nearestDistance = Math.hypot(nearest.x - px, nearest.y - py);
     return candidateDistance < nearestDistance ? candidate : nearest;
   });
+}
+
+export function distanceToSpectrumRelease(release: SpectrumRelease, x: number, y: number): number {
+  return Math.hypot(release.x - clampUnit(x), release.y - clampUnit(y));
+}
+
+export function illuminatedSpectrumRelease(
+  releases: SpectrumRelease[],
+  x: number,
+  y: number,
+): SpectrumRelease | null {
+  const nearest = nearestSpectrumRelease(releases, x, y);
+  return distanceToSpectrumRelease(nearest, x, y) <= illuminationRadius ? nearest : null;
 }
 
 export function surpriseSpectrumRelease(releases: SpectrumRelease[], seed: number): SpectrumRelease {

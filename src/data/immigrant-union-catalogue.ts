@@ -72,13 +72,22 @@ function durationLabel(duration: string) {
   return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
 }
 
-export const immigrantUnionSongs: SpectrumRelease[] = songs.map(([albumKey, trackNumber, title, duration, bandcampUrl, bandcampEmbedTrackId]) => {
+function halton(index: number, base: number) {
+  let result = 0;
+  let fraction = 1;
+  let remaining = index;
+  while (remaining > 0) {
+    fraction /= base;
+    result += fraction * (remaining % base);
+    remaining = Math.floor(remaining / base);
+  }
+  return result;
+}
+
+export const immigrantUnionSongs: SpectrumRelease[] = songs.map(([albumKey, trackNumber, title, duration, bandcampUrl, bandcampEmbedTrackId], index) => {
   const album = immigrantUnionAlbums.find((candidate) => candidate.key === albumKey);
   if (!album) throw new Error(`Unknown Immigrant Union album: ${albumKey}`);
   const albumLength = songs.filter(([candidateKey]) => candidateKey === albumKey).length;
-  const seconds = durationSeconds(duration);
-  const angle = ((trackNumber - 1) / albumLength) * Math.PI * 2 - Math.PI / 2;
-  const orbit = .052 + Math.min(1, Math.max(0, (seconds - 120) / 330)) * .045;
 
   return {
     id: `${albumKey}-${trackNumber}`,
@@ -89,9 +98,9 @@ export const immigrantUnionSongs: SpectrumRelease[] = songs.map(([albumKey, trac
     year: album.year,
     trackNumber,
     duration: durationLabel(duration),
-    x: album.x + Math.cos(angle) * orbit,
-    y: album.y + Math.sin(angle) * orbit,
-    zone: `${album.name} · ${album.year}`,
+    x: .075 + halton(index + 1, 2) * .85,
+    y: .075 + halton(index + 1, 3) * .85,
+    zone: 'Uncharted song field',
     note: `Track ${trackNumber} of ${albumLength} · ${durationLabel(duration)}`,
     bandcampUrl,
     bandcampEmbedTrackId,
