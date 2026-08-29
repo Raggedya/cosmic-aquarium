@@ -20,7 +20,7 @@ function listeningEmbedUrl(trackId?: string) {
 }
 
 function flowerStyle(song: SpectrumRelease, index: number): CSSProperties {
-  const duration = 12 + ((index * 7) % 11) * 1.05;
+  const duration = (12 + ((index * 7) % 11) * 1.05) * 2.5;
   const phase = ((index * 43) % 100) / 100;
   return {
     '--stream-x': String(8 + ((index * 37) % 84)) + '%',

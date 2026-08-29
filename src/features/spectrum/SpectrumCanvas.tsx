@@ -70,11 +70,17 @@ void main() {
 
   vec2 pointerDelta = (uv - uPointer) * aspect;
   float pointerDistance = length(pointerDelta);
-  float eddy = fbm(pointerDelta * 7.5 + vec2(slowTime * 7.0, -slowTime * 5.0));
-  float psychedelicPulse = 0.5 + 0.5 * sin(eddy * 8.0 + uTime * 0.7 + pointerDistance * 17.0);
-  vec3 touchFog = 0.5 + 0.5 * cos(6.2831853 * (vec3(0.0, 0.31, 0.63) + eddy * 0.46 + slowTime));
-  float fogMask = exp(-pointerDistance * 4.2) * uActive;
-  colour += touchFog * fogMask * (0.025 + 0.055 * psychedelicPulse);
+  float polar = atan(pointerDelta.y, pointerDelta.x);
+  float eddy = fbm(pointerDelta * 6.4 + vec2(slowTime * 7.0, -slowTime * 5.0));
+  float psychedelicPulse = 0.5 + 0.5 * sin(eddy * 9.0 + uTime * 0.62 + pointerDistance * 19.0);
+  float spiral = polar * 1.35 + pointerDistance * 28.0 - uTime * 0.55 + (eddy - 0.5) * 5.0;
+  vec3 spectralOne = 0.5 + 0.5 * cos(6.2831853 * (vec3(0.0, 0.33, 0.67) + spiral * 0.12));
+  vec3 spectralTwo = 0.5 + 0.5 * cos(6.2831853 * (vec3(0.12, 0.45, 0.78) - spiral * 0.08 + psychedelicPulse * 0.16));
+  vec3 touchFog = mix(spectralOne, spectralTwo, 0.38 + psychedelicPulse * 0.34);
+  float fogMask = exp(-pointerDistance * 2.7) * uActive;
+  float chromaticRing = exp(-abs(pointerDistance - (0.085 + 0.018 * sin(uTime * 0.6))) * 29.0) * uActive;
+  colour += touchFog * fogMask * (0.065 + 0.145 * psychedelicPulse + 0.045 * smoothstep(0.2, 0.84, eddy));
+  colour += spectralTwo * chromaticRing * 0.09;
   float rippleOne = sin(pointerDistance * 118.0 - uTime * 9.4);
   float rippleTwo = sin(pointerDistance * 71.0 - uTime * 6.8 + 1.2);
   float envelope = exp(-pointerDistance * 8.0) * smoothstep(0.34, 0.015, pointerDistance);
@@ -83,9 +89,9 @@ void main() {
   float trough = max(0.0, -rings);
   float fingertip = exp(-pointerDistance * 34.0) * uActive;
 
-  colour += vec3(0.035, 0.19, 0.52) * crest * 0.62;
+  colour += mix(vec3(0.035, 0.19, 0.52), touchFog, 0.46) * crest * 0.72;
   colour -= vec3(0.0, 0.012, 0.035) * trough * 0.55;
-  colour += vec3(0.22, 0.58, 1.0) * fingertip * 0.28;
+  colour += mix(vec3(0.22, 0.58, 1.0), touchFog, 0.62) * fingertip * 0.42;
 
   float awakeningProgress = clamp(uAwakening, 0.0, 1.0);
   float awakeningRadius = mix(0.012, 0.74, awakeningProgress);

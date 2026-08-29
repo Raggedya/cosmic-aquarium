@@ -49,10 +49,22 @@
 .song-flower::after {
   content: '';
   position: absolute;
-  inset: -11px;
+  inset: -13px;
   border-radius: 50%;
   opacity: 0;
-  background: radial-gradient(circle, hsla(var(--flower-hue), 85%, 78%, .2), transparent 68%);
+  background: conic-gradient(
+    from 0deg,
+    rgba(255, 73, 184, .38),
+    rgba(255, 187, 66, .34),
+    rgba(169, 255, 82, .34),
+    rgba(45, 236, 224, .38),
+    rgba(75, 121, 255, .4),
+    rgba(190, 77, 255, .38),
+    rgba(255, 73, 184, .38)
+  );
+  mask-image: radial-gradient(circle, #000 0 18%, rgba(0, 0, 0, .72) 38%, transparent 72%);
+  -webkit-mask-image: radial-gradient(circle, #000 0 18%, rgba(0, 0, 0, .72) 38%, transparent 72%);
+  filter: blur(8px) saturate(1.35);
   transition: opacity 180ms ease;
 }
 
@@ -98,8 +110,8 @@
 }
 
 @keyframes flower-caught {
-  from { transform: scale(.92); }
-  to { transform: scale(1.12); }
+  from { opacity: .68; transform: rotate(0deg) scale(.9); filter: blur(8px) saturate(1.35) hue-rotate(0deg); }
+  to { opacity: 1; transform: rotate(180deg) scale(1.18); filter: blur(7px) saturate(1.55) hue-rotate(100deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
