@@ -1,0 +1,59 @@
+.flower-stream-spectrum .song-flower {
+  translate: var(--magnet-x, 0px) var(--magnet-y, 0px);
+  transition:
+    translate 135ms cubic-bezier(.16, .82, .2, 1),
+    filter 180ms ease,
+    box-shadow 220ms ease,
+    opacity 140ms ease,
+    scale 220ms cubic-bezier(.2, .9, .25, 1.25);
+}
+
+.flower-stream-spectrum .song-flower.depth-back {
+  z-index: 1;
+  filter: blur(1.2px) saturate(.88) brightness(.66);
+}
+
+.flower-stream-spectrum .song-flower.depth-mid {
+  z-index: 2;
+}
+
+.flower-stream-spectrum .song-flower.depth-front {
+  z-index: 4;
+  filter: blur(.75px) saturate(1.28) brightness(1.08);
+  box-shadow:
+    0 0 22px 5px hsla(var(--flower-hue), 92%, 66%, .16),
+    0 0 38px 11px hsla(var(--flower-hue-alt), 82%, 58%, .075);
+}
+
+.flower-stream-spectrum .song-flower.depth-front::before {
+  box-shadow: 0 0 9px 2px rgba(255, 225, 128, .42);
+}
+
+.flower-stream-spectrum .song-flower.is-near {
+  z-index: 6;
+  filter: blur(.08px) saturate(1.48) brightness(1.5);
+}
+
+.flower-stream-spectrum .discovery-layer {
+  box-shadow: inset 0 0 140px color-mix(in srgb, var(--record-color) 9%, transparent);
+}
+
+.flower-stream-spectrum .record-reveal h2 {
+  text-shadow:
+    0 0 28px color-mix(in srgb, var(--record-color) 28%, transparent),
+    0 2px 18px rgba(0, 0, 0, .74);
+}
+
+.flower-stream-spectrum .bandcamp-action {
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--record-color) 34%, transparent),
+    0 12px 35px rgba(0, 0, 0, .28),
+    0 0 32px color-mix(in srgb, var(--record-color) 8%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flower-stream-spectrum .song-flower {
+    translate: 0 0;
+    transition: none;
+  }
+}

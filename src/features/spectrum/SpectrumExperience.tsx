@@ -14,14 +14,31 @@ const initialPoint: Point = { x: .5, y: .5 };
 const awakeningSessionKey = 'project-b-side:immigrant-union-awakening-depth-v2';
 const flowerHues = [326, 18, 48, 92, 158, 188, 218, 258, 286, 344];
 
+type FlowerDepth = 'back' | 'mid' | 'front';
+
+function flowerDepth(index: number): FlowerDepth {
+  if (index % 9 === 0) return 'front';
+  if (index % 4 === 0) return 'back';
+  return 'mid';
+}
+
+function flowerHue(song: SpectrumRelease): number {
+  const index = spectrumReleases.findIndex((candidate) => candidate.id === song.id);
+  return flowerHues[Math.max(0, index) % flowerHues.length];
+}
+
 function listeningEmbedUrl(trackId?: string) {
   if (!trackId || !/^\d+$/.test(trackId)) return null;
   return 'https://bandcamp.com/EmbeddedPlayer/track=' + trackId + '/size=large/bgcol=030817/linkcol=9fd6ff/tracklist=false/artwork=small/transparent=true/';
 }
 
 function flowerStyle(song: SpectrumRelease, index: number): CSSProperties {
-  const duration = (12 + ((index * 7) % 11) * 1.05) * 2.5;
+  const depth = flowerDepth(index);
+  const depthDuration = depth === 'back' ? 1.16 : depth === 'front' ? .86 : 1;
+  const depthScale = depth === 'back' ? .62 : depth === 'front' ? 1.42 : 1;
+  const duration = (12 + ((index * 7) % 11) * 1.05) * 2.5 * depthDuration;
   const phase = ((index * 43) % 100) / 100;
+  const scale = (.78 + ((index * 13) % 25) / 100) * depthScale;
   return {
     '--stream-x': String(8 + ((index * 37) % 84)) + '%',
     '--stream-duration': duration.toFixed(2) + 's',
@@ -30,8 +47,10 @@ function flowerStyle(song: SpectrumRelease, index: number): CSSProperties {
     '--stream-turn': String(-18 + ((index * 31) % 37)) + 'deg',
     '--flower-hue': String(flowerHues[index % flowerHues.length]),
     '--flower-hue-alt': String((flowerHues[index % flowerHues.length] + 34 + (index % 3) * 18) % 360),
-    '--flower-scale': String(.78 + ((index * 13) % 25) / 100),
+    '--flower-scale': scale.toFixed(2),
     '--rest-rise': String(-(10 + song.y * 80)) + 'vh',
+    '--magnet-x': '0px',
+    '--magnet-y': '0px',
   } as CSSProperties;
 }
 
@@ -97,7 +116,14 @@ export function SpectrumExperience() {
     };
   }
 
-  function flowingSongAt(next: Point): SpectrumRelease | null {
+  function clearFlowerMagnetism() {
+    for (const flower of flowerRefs.current.values()) {
+      flower.style.setProperty('--magnet-x', '0px');
+      flower.style.setProperty('--magnet-y', '0px');
+    }
+  }
+
+  function flowingSongAt(next: Point, magnetize = false): SpectrumRelease | null {
     const field = fieldRef.current;
     if (!field) return null;
     const bounds = field.getBoundingClientRect();
@@ -109,10 +135,17 @@ export function SpectrumExperience() {
       const flower = flowerRefs.current.get(song.id);
       if (!flower) continue;
       const flowerBounds = flower.getBoundingClientRect();
-      const distance = Math.hypot(
-        flowerBounds.left + flowerBounds.width / 2 - pointerX,
-        flowerBounds.top + flowerBounds.height / 2 - pointerY,
-      );
+      const deltaX = pointerX - (flowerBounds.left + flowerBounds.width / 2);
+      const deltaY = pointerY - (flowerBounds.top + flowerBounds.height / 2);
+      const distance = Math.hypot(deltaX, deltaY);
+      if (magnetize) {
+        const magneticReach = 112;
+        const pull = Math.max(0, 1 - distance / magneticReach) ** 2;
+        const magneticX = Math.sign(deltaX) * Math.min(14, Math.abs(deltaX) * pull * .22);
+        const magneticY = Math.sign(deltaY) * Math.min(14, Math.abs(deltaY) * pull * .22);
+        flower.style.setProperty('--magnet-x', magneticX.toFixed(2) + 'px');
+        flower.style.setProperty('--magnet-y', magneticY.toFixed(2) + 'px');
+      }
       if (!nearest || distance < nearest.distance) nearest = { song, distance };
     }
 
@@ -120,9 +153,9 @@ export function SpectrumExperience() {
     return nearest && nearest.distance <= forgivingRadius ? nearest.song : null;
   }
 
-  function setLivePoint(next: Point, explicitSong?: SpectrumRelease | null) {
+  function setLivePoint(next: Point, explicitSong?: SpectrumRelease | null, magnetize = false) {
     setPoint(next);
-    const lit = explicitSong === undefined ? flowingSongAt(next) : explicitSong;
+    const lit = explicitSong === undefined ? flowingSongAt(next, magnetize) : explicitSong;
     const nextId = lit?.id ?? '';
     setLitSongId(nextId);
     if (nextId !== lastLitSongRef.current) {
@@ -159,21 +192,22 @@ export function SpectrumExperience() {
     }
     event.currentTarget.setPointerCapture(event.pointerId);
     setDragging(true);
-    setLivePoint(next);
+    setLivePoint(next, undefined, true);
   }
 
   function onPointerMove(event: PointerEvent<HTMLButtonElement>) {
     event.preventDefault();
-    if (dragging) setLivePoint(pointFromPointer(event));
+    if (dragging) setLivePoint(pointFromPointer(event), undefined, true);
   }
 
   function onPointerUp(event: PointerEvent<HTMLButtonElement>) {
     event.preventDefault();
     if (!dragging) return;
     const next = pointFromPointer(event);
-    const song = flowingSongAt(next) ?? illuminated;
+    const song = flowingSongAt(next, true) ?? illuminated;
     setPoint(next);
     setDragging(false);
+    clearFlowerMagnetism();
     setLitSongId('');
     lastLitSongRef.current = '';
     if (song) revealSong(song, next);
@@ -210,10 +244,11 @@ export function SpectrumExperience() {
     '--pick-x': String(point.x * 100) + '%',
     '--pick-y': String(point.y * 100) + '%',
   } as CSSProperties;
+  const selectedHue = selected ? flowerHue(selected) : 210;
   const revealStyle = {
     '--origin-x': String(selectedPoint.x * 100) + '%',
     '--origin-y': String(selectedPoint.y * 100) + '%',
-    '--record-color': '#9fd6ff',
+    '--record-color': 'hsl(' + selectedHue + ' 92% 72%)',
   } as CSSProperties;
 
   return (
@@ -226,9 +261,14 @@ export function SpectrumExperience() {
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
-        onPointerCancel={() => { setDragging(false); setLitSongId(''); lastLitSongRef.current = ''; }}
+        onPointerCancel={() => {
+          setDragging(false);
+          setLitSongId('');
+          clearFlowerMagnetism();
+          lastLitSongRef.current = '';
+        }}
         onKeyDown={onKeyDown}
-        aria-label="A wordless Immigrant Union song stream. Drag through the dark water. Passing flowers carry hidden songs; approach one and release to open it. Use arrow keys and Enter on a keyboard."
+        aria-label="An Immigrant Union song stream. Drag through the dark water. Passing flowers carry hidden songs; approach one and release to open it. Use arrow keys and Enter on a keyboard."
       >
         <SpectrumCanvas point={point} active={dragging} awakening={awakening} />
         {spectrumReleases.map((song, index) => (
@@ -238,7 +278,7 @@ export function SpectrumExperience() {
               if (node) flowerRefs.current.set(song.id, node);
               else flowerRefs.current.delete(song.id);
             }}
-            className={'release-star song-flower ' + (illuminated?.id === song.id ? 'is-near' : '')}
+            className={'release-star song-flower depth-' + flowerDepth(index) + ' ' + (illuminated?.id === song.id ? 'is-near' : '')}
             style={flowerStyle(song, index)}
             aria-hidden="true"
           />
