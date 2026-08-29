@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import './spectrum-luxe.css';
+import './artist-spectrum.css';
 
-const title = 'PROJECT B-SIDE — Touch the spectrum';
-const description = 'Touch anywhere in a living spectrum of independent music and uncover a real record on Bandcamp.';
+const title = 'Immigrant Union Song Spectrum — PROJECT B-SIDE';
+const description = 'Explore forty Immigrant Union songs across four releases in one living, unofficial Bandcamp spectrum.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-b-side.raggedya.chatgpt.site'),
@@ -13,13 +14,13 @@ export const metadata: Metadata = {
     title,
     description,
     type: 'website',
-    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Project B-Side music spectrum' }],
+    images: [{ url: '/og-immigrant-union.png', width: 1200, height: 630, alt: 'Immigrant Union song spectrum by Project B-Side' }],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
-    images: ['/og.png'],
+    images: ['/og-immigrant-union.png'],
   },
 };
 

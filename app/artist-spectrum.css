@@ -1,0 +1,114 @@
+.artist-spectrum .field-atmosphere {
+  opacity: .48;
+  background-image:
+    radial-gradient(circle at 23% 28%,rgba(139,220,255,.34),transparent 18%),
+    radial-gradient(circle at 77% 27%,rgba(223,255,112,.25),transparent 20%),
+    radial-gradient(circle at 75% 75%,rgba(255,180,84,.28),transparent 20%),
+    radial-gradient(circle at 24% 76%,rgba(255,90,150,.3),transparent 20%),
+    radial-gradient(circle at 23% 31%,rgba(255,255,255,.65) 0 1px,transparent 1.4px),
+    radial-gradient(circle at 72% 18%,rgba(255,255,255,.56) 0 1px,transparent 1.4px);
+  background-size: auto,auto,auto,auto,147px 179px,211px 193px;
+}
+
+.artist-spectrum .field-rings {
+  width: min(58vw,320px);
+  opacity: .65;
+}
+
+.album-label {
+  display: grid;
+  width: 104px;
+  justify-items: center;
+  gap: 3px;
+  color: var(--anchor-color);
+  opacity: calc(.34 + var(--proximity) * .66);
+  text-align: center;
+  text-shadow: 0 3px 20px rgba(0,0,0,.84),0 0 18px color-mix(in srgb,var(--anchor-color) 34%,transparent);
+}
+
+.album-label b {
+  font-size: calc(7px + var(--proximity) * 3px);
+  font-weight: 850;
+  line-height: 1.18;
+}
+
+.album-label small {
+  color: rgba(255,255,255,.5);
+  font-size: 6px;
+  font-weight: 780;
+  letter-spacing: .15em;
+}
+
+.song-star {
+  width: 4px;
+  height: 4px;
+  border-color: rgba(255,255,255,.76);
+  background: var(--star-color);
+  box-shadow: 0 0 8px color-mix(in srgb,var(--star-color) 78%,transparent);
+}
+
+.song-star.is-near {
+  width: 11px;
+  height: 11px;
+  background: var(--star-color);
+  box-shadow:
+    0 0 0 7px color-mix(in srgb,var(--star-color) 13%,transparent),
+    0 0 28px color-mix(in srgb,var(--star-color) 88%,transparent);
+}
+
+.artist-spectrum .unknown-core {
+  border-color: rgba(255,255,255,.16);
+  background: radial-gradient(circle,rgba(0,0,0,.94),rgba(0,0,0,.45) 55%,transparent 73%);
+}
+
+.artist-spectrum .spectrum-intro h1 {
+  font-size: clamp(42px,12.4vw,64px);
+}
+
+.artist-spectrum .spectrum-intro h1 em { color: #fff1ba; }
+
+.artist-spectrum .live-mark i {
+  background: #fff1ba;
+  box-shadow: 0 0 10px rgba(255,241,186,.74);
+}
+
+.artist-spectrum .discovery-layer {
+  background:
+    radial-gradient(circle at var(--origin-x) var(--origin-y),color-mix(in srgb,var(--record-color) 28%,transparent) 0 1px,color-mix(in srgb,var(--record-color) 7%,transparent) 8%,transparent 29%),
+    linear-gradient(145deg,rgba(10,10,13,.64),rgba(2,2,3,.94));
+}
+
+.artist-spectrum .reveal-bloom {
+  background:
+    repeating-radial-gradient(circle,transparent 0 8.8%,rgba(255,255,255,.042) 8.9%,transparent 9.05% 15%),
+    radial-gradient(circle,color-mix(in srgb,var(--record-color) 15%,transparent),rgba(255,255,255,.025) 20%,transparent 51%);
+}
+
+.artist-spectrum .origin-signal {
+  border-color: var(--record-color);
+  box-shadow: 0 0 0 12px color-mix(in srgb,var(--record-color) 8%,transparent),0 0 34px var(--record-color);
+}
+
+.artist-spectrum .record-index span { color: var(--record-color); }
+
+.song-reveal .record-note {
+  margin: 13px 0 16px;
+  font-family: Inter,ui-sans-serif,system-ui,sans-serif;
+  font-size: 8px;
+  font-weight: 780;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.artist-spectrum .bandcamp-action:hover { background: var(--record-color); }
+
+@media (max-width: 380px) {
+  .album-label { width: 88px; }
+  .artist-spectrum .spectrum-intro h1 { font-size: clamp(38px,11.8vw,48px); }
+  .artist-spectrum .spectrum-intro > span { max-width: 225px; }
+}
+
+@media (max-height: 720px) {
+  .artist-spectrum .spectrum-intro h1 { font-size: clamp(35px,9.6vw,44px); }
+  .song-reveal .record-note { margin: 8px 0 10px; }
+}

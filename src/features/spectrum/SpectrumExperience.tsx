@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type KeyboardEvent, type PointerEvent } from 'react';
 import { validateBandcampUrl } from '@/src/adapters/bandcamp-link-adapter';
+import { immigrantUnionAlbums } from '@/src/data/immigrant-union-catalogue';
 import { spectrumReleases } from '@/src/data/spectrum-releases';
 import { clampUnit, isUnknownZone, nearestSpectrumRelease, surpriseSpectrumRelease } from '@/src/discovery/spectrum';
 import { readSpectrum, spectrumAnchors } from '@/src/discovery/spectrum-semantics';
@@ -16,9 +17,13 @@ function pointDistance(a: Point, b: Point) {
   return Math.hypot(a.x - b.x, a.y - b.y);
 }
 
-function listeningEmbedUrl(albumId?: string) {
-  if (!albumId || !/^\d+$/.test(albumId)) return null;
-  return `https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=large/bgcol=0b0b0d/linkcol=dfff70/tracklist=false/artwork=small/transparent=true/`;
+function listeningEmbedUrl(trackId?: string) {
+  if (!trackId || !/^\d+$/.test(trackId)) return null;
+  return 'https://bandcamp.com/EmbeddedPlayer/track=' + trackId + '/size=large/bgcol=0b0b0d/linkcol=dfff70/tracklist=false/artwork=small/transparent=true/';
+}
+
+function albumColor(albumKey: string) {
+  return immigrantUnionAlbums.find((album) => album.key === albumKey)?.color ?? '#ffffff';
 }
 
 export function SpectrumExperience() {
@@ -30,14 +35,14 @@ export function SpectrumExperience() {
   const [dragging, setDragging] = useState(false);
   const [interacted, setInteracted] = useState(false);
   const [selected, setSelected] = useState<SpectrumRelease | null>(null);
-  const [announcement, setAnnouncement] = useState('The unknown is selected. Move through the spectrum and release to discover.');
+  const [announcement, setAnnouncement] = useState('Any song is selected. Move through the catalogue and release to discover.');
 
   const unknown = isUnknownZone(point.x, point.y);
   const nearby = useMemo(() => nearestSpectrumRelease(spectrumReleases, point.x, point.y), [point]);
   const reading = useMemo(() => readSpectrum(point.x, point.y), [point]);
   const resolvedReading = useMemo(() => readSpectrum(selectedPoint.x, selectedPoint.y), [selectedPoint]);
   const destination = selected ? validateBandcampUrl(selected.bandcampUrl) : null;
-  const embedUrl = listeningEmbedUrl(selected?.bandcampEmbedAlbumId);
+  const embedUrl = listeningEmbedUrl(selected?.bandcampEmbedTrackId);
 
   useEffect(() => {
     if (selected) closeRef.current?.focus();
@@ -61,13 +66,13 @@ export function SpectrumExperience() {
   }
 
   function discoverAt(target: Point, seed = Date.now()) {
-    const release = isUnknownZone(target.x, target.y)
+    const song = isUnknownZone(target.x, target.y)
       ? surpriseSpectrumRelease(spectrumReleases, seed)
       : nearestSpectrumRelease(spectrumReleases, target.x, target.y);
     const targetReading = readSpectrum(target.x, target.y);
     setSelectedPoint(target);
-    setSelected(release);
-    setAnnouncement(`${release.title} by ${release.artist}. ${release.zone}. Found in ${targetReading.label}, ${targetReading.depthLabel}.`);
+    setSelected(song);
+    setAnnouncement(song.title + ' by Immigrant Union. From ' + song.albumTitle + ', ' + song.year + '. Found in ' + targetReading.label + '.');
     if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate([12, 35, 8]);
   }
 
@@ -118,19 +123,20 @@ export function SpectrumExperience() {
   }
 
   const fieldStyle = {
-    '--pick-x': `${point.x * 100}%`,
-    '--pick-y': `${point.y * 100}%`,
+    '--pick-x': String(point.x * 100) + '%',
+    '--pick-y': String(point.y * 100) + '%',
   } as CSSProperties;
   const revealStyle = {
-    '--origin-x': `${selectedPoint.x * 100}%`,
-    '--origin-y': `${selectedPoint.y * 100}%`,
+    '--origin-x': String(selectedPoint.x * 100) + '%',
+    '--origin-y': String(selectedPoint.y * 100) + '%',
+    '--record-color': selected ? albumColor(selected.albumKey) : '#dfff70',
   } as CSSProperties;
 
   return (
-    <main className={`spectrum-app ${interacted ? 'has-interacted' : ''}`}>
+    <main className={'spectrum-app artist-spectrum ' + (interacted ? 'has-interacted' : '')}>
       <button
         ref={fieldRef}
-        className={`spectrum-field ${dragging ? 'is-dragging' : ''}`}
+        className={'spectrum-field ' + (dragging ? 'is-dragging' : '')}
         style={fieldStyle}
         type="button"
         onPointerDown={onPointerDown}
@@ -138,57 +144,62 @@ export function SpectrumExperience() {
         onPointerUp={onPointerUp}
         onPointerCancel={() => setDragging(false)}
         onKeyDown={onKeyDown}
-        aria-label={`Full-screen music spectrum. Current region: ${reading.label}, ${reading.depthLabel}. Drag or use arrow keys, then release or press Enter to discover.`}
+        aria-label={'Immigrant Union song spectrum. Current region: ' + reading.label + ', ' + reading.depthLabel + '. Drag or use arrow keys, then release or press Enter to discover a song.'}
       >
         <SpectrumCanvas point={point} active={dragging} />
         <span className="field-atmosphere" aria-hidden="true" />
         <span className="field-rings" aria-hidden="true" />
         {spectrumAnchors.map((label) => {
-          const proximity = clampUnit(1 - pointDistance(point, label) / .44);
+          const proximity = clampUnit(1 - pointDistance(point, label) / .42);
           return (
             <span
               key={label.name}
-              className="field-label"
+              className="field-label album-label"
               style={{
-                left: `${label.x * 100}%`,
-                top: `${label.y * 100}%`,
+                left: String(label.x * 100) + '%',
+                top: String(label.y * 100) + '%',
                 '--proximity': proximity,
+                '--anchor-color': label.color,
               } as CSSProperties}
             >
-              {label.name}
+              <b>{label.name}</b><small>{label.year}</small>
             </span>
           );
         })}
-        {spectrumReleases.map((release) => (
+        {spectrumReleases.map((song) => (
           <span
-            key={release.id}
-            className={`release-star ${nearby.id === release.id && !unknown ? 'is-near' : ''}`}
-            style={{ left: `${release.x * 100}%`, top: `${release.y * 100}%` }}
+            key={song.id}
+            className={'release-star song-star ' + (nearby.id === song.id && !unknown ? 'is-near' : '')}
+            style={{
+              left: String(song.x * 100) + '%',
+              top: String(song.y * 100) + '%',
+              '--star-color': albumColor(song.albumKey),
+            } as CSSProperties}
             aria-hidden="true"
           />
         ))}
-        <span className="unknown-core" aria-hidden="true"><i>?</i><small>no labels</small></span>
+        <span className="unknown-core" aria-hidden="true"><i>?</i><small>any song</small></span>
         <span className="spectrum-lens" aria-hidden="true"><i /><b /></span>
       </button>
 
       <header className="spectrum-header">
         <a className="spectrum-brand" href="#spectrum" aria-label="Project B-Side home"><span>B</span><b>PROJECT B-SIDE</b></a>
-        <span className="live-mark"><i /> living field</span>
+        <span className="live-mark"><i /> unofficial study</span>
       </header>
 
       <section className="spectrum-intro" id="spectrum" aria-labelledby="spectrum-title">
-        <p>An independent discovery experience for Bandcamp</p>
-        <h1 id="spectrum-title">Touch the <em>spectrum.</em></h1>
-        <span>The edge knows its genre. The black centre gives up control.</span>
+        <p>Immigrant Union · complete Bandcamp song spectrum</p>
+        <h1 id="spectrum-title">Every song.<em>One spectrum.</em></h1>
+        <span>Four releases. Forty songs. Touch a star—or drift between eras.</span>
       </section>
 
       <div className="touch-reading" aria-hidden="true">
         <span>{reading.label}</span>
-        <small><b>{reading.depthLabel}</b>{dragging ? 'release to discover' : interacted ? 'touch somewhere else' : 'touch + drift'}</small>
+        <small><b>{reading.depthLabel}</b>{dragging ? 'release to hear it' : interacted ? 'touch somewhere else' : 'touch + drift'}</small>
       </div>
 
       <div className="gesture-rail" aria-hidden="true">
-        <span>move</span><i /><span>blend</span><i /><span>release</span>
+        <span>move</span><i /><span>cross eras</span><i /><span>release</span>
       </div>
 
       {selected ? (
@@ -204,22 +215,22 @@ export function SpectrumExperience() {
           <span className="reveal-orbit reveal-orbit-one" aria-hidden="true" />
           <span className="reveal-orbit reveal-orbit-two" aria-hidden="true" />
           <span className="origin-signal" aria-hidden="true" />
-          <button ref={closeRef} className="discovery-close" type="button" onClick={closeDiscovery} aria-label="Return to the spectrum">×</button>
-          <article className="record-reveal">
-            <p className="record-index"><span>Signal resolved</span> · {selected.zone}</p>
+          <button ref={closeRef} className="discovery-close" type="button" onClick={closeDiscovery} aria-label="Return to the song spectrum">×</button>
+          <article className="record-reveal song-reveal">
+            <p className="record-index"><span>Song found</span> · track {selected.trackNumber} · {selected.albumTitle}</p>
             <p className="record-coordinate">
               {resolvedReading.certainty === 0
-                ? 'Unmapped centre · chance-led discovery'
-                : `${resolvedReading.label} · ${resolvedReading.depthLabel}`}
+                ? 'Catalogue wildcard · chosen from all eras'
+                : resolvedReading.label + ' · ' + resolvedReading.depthLabel}
             </p>
             <h2 id="discovery-title">{selected.title}</h2>
-            <p className="record-artist">{selected.artist} <span>· {selected.year}</span></p>
+            <p className="record-artist">Immigrant Union <span>· {selected.year} · {selected.duration}</span></p>
             <p className="record-note">{selected.note}</p>
             {embedUrl ? (
               <div className="bandcamp-embed-shell">
                 <span>Listen here · official Bandcamp player</span>
                 <iframe
-                  title={`Listen to ${selected.title} by ${selected.artist} on Bandcamp`}
+                  title={'Listen to ' + selected.title + ' by Immigrant Union on Bandcamp'}
                   src={embedUrl}
                   loading="lazy"
                   allow="autoplay"
@@ -228,17 +239,17 @@ export function SpectrumExperience() {
             ) : null}
             {destination ? (
               <a className="bandcamp-action" href={destination.href} target="_blank" rel="noopener noreferrer">
-                <span>{embedUrl ? 'Own it / explore the artist' : 'Listen / support'}</span><b>Bandcamp ↗</b>
+                <span>Support / open this song</span><b>Bandcamp ↗</b>
               </a>
             ) : null}
-            <button className="return-action" type="button" onClick={closeDiscovery}>Return to the spectrum</button>
+            <button className="return-action" type="button" onClick={closeDiscovery}>Return to all forty songs</button>
           </article>
         </section>
       ) : null}
 
       <footer className="spectrum-footer">
-        <span>Real releases · human placement</span>
-        <span>Listening and commerce stay on Bandcamp</span>
+        <span>40 songs · 4 releases · public Bandcamp catalogue</span>
+        <span>Unofficial · listening and support stay on Bandcamp</span>
       </footer>
       <p className="visually-hidden" role="status" aria-live="polite">{announcement}</p>
     </main>

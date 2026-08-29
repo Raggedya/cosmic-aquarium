@@ -2,12 +2,17 @@ export interface SpectrumRelease {
   id: string;
   title: string;
   artist: string;
+  albumTitle: string;
+  albumKey: string;
   year: number;
+  trackNumber: number;
+  duration: string;
   x: number;
   y: number;
   zone: string;
   note: string;
   bandcampUrl: string;
-  /** Album ID published by Bandcamp for its official embedded player. */
-  bandcampEmbedAlbumId?: string;
+  /** Track ID published by Bandcamp for its official embedded player. */
+  bandcampEmbedTrackId: string;
+  sourcePage: string;
 }
