@@ -1,0 +1,45 @@
+import type { TrailManifest } from '@/src/types/discovery';
+
+const bandcampFrontDoor = 'https://bandcamp.com/';
+
+export const demoManifest: TrailManifest = {
+  id: 'demo-after-midnight-v1',
+  title: 'Signals after midnight',
+  curator: 'B-SIDE Demo Curator',
+  releases: [
+    { id: 'glass-taxi', title: 'Glass Taxi', artistName: 'Mara Vale', year: 2021, location: 'Naarm / Melbourne', tags: ['night music', 'tape haze'], accent: '#c9f05a', glyph: 'G', bandcampUrl: bandcampFrontDoor, dataStatus: 'demo' },
+    { id: 'salt-static', title: 'Salt Static', artistName: 'Low Harbour', year: 2018, location: 'Wellington', tags: ['field signal', 'dub drift'], accent: '#62b7d0', glyph: 'S', bandcampUrl: bandcampFrontDoor, dataStatus: 'demo' },
+    { id: 'soft-infrastructure', title: 'Soft Infrastructure', artistName: 'Civic Sleep', year: 2024, location: 'Manila', tags: ['concrete pop', 'late buses'], accent: '#ff765e', glyph: 'I', bandcampUrl: bandcampFrontDoor, dataStatus: 'demo' },
+    { id: 'borrowed-weather', title: 'Borrowed Weather', artistName: 'Eko Thread', year: 2016, location: 'Bandung', tags: ['rain rhythm', 'room tone'], accent: '#9c83ef', glyph: 'W', bandcampUrl: bandcampFrontDoor, dataStatus: 'demo' },
+    { id: 'small-hours-union', title: 'Small Hours Union', artistName: 'Various Neighbours', year: 2020, location: 'Glasgow', tags: ['community radio', 'after-hours'], accent: '#efb85f', glyph: 'U', bandcampUrl: bandcampFrontDoor, dataStatus: 'demo' },
+    { id: 'signal-garden', title: 'Signal Garden', artistName: 'Rana Oscura', year: 2013, location: 'Valparaíso', tags: ['coastal synth', 'handmade circuits'], accent: '#df6c9a', glyph: 'R', bandcampUrl: bandcampFrontDoor, dataStatus: 'demo' },
+    { id: 'underpass-choir', title: 'Underpass Choir', artistName: 'Tern Assembly', year: 2025, location: 'Bristol', tags: ['vocal concrete', 'public space'], accent: '#72d3a4', glyph: 'T', bandcampUrl: bandcampFrontDoor, dataStatus: 'demo' },
+    { id: 'orange-frequency', title: 'Orange Frequency', artistName: 'June Service', year: 1999, location: 'Osaka', tags: ['mini-disc', 'sunrise techno'], accent: '#ff975b', glyph: 'O', bandcampUrl: bandcampFrontDoor, dataStatus: 'demo' },
+  ],
+  relationships: [
+    { id: 'r1', fromReleaseId: 'glass-taxi', toReleaseId: 'salt-static', kind: 'place', label: 'Across the Tasman', explanation: 'Two port-city records built from weather, distance and machines left running after dark.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r2', fromReleaseId: 'glass-taxi', toReleaseId: 'soft-infrastructure', kind: 'person', label: 'The night-bus test', explanation: 'A fictional selector kept both for the moment a crowded bus finally empties.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r3', fromReleaseId: 'glass-taxi', toReleaseId: 'borrowed-weather', kind: 'idea', label: 'Rooms remember', explanation: 'Both imaginary releases treat background noise as the thing holding the song together.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r4', fromReleaseId: 'salt-static', toReleaseId: 'signal-garden', kind: 'place', label: 'Two steep coasts', explanation: 'Harbour fog gives way to hillside antennae: a route defined by coastal geography.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r5', fromReleaseId: 'salt-static', toReleaseId: 'small-hours-union', kind: 'person', label: 'Passed across a radio desk', explanation: 'A fictional overnight host filed these beside each other after one accidental segue.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r6', fromReleaseId: 'salt-static', toReleaseId: 'orange-frequency', kind: 'idea', label: 'Obsolete machines, warm results', explanation: 'Both use imagined outmoded formats as texture rather than nostalgia.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r7', fromReleaseId: 'soft-infrastructure', toReleaseId: 'borrowed-weather', kind: 'place', label: 'Monsoon exchange', explanation: 'A humid city-to-city step linked by rain, concrete and open windows.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r8', fromReleaseId: 'soft-infrastructure', toReleaseId: 'underpass-choir', kind: 'person', label: 'A sound engineer’s pocket', explanation: 'A fictional engineer chose both for the way voices behave inside hard public spaces.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r9', fromReleaseId: 'soft-infrastructure', toReleaseId: 'small-hours-union', kind: 'idea', label: 'Infrastructure becomes instrument', explanation: 'Transit, fluorescent hum and civic architecture move from setting to rhythm.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r10', fromReleaseId: 'borrowed-weather', toReleaseId: 'orange-frequency', kind: 'place', label: 'Rain gives way to sunrise', explanation: 'A geographic leap tied by a curator’s imagined dawn listening ritual.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r11', fromReleaseId: 'borrowed-weather', toReleaseId: 'signal-garden', kind: 'person', label: 'The circuit builder', explanation: 'A fictional instrument maker kept both as examples of electronics that still feel touched.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r12', fromReleaseId: 'borrowed-weather', toReleaseId: 'glass-taxi', kind: 'idea', label: 'The audible room', explanation: 'Return to a record where air, tape and walls refuse to stay silent.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r13', fromReleaseId: 'small-hours-union', toReleaseId: 'underpass-choir', kind: 'place', label: 'Westward night trains', explanation: 'A route through UK cities where shared rooms matter more than polished stages.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r14', fromReleaseId: 'small-hours-union', toReleaseId: 'signal-garden', kind: 'person', label: 'Community-radio handoff', explanation: 'One fictional volunteer host sent this directly to another across an ocean.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r15', fromReleaseId: 'small-hours-union', toReleaseId: 'salt-static', kind: 'idea', label: 'No one owns the night', explanation: 'Both imagine after-hours listening as a temporary commons.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r16', fromReleaseId: 'signal-garden', toReleaseId: 'orange-frequency', kind: 'place', label: 'Pacific circuitry', explanation: 'A wide ocean step joined by small machines and bright coastal mornings.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r17', fromReleaseId: 'signal-garden', toReleaseId: 'glass-taxi', kind: 'person', label: 'A repair-shop recommendation', explanation: 'The imaginary clerk who fixed one cassette deck wrote the other title on the receipt.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r18', fromReleaseId: 'signal-garden', toReleaseId: 'underpass-choir', kind: 'idea', label: 'Public space sings back', explanation: 'Circuits and concrete both become collaborators instead of neutral containers.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r19', fromReleaseId: 'underpass-choir', toReleaseId: 'soft-infrastructure', kind: 'place', label: 'Concrete conversations', explanation: 'Two city records connected through the acoustics of spaces built for passing through.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r20', fromReleaseId: 'underpass-choir', toReleaseId: 'small-hours-union', kind: 'person', label: 'The volunteer door shift', explanation: 'A fictional venue volunteer carried one home after hearing the other at soundcheck.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r21', fromReleaseId: 'underpass-choir', toReleaseId: 'borrowed-weather', kind: 'idea', label: 'Architecture as memory', explanation: 'The space around the performers is treated as an instrument with a long memory.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r22', fromReleaseId: 'orange-frequency', toReleaseId: 'glass-taxi', kind: 'place', label: 'Southern sunrise route', explanation: 'A long geographic jump for records that belong at the edge of morning.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r23', fromReleaseId: 'orange-frequency', toReleaseId: 'signal-garden', kind: 'person', label: 'Mini-disc in a coat pocket', explanation: 'A fictional traveller carried these two homemade signals between hemispheres.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+    { id: 'r24', fromReleaseId: 'orange-frequency', toReleaseId: 'salt-static', kind: 'idea', label: 'Warmth from bad storage', explanation: 'Ageing media becomes a source of softness rather than a defect to erase.', assertedBy: 'B-SIDE Demo Curator', confidence: 'asserted' },
+  ],
+};
