@@ -8,4 +8,6 @@ export interface SpectrumRelease {
   zone: string;
   note: string;
   bandcampUrl: string;
+  /** Album ID published by Bandcamp for its official embedded player. */
+  bandcampEmbedAlbumId?: string;
 }

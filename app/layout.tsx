@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
+import './spectrum-luxe.css';
 
 const title = 'PROJECT B-SIDE — Touch the spectrum';
 const description = 'Touch anywhere in a living spectrum of independent music and uncover a real record on Bandcamp.';

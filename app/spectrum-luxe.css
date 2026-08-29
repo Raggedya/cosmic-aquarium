@@ -1,0 +1,210 @@
+.spectrum-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.spectrum-field::before { z-index: 1; }
+.spectrum-field::after { z-index: 4; }
+.field-atmosphere,.field-rings { z-index: 1; }
+
+.field-atmosphere {
+  opacity: .34;
+  filter: blur(.15px);
+}
+
+.field-rings {
+  width: min(82vw,420px);
+  border-color: rgba(255,255,255,.09);
+  box-shadow: 0 0 80px rgba(0,0,0,.2);
+}
+
+.unknown-core {
+  width: 98px;
+  height: 98px;
+  border-color: rgba(255,255,255,.12);
+  background: radial-gradient(circle,rgba(0,0,0,.24),transparent 70%);
+  box-shadow: 0 0 60px rgba(0,0,0,.72),inset 0 0 24px rgba(0,0,0,.5);
+}
+
+.unknown-core small { color: rgba(255,255,255,.42); }
+
+.touch-reading small {
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+}
+
+.touch-reading small b {
+  color: rgba(255,255,255,.72);
+  font-size: 7px;
+  font-weight: 820;
+  letter-spacing: .14em;
+}
+
+.discovery-layer {
+  background:
+    radial-gradient(circle at var(--origin-x) var(--origin-y),rgba(255,255,255,.16) 0 1px,rgba(255,255,255,.035) 7%,transparent 27%),
+    linear-gradient(145deg,rgba(10,10,13,.64),rgba(2,2,3,.93));
+  backdrop-filter: blur(22px) saturate(.74) brightness(.56);
+}
+
+.reveal-bloom {
+  width: 165vmax;
+  height: 165vmax;
+  background:
+    repeating-radial-gradient(circle,transparent 0 8.8%,rgba(255,255,255,.045) 8.9%,transparent 9.05% 15%),
+    radial-gradient(circle,rgba(223,255,112,.08),rgba(255,255,255,.035) 18%,transparent 51%);
+  mix-blend-mode: screen;
+}
+
+@keyframes bloom-open {
+  from { width: 8px; height: 8px; opacity: .2; filter: blur(8px); }
+  58% { opacity: 1; }
+  to { width: 165vmax; height: 165vmax; opacity: .76; filter: blur(0); }
+}
+
+.reveal-orbit {
+  position: absolute;
+  left: var(--origin-x);
+  top: var(--origin-y);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%,-50%);
+  animation: orbit-open 900ms var(--ease) both;
+}
+
+.reveal-orbit-one { width: 54vmin; height: 54vmin; }
+.reveal-orbit-two { width: 90vmin; height: 90vmin; animation-delay: 70ms; }
+
+@keyframes orbit-open {
+  from { opacity: 0; transform: translate(-50%,-50%) scale(.08); }
+  to { opacity: 1; transform: translate(-50%,-50%) scale(1); }
+}
+
+.origin-signal {
+  z-index: 1;
+  box-shadow: 0 0 0 12px rgba(255,255,255,.035),0 0 32px rgba(223,255,112,.5);
+}
+
+.discovery-close {
+  z-index: 5;
+  background: rgba(7,7,9,.54);
+  border-color: rgba(255,255,255,.24);
+  box-shadow: 0 8px 30px rgba(0,0,0,.25);
+}
+
+.record-reveal {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  width: 100%;
+  max-width: 580px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+  padding: max(76px,calc(env(safe-area-inset-top) + 66px)) 20px max(18px,env(safe-area-inset-bottom));
+  background: none;
+  scrollbar-width: none;
+  animation: record-resolve 680ms 90ms var(--ease) both;
+}
+
+.record-reveal::-webkit-scrollbar { display: none; }
+
+@keyframes record-resolve {
+  from { opacity: 0; transform: scale(.94) translateY(18px); filter: blur(14px); }
+  to { opacity: 1; transform: scale(1) translateY(0); filter: blur(0); }
+}
+
+.record-index {
+  margin-bottom: 8px;
+  color: rgba(255,255,255,.44);
+}
+
+.record-index span { color: var(--acid); }
+
+.record-coordinate {
+  order: -1;
+  margin: 0 0 18px;
+  color: rgba(255,255,255,.55);
+  font-family: Iowan Old Style,Baskerville,Georgia,serif;
+  font-size: 12px;
+  font-style: italic;
+  letter-spacing: .015em;
+}
+
+.record-reveal h2 {
+  max-width: 100%;
+  font-size: clamp(43px,13vw,72px);
+  text-shadow: 0 12px 42px rgba(0,0,0,.4);
+}
+
+.record-note { margin: 17px 0 20px; }
+
+.bandcamp-embed-shell {
+  width: 100%;
+  margin: 0 0 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(8,8,10,.7);
+  box-shadow: 0 18px 50px rgba(0,0,0,.35);
+}
+
+.bandcamp-embed-shell > span {
+  display: block;
+  padding: 9px 12px 8px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  color: rgba(255,255,255,.46);
+  font-size: 6px;
+  font-weight: 820;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.bandcamp-embed-shell iframe {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border: 0;
+  background: #0b0b0d;
+}
+
+.bandcamp-action {
+  min-height: 58px;
+  border-radius: 2px;
+}
+
+@media (max-height: 720px) {
+  .record-reveal { justify-content: flex-start; padding-top: 68px; }
+  .record-coordinate { margin-bottom: 10px; }
+  .record-reveal h2 { font-size: clamp(36px,10.8vw,48px); }
+  .record-note { margin: 11px 0 13px; font-size: 13px; }
+  .bandcamp-embed-shell iframe { height: 120px; }
+  .bandcamp-action { min-height: 52px; }
+}
+
+@media (min-width: 760px) {
+  .field-rings { width: min(52vw,620px); }
+  .record-reveal {
+    inset: 0;
+    width: min(580px,48vw);
+    max-width: 580px;
+    padding: 80px 0 30px;
+  }
+  .record-reveal h2 { font-size: clamp(62px,6vw,88px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spectrum-canvas { filter: saturate(.96); }
+}
+
+@media (forced-colors: active) {
+  .spectrum-canvas { display: none; }
+  .bandcamp-embed-shell { border: 1px solid ButtonText; }
+}
