@@ -1,0 +1,68 @@
+.immigrant-union-frame {
+  position: absolute;
+  z-index: 7;
+  inset:
+    calc(7px + env(safe-area-inset-top))
+    5px
+    calc(7px + env(safe-area-inset-bottom));
+  pointer-events: none;
+  background: url('/immigrant-union-frame.png') center / 100% 100% no-repeat;
+  filter:
+    drop-shadow(0 0 9px rgba(101, 160, 230, .16))
+    drop-shadow(0 0 22px rgba(2, 8, 25, .72))
+    saturate(.9)
+    brightness(.86);
+  transform: translateZ(0) scale(.988);
+  transform-origin: 50% 50%;
+  transition: opacity 1600ms ease, filter 1800ms ease, transform 1800ms cubic-bezier(.22, .61, .36, 1);
+}
+
+.immigrant-union-frame.is-submerged {
+  opacity: .22;
+  filter: blur(1.4px) brightness(.48) saturate(.72);
+  transform: translate3d(0, 5px, -80px) scale(.975);
+}
+
+.immigrant-union-frame.is-awake {
+  opacity: .7;
+}
+
+.immigrant-union-frame.is-rising {
+  animation: ornate-frame-surface 4s cubic-bezier(.22, .61, .36, 1) both;
+}
+
+.immigrant-union-frame.is-exploring {
+  opacity: .62;
+  filter:
+    drop-shadow(0 0 12px rgba(101, 160, 230, .2))
+    drop-shadow(0 0 26px rgba(2, 8, 25, .78))
+    saturate(.96)
+    brightness(.92);
+}
+
+@keyframes ornate-frame-surface {
+  0% { opacity: .2; filter: blur(2.8px) brightness(.42); transform: translate3d(0, 8px, -120px) scale(.968); }
+  45% { opacity: .4; filter: blur(1.2px) brightness(.68); }
+  78% { opacity: .76; filter: blur(.15px) brightness(.96); transform: translate3d(0, -1px, -8px) scale(.994); }
+  100% { opacity: .7; filter: brightness(.86) saturate(.9); transform: translateZ(0) scale(.988); }
+}
+
+@media (max-height: 700px) {
+  .immigrant-union-frame {
+    inset: calc(5px + env(safe-area-inset-top)) 4px calc(5px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .immigrant-union-frame,
+  .immigrant-union-frame.is-rising {
+    animation: none;
+    transition: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .immigrant-union-frame {
+    opacity: .28;
+  }
+}

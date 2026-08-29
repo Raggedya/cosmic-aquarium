@@ -22,11 +22,6 @@ function flowerDepth(index: number): FlowerDepth {
   return 'mid';
 }
 
-function flowerHue(song: SpectrumRelease): number {
-  const index = spectrumReleases.findIndex((candidate) => candidate.id === song.id);
-  return flowerHues[Math.max(0, index) % flowerHues.length];
-}
-
 function listeningEmbedUrl(trackId?: string) {
   if (!trackId || !/^\d+$/.test(trackId)) return null;
   return 'https://bandcamp.com/EmbeddedPlayer/track=' + trackId + '/size=large/bgcol=030817/linkcol=9fd6ff/tracklist=false/artwork=small/transparent=true/';
@@ -244,11 +239,10 @@ export function SpectrumExperience() {
     '--pick-x': String(point.x * 100) + '%',
     '--pick-y': String(point.y * 100) + '%',
   } as CSSProperties;
-  const selectedHue = selected ? flowerHue(selected) : 210;
   const revealStyle = {
     '--origin-x': String(selectedPoint.x * 100) + '%',
     '--origin-y': String(selectedPoint.y * 100) + '%',
-    '--record-color': 'hsl(' + selectedHue + ' 92% 72%)',
+    '--record-color': '#9fd6ff',
   } as CSSProperties;
 
   return (
@@ -284,27 +278,20 @@ export function SpectrumExperience() {
           />
         ))}
         <span className="field-atmosphere" aria-hidden="true" />
+        <span
+          className={'immigrant-union-frame ' + (titleVisible ? 'is-awake' : 'is-submerged') + (awakening ? ' is-rising' : '') + (dragging ? ' is-exploring' : '')}
+          aria-hidden="true"
+        />
         {illuminated ? <span className="capture-bloom" aria-hidden="true"><i /></span> : null}
       </button>
 
-      {titleVisible ? (
-        <>
-          <div
-            className={'awakening-title ' + (awakening ? 'is-rising' : 'is-settled') + (dragging ? ' is-exploring' : '')}
-            style={fieldStyle}
-            aria-hidden="true"
-          >
-            <span>Immigrant Union</span>
-          </div>
-          {!hasCaughtFlower && !selected ? (
-            <p
-              className={'flower-instruction ' + (awakening ? 'is-waking' : 'is-ready') + (dragging ? ' is-following' : '')}
-              aria-hidden="true"
-            >
-              Catch a flower
-            </p>
-          ) : null}
-        </>
+      {titleVisible && !hasCaughtFlower && !selected ? (
+        <p
+          className={'flower-instruction ' + (awakening ? 'is-waking' : 'is-ready') + (dragging ? ' is-following' : '')}
+          aria-hidden="true"
+        >
+          Catch a flower
+        </p>
       ) : null}
 
       {selected ? (

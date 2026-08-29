@@ -3,10 +3,10 @@ import './globals.css';
 import './spectrum-luxe.css';
 import './artist-spectrum.css';
 import './mystery-spectrum.css';
-import './persistent-title.css';
 import './flower-stream.css';
 import './flower-instruction.css';
 import './depth-magnet-reveal.css';
+import './ornate-frame.css';
 
 const title = 'Immigrant Union Song Spectrum — PROJECT B-SIDE';
 const description = 'A deep-blue stream of forty Immigrant Union songs. Catch a drifting flower to discover a song, then listen and support on Bandcamp.';
