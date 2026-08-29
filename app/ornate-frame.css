@@ -5,17 +5,86 @@
     calc(7px + env(safe-area-inset-top))
     5px
     calc(7px + env(safe-area-inset-bottom));
-  opacity: .96;
+  --frame-mask: url('/immigrant-union-frame.png') center / 100% 100% no-repeat;
+  opacity: 1;
   pointer-events: none;
-  background: url('/immigrant-union-frame.png') center / 100% 100% no-repeat;
+  background:
+    linear-gradient(
+      106deg,
+      #3c3026 0%,
+      #8b704f 7%,
+      #e1c68b 15%,
+      #fff3cb 22%,
+      #a88a5e 30%,
+      #f4dfaa 40%,
+      #6e5941 49%,
+      #d5ba82 58%,
+      #fff8df 67%,
+      #9b7f58 76%,
+      #ead39c 87%,
+      #5b4937 100%
+    );
+  background-size: 165% 100%;
+  -webkit-mask: var(--frame-mask);
+  mask: var(--frame-mask);
   filter:
-    grayscale(1)
-    brightness(0)
-    invert(1)
-    drop-shadow(0 0 5px rgba(255, 255, 255, .28))
-    drop-shadow(0 0 18px rgba(94, 153, 255, .16));
+    drop-shadow(0 1px 0 rgba(255, 250, 224, .72))
+    drop-shadow(0 -1px 0 rgba(28, 20, 15, .9))
+    drop-shadow(0 0 4px rgba(239, 213, 156, .28))
+    drop-shadow(0 0 18px rgba(61, 103, 164, .2));
   transform: translateZ(0) scale(.988);
   transform-origin: 50% 50%;
+  animation: champagne-reflection 14s ease-in-out infinite alternate;
+}
+
+.immigrant-union-frame::before,
+.immigrant-union-frame::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  -webkit-mask: var(--frame-mask);
+  mask: var(--frame-mask);
+}
+
+.immigrant-union-frame::before {
+  background:
+    repeating-linear-gradient(
+      93deg,
+      rgba(255, 255, 255, .17) 0,
+      rgba(255, 255, 255, .035) 1px,
+      rgba(45, 31, 20, .16) 2px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, .26), transparent 22%, rgba(16, 28, 47, .2) 72%, rgba(255, 231, 181, .2));
+  opacity: .72;
+  mix-blend-mode: soft-light;
+}
+
+.immigrant-union-frame::after {
+  background: linear-gradient(
+    112deg,
+    transparent 0 34%,
+    rgba(255, 255, 255, .05) 41%,
+    rgba(255, 250, 223, .78) 48%,
+    rgba(195, 221, 255, .22) 52%,
+    transparent 60% 100%
+  );
+  background-size: 240% 100%;
+  background-position: 115% 0;
+  opacity: .68;
+  animation: metal-glint 12s ease-in-out infinite;
+}
+
+@keyframes champagne-reflection {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+
+@keyframes metal-glint {
+  0%, 17% { background-position: 115% 0; opacity: 0; }
+  34% { opacity: .62; }
+  55%, 100% { background-position: -115% 0; opacity: 0; }
 }
 
 @media (max-height: 700px) {
@@ -27,6 +96,14 @@
 @media (forced-colors: active) {
   .immigrant-union-frame {
     opacity: 1;
-    filter: grayscale(1) brightness(0) invert(1);
+    background: CanvasText;
+    filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .immigrant-union-frame,
+  .immigrant-union-frame::after {
+    animation: none;
   }
 }
