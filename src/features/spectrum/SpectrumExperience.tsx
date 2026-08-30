@@ -13,6 +13,8 @@ type Point = { x: number; y: number };
 const initialPoint: Point = { x: .5, y: .5 };
 const awakeningSessionKey = 'project-b-side:immigrant-union-awakening-depth-v2';
 const flowerHues = [326, 18, 48, 92, 158, 188, 218, 258, 286, 344];
+const flowerCaptureDelayMs = 1000;
+const flowerCaptureHapticPattern = [18, 30, 56];
 
 type FlowerDepth = 'back' | 'mid' | 'front';
 
@@ -56,9 +58,12 @@ export function SpectrumExperience() {
   const lastLitSongRef = useRef('');
   const introSeenRef = useRef(false);
   const awakeningTimerRef = useRef<number | null>(null);
+  const captureTimerRef = useRef<number | null>(null);
+  const captureLockedRef = useRef(false);
   const [point, setPoint] = useState<Point>(initialPoint);
   const [selectedPoint, setSelectedPoint] = useState<Point>(initialPoint);
   const [dragging, setDragging] = useState(false);
+  const [capturing, setCapturing] = useState(false);
   const [awakening, setAwakening] = useState(false);
   const [litSongId, setLitSongId] = useState('');
   const [selected, setSelected] = useState<SpectrumRelease | null>(null);
@@ -83,6 +88,7 @@ export function SpectrumExperience() {
     }
     return () => {
       if (awakeningTimerRef.current !== null) window.clearTimeout(awakeningTimerRef.current);
+      if (captureTimerRef.current !== null) window.clearTimeout(captureTimerRef.current);
     };
   }, []);
 
@@ -145,17 +151,46 @@ export function SpectrumExperience() {
     return nearest && nearest.distance <= forgivingRadius ? nearest.song : null;
   }
 
-  function setLivePoint(next: Point, explicitSong?: SpectrumRelease | null, magnetize = false) {
+  function beginFlowerCapture(song: SpectrumRelease, origin: Point) {
+    if (captureLockedRef.current) return;
+    captureLockedRef.current = true;
+    setPoint(origin);
+    setLitSongId(song.id);
+    setCapturing(true);
+    lastLitSongRef.current = song.id;
+    setAnnouncement(song.title + ' captured. Opening in one second.');
+    if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
+      navigator.vibrate(flowerCaptureHapticPattern);
+    }
+    captureTimerRef.current = window.setTimeout(() => {
+      captureTimerRef.current = null;
+      setDragging(false);
+      setCapturing(false);
+      clearFlowerMagnetism();
+      lastLitSongRef.current = '';
+      revealSong(song, origin);
+      captureLockedRef.current = false;
+    }, flowerCaptureDelayMs);
+  }
+
+  function setLivePoint(
+    next: Point,
+    explicitSong?: SpectrumRelease | null,
+    magnetize = false,
+    captureOnContact = false,
+  ) {
+    if (captureLockedRef.current) return;
     setPoint(next);
     const lit = explicitSong === undefined ? flowingSongAt(next, magnetize) : explicitSong;
+    if (lit && captureOnContact) {
+      beginFlowerCapture(lit, next);
+      return;
+    }
     const nextId = lit?.id ?? '';
     setLitSongId(nextId);
     if (nextId !== lastLitSongRef.current) {
       lastLitSongRef.current = nextId;
-      if (lit) {
-        setAnnouncement(lit.title + ' is flowering. Release or press Enter to open it.');
-        if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate([8, 22, 12]);
-      }
+      if (lit) setAnnouncement(lit.title + ' is flowering. Press Enter to open it.');
     }
   }
 
@@ -182,26 +217,29 @@ export function SpectrumExperience() {
     }
     event.currentTarget.setPointerCapture(event.pointerId);
     setDragging(true);
-    setLivePoint(next, undefined, true);
+    setLivePoint(next, undefined, true, true);
   }
 
   function onPointerMove(event: PointerEvent<HTMLButtonElement>) {
     event.preventDefault();
-    if (dragging) setLivePoint(pointFromPointer(event), undefined, true);
+    if (dragging) setLivePoint(pointFromPointer(event), undefined, true, true);
   }
 
   function onPointerUp(event: PointerEvent<HTMLButtonElement>) {
     event.preventDefault();
-    if (!dragging) return;
+    if (captureLockedRef.current || !dragging) return;
     const next = pointFromPointer(event);
     const song = flowingSongAt(next, true) ?? illuminated;
+    if (song) {
+      beginFlowerCapture(song, next);
+      return;
+    }
     setPoint(next);
     setDragging(false);
     clearFlowerMagnetism();
     setLitSongId('');
     lastLitSongRef.current = '';
-    if (song) revealSong(song, next);
-    else setAnnouncement('The flower drifted on. Another will rise through the stream.');
+    setAnnouncement('The flower drifted on. Another will rise through the stream.');
   }
 
   function onKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
@@ -225,6 +263,8 @@ export function SpectrumExperience() {
   }
 
   function closeDiscovery() {
+    captureLockedRef.current = false;
+    setCapturing(false);
     setSelected(null);
     setLitSongId('');
     window.setTimeout(() => fieldRef.current?.focus(), 0);
@@ -244,20 +284,21 @@ export function SpectrumExperience() {
     <main className="spectrum-app artist-spectrum mystery-spectrum flower-stream-spectrum">
       <button
         ref={fieldRef}
-        className={'spectrum-field ' + (dragging ? 'is-dragging' : '')}
+        className={'spectrum-field ' + (dragging ? 'is-dragging ' : '') + (capturing ? 'is-capturing' : '')}
         style={fieldStyle}
         type="button"
         onPointerDown={onPointerDown}
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerCancel={() => {
+          if (captureLockedRef.current) return;
           setDragging(false);
           setLitSongId('');
           clearFlowerMagnetism();
           lastLitSongRef.current = '';
         }}
         onKeyDown={onKeyDown}
-        aria-label="An Immigrant Union song stream. Drag through the dark water. Passing flowers carry hidden songs; approach one and release to open it. Use arrow keys and Enter on a keyboard."
+        aria-label="An Immigrant Union song stream. Drag through the dark water. Slide into a passing flower to capture it; the song opens after a brief hold. Use arrow keys and Enter on a keyboard."
       >
         <SpectrumCanvas point={point} active={dragging} awakening={awakening} />
         {spectrumReleases.map((song, index) => (

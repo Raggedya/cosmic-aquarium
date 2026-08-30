@@ -138,6 +138,17 @@
   mix-blend-mode: screen;
 }
 
+.spectrum-field.is-capturing .capture-bloom {
+  animation: capture-lock 1000ms cubic-bezier(.18, .88, .24, 1) both;
+}
+
+@keyframes capture-lock {
+  0% { opacity: .25; transform: translate3d(-50%, -50%, 0) scale(.7); }
+  32% { opacity: 1; transform: translate3d(-50%, -50%, 0) scale(1.1); }
+  78% { opacity: .92; transform: translate3d(-50%, -50%, 0) scale(.96); }
+  100% { opacity: .74; transform: translate3d(-50%, -50%, 0) scale(.9); }
+}
+
 .capture-bloom::before {
   content: '';
   position: absolute;
