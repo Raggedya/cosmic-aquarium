@@ -1,0 +1,235 @@
+.flower-carpet-spectrum {
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 44%, rgba(27, 55, 108, .19), transparent 38%),
+    radial-gradient(circle at 18% 22%, rgba(102, 31, 126, .13), transparent 33%),
+    linear-gradient(180deg, #02030b 0%, #020817 58%, #081020 100%);
+}
+
+.flower-carpet-spectrum .jukebox-stage {
+  inset: 0;
+  width: 100%;
+  height: 100svh;
+  aspect-ratio: auto;
+  transform: none;
+  isolation: isolate;
+}
+
+.flower-carpet-spectrum .jukebox-stage::before {
+  position: absolute;
+  z-index: 4;
+  right: 7%;
+  bottom: calc(3.5% + env(safe-area-inset-bottom));
+  left: 7%;
+  height: 23%;
+  --carpet-logo-mask: url('/immigrant-union-frame.png') center top / 100% auto no-repeat;
+  background:
+    linear-gradient(
+      108deg,
+      #4d3218 0%,
+      #d4a85c 13%,
+      #fff0b8 24%,
+      #86602c 38%,
+      #f4d48b 52%,
+      #6f441b 65%,
+      #e5bb6c 82%,
+      #fff2bd 92%,
+      #533318 100%
+    );
+  background-size: 185% 100%;
+  content: '';
+  -webkit-mask: var(--carpet-logo-mask);
+  mask: var(--carpet-logo-mask);
+  filter:
+    drop-shadow(0 2px 1px rgba(0, 0, 0, .9))
+    drop-shadow(0 0 8px rgba(244, 202, 112, .35))
+    drop-shadow(0 0 24px rgba(101, 53, 139, .3));
+  animation: carpet-logo-glint 11s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+.flower-carpet-spectrum .jukebox-stage::after {
+  position: absolute;
+  z-index: 5;
+  inset: 0;
+  background: url('/immigrant-union-flower-carpet-v1.webp') center bottom / cover no-repeat;
+  content: '';
+  filter: saturate(1.08) contrast(1.03);
+  pointer-events: none;
+}
+
+.flower-carpet-spectrum .jukebox-cabinet,
+.flower-carpet-spectrum .jukebox-needle-console {
+  display: none;
+}
+
+.flower-carpet-spectrum .spectrum-field {
+  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  background:
+    radial-gradient(circle at var(--pick-x) var(--pick-y), rgba(67, 119, 196, .14), transparent 25%),
+    radial-gradient(circle at 50% 45%, rgba(22, 59, 106, .12), transparent 43%),
+    transparent;
+  box-shadow: none;
+  -webkit-clip-path: none;
+  clip-path: none;
+  transform: none;
+  touch-action: none;
+}
+
+.flower-carpet-spectrum .field-atmosphere {
+  opacity: .7;
+  background:
+    linear-gradient(105deg, transparent 8%, rgba(118, 166, 214, .035) 28%, transparent 46%),
+    radial-gradient(circle at var(--pick-x) var(--pick-y), rgba(107, 174, 255, .12), transparent 28%),
+    linear-gradient(180deg, rgba(1, 3, 12, .05), rgba(5, 13, 31, .34));
+}
+
+.flower-carpet-spectrum .song-flower {
+  top: -88px;
+  bottom: auto;
+  animation-name: flower-carpet-fall;
+  filter:
+    blur(.18px)
+    saturate(1.48)
+    brightness(1.06)
+    drop-shadow(0 7px 8px rgba(0, 0, 0, .42));
+  mix-blend-mode: screen;
+}
+
+.flower-carpet-spectrum .song-flower.depth-back {
+  opacity: .36;
+  filter: blur(2.2px) saturate(1.14) brightness(.8);
+}
+
+.flower-carpet-spectrum .song-flower.depth-front {
+  filter:
+    blur(.05px)
+    saturate(1.62)
+    brightness(1.13)
+    drop-shadow(0 9px 10px rgba(0, 0, 0, .5));
+}
+
+@keyframes flower-carpet-fall {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -15vh, 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+  6% {
+    opacity: .15;
+    transform: translate3d(var(--stream-sway), -8vh, 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+  13% {
+    opacity: .72;
+    transform: translate3d(0, 0, 0) rotate(var(--stream-turn)) scale(var(--flower-scale));
+  }
+  46% {
+    opacity: .82;
+    transform: translate3d(var(--stream-sway), 42vh, 0) rotate(calc(var(--stream-turn) + 70deg)) scale(var(--flower-scale));
+  }
+  78% {
+    opacity: .76;
+    transform: translate3d(0, 84vh, 0) rotate(calc(var(--stream-turn) + 145deg)) scale(var(--flower-scale));
+  }
+  94% {
+    opacity: .44;
+    transform: translate3d(var(--stream-sway), 105vh, 0) rotate(calc(var(--stream-turn) + 200deg)) scale(var(--flower-scale));
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 115vh, 0) rotate(calc(var(--stream-turn) + 225deg)) scale(calc(var(--flower-scale) * .9));
+  }
+}
+
+.flower-carpet-spectrum .flower-instruction {
+  z-index: 7;
+  top: auto;
+  right: 0;
+  bottom: calc(39% + env(safe-area-inset-bottom));
+  left: 0;
+  color: rgba(255, 237, 204, .84);
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: .12em;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, .95),
+    0 0 18px rgba(208, 145, 255, .42);
+}
+
+.flower-carpet-spectrum .jukebox-player {
+  z-index: 10;
+  top: calc(14px + env(safe-area-inset-top));
+  right: 13px;
+  bottom: auto;
+  left: 13px;
+  height: 66px;
+  border: 2px solid transparent;
+  border-radius: 13px;
+  background:
+    linear-gradient(155deg, rgba(8, 8, 16, .94), rgba(9, 3, 15, .96)) padding-box,
+    linear-gradient(105deg, #5d3520, #e7bd76 19%, #7b4a28 39%, #f4dca0 57%, #6a3a24 77%, #d59e5b) border-box;
+  box-shadow:
+    inset 0 0 22px rgba(83, 62, 126, .18),
+    0 14px 34px rgba(0, 0, 0, .64),
+    0 0 26px rgba(128, 56, 159, .15);
+  backdrop-filter: blur(16px);
+}
+
+.flower-carpet-spectrum .jukebox-player::before {
+  content: none;
+}
+
+.flower-carpet-spectrum .jukebox-bandcamp-player {
+  inset: 5px 28px 16px 5px;
+  width: calc(100% - 33px);
+  height: calc(100% - 21px);
+  min-height: 40px;
+  border-radius: 7px;
+}
+
+.flower-carpet-spectrum .jukebox-player-close {
+  top: 4px;
+  right: 4px;
+  width: 22px;
+  height: 22px;
+}
+
+.flower-carpet-spectrum .jukebox-support-link {
+  bottom: 2px;
+  font-size: 6px;
+  line-height: 11px;
+}
+
+@keyframes carpet-logo-glint {
+  from { background-position: 0% 50%; filter: drop-shadow(0 2px 1px rgba(0, 0, 0, .9)) drop-shadow(0 0 8px rgba(244, 202, 112, .25)); }
+  to { background-position: 100% 50%; filter: drop-shadow(0 2px 1px rgba(0, 0, 0, .9)) drop-shadow(0 0 13px rgba(255, 221, 139, .48)) drop-shadow(0 0 30px rgba(106, 52, 149, .34)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flower-carpet-spectrum .jukebox-stage::before {
+    animation: none;
+  }
+
+  .flower-carpet-spectrum .song-flower {
+    top: var(--rest-y);
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .flower-carpet-spectrum .jukebox-stage::after {
+    opacity: .22;
+    filter: grayscale(1);
+  }
+
+  .flower-carpet-spectrum .jukebox-stage::before {
+    background: CanvasText;
+    filter: none;
+  }
+}

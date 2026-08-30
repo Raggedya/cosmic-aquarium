@@ -66,7 +66,7 @@ export function SpectrumExperience() {
   const [awakening, setAwakening] = useState(false);
   const [litSongId, setLitSongId] = useState('');
   const [selected, setSelected] = useState<SpectrumRelease | null>(null);
-  const [announcement, setAnnouncement] = useState('Flowers are falling inside the jukebox. Touch one to hear the song it carries.');
+  const [announcement, setAnnouncement] = useState('Flowers are falling into a garden. Touch one to hear the song it carries.');
 
   const illuminated = useMemo(
     () => spectrumReleases.find((song) => song.id === litSongId) ?? null,
@@ -206,7 +206,7 @@ export function SpectrumExperience() {
       try { window.sessionStorage.setItem(awakeningSessionKey, 'seen'); } catch { /* Session storage is optional. */ }
       setPoint(next);
       setAwakening(true);
-      setAnnouncement('Immigrant Union. The flower jukebox is awake.');
+      setAnnouncement('Immigrant Union. The flower garden is awake.');
       awakeningTimerRef.current = window.setTimeout(() => setAwakening(false), awakeningDurationMs);
       if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(8);
     }
@@ -234,7 +234,7 @@ export function SpectrumExperience() {
     clearFlowerMagnetism();
     setLitSongId('');
     lastLitSongRef.current = '';
-    setAnnouncement('The flower drifted on. Another will fall through the jukebox.');
+    setAnnouncement('The flower drifted into the garden. Another will fall.');
   }
 
   function onKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
@@ -271,7 +271,7 @@ export function SpectrumExperience() {
   } as CSSProperties;
 
   return (
-    <main className="spectrum-app artist-spectrum mystery-spectrum flower-stream-spectrum jukebox-spectrum">
+    <main className="spectrum-app artist-spectrum mystery-spectrum flower-stream-spectrum jukebox-spectrum flower-carpet-spectrum">
       <div className="jukebox-stage">
         <span className="jukebox-cabinet" aria-hidden="true" />
         <button
@@ -290,7 +290,7 @@ export function SpectrumExperience() {
           lastLitSongRef.current = '';
         }}
         onKeyDown={onKeyDown}
-        aria-label="An Immigrant Union jukebox. Flowers fall inside the glass cabinet. Slide into a flower to capture it; the song opens in the lower player bay after a brief hold. Use arrow keys and Enter on a keyboard."
+        aria-label="An Immigrant Union flower garden. Flowers fall across the full screen into a colourful carpet. Slide into a flower to capture it; its song opens after a brief hold. Use arrow keys and Enter on a keyboard."
       >
         <SpectrumCanvas point={point} active={dragging} awakening={awakening} />
         {spectrumReleases.map((song, index) => (

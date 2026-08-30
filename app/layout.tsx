@@ -10,9 +10,10 @@ import './ornate-frame.css';
 import './jukebox-dimensional.css';
 import './jukebox-needle-console.css';
 import './jukebox.css';
+import './flower-carpet-fullscreen.css';
 
 const title = 'Immigrant Union Song Spectrum — PROJECT B-SIDE';
-const description = 'A living Immigrant Union jukebox. Touch a falling flower to open its song in the cabinet, then listen and support on Bandcamp.';
+const description = 'A full-screen Immigrant Union flower garden. Catch a falling bloom to discover its song, then listen and support on Bandcamp.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-b-side.raggedya.chatgpt.site'),
