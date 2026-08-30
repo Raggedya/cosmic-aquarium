@@ -26,7 +26,7 @@ function flowerDepth(index: number): FlowerDepth {
 
 function listeningEmbedUrl(trackId?: string) {
   if (!trackId || !/^\d+$/.test(trackId)) return null;
-  return 'https://bandcamp.com/EmbeddedPlayer/track=' + trackId + '/size=large/bgcol=030817/linkcol=9fd6ff/tracklist=false/artwork=small/transparent=true/';
+  return 'https://bandcamp.com/EmbeddedPlayer/track=' + trackId + '/size=large/bgcol=100b07/linkcol=d8b56e/tracklist=false/artwork=small/transparent=true/';
 }
 
 function flowerStyle(song: SpectrumRelease, index: number): CSSProperties {

@@ -7,6 +7,7 @@ import './flower-stream.css';
 import './flower-instruction.css';
 import './depth-magnet-reveal.css';
 import './ornate-frame.css';
+import './jukebox-dimensional.css';
 import './jukebox.css';
 
 const title = 'Immigrant Union Song Spectrum — PROJECT B-SIDE';

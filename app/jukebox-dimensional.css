@@ -1,0 +1,142 @@
+.jukebox-stage {
+  left: 43.5%;
+  height: 106svh;
+}
+
+.jukebox-cabinet {
+  background-image: url('/immigrant-union-jukebox-v2.webp');
+  filter: drop-shadow(18px 24px 52px rgba(0, 0, 0, .78));
+}
+
+.jukebox-spectrum .spectrum-field {
+  inset: 20.8% 26.7% 37.1% 38%;
+  border: 0;
+  border-radius: 50% 50% 5% 5% / 19% 19% 3% 3%;
+  background:
+    radial-gradient(ellipse at 48% 72%, rgba(16, 58, 96, .26), transparent 46%),
+    linear-gradient(98deg, rgba(1, 5, 14, .95), rgba(2, 13, 32, .84) 56%, rgba(0, 4, 14, .98));
+  box-shadow:
+    inset 18px 0 38px rgba(0, 0, 0, .72),
+    inset -12px 0 28px rgba(50, 109, 155, .12),
+    inset 0 0 3px rgba(220, 197, 144, .25);
+  -webkit-clip-path: polygon(50% 0, 66% 2%, 80% 8%, 91% 18%, 98% 32%, 100% 45%, 100% 100%, 0 100%, 0 45%, 2% 32%, 9% 18%, 20% 8%, 34% 2%);
+  clip-path: polygon(50% 0, 66% 2%, 80% 8%, 91% 18%, 98% 32%, 100% 45%, 100% 100%, 0 100%, 0 45%, 2% 32%, 9% 18%, 20% 8%, 34% 2%);
+  transform: perspective(900px) rotateY(-1.8deg);
+  transform-origin: 82% 50%;
+}
+
+.jukebox-spectrum .field-atmosphere {
+  opacity: .54;
+  background:
+    linear-gradient(102deg, transparent 10%, rgba(157, 206, 235, .07) 24%, transparent 39%),
+    radial-gradient(ellipse at 70% 20%, rgba(93, 145, 187, .09), transparent 36%);
+}
+
+.jukebox-spectrum .song-flower {
+  filter: saturate(.92) brightness(.9);
+}
+
+.jukebox-spectrum .song-flower.depth-back {
+  opacity: .25;
+  filter: blur(2.7px) saturate(.7) brightness(.66);
+}
+
+.jukebox-spectrum .song-flower.depth-front {
+  filter: blur(.35px) saturate(1.08) brightness(1.02);
+}
+
+.jukebox-spectrum .flower-instruction {
+  top: 64.25%;
+  right: 26.7%;
+  left: 38%;
+}
+
+.jukebox-player {
+  top: 77.8%;
+  right: 24.1%;
+  bottom: 7.6%;
+  left: 33.8%;
+  border: 4px solid transparent;
+  border-radius: 14px 14px 18px 18px;
+  background:
+    linear-gradient(155deg, rgba(10, 7, 5, .99), rgba(1, 4, 9, .99)) padding-box,
+    linear-gradient(112deg, #3b2410 0%, #d8b56e 14%, #75501f 30%, #f0d393 47%, #5a3716 65%, #c0934c 84%, #28180b 100%) border-box;
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 226, 163, .14),
+    inset 0 0 26px rgba(93, 59, 24, .42),
+    0 0 0 2px rgba(37, 21, 8, .92),
+    0 2px 0 rgba(248, 220, 159, .24),
+    10px 13px 26px rgba(0, 0, 0, .78);
+}
+
+.jukebox-player::before {
+  position: absolute;
+  z-index: 2;
+  top: 3px;
+  left: 12px;
+  content: 'NOW PLAYING';
+  color: rgba(237, 207, 145, .76);
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: .24em;
+  line-height: 12px;
+  text-shadow: 0 1px 0 #000;
+  pointer-events: none;
+}
+
+.jukebox-player::after {
+  position: absolute;
+  z-index: 4;
+  inset: 2px;
+  border-radius: 10px 10px 14px 14px;
+  background:
+    radial-gradient(circle at 5px 5px, #efd795 0 1px, #533516 1.5px 2.5px, transparent 3px),
+    radial-gradient(circle at calc(100% - 5px) 5px, #efd795 0 1px, #533516 1.5px 2.5px, transparent 3px),
+    repeating-linear-gradient(90deg, transparent 0 3px, rgba(255, 237, 194, .025) 3px 4px);
+  box-shadow: inset 0 0 0 1px rgba(240, 209, 145, .18);
+  content: '';
+  pointer-events: none;
+}
+
+.jukebox-bandcamp-player {
+  inset: 17px 6px 22px;
+  width: calc(100% - 12px);
+  height: calc(100% - 39px);
+  border: 1px solid rgba(226, 188, 112, .32);
+  border-radius: 7px;
+  background: #100b07;
+  filter: sepia(.16) saturate(.82) contrast(1.08) brightness(.9);
+  box-shadow:
+    inset 0 0 8px rgba(0, 0, 0, .7),
+    0 0 0 1px rgba(31, 18, 7, .9);
+}
+
+.jukebox-player-close {
+  top: 2px;
+  right: 2px;
+  border-color: rgba(244, 217, 158, .68);
+  background: radial-gradient(circle at 36% 28%, #f0d18c, #946329 34%, #2b190b 74%);
+  color: #fff1ce;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, .24), 0 2px 5px rgba(0, 0, 0, .75);
+  text-shadow: 0 1px 2px #000;
+  backdrop-filter: none;
+}
+
+.jukebox-support-link {
+  color: rgba(237, 205, 141, .9);
+  text-shadow: 0 1px 0 #000;
+}
+
+@media (max-height: 700px) {
+  .jukebox-spectrum .flower-instruction {
+    top: 64.25%;
+  }
+}
+
+@media (forced-colors: active) {
+  .jukebox-spectrum .spectrum-field {
+    -webkit-clip-path: none;
+    clip-path: none;
+    transform: none;
+  }
+}
