@@ -7,9 +7,10 @@ import './flower-stream.css';
 import './flower-instruction.css';
 import './depth-magnet-reveal.css';
 import './ornate-frame.css';
+import './jukebox.css';
 
 const title = 'Immigrant Union Song Spectrum — PROJECT B-SIDE';
-const description = 'A deep-blue stream of forty Immigrant Union songs. Catch a drifting flower to discover a song, then listen and support on Bandcamp.';
+const description = 'A living Immigrant Union jukebox. Touch a falling flower to open its song in the cabinet, then listen and support on Bandcamp.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-b-side.raggedya.chatgpt.site'),

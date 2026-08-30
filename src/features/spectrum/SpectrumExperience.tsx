@@ -46,6 +46,7 @@ function flowerStyle(song: SpectrumRelease, index: number): CSSProperties {
     '--flower-hue-alt': String((flowerHues[index % flowerHues.length] + 34 + (index % 3) * 18) % 360),
     '--flower-scale': scale.toFixed(2),
     '--rest-rise': String(-(10 + song.y * 80)) + 'vh',
+    '--rest-y': String(8 + song.y * 78) + '%',
     '--magnet-x': '0px',
     '--magnet-y': '0px',
   } as CSSProperties;
@@ -53,7 +54,6 @@ function flowerStyle(song: SpectrumRelease, index: number): CSSProperties {
 
 export function SpectrumExperience() {
   const fieldRef = useRef<HTMLButtonElement | null>(null);
-  const closeRef = useRef<HTMLButtonElement | null>(null);
   const flowerRefs = useRef(new Map<string, HTMLSpanElement>());
   const lastLitSongRef = useRef('');
   const introSeenRef = useRef(false);
@@ -61,13 +61,12 @@ export function SpectrumExperience() {
   const captureTimerRef = useRef<number | null>(null);
   const captureLockedRef = useRef(false);
   const [point, setPoint] = useState<Point>(initialPoint);
-  const [selectedPoint, setSelectedPoint] = useState<Point>(initialPoint);
   const [dragging, setDragging] = useState(false);
   const [capturing, setCapturing] = useState(false);
   const [awakening, setAwakening] = useState(false);
   const [litSongId, setLitSongId] = useState('');
   const [selected, setSelected] = useState<SpectrumRelease | null>(null);
-  const [announcement, setAnnouncement] = useState('Move through the dark stream. A passing flower carries a song.');
+  const [announcement, setAnnouncement] = useState('Flowers are falling inside the jukebox. Touch one to hear the song it carries.');
 
   const illuminated = useMemo(
     () => spectrumReleases.find((song) => song.id === litSongId) ?? null,
@@ -76,9 +75,6 @@ export function SpectrumExperience() {
   const destination = selected ? validateBandcampUrl(selected.bandcampUrl) : null;
   const embedUrl = listeningEmbedUrl(selected?.bandcampEmbedTrackId);
 
-  useEffect(() => {
-    if (selected) closeRef.current?.focus();
-  }, [selected]);
 
   useEffect(() => {
     try {
@@ -157,6 +153,7 @@ export function SpectrumExperience() {
     setPoint(origin);
     setLitSongId(song.id);
     setCapturing(true);
+    setSelected(null);
     lastLitSongRef.current = song.id;
     setAnnouncement(song.title + ' captured. Opening in one second.');
     if (typeof navigator !== 'undefined' && 'vibrate' in navigator) {
@@ -168,7 +165,7 @@ export function SpectrumExperience() {
       setCapturing(false);
       clearFlowerMagnetism();
       lastLitSongRef.current = '';
-      revealSong(song, origin);
+      revealSong(song);
       captureLockedRef.current = false;
     }, flowerCaptureDelayMs);
   }
@@ -194,8 +191,7 @@ export function SpectrumExperience() {
     }
   }
 
-  function revealSong(song: SpectrumRelease, origin: Point) {
-    setSelectedPoint(origin);
+  function revealSong(song: SpectrumRelease) {
     setSelected(song);
     setLitSongId('');
     setAnnouncement(song.title + ' by Immigrant Union. From ' + song.albumTitle + ', ' + song.year + '.');
@@ -210,10 +206,9 @@ export function SpectrumExperience() {
       try { window.sessionStorage.setItem(awakeningSessionKey, 'seen'); } catch { /* Session storage is optional. */ }
       setPoint(next);
       setAwakening(true);
-      setAnnouncement('Immigrant Union. The hidden song stream is awake.');
+      setAnnouncement('Immigrant Union. The flower jukebox is awake.');
       awakeningTimerRef.current = window.setTimeout(() => setAwakening(false), awakeningDurationMs);
       if (typeof navigator !== 'undefined' && 'vibrate' in navigator) navigator.vibrate(8);
-      return;
     }
     event.currentTarget.setPointerCapture(event.pointerId);
     setDragging(true);
@@ -239,7 +234,7 @@ export function SpectrumExperience() {
     clearFlowerMagnetism();
     setLitSongId('');
     lastLitSongRef.current = '';
-    setAnnouncement('The flower drifted on. Another will rise through the stream.');
+    setAnnouncement('The flower drifted on. Another will fall through the jukebox.');
   }
 
   function onKeyDown(event: KeyboardEvent<HTMLButtonElement>) {
@@ -258,7 +253,7 @@ export function SpectrumExperience() {
     }
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
-      revealSong(illuminated ?? nearestSpectrumRelease(spectrumReleases, point.x, point.y), point);
+      revealSong(illuminated ?? nearestSpectrumRelease(spectrumReleases, point.x, point.y));
     }
   }
 
@@ -274,15 +269,12 @@ export function SpectrumExperience() {
     '--pick-x': String(point.x * 100) + '%',
     '--pick-y': String(point.y * 100) + '%',
   } as CSSProperties;
-  const revealStyle = {
-    '--origin-x': String(selectedPoint.x * 100) + '%',
-    '--origin-y': String(selectedPoint.y * 100) + '%',
-    '--record-color': '#9fd6ff',
-  } as CSSProperties;
 
   return (
-    <main className="spectrum-app artist-spectrum mystery-spectrum flower-stream-spectrum">
-      <button
+    <main className="spectrum-app artist-spectrum mystery-spectrum flower-stream-spectrum jukebox-spectrum">
+      <div className="jukebox-stage">
+        <span className="jukebox-cabinet" aria-hidden="true" />
+        <button
         ref={fieldRef}
         className={'spectrum-field ' + (dragging ? 'is-dragging ' : '') + (capturing ? 'is-capturing' : '')}
         style={fieldStyle}
@@ -298,7 +290,7 @@ export function SpectrumExperience() {
           lastLitSongRef.current = '';
         }}
         onKeyDown={onKeyDown}
-        aria-label="An Immigrant Union song stream. Drag through the dark water. Slide into a passing flower to capture it; the song opens after a brief hold. Use arrow keys and Enter on a keyboard."
+        aria-label="An Immigrant Union jukebox. Flowers fall inside the glass cabinet. Slide into a flower to capture it; the song opens in the lower player bay after a brief hold. Use arrow keys and Enter on a keyboard."
       >
         <SpectrumCanvas point={point} active={dragging} awakening={awakening} />
         {spectrumReleases.map((song, index) => (
@@ -314,54 +306,42 @@ export function SpectrumExperience() {
           />
         ))}
         <span className="field-atmosphere" aria-hidden="true" />
-        <span className="immigrant-union-frame" aria-hidden="true" />
         {illuminated ? <span className="capture-bloom" aria-hidden="true"><i /></span> : null}
-      </button>
+        </button>
 
-      <p className="flower-instruction" aria-hidden="true">
-        Catch a flower
-      </p>
+        <p className="flower-instruction" aria-hidden="true">
+          Touch a flower
+        </p>
 
-      {selected ? (
-        <section
-          className="discovery-layer"
-          style={revealStyle}
-          role="dialog"
-          aria-modal="true"
-          aria-labelledby="discovery-title"
-          onKeyDown={(event) => { if (event.key === 'Escape') closeDiscovery(); }}
-        >
-          <span className="reveal-bloom" aria-hidden="true" />
-          <span className="reveal-orbit reveal-orbit-one" aria-hidden="true" />
-          <span className="reveal-orbit reveal-orbit-two" aria-hidden="true" />
-          <span className="origin-signal" aria-hidden="true" />
-          <button ref={closeRef} className="discovery-close" type="button" onClick={closeDiscovery} aria-label="Return to the song stream">×</button>
-          <article className="record-reveal song-reveal">
-            <p className="record-index"><span>PROJECT B-SIDE · UNOFFICIAL</span> · track {selected.trackNumber} · {selected.albumTitle}</p>
-            <p className="record-coordinate">Caught while flowering through the stream</p>
-            <h2 id="discovery-title">{selected.title}</h2>
-            <p className="record-artist">Immigrant Union <span>· {selected.year} · {selected.duration}</span></p>
-            <p className="record-note">{selected.note}</p>
+        {selected ? (
+          <section
+            className="jukebox-player"
+            aria-labelledby="discovery-title"
+            onKeyDown={(event) => { if (event.key === 'Escape') closeDiscovery(); }}
+          >
+            <h2 id="discovery-title" className="visually-hidden">{selected.title} by Immigrant Union</h2>
             {embedUrl ? (
-              <div className="bandcamp-embed-shell">
-                <span>Listen here · official Bandcamp player</span>
-                <iframe
-                  title={'Listen to ' + selected.title + ' by Immigrant Union on Bandcamp'}
-                  src={embedUrl}
-                  loading="lazy"
-                  allow="autoplay"
-                />
-              </div>
-            ) : null}
+              <iframe
+                key={selected.id}
+                className="jukebox-bandcamp-player"
+                title={'Listen to ' + selected.title + ' by Immigrant Union on Bandcamp'}
+                src={embedUrl}
+                loading="lazy"
+                allow="autoplay"
+              />
+            ) : (
+              <p className="jukebox-player-unavailable">This song’s player is unavailable.</p>
+            )}
+            <button className="jukebox-player-close" type="button" onClick={closeDiscovery} aria-label="Close the current song">×</button>
             {destination ? (
-              <a className="bandcamp-action" href={destination.href} target="_blank" rel="noopener noreferrer">
-                <span>Support / open this song</span><b>Bandcamp ↗</b>
+              <a className="jukebox-support-link" href={destination.href} target="_blank" rel="noopener noreferrer">
+                Support on Bandcamp ↗
               </a>
             ) : null}
-            <button className="return-action" type="button" onClick={closeDiscovery}>Return to the stream</button>
-          </article>
-        </section>
-      ) : null}
+          </section>
+        ) : null}
+      </div>
+
 
       <p className="visually-hidden">An independent, unofficial discovery experience for Bandcamp. Listening and support remain on Bandcamp.</p>
       <p className="visually-hidden" role="status" aria-live="polite">{announcement}</p>
