@@ -1,5 +1,5 @@
-import { SpectrumExperience } from '@/src/features/spectrum/SpectrumExperience';
+import { CosmicAquarium } from '@/src/features/cosmic-aquarium/CosmicAquarium';
 
 export default function Home() {
-  return <SpectrumExperience />;
+  return <CosmicAquarium />;
 }

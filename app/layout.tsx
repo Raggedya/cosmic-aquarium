@@ -1,19 +1,9 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
-import './spectrum-luxe.css';
-import './artist-spectrum.css';
-import './mystery-spectrum.css';
-import './flower-stream.css';
-import './flower-instruction.css';
-import './depth-magnet-reveal.css';
-import './ornate-frame.css';
-import './jukebox-dimensional.css';
-import './jukebox-needle-console.css';
-import './jukebox.css';
-import './flower-carpet-fullscreen.css';
+import './cosmic-aquarium.css';
 
-const title = 'Immigrant Union Song Spectrum — PROJECT B-SIDE';
-const description = 'A full-screen Immigrant Union flower garden. Catch a falling bloom to discover its song, then listen and support on Bandcamp.';
+const title = 'Cosmic Aquarium — Immigrant Union';
+const description = 'Catch a luminous creature, reveal an Immigrant Union song, and listen through Bandcamp in a living cosmic aquarium.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-b-side.raggedya.chatgpt.site'),
@@ -23,13 +13,18 @@ export const metadata: Metadata = {
     title,
     description,
     type: 'website',
-    images: [{ url: '/og-immigrant-union.png', width: 1200, height: 630, alt: 'Immigrant Union song spectrum by Project B-Side' }],
+    images: [{
+      url: '/og-cosmic-aquarium.png',
+      width: 1200,
+      height: 630,
+      alt: 'Cosmic Aquarium — luminous deep-space organisms carrying Immigrant Union songs',
+    }],
   },
   twitter: {
     card: 'summary_large_image',
     title,
     description,
-    images: ['/og-immigrant-union.png'],
+    images: ['/og-cosmic-aquarium.png'],
   },
 };
 
