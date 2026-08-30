@@ -26,7 +26,7 @@ function flowerDepth(index: number): FlowerDepth {
 
 function listeningEmbedUrl(trackId?: string) {
   if (!trackId || !/^\d+$/.test(trackId)) return null;
-  return 'https://bandcamp.com/EmbeddedPlayer/track=' + trackId + '/size=large/bgcol=100b07/linkcol=d8b56e/tracklist=false/artwork=small/transparent=true/';
+  return 'https://bandcamp.com/EmbeddedPlayer/track=' + trackId + '/size=small/bgcol=100b07/linkcol=d8b56e/tracklist=false/artwork=none/transparent=true/';
 }
 
 function flowerStyle(song: SpectrumRelease, index: number): CSSProperties {
@@ -312,6 +312,11 @@ export function SpectrumExperience() {
         <p className="flower-instruction" aria-hidden="true">
           Touch a flower
         </p>
+
+        <div className={'jukebox-needle-console ' + (selected ? 'is-active' : '')} aria-hidden="true">
+          <span className="jukebox-meter-needle is-left" />
+          <span className="jukebox-meter-needle is-right" />
+        </div>
 
         {selected ? (
           <section

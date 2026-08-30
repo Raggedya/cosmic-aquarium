@@ -1,0 +1,171 @@
+.jukebox-stage {
+  left: 43.5%;
+  height: 106svh;
+  aspect-ratio: 948 / 1659;
+}
+
+.jukebox-cabinet {
+  background-image: url('/immigrant-union-jukebox-v3.webp');
+  filter: drop-shadow(18px 24px 54px rgba(0, 0, 0, .8));
+}
+
+.jukebox-spectrum .spectrum-field {
+  inset: 21.1% 22.5% 38% 33.8%;
+  border-radius: 49% 49% 3% 3% / 18% 18% 2% 2%;
+  -webkit-clip-path: polygon(50% 0, 66% 2%, 80% 8%, 91% 18%, 98% 31%, 100% 43%, 100% 100%, 0 100%, 0 43%, 2% 31%, 9% 18%, 20% 8%, 34% 2%);
+  clip-path: polygon(50% 0, 66% 2%, 80% 8%, 91% 18%, 98% 31%, 100% 43%, 100% 100%, 0 100%, 0 43%, 2% 31%, 9% 18%, 20% 8%, 34% 2%);
+  transform: perspective(900px) rotateY(-1.2deg);
+  transform-origin: 82% 50%;
+}
+
+.jukebox-spectrum .flower-instruction {
+  top: 60.3%;
+  right: 22.5%;
+  left: 33.8%;
+  font-size: clamp(9px, 1.48svh, 13px);
+  letter-spacing: .12em;
+}
+
+.jukebox-player {
+  top: 63.05%;
+  right: 22.7%;
+  bottom: 29.85%;
+  left: 34.55%;
+  border-width: 2px;
+  border-radius: 8px;
+  background:
+    linear-gradient(155deg, rgba(12, 8, 5, .99), rgba(1, 3, 7, .99)) padding-box,
+    linear-gradient(112deg, #38220f, #d3aa5f 18%, #67421a 39%, #edcf87 56%, #503014 76%, #a87835) border-box;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 226, 163, .13),
+    0 0 0 1px rgba(30, 17, 7, .94),
+    4px 6px 13px rgba(0, 0, 0, .72);
+}
+
+.jukebox-player::before {
+  content: none;
+}
+
+.jukebox-player::after {
+  inset: 1px;
+  border-radius: 6px;
+}
+
+.jukebox-bandcamp-player {
+  inset: 4px 25px 15px 4px;
+  width: calc(100% - 29px);
+  height: calc(100% - 19px);
+  min-height: 38px;
+  border-radius: 4px;
+  filter: sepia(.13) saturate(.86) contrast(1.06) brightness(.94);
+}
+
+.jukebox-player-close {
+  top: 3px;
+  right: 3px;
+  width: 21px;
+  height: 21px;
+  font-size: 14px;
+}
+
+.jukebox-support-link {
+  right: 5px;
+  bottom: 1px;
+  left: 5px;
+  font-size: 5.5px;
+  letter-spacing: .13em;
+  line-height: 11px;
+}
+
+.jukebox-needle-console {
+  position: absolute;
+  z-index: 3;
+  inset: 0;
+  pointer-events: none;
+}
+
+.jukebox-meter-needle {
+  position: absolute;
+  top: 83.25%;
+  width: 10.6%;
+  height: 1px;
+  border-radius: 999px 0 0 999px;
+  background: linear-gradient(90deg, rgba(41, 20, 7, .08), #2c1608 12%, #8a421c 72%, #201006 100%);
+  box-shadow:
+    0 1px 1px rgba(255, 221, 149, .2),
+    0 0 2px rgba(42, 15, 5, .85);
+  transform: translateX(-100%) rotate(42deg);
+  transform-origin: 100% 50%;
+}
+
+.jukebox-meter-needle::after {
+  position: absolute;
+  right: -4px;
+  top: -3.5px;
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgba(223, 178, 92, .46);
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 32%, #8f622c, #1c1008 52%, #050302 100%);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .8);
+  content: '';
+}
+
+.jukebox-meter-needle.is-left {
+  left: 41%;
+}
+
+.jukebox-meter-needle.is-right {
+  left: 67.65%;
+  transform: translateX(-100%) rotate(48deg);
+}
+
+.jukebox-needle-console.is-active .jukebox-meter-needle.is-left {
+  animation: meter-left-listening 1.35s steps(7, end) infinite;
+}
+
+.jukebox-needle-console.is-active .jukebox-meter-needle.is-right {
+  animation: meter-right-listening 1.1s steps(6, end) infinite;
+}
+
+@keyframes meter-left-listening {
+  0%, 100% { transform: translateX(-100%) rotate(38deg); }
+  13% { transform: translateX(-100%) rotate(52deg); }
+  28% { transform: translateX(-100%) rotate(44deg); }
+  45% { transform: translateX(-100%) rotate(63deg); }
+  61% { transform: translateX(-100%) rotate(48deg); }
+  79% { transform: translateX(-100%) rotate(58deg); }
+}
+
+@keyframes meter-right-listening {
+  0%, 100% { transform: translateX(-100%) rotate(45deg); }
+  16% { transform: translateX(-100%) rotate(61deg); }
+  34% { transform: translateX(-100%) rotate(50deg); }
+  52% { transform: translateX(-100%) rotate(66deg); }
+  72% { transform: translateX(-100%) rotate(54deg); }
+  88% { transform: translateX(-100%) rotate(59deg); }
+}
+
+@media (max-height: 700px) {
+  .jukebox-spectrum .flower-instruction {
+    top: 60.3%;
+  }
+
+  .jukebox-player-close {
+    width: 19px;
+    height: 19px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jukebox-needle-console.is-active .jukebox-meter-needle {
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .jukebox-meter-needle {
+    height: 2px;
+    background: CanvasText;
+  }
+}
