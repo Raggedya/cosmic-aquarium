@@ -13,10 +13,10 @@
   position: absolute;
   z-index: 2;
   left: var(--stream-x);
-  bottom: -42px;
-  width: 30px;
-  height: 30px;
-  margin-left: -15px;
+  bottom: -72px;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
   border: 0;
   border-radius: 50%;
   opacity: 0;
@@ -53,7 +53,7 @@
 .song-flower::after {
   content: '';
   position: absolute;
-  inset: -13px;
+  inset: -26px;
   border-radius: 50%;
   opacity: 0;
   background: conic-gradient(
@@ -68,7 +68,7 @@
   );
   mask-image: radial-gradient(circle, #000 0 18%, rgba(0, 0, 0, .72) 38%, transparent 72%);
   -webkit-mask-image: radial-gradient(circle, #000 0 18%, rgba(0, 0, 0, .72) 38%, transparent 72%);
-  filter: blur(8px) saturate(1.35);
+  filter: blur(12px) saturate(1.35);
   transition: opacity 180ms ease;
 }
 
