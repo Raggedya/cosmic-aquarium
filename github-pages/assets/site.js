@@ -1,4 +1,37 @@
 (() => {
+  const viewportTimers = new Set();
+
+  function syncVisibleViewport() {
+    const viewport = window.visualViewport;
+    const visibleHeight = Math.max(window.innerHeight || 0, viewport?.height || 0);
+    const visibleTop = Math.max(0, viewport?.offsetTop || 0);
+    document.documentElement.style.setProperty('--aquarium-height', Math.ceil(visibleHeight) + 'px');
+    document.documentElement.style.setProperty('--viewport-top', Math.round(visibleTop) + 'px');
+  }
+
+  function settleVisibleViewport() {
+    syncVisibleViewport();
+    viewportTimers.forEach(timer => clearTimeout(timer));
+    viewportTimers.clear();
+    [60, 240, 720, 1500].forEach(delay => {
+      const timer = setTimeout(() => {
+        syncVisibleViewport();
+        viewportTimers.delete(timer);
+      }, delay);
+      viewportTimers.add(timer);
+    });
+  }
+
+  settleVisibleViewport();
+  window.addEventListener('pageshow', settleVisibleViewport);
+  window.addEventListener('resize', settleVisibleViewport, { passive: true });
+  window.addEventListener('orientationchange', settleVisibleViewport, { passive: true });
+  window.visualViewport?.addEventListener('resize', syncVisibleViewport, { passive: true });
+  window.visualViewport?.addEventListener('scroll', syncVisibleViewport, { passive: true });
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') settleVisibleViewport();
+  });
+
   const root = document.querySelector('.cosmic-aquarium');
   const slug = document.documentElement.dataset.artist || 'immigrant-union';
   const version = document.documentElement.dataset.version || 'current';

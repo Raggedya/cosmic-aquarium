@@ -272,17 +272,19 @@ class CosmicAquariumStudio(tk.Tk):
             if not gh:
                 raise RuntimeError("GitHub CLI is not installed. Install it once, then sign in with gh auth login.")
             subprocess.run([gh, "auth", "status"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            cache_key = started.strftime("%Y%m%d%H%M%S")
             subprocess.run([
                 gh, "workflow", "run", WORKFLOW, "--repo", REPOSITORY,
-                "-f", f"artist_title={title}", "-f", f"bandcamp_url={bandcamp_url}", "-f", f"visual_style={visual_style}",
+                "-f", f"artist_title={title}", "-f", f"bandcamp_url={bandcamp_url}", "-f", f"visual_style={visual_style}", "-f", f"cache_key={cache_key}",
             ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
             self.after(0, lambda: self.status.configure(text="GROWING FLOWERS  ·  BUILDING QR", fg=LAVENDER))
             run_id = self._find_run(gh, started, REPOSITORY, WORKFLOW)
             conclusion = self._watch_run(gh, run_id, REPOSITORY)
             if conclusion != "success":
                 raise RuntimeError(self._workflow_failure(gh, run_id, REPOSITORY, "GitHub could not create this aquarium."))
-            url = PAGES_BASE.rstrip("/") + "/" + slugify(title) + "/"
-            qr_url = url + "cosmic-aquarium-qr.png"
+            base_url = PAGES_BASE.rstrip("/") + "/" + slugify(title) + "/"
+            url = base_url + "?edition=" + cache_key
+            qr_url = base_url + "cosmic-aquarium-qr.png?edition=" + cache_key
             self.after(0, lambda: self.status.configure(text="PUBLISHED  ·  SENDING EMAIL", fg=LAVENDER))
             delivery_started = dt.datetime.now(dt.timezone.utc)
             subprocess.run([

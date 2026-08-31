@@ -192,7 +192,14 @@ def render_html(slug: str, artist: str) -> str:
             .replace("{{ASSET_VERSION}}", asset_version))
 
 
-def create_artist(title: str, bandcamp_url: str, visual_style: str, base_url: str, verify_qr: bool = True) -> dict[str, Any]:
+def create_artist(
+    title: str,
+    bandcamp_url: str,
+    visual_style: str,
+    base_url: str,
+    verify_qr: bool = True,
+    cache_key: str = "",
+) -> dict[str, Any]:
     artist = " ".join(title.split())
     if not artist:
         raise ValueError("Artist title is required")
@@ -245,7 +252,8 @@ def create_artist(title: str, bandcamp_url: str, visual_style: str, base_url: st
     (PAGES / "artists" / f"{slug}.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     (PAGES / slug / "index.html").write_text(render_html(slug, artist), encoding="utf-8")
 
-    destination = base_url.rstrip("/") + "/" + urllib.parse.quote(slug) + "/"
+    edition_key = re.sub(r"[^A-Za-z0-9_-]", "", cache_key) or time.strftime("%Y%m%d%H%M%S", time.gmtime())
+    destination = base_url.rstrip("/") + "/" + urllib.parse.quote(slug) + "/?edition=" + urllib.parse.quote(edition_key)
     qr_path = PAGES / slug / "cosmic-aquarium-qr.png"
     render_qr_artwork(artist, destination, qr_path, ROOT / "public" / "flowers", visual_style=visual_style, verify=verify_qr)
     result = {
@@ -266,9 +274,17 @@ def main() -> None:
     parser.add_argument("--bandcamp-url", required=True)
     parser.add_argument("--visual-style", choices=VISUAL_STYLES, default="cosmic")
     parser.add_argument("--base-url", default="https://raggedya.github.io/cosmic-aquarium")
+    parser.add_argument("--cache-key", default="")
     parser.add_argument("--skip-qr-verification", action="store_true")
     args = parser.parse_args()
-    result = create_artist(args.title, args.bandcamp_url, args.visual_style, args.base_url, not args.skip_qr_verification)
+    result = create_artist(
+        args.title,
+        args.bandcamp_url,
+        args.visual_style,
+        args.base_url,
+        not args.skip_qr_verification,
+        args.cache_key,
+    )
     print(json.dumps(result, separators=(",", ":")))
 
 

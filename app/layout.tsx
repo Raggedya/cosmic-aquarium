@@ -26,6 +26,11 @@ export const metadata: Metadata = {
     description,
     images: ['/og-cosmic-aquarium.png'],
   },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'Cosmic Aquaria',
+  },
 };
 
 export const viewport: Viewport = {

@@ -102,6 +102,52 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const selectedAccent = selectedTrack ? selectedTrack.accent ?? albumAccent(manifest, selectedTrack.albumKey) : '#b9a7ff';
 
   useEffect(() => {
+    const viewportTimers = new Set<number>();
+
+    function syncVisibleViewport() {
+      const viewport = window.visualViewport;
+      const visibleHeight = Math.max(window.innerHeight || 0, viewport?.height || 0);
+      const visibleTop = Math.max(0, viewport?.offsetTop || 0);
+      document.documentElement.style.setProperty('--aquarium-height', Math.ceil(visibleHeight) + 'px');
+      document.documentElement.style.setProperty('--viewport-top', Math.round(visibleTop) + 'px');
+    }
+
+    function settleVisibleViewport() {
+      syncVisibleViewport();
+      viewportTimers.forEach(timer => window.clearTimeout(timer));
+      viewportTimers.clear();
+      [60, 240, 720, 1500].forEach(delay => {
+        const timer = window.setTimeout(() => {
+          syncVisibleViewport();
+          viewportTimers.delete(timer);
+        }, delay);
+        viewportTimers.add(timer);
+      });
+    }
+
+    settleVisibleViewport();
+    window.addEventListener('pageshow', settleVisibleViewport);
+    window.addEventListener('resize', settleVisibleViewport, { passive: true });
+    window.addEventListener('orientationchange', settleVisibleViewport, { passive: true });
+    window.visualViewport?.addEventListener('resize', syncVisibleViewport, { passive: true });
+    window.visualViewport?.addEventListener('scroll', syncVisibleViewport, { passive: true });
+    const onVisibilityChange = () => {
+      if (document.visibilityState === 'visible') settleVisibleViewport();
+    };
+    document.addEventListener('visibilitychange', onVisibilityChange);
+
+    return () => {
+      viewportTimers.forEach(timer => window.clearTimeout(timer));
+      window.removeEventListener('pageshow', settleVisibleViewport);
+      window.removeEventListener('resize', settleVisibleViewport);
+      window.removeEventListener('orientationchange', settleVisibleViewport);
+      window.visualViewport?.removeEventListener('resize', syncVisibleViewport);
+      window.visualViewport?.removeEventListener('scroll', syncVisibleViewport);
+      document.removeEventListener('visibilitychange', onVisibilityChange);
+    };
+  }, []);
+
+  useEffect(() => {
     if (!manifestSlug || manifestSlug === defaultArtistManifest.slug) {
       setManifest(defaultArtistManifest);
       return;
@@ -198,7 +244,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         style={{
           position: 'fixed',
           zIndex: 2147483647,
-          top: 'max(20px, env(safe-area-inset-top))',
+          top: 'calc(var(--viewport-top, 0px) + max(20px, env(safe-area-inset-top)))',
           left: '50%',
           width: 'min(430px, 100vw)',
           display: 'block',

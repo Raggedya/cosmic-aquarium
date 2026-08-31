@@ -24,6 +24,10 @@ on:
           - violet
           - neon
           - desert
+      cache_key:
+        description: Unique edition key used to bypass stale mobile browser caches
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -63,9 +67,10 @@ jobs:
           ARTIST_TITLE: ${{ inputs.artist_title }}
           BANDCAMP_URL: ${{ inputs.bandcamp_url }}
           VISUAL_STYLE: ${{ inputs.visual_style }}
+          CACHE_KEY: ${{ inputs.cache_key }}
         run: |
           set -euo pipefail
-          result="$(python scripts/create_artist.py --title "$ARTIST_TITLE" --bandcamp-url "$BANDCAMP_URL" --visual-style "$VISUAL_STYLE")"
+          result="$(python scripts/create_artist.py --title "$ARTIST_TITLE" --bandcamp-url "$BANDCAMP_URL" --visual-style "$VISUAL_STYLE" --cache-key "$CACHE_KEY")"
           printf '%s\n' "$result"
           printf '%s' "$result" > create-result.json
           python - <<'PY'

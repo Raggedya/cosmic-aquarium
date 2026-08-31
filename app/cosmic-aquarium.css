@@ -1,7 +1,11 @@
 .cosmic-aquarium {
   position: fixed;
-  inset: 0;
-  min-height: 100dvh;
+  top: var(--viewport-top, 0px);
+  right: 0;
+  bottom: auto;
+  left: 0;
+  height: var(--aquarium-height, 100dvh);
+  min-height: var(--aquarium-height, 100dvh);
   overflow: hidden;
   isolation: isolate;
   color: #f5f2ed;
@@ -45,7 +49,7 @@
 .cosmic-title {
   position: fixed;
   z-index: 2147483647;
-  top: max(20px, env(safe-area-inset-top));
+  top: calc(var(--viewport-top, 0px) + max(20px, env(safe-area-inset-top)));
   left: 50%;
   width: min(430px, 100vw);
   display: block;
@@ -496,13 +500,13 @@
 }
 
 @media (max-height: 680px) {
-  .cosmic-title { top: max(12px, env(safe-area-inset-top)); }
+  .cosmic-title { top: calc(var(--viewport-top, 0px) + max(12px, env(safe-area-inset-top))); }
   .living-player { top: 58%; transform: translate(-50%, -50%) scale(.82); }
   .cosmic-legal { display: none; }
 }
 
 @media (orientation: landscape) and (max-height: 520px) {
-  .cosmic-title { top: max(12px, env(safe-area-inset-top)); }
+  .cosmic-title { top: calc(var(--viewport-top, 0px) + max(12px, env(safe-area-inset-top))); }
   .living-player { left: 62%; top: 51%; transform: translate(-50%, -50%) scale(.67); }
 }
 
