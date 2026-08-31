@@ -117,7 +117,7 @@
   left: var(--x);
   top: var(--y);
   width: max(44px, var(--size));
-  height: max(44px, var(--size));
+  height: max(66px, calc(var(--size) * 1.5));
   border: 0;
   padding: 0;
   background: none;
@@ -128,7 +128,7 @@
   -webkit-tap-highlight-color: transparent;
   transform: translate(-50%, -50%) scale(var(--depth-scale));
   transform-origin: center;
-  animation: creature-drift var(--duration) cubic-bezier(.45, .08, .55, .93) var(--delay) infinite alternate;
+  animation: flower-fall var(--duration) linear var(--delay) infinite;
   transition: opacity .42s ease, filter .42s ease;
   will-change: transform;
 }
@@ -150,9 +150,13 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: hue-rotate(calc((var(--hue) - 214) * 1deg)) saturate(1.24) drop-shadow(0 0 17px rgba(55, 128, 255, .5));
+  filter: saturate(1.08) drop-shadow(0 0 17px rgba(55, 128, 255, .34));
   pointer-events: none;
+  transform-origin: 50% 18%;
 }
+.creature--cosmos img { filter: brightness(.96) saturate(.92) drop-shadow(0 0 18px rgba(123, 176, 255, .36)); }
+.creature--poppy img { filter: brightness(.88) saturate(1.14) drop-shadow(0 0 18px rgba(255, 91, 112, .34)); }
+.creature--anemone img { filter: brightness(.9) saturate(1.1) drop-shadow(0 0 18px rgba(113, 96, 255, .36)); }
 
 .creature-body {
   position: absolute;
@@ -304,14 +308,14 @@
   position: absolute;
   z-index: -1;
   left: 50%;
-  top: -9px;
-  width: 206px;
-  height: 258px;
+  top: -28px;
+  width: 230px;
+  height: 318px;
   object-fit: contain;
-  opacity: .35;
-  filter: hue-rotate(3deg) saturate(1.15) brightness(.92) drop-shadow(0 0 18px rgba(75, 134, 255, .35));
+  opacity: .46;
+  filter: saturate(1.08) brightness(.82) drop-shadow(0 0 22px rgba(75, 134, 255, .3));
   transform: translateX(-50%);
-  mask-image: linear-gradient(to bottom, #000 0 58%, transparent 88%);
+  mask-image: linear-gradient(to bottom, #000 0 62%, transparent 94%);
 }
 
 .player-nucleus {
@@ -361,11 +365,12 @@
 
 @keyframes cosmic-stars { to { transform: translate3d(-18px, 34px, 0); } }
 @keyframes cosmic-atmosphere-turn { to { transform: rotate(1turn); } }
-@keyframes creature-drift {
-  0% { transform: translate(calc(-50% - 8px), calc(-50% - 9px)) scale(var(--depth-scale)) rotate(-3deg); }
-  34% { transform: translate(calc(-50% + var(--travel-x) * .38), calc(-50% + var(--travel-y) * .23)) scale(calc(var(--depth-scale) * 1.025)) rotate(2deg); }
-  68% { transform: translate(calc(-50% + var(--travel-x) * .78), calc(-50% + var(--travel-y) * .72)) scale(calc(var(--depth-scale) * .98)) rotate(-1deg); }
-  100% { transform: translate(calc(-50% + var(--travel-x)), calc(-50% + var(--travel-y))) scale(var(--depth-scale)) rotate(4deg); }
+@keyframes flower-fall {
+  0% { transform: translate(calc(-50% - var(--travel-x) * .32), calc(-50% - 128vh)) scale(var(--depth-scale)) rotate(-13deg); }
+  22% { transform: translate(calc(-50% + var(--travel-x) * .48), calc(-50% - 74vh)) scale(calc(var(--depth-scale) * 1.02)) rotate(7deg); }
+  46% { transform: translate(calc(-50% - var(--travel-x) * .28), calc(-50% - 18vh)) scale(var(--depth-scale)) rotate(-5deg); }
+  72% { transform: translate(calc(-50% + var(--travel-x) * .62), calc(-50% + 43vh)) scale(calc(var(--depth-scale) * .98)) rotate(10deg); }
+  100% { transform: translate(calc(-50% - var(--travel-x) * .18), calc(-50% + 124vh)) scale(var(--depth-scale)) rotate(-8deg); }
 }
 @keyframes creature-nucleus { to { transform: scale(1.14); opacity: .72; } }
 @keyframes creature-touch { 0% { transform: scale(1); } 34% { transform: scale(.93); } 100% { transform: scale(1.15); opacity: 0; } }

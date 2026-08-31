@@ -3,7 +3,7 @@ import './globals.css';
 import './cosmic-aquarium.css';
 
 const title = 'Cosmic Aquarium — Immigrant Union';
-const description = 'Catch a luminous creature, reveal an Immigrant Union song, and listen through Bandcamp in a living cosmic aquarium.';
+const description = 'Catch a luminous flower, reveal an Immigrant Union song, and listen through Bandcamp in a living cosmic aquarium.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-b-side.raggedya.chatgpt.site'),
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       url: '/og-cosmic-aquarium.png',
       width: 1200,
       height: 630,
-      alt: 'Cosmic Aquarium — luminous deep-space organisms carrying Immigrant Union songs',
+      alt: 'Cosmic Aquarium — realistic flowers flowing through deep space, each carrying an Immigrant Union song',
     }],
   },
   twitter: {

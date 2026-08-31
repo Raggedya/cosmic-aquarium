@@ -13,7 +13,7 @@ import { officialTrackEmbedUrl } from '@/src/adapters/bandcamp-adapter';
 import { immigrantUnionAlbums, immigrantUnionSongs } from '@/src/data/immigrant-union-catalogue';
 
 type Depth = 'far' | 'mid' | 'near' | 'foreground';
-type Species = 'bell' | 'orb' | 'manta' | 'radiolarian' | 'seed' | 'ribbon' | 'hero';
+type Species = 'cosmos' | 'poppy' | 'anemone';
 
 interface CreatureDefinition {
   id: string;
@@ -31,16 +31,16 @@ interface CreatureDefinition {
 }
 
 const CREATURES: CreatureDefinition[] = [
-  { id: 'ca-01', trackIndex: 0, species: 'bell', depth: 'near', x: 13, y: 30, size: 118, duration: 24, delay: -9, travelX: 34, travelY: -42, hue: 194 },
-  { id: 'ca-02', trackIndex: 19, species: 'orb', depth: 'far', x: 78, y: 19, size: 66, duration: 31, delay: -18, travelX: -49, travelY: 29, hue: 270 },
-  { id: 'ca-03', trackIndex: 30, species: 'manta', depth: 'mid', x: 83, y: 43, size: 98, duration: 27, delay: -4, travelX: -72, travelY: 24, hue: 312 },
-  { id: 'ca-04', trackIndex: 5, species: 'radiolarian', depth: 'near', x: 20, y: 61, size: 132, duration: 35, delay: -24, travelX: 43, travelY: -28, hue: 205 },
-  { id: 'ca-05', trackIndex: 37, species: 'seed', depth: 'near', x: 88, y: 79, size: 108, duration: 23, delay: -12, travelX: -38, travelY: -52, hue: 335 },
-  { id: 'ca-06', trackIndex: 9, species: 'ribbon', depth: 'far', x: 8, y: 84, size: 74, duration: 38, delay: -29, travelX: 64, travelY: -19, hue: 249 },
-  { id: 'ca-07', trackIndex: 35, species: 'hero', depth: 'mid', x: 52, y: 38, size: 158, duration: 33, delay: -20, travelX: -27, travelY: 39, hue: 214 },
-  { id: 'ca-08', trackIndex: 24, species: 'bell', depth: 'foreground', x: -5, y: 48, size: 210, duration: 42, delay: -15, travelX: 44, travelY: 18, hue: 185 },
-  { id: 'ca-09', trackIndex: 12, species: 'orb', depth: 'far', x: 57, y: 73, size: 55, duration: 29, delay: -22, travelX: 30, travelY: -55, hue: 293 },
-  { id: 'ca-10', trackIndex: 27, species: 'manta', depth: 'mid', x: 48, y: 91, size: 96, duration: 26, delay: -8, travelX: 58, travelY: -37, hue: 224 },
+  { id: 'ca-01', trackIndex: 0, species: 'cosmos', depth: 'near', x: 13, y: 30, size: 118, duration: 24, delay: -9, travelX: 34, travelY: -42, hue: 194 },
+  { id: 'ca-02', trackIndex: 19, species: 'anemone', depth: 'far', x: 78, y: 19, size: 66, duration: 31, delay: -18, travelX: -49, travelY: 29, hue: 270 },
+  { id: 'ca-03', trackIndex: 30, species: 'poppy', depth: 'mid', x: 83, y: 43, size: 98, duration: 27, delay: -4, travelX: -72, travelY: 24, hue: 312 },
+  { id: 'ca-04', trackIndex: 5, species: 'cosmos', depth: 'near', x: 20, y: 61, size: 132, duration: 35, delay: -24, travelX: 43, travelY: -28, hue: 205 },
+  { id: 'ca-05', trackIndex: 37, species: 'poppy', depth: 'near', x: 88, y: 79, size: 108, duration: 23, delay: -12, travelX: -38, travelY: -52, hue: 335 },
+  { id: 'ca-06', trackIndex: 9, species: 'anemone', depth: 'far', x: 8, y: 84, size: 74, duration: 38, delay: -29, travelX: 64, travelY: -19, hue: 249 },
+  { id: 'ca-07', trackIndex: 35, species: 'anemone', depth: 'mid', x: 52, y: 38, size: 158, duration: 33, delay: -20, travelX: -27, travelY: 39, hue: 214 },
+  { id: 'ca-08', trackIndex: 24, species: 'cosmos', depth: 'foreground', x: -5, y: 48, size: 210, duration: 42, delay: -15, travelX: 44, travelY: 18, hue: 185 },
+  { id: 'ca-09', trackIndex: 12, species: 'poppy', depth: 'far', x: 57, y: 73, size: 55, duration: 29, delay: -22, travelX: 30, travelY: -55, hue: 293 },
+  { id: 'ca-10', trackIndex: 27, species: 'cosmos', depth: 'mid', x: 48, y: 91, size: 96, duration: 26, delay: -8, travelX: 58, travelY: -37, hue: 224 },
 ];
 
 const historyKey = 'project-b-side:cosmic-aquarium-history-v1';
@@ -76,6 +76,7 @@ export function CosmicAquarium() {
     [selectedId],
   );
   const selectedTrack = selectedCreature ? immigrantUnionSongs[selectedCreature.trackIndex] : null;
+  const selectedFlower = selectedCreature ? '/flowers/' + selectedCreature.species + '.png' : '/flowers/cosmos.png';
   const selectedEmbed = selectedTrack ? officialTrackEmbedUrl(selectedTrack.bandcampEmbedTrackId) : null;
   const selectedAccent = selectedTrack ? albumAccent(selectedTrack.albumKey) : '#73d9ff';
 
@@ -109,7 +110,7 @@ export function CosmicAquarium() {
       y: clientY === undefined ? creature.y : (clientY / window.innerHeight) * 100,
     });
     setCapturingId(creature.id);
-    setAnnouncement('Creature caught. Its light is reorganising.');
+    setAnnouncement('Flower caught. Its light is reorganising.');
     if ('vibrate' in navigator) navigator.vibrate(10);
     captureTimer.current = window.setTimeout(() => {
       setSelectedId(creature.id);
@@ -161,7 +162,7 @@ export function CosmicAquarium() {
         <p>{selectedTrack ? 'A SONG FOUND IN THE DARK' : 'TOUCH SOMETHING.'}</p>
       </header>
 
-      <div className="creature-field" aria-label="Unknown song creatures">
+      <div className="creature-field" aria-label="Unknown song flowers">
         {CREATURES.map((creature, index) => {
           const isSelected = selectedId === creature.id;
           const isCapturing = capturingId === creature.id;
@@ -174,20 +175,13 @@ export function CosmicAquarium() {
               }
               style={creatureStyle(creature, index)}
               type="button"
-              aria-label={isSelected ? 'Currently playing creature' : 'Catch this unknown song creature'}
+              aria-label={isSelected ? 'Currently playing flower' : 'Catch this unknown song flower'}
               aria-pressed={isSelected}
               onPointerDown={(event) => onCreaturePointerDown(event, creature)}
               onClick={(event) => onCreatureKeyboardClick(event, creature)}
             >
               <span className="creature-hitbox" aria-hidden="true" />
-              {creature.species === 'hero' ? (
-                <img src="/cosmic/hero-organism.png" alt="" draggable="false" />
-              ) : (
-                <>
-                  <span className="creature-body"><i /><b /></span>
-                  <span className="creature-filaments" />
-                </>
-              )}
+              <img src={'/flowers/' + creature.species + '.png'} alt="" draggable="false" />
             </button>
           );
         })}
@@ -203,7 +197,7 @@ export function CosmicAquarium() {
 
       {selectedTrack ? (
         <section className="living-player" aria-labelledby="living-player-title">
-          <img className="player-membrane" src="/cosmic/hero-organism.png" alt="" aria-hidden="true" />
+          <img className="player-membrane" src={selectedFlower} alt="" aria-hidden="true" />
           <div className="player-nucleus" aria-hidden="true">
             <i className="nucleus-landscape" />
             <span>{selectedTrack.albumTitle.slice(0, 1)}</span>
