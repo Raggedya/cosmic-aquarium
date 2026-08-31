@@ -316,10 +316,6 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       {selectedTrack ? (
         <section className="living-player" aria-labelledby="living-player-title">
           <img className="player-membrane" src={selectedFlower} alt="" aria-hidden="true" />
-          <div className="player-nucleus" aria-hidden="true">
-            <i className="nucleus-landscape" />
-            <span>{selectedTrack.albumTitle.slice(0, 1)}</span>
-          </div>
           <div className="player-copy">
             <p>{selectedTrack.albumTitle} · {selectedTrack.year}</p>
             <h2 id="living-player-title">{selectedTrack.title}</h2>

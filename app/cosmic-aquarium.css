@@ -321,27 +321,6 @@
   mask-image: linear-gradient(to bottom, #000 0 62%, transparent 94%);
 }
 
-.player-nucleus {
-  position: relative;
-  display: grid;
-  width: 112px;
-  height: 112px;
-  margin: 0 auto 13px;
-  overflow: hidden;
-  place-items: center;
-  border: 1px solid rgba(205, 233, 255, .48);
-  border-radius: 50%;
-  background: radial-gradient(circle at 65% 22%, rgba(255, 255, 255, .5) 0 3%, transparent 4%), linear-gradient(160deg, color-mix(in srgb, var(--player-accent) 58%, #122441), #050816 66%);
-  box-shadow: 0 0 0 9px rgba(85, 133, 241, .04), 0 0 32px color-mix(in srgb, var(--player-accent) 42%, transparent), inset 0 0 25px rgba(3, 8, 21, .4);
-}
-
-.player-nucleus::before,
-.player-nucleus::after { content: ""; position: absolute; left: -10%; right: -10%; bottom: -2%; background: #050914; clip-path: polygon(0 100%, 0 72%, 18% 45%, 31% 66%, 51% 26%, 69% 60%, 83% 39%, 100% 68%, 100% 100%); }
-.player-nucleus::before { height: 58%; opacity: .86; }
-.player-nucleus::after { height: 38%; opacity: .68; transform: scaleX(-1); }
-.player-nucleus span { position: relative; z-index: 2; color: rgba(234, 244, 255, .35); font-family: Iowan Old Style, Baskerville, Georgia, serif; font-size: 28px; font-style: italic; }
-.nucleus-landscape { position: absolute; inset: 0; background: radial-gradient(circle at 40% 28%, rgba(245, 249, 255, .44), transparent 12%), linear-gradient(to bottom, transparent, rgba(4, 9, 22, .52)); }
-
 .player-copy { position: relative; z-index: 2; }
 .player-copy p { margin: 0 0 5px; color: rgba(205, 224, 255, .45); font-size: 6px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .player-copy h2 { max-width: 260px; margin: 0 auto; font-family: Iowan Old Style, Baskerville, Georgia, serif; font-size: clamp(23px, 7vw, 31px); font-weight: 400; letter-spacing: -.025em; line-height: 1.02; text-wrap: balance; text-shadow: 0 2px 18px #000; }
@@ -479,7 +458,6 @@
 
 @media (max-height: 760px) {
   .living-player { top: 60%; min-height: 420px; padding-top: 62px; transform: translate(-50%, -50%) scale(.91); }
-  .player-nucleus { width: 94px; height: 94px; margin-bottom: 9px; }
   .player-copy h2 { font-size: clamp(21px, 6.4vw, 28px); }
   .organic-progress { margin-top: 7px; }
 }
@@ -508,5 +486,5 @@
 }
 
 @media (forced-colors: active) {
-  .creature,.player-nucleus,.bandcamp-stream iframe,.release-current i { border: 1px solid ButtonText; }
+  .creature,.bandcamp-stream iframe,.release-current i { border: 1px solid ButtonText; }
 }

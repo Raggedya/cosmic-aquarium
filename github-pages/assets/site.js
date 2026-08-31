@@ -121,7 +121,6 @@
     titlePrompt.textContent = 'A SONG FOUND IN THE DARK';
     root.style.setProperty('--player-accent',track.accent || '#b9a7ff');
     player.querySelector('.player-membrane').src = button.querySelector('img').src;
-    player.querySelector('.player-nucleus span').textContent = (track.albumTitle || 'B').slice(0,1);
     player.querySelector('.player-copy p').textContent = [track.albumTitle,track.year].filter(Boolean).join(' · ');
     player.querySelector('.player-copy h2').textContent = track.title || 'Discover on Bandcamp';
     player.querySelector('.player-copy span').textContent = track.artist || manifest.artist;
