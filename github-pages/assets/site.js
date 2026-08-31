@@ -2,7 +2,16 @@
   const root = document.querySelector('.cosmic-aquarium');
   const slug = document.documentElement.dataset.artist || 'immigrant-union';
   const base = location.hostname.endsWith('github.io') ? '/cosmic-aquarium' : '';
-  const species = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos'];
+  const baseSpecies = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos'];
+  const styleSpecies = {
+    cosmic: baseSpecies,
+    crimson: ['rose','rose','rose','rose','rose','rose','rose','rose','rose','rose'],
+    paper: ['cosmos','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone','cosmos','cosmos'],
+    thorn: ['thorn','thorn','thorn','thorn','thorn','thorn','thorn','thorn','thorn','thorn'],
+    violet: ['anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos'],
+    neon: ['cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone'],
+    desert: ['poppy','cosmos','poppy','poppy','cosmos','poppy','poppy','cosmos','poppy','poppy']
+  };
   const depths = ['near','far','mid','near','near','far','mid','foreground','far','mid'];
   const positions = [
     [13,30,118,24,-9,34,-42],[78,19,66,31,-18,-49,29],[83,43,98,27,-4,-72,24],
@@ -24,23 +33,25 @@
     })
     .then(data => {
       manifest = data;
+      root.dataset.theme = styleSpecies[data.visualStyle] ? data.visualStyle : 'cosmic';
       document.querySelector('.cosmic-title h1').textContent = data.artist.toUpperCase();
-      document.title = 'Cosmic Aquarium — ' + data.artist;
+      document.title = 'Cosmic Aquaria — ' + data.artist;
       renderCreatures();
       announce(data.artist + '. The flower garden is awake.');
     })
-    .catch(() => announce('This Cosmic Aquarium is not available yet.'));
+    .catch(() => announce('This Cosmic Aquaria edition is not available yet.'));
 
   function renderCreatures() {
     field.replaceChildren();
     positions.forEach((values,index) => {
       const [x,y,size,duration,delay,travelX,travelY] = values;
+      const species = (styleSpecies[root.dataset.theme] || baseSpecies)[index];
       const button = document.createElement('button');
       button.type = 'button';
-      button.className = 'creature creature--' + species[index] + ' depth--' + depths[index];
+      button.className = 'creature creature--' + species + ' depth--' + depths[index];
       button.setAttribute('aria-label','Catch this unknown song flower');
       button.style.cssText = '--x:'+x+'%;--y:'+y+'%;--size:'+size+'px;--duration:'+duration+'s;--delay:'+delay+'s;--travel-x:'+travelX+'px;--travel-y:'+travelY+'px;--hue:'+(190+index*16)+';--i:'+index;
-      button.innerHTML = '<span class="creature-hitbox" aria-hidden="true"></span><img src="'+base+'/assets/flowers/'+species[index]+'.png" alt="" draggable="false">';
+      button.innerHTML = '<span class="creature-hitbox" aria-hidden="true"></span><img src="'+base+'/assets/flowers/'+species+'.png" alt="" draggable="false">';
       button.addEventListener('pointerdown',event => {
         event.preventDefault();
         catchFlower(button,index,event.clientX,event.clientY);

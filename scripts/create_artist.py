@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PAGES = ROOT / "github-pages"
 TEMPLATE = ROOT / "templates" / "artist-index.html"
 COLORS = ("#c3b4f4", "#88d7ff", "#ff6f8f", "#ffb66d", "#8fd9c7", "#a492ff")
+VISUAL_STYLES = ("cosmic", "crimson", "paper", "thorn", "violet", "neon", "desert")
 USER_AGENT = "CosmicAquariumCreator/1.0 (+https://github.com/Raggedya/cosmic-aquarium)"
 
 
@@ -185,11 +186,13 @@ def render_html(slug: str, artist: str) -> str:
             .replace("{{BASE}}", "/cosmic-aquarium"))
 
 
-def create_artist(title: str, bandcamp_url: str, base_url: str, verify_qr: bool = True) -> dict[str, Any]:
+def create_artist(title: str, bandcamp_url: str, visual_style: str, base_url: str, verify_qr: bool = True) -> dict[str, Any]:
     artist = " ".join(title.split())
     if not artist:
         raise ValueError("Artist title is required")
     destination_source = validate_bandcamp_url(bandcamp_url)
+    if visual_style not in VISUAL_STYLES:
+        raise ValueError("Unknown visual style")
     slug = slugify(artist)
     try:
         tracks, resolved_url = discover_tracks(destination_source, artist)
@@ -225,6 +228,7 @@ def create_artist(title: str, bandcamp_url: str, base_url: str, verify_qr: bool 
         "slug": slug,
         "artist": artist,
         "bandcampUrl": resolved_url,
+        "visualStyle": visual_style,
         "generatedAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "importStatus": import_status,
         "albums": [{"key": key, "color": color} for key, color in albums.items()],
@@ -237,7 +241,7 @@ def create_artist(title: str, bandcamp_url: str, base_url: str, verify_qr: bool 
 
     destination = base_url.rstrip("/") + "/" + urllib.parse.quote(slug) + "/"
     qr_path = PAGES / slug / "cosmic-aquarium-qr.png"
-    render_qr_artwork(artist, destination, qr_path, ROOT / "public" / "flowers", verify=verify_qr)
+    render_qr_artwork(artist, destination, qr_path, ROOT / "public" / "flowers", visual_style=visual_style, verify=verify_qr)
     result = {
         "slug": slug,
         "artist": artist,
@@ -245,18 +249,20 @@ def create_artist(title: str, bandcamp_url: str, base_url: str, verify_qr: bool 
         "qr_path": str(qr_path.relative_to(ROOT)).replace("\\", "/"),
         "tracks": len(tracks),
         "import_status": import_status,
+        "visual_style": visual_style,
     }
     return result
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Create a Cosmic Aquarium artist edition")
+    parser = argparse.ArgumentParser(description="Create a Cosmic Aquaria artist edition")
     parser.add_argument("--title", required=True)
     parser.add_argument("--bandcamp-url", required=True)
+    parser.add_argument("--visual-style", choices=VISUAL_STYLES, default="cosmic")
     parser.add_argument("--base-url", default="https://raggedya.github.io/cosmic-aquarium")
     parser.add_argument("--skip-qr-verification", action="store_true")
     args = parser.parse_args()
-    result = create_artist(args.title, args.bandcamp_url, args.base_url, not args.skip_qr_verification)
+    result = create_artist(args.title, args.bandcamp_url, args.visual_style, args.base_url, not args.skip_qr_verification)
     print(json.dumps(result, separators=(",", ":")))
 
 

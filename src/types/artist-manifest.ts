@@ -5,11 +5,14 @@ export interface ArtistAlbumAccent {
   color: string;
 }
 
+export type VisualStyle = 'cosmic' | 'crimson' | 'paper' | 'thorn' | 'violet' | 'neon' | 'desert';
+
 export interface ArtistManifest {
   schemaVersion: 1;
   slug: string;
   artist: string;
   bandcampUrl: string;
+  visualStyle?: VisualStyle;
   generatedAt?: string;
   albums: ArtistAlbumAccent[];
   tracks: SpectrumRelease[];

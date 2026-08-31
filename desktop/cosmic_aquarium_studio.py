@@ -13,9 +13,9 @@ import urllib.parse
 import webbrowser
 from pathlib import Path
 import tkinter as tk
-from tkinter import messagebox, ttk
+from tkinter import messagebox
 
-from PIL import Image, ImageDraw, ImageFilter, ImageTk
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageTk
 
 
 REPOSITORY = "Raggedya/cosmic-aquarium"
@@ -28,6 +28,15 @@ PAPER = "#f5f3fb"
 MUTED = "#9993ad"
 LAVENDER = "#c7b8f4"
 LINE = "#302d4b"
+THEMES = (
+    {"id": "cosmic", "label": "COSMIC BLOOM", "flower": "anemone.png", "bg": "#080822", "accent": "#c7b8f4"},
+    {"id": "crimson", "label": "CRIMSON ROSE", "flower": "rose.png", "bg": "#070607", "accent": "#d3485d"},
+    {"id": "paper", "label": "PAPER GARDEN", "flower": "cosmos.png", "bg": "#102526", "accent": "#d8ccb1"},
+    {"id": "thorn", "label": "BLACK THORN", "flower": "thorn.png", "bg": "#030303", "accent": "#d82031"},
+    {"id": "violet", "label": "VIOLET HAZE", "flower": "anemone.png", "bg": "#17103b", "accent": "#c584f0"},
+    {"id": "neon", "label": "NEON BLOOM", "flower": "cosmos.png", "bg": "#03071b", "accent": "#2fdfff"},
+    {"id": "desert", "label": "DESERT BLOOM", "flower": "poppy.png", "bg": "#825431", "accent": "#e49a54"},
+)
 
 
 def resource_path(relative: str) -> Path:
@@ -53,14 +62,17 @@ def valid_bandcamp(value: str) -> bool:
 class CosmicAquariumStudio(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
-        self.title("Cosmic Aquarium Studio")
-        self.geometry("1160x760")
-        self.minsize(980, 660)
+        self.title("Cosmic Aquaria Studio")
+        self.geometry("1280x820")
+        self.minsize(1120, 720)
         self.configure(bg=INK)
         self.protocol("WM_DELETE_WINDOW", self.destroy)
         self._images: list[ImageTk.PhotoImage] = []
         self._latest_url = ""
         self._busy = False
+        self.visual_style = "cosmic"
+        self.theme_canvases: dict[str, tk.Canvas] = {}
+        self.theme_images: list[ImageTk.PhotoImage] = []
         self._build_interface()
 
     def _build_interface(self) -> None:
@@ -82,11 +94,11 @@ class CosmicAquariumStudio(tk.Tk):
         mark.create_line(12, 21, 30, 21, fill="#a9a3c6")
         mark.create_line(14, 15, 28, 27, fill="#a9a3c6")
         mark.create_line(14, 27, 28, 15, fill="#a9a3c6")
-        tk.Label(brand, text="COSMIC AQUARIUM", bg=INK, fg=PAPER, font=("Segoe UI", 11), padx=15).pack(side="left")
+        tk.Label(brand, text="COSMIC AQUARIA", bg=INK, fg=PAPER, font=("Segoe UI", 11), padx=15).pack(side="left")
         tk.Label(brand, text="CREATOR", bg=INK, fg=MUTED, font=("Segoe UI", 8)).pack(side="left")
 
         content = tk.Frame(shell, bg=INK)
-        content.grid(row=1, column=0, sticky="nsew", padx=(104, 38), pady=(70, 40))
+        content.grid(row=1, column=0, sticky="nsew", padx=(82, 38), pady=(58, 36))
         content.grid_columnconfigure(0, weight=1)
 
         tk.Label(content, text="MAKE AN AQUARIUM", bg=INK, fg=LAVENDER, font=("Segoe UI Semibold", 9)).grid(row=0, column=0, sticky="w")
@@ -120,10 +132,22 @@ class CosmicAquariumStudio(tk.Tk):
         self.copy_button.pack(side="left")
         self.result_row.grid_remove()
 
-        visual = tk.Canvas(shell, width=440, bg=INK, highlightthickness=0)
-        visual.grid(row=1, column=1, rowspan=2, sticky="nsew", padx=(0, 44), pady=(22, 28))
-        visual.bind("<Configure>", lambda _event: self._draw_flower_composition(visual))
-        self.visual = visual
+        chooser = tk.Frame(shell, width=548, bg=INK)
+        chooser.grid(row=1, column=1, sticky="n", padx=(0, 54), pady=(43, 20))
+        chooser.grid_propagate(False)
+        chooser.configure(height=610)
+        tk.Label(chooser, text="CHOOSE A VISUAL WORLD", bg=INK, fg=LAVENDER, font=("Segoe UI Semibold", 9)).grid(row=0, column=0, columnspan=3, sticky="w", pady=(0, 7))
+        tk.Label(chooser, text="The artwork is a creative choice — never assigned by genre.", bg=INK, fg=MUTED, font=("Segoe UI", 9)).grid(row=1, column=0, columnspan=3, sticky="w", pady=(0, 20))
+        for index, theme in enumerate(THEMES):
+            row, column = divmod(index, 3)
+            tile = tk.Canvas(chooser, width=168, height=146, bg=INK, highlightthickness=0, cursor="hand2")
+            tile.grid(row=row + 2, column=column, padx=(0, 14), pady=(0, 18), sticky="nw")
+            tile.bind("<Button-1>", lambda _event, style=theme["id"]: self._select_style(style))
+            tile.bind("<Return>", lambda _event, style=theme["id"]: self._select_style(style))
+            tile.configure(takefocus=True)
+            self.theme_canvases[theme["id"]] = tile
+            self._draw_theme_thumbnail(tile, theme)
+        self._select_style("cosmic", announce=False)
 
         footer = tk.Frame(shell, bg=INK)
         footer.grid(row=2, column=0, columnspan=2, sticky="ew", padx=58, pady=(0, 28))
@@ -156,33 +180,68 @@ class CosmicAquariumStudio(tk.Tk):
             self.canvas.create_oval(x, y, x + 1.5, y + 1.5, fill=shade, outline="", tags="star")
         self.canvas.tag_lower("star")
 
-    def _draw_flower_composition(self, canvas: tk.Canvas) -> None:
-        canvas.delete("all")
-        width, height = canvas.winfo_width(), canvas.winfo_height()
-        if width < 50 or height < 50:
-            return
-        canvas.create_oval(84, 76, width - 36, height - 64, outline="#1e2140", width=1)
-        canvas.create_oval(128, 120, width - 80, height - 108, outline="#161832", width=1)
-        placements = [
-            ("anemone.png", width * .5, height * .43, 225, -4),
-            ("poppy.png", width * .82, height * .18, 142, 12),
-            ("cosmos.png", width * .18, height * .78, 154, -13),
-            ("poppy.png", width * .82, height * .78, 105, 8),
-        ]
-        self._images.clear()
-        for name, x, y, size, rotation in placements:
-            source = resource_path("assets/flowers/" + name)
-            if not source.exists():
-                source = resource_path("public/flowers/" + name)
-            image = Image.open(source).convert("RGBA")
-            scale = size / image.width
-            image = image.resize((int(image.width * scale), int(image.height * scale)), Image.Resampling.LANCZOS)
-            image = image.rotate(rotation, expand=True, resample=Image.Resampling.BICUBIC)
-            photo = ImageTk.PhotoImage(image)
-            self._images.append(photo)
-            canvas.create_image(x, y, image=photo)
-        canvas.create_text(width / 2, height * .56, text="✦", fill=LAVENDER, font=("Segoe UI", 18))
-        canvas.create_text(width / 2, height * .62, text="TOUCH SOMETHING.", fill="#8d87a7", font=("Segoe UI Semibold", 8))
+    def _draw_theme_thumbnail(self, canvas: tk.Canvas, theme: dict[str, str]) -> None:
+        width, height = 164, 112
+        preview = Image.new("RGB", (width, height), theme["bg"])
+        draw = ImageDraw.Draw(preview, "RGBA")
+        style = theme["id"]
+        if style == "paper":
+            for x, y, w, h in ((8, 17, 44, 29), (108, 9, 49, 35), (102, 76, 57, 25), (3, 87, 39, 19)):
+                draw.rectangle((x, y, x + w, y + h), fill=(218, 201, 170, 22), outline=(222, 208, 179, 30))
+        elif style == "neon":
+            for x in range(10, width, 18): draw.line((x, 0, x, height), fill=(24, 209, 255, 28))
+            for y in range(8, height, 19): draw.line((0, y, width, y), fill=(255, 31, 204, 24))
+        elif style == "desert":
+            draw.polygon(((0, 89), (35, 67), (65, 82), (96, 57), (132, 83), (164, 70), (164, 112), (0, 112)), fill=(54, 31, 23, 115))
+        else:
+            for x, y in ((17, 21), (139, 18), (41, 92), (122, 78), (78, 13), (151, 99)):
+                color = theme["accent"]
+                draw.ellipse((x, y, x + 2, y + 2), fill=color)
+
+        source = resource_path("assets/flowers/" + theme["flower"])
+        if not source.exists():
+            source = resource_path("public/flowers/" + theme["flower"])
+        flower = Image.open(source).convert("RGBA")
+        if style == "paper":
+            flower = ImageEnhance.Color(flower).enhance(.12)
+            flower = ImageEnhance.Contrast(flower).enhance(.85)
+        elif style == "violet":
+            flower = ImageEnhance.Color(flower).enhance(1.5)
+        elif style == "neon":
+            flower = ImageEnhance.Color(flower).enhance(1.9)
+            flower = ImageEnhance.Contrast(flower).enhance(1.15)
+        elif style == "desert":
+            flower = ImageEnhance.Color(flower).enhance(.82)
+
+        target_height = 118 if style not in {"thorn", "crimson"} else 126
+        ratio = target_height / flower.height
+        flower = flower.resize((max(1, int(flower.width * ratio)), target_height), Image.Resampling.LANCZOS)
+        layer = Image.new("RGBA", preview.size, (0, 0, 0, 0))
+        x = int(width * .54 - flower.width / 2)
+        y = -2
+        if style in {"crimson", "thorn"}:
+            black_layer = Image.new("RGB", preview.size, (0, 0, 0))
+            black_layer.paste(flower.convert("RGB"), (x, y))
+            preview = ImageChops.screen(preview, black_layer)
+        else:
+            layer.alpha_composite(flower, (x, y))
+            preview = Image.alpha_composite(preview.convert("RGBA"), layer).convert("RGB")
+
+        photo = ImageTk.PhotoImage(preview)
+        self.theme_images.append(photo)
+        canvas.create_image(82, 56, image=photo)
+        canvas.create_rectangle(1, 1, 163, 111, fill="", outline=LINE, width=1, tags="selection")
+        canvas.create_text(4, 130, text=theme["label"], anchor="w", fill=PAPER, font=("Segoe UI Semibold", 8), tags="label")
+
+    def _select_style(self, style: str, announce: bool = True) -> None:
+        self.visual_style = style
+        for theme_id, canvas in self.theme_canvases.items():
+            selected = theme_id == style
+            canvas.itemconfigure("selection", outline=LAVENDER if selected else LINE, width=2 if selected else 1)
+            canvas.itemconfigure("label", fill=LAVENDER if selected else PAPER)
+        if announce and hasattr(self, "status"):
+            label = next(theme["label"] for theme in THEMES if theme["id"] == style)
+            self.status.configure(text=label + " SELECTED", fg=LAVENDER)
 
     def _start_create(self) -> None:
         if self._busy:
@@ -190,6 +249,7 @@ class CosmicAquariumStudio(tk.Tk):
         title = self.artist.get().strip()
         bandcamp_url = self.bandcamp.get().strip()
         recipient = self.recipient.get().strip()
+        visual_style = self.visual_style
         if not title:
             messagebox.showerror("Artist needed", "Enter the band or artist name.")
             return
@@ -204,9 +264,9 @@ class CosmicAquariumStudio(tk.Tk):
         self.status.configure(text="OPENING THE AQUARIUM", fg=LAVENDER)
         self.result_row.grid_remove()
         started = dt.datetime.now(dt.timezone.utc)
-        threading.Thread(target=self._run_create, args=(title, bandcamp_url, recipient, started), daemon=True).start()
+        threading.Thread(target=self._run_create, args=(title, bandcamp_url, recipient, visual_style, started), daemon=True).start()
 
-    def _run_create(self, title: str, bandcamp_url: str, recipient: str, started: dt.datetime) -> None:
+    def _run_create(self, title: str, bandcamp_url: str, recipient: str, visual_style: str, started: dt.datetime) -> None:
         try:
             gh = shutil.which("gh")
             if not gh:
@@ -214,13 +274,13 @@ class CosmicAquariumStudio(tk.Tk):
             subprocess.run([gh, "auth", "status"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
             subprocess.run([
                 gh, "workflow", "run", WORKFLOW, "--repo", REPOSITORY,
-                "-f", f"artist_title={title}", "-f", f"bandcamp_url={bandcamp_url}",
+                "-f", f"artist_title={title}", "-f", f"bandcamp_url={bandcamp_url}", "-f", f"visual_style={visual_style}",
             ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
             self.after(0, lambda: self.status.configure(text="GROWING FLOWERS  ·  BUILDING QR", fg=LAVENDER))
             run_id = self._find_run(gh, started, REPOSITORY, WORKFLOW)
             conclusion = self._watch_run(gh, run_id, REPOSITORY)
             if conclusion != "success":
-                raise RuntimeError("The GitHub creation workflow finished with: " + conclusion)
+                raise RuntimeError(self._workflow_failure(gh, run_id, REPOSITORY, "GitHub could not create this aquarium."))
             url = PAGES_BASE.rstrip("/") + "/" + slugify(title) + "/"
             qr_url = url + "cosmic-aquarium-qr.png"
             self.after(0, lambda: self.status.configure(text="PUBLISHED  ·  SENDING EMAIL", fg=LAVENDER))
@@ -232,7 +292,7 @@ class CosmicAquariumStudio(tk.Tk):
             delivery_run_id = self._find_run(gh, delivery_started, DELIVERY_REPOSITORY, DELIVERY_WORKFLOW)
             delivery_conclusion = self._watch_run(gh, delivery_run_id, DELIVERY_REPOSITORY)
             if delivery_conclusion != "success":
-                raise RuntimeError("The page was published, but email delivery finished with: " + delivery_conclusion)
+                raise RuntimeError(self._workflow_failure(gh, delivery_run_id, DELIVERY_REPOSITORY, "The page was published, but email delivery paused."))
             self.after(0, lambda: self._finish_success(url))
         except Exception as error:
             self.after(0, lambda: self._finish_error(str(error)))
@@ -265,6 +325,18 @@ class CosmicAquariumStudio(tk.Tk):
         ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
         return json.loads(process.stdout)
 
+    def _workflow_failure(self, gh: str, run_id: int, repository: str, heading: str) -> str:
+        view = subprocess.run([gh, "run", "view", str(run_id), "--repo", repository, "--json", "url"], capture_output=True, text=True, creationflags=self._creation_flags())
+        log = subprocess.run([gh, "run", "view", str(run_id), "--repo", repository, "--log-failed"], capture_output=True, text=True, creationflags=self._creation_flags())
+        url = ""
+        try:
+            url = json.loads(view.stdout).get("url", "")
+        except json.JSONDecodeError:
+            pass
+        errors = [line.split("##[error]", 1)[-1].strip() for line in log.stdout.splitlines() if "##[error]" in line]
+        detail = errors[-1] if errors else "Open the GitHub run for the detailed reason."
+        return heading + "\n\n" + detail + ("\n\n" + url if url else "")
+
     @staticmethod
     def _creation_flags() -> int:
         return subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
@@ -280,7 +352,7 @@ class CosmicAquariumStudio(tk.Tk):
         self._busy = False
         self.create_button.configure(state="normal", text="TRY AGAIN  ✦")
         self.status.configure(text="CREATION PAUSED", fg="#e995a5")
-        messagebox.showerror("Cosmic Aquarium", message)
+        messagebox.showerror("Cosmic Aquaria", message)
 
     def _open_result(self) -> None:
         if self._latest_url:
@@ -302,9 +374,9 @@ if __name__ == "__main__":
     application = CosmicAquariumStudio()
     if "--smoke-test" in sys.argv:
         application.update_idletasks()
-        if application.artist.winfo_exists() != 1 or application.create_button.cget("text") != "CREATE  ✦":
+        if application.artist.winfo_exists() != 1 or application.create_button.cget("text") != "CREATE  ✦" or len(application.theme_canvases) != 7:
             raise RuntimeError("Desktop interface did not initialise correctly")
         application.destroy()
-        print("Cosmic Aquarium Studio smoke test passed.")
+        print("Cosmic Aquaria Studio smoke test passed.")
     else:
         application.mainloop()

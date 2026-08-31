@@ -1,4 +1,4 @@
-name: Create Cosmic Aquarium
+name: Create Cosmic Aquaria
 
 on:
   workflow_dispatch:
@@ -11,6 +11,19 @@ on:
         description: Official Bandcamp artist, album or track URL
         required: true
         type: string
+      visual_style:
+        description: Visual flower style
+        required: true
+        default: cosmic
+        type: choice
+        options:
+          - cosmic
+          - crimson
+          - paper
+          - thorn
+          - violet
+          - neon
+          - desert
 
 permissions:
   contents: write
@@ -38,6 +51,7 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          cache-dependency-path: requirements-automation.txt
       - name: Install QR verification dependencies
         run: python -m pip install --disable-pip-version-check -r requirements-automation.txt
       - name: Refresh shared aquarium assets
@@ -48,16 +62,17 @@ jobs:
         env:
           ARTIST_TITLE: ${{ inputs.artist_title }}
           BANDCAMP_URL: ${{ inputs.bandcamp_url }}
+          VISUAL_STYLE: ${{ inputs.visual_style }}
         run: |
           set -euo pipefail
-          result="$(python scripts/create_artist.py --title "$ARTIST_TITLE" --bandcamp-url "$BANDCAMP_URL")"
+          result="$(python scripts/create_artist.py --title "$ARTIST_TITLE" --bandcamp-url "$BANDCAMP_URL" --visual-style "$VISUAL_STYLE")"
           printf '%s\n' "$result"
           printf '%s' "$result" > create-result.json
           python - <<'PY'
           import json, os
           result=json.load(open("create-result.json",encoding="utf-8"))
           with open(os.environ["GITHUB_OUTPUT"],"a",encoding="utf-8") as output:
-              for key in ("slug","artist","page_url","qr_path","tracks","import_status"):
+              for key in ("slug","artist","page_url","qr_path","tracks","import_status","visual_style"):
                   print(f"{key}={result[key]}",file=output)
           PY
       - name: Commit generated edition

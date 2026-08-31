@@ -42,6 +42,7 @@ next-env.d.ts
 /desktop/.venv-build/
 /build/
 /dist/*.exe
+/desktop-dist/
 /desktop/cosmic-aquarium.ico
 __pycache__/
 *.pyc

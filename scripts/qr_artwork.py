@@ -5,7 +5,7 @@ import random
 from pathlib import Path
 
 import qrcode
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from qrcode.image.styledpil import StyledPilImage
 from qrcode.image.styles.colormasks import SolidFillColorMask
 from qrcode.image.styles.moduledrawers.pil import RoundedModuleDrawer
@@ -13,6 +13,15 @@ from qrcode.image.styles.moduledrawers.pil import RoundedModuleDrawer
 
 CANVAS = 1280
 LAVENDER = (198, 184, 244)
+THEMES = {
+    "cosmic": {"top": (5, 5, 24), "bottom": (4, 7, 28), "glow": (112, 80, 255), "ink": LAVENDER, "flowers": ("poppy", "cosmos", "anemone", "poppy", "anemone")},
+    "crimson": {"top": (7, 7, 8), "bottom": (12, 1, 4), "glow": (186, 8, 32), "ink": (236, 193, 202), "flowers": ("rose",) * 5},
+    "paper": {"top": (11, 31, 32), "bottom": (9, 20, 21), "glow": (195, 181, 151), "ink": (226, 216, 193), "flowers": ("cosmos", "cosmos", "anemone", "cosmos", "anemone")},
+    "thorn": {"top": (2, 2, 3), "bottom": (10, 0, 1), "glow": (197, 0, 18), "ink": (236, 198, 202), "flowers": ("thorn",) * 5},
+    "violet": {"top": (12, 10, 43), "bottom": (25, 12, 60), "glow": (176, 72, 242), "ink": (211, 190, 249), "flowers": ("anemone", "cosmos", "anemone", "cosmos", "anemone")},
+    "neon": {"top": (2, 5, 23), "bottom": (7, 1, 28), "glow": (0, 205, 255), "ink": (137, 226, 255), "flowers": ("cosmos", "anemone", "cosmos", "anemone", "cosmos")},
+    "desert": {"top": (118, 75, 42), "bottom": (68, 38, 27), "glow": (224, 139, 67), "ink": (246, 223, 184), "flowers": ("poppy", "cosmos", "poppy", "poppy", "cosmos")},
+}
 
 
 def _font(size: int, bold: bool = False) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
@@ -39,13 +48,19 @@ def _centred(draw: ImageDraw.ImageDraw, y: int, text: str, font: ImageFont.Image
         x += width + spacing
 
 
-def _flower(canvas: Image.Image, source: Path, centre: tuple[int, int], width: int, rotation: float) -> None:
-    flower = Image.open(source).convert("RGBA")
+def _flower(canvas: Image.Image, source: Path, centre: tuple[int, int], width: int, rotation: float, glow_rgb: tuple[int, int, int]) -> None:
+    original = Image.open(source)
+    has_alpha = original.mode == "RGBA" and original.getchannel("A").getextrema()[0] < 250
+    flower = original.convert("RGBA")
     ratio = width / flower.width
     flower = flower.resize((width, max(1, int(flower.height * ratio))), Image.Resampling.LANCZOS)
-    flower = flower.rotate(rotation, expand=True, resample=Image.Resampling.BICUBIC)
+    flower = flower.rotate(rotation, expand=True, resample=Image.Resampling.BICUBIC, fillcolor=(0, 0, 0, 0))
+    if not has_alpha:
+        red, green, blue, _ = flower.split()
+        alpha = ImageChops.lighter(red, ImageChops.lighter(green, blue)).point(lambda value: 0 if value < 7 else min(255, int((value - 7) * 1.8)))
+        flower.putalpha(alpha)
     glow_alpha = flower.getchannel("A").filter(ImageFilter.GaussianBlur(22))
-    glow = Image.new("RGBA", flower.size, (112, 80, 255, 0))
+    glow = Image.new("RGBA", flower.size, (*glow_rgb, 0))
     glow.putalpha(glow_alpha.point(lambda value: int(value * 0.28)))
     x = int(centre[0] - flower.width / 2)
     y = int(centre[1] - flower.height / 2)
@@ -53,27 +68,31 @@ def _flower(canvas: Image.Image, source: Path, centre: tuple[int, int], width: i
     canvas.alpha_composite(flower, (x, y))
 
 
-def render_qr_artwork(title: str, destination: str, output: Path, flowers_dir: Path, verify: bool = True) -> None:
+def render_qr_artwork(title: str, destination: str, output: Path, flowers_dir: Path, visual_style: str = "cosmic", verify: bool = True) -> None:
+    theme = THEMES.get(visual_style, THEMES["cosmic"])
     seed = int(hashlib.sha256((title + destination).encode("utf-8")).hexdigest()[:16], 16)
     rng = random.Random(seed)
-    image = Image.new("RGBA", (CANVAS, CANVAS), (5, 5, 24, 255))
+    image = Image.new("RGBA", (CANVAS, CANVAS), (*theme["top"], 255))
     pixels = image.load()
     for y in range(CANVAS):
         t = y / (CANVAS - 1)
         for x in range(CANVAS):
             radial = max(0.0, 1.0 - (((x - 640) / 780) ** 2 + ((y - 590) / 900) ** 2))
-            pixels[x, y] = (
-                int(4 + radial * 7),
-                int(5 + radial * 6),
-                int(22 + radial * 18 + t * 2),
-                255,
-            )
+            pixels[x, y] = tuple(int(theme["top"][channel] * (1 - t) + theme["bottom"][channel] * t + radial * (9 if channel != 2 else 14)) for channel in range(3)) + (255,)
     draw = ImageDraw.Draw(image, "RGBA")
     for _ in range(92):
         x, y = rng.randrange(26, 1254), rng.randrange(24, 1228)
         radius = rng.choice((1, 1, 1, 2))
-        color = rng.choice(((172, 191, 255, 90), (235, 185, 255, 66), (255, 255, 255, 58)))
+        color = rng.choice(((*theme["ink"], 82), (*theme["glow"], 64), (255, 255, 255, 52)))
         draw.ellipse((x - radius, y - radius, x + radius, y + radius), fill=color)
+
+    if visual_style in {"paper", "neon"}:
+        for x in range(70, 1240, 92):
+            draw.line((x, 280, x, 1010), fill=(*theme["ink"], 18), width=1)
+        for y in range(310, 1010, 87):
+            draw.line((70, y, 1210, y), fill=(*theme["ink"], 14), width=1)
+    if visual_style == "desert":
+        draw.polygon(((0, 985), (190, 895), (350, 958), (545, 842), (735, 945), (930, 866), (1280, 976), (1280, 1280), (0, 1280)), fill=(40, 24, 20, 84))
 
     draw.ellipse((608, 65, 672, 129), outline=(202, 208, 235, 150), width=2)
     draw.line((621, 95, 659, 95), fill=(202, 208, 235, 150), width=2)
@@ -91,22 +110,16 @@ def render_qr_artwork(title: str, destination: str, output: Path, flowers_dir: P
     code = qr.make_image(
         image_factory=StyledPilImage,
         module_drawer=RoundedModuleDrawer(radius_ratio=0.9),
-        color_mask=SolidFillColorMask(back_color=(7, 7, 29), front_color=LAVENDER),
+        color_mask=SolidFillColorMask(back_color=(7, 7, 20), front_color=theme["ink"]),
     ).convert("RGBA")
     code = code.resize((650, 650), Image.Resampling.NEAREST)
     qr_x, qr_y = 315, 302
     draw.rounded_rectangle((qr_x - 18, qr_y - 18, qr_x + 668, qr_y + 668), radius=28, fill=(9, 9, 33, 238), outline=(200, 190, 246, 50), width=2)
     image.alpha_composite(code, (qr_x, qr_y))
 
-    arrangements = [
-        ("poppy.png", (145, 245), 235, -18),
-        ("cosmos.png", (1125, 270), 235, 18),
-        ("anemone.png", (128, 735), 245, -12),
-        ("poppy.png", (1145, 760), 235, 16),
-        ("anemone.png", (1035, 1040), 150, 8),
-    ]
-    for name, centre, width, rotation in arrangements:
-        _flower(image, flowers_dir / name, centre, width, rotation)
+    placements = [((145, 245), 235, -18), ((1125, 270), 235, 18), ((128, 735), 245, -12), ((1145, 760), 235, 16), ((1035, 1040), 150, 8)]
+    for name, (centre, width, rotation) in zip(theme["flowers"], placements):
+        _flower(image, flowers_dir / f"{name}.png", centre, width, rotation, theme["glow"])
 
     draw = ImageDraw.Draw(image, "RGBA")
     _centred(draw, 1092, "© CLEARLIGHT CREATIVE 2026", _font(18), (244, 241, 255, 218), 7)

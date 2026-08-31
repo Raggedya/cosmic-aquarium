@@ -10,7 +10,7 @@ const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
 await fs.mkdir(path.join(pages,'artists'),{recursive:true});
 await fs.writeFile(path.join(pages,'assets','site.css'),reset+css);
-for (const name of ['cosmos.png','poppy.png','anemone.png']) {
+for (const name of ['cosmos.png','poppy.png','anemone.png','rose.png','thorn.png']) {
   await fs.copyFile(path.join(root,'public','flowers',name),path.join(pages,'assets','flowers',name));
 }
 const manifest = {
@@ -18,12 +18,17 @@ const manifest = {
   slug: 'immigrant-union',
   artist: 'Immigrant Union',
   bandcampUrl: 'https://immigrantunionmusic.bandcamp.com/',
+  visualStyle: 'cosmic',
   albums: immigrantUnionAlbums.map(({key,color})=>({key,color})),
   tracks: immigrantUnionSongs,
 };
 const defaultManifestPath=path.join(pages,'artists','immigrant-union.json');
 try {
-  await fs.access(defaultManifestPath);
+  const existing = JSON.parse(await fs.readFile(defaultManifestPath,'utf8'));
+  if (!existing.visualStyle) {
+    existing.visualStyle = 'cosmic';
+    await fs.writeFile(defaultManifestPath,JSON.stringify(existing,null,2)+'\n');
+  }
 } catch {
   await fs.writeFile(defaultManifestPath,JSON.stringify(manifest,null,2)+'\n');
 }

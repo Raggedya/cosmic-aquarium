@@ -14,7 +14,7 @@ import { defaultArtistManifest } from '@/src/data/default-artist-manifest';
 import type { ArtistManifest } from '@/src/types/artist-manifest';
 
 type Depth = 'far' | 'mid' | 'near' | 'foreground';
-type Species = 'cosmos' | 'poppy' | 'anemone';
+type Species = 'cosmos' | 'poppy' | 'anemone' | 'rose' | 'thorn';
 
 interface CreatureDefinition {
   id: string;
@@ -46,6 +46,19 @@ const CREATURES: CreatureDefinition[] = [
 
 const historyKey = 'project-b-side:cosmic-aquarium-history-v1';
 const captureDurationMs = 430;
+
+const themedSpecies: Record<string, Species[]> = {
+  crimson: Array<Species>(10).fill('rose'),
+  paper: ['cosmos', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'cosmos'],
+  thorn: Array<Species>(10).fill('thorn'),
+  violet: ['anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos'],
+  neon: ['cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone'],
+  desert: ['poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy'],
+};
+
+function speciesForStyle(style: string | undefined, index: number, fallback: Species): Species {
+  return themedSpecies[style ?? 'cosmic']?.[index] ?? fallback;
+}
 
 function creatureStyle(creature: CreatureDefinition, index: number): CSSProperties {
   return {
@@ -80,7 +93,11 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const selectedTrack = selectedCreature && manifest.tracks.length
     ? manifest.tracks[selectedCreature.trackIndex % manifest.tracks.length]
     : null;
-  const selectedFlower = selectedCreature ? '/flowers/' + selectedCreature.species + '.png' : '/flowers/cosmos.png';
+  const selectedCreatureIndex = selectedCreature ? CREATURES.findIndex((creature) => creature.id === selectedCreature.id) : 0;
+  const selectedSpecies = selectedCreature
+    ? speciesForStyle(manifest.visualStyle, selectedCreatureIndex, selectedCreature.species)
+    : 'cosmos';
+  const selectedFlower = '/flowers/' + selectedSpecies + '.png';
   const selectedEmbed = selectedTrack ? officialTrackEmbedUrl(selectedTrack.bandcampEmbedTrackId) : null;
   const selectedAccent = selectedTrack ? selectedTrack.accent ?? albumAccent(manifest, selectedTrack.albumKey) : '#b9a7ff';
 
@@ -177,8 +194,9 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   return (
     <main
       className={'cosmic-aquarium ' + (selectedTrack ? 'has-player ' : '') + (capturingId ? 'is-capturing' : '')}
+      data-theme={manifest.visualStyle ?? 'cosmic'}
       style={aquariumStyle}
-      aria-label="Cosmic Aquarium music discovery experience"
+      aria-label="Cosmic Aquaria music discovery experience"
     >
       <div className="cosmic-atmosphere" aria-hidden="true">
         <i /><i /><i /><i /><i /><i />
@@ -195,11 +213,12 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         {CREATURES.map((creature, index) => {
           const isSelected = selectedId === creature.id;
           const isCapturing = capturingId === creature.id;
+          const species = speciesForStyle(manifest.visualStyle, index, creature.species);
           return (
             <button
               key={creature.id}
               className={
-                'creature creature--' + creature.species + ' depth--' + creature.depth +
+                'creature creature--' + species + ' depth--' + creature.depth +
                 (isSelected ? ' is-selected' : '') + (isCapturing ? ' is-touched' : '')
               }
               style={creatureStyle(creature, index)}
@@ -210,7 +229,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
               onClick={(event) => onCreatureKeyboardClick(event, creature)}
             >
               <span className="creature-hitbox" aria-hidden="true" />
-              <img src={'/flowers/' + creature.species + '.png'} alt="" draggable="false" />
+              <img src={'/flowers/' + species + '.png'} alt="" draggable="false" />
             </button>
           );
         })}
