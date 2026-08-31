@@ -314,7 +314,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       ) : null}
 
       {selectedTrack ? (
-        <section className="living-player" aria-labelledby="living-player-title">
+        <section key={selectedTrack.id} className="living-player" aria-labelledby="living-player-title">
           <img className="player-membrane" src={selectedFlower} alt="" aria-hidden="true" />
           <div className="player-copy">
             <p>{selectedTrack.albumTitle} · {selectedTrack.year}</p>
