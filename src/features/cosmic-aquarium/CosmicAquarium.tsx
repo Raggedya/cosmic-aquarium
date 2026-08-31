@@ -82,6 +82,8 @@ function albumAccent(manifest: ArtistManifest, albumKey: string) {
 
 export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const captureTimer = useRef<number | null>(null);
+  const commerceTimer = useRef<number | null>(null);
+  const commerceStartedForSlug = useRef('');
   const trackDeck = useRef<string[]>([]);
   const trackDeckSlug = useRef('');
   const [manifest, setManifest] = useState(defaultArtistManifest);
@@ -89,6 +91,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedTrack, setSelectedTrack] = useState<ArtistManifest['tracks'][number] | null>(null);
   const [playerDeparting, setPlayerDeparting] = useState(false);
+  const [commerceVisible, setCommerceVisible] = useState(false);
   const [touchOrigin, setTouchOrigin] = useState({ x: 50, y: 50 });
   const [announcement, setAnnouncement] = useState('A living aquarium surrounds you. Touch an unknown creature to discover its song.');
 
@@ -103,6 +106,16 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const selectedFlower = '/flowers/' + selectedSpecies + '.png';
   const selectedEmbed = selectedTrack ? officialTrackEmbedUrl(selectedTrack.bandcampEmbedTrackId) : null;
   const selectedAccent = selectedTrack ? selectedTrack.accent ?? albumAccent(manifest, selectedTrack.albumKey) : '#b9a7ff';
+  const commerceSpecies = speciesForStyle(manifest.visualStyle, 0, 'cosmos');
+
+  function scheduleCommerceInvitation() {
+    if (!manifest.commerceAvailable || !manifest.commerceUrl || commerceStartedForSlug.current === manifest.slug) return;
+    commerceStartedForSlug.current = manifest.slug;
+    commerceTimer.current = window.setTimeout(() => {
+      setCommerceVisible(true);
+      commerceTimer.current = null;
+    }, 25_000);
+  }
 
   useEffect(() => {
     const viewportTimers = new Set<number>();
@@ -148,6 +161,17 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       window.visualViewport?.removeEventListener('scroll', syncVisibleViewport);
       document.removeEventListener('visibilitychange', onVisibilityChange);
     };
+  }, []);
+
+  useEffect(() => {
+    if (commerceTimer.current !== null) window.clearTimeout(commerceTimer.current);
+    commerceTimer.current = null;
+    commerceStartedForSlug.current = '';
+    setCommerceVisible(false);
+  }, [manifest.slug]);
+
+  useEffect(() => () => {
+    if (commerceTimer.current !== null) window.clearTimeout(commerceTimer.current);
   }, []);
 
   useEffect(() => {
@@ -246,6 +270,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       setSelectedTrack(track);
       setCapturingId(null);
       rememberTrack(track.id);
+      scheduleCommerceInvitation();
       setAnnouncement(track.title + ' by ' + track.artist + '. Use the embedded Bandcamp control to stream.');
       if ('vibrate' in navigator) navigator.vibrate([8, 34, 12]);
       captureTimer.current = null;
@@ -393,6 +418,22 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
             <i aria-hidden="true" /><span>RELEASE</span>
           </button>
         </section>
+      ) : null}
+
+      {commerceVisible && manifest.commerceAvailable && manifest.commerceUrl ? (
+        <a
+          className="purchase-invitation is-visible"
+          href={manifest.commerceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={'Buy music or merchandise from ' + manifest.artist + ' on Bandcamp'}
+        >
+          <span className="purchase-orbit" aria-hidden="true">
+            <img src={'/flowers/' + commerceSpecies + '.png'} alt="" />
+          </span>
+          <strong>BUY MUSIC</strong>
+          <small>SUPPORT THE ARTIST</small>
+        </a>
       ) : null}
 
       <p className="cosmic-legal">INDEPENDENT &amp; UNOFFICIAL · LISTENING AND SUPPORT REMAIN ON BANDCAMP</p>

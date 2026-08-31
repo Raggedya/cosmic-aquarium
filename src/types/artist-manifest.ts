@@ -12,6 +12,8 @@ export interface ArtistManifest {
   slug: string;
   artist: string;
   bandcampUrl: string;
+  commerceAvailable?: boolean;
+  commerceUrl?: string | null;
   visualStyle?: VisualStyle;
   generatedAt?: string;
   albums: ArtistAlbumAccent[];

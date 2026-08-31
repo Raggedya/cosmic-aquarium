@@ -21,6 +21,8 @@ const manifest = {
   slug: 'immigrant-union',
   artist: 'Immigrant Union',
   bandcampUrl: 'https://immigrantunionmusic.bandcamp.com/',
+  commerceAvailable: true,
+  commerceUrl: 'https://immigrantunionmusic.bandcamp.com/',
   visualStyle: 'cosmic',
   albums: immigrantUnionAlbums.map(({key,color})=>({key,color})),
   tracks: immigrantUnionSongs,

@@ -358,6 +358,64 @@
 .release-current span { position: absolute; top: 36px; font-size: 5px; font-weight: 700; letter-spacing: .14em; }
 .release-current:hover,.release-current:focus-visible { color: #fff; }
 
+.purchase-invitation {
+  position: absolute;
+  z-index: 32;
+  left: 50%;
+  bottom: max(40px, calc(env(safe-area-inset-bottom) + 34px));
+  display: grid;
+  min-width: 132px;
+  min-height: 116px;
+  place-items: center;
+  align-content: start;
+  color: rgba(246, 241, 235, .82);
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.purchase-invitation[hidden] { display: none; }
+.purchase-invitation.is-visible { animation: purchase-invitation-emerge 1.2s ease both; }
+
+.purchase-orbit {
+  position: relative;
+  display: grid;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 10px;
+  place-items: center;
+  border: 1px solid rgba(246, 241, 235, .46);
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(225, 211, 255, 0);
+  animation: purchase-invitation-pulse 10s ease-in-out 1.2s infinite;
+}
+
+.purchase-orbit img {
+  display: block;
+  width: 38px;
+  height: 45px;
+  object-fit: contain;
+  filter: saturate(.72) brightness(1.04);
+  pointer-events: none;
+}
+
+.purchase-invitation strong,
+.purchase-invitation small {
+  display: block;
+  padding-left: .24em;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-style: normal;
+  line-height: 1;
+}
+
+.purchase-invitation strong { font-size: 8px; font-weight: 650; letter-spacing: .24em; }
+.purchase-invitation small { margin-top: 9px; color: rgba(236, 232, 239, .5); font-size: 5px; font-weight: 650; letter-spacing: .2em; }
+.purchase-invitation:hover,.purchase-invitation:focus-visible { color: #fff; }
+.purchase-invitation:hover .purchase-orbit,.purchase-invitation:focus-visible .purchase-orbit { border-color: rgba(255,255,255,.75); }
+
 .cosmic-legal { position: absolute; z-index: 31; left: 0; right: 0; bottom: max(10px, env(safe-area-inset-bottom)); margin: 0; color: rgba(220, 231, 255, .22); font-size: 5px; font-weight: 700; letter-spacing: .13em; text-align: center; pointer-events: none; }
 
 /* Seven independent visual models. The selected model changes the world, not the music. */
@@ -479,6 +537,15 @@
   to { opacity: .42; transform: translate3d(calc(-50% + 24px), 120dvh, 0) rotate(5deg) scale(.91); }
 }
 @keyframes progress-breathe { 50% { opacity: .38; transform: translate(-50%, -50%) scale(.72); } }
+@keyframes purchase-invitation-emerge {
+  from { opacity: 0; transform: translateX(-50%) translateY(8px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+@keyframes purchase-invitation-pulse {
+  0%, 78%, 100% { opacity: .78; transform: scale(1); box-shadow: 0 0 0 rgba(225, 211, 255, 0); }
+  88% { opacity: 1; transform: scale(1.025); box-shadow: 0 0 22px rgba(205, 187, 255, .16); }
+  94% { opacity: .86; transform: scale(1.008); box-shadow: 0 0 9px rgba(205, 187, 255, .06); }
+}
 
 @media (max-height: 760px) {
   .living-player { top: 60%; min-height: 420px; padding-top: 62px; transform: translate(-50%, -50%) scale(.91); }
@@ -490,6 +557,7 @@
   .cosmic-title { top: calc(var(--viewport-top, 0px) + max(12px, env(safe-area-inset-top))); }
   .living-player { top: 58%; transform: translate(-50%, -50%) scale(.82); }
   .cosmic-legal { display: none; }
+  .purchase-invitation { bottom: max(18px, calc(env(safe-area-inset-bottom) + 12px)); transform: translateX(-50%) scale(.9); }
 }
 
 @media (orientation: landscape) and (max-height: 520px) {
@@ -510,5 +578,5 @@
 }
 
 @media (forced-colors: active) {
-  .creature,.bandcamp-stream iframe,.release-current i { border: 1px solid ButtonText; }
+  .creature,.bandcamp-stream iframe,.release-current i,.purchase-orbit { border: 1px solid ButtonText; }
 }

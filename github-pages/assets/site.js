@@ -56,10 +56,13 @@
   let manifest;
   let selectedButton;
   let trackDeck = [];
+  let purchaseTimer = null;
+  let purchaseScheduled = false;
   const field = root.querySelector('.creature-field');
   const player = root.querySelector('.living-player');
   const status = root.querySelector('[role="status"]');
   const titlePrompt = document.querySelector('.cosmic-title p');
+  const purchaseInvitation = root.querySelector('.purchase-invitation');
 
   player.querySelector('.player-membrane').addEventListener('animationstart',event => {
     if (event.animationName !== 'player-flower-drift-away') return;
@@ -77,6 +80,7 @@
       root.dataset.theme = styleSpecies[data.visualStyle] ? data.visualStyle : 'cosmic';
       document.querySelector('.cosmic-title h1').textContent = data.artist.toUpperCase();
       document.title = 'Cosmic Aquaria — ' + data.artist;
+      configurePurchaseInvitation(data);
       renderCreatures();
       announce(data.artist + '. The flower garden is awake.');
     })
@@ -102,6 +106,36 @@
       });
       field.append(button);
     });
+  }
+
+  function safeBandcampUrl(value) {
+    try {
+      const url = new URL(value);
+      const host = url.hostname.toLowerCase();
+      return url.protocol === 'https:' && (host === 'bandcamp.com' || host.endsWith('.bandcamp.com')) ? url.href : null;
+    } catch {
+      return null;
+    }
+  }
+
+  function configurePurchaseInvitation(data) {
+    const destination = data.commerceAvailable === true ? safeBandcampUrl(data.commerceUrl) : null;
+    if (!destination) return;
+    purchaseInvitation.href = destination;
+    purchaseInvitation.setAttribute('aria-label','Buy music or merchandise from ' + data.artist + ' on Bandcamp');
+    const iconSpecies = (styleSpecies[root.dataset.theme] || baseSpecies)[0];
+    purchaseInvitation.querySelector('img').src = base + '/assets/flowers/' + iconSpecies + '.png';
+    purchaseInvitation.dataset.available = 'true';
+  }
+
+  function schedulePurchaseInvitation() {
+    if (purchaseScheduled || purchaseInvitation.dataset.available !== 'true') return;
+    purchaseScheduled = true;
+    purchaseTimer = setTimeout(() => {
+      purchaseInvitation.hidden = false;
+      purchaseInvitation.classList.add('is-visible');
+      purchaseTimer = null;
+    },25000);
   }
 
   function readStoredIds(key) {
@@ -210,6 +244,7 @@
     }
     player.querySelector('.bandcamp-link').href = track.bandcampUrl || manifest.bandcampUrl;
     rememberTrack(track.id);
+    schedulePurchaseInvitation();
     announce((track.title || 'A song') + ' by ' + (track.artist || manifest.artist) + '.');
     if (navigator.vibrate) navigator.vibrate([8,34,12]);
   }
