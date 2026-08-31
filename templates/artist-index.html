@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" data-artist="{{SLUG}}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#01040d">
+  <title>Cosmic Aquarium — {{ARTIST}}</title>
+  <meta name="description" content="Catch a flower, reveal a {{ARTIST}} song, and continue listening on Bandcamp.">
+  <link rel="stylesheet" href="{{BASE}}/assets/site.css">
+</head>
+<body>
+  <main class="cosmic-aquarium" aria-label="Cosmic Aquarium music discovery experience">
+    <div class="cosmic-atmosphere" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i>
+      <span class="distant-swarm"><b></b><b></b><b></b><b></b><b></b></span>
+    </div>
+    <header class="cosmic-title">
+      <span aria-hidden="true" class="cosmic-mark"><i></i></span>
+      <h1>{{ARTIST_UPPER}}</h1>
+      <p>TOUCH SOMETHING.</p>
+    </header>
+    <div class="creature-field" aria-label="Unknown song flowers"></div>
+    <div class="capture-transition" aria-hidden="true" hidden>
+      <i class="capture-point"></i><i class="capture-ring"></i><i class="capture-pulse"></i>
+    </div>
+    <section class="living-player" aria-labelledby="living-player-title" hidden>
+      <img class="player-membrane" alt="" aria-hidden="true">
+      <div class="player-nucleus" aria-hidden="true"><i class="nucleus-landscape"></i><span></span></div>
+      <div class="player-copy"><p></p><h2 id="living-player-title"></h2><span></span></div>
+      <div class="organic-progress" aria-hidden="true"><i></i><span>STREAM</span><b></b></div>
+      <div class="bandcamp-stream"><span>TOUCH PLAY TO STREAM</span><iframe title="Official Bandcamp player" loading="eager" allow="autoplay"></iframe></div>
+      <p class="stream-unavailable" hidden>Streaming is unavailable here. Continue on Bandcamp.</p>
+      <a class="bandcamp-link" target="_blank" rel="noopener noreferrer">VIEW &amp; SUPPORT ON BANDCAMP ↗</a>
+      <button class="release-current" type="button" aria-label="Release this song back into the aquarium"><i aria-hidden="true"></i><span>RELEASE</span></button>
+    </section>
+    <p class="cosmic-legal">INDEPENDENT &amp; UNOFFICIAL · LISTENING AND SUPPORT REMAIN ON BANDCAMP</p>
+    <p class="visually-hidden" role="status" aria-live="polite"></p>
+  </main>
+  <script src="{{BASE}}/assets/site.js" defer></script>
+</body>
+</html>

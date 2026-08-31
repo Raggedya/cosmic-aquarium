@@ -37,3 +37,11 @@ yarn-error.log*
 # deployment
 .vercel
 next-env.d.ts
+
+# desktop packaging
+/desktop/.venv-build/
+/build/
+/dist/*.exe
+/desktop/cosmic-aquarium.ico
+__pycache__/
+*.pyc

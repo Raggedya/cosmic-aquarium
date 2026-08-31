@@ -10,7 +10,8 @@ import {
   type PointerEvent,
 } from 'react';
 import { officialTrackEmbedUrl } from '@/src/adapters/bandcamp-adapter';
-import { immigrantUnionAlbums, immigrantUnionSongs } from '@/src/data/immigrant-union-catalogue';
+import { defaultArtistManifest } from '@/src/data/default-artist-manifest';
+import type { ArtistManifest } from '@/src/types/artist-manifest';
 
 type Depth = 'far' | 'mid' | 'near' | 'foreground';
 type Species = 'cosmos' | 'poppy' | 'anemone';
@@ -60,12 +61,13 @@ function creatureStyle(creature: CreatureDefinition, index: number): CSSProperti
   } as CSSProperties;
 }
 
-function albumAccent(albumKey: string) {
-  return immigrantUnionAlbums.find((album) => album.key === albumKey)?.color ?? '#73d9ff';
+function albumAccent(manifest: ArtistManifest, albumKey: string) {
+  return manifest.albums.find((album) => album.key === albumKey)?.color ?? '#b9a7ff';
 }
 
-export function CosmicAquarium() {
+export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const captureTimer = useRef<number | null>(null);
+  const [manifest, setManifest] = useState(defaultArtistManifest);
   const [capturingId, setCapturingId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [touchOrigin, setTouchOrigin] = useState({ x: 50, y: 50 });
@@ -75,10 +77,36 @@ export function CosmicAquarium() {
     () => CREATURES.find((creature) => creature.id === selectedId) ?? null,
     [selectedId],
   );
-  const selectedTrack = selectedCreature ? immigrantUnionSongs[selectedCreature.trackIndex] : null;
+  const selectedTrack = selectedCreature && manifest.tracks.length
+    ? manifest.tracks[selectedCreature.trackIndex % manifest.tracks.length]
+    : null;
   const selectedFlower = selectedCreature ? '/flowers/' + selectedCreature.species + '.png' : '/flowers/cosmos.png';
   const selectedEmbed = selectedTrack ? officialTrackEmbedUrl(selectedTrack.bandcampEmbedTrackId) : null;
-  const selectedAccent = selectedTrack ? albumAccent(selectedTrack.albumKey) : '#73d9ff';
+  const selectedAccent = selectedTrack ? selectedTrack.accent ?? albumAccent(manifest, selectedTrack.albumKey) : '#b9a7ff';
+
+  useEffect(() => {
+    if (!manifestSlug || manifestSlug === defaultArtistManifest.slug) {
+      setManifest(defaultArtistManifest);
+      return;
+    }
+    const controller = new AbortController();
+    fetch('/artists/' + encodeURIComponent(manifestSlug) + '.json', { signal: controller.signal })
+      .then((response) => {
+        if (!response.ok) throw new Error('Artist manifest unavailable');
+        return response.json() as Promise<ArtistManifest>;
+      })
+      .then((next) => {
+        if (next.schemaVersion === 1 && next.artist && Array.isArray(next.tracks) && next.tracks.length) {
+          setManifest(next);
+          setAnnouncement(next.artist + '. The flower garden is awake.');
+        }
+      })
+      .catch((error: unknown) => {
+        if (error instanceof DOMException && error.name === 'AbortError') return;
+        setAnnouncement('This aquarium is not available yet. Immigrant Union remains in view.');
+      });
+    return () => controller.abort();
+  }, [manifestSlug]);
 
   useEffect(() => {
     function onKeyDown(event: KeyboardEvent) {
@@ -104,7 +132,8 @@ export function CosmicAquarium() {
   function beginCapture(creature: CreatureDefinition, clientX?: number, clientY?: number) {
     if (capturingId === creature.id) return;
     if (captureTimer.current !== null) window.clearTimeout(captureTimer.current);
-    const track = immigrantUnionSongs[creature.trackIndex];
+    const track = manifest.tracks[creature.trackIndex % manifest.tracks.length];
+    if (!track) return;
     setTouchOrigin({
       x: clientX === undefined ? creature.x : (clientX / window.innerWidth) * 100,
       y: clientY === undefined ? creature.y : (clientY / window.innerHeight) * 100,
@@ -158,7 +187,7 @@ export function CosmicAquarium() {
 
       <header className="cosmic-title">
         <span aria-hidden="true" className="cosmic-mark"><i /></span>
-        <h1>IMMIGRANT UNION</h1>
+        <h1>{manifest.artist.toUpperCase()}</h1>
         <p>{selectedTrack ? 'A SONG FOUND IN THE DARK' : 'TOUCH SOMETHING.'}</p>
       </header>
 

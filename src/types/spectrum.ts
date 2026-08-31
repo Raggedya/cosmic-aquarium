@@ -15,4 +15,5 @@ export interface SpectrumRelease {
   /** Track ID published by Bandcamp for its official embedded player. */
   bandcampEmbedTrackId: string;
   sourcePage: string;
+  accent?: string;
 }

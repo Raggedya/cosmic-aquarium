@@ -1,0 +1,116 @@
+(() => {
+  const root = document.querySelector('.cosmic-aquarium');
+  const slug = document.documentElement.dataset.artist || 'immigrant-union';
+  const base = location.hostname.endsWith('github.io') ? '/cosmic-aquarium' : '';
+  const species = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos'];
+  const depths = ['near','far','mid','near','near','far','mid','foreground','far','mid'];
+  const positions = [
+    [13,30,118,24,-9,34,-42],[78,19,66,31,-18,-49,29],[83,43,98,27,-4,-72,24],
+    [20,61,132,35,-24,43,-28],[88,79,108,23,-12,-38,-52],[8,84,74,38,-29,64,-19],
+    [52,38,158,33,-20,-27,39],[-5,48,210,42,-15,44,18],[57,73,55,29,-22,30,-55],
+    [48,91,96,26,-8,58,-37]
+  ];
+  let manifest;
+  let selectedButton;
+  const field = root.querySelector('.creature-field');
+  const player = root.querySelector('.living-player');
+  const status = root.querySelector('[role="status"]');
+  const titlePrompt = root.querySelector('.cosmic-title p');
+
+  fetch(base + '/artists/' + encodeURIComponent(slug) + '.json')
+    .then(response => {
+      if (!response.ok) throw new Error('Artist manifest unavailable');
+      return response.json();
+    })
+    .then(data => {
+      manifest = data;
+      document.querySelector('.cosmic-title h1').textContent = data.artist.toUpperCase();
+      document.title = 'Cosmic Aquarium — ' + data.artist;
+      renderCreatures();
+      announce(data.artist + '. The flower garden is awake.');
+    })
+    .catch(() => announce('This Cosmic Aquarium is not available yet.'));
+
+  function renderCreatures() {
+    field.replaceChildren();
+    positions.forEach((values,index) => {
+      const [x,y,size,duration,delay,travelX,travelY] = values;
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'creature creature--' + species[index] + ' depth--' + depths[index];
+      button.setAttribute('aria-label','Catch this unknown song flower');
+      button.style.cssText = '--x:'+x+'%;--y:'+y+'%;--size:'+size+'px;--duration:'+duration+'s;--delay:'+delay+'s;--travel-x:'+travelX+'px;--travel-y:'+travelY+'px;--hue:'+(190+index*16)+';--i:'+index;
+      button.innerHTML = '<span class="creature-hitbox" aria-hidden="true"></span><img src="'+base+'/assets/flowers/'+species[index]+'.png" alt="" draggable="false">';
+      button.addEventListener('pointerdown',event => {
+        event.preventDefault();
+        catchFlower(button,index,event.clientX,event.clientY);
+      });
+      button.addEventListener('click',event => {
+        if (event.detail === 0) catchFlower(button,index,x,y);
+      });
+      field.append(button);
+    });
+  }
+
+  function catchFlower(button,index,clientX,clientY) {
+    if (!manifest || !manifest.tracks || !manifest.tracks.length) return;
+    if (navigator.vibrate) navigator.vibrate(10);
+    root.style.setProperty('--touch-x',(clientX / innerWidth * 100)+'%');
+    root.style.setProperty('--touch-y',(clientY / innerHeight * 100)+'%');
+    root.classList.add('is-capturing');
+    button.classList.add('is-touched');
+    announce('Flower caught. Its light is reorganising.');
+    setTimeout(() => {
+      root.classList.remove('is-capturing');
+      button.classList.remove('is-touched');
+      openTrack(button,manifest.tracks[(index * 7) % manifest.tracks.length]);
+    },430);
+  }
+
+  function openTrack(button,track) {
+    selectedButton?.classList.remove('is-selected');
+    selectedButton = button;
+    button.classList.add('is-selected');
+    root.classList.add('has-player');
+    player.hidden = false;
+    titlePrompt.textContent = 'A SONG FOUND IN THE DARK';
+    root.style.setProperty('--player-accent',track.accent || '#b9a7ff');
+    player.querySelector('.player-membrane').src = button.querySelector('img').src;
+    player.querySelector('.player-nucleus span').textContent = (track.albumTitle || 'B').slice(0,1);
+    player.querySelector('.player-copy p').textContent = [track.albumTitle,track.year].filter(Boolean).join(' · ');
+    player.querySelector('.player-copy h2').textContent = track.title || 'Discover on Bandcamp';
+    player.querySelector('.player-copy span').textContent = track.artist || manifest.artist;
+    player.querySelector('.organic-progress b').textContent = track.duration || '';
+    const iframe = player.querySelector('iframe');
+    const stream = player.querySelector('.bandcamp-stream');
+    const unavailable = player.querySelector('.stream-unavailable');
+    if (/^\d+$/.test(track.bandcampEmbedTrackId || '')) {
+      iframe.src = 'https://bandcamp.com/EmbeddedPlayer/track='+encodeURIComponent(track.bandcampEmbedTrackId)+'/size=small/bgcol=07101f/linkcol=b9a7ff/tracklist=false/artwork=none/transparent=true/';
+      stream.hidden = false;
+      unavailable.hidden = true;
+    } else {
+      iframe.removeAttribute('src');
+      stream.hidden = true;
+      unavailable.hidden = false;
+    }
+    player.querySelector('.bandcamp-link').href = track.bandcampUrl || manifest.bandcampUrl;
+    announce((track.title || 'A song') + ' by ' + (track.artist || manifest.artist) + '.');
+    if (navigator.vibrate) navigator.vibrate([8,34,12]);
+  }
+
+  player.querySelector('.release-current').addEventListener('click',() => {
+    player.hidden = true;
+    root.classList.remove('has-player');
+    selectedButton?.classList.remove('is-selected');
+    selectedButton = null;
+    titlePrompt.textContent = 'TOUCH SOMETHING.';
+    announce('The song returned to the aquarium. Touch another flower.');
+    if (navigator.vibrate) navigator.vibrate(7);
+  });
+
+  addEventListener('keydown',event => {
+    if (event.key === 'Escape' && !player.hidden) player.querySelector('.release-current').click();
+  });
+
+  function announce(message) { status.textContent = message; }
+})();

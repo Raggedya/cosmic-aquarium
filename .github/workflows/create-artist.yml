@@ -1,0 +1,106 @@
+name: Create Cosmic Aquarium
+
+on:
+  workflow_dispatch:
+    inputs:
+      artist_title:
+        description: Band or artist name
+        required: true
+        type: string
+      bandcamp_url:
+        description: Official Bandcamp artist, album or track URL
+        required: true
+        type: string
+      recipient_email:
+        description: Delivery email
+        required: true
+        default: andrewharris501@gmail.com
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cosmic-aquarium-publishing
+  cancel-in-progress: false
+
+jobs:
+  create:
+    env:
+      RESEND_CONFIGURED: ${{ secrets.RESEND_API_KEY != '' && secrets.REPORT_FROM_EMAIL != '' }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install QR verification dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements-automation.txt
+      - name: Refresh shared aquarium assets
+        run: node --experimental-strip-types scripts/build-github-pages.mjs
+      - name: Create artist page and scan-verified floral QR
+        id: artist
+        shell: bash
+        env:
+          ARTIST_TITLE: ${{ inputs.artist_title }}
+          BANDCAMP_URL: ${{ inputs.bandcamp_url }}
+          RECIPIENT_EMAIL: ${{ inputs.recipient_email }}
+        run: |
+          set -euo pipefail
+          result="$(python scripts/create_artist.py --title "$ARTIST_TITLE" --bandcamp-url "$BANDCAMP_URL" --recipient "$RECIPIENT_EMAIL")"
+          printf '%s\n' "$result"
+          printf '%s' "$result" > create-result.json
+          python - <<'PY'
+          import json, os
+          result=json.load(open("create-result.json",encoding="utf-8"))
+          with open(os.environ["GITHUB_OUTPUT"],"a",encoding="utf-8") as output:
+              for key in ("slug","artist","page_url","qr_path","tracks","import_status"):
+                  print(f"{key}={result[key]}",file=output)
+          PY
+      - name: Commit generated edition
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Cosmic Aquarium Creator"
+          git config user.email "cosmic-aquarium@users.noreply.github.com"
+          git add github-pages
+          if git diff --cached --quiet; then
+            echo "Edition already current."
+          else
+            git commit -m "Create ${{ steps.artist.outputs.artist }} Cosmic Aquarium"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: github-pages
+      - name: Publish artist page
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Send link and QR by email
+        if: ${{ env.RESEND_CONFIGURED == 'true' }}
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          REPORT_FROM_EMAIL: ${{ secrets.REPORT_FROM_EMAIL }}
+          REPORT_RECIPIENT: ${{ secrets.REPORT_RECIPIENT }}
+        run: >-
+          python scripts/send_delivery.py
+          --title "${{ steps.artist.outputs.artist }}"
+          --page-url "${{ steps.artist.outputs.page_url }}"
+          --qr "${{ steps.artist.outputs.qr_path }}"
+          --recipient "${{ inputs.recipient_email }}"
+      - name: Explain email configuration when unavailable
+        if: ${{ env.RESEND_CONFIGURED != 'true' }}
+        run: echo "::notice::Page and QR were created. Add RESEND_API_KEY and REPORT_FROM_EMAIL repository secrets to enable automatic email."
