@@ -60,6 +60,12 @@
   const status = root.querySelector('[role="status"]');
   const titlePrompt = document.querySelector('.cosmic-title p');
 
+  player.querySelector('.player-membrane').addEventListener('animationstart',event => {
+    if (event.animationName !== 'player-flower-drift-away') return;
+    titlePrompt.textContent = 'TOUCH SOMETHING.';
+    announce('Touch another flower.');
+  });
+
   fetch(base + '/artists/' + encodeURIComponent(slug) + '.json?v=' + encodeURIComponent(version), { cache: 'no-store' })
     .then(response => {
       if (!response.ok) throw new Error('Artist manifest unavailable');

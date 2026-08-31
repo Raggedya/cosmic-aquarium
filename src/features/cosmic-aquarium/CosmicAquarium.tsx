@@ -83,6 +83,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const [manifest, setManifest] = useState(defaultArtistManifest);
   const [capturingId, setCapturingId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [playerDeparting, setPlayerDeparting] = useState(false);
   const [touchOrigin, setTouchOrigin] = useState({ x: 50, y: 50 });
   const [announcement, setAnnouncement] = useState('A living aquarium surrounds you. Touch an unknown creature to discover its song.');
 
@@ -205,6 +206,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     setAnnouncement('Flower caught. Its light is reorganising.');
     if ('vibrate' in navigator) navigator.vibrate(10);
     captureTimer.current = window.setTimeout(() => {
+      setPlayerDeparting(false);
       setSelectedId(creature.id);
       setCapturingId(null);
       rememberTrack(track.id);
@@ -226,6 +228,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
 
   function releaseCurrent() {
     if (!selectedTrack) return;
+    setPlayerDeparting(false);
     setSelectedId(null);
     setAnnouncement(selectedTrack.title + ' returned to the aquarium. Touch another creature.');
     if ('vibrate' in navigator) navigator.vibrate(7);
@@ -264,7 +267,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
           {manifest.artist.toUpperCase()}
         </h1>
         <p style={{ margin: '9px 0 0', color: 'rgba(235, 241, 255, .56)', fontSize: 7, fontWeight: 650, letterSpacing: '.24em' }}>
-          {selectedTrack ? 'A SONG FOUND IN THE DARK' : 'TOUCH SOMETHING.'}
+          {selectedTrack && !playerDeparting ? 'A SONG FOUND IN THE DARK' : 'TOUCH SOMETHING.'}
         </p>
       </header>
 
@@ -315,7 +318,15 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
 
       {selectedTrack ? (
         <section key={selectedTrack.id} className="living-player is-active" aria-labelledby="living-player-title">
-          <img className="player-membrane" src={selectedFlower} alt="" aria-hidden="true" />
+          <img
+            className="player-membrane"
+            src={selectedFlower}
+            alt=""
+            aria-hidden="true"
+            onAnimationStart={(event) => {
+              if (event.animationName === 'player-flower-drift-away') setPlayerDeparting(true);
+            }}
+          />
           <div className="player-copy">
             <p>{selectedTrack.albumTitle} · {selectedTrack.year}</p>
             <h2 id="living-player-title">{selectedTrack.title}</h2>
