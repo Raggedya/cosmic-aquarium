@@ -11,6 +11,7 @@ import {
 } from 'react';
 import { officialTrackEmbedUrl } from '@/src/adapters/bandcamp-adapter';
 import { defaultArtistManifest } from '@/src/data/default-artist-manifest';
+import { buildTrackDeck, secureRandomUnit } from '@/src/features/cosmic-aquarium/track-shuffle';
 import type { ArtistManifest } from '@/src/types/artist-manifest';
 
 type Depth = 'far' | 'mid' | 'near' | 'foreground';
@@ -44,7 +45,8 @@ const CREATURES: CreatureDefinition[] = [
   { id: 'ca-10', trackIndex: 27, species: 'cosmos', depth: 'mid', x: 48, y: 91, size: 96, duration: 26, delay: -8, travelX: 58, travelY: -37, hue: 224 },
 ];
 
-const historyKey = 'project-b-side:cosmic-aquarium-history-v1';
+const historyKeyPrefix = 'cosmic-aquaria:recent-tracks:';
+const deckKeyPrefix = 'cosmic-aquaria:track-deck:';
 const captureDurationMs = 430;
 
 const themedSpecies: Record<string, Species[]> = {
@@ -80,9 +82,12 @@ function albumAccent(manifest: ArtistManifest, albumKey: string) {
 
 export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const captureTimer = useRef<number | null>(null);
+  const trackDeck = useRef<string[]>([]);
+  const trackDeckSlug = useRef('');
   const [manifest, setManifest] = useState(defaultArtistManifest);
   const [capturingId, setCapturingId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedTrack, setSelectedTrack] = useState<ArtistManifest['tracks'][number] | null>(null);
   const [playerDeparting, setPlayerDeparting] = useState(false);
   const [touchOrigin, setTouchOrigin] = useState({ x: 50, y: 50 });
   const [announcement, setAnnouncement] = useState('A living aquarium surrounds you. Touch an unknown creature to discover its song.');
@@ -91,9 +96,6 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     () => CREATURES.find((creature) => creature.id === selectedId) ?? null,
     [selectedId],
   );
-  const selectedTrack = selectedCreature && manifest.tracks.length
-    ? manifest.tracks[selectedCreature.trackIndex % manifest.tracks.length]
-    : null;
   const selectedCreatureIndex = selectedCreature ? CREATURES.findIndex((creature) => creature.id === selectedCreature.id) : 0;
   const selectedSpecies = selectedCreature
     ? speciesForStyle(manifest.visualStyle, selectedCreatureIndex, selectedCreature.species)
@@ -183,20 +185,53 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     };
   }, [selectedId]);
 
+  function readStoredIds(key: string) {
+    try {
+      const stored = JSON.parse(window.sessionStorage.getItem(key) ?? '[]') as unknown;
+      return Array.isArray(stored) ? stored.filter((id): id is string => typeof id === 'string') : [];
+    } catch {
+      return [];
+    }
+  }
+
   function rememberTrack(trackId: string) {
     try {
-      const prior = JSON.parse(window.sessionStorage.getItem(historyKey) ?? '[]') as string[];
+      const key = historyKeyPrefix + manifest.slug;
+      const prior = readStoredIds(key);
       const next = [trackId, ...prior.filter((id) => id !== trackId)].slice(0, 12);
-      window.sessionStorage.setItem(historyKey, JSON.stringify(next));
+      window.sessionStorage.setItem(key, JSON.stringify(next));
     } catch {
       // Session history is a progressive enhancement.
     }
   }
 
+  function nextShuffledTrack() {
+    const validIds = new Set(manifest.tracks.map((track) => track.id));
+    const deckKey = deckKeyPrefix + manifest.slug;
+
+    if (trackDeckSlug.current !== manifest.slug) {
+      trackDeck.current = readStoredIds(deckKey).filter((id) => validIds.has(id));
+      trackDeckSlug.current = manifest.slug;
+    }
+
+    if (!trackDeck.current.length) {
+      const recent = readStoredIds(historyKeyPrefix + manifest.slug);
+      trackDeck.current = buildTrackDeck([...validIds], recent, secureRandomUnit);
+    }
+
+    const trackId = trackDeck.current.shift();
+    try {
+      window.sessionStorage.setItem(deckKey, JSON.stringify(trackDeck.current));
+    } catch {
+      // The in-memory deck still prevents repeats when storage is unavailable.
+    }
+    return manifest.tracks.find((track) => track.id === trackId) ?? null;
+  }
+
   function beginCapture(creature: CreatureDefinition, clientX?: number, clientY?: number) {
     if (capturingId === creature.id) return;
     if (captureTimer.current !== null) window.clearTimeout(captureTimer.current);
-    const track = manifest.tracks[creature.trackIndex % manifest.tracks.length];
+    const track = nextShuffledTrack();
     if (!track) return;
     setTouchOrigin({
       x: clientX === undefined ? creature.x : (clientX / window.innerWidth) * 100,
@@ -208,6 +243,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     captureTimer.current = window.setTimeout(() => {
       setPlayerDeparting(false);
       setSelectedId(creature.id);
+      setSelectedTrack(track);
       setCapturingId(null);
       rememberTrack(track.id);
       setAnnouncement(track.title + ' by ' + track.artist + '. Use the embedded Bandcamp control to stream.');
@@ -230,6 +266,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     if (!selectedTrack) return;
     setPlayerDeparting(false);
     setSelectedId(null);
+    setSelectedTrack(null);
     setAnnouncement(selectedTrack.title + ' returned to the aquarium. Touch another creature.');
     if ('vibrate' in navigator) navigator.vibrate(7);
   }

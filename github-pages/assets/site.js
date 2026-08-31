@@ -55,6 +55,7 @@
   ];
   let manifest;
   let selectedButton;
+  let trackDeck = [];
   const field = root.querySelector('.creature-field');
   const player = root.querySelector('.living-player');
   const status = root.querySelector('[role="status"]');
@@ -103,8 +104,69 @@
     });
   }
 
+  function readStoredIds(key) {
+    try {
+      const stored = JSON.parse(sessionStorage.getItem(key) || '[]');
+      return Array.isArray(stored) ? stored.filter(id => typeof id === 'string') : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function randomUnit() {
+    if (globalThis.crypto?.getRandomValues) {
+      const value = new Uint32Array(1);
+      globalThis.crypto.getRandomValues(value);
+      return value[0] / 0x100000000;
+    }
+    return Math.random();
+  }
+
+  function shuffle(ids) {
+    const shuffled = [...new Set(ids.filter(Boolean))];
+    for (let index = shuffled.length - 1; index > 0; index -= 1) {
+      const swapIndex = Math.floor(randomUnit() * (index + 1));
+      [shuffled[index],shuffled[swapIndex]] = [shuffled[swapIndex],shuffled[index]];
+    }
+    return shuffled;
+  }
+
+  function refillTrackDeck() {
+    const allIds = [...new Set(manifest.tracks.map(track => track.id).filter(Boolean))];
+    const recent = readStoredIds('cosmic-aquaria:recent-tracks:' + slug).filter(id => allIds.includes(id));
+    const recentSet = new Set(recent);
+    trackDeck = [
+      ...shuffle(allIds.filter(id => !recentSet.has(id))),
+      ...shuffle(allIds.filter(id => recentSet.has(id)))
+    ];
+    if (trackDeck.length > 1 && trackDeck[0] === recent[0]) {
+      const alternativeIndex = trackDeck.findIndex(id => id !== recent[0]);
+      if (alternativeIndex > 0) [trackDeck[0],trackDeck[alternativeIndex]] = [trackDeck[alternativeIndex],trackDeck[0]];
+    }
+  }
+
+  function nextShuffledTrack() {
+    const deckKey = 'cosmic-aquaria:track-deck:' + slug;
+    const validIds = new Set(manifest.tracks.map(track => track.id));
+    if (!trackDeck.length) trackDeck = readStoredIds(deckKey).filter(id => validIds.has(id));
+    if (!trackDeck.length) refillTrackDeck();
+    const trackId = trackDeck.shift();
+    try { sessionStorage.setItem(deckKey, JSON.stringify(trackDeck)); } catch {}
+    return manifest.tracks.find(track => track.id === trackId) || null;
+  }
+
+  function rememberTrack(trackId) {
+    const key = 'cosmic-aquaria:recent-tracks:' + slug;
+    try {
+      const prior = readStoredIds(key);
+      sessionStorage.setItem(key, JSON.stringify([trackId,...prior.filter(id => id !== trackId)].slice(0,12)));
+    } catch {}
+  }
+
   function catchFlower(button,index,clientX,clientY) {
     if (!manifest || !manifest.tracks || !manifest.tracks.length) return;
+    const track = nextShuffledTrack();
+    if (!track) return;
     if (navigator.vibrate) navigator.vibrate(10);
     root.style.setProperty('--touch-x',(clientX / innerWidth * 100)+'%');
     root.style.setProperty('--touch-y',(clientY / innerHeight * 100)+'%');
@@ -114,7 +176,7 @@
     setTimeout(() => {
       root.classList.remove('is-capturing');
       button.classList.remove('is-touched');
-      openTrack(button,manifest.tracks[(index * 7) % manifest.tracks.length]);
+      openTrack(button,track);
     },430);
   }
 
@@ -147,6 +209,7 @@
       unavailable.hidden = false;
     }
     player.querySelector('.bandcamp-link').href = track.bandcampUrl || manifest.bandcampUrl;
+    rememberTrack(track.id);
     announce((track.title || 'A song') + ' by ' + (track.artist || manifest.artist) + '.');
     if (navigator.vibrate) navigator.vibrate([8,34,12]);
   }
