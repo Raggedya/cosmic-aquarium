@@ -50,7 +50,7 @@ const captureDurationMs = 430;
 const themedSpecies: Record<string, Species[]> = {
   crimson: Array<Species>(10).fill('rose'),
   paper: ['cosmos', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'cosmos'],
-  thorn: Array<Species>(10).fill('thorn'),
+  thorn: Array<Species>(10).fill('rose'),
   violet: ['anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos'],
   neon: ['cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone'],
   desert: ['poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy'],
@@ -192,7 +192,37 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   } as CSSProperties;
 
   return (
-    <main
+    <>
+      <header
+        className="cosmic-title"
+        style={{
+          position: 'fixed',
+          zIndex: 2147483647,
+          top: 'max(20px, env(safe-area-inset-top))',
+          left: '50%',
+          width: 'min(430px, 100vw)',
+          display: 'block',
+          visibility: 'visible',
+          opacity: 1,
+          color: '#f5f2ed',
+          fontFamily: 'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+          textAlign: 'center',
+          pointerEvents: 'none',
+          transform: 'translateX(-50%)',
+          filter: 'none',
+          mixBlendMode: 'normal',
+        }}
+      >
+        <span aria-hidden="true" className="cosmic-mark"><i /></span>
+        <h1 style={{ margin: 0, paddingLeft: '.38em', color: '#f5f2ed', fontSize: 13, fontWeight: 500, letterSpacing: '.38em' }}>
+          {manifest.artist.toUpperCase()}
+        </h1>
+        <p style={{ margin: '9px 0 0', color: 'rgba(235, 241, 255, .56)', fontSize: 7, fontWeight: 650, letterSpacing: '.24em' }}>
+          {selectedTrack ? 'A SONG FOUND IN THE DARK' : 'TOUCH SOMETHING.'}
+        </p>
+      </header>
+
+      <main
       className={'cosmic-aquarium ' + (selectedTrack ? 'has-player ' : '') + (capturingId ? 'is-capturing' : '')}
       data-theme={manifest.visualStyle ?? 'cosmic'}
       style={aquariumStyle}
@@ -202,12 +232,6 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         <i /><i /><i /><i /><i /><i />
         <span className="distant-swarm"><b /><b /><b /><b /><b /></span>
       </div>
-
-      <header className="cosmic-title">
-        <span aria-hidden="true" className="cosmic-mark"><i /></span>
-        <h1>{manifest.artist.toUpperCase()}</h1>
-        <p>{selectedTrack ? 'A SONG FOUND IN THE DARK' : 'TOUCH SOMETHING.'}</p>
-      </header>
 
       <div className="creature-field" aria-label="Unknown song flowers">
         {CREATURES.map((creature, index) => {
@@ -283,6 +307,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
 
       <p className="cosmic-legal">INDEPENDENT &amp; UNOFFICIAL · LISTENING AND SUPPORT REMAIN ON BANDCAMP</p>
       <p className="visually-hidden" role="status" aria-live="polite">{announcement}</p>
-    </main>
+      </main>
+    </>
   );
 }

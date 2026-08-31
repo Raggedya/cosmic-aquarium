@@ -44,18 +44,24 @@
 }
 
 .cosmic-title {
-  position: absolute;
-  z-index: 100;
+  position: fixed;
+  z-index: 2147483647;
   top: max(20px, env(safe-area-inset-top));
-  left: 0;
-  right: 0;
+  left: 50%;
+  width: min(430px, 100vw);
   display: block;
   visibility: visible;
   opacity: 1;
+  color: #f5f2ed;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  isolation: isolate;
+  contain: layout style;
+  filter: none;
+  mix-blend-mode: normal;
   text-align: center;
   pointer-events: none;
   text-shadow: 0 2px 24px #000;
-  transition: opacity .5s ease, transform .5s ease;
+  transform: translateX(-50%);
 }
 
 .cosmic-mark {
@@ -101,18 +107,15 @@
   transition: color .4s ease;
 }
 
-.has-player .cosmic-title { opacity: .64; transform: translateY(-2px); }
-.has-player .cosmic-title p { color: rgba(255, 167, 181, .66); }
-
 .creature-field {
   position: absolute;
   inset: 0;
   z-index: 3;
   pointer-events: none;
-  transition: filter .65s ease, opacity .65s ease;
+  transition: opacity .65s ease;
 }
 
-.has-player .creature-field { filter: brightness(.78) saturate(.82); }
+.has-player .creature-field { opacity: .72; }
 
 .creature {
   --depth-scale: 1;
@@ -135,7 +138,6 @@
   transform-origin: center;
   animation: flower-fall var(--duration) linear var(--delay) infinite;
   transition: opacity .42s ease, filter .42s ease;
-  will-change: transform;
 }
 
 .creature::before {
@@ -145,16 +147,15 @@
   z-index: -1;
   border-radius: 50%;
   background: radial-gradient(ellipse, hsla(var(--hue), 88%, 64%, .18), transparent 70%);
-  filter: blur(16px);
   opacity: .72;
   pointer-events: none;
 }
 
 .creature-hitbox { position: absolute; inset: -8px; min-width: 44px; min-height: 44px; border-radius: 50%; }
-.depth--far { --depth-scale: .62; --depth-opacity: .4; filter: blur(.85px); }
+.depth--far { --depth-scale: .62; --depth-opacity: .4; }
 .depth--mid { --depth-scale: .88; --depth-opacity: .72; }
 .depth--near { --depth-scale: 1.05; --depth-opacity: .92; }
-.depth--foreground { --depth-scale: 1.28; --depth-opacity: .58; filter: blur(1.1px); }
+.depth--foreground { --depth-scale: 1.28; --depth-opacity: .58; }
 
 .creature:focus-visible {
   outline: 1px solid rgba(153, 216, 255, .92);
@@ -167,17 +168,11 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: saturate(1.06) drop-shadow(0 0 10px rgba(55, 128, 255, .22));
+  filter: none;
   pointer-events: none;
   transform-origin: 50% 18%;
 }
-.creature--cosmos img { filter: brightness(.96) saturate(.92) drop-shadow(0 0 10px rgba(123, 176, 255, .22)); }
-.creature--poppy img { filter: brightness(.88) saturate(1.12) drop-shadow(0 0 10px rgba(255, 91, 112, .2)); }
-.creature--anemone img { filter: brightness(.9) saturate(1.08) drop-shadow(0 0 10px rgba(113, 96, 255, .22)); }
-.creature--rose img,
-.creature--thorn img { mix-blend-mode: screen; }
-.creature--rose img { filter: contrast(1.12) saturate(1.16) drop-shadow(0 0 10px rgba(183, 13, 37, .2)); }
-.creature--thorn img { filter: contrast(1.18) saturate(1.1); }
+.creature img { mix-blend-mode: normal; }
 
 .creature-body {
   position: absolute;
@@ -258,7 +253,6 @@
 .creature.is-touched {
   z-index: 9;
   opacity: 1;
-  filter: brightness(1.55) saturate(1.28) drop-shadow(0 0 18px hsla(var(--hue), 90%, 68%, .8));
   animation-play-state: paused;
 }
 
@@ -334,7 +328,7 @@
   height: 318px;
   object-fit: contain;
   opacity: .46;
-  filter: saturate(1.08) brightness(.82) drop-shadow(0 0 22px rgba(75, 134, 255, .3));
+  filter: none;
   transform: translateX(-50%);
   mask-image: linear-gradient(to bottom, #000 0 62%, transparent 94%);
 }
@@ -476,9 +470,6 @@
 .cosmic-aquarium[data-theme="desert"] .cosmic-title,
 .cosmic-aquarium[data-theme="paper"] .cosmic-title { text-shadow: 0 2px 20px rgba(0,0,0,.78); }
 
-.cosmic-aquarium[data-theme="crimson"] .player-membrane,
-.cosmic-aquarium[data-theme="thorn"] .player-membrane { mix-blend-mode: screen; }
-
 @keyframes cosmic-stars { to { transform: translate3d(-18px, 34px, 0); } }
 @keyframes cosmic-atmosphere-turn { to { transform: rotate(1turn); } }
 @keyframes flower-fall {
@@ -506,14 +497,13 @@
 }
 
 @media (max-height: 680px) {
-  .cosmic-title { top: max(12px, env(safe-area-inset-top)); transform: scale(.86); transform-origin: top center; }
+  .cosmic-title { top: max(12px, env(safe-area-inset-top)); }
   .living-player { top: 58%; transform: translate(-50%, -50%) scale(.82); }
   .cosmic-legal { display: none; }
 }
 
 @media (orientation: landscape) and (max-height: 520px) {
-  .cosmic-title { left: 22px; right: auto; top: max(12px, env(safe-area-inset-top)); text-align: left; }
-  .cosmic-mark { margin-left: 0; }
+  .cosmic-title { top: max(12px, env(safe-area-inset-top)); }
   .living-player { left: 62%; top: 51%; transform: translate(-50%, -50%) scale(.67); }
 }
 

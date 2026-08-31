@@ -8,7 +8,7 @@
     cosmic: baseSpecies,
     crimson: ['rose','rose','rose','rose','rose','rose','rose','rose','rose','rose'],
     paper: ['cosmos','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone','cosmos','cosmos'],
-    thorn: ['thorn','thorn','thorn','thorn','thorn','thorn','thorn','thorn','thorn','thorn'],
+    thorn: ['rose','rose','rose','rose','rose','rose','rose','rose','rose','rose'],
     violet: ['anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos'],
     neon: ['cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone'],
     desert: ['poppy','cosmos','poppy','poppy','cosmos','poppy','poppy','cosmos','poppy','poppy']
@@ -25,7 +25,7 @@
   const field = root.querySelector('.creature-field');
   const player = root.querySelector('.living-player');
   const status = root.querySelector('[role="status"]');
-  const titlePrompt = root.querySelector('.cosmic-title p');
+  const titlePrompt = document.querySelector('.cosmic-title p');
 
   fetch(base + '/artists/' + encodeURIComponent(slug) + '.json?v=' + encodeURIComponent(version), { cache: 'no-store' })
     .then(response => {
