@@ -45,10 +45,13 @@
 
 .cosmic-title {
   position: absolute;
-  z-index: 30;
+  z-index: 100;
   top: max(20px, env(safe-area-inset-top));
   left: 0;
   right: 0;
+  display: block;
+  visibility: visible;
+  opacity: 1;
   text-align: center;
   pointer-events: none;
   text-shadow: 0 2px 24px #000;
@@ -123,6 +126,7 @@
   padding: 0;
   background: none;
   cursor: pointer;
+  isolation: isolate;
   opacity: var(--depth-opacity);
   pointer-events: auto;
   touch-action: manipulation;
@@ -132,6 +136,18 @@
   animation: flower-fall var(--duration) linear var(--delay) infinite;
   transition: opacity .42s ease, filter .42s ease;
   will-change: transform;
+}
+
+.creature::before {
+  content: "";
+  position: absolute;
+  inset: 15% 8% 30%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, hsla(var(--hue), 88%, 64%, .18), transparent 70%);
+  filter: blur(16px);
+  opacity: .72;
+  pointer-events: none;
 }
 
 .creature-hitbox { position: absolute; inset: -8px; min-width: 44px; min-height: 44px; border-radius: 50%; }
@@ -151,17 +167,17 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: saturate(1.08) drop-shadow(0 0 17px rgba(55, 128, 255, .34));
+  filter: saturate(1.06) drop-shadow(0 0 10px rgba(55, 128, 255, .22));
   pointer-events: none;
   transform-origin: 50% 18%;
 }
-.creature--cosmos img { filter: brightness(.96) saturate(.92) drop-shadow(0 0 18px rgba(123, 176, 255, .36)); }
-.creature--poppy img { filter: brightness(.88) saturate(1.14) drop-shadow(0 0 18px rgba(255, 91, 112, .34)); }
-.creature--anemone img { filter: brightness(.9) saturate(1.1) drop-shadow(0 0 18px rgba(113, 96, 255, .36)); }
+.creature--cosmos img { filter: brightness(.96) saturate(.92) drop-shadow(0 0 10px rgba(123, 176, 255, .22)); }
+.creature--poppy img { filter: brightness(.88) saturate(1.12) drop-shadow(0 0 10px rgba(255, 91, 112, .2)); }
+.creature--anemone img { filter: brightness(.9) saturate(1.08) drop-shadow(0 0 10px rgba(113, 96, 255, .22)); }
 .creature--rose img,
 .creature--thorn img { mix-blend-mode: screen; }
-.creature--rose img { filter: contrast(1.14) saturate(1.18) drop-shadow(0 0 19px rgba(183, 13, 37, .34)); }
-.creature--thorn img { filter: contrast(1.2) saturate(1.12) drop-shadow(0 0 17px rgba(215, 20, 32, .3)); }
+.creature--rose img { filter: contrast(1.12) saturate(1.16) drop-shadow(0 0 10px rgba(183, 13, 37, .2)); }
+.creature--thorn img { filter: contrast(1.18) saturate(1.1); }
 
 .creature-body {
   position: absolute;
@@ -400,7 +416,7 @@
   background-size: 100% 100%;
   opacity: .8;
 }
-.cosmic-aquarium[data-theme="paper"] .creature img { filter: grayscale(.72) sepia(.22) contrast(.91) brightness(.84) drop-shadow(0 0 10px rgba(221, 210, 181, .18)); }
+.cosmic-aquarium[data-theme="paper"] .creature::before { opacity: .28; }
 
 .cosmic-aquarium[data-theme="thorn"] {
   background:
@@ -423,7 +439,7 @@
     linear-gradient(180deg, #0d0d30, #171043 55%, #08091e);
 }
 .cosmic-aquarium[data-theme="violet"]::after { background: repeating-linear-gradient(176deg, transparent 0 72px, rgba(186,133,255,.045) 74px, transparent 78px 141px); filter: blur(18px); }
-.cosmic-aquarium[data-theme="violet"] .creature img { filter: hue-rotate(18deg) saturate(1.36) brightness(.9) drop-shadow(0 0 24px rgba(200, 101, 255, .42)); }
+.cosmic-aquarium[data-theme="violet"] .creature::before { opacity: .82; }
 
 .cosmic-aquarium[data-theme="neon"] {
   background:
@@ -436,7 +452,10 @@
   background-size: 100% 100%, 100% 100%, 71px 103px;
   opacity: .36;
 }
-.cosmic-aquarium[data-theme="neon"] .creature img { filter: hue-rotate(25deg) saturate(1.85) contrast(1.12) drop-shadow(0 0 15px #00c8ff) drop-shadow(0 0 25px rgba(255,0,199,.45)); }
+.cosmic-aquarium[data-theme="neon"] .creature::before {
+  background: radial-gradient(ellipse, rgba(0, 200, 255, .2), transparent 68%);
+  opacity: .86;
+}
 
 .cosmic-aquarium[data-theme="desert"] {
   background:
@@ -450,7 +469,10 @@
   background-size: 43px 61px, 100% 100%;
   opacity: .48;
 }
-.cosmic-aquarium[data-theme="desert"] .creature img { filter: sepia(.38) saturate(1.12) contrast(.94) brightness(.87) drop-shadow(0 8px 12px rgba(58, 29, 15, .36)); }
+.cosmic-aquarium[data-theme="desert"] .creature::before {
+  background: radial-gradient(ellipse, rgba(75, 35, 18, .2), transparent 68%);
+  opacity: .55;
+}
 .cosmic-aquarium[data-theme="desert"] .cosmic-title,
 .cosmic-aquarium[data-theme="paper"] .cosmic-title { text-shadow: 0 2px 20px rgba(0,0,0,.78); }
 

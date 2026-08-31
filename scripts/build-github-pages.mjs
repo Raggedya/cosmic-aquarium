@@ -32,9 +32,21 @@ try {
 } catch {
   await fs.writeFile(defaultManifestPath,JSON.stringify(manifest,null,2)+'\n');
 }
-await writeArtist('immigrant-union','Immigrant Union');
+const artistManifestFiles = (await fs.readdir(path.join(pages,'artists')))
+  .filter((name) => name.endsWith('.json'))
+  .sort();
+for (const filename of artistManifestFiles) {
+  try {
+    const artistManifest = JSON.parse(await fs.readFile(path.join(pages,'artists',filename),'utf8'));
+    if (artistManifest.slug && artistManifest.artist) {
+      await writeArtist(artistManifest.slug,artistManifest.artist);
+    }
+  } catch (error) {
+    console.warn('Skipped invalid artist manifest: ' + filename, error);
+  }
+}
 await fs.writeFile(path.join(pages,'index.html'),render('immigrant-union','Immigrant Union'));
-console.log('GitHub Pages shell built for Immigrant Union.');
+console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s).');
 
 async function writeArtist(slug,artist){
   const directory=path.join(pages,slug);
