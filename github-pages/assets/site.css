@@ -295,10 +295,21 @@
   text-align: center;
   transform: translate(-50%, -50%);
   transform-origin: var(--touch-x) var(--touch-y);
-  animation:
-    player-emerge .72s cubic-bezier(.16, .86, .22, 1) both,
-    player-fade-away 1s ease 15s forwards;
+  pointer-events: none;
 }
+
+.living-player.is-active { animation: player-emerge .72s cubic-bezier(.16, .86, .22, 1) both; }
+
+.living-player.is-active .player-copy,
+.living-player.is-active .organic-progress,
+.living-player.is-active .bandcamp-stream,
+.living-player.is-active .stream-unavailable,
+.living-player.is-active .bandcamp-link,
+.living-player.is-active .release-current {
+  animation: player-controls-fade-away 1s ease 15s forwards;
+}
+
+.living-player.is-active .player-membrane { animation: player-flower-fade-away 1s ease 25s forwards; }
 
 .living-player::before {
   content: none;
@@ -334,14 +345,14 @@
 .organic-progress i { position: absolute; left: 49%; top: 50%; width: 5px; height: 5px; border-radius: 50%; background: #dfefff; box-shadow: 0 0 9px var(--player-accent); transform: translate(-50%, -50%); animation: progress-breathe 2.8s ease-in-out infinite; }
 .organic-progress span,.organic-progress b { position: relative; z-index: 2; font-weight: inherit; }
 
-.bandcamp-stream { position: relative; z-index: 3; margin: 0 auto; }
+.bandcamp-stream { position: relative; z-index: 3; margin: 0 auto; pointer-events: auto; }
 .bandcamp-stream > span { display: block; margin-bottom: 5px; color: rgba(216, 230, 255, .4); font-size: 5px; font-weight: 700; letter-spacing: .16em; }
 .bandcamp-stream iframe { display: block; width: 100%; height: 42px; border: 0; border-radius: 22px; background: rgba(5, 9, 22, .55); box-shadow: 0 0 0 1px rgba(126, 189, 255, .16), 0 8px 28px rgba(0, 0, 0, .28); opacity: .88; }
 .stream-unavailable { margin: 8px 0; color: rgba(255, 223, 225, .74); font-size: 9px; }
 
-.bandcamp-link { position: relative; z-index: 3; display: inline-block; min-height: 38px; padding: 14px 8px 0; color: rgba(225, 235, 249, .54); font-size: 6px; font-weight: 750; letter-spacing: .12em; text-decoration: none; }
+.bandcamp-link { position: relative; z-index: 3; display: inline-block; min-height: 38px; padding: 14px 8px 0; color: rgba(225, 235, 249, .54); font-size: 6px; font-weight: 750; letter-spacing: .12em; text-decoration: none; pointer-events: auto; }
 .bandcamp-link:hover,.bandcamp-link:focus-visible { color: #fff; }
-.release-current { position: absolute; z-index: 4; right: 10px; top: 82px; display: grid; width: 48px; height: 48px; place-items: center; border: 0; background: transparent; color: rgba(222, 235, 255, .42); cursor: pointer; }
+.release-current { position: absolute; z-index: 4; right: 10px; top: 82px; display: grid; width: 48px; height: 48px; place-items: center; border: 0; background: transparent; color: rgba(222, 235, 255, .42); cursor: pointer; pointer-events: auto; }
 .release-current i { width: 14px; height: 14px; border: 1px solid currentColor; border-radius: 50%; box-shadow: 0 0 11px rgba(103, 166, 255, .23); }
 .release-current span { position: absolute; top: 36px; font-size: 5px; font-weight: 700; letter-spacing: .14em; }
 .release-current:hover,.release-current:focus-visible { color: #fff; }
@@ -457,10 +468,15 @@
 @keyframes mote-rise { from { transform: translateY(20vh) scale(.5); opacity: 0; } 20% { opacity: .75; } to { transform: translateY(-65vh) scale(1.3); opacity: 0; } }
 @keyframes swarm-cross { from { transform: translateX(-12vw) translateY(4px); } 50% { transform: translateX(58vw) translateY(-24px); } to { transform: translateX(118vw) translateY(5px); } }
 @keyframes player-emerge { from { opacity: 0; transform: translate(-50%, -50%) scale(.18); filter: blur(10px); } 62% { opacity: 1; } to { transform: translate(-50%, -50%) scale(1); filter: blur(0); } }
-@keyframes player-fade-away {
+@keyframes player-controls-fade-away {
   from { opacity: 1; visibility: visible; pointer-events: auto; }
   99% { opacity: 0; visibility: visible; pointer-events: auto; }
   to { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+@keyframes player-flower-fade-away {
+  from { opacity: .46; visibility: visible; }
+  99% { opacity: 0; visibility: visible; }
+  to { opacity: 0; visibility: hidden; }
 }
 @keyframes progress-breathe { 50% { opacity: .38; transform: translate(-50%, -50%) scale(.72); } }
 

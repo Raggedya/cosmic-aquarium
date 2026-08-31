@@ -118,9 +118,9 @@
     button.classList.add('is-selected');
     root.classList.add('has-player');
     player.hidden = false;
-    player.style.animation = 'none';
+    player.classList.remove('is-active');
     void player.offsetHeight;
-    player.style.animation = '';
+    player.classList.add('is-active');
     titlePrompt.textContent = 'A SONG FOUND IN THE DARK';
     root.style.setProperty('--player-accent',track.accent || '#b9a7ff');
     player.querySelector('.player-membrane').src = button.querySelector('img').src;
@@ -147,6 +147,7 @@
 
   player.querySelector('.release-current').addEventListener('click',() => {
     player.hidden = true;
+    player.classList.remove('is-active');
     root.classList.remove('has-player');
     selectedButton?.classList.remove('is-selected');
     selectedButton = null;
