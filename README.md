@@ -10,17 +10,13 @@ The Windows Studio asks for three things:
 2. official Bandcamp URL
 3. delivery email
 
-Create dispatches the GitHub Actions workflow. The workflow imports public page metadata when it is available, generates an artist manifest, creates the page, renders and independently decodes the QR artwork, publishes GitHub Pages, and sends the link and QR through Resend.
+Create dispatches the GitHub Actions workflow. The workflow imports public page metadata when it is available, generates an artist manifest, creates the page, renders and independently decodes the QR artwork, and publishes GitHub Pages. The Studio then hands the finished link and QR to the existing Resend delivery workflow.
 
 The Windows build is produced as `dist/Cosmic Aquarium Studio.exe` by `desktop/build-windows.ps1`. GitHub Actions also offers a downloadable Windows artifact.
 
-## Required repository secrets
+## Email delivery reuse
 
-- `RESEND_API_KEY`
-- `REPORT_FROM_EMAIL`
-- `REPORT_RECIPIENT` (optional default)
-
-GitHub does not allow an existing repository secret value to be read or copied. Add the same Resend account credential to this repository once; after that every artist edition reuses it.
+The Studio dispatches an isolated delivery workflow in `Raggedya/groove-vultures-deep-cuts-fan-challenge`, where the working Resend credentials already live. No secret value is copied, exposed, or duplicated in this repository.
 
 ## Bandcamp boundary
 

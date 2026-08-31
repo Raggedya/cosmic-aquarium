@@ -8,13 +8,14 @@ The interface asks for only:
 - official Bandcamp URL
 - delivery email
 
-Create dispatches the repository's `create-artist.yml` workflow using the authenticated GitHub CLI. GitHub builds the artist page, imports public track metadata when available, creates and independently decode-verifies the floral QR, publishes GitHub Pages, and sends the link and QR through Resend.
+Create dispatches the repository's `create-artist.yml` workflow using the authenticated GitHub CLI. GitHub builds the artist page, imports public track metadata when available, creates and independently decode-verifies the floral QR, and publishes GitHub Pages. The Studio then hands the finished link and QR to the existing secret-enabled Resend workflow.
 
 ## First use
 
 1. Install GitHub CLI and run `gh auth login`.
-2. Add `RESEND_API_KEY` and `REPORT_FROM_EMAIL` to the repository Actions secrets. `REPORT_RECIPIENT` is an optional default.
-3. Run `desktop\build-windows.ps1`.
-4. Open `dist\Cosmic Aquarium Studio.exe`.
+2. Run `desktop\build-windows.ps1`.
+3. Open `dist\Cosmic Aquarium Studio.exe`.
+
+Email delivery reuses the existing secret-enabled Deep Cuts repository. Cosmic Aquarium does not need a duplicate Resend key.
 
 No Bandcamp account credentials or protected audio are stored. When public metadata cannot be read safely, the page retains the living flower experience and routes discovery to the supplied official Bandcamp URL.

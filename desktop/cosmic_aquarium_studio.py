@@ -20,6 +20,8 @@ from PIL import Image, ImageDraw, ImageFilter, ImageTk
 
 REPOSITORY = "Raggedya/cosmic-aquarium"
 WORKFLOW = "create-artist.yml"
+DELIVERY_REPOSITORY = "Raggedya/groove-vultures-deep-cuts-fan-challenge"
+DELIVERY_WORKFLOW = "cosmic-aquarium-delivery.yml"
 PAGES_BASE = "https://raggedya.github.io/cosmic-aquarium"
 INK = "#07071d"
 PAPER = "#f5f3fb"
@@ -212,21 +214,32 @@ class CosmicAquariumStudio(tk.Tk):
             subprocess.run([gh, "auth", "status"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
             subprocess.run([
                 gh, "workflow", "run", WORKFLOW, "--repo", REPOSITORY,
-                "-f", f"artist_title={title}", "-f", f"bandcamp_url={bandcamp_url}", "-f", f"recipient_email={recipient}",
+                "-f", f"artist_title={title}", "-f", f"bandcamp_url={bandcamp_url}",
             ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
             self.after(0, lambda: self.status.configure(text="GROWING FLOWERS  ·  BUILDING QR", fg=LAVENDER))
-            run_id = self._find_run(gh, started)
-            conclusion = self._watch_run(gh, run_id)
+            run_id = self._find_run(gh, started, REPOSITORY, WORKFLOW)
+            conclusion = self._watch_run(gh, run_id, REPOSITORY)
             if conclusion != "success":
                 raise RuntimeError("The GitHub creation workflow finished with: " + conclusion)
             url = PAGES_BASE.rstrip("/") + "/" + slugify(title) + "/"
+            qr_url = url + "cosmic-aquarium-qr.png"
+            self.after(0, lambda: self.status.configure(text="PUBLISHED  ·  SENDING EMAIL", fg=LAVENDER))
+            delivery_started = dt.datetime.now(dt.timezone.utc)
+            subprocess.run([
+                gh, "workflow", "run", DELIVERY_WORKFLOW, "--repo", DELIVERY_REPOSITORY,
+                "-f", f"artist_title={title}", "-f", f"page_url={url}", "-f", f"qr_url={qr_url}", "-f", f"recipient_email={recipient}",
+            ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            delivery_run_id = self._find_run(gh, delivery_started, DELIVERY_REPOSITORY, DELIVERY_WORKFLOW)
+            delivery_conclusion = self._watch_run(gh, delivery_run_id, DELIVERY_REPOSITORY)
+            if delivery_conclusion != "success":
+                raise RuntimeError("The page was published, but email delivery finished with: " + delivery_conclusion)
             self.after(0, lambda: self._finish_success(url))
         except Exception as error:
             self.after(0, lambda: self._finish_error(str(error)))
 
-    def _find_run(self, gh: str, started: dt.datetime) -> int:
+    def _find_run(self, gh: str, started: dt.datetime, repository: str, workflow: str) -> int:
         for _ in range(24):
-            data = self._runs(gh)
+            data = self._runs(gh, repository, workflow)
             for item in data:
                 created = dt.datetime.fromisoformat(item["createdAt"].replace("Z", "+00:00"))
                 if created >= started - dt.timedelta(seconds=5):
@@ -234,10 +247,10 @@ class CosmicAquariumStudio(tk.Tk):
             time.sleep(2.5)
         raise RuntimeError("GitHub accepted the request but the workflow run could not be located.")
 
-    def _watch_run(self, gh: str, run_id: int) -> str:
+    def _watch_run(self, gh: str, run_id: int, repository: str) -> str:
         for _ in range(240):
             process = subprocess.run([
-                gh, "run", "view", str(run_id), "--repo", REPOSITORY, "--json", "status,conclusion"
+                gh, "run", "view", str(run_id), "--repo", repository, "--json", "status,conclusion"
             ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
             data = json.loads(process.stdout)
             if data.get("status") == "completed":
@@ -245,9 +258,9 @@ class CosmicAquariumStudio(tk.Tk):
             time.sleep(5)
         raise RuntimeError("The creation is still running. Open GitHub Actions to continue watching it.")
 
-    def _runs(self, gh: str) -> list[dict]:
+    def _runs(self, gh: str, repository: str, workflow: str) -> list[dict]:
         process = subprocess.run([
-            gh, "run", "list", "--repo", REPOSITORY, "--workflow", WORKFLOW,
+            gh, "run", "list", "--repo", repository, "--workflow", workflow,
             "--event", "workflow_dispatch", "--limit", "10", "--json", "databaseId,createdAt,status,conclusion"
         ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
         return json.loads(process.stdout)

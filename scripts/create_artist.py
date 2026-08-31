@@ -185,7 +185,7 @@ def render_html(slug: str, artist: str) -> str:
             .replace("{{BASE}}", "/cosmic-aquarium"))
 
 
-def create_artist(title: str, bandcamp_url: str, recipient: str, base_url: str, verify_qr: bool = True) -> dict[str, Any]:
+def create_artist(title: str, bandcamp_url: str, base_url: str, verify_qr: bool = True) -> dict[str, Any]:
     artist = " ".join(title.split())
     if not artist:
         raise ValueError("Artist title is required")
@@ -253,11 +253,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Create a Cosmic Aquarium artist edition")
     parser.add_argument("--title", required=True)
     parser.add_argument("--bandcamp-url", required=True)
-    parser.add_argument("--recipient", default="andrewharris501@gmail.com")
     parser.add_argument("--base-url", default="https://raggedya.github.io/cosmic-aquarium")
     parser.add_argument("--skip-qr-verification", action="store_true")
     args = parser.parse_args()
-    result = create_artist(args.title, args.bandcamp_url, args.recipient, args.base_url, not args.skip_qr_verification)
+    result = create_artist(args.title, args.bandcamp_url, args.base_url, not args.skip_qr_verification)
     print(json.dumps(result, separators=(",", ":")))
 
 
