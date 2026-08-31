@@ -1,6 +1,7 @@
 (() => {
   const root = document.querySelector('.cosmic-aquarium');
   const slug = document.documentElement.dataset.artist || 'immigrant-union';
+  const version = document.documentElement.dataset.version || 'current';
   const base = location.hostname.endsWith('github.io') ? '/cosmic-aquarium' : '';
   const baseSpecies = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos'];
   const styleSpecies = {
@@ -26,7 +27,7 @@
   const status = root.querySelector('[role="status"]');
   const titlePrompt = root.querySelector('.cosmic-title p');
 
-  fetch(base + '/artists/' + encodeURIComponent(slug) + '.json')
+  fetch(base + '/artists/' + encodeURIComponent(slug) + '.json?v=' + encodeURIComponent(version), { cache: 'no-store' })
     .then(response => {
       if (!response.ok) throw new Error('Artist manifest unavailable');
       return response.json();

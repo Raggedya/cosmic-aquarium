@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import re
@@ -180,10 +181,15 @@ def deduplicate(tracks: list[dict[str, Any]]) -> list[dict[str, Any]]:
 def render_html(slug: str, artist: str) -> str:
     template = TEMPLATE.read_text(encoding="utf-8")
     escaped = html.escape(artist)
+    digest = hashlib.sha256()
+    digest.update((ROOT / "app" / "cosmic-aquarium.css").read_bytes())
+    digest.update((PAGES / "assets" / "site.js").read_bytes())
+    asset_version = digest.hexdigest()[:12]
     return (template.replace("{{SLUG}}", html.escape(slug, quote=True))
             .replace("{{ARTIST}}", escaped)
             .replace("{{ARTIST_UPPER}}", html.escape(artist.upper()))
-            .replace("{{BASE}}", "/cosmic-aquarium"))
+            .replace("{{BASE}}", "/cosmic-aquarium")
+            .replace("{{ASSET_VERSION}}", asset_version))
 
 
 def create_artist(title: str, bandcamp_url: str, visual_style: str, base_url: str, verify_qr: bool = True) -> dict[str, Any]:

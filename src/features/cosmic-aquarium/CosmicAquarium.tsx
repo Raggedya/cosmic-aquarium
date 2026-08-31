@@ -107,7 +107,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       return;
     }
     const controller = new AbortController();
-    fetch('/artists/' + encodeURIComponent(manifestSlug) + '.json', { signal: controller.signal })
+    fetch('/artists/' + encodeURIComponent(manifestSlug) + '.json', { signal: controller.signal, cache: 'no-store' })
       .then((response) => {
         if (!response.ok) throw new Error('Artist manifest unavailable');
         return response.json() as Promise<ArtistManifest>;

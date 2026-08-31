@@ -1,11 +1,14 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { createHash } from 'node:crypto';
 import { immigrantUnionAlbums, immigrantUnionSongs } from '../src/data/immigrant-union-catalogue.ts';
 
 const root = path.resolve(import.meta.dirname,'..');
 const pages = path.join(root,'github-pages');
 const template = await fs.readFile(path.join(root,'templates','artist-index.html'),'utf8');
 const css = await fs.readFile(path.join(root,'app','cosmic-aquarium.css'),'utf8');
+const staticScript = await fs.readFile(path.join(pages,'assets','site.js'),'utf8');
+const assetVersion = createHash('sha256').update(css).update(staticScript).digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#000}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
 await fs.mkdir(path.join(pages,'artists'),{recursive:true});
@@ -54,7 +57,7 @@ async function writeArtist(slug,artist){
   await fs.writeFile(path.join(directory,'index.html'),render(slug,artist));
 }
 function render(slug,artist){
-  return template.replaceAll('{{SLUG}}',escapeAttribute(slug)).replaceAll('{{ARTIST}}',escapeHtml(artist)).replaceAll('{{ARTIST_UPPER}}',escapeHtml(artist.toUpperCase())).replaceAll('{{BASE}}','/cosmic-aquarium');
+  return template.replaceAll('{{SLUG}}',escapeAttribute(slug)).replaceAll('{{ARTIST}}',escapeHtml(artist)).replaceAll('{{ARTIST_UPPER}}',escapeHtml(artist.toUpperCase())).replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
 }
 function escapeHtml(value){return String(value).replace(/[&<>]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[char]));}
 function escapeAttribute(value){return escapeHtml(value).replaceAll('"','&quot;');}
