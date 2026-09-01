@@ -54,11 +54,11 @@ test('doorway introduces the hero before the surrounding worlds rise into place'
   const css = await read('app/doorway.css');
   assert.match(css, /doorway-anchor-arrive 1\.9s/);
   assert.match(css, /doorway-orbit-arrive var\(--arrival-duration, 17\.92s\)/);
-  assert.match(css, /--arrival-delay: 3s/);
+  assert.match(css, /--arrival-delay: 1s/);
   assert.match(css, /--arrival-duration: 17\.35s/);
   assert.match(css, /--arrival-duration: 19\.45s/);
   assert.match(css, /--arrival-duration: 16\.95s/);
-  assert.match(css, /--arrival-delay: 4\.35s/);
+  assert.match(css, /--arrival-delay: 2\.35s/);
   assert.match(css, /cubic-bezier\(\.24, \.42, \.28, 1\)/);
   assert.match(css, /translate: var\(--arrival-x, 0px\) 112vh/);
   assert.match(css, /--arrival-x: -22px/);
