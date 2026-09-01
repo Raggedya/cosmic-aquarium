@@ -71,7 +71,7 @@ async function syncCatalogue(request, env) {
     if (!item?.id || !item?.url) continue;
     statements.push(env.DB.prepare(`INSERT INTO aquarium
       (id,slug,artist,release_title,bandcamp_url,aquarium_url,theme,status,daily_batch_id,created_at,published_at,disabled_at)
-      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,NULL)
+      VALUES (?,?,?,?,?,?,?,?,?,?,?,NULL)
       ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at)`)
       .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,item.status||'published',item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString()));
   }
