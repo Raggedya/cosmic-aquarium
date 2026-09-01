@@ -3,7 +3,9 @@ const EVENT_TYPES = new Set([
   'release_click','bandcamp_click','share_click','share_native_opened','share_complete','share_copy',
   'buy_click','explore_click','aquarium_transition','email_link_click','email_open',
   'aquarium_created','aquarium_published','aquarium_unpublished',
+  'doorway_open','drift_anywhere_selected','water_selected','random_destination_selected','doorway_to_aquarium_transition',
 ]);
+const WATERS = new Set(['heavy','dreamy','electronic','quiet','loud','dark','strange']);
 
 const REPORT_TIME_ZONE = 'Australia/Sydney';
 const EVENT_LABELS = {
@@ -14,11 +16,13 @@ const EVENT_LABELS = {
   share_copy:'Links copied',buy_click:'Buy Music clicks',explore_click:'Explore clicks',
   aquarium_transition:'Aquarium journeys',email_link_click:'Email links opened',email_open:'Collection emails opened',
   aquarium_created:'Aquariums created',aquarium_published:'Aquariums published',aquarium_unpublished:'Aquariums unpublished',
+  doorway_open:'Doorway opens',drift_anywhere_selected:'Drift Anywhere choices',water_selected:'Water choices',
+  random_destination_selected:'Random destinations selected',doorway_to_aquarium_transition:'Doorway journeys',
 };
 
 const CORS = {
   'access-control-allow-origin': '*',
-  'access-control-allow-methods': 'GET,POST,OPTIONS',
+  'access-control-allow-methods': 'GET,POST,PUT,OPTIONS',
   'access-control-allow-headers': 'content-type,authorization',
   'access-control-max-age': '86400',
 };
@@ -38,6 +42,11 @@ function clean(value, max = 160) {
 
 async function readBody(request) {
   try { return await request.json(); } catch { return null; }
+}
+
+function syncAuthorized(request, env) {
+  const header = request.headers.get('authorization') || '';
+  return authorized(request,env) || (Boolean(env.SYNC_TOKEN) && header === `Bearer ${env.SYNC_TOKEN}`);
 }
 
 function systemEventStatement(env, eventType, aquariumId, metadata = null, createdAt = new Date().toISOString()) {
@@ -73,13 +82,21 @@ async function recordEmailOpen(url, env) {
 }
 
 async function randomAquarium(url, env) {
+  const requestedWater = clean(url.searchParams.get('water'), 24)?.toLowerCase() || 'anywhere';
+  const water = WATERS.has(requestedWater) ? requestedWater : 'anywhere';
   const exclude = clean(url.searchParams.get('exclude'), 96);
   const recent = (url.searchParams.get('recent') || '').split(',').map(value=>value.trim()).filter(Boolean).slice(0,8);
   const exclusions = [exclude,...recent].filter(Boolean);
   const placeholders = exclusions.map(()=>'?').join(',');
-  const query = `SELECT id,slug,artist,release_title,aquarium_url FROM aquarium WHERE status='published' AND disabled_at IS NULL${exclusions.length ? ` AND id NOT IN (${placeholders})` : ''} ORDER BY RANDOM() LIMIT 1`;
-  const entry = await env.DB.prepare(query).bind(...exclusions).first();
-  return entry ? json(entry,200,CORS) : json({error:'no_aquarium_available'},404,CORS);
+  const selection = async selectedWater => {
+    const waterJoin = selectedWater === 'anywhere' ? '' : ' INNER JOIN aquarium_water w ON w.aquarium_id=a.id AND w.water=?';
+    const query = `SELECT a.id,a.slug,a.artist,a.release_title,a.aquarium_url FROM aquarium a${waterJoin} WHERE a.status='published' AND a.disabled_at IS NULL${exclusions.length ? ` AND a.id NOT IN (${placeholders})` : ''} ORDER BY RANDOM() LIMIT 1`;
+    return env.DB.prepare(query).bind(...(selectedWater === 'anywhere' ? [] : [selectedWater]),...exclusions).first();
+  };
+  let entry = await selection(water);
+  let fallbackFrom = null;
+  if (!entry && water !== 'anywhere') { fallbackFrom = water; entry = await selection('anywhere'); }
+  return entry ? json({...entry,water,fallback_from:fallbackFrom},200,CORS) : json({error:'no_aquarium_available'},404,CORS);
 }
 
 async function syncCatalogue(request, env) {
@@ -104,6 +121,10 @@ async function syncCatalogue(request, env) {
       VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
       ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at),disabled_at=excluded.disabled_at`)
       .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,status,item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString(),disabledAt));
+    statements.push(env.DB.prepare("DELETE FROM aquarium_water WHERE aquarium_id=? AND assigned_by='automatic' AND NOT EXISTS (SELECT 1 FROM aquarium_water WHERE aquarium_id=? AND assigned_by='manual')").bind(item.id,item.id));
+    for (const water of [...new Set(Array.isArray(item.waters) ? item.waters.map(value=>String(value).toLowerCase()).filter(value=>WATERS.has(value)) : [])]) {
+      statements.push(env.DB.prepare("INSERT OR IGNORE INTO aquarium_water (aquarium_id,water,assigned_by,confidence,updated_at) SELECT ?,?,?,?,? WHERE NOT EXISTS (SELECT 1 FROM aquarium_water WHERE aquarium_id=? AND assigned_by='manual')").bind(item.id,water,'automatic',null,new Date().toISOString(),item.id));
+    }
     const priorStatus = current.get(item.id);
     if (!priorStatus) {
       statements.push(systemEventStatement(env,'aquarium_created',item.id,{artist:item.artist||'',release:item.release||''}));
@@ -127,19 +148,22 @@ async function overview(env) {
     (SELECT COUNT(*) FROM aquarium WHERE status='published' AND disabled_at IS NULL) AS published_aquariums,
     (SELECT COUNT(*) FROM analytics_event WHERE created_at >= datetime('now','-1 day')) AS events_today,
     (SELECT COUNT(*) FROM analytics_event WHERE event_type='aquarium_open' AND created_at >= datetime('now','-1 day')) AS opens_today,
+    (SELECT COUNT(*) FROM analytics_event WHERE event_type='doorway_open' AND created_at >= datetime('now','-1 day')) AS doorway_opens_today,
     (SELECT COUNT(*) FROM analytics_event WHERE event_type='track_selected' AND created_at >= datetime('now','-1 day')) AS tracks_today,
     (SELECT COUNT(*) FROM analytics_event WHERE event_type LIKE 'share_%' AND created_at >= datetime('now','-1 day')) AS shares_today,
     (SELECT COUNT(*) FROM analytics_event WHERE event_type='buy_click' AND created_at >= datetime('now','-1 day')) AS buy_clicks_today,
     (SELECT COUNT(*) FROM analytics_event WHERE event_type='explore_click' AND created_at >= datetime('now','-1 day')) AS explores_today`).first();
   const batches = await env.DB.prepare(`SELECT * FROM daily_batch ORDER BY batch_date DESC LIMIT 30`).all();
   const aquariums = await env.DB.prepare(`SELECT a.id,a.artist,a.release_title,a.aquarium_url,a.status,
+    (SELECT GROUP_CONCAT(w.water) FROM aquarium_water w WHERE w.aquarium_id=a.id) AS waters,
     SUM(CASE WHEN e.event_type='aquarium_open' THEN 1 ELSE 0 END) AS opens,
     SUM(CASE WHEN e.event_type='track_selected' THEN 1 ELSE 0 END) AS tracks,
     SUM(CASE WHEN e.event_type LIKE 'share_%' THEN 1 ELSE 0 END) AS shares,
     SUM(CASE WHEN e.event_type='buy_click' THEN 1 ELSE 0 END) AS buy_clicks,
     SUM(CASE WHEN e.event_type='explore_click' THEN 1 ELSE 0 END) AS explores
     FROM aquarium a LEFT JOIN analytics_event e ON e.aquarium_id=a.id GROUP BY a.id ORDER BY opens DESC LIMIT 100`).all();
-  return json({totals,batches:batches.results,aquariums:aquariums.results});
+  const waterCounts = await env.DB.prepare(`SELECT w.water,COUNT(*) AS total FROM aquarium_water w INNER JOIN aquarium a ON a.id=w.aquarium_id WHERE a.status='published' AND a.disabled_at IS NULL GROUP BY w.water ORDER BY w.water`).all();
+  return json({totals,batches:batches.results,aquariums:aquariums.results,waterCounts:waterCounts.results||[]});
 }
 
 function sydneyParts(value) {
@@ -238,13 +262,36 @@ async function setAquariumStatus(request, env, id, status) {
   return json({ok:true,id,status,changed:result.meta?.changes||0});
 }
 
+async function setAquariumWaters(request, env, id) {
+  const body = await readBody(request);
+  const waters = [...new Set((Array.isArray(body?.waters) ? body.waters : []).map(value=>String(value).toLowerCase()).filter(value=>WATERS.has(value)))];
+  if (!waters.length) return json({ok:false,error:'at_least_one_water_required'},400);
+  const statements = [env.DB.prepare('DELETE FROM aquarium_water WHERE aquarium_id=?').bind(id)];
+  const now = new Date().toISOString();
+  for (const water of waters) statements.push(env.DB.prepare('INSERT INTO aquarium_water (aquarium_id,water,assigned_by,confidence,updated_at) VALUES (?,?,?,?,?)').bind(id,water,'manual',null,now));
+  await env.DB.batch(statements);
+  return json({ok:true,id,waters});
+}
+
+async function verifyDestinations(env) {
+  const rows = await env.DB.prepare("SELECT id,aquarium_url FROM aquarium WHERE status='published' AND disabled_at IS NULL ORDER BY id LIMIT 250").all();
+  const broken = [];
+  for (const item of rows.results || []) {
+    try {
+      const response = await fetch(item.aquarium_url,{method:'HEAD',redirect:'follow'});
+      if (!response.ok) broken.push({id:item.id,url:item.aquarium_url,status:response.status});
+    } catch { broken.push({id:item.id,url:item.aquarium_url,status:0}); }
+  }
+  return json({ok:broken.length===0,checked:(rows.results||[]).length,broken});
+}
+
 function adminPage() {
   return new Response(`<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><title>Cosmic Aquaria — Owner</title><style>
-  *{box-sizing:border-box}body{margin:0;background:#050817;color:#eeeaf8;font:14px Inter,system-ui;padding:32px}main{max-width:1100px;margin:auto}h1{font-weight:400;letter-spacing:.18em}input,button{background:#0d1329;color:#eee;border:1px solid #343b59;padding:10px}button{cursor:pointer}#grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:28px 0}.card,table{background:#090e20;border:1px solid #242a43}.card{padding:18px}.card b{display:block;font-size:26px;font-weight:400}table{width:100%;border-collapse:collapse;margin:18px 0}td,th{padding:10px;border-bottom:1px solid #1e243c;text-align:left}a{color:#c9bbff}.operations{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}</style></head><body><main><h1>COSMIC AQUARIA</h1><p>Private owner reporting. Metrics are anonymous activity signals, not sales or popularity claims.</p><form id="login"><input id="token" type="password" placeholder="Owner token" autocomplete="current-password"><button>OPEN REPORT</button></form><section id="report" hidden><div id="grid"></div><div class="operations"><a href="https://github.com/Raggedya/cosmic-aquarium/actions/workflows/daily-discovery.yml">Rerun daily batch</a><a href="https://github.com/Raggedya/groove-vultures-deep-cuts-fan-challenge/actions/workflows/cosmic-aquaria-daily-email.yml">Resend owner email</a></div><h2>Daily batches</h2><table><thead><tr><th>Date</th><th>Published</th><th>Status</th><th>Email</th></tr></thead><tbody id="batchRows"></tbody></table><h2>Aquariums</h2><table><thead><tr><th>Aquarium</th><th>Opens</th><th>Tracks</th><th>Shares</th><th>Buy clicks</th><th>Explore</th><th>Action</th></tr></thead><tbody id="rows"></tbody></table></section></main><script>
+  *{box-sizing:border-box}body{margin:0;background:#050817;color:#eeeaf8;font:14px Inter,system-ui;padding:32px}main{max-width:1200px;margin:auto}h1{font-weight:400;letter-spacing:.18em}input,select,button{background:#0d1329;color:#eee;border:1px solid #343b59;padding:10px}button{cursor:pointer}#grid,#waterGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin:22px 0}.card,table{background:#090e20;border:1px solid #242a43}.card{padding:18px}.card b{display:block;font-size:26px;font-weight:400}table{width:100%;border-collapse:collapse;margin:18px 0}td,th{padding:10px;border-bottom:1px solid #1e243c;text-align:left}a{color:#c9bbff}.operations,.waterEditor{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.waterEditor label{font-size:11px;text-transform:uppercase}.waterEditor input{vertical-align:middle}</style></head><body><main><h1>COSMIC AQUARIA</h1><p>Private owner reporting. Metrics are anonymous activity signals, not sales or popularity claims.</p><form id="login"><input id="token" type="password" placeholder="Owner token" autocomplete="current-password"><button>OPEN REPORT</button></form><section id="report" hidden><h2>Universe / Doorway</h2><div class="operations"><a href="https://raggedya.github.io/cosmic-aquarium/">Open live doorway</a><button id="copyDoorway">Copy doorway URL</button><a href="https://raggedya.github.io/cosmic-aquarium/cosmic-aquaria-qr-standard.png" download>Download standard QR</a><a href="https://raggedya.github.io/cosmic-aquarium/cosmic-aquaria-qr-branded.png" download>Download branded QR</a><select id="testWater"><option value="anywhere">ANYWHERE</option><option>HEAVY</option><option>DREAMY</option><option>ELECTRONIC</option><option>QUIET</option><option>LOUD</option><option>DARK</option><option>STRANGE</option></select><button id="testRandom">Test random selection</button><button id="verifyLinks">Verify destination links</button></div><p id="universeStatus"></p><div id="waterGrid"></div><div id="grid"></div><div class="operations"><a href="https://github.com/Raggedya/cosmic-aquarium/actions/workflows/daily-discovery.yml">Rerun daily batch</a><a href="https://github.com/Raggedya/groove-vultures-deep-cuts-fan-challenge/actions/workflows/cosmic-aquaria-daily-email.yml">Resend owner email</a></div><h2>Daily batches</h2><table><thead><tr><th>Date</th><th>Published</th><th>Status</th><th>Email</th></tr></thead><tbody id="batchRows"></tbody></table><h2>Aquariums</h2><table><thead><tr><th>Aquarium</th><th>Waters</th><th>Opens</th><th>Tracks</th><th>Shares</th><th>Buy</th><th>Explore</th><th>Action</th></tr></thead><tbody id="rows"></tbody></table></section></main><script>
   const byId=id=>document.getElementById(id);let ownerToken='';
-  byId('login').onsubmit=async e=>{e.preventDefault();ownerToken=byId('token').value;const r=await fetch('/api/admin/overview',{headers:{authorization:'Bearer '+ownerToken}});if(!r.ok)return alert('Owner access was not accepted.');const d=await r.json();byId('report').hidden=false;byId('login').hidden=true;const t=d.totals||{};byId('grid').innerHTML=[['Published',t.published_aquariums],['Opens today',t.opens_today],['Tracks today',t.tracks_today],['Shares today',t.shares_today],['Buy clicks today',t.buy_clicks_today],['Explore today',t.explores_today]].map(x=>'<div class=card><b>'+Number(x[1]||0)+'</b>'+x[0]+'</div>').join('');
+  byId('login').onsubmit=async e=>{e.preventDefault();ownerToken=byId('token').value;const r=await fetch('/api/admin/overview',{headers:{authorization:'Bearer '+ownerToken}});if(!r.ok)return alert('Owner access was not accepted.');const d=await r.json();byId('report').hidden=false;byId('login').hidden=true;const t=d.totals||{};byId('grid').innerHTML=[['Published',t.published_aquariums],['Doorway opens',t.doorway_opens_today],['Opens today',t.opens_today],['Tracks today',t.tracks_today],['Shares today',t.shares_today],['Buy clicks today',t.buy_clicks_today],['Explore today',t.explores_today]].map(x=>'<div class=card><b>'+Number(x[1]||0)+'</b>'+x[0]+'</div>').join('');byId('waterGrid').innerHTML=(d.waterCounts||[]).map(x=>'<div class=card><b>'+Number(x.total||0)+'</b>'+x.water.toUpperCase()+'</div>').join('');byId('copyDoorway').onclick=()=>navigator.clipboard.writeText('https://raggedya.github.io/cosmic-aquarium/');byId('testRandom').onclick=async()=>{const water=byId('testWater').value.toLowerCase(),response=await fetch('/api/aquariums/random?water='+water);const item=await response.json();byId('universeStatus').textContent=response.ok?'Selected: '+item.artist+' — '+item.release_title:'No eligible Aquarium.'};byId('verifyLinks').onclick=async()=>{byId('universeStatus').textContent='Checking…';const response=await fetch('/api/admin/verify-destinations',{headers:{authorization:'Bearer '+ownerToken}}),result=await response.json();byId('universeStatus').textContent=result.ok?'All '+result.checked+' destinations are working.':result.broken.length+' destination(s) need attention.'};
   for(const b of d.batches||[]){const row=byId('batchRows').insertRow();[b.batch_date,b.published_count+'/'+b.target_count,b.status,b.email_status].forEach(value=>{const cell=row.insertCell();cell.textContent=String(value??'')})}
-  for(const a of d.aquariums||[]){const row=byId('rows').insertRow();const link=document.createElement('a');link.href=a.aquarium_url;link.textContent=a.artist+' — '+a.release_title;row.insertCell().append(link);[a.opens,a.tracks,a.shares,a.buy_clicks,a.explores].forEach(value=>{const cell=row.insertCell();cell.textContent=String(value||0)});const button=document.createElement('button');button.textContent=a.status==='disabled'?'REPUBLISH':'DISABLE';button.onclick=async()=>{const action=a.status==='disabled'?'republish':'disable';const response=await fetch('/api/admin/aquariums/'+encodeURIComponent(a.id)+'/'+action,{method:'POST',headers:{authorization:'Bearer '+ownerToken}});if(response.ok)location.reload();else alert('The change could not be saved.')};row.insertCell().append(button)}};
+  for(const a of d.aquariums||[]){const row=byId('rows').insertRow();const link=document.createElement('a');link.href=a.aquarium_url;link.textContent=a.artist+' — '+a.release_title;row.insertCell().append(link);const waterCell=row.insertCell(),editor=document.createElement('div');editor.className='waterEditor';const assigned=String(a.waters||'').split(',');for(const water of ['heavy','dreamy','electronic','quiet','loud','dark','strange']){const label=document.createElement('label'),box=document.createElement('input');box.type='checkbox';box.value=water;box.checked=assigned.includes(water);label.append(box,water);editor.append(label)}const save=document.createElement('button');save.textContent='SAVE';save.onclick=async()=>{const waters=[...editor.querySelectorAll('input:checked')].map(x=>x.value);const response=await fetch('/api/admin/aquariums/'+encodeURIComponent(a.id)+'/waters',{method:'PUT',headers:{authorization:'Bearer '+ownerToken,'content-type':'application/json'},body:JSON.stringify({waters})});if(!response.ok)alert('Choose at least one water.');else alert('Waters saved.')};editor.append(save);waterCell.append(editor);[a.opens,a.tracks,a.shares,a.buy_clicks,a.explores].forEach(value=>{const cell=row.insertCell();cell.textContent=String(value||0)});const button=document.createElement('button');button.textContent=a.status==='disabled'?'REPUBLISH':'DISABLE';button.onclick=async()=>{const action=a.status==='disabled'?'republish':'disable';const response=await fetch('/api/admin/aquariums/'+encodeURIComponent(a.id)+'/'+action,{method:'POST',headers:{authorization:'Bearer '+ownerToken}});if(response.ok)location.reload();else alert('The change could not be saved.')};row.insertCell().append(button)}};
   </script></body></html>`,{headers:{'content-type':'text/html; charset=utf-8'}});
 }
 
@@ -258,9 +305,13 @@ export default {
       if (url.pathname === '/api/email/open.gif' && request.method === 'GET') return recordEmailOpen(url,env);
       if (url.pathname === '/api/aquariums/random' && request.method === 'GET') return randomAquarium(url,env);
       if (url.pathname === '/admin' && request.method === 'GET') return adminPage();
-      if (url.pathname.startsWith('/api/admin/') && !authorized(request,env)) return json({error:'unauthorized'},401);
+      if (url.pathname === '/api/admin/sync' && !syncAuthorized(request,env)) return json({error:'unauthorized'},401);
+      if (url.pathname.startsWith('/api/admin/') && url.pathname !== '/api/admin/sync' && !authorized(request,env)) return json({error:'unauthorized'},401);
       if (url.pathname === '/api/admin/sync' && request.method === 'POST') return syncCatalogue(request,env);
       if (url.pathname === '/api/admin/overview' && request.method === 'GET') return overview(env);
+      if (url.pathname === '/api/admin/verify-destinations' && request.method === 'GET') return verifyDestinations(env);
+      const watersMatch = url.pathname.match(/^\/api\/admin\/aquariums\/([^/]+)\/waters$/);
+      if (watersMatch && request.method === 'PUT') return setAquariumWaters(request,env,decodeURIComponent(watersMatch[1]));
       if (url.pathname === '/api/admin/activity-report' && request.method === 'GET') {
         const end = url.searchParams.get('end');
         return json(await activityReport(env,end ? Date.parse(end) : Date.now()));

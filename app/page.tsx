@@ -1,5 +1,5 @@
-import { CosmicAquarium } from '@/src/features/cosmic-aquarium/CosmicAquarium';
+import { UniverseDoorway } from '@/src/features/universe-doorway/UniverseDoorway';
 
 export default function Home() {
-  return <CosmicAquarium />;
+  return <UniverseDoorway />;
 }

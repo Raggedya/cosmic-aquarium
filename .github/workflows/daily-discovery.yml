@@ -58,12 +58,14 @@ jobs:
           echo "batch_date=$batch_date" >> "$GITHUB_OUTPUT"
           echo "target_count=$target_count" >> "$GITHUB_OUTPUT"
       - name: Rebuild permanent pages and catalogue
-        run: npm run build:pages
+        run: |
+          python scripts/generate_universe_qr.py
+          npm run build:pages
       - name: Verify generated application
         run: |
           npm test
           node --check services/cosmic-worker/src/index.js
-          python -m py_compile scripts/create_artist.py scripts/daily_discovery.py
+          python -m py_compile scripts/create_artist.py scripts/daily_discovery.py scripts/water_classifier.py scripts/generate_universe_qr.py
       - name: Commit generated releases and recoverable batch state
         shell: bash
         run: |
@@ -85,6 +87,22 @@ jobs:
       - name: Publish permanent Aquarium URLs
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Add the published collection to universe discovery
+        env:
+          COSMIC_WORKER_SYNC_TOKEN: ${{ secrets.COSMIC_WORKER_SYNC_TOKEN }}
+          BATCH_DATE: ${{ steps.batch.outputs.batch_date }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const catalogue=JSON.parse(fs.readFileSync('github-pages/aquariums.json','utf8'));
+          const batch=JSON.parse(fs.readFileSync(`automation/batches/${process.env.BATCH_DATE}.json`,'utf8'));
+          const response=await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/sync',{
+            method:'POST',
+            headers:{authorization:`Bearer ${process.env.COSMIC_WORKER_SYNC_TOKEN}`,'content-type':'application/json'},
+            body:JSON.stringify({aquariums:catalogue.aquariums,batch,fullReplace:false}),
+          });
+          if(!response.ok) throw new Error(`Universe discovery sync failed: ${response.status}`);
+          NODE
       - name: Require the complete daily collection
         shell: bash
         env:

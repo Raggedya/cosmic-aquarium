@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import './cosmic-aquarium.css';
+import './doorway.css';
 
-const title = 'Cosmic Aquaria — Immigrant Union';
-const description = 'Catch a luminous flower, reveal an Immigrant Union song, and listen through Bandcamp in a living Cosmic Aquaria world.';
+const title = 'Cosmic Aquaria — Enter Without Knowing';
+const description = 'Choose a water or drift anywhere. Let independent music find you inside the living Cosmic Aquaria universe.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-b-side.raggedya.chatgpt.site'),

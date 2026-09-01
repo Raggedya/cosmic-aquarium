@@ -350,18 +350,30 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   }
 
   async function exploreAnotherAquarium() {
-    recordEvent('explore_click');
+    const validWaters = ['anywhere', 'heavy', 'dreamy', 'electronic', 'quiet', 'loud', 'dark', 'strange'];
+    let water = 'anywhere';
+    try {
+      const urlWater = new URLSearchParams(window.location.search).get('water');
+      const storedWater = window.sessionStorage.getItem('cosmic-aquaria:water-scope');
+      water = validWaters.includes(urlWater || '') ? String(urlWater) : validWaters.includes(storedWater || '') ? String(storedWater) : 'anywhere';
+      window.sessionStorage.setItem('cosmic-aquaria:water-scope', water);
+    } catch {
+      // A discovery scope is intentionally session-local and optional.
+    }
+    recordEvent('explore_click', { metadata: { water } });
     try {
       const recentKey = 'cosmic-aquaria:recent-aquariums';
       const recent = readStoredIds(recentKey);
       let destination: { id?: string; slug: string; url?: string; aquarium_url?: string } | null = null;
-      const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?exclude=' + encodeURIComponent(manifest.slug) + '&recent=' + encodeURIComponent(recent.join(',')), { cache: 'no-store' }).catch(() => null);
+      const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?water=' + encodeURIComponent(water) + '&exclude=' + encodeURIComponent(manifest.slug) + '&recent=' + encodeURIComponent(recent.join(',')), { cache: 'no-store' }).catch(() => null);
       if (serviceResponse?.ok) destination = await serviceResponse.json() as typeof destination;
       if (!destination) {
         const response = await fetch('https://raggedya.github.io/cosmic-aquarium/aquariums.json', { cache: 'no-store' });
         if (!response.ok) throw new Error('Aquarium registry unavailable');
-        const data = await response.json() as { aquariums?: Array<{ slug: string; url: string; status: string }> };
-        const published = (data.aquariums ?? []).filter((entry) => entry.status === 'published' && entry.slug !== manifest.slug);
+        const data = await response.json() as { aquariums?: Array<{ slug: string; url: string; status: string; waters?: string[] }> };
+        const allPublished = (data.aquariums ?? []).filter((entry) => entry.status === 'published' && entry.slug !== manifest.slug);
+        const scoped = water === 'anywhere' ? allPublished : allPublished.filter((entry) => entry.waters?.includes(water));
+        const published = scoped.length ? scoped : allPublished;
         const fresh = published.filter((entry) => !recent.includes(entry.slug));
         const pool = fresh.length ? fresh : published;
         if (!pool.length) throw new Error('No other Aquarium is available');
@@ -372,8 +384,11 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       } catch {
         // Recent journeys are a progressive enhancement.
       }
-      recordEvent('aquarium_transition', { sourceAquariumId: manifest.slug, destinationAquariumId: destination.id ?? destination.slug });
-      window.location.assign(destination.url ?? destination.aquarium_url ?? '/');
+      recordEvent('aquarium_transition', { sourceAquariumId: manifest.slug, destinationAquariumId: destination.id ?? destination.slug, metadata: { water } });
+      const target = new URL(destination.url ?? destination.aquarium_url ?? '/', window.location.href);
+      target.searchParams.set('water', water);
+      target.searchParams.set('source', 'explore');
+      window.location.assign(target.href);
     } catch {
       setAnnouncement('Another Aquarium is not available just now.');
     }

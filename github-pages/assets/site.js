@@ -326,25 +326,31 @@
 
   exploreAction.addEventListener('click',async () => {
     exploreAction.disabled = true;
-    recordEvent('explore_click');
+    const validWaters=['anywhere','heavy','dreamy','electronic','quiet','loud','dark','strange'];
+    let water='anywhere';
+    try { const fromUrl=new URLSearchParams(location.search).get('water'),stored=sessionStorage.getItem('cosmic-aquaria:water-scope');water=validWaters.includes(fromUrl)?fromUrl:(validWaters.includes(stored)?stored:'anywhere');sessionStorage.setItem('cosmic-aquaria:water-scope',water) } catch {}
+    recordEvent('explore_click',{metadata:{water}});
     try {
       const recentKey = 'cosmic-aquaria:recent-aquariums';
       const recent = readStoredIds(recentKey);
       let destination;
-      const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?exclude=' + encodeURIComponent(slug) + '&recent=' + encodeURIComponent(recent.join(',')),{cache:'no-store'}).catch(()=>null);
+      const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?water=' + encodeURIComponent(water) + '&exclude=' + encodeURIComponent(slug) + '&recent=' + encodeURIComponent(recent.join(',')),{cache:'no-store'}).catch(()=>null);
       if (serviceResponse?.ok) destination = await serviceResponse.json();
       if (!destination) {
         const response = await fetch(base + '/aquariums.json', {cache:'no-store'});
         if (!response.ok) throw new Error('Aquarium registry unavailable');
         const entries = (await response.json()).aquariums || [];
-        const eligible = entries.filter(entry => entry.status === 'published' && entry.slug !== slug && !recent.includes(entry.slug));
-        const pool = eligible.length ? eligible : entries.filter(entry => entry.status === 'published' && entry.slug !== slug);
+        const published=entries.filter(entry=>entry.status==='published'&&entry.slug!==slug);
+        const scoped=water==='anywhere'?published:published.filter(entry=>entry.waters?.includes(water));
+        const candidates=scoped.length?scoped:published;
+        const eligible = candidates.filter(entry => !recent.includes(entry.slug));
+        const pool = eligible.length ? eligible : candidates;
         if (!pool.length) throw new Error('No other Aquarium is available');
         destination = pool[Math.floor(randomUnit() * pool.length)];
       }
       try { sessionStorage.setItem(recentKey,JSON.stringify([slug,destination.slug,...recent].filter((value,index,array)=>array.indexOf(value)===index).slice(0,6))); } catch {}
-      recordEvent('aquarium_transition',{sourceAquariumId:slug,destinationAquariumId:destination.id||destination.slug});
-      location.assign(destination.url||destination.aquarium_url);
+      recordEvent('aquarium_transition',{sourceAquariumId:slug,destinationAquariumId:destination.id||destination.slug,metadata:{water}});
+      const target=new URL(destination.url||destination.aquarium_url,location.href);target.searchParams.set('water',water);target.searchParams.set('source','explore');location.assign(target.href);
     } catch {
       exploreAction.disabled = false;
       announce('Another Aquarium is not available just now.');

@@ -255,6 +255,8 @@ def create_artist(
     release_date: str = "",
     batch_id: str = "",
     generate_qr: bool = True,
+    metadata_tags: list[str] | None = None,
+    waters: list[str] | None = None,
 ) -> dict[str, Any]:
     artist = " ".join(title.split())
     if not artist:
@@ -278,6 +280,10 @@ def create_artist(
     albums: dict[str, str] = {}
     for track in tracks:
         albums.setdefault(track["albumKey"], track["accent"])
+    from water_classifier import classify_waters, valid_waters
+    assigned_waters = valid_waters(waters) or classify_waters(
+        metadata_tags or [], f"{artist} {release_title}", f"{artist}:{release_title}:{resolved_url}"
+    )
     manifest = {
         "schemaVersion": 1,
         "slug": slug,
@@ -287,6 +293,8 @@ def create_artist(
         "releaseDate": normalize_release_date(release_date or discovered_release_date) or None,
         "dailyBatchId": batch_id or None,
         "status": "published",
+        "metadataTags": metadata_tags or [],
+        "waters": assigned_waters,
         "commerceAvailable": commerce_available,
         "commerceUrl": commerce_url,
         "visualStyle": visual_style,
@@ -314,6 +322,7 @@ def create_artist(
         "import_status": import_status,
         "commerce_available": commerce_available,
         "visual_style": visual_style,
+        "waters": assigned_waters,
     }
     return result
 

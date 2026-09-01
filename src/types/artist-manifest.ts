@@ -8,6 +8,8 @@ export interface ArtistAlbumAccent {
 export type VisualStyle = 'cosmic' | 'violet' | 'chrome' | 'glass';
 
 export interface ArtistManifest {
+  waters?: Array<'heavy' | 'dreamy' | 'electronic' | 'quiet' | 'loud' | 'dark' | 'strange'>;
+  metadataTags?: string[];
   schemaVersion: 1;
   slug: string;
   artist: string;

@@ -140,6 +140,7 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
                 release_date=str(item.get("release_date") or ""),
                 batch_id=batch_date,
                 generate_qr=False,
+                metadata_tags=item.get("tags") if isinstance(item.get("tags"), list) else [],
             )
             record = {
                 "id": aquarium_slug,
@@ -150,6 +151,7 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
                 "releaseDate": str(item.get("release_date") or ""),
                 "artworkReference": item.get("art_url") or item.get("art_id"),
                 "tags": item.get("tags") if isinstance(item.get("tags"), list) else [],
+                "waters": result["waters"],
                 "discoveredAt": dt.datetime.now(dt.timezone.utc).isoformat(),
                 "aquariumUrl": result["page_url"].split("?", 1)[0],
                 "visualStyle": result["visual_style"],

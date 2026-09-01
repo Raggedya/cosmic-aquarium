@@ -1,0 +1,14 @@
+{
+  "$schema": "../../node_modules/wrangler/config-schema.json",
+  "name": "cosmic-aquaria",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "triggers": { "crons": ["0,15,30,45 * * * *"] },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "cosmic-aquaria-production",
+    "database_id": "71fd9a57-fe89-4b76-bd83-80c276a5636f",
+    "migrations_dir": "migrations"
+  }]
+}
