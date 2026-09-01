@@ -30,12 +30,7 @@ LAVENDER = "#c7b8f4"
 LINE = "#302d4b"
 THEMES = (
     {"id": "cosmic", "label": "COSMIC BLOOM", "flower": "anemone.png", "bg": "#080822", "accent": "#c7b8f4"},
-    {"id": "crimson", "label": "CRIMSON ROSE", "flower": "rose.png", "bg": "#070607", "accent": "#d3485d"},
-    {"id": "paper", "label": "PAPER GARDEN", "flower": "cosmos.png", "bg": "#102526", "accent": "#d8ccb1"},
-    {"id": "thorn", "label": "BLACK THORN", "flower": "thorn.png", "bg": "#030303", "accent": "#d82031"},
     {"id": "violet", "label": "VIOLET HAZE", "flower": "anemone.png", "bg": "#17103b", "accent": "#c584f0"},
-    {"id": "neon", "label": "NEON BLOOM", "flower": "cosmos.png", "bg": "#03071b", "accent": "#2fdfff"},
-    {"id": "desert", "label": "DESERT BLOOM", "flower": "poppy.png", "bg": "#825431", "accent": "#e49a54"},
 )
 
 
@@ -132,14 +127,14 @@ class CosmicAquariumStudio(tk.Tk):
         self.copy_button.pack(side="left")
         self.result_row.grid_remove()
 
-        chooser = tk.Frame(shell, width=548, bg=INK)
+        chooser = tk.Frame(shell, width=366, bg=INK)
         chooser.grid(row=1, column=1, sticky="n", padx=(0, 54), pady=(43, 20))
         chooser.grid_propagate(False)
         chooser.configure(height=610)
-        tk.Label(chooser, text="CHOOSE A VISUAL WORLD", bg=INK, fg=LAVENDER, font=("Segoe UI Semibold", 9)).grid(row=0, column=0, columnspan=3, sticky="w", pady=(0, 7))
-        tk.Label(chooser, text="The artwork is a creative choice — never assigned by genre.", bg=INK, fg=MUTED, font=("Segoe UI", 9)).grid(row=1, column=0, columnspan=3, sticky="w", pady=(0, 20))
+        tk.Label(chooser, text="CHOOSE A VISUAL WORLD", bg=INK, fg=LAVENDER, font=("Segoe UI Semibold", 9)).grid(row=0, column=0, columnspan=2, sticky="w", pady=(0, 7))
+        tk.Label(chooser, text="The artwork is a creative choice — never assigned by genre.", bg=INK, fg=MUTED, font=("Segoe UI", 9)).grid(row=1, column=0, columnspan=2, sticky="w", pady=(0, 20))
         for index, theme in enumerate(THEMES):
-            row, column = divmod(index, 3)
+            row, column = divmod(index, 2)
             tile = tk.Canvas(chooser, width=168, height=146, bg=INK, highlightthickness=0, cursor="hand2")
             tile.grid(row=row + 2, column=column, padx=(0, 14), pady=(0, 18), sticky="nw")
             tile.bind("<Button-1>", lambda _event, style=theme["id"]: self._select_style(style))
