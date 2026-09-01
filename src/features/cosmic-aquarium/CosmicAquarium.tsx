@@ -43,6 +43,10 @@ const CREATURES: CreatureDefinition[] = [
   { id: 'ca-08', trackIndex: 24, species: 'cosmos', depth: 'foreground', x: -5, y: 48, size: 210, duration: 42, delay: -15, travelX: 44, travelY: 18, hue: 185 },
   { id: 'ca-09', trackIndex: 12, species: 'poppy', depth: 'far', x: 57, y: 73, size: 55, duration: 29, delay: -22, travelX: 30, travelY: -55, hue: 293 },
   { id: 'ca-10', trackIndex: 27, species: 'cosmos', depth: 'mid', x: 48, y: 91, size: 96, duration: 26, delay: -8, travelX: 58, travelY: -37, hue: 224 },
+  { id: 'ca-11', trackIndex: 3, species: 'anemone', depth: 'far', x: 32, y: 17, size: 78, duration: 37, delay: -14, travelX: 46, travelY: 34, hue: 258 },
+  { id: 'ca-12', trackIndex: 16, species: 'cosmos', depth: 'mid', x: 68, y: 56, size: 88, duration: 32, delay: -25, travelX: -52, travelY: 30, hue: 202 },
+  { id: 'ca-13', trackIndex: 33, species: 'poppy', depth: 'far', x: 37, y: 78, size: 62, duration: 41, delay: -11, travelX: 35, travelY: -46, hue: 318 },
+  { id: 'ca-14', trackIndex: 22, species: 'anemone', depth: 'near', x: 93, y: 63, size: 124, duration: 36, delay: -31, travelX: -40, travelY: -22, hue: 237 },
 ];
 
 const historyKeyPrefix = 'cosmic-aquaria:recent-tracks:';
@@ -51,12 +55,12 @@ const captureDurationMs = 430;
 const serviceBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
 
 const themedSpecies: Record<string, Species[]> = {
-  crimson: Array<Species>(10).fill('rose'),
-  paper: ['cosmos', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'cosmos'],
-  thorn: Array<Species>(10).fill('rose'),
-  violet: ['anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos'],
-  neon: ['cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone'],
-  desert: ['poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy'],
+  crimson: Array<Species>(14).fill('rose'),
+  paper: ['cosmos', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos'],
+  thorn: Array<Species>(14).fill('rose'),
+  violet: ['anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone'],
+  neon: ['cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'anemone', 'cosmos', 'anemone', 'cosmos'],
+  desert: ['poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'cosmos', 'poppy'],
 };
 
 function speciesForStyle(style: string | undefined, index: number, fallback: Species): Species {

@@ -37,22 +37,23 @@
   const version = document.documentElement.dataset.version || 'current';
   const base = location.hostname.endsWith('github.io') ? '/cosmic-aquarium' : '';
   const serviceBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
-  const baseSpecies = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos'];
+  const baseSpecies = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos','anemone','cosmos','poppy','anemone'];
   const styleSpecies = {
     cosmic: baseSpecies,
-    crimson: ['rose','rose','rose','rose','rose','rose','rose','rose','rose','rose'],
-    paper: ['cosmos','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone','cosmos','cosmos'],
-    thorn: ['rose','rose','rose','rose','rose','rose','rose','rose','rose','rose'],
-    violet: ['anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos'],
-    neon: ['cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone'],
-    desert: ['poppy','cosmos','poppy','poppy','cosmos','poppy','poppy','cosmos','poppy','poppy']
+    crimson: ['rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose'],
+    paper: ['cosmos','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone','cosmos'],
+    thorn: ['rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose'],
+    violet: ['anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone'],
+    neon: ['cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','anemone','cosmos','anemone','cosmos'],
+    desert: ['poppy','cosmos','poppy','poppy','cosmos','poppy','poppy','cosmos','poppy','poppy','cosmos','poppy','cosmos','poppy']
   };
-  const depths = ['near','far','mid','near','near','far','mid','foreground','far','mid'];
+  const depths = ['near','far','mid','near','near','far','mid','foreground','far','mid','far','mid','far','near'];
   const positions = [
     [13,30,118,24,-9,34,-42],[78,19,66,31,-18,-49,29],[83,43,98,27,-4,-72,24],
     [20,61,132,35,-24,43,-28],[88,79,108,23,-12,-38,-52],[8,84,74,38,-29,64,-19],
     [52,38,158,33,-20,-27,39],[-5,48,210,42,-15,44,18],[57,73,55,29,-22,30,-55],
-    [48,91,96,26,-8,58,-37]
+    [48,91,96,26,-8,58,-37],[32,17,78,37,-14,46,34],[68,56,88,32,-25,-52,30],
+    [37,78,62,41,-11,35,-46],[93,63,124,36,-31,-40,-22]
   ];
   let manifest;
   let selectedButton;

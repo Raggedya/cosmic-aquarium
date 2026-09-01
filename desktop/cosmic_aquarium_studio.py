@@ -252,9 +252,14 @@ class CosmicAquariumStudio(tk.Tk):
         row.grid_columnconfigure(0, weight=1)
         title = str(entry.get("artist") or entry.get("slug") or "Untitled")
         release = str(entry.get("release") or "Bandcamp")
-        flower_count = int(entry.get("flowerCount") or 10)
+        flower_min = int(entry.get("flowerCountMin") or entry.get("flowerCount") or 10)
+        flower_max = int(entry.get("flowerCountMax") or entry.get("flowerCount") or flower_min)
         track_count = int(entry.get("trackCount") or 0)
-        flower_label = f"{flower_count} FLOWER" + ("" if flower_count == 1 else "S")
+        flower_label = (
+            f"{flower_min}\N{EN DASH}{flower_max} FLOWERS"
+            if flower_min != flower_max
+            else f"{flower_min} FLOWER" + ("" if flower_min == 1 else "S")
+        )
         song_label = f"{track_count} SONG" + ("" if track_count == 1 else "S")
         tk.Label(row, text=title.upper(), bg="#0b0b24", fg=PAPER, font=("Segoe UI Semibold", 10), anchor="w").grid(row=0, column=0, sticky="w")
         tk.Label(row, text=f"{release}   ·   {flower_label}   ·   {song_label}", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=1, column=0, sticky="w", pady=(4, 0))

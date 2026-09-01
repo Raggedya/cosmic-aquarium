@@ -121,6 +121,10 @@
 
 .has-player .creature-field { opacity: .72; }
 
+@media (max-width: 389px) {
+  .creature-field .creature:nth-child(n + 11) { display: none; }
+}
+
 .creature {
   --depth-scale: 1;
   --depth-opacity: .82;
