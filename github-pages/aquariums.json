@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T07:08:23.841Z",
+  "generatedAt": "2026-09-01T07:04:13.619Z",
   "aquariums": [
     {
       "id": "active-dark-filament-adaptive-inference",
@@ -13,9 +13,25 @@
       "flowerCountMax": 14,
       "trackCount": 11,
       "bandcampUrl": "https://activedarkfilament.bandcamp.com/album/adaptive-inference",
-      "visualStyle": "cosmic",
+      "visualStyle": "violet",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/active-dark-filament-adaptive-inference/",
+      "status": "published"
+    },
+    {
+      "id": "atagal-drifting-past-the-stars",
+      "slug": "atagal-drifting-past-the-stars",
+      "artist": "Atagal",
+      "release": "drifting past the stars",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://atagal.bandcamp.com/album/drifting-past-the-stars",
+      "visualStyle": "violet",
+      "dailyBatchId": "2026-09-01",
+      "url": "https://raggedya.github.io/cosmic-aquarium/atagal-drifting-past-the-stars/",
       "status": "published"
     },
     {
@@ -29,7 +45,7 @@
       "flowerCountMax": 14,
       "trackCount": 16,
       "bandcampUrl": "https://beatarchives.bandcamp.com/album/blends-beat-tape",
-      "visualStyle": "violet",
+      "visualStyle": "cosmic",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/beat-archives-blends-beat-tape/",
       "status": "published"
@@ -59,7 +75,7 @@
       "flowerCount": 14,
       "flowerCountMin": 10,
       "flowerCountMax": 14,
-      "trackCount": 1,
+      "trackCount": 16,
       "bandcampUrl": "https://bmola.bandcamp.com/album/neutron-bong-2",
       "visualStyle": "cosmic",
       "dailyBatchId": "2026-09-01",
@@ -77,7 +93,7 @@
       "flowerCountMax": 14,
       "trackCount": 12,
       "bandcampUrl": "https://callmeafriend.bandcamp.com/album/burnt-scriptures-v-science-fiction",
-      "visualStyle": "violet",
+      "visualStyle": "cosmic",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/boy-burnt-scriptures-v-science-fiction/",
       "status": "published"
@@ -115,19 +131,19 @@
       "status": "published"
     },
     {
-      "id": "de5andre-fuel",
-      "slug": "de5andre-fuel",
-      "artist": "de5andre",
-      "release": "Fuel",
-      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "id": "doom-idol-riot-army-doom-idol",
+      "slug": "doom-idol-riot-army-doom-idol",
+      "artist": "Doom Idol",
+      "release": "RIOT ARMY DOOM IDOL",
+      "releaseDate": "2026-08-31 21:11:21 UTC",
       "flowerCount": 14,
       "flowerCountMin": 10,
       "flowerCountMax": 14,
-      "trackCount": 1,
-      "bandcampUrl": "https://de5andre.bandcamp.com/album/fuel-92",
-      "visualStyle": "violet",
+      "trackCount": 5,
+      "bandcampUrl": "https://doomidol.bandcamp.com/album/riot-army-doom-idol",
+      "visualStyle": "cosmic",
       "dailyBatchId": "2026-09-01",
-      "url": "https://raggedya.github.io/cosmic-aquarium/de5andre-fuel/",
+      "url": "https://raggedya.github.io/cosmic-aquarium/doom-idol-riot-army-doom-idol/",
       "status": "published"
     },
     {
@@ -157,7 +173,7 @@
       "flowerCountMax": 14,
       "trackCount": 4,
       "bandcampUrl": "https://eduarddelacalle.bandcamp.com/album/maverick-whitaker-daniel-douglas-home-ep",
-      "visualStyle": "cosmic",
+      "visualStyle": "violet",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/eduardo-de-la-calle-maverick-whitaker-daniel-douglas-home-ep/",
       "status": "published"
@@ -189,7 +205,7 @@
       "flowerCountMax": 14,
       "trackCount": 10,
       "bandcampUrl": "https://lesdmouleurs.bandcamp.com/album/dont-believe-what-i-see",
-      "visualStyle": "violet",
+      "visualStyle": "cosmic",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/georges-perche-don-t-believe-what-i-see/",
       "status": "published"
@@ -205,25 +221,9 @@
       "flowerCountMax": 14,
       "trackCount": 4,
       "bandcampUrl": "https://groupsexband.bandcamp.com/album/demo",
-      "visualStyle": "cosmic",
+      "visualStyle": "violet",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/groupsex-demo/",
-      "status": "published"
-    },
-    {
-      "id": "immigrant-union",
-      "slug": "immigrant-union",
-      "artist": "Immigrant union",
-      "release": "Anyway",
-      "releaseDate": "23 Sep 2014 00:00:00 GMT",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 29,
-      "bandcampUrl": "https://immigrantunionmusic.bandcamp.com/",
-      "visualStyle": "cosmic",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/immigrant-union/",
       "status": "published"
     },
     {
@@ -237,7 +237,7 @@
       "flowerCountMax": 14,
       "trackCount": 8,
       "bandcampUrl": "https://kilamdapro1.bandcamp.com/album/rove-moniker",
-      "visualStyle": "violet",
+      "visualStyle": "cosmic",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/kilamdapro-rove-moniker/",
       "status": "published"
@@ -269,7 +269,7 @@
       "flowerCountMax": 14,
       "trackCount": 9,
       "bandcampUrl": "https://fangedphenomenon.bandcamp.com/album/i-see-you",
-      "visualStyle": "cosmic",
+      "visualStyle": "violet",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/phenomenon-i-see-you/",
       "status": "published"
@@ -283,27 +283,11 @@
       "flowerCount": 14,
       "flowerCountMin": 10,
       "flowerCountMax": 14,
-      "trackCount": 1,
+      "trackCount": 19,
       "bandcampUrl": "https://ritualloss.bandcamp.com/album/halo",
-      "visualStyle": "violet",
+      "visualStyle": "cosmic",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/ritual-loss-halo/",
-      "status": "published"
-    },
-    {
-      "id": "sega",
-      "slug": "sega",
-      "artist": "sega*",
-      "release": "♡",
-      "releaseDate": "2026-08-31 00:00:00 UTC",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 1,
-      "bandcampUrl": "https://funisinfinite.bandcamp.com/album/-",
-      "visualStyle": "violet",
-      "dailyBatchId": "2026-09-01",
-      "url": "https://raggedya.github.io/cosmic-aquarium/sega/",
       "status": "published"
     },
     {
@@ -315,27 +299,11 @@
       "flowerCount": 14,
       "flowerCountMin": 10,
       "flowerCountMax": 14,
-      "trackCount": 2,
+      "trackCount": 24,
       "bandcampUrl": "https://signallock.bandcamp.com/album/selektor-lime",
-      "visualStyle": "cosmic",
+      "visualStyle": "violet",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/signal-lock-selektor-lime/",
-      "status": "published"
-    },
-    {
-      "id": "the-murlocs",
-      "slug": "the-murlocs",
-      "artist": "The Murlocs",
-      "release": "Calm Ya Farm",
-      "releaseDate": "19 May 2023 00:00:00 GMT",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 60,
-      "bandcampUrl": "https://themurlocs.bandcamp.com/",
-      "visualStyle": "cosmic",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/the-murlocs/",
       "status": "published"
     },
     {
@@ -349,7 +317,7 @@
       "flowerCountMax": 14,
       "trackCount": 12,
       "bandcampUrl": "https://thepumpkinpatch.bandcamp.com/album/sun-anthems",
-      "visualStyle": "cosmic",
+      "visualStyle": "violet",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/the-pumpkin-patch-sun-anthems/",
       "status": "published"

@@ -524,7 +524,8 @@ class CosmicAquariumStudio(tk.Tk):
         except json.JSONDecodeError:
             pass
         errors = [line.split("##[error]", 1)[-1].strip() for line in log.stdout.splitlines() if "##[error]" in line]
-        detail = errors[-1] if errors else "Open the GitHub run for the detailed reason."
+        track_rule = next((line.strip() for line in log.stdout.splitlines() if "requires at least 3 publicly available Bandcamp songs" in line), "")
+        detail = track_rule or (errors[-1] if errors else "Open the GitHub run for the detailed reason.")
         return heading + "\n\n" + detail + ("\n\n" + url if url else "")
 
     @staticmethod

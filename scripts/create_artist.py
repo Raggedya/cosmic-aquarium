@@ -21,6 +21,7 @@ PAGES = ROOT / "github-pages"
 TEMPLATE = ROOT / "templates" / "artist-index.html"
 COLORS = ("#c3b4f4", "#88d7ff", "#ff6f8f", "#ffb66d", "#8fd9c7", "#a492ff")
 VISUAL_STYLES = ("cosmic", "violet")
+MINIMUM_TRACK_COUNT = 3
 USER_AGENT = "CosmicAquariumCreator/1.0 (+https://github.com/Raggedya/cosmic-aquarium)"
 
 
@@ -177,13 +178,13 @@ def discover_tracks(url: str, artist: str) -> tuple[list[dict[str, Any]], str, b
     for payload in parser.tralbum:
         release_date = release_date or release_date_from_payload(payload)
         tracks.extend(tracks_from_payload(payload, final_url, artist, len(tracks)))
-    if tracks:
+    if len(deduplicate(tracks)) >= MINIMUM_TRACK_COUNT:
         return deduplicate(tracks), final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None, release_date
 
     origin = urllib.parse.urlunparse(urllib.parse.urlparse(final_url)._replace(path="", params="", query="", fragment=""))
     music_parser, _ = fetch_page(origin.rstrip("/") + "/music")
     commerce_available = commerce_available or page_offers_commerce(music_parser)
-    candidates = [path for path in sorted(music_parser.album_links) if path.startswith("/album/")][:8]
+    candidates = sorted(music_parser.album_links)[:12]
     for path in candidates:
         time.sleep(0.35)
         page_url = urllib.parse.urljoin(origin + "/", path)
@@ -251,25 +252,11 @@ def create_artist(
     except Exception:
         tracks, resolved_url, commerce_available, commerce_url, discovered_release_date, import_status = [], destination_source, False, None, "", "official-link-fallback"
 
-    if not tracks:
-        tracks = [{
-            "id": f"{slug}-bandcamp",
-            "title": "Discover on Bandcamp",
-            "artist": artist,
-            "albumTitle": "Bandcamp",
-            "albumKey": "bandcamp",
-            "year": 0,
-            "trackNumber": 1,
-            "duration": "",
-            "x": 0.5,
-            "y": 0.5,
-            "zone": "Official Bandcamp handoff",
-            "note": "Track metadata unavailable; no catalogue data was fabricated.",
-            "bandcampUrl": resolved_url,
-            "bandcampEmbedTrackId": "",
-            "sourcePage": resolved_url,
-            "accent": COLORS[0],
-        }]
+    if len(tracks) < MINIMUM_TRACK_COUNT:
+        raise ValueError(
+            f"Cosmic Aquaria requires at least {MINIMUM_TRACK_COUNT} publicly available Bandcamp songs; "
+            f"only {len(tracks)} could be verified for {artist}."
+        )
 
     albums: dict[str, str] = {}
     for track in tracks:

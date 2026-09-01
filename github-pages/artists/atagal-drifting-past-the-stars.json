@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "slug": "atagal-drifting-past-the-stars",
+  "artist": "Atagal",
+  "bandcampUrl": "https://atagal.bandcamp.com/album/drifting-past-the-stars",
+  "releaseTitle": "drifting past the stars",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "2026-09-01",
+  "status": "published",
+  "commerceAvailable": true,
+  "commerceUrl": "https://atagal.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-01T07:03:51Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "drifting-past-the-stars",
+      "color": "#c3b4f4"
+    },
+    {
+      "key": "further-from-the-center",
+      "color": "#8fd9c7"
+    },
+    {
+      "key": "you-don-t-know-how-it-is",
+      "color": "#a492ff"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "drifting-past-the-stars-1422259668",
+      "title": "worlds we made",
+      "artist": "Atagal",
+      "albumTitle": "drifting past the stars",
+      "albumKey": "drifting-past-the-stars",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atagal.bandcamp.com/track/worlds-we-made",
+      "bandcampEmbedTrackId": "1422259668",
+      "sourcePage": "https://atagal.bandcamp.com/album/drifting-past-the-stars",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "drifting-past-the-stars-2306898157",
+      "title": "spaces we made",
+      "artist": "Atagal",
+      "albumTitle": "drifting past the stars",
+      "albumKey": "drifting-past-the-stars",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atagal.bandcamp.com/track/spaces-we-made",
+      "bandcampEmbedTrackId": "2306898157",
+      "sourcePage": "https://atagal.bandcamp.com/album/drifting-past-the-stars",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "further-from-the-center-3382098631",
+      "title": "further from the center",
+      "artist": "Atagal",
+      "albumTitle": "further from the center",
+      "albumKey": "further-from-the-center",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "3:48",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atagal.bandcamp.com/track/further-from-the-center",
+      "bandcampEmbedTrackId": "3382098631",
+      "sourcePage": "https://atagal.bandcamp.com/track/further-from-the-center",
+      "accent": "#8fd9c7"
+    },
+    {
+      "id": "you-don-t-know-how-it-is-3704068541",
+      "title": "you don't know how it is",
+      "artist": "Atagal",
+      "albumTitle": "you don't know how it is",
+      "albumKey": "you-don-t-know-how-it-is",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "2:30",
+      "x": 0.39375,
+      "y": 0.263889,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atagal.bandcamp.com/track/you-dont-know-how-it-is",
+      "bandcampEmbedTrackId": "3704068541",
+      "sourcePage": "https://atagal.bandcamp.com/track/you-dont-know-how-it-is",
+      "accent": "#a492ff"
+    }
+  ]
+}

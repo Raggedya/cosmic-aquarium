@@ -49,7 +49,7 @@ test('the Library catalogue reports its living flowers and available songs', asy
     assert.equal(entry.flowerCount, 14, entry.slug);
     assert.equal(entry.flowerCountMin, 10, entry.slug);
     assert.equal(entry.flowerCountMax, 14, entry.slug);
-    assert.ok(Number.isInteger(entry.trackCount) && entry.trackCount > 0, entry.slug);
+    assert.ok(Number.isInteger(entry.trackCount) && entry.trackCount >= 3, entry.slug);
     const manifest = JSON.parse(await readFile(path.join(manifestsDirectory, entry.slug + '.json'), 'utf8'));
     assert.equal(entry.trackCount, manifest.tracks.length, entry.slug);
     assert.equal(entry.releaseDate, manifest.releaseDate, entry.slug);
@@ -99,4 +99,12 @@ test('only Cosmic Bloom and Violet Haze can be assigned', async () => {
   for (const retired of ['crimson', 'paper', 'thorn', 'neon', 'desert']) {
     assert.doesNotMatch(workflow, new RegExp('^\\s*- ' + retired + '$', 'm'));
   }
+});
+
+test('only artists with at least three verified Bandcamp songs are eligible', async () => {
+  const creator = await readFile(path.resolve('scripts', 'create_artist.py'), 'utf8');
+  assert.match(creator, /MINIMUM_TRACK_COUNT = 3/);
+  assert.match(creator, /if len\(tracks\) < MINIMUM_TRACK_COUNT:/);
+  assert.match(creator, /requires at least \{MINIMUM_TRACK_COUNT\} publicly available Bandcamp songs/);
+  assert.doesNotMatch(creator, /Track metadata unavailable; no catalogue data was fabricated/);
 });
