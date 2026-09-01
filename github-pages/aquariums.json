@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T08:29:46.586Z",
+  "generatedAt": "2026-09-01T08:56:09.555Z",
   "aquariums": [
     {
       "id": "active-dark-filament-adaptive-inference",
@@ -374,6 +374,23 @@
       "objectType": "flowers",
       "dailyBatchId": null,
       "url": "https://raggedya.github.io/cosmic-aquarium/terrestials/",
+      "status": "published"
+    },
+    {
+      "id": "the-cigarrillos",
+      "slug": "the-cigarrillos",
+      "artist": "The Cigarrillos",
+      "release": "Cigarettes and Seances",
+      "releaseDate": "2020-09-18 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://thecigarrillos.bandcamp.com/",
+      "visualStyle": "chrome",
+      "objectType": "skulls",
+      "dailyBatchId": null,
+      "url": "https://raggedya.github.io/cosmic-aquarium/the-cigarrillos/",
       "status": "published"
     },
     {
