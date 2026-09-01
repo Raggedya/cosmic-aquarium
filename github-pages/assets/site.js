@@ -64,7 +64,7 @@
   const status = root.querySelector('[role="status"]');
   const titlePrompt = document.querySelector('.cosmic-title p');
   const shareAction = root.querySelector('.aquarium-action--share');
-  const buyAction = root.querySelector('.aquarium-action--buy');
+  const buyAction = document.querySelector('.aquarium-action--buy');
   const exploreAction = root.querySelector('.aquarium-action--explore');
   const analyticsSession = sessionId();
 

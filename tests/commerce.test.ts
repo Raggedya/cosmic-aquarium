@@ -50,3 +50,9 @@ test('the Library catalogue reports its living flowers and available songs', asy
     assert.equal(entry.trackCount, manifest.tracks.length, entry.slug);
   }
 });
+
+test('generated aquariums can initialise their page-level Buy Music action', async () => {
+  const script = await readFile(path.resolve('github-pages', 'assets', 'site.js'), 'utf8');
+  assert.match(script, /document\.querySelector\('\.aquarium-action--buy'\)/);
+  assert.doesNotMatch(script, /root\.querySelector\('\.aquarium-action--buy'\)/);
+});
