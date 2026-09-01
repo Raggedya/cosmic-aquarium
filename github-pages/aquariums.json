@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T07:09:41.103Z",
+  "generatedAt": "2026-09-01T07:37:59.604Z",
   "aquariums": [
     {
       "id": "active-dark-filament-adaptive-inference",
@@ -320,6 +320,22 @@
       "visualStyle": "violet",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/signal-lock-selektor-lime/",
+      "status": "published"
+    },
+    {
+      "id": "terrestials",
+      "slug": "terrestials",
+      "artist": "Terrestials",
+      "release": "Many Moons",
+      "releaseDate": "2026-07-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 20,
+      "bandcampUrl": "https://terrestrialsmusic.bandcamp.com/track/many-moons",
+      "visualStyle": "violet",
+      "dailyBatchId": null,
+      "url": "https://raggedya.github.io/cosmic-aquarium/terrestials/",
       "status": "published"
     },
     {
