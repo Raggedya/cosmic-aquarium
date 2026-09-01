@@ -141,18 +141,24 @@ function adminPage() {
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (request.method === 'OPTIONS') return new Response(null,{status:204,headers:CORS});
-    if (url.pathname === '/api/health') return json({ok:true,service:'cosmic-aquaria'} ,200,CORS);
-    if (url.pathname === '/api/events' && request.method === 'POST') return recordEvent(request,env);
-    if (url.pathname === '/api/email/open.gif' && request.method === 'GET') return recordEmailOpen(url,env);
-    if (url.pathname === '/api/aquariums/random' && request.method === 'GET') return randomAquarium(url,env);
-    if (url.pathname === '/admin' && request.method === 'GET') return adminPage();
-    if (url.pathname.startsWith('/api/admin/') && !authorized(request,env)) return json({error:'unauthorized'},401);
-    if (url.pathname === '/api/admin/sync' && request.method === 'POST') return syncCatalogue(request,env);
-    if (url.pathname === '/api/admin/overview' && request.method === 'GET') return overview(env);
-    if (url.pathname === '/api/admin/email-delivery' && request.method === 'POST') return recordEmailDelivery(request,env);
-    const statusMatch = url.pathname.match(/^\/api\/admin\/aquariums\/([^/]+)\/(disable|republish)$/);
-    if (statusMatch && request.method === 'POST') return setAquariumStatus(request,env,decodeURIComponent(statusMatch[1]),statusMatch[2] === 'disable' ? 'disabled' : 'published');
-    return json({error:'not_found'},404,CORS);
+    try {
+      if (request.method === 'OPTIONS') return new Response(null,{status:204,headers:CORS});
+      if (url.pathname === '/api/health') return json({ok:true,service:'cosmic-aquaria'} ,200,CORS);
+      if (url.pathname === '/api/events' && request.method === 'POST') return recordEvent(request,env);
+      if (url.pathname === '/api/email/open.gif' && request.method === 'GET') return recordEmailOpen(url,env);
+      if (url.pathname === '/api/aquariums/random' && request.method === 'GET') return randomAquarium(url,env);
+      if (url.pathname === '/admin' && request.method === 'GET') return adminPage();
+      if (url.pathname.startsWith('/api/admin/') && !authorized(request,env)) return json({error:'unauthorized'},401);
+      if (url.pathname === '/api/admin/sync' && request.method === 'POST') return syncCatalogue(request,env);
+      if (url.pathname === '/api/admin/overview' && request.method === 'GET') return overview(env);
+      if (url.pathname === '/api/admin/email-delivery' && request.method === 'POST') return recordEmailDelivery(request,env);
+      const statusMatch = url.pathname.match(/^\/api\/admin\/aquariums\/([^/]+)\/(disable|republish)$/);
+      if (statusMatch && request.method === 'POST') return setAquariumStatus(request,env,decodeURIComponent(statusMatch[1]),statusMatch[2] === 'disable' ? 'disabled' : 'published');
+      return json({error:'not_found'},404,CORS);
+    } catch (error) {
+      console.error(error);
+      const detail = url.pathname.startsWith('/api/admin/') && authorized(request,env) ? String(error?.stack || error).slice(0,2000) : undefined;
+      return json({error:'internal_error',detail},500,CORS);
+    }
   },
 };
