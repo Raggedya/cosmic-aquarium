@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T05:07:50.325Z",
+  "generatedAt": "2026-09-01T05:11:01.949Z",
   "aquariums": [
     {
       "id": "dinosaur-jr",
@@ -66,6 +66,17 @@
       "visualStyle": "desert",
       "dailyBatchId": null,
       "url": "https://raggedya.github.io/cosmic-aquarium/ok-cowgirl/",
+      "status": "published"
+    },
+    {
+      "id": "phoebe-bridgers",
+      "slug": "phoebe-bridgers",
+      "artist": "Phoebe Bridgers",
+      "release": "Lost Weekend",
+      "bandcampUrl": "https://phoebebridgers.bandcamp.com/album/lost-weekend",
+      "visualStyle": "violet",
+      "dailyBatchId": null,
+      "url": "https://raggedya.github.io/cosmic-aquarium/phoebe-bridgers/",
       "status": "published"
     },
     {
