@@ -7,6 +7,7 @@ const pages = path.join(root,'github-pages');
 const template = await fs.readFile(path.join(root,'templates','artist-index.html'),'utf8');
 const css = await fs.readFile(path.join(root,'app','cosmic-aquarium.css'),'utf8');
 const staticScript = await fs.readFile(path.join(pages,'assets','site.js'),'utf8');
+const activeFlowerCount = 10;
 const assetVersion = createHash('sha256').update(css).update(staticScript).digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#000}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
@@ -29,6 +30,8 @@ for (const filename of artistManifestFiles) {
         slug:artistManifest.slug,
         artist:artistManifest.artist,
         release:artistManifest.releaseTitle || artistManifest.tracks?.[0]?.albumTitle || 'Bandcamp',
+        flowerCount:activeFlowerCount,
+        trackCount:Array.isArray(artistManifest.tracks) ? artistManifest.tracks.length : 0,
         bandcampUrl:artistManifest.bandcampUrl || null,
         visualStyle:artistManifest.visualStyle || 'cosmic',
         dailyBatchId:artistManifest.dailyBatchId || null,

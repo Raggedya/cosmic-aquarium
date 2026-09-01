@@ -38,3 +38,13 @@ test('the three intentional listener actions use the requested staged reveal', a
   assert.match(runtime, /4000/);
   assert.doesNotMatch(styles, /purchase-invitation-pulse/);
 });
+
+test('the Library catalogue reports its living flowers and available songs', async () => {
+  const catalogue = JSON.parse(await readFile(path.resolve('github-pages', 'aquariums.json'), 'utf8'));
+  for (const entry of catalogue.aquariums ?? []) {
+    assert.equal(entry.flowerCount, 10, entry.slug);
+    assert.ok(Number.isInteger(entry.trackCount) && entry.trackCount > 0, entry.slug);
+    const manifest = JSON.parse(await readFile(path.join(manifestsDirectory, entry.slug + '.json'), 'utf8'));
+    assert.equal(entry.trackCount, manifest.tracks.length, entry.slug);
+  }
+});
