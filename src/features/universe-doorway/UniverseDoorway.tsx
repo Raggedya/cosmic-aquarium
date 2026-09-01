@@ -10,14 +10,14 @@ type Water = 'anywhere' | 'heavy' | 'dreamy' | 'electronic' | 'quiet' | 'loud' |
 interface CatalogueEntry { id?: string; slug: string; url?: string; aquarium_url?: string; status?: string; waters?: string[] }
 
 const bubbleLayout: Array<{ water: Water; x: number; y: number; size: number }> = [
-  { water: 'heavy', x: 22, y: 28, size: 104 },
-  { water: 'dreamy', x: 78, y: 28, size: 104 },
-  { water: 'quiet', x: 13, y: 48, size: 98 },
+  { water: 'heavy', x: 25, y: 31, size: 118 },
+  { water: 'dreamy', x: 75, y: 31, size: 118 },
+  { water: 'quiet', x: 13, y: 48, size: 112 },
   { water: 'anywhere', x: 50, y: 48, size: 212 },
-  { water: 'electronic', x: 87, y: 48, size: 104 },
-  { water: 'dark', x: 24, y: 69, size: 106 },
-  { water: 'loud', x: 76, y: 69, size: 106 },
-  { water: 'strange', x: 50, y: 79, size: 102 },
+  { water: 'electronic', x: 87, y: 48, size: 118 },
+  { water: 'dark', x: 26, y: 66, size: 118 },
+  { water: 'loud', x: 74, y: 66, size: 118 },
+  { water: 'strange', x: 50, y: 75, size: 112 },
 ];
 
 function secureRandomIndex(length: number) {

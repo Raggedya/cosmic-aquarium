@@ -202,7 +202,7 @@
 }
 .doorway-bubble--anywhere {
   z-index: 4;
-  width: clamp(166px, 46vw, 190px);
+  width: clamp(178px, 49vw, 202px);
   filter: drop-shadow(0 8px 18px rgba(0, 0, 12, .82)) drop-shadow(0 0 21px rgba(73, 52, 222, .26));
 }
 .doorway-bubble--anywhere::before {
@@ -292,7 +292,7 @@
   .doorway-title p { margin-top: 8px; }
   .doorway-mark { width: 27px; height: 27px; margin-bottom: 7px; }
   .doorway-bubble { width: clamp(69px, calc(var(--bubble-size) * .72), calc(var(--bubble-size) * .88)); }
-  .doorway-bubble--anywhere { width: clamp(158px, 43vw, 174px); }
+  .doorway-bubble--anywhere { width: clamp(168px, 47vw, 184px); }
   .doorway-botanicals--crown { opacity: .76; }
   .doorway-botanicals--garden { opacity: .61; }
   .doorway-footer p { margin-top: 7px; font-size: 15px; }
