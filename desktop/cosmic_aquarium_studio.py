@@ -31,8 +31,10 @@ MUTED = "#9993ad"
 LAVENDER = "#c7b8f4"
 LINE = "#302d4b"
 THEMES = (
-    {"id": "cosmic", "label": "COSMIC BLOOM", "flower": "anemone.png", "bg": "#080822", "accent": "#c7b8f4"},
-    {"id": "violet", "label": "VIOLET HAZE", "flower": "anemone.png", "bg": "#17103b", "accent": "#c584f0"},
+    {"id": "cosmic", "label": "COSMIC BLOOM", "asset": "flowers/anemone.png", "bg": "#080822", "accent": "#c7b8f4"},
+    {"id": "violet", "label": "VIOLET HAZE", "asset": "flowers/anemone.png", "bg": "#17103b", "accent": "#c584f0"},
+    {"id": "chrome", "label": "CHROME SKULLS", "asset": "skulls/chrome-skull-silver.png", "bg": "#020305", "accent": "#a9c8f6"},
+    {"id": "glass", "label": "GLASS GARDEN", "asset": "glass/crystal-flower.png", "bg": "#080721", "accent": "#b49cff"},
 )
 
 
@@ -124,7 +126,7 @@ class CosmicAquariumStudio(tk.Tk):
         tk.Label(content, text="A band. A link.\nA living world.", justify="left", bg=INK, fg=PAPER, font=("Georgia", 36), pady=15).grid(row=1, column=0, sticky="w")
         tk.Label(
             content,
-            text="Every flower becomes a discovery.\nThe finished link and scan-tested QR arrive by email.",
+            text="Every living object becomes a discovery.\nThe finished link and scan-tested QR arrive by email.",
             justify="left", bg=INK, fg=MUTED, font=("Segoe UI", 11), pady=4,
         ).grid(row=2, column=0, sticky="w")
 
@@ -271,10 +273,11 @@ class CosmicAquariumStudio(tk.Tk):
         flower_max = int(entry.get("flowerCountMax") or entry.get("flowerCount") or flower_min)
         track_count = int(entry.get("trackCount") or 0)
         date_label = release_date_label(entry.get("releaseDate"))
+        object_name = str(entry.get("objectType") or "FLOWERS").upper()
         flower_label = (
-            f"{flower_min}\N{EN DASH}{flower_max} FLOWERS"
+            f"{flower_min}\N{EN DASH}{flower_max} {object_name}"
             if flower_min != flower_max
-            else f"{flower_min} FLOWER" + ("" if flower_min == 1 else "S")
+            else f"{flower_min} {object_name.rstrip('S') if flower_min == 1 else object_name}"
         )
         song_label = f"{track_count} SONG" + ("" if track_count == 1 else "S")
         tk.Label(row, text=title.upper(), bg="#0b0b24", fg=PAPER, font=("Segoe UI Semibold", 10), anchor="w").grid(row=0, column=0, sticky="w")
@@ -378,9 +381,9 @@ class CosmicAquariumStudio(tk.Tk):
                 color = theme["accent"]
                 draw.ellipse((x, y, x + 2, y + 2), fill=color)
 
-        source = resource_path("assets/flowers/" + theme["flower"])
+        source = resource_path("assets/" + theme["asset"])
         if not source.exists():
-            source = resource_path("public/flowers/" + theme["flower"])
+            source = resource_path("public/" + theme["asset"])
         flower = Image.open(source).convert("RGBA")
         if style == "paper":
             flower = ImageEnhance.Color(flower).enhance(.12)
@@ -393,12 +396,12 @@ class CosmicAquariumStudio(tk.Tk):
         elif style == "desert":
             flower = ImageEnhance.Color(flower).enhance(.82)
 
-        target_height = 118 if style not in {"thorn", "crimson"} else 126
+        target_height = 88 if style == "chrome" else 108 if style == "glass" else 118
         ratio = target_height / flower.height
         flower = flower.resize((max(1, int(flower.width * ratio)), target_height), Image.Resampling.LANCZOS)
         layer = Image.new("RGBA", preview.size, (0, 0, 0, 0))
         x = int(width * .54 - flower.width / 2)
-        y = -2
+        y = 10 if style == "chrome" else 0 if style == "glass" else -2
         if style in {"crimson", "thorn"}:
             black_layer = Image.new("RGB", preview.size, (0, 0, 0))
             black_layer.paste(flower.convert("RGB"), (x, y))

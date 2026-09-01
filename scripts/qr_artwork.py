@@ -21,6 +21,8 @@ THEMES = {
     "violet": {"top": (12, 10, 43), "bottom": (25, 12, 60), "glow": (176, 72, 242), "ink": (211, 190, 249), "flowers": ("anemone", "cosmos", "anemone", "cosmos", "anemone")},
     "neon": {"top": (2, 5, 23), "bottom": (7, 1, 28), "glow": (0, 205, 255), "ink": (137, 226, 255), "flowers": ("cosmos", "anemone", "cosmos", "anemone", "cosmos")},
     "desert": {"top": (118, 75, 42), "bottom": (68, 38, 27), "glow": (224, 139, 67), "ink": (246, 223, 184), "flowers": ("poppy", "cosmos", "poppy", "poppy", "cosmos")},
+    "chrome": {"top": (1, 2, 4), "bottom": (0, 0, 2), "glow": (115, 164, 224), "ink": (202, 220, 242), "flowers": ("../skulls/chrome-skull-silver",) * 5},
+    "glass": {"top": (5, 4, 22), "bottom": (8, 5, 30), "glow": (129, 101, 255), "ink": (210, 198, 250), "flowers": ("../glass/crystal-flower",) * 5},
 }
 
 

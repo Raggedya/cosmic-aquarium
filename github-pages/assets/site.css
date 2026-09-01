@@ -460,7 +460,7 @@
 
 .cosmic-legal { position: absolute; z-index: 31; left: 0; right: 0; bottom: max(10px, env(safe-area-inset-bottom)); margin: 0; color: rgba(220, 231, 255, .22); font-size: 5px; font-weight: 700; letter-spacing: .13em; text-align: center; pointer-events: none; }
 
-/* Seven independent visual models. The selected model changes the world, not the music. */
+/* Independent visual worlds. The selected world changes the artwork, not the music. */
 .cosmic-aquarium[data-theme="crimson"] {
   background:
     radial-gradient(circle at 49% 37%, rgba(139, 0, 18, .2), transparent 31%),
@@ -516,6 +516,46 @@
 }
 .cosmic-aquarium[data-theme="violet"]::after { background: repeating-linear-gradient(176deg, transparent 0 72px, rgba(186,133,255,.045) 74px, transparent 78px 141px); filter: blur(18px); }
 .cosmic-aquarium[data-theme="violet"] .creature::before { opacity: .82; }
+
+.cosmic-aquarium[data-theme="chrome"] {
+  background:
+    radial-gradient(ellipse at 48% 46%, rgba(48, 74, 108, .12), transparent 34%),
+    radial-gradient(ellipse at 18% 78%, rgba(91, 55, 126, .08), transparent 27%),
+    linear-gradient(172deg, #030508, #000 58%, #020205);
+}
+.cosmic-aquarium[data-theme="chrome"]::before { opacity: .68; filter: grayscale(.25) brightness(1.25); }
+.cosmic-aquarium[data-theme="chrome"]::after { background: radial-gradient(ellipse at 50% 48%, rgba(151,190,239,.055), transparent 34%); }
+
+.cosmic-aquarium[data-theme="glass"] {
+  background:
+    radial-gradient(ellipse at 48% 45%, rgba(89, 73, 182, .2), transparent 38%),
+    radial-gradient(ellipse at 78% 17%, rgba(60, 150, 224, .11), transparent 26%),
+    linear-gradient(168deg, #050519, #080520 54%, #02020c);
+}
+.cosmic-aquarium[data-theme="glass"]::before { opacity: .72; filter: hue-rotate(18deg); }
+.cosmic-aquarium[data-theme="glass"]::after { background: radial-gradient(ellipse at 46% 52%, rgba(151,111,255,.11), transparent 37%), repeating-radial-gradient(circle at 65% 35%, transparent 0 74px, rgba(179,215,255,.018) 75px, transparent 78px 145px); }
+
+.creature--chrome,
+.creature--glass { height: max(44px, var(--size)); }
+.creature--chrome::before { inset: 16%; opacity: .32; }
+.creature--glass::before { inset: 9%; opacity: .4; }
+.creature--chrome img,
+.aquarium-action-orbit img.chrome-variant--0 { filter: brightness(1.08) contrast(1.08) drop-shadow(0 0 7px rgba(166,204,255,.18)); }
+.creature--chrome.chrome-variant--1 img,
+.aquarium-action-orbit img.chrome-variant--1 { filter: sepia(.2) saturate(1.85) hue-rotate(153deg) brightness(.92) contrast(1.12) drop-shadow(0 0 7px rgba(90,144,255,.2)); }
+.creature--chrome.chrome-variant--2 img,
+.aquarium-action-orbit img.chrome-variant--2 { filter: sepia(.18) saturate(1.9) hue-rotate(214deg) brightness(.88) contrast(1.14) drop-shadow(0 0 7px rgba(181,103,255,.2)); }
+.creature--chrome.chrome-variant--3 img { filter: sepia(.13) saturate(1.25) hue-rotate(332deg) brightness(1.04) contrast(1.12) drop-shadow(0 0 7px rgba(235,197,166,.15)); }
+.creature--glass img,
+.aquarium-action-orbit img.glass-variant--0 { filter: saturate(.92) brightness(.96) drop-shadow(0 0 8px rgba(151,112,255,.18)); }
+.creature--glass.glass-variant--1 img,
+.aquarium-action-orbit img.glass-variant--1 { filter: hue-rotate(28deg) saturate(.82) brightness(.92) drop-shadow(0 0 8px rgba(91,176,255,.18)); }
+.creature--glass.glass-variant--2 img,
+.aquarium-action-orbit img.glass-variant--2 { filter: hue-rotate(-24deg) saturate(.72) brightness(1.02) drop-shadow(0 0 8px rgba(223,164,255,.16)); }
+.cosmic-aquarium[data-theme="chrome"] .player-membrane { width: 174px; height: 188px; top: 18px; mask-image: linear-gradient(to bottom,#000 0 76%,transparent 100%); }
+.cosmic-aquarium[data-theme="glass"] .player-membrane { width: 190px; height: 250px; top: -5px; opacity: .55; }
+.cosmic-aquarium[data-theme="chrome"] .aquarium-action-orbit img { width: 34px; height: 34px; }
+.cosmic-aquarium[data-theme="glass"] .aquarium-action-orbit img { width: 31px; height: 38px; }
 
 .cosmic-aquarium[data-theme="neon"] {
   background:

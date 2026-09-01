@@ -10,7 +10,7 @@ import urllib.request
 from pathlib import Path
 from typing import Any, Protocol
 
-from create_artist import VISUAL_STYLES, create_artist, slugify
+from create_artist import AUTOMATED_VISUAL_STYLES, create_artist, slugify
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -70,7 +70,7 @@ def write_json(path: Path, value: Any) -> None:
 
 def style_for(sequence_index: int) -> str:
     """Alternate strictly between Cosmic Bloom and Violet Haze."""
-    return VISUAL_STYLES[sequence_index % len(VISUAL_STYLES)]
+    return AUTOMATED_VISUAL_STYLES[sequence_index % len(AUTOMATED_VISUAL_STYLES)]
 
 
 def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = None) -> dict[str, Any]:

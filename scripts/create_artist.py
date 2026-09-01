@@ -21,7 +21,9 @@ ROOT = Path(__file__).resolve().parents[1]
 PAGES = ROOT / "github-pages"
 TEMPLATE = ROOT / "templates" / "artist-index.html"
 COLORS = ("#c3b4f4", "#88d7ff", "#ff6f8f", "#ffb66d", "#8fd9c7", "#a492ff")
-VISUAL_STYLES = ("cosmic", "violet")
+AUTOMATED_VISUAL_STYLES = ("cosmic", "violet")
+CUSTOM_VISUAL_STYLES = (*AUTOMATED_VISUAL_STYLES, "chrome", "glass")
+VISUAL_STYLES = CUSTOM_VISUAL_STYLES
 MINIMUM_TRACK_COUNT = 3
 USER_AGENT = "CosmicAquariumCreator/1.0 (+https://github.com/Raggedya/cosmic-aquarium)"
 

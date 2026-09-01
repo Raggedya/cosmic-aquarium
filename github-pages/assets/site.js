@@ -40,7 +40,9 @@
   const baseSpecies = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos','anemone','cosmos','poppy','anemone'];
   const styleSpecies = {
     cosmic: baseSpecies,
-    violet: ['anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone']
+    violet: ['anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone'],
+    chrome: Array(14).fill('chrome'),
+    glass: Array(14).fill('glass')
   };
   const depths = ['near','far','mid','near','near','far','mid','foreground','far','mid','far','mid','far','near'];
   const positions = [
@@ -82,6 +84,7 @@
       if (data.status && data.status !== 'published') throw new Error('Artist edition unavailable');
       manifest = data;
       root.dataset.theme = styleSpecies[data.visualStyle] ? data.visualStyle : 'cosmic';
+      configureWorldArtwork();
       document.querySelector('.cosmic-title h1').textContent = data.artist.toUpperCase();
       document.title = 'Cosmic Aquaria — ' + data.artist;
       configureBuyAction(data);
@@ -89,7 +92,7 @@
   recordEvent('session_start');
   recordEvent('aquarium_open');
   if (new URLSearchParams(location.search).get('source') === 'daily-email') recordEvent('email_link_click');
-      announce(data.artist + '. The flower garden is awake.');
+      announce(data.artist + '. The living world is awake.');
     })
     .catch(() => announce('This Cosmic Aquaria edition is not available yet.'));
 
@@ -98,12 +101,15 @@
     positions.forEach((values,index) => {
       const [x,y,size,duration,delay,travelX,travelY] = values;
       const species = (styleSpecies[root.dataset.theme] || baseSpecies)[index];
+      const specialWorld = root.dataset.theme === 'chrome' || root.dataset.theme === 'glass';
+      const displaySize = specialWorld ? Math.min(106,Math.max(46,Math.round(size * .62))) : size;
+      const asset = species === 'chrome' ? '/assets/skulls/chrome-skull-silver.png' : species === 'glass' ? '/assets/glass/crystal-flower.png' : '/assets/flowers/'+species+'.png';
       const button = document.createElement('button');
       button.type = 'button';
-      button.className = 'creature creature--' + species + ' depth--' + depths[index];
-      button.setAttribute('aria-label','Catch this unknown song flower');
-      button.style.cssText = '--x:'+x+'%;--y:'+y+'%;--size:'+size+'px;--duration:'+duration+'s;--delay:'+delay+'s;--travel-x:'+travelX+'px;--travel-y:'+travelY+'px;--hue:'+(190+index*16)+';--i:'+index;
-      button.innerHTML = '<span class="creature-hitbox" aria-hidden="true"></span><img src="'+base+'/assets/flowers/'+species+'.png" alt="" draggable="false">';
+      button.className = 'creature creature--' + species + ' chrome-variant--' + (index % 4) + ' glass-variant--' + (index % 3) + ' depth--' + depths[index];
+      button.setAttribute('aria-label','Catch this unknown song object');
+      button.style.cssText = '--x:'+x+'%;--y:'+y+'%;--size:'+displaySize+'px;--duration:'+duration+'s;--delay:'+delay+'s;--travel-x:'+travelX+'px;--travel-y:'+travelY+'px;--hue:'+(190+index*16)+';--i:'+index;
+      button.innerHTML = '<span class="creature-hitbox" aria-hidden="true"></span><img src="'+base+asset+'" alt="" draggable="false">';
       button.addEventListener('pointerdown',event => {
         event.preventDefault();
         catchFlower(button,index,event.clientX,event.clientY);
@@ -112,6 +118,19 @@
         if (event.detail === 0) catchFlower(button,index,x,y);
       });
       field.append(button);
+    });
+  }
+
+  function configureWorldArtwork() {
+    const specialAsset = root.dataset.theme === 'chrome'
+      ? base + '/assets/skulls/chrome-skull-silver.png'
+      : root.dataset.theme === 'glass'
+        ? base + '/assets/glass/crystal-flower.png'
+        : null;
+    if (!specialAsset) return;
+    root.querySelectorAll('.aquarium-action-orbit img').forEach((image,index) => {
+      image.src = specialAsset;
+      image.classList.add(root.dataset.theme + '-variant--' + (index % 3));
     });
   }
 
@@ -221,7 +240,7 @@
     root.style.setProperty('--touch-y',(clientY / innerHeight * 100)+'%');
     root.classList.add('is-capturing');
     button.classList.add('is-touched');
-    announce('Flower caught. Its light is reorganising.');
+    announce('A song object was caught. Its light is reorganising.');
     setTimeout(() => {
       root.classList.remove('is-capturing');
       button.classList.remove('is-touched');

@@ -11,6 +11,8 @@ a = Analysis(
         (str(root / "public" / "flowers" / "poppy.png"), "assets/flowers"),
         (str(root / "public" / "flowers" / "rose.png"), "assets/flowers"),
         (str(root / "public" / "flowers" / "thorn.png"), "assets/flowers"),
+        (str(root / "public" / "skulls" / "chrome-skull-silver.png"), "assets/skulls"),
+        (str(root / "public" / "glass" / "crystal-flower.png"), "assets/glass"),
     ],
     hiddenimports=[],
     hookspath=[],

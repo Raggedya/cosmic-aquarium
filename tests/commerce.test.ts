@@ -95,7 +95,10 @@ test('only Cosmic Bloom and Violet Haze can be assigned', async () => {
 
   const creator = await readFile(path.resolve('scripts', 'create_artist.py'), 'utf8');
   const workflow = await readFile(path.resolve('.github', 'workflows', 'create-artist.yml'), 'utf8');
-  assert.match(creator, /VISUAL_STYLES = \("cosmic", "violet"\)/);
+  assert.match(creator, /AUTOMATED_VISUAL_STYLES = \("cosmic", "violet"\)/);
+  assert.match(creator, /CUSTOM_VISUAL_STYLES = \(\*AUTOMATED_VISUAL_STYLES, "chrome", "glass"\)/);
+  assert.match(workflow, /^\s*- chrome$/m);
+  assert.match(workflow, /^\s*- glass$/m);
   for (const retired of ['crimson', 'paper', 'thorn', 'neon', 'desert']) {
     assert.doesNotMatch(workflow, new RegExp('^\\s*- ' + retired + '$', 'm'));
   }

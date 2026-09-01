@@ -12,11 +12,15 @@ const maximumFlowerCount = 14;
 const assetVersion = createHash('sha256').update(css).update(staticScript).digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#000}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
+await fs.mkdir(path.join(pages,'assets','skulls'),{recursive:true});
+await fs.mkdir(path.join(pages,'assets','glass'),{recursive:true});
 await fs.mkdir(path.join(pages,'artists'),{recursive:true});
 await fs.writeFile(path.join(pages,'assets','site.css'),reset+css);
 for (const name of ['cosmos.png','poppy.png','anemone.png','rose.png','thorn.png']) {
   await fs.copyFile(path.join(root,'public','flowers',name),path.join(pages,'assets','flowers',name));
 }
+await fs.copyFile(path.join(root,'public','skulls','chrome-skull-silver.png'),path.join(pages,'assets','skulls','chrome-skull-silver.png'));
+await fs.copyFile(path.join(root,'public','glass','crystal-flower.png'),path.join(pages,'assets','glass','crystal-flower.png'));
 const artistManifestFiles = (await fs.readdir(path.join(pages,'artists')))
   .filter((name) => name.endsWith('.json'))
   .sort();
@@ -38,6 +42,7 @@ for (const filename of artistManifestFiles) {
         trackCount:Array.isArray(artistManifest.tracks) ? artistManifest.tracks.length : 0,
         bandcampUrl:artistManifest.bandcampUrl || null,
         visualStyle:artistManifest.visualStyle || 'cosmic',
+        objectType:artistManifest.visualStyle === 'chrome' ? 'skulls' : artistManifest.visualStyle === 'glass' ? 'glass flowers' : 'flowers',
         dailyBatchId:artistManifest.dailyBatchId || null,
         url:'https://raggedya.github.io/cosmic-aquarium/'+encodeURIComponent(artistManifest.slug)+'/',
         status:artistManifest.status || 'published',

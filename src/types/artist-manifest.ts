@@ -5,7 +5,7 @@ export interface ArtistAlbumAccent {
   color: string;
 }
 
-export type VisualStyle = 'cosmic' | 'violet';
+export type VisualStyle = 'cosmic' | 'violet' | 'chrome' | 'glass';
 
 export interface ArtistManifest {
   schemaVersion: 1;

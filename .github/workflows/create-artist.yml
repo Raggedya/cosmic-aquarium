@@ -12,13 +12,15 @@ on:
         required: true
         type: string
       visual_style:
-        description: Visual flower style
+        description: Visual world style
         required: true
         default: cosmic
         type: choice
         options:
           - cosmic
           - violet
+          - chrome
+          - glass
       cache_key:
         description: Unique edition key used to bypass stale mobile browser caches
         required: false

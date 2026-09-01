@@ -15,7 +15,7 @@ import { buildTrackDeck, secureRandomUnit } from '@/src/features/cosmic-aquarium
 import type { ArtistManifest } from '@/src/types/artist-manifest';
 
 type Depth = 'far' | 'mid' | 'near' | 'foreground';
-type Species = 'cosmos' | 'poppy' | 'anemone' | 'rose' | 'thorn';
+type Species = 'cosmos' | 'poppy' | 'anemone' | 'rose' | 'thorn' | 'chrome' | 'glass';
 
 interface CreatureDefinition {
   id: string;
@@ -56,17 +56,27 @@ const serviceBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
 
 const themedSpecies: Record<string, Species[]> = {
   violet: ['anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone'],
+  chrome: Array<Species>(14).fill('chrome'),
+  glass: Array<Species>(14).fill('glass'),
 };
 
 function speciesForStyle(style: string | undefined, index: number, fallback: Species): Species {
   return themedSpecies[style ?? 'cosmic']?.[index] ?? fallback;
 }
 
-function creatureStyle(creature: CreatureDefinition, index: number): CSSProperties {
+function assetForSpecies(species: Species): string {
+  if (species === 'chrome') return '/skulls/chrome-skull-silver.png';
+  if (species === 'glass') return '/glass/crystal-flower.png';
+  return '/flowers/' + species + '.png';
+}
+
+function creatureStyle(creature: CreatureDefinition, index: number, style: string | undefined): CSSProperties {
+  const specialWorld = style === 'chrome' || style === 'glass';
+  const size = specialWorld ? Math.min(106, Math.max(46, Math.round(creature.size * .62))) : creature.size;
   return {
     '--x': creature.x + '%',
     '--y': creature.y + '%',
-    '--size': creature.size + 'px',
+    '--size': size + 'px',
     '--duration': creature.duration + 's',
     '--delay': creature.delay + 's',
     '--travel-x': creature.travelX + 'px',
@@ -102,7 +112,10 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const selectedSpecies = selectedCreature
     ? speciesForStyle(manifest.visualStyle, selectedCreatureIndex, selectedCreature.species)
     : 'cosmos';
-  const selectedFlower = '/flowers/' + selectedSpecies + '.png';
+  const selectedArtwork = assetForSpecies(selectedSpecies);
+  const actionSpecies: Species = manifest.visualStyle === 'chrome' ? 'chrome' : manifest.visualStyle === 'glass' ? 'glass' : 'cosmos';
+  const actionArtwork = assetForSpecies(actionSpecies);
+  const shareArtwork = manifest.visualStyle === 'chrome' || manifest.visualStyle === 'glass' ? actionArtwork : '/flowers/anemone.png';
   const selectedEmbed = selectedTrack ? officialTrackEmbedUrl(selectedTrack.bandcampEmbedTrackId) : null;
   const selectedAccent = selectedTrack ? selectedTrack.accent ?? albumAccent(manifest, selectedTrack.albumKey) : '#b9a7ff';
 
@@ -203,7 +216,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       .then((next) => {
         if (next.schemaVersion === 1 && next.artist && Array.isArray(next.tracks) && next.tracks.length) {
           setManifest(next);
-          setAnnouncement(next.artist + '. The flower garden is awake.');
+          setAnnouncement(next.artist + '. The living world is awake.');
         }
       })
       .catch((error: unknown) => {
@@ -278,7 +291,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       y: clientY === undefined ? creature.y : (clientY / window.innerHeight) * 100,
     });
     setCapturingId(creature.id);
-    setAnnouncement('Flower caught. Its light is reorganising.');
+    setAnnouncement('A song object was caught. Its light is reorganising.');
     if ('vibrate' in navigator) navigator.vibrate(10);
     captureTimer.current = window.setTimeout(() => {
       setPlayerDeparting(false);
@@ -414,7 +427,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         <span className="distant-swarm"><b /><b /><b /><b /><b /></span>
       </div>
 
-      <div className="creature-field" aria-label="Unknown song flowers">
+      <div className="creature-field" aria-label="Unknown song objects">
         {CREATURES.map((creature, index) => {
           const isSelected = selectedId === creature.id;
           const isCapturing = capturingId === creature.id;
@@ -423,18 +436,18 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
             <button
               key={creature.id}
               className={
-                'creature creature--' + species + ' depth--' + creature.depth +
+                'creature creature--' + species + ' chrome-variant--' + (index % 4) + ' glass-variant--' + (index % 3) + ' depth--' + creature.depth +
                 (isSelected ? ' is-selected' : '') + (isCapturing ? ' is-touched' : '')
               }
-              style={creatureStyle(creature, index)}
+              style={creatureStyle(creature, index, manifest.visualStyle)}
               type="button"
-              aria-label={isSelected ? 'Currently playing flower' : 'Catch this unknown song flower'}
+              aria-label={isSelected ? 'Currently playing song object' : 'Catch this unknown song object'}
               aria-pressed={isSelected}
               onPointerDown={(event) => onCreaturePointerDown(event, creature)}
               onClick={(event) => onCreatureKeyboardClick(event, creature)}
             >
               <span className="creature-hitbox" aria-hidden="true" />
-              <img src={'/flowers/' + species + '.png'} alt="" draggable="false" />
+              <img src={assetForSpecies(species)} alt="" draggable="false" />
             </button>
           );
         })}
@@ -452,7 +465,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         <section key={selectedTrack.id} className="living-player is-active" aria-labelledby="living-player-title">
           <img
             className="player-membrane"
-            src={selectedFlower}
+            src={selectedArtwork}
             alt=""
             aria-hidden="true"
             onAnimationStart={(event) => {
@@ -492,7 +505,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
 
       <nav className="aquarium-actions aquarium-secondary-actions" aria-label="Aquarium actions">
         <button className="aquarium-action aquarium-action--share" type="button" onClick={shareAquarium} aria-label="Share this Aquarium">
-          <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/anemone.png" alt="" /></span>
+          <span className="aquarium-action-orbit" aria-hidden="true"><img className={manifest.visualStyle + '-variant--0'} src={shareArtwork} alt="" /></span>
           <strong>SHARE<br />AQUARIUM</strong>
         </button>
         {manifest.commerceAvailable && manifest.commerceUrl ? (
@@ -504,12 +517,12 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
             onClick={() => recordEvent('buy_click')}
             aria-label={'Buy music or merchandise from ' + manifest.artist + ' on Bandcamp'}
           >
-            <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
+            <span className="aquarium-action-orbit" aria-hidden="true"><img className={manifest.visualStyle + '-variant--1'} src={actionArtwork} alt="" /></span>
             <span><strong>BUY MUSIC</strong><small>SUPPORT THE ARTIST</small></span>
           </a>
         ) : null}
         <button className="aquarium-action aquarium-action--explore" type="button" onClick={exploreAnotherAquarium} aria-label="Explore another random Aquarium">
-          <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
+          <span className="aquarium-action-orbit" aria-hidden="true"><img className={manifest.visualStyle + '-variant--2'} src={actionArtwork} alt="" /></span>
           <strong>EXPLORE<br />ANOTHER<br />AQUARIUM</strong>
         </button>
       </nav>
