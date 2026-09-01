@@ -178,14 +178,16 @@
 .doorway-bubble__label {
   position: absolute;
   z-index: 3;
-  left: 6px;
-  right: 6px;
-  bottom: 12.5%;
+  left: 5%;
+  right: 5%;
+  bottom: 14%;
   color: rgba(255, 250, 255, .94);
-  font-size: clamp(7px, 2.2vw, 10px);
+  font-size: clamp(6.5px, 1.9vw, 9px);
   font-weight: 620;
-  letter-spacing: .19em;
-  line-height: 1.45;
+  letter-spacing: .145em;
+  line-height: 1.35;
+  text-align: center;
+  white-space: nowrap;
   text-shadow: 0 2px 8px #000, 0 0 9px rgba(0, 0, 0, .88);
 }
 .doorway-bubble i {
@@ -200,6 +202,7 @@
 }
 .doorway-bubble--anywhere {
   z-index: 4;
+  width: clamp(166px, 46vw, 190px);
   filter: drop-shadow(0 8px 18px rgba(0, 0, 12, .82)) drop-shadow(0 0 21px rgba(73, 52, 222, .26));
 }
 .doorway-bubble--anywhere::before {
@@ -212,11 +215,14 @@
   box-shadow: 0 0 0 3px rgba(86, 61, 211, .045), 0 0 28px rgba(73, 48, 222, .25);
 }
 .doorway-bubble--anywhere .doorway-bubble__label {
-  bottom: 43%;
-  font-size: clamp(10px, 3.5vw, 14px);
+  left: 12%;
+  right: 12%;
+  bottom: 44%;
+  font-size: clamp(12px, 3.8vw, 16px);
   font-weight: 580;
-  letter-spacing: .25em;
-  line-height: 1.52;
+  letter-spacing: .23em;
+  line-height: 1.46;
+  white-space: normal;
 }
 .doorway-bubble--dreamy .doorway-bubble__world { animation-duration: 23s; animation-delay: -9s; }
 .doorway-bubble--electronic .doorway-bubble__world { animation-duration: 21s; animation-delay: -4s; }
@@ -286,6 +292,7 @@
   .doorway-title p { margin-top: 8px; }
   .doorway-mark { width: 27px; height: 27px; margin-bottom: 7px; }
   .doorway-bubble { width: clamp(69px, calc(var(--bubble-size) * .72), calc(var(--bubble-size) * .88)); }
+  .doorway-bubble--anywhere { width: clamp(158px, 43vw, 174px); }
   .doorway-botanicals--crown { opacity: .76; }
   .doorway-botanicals--garden { opacity: .61; }
   .doorway-footer p { margin-top: 7px; font-size: 15px; }
