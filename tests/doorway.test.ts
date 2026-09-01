@@ -17,9 +17,13 @@ test('doorway uses real accessible controls and canonical copy', async () => {
     read('src/features/universe-doorway/UniverseDoorway.tsx'),
     read('templates/universe-index.html'),
   ]);
-  for (const phrase of ['COSMIC', 'AQUARIA', 'ENTER WITHOUT KNOWING.', 'DRIFT', 'ANYWHERE', 'TOUCH SOMETHING', 'Let the Music find you']) {
+  for (const phrase of ['COSMIC', 'AQUARIA', 'DRIFT', 'ANYWHERE', 'TOUCH SOMETHING.', 'Let the Music find you']) {
     assert.ok(component.includes(phrase) || template.includes(phrase), phrase);
   }
+  assert.doesNotMatch(component, /ENTER WITHOUT KNOWING/);
+  assert.doesNotMatch(template, /ENTER WITHOUT KNOWING/);
+  assert.doesNotMatch(template, /doorway-footer"><span/);
+  assert.doesNotMatch(component, /<span>TOUCH SOMETHING<\/span>/);
   assert.equal((template.match(/class="doorway-bubble doorway-bubble--/g) || []).length, 8);
   assert.match(template, /<button[^>]+data-water="anywhere"/);
   assert.match(component, /aria-label=/);

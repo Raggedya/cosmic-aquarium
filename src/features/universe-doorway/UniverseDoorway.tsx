@@ -167,7 +167,7 @@ export function UniverseDoorway() {
       <header className="doorway-title">
         <span className="doorway-mark" aria-hidden="true"><i /></span>
         <h1>COSMIC<br />AQUARIA</h1>
-        <p>ENTER WITHOUT KNOWING.</p>
+        <p>TOUCH SOMETHING.</p>
       </header>
       <div className="doorway-field" ref={fieldRef}>
         {bubbleLayout.map((bubble) => (
@@ -187,7 +187,6 @@ export function UniverseDoorway() {
         ))}
       </div>
       <footer className="doorway-footer">
-        <span>TOUCH SOMETHING</span>
         <p>Let the Music find you</p>
       </footer>
       <p className="visually-hidden" role="status" aria-live="polite">{announcement}</p>

@@ -102,11 +102,11 @@
 }
 .doorway-title p {
   margin: 15px 0 0;
-  padding-left: .3em;
+  padding-left: .27em;
   color: rgba(229, 220, 241, .72);
-  font-size: clamp(7px, 2.05vw, 9px);
+  font-size: clamp(5.5px, 1.65vw, 7.5px);
   font-weight: 560;
-  letter-spacing: .31em;
+  letter-spacing: .28em;
 }
 .doorway-field {
   position: absolute;
@@ -265,21 +265,8 @@
   pointer-events: none;
   text-shadow: 0 2px 16px #000;
 }
-.doorway-footer > span {
-  display: inline-block;
-  min-width: 205px;
-  padding: 10px 24px;
-  border: 1px solid rgba(211, 199, 244, .42);
-  border-radius: 24px;
-  color: rgba(245, 239, 250, .84);
-  background: rgba(4, 2, 17, .14);
-  box-shadow: inset 0 0 18px rgba(92, 70, 199, .05), 0 0 18px rgba(0, 0, 0, .2);
-  font-size: 8px;
-  font-weight: 590;
-  letter-spacing: .31em;
-}
 .doorway-footer p {
-  margin: 12px 0 0;
+  margin: 0;
   color: rgba(220, 184, 239, .9);
   font-family: Didot, "Bodoni 72", "Bodoni MT", Baskerville, "Iowan Old Style", Georgia, serif;
   font-size: 18px;
@@ -319,8 +306,7 @@
   .doorway-bubble--anywhere { width: clamp(168px, 47vw, 184px); }
   .doorway-botanicals--crown { opacity: .76; }
   .doorway-botanicals--garden { opacity: .61; }
-  .doorway-footer p { margin-top: 7px; font-size: 15px; }
-  .doorway-footer > span { padding: 7px 20px; }
+  .doorway-footer p { font-size: 15px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .doorway-nebula, .doorway-bubble, .doorway-bubble__world { animation: none !important; }
