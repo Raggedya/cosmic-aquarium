@@ -11,13 +11,18 @@ const css = await fs.readFile(path.join(root,'app','cosmic-aquarium.css'),'utf8'
 const doorwayCss = await fs.readFile(path.join(root,'app','doorway.css'),'utf8');
 const staticScript = await fs.readFile(path.join(pages,'assets','site.js'),'utf8');
 const doorwayScript = await fs.readFile(path.join(pages,'assets','doorway.js'),'utf8');
+const doorwayAssetNames = ['cosmic-depth.webp','botanical-crown.webp','botanical-garden.webp','world-anywhere.webp','world-heavy.webp','world-dreamy.webp','world-electronic.webp','world-quiet.webp','world-loud.webp','world-dark.webp','world-strange.webp'];
+const doorwayAssets = await Promise.all(doorwayAssetNames.map((name) => fs.readFile(path.join(root,'public','doorway',name))));
 const minimumFlowerCount = 10;
 const maximumFlowerCount = 14;
-const assetVersion = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).digest('hex').slice(0,12);
+const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript);
+doorwayAssets.forEach((asset) => assetHash.update(asset));
+const assetVersion = assetHash.digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#000}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','skulls'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','glass'),{recursive:true});
+await fs.mkdir(path.join(pages,'assets','doorway'),{recursive:true});
 await fs.mkdir(path.join(pages,'artists'),{recursive:true});
 await fs.writeFile(path.join(pages,'assets','site.css'),reset+css);
 await fs.writeFile(path.join(pages,'assets','doorway.css'),reset+doorwayCss);
@@ -26,6 +31,9 @@ for (const name of ['cosmos.png','poppy.png','anemone.png','rose.png','thorn.png
 }
 await fs.copyFile(path.join(root,'public','skulls','chrome-skull-silver.png'),path.join(pages,'assets','skulls','chrome-skull-silver.png'));
 await fs.copyFile(path.join(root,'public','glass','crystal-flower.png'),path.join(pages,'assets','glass','crystal-flower.png'));
+for (const name of doorwayAssetNames) {
+  await fs.copyFile(path.join(root,'public','doorway',name),path.join(pages,'assets','doorway',name));
+}
 for (const name of ['cosmic-aquaria-qr-standard.png','cosmic-aquaria-qr-branded.png']) {
   try { await fs.copyFile(path.join(root,'public',name),path.join(pages,name)); } catch {}
 }

@@ -1,5 +1,7 @@
 'use client';
 
+/* eslint-disable @next/next/no-img-element -- these pre-composited WebP layers are intentionally rendered without framework rewriting */
+
 import { useEffect, useRef, useState, type CSSProperties } from 'react';
 
 const serviceBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
@@ -160,9 +162,10 @@ export function UniverseDoorway() {
 
   return (
     <main className={'universe-doorway' + (entering ? ' is-entering' : '')} aria-label="Enter the Cosmic Aquaria universe">
+      <img className="doorway-background" src="/doorway/cosmic-depth.webp" alt="" aria-hidden="true" />
       <div className="doorway-nebula" aria-hidden="true" />
-      <img className="doorway-flower doorway-flower--left" src="/flowers/anemone.png" alt="" aria-hidden="true" />
-      <img className="doorway-flower doorway-flower--right" src="/flowers/cosmos.png" alt="" aria-hidden="true" />
+      <img className="doorway-botanicals doorway-botanicals--crown" src="/doorway/botanical-crown.webp" alt="" aria-hidden="true" />
+      <img className="doorway-botanicals doorway-botanicals--garden" src="/doorway/botanical-garden.webp" alt="" aria-hidden="true" />
       <header className="doorway-title">
         <span className="doorway-mark" aria-hidden="true"><i /></span>
         <h1>COSMIC<br />AQUARIA</h1>
@@ -179,7 +182,8 @@ export function UniverseDoorway() {
             onClick={() => void chooseWater(bubble.water)}
             style={{ '--home-x': bubble.x + '%', '--home-y': bubble.y + '%', '--bubble-size': bubble.size + 'px' } as CSSProperties}
           >
-            <span>{bubble.water === 'anywhere' ? <>DRIFT<br />ANYWHERE</> : bubble.water.toUpperCase()}</span>
+            <img className="doorway-bubble__world" src={'/doorway/world-' + bubble.water + '.webp'} alt="" aria-hidden="true" draggable="false" />
+            <span className="doorway-bubble__label">{bubble.water === 'anywhere' ? <>DRIFT<br />ANYWHERE</> : bubble.water.toUpperCase()}</span>
             {bubble.water === 'anywhere' ? <i aria-hidden="true">→</i> : null}
           </button>
         ))}

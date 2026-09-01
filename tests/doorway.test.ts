@@ -20,14 +20,14 @@ test('doorway uses real accessible controls and canonical copy', async () => {
   for (const phrase of ['COSMIC', 'AQUARIA', 'ENTER WITHOUT KNOWING.', 'DRIFT', 'ANYWHERE', 'TOUCH SOMETHING', 'Let the Music find you']) {
     assert.ok(component.includes(phrase) || template.includes(phrase), phrase);
   }
-  assert.equal((template.match(/class="doorway-bubble/g) || []).length, 8);
+  assert.equal((template.match(/class="doorway-bubble doorway-bubble--/g) || []).length, 8);
   assert.match(template, /<button[^>]+data-water="anywhere"/);
   assert.match(component, /aria-label=/);
 });
 
 test('doorway motion is reduced-motion safe and softly collision aware', async () => {
   const [css, runtime] = await Promise.all([read('app/doorway.css'), read('github-pages/assets/doorway.js')]);
-  assert.match(css, /prefers-reduced-motion:reduce/);
+  assert.match(css, /prefers-reduced-motion\s*:\s*reduce/);
   assert.match(runtime, /matchMedia\('\(prefers-reduced-motion: reduce\)'\)/);
   assert.match(runtime, /overlap/);
   assert.match(runtime, /requestAnimationFrame/);
