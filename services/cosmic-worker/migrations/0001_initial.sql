@@ -49,6 +49,19 @@ CREATE TABLE IF NOT EXISTS email_delivery (
   failure_reason TEXT
 );
 
+CREATE TABLE IF NOT EXISTS activity_report_delivery (
+  report_date TEXT PRIMARY KEY,
+  window_start TEXT NOT NULL,
+  window_end TEXT NOT NULL,
+  recipient TEXT NOT NULL,
+  status TEXT NOT NULL,
+  provider_id TEXT,
+  failure_reason TEXT,
+  created_at TEXT NOT NULL,
+  sent_at TEXT
+);
+
 CREATE INDEX IF NOT EXISTS idx_event_aquarium_time ON analytics_event(aquarium_id,created_at);
 CREATE INDEX IF NOT EXISTS idx_event_type_time ON analytics_event(event_type,created_at);
 CREATE INDEX IF NOT EXISTS idx_aquarium_status ON aquarium(status,disabled_at);
+CREATE INDEX IF NOT EXISTS idx_activity_report_status ON activity_report_delivery(status,report_date);

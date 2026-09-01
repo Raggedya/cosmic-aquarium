@@ -268,6 +268,7 @@
   }
 
   player.querySelector('.release-current').addEventListener('click',() => {
+    recordEvent('release_click');
     clearTimeout(secondaryActionTimer);
     root.classList.remove('show-buy-action','show-secondary-actions');
     buyAction.classList.remove('is-visible');
@@ -290,6 +291,7 @@
     const shareData = {title:'Cosmic Aquaria — ' + (manifest?.artist || slug),text:'Enter this Cosmic Aquaria music discovery.',url:location.href};
     try {
       if (navigator.share) {
+        recordEvent('share_native_opened');
         await navigator.share(shareData);
         recordEvent('share_complete');
         announce('Aquarium shared.');
@@ -331,6 +333,7 @@
   });
 
   buyAction.addEventListener('click',() => recordEvent('buy_click'));
+  player.querySelector('.bandcamp-link').addEventListener('click',() => recordEvent('bandcamp_click'));
 
   function announce(message) { status.textContent = message; }
 })();

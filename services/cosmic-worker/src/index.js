@@ -1,7 +1,20 @@
 const EVENT_TYPES = new Set([
   'aquarium_open','session_start','object_touch','track_selected','track_play',
-  'share_click','share_complete','share_copy','buy_click','explore_click','aquarium_transition','email_link_click','email_open',
+  'release_click','bandcamp_click','share_click','share_native_opened','share_complete','share_copy',
+  'buy_click','explore_click','aquarium_transition','email_link_click','email_open',
+  'aquarium_created','aquarium_published','aquarium_unpublished',
 ]);
+
+const REPORT_TIME_ZONE = 'Australia/Sydney';
+const EVENT_LABELS = {
+  aquarium_open:'Aquarium visits',session_start:'Visitor sessions',object_touch:'Flowers touched',
+  track_selected:'Songs revealed',track_play:'Playback signals',release_click:'Songs released',
+  bandcamp_click:'Track links opened on Bandcamp',share_click:'Share button taps',
+  share_native_opened:'Native share menus opened',share_complete:'Native shares completed',
+  share_copy:'Links copied',buy_click:'Buy Music clicks',explore_click:'Explore clicks',
+  aquarium_transition:'Aquarium journeys',email_link_click:'Email links opened',email_open:'Collection emails opened',
+  aquarium_created:'Aquariums created',aquarium_published:'Aquariums published',aquarium_unpublished:'Aquariums unpublished',
+};
 
 const CORS = {
   'access-control-allow-origin': '*',
@@ -25,6 +38,13 @@ function clean(value, max = 160) {
 
 async function readBody(request) {
   try { return await request.json(); } catch { return null; }
+}
+
+function systemEventStatement(env, eventType, aquariumId, metadata = null, createdAt = new Date().toISOString()) {
+  return env.DB.prepare(`INSERT INTO analytics_event
+    (id,event_type,aquarium_id,track_id,batch_id,session_id,source_aquarium_id,destination_aquarium_id,metadata,created_at)
+    VALUES (?,?,?,?,?,?,?,?,?,?)`)
+    .bind(crypto.randomUUID(),eventType,aquariumId,null,null,'system',null,null,metadata ? JSON.stringify(metadata).slice(0,3000) : null,createdAt);
 }
 
 async function recordEvent(request, env) {
@@ -66,6 +86,8 @@ async function syncCatalogue(request, env) {
   const body = await readBody(request);
   const aquariums = Array.isArray(body?.aquariums) ? body.aquariums.slice(0,10000) : [];
   const batch = body?.batch && typeof body.batch === 'object' ? body.batch : null;
+  const currentRows = await env.DB.prepare('SELECT id,status FROM aquarium').all();
+  const current = new Map((currentRows.results || []).map(item=>[item.id,item.status]));
   const statements = [];
   if (body?.fullReplace === true) {
     const ids = [...new Set(aquariums.map(item=>clean(item?.id,96)).filter(Boolean))];
@@ -82,6 +104,13 @@ async function syncCatalogue(request, env) {
       VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
       ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at),disabled_at=excluded.disabled_at`)
       .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,status,item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString(),disabledAt));
+    const priorStatus = current.get(item.id);
+    if (!priorStatus) {
+      statements.push(systemEventStatement(env,'aquarium_created',item.id,{artist:item.artist||'',release:item.release||''}));
+      if (status === 'published') statements.push(systemEventStatement(env,'aquarium_published',item.id));
+    } else if (priorStatus !== status) {
+      statements.push(systemEventStatement(env,status === 'published' ? 'aquarium_published' : 'aquarium_unpublished',item.id));
+    }
   }
   if (statements.length) await env.DB.batch(statements);
   if (batch?.id) {
@@ -113,6 +142,75 @@ async function overview(env) {
   return json({totals,batches:batches.results,aquariums:aquariums.results});
 }
 
+function sydneyParts(value) {
+  const parts = Object.fromEntries(new Intl.DateTimeFormat('en-AU',{
+    timeZone:REPORT_TIME_ZONE,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',hourCycle:'h23',
+  }).formatToParts(value).filter(part=>part.type!=='literal').map(part=>[part.type,part.value]));
+  return {date:`${parts.year}-${parts.month}-${parts.day}`,hour:Number(parts.hour)};
+}
+
+function reportWindow(endValue = Date.now()) {
+  const end = new Date(endValue);
+  return {reportDate:sydneyParts(end).date,start:new Date(end.getTime()-86_400_000).toISOString(),end:end.toISOString()};
+}
+
+async function activityReport(env, endValue = Date.now()) {
+  const window = reportWindow(endValue);
+  const totalsResult = await env.DB.prepare(`SELECT event_type,COUNT(*) AS total
+    FROM analytics_event WHERE created_at>=? AND created_at<? GROUP BY event_type ORDER BY event_type`)
+    .bind(window.start,window.end).all();
+  const totals = Object.fromEntries([...EVENT_TYPES].map(type=>[type,0]));
+  for (const row of totalsResult.results || []) totals[row.event_type] = Number(row.total || 0);
+  const visitors = await env.DB.prepare(`SELECT COUNT(DISTINCT session_id) AS total FROM analytics_event
+    WHERE created_at>=? AND created_at<? AND session_id<>'system' AND event_type='session_start'`)
+    .bind(window.start,window.end).first();
+  const libraries = await env.DB.prepare(`SELECT a.id,a.artist,a.release_title,a.aquarium_url,a.status,
+    COUNT(CASE WHEN e.event_type='aquarium_open' THEN 1 END) AS visits,
+    COUNT(CASE WHEN e.event_type='object_touch' THEN 1 END) AS flower_touches,
+    COUNT(CASE WHEN e.event_type='track_selected' THEN 1 END) AS songs_revealed,
+    COUNT(CASE WHEN e.event_type='release_click' THEN 1 END) AS songs_released,
+    COUNT(CASE WHEN e.event_type='bandcamp_click' THEN 1 END) AS bandcamp_clicks,
+    COUNT(CASE WHEN e.event_type='share_native_opened' THEN 1 END) AS native_shares,
+    COUNT(CASE WHEN e.event_type='share_copy' THEN 1 END) AS copied_shares,
+    COUNT(CASE WHEN e.event_type='buy_click' THEN 1 END) AS buy_clicks,
+    COUNT(CASE WHEN e.event_type='explore_click' THEN 1 END) AS explores
+    FROM aquarium a LEFT JOIN analytics_event e ON e.aquarium_id=a.id AND e.created_at>=? AND e.created_at<?
+    GROUP BY a.id ORDER BY visits DESC,a.artist COLLATE NOCASE`)
+    .bind(window.start,window.end).all();
+  return {...window,uniqueSessions:Number(visitors?.total||0),totals,libraries:libraries.results||[]};
+}
+
+function escapeHtml(value) {
+  return String(value ?? '').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+}
+
+function activityReportMessage(report) {
+  const eventRows = Object.entries(EVENT_LABELS).map(([type,label])=>`<tr><td style="padding:8px 10px;border-bottom:1px solid #272940">${escapeHtml(label)}</td><td style="padding:8px 10px;border-bottom:1px solid #272940;text-align:right">${Number(report.totals[type]||0)}</td></tr>`).join('');
+  const libraryRows = report.libraries.map(item=>`<tr><td style="padding:10px;border-bottom:1px solid #272940"><a href="${escapeHtml(item.aquarium_url)}" style="color:#d9ceff;text-decoration:none">${escapeHtml(item.artist)} — ${escapeHtml(item.release_title)}</a><br><span style="color:#777386;font-size:11px">${escapeHtml(item.status)}</span></td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.visits||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.flower_touches||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.songs_revealed||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.native_shares||0)+Number(item.copied_shares||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.buy_clicks||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.explores||0)}</td></tr>`).join('');
+  const html=`<!doctype html><html><body style="margin:0;background:#060814;color:#f1edf8;font-family:Arial,sans-serif"><div style="max-width:760px;margin:auto;padding:38px 20px"><p style="letter-spacing:.35em;font-size:12px;color:#aba5ba">COSMIC AQUARIA</p><h1 style="font-weight:400;font-size:26px">Daily activity — ${escapeHtml(report.reportDate)}</h1><p style="color:#aaa4b7">The previous 24 hours across the complete Library. Activity is anonymous; no personal visitor details are collected.</p><div style="display:inline-block;padding:14px 18px;margin:8px 0 24px;background:#11152b;border:1px solid #292d48"><strong style="font-size:24px;font-weight:400">${report.uniqueSessions}</strong><br><span style="font-size:12px;color:#aaa4b7">VISITOR SESSIONS</span></div><h2 style="font-size:18px;font-weight:400">All activity types</h2><table role="presentation" style="width:100%;border-collapse:collapse;background:#0a0d20">${eventRows}</table><h2 style="font-size:18px;font-weight:400;margin-top:30px">Every Aquarium</h2><div style="overflow-x:auto"><table role="presentation" style="width:100%;min-width:660px;border-collapse:collapse;background:#0a0d20"><thead><tr style="color:#aaa4b7;font-size:11px"><th style="padding:9px;text-align:left">AQUARIUM</th><th>VISITS</th><th>FLOWERS</th><th>SONGS</th><th>SHARES</th><th>BUY</th><th>EXPLORE</th></tr></thead><tbody>${libraryRows}</tbody></table></div><p style="margin-top:26px;color:#777386;font-size:11px">Share totals distinguish native share menus and copied links in the activity table. iPhone does not reveal which app was chosen from its native share menu.</p></div></body></html>`;
+  const text=['COSMIC AQUARIA',`Daily activity — ${report.reportDate}`,'',`Visitor sessions: ${report.uniqueSessions}`,'',...Object.entries(EVENT_LABELS).map(([type,label])=>`${label}: ${Number(report.totals[type]||0)}`),'','EVERY AQUARIUM',...report.libraries.map(item=>`${item.artist} — ${item.release_title}: visits ${item.visits||0}, flowers ${item.flower_touches||0}, songs ${item.songs_revealed||0}, native shares ${item.native_shares||0}, copied links ${item.copied_shares||0}, buy ${item.buy_clicks||0}, explore ${item.explores||0}`)].join('\n');
+  return {html,text};
+}
+
+async function sendActivityReport(env, endValue = Date.now(), force = false) {
+  if (!env.RESEND_API_KEY || !env.OWNER_EMAIL || !env.REPORT_FROM_EMAIL) throw new Error('Activity report email is not configured.');
+  const report = await activityReport(env,endValue);
+  const existing = await env.DB.prepare('SELECT status FROM activity_report_delivery WHERE report_date=?').bind(report.reportDate).first();
+  if (existing?.status === 'sent' && !force) return {ok:true,skipped:true,reportDate:report.reportDate};
+  const now = new Date().toISOString();
+  await env.DB.prepare(`INSERT INTO activity_report_delivery
+    (report_date,window_start,window_end,recipient,status,provider_id,failure_reason,created_at,sent_at)
+    VALUES (?,?,?,?,?,?,?,?,?) ON CONFLICT(report_date) DO UPDATE SET window_start=excluded.window_start,window_end=excluded.window_end,recipient=excluded.recipient,status='pending',failure_reason=NULL`)
+    .bind(report.reportDate,report.start,report.end,env.OWNER_EMAIL,'pending',null,null,now,null).run();
+  const message = activityReportMessage(report);
+  const response = await fetch('https://api.resend.com/emails',{method:'POST',headers:{authorization:`Bearer ${env.RESEND_API_KEY}`,'content-type':'application/json','idempotency-key':force?`cosmic-aquaria-activity-${report.reportDate}-${Date.now()}`:`cosmic-aquaria-activity-${report.reportDate}`},body:JSON.stringify({from:env.REPORT_FROM_EMAIL,to:[env.OWNER_EMAIL],subject:`Cosmic Aquaria daily activity — ${report.reportDate}`,html:message.html,text:message.text})});
+  const result = await response.json().catch(()=>({}));
+  await env.DB.prepare(`UPDATE activity_report_delivery SET status=?,provider_id=?,failure_reason=?,sent_at=? WHERE report_date=?`)
+    .bind(response.ok?'sent':'failed',clean(result.id,160),response.ok?null:JSON.stringify(result).slice(0,800),response.ok?new Date().toISOString():null,report.reportDate).run();
+  if (!response.ok) throw new Error('Daily activity email failed: '+JSON.stringify(result));
+  return {ok:true,skipped:false,reportDate:report.reportDate,providerId:result.id||null};
+}
+
 async function recordEmailDelivery(request, env) {
   const body = await readBody(request);
   const batchId = clean(body?.batchId, 32);
@@ -131,8 +229,12 @@ async function recordEmailDelivery(request, env) {
 
 async function setAquariumStatus(request, env, id, status) {
   const now = new Date().toISOString();
-  const result = await env.DB.prepare(`UPDATE aquarium SET status=?,disabled_at=? WHERE id=?`)
-    .bind(status,status === 'disabled' ? now : null,id).run();
+  const current = await env.DB.prepare('SELECT status FROM aquarium WHERE id=?').bind(id).first();
+  const update = env.DB.prepare(`UPDATE aquarium SET status=?,disabled_at=? WHERE id=?`).bind(status,status === 'disabled' ? now : null,id);
+  const statements = [update];
+  if (current?.status && current.status !== status) statements.push(systemEventStatement(env,status === 'published' ? 'aquarium_published' : 'aquarium_unpublished',id,null,now));
+  const results = await env.DB.batch(statements);
+  const result = results[0];
   return json({ok:true,id,status,changed:result.meta?.changes||0});
 }
 
@@ -159,6 +261,14 @@ export default {
       if (url.pathname.startsWith('/api/admin/') && !authorized(request,env)) return json({error:'unauthorized'},401);
       if (url.pathname === '/api/admin/sync' && request.method === 'POST') return syncCatalogue(request,env);
       if (url.pathname === '/api/admin/overview' && request.method === 'GET') return overview(env);
+      if (url.pathname === '/api/admin/activity-report' && request.method === 'GET') {
+        const end = url.searchParams.get('end');
+        return json(await activityReport(env,end ? Date.parse(end) : Date.now()));
+      }
+      if (url.pathname === '/api/admin/activity-report/send' && request.method === 'POST') {
+        const body = await readBody(request);
+        return json(await sendActivityReport(env,body?.end ? Date.parse(body.end) : Date.now(),body?.force === true));
+      }
       if (url.pathname === '/api/admin/email-delivery' && request.method === 'POST') return recordEmailDelivery(request,env);
       const statusMatch = url.pathname.match(/^\/api\/admin\/aquariums\/([^/]+)\/(disable|republish)$/);
       if (statusMatch && request.method === 'POST') return setAquariumStatus(request,env,decodeURIComponent(statusMatch[1]),statusMatch[2] === 'disable' ? 'disabled' : 'published');
@@ -168,5 +278,10 @@ export default {
       const detail = url.pathname.startsWith('/api/admin/') && authorized(request,env) ? String(error?.stack || error).slice(0,2000) : undefined;
       return json({error:'internal_error',detail},500,CORS);
     }
+  },
+  async scheduled(controller, env, context) {
+    const local = sydneyParts(new Date(controller.scheduledTime));
+    if (local.hour !== 19) return;
+    context.waitUntil(sendActivityReport(env,controller.scheduledTime));
   },
 };

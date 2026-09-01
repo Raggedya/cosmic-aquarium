@@ -11,6 +11,7 @@ import threading
 import time
 import urllib.parse
 import webbrowser
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 import tkinter as tk
 from tkinter import messagebox
@@ -33,6 +34,20 @@ THEMES = (
     {"id": "cosmic", "label": "COSMIC BLOOM", "flower": "anemone.png", "bg": "#080822", "accent": "#c7b8f4"},
     {"id": "violet", "label": "VIOLET HAZE", "flower": "anemone.png", "bg": "#17103b", "accent": "#c584f0"},
 )
+
+
+def release_date_label(value: object) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return "RELEASE DATE UNKNOWN"
+    try:
+        parsed = dt.datetime.fromisoformat(text.replace(" UTC", "+00:00").replace("Z", "+00:00"))
+    except ValueError:
+        try:
+            parsed = parsedate_to_datetime(text)
+        except (TypeError, ValueError, OverflowError):
+            return "RELEASE DATE UNKNOWN"
+    return f"RELEASED {parsed.day} {parsed.strftime('%b %Y').upper()}"
 
 
 def resource_path(relative: str) -> Path:
@@ -255,6 +270,7 @@ class CosmicAquariumStudio(tk.Tk):
         flower_min = int(entry.get("flowerCountMin") or entry.get("flowerCount") or 10)
         flower_max = int(entry.get("flowerCountMax") or entry.get("flowerCount") or flower_min)
         track_count = int(entry.get("trackCount") or 0)
+        date_label = release_date_label(entry.get("releaseDate"))
         flower_label = (
             f"{flower_min}\N{EN DASH}{flower_max} FLOWERS"
             if flower_min != flower_max
@@ -262,9 +278,10 @@ class CosmicAquariumStudio(tk.Tk):
         )
         song_label = f"{track_count} SONG" + ("" if track_count == 1 else "S")
         tk.Label(row, text=title.upper(), bg="#0b0b24", fg=PAPER, font=("Segoe UI Semibold", 10), anchor="w").grid(row=0, column=0, sticky="w")
-        tk.Label(row, text=f"{release}   ·   {flower_label}   ·   {song_label}", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=1, column=0, sticky="w", pady=(4, 0))
+        tk.Label(row, text=release, bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=1, column=0, sticky="w", pady=(4, 0))
+        tk.Label(row, text=f"{date_label}   ·   {flower_label}   ·   {song_label}", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=2, column=0, sticky="w", pady=(3, 0))
         url = str(entry.get("url") or "")
-        tk.Button(row, text="OPEN", command=lambda: webbrowser.open(url), bg="#0b0b24", fg=MUTED, activebackground="#0b0b24", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=18, cursor="hand2").grid(row=0, column=1, rowspan=2)
+        tk.Button(row, text="OPEN", command=lambda: webbrowser.open(url), bg="#0b0b24", fg=MUTED, activebackground="#0b0b24", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=18, cursor="hand2").grid(row=0, column=1, rowspan=3)
         published = entry.get("status", "published") == "published"
         toggle = tk.Button(
             row, text="ON" if published else "OFF",
@@ -273,7 +290,7 @@ class CosmicAquariumStudio(tk.Tk):
             activebackground="#ded4ff", activeforeground="#09091e", relief="flat", bd=0,
             font=("Segoe UI Semibold", 8), width=7, pady=7, cursor="hand2",
         )
-        toggle.grid(row=0, column=2, rowspan=2, padx=(8, 0))
+        toggle.grid(row=0, column=2, rowspan=3, padx=(8, 0))
 
     def _start_toggle(self, entry: dict) -> None:
         if self._library_busy:

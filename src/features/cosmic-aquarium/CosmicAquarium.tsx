@@ -305,6 +305,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
 
   function releaseCurrent() {
     if (!selectedTrack) return;
+    recordEvent('release_click', { trackId: selectedTrack.id });
     setPlayerDeparting(false);
     setSelectedId(null);
     setSelectedTrack(null);
@@ -321,6 +322,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     };
     try {
       if (navigator.share) {
+        recordEvent('share_native_opened');
         await navigator.share(shareData);
         recordEvent('share_complete');
         setAnnouncement('Aquarium shared.');
@@ -479,7 +481,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
           ) : (
             <p className="stream-unavailable">Streaming is unavailable here. Continue on Bandcamp.</p>
           )}
-          <a className="bandcamp-link" href={selectedTrack.bandcampUrl} target="_blank" rel="noopener noreferrer">
+          <a className="bandcamp-link" href={selectedTrack.bandcampUrl} target="_blank" rel="noopener noreferrer" onClick={() => recordEvent('bandcamp_click', { trackId: selectedTrack.id })}>
             VIEW &amp; SUPPORT ON BANDCAMP ↗
           </a>
           <button className="release-current" type="button" onClick={releaseCurrent} aria-label="Release this song back into the aquarium">

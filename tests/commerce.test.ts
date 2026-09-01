@@ -52,6 +52,8 @@ test('the Library catalogue reports its living flowers and available songs', asy
     assert.ok(Number.isInteger(entry.trackCount) && entry.trackCount > 0, entry.slug);
     const manifest = JSON.parse(await readFile(path.join(manifestsDirectory, entry.slug + '.json'), 'utf8'));
     assert.equal(entry.trackCount, manifest.tracks.length, entry.slug);
+    assert.equal(entry.releaseDate, manifest.releaseDate, entry.slug);
+    assert.match(entry.releaseDate, /^20\d{2}-\d{2}-\d{2}/, entry.slug);
   }
 });
 
@@ -59,6 +61,26 @@ test('generated aquariums can initialise their page-level Buy Music action', asy
   const script = await readFile(path.resolve('github-pages', 'assets', 'site.js'), 'utf8');
   assert.match(script, /document\.querySelector\('\.aquarium-action--buy'\)/);
   assert.doesNotMatch(script, /root\.querySelector\('\.aquarium-action--buy'\)/);
+});
+
+test('anonymous activity is prepared for the 7pm Sydney daily report', async () => {
+  const runtime = await readFile(path.resolve('github-pages', 'assets', 'site.js'), 'utf8');
+  const reactExperience = await readFile(path.resolve('src', 'features', 'cosmic-aquarium', 'CosmicAquarium.tsx'), 'utf8');
+  const worker = await readFile(path.resolve('services', 'cosmic-worker', 'src', 'index.js'), 'utf8');
+  const workerConfig = await readFile(path.resolve('services', 'cosmic-worker', 'wrangler.template.jsonc'), 'utf8');
+  const schema = await readFile(path.resolve('services', 'cosmic-worker', 'migrations', '0001_initial.sql'), 'utf8');
+  for (const source of [runtime, reactExperience]) {
+    for (const event of ['aquarium_open', 'object_touch', 'track_selected', 'release_click', 'bandcamp_click', 'share_native_opened', 'share_copy', 'buy_click', 'explore_click']) {
+      assert.match(source, new RegExp(`recordEvent\\('${event}'`), event);
+    }
+  }
+  assert.match(worker, /REPORT_TIME_ZONE = 'Australia\/Sydney'/);
+  assert.match(worker, /local\.hour !== 19/);
+  assert.match(worker, /activity_report_delivery/);
+  assert.match(worker, /Native share menus opened/);
+  assert.match(worker, /Every Aquarium/);
+  assert.match(workerConfig, /0,15,30,45 \* \* \* \*/);
+  assert.match(schema, /CREATE TABLE IF NOT EXISTS activity_report_delivery/);
 });
 
 test('only Cosmic Bloom and Violet Haze can be assigned', async () => {

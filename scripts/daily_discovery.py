@@ -137,6 +137,7 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
                 cache_key=batch_date.replace("-", ""),
                 slug_override=aquarium_slug,
                 release_title=release,
+                release_date=str(item.get("release_date") or ""),
                 batch_id=batch_date,
                 generate_qr=False,
             )

@@ -15,6 +15,7 @@ export interface ArtistManifest {
   commerceAvailable?: boolean;
   commerceUrl?: string | null;
   releaseTitle?: string;
+  releaseDate?: string | null;
   dailyBatchId?: string | null;
   status?: 'published' | 'disabled';
   visualStyle?: VisualStyle;

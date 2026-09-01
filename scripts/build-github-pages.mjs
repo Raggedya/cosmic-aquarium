@@ -31,6 +31,7 @@ for (const filename of artistManifestFiles) {
         slug:artistManifest.slug,
         artist:artistManifest.artist,
         release:artistManifest.releaseTitle || artistManifest.tracks?.[0]?.albumTitle || 'Bandcamp',
+        releaseDate:artistManifest.releaseDate || null,
         flowerCount:maximumFlowerCount,
         flowerCountMin:minimumFlowerCount,
         flowerCountMax:maximumFlowerCount,

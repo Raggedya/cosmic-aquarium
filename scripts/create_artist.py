@@ -107,6 +107,11 @@ def year_from(value: Any) -> int:
     return int(match.group(0)) if match else 0
 
 
+def release_date_from_payload(payload: dict[str, Any]) -> str:
+    current = payload.get("current") or {}
+    return str(current.get("release_date") or payload.get("album_release_date") or "").strip()
+
+
 def halton(index: int, base: int) -> float:
     result, fraction, remaining = 0.0, 1.0, index
     while remaining > 0:
@@ -163,15 +168,17 @@ def validate_possible_track_link(value: str) -> bool:
         return False
 
 
-def discover_tracks(url: str, artist: str) -> tuple[list[dict[str, Any]], str, bool, str | None]:
+def discover_tracks(url: str, artist: str) -> tuple[list[dict[str, Any]], str, bool, str | None, str]:
     parser, final_url = fetch_page(url)
     commerce_available = page_offers_commerce(parser)
     commerce_url = artist_store_url(final_url)
     tracks: list[dict[str, Any]] = []
+    release_date = ""
     for payload in parser.tralbum:
+        release_date = release_date or release_date_from_payload(payload)
         tracks.extend(tracks_from_payload(payload, final_url, artist, len(tracks)))
     if tracks:
-        return deduplicate(tracks), final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None
+        return deduplicate(tracks), final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None, release_date
 
     origin = urllib.parse.urlunparse(urllib.parse.urlparse(final_url)._replace(path="", params="", query="", fragment=""))
     music_parser, _ = fetch_page(origin.rstrip("/") + "/music")
@@ -186,10 +193,11 @@ def discover_tracks(url: str, artist: str) -> tuple[list[dict[str, Any]], str, b
             continue
         commerce_available = commerce_available or page_offers_commerce(album_parser)
         for payload in album_parser.tralbum:
+            release_date = release_date or release_date_from_payload(payload)
             tracks.extend(tracks_from_payload(payload, album_url, artist, len(tracks)))
         if len(tracks) >= 60:
             break
-    return deduplicate(tracks[:60]), final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None
+    return deduplicate(tracks[:60]), final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None, release_date
 
 
 def deduplicate(tracks: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -226,6 +234,7 @@ def create_artist(
     cache_key: str = "",
     slug_override: str = "",
     release_title: str = "",
+    release_date: str = "",
     batch_id: str = "",
     generate_qr: bool = True,
 ) -> dict[str, Any]:
@@ -237,10 +246,10 @@ def create_artist(
         raise ValueError("Unknown visual style")
     slug = slugify(slug_override) if slug_override else slugify(artist)
     try:
-        tracks, resolved_url, commerce_available, commerce_url = discover_tracks(destination_source, artist)
+        tracks, resolved_url, commerce_available, commerce_url, discovered_release_date = discover_tracks(destination_source, artist)
         import_status = "public-page-manifest" if tracks else "official-link-fallback"
     except Exception:
-        tracks, resolved_url, commerce_available, commerce_url, import_status = [], destination_source, False, None, "official-link-fallback"
+        tracks, resolved_url, commerce_available, commerce_url, discovered_release_date, import_status = [], destination_source, False, None, "", "official-link-fallback"
 
     if not tracks:
         tracks = [{
@@ -271,6 +280,7 @@ def create_artist(
         "artist": artist,
         "bandcampUrl": resolved_url,
         "releaseTitle": release_title or (tracks[0]["albumTitle"] if tracks else "Bandcamp"),
+        "releaseDate": release_date or discovered_release_date or None,
         "dailyBatchId": batch_id or None,
         "status": "published",
         "commerceAvailable": commerce_available,
