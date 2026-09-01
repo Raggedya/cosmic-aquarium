@@ -48,6 +48,7 @@ const CREATURES: CreatureDefinition[] = [
 const historyKeyPrefix = 'cosmic-aquaria:recent-tracks:';
 const deckKeyPrefix = 'cosmic-aquaria:track-deck:';
 const captureDurationMs = 430;
+const serviceBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
 
 const themedSpecies: Record<string, Species[]> = {
   crimson: Array<Species>(10).fill('rose'),
@@ -82,16 +83,14 @@ function albumAccent(manifest: ArtistManifest, albumKey: string) {
 
 export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const captureTimer = useRef<number | null>(null);
-  const commerceTimer = useRef<number | null>(null);
-  const commerceStartedForSlug = useRef('');
   const trackDeck = useRef<string[]>([]);
   const trackDeckSlug = useRef('');
+  const analyticsSession = useRef('');
   const [manifest, setManifest] = useState(defaultArtistManifest);
   const [capturingId, setCapturingId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedTrack, setSelectedTrack] = useState<ArtistManifest['tracks'][number] | null>(null);
   const [playerDeparting, setPlayerDeparting] = useState(false);
-  const [commerceVisible, setCommerceVisible] = useState(false);
   const [touchOrigin, setTouchOrigin] = useState({ x: 50, y: 50 });
   const [announcement, setAnnouncement] = useState('A living aquarium surrounds you. Touch an unknown creature to discover its song.');
 
@@ -106,15 +105,16 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const selectedFlower = '/flowers/' + selectedSpecies + '.png';
   const selectedEmbed = selectedTrack ? officialTrackEmbedUrl(selectedTrack.bandcampEmbedTrackId) : null;
   const selectedAccent = selectedTrack ? selectedTrack.accent ?? albumAccent(manifest, selectedTrack.albumKey) : '#b9a7ff';
-  const commerceSpecies = speciesForStyle(manifest.visualStyle, 0, 'cosmos');
 
-  function scheduleCommerceInvitation() {
-    if (!manifest.commerceAvailable || !manifest.commerceUrl || commerceStartedForSlug.current === manifest.slug) return;
-    commerceStartedForSlug.current = manifest.slug;
-    commerceTimer.current = window.setTimeout(() => {
-      setCommerceVisible(true);
-      commerceTimer.current = null;
-    }, 25_000);
+  function recordEvent(eventType: string, details: Record<string, unknown> = {}) {
+    if (!analyticsSession.current) return;
+    const payload = JSON.stringify({eventType, aquariumId: manifest.slug, batchId: manifest.dailyBatchId ?? null, sessionId: analyticsSession.current, ...details});
+    try {
+      if (navigator.sendBeacon) navigator.sendBeacon(serviceBase + '/api/events', new Blob([payload], { type: 'application/json' }));
+      else void fetch(serviceBase + '/api/events', { method: 'POST', headers: { 'content-type': 'application/json' }, body: payload, keepalive: true });
+    } catch {
+      // Analytics never interrupts listening.
+    }
   }
 
   useEffect(() => {
@@ -164,15 +164,21 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   }, []);
 
   useEffect(() => {
-    if (commerceTimer.current !== null) window.clearTimeout(commerceTimer.current);
-    commerceTimer.current = null;
-    commerceStartedForSlug.current = '';
-    setCommerceVisible(false);
-  }, [manifest.slug]);
-
-  useEffect(() => () => {
-    if (commerceTimer.current !== null) window.clearTimeout(commerceTimer.current);
+    const key = 'cosmic-aquaria:session';
+    try {
+      analyticsSession.current = window.sessionStorage.getItem(key) || crypto.randomUUID();
+      window.sessionStorage.setItem(key, analyticsSession.current);
+    } catch {
+      analyticsSession.current = 'session-' + Date.now();
+    }
   }, []);
+
+  useEffect(() => {
+    if (!analyticsSession.current) return;
+    recordEvent('session_start');
+    recordEvent('aquarium_open');
+    if (new URLSearchParams(window.location.search).get('source') === 'daily-email') recordEvent('email_link_click');
+  }, [manifest.slug]);
 
   useEffect(() => {
     if (!manifestSlug || manifestSlug === defaultArtistManifest.slug) {
@@ -257,6 +263,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     if (captureTimer.current !== null) window.clearTimeout(captureTimer.current);
     const track = nextShuffledTrack();
     if (!track) return;
+    recordEvent('object_touch', { trackId: track.id });
     setTouchOrigin({
       x: clientX === undefined ? creature.x : (clientX / window.innerWidth) * 100,
       y: clientY === undefined ? creature.y : (clientY / window.innerHeight) * 100,
@@ -270,7 +277,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       setSelectedTrack(track);
       setCapturingId(null);
       rememberTrack(track.id);
-      scheduleCommerceInvitation();
+      recordEvent('track_selected', { trackId: track.id });
       setAnnouncement(track.title + ' by ' + track.artist + '. Use the embedded Bandcamp control to stream.');
       if ('vibrate' in navigator) navigator.vibrate([8, 34, 12]);
       captureTimer.current = null;
@@ -294,6 +301,58 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     setSelectedTrack(null);
     setAnnouncement(selectedTrack.title + ' returned to the aquarium. Touch another creature.');
     if ('vibrate' in navigator) navigator.vibrate(7);
+  }
+
+  async function shareAquarium() {
+    recordEvent('share_click');
+    const shareData = {
+      title: 'Cosmic Aquaria — ' + manifest.artist,
+      text: 'Enter this Cosmic Aquaria music discovery.',
+      url: window.location.href,
+    };
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        recordEvent('share_complete');
+        setAnnouncement('Aquarium shared.');
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        recordEvent('share_copy');
+        setAnnouncement('Aquarium link copied.');
+      }
+    } catch (error) {
+      if (!(error instanceof DOMException && error.name === 'AbortError')) setAnnouncement('Sharing is unavailable on this device.');
+    }
+  }
+
+  async function exploreAnotherAquarium() {
+    recordEvent('explore_click');
+    try {
+      const recentKey = 'cosmic-aquaria:recent-aquariums';
+      const recent = readStoredIds(recentKey);
+      let destination: { id?: string; slug: string; url?: string; aquarium_url?: string } | null = null;
+      const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?exclude=' + encodeURIComponent(manifest.slug) + '&recent=' + encodeURIComponent(recent.join(',')), { cache: 'no-store' }).catch(() => null);
+      if (serviceResponse?.ok) destination = await serviceResponse.json() as typeof destination;
+      if (!destination) {
+        const response = await fetch('https://raggedya.github.io/cosmic-aquarium/aquariums.json', { cache: 'no-store' });
+        if (!response.ok) throw new Error('Aquarium registry unavailable');
+        const data = await response.json() as { aquariums?: Array<{ slug: string; url: string; status: string }> };
+        const published = (data.aquariums ?? []).filter((entry) => entry.status === 'published' && entry.slug !== manifest.slug);
+        const fresh = published.filter((entry) => !recent.includes(entry.slug));
+        const pool = fresh.length ? fresh : published;
+        if (!pool.length) throw new Error('No other Aquarium is available');
+        destination = pool[Math.floor(secureRandomUnit() * pool.length)];
+      }
+      try {
+        window.sessionStorage.setItem(recentKey, JSON.stringify([manifest.slug, destination.slug, ...recent].filter((value, index, values) => values.indexOf(value) === index).slice(0, 6)));
+      } catch {
+        // Recent journeys are a progressive enhancement.
+      }
+      recordEvent('aquarium_transition', { sourceAquariumId: manifest.slug, destinationAquariumId: destination.id ?? destination.slug });
+      window.location.assign(destination.url ?? destination.aquarium_url ?? '/');
+    } catch {
+      setAnnouncement('Another Aquarium is not available just now.');
+    }
   }
 
   const aquariumStyle = {
@@ -420,21 +479,22 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         </section>
       ) : null}
 
-      {commerceVisible && manifest.commerceAvailable && manifest.commerceUrl ? (
-        <a
-          className="purchase-invitation is-visible"
-          href={manifest.commerceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={'Buy music or merchandise from ' + manifest.artist + ' on Bandcamp'}
-        >
-          <span className="purchase-orbit" aria-hidden="true">
-            <img src={'/flowers/' + commerceSpecies + '.png'} alt="" />
-          </span>
-          <strong>BUY MUSIC</strong>
-          <small>SUPPORT THE ARTIST</small>
-        </a>
-      ) : null}
+      <nav className="aquarium-actions" aria-label="Aquarium actions">
+        <button className="aquarium-action aquarium-action--share" type="button" onClick={shareAquarium} aria-label="Share this Aquarium">
+          <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/anemone.png" alt="" /></span>
+          <strong>SHARE<br />AQUARIUM</strong>
+        </button>
+        {manifest.commerceAvailable && manifest.commerceUrl ? (
+          <a className="aquarium-action aquarium-action--buy" href={manifest.commerceUrl} target="_blank" rel="noopener noreferrer" onClick={() => recordEvent('buy_click')} aria-label={'Buy music or merchandise from ' + manifest.artist + ' on Bandcamp'}>
+            <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
+            <strong>BUY MUSIC</strong><small>SUPPORT THE ARTIST</small>
+          </a>
+        ) : null}
+        <button className="aquarium-action aquarium-action--explore" type="button" onClick={exploreAnotherAquarium} aria-label="Explore another random Aquarium">
+          <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
+          <strong>EXPLORE<br />ANOTHER<br />AQUARIUM</strong>
+        </button>
+      </nav>
 
       <p className="cosmic-legal">INDEPENDENT &amp; UNOFFICIAL · LISTENING AND SUPPORT REMAIN ON BANDCAMP</p>
       <p className="visually-hidden" role="status" aria-live="polite">{announcement}</p>

@@ -224,6 +224,10 @@ def create_artist(
     base_url: str,
     verify_qr: bool = True,
     cache_key: str = "",
+    slug_override: str = "",
+    release_title: str = "",
+    batch_id: str = "",
+    generate_qr: bool = True,
 ) -> dict[str, Any]:
     artist = " ".join(title.split())
     if not artist:
@@ -231,7 +235,7 @@ def create_artist(
     destination_source = validate_bandcamp_url(bandcamp_url)
     if visual_style not in VISUAL_STYLES:
         raise ValueError("Unknown visual style")
-    slug = slugify(artist)
+    slug = slugify(slug_override) if slug_override else slugify(artist)
     try:
         tracks, resolved_url, commerce_available, commerce_url = discover_tracks(destination_source, artist)
         import_status = "public-page-manifest" if tracks else "official-link-fallback"
@@ -266,6 +270,9 @@ def create_artist(
         "slug": slug,
         "artist": artist,
         "bandcampUrl": resolved_url,
+        "releaseTitle": release_title or (tracks[0]["albumTitle"] if tracks else "Bandcamp"),
+        "dailyBatchId": batch_id or None,
+        "status": "published",
         "commerceAvailable": commerce_available,
         "commerceUrl": commerce_url,
         "visualStyle": visual_style,
@@ -282,12 +289,13 @@ def create_artist(
     edition_key = re.sub(r"[^A-Za-z0-9_-]", "", cache_key) or time.strftime("%Y%m%d%H%M%S", time.gmtime())
     destination = base_url.rstrip("/") + "/" + urllib.parse.quote(slug) + "/?edition=" + urllib.parse.quote(edition_key)
     qr_path = PAGES / slug / "cosmic-aquarium-qr.png"
-    render_qr_artwork(artist, destination, qr_path, ROOT / "public" / "flowers", visual_style=visual_style, verify=verify_qr)
+    if generate_qr:
+        render_qr_artwork(artist, destination, qr_path, ROOT / "public" / "flowers", visual_style=visual_style, verify=verify_qr)
     result = {
         "slug": slug,
         "artist": artist,
         "page_url": destination,
-        "qr_path": str(qr_path.relative_to(ROOT)).replace("\\", "/"),
+        "qr_path": str(qr_path.relative_to(ROOT)).replace("\\", "/") if generate_qr else "",
         "tracks": len(tracks),
         "import_status": import_status,
         "commerce_available": commerce_available,

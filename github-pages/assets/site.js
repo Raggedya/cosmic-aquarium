@@ -36,6 +36,7 @@
   const slug = document.documentElement.dataset.artist || 'immigrant-union';
   const version = document.documentElement.dataset.version || 'current';
   const base = location.hostname.endsWith('github.io') ? '/cosmic-aquarium' : '';
+  const serviceBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
   const baseSpecies = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos'];
   const styleSpecies = {
     cosmic: baseSpecies,
@@ -56,13 +57,14 @@
   let manifest;
   let selectedButton;
   let trackDeck = [];
-  let purchaseTimer = null;
-  let purchaseScheduled = false;
   const field = root.querySelector('.creature-field');
   const player = root.querySelector('.living-player');
   const status = root.querySelector('[role="status"]');
   const titlePrompt = document.querySelector('.cosmic-title p');
-  const purchaseInvitation = root.querySelector('.purchase-invitation');
+  const shareAction = root.querySelector('.aquarium-action--share');
+  const buyAction = root.querySelector('.aquarium-action--buy');
+  const exploreAction = root.querySelector('.aquarium-action--explore');
+  const analyticsSession = sessionId();
 
   player.querySelector('.player-membrane').addEventListener('animationstart',event => {
     if (event.animationName !== 'player-flower-drift-away') return;
@@ -80,8 +82,11 @@
       root.dataset.theme = styleSpecies[data.visualStyle] ? data.visualStyle : 'cosmic';
       document.querySelector('.cosmic-title h1').textContent = data.artist.toUpperCase();
       document.title = 'Cosmic Aquaria — ' + data.artist;
-      configurePurchaseInvitation(data);
+      configureBuyAction(data);
       renderCreatures();
+  recordEvent('session_start');
+  recordEvent('aquarium_open');
+  if (new URLSearchParams(location.search).get('source') === 'daily-email') recordEvent('email_link_click');
       announce(data.artist + '. The flower garden is awake.');
     })
     .catch(() => announce('This Cosmic Aquaria edition is not available yet.'));
@@ -118,24 +123,12 @@
     }
   }
 
-  function configurePurchaseInvitation(data) {
+  function configureBuyAction(data) {
     const destination = data.commerceAvailable === true ? safeBandcampUrl(data.commerceUrl) : null;
     if (!destination) return;
-    purchaseInvitation.href = destination;
-    purchaseInvitation.setAttribute('aria-label','Buy music or merchandise from ' + data.artist + ' on Bandcamp');
-    const iconSpecies = (styleSpecies[root.dataset.theme] || baseSpecies)[0];
-    purchaseInvitation.querySelector('img').src = base + '/assets/flowers/' + iconSpecies + '.png';
-    purchaseInvitation.dataset.available = 'true';
-  }
-
-  function schedulePurchaseInvitation() {
-    if (purchaseScheduled || purchaseInvitation.dataset.available !== 'true') return;
-    purchaseScheduled = true;
-    purchaseTimer = setTimeout(() => {
-      purchaseInvitation.hidden = false;
-      purchaseInvitation.classList.add('is-visible');
-      purchaseTimer = null;
-    },25000);
+    buyAction.href = destination;
+    buyAction.setAttribute('aria-label','Buy music or merchandise from ' + data.artist + ' on Bandcamp');
+    buyAction.hidden = false;
   }
 
   function readStoredIds(key) {
@@ -145,6 +138,25 @@
     } catch {
       return [];
     }
+  }
+
+  function sessionId() {
+    const key = 'cosmic-aquaria:session';
+    try {
+      const existing = sessionStorage.getItem(key);
+      if (existing) return existing;
+      const created = globalThis.crypto?.randomUUID?.() || ('session-' + Date.now() + '-' + Math.random().toString(16).slice(2));
+      sessionStorage.setItem(key,created);
+      return created;
+    } catch { return 'session-' + Date.now(); }
+  }
+
+  function recordEvent(eventType, details = {}) {
+    const payload = JSON.stringify({eventType,aquariumId:slug,batchId:manifest?.dailyBatchId||null,sessionId:analyticsSession,...details});
+    try {
+      if (navigator.sendBeacon) navigator.sendBeacon(serviceBase + '/api/events',new Blob([payload],{type:'application/json'}));
+      else fetch(serviceBase + '/api/events',{method:'POST',headers:{'content-type':'application/json'},body:payload,keepalive:true}).catch(()=>{});
+    } catch {}
   }
 
   function randomUnit() {
@@ -201,6 +213,7 @@
     if (!manifest || !manifest.tracks || !manifest.tracks.length) return;
     const track = nextShuffledTrack();
     if (!track) return;
+    recordEvent('object_touch',{trackId:track.id});
     if (navigator.vibrate) navigator.vibrate(10);
     root.style.setProperty('--touch-x',(clientX / innerWidth * 100)+'%');
     root.style.setProperty('--touch-y',(clientY / innerHeight * 100)+'%');
@@ -244,7 +257,7 @@
     }
     player.querySelector('.bandcamp-link').href = track.bandcampUrl || manifest.bandcampUrl;
     rememberTrack(track.id);
-    schedulePurchaseInvitation();
+    recordEvent('track_selected',{trackId:track.id});
     announce((track.title || 'A song') + ' by ' + (track.artist || manifest.artist) + '.');
     if (navigator.vibrate) navigator.vibrate([8,34,12]);
   }
@@ -263,6 +276,53 @@
   addEventListener('keydown',event => {
     if (event.key === 'Escape' && !player.hidden) player.querySelector('.release-current').click();
   });
+
+  shareAction.addEventListener('click',async () => {
+    recordEvent('share_click');
+    const shareData = {title:'Cosmic Aquaria — ' + (manifest?.artist || slug),text:'Enter this Cosmic Aquaria music discovery.',url:location.href};
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        recordEvent('share_complete');
+        announce('Aquarium shared.');
+      } else {
+        await navigator.clipboard.writeText(location.href);
+        recordEvent('share_copy');
+        announce('Aquarium link copied.');
+      }
+    } catch (error) {
+      if (error?.name !== 'AbortError') announce('Sharing is unavailable on this device.');
+    }
+  });
+
+  exploreAction.addEventListener('click',async () => {
+    exploreAction.disabled = true;
+    recordEvent('explore_click');
+    try {
+      const recentKey = 'cosmic-aquaria:recent-aquariums';
+      const recent = readStoredIds(recentKey);
+      let destination;
+      const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?exclude=' + encodeURIComponent(slug) + '&recent=' + encodeURIComponent(recent.join(',')),{cache:'no-store'}).catch(()=>null);
+      if (serviceResponse?.ok) destination = await serviceResponse.json();
+      if (!destination) {
+        const response = await fetch(base + '/aquariums.json', {cache:'no-store'});
+        if (!response.ok) throw new Error('Aquarium registry unavailable');
+        const entries = (await response.json()).aquariums || [];
+        const eligible = entries.filter(entry => entry.status === 'published' && entry.slug !== slug && !recent.includes(entry.slug));
+        const pool = eligible.length ? eligible : entries.filter(entry => entry.status === 'published' && entry.slug !== slug);
+        if (!pool.length) throw new Error('No other Aquarium is available');
+        destination = pool[Math.floor(randomUnit() * pool.length)];
+      }
+      try { sessionStorage.setItem(recentKey,JSON.stringify([slug,destination.slug,...recent].filter((value,index,array)=>array.indexOf(value)===index).slice(0,6))); } catch {}
+      recordEvent('aquarium_transition',{sourceAquariumId:slug,destinationAquariumId:destination.id||destination.slug});
+      location.assign(destination.url||destination.aquarium_url);
+    } catch {
+      exploreAction.disabled = false;
+      announce('Another Aquarium is not available just now.');
+    }
+  });
+
+  buyAction.addEventListener('click',() => recordEvent('buy_click'));
 
   function announce(message) { status.textContent = message; }
 })();

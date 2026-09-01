@@ -1,0 +1,81 @@
+name: Send Cosmic Aquaria Daily Collection
+
+on:
+  schedule:
+    - cron: "30 2,5,8,11 * * *"
+  workflow_dispatch:
+    inputs:
+      batch_date:
+        description: Optional UTC date (YYYY-MM-DD); blank uses today
+        required: false
+        type: string
+      force_resend:
+        description: Intentionally send the same collection again
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cosmic-aquaria-daily-email
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Send one finite collection when all 20 Aquariums exist
+        env:
+          REQUESTED_DATE: ${{ inputs.batch_date }}
+          FORCE_RESEND: ${{ inputs.force_resend }}
+          RUN_ID: ${{ github.run_id }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          REPORT_FROM_EMAIL: ${{ secrets.REPORT_FROM_EMAIL }}
+          REPORT_RECIPIENT: ${{ secrets.REPORT_RECIPIENT }}
+          ADMIN_TOKEN: ${{ secrets.DEEP_CUTS_ADMIN_TOKEN }}
+        run: |
+          node <<'NODE'
+          const date = process.env.REQUESTED_DATE || new Date().toISOString().slice(0,10);
+          const batchUrl = `https://raw.githubusercontent.com/Raggedya/cosmic-aquarium/main/automation/batches/${date}.json`;
+          const batchResponse = await fetch(batchUrl, { cache: 'no-store' });
+          if (batchResponse.status === 404) { console.log(`No ${date} batch exists yet; a later scheduled check can retry.`); process.exit(0); }
+          if (!batchResponse.ok) throw new Error(`Batch lookup failed: ${batchResponse.status}`);
+          const batch = await batchResponse.json();
+          if (batch.status !== 'published' || batch.publishedCount !== 20 || batch.aquariums.length !== 20) {
+            console.log(`Batch ${date} is ${batch.publishedCount || 0}/20; no email was sent.`); process.exit(0);
+          }
+          const catalogue = await fetch('https://raggedya.github.io/cosmic-aquarium/aquariums.json', { cache: 'no-store' }).then(r => r.json());
+          const sync = await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/sync', {
+            method: 'POST', headers: { authorization: `Bearer ${process.env.ADMIN_TOKEN}`, 'content-type': 'application/json' },
+            body: JSON.stringify({ aquariums: catalogue.aquariums || [], batch }),
+          });
+          if (!sync.ok) throw new Error(`Catalogue sync failed: ${await sync.text()}`);
+          const rows = batch.aquariums.map((item,index) => {
+            const separator = item.aquariumUrl.includes('?') ? '&' : '?';
+            const url = `${item.aquariumUrl}${separator}source=daily-email&batch=${encodeURIComponent(date)}`;
+            return `<tr><td style="padding:12px 0;border-bottom:1px solid #24283c"><a style="color:#d9ceff;text-decoration:none;font-size:16px" href="${url}">${index+1}. ${escapeHtml(item.artist)} — ${escapeHtml(item.release)}</a></td></tr>`;
+          }).join('');
+          const text = ['COSMIC AQUARIA',`20 new independent releases — ${date}`,'',...batch.aquariums.map((item,index)=>`${index+1}. ${item.artist} — ${item.release}\n${item.aquariumUrl}?source=daily-email&batch=${date}`)].join('\n');
+          const html = `<!doctype html><html><body style="margin:0;background:#060814;color:#f1edf8;font-family:Arial,sans-serif"><div style="max-width:620px;margin:auto;padding:38px 24px"><p style="letter-spacing:.35em;font-size:12px;color:#aba5ba">COSMIC AQUARIA</p><h1 style="font-weight:400;font-size:26px">20 new independent releases</h1><p style="color:#aaa4b7">A finite daily doorway. Open any Aquarium and touch something.</p><table role="presentation" style="width:100%;border-collapse:collapse">${rows}</table><p style="margin-top:30px;color:#777386;font-size:12px">Independent &amp; unofficial. Listening and support remain on Bandcamp.</p></div><img src="https://cosmic-aquaria.andrewharris501.workers.dev/api/email/open.gif?batch=${encodeURIComponent(date)}" width="1" height="1" alt=""></body></html>`;
+          const forced = String(process.env.FORCE_RESEND).toLowerCase() === 'true';
+          const idempotencyKey = forced ? `cosmic-aquaria-${date}-manual-${process.env.RUN_ID}` : `cosmic-aquaria-${date}`;
+          const response = await fetch('https://api.resend.com/emails', {
+            method: 'POST',
+            headers: { authorization: `Bearer ${process.env.RESEND_API_KEY}`, 'content-type': 'application/json', 'idempotency-key': idempotencyKey },
+            body: JSON.stringify({ from: process.env.REPORT_FROM_EMAIL, to: [process.env.REPORT_RECIPIENT], subject: `Cosmic Aquaria — 20 new discoveries — ${date}`, html, text }),
+          });
+          const result = await response.json();
+          const status = response.ok ? (forced ? 'resent' : 'sent') : 'failed';
+          await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/email-delivery', {
+            method: 'POST', headers: { authorization: `Bearer ${process.env.ADMIN_TOKEN}`, 'content-type': 'application/json' },
+            body: JSON.stringify({ batchId: date, recipient: process.env.REPORT_RECIPIENT, status, providerId: result.id || null, failureReason: response.ok ? null : JSON.stringify(result) }),
+          });
+          if (!response.ok) throw new Error(`Resend rejected the daily collection: ${JSON.stringify(result)}`);
+          console.log(`One ${forced ? 'manual resend' : 'idempotent daily email'} accepted for ${date}: ${result.id}`);
+          function escapeHtml(value) { return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+          NODE

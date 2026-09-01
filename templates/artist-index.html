@@ -42,11 +42,21 @@
       <a class="bandcamp-link" target="_blank" rel="noopener noreferrer">VIEW &amp; SUPPORT ON BANDCAMP ↗</a>
       <button class="release-current" type="button" aria-label="Release this song back into the aquarium"><i aria-hidden="true"></i><span>RELEASE</span></button>
     </section>
-    <a class="purchase-invitation" target="_blank" rel="noopener noreferrer" hidden>
-      <span class="purchase-orbit" aria-hidden="true"><img alt=""></span>
-      <strong>BUY MUSIC</strong>
-      <small>SUPPORT THE ARTIST</small>
-    </a>
+    <nav class="aquarium-actions" aria-label="Aquarium actions">
+      <button class="aquarium-action aquarium-action--share" type="button" aria-label="Share this Aquarium">
+        <span class="aquarium-action-orbit" aria-hidden="true"><img src="{{BASE}}/assets/flowers/anemone.png" alt=""></span>
+        <strong>SHARE<br>AQUARIUM</strong>
+      </button>
+      <a class="aquarium-action aquarium-action--buy" target="_blank" rel="noopener noreferrer" hidden>
+        <span class="aquarium-action-orbit" aria-hidden="true"><img src="{{BASE}}/assets/flowers/cosmos.png" alt=""></span>
+        <strong>BUY MUSIC</strong>
+        <small>SUPPORT THE ARTIST</small>
+      </a>
+      <button class="aquarium-action aquarium-action--explore" type="button" aria-label="Explore another random Aquarium">
+        <span class="aquarium-action-orbit" aria-hidden="true"><img src="{{BASE}}/assets/flowers/cosmos.png" alt=""></span>
+        <strong>EXPLORE<br>ANOTHER<br>AQUARIUM</strong>
+      </button>
+    </nav>
     <p class="cosmic-legal">INDEPENDENT &amp; UNOFFICIAL · LISTENING AND SUPPORT REMAIN ON BANDCAMP</p>
     <p class="visually-hidden" role="status" aria-live="polite"></p>
   </main>

@@ -40,16 +40,29 @@ try {
 const artistManifestFiles = (await fs.readdir(path.join(pages,'artists')))
   .filter((name) => name.endsWith('.json'))
   .sort();
+const aquariumRegistry=[];
 for (const filename of artistManifestFiles) {
   try {
     const artistManifest = JSON.parse(await fs.readFile(path.join(pages,'artists',filename),'utf8'));
     if (artistManifest.slug && artistManifest.artist) {
       await writeArtist(artistManifest.slug,artistManifest.artist);
+      aquariumRegistry.push({
+        id:artistManifest.slug,
+        slug:artistManifest.slug,
+        artist:artistManifest.artist,
+        release:artistManifest.releaseTitle || artistManifest.tracks?.[0]?.albumTitle || 'Bandcamp',
+        bandcampUrl:artistManifest.bandcampUrl || null,
+        visualStyle:artistManifest.visualStyle || 'cosmic',
+        dailyBatchId:artistManifest.dailyBatchId || null,
+        url:'https://raggedya.github.io/cosmic-aquarium/'+encodeURIComponent(artistManifest.slug)+'/',
+        status:artistManifest.status || 'published',
+      });
     }
   } catch (error) {
     console.warn('Skipped invalid artist manifest: ' + filename, error);
   }
 }
+await fs.writeFile(path.join(pages,'aquariums.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),aquariums:aquariumRegistry},null,2)+'\n');
 await fs.writeFile(path.join(pages,'index.html'),render('immigrant-union','Immigrant Union'));
 console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s).');
 

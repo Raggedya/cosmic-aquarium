@@ -14,6 +14,9 @@ export interface ArtistManifest {
   bandcampUrl: string;
   commerceAvailable?: boolean;
   commerceUrl?: string | null;
+  releaseTitle?: string;
+  dailyBatchId?: string | null;
+  status?: 'published' | 'disabled';
   visualStyle?: VisualStyle;
   generatedAt?: string;
   albums: ArtistAlbumAccent[];

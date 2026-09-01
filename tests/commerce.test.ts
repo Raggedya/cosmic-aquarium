@@ -25,10 +25,14 @@ test('every edition makes an explicit, safe commerce decision', async () => {
   }
 });
 
-test('the purchase invitation is delayed from the first discovery and pulses every ten seconds', async () => {
+test('the three intentional listener actions are present without attention-seeking animation', async () => {
   const runtime = await readFile(path.resolve('github-pages', 'assets', 'site.js'), 'utf8');
   const styles = await readFile(path.resolve('github-pages', 'assets', 'site.css'), 'utf8');
-  assert.match(runtime, /schedulePurchaseInvitation\(\)/);
-  assert.match(runtime, /},25000\)/);
-  assert.match(styles, /purchase-invitation-pulse 10s/);
+  const template = await readFile(path.resolve('templates', 'artist-index.html'), 'utf8');
+  assert.match(template, /SHARE<br>AQUARIUM/);
+  assert.match(template, /BUY MUSIC/);
+  assert.match(template, /EXPLORE<br>ANOTHER<br>AQUARIUM/);
+  assert.match(runtime, /navigator\.share/);
+  assert.match(runtime, /aquariums\.json/);
+  assert.doesNotMatch(styles, /purchase-invitation-pulse/);
 });
