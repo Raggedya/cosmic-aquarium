@@ -207,16 +207,16 @@
 }
 .doorway-bubble:not(.doorway-bubble--anywhere) {
   opacity: 0;
-  animation: doorway-orbit-arrive var(--arrival-duration, 6.2s) cubic-bezier(.16, .72, .2, 1) var(--arrival-delay, 2s) both;
+  animation: doorway-orbit-arrive var(--arrival-duration, 10.54s) cubic-bezier(.24, .42, .28, 1) var(--arrival-delay, 2s) both;
   will-change: transform, translate, opacity;
 }
-.doorway-bubble--heavy { --arrival-delay: 2s; --arrival-duration: 6.25s; }
-.doorway-bubble--dreamy { --arrival-delay: 2.12s; --arrival-duration: 6.45s; }
-.doorway-bubble--electronic { --arrival-delay: 2.28s; --arrival-duration: 6.05s; }
-.doorway-bubble--quiet { --arrival-delay: 2.38s; --arrival-duration: 5.9s; }
-.doorway-bubble--loud { --arrival-delay: 2.48s; --arrival-duration: 5.85s; }
-.doorway-bubble--dark { --arrival-delay: 2.62s; --arrival-duration: 6.2s; }
-.doorway-bubble--strange { --arrival-delay: 2.76s; --arrival-duration: 6.1s; }
+.doorway-bubble--heavy { --arrival-delay: 2s; --arrival-duration: 10.63s; --arrival-x: -22px; --arrival-settle-x: 2px; }
+.doorway-bubble--dreamy { --arrival-delay: 2.12s; --arrival-duration: 10.97s; --arrival-x: 18px; --arrival-settle-x: -2px; }
+.doorway-bubble--electronic { --arrival-delay: 2.28s; --arrival-duration: 10.29s; --arrival-x: 24px; --arrival-settle-x: -2px; }
+.doorway-bubble--quiet { --arrival-delay: 2.38s; --arrival-duration: 10.03s; --arrival-x: -18px; --arrival-settle-x: 2px; }
+.doorway-bubble--loud { --arrival-delay: 2.48s; --arrival-duration: 9.95s; --arrival-x: 20px; --arrival-settle-x: -1px; }
+.doorway-bubble--dark { --arrival-delay: 2.62s; --arrival-duration: 10.54s; --arrival-x: -22px; --arrival-settle-x: 2px; }
+.doorway-bubble--strange { --arrival-delay: 2.76s; --arrival-duration: 10.37s; --arrival-x: 8px; --arrival-settle-x: -1px; }
 .doorway-bubble--anywhere::before {
   inset: 2.5%;
   border-top-color: rgba(255, 255, 255, .38);
@@ -298,11 +298,11 @@
   100% { scale: 1; filter: drop-shadow(0 8px 18px rgba(0, 0, 12, .82)) drop-shadow(0 0 21px rgba(73, 52, 222, .26)); }
 }
 @keyframes doorway-orbit-arrive {
-  0% { translate: 0 112vh; opacity: 0; }
-  9% { opacity: .16; }
-  23% { opacity: .7; }
-  72% { translate: 0 -9px; opacity: 1; }
-  88% { translate: 0 3px; opacity: 1; }
+  0% { translate: var(--arrival-x, 0px) 112vh; opacity: 0; }
+  18% { opacity: .16; }
+  42% { opacity: .62; }
+  72% { opacity: .94; }
+  88% { translate: var(--arrival-settle-x, 0px) -3px; opacity: 1; }
   100% { translate: 0 0; opacity: 1; }
 }
 @keyframes doorway-enter { to { filter: brightness(1.2) drop-shadow(0 0 38px rgba(122, 93, 255, .53)); } }

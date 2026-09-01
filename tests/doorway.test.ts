@@ -49,9 +49,15 @@ test('doorway motion is reduced-motion safe and softly collision aware', async (
 test('doorway introduces the hero before the surrounding worlds rise into place', async () => {
   const css = await read('app/doorway.css');
   assert.match(css, /doorway-anchor-arrive 1\.9s/);
-  assert.match(css, /doorway-orbit-arrive var\(--arrival-duration, 6\.2s\)/);
+  assert.match(css, /doorway-orbit-arrive var\(--arrival-duration, 10\.54s\)/);
   assert.match(css, /--arrival-delay: 2s/);
-  assert.match(css, /translate: 0 112vh/);
+  assert.match(css, /--arrival-duration: 10\.63s/);
+  assert.match(css, /--arrival-duration: 10\.97s/);
+  assert.match(css, /--arrival-duration: 9\.95s/);
+  assert.match(css, /cubic-bezier\(\.24, \.42, \.28, 1\)/);
+  assert.match(css, /translate: var\(--arrival-x, 0px\) 112vh/);
+  assert.match(css, /--arrival-x: -22px/);
+  assert.match(css, /--arrival-settle-x: -2px/);
   assert.match(css, /100% \{ translate: 0 0; opacity: 1; \}/);
   assert.match(css, /prefers-reduced-motion[\s\S]+opacity: 1; translate: none/);
 });
