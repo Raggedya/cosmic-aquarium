@@ -1,0 +1,176 @@
+name: Deliver Cosmic Aquaria
+
+on:
+  schedule:
+    - cron: "30 2,5,8,11 * * *"
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Delivery or production operation
+        required: true
+        default: deliver_artist
+        type: choice
+        options: [deliver_artist, deploy_service, daily_email]
+      artist_title:
+        description: Artist name (artist delivery only)
+        required: false
+        type: string
+      page_url:
+        description: Published Cosmic Aquaria URL (artist delivery only)
+        required: false
+        type: string
+      qr_url:
+        description: Published scan-verified QR PNG URL (artist delivery only)
+        required: false
+        type: string
+      recipient_email:
+        description: Delivery recipient (artist delivery only)
+        required: false
+        type: string
+      batch_date:
+        description: Optional UTC batch date; blank uses today
+        required: false
+        type: string
+      force_resend:
+        description: Intentionally resend a daily collection
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cosmic-aquaria-delivery
+  cancel-in-progress: false
+
+jobs:
+  deliver-artist:
+    if: github.event_name == 'workflow_dispatch' && inputs.operation == 'deliver_artist'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Send Cosmic Aquaria link and QR
+        env:
+          ARTIST_TITLE: ${{ inputs.artist_title }}
+          PAGE_URL: ${{ inputs.page_url }}
+          QR_URL: ${{ inputs.qr_url }}
+          RECIPIENT_EMAIL: ${{ inputs.recipient_email }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          REPORT_FROM_EMAIL: ${{ secrets.REPORT_FROM_EMAIL }}
+        run: |
+          node --input-type=module <<'NODE'
+          import process from 'node:process';
+          const required=['ARTIST_TITLE','PAGE_URL','QR_URL','RECIPIENT_EMAIL','RESEND_API_KEY','REPORT_FROM_EMAIL'];
+          for(const name of required) if(!process.env[name]) throw new Error(name+' is required.');
+          const allowed='https://raggedya.github.io/cosmic-aquarium/';
+          if(!process.env.PAGE_URL.startsWith(allowed)||!process.env.QR_URL.startsWith(allowed)) throw new Error('Delivery URLs must belong to Cosmic Aquaria.');
+          const qrResponse=await fetch(process.env.QR_URL,{redirect:'follow'});
+          if(!qrResponse.ok||!(qrResponse.headers.get('content-type')||'').toLowerCase().includes('image/png')) throw new Error('Published QR PNG is unavailable.');
+          const qrContent=Buffer.from(await qrResponse.arrayBuffer()).toString('base64');
+          const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+          const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{authorization:'Bearer '+process.env.RESEND_API_KEY,'content-type':'application/json','idempotency-key':'cosmic-aquarium-'+process.env.GITHUB_RUN_ID+'-'+process.env.GITHUB_RUN_ATTEMPT},body:JSON.stringify({from:process.env.REPORT_FROM_EMAIL,to:[process.env.RECIPIENT_EMAIL],subject:'Cosmic Aquaria is ready - '+process.env.ARTIST_TITLE,html:`<div style="background:#07071d;color:#f7f5ff;padding:42px;font-family:Arial,sans-serif"><p style="letter-spacing:.22em;color:#c8b9f3;font-size:12px">COSMIC AQUARIA</p><h1 style="font-weight:400">${esc(process.env.ARTIST_TITLE)}</h1><p>Your living Bandcamp discovery page and scan-tested floral QR are ready.</p><p><a style="color:#d5c8ff" href="${esc(process.env.PAGE_URL)}">Open this Aquaria world</a></p></div>`,attachments:[{filename:'cosmic-aquaria-qr.png',content:qrContent}]})});
+          if(!response.ok) throw new Error('Resend delivery failed: '+await response.text());
+          NODE
+
+  deploy-service:
+    if: github.event_name == 'workflow_dispatch' && inputs.operation == 'deploy_service'
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: Raggedya/cosmic-aquarium
+          path: cosmic-aquaria
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Locate or create analytics database
+        id: database
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const account=process.env.CLOUDFLARE_ACCOUNT_ID,token=process.env.CLOUDFLARE_API_TOKEN;
+          const headers={authorization:`Bearer ${token}`,'content-type':'application/json'};
+          const base=`https://api.cloudflare.com/client/v4/accounts/${account}/d1/database`;
+          const list=await fetch(base+'?name=cosmic-aquaria-production',{headers}).then(r=>r.json());
+          if(!list.success) throw new Error(JSON.stringify(list.errors));
+          let database=list.result.find(item=>item.name==='cosmic-aquaria-production');
+          if(!database){const created=await fetch(base,{method:'POST',headers,body:JSON.stringify({name:'cosmic-aquaria-production',primary_location_hint:'oc'})}).then(r=>r.json());if(!created.success)throw new Error(JSON.stringify(created.errors));database=created.result}
+          fs.appendFileSync(process.env.GITHUB_OUTPUT,`id=${database.uuid}\n`);
+          NODE
+      - name: Prepare Worker configuration
+        working-directory: cosmic-aquaria/services/cosmic-worker
+        env:
+          D1_DATABASE_ID: ${{ steps.database.outputs.id }}
+        run: node -e "const fs=require('fs');fs.writeFileSync('wrangler.generated.jsonc',fs.readFileSync('wrangler.template.jsonc','utf8').replace('__D1_DATABASE_ID__',process.env.D1_DATABASE_ID))"
+      - name: Apply database schema
+        working-directory: cosmic-aquaria/services/cosmic-worker
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: npx --yes wrangler@4 d1 execute cosmic-aquaria-production --remote --file=migrations/0001_initial.sql --config wrangler.generated.jsonc --yes
+      - name: Configure private values and deploy
+        working-directory: cosmic-aquaria/services/cosmic-worker
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ADMIN_TOKEN: ${{ secrets.DEEP_CUTS_ADMIN_TOKEN }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          OWNER_EMAIL: ${{ secrets.REPORT_RECIPIENT }}
+          REPORT_FROM_EMAIL: ${{ secrets.REPORT_FROM_EMAIL }}
+        run: |
+          printf '%s' "$ADMIN_TOKEN" | npx --yes wrangler@4 secret put ADMIN_TOKEN --config wrangler.generated.jsonc
+          printf '%s' "$RESEND_API_KEY" | npx --yes wrangler@4 secret put RESEND_API_KEY --config wrangler.generated.jsonc
+          printf '%s' "$OWNER_EMAIL" | npx --yes wrangler@4 secret put OWNER_EMAIL --config wrangler.generated.jsonc
+          printf '%s' "$REPORT_FROM_EMAIL" | npx --yes wrangler@4 secret put REPORT_FROM_EMAIL --config wrangler.generated.jsonc
+          npx --yes wrangler@4 deploy --config wrangler.generated.jsonc
+      - name: Synchronise catalogue and verify service
+        env:
+          ADMIN_TOKEN: ${{ secrets.DEEP_CUTS_ADMIN_TOKEN }}
+        run: |
+          node --input-type=module <<'NODE'
+          const catalogue=await fetch('https://raggedya.github.io/cosmic-aquarium/aquariums.json',{cache:'no-store'}).then(r=>r.json());
+          const response=await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/sync',{method:'POST',headers:{authorization:`Bearer ${process.env.ADMIN_TOKEN}`,'content-type':'application/json'},body:JSON.stringify({aquariums:catalogue.aquariums||[]})});
+          if(!response.ok) throw new Error(await response.text());
+          const health=await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/health');if(!health.ok)throw new Error('Service health check failed.');
+          NODE
+
+  daily-email:
+    if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.operation == 'daily_email')
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Send exactly one complete daily collection
+        env:
+          REQUESTED_DATE: ${{ inputs.batch_date }}
+          FORCE_RESEND: ${{ inputs.force_resend }}
+          RUN_ID: ${{ github.run_id }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          REPORT_FROM_EMAIL: ${{ secrets.REPORT_FROM_EMAIL }}
+          REPORT_RECIPIENT: ${{ secrets.REPORT_RECIPIENT }}
+          ADMIN_TOKEN: ${{ secrets.DEEP_CUTS_ADMIN_TOKEN }}
+        run: |
+          node --input-type=module <<'NODE'
+          const date=process.env.REQUESTED_DATE||new Date().toISOString().slice(0,10);
+          const batchResponse=await fetch(`https://raw.githubusercontent.com/Raggedya/cosmic-aquarium/main/automation/batches/${date}.json`,{cache:'no-store'});
+          if(batchResponse.status===404){console.log('No complete batch exists yet.');process.exit(0)}
+          if(!batchResponse.ok)throw new Error('Batch lookup failed.');const batch=await batchResponse.json();
+          if(batch.status!=='published'||batch.publishedCount!==20||batch.aquariums.length!==20){console.log(`Batch is ${batch.publishedCount||0}/20; no email sent.`);process.exit(0)}
+          const catalogue=await fetch('https://raggedya.github.io/cosmic-aquarium/aquariums.json',{cache:'no-store'}).then(r=>r.json());
+          const sync=await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/sync',{method:'POST',headers:{authorization:`Bearer ${process.env.ADMIN_TOKEN}`,'content-type':'application/json'},body:JSON.stringify({aquariums:catalogue.aquariums||[],batch})});if(!sync.ok)throw new Error(await sync.text());
+          const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+          const links=batch.aquariums.map((item,index)=>{const url=`${item.aquariumUrl}?source=daily-email&batch=${encodeURIComponent(date)}`;return `<tr><td style="padding:12px 0;border-bottom:1px solid #24283c"><a style="color:#d9ceff;text-decoration:none;font-size:16px" href="${url}">${index+1}. ${esc(item.artist)} — ${esc(item.release)}</a></td></tr>`}).join('');
+          const html=`<!doctype html><html><body style="margin:0;background:#060814;color:#f1edf8;font-family:Arial,sans-serif"><div style="max-width:620px;margin:auto;padding:38px 24px"><p style="letter-spacing:.35em;font-size:12px;color:#aba5ba">COSMIC AQUARIA</p><h1 style="font-weight:400;font-size:26px">20 new independent releases</h1><p style="color:#aaa4b7">A finite daily doorway. Open any Aquarium and touch something.</p><table role="presentation" style="width:100%;border-collapse:collapse">${links}</table><p style="margin-top:30px;color:#777386;font-size:12px">Independent &amp; unofficial. Listening and support remain on Bandcamp.</p></div><img src="https://cosmic-aquaria.andrewharris501.workers.dev/api/email/open.gif?batch=${encodeURIComponent(date)}" width="1" height="1" alt=""></body></html>`;
+          const text=['COSMIC AQUARIA',`20 new independent releases — ${date}`,'',...batch.aquariums.map((item,index)=>`${index+1}. ${item.artist} — ${item.release}\n${item.aquariumUrl}?source=daily-email&batch=${date}`)].join('\n');
+          const forced=String(process.env.FORCE_RESEND).toLowerCase()==='true',key=forced?`cosmic-aquaria-${date}-manual-${process.env.RUN_ID}`:`cosmic-aquaria-${date}`;
+          const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{authorization:`Bearer ${process.env.RESEND_API_KEY}`,'content-type':'application/json','idempotency-key':key},body:JSON.stringify({from:process.env.REPORT_FROM_EMAIL,to:[process.env.REPORT_RECIPIENT],subject:`Cosmic Aquaria — 20 new discoveries — ${date}`,html,text})});const result=await response.json();
+          const status=response.ok?(forced?'resent':'sent'):'failed';await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/email-delivery',{method:'POST',headers:{authorization:`Bearer ${process.env.ADMIN_TOKEN}`,'content-type':'application/json'},body:JSON.stringify({batchId:date,recipient:process.env.REPORT_RECIPIENT,status,providerId:result.id||null,failureReason:response.ok?null:JSON.stringify(result)})});
+          if(!response.ok)throw new Error(JSON.stringify(result));console.log(`Daily collection accepted: ${result.id}`);
+          NODE
