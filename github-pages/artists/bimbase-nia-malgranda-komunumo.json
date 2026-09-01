@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "bimbase-nia-malgranda-komunumo",
+  "artist": "Bimbasē",
+  "bandcampUrl": "https://bimbase.bandcamp.com/album/nia-malgranda-komunumo",
+  "releaseTitle": "Nia Malgranda Komunumo",
+  "dailyBatchId": "2026-09-01",
+  "status": "published",
+  "commerceAvailable": true,
+  "commerceUrl": "https://bimbase.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-01T05:53:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "nia-malgranda-komunumo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "nia-malgranda-komunumo-1261757030",
+      "title": "Bonsai",
+      "artist": "Bimbasē",
+      "albumTitle": "Nia Malgranda Komunumo",
+      "albumKey": "nia-malgranda-komunumo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bimbase.bandcamp.com/track/bonsai",
+      "bandcampEmbedTrackId": "1261757030",
+      "sourcePage": "https://bimbase.bandcamp.com/album/nia-malgranda-komunumo",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "nia-malgranda-komunumo-1675572758",
+      "title": "Emu A-uh",
+      "artist": "Bimbasē",
+      "albumTitle": "Nia Malgranda Komunumo",
+      "albumKey": "nia-malgranda-komunumo",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bimbase.bandcamp.com/track/emu-a-uh",
+      "bandcampEmbedTrackId": "1675572758",
+      "sourcePage": "https://bimbase.bandcamp.com/album/nia-malgranda-komunumo",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "nia-malgranda-komunumo-1083002793",
+      "title": "Coda",
+      "artist": "Bimbasē",
+      "albumTitle": "Nia Malgranda Komunumo",
+      "albumKey": "nia-malgranda-komunumo",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bimbase.bandcamp.com/track/coda",
+      "bandcampEmbedTrackId": "1083002793",
+      "sourcePage": "https://bimbase.bandcamp.com/album/nia-malgranda-komunumo",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

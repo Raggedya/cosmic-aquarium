@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "slug": "de5andre-fuel",
+  "artist": "de5andre",
+  "bandcampUrl": "https://de5andre.bandcamp.com/album/fuel-92",
+  "releaseTitle": "Fuel",
+  "dailyBatchId": "2026-09-01",
+  "status": "published",
+  "commerceAvailable": false,
+  "commerceUrl": null,
+  "visualStyle": "thorn",
+  "generatedAt": "2026-09-01T05:53:52Z",
+  "importStatus": "official-link-fallback",
+  "albums": [
+    {
+      "key": "bandcamp",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "de5andre-fuel-bandcamp",
+      "title": "Discover on Bandcamp",
+      "artist": "de5andre",
+      "albumTitle": "Bandcamp",
+      "albumKey": "bandcamp",
+      "year": 0,
+      "trackNumber": 1,
+      "duration": "",
+      "x": 0.5,
+      "y": 0.5,
+      "zone": "Official Bandcamp handoff",
+      "note": "Track metadata unavailable; no catalogue data was fabricated.",
+      "bandcampUrl": "https://de5andre.bandcamp.com/album/fuel-92",
+      "bandcampEmbedTrackId": "",
+      "sourcePage": "https://de5andre.bandcamp.com/album/fuel-92",
+      "accent": "#c3b4f4"
+    }
+  ]
+}

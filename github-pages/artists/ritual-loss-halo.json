@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "slug": "ritual-loss-halo",
+  "artist": "ritual loss",
+  "bandcampUrl": "https://ritualloss.bandcamp.com/album/halo",
+  "releaseTitle": "halo",
+  "dailyBatchId": "2026-09-01",
+  "status": "published",
+  "commerceAvailable": true,
+  "commerceUrl": "https://ritualloss.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-01T05:53:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "halo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "halo-4289038215",
+      "title": "halo",
+      "artist": "ritual loss",
+      "albumTitle": "halo",
+      "albumKey": "halo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:14",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ritualloss.bandcamp.com/track/halo",
+      "bandcampEmbedTrackId": "4289038215",
+      "sourcePage": "https://ritualloss.bandcamp.com/album/halo",
+      "accent": "#c3b4f4"
+    }
+  ]
+}

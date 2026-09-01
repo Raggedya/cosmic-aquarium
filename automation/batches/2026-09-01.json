@@ -1,6 +1,14 @@
 {
   "schemaVersion": 1,
-  "releases": [
+  "id": "2026-09-01",
+  "batchDate": "2026-09-01",
+  "targetCount": 20,
+  "status": "published",
+  "generatedCount": 20,
+  "publishedCount": 20,
+  "emailStatus": "pending",
+  "createdAt": "2026-09-01T05:53:36.686836+00:00",
+  "aquariums": [
     {
       "id": "bimbase-nia-malgranda-komunumo",
       "artist": "Bimbasē",
@@ -281,5 +289,7 @@
       "visualStyle": "desert",
       "status": "published"
     }
-  ]
+  ],
+  "failures": [],
+  "completedAt": "2026-09-01T05:53:55.273870+00:00"
 }

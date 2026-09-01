@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "slug": "sega",
+  "artist": "sega*",
+  "bandcampUrl": "https://funisinfinite.bandcamp.com/album/-",
+  "releaseTitle": "♡",
+  "dailyBatchId": "2026-09-01",
+  "status": "published",
+  "commerceAvailable": false,
+  "commerceUrl": null,
+  "visualStyle": "crimson",
+  "generatedAt": "2026-09-01T05:53:42Z",
+  "importStatus": "official-link-fallback",
+  "albums": [
+    {
+      "key": "bandcamp",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sega-bandcamp",
+      "title": "Discover on Bandcamp",
+      "artist": "sega*",
+      "albumTitle": "Bandcamp",
+      "albumKey": "bandcamp",
+      "year": 0,
+      "trackNumber": 1,
+      "duration": "",
+      "x": 0.5,
+      "y": 0.5,
+      "zone": "Official Bandcamp handoff",
+      "note": "Track metadata unavailable; no catalogue data was fabricated.",
+      "bandcampUrl": "https://funisinfinite.bandcamp.com/album/-",
+      "bandcampEmbedTrackId": "",
+      "sourcePage": "https://funisinfinite.bandcamp.com/album/-",
+      "accent": "#c3b4f4"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "slug": "signal-lock-selektor-lime",
+  "artist": "Signal Lock",
+  "bandcampUrl": "https://signallock.bandcamp.com/album/selektor-lime",
+  "releaseTitle": "Selektor / Lime",
+  "dailyBatchId": "2026-09-01",
+  "status": "published",
+  "commerceAvailable": true,
+  "commerceUrl": "https://signallock.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-01T05:53:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "selektor-lime",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "selektor-lime-3682117807",
+      "title": "Selektor",
+      "artist": "Signal Lock",
+      "albumTitle": "Selektor / Lime",
+      "albumKey": "selektor-lime",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://signallock.bandcamp.com/track/selektor",
+      "bandcampEmbedTrackId": "3682117807",
+      "sourcePage": "https://signallock.bandcamp.com/album/selektor-lime",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "selektor-lime-2477899320",
+      "title": "Lime",
+      "artist": "Signal Lock",
+      "albumTitle": "Selektor / Lime",
+      "albumKey": "selektor-lime",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:13",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://signallock.bandcamp.com/track/lime",
+      "bandcampEmbedTrackId": "2477899320",
+      "sourcePage": "https://signallock.bandcamp.com/album/selektor-lime",
+      "accent": "#88d7ff"
+    }
+  ]
+}

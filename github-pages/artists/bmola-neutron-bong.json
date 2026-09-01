@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "slug": "bmola-neutron-bong",
+  "artist": "Bmola",
+  "bandcampUrl": "https://bmola.bandcamp.com/album/neutron-bong-2",
+  "releaseTitle": "Neutron Bong",
+  "dailyBatchId": "2026-09-01",
+  "status": "published",
+  "commerceAvailable": true,
+  "commerceUrl": "https://bmola.bandcamp.com/",
+  "visualStyle": "thorn",
+  "generatedAt": "2026-09-01T05:53:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "neutron-bong",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "neutron-bong-4290073924",
+      "title": "NEUTRON BONG",
+      "artist": "Bmola",
+      "albumTitle": "Neutron Bong",
+      "albumKey": "neutron-bong",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bmola.bandcamp.com/track/neutron-bong",
+      "bandcampEmbedTrackId": "4290073924",
+      "sourcePage": "https://bmola.bandcamp.com/album/neutron-bong-2",
+      "accent": "#c3b4f4"
+    }
+  ]
+}
