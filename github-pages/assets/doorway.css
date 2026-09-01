@@ -208,16 +208,16 @@
 }
 .doorway-bubble:not(.doorway-bubble--anywhere) {
   opacity: 0;
-  animation: doorway-orbit-arrive var(--arrival-duration, 17.92s) cubic-bezier(.24, .42, .28, 1) var(--arrival-delay, 2s) both;
+  animation: doorway-orbit-arrive var(--arrival-duration, 17.92s) cubic-bezier(.24, .42, .28, 1) var(--arrival-delay, 3s) both;
   will-change: transform, translate, opacity;
 }
-.doorway-bubble--heavy { --arrival-delay: 2s; --arrival-duration: 17.35s; --arrival-x: -22px; }
-.doorway-bubble--dreamy { --arrival-delay: 2.55s; --arrival-duration: 19.15s; --arrival-x: 18px; }
-.doorway-bubble--electronic { --arrival-delay: 2.18s; --arrival-duration: 16.95s; --arrival-x: 24px; }
-.doorway-bubble--quiet { --arrival-delay: 3.05s; --arrival-duration: 18.45s; --arrival-x: -18px; }
-.doorway-bubble--loud { --arrival-delay: 2.72s; --arrival-duration: 17.65s; --arrival-x: 20px; }
-.doorway-bubble--dark { --arrival-delay: 3.35s; --arrival-duration: 19.45s; --arrival-x: -22px; }
-.doorway-bubble--strange { --arrival-delay: 2.92s; --arrival-duration: 18.85s; --arrival-x: 8px; }
+.doorway-bubble--heavy { --arrival-delay: 3s; --arrival-duration: 17.35s; --arrival-x: -22px; }
+.doorway-bubble--dreamy { --arrival-delay: 3.55s; --arrival-duration: 19.15s; --arrival-x: 18px; }
+.doorway-bubble--electronic { --arrival-delay: 3.18s; --arrival-duration: 16.95s; --arrival-x: 24px; }
+.doorway-bubble--quiet { --arrival-delay: 4.05s; --arrival-duration: 18.45s; --arrival-x: -18px; }
+.doorway-bubble--loud { --arrival-delay: 3.72s; --arrival-duration: 17.65s; --arrival-x: 20px; }
+.doorway-bubble--dark { --arrival-delay: 4.35s; --arrival-duration: 19.45s; --arrival-x: -22px; }
+.doorway-bubble--strange { --arrival-delay: 3.92s; --arrival-duration: 18.85s; --arrival-x: 8px; }
 .doorway-bubble--anywhere::before {
   inset: 2.5%;
   border-top-color: rgba(255, 255, 255, .38);
