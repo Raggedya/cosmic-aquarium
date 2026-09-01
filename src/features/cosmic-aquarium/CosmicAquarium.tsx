@@ -55,12 +55,7 @@ const captureDurationMs = 430;
 const serviceBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
 
 const themedSpecies: Record<string, Species[]> = {
-  crimson: Array<Species>(14).fill('rose'),
-  paper: ['cosmos', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos'],
-  thorn: Array<Species>(14).fill('rose'),
   violet: ['anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone'],
-  neon: ['cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'anemone', 'cosmos', 'anemone', 'cosmos'],
-  desert: ['poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'poppy', 'cosmos', 'poppy', 'cosmos', 'poppy'],
 };
 
 function speciesForStyle(style: string | undefined, index: number, fallback: Species): Species {

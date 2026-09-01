@@ -4,6 +4,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const manifestsDirectory = path.resolve('github-pages', 'artists');
+const approvedVisualStyles = new Set(['cosmic', 'violet']);
 
 test('every edition makes an explicit, safe commerce decision', async () => {
   const filenames = (await readdir(manifestsDirectory)).filter((name) => name.endsWith('.json'));
@@ -58,4 +59,22 @@ test('generated aquariums can initialise their page-level Buy Music action', asy
   const script = await readFile(path.resolve('github-pages', 'assets', 'site.js'), 'utf8');
   assert.match(script, /document\.querySelector\('\.aquarium-action--buy'\)/);
   assert.doesNotMatch(script, /root\.querySelector\('\.aquarium-action--buy'\)/);
+});
+
+test('only Cosmic Bloom and Violet Haze can be assigned', async () => {
+  const batch = JSON.parse(await readFile(path.resolve('automation', 'batches', '2026-09-01.json'), 'utf8'));
+  for (const [index, entry] of (batch.aquariums ?? []).entries()) {
+    const expected = index % 2 === 0 ? 'cosmic' : 'violet';
+    assert.equal(entry.visualStyle, expected, entry.id);
+    assert.ok(approvedVisualStyles.has(entry.visualStyle), entry.id);
+    const manifest = JSON.parse(await readFile(path.join(manifestsDirectory, entry.id + '.json'), 'utf8'));
+    assert.equal(manifest.visualStyle, expected, entry.id);
+  }
+
+  const creator = await readFile(path.resolve('scripts', 'create_artist.py'), 'utf8');
+  const workflow = await readFile(path.resolve('.github', 'workflows', 'create-artist.yml'), 'utf8');
+  assert.match(creator, /VISUAL_STYLES = \("cosmic", "violet"\)/);
+  for (const retired of ['crimson', 'paper', 'thorn', 'neon', 'desert']) {
+    assert.doesNotMatch(workflow, new RegExp('^\\s*- ' + retired + '$', 'm'));
+  }
 });

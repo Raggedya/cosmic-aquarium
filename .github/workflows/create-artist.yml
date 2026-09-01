@@ -18,12 +18,7 @@ on:
         type: choice
         options:
           - cosmic
-          - crimson
-          - paper
-          - thorn
           - violet
-          - neon
-          - desert
       cache_key:
         description: Unique edition key used to bypass stale mobile browser caches
         required: false

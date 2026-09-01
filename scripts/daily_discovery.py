@@ -68,9 +68,9 @@ def write_json(path: Path, value: Any) -> None:
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
-def style_for(item: dict[str, Any]) -> str:
-    seed = str(item.get("item_id") or item.get("item_url") or "cosmic")
-    return VISUAL_STYLES[int(hashlib.sha256(seed.encode()).hexdigest()[:8], 16) % len(VISUAL_STYLES)]
+def style_for(sequence_index: int) -> str:
+    """Alternate strictly between Cosmic Bloom and Violet Haze."""
+    return VISUAL_STYLES[sequence_index % len(VISUAL_STYLES)]
 
 
 def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = None) -> dict[str, Any]:
@@ -131,7 +131,7 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
             result = create_artist(
                 artist,
                 url,
-                style_for(item),
+                style_for(len(batch["aquariums"])),
                 "https://raggedya.github.io/cosmic-aquarium",
                 verify_qr=False,
                 cache_key=batch_date.replace("-", ""),

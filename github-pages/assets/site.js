@@ -40,12 +40,7 @@
   const baseSpecies = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos','anemone','cosmos','poppy','anemone'];
   const styleSpecies = {
     cosmic: baseSpecies,
-    crimson: ['rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose'],
-    paper: ['cosmos','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone','cosmos'],
-    thorn: ['rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose','rose'],
-    violet: ['anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone'],
-    neon: ['cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','anemone','cosmos','anemone','cosmos'],
-    desert: ['poppy','cosmos','poppy','poppy','cosmos','poppy','poppy','cosmos','poppy','poppy','cosmos','poppy','cosmos','poppy']
+    violet: ['anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','anemone','cosmos','cosmos','anemone','cosmos','anemone']
   };
   const depths = ['near','far','mid','near','near','far','mid','foreground','far','mid','far','mid','far','near'];
   const positions = [
