@@ -36,12 +36,24 @@ test('doorway motion is reduced-motion safe and softly collision aware', async (
   assert.match(runtime, /matchMedia\('\(prefers-reduced-motion: reduce\)'\)/);
   assert.match(runtime, /overlap/);
   assert.match(runtime, /requestAnimationFrame/);
+  assert.match(runtime, /body\.cx=body\.node\.offsetLeft/);
+  assert.match(runtime, /body\.cy=body\.node\.offsetTop/);
   assert.match(runtime, /amplitude=body\.anchor\?\.0011:\.0032/);
   assert.match(runtime, /limit=body\.anchor\?4:14/);
   assert.equal((component.match(/size: 177/g) || []).length, 5);
   assert.equal((component.match(/size: 168/g) || []).length, 2);
   assert.equal((template.match(/--bubble-size:177px/g) || []).length, 5);
   assert.equal((template.match(/--bubble-size:168px/g) || []).length, 2);
+});
+
+test('doorway introduces the hero before the surrounding worlds rise into place', async () => {
+  const css = await read('app/doorway.css');
+  assert.match(css, /doorway-anchor-arrive 1\.9s/);
+  assert.match(css, /doorway-orbit-arrive var\(--arrival-duration, 6\.2s\)/);
+  assert.match(css, /--arrival-delay: 2s/);
+  assert.match(css, /translate: 0 112vh/);
+  assert.match(css, /100% \{ translate: 0 0; opacity: 1; \}/);
+  assert.match(css, /prefers-reduced-motion[\s\S]+opacity: 1; translate: none/);
 });
 
 test('water classification is multi-label, valid and deterministic', () => {

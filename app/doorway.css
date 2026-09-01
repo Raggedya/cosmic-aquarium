@@ -202,8 +202,21 @@
 .doorway-bubble--anywhere {
   z-index: 4;
   width: clamp(178px, 49vw, 202px);
+  animation: doorway-anchor-arrive 1.9s cubic-bezier(.2, .72, .24, 1) both;
   filter: drop-shadow(0 8px 18px rgba(0, 0, 12, .82)) drop-shadow(0 0 21px rgba(73, 52, 222, .26));
 }
+.doorway-bubble:not(.doorway-bubble--anywhere) {
+  opacity: 0;
+  animation: doorway-orbit-arrive var(--arrival-duration, 6.2s) cubic-bezier(.16, .72, .2, 1) var(--arrival-delay, 2s) both;
+  will-change: transform, translate, opacity;
+}
+.doorway-bubble--heavy { --arrival-delay: 2s; --arrival-duration: 6.25s; }
+.doorway-bubble--dreamy { --arrival-delay: 2.12s; --arrival-duration: 6.45s; }
+.doorway-bubble--electronic { --arrival-delay: 2.28s; --arrival-duration: 6.05s; }
+.doorway-bubble--quiet { --arrival-delay: 2.38s; --arrival-duration: 5.9s; }
+.doorway-bubble--loud { --arrival-delay: 2.48s; --arrival-duration: 5.85s; }
+.doorway-bubble--dark { --arrival-delay: 2.62s; --arrival-duration: 6.2s; }
+.doorway-bubble--strange { --arrival-delay: 2.76s; --arrival-duration: 6.1s; }
 .doorway-bubble--anywhere::before {
   inset: 2.5%;
   border-top-color: rgba(255, 255, 255, .38);
@@ -279,6 +292,19 @@
   55% { transform: scale(1.016) translate3d(.35%, .15%, 0); filter: brightness(1.025) saturate(1.025); }
   100% { transform: scale(1.008) translate3d(-.1%, .35%, 0); filter: brightness(1.01) saturate(1.01); }
 }
+@keyframes doorway-anchor-arrive {
+  0% { scale: 1.18; filter: brightness(1.08) drop-shadow(0 10px 27px rgba(0, 0, 12, .88)) drop-shadow(0 0 38px rgba(101, 76, 245, .38)); }
+  58% { scale: 1.035; }
+  100% { scale: 1; filter: drop-shadow(0 8px 18px rgba(0, 0, 12, .82)) drop-shadow(0 0 21px rgba(73, 52, 222, .26)); }
+}
+@keyframes doorway-orbit-arrive {
+  0% { translate: 0 112vh; opacity: 0; }
+  9% { opacity: .16; }
+  23% { opacity: .7; }
+  72% { translate: 0 -9px; opacity: 1; }
+  88% { translate: 0 3px; opacity: 1; }
+  100% { translate: 0 0; opacity: 1; }
+}
 @keyframes doorway-enter { to { filter: brightness(1.2) drop-shadow(0 0 38px rgba(122, 93, 255, .53)); } }
 @media (min-width: 600px) {
   .universe-doorway::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(0, 0, 0, .65), transparent calc(50% - 245px), transparent calc(50% + 245px), rgba(0, 0, 0, .65)); pointer-events: none; }
@@ -299,6 +325,6 @@
 }
 @media (prefers-reduced-motion: reduce) {
   .doorway-nebula, .doorway-bubble, .doorway-bubble__world { animation: none !important; }
-  .doorway-bubble { --drift-x: 0px !important; --drift-y: 0px !important; transition: filter .16s ease, opacity .16s ease, scale .16s ease; }
+  .doorway-bubble { --drift-x: 0px !important; --drift-y: 0px !important; opacity: 1; translate: none; transition: filter .16s ease, opacity .16s ease, scale .16s ease; }
   .doorway-bubble.is-selected { animation: none !important; }
 }

@@ -57,12 +57,10 @@ export function UniverseDoorway() {
       anchor: node.dataset.water === 'anywhere',
     }));
     const measure = () => {
-      const fieldRect = field.getBoundingClientRect();
       bodies.forEach((body) => {
-        const rect = body.node.getBoundingClientRect();
-        body.centreX = rect.left + rect.width / 2 - fieldRect.left - body.x;
-        body.centreY = rect.top + rect.height / 2 - fieldRect.top - body.y;
-        body.radius = rect.width * .43;
+        body.centreX = body.node.offsetLeft;
+        body.centreY = body.node.offsetTop;
+        body.radius = body.node.offsetWidth * .43;
       });
     };
     measure();
