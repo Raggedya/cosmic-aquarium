@@ -20,6 +20,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageTk
 
 REPOSITORY = "Raggedya/cosmic-aquarium"
 WORKFLOW = "create-artist.yml"
+STATUS_WORKFLOW = "set-aquarium-status.yml"
 DELIVERY_REPOSITORY = "Raggedya/groove-vultures-deep-cuts-fan-challenge"
 DELIVERY_WORKFLOW = "cosmic-aquarium-delivery.yml"
 PAGES_BASE = "https://raggedya.github.io/cosmic-aquarium"
@@ -65,6 +66,8 @@ class CosmicAquariumStudio(tk.Tk):
         self._images: list[ImageTk.PhotoImage] = []
         self._latest_url = ""
         self._busy = False
+        self._library_busy = False
+        self._library_entries: list[dict] = []
         self.visual_style = "cosmic"
         self.theme_canvases: dict[str, tk.Canvas] = {}
         self.theme_images: list[ImageTk.PhotoImage] = []
@@ -76,6 +79,7 @@ class CosmicAquariumStudio(tk.Tk):
         self.canvas.bind("<Configure>", self._draw_background)
 
         shell = tk.Frame(self.canvas, bg=INK)
+        self.shell = shell
         self.shell_window = self.canvas.create_window(0, 0, anchor="nw", window=shell)
         shell.grid_columnconfigure(0, weight=1)
         shell.grid_columnconfigure(1, weight=0)
@@ -91,8 +95,13 @@ class CosmicAquariumStudio(tk.Tk):
         mark.create_line(14, 27, 28, 15, fill="#a9a3c6")
         tk.Label(brand, text="COSMIC AQUARIA", bg=INK, fg=PAPER, font=("Segoe UI", 11), padx=15).pack(side="left")
         tk.Label(brand, text="CREATOR", bg=INK, fg=MUTED, font=("Segoe UI", 8)).pack(side="left")
+        self.library_nav = tk.Button(brand, text="LIBRARY", command=self._show_library, bg=INK, fg=MUTED, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=12, cursor="hand2")
+        self.library_nav.pack(side="right")
+        self.creator_nav = tk.Button(brand, text="CREATE", command=self._show_creator, bg=INK, fg=LAVENDER, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=12, cursor="hand2")
+        self.creator_nav.pack(side="right")
 
         content = tk.Frame(shell, bg=INK)
+        self.creator_content = content
         content.grid(row=1, column=0, sticky="nsew", padx=(82, 38), pady=(58, 36))
         content.grid_columnconfigure(0, weight=1)
 
@@ -128,6 +137,7 @@ class CosmicAquariumStudio(tk.Tk):
         self.result_row.grid_remove()
 
         chooser = tk.Frame(shell, width=366, bg=INK)
+        self.creator_chooser = chooser
         chooser.grid(row=1, column=1, sticky="n", padx=(0, 54), pady=(43, 20))
         chooser.grid_propagate(False)
         chooser.configure(height=610)
@@ -144,12 +154,161 @@ class CosmicAquariumStudio(tk.Tk):
             self._draw_theme_thumbnail(tile, theme)
         self._select_style("cosmic", announce=False)
 
+        self._build_library(shell)
+
         footer = tk.Frame(shell, bg=INK)
         footer.grid(row=2, column=0, columnspan=2, sticky="ew", padx=58, pady=(0, 28))
         tk.Label(footer, text="© CLEARLIGHT CREATIVE 2026", bg=INK, fg="#5d5871", font=("Segoe UI", 7)).pack(side="left")
         tk.Label(footer, text="GITHUB PAGES  ·  BANDCAMP  ·  SCAN VERIFIED", bg=INK, fg="#5d5871", font=("Segoe UI", 7)).pack(side="right")
 
         self.artist.focus_set()
+
+    def _build_library(self, shell: tk.Frame) -> None:
+        library = tk.Frame(shell, bg=INK)
+        self.library_view = library
+        library.grid(row=1, column=0, columnspan=2, sticky="nsew", padx=82, pady=(42, 30))
+        library.grid_columnconfigure(0, weight=1)
+        library.grid_rowconfigure(3, weight=1)
+
+        heading = tk.Frame(library, bg=INK)
+        heading.grid(row=0, column=0, sticky="ew")
+        tk.Label(heading, text="AQUARIUM LIBRARY", bg=INK, fg=LAVENDER, font=("Segoe UI Semibold", 9)).pack(side="left")
+        tk.Button(heading, text="REFRESH", command=self._start_load_library, bg=INK, fg=MUTED, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), cursor="hand2").pack(side="right")
+        tk.Label(library, text="Everything begins published. Switch any Aquarium off whenever you choose.", bg=INK, fg=PAPER, font=("Georgia", 22), anchor="w").grid(row=1, column=0, sticky="ew", pady=(16, 7))
+        self.library_status = tk.Label(library, text="", bg=INK, fg=MUTED, font=("Segoe UI", 9), anchor="w")
+        self.library_status.grid(row=2, column=0, sticky="ew", pady=(0, 18))
+
+        list_shell = tk.Frame(library, bg=INK, highlightbackground=LINE, highlightthickness=1)
+        list_shell.grid(row=3, column=0, sticky="nsew")
+        list_shell.grid_columnconfigure(0, weight=1)
+        list_shell.grid_rowconfigure(0, weight=1)
+        self.library_canvas = tk.Canvas(list_shell, bg=INK, highlightthickness=0)
+        scrollbar = tk.Scrollbar(list_shell, orient="vertical", command=self.library_canvas.yview)
+        self.library_canvas.configure(yscrollcommand=scrollbar.set)
+        self.library_canvas.grid(row=0, column=0, sticky="nsew")
+        scrollbar.grid(row=0, column=1, sticky="ns")
+        self.library_list = tk.Frame(self.library_canvas, bg=INK)
+        self.library_window = self.library_canvas.create_window(0, 0, anchor="nw", window=self.library_list)
+        self.library_list.bind("<Configure>", lambda _event: self.library_canvas.configure(scrollregion=self.library_canvas.bbox("all")))
+        self.library_canvas.bind("<Configure>", lambda event: self.library_canvas.itemconfigure(self.library_window, width=event.width))
+        self.library_view.grid_remove()
+
+    def _show_creator(self) -> None:
+        self.library_view.grid_remove()
+        self.creator_content.grid()
+        self.creator_chooser.grid()
+        self.creator_nav.configure(fg=LAVENDER)
+        self.library_nav.configure(fg=MUTED)
+        self.artist.focus_set()
+
+    def _show_library(self) -> None:
+        self.creator_content.grid_remove()
+        self.creator_chooser.grid_remove()
+        self.library_view.grid()
+        self.creator_nav.configure(fg=MUTED)
+        self.library_nav.configure(fg=LAVENDER)
+        self._start_load_library()
+
+    def _start_load_library(self) -> None:
+        if self._library_busy:
+            return
+        self._library_busy = True
+        self.library_status.configure(text="REFRESHING LIBRARY…", fg=LAVENDER)
+        threading.Thread(target=self._load_library, daemon=True).start()
+
+    def _load_library(self) -> None:
+        try:
+            gh = self._github_cli()
+            process = subprocess.run([
+                gh, "api", "-H", "Accept: application/vnd.github.raw+json",
+                f"repos/{REPOSITORY}/contents/github-pages/aquariums.json",
+            ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            catalogue = json.loads(process.stdout)
+            entries = catalogue.get("aquariums", []) if isinstance(catalogue, dict) else []
+            self.after(0, lambda: self._render_library(entries))
+        except Exception as error:
+            self.after(0, lambda message=str(error): self._library_error(message))
+
+    def _render_library(self, entries: list[dict]) -> None:
+        self._library_busy = False
+        self._library_entries = sorted(entries, key=lambda entry: str(entry.get("artist", "")).casefold())
+        for child in self.library_list.winfo_children():
+            child.destroy()
+        if not self._library_entries:
+            empty = tk.Frame(self.library_list, bg=INK, padx=34, pady=64)
+            empty.pack(fill="both", expand=True)
+            tk.Label(empty, text="YOUR LIBRARY IS EMPTY", bg=INK, fg=PAPER, font=("Georgia", 23)).pack()
+            tk.Label(empty, text="Create an Aquarium and it will appear here, already published.", bg=INK, fg=MUTED, font=("Segoe UI", 10), pady=12).pack()
+            self.library_status.configure(text="0 AQUARIUMS  ·  READY FOR A FRESH START", fg=MUTED)
+            return
+        published = sum(1 for entry in self._library_entries if entry.get("status", "published") == "published")
+        self.library_status.configure(text=f"{len(self._library_entries)} AQUARIUMS  ·  {published} PUBLISHED", fg=MUTED)
+        for entry in self._library_entries:
+            self._library_row(entry)
+
+    def _library_row(self, entry: dict) -> None:
+        row = tk.Frame(self.library_list, bg="#0b0b24", padx=20, pady=14)
+        row.pack(fill="x", padx=1, pady=(1, 0))
+        row.grid_columnconfigure(0, weight=1)
+        title = str(entry.get("artist") or entry.get("slug") or "Untitled")
+        release = str(entry.get("release") or "Bandcamp")
+        tk.Label(row, text=title.upper(), bg="#0b0b24", fg=PAPER, font=("Segoe UI Semibold", 10), anchor="w").grid(row=0, column=0, sticky="w")
+        tk.Label(row, text=release, bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=1, column=0, sticky="w", pady=(4, 0))
+        url = str(entry.get("url") or "")
+        tk.Button(row, text="OPEN", command=lambda: webbrowser.open(url), bg="#0b0b24", fg=MUTED, activebackground="#0b0b24", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=18, cursor="hand2").grid(row=0, column=1, rowspan=2)
+        published = entry.get("status", "published") == "published"
+        toggle = tk.Button(
+            row, text="ON" if published else "OFF",
+            command=lambda item=entry: self._start_toggle(item),
+            bg="#c7b8f4" if published else "#26243b", fg="#09091e" if published else MUTED,
+            activebackground="#ded4ff", activeforeground="#09091e", relief="flat", bd=0,
+            font=("Segoe UI Semibold", 8), width=7, pady=7, cursor="hand2",
+        )
+        toggle.grid(row=0, column=2, rowspan=2, padx=(8, 0))
+
+    def _start_toggle(self, entry: dict) -> None:
+        if self._library_busy:
+            return
+        self._library_busy = True
+        published = entry.get("status", "published") == "published"
+        next_published = not published
+        self.library_status.configure(text=("PUBLISHING " if next_published else "UNPUBLISHING ") + str(entry.get("artist", "AQUARIUM")).upper() + "…", fg=LAVENDER)
+        threading.Thread(target=self._run_toggle, args=(entry, next_published), daemon=True).start()
+
+    def _run_toggle(self, entry: dict, published: bool) -> None:
+        try:
+            gh = self._github_cli()
+            started = dt.datetime.now(dt.timezone.utc)
+            subprocess.run([
+                gh, "workflow", "run", STATUS_WORKFLOW, "--repo", REPOSITORY,
+                "-f", f"slug={entry['slug']}", "-f", f"published={'true' if published else 'false'}",
+            ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            run_id = self._find_run(gh, started, REPOSITORY, STATUS_WORKFLOW)
+            if self._watch_run(gh, run_id, REPOSITORY) != "success":
+                raise RuntimeError(self._workflow_failure(gh, run_id, REPOSITORY, "The publish setting could not be changed."))
+            sync_started = dt.datetime.now(dt.timezone.utc)
+            subprocess.run([
+                gh, "workflow", "run", DELIVERY_WORKFLOW, "--repo", DELIVERY_REPOSITORY,
+                "-f", "operation=sync_catalogue",
+            ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            sync_id = self._find_run(gh, sync_started, DELIVERY_REPOSITORY, DELIVERY_WORKFLOW)
+            if self._watch_run(gh, sync_id, DELIVERY_REPOSITORY) != "success":
+                raise RuntimeError(self._workflow_failure(gh, sync_id, DELIVERY_REPOSITORY, "The page changed, but the discovery service has not caught up yet."))
+            self._load_library()
+        except Exception as error:
+            self.after(0, lambda message=str(error): self._library_error(message))
+
+    def _library_error(self, message: str) -> None:
+        self._library_busy = False
+        self.library_status.configure(text="LIBRARY UPDATE PAUSED", fg="#e995a5")
+        messagebox.showerror("Cosmic Aquaria Library", message)
+
+    def _github_cli(self) -> str:
+        gh = shutil.which("gh")
+        if not gh:
+            raise RuntimeError("GitHub is not connected on this computer yet.")
+        subprocess.run([gh, "auth", "status"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+        return gh
 
     def _field(self, parent: tk.Widget, row: int, label: str, placeholder: str) -> tk.Entry:
         frame = tk.Frame(parent, bg=INK)
@@ -263,10 +422,7 @@ class CosmicAquariumStudio(tk.Tk):
 
     def _run_create(self, title: str, bandcamp_url: str, recipient: str, visual_style: str, started: dt.datetime) -> None:
         try:
-            gh = shutil.which("gh")
-            if not gh:
-                raise RuntimeError("GitHub CLI is not installed. Install it once, then sign in with gh auth login.")
-            subprocess.run([gh, "auth", "status"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            gh = self._github_cli()
             cache_key = started.strftime("%Y%m%d%H%M%S")
             subprocess.run([
                 gh, "workflow", "run", WORKFLOW, "--repo", REPOSITORY,
@@ -280,10 +436,21 @@ class CosmicAquariumStudio(tk.Tk):
             base_url = PAGES_BASE.rstrip("/") + "/" + slugify(title) + "/"
             url = base_url + "?edition=" + cache_key
             qr_url = base_url + "cosmic-aquarium-qr.png?edition=" + cache_key
+            self.after(0, lambda: self.status.configure(text="PUBLISHED  ·  UPDATING LIBRARY", fg=LAVENDER))
+            sync_started = dt.datetime.now(dt.timezone.utc)
+            subprocess.run([
+                gh, "workflow", "run", DELIVERY_WORKFLOW, "--repo", DELIVERY_REPOSITORY,
+                "-f", "operation=sync_catalogue",
+            ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            sync_run_id = self._find_run(gh, sync_started, DELIVERY_REPOSITORY, DELIVERY_WORKFLOW)
+            sync_conclusion = self._watch_run(gh, sync_run_id, DELIVERY_REPOSITORY)
+            if sync_conclusion != "success":
+                raise RuntimeError(self._workflow_failure(gh, sync_run_id, DELIVERY_REPOSITORY, "The Aquarium was published, but the library has not caught up yet."))
             self.after(0, lambda: self.status.configure(text="PUBLISHED  ·  SENDING EMAIL", fg=LAVENDER))
             delivery_started = dt.datetime.now(dt.timezone.utc)
             subprocess.run([
                 gh, "workflow", "run", DELIVERY_WORKFLOW, "--repo", DELIVERY_REPOSITORY,
+                "-f", "operation=deliver_artist",
                 "-f", f"artist_title={title}", "-f", f"page_url={url}", "-f", f"qr_url={qr_url}", "-f", f"recipient_email={recipient}",
             ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
             delivery_run_id = self._find_run(gh, delivery_started, DELIVERY_REPOSITORY, DELIVERY_WORKFLOW)
@@ -292,7 +459,7 @@ class CosmicAquariumStudio(tk.Tk):
                 raise RuntimeError(self._workflow_failure(gh, delivery_run_id, DELIVERY_REPOSITORY, "The page was published, but email delivery paused."))
             self.after(0, lambda: self._finish_success(url))
         except Exception as error:
-            self.after(0, lambda: self._finish_error(str(error)))
+            self.after(0, lambda message=str(error): self._finish_error(message))
 
     def _find_run(self, gh: str, started: dt.datetime, repository: str, workflow: str) -> int:
         for _ in range(24):
@@ -371,7 +538,7 @@ if __name__ == "__main__":
     application = CosmicAquariumStudio()
     if "--smoke-test" in sys.argv:
         application.update_idletasks()
-        if application.artist.winfo_exists() != 1 or application.create_button.cget("text") != "CREATE  ✦" or len(application.theme_canvases) != 7:
+        if application.artist.winfo_exists() != 1 or application.create_button.cget("text") != "CREATE  ✦" or len(application.theme_canvases) != 2 or application.library_view.winfo_exists() != 1:
             raise RuntimeError("Desktop interface did not initialise correctly")
         application.destroy()
         print("Cosmic Aquaria Studio smoke test passed.")

@@ -1,7 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
-import { immigrantUnionAlbums, immigrantUnionSongs } from '../src/data/immigrant-union-catalogue.ts';
 
 const root = path.resolve(import.meta.dirname,'..');
 const pages = path.join(root,'github-pages');
@@ -15,27 +14,6 @@ await fs.mkdir(path.join(pages,'artists'),{recursive:true});
 await fs.writeFile(path.join(pages,'assets','site.css'),reset+css);
 for (const name of ['cosmos.png','poppy.png','anemone.png','rose.png','thorn.png']) {
   await fs.copyFile(path.join(root,'public','flowers',name),path.join(pages,'assets','flowers',name));
-}
-const manifest = {
-  schemaVersion: 1,
-  slug: 'immigrant-union',
-  artist: 'Immigrant Union',
-  bandcampUrl: 'https://immigrantunionmusic.bandcamp.com/',
-  commerceAvailable: true,
-  commerceUrl: 'https://immigrantunionmusic.bandcamp.com/',
-  visualStyle: 'cosmic',
-  albums: immigrantUnionAlbums.map(({key,color})=>({key,color})),
-  tracks: immigrantUnionSongs,
-};
-const defaultManifestPath=path.join(pages,'artists','immigrant-union.json');
-try {
-  const existing = JSON.parse(await fs.readFile(defaultManifestPath,'utf8'));
-  if (!existing.visualStyle) {
-    existing.visualStyle = 'cosmic';
-    await fs.writeFile(defaultManifestPath,JSON.stringify(existing,null,2)+'\n');
-  }
-} catch {
-  await fs.writeFile(defaultManifestPath,JSON.stringify(manifest,null,2)+'\n');
 }
 const artistManifestFiles = (await fs.readdir(path.join(pages,'artists')))
   .filter((name) => name.endsWith('.json'))
@@ -63,7 +41,7 @@ for (const filename of artistManifestFiles) {
   }
 }
 await fs.writeFile(path.join(pages,'aquariums.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),aquariums:aquariumRegistry},null,2)+'\n');
-await fs.writeFile(path.join(pages,'index.html'),render('immigrant-union','Immigrant Union'));
+await fs.writeFile(path.join(pages,'index.html'),renderLanding(aquariumRegistry));
 console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s).');
 
 async function writeArtist(slug,artist){
@@ -73,6 +51,11 @@ async function writeArtist(slug,artist){
 }
 function render(slug,artist){
   return template.replaceAll('{{SLUG}}',escapeAttribute(slug)).replaceAll('{{ARTIST}}',escapeHtml(artist)).replaceAll('{{ARTIST_UPPER}}',escapeHtml(artist.toUpperCase())).replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
+}
+function renderLanding(registry){
+  const published=registry.filter(item=>item.status==='published').length;
+  const message=published ? published+' living Aquarium'+(published===1?' is':'s are')+' currently published.' : 'The library is ready for its first Aquarium.';
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#07071d"><title>Cosmic Aquaria</title><style>*{box-sizing:border-box}html,body{height:100%;margin:0}body{display:grid;place-items:center;background:radial-gradient(circle at 50% 42%,#17103b,#07071d 58%,#02030b);color:#f5f3fb;font-family:Inter,system-ui;text-align:center}main{padding:36px}i{display:block;width:46px;height:46px;margin:0 auto 28px;border:1px solid #8d88aa;border-radius:50%;font-style:normal;line-height:43px;color:#aaa4c8}h1{margin:0;padding-left:.32em;font-size:15px;font-weight:500;letter-spacing:.32em}p{margin:16px 0 0;color:#9993ad;font-size:10px;letter-spacing:.12em}</style></head><body><main><i>✧</i><h1>COSMIC AQUARIA</h1><p>${message}</p></main></body></html>`;
 }
 function escapeHtml(value){return String(value).replace(/[&<>]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[char]));}
 function escapeAttribute(value){return escapeHtml(value).replaceAll('"','&quot;');}

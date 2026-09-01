@@ -80,6 +80,8 @@ jobs:
               for key in ("slug","artist","page_url","qr_path","tracks","import_status","visual_style"):
                   print(f"{key}={result[key]}",file=output)
           PY
+      - name: Refresh the published catalogue
+        run: node --experimental-strip-types scripts/build-github-pages.mjs
       - name: Commit generated edition
         shell: bash
         run: |

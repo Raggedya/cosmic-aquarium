@@ -52,7 +52,7 @@ jobs:
           const catalogue = await fetch('https://raggedya.github.io/cosmic-aquarium/aquariums.json', { cache: 'no-store' }).then(r => r.json());
           const sync = await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/sync', {
             method: 'POST', headers: { authorization: `Bearer ${process.env.ADMIN_TOKEN}`, 'content-type': 'application/json' },
-            body: JSON.stringify({ aquariums: catalogue.aquariums || [], batch }),
+            body: JSON.stringify({ aquariums: catalogue.aquariums || [], batch, fullReplace: true }),
           });
           if (!sync.ok) throw new Error(`Catalogue sync failed: ${await sync.text()}`);
           const rows = batch.aquariums.map((item,index) => {

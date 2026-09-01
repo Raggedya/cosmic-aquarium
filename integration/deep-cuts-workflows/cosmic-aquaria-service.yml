@@ -83,10 +83,10 @@ jobs:
           ADMIN_TOKEN: ${{ secrets.DEEP_CUTS_ADMIN_TOKEN }}
         run: |
           node <<'NODE'
-          const catalogue = await fetch('https://raggedya.github.io/cosmic-aquarium/aquariums.json', { cache: 'no-store' }).then(r => r.json());
+          const catalogue = await fetch('https://raw.githubusercontent.com/Raggedya/cosmic-aquarium/main/github-pages/aquariums.json', { cache: 'no-store' }).then(r => r.json());
           const response = await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/sync', {
             method: 'POST', headers: { authorization: `Bearer ${process.env.ADMIN_TOKEN}`, 'content-type': 'application/json' },
-            body: JSON.stringify({ aquariums: catalogue.aquariums || [] }),
+            body: JSON.stringify({ aquariums: catalogue.aquariums || [], fullReplace: true }),
           });
           if (!response.ok) throw new Error(await response.text());
           console.log(await response.text());

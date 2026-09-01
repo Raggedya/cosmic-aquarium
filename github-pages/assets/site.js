@@ -57,6 +57,7 @@
   let manifest;
   let selectedButton;
   let trackDeck = [];
+  let secondaryActionTimer = 0;
   const field = root.querySelector('.creature-field');
   const player = root.querySelector('.living-player');
   const status = root.querySelector('[role="status"]');
@@ -69,6 +70,10 @@
   player.querySelector('.player-membrane').addEventListener('animationstart',event => {
     if (event.animationName !== 'player-flower-drift-away') return;
     titlePrompt.textContent = 'TOUCH SOMETHING.';
+    root.classList.add('show-buy-action');
+    buyAction.classList.add('is-visible');
+    clearTimeout(secondaryActionTimer);
+    secondaryActionTimer = setTimeout(() => root.classList.add('show-secondary-actions'),4000);
     announce('Touch another flower.');
   });
 
@@ -78,6 +83,7 @@
       return response.json();
     })
     .then(data => {
+      if (data.status && data.status !== 'published') throw new Error('Artist edition unavailable');
       manifest = data;
       root.dataset.theme = styleSpecies[data.visualStyle] ? data.visualStyle : 'cosmic';
       document.querySelector('.cosmic-title h1').textContent = data.artist.toUpperCase();
@@ -228,6 +234,9 @@
   }
 
   function openTrack(button,track) {
+    clearTimeout(secondaryActionTimer);
+    root.classList.remove('show-buy-action','show-secondary-actions');
+    buyAction.classList.remove('is-visible');
     selectedButton?.classList.remove('is-selected');
     selectedButton = button;
     button.classList.add('is-selected');
@@ -263,6 +272,9 @@
   }
 
   player.querySelector('.release-current').addEventListener('click',() => {
+    clearTimeout(secondaryActionTimer);
+    root.classList.remove('show-buy-action','show-secondary-actions');
+    buyAction.classList.remove('is-visible');
     player.hidden = true;
     player.classList.remove('is-active');
     root.classList.remove('has-player');

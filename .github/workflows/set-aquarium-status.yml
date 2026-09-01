@@ -1,0 +1,75 @@
+name: Set Cosmic Aquaria publication status
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: Aquarium slug
+        required: true
+        type: string
+      published:
+        description: Publish this Aquarium
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cosmic-aquarium-publishing
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Apply publication setting
+        env:
+          AQUARIUM_SLUG: ${{ inputs.slug }}
+          AQUARIUM_PUBLISHED: ${{ inputs.published }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const slug=String(process.env.AQUARIUM_SLUG||'');
+          if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) throw new Error('Invalid Aquarium slug.');
+          const filename=path.join('github-pages','artists',slug+'.json');
+          if(!fs.existsSync(filename)) throw new Error('Aquarium does not exist.');
+          const manifest=JSON.parse(fs.readFileSync(filename,'utf8'));
+          manifest.status=String(process.env.AQUARIUM_PUBLISHED).toLowerCase()==='true'?'published':'disabled';
+          manifest.statusUpdatedAt=new Date().toISOString();
+          fs.writeFileSync(filename,JSON.stringify(manifest,null,2)+'\n');
+          NODE
+      - name: Refresh catalogue and page assets
+        run: node --experimental-strip-types scripts/build-github-pages.mjs
+      - name: Save publication setting
+        run: |
+          git config user.name "Cosmic Aquaria Library"
+          git config user.email "cosmic-aquaria@users.noreply.github.com"
+          git add github-pages
+          if git diff --cached --quiet; then
+            echo "Publication setting already current."
+          else
+            git commit -m "Set ${{ inputs.slug }} publication status"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: github-pages
+      - name: Publish refreshed library
+        id: deployment
+        uses: actions/deploy-pages@v4

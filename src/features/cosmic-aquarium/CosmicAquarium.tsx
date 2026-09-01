@@ -91,6 +91,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedTrack, setSelectedTrack] = useState<ArtistManifest['tracks'][number] | null>(null);
   const [playerDeparting, setPlayerDeparting] = useState(false);
+  const [secondaryActionsVisible, setSecondaryActionsVisible] = useState(false);
   const [touchOrigin, setTouchOrigin] = useState({ x: 50, y: 50 });
   const [announcement, setAnnouncement] = useState('A living aquarium surrounds you. Touch an unknown creature to discover its song.');
 
@@ -105,6 +106,15 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const selectedFlower = '/flowers/' + selectedSpecies + '.png';
   const selectedEmbed = selectedTrack ? officialTrackEmbedUrl(selectedTrack.bandcampEmbedTrackId) : null;
   const selectedAccent = selectedTrack ? selectedTrack.accent ?? albumAccent(manifest, selectedTrack.albumKey) : '#b9a7ff';
+
+  useEffect(() => {
+    if (!playerDeparting) {
+      setSecondaryActionsVisible(false);
+      return;
+    }
+    const timer = window.setTimeout(() => setSecondaryActionsVisible(true), 4000);
+    return () => window.clearTimeout(timer);
+  }, [playerDeparting]);
 
   function recordEvent(eventType: string, details: Record<string, unknown> = {}) {
     if (!analyticsSession.current) return;
@@ -392,8 +402,22 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         </p>
       </header>
 
+      {manifest.commerceAvailable && manifest.commerceUrl ? (
+        <a
+          className={'aquarium-action aquarium-action--buy aquarium-buy-action' + (playerDeparting ? ' is-visible' : '')}
+          href={manifest.commerceUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => recordEvent('buy_click')}
+          aria-label={'Buy music or merchandise from ' + manifest.artist + ' on Bandcamp'}
+        >
+          <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
+          <span><strong>BUY MUSIC</strong><small>SUPPORT THE ARTIST</small></span>
+        </a>
+      ) : null}
+
       <main
-      className={'cosmic-aquarium ' + (selectedTrack ? 'has-player ' : '') + (capturingId ? 'is-capturing' : '')}
+      className={'cosmic-aquarium ' + (selectedTrack ? 'has-player ' : '') + (capturingId ? 'is-capturing ' : '') + (secondaryActionsVisible ? 'show-secondary-actions' : '')}
       data-theme={manifest.visualStyle ?? 'cosmic'}
       style={aquariumStyle}
       aria-label="Cosmic Aquaria music discovery experience"
@@ -479,17 +503,11 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         </section>
       ) : null}
 
-      <nav className="aquarium-actions" aria-label="Aquarium actions">
+      <nav className="aquarium-actions aquarium-secondary-actions" aria-label="Aquarium actions">
         <button className="aquarium-action aquarium-action--share" type="button" onClick={shareAquarium} aria-label="Share this Aquarium">
           <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/anemone.png" alt="" /></span>
           <strong>SHARE<br />AQUARIUM</strong>
         </button>
-        {manifest.commerceAvailable && manifest.commerceUrl ? (
-          <a className="aquarium-action aquarium-action--buy" href={manifest.commerceUrl} target="_blank" rel="noopener noreferrer" onClick={() => recordEvent('buy_click')} aria-label={'Buy music or merchandise from ' + manifest.artist + ' on Bandcamp'}>
-            <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
-            <strong>BUY MUSIC</strong><small>SUPPORT THE ARTIST</small>
-          </a>
-        ) : null}
         <button className="aquarium-action aquarium-action--explore" type="button" onClick={exploreAnotherAquarium} aria-label="Explore another random Aquarium">
           <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
           <strong>EXPLORE<br />ANOTHER<br />AQUARIUM</strong>

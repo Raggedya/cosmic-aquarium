@@ -67,13 +67,21 @@ async function syncCatalogue(request, env) {
   const aquariums = Array.isArray(body?.aquariums) ? body.aquariums.slice(0,10000) : [];
   const batch = body?.batch && typeof body.batch === 'object' ? body.batch : null;
   const statements = [];
+  if (body?.fullReplace === true) {
+    const ids = [...new Set(aquariums.map(item=>clean(item?.id,96)).filter(Boolean))];
+    statements.push(ids.length
+      ? env.DB.prepare(`DELETE FROM aquarium WHERE id NOT IN (${ids.map(()=>'?').join(',')})`).bind(...ids)
+      : env.DB.prepare('DELETE FROM aquarium'));
+  }
   for (const item of aquariums) {
     if (!item?.id || !item?.url) continue;
+    const status = item.status === 'disabled' ? 'disabled' : 'published';
+    const disabledAt = status === 'disabled' ? (item.disabledAt||new Date().toISOString()) : null;
     statements.push(env.DB.prepare(`INSERT INTO aquarium
       (id,slug,artist,release_title,bandcamp_url,aquarium_url,theme,status,daily_batch_id,created_at,published_at,disabled_at)
-      VALUES (?,?,?,?,?,?,?,?,?,?,?,NULL)
-      ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at)`)
-      .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,item.status||'published',item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString()));
+      VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
+      ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at),disabled_at=excluded.disabled_at`)
+      .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,status,item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString(),disabledAt));
   }
   if (statements.length) await env.DB.batch(statements);
   if (batch?.id) {
@@ -82,7 +90,7 @@ async function syncCatalogue(request, env) {
       VALUES (?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET status=excluded.status,generated_count=excluded.generated_count,published_count=excluded.published_count,email_status=excluded.email_status,completed_at=excluded.completed_at`)
       .bind(batch.id,batch.batchDate||batch.id,batch.targetCount||20,batch.status||'generation_pending',batch.generatedCount||0,batch.publishedCount||0,batch.emailStatus||'pending',batch.createdAt||new Date().toISOString(),batch.completedAt||null).run();
   }
-  return json({ok:true,synced:statements.length,batch:batch?.id||null});
+  return json({ok:true,synced:aquariums.length,reconciled:body?.fullReplace===true,batch:batch?.id||null});
 }
 
 async function overview(env) {
