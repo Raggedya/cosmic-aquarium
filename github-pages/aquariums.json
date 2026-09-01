@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-01T07:08:07.922Z",
+  "generatedAt": "2026-09-01T07:09:41.103Z",
   "aquariums": [
     {
       "id": "active-dark-filament-adaptive-inference",
@@ -320,6 +320,22 @@
       "visualStyle": "violet",
       "dailyBatchId": "2026-09-01",
       "url": "https://raggedya.github.io/cosmic-aquarium/signal-lock-selektor-lime/",
+      "status": "published"
+    },
+    {
+      "id": "the-murlocs",
+      "slug": "the-murlocs",
+      "artist": "The Murlocs",
+      "release": "Calm Ya Farm",
+      "releaseDate": "2023-05-19 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 60,
+      "bandcampUrl": "https://themurlocs.bandcamp.com/",
+      "visualStyle": "cosmic",
+      "dailyBatchId": null,
+      "url": "https://raggedya.github.io/cosmic-aquarium/the-murlocs/",
       "status": "published"
     },
     {

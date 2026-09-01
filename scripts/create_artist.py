@@ -9,6 +9,7 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
+from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
 from typing import Any
@@ -111,6 +112,20 @@ def year_from(value: Any) -> int:
 def release_date_from_payload(payload: dict[str, Any]) -> str:
     current = payload.get("current") or {}
     return str(current.get("release_date") or payload.get("album_release_date") or "").strip()
+
+
+def normalize_release_date(value: Any) -> str:
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    iso_match = re.match(r"^(19|20)\d{2}-\d{2}-\d{2}", text)
+    if iso_match:
+        return f"{iso_match.group(0)} 00:00:00 UTC"
+    try:
+        parsed = parsedate_to_datetime(text)
+    except (TypeError, ValueError, OverflowError):
+        return ""
+    return parsed.strftime("%Y-%m-%d 00:00:00 UTC")
 
 
 def halton(index: int, base: int) -> float:
@@ -267,7 +282,7 @@ def create_artist(
         "artist": artist,
         "bandcampUrl": resolved_url,
         "releaseTitle": release_title or (tracks[0]["albumTitle"] if tracks else "Bandcamp"),
-        "releaseDate": release_date or discovered_release_date or None,
+        "releaseDate": normalize_release_date(release_date or discovered_release_date) or None,
         "dailyBatchId": batch_id or None,
         "status": "published",
         "commerceAvailable": commerce_available,
