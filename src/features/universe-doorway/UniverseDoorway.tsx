@@ -10,14 +10,14 @@ type Water = 'anywhere' | 'heavy' | 'dreamy' | 'electronic' | 'quiet' | 'loud' |
 interface CatalogueEntry { id?: string; slug: string; url?: string; aquarium_url?: string; status?: string; waters?: string[] }
 
 const bubbleLayout: Array<{ water: Water; x: number; y: number; size: number }> = [
-  { water: 'heavy', x: 25, y: 31, size: 118 },
-  { water: 'dreamy', x: 75, y: 31, size: 118 },
-  { water: 'quiet', x: 13, y: 48, size: 112 },
+  { water: 'heavy', x: 25, y: 30, size: 177 },
+  { water: 'dreamy', x: 75, y: 30, size: 177 },
+  { water: 'quiet', x: 18, y: 48, size: 168 },
   { water: 'anywhere', x: 50, y: 48, size: 212 },
-  { water: 'electronic', x: 87, y: 48, size: 118 },
-  { water: 'dark', x: 26, y: 66, size: 118 },
-  { water: 'loud', x: 74, y: 66, size: 118 },
-  { water: 'strange', x: 50, y: 75, size: 112 },
+  { water: 'electronic', x: 82, y: 48, size: 177 },
+  { water: 'dark', x: 25, y: 67, size: 177 },
+  { water: 'loud', x: 75, y: 67, size: 177 },
+  { water: 'strange', x: 50, y: 76, size: 168 },
 ];
 
 function secureRandomIndex(length: number) {
@@ -48,8 +48,8 @@ export function UniverseDoorway() {
       node,
       x: 0,
       y: 0,
-      vx: Math.sin(index * 2.31) * .018,
-      vy: Math.cos(index * 1.73) * .014,
+      vx: Math.sin(index * 2.31) * .032,
+      vy: Math.cos(index * 1.73) * .026,
       phase: index * 1.41,
       radius: node.offsetWidth * .43,
       centreX: 0,
@@ -72,13 +72,13 @@ export function UniverseDoorway() {
       const dt = Math.min(2, Math.max(.5, (now - previous) / 16.67));
       previous = now;
       bodies.forEach((body, index) => {
-        const spring = body.anchor ? .0018 : .0008;
-        const amplitude = body.anchor ? .0008 : .0018;
-        body.vx += (Math.sin(now * .00023 + body.phase) * amplitude - body.x * spring) * dt;
-        body.vy += (Math.cos(now * .00019 + body.phase * 1.7) * amplitude - body.y * spring) * dt;
-        body.vx *= Math.pow(.986, dt);
-        body.vy *= Math.pow(.986, dt);
-        const limit = body.anchor ? 2.5 : 8;
+        const spring = body.anchor ? .0015 : .0005;
+        const amplitude = body.anchor ? .0011 : .0032;
+        body.vx += (Math.sin(now * .0003 + body.phase) * amplitude - body.x * spring) * dt;
+        body.vy += (Math.cos(now * .00024 + body.phase * 1.7) * amplitude - body.y * spring) * dt;
+        body.vx *= Math.pow(.99, dt);
+        body.vy *= Math.pow(.99, dt);
+        const limit = body.anchor ? 4 : 14;
         body.x = Math.max(-limit, Math.min(limit, body.x + body.vx * dt));
         body.y = Math.max(-limit, Math.min(limit, body.y + body.vy * dt));
         for (let otherIndex = index + 1; otherIndex < bodies.length; otherIndex += 1) {

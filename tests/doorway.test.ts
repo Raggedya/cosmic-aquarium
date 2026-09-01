@@ -26,11 +26,22 @@ test('doorway uses real accessible controls and canonical copy', async () => {
 });
 
 test('doorway motion is reduced-motion safe and softly collision aware', async () => {
-  const [css, runtime] = await Promise.all([read('app/doorway.css'), read('github-pages/assets/doorway.js')]);
+  const [css, runtime, component, template] = await Promise.all([
+    read('app/doorway.css'),
+    read('github-pages/assets/doorway.js'),
+    read('src/features/universe-doorway/UniverseDoorway.tsx'),
+    read('templates/universe-index.html'),
+  ]);
   assert.match(css, /prefers-reduced-motion\s*:\s*reduce/);
   assert.match(runtime, /matchMedia\('\(prefers-reduced-motion: reduce\)'\)/);
   assert.match(runtime, /overlap/);
   assert.match(runtime, /requestAnimationFrame/);
+  assert.match(runtime, /amplitude=body\.anchor\?\.0011:\.0032/);
+  assert.match(runtime, /limit=body\.anchor\?4:14/);
+  assert.equal((component.match(/size: 177/g) || []).length, 5);
+  assert.equal((component.match(/size: 168/g) || []).length, 2);
+  assert.equal((template.match(/--bubble-size:177px/g) || []).length, 5);
+  assert.equal((template.match(/--bubble-size:168px/g) || []).length, 2);
 });
 
 test('water classification is multi-label, valid and deterministic', () => {
