@@ -406,20 +406,6 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         </p>
       </header>
 
-      {manifest.commerceAvailable && manifest.commerceUrl ? (
-        <a
-          className={'aquarium-action aquarium-action--buy aquarium-buy-action' + (playerDeparting ? ' is-visible' : '')}
-          href={manifest.commerceUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => recordEvent('buy_click')}
-          aria-label={'Buy music or merchandise from ' + manifest.artist + ' on Bandcamp'}
-        >
-          <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
-          <span><strong>BUY MUSIC</strong><small>SUPPORT THE ARTIST</small></span>
-        </a>
-      ) : null}
-
       <main
       className={'cosmic-aquarium ' + (selectedTrack ? 'has-player ' : '') + (capturingId ? 'is-capturing ' : '') + (secondaryActionsVisible ? 'show-secondary-actions' : '')}
       data-theme={manifest.visualStyle ?? 'cosmic'}
@@ -512,6 +498,19 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
           <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/anemone.png" alt="" /></span>
           <strong>SHARE<br />AQUARIUM</strong>
         </button>
+        {manifest.commerceAvailable && manifest.commerceUrl ? (
+          <a
+            className={'aquarium-action aquarium-action--buy aquarium-buy-action' + (playerDeparting ? ' is-visible' : '')}
+            href={manifest.commerceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => recordEvent('buy_click')}
+            aria-label={'Buy music or merchandise from ' + manifest.artist + ' on Bandcamp'}
+          >
+            <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
+            <span><strong>BUY MUSIC</strong><small>SUPPORT THE ARTIST</small></span>
+          </a>
+        ) : null}
         <button className="aquarium-action aquarium-action--explore" type="button" onClick={exploreAnotherAquarium} aria-label="Explore another random Aquarium">
           <span className="aquarium-action-orbit" aria-hidden="true"><img src="/flowers/cosmos.png" alt="" /></span>
           <strong>EXPLORE<br />ANOTHER<br />AQUARIUM</strong>

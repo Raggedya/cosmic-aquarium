@@ -375,17 +375,6 @@
   gap: clamp(8px, 3.4vw, 18px);
   transform: translateX(-50%);
   pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateX(-50%) translateY(10px);
-  transition: opacity 1.2s ease, transform 1.2s cubic-bezier(.2,.75,.25,1), visibility 0s linear 1.2s;
-}
-
-.cosmic-aquarium.show-secondary-actions .aquarium-actions {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-  transition-delay: 0s;
 }
 
 .aquarium-action {
@@ -405,44 +394,32 @@
   pointer-events: auto;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 1.2s ease, transform 1.2s cubic-bezier(.2,.75,.25,1), visibility 0s linear 1.2s;
 }
 
 .aquarium-action[hidden] { display: none; }
-.aquarium-action--buy { width: clamp(106px, 30vw, 126px); }
+
+.cosmic-aquarium.show-secondary-actions .aquarium-action--share,
+.cosmic-aquarium.show-secondary-actions .aquarium-action--explore {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
 
 .aquarium-buy-action {
-  position: fixed;
-  z-index: 2147483646;
-  top: calc(var(--viewport-top, 0px) + max(20px, env(safe-area-inset-top)) + 81px);
-  left: 50%;
-  display: flex;
-  width: auto;
-  min-height: 48px;
-  align-items: center;
-  gap: 10px;
   color: rgba(246, 241, 235, .76);
-  opacity: 0;
-  visibility: hidden;
-  transform: translate(-50%, -5px);
-  transition: opacity 1.25s ease, transform 1.25s cubic-bezier(.2,.75,.25,1), visibility 0s linear 1.25s;
 }
 
 .aquarium-buy-action.is-visible {
   opacity: 1;
   visibility: visible;
-  transform: translate(-50%, 0);
+  transform: translateY(0);
   transition-delay: 0s;
 }
-
-.aquarium-buy-action .aquarium-action-orbit {
-  width: 38px;
-  height: 38px;
-  margin: 0;
-}
-
-.aquarium-buy-action .aquarium-action-orbit img { width: 30px; height: 34px; }
-.aquarium-buy-action strong { font-size: 7px; }
-.aquarium-buy-action small { margin-top: 5px; font-size: 4.5px; }
 
 .aquarium-action-orbit {
   position: relative;
@@ -456,8 +433,6 @@
   transition: border-color .35s ease, box-shadow .35s ease, transform .35s ease;
 }
 
-.aquarium-action--buy .aquarium-action-orbit { width: 66px; height: 66px; border-color: rgba(246, 241, 235, .58); }
-
 .aquarium-action-orbit img {
   display: block;
   width: 36px;
@@ -467,7 +442,6 @@
   pointer-events: none;
 }
 
-.aquarium-action--buy .aquarium-action-orbit img { width: 46px; height: 54px; }
 .aquarium-action--explore .aquarium-action-orbit img { filter: hue-rotate(42deg) saturate(.72) brightness(.96); }
 
 .aquarium-action strong,
@@ -480,7 +454,6 @@
 }
 
 .aquarium-action strong { font-size: 7px; font-weight: 650; letter-spacing: .22em; line-height: 1.6; }
-.aquarium-action--buy strong { font-size: 8px; line-height: 1; }
 .aquarium-action small { margin-top: 9px; color: rgba(236, 232, 239, .5); font-size: 5px; font-weight: 650; letter-spacing: .2em; }
 .aquarium-action:hover,.aquarium-action:focus-visible { color: #fff; }
 .aquarium-action:hover .aquarium-action-orbit,.aquarium-action:focus-visible .aquarium-action-orbit { border-color: rgba(255,255,255,.76); box-shadow: 0 0 18px rgba(205,187,255,.09); transform: scale(1.025); }
@@ -617,9 +590,7 @@
   .cosmic-title { top: calc(var(--viewport-top, 0px) + max(12px, env(safe-area-inset-top))); }
   .living-player { top: 58%; transform: translate(-50%, -50%) scale(.82); }
   .cosmic-legal { display: none; }
-  .aquarium-actions { bottom: max(14px, calc(env(safe-area-inset-bottom) + 9px)); gap: 4px; transform: translateX(-50%) translateY(10px) scale(.88); transform-origin: bottom center; }
-  .cosmic-aquarium.show-secondary-actions .aquarium-actions { transform: translateX(-50%) translateY(0) scale(.88); }
-  .aquarium-buy-action { top: calc(var(--viewport-top, 0px) + max(12px, env(safe-area-inset-top)) + 77px); }
+  .aquarium-actions { bottom: max(14px, calc(env(safe-area-inset-bottom) + 9px)); gap: 4px; transform: translateX(-50%) scale(.88); transform-origin: bottom center; }
 }
 
 @media (orientation: landscape) and (max-height: 520px) {

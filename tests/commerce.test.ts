@@ -31,12 +31,15 @@ test('the three intentional listener actions use the requested staged reveal', a
   assert.match(template, /SHARE<br>AQUARIUM/);
   assert.match(template, /BUY MUSIC/);
   assert.match(template, /EXPLORE<br>ANOTHER<br>AQUARIUM/);
+  assert.ok(template.indexOf('aquarium-action--share') < template.indexOf('aquarium-action--buy'));
+  assert.ok(template.indexOf('aquarium-action--buy') < template.indexOf('aquarium-action--explore'));
   assert.match(runtime, /navigator\.share/);
   assert.match(runtime, /aquariums\.json/);
   assert.match(runtime, /show-buy-action/);
   assert.match(runtime, /show-secondary-actions/);
   assert.match(runtime, /4000/);
   assert.doesNotMatch(styles, /purchase-invitation-pulse/);
+  assert.doesNotMatch(styles, /\.aquarium-action--buy\s*\{[^}]*width:/);
 });
 
 test('the Library catalogue reports its living flowers and available songs', async () => {
