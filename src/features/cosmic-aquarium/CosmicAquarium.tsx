@@ -102,6 +102,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const [selectedTrack, setSelectedTrack] = useState<ArtistManifest['tracks'][number] | null>(null);
   const [playbackStarted, setPlaybackStarted] = useState(false);
   const [playerDeparting, setPlayerDeparting] = useState(false);
+  const [buyActionVisible, setBuyActionVisible] = useState(false);
   const [secondaryActionsVisible, setSecondaryActionsVisible] = useState(false);
   const [homeControlActive, setHomeControlActive] = useState(false);
   const [touchOrigin, setTouchOrigin] = useState({ x: 50, y: 50 });
@@ -123,13 +124,15 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const selectedAccent = selectedTrack ? selectedTrack.accent ?? albumAccent(manifest, selectedTrack.albumKey) : '#b9a7ff';
 
   useEffect(() => {
-    if (!playerDeparting) {
-      setSecondaryActionsVisible(false);
-      return;
-    }
-    const timer = window.setTimeout(() => setSecondaryActionsVisible(true), 4000);
-    return () => window.clearTimeout(timer);
-  }, [playerDeparting]);
+    setBuyActionVisible(false);
+    setSecondaryActionsVisible(false);
+    const buyTimer = window.setTimeout(() => setBuyActionVisible(true), 8000);
+    const secondaryTimer = window.setTimeout(() => setSecondaryActionsVisible(true), 12000);
+    return () => {
+      window.clearTimeout(buyTimer);
+      window.clearTimeout(secondaryTimer);
+    };
+  }, [manifestSlug]);
 
   useEffect(() => {
     const timer = window.setTimeout(() => setHomeControlActive(true), 15000);
@@ -468,7 +471,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       </header>
 
       <main
-      className={'cosmic-aquarium ' + (selectedTrack ? 'has-player ' : '') + (capturingId ? 'is-capturing ' : '') + (secondaryActionsVisible ? 'show-secondary-actions' : '')}
+      className={'cosmic-aquarium ' + (selectedTrack ? 'has-player ' : '') + (capturingId ? 'is-capturing ' : '') + (buyActionVisible ? 'show-buy-action ' : '') + (secondaryActionsVisible ? 'show-secondary-actions' : '')}
       data-theme={manifest.visualStyle ?? 'cosmic'}
       style={aquariumStyle}
       aria-label="Cosmic Aquaria music discovery experience"
@@ -566,7 +569,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         </button>
         {manifest.commerceAvailable && manifest.commerceUrl ? (
           <a
-            className={'aquarium-action aquarium-action--buy aquarium-buy-action' + (playerDeparting ? ' is-visible' : '')}
+            className={'aquarium-action aquarium-action--buy aquarium-buy-action' + (buyActionVisible ? ' is-visible' : '')}
             href={manifest.commerceUrl}
             target="_blank"
             rel="noopener noreferrer"

@@ -55,6 +55,7 @@
   let manifest;
   let selectedButton;
   let trackDeck = [];
+  let buyActionTimer = 0;
   let secondaryActionTimer = 0;
   const field = root.querySelector('.creature-field');
   const player = root.querySelector('.living-player');
@@ -65,6 +66,16 @@
   const buyAction = document.querySelector('.aquarium-action--buy');
   const exploreAction = root.querySelector('.aquarium-action--explore');
   const analyticsSession = sessionId();
+
+  buyActionTimer = setTimeout(() => {
+    root.classList.add('show-buy-action');
+    buyAction.classList.add('is-visible');
+    buyActionTimer = 0;
+  },8000);
+  secondaryActionTimer = setTimeout(() => {
+    root.classList.add('show-secondary-actions');
+    secondaryActionTimer = 0;
+  },12000);
 
   function markPlaybackStarted() {
     const iframe = player.querySelector('.bandcamp-stream iframe');
@@ -94,15 +105,13 @@
 
   addEventListener('pagehide',() => {
     if (homeControlTimer) clearTimeout(homeControlTimer);
+    if (buyActionTimer) clearTimeout(buyActionTimer);
+    if (secondaryActionTimer) clearTimeout(secondaryActionTimer);
   },{once:true});
 
   player.querySelector('.player-membrane').addEventListener('animationstart',event => {
     if (event.animationName !== 'player-flower-drift-away') return;
     titlePrompt.textContent = 'TOUCH SOMETHING.';
-    root.classList.add('show-buy-action');
-    buyAction.classList.add('is-visible');
-    clearTimeout(secondaryActionTimer);
-    secondaryActionTimer = setTimeout(() => root.classList.add('show-secondary-actions'),4000);
     announce('Touch another flower.');
   });
 
@@ -280,9 +289,6 @@
   }
 
   function openTrack(button,track) {
-    clearTimeout(secondaryActionTimer);
-    root.classList.remove('show-buy-action','show-secondary-actions');
-    buyAction.classList.remove('is-visible');
     selectedButton?.classList.remove('is-selected');
     selectedButton = button;
     button.classList.add('is-selected');
@@ -319,9 +325,6 @@
 
   player.querySelector('.release-current').addEventListener('click',() => {
     recordEvent('release_click');
-    clearTimeout(secondaryActionTimer);
-    root.classList.remove('show-buy-action','show-secondary-actions');
-    buyAction.classList.remove('is-visible');
     player.hidden = true;
     player.classList.remove('is-active','is-playing');
     root.classList.remove('has-player');

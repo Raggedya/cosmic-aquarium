@@ -29,6 +29,7 @@ test('the three intentional listener actions use the requested staged reveal', a
   const runtime = await readFile(path.resolve('github-pages', 'assets', 'site.js'), 'utf8');
   const styles = await readFile(path.resolve('github-pages', 'assets', 'site.css'), 'utf8');
   const template = await readFile(path.resolve('templates', 'artist-index.html'), 'utf8');
+  const reactExperience = await readFile(path.resolve('src', 'features', 'cosmic-aquarium', 'CosmicAquarium.tsx'), 'utf8');
   assert.match(template, /SHARE<br>AQUARIUM/);
   assert.match(template, /BUY MUSIC/);
   assert.match(template, /EXPLORE<br>ANOTHER<br>AQUARIUM/);
@@ -38,7 +39,12 @@ test('the three intentional listener actions use the requested staged reveal', a
   assert.match(runtime, /aquariums\.json/);
   assert.match(runtime, /show-buy-action/);
   assert.match(runtime, /show-secondary-actions/);
-  assert.match(runtime, /4000/);
+  assert.match(runtime, /buyActionTimer = setTimeout\([\s\S]*?8000\);/);
+  assert.match(runtime, /secondaryActionTimer = setTimeout\([\s\S]*?12000\);/);
+  assert.match(reactExperience, /setTimeout\(\(\) => setBuyActionVisible\(true\), 8000\)/);
+  assert.match(reactExperience, /setTimeout\(\(\) => setSecondaryActionsVisible\(true\), 12000\)/);
+  assert.doesNotMatch(runtime, /function openTrack\([^)]*\) \{\s*clearTimeout\(secondaryActionTimer\)/);
+  assert.doesNotMatch(runtime, /release-current'[\s\S]{0,160}classList\.remove\('show-buy-action'/);
   assert.doesNotMatch(styles, /purchase-invitation-pulse/);
   assert.doesNotMatch(styles, /\.aquarium-action--buy\s*\{[^}]*width:/);
 });
