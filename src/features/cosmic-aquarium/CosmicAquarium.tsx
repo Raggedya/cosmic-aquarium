@@ -9,7 +9,6 @@ import {
   type MouseEvent,
   type PointerEvent,
 } from 'react';
-import Link from 'next/link';
 import { officialTrackEmbedUrl } from '@/src/adapters/bandcamp-adapter';
 import { defaultArtistManifest } from '@/src/data/default-artist-manifest';
 import { buildTrackDeck, secureRandomUnit } from '@/src/features/cosmic-aquarium/track-shuffle';
@@ -429,19 +428,19 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
           mixBlendMode: 'normal',
         }}
       >
-        <Link
+        <button
+          type="button"
           className={'cosmic-home-control' + (homeControlActive ? ' is-home' : '')}
-          href="/"
           aria-label="Return to Cosmic Aquaria home"
           aria-hidden={!homeControlActive}
           tabIndex={homeControlActive ? 0 : -1}
-          onClick={(event) => {
-            if (!homeControlActive) event.preventDefault();
+          onClick={() => {
+            if (homeControlActive) window.location.assign('/');
           }}
         >
           <span aria-hidden="true" className="cosmic-mark"><i /></span>
           <span aria-hidden="true" className="cosmic-home-label">HOME</span>
-        </Link>
+        </button>
         <h1 style={{ margin: 0, paddingLeft: '.38em', color: '#f5f2ed', fontSize: 13, fontWeight: 500, letterSpacing: '.38em' }}>
           {manifest.artist.toUpperCase()}
         </h1>

@@ -75,6 +75,10 @@
   height: 44px;
   margin: -10px auto -2px;
   color: rgba(225, 238, 255, .68);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
   text-decoration: none;
   pointer-events: none;
   opacity: 1;

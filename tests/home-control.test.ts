@@ -19,7 +19,7 @@ test('aquarium home control preserves the brand mark for 15 seconds before activ
   assert.match(runtime, /clearTimeout\(homeControlTimer\)/);
   assert.match(reactExperience, /setHomeControlActive\(true\), 15000/);
   assert.match(reactExperience, /return \(\) => window\.clearTimeout\(timer\)/);
-  assert.match(reactExperience, /href="\/"/);
+  assert.match(reactExperience, /window\.location\.assign\('\/'\)/);
 });
 
 test('home transition stays within the original circular footprint and supports reduced motion', async () => {
