@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-02T06:59:56.989Z",
+  "generatedAt": "2026-09-02T07:33:12.574Z",
   "artists": [
     {
       "id": "bandcamp:52hz-music",
@@ -5282,7 +5282,34 @@
       "bandcampArtistUrl": "https://tworunner.bandcamp.com/",
       "aquariumSlug": "two-runner",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/two-runner/",
-      "status": "published"
+      "status": "published",
+      "release": "Late Dinner",
+      "releaseDate": "2024-09-13 00:00:00 UTC",
+      "trackCount": 27,
+      "visualStyle": "glass",
+      "waters": [
+        "heavy",
+        "dreamy"
+      ],
+      "lastUpdated": "2024-09-13 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": null,
+      "labels": []
     },
     {
       "id": "bandcamp:underpall",

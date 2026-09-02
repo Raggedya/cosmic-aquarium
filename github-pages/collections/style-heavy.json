@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-02T06:59:56.905Z",
-  "updatedAt": "2026-09-02T06:59:56.905Z",
+  "createdAt": "2026-09-02T07:33:12.536Z",
+  "updatedAt": "2026-09-02T07:33:12.536Z",
   "members": [
     {
       "artistId": "bandcamp:activedarkfilament",
@@ -611,6 +611,26 @@
       "styles": [
         "heavy",
         "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:tworunner",
+      "artistName": "Two Runner",
+      "aquariumSlug": "two-runner",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/two-runner/",
+      "bandcampArtistUrl": "https://tworunner.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical HEAVY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "heavy",
+        "dreamy"
+      ],
+      "styles": [
+        "heavy",
+        "dreamy"
       ]
     },
     {

@@ -786,15 +786,17 @@ class CosmicAquariumStudio(tk.Tk):
             url = base_url + "?edition=" + cache_key
             qr_url = base_url + "cosmic-aquarium-qr.png?edition=" + cache_key
             self.after(0, lambda: self.status.configure(text="PUBLISHED  ·  UPDATING LIBRARY", fg=LAVENDER))
-            sync_started = dt.datetime.now(dt.timezone.utc)
-            subprocess.run([
-                gh, "workflow", "run", DELIVERY_WORKFLOW, "--repo", DELIVERY_REPOSITORY,
-                "-f", "operation=sync_catalogue",
-            ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
-            sync_run_id = self._find_run(gh, sync_started, DELIVERY_REPOSITORY, DELIVERY_WORKFLOW)
-            sync_conclusion = self._watch_run(gh, sync_run_id, DELIVERY_REPOSITORY)
-            if sync_conclusion != "success":
-                raise RuntimeError(self._workflow_failure(gh, sync_run_id, DELIVERY_REPOSITORY, "The Aquarium was published, but the library has not caught up yet."))
+            library_current = True
+            try:
+                sync_started = dt.datetime.now(dt.timezone.utc)
+                subprocess.run([
+                    gh, "workflow", "run", DELIVERY_WORKFLOW, "--repo", DELIVERY_REPOSITORY,
+                    "-f", "operation=sync_catalogue",
+                ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+                sync_run_id = self._find_run(gh, sync_started, DELIVERY_REPOSITORY, DELIVERY_WORKFLOW)
+                library_current = self._watch_run(gh, sync_run_id, DELIVERY_REPOSITORY) == "success"
+            except (OSError, subprocess.SubprocessError, RuntimeError):
+                library_current = False
             self.after(0, lambda: self.status.configure(text="PUBLISHED  ·  SENDING EMAIL", fg=LAVENDER))
             delivery_started = dt.datetime.now(dt.timezone.utc)
             subprocess.run([
@@ -806,7 +808,7 @@ class CosmicAquariumStudio(tk.Tk):
             delivery_conclusion = self._watch_run(gh, delivery_run_id, DELIVERY_REPOSITORY)
             if delivery_conclusion != "success":
                 raise RuntimeError(self._workflow_failure(gh, delivery_run_id, DELIVERY_REPOSITORY, "The page was published, but email delivery paused."))
-            self.after(0, lambda: self._finish_success(url))
+            self.after(0, lambda: self._finish_success(url, library_current))
         except Exception as error:
             self.after(0, lambda message=str(error): self._finish_error(message))
 
@@ -855,11 +857,12 @@ class CosmicAquariumStudio(tk.Tk):
     def _creation_flags() -> int:
         return subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0
 
-    def _finish_success(self, url: str) -> None:
+    def _finish_success(self, url: str, library_current: bool = True) -> None:
         self._busy = False
         self._latest_url = url
         self.create_button.configure(state="normal", text="CREATE ANOTHER  ✦")
-        self.status.configure(text="CREATED  ·  LINK + QR EMAILED", fg="#cbdba5")
+        status = "CREATED  ·  LINK + QR EMAILED" if library_current else "CREATED  ·  EMAIL SENT  ·  LIBRARY WILL RETRY"
+        self.status.configure(text=status, fg="#cbdba5")
         self.result_row.grid()
 
     def _finish_error(self, message: str) -> None:

@@ -121,24 +121,38 @@ async function randomCollectionArtist(url, env, slug) {
   return entry ? json({...entry,water:water||'anywhere'},200,CORS) : json({error:'no_collection_artist_available'},404,CORS);
 }
 
+async function runStatementBatches(env, statements, size = 75) {
+  for (let index = 0; index < statements.length; index += size) {
+    await env.DB.batch(statements.slice(index, index + size));
+  }
+}
+
 async function syncCatalogue(request, env) {
   const body = await readBody(request);
   const aquariums = Array.isArray(body?.aquariums) ? body.aquariums.slice(0,10000) : [];
   const artists = Array.isArray(body?.artists) ? body.artists.slice(0,10000) : [];
   const collections = Array.isArray(body?.collections) ? body.collections.slice(0,1000) : [];
   const batch = body?.batch && typeof body.batch === 'object' ? body.batch : null;
-  const currentRows = await env.DB.prepare('SELECT id,status FROM aquarium').all();
-  const current = new Map((currentRows.results || []).map(item=>[item.id,item.status]));
+  const currentRows = await env.DB.prepare('SELECT id,status,updated_at FROM aquarium').all();
+  const current = new Map((currentRows.results || []).map(item=>[item.id,item]));
+  const currentArtistRows = artists.length ? await env.DB.prepare('SELECT id,updated_at FROM artist').all() : {results:[]};
+  const currentArtists = new Map((currentArtistRows.results || []).map(item=>[item.id,item]));
+  const currentCollectionRows = collections.length ? await env.DB.prepare('SELECT id,updated_at FROM collection').all() : {results:[]};
+  const currentCollections = new Map((currentCollectionRows.results || []).map(item=>[item.id,item]));
+  const changedArtistIds = new Set();
   const statements = [];
+  const staleStatements = [];
   if (body?.fullReplace === true) {
-    const ids = [...new Set(aquariums.map(item=>clean(item?.id,96)).filter(Boolean))];
-    statements.push(ids.length
-      ? env.DB.prepare(`DELETE FROM aquarium WHERE id NOT IN (${ids.map(()=>'?').join(',')})`).bind(...ids)
-      : env.DB.prepare('DELETE FROM aquarium'));
+    const ids = new Set(aquariums.map(item=>clean(item?.id,96)).filter(Boolean));
+    for (const row of currentRows.results || []) {
+      if (!ids.has(row.id)) staleStatements.push(env.DB.prepare('DELETE FROM aquarium WHERE id=?').bind(row.id));
+    }
   }
   for (const item of artists) {
     if (!item?.id || !item?.bandcampArtistUrl) continue;
     const now = item.updatedAt || new Date().toISOString();
+    if (item.updatedAt && currentArtists.get(item.id)?.updated_at === item.updatedAt) continue;
+    changedArtistIds.add(item.id);
     const primaryLocationMembership = (item.memberships||[]).find(membership=>membership.type==='location');
     statements.push(env.DB.prepare(`INSERT INTO artist
       (id,name,canonical_name,bandcamp_artist_url,primary_aquarium_id,status,created_at,updated_at,display_name,slug,primary_location_id,country,metadata)
@@ -150,16 +164,19 @@ async function syncCatalogue(request, env) {
     if (!item?.id || !item?.url) continue;
     const status = item.status === 'disabled' ? 'disabled' : 'published';
     const disabledAt = status === 'disabled' ? (item.disabledAt||new Date().toISOString()) : null;
+    const updatedAt = item.updatedAt||item.publishedAt||item.createdAt||null;
+    const prior = current.get(item.id);
+    if (prior && prior.status === status && updatedAt && prior.updated_at === updatedAt) continue;
     statements.push(env.DB.prepare(`INSERT INTO aquarium
       (id,slug,artist,release_title,bandcamp_url,aquarium_url,theme,status,daily_batch_id,created_at,published_at,disabled_at,artist_id,type,configuration,updated_at)
       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
       ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at),disabled_at=excluded.disabled_at,artist_id=excluded.artist_id,type=excluded.type,configuration=excluded.configuration,updated_at=excluded.updated_at`)
-      .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,status,item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString(),disabledAt,item.canonicalArtistId||null,'artist',JSON.stringify({flowerCountMin:item.flowerCountMin||10,flowerCountMax:item.flowerCountMax||14,objectType:item.objectType||'flowers'}),item.updatedAt||new Date().toISOString()));
+      .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,status,item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString(),disabledAt,item.canonicalArtistId||null,'artist',JSON.stringify({flowerCountMin:item.flowerCountMin||10,flowerCountMax:item.flowerCountMax||14,objectType:item.objectType||'flowers'}),updatedAt||new Date().toISOString()));
     statements.push(env.DB.prepare("DELETE FROM aquarium_water WHERE aquarium_id=? AND assigned_by='automatic' AND NOT EXISTS (SELECT 1 FROM aquarium_water WHERE aquarium_id=? AND assigned_by='manual')").bind(item.id,item.id));
     for (const water of [...new Set(Array.isArray(item.waters) ? item.waters.map(value=>String(value).toLowerCase()).filter(value=>WATERS.has(value)) : [])]) {
       statements.push(env.DB.prepare("INSERT OR IGNORE INTO aquarium_water (aquarium_id,water,assigned_by,confidence,updated_at) SELECT ?,?,?,?,? WHERE NOT EXISTS (SELECT 1 FROM aquarium_water WHERE aquarium_id=? AND assigned_by='manual')").bind(item.id,water,'automatic',null,new Date().toISOString(),item.id));
     }
-    const priorStatus = current.get(item.id);
+    const priorStatus = prior?.status;
     if (!priorStatus) {
       statements.push(systemEventStatement(env,'aquarium_created',item.id,{artist:item.artist||'',release:item.release||''}));
       if (status === 'published') statements.push(systemEventStatement(env,'aquarium_published',item.id));
@@ -171,11 +188,12 @@ async function syncCatalogue(request, env) {
       .bind(item.canonicalArtistId,item.id,artists.some(artist=>artist.id===item.canonicalArtistId&&artist.aquariumSlug===item.id)?1:0));
   }
   for (const item of artists) {
-    if (item?.id && item?.aquariumSlug) statements.push(env.DB.prepare('UPDATE artist SET primary_aquarium_id=?,updated_at=? WHERE id=?').bind(item.aquariumSlug,item.updatedAt||new Date().toISOString(),item.id));
+    if (item?.id && item?.aquariumSlug && changedArtistIds.has(item.id)) statements.push(env.DB.prepare('UPDATE artist SET primary_aquarium_id=?,updated_at=? WHERE id=?').bind(item.aquariumSlug,item.updatedAt||new Date().toISOString(),item.id));
   }
   for (const item of collections) {
     if (!item?.id || !item?.slug || !item?.type) continue;
     const now = item.updatedAt || new Date().toISOString();
+    if (item.updatedAt && currentCollections.get(item.id)?.updated_at === item.updatedAt) continue;
     statements.push(env.DB.prepare(`INSERT INTO collection
       (id,slug,name,type,description,theme,status,metadata,created_at,updated_at)
       VALUES (?,?,?,?,?,?,?,?,?,?)
@@ -189,14 +207,15 @@ async function syncCatalogue(request, env) {
         VALUES (?,?,?,?,?,?,?,?,?,?,?,?)`).bind(item.id,member.artistId,member.verificationStatus||'unverified',member.verificationScore??null,member.source||null,member.evidence||null,member.displayEnabled===true?1:0,member.addedAt||now,member.confidence??member.verificationScore??null,member.status||'active',member.administratorOverride===true?1:0,now));
     }
   }
-  if (statements.length) await env.DB.batch(statements);
+  if (statements.length) await runStatementBatches(env,statements);
+  if (staleStatements.length) await runStatementBatches(env,staleStatements);
   if (batch?.id) {
     await env.DB.prepare(`INSERT INTO daily_batch
       (id,batch_date,target_count,status,generated_count,published_count,email_status,created_at,completed_at)
       VALUES (?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET status=excluded.status,generated_count=excluded.generated_count,published_count=excluded.published_count,email_status=excluded.email_status,completed_at=excluded.completed_at`)
       .bind(batch.id,batch.batchDate||batch.id,batch.targetCount||20,batch.status||'generation_pending',batch.generatedCount||0,batch.publishedCount||0,batch.emailStatus||'pending',batch.createdAt||new Date().toISOString(),batch.completedAt||null).run();
   }
-  return json({ok:true,synced:aquariums.length,artists:artists.length,collections:collections.length,reconciled:body?.fullReplace===true,batch:batch?.id||null});
+  return json({ok:true,synced:aquariums.length,changed:statements.length,removed:staleStatements.length,artists:artists.length,collections:collections.length,reconciled:body?.fullReplace===true,batch:batch?.id||null});
 }
 
 async function overview(env) {
