@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T03:51:00.812Z",
+  "generatedAt": "2026-09-02T04:01:13.694Z",
   "aquariums": [
     {
       "id": "52hz-nicolas-mollin-cahier-de-vacances",
@@ -916,6 +916,26 @@
       "status": "published",
       "waters": [
         "strange"
+      ]
+    },
+    {
+      "id": "donny-benet",
+      "slug": "donny-benet",
+      "artist": "Donny Benét",
+      "release": "Don't Hold Back",
+      "releaseDate": "2018-05-14 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 60,
+      "bandcampUrl": "https://donnybenet.bandcamp.com/music",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": null,
+      "url": "https://raggedya.github.io/cosmic-aquarium/donny-benet/",
+      "status": "published",
+      "waters": [
+        "quiet"
       ]
     },
     {
