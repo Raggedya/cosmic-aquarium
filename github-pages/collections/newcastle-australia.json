@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "location:newcastle-australia",
+  "slug": "newcastle-australia",
+  "name": "Newcastle, Australia",
+  "type": "location",
+  "description": "Independent Bandcamp artists strongly associated with Newcastle, Australia.",
+  "status": "draft",
+  "instruction": "TOUCH AN ARTIST",
+  "theme": "location",
+  "createdAt": "2026-09-02T07:50:18Z",
+  "updatedAt": "2026-09-02T07:50:18Z",
+  "location": {
+    "city": "Newcastle",
+    "region": null,
+    "country": "Australia",
+    "canonicalLocation": "Newcastle, Australia",
+    "displayName": "Newcastle, Australia",
+    "latitude": null,
+    "longitude": null,
+    "aliases": [
+      "Newcastle, Australia"
+    ],
+    "researchStatus": "review",
+    "lastResearchedAt": "2026-09-02T07:50:18Z"
+  },
+  "members": []
+}
