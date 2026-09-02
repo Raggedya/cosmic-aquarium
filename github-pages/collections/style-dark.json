@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-02T08:01:14.271Z",
-  "updatedAt": "2026-09-02T08:01:14.271Z",
+  "createdAt": "2026-09-02T07:50:19.555Z",
+  "updatedAt": "2026-09-02T07:50:19.555Z",
   "members": [
     {
       "artistId": "bandcamp:weareaeria",
@@ -302,26 +302,6 @@
       ]
     },
     {
-      "artistId": "bandcamp:laurapanic",
-      "artistName": "laurapanic",
-      "aquariumSlug": "laurapanic",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/laurapanic/",
-      "bandcampArtistUrl": "https://laurapanic.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dark",
-        "loud"
-      ],
-      "styles": [
-        "dark",
-        "loud"
-      ]
-    },
-    {
       "artistId": "bandcamp:mimizgb",
       "artistName": "MIMI",
       "aquariumSlug": "mimi-omatucada",
@@ -347,24 +327,6 @@
       "aquariumSlug": "mooneclipse-mithril-helm-in-a-night-of-daydreaming",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mooneclipse-mithril-helm-in-a-night-of-daydreaming/",
       "bandcampArtistUrl": "https://mooneclipse0.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dark"
-      ],
-      "styles": [
-        "dark"
-      ]
-    },
-    {
-      "artistId": "bandcamp:osmiumgrid",
-      "artistName": "Osmium Grid",
-      "aquariumSlug": "osmium-grid",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/osmium-grid/",
-      "bandcampArtistUrl": "https://osmiumgrid.bandcamp.com/",
       "verificationStatus": "verified",
       "verificationScore": 1,
       "source": "automatic-style-classification",

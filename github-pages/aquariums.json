@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T08:01:14.267Z",
+  "generatedAt": "2026-09-02T07:50:19.548Z",
   "aquariums": [
     {
       "id": "52hz-nicolas-mollin-cahier-de-vacances",
@@ -1190,29 +1190,6 @@
       ]
     },
     {
-      "id": "dust",
-      "slug": "dust",
-      "artist": "dust",
-      "release": "et cetera, etc remixes",
-      "releaseDate": "2024-04-19 00:00:00 UTC",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 20,
-      "bandcampUrl": "https://dustdustdust.bandcamp.com/",
-      "visualStyle": "violet",
-      "objectType": "flowers",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/dust/",
-      "status": "published",
-      "canonicalArtistId": "bandcamp:dustdustdust",
-      "canonicalBandcampUrl": "https://dustdustdust.bandcamp.com/",
-      "waters": [
-        "loud",
-        "strange"
-      ]
-    },
-    {
       "id": "dynamo-stairs-time-is-a-shape-the-river-is-a-lie",
       "slug": "dynamo-stairs-time-is-a-shape-the-river-is-a-lie",
       "artist": "Dynamo Stairs",
@@ -2149,29 +2126,6 @@
       ]
     },
     {
-      "id": "laurapanic",
-      "slug": "laurapanic",
-      "artist": "laurapanic",
-      "release": "laurapanic",
-      "releaseDate": "2025-07-04 00:00:00 UTC",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 9,
-      "bandcampUrl": "https://laurapanic.bandcamp.com/album/laurapanic",
-      "visualStyle": "cosmic",
-      "objectType": "flowers",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/laurapanic/",
-      "status": "published",
-      "canonicalArtistId": "bandcamp:laurapanic",
-      "canonicalBandcampUrl": "https://laurapanic.bandcamp.com/",
-      "waters": [
-        "dark",
-        "loud"
-      ]
-    },
-    {
       "id": "ledmotiv-the-ghost-of-carrion",
       "slug": "ledmotiv-the-ghost-of-carrion",
       "artist": "Ledmotiv",
@@ -2664,28 +2618,6 @@
       ]
     },
     {
-      "id": "osmium-grid",
-      "slug": "osmium-grid",
-      "artist": "Osmium Grid",
-      "release": "Brutal Demos",
-      "releaseDate": "2009-03-19 00:00:00 UTC",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 34,
-      "bandcampUrl": "https://osmiumgrid.bandcamp.com/",
-      "visualStyle": "cosmic",
-      "objectType": "flowers",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/osmium-grid/",
-      "status": "published",
-      "canonicalArtistId": "bandcamp:osmiumgrid",
-      "canonicalBandcampUrl": "https://osmiumgrid.bandcamp.com/",
-      "waters": [
-        "dark"
-      ]
-    },
-    {
       "id": "ours",
       "slug": "ours",
       "artist": "Ours.",
@@ -2728,29 +2660,6 @@
       "canonicalBandcampUrl": "https://vozdamorteprod.bandcamp.com/",
       "waters": [
         "heavy",
-        "loud"
-      ]
-    },
-    {
-      "id": "pals",
-      "slug": "pals",
-      "artist": "PALS",
-      "release": "Demo",
-      "releaseDate": "2015-09-06 00:00:00 UTC",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 25,
-      "bandcampUrl": "https://palsnewcastle.bandcamp.com/",
-      "visualStyle": "violet",
-      "objectType": "flowers",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/pals/",
-      "status": "published",
-      "canonicalArtistId": "bandcamp:palsnewcastle",
-      "canonicalBandcampUrl": "https://palsnewcastle.bandcamp.com/",
-      "waters": [
-        "quiet",
         "loud"
       ]
     },
@@ -3310,29 +3219,6 @@
       ]
     },
     {
-      "id": "rum-jungle",
-      "slug": "rum-jungle",
-      "artist": "Rum Jungle",
-      "release": "Coal Dust",
-      "releaseDate": "2026-01-29 00:00:00 UTC",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 30,
-      "bandcampUrl": "https://rumjungle.bandcamp.com/",
-      "visualStyle": "cosmic",
-      "objectType": "flowers",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/rum-jungle/",
-      "status": "published",
-      "canonicalArtistId": "bandcamp:rumjungle",
-      "canonicalBandcampUrl": "https://rumjungle.bandcamp.com/",
-      "waters": [
-        "heavy",
-        "loud"
-      ]
-    },
-    {
       "id": "russian-dark-community-russian-gothic-part-ii",
       "slug": "russian-dark-community-russian-gothic-part-ii",
       "artist": "Russian Dark Community",
@@ -3578,28 +3464,6 @@
       ]
     },
     {
-      "id": "smacked-youth",
-      "slug": "smacked-youth",
-      "artist": "Smacked Youth",
-      "release": "Bones",
-      "releaseDate": "2020-04-10 00:00:00 UTC",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 4,
-      "bandcampUrl": "https://smackedyouth.bandcamp.com/",
-      "visualStyle": "violet",
-      "objectType": "flowers",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/smacked-youth/",
-      "status": "published",
-      "canonicalArtistId": "bandcamp:smackedyouth",
-      "canonicalBandcampUrl": "https://smackedyouth.bandcamp.com/",
-      "waters": [
-        "heavy"
-      ]
-    },
-    {
       "id": "someformofbody-3-songs-ive-always-hated-constant-reminders",
       "slug": "someformofbody-3-songs-ive-always-hated-constant-reminders",
       "artist": "someformofbody",
@@ -3756,29 +3620,6 @@
       ]
     },
     {
-      "id": "sub-urbane",
-      "slug": "sub-urbane",
-      "artist": "sub_urbane",
-      "release": "Replicant (Extended Edition)",
-      "releaseDate": "2026-02-27 00:00:00 UTC",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 42,
-      "bandcampUrl": "https://sub-urbane.bandcamp.com/",
-      "visualStyle": "cosmic",
-      "objectType": "flowers",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/sub-urbane/",
-      "status": "published",
-      "canonicalArtistId": "bandcamp:sub-urbane",
-      "canonicalBandcampUrl": "https://sub-urbane.bandcamp.com/",
-      "waters": [
-        "electronic",
-        "strange"
-      ]
-    },
-    {
       "id": "subter-terra-the-petyr-sessions",
       "slug": "subter-terra-the-petyr-sessions",
       "artist": "Subter Terra",
@@ -3840,28 +3681,6 @@
       "status": "published",
       "canonicalArtistId": "bandcamp:synthesisrecords",
       "canonicalBandcampUrl": "https://synthesisrecords.bandcamp.com/",
-      "waters": [
-        "electronic"
-      ]
-    },
-    {
-      "id": "talkhouse",
-      "slug": "talkhouse",
-      "artist": "Talkhouse",
-      "release": "Demo tape 1",
-      "releaseDate": "2023-04-29 00:00:00 UTC",
-      "flowerCount": 14,
-      "flowerCountMin": 10,
-      "flowerCountMax": 14,
-      "trackCount": 10,
-      "bandcampUrl": "https://talkhouseband.bandcamp.com/",
-      "visualStyle": "violet",
-      "objectType": "flowers",
-      "dailyBatchId": null,
-      "url": "https://raggedya.github.io/cosmic-aquarium/talkhouse/",
-      "status": "published",
-      "canonicalArtistId": "bandcamp:talkhouseband",
-      "canonicalBandcampUrl": "https://talkhouseband.bandcamp.com/",
       "waters": [
         "electronic"
       ]

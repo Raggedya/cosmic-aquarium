@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-02T08:01:14.271Z",
-  "updatedAt": "2026-09-02T08:01:14.271Z",
+  "createdAt": "2026-09-02T07:50:19.554Z",
+  "updatedAt": "2026-09-02T07:50:19.554Z",
   "members": [
     {
       "artistId": "bandcamp:activedarkfilament",
@@ -534,49 +534,11 @@
       ]
     },
     {
-      "artistId": "bandcamp:sub-urbane",
-      "artistName": "sub_urbane",
-      "aquariumSlug": "sub-urbane",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sub-urbane/",
-      "bandcampArtistUrl": "https://sub-urbane.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical ELECTRONIC style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "strange"
-      ],
-      "styles": [
-        "electronic",
-        "strange"
-      ]
-    },
-    {
       "artistId": "bandcamp:synthesisrecords",
       "artistName": "synthesis.records",
       "aquariumSlug": "synthesis-records-catalyst-volume-1",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/synthesis-records-catalyst-volume-1/",
       "bandcampArtistUrl": "https://synthesisrecords.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical ELECTRONIC style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic"
-      ],
-      "styles": [
-        "electronic"
-      ]
-    },
-    {
-      "artistId": "bandcamp:talkhouseband",
-      "artistName": "Talkhouse",
-      "aquariumSlug": "talkhouse",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/talkhouse/",
-      "bandcampArtistUrl": "https://talkhouseband.bandcamp.com/",
       "verificationStatus": "verified",
       "verificationScore": 1,
       "source": "automatic-style-classification",

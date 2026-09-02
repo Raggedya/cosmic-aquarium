@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-02T08:01:14.272Z",
+  "generatedAt": "2026-09-02T07:50:19.557Z",
   "artists": [
     {
       "id": "bandcamp:52hz-music",
@@ -1654,49 +1654,6 @@
       "labels": []
     },
     {
-      "id": "bandcamp:dustdustdust",
-      "name": "dust",
-      "canonicalName": "dust",
-      "bandcampArtistUrl": "https://dustdustdust.bandcamp.com/",
-      "aquariumSlug": "dust",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dust/",
-      "status": "published",
-      "release": "et cetera, etc remixes",
-      "releaseDate": "2024-04-19 00:00:00 UTC",
-      "trackCount": 20,
-      "visualStyle": "violet",
-      "waters": [
-        "loud",
-        "strange"
-      ],
-      "lastUpdated": "2024-04-19 00:00:00 UTC",
-      "memberships": [
-        {
-          "id": "location:newcastle-australia",
-          "slug": "newcastle-australia",
-          "name": "Newcastle, Australia",
-          "type": "location",
-          "status": "draft"
-        },
-        {
-          "id": "style:loud",
-          "slug": "style-loud",
-          "name": "LOUD",
-          "type": "genre",
-          "status": "published"
-        },
-        {
-          "id": "style:strange",
-          "slug": "style-strange",
-          "name": "STRANGE",
-          "type": "genre",
-          "status": "published"
-        }
-      ],
-      "primaryLocation": "Newcastle, Australia",
-      "labels": []
-    },
-    {
       "id": "bandcamp:dynamostairs",
       "name": "Dynamo Stairs",
       "canonicalName": "dynamo stairs",
@@ -2885,49 +2842,6 @@
       "labels": []
     },
     {
-      "id": "bandcamp:laurapanic",
-      "name": "laurapanic",
-      "canonicalName": "laurapanic",
-      "bandcampArtistUrl": "https://laurapanic.bandcamp.com/",
-      "aquariumSlug": "laurapanic",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/laurapanic/",
-      "status": "published",
-      "release": "laurapanic",
-      "releaseDate": "2025-07-04 00:00:00 UTC",
-      "trackCount": 9,
-      "visualStyle": "cosmic",
-      "waters": [
-        "dark",
-        "loud"
-      ],
-      "lastUpdated": "2025-07-04 00:00:00 UTC",
-      "memberships": [
-        {
-          "id": "location:newcastle-australia",
-          "slug": "newcastle-australia",
-          "name": "Newcastle, Australia",
-          "type": "location",
-          "status": "draft"
-        },
-        {
-          "id": "style:dark",
-          "slug": "style-dark",
-          "name": "DARK",
-          "type": "genre",
-          "status": "published"
-        },
-        {
-          "id": "style:loud",
-          "slug": "style-loud",
-          "name": "LOUD",
-          "type": "genre",
-          "status": "published"
-        }
-      ],
-      "primaryLocation": "Newcastle, Australia",
-      "labels": []
-    },
-    {
       "id": "bandcamp:ledmotiv",
       "name": "Ledmotiv",
       "canonicalName": "ledmotiv",
@@ -3524,41 +3438,6 @@
       "labels": []
     },
     {
-      "id": "bandcamp:osmiumgrid",
-      "name": "Osmium Grid",
-      "canonicalName": "osmium grid",
-      "bandcampArtistUrl": "https://osmiumgrid.bandcamp.com/",
-      "aquariumSlug": "osmium-grid",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/osmium-grid/",
-      "status": "published",
-      "release": "Brutal Demos",
-      "releaseDate": "2009-03-19 00:00:00 UTC",
-      "trackCount": 34,
-      "visualStyle": "cosmic",
-      "waters": [
-        "dark"
-      ],
-      "lastUpdated": "2009-03-19 00:00:00 UTC",
-      "memberships": [
-        {
-          "id": "location:newcastle-australia",
-          "slug": "newcastle-australia",
-          "name": "Newcastle, Australia",
-          "type": "location",
-          "status": "draft"
-        },
-        {
-          "id": "style:dark",
-          "slug": "style-dark",
-          "name": "DARK",
-          "type": "genre",
-          "status": "published"
-        }
-      ],
-      "primaryLocation": "Newcastle, Australia",
-      "labels": []
-    },
-    {
       "id": "bandcamp:ourspdx",
       "name": "Ours.",
       "canonicalName": "ours",
@@ -3635,49 +3514,6 @@
         }
       ],
       "primaryLocation": null,
-      "labels": []
-    },
-    {
-      "id": "bandcamp:palsnewcastle",
-      "name": "PALS",
-      "canonicalName": "pals",
-      "bandcampArtistUrl": "https://palsnewcastle.bandcamp.com/",
-      "aquariumSlug": "pals",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/pals/",
-      "status": "published",
-      "release": "Demo",
-      "releaseDate": "2015-09-06 00:00:00 UTC",
-      "trackCount": 25,
-      "visualStyle": "violet",
-      "waters": [
-        "quiet",
-        "loud"
-      ],
-      "lastUpdated": "2015-09-06 00:00:00 UTC",
-      "memberships": [
-        {
-          "id": "location:newcastle-australia",
-          "slug": "newcastle-australia",
-          "name": "Newcastle, Australia",
-          "type": "location",
-          "status": "draft"
-        },
-        {
-          "id": "style:quiet",
-          "slug": "style-quiet",
-          "name": "QUIET",
-          "type": "genre",
-          "status": "published"
-        },
-        {
-          "id": "style:loud",
-          "slug": "style-loud",
-          "name": "LOUD",
-          "type": "genre",
-          "status": "published"
-        }
-      ],
-      "primaryLocation": "Newcastle, Australia",
       "labels": []
     },
     {
@@ -4393,49 +4229,6 @@
       "labels": []
     },
     {
-      "id": "bandcamp:rumjungle",
-      "name": "Rum Jungle",
-      "canonicalName": "rum jungle",
-      "bandcampArtistUrl": "https://rumjungle.bandcamp.com/",
-      "aquariumSlug": "rum-jungle",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rum-jungle/",
-      "status": "published",
-      "release": "Coal Dust",
-      "releaseDate": "2026-01-29 00:00:00 UTC",
-      "trackCount": 30,
-      "visualStyle": "cosmic",
-      "waters": [
-        "heavy",
-        "loud"
-      ],
-      "lastUpdated": "2026-01-29 00:00:00 UTC",
-      "memberships": [
-        {
-          "id": "location:newcastle-australia",
-          "slug": "newcastle-australia",
-          "name": "Newcastle, Australia",
-          "type": "location",
-          "status": "draft"
-        },
-        {
-          "id": "style:heavy",
-          "slug": "style-heavy",
-          "name": "HEAVY",
-          "type": "genre",
-          "status": "published"
-        },
-        {
-          "id": "style:loud",
-          "slug": "style-loud",
-          "name": "LOUD",
-          "type": "genre",
-          "status": "published"
-        }
-      ],
-      "primaryLocation": "Newcastle, Australia",
-      "labels": []
-    },
-    {
       "id": "bandcamp:russiandarkcommunity",
       "name": "Russian Dark Community",
       "canonicalName": "russian dark community",
@@ -4768,41 +4561,6 @@
       "labels": []
     },
     {
-      "id": "bandcamp:smackedyouth",
-      "name": "Smacked Youth",
-      "canonicalName": "smacked youth",
-      "bandcampArtistUrl": "https://smackedyouth.bandcamp.com/",
-      "aquariumSlug": "smacked-youth",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/smacked-youth/",
-      "status": "published",
-      "release": "Bones",
-      "releaseDate": "2020-04-10 00:00:00 UTC",
-      "trackCount": 4,
-      "visualStyle": "violet",
-      "waters": [
-        "heavy"
-      ],
-      "lastUpdated": "2020-04-10 00:00:00 UTC",
-      "memberships": [
-        {
-          "id": "location:newcastle-australia",
-          "slug": "newcastle-australia",
-          "name": "Newcastle, Australia",
-          "type": "location",
-          "status": "draft"
-        },
-        {
-          "id": "style:heavy",
-          "slug": "style-heavy",
-          "name": "HEAVY",
-          "type": "genre",
-          "status": "published"
-        }
-      ],
-      "primaryLocation": "Newcastle, Australia",
-      "labels": []
-    },
-    {
       "id": "bandcamp:someformofbody",
       "name": "someformofbody",
       "canonicalName": "someformofbody",
@@ -5015,49 +4773,6 @@
       "labels": []
     },
     {
-      "id": "bandcamp:sub-urbane",
-      "name": "sub_urbane",
-      "canonicalName": "sub urbane",
-      "bandcampArtistUrl": "https://sub-urbane.bandcamp.com/",
-      "aquariumSlug": "sub-urbane",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sub-urbane/",
-      "status": "published",
-      "release": "Replicant (Extended Edition)",
-      "releaseDate": "2026-02-27 00:00:00 UTC",
-      "trackCount": 42,
-      "visualStyle": "cosmic",
-      "waters": [
-        "electronic",
-        "strange"
-      ],
-      "lastUpdated": "2026-02-27 00:00:00 UTC",
-      "memberships": [
-        {
-          "id": "location:newcastle-australia",
-          "slug": "newcastle-australia",
-          "name": "Newcastle, Australia",
-          "type": "location",
-          "status": "draft"
-        },
-        {
-          "id": "style:electronic",
-          "slug": "style-electronic",
-          "name": "ELECTRONIC",
-          "type": "genre",
-          "status": "published"
-        },
-        {
-          "id": "style:strange",
-          "slug": "style-strange",
-          "name": "STRANGE",
-          "type": "genre",
-          "status": "published"
-        }
-      ],
-      "primaryLocation": "Newcastle, Australia",
-      "labels": []
-    },
-    {
       "id": "bandcamp:subterterra",
       "name": "Subter Terra",
       "canonicalName": "subter terra",
@@ -5139,41 +4854,6 @@
         }
       ],
       "primaryLocation": null,
-      "labels": []
-    },
-    {
-      "id": "bandcamp:talkhouseband",
-      "name": "Talkhouse",
-      "canonicalName": "talkhouse",
-      "bandcampArtistUrl": "https://talkhouseband.bandcamp.com/",
-      "aquariumSlug": "talkhouse",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/talkhouse/",
-      "status": "published",
-      "release": "Demo tape 1",
-      "releaseDate": "2023-04-29 00:00:00 UTC",
-      "trackCount": 10,
-      "visualStyle": "violet",
-      "waters": [
-        "electronic"
-      ],
-      "lastUpdated": "2023-04-29 00:00:00 UTC",
-      "memberships": [
-        {
-          "id": "location:newcastle-australia",
-          "slug": "newcastle-australia",
-          "name": "Newcastle, Australia",
-          "type": "location",
-          "status": "draft"
-        },
-        {
-          "id": "style:electronic",
-          "slug": "style-electronic",
-          "name": "ELECTRONIC",
-          "type": "genre",
-          "status": "published"
-        }
-      ],
-      "primaryLocation": "Newcastle, Australia",
       "labels": []
     },
     {
