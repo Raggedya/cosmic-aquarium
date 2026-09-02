@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-02T07:50:19.552Z",
-  "updatedAt": "2026-09-02T07:50:19.552Z",
+  "createdAt": "2026-09-02T08:01:14.270Z",
+  "updatedAt": "2026-09-02T08:01:14.270Z",
   "members": [
     {
       "artistId": "bandcamp:activedarkfilament",
@@ -496,6 +496,26 @@
       ]
     },
     {
+      "artistId": "bandcamp:rumjungle",
+      "artistName": "Rum Jungle",
+      "aquariumSlug": "rum-jungle",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rum-jungle/",
+      "bandcampArtistUrl": "https://rumjungle.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical HEAVY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "styles": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
       "artistId": "bandcamp:sandekalaband",
       "artistName": "Sandekala",
       "aquariumSlug": "sandekala-mata-pedang-penghabisan",
@@ -533,6 +553,24 @@
       "styles": [
         "heavy",
         "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:smackedyouth",
+      "artistName": "Smacked Youth",
+      "aquariumSlug": "smacked-youth",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/smacked-youth/",
+      "bandcampArtistUrl": "https://smackedyouth.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical HEAVY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "heavy"
+      ],
+      "styles": [
+        "heavy"
       ]
     },
     {

@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-02T07:50:19.556Z",
-  "updatedAt": "2026-09-02T07:50:19.556Z",
+  "createdAt": "2026-09-02T08:01:14.271Z",
+  "updatedAt": "2026-09-02T08:01:14.271Z",
   "members": [
     {
       "artistId": "bandcamp:avathar",
@@ -270,6 +270,26 @@
       ]
     },
     {
+      "artistId": "bandcamp:dustdustdust",
+      "artistName": "dust",
+      "aquariumSlug": "dust",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dust/",
+      "bandcampArtistUrl": "https://dustdustdust.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud",
+        "strange"
+      ],
+      "styles": [
+        "loud",
+        "strange"
+      ]
+    },
+    {
       "artistId": "bandcamp:groupsexband",
       "artistName": "GROUPSEX",
       "aquariumSlug": "groupsex-demo",
@@ -386,6 +406,26 @@
       ],
       "styles": [
         "heavy",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:laurapanic",
+      "artistName": "laurapanic",
+      "aquariumSlug": "laurapanic",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/laurapanic/",
+      "bandcampArtistUrl": "https://laurapanic.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dark",
+        "loud"
+      ],
+      "styles": [
+        "dark",
         "loud"
       ]
     },
@@ -514,11 +554,51 @@
       ]
     },
     {
+      "artistId": "bandcamp:palsnewcastle",
+      "artistName": "PALS",
+      "aquariumSlug": "pals",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/pals/",
+      "bandcampArtistUrl": "https://palsnewcastle.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "loud"
+      ],
+      "styles": [
+        "quiet",
+        "loud"
+      ]
+    },
+    {
       "artistId": "bandcamp:primalband",
       "artistName": "Primal",
       "aquariumSlug": "primal-deus-satanicus",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/primal-deus-satanicus/",
       "bandcampArtistUrl": "https://primalband.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "styles": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:rumjungle",
+      "artistName": "Rum Jungle",
+      "aquariumSlug": "rum-jungle",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rum-jungle/",
+      "bandcampArtistUrl": "https://rumjungle.bandcamp.com/",
       "verificationStatus": "verified",
       "verificationScore": 1,
       "source": "automatic-style-classification",

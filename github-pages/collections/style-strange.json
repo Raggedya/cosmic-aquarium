@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-02T07:50:19.556Z",
-  "updatedAt": "2026-09-02T07:50:19.556Z",
+  "createdAt": "2026-09-02T08:01:14.272Z",
+  "updatedAt": "2026-09-02T08:01:14.272Z",
   "members": [
     {
       "artistId": "bandcamp:adammajdeckijanicki",
@@ -100,6 +100,26 @@
         "strange"
       ],
       "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:dustdustdust",
+      "artistName": "dust",
+      "aquariumSlug": "dust",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dust/",
+      "bandcampArtistUrl": "https://dustdustdust.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud",
+        "strange"
+      ],
+      "styles": [
+        "loud",
         "strange"
       ]
     },
@@ -438,6 +458,26 @@
         "strange"
       ],
       "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:sub-urbane",
+      "artistName": "sub_urbane",
+      "aquariumSlug": "sub-urbane",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sub-urbane/",
+      "bandcampArtistUrl": "https://sub-urbane.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
         "strange"
       ]
     },

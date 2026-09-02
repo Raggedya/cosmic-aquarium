@@ -1,15 +1,5 @@
 {
-  "schemaVersion": 1,
-  "id": "location:newcastle-australia",
-  "slug": "newcastle-australia",
-  "name": "Newcastle, Australia",
-  "type": "location",
-  "description": "Independent Bandcamp artists strongly associated with Newcastle, Australia.",
-  "status": "draft",
-  "instruction": "TOUCH AN ARTIST",
-  "theme": "location",
-  "createdAt": "2026-09-02T07:50:18Z",
-  "updatedAt": "2026-09-02T07:59:50Z",
+  "id": "20260902T075950Z-newcastle-australia",
   "location": {
     "city": "Newcastle",
     "region": null,
@@ -20,11 +10,35 @@
     "longitude": null,
     "aliases": [
       "Newcastle, Australia"
-    ],
-    "researchStatus": "ready",
-    "lastResearchedAt": "2026-09-02T07:59:50Z"
+    ]
   },
-  "members": [
+  "timestamp": "2026-09-02T07:59:50Z",
+  "sources": [
+    {
+      "provider": "bing-rss-public-search",
+      "found": 0
+    },
+    {
+      "provider": "duckduckgo-html-public-search",
+      "found": 9
+    },
+    {
+      "provider": "yahoo-html-public-search",
+      "found": 0
+    }
+  ],
+  "candidatesFound": 9,
+  "verified": 8,
+  "high_confidence": 0,
+  "probable": 1,
+  "unverified": 0,
+  "rejected": 0,
+  "duplicates": 0,
+  "newArtists": 9,
+  "errors": 0,
+  "durationSeconds": 83.18,
+  "collectionSlug": "newcastle-australia",
+  "candidates": [
     {
       "artistId": "bandcamp:palsnewcastle",
       "artistName": "PALS",
@@ -36,8 +50,7 @@
       "aquariumSlug": "pals",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/pals/",
       "existingAquarium": false,
-      "displayEnabled": true,
-      "addedAt": "2026-09-02T07:59:50Z"
+      "displayEnabled": true
     },
     {
       "artistId": "bandcamp:osmiumgrid",
@@ -50,8 +63,7 @@
       "aquariumSlug": "osmium-grid",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/osmium-grid/",
       "existingAquarium": false,
-      "displayEnabled": true,
-      "addedAt": "2026-09-02T07:59:50Z"
+      "displayEnabled": true
     },
     {
       "artistId": "bandcamp:talkhouseband",
@@ -64,8 +76,7 @@
       "aquariumSlug": "talkhouse",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/talkhouse/",
       "existingAquarium": false,
-      "displayEnabled": true,
-      "addedAt": "2026-09-02T07:59:50Z"
+      "displayEnabled": true
     },
     {
       "artistId": "bandcamp:rumjungle",
@@ -78,8 +89,20 @@
       "aquariumSlug": "rum-jungle",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rum-jungle/",
       "existingAquarium": false,
-      "displayEnabled": true,
-      "addedAt": "2026-09-02T07:59:50Z"
+      "displayEnabled": true
+    },
+    {
+      "artistId": "bandcamp:bobcorbettandtheroograssband",
+      "artistName": "Bob Corbett And The Roo Grass Band",
+      "bandcampArtistUrl": "https://bobcorbettandtheroograssband.bandcamp.com/",
+      "verificationStatus": "probable",
+      "verificationScore": 1.0,
+      "source": "duckduckgo-html-public-search",
+      "evidence": "Bandcamp profile location: Newcastle, Australia Aquarium creation requires administrator review.",
+      "aquariumSlug": null,
+      "aquariumUrl": null,
+      "existingAquarium": false,
+      "displayEnabled": false
     },
     {
       "artistId": "bandcamp:smackedyouth",
@@ -92,8 +115,7 @@
       "aquariumSlug": "smacked-youth",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/smacked-youth/",
       "existingAquarium": false,
-      "displayEnabled": true,
-      "addedAt": "2026-09-02T07:59:50Z"
+      "displayEnabled": true
     },
     {
       "artistId": "bandcamp:sub-urbane",
@@ -106,8 +128,7 @@
       "aquariumSlug": "sub-urbane",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sub-urbane/",
       "existingAquarium": false,
-      "displayEnabled": true,
-      "addedAt": "2026-09-02T07:59:50Z"
+      "displayEnabled": true
     },
     {
       "artistId": "bandcamp:dustdustdust",
@@ -120,8 +141,7 @@
       "aquariumSlug": "dust",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dust/",
       "existingAquarium": false,
-      "displayEnabled": true,
-      "addedAt": "2026-09-02T07:59:50Z"
+      "displayEnabled": true
     },
     {
       "artistId": "bandcamp:laurapanic",
@@ -134,8 +154,7 @@
       "aquariumSlug": "laurapanic",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/laurapanic/",
       "existingAquarium": false,
-      "displayEnabled": true,
-      "addedAt": "2026-09-02T07:59:50Z"
+      "displayEnabled": true
     }
   ]
 }

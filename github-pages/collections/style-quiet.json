@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-02T07:50:19.553Z",
-  "updatedAt": "2026-09-02T07:50:19.553Z",
+  "createdAt": "2026-09-02T08:01:14.270Z",
+  "updatedAt": "2026-09-02T08:01:14.270Z",
   "members": [
     {
       "artistId": "bandcamp:52hz-music",
@@ -525,6 +525,26 @@
       ],
       "styles": [
         "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:palsnewcastle",
+      "artistName": "PALS",
+      "aquariumSlug": "pals",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/pals/",
+      "bandcampArtistUrl": "https://palsnewcastle.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "loud"
+      ],
+      "styles": [
+        "quiet",
+        "loud"
       ]
     },
     {

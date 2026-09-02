@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T07:50:19.559Z",
+  "generatedAt": "2026-09-02T08:01:14.273Z",
   "collections": [
     {
       "id": "location:newcastle-australia",
@@ -8,7 +8,7 @@
       "name": "Newcastle, Australia",
       "type": "location",
       "status": "draft",
-      "memberCount": 0,
+      "memberCount": 8,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/newcastle-australia/",
       "location": {
         "city": "Newcastle",
@@ -21,10 +21,10 @@
         "aliases": [
           "Newcastle, Australia"
         ],
-        "researchStatus": "review",
-        "lastResearchedAt": "2026-09-02T07:50:18Z"
+        "researchStatus": "ready",
+        "lastResearchedAt": "2026-09-02T07:59:50Z"
       },
-      "updatedAt": "2026-09-02T07:50:18Z"
+      "updatedAt": "2026-09-02T07:59:50Z"
     },
     {
       "id": "location:portland-oregon",
@@ -57,10 +57,10 @@
       "name": "HEAVY",
       "type": "genre",
       "status": "published",
-      "memberCount": 39,
+      "memberCount": 41,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-heavy/",
       "location": null,
-      "updatedAt": "2026-09-02T07:50:19.552Z"
+      "updatedAt": "2026-09-02T08:01:14.270Z"
     },
     {
       "id": "style:dreamy",
@@ -71,7 +71,7 @@
       "memberCount": 41,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-dreamy/",
       "location": null,
-      "updatedAt": "2026-09-02T07:50:19.552Z"
+      "updatedAt": "2026-09-02T08:01:14.270Z"
     },
     {
       "id": "style:quiet",
@@ -79,10 +79,10 @@
       "name": "QUIET",
       "type": "genre",
       "status": "published",
-      "memberCount": 39,
+      "memberCount": 40,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-quiet/",
       "location": null,
-      "updatedAt": "2026-09-02T07:50:19.553Z"
+      "updatedAt": "2026-09-02T08:01:14.270Z"
     },
     {
       "id": "style:electronic",
@@ -90,10 +90,10 @@
       "name": "ELECTRONIC",
       "type": "genre",
       "status": "published",
-      "memberCount": 38,
+      "memberCount": 40,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-electronic/",
       "location": null,
-      "updatedAt": "2026-09-02T07:50:19.554Z"
+      "updatedAt": "2026-09-02T08:01:14.271Z"
     },
     {
       "id": "style:dark",
@@ -101,10 +101,10 @@
       "name": "DARK",
       "type": "genre",
       "status": "published",
-      "memberCount": 39,
+      "memberCount": 41,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-dark/",
       "location": null,
-      "updatedAt": "2026-09-02T07:50:19.555Z"
+      "updatedAt": "2026-09-02T08:01:14.271Z"
     },
     {
       "id": "style:loud",
@@ -112,10 +112,10 @@
       "name": "LOUD",
       "type": "genre",
       "status": "published",
-      "memberCount": 40,
+      "memberCount": 44,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-loud/",
       "location": null,
-      "updatedAt": "2026-09-02T07:50:19.556Z"
+      "updatedAt": "2026-09-02T08:01:14.271Z"
     },
     {
       "id": "style:strange",
@@ -123,10 +123,10 @@
       "name": "STRANGE",
       "type": "genre",
       "status": "published",
-      "memberCount": 34,
+      "memberCount": 36,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-strange/",
       "location": null,
-      "updatedAt": "2026-09-02T07:50:19.556Z"
+      "updatedAt": "2026-09-02T08:01:14.272Z"
     }
   ]
 }
