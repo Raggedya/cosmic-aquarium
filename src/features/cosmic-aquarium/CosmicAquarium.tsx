@@ -9,6 +9,7 @@ import {
   type MouseEvent,
   type PointerEvent,
 } from 'react';
+import Link from 'next/link';
 import { officialTrackEmbedUrl } from '@/src/adapters/bandcamp-adapter';
 import { defaultArtistManifest } from '@/src/data/default-artist-manifest';
 import { buildTrackDeck, secureRandomUnit } from '@/src/features/cosmic-aquarium/track-shuffle';
@@ -101,6 +102,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const [selectedTrack, setSelectedTrack] = useState<ArtistManifest['tracks'][number] | null>(null);
   const [playerDeparting, setPlayerDeparting] = useState(false);
   const [secondaryActionsVisible, setSecondaryActionsVisible] = useState(false);
+  const [homeControlActive, setHomeControlActive] = useState(false);
   const [touchOrigin, setTouchOrigin] = useState({ x: 50, y: 50 });
   const [announcement, setAnnouncement] = useState('A living aquarium surrounds you. Touch an unknown creature to discover its song.');
 
@@ -127,6 +129,11 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     const timer = window.setTimeout(() => setSecondaryActionsVisible(true), 4000);
     return () => window.clearTimeout(timer);
   }, [playerDeparting]);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => setHomeControlActive(true), 15000);
+    return () => window.clearTimeout(timer);
+  }, [manifestSlug]);
 
   function recordEvent(eventType: string, details: Record<string, unknown> = {}) {
     if (!analyticsSession.current) return;
@@ -422,7 +429,19 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
           mixBlendMode: 'normal',
         }}
       >
-        <span aria-hidden="true" className="cosmic-mark"><i /></span>
+        <Link
+          className={'cosmic-home-control' + (homeControlActive ? ' is-home' : '')}
+          href="/"
+          aria-label="Return to Cosmic Aquaria home"
+          aria-hidden={!homeControlActive}
+          tabIndex={homeControlActive ? 0 : -1}
+          onClick={(event) => {
+            if (!homeControlActive) event.preventDefault();
+          }}
+        >
+          <span aria-hidden="true" className="cosmic-mark"><i /></span>
+          <span aria-hidden="true" className="cosmic-home-label">HOME</span>
+        </Link>
         <h1 style={{ margin: 0, paddingLeft: '.38em', color: '#f5f2ed', fontSize: 13, fontWeight: 500, letterSpacing: '.38em' }}>
           {manifest.artist.toUpperCase()}
         </h1>

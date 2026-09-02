@@ -67,12 +67,34 @@
   transform: translateX(-50%);
 }
 
-.cosmic-mark {
+.cosmic-home-control {
   position: relative;
   display: block;
+  width: 44px;
+  height: 44px;
+  margin: -10px auto -2px;
+  color: rgba(225, 238, 255, .68);
+  text-decoration: none;
+  pointer-events: none;
+  opacity: 1;
+  border-radius: 50%;
+  transition: opacity .3s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.cosmic-home-control.is-home { pointer-events: auto; opacity: .82; }
+.cosmic-home-control.is-home:hover,
+.cosmic-home-control.is-home:focus-visible,
+.cosmic-home-control.is-home:active { opacity: 1; }
+
+.cosmic-mark {
+  position: absolute;
+  display: block;
+  top: 10px;
+  left: 10px;
   width: 24px;
   height: 24px;
-  margin: 0 auto 8px;
   border: 1px solid rgba(225, 238, 255, .58);
   border-radius: 50%;
   box-shadow: 0 0 16px rgba(101, 159, 255, .12);
@@ -87,11 +109,37 @@
   right: 4px;
   top: 50%;
   border-top: 1px solid rgba(225, 238, 255, .56);
+  opacity: 1;
+  transition: opacity 1s cubic-bezier(.22, .61, .36, 1), transform 1s cubic-bezier(.22, .61, .36, 1);
 }
 
 .cosmic-mark::before { transform: rotate(19deg); }
 .cosmic-mark::after { transform: rotate(-19deg); }
 .cosmic-mark i { left: 7px; right: 7px; transform: rotate(90deg); }
+
+.cosmic-home-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  padding-left: .12em;
+  color: rgba(225, 238, 255, .72);
+  font-size: 5px;
+  font-weight: 650;
+  line-height: 1;
+  letter-spacing: .12em;
+  opacity: 0;
+  transform: scale(.94);
+  transition: opacity 1s cubic-bezier(.22, .61, .36, 1), transform 1s cubic-bezier(.22, .61, .36, 1);
+}
+
+.cosmic-home-control.is-home .cosmic-mark::before,
+.cosmic-home-control.is-home .cosmic-mark::after,
+.cosmic-home-control.is-home .cosmic-mark i { opacity: 0; }
+.cosmic-home-control.is-home .cosmic-home-label { opacity: 1; transform: scale(1); }
 
 .cosmic-title h1 {
   margin: 0;
@@ -647,6 +695,10 @@
   .cosmic-aquarium::before,
   .cosmic-aquarium::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
   .creature { transform: translate(-50%, -50%) scale(var(--depth-scale)); }
+  .cosmic-home-label,
+  .cosmic-mark::before,
+  .cosmic-mark::after,
+  .cosmic-mark i { transition-duration: .16s !important; }
 }
 
 @media (forced-colors: active) {

@@ -60,10 +60,26 @@
   const player = root.querySelector('.living-player');
   const status = root.querySelector('[role="status"]');
   const titlePrompt = document.querySelector('.cosmic-title p');
+  const homeControl = document.querySelector('.cosmic-home-control');
   const shareAction = root.querySelector('.aquarium-action--share');
   const buyAction = document.querySelector('.aquarium-action--buy');
   const exploreAction = root.querySelector('.aquarium-action--explore');
   const analyticsSession = sessionId();
+
+  let homeControlTimer = setTimeout(() => {
+    homeControl.classList.add('is-home');
+    homeControl.removeAttribute('aria-hidden');
+    homeControl.tabIndex = 0;
+    homeControlTimer = 0;
+  },15000);
+
+  homeControl.addEventListener('click',event => {
+    if (!homeControl.classList.contains('is-home')) event.preventDefault();
+  });
+
+  addEventListener('pagehide',() => {
+    if (homeControlTimer) clearTimeout(homeControlTimer);
+  },{once:true});
 
   player.querySelector('.player-membrane').addEventListener('animationstart',event => {
     if (event.animationName !== 'player-flower-drift-away') return;
