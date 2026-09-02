@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "slug": "ours",
+  "artist": "Ours.",
+  "bandcampUrl": "https://ourspdx.bandcamp.com/",
+  "releaseTitle": "Change The Rules",
+  "releaseDate": "2014-08-20 00:00:00 UTC",
+  "dailyBatchId": null,
+  "status": "published",
+  "metadataTags": [],
+  "waters": [
+    "dreamy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ourspdx.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T06:11:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "change-the-rules",
+      "color": "#c3b4f4"
+    },
+    {
+      "key": "fall-in-line",
+      "color": "#88d7ff"
+    },
+    {
+      "key": "holy-war",
+      "color": "#ff6f8f"
+    },
+    {
+      "key": "petals",
+      "color": "#ffb66d"
+    },
+    {
+      "key": "sink-with-me",
+      "color": "#8fd9c7"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "change-the-rules-2089262962",
+      "title": "Change The Rules",
+      "artist": "Ours.",
+      "albumTitle": "Change The Rules",
+      "albumKey": "change-the-rules",
+      "year": 2014,
+      "trackNumber": 1,
+      "duration": "3:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ourspdx.bandcamp.com/track/change-the-rules",
+      "bandcampEmbedTrackId": "2089262962",
+      "sourcePage": "https://ourspdx.bandcamp.com/track/change-the-rules",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "fall-in-line-1054592960",
+      "title": "Fall In Line",
+      "artist": "Ours.",
+      "albumTitle": "Fall In Line",
+      "albumKey": "fall-in-line",
+      "year": 2014,
+      "trackNumber": 1,
+      "duration": "3:56",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ourspdx.bandcamp.com/track/fall-in-line",
+      "bandcampEmbedTrackId": "1054592960",
+      "sourcePage": "https://ourspdx.bandcamp.com/track/fall-in-line",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "holy-war-3822153465",
+      "title": "Holy War",
+      "artist": "Ours.",
+      "albumTitle": "Holy War",
+      "albumKey": "holy-war",
+      "year": 2014,
+      "trackNumber": 1,
+      "duration": "4:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ourspdx.bandcamp.com/track/holy-war",
+      "bandcampEmbedTrackId": "3822153465",
+      "sourcePage": "https://ourspdx.bandcamp.com/track/holy-war",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "petals-2095256376",
+      "title": "Petals",
+      "artist": "Ours.",
+      "albumTitle": "Petals",
+      "albumKey": "petals",
+      "year": 2014,
+      "trackNumber": 1,
+      "duration": "3:23",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ourspdx.bandcamp.com/track/petals",
+      "bandcampEmbedTrackId": "2095256376",
+      "sourcePage": "https://ourspdx.bandcamp.com/track/petals",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "sink-with-me-1995759379",
+      "title": "Sink With Me",
+      "artist": "Ours.",
+      "albumTitle": "Sink With Me",
+      "albumKey": "sink-with-me",
+      "year": 2014,
+      "trackNumber": 1,
+      "duration": "3:40",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ourspdx.bandcamp.com/track/sink-with-me",
+      "bandcampEmbedTrackId": "1995759379",
+      "sourcePage": "https://ourspdx.bandcamp.com/track/sink-with-me",
+      "accent": "#8fd9c7"
+    }
+  ]
+}

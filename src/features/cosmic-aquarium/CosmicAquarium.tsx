@@ -1,5 +1,7 @@
 'use client';
 
+/* eslint-disable react-hooks/set-state-in-effect -- route and timed aquarium state are intentionally synchronized after mount */
+
 import {
   useEffect,
   useMemo,
@@ -13,6 +15,8 @@ import { officialTrackEmbedUrl } from '@/src/adapters/bandcamp-adapter';
 import { defaultArtistManifest } from '@/src/data/default-artist-manifest';
 import { buildTrackDeck, secureRandomUnit } from '@/src/features/cosmic-aquarium/track-shuffle';
 import type { ArtistManifest } from '@/src/types/artist-manifest';
+import { isSafeCollectionParent, publishableMembers } from '@/src/collections/model';
+import type { ArtistCollection } from '@/src/types/collection';
 
 type Depth = 'far' | 'mid' | 'near' | 'foreground';
 type Species = 'cosmos' | 'poppy' | 'anemone' | 'rose' | 'thorn' | 'chrome' | 'glass';
@@ -105,6 +109,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const [buyActionVisible, setBuyActionVisible] = useState(false);
   const [secondaryActionsVisible, setSecondaryActionsVisible] = useState(false);
   const [homeControlActive, setHomeControlActive] = useState(false);
+  const [homeDestination, setHomeDestination] = useState('/');
   const [touchOrigin, setTouchOrigin] = useState({ x: 50, y: 50 });
   const [announcement, setAnnouncement] = useState('A living aquarium surrounds you. Touch an unknown creature to discover its song.');
 
@@ -122,6 +127,13 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const shareArtwork = manifest.visualStyle === 'chrome' || manifest.visualStyle === 'glass' ? actionArtwork : '/flowers/anemone.png';
   const selectedEmbed = selectedTrack ? officialTrackEmbedUrl(selectedTrack.bandcampEmbedTrackId) : null;
   const selectedAccent = selectedTrack ? selectedTrack.accent ?? albumAccent(manifest, selectedTrack.albumKey) : '#b9a7ff';
+
+  useEffect(() => {
+    const parent = new URLSearchParams(window.location.search).get('parent');
+    const safeParent = parent ? isSafeCollectionParent(parent, window.location.origin) : null;
+    const timer = window.setTimeout(() => setHomeDestination(safeParent ?? '/'), 0);
+    return () => window.clearTimeout(timer);
+  }, [manifestSlug]);
 
   useEffect(() => {
     setBuyActionVisible(false);
@@ -392,8 +404,22 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       const recentKey = 'cosmic-aquaria:recent-aquariums';
       const recent = readStoredIds(recentKey);
       let destination: { id?: string; slug: string; url?: string; aquarium_url?: string } | null = null;
-      const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?water=' + encodeURIComponent(water) + '&exclude=' + encodeURIComponent(manifest.slug) + '&recent=' + encodeURIComponent(recent.join(',')), { cache: 'no-store' }).catch(() => null);
-      if (serviceResponse?.ok) destination = await serviceResponse.json() as typeof destination;
+      const parentSlug = homeDestination.match(/^\/collections\/([a-z0-9-]+)\/?$/)?.[1];
+      if (parentSlug) {
+        const response = await fetch('https://raggedya.github.io/cosmic-aquarium/collections/' + encodeURIComponent(parentSlug) + '.json', { cache: 'no-store' });
+        if (response.ok) {
+          const parentCollection = await response.json() as ArtistCollection;
+          const allMembers = publishableMembers(parentCollection).filter((member) => member.aquariumSlug !== manifest.slug);
+          const freshMembers = allMembers.filter((member) => !recent.includes(member.aquariumSlug));
+          const pool = freshMembers.length ? freshMembers : allMembers;
+          const member = pool[Math.floor(secureRandomUnit() * pool.length)];
+          if (member) destination = { id: member.artistId, slug: member.aquariumSlug, url: member.aquariumUrl };
+        }
+      }
+      if (!destination) {
+        const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?water=' + encodeURIComponent(water) + '&exclude=' + encodeURIComponent(manifest.slug) + '&recent=' + encodeURIComponent(recent.join(',')), { cache: 'no-store' }).catch(() => null);
+        if (serviceResponse?.ok) destination = await serviceResponse.json() as typeof destination;
+      }
       if (!destination) {
         const response = await fetch('https://raggedya.github.io/cosmic-aquarium/aquariums.json', { cache: 'no-store' });
         if (!response.ok) throw new Error('Aquarium registry unavailable');
@@ -415,6 +441,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       const target = new URL(destination.url ?? destination.aquarium_url ?? '/', window.location.href);
       target.searchParams.set('water', water);
       target.searchParams.set('source', 'explore');
+      if (homeDestination !== '/') target.searchParams.set('parent', homeDestination);
       window.location.assign(target.href);
     } catch {
       setAnnouncement('Another Aquarium is not available just now.');
@@ -452,11 +479,11 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
         <button
           type="button"
           className={'cosmic-home-control' + (homeControlActive ? ' is-home' : '')}
-          aria-label="Return to Cosmic Aquaria home"
+          aria-label={homeDestination === '/' ? 'Return to Cosmic Aquaria home' : 'Return to the collection Aquarium'}
           aria-hidden={!homeControlActive}
           tabIndex={homeControlActive ? 0 : -1}
           onClick={() => {
-            if (homeControlActive) window.location.assign('/');
+            if (homeControlActive) window.location.assign(homeDestination);
           }}
         >
           <span aria-hidden="true" className="cosmic-mark"><i /></span>

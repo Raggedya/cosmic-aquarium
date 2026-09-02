@@ -1,0 +1,38 @@
+{
+  "id": "20260902T061039Z-portland-oregon",
+  "location": {
+    "city": "Portland",
+    "region": "Oregon",
+    "country": "United States",
+    "canonicalLocation": "Portland, Oregon, United States",
+    "displayName": "Portland, Oregon",
+    "latitude": 45.5152,
+    "longitude": -122.6784,
+    "aliases": [
+      "Portland, Oregon",
+      "Portland, Oregon, United States"
+    ]
+  },
+  "timestamp": "2026-09-02T06:10:39Z",
+  "sources": [
+    {
+      "provider": "bing-rss-public-search",
+      "found": 0
+    },
+    {
+      "provider": "duckduckgo-html-public-search",
+      "found": 0
+    }
+  ],
+  "candidatesFound": 3,
+  "verified": 3,
+  "high_confidence": 0,
+  "probable": 0,
+  "unverified": 0,
+  "rejected": 0,
+  "duplicates": 0,
+  "newArtists": 3,
+  "errors": 0,
+  "durationSeconds": 54.52,
+  "collectionSlug": "portland-oregon"
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "location:portland-oregon",
+  "slug": "portland-oregon",
+  "name": "Portland, Oregon",
+  "type": "location",
+  "description": "Independent Bandcamp artists strongly associated with Portland, Oregon, United States.",
+  "status": "published",
+  "instruction": "TOUCH AN ARTIST",
+  "theme": "location",
+  "createdAt": "2026-09-02T06:10:39Z",
+  "updatedAt": "2026-09-02T06:10:39Z",
+  "location": {
+    "city": "Portland",
+    "region": "Oregon",
+    "country": "United States",
+    "canonicalLocation": "Portland, Oregon, United States",
+    "displayName": "Portland, Oregon",
+    "latitude": 45.5152,
+    "longitude": -122.6784,
+    "aliases": [
+      "Portland, Oregon",
+      "Portland, Oregon, United States"
+    ],
+    "researchStatus": "ready",
+    "lastResearchedAt": "2026-09-02T06:10:39Z"
+  },
+  "members": [
+    {
+      "artistId": "bandcamp:thewobblies",
+      "artistName": "The Wobblies",
+      "bandcampArtistUrl": "https://thewobblies.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "administrator-supplied",
+      "evidence": "Bandcamp profile location: Portland, Oregon",
+      "aquariumSlug": "the-wobblies",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-wobblies/",
+      "existingAquarium": false,
+      "displayEnabled": true,
+      "addedAt": "2026-09-02T06:10:39Z"
+    },
+    {
+      "artistId": "bandcamp:ourspdx",
+      "artistName": "Ours.",
+      "bandcampArtistUrl": "https://ourspdx.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "administrator-supplied",
+      "evidence": "Bandcamp profile location: Portland, Oregon",
+      "aquariumSlug": "ours",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ours/",
+      "existingAquarium": false,
+      "displayEnabled": true,
+      "addedAt": "2026-09-02T06:10:39Z"
+    },
+    {
+      "artistId": "bandcamp:daystarpdx",
+      "artistName": "Daystar",
+      "bandcampArtistUrl": "https://daystarpdx.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "administrator-supplied",
+      "evidence": "Bandcamp profile location: Portland, Oregon",
+      "aquariumSlug": "daystar",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/daystar/",
+      "existingAquarium": false,
+      "displayEnabled": true,
+      "addedAt": "2026-09-02T06:10:39Z"
+    }
+  ]
+}

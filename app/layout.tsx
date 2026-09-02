@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import './cosmic-aquarium.css';
 import './doorway.css';
+import './collection-aquarium.css';
 
 const title = 'Cosmic Aquaria — Enter Without Knowing';
 const description = 'Choose a water or drift anywhere. Let independent music find you inside the living Cosmic Aquaria universe.';

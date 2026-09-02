@@ -99,9 +99,27 @@ async function randomAquarium(url, env) {
   return entry ? json({...entry,water,fallback_from:fallbackFrom},200,CORS) : json({error:'no_aquarium_available'},404,CORS);
 }
 
+async function randomCollectionArtist(url, env, slug) {
+  const exclude = clean(url.searchParams.get('exclude'), 160);
+  const entry = await env.DB.prepare(`SELECT ar.primary_aquarium_id AS id,a.slug,a.artist,a.release_title,a.aquarium_url,ca.artist_id
+    FROM collection c
+    INNER JOIN collection_artist ca ON ca.collection_id=c.id
+    INNER JOIN artist ar ON ar.id=ca.artist_id
+    INNER JOIN aquarium a ON a.id=ar.primary_aquarium_id
+    WHERE c.slug=? AND c.status='published' AND ca.display_enabled=1
+      AND ca.verification_status IN ('verified','high_confidence')
+      AND ar.status='published' AND a.status='published' AND a.disabled_at IS NULL
+      AND (? IS NULL OR ca.artist_id<>?)
+    ORDER BY RANDOM() LIMIT 1`)
+    .bind(slug,exclude,exclude).first();
+  return entry ? json(entry,200,CORS) : json({error:'no_collection_artist_available'},404,CORS);
+}
+
 async function syncCatalogue(request, env) {
   const body = await readBody(request);
   const aquariums = Array.isArray(body?.aquariums) ? body.aquariums.slice(0,10000) : [];
+  const artists = Array.isArray(body?.artists) ? body.artists.slice(0,10000) : [];
+  const collections = Array.isArray(body?.collections) ? body.collections.slice(0,1000) : [];
   const batch = body?.batch && typeof body.batch === 'object' ? body.batch : null;
   const currentRows = await env.DB.prepare('SELECT id,status FROM aquarium').all();
   const current = new Map((currentRows.results || []).map(item=>[item.id,item.status]));
@@ -112,15 +130,24 @@ async function syncCatalogue(request, env) {
       ? env.DB.prepare(`DELETE FROM aquarium WHERE id NOT IN (${ids.map(()=>'?').join(',')})`).bind(...ids)
       : env.DB.prepare('DELETE FROM aquarium'));
   }
+  for (const item of artists) {
+    if (!item?.id || !item?.bandcampArtistUrl) continue;
+    const now = item.updatedAt || new Date().toISOString();
+    statements.push(env.DB.prepare(`INSERT INTO artist
+      (id,name,canonical_name,bandcamp_artist_url,primary_aquarium_id,status,created_at,updated_at)
+      VALUES (?,?,?,?,?,?,?,?)
+      ON CONFLICT(id) DO UPDATE SET name=excluded.name,canonical_name=excluded.canonical_name,bandcamp_artist_url=excluded.bandcamp_artist_url,primary_aquarium_id=excluded.primary_aquarium_id,status=excluded.status,updated_at=excluded.updated_at`)
+      .bind(item.id,item.name||'',item.canonicalName||String(item.name||'').toLowerCase(),item.bandcampArtistUrl,null,item.status==='disabled'?'disabled':'published',item.createdAt||now,now));
+  }
   for (const item of aquariums) {
     if (!item?.id || !item?.url) continue;
     const status = item.status === 'disabled' ? 'disabled' : 'published';
     const disabledAt = status === 'disabled' ? (item.disabledAt||new Date().toISOString()) : null;
     statements.push(env.DB.prepare(`INSERT INTO aquarium
-      (id,slug,artist,release_title,bandcamp_url,aquarium_url,theme,status,daily_batch_id,created_at,published_at,disabled_at)
-      VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
-      ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at),disabled_at=excluded.disabled_at`)
-      .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,status,item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString(),disabledAt));
+      (id,slug,artist,release_title,bandcamp_url,aquarium_url,theme,status,daily_batch_id,created_at,published_at,disabled_at,artist_id)
+      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
+      ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at),disabled_at=excluded.disabled_at,artist_id=excluded.artist_id`)
+      .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,status,item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString(),disabledAt,item.canonicalArtistId||null));
     statements.push(env.DB.prepare("DELETE FROM aquarium_water WHERE aquarium_id=? AND assigned_by='automatic' AND NOT EXISTS (SELECT 1 FROM aquarium_water WHERE aquarium_id=? AND assigned_by='manual')").bind(item.id,item.id));
     for (const water of [...new Set(Array.isArray(item.waters) ? item.waters.map(value=>String(value).toLowerCase()).filter(value=>WATERS.has(value)) : [])]) {
       statements.push(env.DB.prepare("INSERT OR IGNORE INTO aquarium_water (aquarium_id,water,assigned_by,confidence,updated_at) SELECT ?,?,?,?,? WHERE NOT EXISTS (SELECT 1 FROM aquarium_water WHERE aquarium_id=? AND assigned_by='manual')").bind(item.id,water,'automatic',null,new Date().toISOString(),item.id));
@@ -132,6 +159,28 @@ async function syncCatalogue(request, env) {
     } else if (priorStatus !== status) {
       statements.push(systemEventStatement(env,status === 'published' ? 'aquarium_published' : 'aquarium_unpublished',item.id));
     }
+    if (item.canonicalArtistId) statements.push(env.DB.prepare(`INSERT INTO artist_release (artist_id,aquarium_id,is_primary) VALUES (?,?,?)
+      ON CONFLICT(aquarium_id) DO UPDATE SET artist_id=excluded.artist_id,is_primary=excluded.is_primary`)
+      .bind(item.canonicalArtistId,item.id,artists.some(artist=>artist.id===item.canonicalArtistId&&artist.aquariumSlug===item.id)?1:0));
+  }
+  for (const item of artists) {
+    if (item?.id && item?.aquariumSlug) statements.push(env.DB.prepare('UPDATE artist SET primary_aquarium_id=?,updated_at=? WHERE id=?').bind(item.aquariumSlug,item.updatedAt||new Date().toISOString(),item.id));
+  }
+  for (const item of collections) {
+    if (!item?.id || !item?.slug || !item?.type) continue;
+    const now = item.updatedAt || new Date().toISOString();
+    statements.push(env.DB.prepare(`INSERT INTO collection
+      (id,slug,name,type,description,theme,status,metadata,created_at,updated_at)
+      VALUES (?,?,?,?,?,?,?,?,?,?)
+      ON CONFLICT(id) DO UPDATE SET slug=excluded.slug,name=excluded.name,type=excluded.type,description=excluded.description,theme=excluded.theme,status=excluded.status,metadata=excluded.metadata,updated_at=excluded.updated_at`)
+      .bind(item.id,item.slug,item.name||item.slug,item.type,item.description||null,item.theme||null,['published','disabled'].includes(item.status)?item.status:'draft',JSON.stringify(item.location||{}),item.createdAt||now,now));
+    statements.push(env.DB.prepare('DELETE FROM collection_artist WHERE collection_id=?').bind(item.id));
+    for (const member of Array.isArray(item.members)?item.members:[]) {
+      if (!member?.artistId) continue;
+      statements.push(env.DB.prepare(`INSERT OR REPLACE INTO collection_artist
+        (collection_id,artist_id,verification_status,verification_score,source,evidence,display_enabled,added_at)
+        VALUES (?,?,?,?,?,?,?,?)`).bind(item.id,member.artistId,member.verificationStatus||'unverified',member.verificationScore??null,member.source||null,member.evidence||null,member.displayEnabled===true?1:0,member.addedAt||now));
+    }
   }
   if (statements.length) await env.DB.batch(statements);
   if (batch?.id) {
@@ -140,7 +189,7 @@ async function syncCatalogue(request, env) {
       VALUES (?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET status=excluded.status,generated_count=excluded.generated_count,published_count=excluded.published_count,email_status=excluded.email_status,completed_at=excluded.completed_at`)
       .bind(batch.id,batch.batchDate||batch.id,batch.targetCount||20,batch.status||'generation_pending',batch.generatedCount||0,batch.publishedCount||0,batch.emailStatus||'pending',batch.createdAt||new Date().toISOString(),batch.completedAt||null).run();
   }
-  return json({ok:true,synced:aquariums.length,reconciled:body?.fullReplace===true,batch:batch?.id||null});
+  return json({ok:true,synced:aquariums.length,artists:artists.length,collections:collections.length,reconciled:body?.fullReplace===true,batch:batch?.id||null});
 }
 
 async function overview(env) {
@@ -163,7 +212,8 @@ async function overview(env) {
     SUM(CASE WHEN e.event_type='explore_click' THEN 1 ELSE 0 END) AS explores
     FROM aquarium a LEFT JOIN analytics_event e ON e.aquarium_id=a.id GROUP BY a.id ORDER BY opens DESC LIMIT 100`).all();
   const waterCounts = await env.DB.prepare(`SELECT w.water,COUNT(*) AS total FROM aquarium_water w INNER JOIN aquarium a ON a.id=w.aquarium_id WHERE a.status='published' AND a.disabled_at IS NULL GROUP BY w.water ORDER BY w.water`).all();
-  return json({totals,batches:batches.results,aquariums:aquariums.results,waterCounts:waterCounts.results||[]});
+  const collectionCounts = await env.DB.prepare(`SELECT type,status,COUNT(*) AS total FROM collection GROUP BY type,status ORDER BY type,status`).all();
+  return json({totals,batches:batches.results,aquariums:aquariums.results,waterCounts:waterCounts.results||[],collectionCounts:collectionCounts.results||[]});
 }
 
 function sydneyParts(value) {
@@ -304,6 +354,8 @@ export default {
       if (url.pathname === '/api/events' && request.method === 'POST') return recordEvent(request,env);
       if (url.pathname === '/api/email/open.gif' && request.method === 'GET') return recordEmailOpen(url,env);
       if (url.pathname === '/api/aquariums/random' && request.method === 'GET') return randomAquarium(url,env);
+      const collectionRandomMatch = url.pathname.match(/^\/api\/collections\/([^/]+)\/random$/);
+      if (collectionRandomMatch && request.method === 'GET') return randomCollectionArtist(url,env,decodeURIComponent(collectionRandomMatch[1]));
       if (url.pathname === '/admin' && request.method === 'GET') return adminPage();
       if (url.pathname === '/api/admin/sync' && !syncAuthorized(request,env)) return json({error:'unauthorized'},401);
       if (url.pathname.startsWith('/api/admin/') && url.pathname !== '/api/admin/sync' && !authorized(request,env)) return json({error:'unauthorized'},401);

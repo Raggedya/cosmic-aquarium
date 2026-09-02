@@ -91,18 +91,7 @@ jobs:
         env:
           COSMIC_WORKER_SYNC_TOKEN: ${{ secrets.COSMIC_WORKER_SYNC_TOKEN }}
           BATCH_DATE: ${{ steps.batch.outputs.batch_date }}
-        run: |
-          node --input-type=module <<'NODE'
-          import fs from 'node:fs';
-          const catalogue=JSON.parse(fs.readFileSync('github-pages/aquariums.json','utf8'));
-          const batch=JSON.parse(fs.readFileSync(`automation/batches/${process.env.BATCH_DATE}.json`,'utf8'));
-          const response=await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/sync',{
-            method:'POST',
-            headers:{authorization:`Bearer ${process.env.COSMIC_WORKER_SYNC_TOKEN}`,'content-type':'application/json'},
-            body:JSON.stringify({aquariums:catalogue.aquariums,batch,fullReplace:false}),
-          });
-          if(!response.ok) throw new Error(`Universe discovery sync failed: ${response.status}`);
-          NODE
+        run: node scripts/sync-worker.mjs
       - name: Require the complete daily collection
         shell: bash
         env:

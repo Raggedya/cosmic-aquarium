@@ -21,17 +21,4 @@ jobs:
       - name: Sync the published catalogue to random discovery
         env:
           COSMIC_WORKER_SYNC_TOKEN: ${{ secrets.COSMIC_WORKER_SYNC_TOKEN }}
-        run: |
-          node --input-type=module <<'NODE'
-          import fs from 'node:fs';
-          const catalogue=JSON.parse(fs.readFileSync('github-pages/aquariums.json','utf8'));
-          const response=await fetch('https://cosmic-aquaria.andrewharris501.workers.dev/api/admin/sync',{
-            method:'POST',
-            headers:{authorization:`Bearer ${process.env.COSMIC_WORKER_SYNC_TOKEN}`,'content-type':'application/json'},
-            body:JSON.stringify({aquariums:catalogue.aquariums,fullReplace:false}),
-          });
-          const result=await response.json();
-          if(!response.ok) throw new Error(`Universe discovery sync failed: ${response.status} ${JSON.stringify(result)}`);
-          if(result.synced!==catalogue.aquariums.length) throw new Error(`Expected ${catalogue.aquariums.length} synced Aquariums, received ${result.synced}`);
-          console.log(`Synced ${result.synced} Aquariums to universe discovery.`);
-          NODE
+        run: node scripts/sync-worker.mjs

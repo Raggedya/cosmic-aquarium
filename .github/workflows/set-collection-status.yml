@@ -1,0 +1,67 @@
+name: Set Cosmic Aquaria Collection Status
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: Collection slug
+        required: true
+        type: string
+      status:
+        description: Published or disabled
+        required: true
+        type: choice
+        options: [published, disabled]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cosmic-aquarium-publishing
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: actions/setup-node@v4
+        with: {node-version: 22}
+      - name: Change only the parent collection
+        env:
+          SLUG: ${{ inputs.slug }}
+          STATUS: ${{ inputs.status }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const path=`automation/collections/${process.env.SLUG}.json`;
+          if(!fs.existsSync(path)) throw new Error('Unknown collection.');
+          const collection=JSON.parse(fs.readFileSync(path,'utf8'));
+          collection.status=process.env.STATUS;
+          collection.updatedAt=new Date().toISOString();
+          fs.writeFileSync(path,JSON.stringify(collection,null,2)+'\n');
+          NODE
+          node --experimental-strip-types scripts/build-github-pages.mjs
+      - name: Commit collection status without changing artists
+        run: |
+          git config user.name "Cosmic Aquaria Library"
+          git config user.email "cosmic-aquarium@users.noreply.github.com"
+          git add automation/collections github-pages/collections github-pages/artists-index.json github-pages/aquariums.json
+          git commit -m "Set ${{ inputs.slug }} collection ${{ inputs.status }}"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: github-pages}
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Sync collection status
+        env:
+          COSMIC_WORKER_SYNC_TOKEN: ${{ secrets.COSMIC_WORKER_SYNC_TOKEN }}
+        run: node scripts/sync-worker.mjs

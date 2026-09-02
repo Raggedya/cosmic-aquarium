@@ -22,6 +22,8 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageTk
 REPOSITORY = "Raggedya/cosmic-aquarium"
 WORKFLOW = "create-artist.yml"
 STATUS_WORKFLOW = "set-aquarium-status.yml"
+LOCATION_WORKFLOW = "research-location.yml"
+LOCATION_STATUS_WORKFLOW = "set-collection-status.yml"
 DELIVERY_REPOSITORY = "Raggedya/groove-vultures-deep-cuts-fan-challenge"
 DELIVERY_WORKFLOW = "cosmic-aquarium-delivery.yml"
 PAGES_BASE = "https://raggedya.github.io/cosmic-aquarium"
@@ -85,6 +87,7 @@ class CosmicAquariumStudio(tk.Tk):
         self._busy = False
         self._library_busy = False
         self._library_entries: list[dict] = []
+        self.library_mode = "artists"
         self.visual_style = "cosmic"
         self.theme_canvases: dict[str, tk.Canvas] = {}
         self.theme_images: list[ImageTk.PhotoImage] = []
@@ -185,18 +188,35 @@ class CosmicAquariumStudio(tk.Tk):
         self.library_view = library
         library.grid(row=1, column=0, columnspan=2, sticky="nsew", padx=82, pady=(42, 30))
         library.grid_columnconfigure(0, weight=1)
-        library.grid_rowconfigure(3, weight=1)
+        library.grid_rowconfigure(4, weight=1)
 
         heading = tk.Frame(library, bg=INK)
         heading.grid(row=0, column=0, sticky="ew")
         tk.Label(heading, text="AQUARIUM LIBRARY", bg=INK, fg=LAVENDER, font=("Segoe UI Semibold", 9)).pack(side="left")
         tk.Button(heading, text="REFRESH", command=self._start_load_library, bg=INK, fg=MUTED, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), cursor="hand2").pack(side="right")
+        self.locations_tab = tk.Button(heading, text="LOCATIONS", command=lambda: self._set_library_mode("locations"), bg=INK, fg=MUTED, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=12, cursor="hand2")
+        self.locations_tab.pack(side="right")
+        self.artists_tab = tk.Button(heading, text="ARTISTS", command=lambda: self._set_library_mode("artists"), bg=INK, fg=LAVENDER, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=12, cursor="hand2")
+        self.artists_tab.pack(side="right")
         tk.Label(library, text="Everything begins published. Switch any Aquarium off whenever you choose.", bg=INK, fg=PAPER, font=("Georgia", 22), anchor="w").grid(row=1, column=0, sticky="ew", pady=(16, 7))
         self.library_status = tk.Label(library, text="", bg=INK, fg=MUTED, font=("Segoe UI", 9), anchor="w")
         self.library_status.grid(row=2, column=0, sticky="ew", pady=(0, 18))
 
+        self.location_form = tk.Frame(library, bg="#0b0b24", padx=18, pady=14)
+        self.location_form.grid(row=3, column=0, sticky="ew", pady=(0, 14))
+        self.location_form.grid_columnconfigure(0, weight=1)
+        tk.Label(self.location_form, text="NEW LOCATION", bg="#0b0b24", fg=LAVENDER, font=("Segoe UI Semibold", 8)).grid(row=0, column=0, sticky="w")
+        self.location_entry = tk.Entry(self.location_form, bg="#0b0b24", fg=PAPER, insertbackground=LAVENDER, relief="flat", bd=0, font=("Segoe UI", 11))
+        self.location_entry.grid(row=1, column=0, sticky="ew", pady=(8, 3), padx=(0, 14))
+        self.location_entry.insert(0, "Portland, Oregon")
+        self.location_max = tk.Spinbox(self.location_form, from_=1, to=100, width=5, bg="#12112e", fg=PAPER, buttonbackground="#12112e", relief="flat", font=("Segoe UI", 10))
+        self.location_max.delete(0, "end"); self.location_max.insert(0, "25")
+        self.location_max.grid(row=1, column=1, padx=(0, 12))
+        tk.Button(self.location_form, text="CREATE LOCATION", command=self._start_create_location, bg=LAVENDER, fg="#09091e", activebackground="#ded4ff", relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=18, pady=9, cursor="hand2").grid(row=1, column=2)
+        tk.Label(self.location_form, text="Research is verified before artists appear. Existing Artist Aquariums are reused; they are never duplicated.", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=2, column=0, columnspan=3, sticky="w", pady=(6, 0))
+
         list_shell = tk.Frame(library, bg=INK, highlightbackground=LINE, highlightthickness=1)
-        list_shell.grid(row=3, column=0, sticky="nsew")
+        list_shell.grid(row=4, column=0, sticky="nsew")
         list_shell.grid_columnconfigure(0, weight=1)
         list_shell.grid_rowconfigure(0, weight=1)
         self.library_canvas = tk.Canvas(list_shell, bg=INK, highlightthickness=0)
@@ -208,7 +228,18 @@ class CosmicAquariumStudio(tk.Tk):
         self.library_window = self.library_canvas.create_window(0, 0, anchor="nw", window=self.library_list)
         self.library_list.bind("<Configure>", lambda _event: self.library_canvas.configure(scrollregion=self.library_canvas.bbox("all")))
         self.library_canvas.bind("<Configure>", lambda event: self.library_canvas.itemconfigure(self.library_window, width=event.width))
+        self.location_form.grid_remove()
         self.library_view.grid_remove()
+
+    def _set_library_mode(self, mode: str) -> None:
+        self.library_mode = "locations" if mode == "locations" else "artists"
+        self.artists_tab.configure(fg=LAVENDER if self.library_mode == "artists" else MUTED)
+        self.locations_tab.configure(fg=LAVENDER if self.library_mode == "locations" else MUTED)
+        if self.library_mode == "locations":
+            self.location_form.grid()
+        else:
+            self.location_form.grid_remove()
+        self._start_load_library()
 
     def _show_creator(self) -> None:
         self.library_view.grid_remove()
@@ -236,32 +267,95 @@ class CosmicAquariumStudio(tk.Tk):
     def _load_library(self) -> None:
         try:
             gh = self._github_cli()
+            source = "github-pages/collections/index.json" if self.library_mode == "locations" else "github-pages/aquariums.json"
             process = subprocess.run([
                 gh, "api", "-H", "Accept: application/vnd.github.raw+json",
-                f"repos/{REPOSITORY}/contents/github-pages/aquariums.json",
+                f"repos/{REPOSITORY}/contents/{source}",
             ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
             catalogue = json.loads(process.stdout)
-            entries = catalogue.get("aquariums", []) if isinstance(catalogue, dict) else []
+            key = "collections" if self.library_mode == "locations" else "aquariums"
+            entries = catalogue.get(key, []) if isinstance(catalogue, dict) else []
+            if self.library_mode == "locations":
+                entries = [entry for entry in entries if entry.get("type") == "location"]
             self.after(0, lambda: self._render_library(entries))
         except Exception as error:
             self.after(0, lambda message=str(error): self._library_error(message))
 
     def _render_library(self, entries: list[dict]) -> None:
         self._library_busy = False
-        self._library_entries = sorted(entries, key=lambda entry: str(entry.get("artist", "")).casefold())
+        name_key = "name" if self.library_mode == "locations" else "artist"
+        self._library_entries = sorted(entries, key=lambda entry: str(entry.get(name_key, "")).casefold())
         for child in self.library_list.winfo_children():
             child.destroy()
         if not self._library_entries:
             empty = tk.Frame(self.library_list, bg=INK, padx=34, pady=64)
             empty.pack(fill="both", expand=True)
-            tk.Label(empty, text="YOUR LIBRARY IS EMPTY", bg=INK, fg=PAPER, font=("Georgia", 23)).pack()
-            tk.Label(empty, text="Create an Aquarium and it will appear here, already published.", bg=INK, fg=MUTED, font=("Segoe UI", 10), pady=12).pack()
-            self.library_status.configure(text="0 AQUARIUMS  ·  READY FOR A FRESH START", fg=MUTED)
+            noun = "LOCATION LIBRARY" if self.library_mode == "locations" else "LIBRARY"
+            tk.Label(empty, text=f"YOUR {noun} IS EMPTY", bg=INK, fg=PAPER, font=("Georgia", 23)).pack()
+            tk.Label(empty, text="Create a location above." if self.library_mode == "locations" else "Create an Aquarium and it will appear here, already published.", bg=INK, fg=MUTED, font=("Segoe UI", 10), pady=12).pack()
+            self.library_status.configure(text="0 LOCATIONS" if self.library_mode == "locations" else "0 AQUARIUMS  ·  READY FOR A FRESH START", fg=MUTED)
             return
         published = sum(1 for entry in self._library_entries if entry.get("status", "published") == "published")
-        self.library_status.configure(text=f"{len(self._library_entries)} AQUARIUMS  ·  {published} PUBLISHED", fg=MUTED)
+        noun = "LOCATIONS" if self.library_mode == "locations" else "AQUARIUMS"
+        self.library_status.configure(text=f"{len(self._library_entries)} {noun}  ·  {published} PUBLISHED", fg=MUTED)
         for entry in self._library_entries:
-            self._library_row(entry)
+            self._location_row(entry) if self.library_mode == "locations" else self._library_row(entry)
+
+    def _location_row(self, entry: dict) -> None:
+        row = tk.Frame(self.library_list, bg="#0b0b24", padx=20, pady=14)
+        row.pack(fill="x", padx=1, pady=(1, 0)); row.grid_columnconfigure(0, weight=1)
+        name = str(entry.get("name") or entry.get("slug") or "Untitled location")
+        count = int(entry.get("memberCount") or 0)
+        tk.Label(row, text=name.upper(), bg="#0b0b24", fg=PAPER, font=("Segoe UI Semibold", 10), anchor="w").grid(row=0, column=0, sticky="w")
+        tk.Label(row, text=f"{count} CANONICAL ARTIST" + ("" if count == 1 else "S") + "  ·  SEPARATE LOCATION LIBRARY", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=1, column=0, sticky="w", pady=(4, 0))
+        url = str(entry.get("url") or "")
+        tk.Button(row, text="OPEN", command=lambda: webbrowser.open(url), bg="#0b0b24", fg=MUTED, activebackground="#0b0b24", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=18, cursor="hand2").grid(row=0, column=1, rowspan=2)
+        published = entry.get("status") == "published"
+        tk.Button(row, text="ON" if published else "OFF", command=lambda item=entry: self._start_location_toggle(item), bg=LAVENDER if published else "#26243b", fg="#09091e" if published else MUTED, activebackground="#ded4ff", relief="flat", bd=0, font=("Segoe UI Semibold", 8), width=7, pady=7, cursor="hand2").grid(row=0, column=2, rowspan=2, padx=(8, 0))
+
+    def _start_create_location(self) -> None:
+        if self._library_busy:
+            return
+        location = self.location_entry.get().strip()
+        if "," not in location:
+            messagebox.showerror("Location Library", "Use a specific place such as Portland, Oregon.")
+            return
+        try:
+            maximum = max(1, min(100, int(self.location_max.get())))
+        except ValueError:
+            maximum = 25
+        self._library_busy = True
+        self.library_status.configure(text=f"RESEARCHING {location.upper()}…", fg=LAVENDER)
+        threading.Thread(target=self._run_create_location, args=(location, maximum), daemon=True).start()
+
+    def _run_create_location(self, location: str, maximum: int) -> None:
+        try:
+            gh = self._github_cli(); started = dt.datetime.now(dt.timezone.utc)
+            subprocess.run([gh, "workflow", "run", LOCATION_WORKFLOW, "--repo", REPOSITORY, "-f", f"location={location}", "-f", f"max_artists={maximum}", "-f", "build_missing=true"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            run_id = self._find_run(gh, started, REPOSITORY, LOCATION_WORKFLOW)
+            if self._watch_run(gh, run_id, REPOSITORY) != "success":
+                raise RuntimeError(self._workflow_failure(gh, run_id, REPOSITORY, "The location research could not be completed."))
+            self._load_library()
+        except Exception as error:
+            self.after(0, lambda message=str(error): self._library_error(message))
+
+    def _start_location_toggle(self, entry: dict) -> None:
+        if self._library_busy:
+            return
+        next_status = "disabled" if entry.get("status") == "published" else "published"
+        self._library_busy = True
+        threading.Thread(target=self._run_location_toggle, args=(entry, next_status), daemon=True).start()
+
+    def _run_location_toggle(self, entry: dict, status: str) -> None:
+        try:
+            gh = self._github_cli(); started = dt.datetime.now(dt.timezone.utc)
+            subprocess.run([gh, "workflow", "run", LOCATION_STATUS_WORKFLOW, "--repo", REPOSITORY, "-f", f"slug={entry['slug']}", "-f", f"status={status}"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            run_id = self._find_run(gh, started, REPOSITORY, LOCATION_STATUS_WORKFLOW)
+            if self._watch_run(gh, run_id, REPOSITORY) != "success":
+                raise RuntimeError(self._workflow_failure(gh, run_id, REPOSITORY, "The location publish setting could not be changed."))
+            self._load_library()
+        except Exception as error:
+            self.after(0, lambda message=str(error): self._library_error(message))
 
     def _library_row(self, entry: dict) -> None:
         row = tk.Frame(self.library_list, bg="#0b0b24", padx=20, pady=14)
@@ -568,7 +662,7 @@ if __name__ == "__main__":
     application = CosmicAquariumStudio()
     if "--smoke-test" in sys.argv:
         application.update_idletasks()
-        if application.artist.winfo_exists() != 1 or application.create_button.cget("text") != "CREATE  ✦" or len(application.theme_canvases) != 2 or application.library_view.winfo_exists() != 1:
+        if application.artist.winfo_exists() != 1 or application.create_button.cget("text") != "CREATE  ✦" or len(application.theme_canvases) != len(THEMES) or application.library_view.winfo_exists() != 1:
             raise RuntimeError("Desktop interface did not initialise correctly")
         application.destroy()
         print("Cosmic Aquaria Studio smoke test passed.")

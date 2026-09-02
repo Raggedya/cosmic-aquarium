@@ -62,6 +62,19 @@
   const status = root.querySelector('[role="status"]');
   const titlePrompt = document.querySelector('.cosmic-title p');
   const homeControl = document.querySelector('.cosmic-home-control');
+  const requestedParent = new URLSearchParams(location.search).get('parent');
+  let collectionSlug = '';
+  if (requestedParent) {
+    try {
+      const parentUrl = new URL(requestedParent, location.origin);
+      const collectionPrefix = base + '/collections/';
+      if (parentUrl.origin === location.origin && parentUrl.pathname.startsWith(collectionPrefix) && /^[-a-z0-9/]+$/.test(parentUrl.pathname.slice(collectionPrefix.length))) {
+        homeControl.href = parentUrl.pathname + parentUrl.search;
+        homeControl.setAttribute('aria-label','Return to the collection Aquarium');
+        collectionSlug = parentUrl.pathname.slice(collectionPrefix.length).replaceAll('/','');
+      }
+    } catch {}
+  }
   const shareAction = root.querySelector('.aquarium-action--share');
   const buyAction = document.querySelector('.aquarium-action--buy');
   const exploreAction = root.querySelector('.aquarium-action--explore');
@@ -368,8 +381,14 @@
       const recentKey = 'cosmic-aquaria:recent-aquariums';
       const recent = readStoredIds(recentKey);
       let destination;
-      const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?water=' + encodeURIComponent(water) + '&exclude=' + encodeURIComponent(slug) + '&recent=' + encodeURIComponent(recent.join(',')),{cache:'no-store'}).catch(()=>null);
-      if (serviceResponse?.ok) destination = await serviceResponse.json();
+      if (collectionSlug) {
+        const response=await fetch(base+'/collections/'+encodeURIComponent(collectionSlug)+'.json',{cache:'no-store'}).catch(()=>null);
+        if(response?.ok){const collection=await response.json(),seen=new Set();const members=(collection.members||[]).filter(member=>member.displayEnabled!==false&&['verified','high_confidence'].includes(member.verificationStatus)&&member.artistId&&member.aquariumSlug&&member.aquariumSlug!==slug&&!seen.has(member.artistId)&&(seen.add(member.artistId)||true));const fresh=members.filter(member=>!recent.includes(member.aquariumSlug)),pool=fresh.length?fresh:members;const member=pool[Math.floor(randomUnit()*pool.length)];if(member)destination={id:member.artistId,slug:member.aquariumSlug,url:member.aquariumUrl}}
+      }
+      if (!destination) {
+        const serviceResponse = await fetch(serviceBase + '/api/aquariums/random?water=' + encodeURIComponent(water) + '&exclude=' + encodeURIComponent(slug) + '&recent=' + encodeURIComponent(recent.join(',')),{cache:'no-store'}).catch(()=>null);
+        if (serviceResponse?.ok) destination = await serviceResponse.json();
+      }
       if (!destination) {
         const response = await fetch(base + '/aquariums.json', {cache:'no-store'});
         if (!response.ok) throw new Error('Aquarium registry unavailable');
@@ -384,7 +403,7 @@
       }
       try { sessionStorage.setItem(recentKey,JSON.stringify([slug,destination.slug,...recent].filter((value,index,array)=>array.indexOf(value)===index).slice(0,6))); } catch {}
       recordEvent('aquarium_transition',{sourceAquariumId:slug,destinationAquariumId:destination.id||destination.slug,metadata:{water}});
-      const target=new URL(destination.url||destination.aquarium_url,location.href);target.searchParams.set('water',water);target.searchParams.set('source','explore');location.assign(target.href);
+      const target=new URL(destination.url||destination.aquarium_url,location.href);target.searchParams.set('water',water);target.searchParams.set('source','explore');if(collectionSlug)target.searchParams.set('parent',homeControl.getAttribute('href'));location.assign(target.href);
     } catch {
       exploreAction.disabled = false;
       announce('Another Aquarium is not available just now.');
