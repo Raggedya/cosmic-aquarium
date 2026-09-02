@@ -55,6 +55,8 @@ test('starting Bandcamp playback hides the controls but keeps the song title', a
   assert.match(styles, /\.living-player\.is-playing \.player-membrane \{ animation: player-flower-drift-away 18s linear 4s forwards; \}/);
   assert.doesNotMatch(styles, /\.living-player\.is-active \.player-copy,\s/);
   assert.match(styles, /\.player-copy h2/);
+  assert.match(styles, /\.living-player\.is-playing \.player-copy h2\s*\{\s*animation: player-title-soften \.9s ease forwards;/);
+  assert.match(styles, /@keyframes player-title-soften\s*\{[\s\S]*?to \{ opacity: \.7; \}/);
 });
 
 test('the Library catalogue reports its living flowers and available songs', async () => {

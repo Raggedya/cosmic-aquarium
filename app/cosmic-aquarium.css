@@ -367,6 +367,10 @@
 
 .living-player.is-active .player-membrane { animation: player-flower-drift-away 18s linear 20s forwards; }
 
+.living-player.is-active .player-copy h2 {
+  animation: player-title-soften .9s ease 15s forwards;
+}
+
 .living-player.is-playing .player-copy p,
 .living-player.is-playing .player-copy > span,
 .living-player.is-playing .organic-progress,
@@ -378,6 +382,10 @@
 }
 
 .living-player.is-playing .player-membrane { animation: player-flower-drift-away 18s linear 4s forwards; }
+
+.living-player.is-playing .player-copy h2 {
+  animation: player-title-soften .9s ease forwards;
+}
 
 .living-player::before {
   content: none;
@@ -677,6 +685,10 @@
   from { opacity: 1; visibility: visible; pointer-events: auto; }
   99% { opacity: 0; visibility: visible; pointer-events: auto; }
   to { opacity: 0; visibility: hidden; pointer-events: none; }
+}
+@keyframes player-title-soften {
+  from { opacity: 1; }
+  to { opacity: .7; }
 }
 @keyframes player-flower-drift-away {
   from { opacity: .46; transform: translate3d(-50%, 0, 0) rotate(0deg) scale(1); }
