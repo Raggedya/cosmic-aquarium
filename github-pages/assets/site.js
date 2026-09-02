@@ -66,6 +66,21 @@
   const exploreAction = root.querySelector('.aquarium-action--explore');
   const analyticsSession = sessionId();
 
+  function markPlaybackStarted() {
+    const iframe = player.querySelector('.bandcamp-stream iframe');
+    if (player.hidden || iframe.closest('.bandcamp-stream').hidden || player.classList.contains('is-playing')) return;
+    player.classList.add('is-playing');
+    announce((player.querySelector('.player-copy h2').textContent || 'The song') + ' is playing.');
+  }
+
+  const bandcampFrame = player.querySelector('.bandcamp-stream iframe');
+  bandcampFrame.addEventListener('focus',markPlaybackStarted);
+  addEventListener('blur',() => {
+    setTimeout(() => {
+      if (document.activeElement === bandcampFrame) markPlaybackStarted();
+    },0);
+  });
+
   let homeControlTimer = setTimeout(() => {
     homeControl.classList.add('is-home');
     homeControl.removeAttribute('aria-hidden');
@@ -273,7 +288,7 @@
     button.classList.add('is-selected');
     root.classList.add('has-player');
     player.hidden = false;
-    player.classList.remove('is-active');
+    player.classList.remove('is-active','is-playing');
     void player.offsetHeight;
     player.classList.add('is-active');
     titlePrompt.textContent = 'A SONG FOUND IN THE DARK';
@@ -308,7 +323,7 @@
     root.classList.remove('show-buy-action','show-secondary-actions');
     buyAction.classList.remove('is-visible');
     player.hidden = true;
-    player.classList.remove('is-active');
+    player.classList.remove('is-active','is-playing');
     root.classList.remove('has-player');
     selectedButton?.classList.remove('is-selected');
     selectedButton = null;

@@ -355,7 +355,8 @@
 
 .living-player.is-active { animation: player-emerge .72s cubic-bezier(.16, .86, .22, 1) both; }
 
-.living-player.is-active .player-copy,
+.living-player.is-active .player-copy p,
+.living-player.is-active .player-copy > span,
 .living-player.is-active .organic-progress,
 .living-player.is-active .bandcamp-stream,
 .living-player.is-active .stream-unavailable,
@@ -365,6 +366,18 @@
 }
 
 .living-player.is-active .player-membrane { animation: player-flower-drift-away 18s linear 20s forwards; }
+
+.living-player.is-playing .player-copy p,
+.living-player.is-playing .player-copy > span,
+.living-player.is-playing .organic-progress,
+.living-player.is-playing .bandcamp-stream,
+.living-player.is-playing .stream-unavailable,
+.living-player.is-playing .bandcamp-link,
+.living-player.is-playing .release-current {
+  animation: player-controls-fade-away .9s ease forwards;
+}
+
+.living-player.is-playing .player-membrane { animation: player-flower-drift-away 18s linear 4s forwards; }
 
 .living-player::before {
   content: none;

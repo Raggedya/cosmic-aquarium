@@ -92,6 +92,7 @@ function albumAccent(manifest: ArtistManifest, albumKey: string) {
 
 export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const captureTimer = useRef<number | null>(null);
+  const bandcampFrame = useRef<HTMLIFrameElement | null>(null);
   const trackDeck = useRef<string[]>([]);
   const trackDeckSlug = useRef('');
   const analyticsSession = useRef('');
@@ -99,6 +100,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
   const [capturingId, setCapturingId] = useState<string | null>(null);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedTrack, setSelectedTrack] = useState<ArtistManifest['tracks'][number] | null>(null);
+  const [playbackStarted, setPlaybackStarted] = useState(false);
   const [playerDeparting, setPlayerDeparting] = useState(false);
   const [secondaryActionsVisible, setSecondaryActionsVisible] = useState(false);
   const [homeControlActive, setHomeControlActive] = useState(false);
@@ -133,6 +135,20 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     const timer = window.setTimeout(() => setHomeControlActive(true), 15000);
     return () => window.clearTimeout(timer);
   }, [manifestSlug]);
+
+  useEffect(() => {
+    if (!selectedTrack) return;
+    const trackTitle = selectedTrack.title;
+    const detectBandcampFocus = () => {
+      window.setTimeout(() => {
+        if (document.activeElement !== bandcampFrame.current) return;
+        setPlaybackStarted(true);
+        setAnnouncement(trackTitle + ' is playing.');
+      }, 0);
+    };
+    window.addEventListener('blur', detectBandcampFocus);
+    return () => window.removeEventListener('blur', detectBandcampFocus);
+  }, [selectedTrack]);
 
   function recordEvent(eventType: string, details: Record<string, unknown> = {}) {
     if (!analyticsSession.current) return;
@@ -301,6 +317,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     if ('vibrate' in navigator) navigator.vibrate(10);
     captureTimer.current = window.setTimeout(() => {
       setPlayerDeparting(false);
+      setPlaybackStarted(false);
       setSelectedId(creature.id);
       setSelectedTrack(track);
       setCapturingId(null);
@@ -326,6 +343,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
     if (!selectedTrack) return;
     recordEvent('release_click', { trackId: selectedTrack.id });
     setPlayerDeparting(false);
+    setPlaybackStarted(false);
     setSelectedId(null);
     setSelectedTrack(null);
     setAnnouncement(selectedTrack.title + ' returned to the aquarium. Touch another creature.');
@@ -495,7 +513,7 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       ) : null}
 
       {selectedTrack ? (
-        <section key={selectedTrack.id} className="living-player is-active" aria-labelledby="living-player-title">
+        <section key={selectedTrack.id} className={'living-player is-active' + (playbackStarted ? ' is-playing' : '')} aria-labelledby="living-player-title">
           <img
             className="player-membrane"
             src={selectedArtwork}
@@ -517,11 +535,16 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
             <div className="bandcamp-stream">
               <span>TOUCH PLAY TO STREAM</span>
               <iframe
+                ref={bandcampFrame}
                 key={selectedTrack.id}
                 title={'Official Bandcamp player for ' + selectedTrack.title}
                 src={selectedEmbed}
                 loading="eager"
                 allow="autoplay"
+                onFocus={() => {
+                  setPlaybackStarted(true);
+                  setAnnouncement(selectedTrack.title + ' is playing.');
+                }}
               />
             </div>
           ) : (

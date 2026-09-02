@@ -43,6 +43,20 @@ test('the three intentional listener actions use the requested staged reveal', a
   assert.doesNotMatch(styles, /\.aquarium-action--buy\s*\{[^}]*width:/);
 });
 
+test('starting Bandcamp playback hides the controls but keeps the song title', async () => {
+  const runtime = await readFile(path.resolve('github-pages', 'assets', 'site.js'), 'utf8');
+  const styles = await readFile(path.resolve('app', 'cosmic-aquarium.css'), 'utf8');
+  const reactExperience = await readFile(path.resolve('src', 'features', 'cosmic-aquarium', 'CosmicAquarium.tsx'), 'utf8');
+  assert.match(runtime, /bandcampFrame\.addEventListener\('focus',markPlaybackStarted\)/);
+  assert.match(runtime, /player\.classList\.add\('is-playing'\)/);
+  assert.match(reactExperience, /playbackStarted \? ' is-playing' : ''/);
+  assert.match(reactExperience, /onFocus=\{\(\) => \{/);
+  assert.match(styles, /\.living-player\.is-playing \.bandcamp-stream/);
+  assert.match(styles, /\.living-player\.is-playing \.player-membrane \{ animation: player-flower-drift-away 18s linear 4s forwards; \}/);
+  assert.doesNotMatch(styles, /\.living-player\.is-active \.player-copy,\s/);
+  assert.match(styles, /\.player-copy h2/);
+});
+
 test('the Library catalogue reports its living flowers and available songs', async () => {
   const catalogue = JSON.parse(await readFile(path.resolve('github-pages', 'aquariums.json'), 'utf8'));
   for (const entry of catalogue.aquariums ?? []) {
