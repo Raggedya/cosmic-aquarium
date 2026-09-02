@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "rudus-ghost-echo",
+  "artist": "Rūdus",
+  "bandcampUrl": "https://rudus.bandcamp.com/album/ghost-echo",
+  "releaseTitle": "Ghost/Echo",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze"
+  ],
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rudus.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:01:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ghost-echo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ghost-echo-401871119",
+      "title": "Your Ghost Is An Echo",
+      "artist": "Rūdus",
+      "albumTitle": "Ghost/Echo",
+      "albumKey": "ghost-echo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rudus.bandcamp.com/track/your-ghost-is-an-echo",
+      "bandcampEmbedTrackId": "401871119",
+      "sourcePage": "https://rudus.bandcamp.com/album/ghost-echo",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ghost-echo-2507214546",
+      "title": "Cosmic Hoover",
+      "artist": "Rūdus",
+      "albumTitle": "Ghost/Echo",
+      "albumKey": "ghost-echo",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:03",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rudus.bandcamp.com/track/cosmic-hoover",
+      "bandcampEmbedTrackId": "2507214546",
+      "sourcePage": "https://rudus.bandcamp.com/album/ghost-echo",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ghost-echo-3517656204",
+      "title": "Voyager 1",
+      "artist": "Rūdus",
+      "albumTitle": "Ghost/Echo",
+      "albumKey": "ghost-echo",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:07",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rudus.bandcamp.com/track/voyager-1",
+      "bandcampEmbedTrackId": "3517656204",
+      "sourcePage": "https://rudus.bandcamp.com/album/ghost-echo",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ghost-echo-2871436393",
+      "title": "Floated Stone",
+      "artist": "Rūdus",
+      "albumTitle": "Ghost/Echo",
+      "albumKey": "ghost-echo",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:58",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rudus.bandcamp.com/track/floated-stone",
+      "bandcampEmbedTrackId": "2871436393",
+      "sourcePage": "https://rudus.bandcamp.com/album/ghost-echo",
+      "accent": "#ffb66d"
+    }
+  ]
+}

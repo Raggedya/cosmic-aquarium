@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "nightweaver-residual-patterns",
+  "artist": "nightweaver",
+  "bandcampUrl": "https://nightweaver.bandcamp.com/album/residual-patterns",
+  "releaseTitle": "Residual Patterns",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nightweaver.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T00:59:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "residual-patterns",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "residual-patterns-3745798144",
+      "title": "Geometry Of Repetition",
+      "artist": "nightweaver",
+      "albumTitle": "Residual Patterns",
+      "albumKey": "residual-patterns",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "10:50",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nightweaver.bandcamp.com/track/geometry-of-repetition",
+      "bandcampEmbedTrackId": "3745798144",
+      "sourcePage": "https://nightweaver.bandcamp.com/album/residual-patterns",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "residual-patterns-536956368",
+      "title": "Parallel Continuity",
+      "artist": "nightweaver",
+      "albumTitle": "Residual Patterns",
+      "albumKey": "residual-patterns",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:40",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nightweaver.bandcamp.com/track/parallel-continuity",
+      "bandcampEmbedTrackId": "536956368",
+      "sourcePage": "https://nightweaver.bandcamp.com/album/residual-patterns",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "residual-patterns-1424984574",
+      "title": "Unfolding Secret Layers",
+      "artist": "nightweaver",
+      "albumTitle": "Residual Patterns",
+      "albumKey": "residual-patterns",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:04",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nightweaver.bandcamp.com/track/unfolding-secret-layers",
+      "bandcampEmbedTrackId": "1424984574",
+      "sourcePage": "https://nightweaver.bandcamp.com/album/residual-patterns",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "residual-patterns-4074579967",
+      "title": "Detached Presence",
+      "artist": "nightweaver",
+      "albumTitle": "Residual Patterns",
+      "albumKey": "residual-patterns",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:51",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nightweaver.bandcamp.com/track/detached-presence",
+      "bandcampEmbedTrackId": "4074579967",
+      "sourcePage": "https://nightweaver.bandcamp.com/album/residual-patterns",
+      "accent": "#ffb66d"
+    }
+  ]
+}

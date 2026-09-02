@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-pixel-rain-a-sense-of-danger",
+  "artist": "The Pixel Rain",
+  "bandcampUrl": "https://thepixelrain.bandcamp.com/album/a-sense-of-danger",
+  "releaseTitle": "A Sense Of Danger",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "darkwave"
+  ],
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thepixelrain.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T00:58:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-sense-of-danger",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-sense-of-danger-3827063446",
+      "title": "A Sense Of Danger",
+      "artist": "The Pixel Rain",
+      "albumTitle": "A Sense Of Danger",
+      "albumKey": "a-sense-of-danger",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thepixelrain.bandcamp.com/track/a-sense-of-danger",
+      "bandcampEmbedTrackId": "3827063446",
+      "sourcePage": "https://thepixelrain.bandcamp.com/album/a-sense-of-danger",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-sense-of-danger-3963232972",
+      "title": "Sacrifice",
+      "artist": "The Pixel Rain",
+      "albumTitle": "A Sense Of Danger",
+      "albumKey": "a-sense-of-danger",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:35",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thepixelrain.bandcamp.com/track/sacrifice-2",
+      "bandcampEmbedTrackId": "3963232972",
+      "sourcePage": "https://thepixelrain.bandcamp.com/album/a-sense-of-danger",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "a-sense-of-danger-1309580927",
+      "title": "Last",
+      "artist": "The Pixel Rain",
+      "albumTitle": "A Sense Of Danger",
+      "albumKey": "a-sense-of-danger",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:50",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thepixelrain.bandcamp.com/track/last-3",
+      "bandcampEmbedTrackId": "1309580927",
+      "sourcePage": "https://thepixelrain.bandcamp.com/album/a-sense-of-danger",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

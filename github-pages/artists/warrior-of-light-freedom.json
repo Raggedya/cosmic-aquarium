@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "slug": "warrior-of-light-freedom",
+  "artist": "Warrior of Light",
+  "bandcampUrl": "https://warrioroflight1.bandcamp.com/album/freedom",
+  "releaseTitle": "FREEDOM",
+  "releaseDate": "2025-01-06 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "metal"
+  ],
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://warrioroflight1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T00:56:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "freedom",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "freedom-2562264224",
+      "title": "Freedom",
+      "artist": "Warrior of Light",
+      "albumTitle": "FREEDOM",
+      "albumKey": "freedom",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "4:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://warrioroflight1.bandcamp.com/track/freedom",
+      "bandcampEmbedTrackId": "2562264224",
+      "sourcePage": "https://warrioroflight1.bandcamp.com/album/freedom",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "freedom-3630302900",
+      "title": "Praying for the Rain",
+      "artist": "Warrior of Light",
+      "albumTitle": "FREEDOM",
+      "albumKey": "freedom",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "5:13",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://warrioroflight1.bandcamp.com/track/praying-for-the-rain-2",
+      "bandcampEmbedTrackId": "3630302900",
+      "sourcePage": "https://warrioroflight1.bandcamp.com/album/freedom",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "freedom-3989637800",
+      "title": "When Gold Meets Blue",
+      "artist": "Warrior of Light",
+      "albumTitle": "FREEDOM",
+      "albumKey": "freedom",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "4:28",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://warrioroflight1.bandcamp.com/track/when-gold-meets-blue",
+      "bandcampEmbedTrackId": "3989637800",
+      "sourcePage": "https://warrioroflight1.bandcamp.com/album/freedom",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "freedom-1085859236",
+      "title": "Anthem",
+      "artist": "Warrior of Light",
+      "albumTitle": "FREEDOM",
+      "albumKey": "freedom",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "1:30",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://warrioroflight1.bandcamp.com/track/anthem",
+      "bandcampEmbedTrackId": "1085859236",
+      "sourcePage": "https://warrioroflight1.bandcamp.com/album/freedom",
+      "accent": "#ffb66d"
+    }
+  ]
+}

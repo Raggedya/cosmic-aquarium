@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "opalo-boulevard",
+  "artist": "Ópalo",
+  "bandcampUrl": "https://opalo.bandcamp.com/album/boulevard",
+  "releaseTitle": "Boulevard",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://opalo.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T00:59:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "boulevard",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "boulevard-2417149189",
+      "title": "When House Music Was Cool",
+      "artist": "Ópalo",
+      "albumTitle": "Boulevard",
+      "albumKey": "boulevard",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://opalo.bandcamp.com/track/when-house-music-was-cool",
+      "bandcampEmbedTrackId": "2417149189",
+      "sourcePage": "https://opalo.bandcamp.com/album/boulevard",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "boulevard-49327595",
+      "title": "Friends Are Not Lovers",
+      "artist": "Ópalo",
+      "albumTitle": "Boulevard",
+      "albumKey": "boulevard",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://opalo.bandcamp.com/track/friends-are-not-lovers",
+      "bandcampEmbedTrackId": "49327595",
+      "sourcePage": "https://opalo.bandcamp.com/album/boulevard",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "boulevard-2690784571",
+      "title": "Names I Don't Remember",
+      "artist": "Ópalo",
+      "albumTitle": "Boulevard",
+      "albumKey": "boulevard",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:07",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://opalo.bandcamp.com/track/names-i-dont-remember",
+      "bandcampEmbedTrackId": "2690784571",
+      "sourcePage": "https://opalo.bandcamp.com/album/boulevard",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "boulevard-1924264907",
+      "title": "Don't Fake Love",
+      "artist": "Ópalo",
+      "albumTitle": "Boulevard",
+      "albumKey": "boulevard",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:29",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://opalo.bandcamp.com/track/dont-fake-love",
+      "bandcampEmbedTrackId": "1924264907",
+      "sourcePage": "https://opalo.bandcamp.com/album/boulevard",
+      "accent": "#ffb66d"
+    }
+  ]
+}

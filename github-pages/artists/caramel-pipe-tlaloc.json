@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "slug": "caramel-pipe-tlaloc",
+  "artist": "Caramel Pipe",
+  "bandcampUrl": "https://caramelpipe.bandcamp.com/album/tlaloc",
+  "releaseTitle": "Tlaloc",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://caramelpipe.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T00:58:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tlaloc",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tlaloc-2718793491",
+      "title": "side A / Mt Pelaghia",
+      "artist": "Caramel Pipe",
+      "albumTitle": "Tlaloc",
+      "albumKey": "tlaloc",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "20:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caramelpipe.bandcamp.com/track/side-a-mt-pelaghia",
+      "bandcampEmbedTrackId": "2718793491",
+      "sourcePage": "https://caramelpipe.bandcamp.com/album/tlaloc",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tlaloc-3392493236",
+      "title": "side B / Origin Of White Pebbles",
+      "artist": "Caramel Pipe",
+      "albumTitle": "Tlaloc",
+      "albumKey": "tlaloc",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "21:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caramelpipe.bandcamp.com/track/side-b-origin-of-white-pebbles",
+      "bandcampEmbedTrackId": "3392493236",
+      "sourcePage": "https://caramelpipe.bandcamp.com/album/tlaloc",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "tlaloc-3543181129",
+      "title": "side C / Anemoi From The Orient",
+      "artist": "Caramel Pipe",
+      "albumTitle": "Tlaloc",
+      "albumKey": "tlaloc",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "17:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caramelpipe.bandcamp.com/track/side-c-anemoi-from-the-orient",
+      "bandcampEmbedTrackId": "3543181129",
+      "sourcePage": "https://caramelpipe.bandcamp.com/album/tlaloc",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "tlaloc-2931856041",
+      "title": "side D / Anemoi From The Orient (Sequel)",
+      "artist": "Caramel Pipe",
+      "albumTitle": "Tlaloc",
+      "albumKey": "tlaloc",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "12:34",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caramelpipe.bandcamp.com/track/side-d-anemoi-from-the-orient-sequel",
+      "bandcampEmbedTrackId": "2931856041",
+      "sourcePage": "https://caramelpipe.bandcamp.com/album/tlaloc",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "tlaloc-2583697866",
+      "title": "side D / Managuac",
+      "artist": "Caramel Pipe",
+      "albumTitle": "Tlaloc",
+      "albumKey": "tlaloc",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "10:48",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caramelpipe.bandcamp.com/track/side-d-managuac",
+      "bandcampEmbedTrackId": "2583697866",
+      "sourcePage": "https://caramelpipe.bandcamp.com/album/tlaloc",
+      "accent": "#8fd9c7"
+    }
+  ]
+}

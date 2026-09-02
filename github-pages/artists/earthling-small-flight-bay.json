@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "slug": "earthling-small-flight-bay",
+  "artist": "Earthling, Small",
+  "bandcampUrl": "https://earthlingsmall.bandcamp.com/album/flight-bay",
+  "releaseTitle": "Flight Bay",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://earthlingsmall.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T00:59:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "flight-bay",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "flight-bay-3347381699",
+      "title": "ORBITL",
+      "artist": "Earthling, Small",
+      "albumTitle": "Flight Bay",
+      "albumKey": "flight-bay",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://earthlingsmall.bandcamp.com/track/orbitl",
+      "bandcampEmbedTrackId": "3347381699",
+      "sourcePage": "https://earthlingsmall.bandcamp.com/album/flight-bay",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "flight-bay-954938007",
+      "title": "Beta Byte",
+      "artist": "Earthling, Small",
+      "albumTitle": "Flight Bay",
+      "albumKey": "flight-bay",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:31",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://earthlingsmall.bandcamp.com/track/beta-byte",
+      "bandcampEmbedTrackId": "954938007",
+      "sourcePage": "https://earthlingsmall.bandcamp.com/album/flight-bay",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "flight-bay-2759826104",
+      "title": "Revolve Blue",
+      "artist": "Earthling, Small",
+      "albumTitle": "Flight Bay",
+      "albumKey": "flight-bay",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:28",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://earthlingsmall.bandcamp.com/track/revolve-blue",
+      "bandcampEmbedTrackId": "2759826104",
+      "sourcePage": "https://earthlingsmall.bandcamp.com/album/flight-bay",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "flight-bay-3584945211",
+      "title": "Photo Solaris",
+      "artist": "Earthling, Small",
+      "albumTitle": "Flight Bay",
+      "albumKey": "flight-bay",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:34",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://earthlingsmall.bandcamp.com/track/photo-solaris",
+      "bandcampEmbedTrackId": "3584945211",
+      "sourcePage": "https://earthlingsmall.bandcamp.com/album/flight-bay",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "flight-bay-4067733226",
+      "title": "Receiver is Gold",
+      "artist": "Earthling, Small",
+      "albumTitle": "Flight Bay",
+      "albumKey": "flight-bay",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "3:57",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://earthlingsmall.bandcamp.com/track/receiver-is-gold",
+      "bandcampEmbedTrackId": "4067733226",
+      "sourcePage": "https://earthlingsmall.bandcamp.com/album/flight-bay",
+      "accent": "#8fd9c7"
+    }
+  ]
+}

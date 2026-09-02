@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "darrel-smith-jr-a-broadcast-memory",
+  "artist": "Darrel Smith Jr.",
+  "bandcampUrl": "https://darrelsmithjr.bandcamp.com/album/a-broadcast-memory",
+  "releaseTitle": "A Broadcast Memory",
+  "releaseDate": "2026-05-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze"
+  ],
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://darrelsmithjr.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:02:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-broadcast-memory",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-broadcast-memory-1422408744",
+      "title": "Before Anyone Else Is Awake",
+      "artist": "Darrel Smith Jr.",
+      "albumTitle": "A Broadcast Memory",
+      "albumKey": "a-broadcast-memory",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://darrelsmithjr.bandcamp.com/track/before-anyone-else-is-awake",
+      "bandcampEmbedTrackId": "1422408744",
+      "sourcePage": "https://darrelsmithjr.bandcamp.com/album/a-broadcast-memory",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-broadcast-memory-4280432710",
+      "title": "Trying To Stay the Same",
+      "artist": "Darrel Smith Jr.",
+      "albumTitle": "A Broadcast Memory",
+      "albumKey": "a-broadcast-memory",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://darrelsmithjr.bandcamp.com/track/trying-to-stay-the-same",
+      "bandcampEmbedTrackId": "4280432710",
+      "sourcePage": "https://darrelsmithjr.bandcamp.com/album/a-broadcast-memory",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "a-broadcast-memory-2278658727",
+      "title": "We Stayed Until It Was Gone",
+      "artist": "Darrel Smith Jr.",
+      "albumTitle": "A Broadcast Memory",
+      "albumKey": "a-broadcast-memory",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://darrelsmithjr.bandcamp.com/track/we-stayed-until-it-was-gone",
+      "bandcampEmbedTrackId": "2278658727",
+      "sourcePage": "https://darrelsmithjr.bandcamp.com/album/a-broadcast-memory",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

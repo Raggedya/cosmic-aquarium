@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "rossi-lost-remixes",
+  "artist": "Rossi",
+  "bandcampUrl": "https://rossinl.bandcamp.com/album/lost-remixes",
+  "releaseTitle": "Lost [Remixes]",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "electronic"
+  ],
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rossinl.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:03:23Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lost-remixes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lost-remixes-1227894614",
+      "title": "Lost (2026 Radio Remix)",
+      "artist": "Rossi",
+      "albumTitle": "Lost [Remixes]",
+      "albumKey": "lost-remixes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rossinl.bandcamp.com/track/lost-2026-radio-remix",
+      "bandcampEmbedTrackId": "1227894614",
+      "sourcePage": "https://rossinl.bandcamp.com/album/lost-remixes",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lost-remixes-2643733292",
+      "title": "Lost (2026 Extended Remix)",
+      "artist": "Rossi",
+      "albumTitle": "Lost [Remixes]",
+      "albumKey": "lost-remixes",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rossinl.bandcamp.com/track/lost-2026-extended-remix",
+      "bandcampEmbedTrackId": "2643733292",
+      "sourcePage": "https://rossinl.bandcamp.com/album/lost-remixes",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "lost-remixes-3286068245",
+      "title": "Lost (2026 Dub)",
+      "artist": "Rossi",
+      "albumTitle": "Lost [Remixes]",
+      "albumKey": "lost-remixes",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rossinl.bandcamp.com/track/lost-2026-dub",
+      "bandcampEmbedTrackId": "3286068245",
+      "sourcePage": "https://rossinl.bandcamp.com/album/lost-remixes",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "ep",
+  "artist": "静かの海",
+  "bandcampUrl": "https://shizukanoumi.bandcamp.com/album/ep-18",
+  "releaseTitle": "ぬるいジンジャエール - EP",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "electronic"
+  ],
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://shizukanoumi.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:02:15Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ep-2880611959",
+      "title": "ぬるいジンジャエール (Flat Soda Mix)",
+      "artist": "静かの海",
+      "albumTitle": "ぬるいジンジャエール - EP",
+      "albumKey": "ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shizukanoumi.bandcamp.com/track/flat-soda-mix",
+      "bandcampEmbedTrackId": "2880611959",
+      "sourcePage": "https://shizukanoumi.bandcamp.com/album/ep-18",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ep-296346744",
+      "title": "思案中",
+      "artist": "静かの海",
+      "albumTitle": "ぬるいジンジャエール - EP",
+      "albumKey": "ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:43",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shizukanoumi.bandcamp.com/track/--121",
+      "bandcampEmbedTrackId": "296346744",
+      "sourcePage": "https://shizukanoumi.bandcamp.com/album/ep-18",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ep-73976192",
+      "title": "炭酸の行方",
+      "artist": "静かの海",
+      "albumTitle": "ぬるいジンジャエール - EP",
+      "albumKey": "ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:44",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shizukanoumi.bandcamp.com/track/--122",
+      "bandcampEmbedTrackId": "73976192",
+      "sourcePage": "https://shizukanoumi.bandcamp.com/album/ep-18",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ep-3892664920",
+      "title": "ぬるいジンジャエール",
+      "artist": "静かの海",
+      "albumTitle": "ぬるいジンジャエール - EP",
+      "albumKey": "ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:22",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shizukanoumi.bandcamp.com/track/--123",
+      "bandcampEmbedTrackId": "3892664920",
+      "sourcePage": "https://shizukanoumi.bandcamp.com/album/ep-18",
+      "accent": "#ffb66d"
+    }
+  ]
+}

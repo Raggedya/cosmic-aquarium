@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "lesser-care-lincoln-leather",
+  "artist": "Lesser Care",
+  "bandcampUrl": "https://lessercare.bandcamp.com/album/lincoln-leather",
+  "releaseTitle": "LINCOLN LEATHER",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze"
+  ],
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lessercare.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:02:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lincoln-leather",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lincoln-leather-1360347270",
+      "title": "EMBRACE",
+      "artist": "Lesser Care",
+      "albumTitle": "LINCOLN LEATHER",
+      "albumKey": "lincoln-leather",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:39",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lessercare.bandcamp.com/track/embrace",
+      "bandcampEmbedTrackId": "1360347270",
+      "sourcePage": "https://lessercare.bandcamp.com/album/lincoln-leather",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lincoln-leather-1053638827",
+      "title": "TWO DOWN",
+      "artist": "Lesser Care",
+      "albumTitle": "LINCOLN LEATHER",
+      "albumKey": "lincoln-leather",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lessercare.bandcamp.com/track/two-down",
+      "bandcampEmbedTrackId": "1053638827",
+      "sourcePage": "https://lessercare.bandcamp.com/album/lincoln-leather",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "lincoln-leather-2235182529",
+      "title": "LINCOLN LEATHER",
+      "artist": "Lesser Care",
+      "albumTitle": "LINCOLN LEATHER",
+      "albumKey": "lincoln-leather",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:45",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lessercare.bandcamp.com/track/lincoln-leather",
+      "bandcampEmbedTrackId": "2235182529",
+      "sourcePage": "https://lessercare.bandcamp.com/album/lincoln-leather",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

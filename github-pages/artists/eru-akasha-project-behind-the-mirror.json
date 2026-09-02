@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "eru-akasha-project-behind-the-mirror",
+  "artist": "ERU & AKASHA PROJECT",
+  "bandcampUrl": "https://akashaproject.bandcamp.com/album/behind-the-mirror",
+  "releaseTitle": "Behind the Mirror",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://akashaproject.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T00:57:56Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "behind-the-mirror",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "behind-the-mirror-1026594538",
+      "title": "SphereRa",
+      "artist": "ERU & AKASHA PROJECT",
+      "albumTitle": "Behind the Mirror",
+      "albumKey": "behind-the-mirror",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "29:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://akashaproject.bandcamp.com/track/spherera-2",
+      "bandcampEmbedTrackId": "1026594538",
+      "sourcePage": "https://akashaproject.bandcamp.com/album/behind-the-mirror",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "behind-the-mirror-4178096109",
+      "title": "Behind the Mirror",
+      "artist": "ERU & AKASHA PROJECT",
+      "albumTitle": "Behind the Mirror",
+      "albumKey": "behind-the-mirror",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "28:14",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://akashaproject.bandcamp.com/track/behind-the-mirror",
+      "bandcampEmbedTrackId": "4178096109",
+      "sourcePage": "https://akashaproject.bandcamp.com/album/behind-the-mirror",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "behind-the-mirror-2231599954",
+      "title": "Jerxheim",
+      "artist": "ERU & AKASHA PROJECT",
+      "albumTitle": "Behind the Mirror",
+      "albumKey": "behind-the-mirror",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:20",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://akashaproject.bandcamp.com/track/jerxheim",
+      "bandcampEmbedTrackId": "2231599954",
+      "sourcePage": "https://akashaproject.bandcamp.com/album/behind-the-mirror",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "behind-the-mirror-2294203887",
+      "title": "Moinsen",
+      "artist": "ERU & AKASHA PROJECT",
+      "albumTitle": "Behind the Mirror",
+      "albumKey": "behind-the-mirror",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "23:18",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://akashaproject.bandcamp.com/track/moinsen",
+      "bandcampEmbedTrackId": "2294203887",
+      "sourcePage": "https://akashaproject.bandcamp.com/album/behind-the-mirror",
+      "accent": "#ffb66d"
+    }
+  ]
+}

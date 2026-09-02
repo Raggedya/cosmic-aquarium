@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "slug": "caer-sin-ti-caeri-caeri",
+  "artist": "Caer sin ti",
+  "bandcampUrl": "https://caersinti.bandcamp.com/album/caeri-caeri",
+  "releaseTitle": "caeri caeri",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze"
+  ],
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://caersinti.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:03:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "caeri-caeri",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "caeri-caeri-2938001877",
+      "title": "solo caminar,esta bien",
+      "artist": "Caer sin ti",
+      "albumTitle": "caeri caeri",
+      "albumKey": "caeri-caeri",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:45",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caersinti.bandcamp.com/track/solo-caminar-esta-bien",
+      "bandcampEmbedTrackId": "2938001877",
+      "sourcePage": "https://caersinti.bandcamp.com/album/caeri-caeri",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "caeri-caeri-3860601854",
+      "title": "RYEM REMY",
+      "artist": "Caer sin ti",
+      "albumTitle": "caeri caeri",
+      "albumKey": "caeri-caeri",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caersinti.bandcamp.com/track/ryem-remy",
+      "bandcampEmbedTrackId": "3860601854",
+      "sourcePage": "https://caersinti.bandcamp.com/album/caeri-caeri",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "caeri-caeri-3058259888",
+      "title": "wisafa",
+      "artist": "Caer sin ti",
+      "albumTitle": "caeri caeri",
+      "albumKey": "caeri-caeri",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caersinti.bandcamp.com/track/wisafa",
+      "bandcampEmbedTrackId": "3058259888",
+      "sourcePage": "https://caersinti.bandcamp.com/album/caeri-caeri",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "caeri-caeri-1578621380",
+      "title": "deja,nomas",
+      "artist": "Caer sin ti",
+      "albumTitle": "caeri caeri",
+      "albumKey": "caeri-caeri",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:26",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caersinti.bandcamp.com/track/deja-nomas",
+      "bandcampEmbedTrackId": "1578621380",
+      "sourcePage": "https://caersinti.bandcamp.com/album/caeri-caeri",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "caeri-caeri-424915272",
+      "title": "pero,pero si",
+      "artist": "Caer sin ti",
+      "albumTitle": "caeri caeri",
+      "albumKey": "caeri-caeri",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "3:03",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caersinti.bandcamp.com/track/pero-pero-si",
+      "bandcampEmbedTrackId": "424915272",
+      "sourcePage": "https://caersinti.bandcamp.com/album/caeri-caeri",
+      "accent": "#8fd9c7"
+    }
+  ]
+}

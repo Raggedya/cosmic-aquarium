@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "droem-i-want-less",
+  "artist": "DROEM",
+  "bandcampUrl": "https://realdroem.bandcamp.com/album/i-want-less",
+  "releaseTitle": "I Want Less",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze"
+  ],
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://realdroem.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T00:59:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-want-less",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-want-less-3943042434",
+      "title": "Summer Aunt",
+      "artist": "DROEM",
+      "albumTitle": "I Want Less",
+      "albumKey": "i-want-less",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://realdroem.bandcamp.com/track/summer-aunt",
+      "bandcampEmbedTrackId": "3943042434",
+      "sourcePage": "https://realdroem.bandcamp.com/album/i-want-less",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "i-want-less-292897527",
+      "title": "I Want Less",
+      "artist": "DROEM",
+      "albumTitle": "I Want Less",
+      "albumKey": "i-want-less",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:22",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://realdroem.bandcamp.com/track/i-want-less",
+      "bandcampEmbedTrackId": "292897527",
+      "sourcePage": "https://realdroem.bandcamp.com/album/i-want-less",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "i-want-less-4031101614",
+      "title": "Here Comes Then",
+      "artist": "DROEM",
+      "albumTitle": "I Want Less",
+      "albumKey": "i-want-less",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:27",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://realdroem.bandcamp.com/track/here-comes-then",
+      "bandcampEmbedTrackId": "4031101614",
+      "sourcePage": "https://realdroem.bandcamp.com/album/i-want-less",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "i-want-less-463234481",
+      "title": "Almost Alive",
+      "artist": "DROEM",
+      "albumTitle": "I Want Less",
+      "albumKey": "i-want-less",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:36",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://realdroem.bandcamp.com/track/almost-alive",
+      "bandcampEmbedTrackId": "463234481",
+      "sourcePage": "https://realdroem.bandcamp.com/album/i-want-less",
+      "accent": "#ffb66d"
+    }
+  ]
+}

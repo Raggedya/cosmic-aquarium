@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "slug": "graylok-translucent",
+  "artist": "GRAYLOK",
+  "bandcampUrl": "https://graylok.bandcamp.com/album/translucent",
+  "releaseTitle": "Translucent",
+  "releaseDate": "2026-08-06 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "electronic"
+  ],
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://graylok.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:02:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "translucent",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "translucent-868176390",
+      "title": "Translucent",
+      "artist": "GRAYLOK",
+      "albumTitle": "Translucent",
+      "albumKey": "translucent",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://graylok.bandcamp.com/track/translucent",
+      "bandcampEmbedTrackId": "868176390",
+      "sourcePage": "https://graylok.bandcamp.com/album/translucent",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "translucent-3028560056",
+      "title": "Glow Squid",
+      "artist": "GRAYLOK",
+      "albumTitle": "Translucent",
+      "albumKey": "translucent",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://graylok.bandcamp.com/track/glow-squid",
+      "bandcampEmbedTrackId": "3028560056",
+      "sourcePage": "https://graylok.bandcamp.com/album/translucent",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "translucent-389915009",
+      "title": "Liquid",
+      "artist": "GRAYLOK",
+      "albumTitle": "Translucent",
+      "albumKey": "translucent",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:18",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://graylok.bandcamp.com/track/liquid",
+      "bandcampEmbedTrackId": "389915009",
+      "sourcePage": "https://graylok.bandcamp.com/album/translucent",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "translucent-3847865126",
+      "title": "Ghost Plant",
+      "artist": "GRAYLOK",
+      "albumTitle": "Translucent",
+      "albumKey": "translucent",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:30",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://graylok.bandcamp.com/track/ghost-plant",
+      "bandcampEmbedTrackId": "3847865126",
+      "sourcePage": "https://graylok.bandcamp.com/album/translucent",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "translucent-784560096",
+      "title": "Lace",
+      "artist": "GRAYLOK",
+      "albumTitle": "Translucent",
+      "albumKey": "translucent",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:58",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://graylok.bandcamp.com/track/lace",
+      "bandcampEmbedTrackId": "784560096",
+      "sourcePage": "https://graylok.bandcamp.com/album/translucent",
+      "accent": "#8fd9c7"
+    }
+  ]
+}

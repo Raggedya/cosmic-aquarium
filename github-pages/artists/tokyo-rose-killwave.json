@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "slug": "tokyo-rose-killwave",
+  "artist": "TOKYO ROSE",
+  "bandcampUrl": "https://newretrowave.bandcamp.com/album/killwave",
+  "releaseTitle": "KILLWAVE",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "electronic"
+  ],
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://newretrowave.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:00:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "killwave",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "killwave-203454920",
+      "title": "SHOWDOWN",
+      "artist": "TOKYO ROSE",
+      "albumTitle": "KILLWAVE",
+      "albumKey": "killwave",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:30",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://newretrowave.bandcamp.com/track/showdown-2",
+      "bandcampEmbedTrackId": "203454920",
+      "sourcePage": "https://newretrowave.bandcamp.com/album/killwave",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "killwave-3795888292",
+      "title": "VENGEANCE",
+      "artist": "TOKYO ROSE",
+      "albumTitle": "KILLWAVE",
+      "albumKey": "killwave",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://newretrowave.bandcamp.com/track/vengeance",
+      "bandcampEmbedTrackId": "3795888292",
+      "sourcePage": "https://newretrowave.bandcamp.com/album/killwave",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "killwave-2362410834",
+      "title": "RAMPAGE",
+      "artist": "TOKYO ROSE",
+      "albumTitle": "KILLWAVE",
+      "albumKey": "killwave",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:41",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://newretrowave.bandcamp.com/track/rampage",
+      "bandcampEmbedTrackId": "2362410834",
+      "sourcePage": "https://newretrowave.bandcamp.com/album/killwave",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "killwave-3742852423",
+      "title": "TOKYO ROSE X YAWDEL - DARK SKIES",
+      "artist": "TOKYO ROSE",
+      "albumTitle": "KILLWAVE",
+      "albumKey": "killwave",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:04",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://newretrowave.bandcamp.com/track/dark-skies",
+      "bandcampEmbedTrackId": "3742852423",
+      "sourcePage": "https://newretrowave.bandcamp.com/album/killwave",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "killwave-74311033",
+      "title": "TOKYO ROSE X POWER GLOVE - BLOODSPORT",
+      "artist": "TOKYO ROSE",
+      "albumTitle": "KILLWAVE",
+      "albumKey": "killwave",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "5:25",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://newretrowave.bandcamp.com/track/bloodsport",
+      "bandcampEmbedTrackId": "74311033",
+      "sourcePage": "https://newretrowave.bandcamp.com/album/killwave",
+      "accent": "#8fd9c7"
+    }
+  ]
+}

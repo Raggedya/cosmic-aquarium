@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "slug": "noisegrind-princess-chelsea-kusodub-01",
+  "artist": "Noisegrind Princess Chelsea",
+  "bandcampUrl": "https://kusomen.bandcamp.com/album/kusodub-01",
+  "releaseTitle": "Kusodub 01",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "experimental"
+  ],
+  "waters": [
+    "strange",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kusomen.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T00:59:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "kusodub-01",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "kusodub-01-2348510581",
+      "title": "Don't Panic, Get Manic",
+      "artist": "Noisegrind Princess Chelsea",
+      "albumTitle": "Kusodub 01",
+      "albumKey": "kusodub-01",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kusomen.bandcamp.com/track/dont-panic-get-manic",
+      "bandcampEmbedTrackId": "2348510581",
+      "sourcePage": "https://kusomen.bandcamp.com/album/kusodub-01",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "kusodub-01-3610778112",
+      "title": "Absolute Teknofunk",
+      "artist": "Noisegrind Princess Chelsea",
+      "albumTitle": "Kusodub 01",
+      "albumKey": "kusodub-01",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "9:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kusomen.bandcamp.com/track/absolute-teknofunk",
+      "bandcampEmbedTrackId": "3610778112",
+      "sourcePage": "https://kusomen.bandcamp.com/album/kusodub-01",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "kusodub-01-3986438977",
+      "title": "The Space Duck Migration",
+      "artist": "Noisegrind Princess Chelsea",
+      "albumTitle": "Kusodub 01",
+      "albumKey": "kusodub-01",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "11:34",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kusomen.bandcamp.com/track/the-space-duck-migration",
+      "bandcampEmbedTrackId": "3986438977",
+      "sourcePage": "https://kusomen.bandcamp.com/album/kusodub-01",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

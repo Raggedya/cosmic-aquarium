@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "slug-demos",
+  "artist": "SLÜG",
+  "bandcampUrl": "https://odderecords.bandcamp.com/album/demos",
+  "releaseTitle": "DEMOS",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "experimental"
+  ],
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://odderecords.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T00:57:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "demos",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "demos-3022016282",
+      "title": "Standby",
+      "artist": "SLÜG",
+      "albumTitle": "DEMOS",
+      "albumKey": "demos",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://odderecords.bandcamp.com/track/standby",
+      "bandcampEmbedTrackId": "3022016282",
+      "sourcePage": "https://odderecords.bandcamp.com/album/demos",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "demos-708858015",
+      "title": "Take Me Nowhere",
+      "artist": "SLÜG",
+      "albumTitle": "DEMOS",
+      "albumKey": "demos",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://odderecords.bandcamp.com/track/take-me-nowhere",
+      "bandcampEmbedTrackId": "708858015",
+      "sourcePage": "https://odderecords.bandcamp.com/album/demos",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "demos-2346142373",
+      "title": "Karoshi",
+      "artist": "SLÜG",
+      "albumTitle": "DEMOS",
+      "albumKey": "demos",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:49",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://odderecords.bandcamp.com/track/karoshi",
+      "bandcampEmbedTrackId": "2346142373",
+      "sourcePage": "https://odderecords.bandcamp.com/album/demos",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "demos-2325088817",
+      "title": "Sand",
+      "artist": "SLÜG",
+      "albumTitle": "DEMOS",
+      "albumKey": "demos",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:21",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://odderecords.bandcamp.com/track/sand",
+      "bandcampEmbedTrackId": "2325088817",
+      "sourcePage": "https://odderecords.bandcamp.com/album/demos",
+      "accent": "#ffb66d"
+    }
+  ]
+}

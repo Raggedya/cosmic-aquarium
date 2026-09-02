@@ -1,0 +1,3831 @@
+{
+  "schemaVersion": 1,
+  "id": "backfill-200-2026-09-02",
+  "batchDate": "2026-09-02",
+  "purpose": "Balanced one-time library expansion to 27",
+  "targetCount": 175,
+  "targetLibraryCount": 200,
+  "startingLibraryCount": 25,
+  "status": "published",
+  "generatedCount": 175,
+  "publishedCount": 175,
+  "emailStatus": "not-applicable",
+  "createdAt": "2026-09-02T00:56:52.657454+00:00",
+  "aquariums": [
+    {
+      "id": "warrior-of-light-freedom",
+      "artist": "Warrior of Light",
+      "release": "FREEDOM",
+      "sourceIdentifier": "1196085888",
+      "bandcampUrl": "https://warrioroflight1.bandcamp.com/album/freedom",
+      "releaseDate": "2025-01-06 00:00:00 UTC",
+      "artworkReference": 1098853097,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:56:55.328533+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/warrior-of-light-freedom/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "hot-zex-school-days-tape-archive-vol-i-1991-1993",
+      "artist": "Hot Zex",
+      "release": "School Days (Tape Archive vol. I, 1991-1993)",
+      "sourceIdentifier": "2632057709",
+      "bandcampUrl": "https://hotzex.bandcamp.com/album/school-days-tape-archive-vol-i-1991-1993",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 295238883,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:56:58.324332+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hot-zex-school-days-tape-archive-vol-i-1991-1993/",
+      "visualStyle": "violet",
+      "trackCount": 15,
+      "status": "published"
+    },
+    {
+      "id": "fig-697-eleven-hats",
+      "artist": "FIG 697",
+      "release": "Eleven Hats",
+      "sourceIdentifier": "674601990",
+      "bandcampUrl": "https://fig697.bandcamp.com/album/eleven-hats-2",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 4137959244,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:57:45.855883+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/fig-697-eleven-hats/",
+      "visualStyle": "cosmic",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "the-cold-light-silent-fracture",
+      "artist": "The Cold Light",
+      "release": "silent fracture",
+      "sourceIdentifier": "1655003952",
+      "bandcampUrl": "https://thecoldlight1.bandcamp.com/album/silent-fracture",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2075587391,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:57:49.445291+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-cold-light-silent-fracture/",
+      "visualStyle": "violet",
+      "trackCount": 14,
+      "status": "published"
+    },
+    {
+      "id": "edme-turn-the-page",
+      "artist": "EDME",
+      "release": "Turn The Page",
+      "sourceIdentifier": "965562738",
+      "bandcampUrl": "https://edme.bandcamp.com/album/turn-the-page",
+      "releaseDate": "2026-09-01 18:07:43 UTC",
+      "artworkReference": 700292437,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:57:51.427804+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/edme-turn-the-page/",
+      "visualStyle": "cosmic",
+      "trackCount": 17,
+      "status": "published"
+    },
+    {
+      "id": "zafiro-negro-baile-de-ayer",
+      "artist": "Zafiro Negro",
+      "release": "Baile de ayer",
+      "sourceIdentifier": "1685937709",
+      "bandcampUrl": "https://zafironegro.bandcamp.com/album/baile-de-ayer",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 564974890,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:57:52.983739+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/zafiro-negro-baile-de-ayer/",
+      "visualStyle": "violet",
+      "trackCount": 9,
+      "status": "published"
+    },
+    {
+      "id": "eru-akasha-project-behind-the-mirror",
+      "artist": "ERU & AKASHA PROJECT",
+      "release": "Behind the Mirror",
+      "sourceIdentifier": "2916445891",
+      "bandcampUrl": "https://akashaproject.bandcamp.com/album/behind-the-mirror",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1059303790,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:57:56.306245+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/eru-akasha-project-behind-the-mirror/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "slug-demos",
+      "artist": "SLÜG",
+      "release": "DEMOS",
+      "sourceIdentifier": "57130456",
+      "bandcampUrl": "https://odderecords.bandcamp.com/album/demos",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2787777954,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:57:57.904888+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/slug-demos/",
+      "visualStyle": "violet",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "sheeple-we-the-sheeple",
+      "artist": "Sheeple",
+      "release": "We the Sheeple",
+      "sourceIdentifier": "2007685765",
+      "bandcampUrl": "https://sheeple13.bandcamp.com/album/we-the-sheeple",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "artworkReference": 2609229625,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:58:00.324173+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sheeple-we-the-sheeple/",
+      "visualStyle": "cosmic",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "paskal-vallis-manfred-fall-fever-vco-markots-jm21-greenbot-ent001-apertu",
+      "artist": "Paskal Vallis · Manfred · Fall Fever (VCO) · Markots · JM21 · Greenbot",
+      "release": "ENT001 — Apertura Fría",
+      "sourceIdentifier": "593470830",
+      "bandcampUrl": "https://entre26.bandcamp.com/album/ent001-apertura-fr-a",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 4228417739,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:58:01.865880+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/paskal-vallis-manfred-fall-fever-vco-markots-jm21-greenbot-ent001-apertu/",
+      "visualStyle": "violet",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "joerg-dankert-25-10-01-mission-log-26-09-01",
+      "artist": "Joerg Dankert",
+      "release": "25.10.01//MISSION_LOG//26.09.01",
+      "sourceIdentifier": "1813000363",
+      "bandcampUrl": "https://joerg-dankert.bandcamp.com/album/251001-mission-log-260901-2",
+      "releaseDate": "2026-09-01 17:59:00 UTC",
+      "artworkReference": 381593104,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:58:03.547478+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/joerg-dankert-25-10-01-mission-log-26-09-01/",
+      "visualStyle": "cosmic",
+      "trackCount": 11,
+      "status": "published"
+    },
+    {
+      "id": "no-404",
+      "artist": "Трупоцемент",
+      "release": "Акт № 404",
+      "sourceIdentifier": "1674397047",
+      "bandcampUrl": "https://ecrannetlabel.bandcamp.com/album/404",
+      "releaseDate": "2026-09-01 18:05:04 UTC",
+      "artworkReference": 388421846,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:58:05.253333+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/no-404/",
+      "visualStyle": "violet",
+      "trackCount": 11,
+      "status": "published"
+    },
+    {
+      "id": "misanthropik-torment-chaos-and-effect",
+      "artist": "Misanthropik Torment",
+      "release": "CHAOS AND EFFECT",
+      "sourceIdentifier": "1855148322",
+      "bandcampUrl": "https://misanthropiktorment.bandcamp.com/album/chaos-and-effect",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1060953785,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:58:06.839130+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/misanthropik-torment-chaos-and-effect/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "psychedelic-olds-portal-v-a-eruption-compiled-by-xerox",
+      "artist": "Psychedelic Olds Portal",
+      "release": "V.A. Eruption - Compiled by Xerox",
+      "sourceIdentifier": "441697045",
+      "bandcampUrl": "https://psyoldsportal.bandcamp.com/album/v-a-eruption-compiled-by-xerox",
+      "releaseDate": "2026-09-01 18:14:21 UTC",
+      "artworkReference": 3722007346,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic",
+        "dreamy",
+        "strange"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:58:08.386293+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/psychedelic-olds-portal-v-a-eruption-compiled-by-xerox/",
+      "visualStyle": "violet",
+      "trackCount": 9,
+      "status": "published"
+    },
+    {
+      "id": "azure-k-grayscale",
+      "artist": "Azure K",
+      "release": "Grayscale",
+      "sourceIdentifier": "3573518916",
+      "bandcampUrl": "https://azurek.bandcamp.com/album/grayscale",
+      "releaseDate": "2025-12-26 00:00:00 UTC",
+      "artworkReference": 1642563486,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:58:09.959482+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/azure-k-grayscale/",
+      "visualStyle": "cosmic",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "irin-dusk-ruins-ep",
+      "artist": "Irin Dusk",
+      "release": "Ruins EP",
+      "sourceIdentifier": "2535317895",
+      "bandcampUrl": "https://irinduskofficial.bandcamp.com/album/ruins-ep",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 3646776801,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:58:11.716999+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/irin-dusk-ruins-ep/",
+      "visualStyle": "violet",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "zppp-sound-industry-zpsi-004-dianosun-prk-speedcore-works",
+      "artist": "ZPPP Sound Industry",
+      "release": "[ZPSI-004] DIANOSUN - PRK SPEEDCORE WORKS",
+      "sourceIdentifier": "2017820763",
+      "bandcampUrl": "https://zpppsoundindustry.bandcamp.com/album/zpsi-004-dianosun-prk-speedcore-works",
+      "releaseDate": "2026-08-21 00:00:00 UTC",
+      "artworkReference": 939083348,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:58:13.123245+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/zppp-sound-industry-zpsi-004-dianosun-prk-speedcore-works/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "iamahauntedhouse-three-songs-by-iamahauntedhouse",
+      "artist": "iamahauntedhouse",
+      "release": "Three Songs by iamahauntedhouse",
+      "sourceIdentifier": "2866802122",
+      "bandcampUrl": "https://iamahauntedhouse.bandcamp.com/album/three-songs-by-iamahauntedhouse",
+      "releaseDate": "2026-09-01 17:55:11 UTC",
+      "artworkReference": 483702938,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet",
+        "electronic"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:58:14.928876+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/iamahauntedhouse-three-songs-by-iamahauntedhouse/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "joao-jardel-megapop",
+      "artist": "João Jardel",
+      "release": "megaPOP",
+      "sourceIdentifier": "110448972",
+      "bandcampUrl": "https://hominiscanidaerec.bandcamp.com/album/megapop",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "artworkReference": 582660123,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:58:16.493286+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/joao-jardel-megapop/",
+      "visualStyle": "cosmic",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "kritzeh-ballad-of-the-scarlet-frontier",
+      "artist": "Kritzeh",
+      "release": "Ballad of the Scarlet Frontier",
+      "sourceIdentifier": "686241476",
+      "bandcampUrl": "https://kritzeh.bandcamp.com/album/ballad-of-the-scarlet-frontier",
+      "releaseDate": "2026-04-20 00:00:00 UTC",
+      "artworkReference": 186865280,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:58:18.074591+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/kritzeh-ballad-of-the-scarlet-frontier/",
+      "visualStyle": "violet",
+      "trackCount": 18,
+      "status": "published"
+    },
+    {
+      "id": "hmb-like-flying",
+      "artist": "hMB",
+      "release": "Like Flying",
+      "sourceIdentifier": "1074743041",
+      "bandcampUrl": "https://hmbmusic2.bandcamp.com/album/like-flying",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "artworkReference": 3041941775,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:58:19.495312+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hmb-like-flying/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "v-a-creatures-from-outer-space-electronic-experimental-side",
+      "artist": "V/A",
+      "release": "Creatures from Outer Space [Electronic/Experimental Side]",
+      "sourceIdentifier": "304967924",
+      "bandcampUrl": "https://internetdaemon.bandcamp.com/album/creatures-from-outer-space-electronic-experimental-side",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2181757267,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange",
+        "electronic"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:58:21.220731+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/v-a-creatures-from-outer-space-electronic-experimental-side/",
+      "visualStyle": "violet",
+      "trackCount": 13,
+      "status": "published"
+    },
+    {
+      "id": "wyrd-from-runas-stream-cur-as-don-baistidh",
+      "artist": "Wyrd From Runa’s Stream",
+      "release": "Cur às don Baistidh",
+      "sourceIdentifier": "1398046550",
+      "bandcampUrl": "https://runaswyrd.bandcamp.com/album/cur-s-don-baistidh",
+      "releaseDate": "2026-08-29 00:00:00 UTC",
+      "artworkReference": 3187169057,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:58:22.886324+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/wyrd-from-runas-stream-cur-as-don-baistidh/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "caramel-pipe-tlaloc",
+      "artist": "Caramel Pipe",
+      "release": "Tlaloc",
+      "sourceIdentifier": "2680855687",
+      "bandcampUrl": "https://caramelpipe.bandcamp.com/album/tlaloc",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 460062746,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:58:24.336615+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/caramel-pipe-tlaloc/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "xymmusic-my-life-in-a-nutshell",
+      "artist": "XymMusic",
+      "release": "my life in a nutshell",
+      "sourceIdentifier": "2848870609",
+      "bandcampUrl": "https://xymmusic.bandcamp.com/album/my-life-in-a-nutshell",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 4194653785,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:58:25.818548+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/xymmusic-my-life-in-a-nutshell/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "uttertomb-lost-pneuma",
+      "artist": "Uttertomb",
+      "release": "Lost Pneuma",
+      "sourceIdentifier": "2686500312",
+      "bandcampUrl": "https://uttertomb.bandcamp.com/album/lost-pneuma",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1470944665,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:58:27.515302+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/uttertomb-lost-pneuma/",
+      "visualStyle": "violet",
+      "trackCount": 13,
+      "status": "published"
+    },
+    {
+      "id": "hypatia-hypatia-riddles-in-the-dark-ep",
+      "artist": "Hypatia",
+      "release": "Hypatia - Riddles in the Dark EP",
+      "sourceIdentifier": "3481251274",
+      "bandcampUrl": "https://monarecords.bandcamp.com/album/hypatia-riddles-in-the-dark-ep",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 4021289718,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:58:29.207493+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hypatia-hypatia-riddles-in-the-dark-ep/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "psyunity-music-forzz-fox-prayer",
+      "artist": "Psyunity Music",
+      "release": "Forzz - Fox Prayer",
+      "sourceIdentifier": "2597717752",
+      "bandcampUrl": "https://psyunitymusic1.bandcamp.com/album/forzz-fox-prayer",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3784914755,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:58:30.958807+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/psyunity-music-forzz-fox-prayer/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "rik-johnson-i-ve-forgotten-the-way-back-vol-3",
+      "artist": "Rik Johnson",
+      "release": "I've forgotten the way back, Vol 3",
+      "sourceIdentifier": "3958829233",
+      "bandcampUrl": "https://inanycasethemoon.bandcamp.com/album/ive-forgotten-the-way-back-vol-3",
+      "releaseDate": "2026-09-01 18:01:23 UTC",
+      "artworkReference": 330508220,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:58:32.812308+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rik-johnson-i-ve-forgotten-the-way-back-vol-3/",
+      "visualStyle": "cosmic",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "zenith-zoysia-hierochloe-odorata-roarchestes-annandalii-candida-albicans",
+      "artist": "zenith zoysia hierochloe odorata roarchestes annandalii",
+      "release": "Candida Albicans In Blood Culture",
+      "sourceIdentifier": "2487181400",
+      "bandcampUrl": "https://xzxzxhxoxrxax.bandcamp.com/album/candida-albicans-in-blood-culture",
+      "releaseDate": "2026-09-01 16:26:25 UTC",
+      "artworkReference": 1910780954,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:58:34.242659+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/zenith-zoysia-hierochloe-odorata-roarchestes-annandalii-candida-albicans/",
+      "visualStyle": "violet",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "bing-satellites-in-the-eastern-sky",
+      "artist": "Bing Satellites",
+      "release": "In The Eastern Sky",
+      "sourceIdentifier": "1684406619",
+      "bandcampUrl": "https://bingsatellites.bandcamp.com/album/in-the-eastern-sky",
+      "releaseDate": "2026-09-01 17:03:23 UTC",
+      "artworkReference": 179983149,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:58:36.914543+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bing-satellites-in-the-eastern-sky/",
+      "visualStyle": "cosmic",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "russian-dark-community-russian-gothic-part-ii",
+      "artist": "Russian Dark Community",
+      "release": "Russian Gothic | Part II",
+      "sourceIdentifier": "753983831",
+      "bandcampUrl": "https://russiandarkcommunity.bandcamp.com/album/russian-gothic-part-ii",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3332951951,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic",
+        "dark"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:58:38.592760+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/russian-dark-community-russian-gothic-part-ii/",
+      "visualStyle": "violet",
+      "trackCount": 20,
+      "status": "published"
+    },
+    {
+      "id": "headkorr-ambience-for-lounges",
+      "artist": "HeadKorr",
+      "release": "Ambience for Lounges",
+      "sourceIdentifier": "878752521",
+      "bandcampUrl": "https://headkorr.bandcamp.com/album/ambience-for-lounges",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "artworkReference": 1659786865,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:58:40.334131+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/headkorr-ambience-for-lounges/",
+      "visualStyle": "cosmic",
+      "trackCount": 15,
+      "status": "published"
+    },
+    {
+      "id": "labratmat-harmonic-drift-machinery",
+      "artist": "labratmat",
+      "release": "Harmonic Drift Machinery",
+      "sourceIdentifier": "3749835766",
+      "bandcampUrl": "https://labratmat.bandcamp.com/album/harmonic-drift-machinery",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3205501739,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:58:42.201511+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/labratmat-harmonic-drift-machinery/",
+      "visualStyle": "violet",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "avathar-where-light-and-shadow-collide",
+      "artist": "Avathar",
+      "release": "Where Light And Shadow Collide",
+      "sourceIdentifier": "2902822142",
+      "bandcampUrl": "https://avathar.bandcamp.com/album/where-light-and-shadow-collide",
+      "releaseDate": "2004-01-01 00:00:00 UTC",
+      "artworkReference": 1985248391,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:58:44.464834+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/avathar-where-light-and-shadow-collide/",
+      "visualStyle": "cosmic",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "halo-tides-memento",
+      "artist": "halo tides",
+      "release": "Memento",
+      "sourceIdentifier": "269533598",
+      "bandcampUrl": "https://halotidesband.bandcamp.com/album/memento",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 673867548,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:58:46.383703+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/halo-tides-memento/",
+      "visualStyle": "violet",
+      "trackCount": 14,
+      "status": "published"
+    },
+    {
+      "id": "giu-vhs-ainda-to-pra-dar-o-nome",
+      "artist": "giu.vhs",
+      "release": "ainda tô pra dar o nome",
+      "sourceIdentifier": "684447138",
+      "bandcampUrl": "https://giuvhs.bandcamp.com/album/ainda-t-pra-dar-o-nome",
+      "releaseDate": "2026-01-09 00:00:00 UTC",
+      "artworkReference": 2246884358,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:58:48.014843+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/giu-vhs-ainda-to-pra-dar-o-nome/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "unglyndi-sukkulai-itt-er-i-hnetusmjorinu-minu",
+      "artist": "Þunglyndi",
+      "release": "Súkkulaðið þitt er í hnetusmjörinu mínu",
+      "sourceIdentifier": "812074075",
+      "bandcampUrl": "https://bottlecollection.bandcamp.com/album/s-kkula-i-itt-er-hnetusmj-rinu-m-nu",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 2201659751,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:58:49.704143+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/unglyndi-sukkulai-itt-er-i-hnetusmjorinu-minu/",
+      "visualStyle": "violet",
+      "trackCount": 17,
+      "status": "published"
+    },
+    {
+      "id": "the-pixel-rain-a-sense-of-danger",
+      "artist": "The Pixel Rain",
+      "release": "A Sense Of Danger",
+      "sourceIdentifier": "3790387660",
+      "bandcampUrl": "https://thepixelrain.bandcamp.com/album/a-sense-of-danger",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "artworkReference": 3881920294,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T00:58:52.642044+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-pixel-rain-a-sense-of-danger/",
+      "visualStyle": "cosmic",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "adam-majdecki-janicki-the-wino-winyle-session-spartan-mix-2026-08-31",
+      "artist": "Adam Majdecki-Janicki",
+      "release": "The Wino & Winyle Session (Spartan Mix) 2026-08-31.",
+      "sourceIdentifier": "1959958339",
+      "bandcampUrl": "https://adammajdeckijanicki.bandcamp.com/album/the-wino-winyle-session-spartan-mix-2026-08-31",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2958290167,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:58:54.452289+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/adam-majdecki-janicki-the-wino-winyle-session-spartan-mix-2026-08-31/",
+      "visualStyle": "violet",
+      "trackCount": 17,
+      "status": "published"
+    },
+    {
+      "id": "blunt-force-trauma-vengeance-for-nothing-2012",
+      "artist": "Blunt Force Trauma",
+      "release": "Vengeance For Nothing (2012)",
+      "sourceIdentifier": "2673036010",
+      "bandcampUrl": "https://archivalpurposes.bandcamp.com/album/vengeance-for-nothing-2012",
+      "releaseDate": "2012-12-25 00:00:00 UTC",
+      "artworkReference": 627664911,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:58:56.305162+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/blunt-force-trauma-vengeance-for-nothing-2012/",
+      "visualStyle": "cosmic",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "sideria-change-ep",
+      "artist": "Sideria",
+      "release": "Change - EP",
+      "sourceIdentifier": "3772233960",
+      "bandcampUrl": "https://sideriafromdust.bandcamp.com/album/change-ep",
+      "releaseDate": "2026-07-29 00:00:00 UTC",
+      "artworkReference": 1491300379,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:58:58.157448+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sideria-change-ep/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "boog-barka-lost-lands",
+      "artist": "BOOG BARKA",
+      "release": "Lost Lands",
+      "sourceIdentifier": "3824865054",
+      "bandcampUrl": "https://barcka.bandcamp.com/album/lost-lands",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1845882175,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:58:59.569884+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/boog-barka-lost-lands/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "driftmoor-beyond-the-pale-horizon",
+      "artist": "Driftmoor",
+      "release": "Beyond the Pale Horizon",
+      "sourceIdentifier": "398358053",
+      "bandcampUrl": "https://driftmoor.bandcamp.com/album/beyond-the-pale-horizon",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1344017329,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:59:01.379304+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/driftmoor-beyond-the-pale-horizon/",
+      "visualStyle": "violet",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "ria-voice-of-ria-the-second-mini-album",
+      "artist": "ÆRIA",
+      "release": "Voice Of ÆRIA: The Second Mini-Album",
+      "sourceIdentifier": "1249122080",
+      "bandcampUrl": "https://weareaeria.bandcamp.com/album/voice-of-ria-the-second-mini-album",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3587527042,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T00:59:03.015375+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ria-voice-of-ria-the-second-mini-album/",
+      "visualStyle": "cosmic",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "noisegrind-princess-chelsea-kusodub-01",
+      "artist": "Noisegrind Princess Chelsea",
+      "release": "Kusodub 01",
+      "sourceIdentifier": "2268057958",
+      "bandcampUrl": "https://kusomen.bandcamp.com/album/kusodub-01",
+      "releaseDate": "2026-09-01 17:47:43 UTC",
+      "artworkReference": 3401407533,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange",
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:59:04.434006+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/noisegrind-princess-chelsea-kusodub-01/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "platphorm-recordings-home-alaska",
+      "artist": "PLATPHORM RECORDINGS",
+      "release": "HOME, ALASKA",
+      "sourceIdentifier": "1093486852",
+      "bandcampUrl": "https://a-trainofthought.bandcamp.com/album/home-alaska",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3437395989,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:59:06.183330+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/platphorm-recordings-home-alaska/",
+      "visualStyle": "cosmic",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "cmon3tta-man-hattan-ep",
+      "artist": "cmon3tta",
+      "release": "Man.hattan: EP",
+      "sourceIdentifier": "1082276881",
+      "bandcampUrl": "https://cmon3tta.bandcamp.com/album/man-hattan-ep",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "artworkReference": 1192067324,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:59:07.570808+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/cmon3tta-man-hattan-ep/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "nightweaver-residual-patterns",
+      "artist": "nightweaver",
+      "release": "Residual Patterns",
+      "sourceIdentifier": "4123787773",
+      "bandcampUrl": "https://nightweaver.bandcamp.com/album/residual-patterns",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3345550413,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:59:09.041712+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nightweaver-residual-patterns/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "ghostlace-watching-the-city-lights",
+      "artist": "Ghostlace",
+      "release": "Watching The City Lights",
+      "sourceIdentifier": "1893262943",
+      "bandcampUrl": "https://ghostlace.bandcamp.com/album/watching-the-city-lights",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 916473636,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T00:59:10.983679+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ghostlace-watching-the-city-lights/",
+      "visualStyle": "violet",
+      "trackCount": 14,
+      "status": "published"
+    },
+    {
+      "id": "waaa-aaaa",
+      "artist": "WAAA",
+      "release": "AAAA",
+      "sourceIdentifier": "3662823793",
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/aaaa",
+      "releaseDate": "2020-08-08 00:00:00 UTC",
+      "artworkReference": 370820161,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:59:12.627409+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/waaa-aaaa/",
+      "visualStyle": "cosmic",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "cosmic-crush-year-of-the-bog-witch",
+      "artist": "Cosmic Crush",
+      "release": "Year of the Bog Witch",
+      "sourceIdentifier": "1812402919",
+      "bandcampUrl": "https://cosmiccrushsatx.bandcamp.com/album/year-of-the-bog-witch",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2602891609,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:59:14.246300+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/cosmic-crush-year-of-the-bog-witch/",
+      "visualStyle": "violet",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "playlist-miserable-me-sing-this-song",
+      "artist": "PLAYLIST",
+      "release": "MISERABLE ME SING THIS SONG",
+      "sourceIdentifier": "1114218433",
+      "bandcampUrl": "https://playlist111.bandcamp.com/album/miserable-me-sing-this-song",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 659291401,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:59:15.664400+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/playlist-miserable-me-sing-this-song/",
+      "visualStyle": "cosmic",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "barry-warne-down-at-the-wave-ranch-kjx-26-muse",
+      "artist": "Barry Warne down at the Wave Ranch",
+      "release": "kjx 26 muse",
+      "sourceIdentifier": "3324990694",
+      "bandcampUrl": "https://waveranch.bandcamp.com/album/kjx-26-muse",
+      "releaseDate": "2015-08-25 00:00:00 UTC",
+      "artworkReference": 1658998953,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:59:17.267841+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/barry-warne-down-at-the-wave-ranch-kjx-26-muse/",
+      "visualStyle": "violet",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "opalo-boulevard",
+      "artist": "Ópalo",
+      "release": "Boulevard",
+      "sourceIdentifier": "3993588927",
+      "bandcampUrl": "https://opalo.bandcamp.com/album/boulevard",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3757222704,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:59:19.111836+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/opalo-boulevard/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "purpletrash-velvet-nightmares-and-cold-sleep",
+      "artist": "PurpleTrash",
+      "release": "Velvet Nightmares and Cold Sleep",
+      "sourceIdentifier": "3414520082",
+      "bandcampUrl": "https://purpletrash.bandcamp.com/album/velvet-nightmares-and-cold-sleep",
+      "releaseDate": "2026-09-01 14:40:37 UTC",
+      "artworkReference": 519986631,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T00:59:20.687836+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/purpletrash-velvet-nightmares-and-cold-sleep/",
+      "visualStyle": "violet",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "pcrv-big-sky",
+      "artist": "PCRV",
+      "release": "Big Sky",
+      "sourceIdentifier": "2323851065",
+      "bandcampUrl": "https://pcrv.bandcamp.com/album/big-sky",
+      "releaseDate": "2026-09-01 17:42:08 UTC",
+      "artworkReference": 4272857874,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:59:22.412714+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/pcrv-big-sky/",
+      "visualStyle": "cosmic",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "belcebu-pace-nacionalismo-galego",
+      "artist": "Belcebú Pace",
+      "release": "Nacionalismo Galego",
+      "sourceIdentifier": "2298656277",
+      "bandcampUrl": "https://celtic123.bandcamp.com/album/nacionalismo-galego",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1745224016,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:59:23.631996+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/belcebu-pace-nacionalismo-galego/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "droem-i-want-less",
+      "artist": "DROEM",
+      "release": "I Want Less",
+      "sourceIdentifier": "4259470277",
+      "bandcampUrl": "https://realdroem.bandcamp.com/album/i-want-less",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3954185536,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:59:25.143296+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/droem-i-want-less/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "synthesis-records-catalyst-volume-1",
+      "artist": "synthesis.records",
+      "release": "Catalyst: Volume 1",
+      "sourceIdentifier": "3162815178",
+      "bandcampUrl": "https://synthesisrecords.bandcamp.com/album/catalyst-volume-1",
+      "releaseDate": "2026-07-01 00:00:00 UTC",
+      "artworkReference": 4042469952,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:59:26.551091+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/synthesis-records-catalyst-volume-1/",
+      "visualStyle": "violet",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "xilisath-useless-existence",
+      "artist": "Xilisath",
+      "release": "Useless Existence",
+      "sourceIdentifier": "1233637624",
+      "bandcampUrl": "https://xilisath.bandcamp.com/album/useless-existence",
+      "releaseDate": "2026-08-25 00:00:00 UTC",
+      "artworkReference": 2557120250,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:59:28.249208+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/xilisath-useless-existence/",
+      "visualStyle": "cosmic",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "petridisch-early-works-vol-1",
+      "artist": "Petridisch",
+      "release": "Early Works Vol. 1",
+      "sourceIdentifier": "345639825",
+      "bandcampUrl": "https://petridisch.bandcamp.com/album/early-works-vol-1",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 768643544,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T00:59:29.858398+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/petridisch-early-works-vol-1/",
+      "visualStyle": "violet",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "ooo-elements",
+      "artist": "OOO",
+      "release": "Elements",
+      "sourceIdentifier": "3074517658",
+      "bandcampUrl": "https://ooomensch.bandcamp.com/album/elements",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 4290829806,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:59:31.445075+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ooo-elements/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "ledmotiv-the-ghost-of-carrion",
+      "artist": "Ledmotiv",
+      "release": "The Ghost of Carrion",
+      "sourceIdentifier": "2195950700",
+      "bandcampUrl": "https://ledmotiv.bandcamp.com/album/the-ghost-of-carrion",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "artworkReference": 1975336405,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:59:33.350294+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ledmotiv-the-ghost-of-carrion/",
+      "visualStyle": "violet",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "shindigs-no-pressure",
+      "artist": "shindigs",
+      "release": "No Pressure",
+      "sourceIdentifier": "3250539965",
+      "bandcampUrl": "https://shindigs.bandcamp.com/album/no-pressure",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3493928066,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:59:35.294926+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/shindigs-no-pressure/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "willow-marina-love-letter",
+      "artist": "Willow Marina",
+      "release": "love letter",
+      "sourceIdentifier": "3150473053",
+      "bandcampUrl": "https://willowmarina.bandcamp.com/album/love-letter",
+      "releaseDate": "2026-08-29 00:00:00 UTC",
+      "artworkReference": 2532908959,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:59:36.871628+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/willow-marina-love-letter/",
+      "visualStyle": "violet",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "earthling-small-flight-bay",
+      "artist": "Earthling, Small",
+      "release": "Flight Bay",
+      "sourceIdentifier": "2035745959",
+      "bandcampUrl": "https://earthlingsmall.bandcamp.com/album/flight-bay",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 181692176,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:59:38.274464+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/earthling-small-flight-bay/",
+      "visualStyle": "cosmic",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "third-world-orchestra-entre-si-cover-mimilocos",
+      "artist": "Third World Orchestra",
+      "release": "Entre Sí (cover Mimilocos)",
+      "sourceIdentifier": "121089952",
+      "bandcampUrl": "https://thirdworldorchestra.bandcamp.com/album/entre-s-cover-mimilocos",
+      "releaseDate": "2026-09-01 13:06:55 UTC",
+      "artworkReference": 2477092080,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T00:59:39.755595+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/third-world-orchestra-entre-si-cover-mimilocos/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "o-longing-for-your-online-friend-you-havent-seen-since-june-13th-2004",
+      "artist": "o",
+      "release": "longing for your online friend you havent seen since june 13th 2004",
+      "sourceIdentifier": "47758965",
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/longing-for-your-online-friend-you-havent-seen-since-june-13th-2004",
+      "releaseDate": "2020-08-09 00:00:00 UTC",
+      "artworkReference": 4096314129,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:59:43.821254+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/o-longing-for-your-online-friend-you-havent-seen-since-june-13th-2004/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "dread-wound-dread-wound",
+      "artist": "Dread Wound",
+      "release": "Dread Wound",
+      "sourceIdentifier": "31178919",
+      "bandcampUrl": "https://dreadwound.bandcamp.com/album/dread-wound",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "artworkReference": 223917310,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:59:45.334447+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dread-wound-dread-wound/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "noon-somewhere-dead-end",
+      "artist": "Noon Somewhere",
+      "release": "Dead End",
+      "sourceIdentifier": "2786733644",
+      "bandcampUrl": "https://noonsomewhere.bandcamp.com/album/dead-end",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3582624669,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:59:46.780822+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/noon-somewhere-dead-end/",
+      "visualStyle": "cosmic",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "hydronero-the-screwed-mask-by-screw-reed",
+      "artist": "hydronero",
+      "release": "The Screwed Mask by Screw Reed",
+      "sourceIdentifier": "3772534749",
+      "bandcampUrl": "https://hydronero.bandcamp.com/album/the-screwed-mask-by-screw-reed",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2176227940,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T00:59:48.262252+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hydronero-the-screwed-mask-by-screw-reed/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "renegade-robot-robot-jox",
+      "artist": "Renegade Robot",
+      "release": "Robot Jox",
+      "sourceIdentifier": "2414974359",
+      "bandcampUrl": "https://renegaderobot.bandcamp.com/album/robot-jox",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 4226760293,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T00:59:50.064855+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/renegade-robot-robot-jox/",
+      "visualStyle": "cosmic",
+      "trackCount": 26,
+      "status": "published"
+    },
+    {
+      "id": "ellasantini12709-ellasantini12709",
+      "artist": "ellasantini12709",
+      "release": "ellasantini12709",
+      "sourceIdentifier": "3644189475",
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/ellasantini12709",
+      "releaseDate": "2020-08-02 00:00:00 UTC",
+      "artworkReference": 2540279443,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T00:59:53.077657+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ellasantini12709-ellasantini12709/",
+      "visualStyle": "violet",
+      "trackCount": 26,
+      "status": "published"
+    },
+    {
+      "id": "celtichammer-guerras-galaicas",
+      "artist": "CelticHammer",
+      "release": "Guerras Galaicas",
+      "sourceIdentifier": "79967254",
+      "bandcampUrl": "https://celtic123.bandcamp.com/album/guerras-galaicas",
+      "releaseDate": "2026-09-01 15:34:43 UTC",
+      "artworkReference": 2498812500,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T00:59:54.742119+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/celtichammer-guerras-galaicas/",
+      "visualStyle": "cosmic",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "lento-sonitu-por-fim-algo-soa",
+      "artist": "lento sonitu",
+      "release": "por fim algo soa",
+      "sourceIdentifier": "1477549252",
+      "bandcampUrl": "https://lentosonitu.bandcamp.com/album/por-fim-algo-soa",
+      "releaseDate": "2026-09-01 13:56:35 UTC",
+      "artworkReference": 1379012245,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T00:59:56.124553+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lento-sonitu-por-fim-algo-soa/",
+      "visualStyle": "violet",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "yadoog-yadoog",
+      "artist": "yadoog",
+      "release": "yadoog",
+      "sourceIdentifier": "4046901371",
+      "bandcampUrl": "https://yadoog.bandcamp.com/album/yadoog",
+      "releaseDate": "2026-01-09 00:00:00 UTC",
+      "artworkReference": 2528670677,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T00:59:59.530668+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/yadoog-yadoog/",
+      "visualStyle": "violet",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "shadow-loft-symphonic-darkwave",
+      "artist": "Shadow Loft",
+      "release": "Symphonic Darkwave",
+      "sourceIdentifier": "2261025639",
+      "bandcampUrl": "https://shadowloft.bandcamp.com/album/symphonic-darkwave",
+      "releaseDate": "2026-08-30 00:00:00 UTC",
+      "artworkReference": 943099253,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:00:02.229358+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/shadow-loft-symphonic-darkwave/",
+      "visualStyle": "cosmic",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "zach-paquette-compilation-de-chansons-vol-1",
+      "artist": "Zach Paquette",
+      "release": "Compilation de chansons vol. 1",
+      "sourceIdentifier": "3893464208",
+      "bandcampUrl": "https://zachpaquette.bandcamp.com/album/compilation-de-chansons-vol-1",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3151408753,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:00:04.133887+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/zach-paquette-compilation-de-chansons-vol-1/",
+      "visualStyle": "violet",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "underpall-the-great-old-turn-of-man",
+      "artist": "Underpall",
+      "release": "The Great, Old Turn of Man",
+      "sourceIdentifier": "765127993",
+      "bandcampUrl": "https://underpall.bandcamp.com/album/the-great-old-turn-of-man",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1196094490,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:00:05.830879+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/underpall-the-great-old-turn-of-man/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "dynamo-stairs-time-is-a-shape-the-river-is-a-lie",
+      "artist": "Dynamo Stairs",
+      "release": "Time Is A Shape, The River Is A Lie",
+      "sourceIdentifier": "3825026765",
+      "bandcampUrl": "https://dynamostairs.bandcamp.com/album/time-is-a-shape-the-river-is-a-lie",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 493935828,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:00:07.410457+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dynamo-stairs-time-is-a-shape-the-river-is-a-lie/",
+      "visualStyle": "violet",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "celestial-weapon-what-dwells-inside-the-stars",
+      "artist": "Celestial Weapon",
+      "release": "What Dwells Inside The Stars",
+      "sourceIdentifier": "980756230",
+      "bandcampUrl": "https://ionplasmaincineration.bandcamp.com/album/what-dwells-inside-the-stars",
+      "releaseDate": "2026-09-01 17:38:15 UTC",
+      "artworkReference": 2944886223,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:00:09.403302+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/celestial-weapon-what-dwells-inside-the-stars/",
+      "visualStyle": "cosmic",
+      "trackCount": 9,
+      "status": "published"
+    },
+    {
+      "id": "52hz-nicolas-mollin-cahier-de-vacances",
+      "artist": "52Hz & Nicolas Mollin",
+      "release": "Cahier de Vacances",
+      "sourceIdentifier": "2952041498",
+      "bandcampUrl": "https://52hz-music.bandcamp.com/album/cahier-de-vacances",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "artworkReference": 2429205811,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:00:11.272241+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/52hz-nicolas-mollin-cahier-de-vacances/",
+      "visualStyle": "violet",
+      "trackCount": 13,
+      "status": "published"
+    },
+    {
+      "id": "hugo-cl-hay-eternidades-liberandose-en-nuestras-almas",
+      "artist": "Hugo CL",
+      "release": "Hay Eternidades Liberándose En Nuestras Almas",
+      "sourceIdentifier": "3349600593",
+      "bandcampUrl": "https://hugocl.bandcamp.com/album/hay-eternidades-liber-ndose-en-nuestras-almas",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 2106986745,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:00:13.008746+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hugo-cl-hay-eternidades-liberandose-en-nuestras-almas/",
+      "visualStyle": "cosmic",
+      "trackCount": 9,
+      "status": "published"
+    },
+    {
+      "id": "jaco-grail-ost",
+      "artist": "jaco",
+      "release": "Grail OST",
+      "sourceIdentifier": "1744597139",
+      "bandcampUrl": "https://jacorpg.bandcamp.com/album/grail-ost",
+      "releaseDate": "2026-09-01 17:21:08 UTC",
+      "artworkReference": 511274330,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:00:15.124974+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jaco-grail-ost/",
+      "visualStyle": "violet",
+      "trackCount": 18,
+      "status": "published"
+    },
+    {
+      "id": "lost-generation-cursed",
+      "artist": "Lost Generation",
+      "release": "Cursed",
+      "sourceIdentifier": "1685781779",
+      "bandcampUrl": "https://lostgenerationct.bandcamp.com/album/cursed",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3872338076,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:00:16.952090+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lost-generation-cursed/",
+      "visualStyle": "cosmic",
+      "trackCount": 13,
+      "status": "published"
+    },
+    {
+      "id": "luminous-orange-puppy-dog-mail-ep-extended",
+      "artist": "Luminous Orange",
+      "release": "Puppy Dog Mail EP (Extended)",
+      "sourceIdentifier": "2411490605",
+      "bandcampUrl": "https://luminousorange.bandcamp.com/album/puppy-dog-mail-ep-extended",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 588850159,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:00:19.802492+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/luminous-orange-puppy-dog-mail-ep-extended/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "tokyo-rose-killwave",
+      "artist": "TOKYO ROSE",
+      "release": "KILLWAVE",
+      "sourceIdentifier": "2054479635",
+      "bandcampUrl": "https://newretrowave.bandcamp.com/album/killwave",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "artworkReference": 3350037311,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:00:22.246684+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tokyo-rose-killwave/",
+      "visualStyle": "cosmic",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "van-diest-brothers-seward",
+      "artist": "Van Diest Brothers",
+      "release": "Seward.",
+      "sourceIdentifier": "3875953168",
+      "bandcampUrl": "https://vandiestbrothers.bandcamp.com/album/seward",
+      "releaseDate": "2026-09-01 16:27:09 UTC",
+      "artworkReference": 2403521865,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:00:23.711459+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/van-diest-brothers-seward/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "john-bruninski-35y-selection-1991-2026",
+      "artist": "John Bruninski",
+      "release": "35y Selection (1991-2026)",
+      "sourceIdentifier": "399362053",
+      "bandcampUrl": "https://johnbruninski.bandcamp.com/album/35y-selection-1991-2026",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2403001659,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:00:25.761056+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/john-bruninski-35y-selection-1991-2026/",
+      "visualStyle": "cosmic",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "rancio-rancio-extx-splits-tracks",
+      "artist": "Rancio",
+      "release": "Rancio/ExTx splits tracks",
+      "sourceIdentifier": "2938939687",
+      "bandcampUrl": "https://ranciogore.bandcamp.com/album/rancio-extx-splits-tracks",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2806139107,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:00:27.211435+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rancio-rancio-extx-splits-tracks/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "visceral-pulsating-membrane-xaxnxtxixhxuxmxaxnx-visceral-pulsating-membr",
+      "artist": "Visceral Pulsating Membrane//XAXNXTXIXHXUXMXAXNX",
+      "release": "Visceral Pulsating Membrane//XAXNXTXIXHXUXMXAXNX",
+      "sourceIdentifier": "1455085422",
+      "bandcampUrl": "https://maggotsemenrecords.bandcamp.com/album/visceral-pulsating-membrane-xaxnxtxixhxuxmxaxnx",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2106325854,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:00:28.621838+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/visceral-pulsating-membrane-xaxnxtxixhxuxmxaxnx-visceral-pulsating-membr/",
+      "visualStyle": "cosmic",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "przeprosiny-femme",
+      "artist": "przeprosiny",
+      "release": "femme",
+      "sourceIdentifier": "3213429990",
+      "bandcampUrl": "https://przeprosiny.bandcamp.com/album/femme",
+      "releaseDate": "2026-08-25 00:00:00 UTC",
+      "artworkReference": 3362806882,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:00:30.262447+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/przeprosiny-femme/",
+      "visualStyle": "violet",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "demosoldier-battlefield",
+      "artist": "demosoldier",
+      "release": "Battlefield",
+      "sourceIdentifier": "1051853639",
+      "bandcampUrl": "https://demosoldier.bandcamp.com/album/battlefield",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2967976011,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:00:31.998722+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/demosoldier-battlefield/",
+      "visualStyle": "cosmic",
+      "trackCount": 14,
+      "status": "published"
+    },
+    {
+      "id": "the-last-chingon-from-the-fog-of-human-postscript",
+      "artist": "The Last Chingon",
+      "release": "From the Fog of Human Postscript",
+      "sourceIdentifier": "1161041315",
+      "bandcampUrl": "https://walterehresman.bandcamp.com/album/from-the-fog-of-human-postscript",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 4276358087,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:00:33.679879+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-last-chingon-from-the-fog-of-human-postscript/",
+      "visualStyle": "violet",
+      "trackCount": 13,
+      "status": "published"
+    },
+    {
+      "id": "subter-terra-the-petyr-sessions",
+      "artist": "Subter Terra",
+      "release": "The Petyr Sessions",
+      "sourceIdentifier": "1272591309",
+      "bandcampUrl": "https://subterterra.bandcamp.com/album/the-petyr-sessions",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "artworkReference": 1554079087,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:00:35.188100+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/subter-terra-the-petyr-sessions/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "family-guy-chiankin-famileuy-gu-y",
+      "artist": "family guy chiankin",
+      "release": "famileuy gu y",
+      "sourceIdentifier": "1777974677",
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/famileuy-gu-y",
+      "releaseDate": "2020-07-30 00:00:00 UTC",
+      "artworkReference": 2011297825,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:00:36.606965+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/family-guy-chiankin-famileuy-gu-y/",
+      "visualStyle": "violet",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "lynx-clan-records-ltd-abstract-nights",
+      "artist": "Lynx Clan Records Ltd",
+      "release": "Abstract Nights",
+      "sourceIdentifier": "1696453110",
+      "bandcampUrl": "https://lynxclanrecords.bandcamp.com/album/abstract-nights",
+      "releaseDate": "2025-12-12 00:00:00 UTC",
+      "artworkReference": 3205536193,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud",
+        "strange"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:00:38.244643+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lynx-clan-records-ltd-abstract-nights/",
+      "visualStyle": "cosmic",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "with-brevity-fairweather-friends",
+      "artist": "With Brevity",
+      "release": "Fairweather Friends",
+      "sourceIdentifier": "4148668571",
+      "bandcampUrl": "https://withbrevity.bandcamp.com/album/fairweather-friends-2",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 629889961,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:00:39.846218+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/with-brevity-fairweather-friends/",
+      "visualStyle": "violet",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "marcus-palt-the-white-and-the-black",
+      "artist": "Marcus Palt",
+      "release": "The White and the Black",
+      "sourceIdentifier": "3707036128",
+      "bandcampUrl": "https://marcuspalt.bandcamp.com/album/the-white-and-the-black",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 526355317,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:00:41.459631+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/marcus-palt-the-white-and-the-black/",
+      "visualStyle": "cosmic",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "billy-hill-the-optimists-mental-collapse-nervous-breakdown-remastered",
+      "artist": "Billy Hill & The Optimists",
+      "release": "Mental Collapse, Nervous Breakdown (Remastered)",
+      "sourceIdentifier": "3059066755",
+      "bandcampUrl": "https://fadingsunset.bandcamp.com/album/mental-collapse-nervous-breakdown-remastered",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2492156426,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:00:43.379501+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/billy-hill-the-optimists-mental-collapse-nervous-breakdown-remastered/",
+      "visualStyle": "violet",
+      "trackCount": 16,
+      "status": "published"
+    },
+    {
+      "id": "schmerz-limerence",
+      "artist": "SCHMERZ",
+      "release": "LIMERENCE",
+      "sourceIdentifier": "965048381",
+      "bandcampUrl": "https://schmerz.bandcamp.com/album/limerence-2",
+      "releaseDate": "2026-08-24 00:00:00 UTC",
+      "artworkReference": 213782182,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:00:45.302644+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/schmerz-limerence/",
+      "visualStyle": "cosmic",
+      "trackCount": 11,
+      "status": "published"
+    },
+    {
+      "id": "wizard-bloody-wizard-devil-at-your-door",
+      "artist": "Wizard Bloody Wizard",
+      "release": "Devil At Your Door",
+      "sourceIdentifier": "3435293536",
+      "bandcampUrl": "https://thewizardbloodywizard.bandcamp.com/album/devil-at-your-door",
+      "releaseDate": "2026-08-30 00:00:00 UTC",
+      "artworkReference": 4221702158,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:00:47.236279+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/wizard-bloody-wizard-devil-at-your-door/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "reflections-of-blue-ocean-whisper-new",
+      "artist": "Reflections of Blue",
+      "release": "Ocean Whisper New",
+      "sourceIdentifier": "2743302314",
+      "bandcampUrl": "https://reflectionsofblue.bandcamp.com/album/ocean-whisper-new",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 52632656,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:00:48.899720+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/reflections-of-blue-ocean-whisper-new/",
+      "visualStyle": "cosmic",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "esp-the-experiment",
+      "artist": "ESP",
+      "release": "The Experiment",
+      "sourceIdentifier": "3984466120",
+      "bandcampUrl": "https://extremelysloppyproductions.bandcamp.com/album/the-experiment",
+      "releaseDate": "2026-08-30 00:00:00 UTC",
+      "artworkReference": 524927647,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:00:50.491402+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/esp-the-experiment/",
+      "visualStyle": "violet",
+      "trackCount": 27,
+      "status": "published"
+    },
+    {
+      "id": "chris-anderson-paraself-revisit-ii",
+      "artist": "Chris Anderson",
+      "release": "Paraself Revisit ii",
+      "sourceIdentifier": "59440412",
+      "bandcampUrl": "https://chrisanderson1973.bandcamp.com/album/paraself-revisit-ii",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1751742728,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:00:52.127578+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/chris-anderson-paraself-revisit-ii/",
+      "visualStyle": "cosmic",
+      "trackCount": 14,
+      "status": "published"
+    },
+    {
+      "id": "doomgrave-doomwave",
+      "artist": "Doomgrave",
+      "release": "DOOMWAVE",
+      "sourceIdentifier": "229536706",
+      "bandcampUrl": "https://doomgravedark.bandcamp.com/album/doomwave",
+      "releaseDate": "2026-08-31 22:33:07 UTC",
+      "artworkReference": 595673516,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark",
+        "heavy"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:00:53.874474+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/doomgrave-doomwave/",
+      "visualStyle": "violet",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "milan-kohout-fear",
+      "artist": "Milan Kohout",
+      "release": "FEAR",
+      "sourceIdentifier": "2871520811",
+      "bandcampUrl": "https://milankohout.bandcamp.com/album/fear",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3428338974,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:00:55.477525+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/milan-kohout-fear/",
+      "visualStyle": "cosmic",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "5fingerballad-5fingerballad",
+      "artist": "5FingerBallad",
+      "release": "5FingerBallad",
+      "sourceIdentifier": "405732647",
+      "bandcampUrl": "https://5fingerballad.bandcamp.com/album/5fingerballad",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1746945311,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:00:57.075864+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/5fingerballad-5fingerballad/",
+      "visualStyle": "violet",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "vocov-phases",
+      "artist": "VOCOV",
+      "release": "Phases",
+      "sourceIdentifier": "425061229",
+      "bandcampUrl": "https://vocovmusic.bandcamp.com/album/phases",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 315070328,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:00:58.456152+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/vocov-phases/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "sound-speed-gradient-askmeabout4onthefloor-com",
+      "artist": "sound speed gradient",
+      "release": "askmeabout4onthefloor.com",
+      "sourceIdentifier": "2914679362",
+      "bandcampUrl": "https://soundspeedgradient.bandcamp.com/album/askmeabout4onthefloor-com",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 780102660,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:00:59.891250+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sound-speed-gradient-askmeabout4onthefloor-com/",
+      "visualStyle": "violet",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "roman-lando-delirious-experience",
+      "artist": "Roman Lando",
+      "release": "Delirious Experience",
+      "sourceIdentifier": "3842452715",
+      "bandcampUrl": "https://romanlando.bandcamp.com/album/delirious-experience",
+      "releaseDate": "2026-08-31 22:28:16 UTC",
+      "artworkReference": 1725842908,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:01:01.330217+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/roman-lando-delirious-experience/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "gunna-daniel-eiffel-66",
+      "artist": "Gunna Daniel",
+      "release": "Eiffel 66",
+      "sourceIdentifier": "1515537956",
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/eiffel-66",
+      "releaseDate": "2020-07-20 00:00:00 UTC",
+      "artworkReference": 929075303,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:01:03.089833+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/gunna-daniel-eiffel-66/",
+      "visualStyle": "violet",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "spaghetti-blacc-enshrined-in-sweat",
+      "artist": "Spaghetti Blacc",
+      "release": "Enshrined in Sweat",
+      "sourceIdentifier": "4151654731",
+      "bandcampUrl": "https://spaghettiblacc.bandcamp.com/album/enshrined-in-sweat",
+      "releaseDate": "2026-09-01 14:57:47 UTC",
+      "artworkReference": 417974172,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:01:04.713943+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/spaghetti-blacc-enshrined-in-sweat/",
+      "visualStyle": "cosmic",
+      "trackCount": 11,
+      "status": "published"
+    },
+    {
+      "id": "yesno-ton-atomo",
+      "artist": "yesno",
+      "release": "ton atomo",
+      "sourceIdentifier": "3965906632",
+      "bandcampUrl": "https://yesno2.bandcamp.com/album/ton-atomo",
+      "releaseDate": "2026-09-01 05:14:32 UTC",
+      "artworkReference": 2591245760,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:01:06.323982+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/yesno-ton-atomo/",
+      "visualStyle": "violet",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "adriel-sfx-voltaentrada",
+      "artist": "Adriel.sfx",
+      "release": "VOLTAENTRADA - 入口",
+      "sourceIdentifier": "1248647453",
+      "bandcampUrl": "https://hyperpoprecords.bandcamp.com/album/voltaentrada",
+      "releaseDate": "2026-09-01 17:24:54 UTC",
+      "artworkReference": 1718687670,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:01:07.935592+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/adriel-sfx-voltaentrada/",
+      "visualStyle": "cosmic",
+      "trackCount": 13,
+      "status": "published"
+    },
+    {
+      "id": "cerul-we-don-t-want-to-wake-up-the-mystieries",
+      "artist": "Cerul",
+      "release": "We Don't Want (To Wake Up The Mystieries)",
+      "sourceIdentifier": "840750375",
+      "bandcampUrl": "https://cerul.bandcamp.com/album/we-dont-want-to-wake-up-the-mystieries",
+      "releaseDate": "2026-09-01 15:47:48 UTC",
+      "artworkReference": 2908855197,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:01:11.152394+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/cerul-we-don-t-want-to-wake-up-the-mystieries/",
+      "visualStyle": "violet",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "mooneclipse-interstellar-fragments",
+      "artist": "MoonEclipse",
+      "release": "Interstellar Fragments",
+      "sourceIdentifier": "2420808812",
+      "bandcampUrl": "https://mooneclipse0.bandcamp.com/album/interstellar-fragments",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 1907744598,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:01:14.293551+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mooneclipse-interstellar-fragments/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "grevusanjl-lost-in-the-moment",
+      "artist": "GrevusAnjl",
+      "release": "Lost In The Moment",
+      "sourceIdentifier": "4085706692",
+      "bandcampUrl": "https://grevusanjl.bandcamp.com/album/lost-in-the-moment",
+      "releaseDate": "2026-09-01 17:06:49 UTC",
+      "artworkReference": 1072043110,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:01:16.220688+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/grevusanjl-lost-in-the-moment/",
+      "visualStyle": "violet",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "torture-massacre-and-limb-chopping-carnival-this-is-tempe-gorenoise",
+      "artist": "Torture Massacre And Limb Chopping Carnival",
+      "release": "THIS IS TEMPE GORENOISE",
+      "sourceIdentifier": "1091001995",
+      "bandcampUrl": "https://txmxaxlxcxcx.bandcamp.com/album/this-is-tempe-gorenoise",
+      "releaseDate": "2026-09-01 14:34:39 UTC",
+      "artworkReference": 1785707792,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:01:17.758703+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/torture-massacre-and-limb-chopping-carnival-this-is-tempe-gorenoise/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "rudus-ghost-echo",
+      "artist": "Rūdus",
+      "release": "Ghost/Echo",
+      "sourceIdentifier": "2512983116",
+      "bandcampUrl": "https://rudus.bandcamp.com/album/ghost-echo",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3304471918,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:01:19.339639+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rudus-ghost-echo/",
+      "visualStyle": "violet",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "rick-pier-o-neil-mauro-aguirre-paul-deep-n-pot-something-wrong",
+      "artist": "Rick Pier O'Neil, Mauro Aguirre, Paul Deep, N'Pot",
+      "release": "Something Wrong",
+      "sourceIdentifier": "234643694",
+      "bandcampUrl": "https://clubsonica.bandcamp.com/album/something-wrong",
+      "releaseDate": "2018-02-05 00:00:00 UTC",
+      "artworkReference": 2663224282,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:01:21.024733+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rick-pier-o-neil-mauro-aguirre-paul-deep-n-pot-something-wrong/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "will-lawton-and-the-alchemists-alchemy-ep",
+      "artist": "Will Lawton and the Alchemists",
+      "release": "Alchemy (EP)",
+      "sourceIdentifier": "107797658",
+      "bandcampUrl": "https://willlawton.bandcamp.com/album/alchemy-ep",
+      "releaseDate": "2023-03-10 00:00:00 UTC",
+      "artworkReference": 1540786238,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:01:22.734207+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/will-lawton-and-the-alchemists-alchemy-ep/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "mooneclipse-mithril-helm-in-a-night-of-daydreaming",
+      "artist": "MoonEclipse / Mithril Helm",
+      "release": "In A Night Of Daydreaming",
+      "sourceIdentifier": "988857163",
+      "bandcampUrl": "https://mooneclipse0.bandcamp.com/album/in-a-night-of-daydreaming",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 3625847379,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:01:24.492026+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mooneclipse-mithril-helm-in-a-night-of-daydreaming/",
+      "visualStyle": "cosmic",
+      "trackCount": 9,
+      "status": "published"
+    },
+    {
+      "id": "ttra-don-t-turn-around-wip",
+      "artist": "TTra<>",
+      "release": "DON'T TURN AROUND WIP",
+      "sourceIdentifier": "1277592931",
+      "bandcampUrl": "https://ttra.bandcamp.com/album/dont-turn-around-wip",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 2393255300,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:01:26.501890+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ttra-don-t-turn-around-wip/",
+      "visualStyle": "violet",
+      "trackCount": 9,
+      "status": "published"
+    },
+    {
+      "id": "stung-whispering",
+      "artist": "Stung",
+      "release": "Whispering",
+      "sourceIdentifier": "215591317",
+      "bandcampUrl": "https://stungofficial.bandcamp.com/album/whispering",
+      "releaseDate": "2025-10-04 00:00:00 UTC",
+      "artworkReference": 2218258198,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:01:28.161157+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/stung-whispering/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "rain-once-again-magenta",
+      "artist": "Rain Once Again",
+      "release": "Magenta",
+      "sourceIdentifier": "2783321079",
+      "bandcampUrl": "https://rainonceagain.bandcamp.com/album/magenta",
+      "releaseDate": "2026-09-01 03:55:50 UTC",
+      "artworkReference": 3223430635,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:01:29.797159+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rain-once-again-magenta/",
+      "visualStyle": "violet",
+      "trackCount": 9,
+      "status": "published"
+    },
+    {
+      "id": "gledd-my-church-is-on-fire",
+      "artist": "Gledd",
+      "release": "My Church Is On Fire",
+      "sourceIdentifier": "1403665365",
+      "bandcampUrl": "https://gledd.bandcamp.com/album/my-church-is-on-fire",
+      "releaseDate": "2026-09-01 17:08:20 UTC",
+      "artworkReference": 2645785786,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:01:31.373997+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/gledd-my-church-is-on-fire/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "brokenshoesfoundinadumpster-brokenshoesfoundinadumpster",
+      "artist": "BROKENSHOESFOUNDINADUMPSTER",
+      "release": "BROKENSHOESFOUNDINADUMPSTER",
+      "sourceIdentifier": "807239317",
+      "bandcampUrl": "https://brokenshoesfoundinadumpster.bandcamp.com/album/brokenshoesfoundinadumpster",
+      "releaseDate": "2026-09-01 15:35:29 UTC",
+      "artworkReference": 81443425,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:01:32.947873+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/brokenshoesfoundinadumpster-brokenshoesfoundinadumpster/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "srd-the-horror",
+      "artist": "SØRD",
+      "release": "The Horror",
+      "sourceIdentifier": "345949121",
+      "bandcampUrl": "https://s0rd.bandcamp.com/album/the-horror",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": 809640765,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:01:34.650714+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/srd-the-horror/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "caimbeul-donnan-chance-compositions-i-v-for-solo-piano",
+      "artist": "Caimbeul Donnan",
+      "release": "Chance Compositions I - V, For Solo Piano",
+      "sourceIdentifier": "3930289099",
+      "bandcampUrl": "https://cairnsmore.bandcamp.com/album/chance-compositions-i-v-for-solo-piano",
+      "releaseDate": "2026-09-01 16:52:21 UTC",
+      "artworkReference": 1140374420,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:01:56.581214+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/caimbeul-donnan-chance-compositions-i-v-for-solo-piano/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "fish-band-lilith",
+      "artist": "fish band!",
+      "release": "Lilith",
+      "sourceIdentifier": "2751610207",
+      "bandcampUrl": "https://fishband.bandcamp.com/album/lilith",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2407905482,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:02:01.923912+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/fish-band-lilith/",
+      "visualStyle": "violet",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "probeathit-latin-house-jupiter",
+      "artist": "PROBEATHIT",
+      "release": "latin house Jupiter",
+      "sourceIdentifier": "467482204",
+      "bandcampUrl": "https://latinenergy.bandcamp.com/album/latin-house-jupiter",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2442483206,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:02:05.015221+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/probeathit-latin-house-jupiter/",
+      "visualStyle": "cosmic",
+      "trackCount": 16,
+      "status": "published"
+    },
+    {
+      "id": "sevit-on-the-edge-of-a-darker-place-extended-remastered",
+      "artist": "SEVIT",
+      "release": "On The Edge Of A Darker Place (Extended Remastered)",
+      "sourceIdentifier": "3222379957",
+      "bandcampUrl": "https://sevitband.bandcamp.com/album/on-the-edge-of-a-darker-place-extended-remastered",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2652248447,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:02:09.165531+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sevit-on-the-edge-of-a-darker-place-extended-remastered/",
+      "visualStyle": "violet",
+      "trackCount": 15,
+      "status": "published"
+    },
+    {
+      "id": "dogma-protocol-2",
+      "artist": "Dogma Protocol",
+      "release": "2",
+      "sourceIdentifier": "4097142003",
+      "bandcampUrl": "https://dogmaprotocol.bandcamp.com/album/2",
+      "releaseDate": "2026-09-01 16:47:37 UTC",
+      "artworkReference": 22064748,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:02:10.907748+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dogma-protocol-2/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "chaos-eater-corrupted-disease",
+      "artist": "CHAOS EATER",
+      "release": "Corrupted Disease",
+      "sourceIdentifier": "1921256720",
+      "bandcampUrl": "https://chaoseater.bandcamp.com/album/corrupted-disease",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "artworkReference": 2500667668,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:02:12.303099+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/chaos-eater-corrupted-disease/",
+      "visualStyle": "violet",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "lesser-care-lincoln-leather",
+      "artist": "Lesser Care",
+      "release": "LINCOLN LEATHER",
+      "sourceIdentifier": "3535564738",
+      "bandcampUrl": "https://lessercare.bandcamp.com/album/lincoln-leather",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "artworkReference": 3841716119,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:02:13.828314+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lesser-care-lincoln-leather/",
+      "visualStyle": "cosmic",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "ep",
+      "artist": "静かの海",
+      "release": "ぬるいジンジャエール - EP",
+      "sourceIdentifier": "870990138",
+      "bandcampUrl": "https://shizukanoumi.bandcamp.com/album/ep-18",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1258529697,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:02:15.958637+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ep/",
+      "visualStyle": "violet",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "super-frog-saves-tokyo-volt-trax-ep",
+      "artist": "Super-Frog Saves Tokyo",
+      "release": "[VOLT TRAX] EP",
+      "sourceIdentifier": "2629817619",
+      "bandcampUrl": "https://super-frogsavestokyo.bandcamp.com/album/volt-trax-ep",
+      "releaseDate": "2026-09-01 15:23:17 UTC",
+      "artworkReference": 2906058934,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:02:20.566109+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/super-frog-saves-tokyo-volt-trax-ep/",
+      "visualStyle": "cosmic",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "we-are-numbered-the-big-empty",
+      "artist": "WE ARE NUMBERED_",
+      "release": "the big empty",
+      "sourceIdentifier": "939225279",
+      "bandcampUrl": "https://wearenumbered.bandcamp.com/album/the-big-empty",
+      "releaseDate": "2026-08-31 16:51:24 UTC",
+      "artworkReference": 938495126,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:02:22.113645+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/we-are-numbered-the-big-empty/",
+      "visualStyle": "violet",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "zopeh-belafonte-dead-presidents-don-t-swim",
+      "artist": "ZOPEH BELAFONTE",
+      "release": "Dead Presidents Don't Swim",
+      "sourceIdentifier": "2134372018",
+      "bandcampUrl": "https://zopehbelafonte1.bandcamp.com/album/dead-presidents-dont-swim",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3338410963,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:02:25.640482+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/zopeh-belafonte-dead-presidents-don-t-swim/",
+      "visualStyle": "cosmic",
+      "trackCount": 22,
+      "status": "published"
+    },
+    {
+      "id": "codigo-veronica-codigo-veronica-demo-2026",
+      "artist": "CÓDIGO:VERÓNICA",
+      "release": "CÓDIGO:VERÓNICA - DEMO 2026",
+      "sourceIdentifier": "3127421587",
+      "bandcampUrl": "https://codigoveronica.bandcamp.com/album/c-digo-ver-nica-demo-2026",
+      "releaseDate": "2026-05-03 00:00:00 UTC",
+      "artworkReference": 1058635246,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:02:27.034476+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/codigo-veronica-codigo-veronica-demo-2026/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "here-jenny-she-s-a-lab",
+      "artist": "Here Jenny",
+      "release": "She's A Lab",
+      "sourceIdentifier": "394457999",
+      "bandcampUrl": "https://herejenny.bandcamp.com/album/shes-a-lab",
+      "releaseDate": "2026-09-01 01:55:13 UTC",
+      "artworkReference": 278782854,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:02:28.510970+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/here-jenny-she-s-a-lab/",
+      "visualStyle": "cosmic",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "graylok-translucent",
+      "artist": "GRAYLOK",
+      "release": "Translucent",
+      "sourceIdentifier": "2590782025",
+      "bandcampUrl": "https://graylok.bandcamp.com/album/translucent",
+      "releaseDate": "2026-08-06 00:00:00 UTC",
+      "artworkReference": 1336763001,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:02:31.936351+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/graylok-translucent/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "ashaneen-piotr-janeczek-connection-with-nature-the-album",
+      "artist": "Ashaneen (Piotr Janeczek)",
+      "release": "Connection with Nature (The Album)",
+      "sourceIdentifier": "3132936045",
+      "bandcampUrl": "https://ashaneen.bandcamp.com/album/connection-with-nature-the-album",
+      "releaseDate": "2026-08-10 00:00:00 UTC",
+      "artworkReference": 2451901033,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:02:33.612559+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ashaneen-piotr-janeczek-connection-with-nature-the-album/",
+      "visualStyle": "cosmic",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "verum-flux-afterglow",
+      "artist": "Verum Flux",
+      "release": "Afterglow",
+      "sourceIdentifier": "97880380",
+      "bandcampUrl": "https://verumflux.bandcamp.com/album/afterglow",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 674760532,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:02:35.040969+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/verum-flux-afterglow/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "davie-macrae-a-day-in-a-life",
+      "artist": "Davie Macrae",
+      "release": "A Day In A Life",
+      "sourceIdentifier": "3629187348",
+      "bandcampUrl": "https://daviemacrae.bandcamp.com/album/a-day-in-a-life",
+      "releaseDate": "2026-09-01 16:16:13 UTC",
+      "artworkReference": 1771281615,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:02:36.426305+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/davie-macrae-a-day-in-a-life/",
+      "visualStyle": "cosmic",
+      "trackCount": 9,
+      "status": "published"
+    },
+    {
+      "id": "sandekala-mata-pedang-penghabisan",
+      "artist": "Sandekala",
+      "release": "Mata Pedang Penghabisan",
+      "sourceIdentifier": "2478278431",
+      "bandcampUrl": "https://sandekalaband.bandcamp.com/album/mata-pedang-penghabisan-2",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3796188858,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:02:38.019698+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sandekala-mata-pedang-penghabisan/",
+      "visualStyle": "violet",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "great-bear-lake-and-i-turn-back-just-for-a-glimpse",
+      "artist": "Great Bear Lake",
+      "release": "And I Turn Back, Just for a Glimpse",
+      "sourceIdentifier": "1526466553",
+      "bandcampUrl": "https://sevensce.bandcamp.com/album/and-i-turn-back-just-for-a-glimpse",
+      "releaseDate": "2026-03-06 00:00:00 UTC",
+      "artworkReference": 844003479,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:02:39.749286+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/great-bear-lake-and-i-turn-back-just-for-a-glimpse/",
+      "visualStyle": "cosmic",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "dj-disc-remix-for-djs-vol-200",
+      "artist": "DJ DISC !",
+      "release": "Remix For Djs (Vol. 200)",
+      "sourceIdentifier": "175417469",
+      "bandcampUrl": "https://deejaydisc.bandcamp.com/album/remix-for-djs-vol-200",
+      "releaseDate": "2026-09-01 16:55:50 UTC",
+      "artworkReference": 3433395356,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:02:41.396697+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dj-disc-remix-for-djs-vol-200/",
+      "visualStyle": "violet",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "midnight-fusion-chicago-blues-slow-electric-blues-guitar",
+      "artist": "Midnight Fusion",
+      "release": "Chicago Blues - Slow Electric Blues Guitar",
+      "sourceIdentifier": "2428742831",
+      "bandcampUrl": "https://midnightfusion.bandcamp.com/album/chicago-blues-slow-electric-blues-guitar",
+      "releaseDate": "2026-09-01 15:21:05 UTC",
+      "artworkReference": 2748451425,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:02:43.038762+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/midnight-fusion-chicago-blues-slow-electric-blues-guitar/",
+      "visualStyle": "cosmic",
+      "trackCount": 10,
+      "status": "published"
+    },
+    {
+      "id": "balloo-die-zeit-der-wunder-ist-vorbei",
+      "artist": "balloo",
+      "release": "Die Zeit Der Wunder Ist Vorbei",
+      "sourceIdentifier": "512456715",
+      "bandcampUrl": "https://balloo-music.bandcamp.com/album/die-zeit-der-wunder-ist-vorbei",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "artworkReference": 3609223416,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:02:44.835423+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/balloo-die-zeit-der-wunder-ist-vorbei/",
+      "visualStyle": "violet",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "v77nny-v77nny-dark-dub-house-vol-1",
+      "artist": "V77NNY",
+      "release": "V77NNY  - DARK DUB HOUSE VOL.1",
+      "sourceIdentifier": "2034157393",
+      "bandcampUrl": "https://v77nny.bandcamp.com/album/v77nny-dark-dub-house-vol-1",
+      "releaseDate": "2026-01-01 00:00:00 UTC",
+      "artworkReference": 2061387115,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange",
+        "electronic"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:02:47.018312+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/v77nny-v77nny-dark-dub-house-vol-1/",
+      "visualStyle": "cosmic",
+      "trackCount": 40,
+      "status": "published"
+    },
+    {
+      "id": "black-wilderness-woodland-of-incorporeal-shadows",
+      "artist": "Black Wilderness",
+      "release": "Woodland Of Incorporeal Shadows",
+      "sourceIdentifier": "1570532551",
+      "bandcampUrl": "https://eeriesilence.bandcamp.com/album/woodland-of-incorporeal-shadows",
+      "releaseDate": "2024-12-05 00:00:00 UTC",
+      "artworkReference": 2925453281,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:02:48.604821+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/black-wilderness-woodland-of-incorporeal-shadows/",
+      "visualStyle": "violet",
+      "trackCount": 8,
+      "status": "published"
+    },
+    {
+      "id": "the-day-i-lost-her-to-forbid",
+      "artist": "The Day I Lost Her",
+      "release": "To Forbid",
+      "sourceIdentifier": "4208833390",
+      "bandcampUrl": "https://thedayilosther.bandcamp.com/album/to-forbid",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 1390592942,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:02:50.035804+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-day-i-lost-her-to-forbid/",
+      "visualStyle": "cosmic",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "olly-stevenson-caterpillar-s-remorse",
+      "artist": "Olly Stevenson",
+      "release": "Caterpillar's Remorse",
+      "sourceIdentifier": "4060168291",
+      "bandcampUrl": "https://ollystevenson.bandcamp.com/album/caterpillars-remorse",
+      "releaseDate": "2026-09-01 15:20:15 UTC",
+      "artworkReference": 2109848847,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:02:52.088671+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/olly-stevenson-caterpillar-s-remorse/",
+      "visualStyle": "violet",
+      "trackCount": 11,
+      "status": "published"
+    },
+    {
+      "id": "red-hex-silent-alibi",
+      "artist": "Red Hex",
+      "release": "Silent Alibi",
+      "sourceIdentifier": "52132466",
+      "bandcampUrl": "https://redhexset.bandcamp.com/album/silent-alibi",
+      "releaseDate": "2026-08-31 10:50:08 UTC",
+      "artworkReference": 2982054079,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:02:53.613204+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/red-hex-silent-alibi/",
+      "visualStyle": "cosmic",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "perp-va001",
+      "artist": "PERP",
+      "release": "VA001",
+      "sourceIdentifier": "3192179540",
+      "bandcampUrl": "https://perprecs.bandcamp.com/album/va001",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 2904431619,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:02:55.212880+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/perp-va001/",
+      "visualStyle": "violet",
+      "trackCount": 11,
+      "status": "published"
+    },
+    {
+      "id": "ov-crow-ow-crow",
+      "artist": "Ov Crow",
+      "release": "Ow Crow",
+      "sourceIdentifier": "927384640",
+      "bandcampUrl": "https://vozdamorteprod.bandcamp.com/album/ow-crow",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3810203786,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:02:57.107566+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ov-crow-ow-crow/",
+      "visualStyle": "cosmic",
+      "trackCount": 6,
+      "status": "published"
+    },
+    {
+      "id": "darrel-smith-jr-a-broadcast-memory",
+      "artist": "Darrel Smith Jr.",
+      "release": "A Broadcast Memory",
+      "sourceIdentifier": "1695100025",
+      "bandcampUrl": "https://darrelsmithjr.bandcamp.com/album/a-broadcast-memory",
+      "releaseDate": "2026-05-01 00:00:00 UTC",
+      "artworkReference": 904062995,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:02:58.765498+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/darrel-smith-jr-a-broadcast-memory/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "apartt-altarf-joaquin-gliese-jam-ill-103-procul-ep",
+      "artist": "Apartt, Altarf, Joaquin Gliese, Jam-ill",
+      "release": "103 - Procul EP",
+      "sourceIdentifier": "3628317082",
+      "bandcampUrl": "https://nadaespacial.bandcamp.com/album/103-procul-ep",
+      "releaseDate": "2026-09-01 16:52:50 UTC",
+      "artworkReference": 2641961836,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:03:00.358211+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/apartt-altarf-joaquin-gliese-jam-ill-103-procul-ep/",
+      "visualStyle": "cosmic",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "jess-baby-yoda-too-high-2-die",
+      "artist": "jess",
+      "release": "Baby Yoda Too High 2 Die",
+      "sourceIdentifier": "3912104112",
+      "bandcampUrl": "https://jess-on.bandcamp.com/album/baby-yoda-too-high-2-die",
+      "releaseDate": "2026-09-01 15:20:13 UTC",
+      "artworkReference": 2258559224,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:03:01.954385+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jess-baby-yoda-too-high-2-die/",
+      "visualStyle": "violet",
+      "trackCount": 9,
+      "status": "published"
+    },
+    {
+      "id": "si-gloom-lords",
+      "artist": "Si",
+      "release": "GLOOM LORDS",
+      "sourceIdentifier": "579610094",
+      "bandcampUrl": "https://siphilanthropist.bandcamp.com/album/gloom-lords",
+      "releaseDate": "2026-08-31 04:39:05 UTC",
+      "artworkReference": 2373235645,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:03:03.634805+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/si-gloom-lords/",
+      "visualStyle": "cosmic",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "dingo-date-night-dingo-date-night",
+      "artist": "Dingo Date Night",
+      "release": "Dingo Date Night",
+      "sourceIdentifier": "1090012479",
+      "bandcampUrl": "https://latogato.bandcamp.com/album/dingo-date-night",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "artworkReference": 1602165941,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:03:05.644753+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dingo-date-night-dingo-date-night/",
+      "visualStyle": "violet",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "vasteras-slutstation-misaren",
+      "artist": "VÄSTERÅS",
+      "release": "Slutstation: Misären",
+      "sourceIdentifier": "3776306768",
+      "bandcampUrl": "https://vasteras.bandcamp.com/album/slutstation-mis-ren",
+      "releaseDate": "2026-09-01 13:59:57 UTC",
+      "artworkReference": 508278153,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:03:07.119778+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/vasteras-slutstation-misaren/",
+      "visualStyle": "cosmic",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "someformofbody-3-songs-ive-always-hated-constant-reminders",
+      "artist": "someformofbody",
+      "release": "3 songs (ive always hated constant reminders)",
+      "sourceIdentifier": "4176864760",
+      "bandcampUrl": "https://someformofbody.bandcamp.com/album/3-songs-ive-always-hated-constant-reminders",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 630953802,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:03:08.543612+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/someformofbody-3-songs-ive-always-hated-constant-reminders/",
+      "visualStyle": "violet",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "mulphia-ghosts-in-the-box-part-ii",
+      "artist": "mulpHia",
+      "release": "[GHOSTs] in the BOX [PART II.]",
+      "sourceIdentifier": "1981492818",
+      "bandcampUrl": "https://mulphia.bandcamp.com/album/ghosts-in-the-box-part-ii",
+      "releaseDate": "2026-09-01 16:52:35 UTC",
+      "artworkReference": 3299697581,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:03:10.354023+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mulphia-ghosts-in-the-box-part-ii/",
+      "visualStyle": "cosmic",
+      "trackCount": 21,
+      "status": "published"
+    },
+    {
+      "id": "aneira-rotations",
+      "artist": "aneira",
+      "release": "Rotations",
+      "sourceIdentifier": "1947927357",
+      "bandcampUrl": "https://aneira.bandcamp.com/album/rotations",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "artworkReference": 3479776766,
+      "tags": [
+        "ambient"
+      ],
+      "waters": [
+        "quiet"
+      ],
+      "sourceWater": "quiet",
+      "discoveredAt": "2026-09-02T01:03:12.020125+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/aneira-rotations/",
+      "visualStyle": "violet",
+      "trackCount": 12,
+      "status": "published"
+    },
+    {
+      "id": "spiritual-conspiracy-shine-perishing-republic",
+      "artist": "Spiritual Conspiracy",
+      "release": "Shine Perishing Republic",
+      "sourceIdentifier": "2089773118",
+      "bandcampUrl": "https://spiritualconspiracy.bandcamp.com/album/shine-perishing-republic",
+      "releaseDate": "2026-08-25 00:00:00 UTC",
+      "artworkReference": 1348373100,
+      "tags": [
+        "darkwave"
+      ],
+      "waters": [
+        "dark"
+      ],
+      "sourceWater": "dark",
+      "discoveredAt": "2026-09-02T01:03:13.829684+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/spiritual-conspiracy-shine-perishing-republic/",
+      "visualStyle": "cosmic",
+      "trackCount": 19,
+      "status": "published"
+    },
+    {
+      "id": "webkontm-p-l-a-c-i-d-a-q-u-a-t-i-c-s",
+      "artist": "Webkon™",
+      "release": "p l a c i d  a q u a t i c s",
+      "sourceIdentifier": "4113296215",
+      "bandcampUrl": "https://worldwidewebiskonstantine.bandcamp.com/album/p-l-a-c-i-d-a-q-u-a-t-i-c-s",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "artworkReference": 3200052573,
+      "tags": [
+        "experimental"
+      ],
+      "waters": [
+        "strange"
+      ],
+      "sourceWater": "strange",
+      "discoveredAt": "2026-09-02T01:03:15.499767+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/webkontm-p-l-a-c-i-d-a-q-u-a-t-i-c-s/",
+      "visualStyle": "violet",
+      "trackCount": 13,
+      "status": "published"
+    },
+    {
+      "id": "primal-deus-satanicus",
+      "artist": "Primal",
+      "release": "Deus Satanicus",
+      "sourceIdentifier": "1509329949",
+      "bandcampUrl": "https://primalband.bandcamp.com/album/deus-satanicus",
+      "releaseDate": "2026-09-01 13:57:40 UTC",
+      "artworkReference": 2998158047,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:03:20.764940+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/primal-deus-satanicus/",
+      "visualStyle": "cosmic",
+      "trackCount": 4,
+      "status": "published"
+    },
+    {
+      "id": "caer-sin-ti-caeri-caeri",
+      "artist": "Caer sin ti",
+      "release": "caeri caeri",
+      "sourceIdentifier": "325603704",
+      "bandcampUrl": "https://caersinti.bandcamp.com/album/caeri-caeri",
+      "releaseDate": "2026-08-31 22:40:49 UTC",
+      "artworkReference": 3112001531,
+      "tags": [
+        "shoegaze"
+      ],
+      "waters": [
+        "dreamy"
+      ],
+      "sourceWater": "dreamy",
+      "discoveredAt": "2026-09-02T01:03:22.131839+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/caer-sin-ti-caeri-caeri/",
+      "visualStyle": "violet",
+      "trackCount": 5,
+      "status": "published"
+    },
+    {
+      "id": "rossi-lost-remixes",
+      "artist": "Rossi",
+      "release": "Lost [Remixes]",
+      "sourceIdentifier": "3844441185",
+      "bandcampUrl": "https://rossinl.bandcamp.com/album/lost-remixes",
+      "releaseDate": "2026-08-30 00:00:00 UTC",
+      "artworkReference": 3165992943,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:03:23.704814+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rossi-lost-remixes/",
+      "visualStyle": "cosmic",
+      "trackCount": 3,
+      "status": "published"
+    },
+    {
+      "id": "coffin-torture-seism",
+      "artist": "COFFIN TORTURE",
+      "release": "SEISM",
+      "sourceIdentifier": "998554328",
+      "bandcampUrl": "https://coffintorture.bandcamp.com/album/seism",
+      "releaseDate": "2026-09-01 13:51:14 UTC",
+      "artworkReference": 40635250,
+      "tags": [
+        "metal"
+      ],
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "sourceWater": "heavy",
+      "discoveredAt": "2026-09-02T01:05:12.889989+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/coffin-torture-seism/",
+      "visualStyle": "violet",
+      "trackCount": 7,
+      "status": "published"
+    },
+    {
+      "id": "an75-laborator",
+      "artist": "AN75",
+      "release": "Laboratoř",
+      "sourceIdentifier": "155673497",
+      "bandcampUrl": "https://an75.bandcamp.com/album/laborato",
+      "releaseDate": "2026-09-01 16:43:26 UTC",
+      "artworkReference": 3223544075,
+      "tags": [
+        "electronic"
+      ],
+      "waters": [
+        "electronic"
+      ],
+      "sourceWater": "electronic",
+      "discoveredAt": "2026-09-02T01:05:16.968189+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/an75-laborator/",
+      "visualStyle": "cosmic",
+      "trackCount": 11,
+      "status": "published"
+    }
+  ],
+  "failures": [
+    {
+      "artist": "simvlacrvm",
+      "release": "sequences",
+      "bandcampUrl": "https://blankspaceaudio.net/album/sequences",
+      "sourceWater": "quiet",
+      "reason": "Enter a valid HTTPS Bandcamp URL"
+    },
+    {
+      "artist": "White Comet",
+      "release": "桜の月",
+      "bandcampUrl": "https://whitecomet.bandcamp.com/album/-",
+      "sourceWater": "strange",
+      "reason": "Cosmic Aquaria requires at least 3 publicly available Bandcamp songs; only 0 could be verified for White Comet."
+    },
+    {
+      "artist": "theBlackWigwam",
+      "release": "миф о Мировой Утке",
+      "bandcampUrl": "https://blackwigwam.bandcamp.com/album/--4",
+      "sourceWater": "quiet",
+      "reason": "Cosmic Aquaria requires at least 3 publicly available Bandcamp songs; only 0 could be verified for theBlackWigwam."
+    },
+    {
+      "artist": "Polycythemia",
+      "release": "Холодные волны",
+      "bandcampUrl": "https://polycythemia.bandcamp.com/album/-",
+      "sourceWater": "dark",
+      "reason": "Cosmic Aquaria requires at least 3 publicly available Bandcamp songs; only 0 could be verified for Polycythemia."
+    },
+    {
+      "artist": "White Comet",
+      "release": "桜の月",
+      "bandcampUrl": "https://whitecomet.bandcamp.com/album/-",
+      "sourceWater": "strange",
+      "reason": "Cosmic Aquaria requires at least 3 publicly available Bandcamp songs; only 0 could be verified for White Comet."
+    },
+    {
+      "artist": "द डोरेमोंस",
+      "release": "आंतरिक प्रकाश",
+      "bandcampUrl": "https://thedoraemons.bandcamp.com/album/--3",
+      "sourceWater": "strange",
+      "reason": "Artist and release text cannot form a stable URL slug"
+    },
+    {
+      "artist": "Polycythemia",
+      "release": "Холодные волны",
+      "bandcampUrl": "https://polycythemia.bandcamp.com/album/-",
+      "sourceWater": "dark",
+      "reason": "Cosmic Aquaria requires at least 3 publicly available Bandcamp songs; only 0 could be verified for Polycythemia."
+    },
+    {
+      "artist": "simvlacrvm",
+      "release": "sequences",
+      "bandcampUrl": "https://blankspaceaudio.net/album/sequences",
+      "sourceWater": "quiet",
+      "reason": "Enter a valid HTTPS Bandcamp URL"
+    },
+    {
+      "artist": "theBlackWigwam",
+      "release": "миф о Мировой Утке",
+      "bandcampUrl": "https://blackwigwam.bandcamp.com/album/--4",
+      "sourceWater": "quiet",
+      "reason": "Cosmic Aquaria requires at least 3 publicly available Bandcamp songs; only 0 could be verified for theBlackWigwam."
+    },
+    {
+      "artist": "simvlacrvm",
+      "release": "sequences",
+      "bandcampUrl": "https://blankspaceaudio.net/album/sequences",
+      "sourceWater": "strange",
+      "reason": "Enter a valid HTTPS Bandcamp URL"
+    },
+    {
+      "reason": "Replaced 2 pre-2000 archival release(s) surfaced by the new-release feed",
+      "ids": [
+        "hanon-tramp-wasd",
+        "various-artists-thats-eurobeat-vol-43"
+      ]
+    },
+    {
+      "artist": "simvlacrvm",
+      "release": "sequences",
+      "bandcampUrl": "https://blankspaceaudio.net/album/sequences",
+      "sourceWater": "electronic",
+      "reason": "Enter a valid HTTPS Bandcamp URL"
+    }
+  ],
+  "waterCounts": {
+    "dark": 37,
+    "dreamy": 38,
+    "electronic": 38,
+    "heavy": 38,
+    "loud": 40,
+    "quiet": 37,
+    "strange": 37
+  },
+  "currentLibraryCount": 200,
+  "completedAt": "2026-09-02T01:05:17.333737+00:00"
+}

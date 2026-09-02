@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "slug": "vasteras-slutstation-misaren",
+  "artist": "VÄSTERÅS",
+  "bandcampUrl": "https://vasteras.bandcamp.com/album/slutstation-mis-ren",
+  "releaseTitle": "Slutstation: Misären",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "metal"
+  ],
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vasteras.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:03:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "slutstation-misaren",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "slutstation-misaren-2511927605",
+      "title": "Slutstation",
+      "artist": "VÄSTERÅS",
+      "albumTitle": "Slutstation: Misären",
+      "albumKey": "slutstation-misaren",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vasteras.bandcamp.com/track/slutstation",
+      "bandcampEmbedTrackId": "2511927605",
+      "sourcePage": "https://vasteras.bandcamp.com/album/slutstation-mis-ren",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "slutstation-misaren-879442377",
+      "title": "Ingen Balans",
+      "artist": "VÄSTERÅS",
+      "albumTitle": "Slutstation: Misären",
+      "albumKey": "slutstation-misaren",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vasteras.bandcamp.com/track/ingen-balans",
+      "bandcampEmbedTrackId": "879442377",
+      "sourcePage": "https://vasteras.bandcamp.com/album/slutstation-mis-ren",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "slutstation-misaren-2800138891",
+      "title": "Staden Av Svek",
+      "artist": "VÄSTERÅS",
+      "albumTitle": "Slutstation: Misären",
+      "albumKey": "slutstation-misaren",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:04",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vasteras.bandcamp.com/track/staden-av-svek",
+      "bandcampEmbedTrackId": "2800138891",
+      "sourcePage": "https://vasteras.bandcamp.com/album/slutstation-mis-ren",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "slutstation-misaren-2474413898",
+      "title": "Kronisk Dödsönskan",
+      "artist": "VÄSTERÅS",
+      "albumTitle": "Slutstation: Misären",
+      "albumKey": "slutstation-misaren",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:41",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vasteras.bandcamp.com/track/kronisk-d-ds-nskan",
+      "bandcampEmbedTrackId": "2474413898",
+      "sourcePage": "https://vasteras.bandcamp.com/album/slutstation-mis-ren",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "slutstation-misaren-2790838083",
+      "title": "Misären (Outro)",
+      "artist": "VÄSTERÅS",
+      "albumTitle": "Slutstation: Misären",
+      "albumKey": "slutstation-misaren",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "1:28",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vasteras.bandcamp.com/track/mis-ren-outro",
+      "bandcampEmbedTrackId": "2790838083",
+      "sourcePage": "https://vasteras.bandcamp.com/album/slutstation-mis-ren",
+      "accent": "#8fd9c7"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "slug": "dread-wound-dread-wound",
+  "artist": "Dread Wound",
+  "bandcampUrl": "https://dreadwound.bandcamp.com/album/dread-wound",
+  "releaseTitle": "Dread Wound",
+  "releaseDate": "2026-08-26 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "metal"
+  ],
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dreadwound.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T00:59:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dread-wound",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dread-wound-3073350730",
+      "title": "Be Careful",
+      "artist": "Dread Wound",
+      "albumTitle": "Dread Wound",
+      "albumKey": "dread-wound",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dreadwound.bandcamp.com/track/be-careful-2",
+      "bandcampEmbedTrackId": "3073350730",
+      "sourcePage": "https://dreadwound.bandcamp.com/album/dread-wound",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dread-wound-1959364595",
+      "title": "Suffer",
+      "artist": "Dread Wound",
+      "albumTitle": "Dread Wound",
+      "albumKey": "dread-wound",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:55",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dreadwound.bandcamp.com/track/suffer",
+      "bandcampEmbedTrackId": "1959364595",
+      "sourcePage": "https://dreadwound.bandcamp.com/album/dread-wound",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "dread-wound-3520553798",
+      "title": "Waltz in the Dark Wood",
+      "artist": "Dread Wound",
+      "albumTitle": "Dread Wound",
+      "albumKey": "dread-wound",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:35",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dreadwound.bandcamp.com/track/waltz-in-the-dark-wood",
+      "bandcampEmbedTrackId": "3520553798",
+      "sourcePage": "https://dreadwound.bandcamp.com/album/dread-wound",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

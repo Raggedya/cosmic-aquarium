@@ -1,7 +1,47 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T00:25:54.330Z",
+  "generatedAt": "2026-09-02T01:05:31.711Z",
   "aquariums": [
+    {
+      "id": "52hz-nicolas-mollin-cahier-de-vacances",
+      "slug": "52hz-nicolas-mollin-cahier-de-vacances",
+      "artist": "52Hz & Nicolas Mollin",
+      "release": "Cahier de Vacances",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 13,
+      "bandcampUrl": "https://52hz-music.bandcamp.com/album/cahier-de-vacances",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/52hz-nicolas-mollin-cahier-de-vacances/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "5fingerballad-5fingerballad",
+      "slug": "5fingerballad-5fingerballad",
+      "artist": "5FingerBallad",
+      "release": "5FingerBallad",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://5fingerballad.bandcamp.com/album/5fingerballad",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/5fingerballad-5fingerballad/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
     {
       "id": "active-dark-filament-adaptive-inference",
       "slug": "active-dark-filament-adaptive-inference",
@@ -24,6 +64,126 @@
       ]
     },
     {
+      "id": "adam-majdecki-janicki-the-wino-winyle-session-spartan-mix-2026-08-31",
+      "slug": "adam-majdecki-janicki-the-wino-winyle-session-spartan-mix-2026-08-31",
+      "artist": "Adam Majdecki-Janicki",
+      "release": "The Wino & Winyle Session (Spartan Mix) 2026-08-31.",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 17,
+      "bandcampUrl": "https://adammajdeckijanicki.bandcamp.com/album/the-wino-winyle-session-spartan-mix-2026-08-31",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/adam-majdecki-janicki-the-wino-winyle-session-spartan-mix-2026-08-31/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "adriel-sfx-voltaentrada",
+      "slug": "adriel-sfx-voltaentrada",
+      "artist": "Adriel.sfx",
+      "release": "VOLTAENTRADA - 入口",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 13,
+      "bandcampUrl": "https://hyperpoprecords.bandcamp.com/album/voltaentrada",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/adriel-sfx-voltaentrada/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "an75-laborator",
+      "slug": "an75-laborator",
+      "artist": "AN75",
+      "release": "Laboratoř",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 11,
+      "bandcampUrl": "https://an75.bandcamp.com/album/laborato",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/an75-laborator/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "aneira-rotations",
+      "slug": "aneira-rotations",
+      "artist": "aneira",
+      "release": "Rotations",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://aneira.bandcamp.com/album/rotations",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/aneira-rotations/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "apartt-altarf-joaquin-gliese-jam-ill-103-procul-ep",
+      "slug": "apartt-altarf-joaquin-gliese-jam-ill-103-procul-ep",
+      "artist": "Apartt, Altarf, Joaquin Gliese, Jam-ill",
+      "release": "103 - Procul EP",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://nadaespacial.bandcamp.com/album/103-procul-ep",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/apartt-altarf-joaquin-gliese-jam-ill-103-procul-ep/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "ashaneen-piotr-janeczek-connection-with-nature-the-album",
+      "slug": "ashaneen-piotr-janeczek-connection-with-nature-the-album",
+      "artist": "Ashaneen (Piotr Janeczek)",
+      "release": "Connection with Nature (The Album)",
+      "releaseDate": "2026-08-10 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://ashaneen.bandcamp.com/album/connection-with-nature-the-album",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ashaneen-piotr-janeczek-connection-with-nature-the-album/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
       "id": "atagal-drifting-past-the-stars",
       "slug": "atagal-drifting-past-the-stars",
       "artist": "Atagal",
@@ -41,6 +201,87 @@
       "status": "published",
       "waters": [
         "quiet"
+      ]
+    },
+    {
+      "id": "avathar-where-light-and-shadow-collide",
+      "slug": "avathar-where-light-and-shadow-collide",
+      "artist": "Avathar",
+      "release": "Where Light And Shadow Collide",
+      "releaseDate": "2004-01-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://avathar.bandcamp.com/album/where-light-and-shadow-collide",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/avathar-where-light-and-shadow-collide/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "azure-k-grayscale",
+      "slug": "azure-k-grayscale",
+      "artist": "Azure K",
+      "release": "Grayscale",
+      "releaseDate": "2025-12-26 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://azurek.bandcamp.com/album/grayscale",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/azure-k-grayscale/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "balloo-die-zeit-der-wunder-ist-vorbei",
+      "slug": "balloo-die-zeit-der-wunder-ist-vorbei",
+      "artist": "balloo",
+      "release": "Die Zeit Der Wunder Ist Vorbei",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://balloo-music.bandcamp.com/album/die-zeit-der-wunder-ist-vorbei",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/balloo-die-zeit-der-wunder-ist-vorbei/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "barry-warne-down-at-the-wave-ranch-kjx-26-muse",
+      "slug": "barry-warne-down-at-the-wave-ranch-kjx-26-muse",
+      "artist": "Barry Warne down at the Wave Ranch",
+      "release": "kjx 26 muse",
+      "releaseDate": "2015-08-25 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://waveranch.bandcamp.com/album/kjx-26-muse",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/barry-warne-down-at-the-wave-ranch-kjx-26-muse/",
+      "status": "published",
+      "waters": [
+        "electronic"
       ]
     },
     {
@@ -65,6 +306,47 @@
       ]
     },
     {
+      "id": "belcebu-pace-nacionalismo-galego",
+      "slug": "belcebu-pace-nacionalismo-galego",
+      "artist": "Belcebú Pace",
+      "release": "Nacionalismo Galego",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://celtic123.bandcamp.com/album/nacionalismo-galego",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/belcebu-pace-nacionalismo-galego/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "billy-hill-the-optimists-mental-collapse-nervous-breakdown-remastered",
+      "slug": "billy-hill-the-optimists-mental-collapse-nervous-breakdown-remastered",
+      "artist": "Billy Hill & The Optimists",
+      "release": "Mental Collapse, Nervous Breakdown (Remastered)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 16,
+      "bandcampUrl": "https://fadingsunset.bandcamp.com/album/mental-collapse-nervous-breakdown-remastered",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/billy-hill-the-optimists-mental-collapse-nervous-breakdown-remastered/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
       "id": "bimbase-nia-malgranda-komunumo",
       "slug": "bimbase-nia-malgranda-komunumo",
       "artist": "Bimbasē",
@@ -81,6 +363,68 @@
       "url": "https://raggedya.github.io/cosmic-aquarium/bimbase-nia-malgranda-komunumo/",
       "status": "published",
       "waters": [
+        "loud"
+      ]
+    },
+    {
+      "id": "bing-satellites-in-the-eastern-sky",
+      "slug": "bing-satellites-in-the-eastern-sky",
+      "artist": "Bing Satellites",
+      "release": "In The Eastern Sky",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://bingsatellites.bandcamp.com/album/in-the-eastern-sky",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/bing-satellites-in-the-eastern-sky/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "black-wilderness-woodland-of-incorporeal-shadows",
+      "slug": "black-wilderness-woodland-of-incorporeal-shadows",
+      "artist": "Black Wilderness",
+      "release": "Woodland Of Incorporeal Shadows",
+      "releaseDate": "2024-12-05 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://eeriesilence.bandcamp.com/album/woodland-of-incorporeal-shadows",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/black-wilderness-woodland-of-incorporeal-shadows/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "blunt-force-trauma-vengeance-for-nothing-2012",
+      "slug": "blunt-force-trauma-vengeance-for-nothing-2012",
+      "artist": "Blunt Force Trauma",
+      "release": "Vengeance For Nothing (2012)",
+      "releaseDate": "2012-12-25 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://archivalpurposes.bandcamp.com/album/vengeance-for-nothing-2012",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/blunt-force-trauma-vengeance-for-nothing-2012/",
+      "status": "published",
+      "waters": [
+        "heavy",
         "loud"
       ]
     },
@@ -106,6 +450,26 @@
       ]
     },
     {
+      "id": "boog-barka-lost-lands",
+      "slug": "boog-barka-lost-lands",
+      "artist": "BOOG BARKA",
+      "release": "Lost Lands",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://barcka.bandcamp.com/album/lost-lands",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/boog-barka-lost-lands/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
       "id": "boy-burnt-scriptures-v-science-fiction",
       "slug": "boy-burnt-scriptures-v-science-fiction",
       "artist": "boy",
@@ -124,6 +488,67 @@
       "waters": [
         "electronic",
         "dark"
+      ]
+    },
+    {
+      "id": "brokenshoesfoundinadumpster-brokenshoesfoundinadumpster",
+      "slug": "brokenshoesfoundinadumpster-brokenshoesfoundinadumpster",
+      "artist": "BROKENSHOESFOUNDINADUMPSTER",
+      "release": "BROKENSHOESFOUNDINADUMPSTER",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://brokenshoesfoundinadumpster.bandcamp.com/album/brokenshoesfoundinadumpster",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/brokenshoesfoundinadumpster-brokenshoesfoundinadumpster/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "caer-sin-ti-caeri-caeri",
+      "slug": "caer-sin-ti-caeri-caeri",
+      "artist": "Caer sin ti",
+      "release": "caeri caeri",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://caersinti.bandcamp.com/album/caeri-caeri",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/caer-sin-ti-caeri-caeri/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "caimbeul-donnan-chance-compositions-i-v-for-solo-piano",
+      "slug": "caimbeul-donnan-chance-compositions-i-v-for-solo-piano",
+      "artist": "Caimbeul Donnan",
+      "release": "Chance Compositions I - V, For Solo Piano",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://cairnsmore.bandcamp.com/album/chance-compositions-i-v-for-solo-piano",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/caimbeul-donnan-chance-compositions-i-v-for-solo-piano/",
+      "status": "published",
+      "waters": [
+        "strange",
+        "quiet"
       ]
     },
     {
@@ -148,6 +573,211 @@
       ]
     },
     {
+      "id": "caramel-pipe-tlaloc",
+      "slug": "caramel-pipe-tlaloc",
+      "artist": "Caramel Pipe",
+      "release": "Tlaloc",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://caramelpipe.bandcamp.com/album/tlaloc",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/caramel-pipe-tlaloc/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "celestial-weapon-what-dwells-inside-the-stars",
+      "slug": "celestial-weapon-what-dwells-inside-the-stars",
+      "artist": "Celestial Weapon",
+      "release": "What Dwells Inside The Stars",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://ionplasmaincineration.bandcamp.com/album/what-dwells-inside-the-stars",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/celestial-weapon-what-dwells-inside-the-stars/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "celtichammer-guerras-galaicas",
+      "slug": "celtichammer-guerras-galaicas",
+      "artist": "CelticHammer",
+      "release": "Guerras Galaicas",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://celtic123.bandcamp.com/album/guerras-galaicas",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/celtichammer-guerras-galaicas/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "cerul-we-don-t-want-to-wake-up-the-mystieries",
+      "slug": "cerul-we-don-t-want-to-wake-up-the-mystieries",
+      "artist": "Cerul",
+      "release": "We Don't Want (To Wake Up The Mystieries)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://cerul.bandcamp.com/album/we-dont-want-to-wake-up-the-mystieries",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/cerul-we-don-t-want-to-wake-up-the-mystieries/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "chaos-eater-corrupted-disease",
+      "slug": "chaos-eater-corrupted-disease",
+      "artist": "CHAOS EATER",
+      "release": "Corrupted Disease",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://chaoseater.bandcamp.com/album/corrupted-disease",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/chaos-eater-corrupted-disease/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "chris-anderson-paraself-revisit-ii",
+      "slug": "chris-anderson-paraself-revisit-ii",
+      "artist": "Chris Anderson",
+      "release": "Paraself Revisit ii",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 14,
+      "bandcampUrl": "https://chrisanderson1973.bandcamp.com/album/paraself-revisit-ii",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/chris-anderson-paraself-revisit-ii/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "cmon3tta-man-hattan-ep",
+      "slug": "cmon3tta-man-hattan-ep",
+      "artist": "cmon3tta",
+      "release": "Man.hattan: EP",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://cmon3tta.bandcamp.com/album/man-hattan-ep",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/cmon3tta-man-hattan-ep/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "codigo-veronica-codigo-veronica-demo-2026",
+      "slug": "codigo-veronica-codigo-veronica-demo-2026",
+      "artist": "CÓDIGO:VERÓNICA",
+      "release": "CÓDIGO:VERÓNICA - DEMO 2026",
+      "releaseDate": "2026-05-03 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://codigoveronica.bandcamp.com/album/c-digo-ver-nica-demo-2026",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/codigo-veronica-codigo-veronica-demo-2026/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "coffin-torture-seism",
+      "slug": "coffin-torture-seism",
+      "artist": "COFFIN TORTURE",
+      "release": "SEISM",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://coffintorture.bandcamp.com/album/seism",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/coffin-torture-seism/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "cosmic-crush-year-of-the-bog-witch",
+      "slug": "cosmic-crush-year-of-the-bog-witch",
+      "artist": "Cosmic Crush",
+      "release": "Year of the Bog Witch",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://cosmiccrushsatx.bandcamp.com/album/year-of-the-bog-witch",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/cosmic-crush-year-of-the-bog-witch/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
       "id": "cowardlycrow-gore",
       "slug": "cowardlycrow-gore",
       "artist": "COWARDLYCROW",
@@ -166,6 +796,126 @@
       "waters": [
         "dreamy",
         "quiet"
+      ]
+    },
+    {
+      "id": "darrel-smith-jr-a-broadcast-memory",
+      "slug": "darrel-smith-jr-a-broadcast-memory",
+      "artist": "Darrel Smith Jr.",
+      "release": "A Broadcast Memory",
+      "releaseDate": "2026-05-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://darrelsmithjr.bandcamp.com/album/a-broadcast-memory",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/darrel-smith-jr-a-broadcast-memory/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "davie-macrae-a-day-in-a-life",
+      "slug": "davie-macrae-a-day-in-a-life",
+      "artist": "Davie Macrae",
+      "release": "A Day In A Life",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://daviemacrae.bandcamp.com/album/a-day-in-a-life",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/davie-macrae-a-day-in-a-life/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "demosoldier-battlefield",
+      "slug": "demosoldier-battlefield",
+      "artist": "demosoldier",
+      "release": "Battlefield",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 14,
+      "bandcampUrl": "https://demosoldier.bandcamp.com/album/battlefield",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/demosoldier-battlefield/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "dingo-date-night-dingo-date-night",
+      "slug": "dingo-date-night-dingo-date-night",
+      "artist": "Dingo Date Night",
+      "release": "Dingo Date Night",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://latogato.bandcamp.com/album/dingo-date-night",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/dingo-date-night-dingo-date-night/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "dj-disc-remix-for-djs-vol-200",
+      "slug": "dj-disc-remix-for-djs-vol-200",
+      "artist": "DJ DISC !",
+      "release": "Remix For Djs (Vol. 200)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://deejaydisc.bandcamp.com/album/remix-for-djs-vol-200",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/dj-disc-remix-for-djs-vol-200/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "dogma-protocol-2",
+      "slug": "dogma-protocol-2",
+      "artist": "Dogma Protocol",
+      "release": "2",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://dogmaprotocol.bandcamp.com/album/2",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/dogma-protocol-2/",
+      "status": "published",
+      "waters": [
+        "strange"
       ]
     },
     {
@@ -190,6 +940,48 @@
       ]
     },
     {
+      "id": "doomgrave-doomwave",
+      "slug": "doomgrave-doomwave",
+      "artist": "Doomgrave",
+      "release": "DOOMWAVE",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://doomgravedark.bandcamp.com/album/doomwave",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/doomgrave-doomwave/",
+      "status": "published",
+      "waters": [
+        "dark",
+        "heavy"
+      ]
+    },
+    {
+      "id": "dread-wound-dread-wound",
+      "slug": "dread-wound-dread-wound",
+      "artist": "Dread Wound",
+      "release": "Dread Wound",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://dreadwound.bandcamp.com/album/dread-wound",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/dread-wound-dread-wound/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
       "id": "dressed-in-sunlight-still-life-with-blunt-knife",
       "slug": "dressed-in-sunlight-still-life-with-blunt-knife",
       "artist": "Dressed In Sunlight",
@@ -208,6 +1000,106 @@
       "waters": [
         "loud",
         "dark"
+      ]
+    },
+    {
+      "id": "driftmoor-beyond-the-pale-horizon",
+      "slug": "driftmoor-beyond-the-pale-horizon",
+      "artist": "Driftmoor",
+      "release": "Beyond the Pale Horizon",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://driftmoor.bandcamp.com/album/beyond-the-pale-horizon",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/driftmoor-beyond-the-pale-horizon/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "droem-i-want-less",
+      "slug": "droem-i-want-less",
+      "artist": "DROEM",
+      "release": "I Want Less",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://realdroem.bandcamp.com/album/i-want-less",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/droem-i-want-less/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "dynamo-stairs-time-is-a-shape-the-river-is-a-lie",
+      "slug": "dynamo-stairs-time-is-a-shape-the-river-is-a-lie",
+      "artist": "Dynamo Stairs",
+      "release": "Time Is A Shape, The River Is A Lie",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://dynamostairs.bandcamp.com/album/time-is-a-shape-the-river-is-a-lie",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/dynamo-stairs-time-is-a-shape-the-river-is-a-lie/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "earthling-small-flight-bay",
+      "slug": "earthling-small-flight-bay",
+      "artist": "Earthling, Small",
+      "release": "Flight Bay",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://earthlingsmall.bandcamp.com/album/flight-bay",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/earthling-small-flight-bay/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "edme-turn-the-page",
+      "slug": "edme-turn-the-page",
+      "artist": "EDME",
+      "release": "Turn The Page",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 17,
+      "bandcampUrl": "https://edme.bandcamp.com/album/turn-the-page",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/edme-turn-the-page/",
+      "status": "published",
+      "waters": [
+        "strange"
       ]
     },
     {
@@ -232,6 +1124,26 @@
       ]
     },
     {
+      "id": "ellasantini12709-ellasantini12709",
+      "slug": "ellasantini12709-ellasantini12709",
+      "artist": "ellasantini12709",
+      "release": "ellasantini12709",
+      "releaseDate": "2020-08-02 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 26,
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/ellasantini12709",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ellasantini12709-ellasantini12709/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
       "id": "emoturmoil-the-boy-they-called-it",
       "slug": "emoturmoil-the-boy-they-called-it",
       "artist": "emoturmoil",
@@ -249,6 +1161,126 @@
       "status": "published",
       "waters": [
         "quiet",
+        "dreamy"
+      ]
+    },
+    {
+      "id": "ep",
+      "slug": "ep",
+      "artist": "静かの海",
+      "release": "ぬるいジンジャエール - EP",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://shizukanoumi.bandcamp.com/album/ep-18",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ep/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "eru-akasha-project-behind-the-mirror",
+      "slug": "eru-akasha-project-behind-the-mirror",
+      "artist": "ERU & AKASHA PROJECT",
+      "release": "Behind the Mirror",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://akashaproject.bandcamp.com/album/behind-the-mirror",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/eru-akasha-project-behind-the-mirror/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "esp-the-experiment",
+      "slug": "esp-the-experiment",
+      "artist": "ESP",
+      "release": "The Experiment",
+      "releaseDate": "2026-08-30 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 27,
+      "bandcampUrl": "https://extremelysloppyproductions.bandcamp.com/album/the-experiment",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/esp-the-experiment/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "family-guy-chiankin-famileuy-gu-y",
+      "slug": "family-guy-chiankin-famileuy-gu-y",
+      "artist": "family guy chiankin",
+      "release": "famileuy gu y",
+      "releaseDate": "2020-07-30 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/famileuy-gu-y",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/family-guy-chiankin-famileuy-gu-y/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "fig-697-eleven-hats",
+      "slug": "fig-697-eleven-hats",
+      "artist": "FIG 697",
+      "release": "Eleven Hats",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://fig697.bandcamp.com/album/eleven-hats-2",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/fig-697-eleven-hats/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "fish-band-lilith",
+      "slug": "fish-band-lilith",
+      "artist": "fish band!",
+      "release": "Lilith",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://fishband.bandcamp.com/album/lilith",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/fish-band-lilith/",
+      "status": "published",
+      "waters": [
         "dreamy"
       ]
     },
@@ -274,6 +1306,126 @@
       ]
     },
     {
+      "id": "ghostlace-watching-the-city-lights",
+      "slug": "ghostlace-watching-the-city-lights",
+      "artist": "Ghostlace",
+      "release": "Watching The City Lights",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 14,
+      "bandcampUrl": "https://ghostlace.bandcamp.com/album/watching-the-city-lights",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ghostlace-watching-the-city-lights/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "giu-vhs-ainda-to-pra-dar-o-nome",
+      "slug": "giu-vhs-ainda-to-pra-dar-o-nome",
+      "artist": "giu.vhs",
+      "release": "ainda tô pra dar o nome",
+      "releaseDate": "2026-01-09 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://giuvhs.bandcamp.com/album/ainda-t-pra-dar-o-nome",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/giu-vhs-ainda-to-pra-dar-o-nome/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "gledd-my-church-is-on-fire",
+      "slug": "gledd-my-church-is-on-fire",
+      "artist": "Gledd",
+      "release": "My Church Is On Fire",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://gledd.bandcamp.com/album/my-church-is-on-fire",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/gledd-my-church-is-on-fire/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "graylok-translucent",
+      "slug": "graylok-translucent",
+      "artist": "GRAYLOK",
+      "release": "Translucent",
+      "releaseDate": "2026-08-06 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://graylok.bandcamp.com/album/translucent",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/graylok-translucent/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "great-bear-lake-and-i-turn-back-just-for-a-glimpse",
+      "slug": "great-bear-lake-and-i-turn-back-just-for-a-glimpse",
+      "artist": "Great Bear Lake",
+      "release": "And I Turn Back, Just for a Glimpse",
+      "releaseDate": "2026-03-06 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://sevensce.bandcamp.com/album/and-i-turn-back-just-for-a-glimpse",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/great-bear-lake-and-i-turn-back-just-for-a-glimpse/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "grevusanjl-lost-in-the-moment",
+      "slug": "grevusanjl-lost-in-the-moment",
+      "artist": "GrevusAnjl",
+      "release": "Lost In The Moment",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://grevusanjl.bandcamp.com/album/lost-in-the-moment",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/grevusanjl-lost-in-the-moment/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
       "id": "groupsex-demo",
       "slug": "groupsex-demo",
       "artist": "GROUPSEX",
@@ -292,6 +1444,46 @@
       "waters": [
         "loud",
         "heavy"
+      ]
+    },
+    {
+      "id": "gunna-daniel-eiffel-66",
+      "slug": "gunna-daniel-eiffel-66",
+      "artist": "Gunna Daniel",
+      "release": "Eiffel 66",
+      "releaseDate": "2020-07-20 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/eiffel-66",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/gunna-daniel-eiffel-66/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "halo-tides-memento",
+      "slug": "halo-tides-memento",
+      "artist": "halo tides",
+      "release": "Memento",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 14,
+      "bandcampUrl": "https://halotidesband.bandcamp.com/album/memento",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/halo-tides-memento/",
+      "status": "published",
+      "waters": [
+        "dreamy"
       ]
     },
     {
@@ -316,6 +1508,168 @@
       ]
     },
     {
+      "id": "headkorr-ambience-for-lounges",
+      "slug": "headkorr-ambience-for-lounges",
+      "artist": "HeadKorr",
+      "release": "Ambience for Lounges",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 15,
+      "bandcampUrl": "https://headkorr.bandcamp.com/album/ambience-for-lounges",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/headkorr-ambience-for-lounges/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "here-jenny-she-s-a-lab",
+      "slug": "here-jenny-she-s-a-lab",
+      "artist": "Here Jenny",
+      "release": "She's A Lab",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://herejenny.bandcamp.com/album/shes-a-lab",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/here-jenny-she-s-a-lab/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "hmb-like-flying",
+      "slug": "hmb-like-flying",
+      "artist": "hMB",
+      "release": "Like Flying",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://hmbmusic2.bandcamp.com/album/like-flying",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/hmb-like-flying/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "hot-zex-school-days-tape-archive-vol-i-1991-1993",
+      "slug": "hot-zex-school-days-tape-archive-vol-i-1991-1993",
+      "artist": "Hot Zex",
+      "release": "School Days (Tape Archive vol. I, 1991-1993)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 15,
+      "bandcampUrl": "https://hotzex.bandcamp.com/album/school-days-tape-archive-vol-i-1991-1993",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/hot-zex-school-days-tape-archive-vol-i-1991-1993/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "hugo-cl-hay-eternidades-liberandose-en-nuestras-almas",
+      "slug": "hugo-cl-hay-eternidades-liberandose-en-nuestras-almas",
+      "artist": "Hugo CL",
+      "release": "Hay Eternidades Liberándose En Nuestras Almas",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://hugocl.bandcamp.com/album/hay-eternidades-liber-ndose-en-nuestras-almas",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/hugo-cl-hay-eternidades-liberandose-en-nuestras-almas/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "hydronero-the-screwed-mask-by-screw-reed",
+      "slug": "hydronero-the-screwed-mask-by-screw-reed",
+      "artist": "hydronero",
+      "release": "The Screwed Mask by Screw Reed",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://hydronero.bandcamp.com/album/the-screwed-mask-by-screw-reed",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/hydronero-the-screwed-mask-by-screw-reed/",
+      "status": "published",
+      "waters": [
+        "electronic",
+        "quiet"
+      ]
+    },
+    {
+      "id": "hypatia-hypatia-riddles-in-the-dark-ep",
+      "slug": "hypatia-hypatia-riddles-in-the-dark-ep",
+      "artist": "Hypatia",
+      "release": "Hypatia - Riddles in the Dark EP",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://monarecords.bandcamp.com/album/hypatia-riddles-in-the-dark-ep",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/hypatia-hypatia-riddles-in-the-dark-ep/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "iamahauntedhouse-three-songs-by-iamahauntedhouse",
+      "slug": "iamahauntedhouse-three-songs-by-iamahauntedhouse",
+      "artist": "iamahauntedhouse",
+      "release": "Three Songs by iamahauntedhouse",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://iamahauntedhouse.bandcamp.com/album/three-songs-by-iamahauntedhouse",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/iamahauntedhouse-three-songs-by-iamahauntedhouse/",
+      "status": "published",
+      "waters": [
+        "quiet",
+        "electronic"
+      ]
+    },
+    {
       "id": "immigrant-union",
       "slug": "immigrant-union",
       "artist": "Immigrant union",
@@ -334,6 +1688,127 @@
       "waters": [
         "electronic",
         "loud"
+      ]
+    },
+    {
+      "id": "irin-dusk-ruins-ep",
+      "slug": "irin-dusk-ruins-ep",
+      "artist": "Irin Dusk",
+      "release": "Ruins EP",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://irinduskofficial.bandcamp.com/album/ruins-ep",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/irin-dusk-ruins-ep/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "jaco-grail-ost",
+      "slug": "jaco-grail-ost",
+      "artist": "jaco",
+      "release": "Grail OST",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 18,
+      "bandcampUrl": "https://jacorpg.bandcamp.com/album/grail-ost",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/jaco-grail-ost/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "jess-baby-yoda-too-high-2-die",
+      "slug": "jess-baby-yoda-too-high-2-die",
+      "artist": "jess",
+      "release": "Baby Yoda Too High 2 Die",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://jess-on.bandcamp.com/album/baby-yoda-too-high-2-die",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/jess-baby-yoda-too-high-2-die/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "joao-jardel-megapop",
+      "slug": "joao-jardel-megapop",
+      "artist": "João Jardel",
+      "release": "megaPOP",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://hominiscanidaerec.bandcamp.com/album/megapop",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/joao-jardel-megapop/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "joerg-dankert-25-10-01-mission-log-26-09-01",
+      "slug": "joerg-dankert-25-10-01-mission-log-26-09-01",
+      "artist": "Joerg Dankert",
+      "release": "25.10.01//MISSION_LOG//26.09.01",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 11,
+      "bandcampUrl": "https://joerg-dankert.bandcamp.com/album/251001-mission-log-260901-2",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/joerg-dankert-25-10-01-mission-log-26-09-01/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "john-bruninski-35y-selection-1991-2026",
+      "slug": "john-bruninski-35y-selection-1991-2026",
+      "artist": "John Bruninski",
+      "release": "35y Selection (1991-2026)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://johnbruninski.bandcamp.com/album/35y-selection-1991-2026",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/john-bruninski-35y-selection-1991-2026/",
+      "status": "published",
+      "waters": [
+        "dark"
       ]
     },
     {
@@ -358,6 +1833,231 @@
       ]
     },
     {
+      "id": "kritzeh-ballad-of-the-scarlet-frontier",
+      "slug": "kritzeh-ballad-of-the-scarlet-frontier",
+      "artist": "Kritzeh",
+      "release": "Ballad of the Scarlet Frontier",
+      "releaseDate": "2026-04-20 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 18,
+      "bandcampUrl": "https://kritzeh.bandcamp.com/album/ballad-of-the-scarlet-frontier",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/kritzeh-ballad-of-the-scarlet-frontier/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "labratmat-harmonic-drift-machinery",
+      "slug": "labratmat-harmonic-drift-machinery",
+      "artist": "labratmat",
+      "release": "Harmonic Drift Machinery",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://labratmat.bandcamp.com/album/harmonic-drift-machinery",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/labratmat-harmonic-drift-machinery/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "ledmotiv-the-ghost-of-carrion",
+      "slug": "ledmotiv-the-ghost-of-carrion",
+      "artist": "Ledmotiv",
+      "release": "The Ghost of Carrion",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://ledmotiv.bandcamp.com/album/the-ghost-of-carrion",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ledmotiv-the-ghost-of-carrion/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "lento-sonitu-por-fim-algo-soa",
+      "slug": "lento-sonitu-por-fim-algo-soa",
+      "artist": "lento sonitu",
+      "release": "por fim algo soa",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://lentosonitu.bandcamp.com/album/por-fim-algo-soa",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/lento-sonitu-por-fim-algo-soa/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "lesser-care-lincoln-leather",
+      "slug": "lesser-care-lincoln-leather",
+      "artist": "Lesser Care",
+      "release": "LINCOLN LEATHER",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://lessercare.bandcamp.com/album/lincoln-leather",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/lesser-care-lincoln-leather/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "lost-generation-cursed",
+      "slug": "lost-generation-cursed",
+      "artist": "Lost Generation",
+      "release": "Cursed",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 13,
+      "bandcampUrl": "https://lostgenerationct.bandcamp.com/album/cursed",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/lost-generation-cursed/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "luminous-orange-puppy-dog-mail-ep-extended",
+      "slug": "luminous-orange-puppy-dog-mail-ep-extended",
+      "artist": "Luminous Orange",
+      "release": "Puppy Dog Mail EP (Extended)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://luminousorange.bandcamp.com/album/puppy-dog-mail-ep-extended",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/luminous-orange-puppy-dog-mail-ep-extended/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "lynx-clan-records-ltd-abstract-nights",
+      "slug": "lynx-clan-records-ltd-abstract-nights",
+      "artist": "Lynx Clan Records Ltd",
+      "release": "Abstract Nights",
+      "releaseDate": "2025-12-12 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://lynxclanrecords.bandcamp.com/album/abstract-nights",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/lynx-clan-records-ltd-abstract-nights/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud",
+        "strange"
+      ]
+    },
+    {
+      "id": "marcus-palt-the-white-and-the-black",
+      "slug": "marcus-palt-the-white-and-the-black",
+      "artist": "Marcus Palt",
+      "release": "The White and the Black",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://marcuspalt.bandcamp.com/album/the-white-and-the-black",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/marcus-palt-the-white-and-the-black/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "midnight-fusion-chicago-blues-slow-electric-blues-guitar",
+      "slug": "midnight-fusion-chicago-blues-slow-electric-blues-guitar",
+      "artist": "Midnight Fusion",
+      "release": "Chicago Blues - Slow Electric Blues Guitar",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://midnightfusion.bandcamp.com/album/chicago-blues-slow-electric-blues-guitar",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/midnight-fusion-chicago-blues-slow-electric-blues-guitar/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "milan-kohout-fear",
+      "slug": "milan-kohout-fear",
+      "artist": "Milan Kohout",
+      "release": "FEAR",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://milankohout.bandcamp.com/album/fear",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/milan-kohout-fear/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
       "id": "mimi-omatucada",
       "slug": "mimi-omatucada",
       "artist": "MIMI",
@@ -379,6 +2079,350 @@
       ]
     },
     {
+      "id": "misanthropik-torment-chaos-and-effect",
+      "slug": "misanthropik-torment-chaos-and-effect",
+      "artist": "Misanthropik Torment",
+      "release": "CHAOS AND EFFECT",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://misanthropiktorment.bandcamp.com/album/chaos-and-effect",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/misanthropik-torment-chaos-and-effect/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "mooneclipse-interstellar-fragments",
+      "slug": "mooneclipse-interstellar-fragments",
+      "artist": "MoonEclipse",
+      "release": "Interstellar Fragments",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://mooneclipse0.bandcamp.com/album/interstellar-fragments",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/mooneclipse-interstellar-fragments/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "mooneclipse-mithril-helm-in-a-night-of-daydreaming",
+      "slug": "mooneclipse-mithril-helm-in-a-night-of-daydreaming",
+      "artist": "MoonEclipse / Mithril Helm",
+      "release": "In A Night Of Daydreaming",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://mooneclipse0.bandcamp.com/album/in-a-night-of-daydreaming",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/mooneclipse-mithril-helm-in-a-night-of-daydreaming/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "mulphia-ghosts-in-the-box-part-ii",
+      "slug": "mulphia-ghosts-in-the-box-part-ii",
+      "artist": "mulpHia",
+      "release": "[GHOSTs] in the BOX [PART II.]",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 21,
+      "bandcampUrl": "https://mulphia.bandcamp.com/album/ghosts-in-the-box-part-ii",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/mulphia-ghosts-in-the-box-part-ii/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "nightweaver-residual-patterns",
+      "slug": "nightweaver-residual-patterns",
+      "artist": "nightweaver",
+      "release": "Residual Patterns",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://nightweaver.bandcamp.com/album/residual-patterns",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/nightweaver-residual-patterns/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "no-404",
+      "slug": "no-404",
+      "artist": "Трупоцемент",
+      "release": "Акт № 404",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 11,
+      "bandcampUrl": "https://ecrannetlabel.bandcamp.com/album/404",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/no-404/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "noisegrind-princess-chelsea-kusodub-01",
+      "slug": "noisegrind-princess-chelsea-kusodub-01",
+      "artist": "Noisegrind Princess Chelsea",
+      "release": "Kusodub 01",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://kusomen.bandcamp.com/album/kusodub-01",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/noisegrind-princess-chelsea-kusodub-01/",
+      "status": "published",
+      "waters": [
+        "strange",
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "noon-somewhere-dead-end",
+      "slug": "noon-somewhere-dead-end",
+      "artist": "Noon Somewhere",
+      "release": "Dead End",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://noonsomewhere.bandcamp.com/album/dead-end",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/noon-somewhere-dead-end/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "o-longing-for-your-online-friend-you-havent-seen-since-june-13th-2004",
+      "slug": "o-longing-for-your-online-friend-you-havent-seen-since-june-13th-2004",
+      "artist": "o",
+      "release": "longing for your online friend you havent seen since june 13th 2004",
+      "releaseDate": "2020-08-09 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/longing-for-your-online-friend-you-havent-seen-since-june-13th-2004",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/o-longing-for-your-online-friend-you-havent-seen-since-june-13th-2004/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "olly-stevenson-caterpillar-s-remorse",
+      "slug": "olly-stevenson-caterpillar-s-remorse",
+      "artist": "Olly Stevenson",
+      "release": "Caterpillar's Remorse",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 11,
+      "bandcampUrl": "https://ollystevenson.bandcamp.com/album/caterpillars-remorse",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/olly-stevenson-caterpillar-s-remorse/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "ooo-elements",
+      "slug": "ooo-elements",
+      "artist": "OOO",
+      "release": "Elements",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://ooomensch.bandcamp.com/album/elements",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ooo-elements/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "opalo-boulevard",
+      "slug": "opalo-boulevard",
+      "artist": "Ópalo",
+      "release": "Boulevard",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://opalo.bandcamp.com/album/boulevard",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/opalo-boulevard/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "ov-crow-ow-crow",
+      "slug": "ov-crow-ow-crow",
+      "artist": "Ov Crow",
+      "release": "Ow Crow",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://vozdamorteprod.bandcamp.com/album/ow-crow",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ov-crow-ow-crow/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "paskal-vallis-manfred-fall-fever-vco-markots-jm21-greenbot-ent001-apertu",
+      "slug": "paskal-vallis-manfred-fall-fever-vco-markots-jm21-greenbot-ent001-apertu",
+      "artist": "Paskal Vallis · Manfred · Fall Fever (VCO) · Markots · JM21 · Greenbot",
+      "release": "ENT001 — Apertura Fría",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://entre26.bandcamp.com/album/ent001-apertura-fr-a",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/paskal-vallis-manfred-fall-fever-vco-markots-jm21-greenbot-ent001-apertu/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "pcrv-big-sky",
+      "slug": "pcrv-big-sky",
+      "artist": "PCRV",
+      "release": "Big Sky",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://pcrv.bandcamp.com/album/big-sky",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/pcrv-big-sky/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "perp-va001",
+      "slug": "perp-va001",
+      "artist": "PERP",
+      "release": "VA001",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 11,
+      "bandcampUrl": "https://perprecs.bandcamp.com/album/va001",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/perp-va001/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "petridisch-early-works-vol-1",
+      "slug": "petridisch-early-works-vol-1",
+      "artist": "Petridisch",
+      "release": "Early Works Vol. 1",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://petridisch.bandcamp.com/album/early-works-vol-1",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/petridisch-early-works-vol-1/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
       "id": "phenomenon-i-see-you",
       "slug": "phenomenon-i-see-you",
       "artist": "phenomenon",
@@ -396,6 +2440,329 @@
       "status": "published",
       "waters": [
         "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "id": "platphorm-recordings-home-alaska",
+      "slug": "platphorm-recordings-home-alaska",
+      "artist": "PLATPHORM RECORDINGS",
+      "release": "HOME, ALASKA",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://a-trainofthought.bandcamp.com/album/home-alaska",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/platphorm-recordings-home-alaska/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "playlist-miserable-me-sing-this-song",
+      "slug": "playlist-miserable-me-sing-this-song",
+      "artist": "PLAYLIST",
+      "release": "MISERABLE ME SING THIS SONG",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://playlist111.bandcamp.com/album/miserable-me-sing-this-song",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/playlist-miserable-me-sing-this-song/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "primal-deus-satanicus",
+      "slug": "primal-deus-satanicus",
+      "artist": "Primal",
+      "release": "Deus Satanicus",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://primalband.bandcamp.com/album/deus-satanicus",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/primal-deus-satanicus/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "probeathit-latin-house-jupiter",
+      "slug": "probeathit-latin-house-jupiter",
+      "artist": "PROBEATHIT",
+      "release": "latin house Jupiter",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 16,
+      "bandcampUrl": "https://latinenergy.bandcamp.com/album/latin-house-jupiter",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/probeathit-latin-house-jupiter/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "przeprosiny-femme",
+      "slug": "przeprosiny-femme",
+      "artist": "przeprosiny",
+      "release": "femme",
+      "releaseDate": "2026-08-25 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://przeprosiny.bandcamp.com/album/femme",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/przeprosiny-femme/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "psychedelic-olds-portal-v-a-eruption-compiled-by-xerox",
+      "slug": "psychedelic-olds-portal-v-a-eruption-compiled-by-xerox",
+      "artist": "Psychedelic Olds Portal",
+      "release": "V.A. Eruption - Compiled by Xerox",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://psyoldsportal.bandcamp.com/album/v-a-eruption-compiled-by-xerox",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/psychedelic-olds-portal-v-a-eruption-compiled-by-xerox/",
+      "status": "published",
+      "waters": [
+        "electronic",
+        "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "id": "psyunity-music-forzz-fox-prayer",
+      "slug": "psyunity-music-forzz-fox-prayer",
+      "artist": "Psyunity Music",
+      "release": "Forzz - Fox Prayer",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://psyunitymusic1.bandcamp.com/album/forzz-fox-prayer",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/psyunity-music-forzz-fox-prayer/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "purpletrash-velvet-nightmares-and-cold-sleep",
+      "slug": "purpletrash-velvet-nightmares-and-cold-sleep",
+      "artist": "PurpleTrash",
+      "release": "Velvet Nightmares and Cold Sleep",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://purpletrash.bandcamp.com/album/velvet-nightmares-and-cold-sleep",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/purpletrash-velvet-nightmares-and-cold-sleep/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "rain-once-again-magenta",
+      "slug": "rain-once-again-magenta",
+      "artist": "Rain Once Again",
+      "release": "Magenta",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://rainonceagain.bandcamp.com/album/magenta",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/rain-once-again-magenta/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "rancio-rancio-extx-splits-tracks",
+      "slug": "rancio-rancio-extx-splits-tracks",
+      "artist": "Rancio",
+      "release": "Rancio/ExTx splits tracks",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://ranciogore.bandcamp.com/album/rancio-extx-splits-tracks",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/rancio-rancio-extx-splits-tracks/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "red-hex-silent-alibi",
+      "slug": "red-hex-silent-alibi",
+      "artist": "Red Hex",
+      "release": "Silent Alibi",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://redhexset.bandcamp.com/album/silent-alibi",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/red-hex-silent-alibi/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "reflections-of-blue-ocean-whisper-new",
+      "slug": "reflections-of-blue-ocean-whisper-new",
+      "artist": "Reflections of Blue",
+      "release": "Ocean Whisper New",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://reflectionsofblue.bandcamp.com/album/ocean-whisper-new",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/reflections-of-blue-ocean-whisper-new/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "renegade-robot-robot-jox",
+      "slug": "renegade-robot-robot-jox",
+      "artist": "Renegade Robot",
+      "release": "Robot Jox",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 26,
+      "bandcampUrl": "https://renegaderobot.bandcamp.com/album/robot-jox",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/renegade-robot-robot-jox/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "ria-voice-of-ria-the-second-mini-album",
+      "slug": "ria-voice-of-ria-the-second-mini-album",
+      "artist": "ÆRIA",
+      "release": "Voice Of ÆRIA: The Second Mini-Album",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://weareaeria.bandcamp.com/album/voice-of-ria-the-second-mini-album",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ria-voice-of-ria-the-second-mini-album/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "rick-pier-o-neil-mauro-aguirre-paul-deep-n-pot-something-wrong",
+      "slug": "rick-pier-o-neil-mauro-aguirre-paul-deep-n-pot-something-wrong",
+      "artist": "Rick Pier O'Neil, Mauro Aguirre, Paul Deep, N'Pot",
+      "release": "Something Wrong",
+      "releaseDate": "2018-02-05 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://clubsonica.bandcamp.com/album/something-wrong",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/rick-pier-o-neil-mauro-aguirre-paul-deep-n-pot-something-wrong/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "rik-johnson-i-ve-forgotten-the-way-back-vol-3",
+      "slug": "rik-johnson-i-ve-forgotten-the-way-back-vol-3",
+      "artist": "Rik Johnson",
+      "release": "I've forgotten the way back, Vol 3",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://inanycasethemoon.bandcamp.com/album/ive-forgotten-the-way-back-vol-3",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/rik-johnson-i-ve-forgotten-the-way-back-vol-3/",
+      "status": "published",
+      "waters": [
         "strange"
       ]
     },
@@ -421,6 +2788,249 @@
       ]
     },
     {
+      "id": "roman-lando-delirious-experience",
+      "slug": "roman-lando-delirious-experience",
+      "artist": "Roman Lando",
+      "release": "Delirious Experience",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://romanlando.bandcamp.com/album/delirious-experience",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/roman-lando-delirious-experience/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "rossi-lost-remixes",
+      "slug": "rossi-lost-remixes",
+      "artist": "Rossi",
+      "release": "Lost [Remixes]",
+      "releaseDate": "2026-08-30 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://rossinl.bandcamp.com/album/lost-remixes",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/rossi-lost-remixes/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "rudus-ghost-echo",
+      "slug": "rudus-ghost-echo",
+      "artist": "Rūdus",
+      "release": "Ghost/Echo",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://rudus.bandcamp.com/album/ghost-echo",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/rudus-ghost-echo/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "russian-dark-community-russian-gothic-part-ii",
+      "slug": "russian-dark-community-russian-gothic-part-ii",
+      "artist": "Russian Dark Community",
+      "release": "Russian Gothic | Part II",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 20,
+      "bandcampUrl": "https://russiandarkcommunity.bandcamp.com/album/russian-gothic-part-ii",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/russian-dark-community-russian-gothic-part-ii/",
+      "status": "published",
+      "waters": [
+        "electronic",
+        "dark"
+      ]
+    },
+    {
+      "id": "sandekala-mata-pedang-penghabisan",
+      "slug": "sandekala-mata-pedang-penghabisan",
+      "artist": "Sandekala",
+      "release": "Mata Pedang Penghabisan",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://sandekalaband.bandcamp.com/album/mata-pedang-penghabisan-2",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/sandekala-mata-pedang-penghabisan/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "schmerz-limerence",
+      "slug": "schmerz-limerence",
+      "artist": "SCHMERZ",
+      "release": "LIMERENCE",
+      "releaseDate": "2026-08-24 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 11,
+      "bandcampUrl": "https://schmerz.bandcamp.com/album/limerence-2",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/schmerz-limerence/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "sevit-on-the-edge-of-a-darker-place-extended-remastered",
+      "slug": "sevit-on-the-edge-of-a-darker-place-extended-remastered",
+      "artist": "SEVIT",
+      "release": "On The Edge Of A Darker Place (Extended Remastered)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 15,
+      "bandcampUrl": "https://sevitband.bandcamp.com/album/on-the-edge-of-a-darker-place-extended-remastered",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/sevit-on-the-edge-of-a-darker-place-extended-remastered/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "shadow-loft-symphonic-darkwave",
+      "slug": "shadow-loft-symphonic-darkwave",
+      "artist": "Shadow Loft",
+      "release": "Symphonic Darkwave",
+      "releaseDate": "2026-08-30 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://shadowloft.bandcamp.com/album/symphonic-darkwave",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/shadow-loft-symphonic-darkwave/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "sheeple-we-the-sheeple",
+      "slug": "sheeple-we-the-sheeple",
+      "artist": "Sheeple",
+      "release": "We the Sheeple",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://sheeple13.bandcamp.com/album/we-the-sheeple",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/sheeple-we-the-sheeple/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "shindigs-no-pressure",
+      "slug": "shindigs-no-pressure",
+      "artist": "shindigs",
+      "release": "No Pressure",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://shindigs.bandcamp.com/album/no-pressure",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/shindigs-no-pressure/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "si-gloom-lords",
+      "slug": "si-gloom-lords",
+      "artist": "Si",
+      "release": "GLOOM LORDS",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://siphilanthropist.bandcamp.com/album/gloom-lords",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/si-gloom-lords/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "sideria-change-ep",
+      "slug": "sideria-change-ep",
+      "artist": "Sideria",
+      "release": "Change - EP",
+      "releaseDate": "2026-07-29 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://sideriafromdust.bandcamp.com/album/change-ep",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/sideria-change-ep/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
       "id": "signal-lock-selektor-lime",
       "slug": "signal-lock-selektor-lime",
       "artist": "Signal Lock",
@@ -438,6 +3048,208 @@
       "status": "published",
       "waters": [
         "dreamy"
+      ]
+    },
+    {
+      "id": "slug-demos",
+      "slug": "slug-demos",
+      "artist": "SLÜG",
+      "release": "DEMOS",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://odderecords.bandcamp.com/album/demos",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/slug-demos/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "someformofbody-3-songs-ive-always-hated-constant-reminders",
+      "slug": "someformofbody-3-songs-ive-always-hated-constant-reminders",
+      "artist": "someformofbody",
+      "release": "3 songs (ive always hated constant reminders)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://someformofbody.bandcamp.com/album/3-songs-ive-always-hated-constant-reminders",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/someformofbody-3-songs-ive-always-hated-constant-reminders/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "sound-speed-gradient-askmeabout4onthefloor-com",
+      "slug": "sound-speed-gradient-askmeabout4onthefloor-com",
+      "artist": "sound speed gradient",
+      "release": "askmeabout4onthefloor.com",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://soundspeedgradient.bandcamp.com/album/askmeabout4onthefloor-com",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/sound-speed-gradient-askmeabout4onthefloor-com/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "spaghetti-blacc-enshrined-in-sweat",
+      "slug": "spaghetti-blacc-enshrined-in-sweat",
+      "artist": "Spaghetti Blacc",
+      "release": "Enshrined in Sweat",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 11,
+      "bandcampUrl": "https://spaghettiblacc.bandcamp.com/album/enshrined-in-sweat",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/spaghetti-blacc-enshrined-in-sweat/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "spiritual-conspiracy-shine-perishing-republic",
+      "slug": "spiritual-conspiracy-shine-perishing-republic",
+      "artist": "Spiritual Conspiracy",
+      "release": "Shine Perishing Republic",
+      "releaseDate": "2026-08-25 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 19,
+      "bandcampUrl": "https://spiritualconspiracy.bandcamp.com/album/shine-perishing-republic",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/spiritual-conspiracy-shine-perishing-republic/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "srd-the-horror",
+      "slug": "srd-the-horror",
+      "artist": "SØRD",
+      "release": "The Horror",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://s0rd.bandcamp.com/album/the-horror",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/srd-the-horror/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "stung-whispering",
+      "slug": "stung-whispering",
+      "artist": "Stung",
+      "release": "Whispering",
+      "releaseDate": "2025-10-04 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://stungofficial.bandcamp.com/album/whispering",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/stung-whispering/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "subter-terra-the-petyr-sessions",
+      "slug": "subter-terra-the-petyr-sessions",
+      "artist": "Subter Terra",
+      "release": "The Petyr Sessions",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://subterterra.bandcamp.com/album/the-petyr-sessions",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/subter-terra-the-petyr-sessions/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "super-frog-saves-tokyo-volt-trax-ep",
+      "slug": "super-frog-saves-tokyo-volt-trax-ep",
+      "artist": "Super-Frog Saves Tokyo",
+      "release": "[VOLT TRAX] EP",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://super-frogsavestokyo.bandcamp.com/album/volt-trax-ep",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/super-frog-saves-tokyo-volt-trax-ep/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "synthesis-records-catalyst-volume-1",
+      "slug": "synthesis-records-catalyst-volume-1",
+      "artist": "synthesis.records",
+      "release": "Catalyst: Volume 1",
+      "releaseDate": "2026-07-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://synthesisrecords.bandcamp.com/album/catalyst-volume-1",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/synthesis-records-catalyst-volume-1/",
+      "status": "published",
+      "waters": [
+        "electronic"
       ]
     },
     {
@@ -483,6 +3295,66 @@
       ]
     },
     {
+      "id": "the-cold-light-silent-fracture",
+      "slug": "the-cold-light-silent-fracture",
+      "artist": "The Cold Light",
+      "release": "silent fracture",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 14,
+      "bandcampUrl": "https://thecoldlight1.bandcamp.com/album/silent-fracture",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/the-cold-light-silent-fracture/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "the-day-i-lost-her-to-forbid",
+      "slug": "the-day-i-lost-her-to-forbid",
+      "artist": "The Day I Lost Her",
+      "release": "To Forbid",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://thedayilosther.bandcamp.com/album/to-forbid",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/the-day-i-lost-her-to-forbid/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "the-last-chingon-from-the-fog-of-human-postscript",
+      "slug": "the-last-chingon-from-the-fog-of-human-postscript",
+      "artist": "The Last Chingon",
+      "release": "From the Fog of Human Postscript",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 13,
+      "bandcampUrl": "https://walterehresman.bandcamp.com/album/from-the-fog-of-human-postscript",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/the-last-chingon-from-the-fog-of-human-postscript/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
       "id": "the-murlocs",
       "slug": "the-murlocs",
       "artist": "The Murlocs",
@@ -504,6 +3376,26 @@
       ]
     },
     {
+      "id": "the-pixel-rain-a-sense-of-danger",
+      "slug": "the-pixel-rain-a-sense-of-danger",
+      "artist": "The Pixel Rain",
+      "release": "A Sense Of Danger",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://thepixelrain.bandcamp.com/album/a-sense-of-danger",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/the-pixel-rain-a-sense-of-danger/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
       "id": "the-pumpkin-patch-sun-anthems",
       "slug": "the-pumpkin-patch-sun-anthems",
       "artist": "The Pumpkin Patch",
@@ -522,6 +3414,657 @@
       "waters": [
         "loud",
         "dark"
+      ]
+    },
+    {
+      "id": "third-world-orchestra-entre-si-cover-mimilocos",
+      "slug": "third-world-orchestra-entre-si-cover-mimilocos",
+      "artist": "Third World Orchestra",
+      "release": "Entre Sí (cover Mimilocos)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://thirdworldorchestra.bandcamp.com/album/entre-s-cover-mimilocos",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/third-world-orchestra-entre-si-cover-mimilocos/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "tokyo-rose-killwave",
+      "slug": "tokyo-rose-killwave",
+      "artist": "TOKYO ROSE",
+      "release": "KILLWAVE",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://newretrowave.bandcamp.com/album/killwave",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/tokyo-rose-killwave/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "torture-massacre-and-limb-chopping-carnival-this-is-tempe-gorenoise",
+      "slug": "torture-massacre-and-limb-chopping-carnival-this-is-tempe-gorenoise",
+      "artist": "Torture Massacre And Limb Chopping Carnival",
+      "release": "THIS IS TEMPE GORENOISE",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://txmxaxlxcxcx.bandcamp.com/album/this-is-tempe-gorenoise",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/torture-massacre-and-limb-chopping-carnival-this-is-tempe-gorenoise/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "ttra-don-t-turn-around-wip",
+      "slug": "ttra-don-t-turn-around-wip",
+      "artist": "TTra<>",
+      "release": "DON'T TURN AROUND WIP",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://ttra.bandcamp.com/album/dont-turn-around-wip",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ttra-don-t-turn-around-wip/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "underpall-the-great-old-turn-of-man",
+      "slug": "underpall-the-great-old-turn-of-man",
+      "artist": "Underpall",
+      "release": "The Great, Old Turn of Man",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://underpall.bandcamp.com/album/the-great-old-turn-of-man",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/underpall-the-great-old-turn-of-man/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "unglyndi-sukkulai-itt-er-i-hnetusmjorinu-minu",
+      "slug": "unglyndi-sukkulai-itt-er-i-hnetusmjorinu-minu",
+      "artist": "Þunglyndi",
+      "release": "Súkkulaðið þitt er í hnetusmjörinu mínu",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 17,
+      "bandcampUrl": "https://bottlecollection.bandcamp.com/album/s-kkula-i-itt-er-hnetusmj-rinu-m-nu",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/unglyndi-sukkulai-itt-er-i-hnetusmjorinu-minu/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "uttertomb-lost-pneuma",
+      "slug": "uttertomb-lost-pneuma",
+      "artist": "Uttertomb",
+      "release": "Lost Pneuma",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 13,
+      "bandcampUrl": "https://uttertomb.bandcamp.com/album/lost-pneuma",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/uttertomb-lost-pneuma/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "v-a-creatures-from-outer-space-electronic-experimental-side",
+      "slug": "v-a-creatures-from-outer-space-electronic-experimental-side",
+      "artist": "V/A",
+      "release": "Creatures from Outer Space [Electronic/Experimental Side]",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 13,
+      "bandcampUrl": "https://internetdaemon.bandcamp.com/album/creatures-from-outer-space-electronic-experimental-side",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/v-a-creatures-from-outer-space-electronic-experimental-side/",
+      "status": "published",
+      "waters": [
+        "strange",
+        "electronic"
+      ]
+    },
+    {
+      "id": "v77nny-v77nny-dark-dub-house-vol-1",
+      "slug": "v77nny-v77nny-dark-dub-house-vol-1",
+      "artist": "V77NNY",
+      "release": "V77NNY  - DARK DUB HOUSE VOL.1",
+      "releaseDate": "2026-01-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 40,
+      "bandcampUrl": "https://v77nny.bandcamp.com/album/v77nny-dark-dub-house-vol-1",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/v77nny-v77nny-dark-dub-house-vol-1/",
+      "status": "published",
+      "waters": [
+        "strange",
+        "electronic"
+      ]
+    },
+    {
+      "id": "van-diest-brothers-seward",
+      "slug": "van-diest-brothers-seward",
+      "artist": "Van Diest Brothers",
+      "release": "Seward.",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://vandiestbrothers.bandcamp.com/album/seward",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/van-diest-brothers-seward/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "vasteras-slutstation-misaren",
+      "slug": "vasteras-slutstation-misaren",
+      "artist": "VÄSTERÅS",
+      "release": "Slutstation: Misären",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://vasteras.bandcamp.com/album/slutstation-mis-ren",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/vasteras-slutstation-misaren/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "verum-flux-afterglow",
+      "slug": "verum-flux-afterglow",
+      "artist": "Verum Flux",
+      "release": "Afterglow",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://verumflux.bandcamp.com/album/afterglow",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/verum-flux-afterglow/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "visceral-pulsating-membrane-xaxnxtxixhxuxmxaxnx-visceral-pulsating-membr",
+      "slug": "visceral-pulsating-membrane-xaxnxtxixhxuxmxaxnx-visceral-pulsating-membr",
+      "artist": "Visceral Pulsating Membrane//XAXNXTXIXHXUXMXAXNX",
+      "release": "Visceral Pulsating Membrane//XAXNXTXIXHXUXMXAXNX",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://maggotsemenrecords.bandcamp.com/album/visceral-pulsating-membrane-xaxnxtxixhxuxmxaxnx",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/visceral-pulsating-membrane-xaxnxtxixhxuxmxaxnx-visceral-pulsating-membr/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "vocov-phases",
+      "slug": "vocov-phases",
+      "artist": "VOCOV",
+      "release": "Phases",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://vocovmusic.bandcamp.com/album/phases",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/vocov-phases/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "waaa-aaaa",
+      "slug": "waaa-aaaa",
+      "artist": "WAAA",
+      "release": "AAAA",
+      "releaseDate": "2020-08-08 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://tungtungsahur.bandcamp.com/album/aaaa",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/waaa-aaaa/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "warrior-of-light-freedom",
+      "slug": "warrior-of-light-freedom",
+      "artist": "Warrior of Light",
+      "release": "FREEDOM",
+      "releaseDate": "2025-01-06 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://warrioroflight1.bandcamp.com/album/freedom",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/warrior-of-light-freedom/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "we-are-numbered-the-big-empty",
+      "slug": "we-are-numbered-the-big-empty",
+      "artist": "WE ARE NUMBERED_",
+      "release": "the big empty",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://wearenumbered.bandcamp.com/album/the-big-empty",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/we-are-numbered-the-big-empty/",
+      "status": "published",
+      "waters": [
+        "dark"
+      ]
+    },
+    {
+      "id": "webkontm-p-l-a-c-i-d-a-q-u-a-t-i-c-s",
+      "slug": "webkontm-p-l-a-c-i-d-a-q-u-a-t-i-c-s",
+      "artist": "Webkon™",
+      "release": "p l a c i d  a q u a t i c s",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 13,
+      "bandcampUrl": "https://worldwidewebiskonstantine.bandcamp.com/album/p-l-a-c-i-d-a-q-u-a-t-i-c-s",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/webkontm-p-l-a-c-i-d-a-q-u-a-t-i-c-s/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "will-lawton-and-the-alchemists-alchemy-ep",
+      "slug": "will-lawton-and-the-alchemists-alchemy-ep",
+      "artist": "Will Lawton and the Alchemists",
+      "release": "Alchemy (EP)",
+      "releaseDate": "2023-03-10 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://willlawton.bandcamp.com/album/alchemy-ep",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/will-lawton-and-the-alchemists-alchemy-ep/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "willow-marina-love-letter",
+      "slug": "willow-marina-love-letter",
+      "artist": "Willow Marina",
+      "release": "love letter",
+      "releaseDate": "2026-08-29 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://willowmarina.bandcamp.com/album/love-letter",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/willow-marina-love-letter/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "with-brevity-fairweather-friends",
+      "slug": "with-brevity-fairweather-friends",
+      "artist": "With Brevity",
+      "release": "Fairweather Friends",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 10,
+      "bandcampUrl": "https://withbrevity.bandcamp.com/album/fairweather-friends-2",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/with-brevity-fairweather-friends/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "wizard-bloody-wizard-devil-at-your-door",
+      "slug": "wizard-bloody-wizard-devil-at-your-door",
+      "artist": "Wizard Bloody Wizard",
+      "release": "Devil At Your Door",
+      "releaseDate": "2026-08-30 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://thewizardbloodywizard.bandcamp.com/album/devil-at-your-door",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/wizard-bloody-wizard-devil-at-your-door/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "wyrd-from-runas-stream-cur-as-don-baistidh",
+      "slug": "wyrd-from-runas-stream-cur-as-don-baistidh",
+      "artist": "Wyrd From Runa’s Stream",
+      "release": "Cur às don Baistidh",
+      "releaseDate": "2026-08-29 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 6,
+      "bandcampUrl": "https://runaswyrd.bandcamp.com/album/cur-s-don-baistidh",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/wyrd-from-runas-stream-cur-as-don-baistidh/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "xilisath-useless-existence",
+      "slug": "xilisath-useless-existence",
+      "artist": "Xilisath",
+      "release": "Useless Existence",
+      "releaseDate": "2026-08-25 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://xilisath.bandcamp.com/album/useless-existence",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/xilisath-useless-existence/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "xymmusic-my-life-in-a-nutshell",
+      "slug": "xymmusic-my-life-in-a-nutshell",
+      "artist": "XymMusic",
+      "release": "my life in a nutshell",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://xymmusic.bandcamp.com/album/my-life-in-a-nutshell",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/xymmusic-my-life-in-a-nutshell/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "yadoog-yadoog",
+      "slug": "yadoog-yadoog",
+      "artist": "yadoog",
+      "release": "yadoog",
+      "releaseDate": "2026-01-09 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://yadoog.bandcamp.com/album/yadoog",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/yadoog-yadoog/",
+      "status": "published",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "yesno-ton-atomo",
+      "slug": "yesno-ton-atomo",
+      "artist": "yesno",
+      "release": "ton atomo",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 12,
+      "bandcampUrl": "https://yesno2.bandcamp.com/album/ton-atomo",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/yesno-ton-atomo/",
+      "status": "published",
+      "waters": [
+        "dreamy"
+      ]
+    },
+    {
+      "id": "zach-paquette-compilation-de-chansons-vol-1",
+      "slug": "zach-paquette-compilation-de-chansons-vol-1",
+      "artist": "Zach Paquette",
+      "release": "Compilation de chansons vol. 1",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://zachpaquette.bandcamp.com/album/compilation-de-chansons-vol-1",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/zach-paquette-compilation-de-chansons-vol-1/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "zafiro-negro-baile-de-ayer",
+      "slug": "zafiro-negro-baile-de-ayer",
+      "artist": "Zafiro Negro",
+      "release": "Baile de ayer",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://zafironegro.bandcamp.com/album/baile-de-ayer",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/zafiro-negro-baile-de-ayer/",
+      "status": "published",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "zenith-zoysia-hierochloe-odorata-roarchestes-annandalii-candida-albicans",
+      "slug": "zenith-zoysia-hierochloe-odorata-roarchestes-annandalii-candida-albicans",
+      "artist": "zenith zoysia hierochloe odorata roarchestes annandalii",
+      "release": "Candida Albicans In Blood Culture",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://xzxzxhxoxrxax.bandcamp.com/album/candida-albicans-in-blood-culture",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/zenith-zoysia-hierochloe-odorata-roarchestes-annandalii-candida-albicans/",
+      "status": "published",
+      "waters": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "zopeh-belafonte-dead-presidents-don-t-swim",
+      "slug": "zopeh-belafonte-dead-presidents-don-t-swim",
+      "artist": "ZOPEH BELAFONTE",
+      "release": "Dead Presidents Don't Swim",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 22,
+      "bandcampUrl": "https://zopehbelafonte1.bandcamp.com/album/dead-presidents-dont-swim",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/zopeh-belafonte-dead-presidents-don-t-swim/",
+      "status": "published",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "zppp-sound-industry-zpsi-004-dianosun-prk-speedcore-works",
+      "slug": "zppp-sound-industry-zpsi-004-dianosun-prk-speedcore-works",
+      "artist": "ZPPP Sound Industry",
+      "release": "[ZPSI-004] DIANOSUN - PRK SPEEDCORE WORKS",
+      "releaseDate": "2026-08-21 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://zpppsoundindustry.bandcamp.com/album/zpsi-004-dianosun-prk-speedcore-works",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "backfill-200-2026-09-02",
+      "url": "https://raggedya.github.io/cosmic-aquarium/zppp-sound-industry-zpsi-004-dianosun-prk-speedcore-works/",
+      "status": "published",
+      "waters": [
+        "electronic"
       ]
     }
   ]

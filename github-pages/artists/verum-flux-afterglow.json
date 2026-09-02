@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "verum-flux-afterglow",
+  "artist": "Verum Flux",
+  "bandcampUrl": "https://verumflux.bandcamp.com/album/afterglow",
+  "releaseTitle": "Afterglow",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "darkwave"
+  ],
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://verumflux.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:02:35Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "afterglow",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "afterglow-4129480199",
+      "title": "Somewhere Between Here And Home",
+      "artist": "Verum Flux",
+      "albumTitle": "Afterglow",
+      "albumKey": "afterglow",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://verumflux.bandcamp.com/track/somewhere-between-here-and-home",
+      "bandcampEmbedTrackId": "4129480199",
+      "sourcePage": "https://verumflux.bandcamp.com/album/afterglow",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "afterglow-4058246894",
+      "title": "Everything Is Still Moving",
+      "artist": "Verum Flux",
+      "albumTitle": "Afterglow",
+      "albumKey": "afterglow",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://verumflux.bandcamp.com/track/everything-is-still-moving",
+      "bandcampEmbedTrackId": "4058246894",
+      "sourcePage": "https://verumflux.bandcamp.com/album/afterglow",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "afterglow-3496779057",
+      "title": "There's Still Time",
+      "artist": "Verum Flux",
+      "albumTitle": "Afterglow",
+      "albumKey": "afterglow",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:10",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://verumflux.bandcamp.com/track/theres-still-time",
+      "bandcampEmbedTrackId": "3496779057",
+      "sourcePage": "https://verumflux.bandcamp.com/album/afterglow",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

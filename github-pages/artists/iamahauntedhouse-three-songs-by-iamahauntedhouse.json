@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "slug": "iamahauntedhouse-three-songs-by-iamahauntedhouse",
+  "artist": "iamahauntedhouse",
+  "bandcampUrl": "https://iamahauntedhouse.bandcamp.com/album/three-songs-by-iamahauntedhouse",
+  "releaseTitle": "Three Songs by iamahauntedhouse",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://iamahauntedhouse.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T00:58:14Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "three-songs-by-iamahauntedhouse",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "three-songs-by-iamahauntedhouse-534314829",
+      "title": "Catwithnobacklegs",
+      "artist": "iamahauntedhouse",
+      "albumTitle": "Three Songs by iamahauntedhouse",
+      "albumKey": "three-songs-by-iamahauntedhouse",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iamahauntedhouse.bandcamp.com/track/catwithnobacklegs",
+      "bandcampEmbedTrackId": "534314829",
+      "sourcePage": "https://iamahauntedhouse.bandcamp.com/album/three-songs-by-iamahauntedhouse",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "three-songs-by-iamahauntedhouse-1970236489",
+      "title": "To Hell and Back",
+      "artist": "iamahauntedhouse",
+      "albumTitle": "Three Songs by iamahauntedhouse",
+      "albumKey": "three-songs-by-iamahauntedhouse",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:27",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iamahauntedhouse.bandcamp.com/track/to-hell-and-back-2",
+      "bandcampEmbedTrackId": "1970236489",
+      "sourcePage": "https://iamahauntedhouse.bandcamp.com/album/three-songs-by-iamahauntedhouse",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "three-songs-by-iamahauntedhouse-3954526403",
+      "title": "Monologue",
+      "artist": "iamahauntedhouse",
+      "albumTitle": "Three Songs by iamahauntedhouse",
+      "albumKey": "three-songs-by-iamahauntedhouse",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:59",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iamahauntedhouse.bandcamp.com/track/monologue-2",
+      "bandcampEmbedTrackId": "3954526403",
+      "sourcePage": "https://iamahauntedhouse.bandcamp.com/album/three-songs-by-iamahauntedhouse",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

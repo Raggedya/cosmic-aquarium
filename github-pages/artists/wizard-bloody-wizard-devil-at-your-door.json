@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "slug": "wizard-bloody-wizard-devil-at-your-door",
+  "artist": "Wizard Bloody Wizard",
+  "bandcampUrl": "https://thewizardbloodywizard.bandcamp.com/album/devil-at-your-door",
+  "releaseTitle": "Devil At Your Door",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "metal"
+  ],
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thewizardbloodywizard.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:00:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "devil-at-your-door",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "devil-at-your-door-2583770832",
+      "title": "Devil At Your Door",
+      "artist": "Wizard Bloody Wizard",
+      "albumTitle": "Devil At Your Door",
+      "albumKey": "devil-at-your-door",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:52",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thewizardbloodywizard.bandcamp.com/track/devil-at-your-door",
+      "bandcampEmbedTrackId": "2583770832",
+      "sourcePage": "https://thewizardbloodywizard.bandcamp.com/album/devil-at-your-door",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "devil-at-your-door-1687875834",
+      "title": "Highway Nine",
+      "artist": "Wizard Bloody Wizard",
+      "albumTitle": "Devil At Your Door",
+      "albumKey": "devil-at-your-door",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:21",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thewizardbloodywizard.bandcamp.com/track/highway-nine",
+      "bandcampEmbedTrackId": "1687875834",
+      "sourcePage": "https://thewizardbloodywizard.bandcamp.com/album/devil-at-your-door",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "devil-at-your-door-1019749468",
+      "title": "Thirteen (cover)",
+      "artist": "Wizard Bloody Wizard",
+      "albumTitle": "Devil At Your Door",
+      "albumKey": "devil-at-your-door",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thewizardbloodywizard.bandcamp.com/track/thirteen-cover-2",
+      "bandcampEmbedTrackId": "1019749468",
+      "sourcePage": "https://thewizardbloodywizard.bandcamp.com/album/devil-at-your-door",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "will-lawton-and-the-alchemists-alchemy-ep",
+  "artist": "Will Lawton and the Alchemists",
+  "bandcampUrl": "https://willlawton.bandcamp.com/album/alchemy-ep",
+  "releaseTitle": "Alchemy (EP)",
+  "releaseDate": "2023-03-10 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://willlawton.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:01:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "alchemy-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "alchemy-ep-3826584211",
+      "title": "Black Bricks",
+      "artist": "Will Lawton and the Alchemists",
+      "albumTitle": "Alchemy (EP)",
+      "albumKey": "alchemy-ep",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "4:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willlawton.bandcamp.com/track/black-bricks",
+      "bandcampEmbedTrackId": "3826584211",
+      "sourcePage": "https://willlawton.bandcamp.com/album/alchemy-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "alchemy-ep-1947504987",
+      "title": "Daughter",
+      "artist": "Will Lawton and the Alchemists",
+      "albumTitle": "Alchemy (EP)",
+      "albumKey": "alchemy-ep",
+      "year": 2023,
+      "trackNumber": 2,
+      "duration": "8:01",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willlawton.bandcamp.com/track/daughter",
+      "bandcampEmbedTrackId": "1947504987",
+      "sourcePage": "https://willlawton.bandcamp.com/album/alchemy-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "alchemy-ep-1965487402",
+      "title": "Cast Iron",
+      "artist": "Will Lawton and the Alchemists",
+      "albumTitle": "Alchemy (EP)",
+      "albumKey": "alchemy-ep",
+      "year": 2023,
+      "trackNumber": 3,
+      "duration": "6:23",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willlawton.bandcamp.com/track/cast-iron",
+      "bandcampEmbedTrackId": "1965487402",
+      "sourcePage": "https://willlawton.bandcamp.com/album/alchemy-ep",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

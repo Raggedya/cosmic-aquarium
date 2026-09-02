@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "slug": "celtichammer-guerras-galaicas",
+  "artist": "CelticHammer",
+  "bandcampUrl": "https://celtic123.bandcamp.com/album/guerras-galaicas",
+  "releaseTitle": "Guerras Galaicas",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "metal"
+  ],
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://celtic123.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T00:59:54Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "guerras-galaicas",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "guerras-galaicas-485984657",
+      "title": "Vento Chuvioso (Intro)",
+      "artist": "CelticHammer",
+      "albumTitle": "Guerras Galaicas",
+      "albumKey": "guerras-galaicas",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://celtic123.bandcamp.com/track/vento-chuvioso-intro",
+      "bandcampEmbedTrackId": "485984657",
+      "sourcePage": "https://celtic123.bandcamp.com/album/guerras-galaicas",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "guerras-galaicas-1860443138",
+      "title": "Guerras Galaicas",
+      "artist": "CelticHammer",
+      "albumTitle": "Guerras Galaicas",
+      "albumKey": "guerras-galaicas",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://celtic123.bandcamp.com/track/guerras-galaicas",
+      "bandcampEmbedTrackId": "1860443138",
+      "sourcePage": "https://celtic123.bandcamp.com/album/guerras-galaicas",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "guerras-galaicas-1455860483",
+      "title": "Esnaquizando a Cruz Dos Cristians",
+      "artist": "CelticHammer",
+      "albumTitle": "Guerras Galaicas",
+      "albumKey": "guerras-galaicas",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:23",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://celtic123.bandcamp.com/track/esnaquizando-a-cruz-dos-cristians",
+      "bandcampEmbedTrackId": "1455860483",
+      "sourcePage": "https://celtic123.bandcamp.com/album/guerras-galaicas",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

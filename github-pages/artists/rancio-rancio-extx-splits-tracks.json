@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "rancio-rancio-extx-splits-tracks",
+  "artist": "Rancio",
+  "bandcampUrl": "https://ranciogore.bandcamp.com/album/rancio-extx-splits-tracks",
+  "releaseTitle": "Rancio/ExTx splits tracks",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "experimental"
+  ],
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ranciogore.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:00:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rancio-extx-splits-tracks",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rancio-extx-splits-tracks-507463164",
+      "title": "Alcohol de caña",
+      "artist": "Rancio",
+      "albumTitle": "Rancio/ExTx splits tracks",
+      "albumKey": "rancio-extx-splits-tracks",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ranciogore.bandcamp.com/track/alcohol-de-ca-a",
+      "bandcampEmbedTrackId": "507463164",
+      "sourcePage": "https://ranciogore.bandcamp.com/album/rancio-extx-splits-tracks",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "rancio-extx-splits-tracks-2545148029",
+      "title": "Carnicero humana",
+      "artist": "Rancio",
+      "albumTitle": "Rancio/ExTx splits tracks",
+      "albumKey": "rancio-extx-splits-tracks",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ranciogore.bandcamp.com/track/carnicero-humana",
+      "bandcampEmbedTrackId": "2545148029",
+      "sourcePage": "https://ranciogore.bandcamp.com/album/rancio-extx-splits-tracks",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "rancio-extx-splits-tracks-399351048",
+      "title": "Larva fecal",
+      "artist": "Rancio",
+      "albumTitle": "Rancio/ExTx splits tracks",
+      "albumKey": "rancio-extx-splits-tracks",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:34",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ranciogore.bandcamp.com/track/larva-fecal",
+      "bandcampEmbedTrackId": "399351048",
+      "sourcePage": "https://ranciogore.bandcamp.com/album/rancio-extx-splits-tracks",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

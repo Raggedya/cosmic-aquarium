@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "slug": "primal-deus-satanicus",
+  "artist": "Primal",
+  "bandcampUrl": "https://primalband.bandcamp.com/album/deus-satanicus",
+  "releaseTitle": "Deus Satanicus",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "metal"
+  ],
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://primalband.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:03:20Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "deus-satanicus",
+      "color": "#c3b4f4"
+    },
+    {
+      "key": "lucifer",
+      "color": "#8fd9c7"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "deus-satanicus-2012241130",
+      "title": "The Satanic God",
+      "artist": "Primal",
+      "albumTitle": "Deus Satanicus",
+      "albumKey": "deus-satanicus",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://primalband.bandcamp.com/track/the-satanic-god",
+      "bandcampEmbedTrackId": "2012241130",
+      "sourcePage": "https://primalband.bandcamp.com/album/deus-satanicus",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "deus-satanicus-2423729207",
+      "title": "The Scripture Written in Bone",
+      "artist": "Primal",
+      "albumTitle": "Deus Satanicus",
+      "albumKey": "deus-satanicus",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://primalband.bandcamp.com/track/the-scripture-written-in-bone",
+      "bandcampEmbedTrackId": "2423729207",
+      "sourcePage": "https://primalband.bandcamp.com/album/deus-satanicus",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "lucifer-1421328793",
+      "title": "Lucifer",
+      "artist": "Primal",
+      "albumTitle": "Lucifer",
+      "albumKey": "lucifer",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:12",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://primalband.bandcamp.com/track/lucifer",
+      "bandcampEmbedTrackId": "1421328793",
+      "sourcePage": "https://primalband.bandcamp.com/album/lucifer",
+      "accent": "#8fd9c7"
+    },
+    {
+      "id": "lucifer-2623109423",
+      "title": "The Satanic Son",
+      "artist": "Primal",
+      "albumTitle": "Lucifer",
+      "albumKey": "lucifer",
+      "year": 2026,
+      "trackNumber": 9,
+      "duration": "4:51",
+      "x": 0.39375,
+      "y": 0.263889,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://primalband.bandcamp.com/track/the-satanic-son",
+      "bandcampEmbedTrackId": "2623109423",
+      "sourcePage": "https://primalband.bandcamp.com/album/lucifer",
+      "accent": "#a492ff"
+    }
+  ]
+}

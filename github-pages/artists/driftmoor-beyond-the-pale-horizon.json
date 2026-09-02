@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "driftmoor-beyond-the-pale-horizon",
+  "artist": "Driftmoor",
+  "bandcampUrl": "https://driftmoor.bandcamp.com/album/beyond-the-pale-horizon",
+  "releaseTitle": "Beyond the Pale Horizon",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://driftmoor.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T00:59:01Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "beyond-the-pale-horizon",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "beyond-the-pale-horizon-1738931652",
+      "title": "Pale Light Beyond",
+      "artist": "Driftmoor",
+      "albumTitle": "Beyond the Pale Horizon",
+      "albumKey": "beyond-the-pale-horizon",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://driftmoor.bandcamp.com/track/pale-light-beyond",
+      "bandcampEmbedTrackId": "1738931652",
+      "sourcePage": "https://driftmoor.bandcamp.com/album/beyond-the-pale-horizon",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "beyond-the-pale-horizon-857104524",
+      "title": "The Silent Watch",
+      "artist": "Driftmoor",
+      "albumTitle": "Beyond the Pale Horizon",
+      "albumKey": "beyond-the-pale-horizon",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://driftmoor.bandcamp.com/track/the-silent-watch",
+      "bandcampEmbedTrackId": "857104524",
+      "sourcePage": "https://driftmoor.bandcamp.com/album/beyond-the-pale-horizon",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "beyond-the-pale-horizon-1603741052",
+      "title": "Hollowed Pines",
+      "artist": "Driftmoor",
+      "albumTitle": "Beyond the Pale Horizon",
+      "albumKey": "beyond-the-pale-horizon",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:24",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://driftmoor.bandcamp.com/track/hollowed-pines",
+      "bandcampEmbedTrackId": "1603741052",
+      "sourcePage": "https://driftmoor.bandcamp.com/album/beyond-the-pale-horizon",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "beyond-the-pale-horizon-3081606651",
+      "title": "Beyond the Pale Horizon",
+      "artist": "Driftmoor",
+      "albumTitle": "Beyond the Pale Horizon",
+      "albumKey": "beyond-the-pale-horizon",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:49",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://driftmoor.bandcamp.com/track/beyond-the-pale-horizon",
+      "bandcampEmbedTrackId": "3081606651",
+      "sourcePage": "https://driftmoor.bandcamp.com/album/beyond-the-pale-horizon",
+      "accent": "#ffb66d"
+    }
+  ]
+}

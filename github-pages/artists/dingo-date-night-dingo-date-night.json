@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "dingo-date-night-dingo-date-night",
+  "artist": "Dingo Date Night",
+  "bandcampUrl": "https://latogato.bandcamp.com/album/dingo-date-night",
+  "releaseTitle": "Dingo Date Night",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "experimental"
+  ],
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://latogato.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:03:05Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dingo-date-night",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dingo-date-night-1487254035",
+      "title": "A1 Rhyme Cycles",
+      "artist": "Dingo Date Night",
+      "albumTitle": "Dingo Date Night",
+      "albumKey": "dingo-date-night",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://latogato.bandcamp.com/track/a1-rhyme-cycles",
+      "bandcampEmbedTrackId": "1487254035",
+      "sourcePage": "https://latogato.bandcamp.com/album/dingo-date-night",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dingo-date-night-1162988611",
+      "title": "A2 Kalnas Illuzija",
+      "artist": "Dingo Date Night",
+      "albumTitle": "Dingo Date Night",
+      "albumKey": "dingo-date-night",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://latogato.bandcamp.com/track/a2-kalnas-illuzija",
+      "bandcampEmbedTrackId": "1162988611",
+      "sourcePage": "https://latogato.bandcamp.com/album/dingo-date-night",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "dingo-date-night-934498501",
+      "title": "B1 Deep Sigh",
+      "artist": "Dingo Date Night",
+      "albumTitle": "Dingo Date Night",
+      "albumKey": "dingo-date-night",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:19",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://latogato.bandcamp.com/track/b1-deep-sigh",
+      "bandcampEmbedTrackId": "934498501",
+      "sourcePage": "https://latogato.bandcamp.com/album/dingo-date-night",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "dingo-date-night-3713886745",
+      "title": "B2 Zeppelin Remedy",
+      "artist": "Dingo Date Night",
+      "albumTitle": "Dingo Date Night",
+      "albumKey": "dingo-date-night",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:38",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://latogato.bandcamp.com/track/b2-zeppelin-remedy",
+      "bandcampEmbedTrackId": "3713886745",
+      "sourcePage": "https://latogato.bandcamp.com/album/dingo-date-night",
+      "accent": "#ffb66d"
+    }
+  ]
+}

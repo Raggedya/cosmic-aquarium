@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "psyunity-music-forzz-fox-prayer",
+  "artist": "Psyunity Music",
+  "bandcampUrl": "https://psyunitymusic1.bandcamp.com/album/forzz-fox-prayer",
+  "releaseTitle": "Forzz - Fox Prayer",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://psyunitymusic1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T00:58:30Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "forzz-fox-prayer",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "forzz-fox-prayer-1003594037",
+      "title": "Forzz - Fox Prayer 152",
+      "artist": "Psyunity Music",
+      "albumTitle": "Forzz - Fox Prayer",
+      "albumKey": "forzz-fox-prayer",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://psyunitymusic1.bandcamp.com/track/forzz-fox-prayer-152",
+      "bandcampEmbedTrackId": "1003594037",
+      "sourcePage": "https://psyunitymusic1.bandcamp.com/album/forzz-fox-prayer",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "forzz-fox-prayer-248073010",
+      "title": "Forzz - Seed Error 153",
+      "artist": "Psyunity Music",
+      "albumTitle": "Forzz - Fox Prayer",
+      "albumKey": "forzz-fox-prayer",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:09",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://psyunitymusic1.bandcamp.com/track/forzz-seed-error-153",
+      "bandcampEmbedTrackId": "248073010",
+      "sourcePage": "https://psyunitymusic1.bandcamp.com/album/forzz-fox-prayer",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "forzz-fox-prayer-3062187010",
+      "title": "Forzz - Only I Know What I Do 154",
+      "artist": "Psyunity Music",
+      "albumTitle": "Forzz - Fox Prayer",
+      "albumKey": "forzz-fox-prayer",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:30",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://psyunitymusic1.bandcamp.com/track/forzz-only-i-know-what-i-do-154",
+      "bandcampEmbedTrackId": "3062187010",
+      "sourcePage": "https://psyunitymusic1.bandcamp.com/album/forzz-fox-prayer",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

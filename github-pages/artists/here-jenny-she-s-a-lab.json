@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "slug": "here-jenny-she-s-a-lab",
+  "artist": "Here Jenny",
+  "bandcampUrl": "https://herejenny.bandcamp.com/album/shes-a-lab",
+  "releaseTitle": "She's A Lab",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze"
+  ],
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://herejenny.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:02:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "she-s-a-lab",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "she-s-a-lab-1473373375",
+      "title": "Jenny Theme",
+      "artist": "Here Jenny",
+      "albumTitle": "She's A Lab",
+      "albumKey": "she-s-a-lab",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://herejenny.bandcamp.com/track/jenny-theme",
+      "bandcampEmbedTrackId": "1473373375",
+      "sourcePage": "https://herejenny.bandcamp.com/album/shes-a-lab",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "she-s-a-lab-130280922",
+      "title": "Lori Maddox",
+      "artist": "Here Jenny",
+      "albumTitle": "She's A Lab",
+      "albumKey": "she-s-a-lab",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:22",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://herejenny.bandcamp.com/track/lori-maddox",
+      "bandcampEmbedTrackId": "130280922",
+      "sourcePage": "https://herejenny.bandcamp.com/album/shes-a-lab",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "she-s-a-lab-1052311090",
+      "title": "Morning Train",
+      "artist": "Here Jenny",
+      "albumTitle": "She's A Lab",
+      "albumKey": "she-s-a-lab",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:19",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://herejenny.bandcamp.com/track/morning-train-2",
+      "bandcampEmbedTrackId": "1052311090",
+      "sourcePage": "https://herejenny.bandcamp.com/album/shes-a-lab",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "she-s-a-lab-486801610",
+      "title": "Mr. Tannenbaum",
+      "artist": "Here Jenny",
+      "albumTitle": "She's A Lab",
+      "albumKey": "she-s-a-lab",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:02",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://herejenny.bandcamp.com/track/mr-tannenbaum",
+      "bandcampEmbedTrackId": "486801610",
+      "sourcePage": "https://herejenny.bandcamp.com/album/shes-a-lab",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "she-s-a-lab-992209950",
+      "title": "Mild Generation",
+      "artist": "Here Jenny",
+      "albumTitle": "She's A Lab",
+      "albumKey": "she-s-a-lab",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "2:31",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://herejenny.bandcamp.com/track/mild-generation",
+      "bandcampEmbedTrackId": "992209950",
+      "sourcePage": "https://herejenny.bandcamp.com/album/shes-a-lab",
+      "accent": "#8fd9c7"
+    }
+  ]
+}

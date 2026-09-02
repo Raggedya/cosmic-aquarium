@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "cmon3tta-man-hattan-ep",
+  "artist": "cmon3tta",
+  "bandcampUrl": "https://cmon3tta.bandcamp.com/album/man-hattan-ep",
+  "releaseTitle": "Man.hattan: EP",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "electronic"
+  ],
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://cmon3tta.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T00:59:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "man-hattan-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "man-hattan-ep-1969612882",
+      "title": "Chambers St on the 3 North to Manhattan",
+      "artist": "cmon3tta",
+      "albumTitle": "Man.hattan: EP",
+      "albumKey": "man-hattan-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cmon3tta.bandcamp.com/track/chambers-st-on-the-3-north-to-manhattan-2",
+      "bandcampEmbedTrackId": "1969612882",
+      "sourcePage": "https://cmon3tta.bandcamp.com/album/man-hattan-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "man-hattan-ep-4053617613",
+      "title": "Man.hattan",
+      "artist": "cmon3tta",
+      "albumTitle": "Man.hattan: EP",
+      "albumKey": "man-hattan-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:06",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cmon3tta.bandcamp.com/track/man-hattan-2",
+      "bandcampEmbedTrackId": "4053617613",
+      "sourcePage": "https://cmon3tta.bandcamp.com/album/man-hattan-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "man-hattan-ep-2531949254",
+      "title": "Billionaires Row is Ugly AF",
+      "artist": "cmon3tta",
+      "albumTitle": "Man.hattan: EP",
+      "albumKey": "man-hattan-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:10",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cmon3tta.bandcamp.com/track/billionaires-row-is-ugly-af",
+      "bandcampEmbedTrackId": "2531949254",
+      "sourcePage": "https://cmon3tta.bandcamp.com/album/man-hattan-ep",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

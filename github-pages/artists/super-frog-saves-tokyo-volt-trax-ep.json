@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "super-frog-saves-tokyo-volt-trax-ep",
+  "artist": "Super-Frog Saves Tokyo",
+  "bandcampUrl": "https://super-frogsavestokyo.bandcamp.com/album/volt-trax-ep",
+  "releaseTitle": "[VOLT TRAX] EP",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://super-frogsavestokyo.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:02:20Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "volt-trax-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "volt-trax-ep-3646511572",
+      "title": "No Evil No Evil No Evil",
+      "artist": "Super-Frog Saves Tokyo",
+      "albumTitle": "[VOLT TRAX] EP",
+      "albumKey": "volt-trax-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:14",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://super-frogsavestokyo.bandcamp.com/track/no-evil-no-evil-no-evil",
+      "bandcampEmbedTrackId": "3646511572",
+      "sourcePage": "https://super-frogsavestokyo.bandcamp.com/album/volt-trax-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "volt-trax-ep-4199261674",
+      "title": "Jitterbug",
+      "artist": "Super-Frog Saves Tokyo",
+      "albumTitle": "[VOLT TRAX] EP",
+      "albumKey": "volt-trax-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:50",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://super-frogsavestokyo.bandcamp.com/track/jitterbug",
+      "bandcampEmbedTrackId": "4199261674",
+      "sourcePage": "https://super-frogsavestokyo.bandcamp.com/album/volt-trax-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "volt-trax-ep-3444556598",
+      "title": "Angel Blade",
+      "artist": "Super-Frog Saves Tokyo",
+      "albumTitle": "[VOLT TRAX] EP",
+      "albumKey": "volt-trax-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:19",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://super-frogsavestokyo.bandcamp.com/track/angel-blade",
+      "bandcampEmbedTrackId": "3444556598",
+      "sourcePage": "https://super-frogsavestokyo.bandcamp.com/album/volt-trax-ep",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

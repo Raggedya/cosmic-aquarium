@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "someformofbody-3-songs-ive-always-hated-constant-reminders",
+  "artist": "someformofbody",
+  "bandcampUrl": "https://someformofbody.bandcamp.com/album/3-songs-ive-always-hated-constant-reminders",
+  "releaseTitle": "3 songs (ive always hated constant reminders)",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze"
+  ],
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://someformofbody.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:03:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "3-songs-ive-always-hated-constant-reminders",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "3-songs-ive-always-hated-constant-reminders-2253854230",
+      "title": "what do i do",
+      "artist": "someformofbody",
+      "albumTitle": "3 songs (ive always hated constant reminders)",
+      "albumKey": "3-songs-ive-always-hated-constant-reminders",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:31",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://someformofbody.bandcamp.com/track/what-do-i-do",
+      "bandcampEmbedTrackId": "2253854230",
+      "sourcePage": "https://someformofbody.bandcamp.com/album/3-songs-ive-always-hated-constant-reminders",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "3-songs-ive-always-hated-constant-reminders-3459519416",
+      "title": "summer",
+      "artist": "someformofbody",
+      "albumTitle": "3 songs (ive always hated constant reminders)",
+      "albumKey": "3-songs-ive-always-hated-constant-reminders",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:23",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://someformofbody.bandcamp.com/track/summer",
+      "bandcampEmbedTrackId": "3459519416",
+      "sourcePage": "https://someformofbody.bandcamp.com/album/3-songs-ive-always-hated-constant-reminders",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "3-songs-ive-always-hated-constant-reminders-1276261585",
+      "title": "parcel",
+      "artist": "someformofbody",
+      "albumTitle": "3 songs (ive always hated constant reminders)",
+      "albumKey": "3-songs-ive-always-hated-constant-reminders",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:22",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://someformofbody.bandcamp.com/track/parcel",
+      "bandcampEmbedTrackId": "1276261585",
+      "sourcePage": "https://someformofbody.bandcamp.com/album/3-songs-ive-always-hated-constant-reminders",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

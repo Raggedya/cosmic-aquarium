@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "roman-lando-delirious-experience",
+  "artist": "Roman Lando",
+  "bandcampUrl": "https://romanlando.bandcamp.com/album/delirious-experience",
+  "releaseTitle": "Delirious Experience",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "darkwave"
+  ],
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://romanlando.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:01:01Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "delirious-experience",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "delirious-experience-2365575078",
+      "title": "Asmodea",
+      "artist": "Roman Lando",
+      "albumTitle": "Delirious Experience",
+      "albumKey": "delirious-experience",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://romanlando.bandcamp.com/track/asmodea",
+      "bandcampEmbedTrackId": "2365575078",
+      "sourcePage": "https://romanlando.bandcamp.com/album/delirious-experience",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "delirious-experience-1760768981",
+      "title": "Delirious Experience",
+      "artist": "Roman Lando",
+      "albumTitle": "Delirious Experience",
+      "albumKey": "delirious-experience",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:22",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://romanlando.bandcamp.com/track/delirious-experience",
+      "bandcampEmbedTrackId": "1760768981",
+      "sourcePage": "https://romanlando.bandcamp.com/album/delirious-experience",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "delirious-experience-1804075753",
+      "title": "Notre Dame",
+      "artist": "Roman Lando",
+      "albumTitle": "Delirious Experience",
+      "albumKey": "delirious-experience",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:36",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://romanlando.bandcamp.com/track/notre-dame",
+      "bandcampEmbedTrackId": "1804075753",
+      "sourcePage": "https://romanlando.bandcamp.com/album/delirious-experience",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "delirious-experience-3309995090",
+      "title": "My Inner Demon",
+      "artist": "Roman Lando",
+      "albumTitle": "Delirious Experience",
+      "albumKey": "delirious-experience",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:04",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://romanlando.bandcamp.com/track/my-inner-demon",
+      "bandcampEmbedTrackId": "3309995090",
+      "sourcePage": "https://romanlando.bandcamp.com/album/delirious-experience",
+      "accent": "#ffb66d"
+    }
+  ]
+}

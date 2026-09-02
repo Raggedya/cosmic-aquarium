@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "xymmusic-my-life-in-a-nutshell",
+  "artist": "XymMusic",
+  "bandcampUrl": "https://xymmusic.bandcamp.com/album/my-life-in-a-nutshell",
+  "releaseTitle": "my life in a nutshell",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "experimental"
+  ],
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://xymmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T00:58:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "my-life-in-a-nutshell",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "my-life-in-a-nutshell-1324825033",
+      "title": "the nutshell",
+      "artist": "XymMusic",
+      "albumTitle": "my life in a nutshell",
+      "albumKey": "my-life-in-a-nutshell",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xymmusic.bandcamp.com/track/the-nutshell",
+      "bandcampEmbedTrackId": "1324825033",
+      "sourcePage": "https://xymmusic.bandcamp.com/album/my-life-in-a-nutshell",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "my-life-in-a-nutshell-3967834340",
+      "title": "my nutshell in a life",
+      "artist": "XymMusic",
+      "albumTitle": "my life in a nutshell",
+      "albumKey": "my-life-in-a-nutshell",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xymmusic.bandcamp.com/track/my-nutshell-in-a-life",
+      "bandcampEmbedTrackId": "3967834340",
+      "sourcePage": "https://xymmusic.bandcamp.com/album/my-life-in-a-nutshell",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "my-life-in-a-nutshell-1700327308",
+      "title": "shell nut my in life",
+      "artist": "XymMusic",
+      "albumTitle": "my life in a nutshell",
+      "albumKey": "my-life-in-a-nutshell",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:13",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xymmusic.bandcamp.com/track/shell-nut-my-in-life",
+      "bandcampEmbedTrackId": "1700327308",
+      "sourcePage": "https://xymmusic.bandcamp.com/album/my-life-in-a-nutshell",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "my-life-in-a-nutshell-3362921028",
+      "title": "my year in a nutshell",
+      "artist": "XymMusic",
+      "albumTitle": "my life in a nutshell",
+      "albumKey": "my-life-in-a-nutshell",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "19:16",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xymmusic.bandcamp.com/track/my-year-in-a-nutshell",
+      "bandcampEmbedTrackId": "3362921028",
+      "sourcePage": "https://xymmusic.bandcamp.com/album/my-life-in-a-nutshell",
+      "accent": "#ffb66d"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "sideria-change-ep",
+  "artist": "Sideria",
+  "bandcampUrl": "https://sideriafromdust.bandcamp.com/album/change-ep",
+  "releaseTitle": "Change - EP",
+  "releaseDate": "2026-07-29 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze"
+  ],
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sideriafromdust.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T00:58:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "change-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "change-ep-2887836505",
+      "title": "Change",
+      "artist": "Sideria",
+      "albumTitle": "Change - EP",
+      "albumKey": "change-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sideriafromdust.bandcamp.com/track/change",
+      "bandcampEmbedTrackId": "2887836505",
+      "sourcePage": "https://sideriafromdust.bandcamp.com/album/change-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "change-ep-3209514639",
+      "title": "Teeth",
+      "artist": "Sideria",
+      "albumTitle": "Change - EP",
+      "albumKey": "change-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:27",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sideriafromdust.bandcamp.com/track/teeth",
+      "bandcampEmbedTrackId": "3209514639",
+      "sourcePage": "https://sideriafromdust.bandcamp.com/album/change-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "change-ep-1271535447",
+      "title": "When You Get Back Home",
+      "artist": "Sideria",
+      "albumTitle": "Change - EP",
+      "albumKey": "change-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:53",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sideriafromdust.bandcamp.com/track/when-you-get-back-home",
+      "bandcampEmbedTrackId": "1271535447",
+      "sourcePage": "https://sideriafromdust.bandcamp.com/album/change-ep",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

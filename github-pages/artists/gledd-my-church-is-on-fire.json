@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "gledd-my-church-is-on-fire",
+  "artist": "Gledd",
+  "bandcampUrl": "https://gledd.bandcamp.com/album/my-church-is-on-fire",
+  "releaseTitle": "My Church Is On Fire",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "electronic"
+  ],
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://gledd.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:01:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "my-church-is-on-fire",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "my-church-is-on-fire-2447346055",
+      "title": "Let It Shine ft. Steve Salmaso",
+      "artist": "Gledd",
+      "albumTitle": "My Church Is On Fire",
+      "albumKey": "my-church-is-on-fire",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gledd.bandcamp.com/track/let-it-shine-ft-steve-salmaso",
+      "bandcampEmbedTrackId": "2447346055",
+      "sourcePage": "https://gledd.bandcamp.com/album/my-church-is-on-fire",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "my-church-is-on-fire-2777983928",
+      "title": "Mama Don't Preach",
+      "artist": "Gledd",
+      "albumTitle": "My Church Is On Fire",
+      "albumKey": "my-church-is-on-fire",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:12",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gledd.bandcamp.com/track/mama-dont-preach",
+      "bandcampEmbedTrackId": "2777983928",
+      "sourcePage": "https://gledd.bandcamp.com/album/my-church-is-on-fire",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "my-church-is-on-fire-508393605",
+      "title": "Be Real",
+      "artist": "Gledd",
+      "albumTitle": "My Church Is On Fire",
+      "albumKey": "my-church-is-on-fire",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:01",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gledd.bandcamp.com/track/be-real",
+      "bandcampEmbedTrackId": "508393605",
+      "sourcePage": "https://gledd.bandcamp.com/album/my-church-is-on-fire",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "my-church-is-on-fire-548703717",
+      "title": "Back On My Stay",
+      "artist": "Gledd",
+      "albumTitle": "My Church Is On Fire",
+      "albumKey": "my-church-is-on-fire",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:20",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gledd.bandcamp.com/track/back-on-my-stay",
+      "bandcampEmbedTrackId": "548703717",
+      "sourcePage": "https://gledd.bandcamp.com/album/my-church-is-on-fire",
+      "accent": "#ffb66d"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "slug": "underpall-the-great-old-turn-of-man",
+  "artist": "Underpall",
+  "bandcampUrl": "https://underpall.bandcamp.com/album/the-great-old-turn-of-man",
+  "releaseTitle": "The Great, Old Turn of Man",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "metal"
+  ],
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://underpall.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:00:05Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-great-old-turn-of-man",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-great-old-turn-of-man-946887144",
+      "title": "Strands Unwoven",
+      "artist": "Underpall",
+      "albumTitle": "The Great, Old Turn of Man",
+      "albumKey": "the-great-old-turn-of-man",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://underpall.bandcamp.com/track/strands-unwoven",
+      "bandcampEmbedTrackId": "946887144",
+      "sourcePage": "https://underpall.bandcamp.com/album/the-great-old-turn-of-man",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-great-old-turn-of-man-2511629608",
+      "title": "Pale Moon Hunger",
+      "artist": "Underpall",
+      "albumTitle": "The Great, Old Turn of Man",
+      "albumKey": "the-great-old-turn-of-man",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://underpall.bandcamp.com/track/pale-moon-hunger",
+      "bandcampEmbedTrackId": "2511629608",
+      "sourcePage": "https://underpall.bandcamp.com/album/the-great-old-turn-of-man",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-great-old-turn-of-man-2782482461",
+      "title": "Ghost of the Lorn Shore",
+      "artist": "Underpall",
+      "albumTitle": "The Great, Old Turn of Man",
+      "albumKey": "the-great-old-turn-of-man",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:41",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://underpall.bandcamp.com/track/ghost-of-the-lorn-shore",
+      "bandcampEmbedTrackId": "2782482461",
+      "sourcePage": "https://underpall.bandcamp.com/album/the-great-old-turn-of-man",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-great-old-turn-of-man-536974457",
+      "title": "The Great, Old Turn of Man",
+      "artist": "Underpall",
+      "albumTitle": "The Great, Old Turn of Man",
+      "albumKey": "the-great-old-turn-of-man",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "9:41",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://underpall.bandcamp.com/track/the-great-old-turn-of-man",
+      "bandcampEmbedTrackId": "536974457",
+      "sourcePage": "https://underpall.bandcamp.com/album/the-great-old-turn-of-man",
+      "accent": "#ffb66d"
+    }
+  ]
+}

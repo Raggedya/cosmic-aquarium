@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "slug": "van-diest-brothers-seward",
+  "artist": "Van Diest Brothers",
+  "bandcampUrl": "https://vandiestbrothers.bandcamp.com/album/seward",
+  "releaseTitle": "Seward.",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient"
+  ],
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vandiestbrothers.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-02T01:00:23Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "seward",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "seward-2390410056",
+      "title": "327",
+      "artist": "Van Diest Brothers",
+      "albumTitle": "Seward.",
+      "albumKey": "seward",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:26",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vandiestbrothers.bandcamp.com/track/327",
+      "bandcampEmbedTrackId": "2390410056",
+      "sourcePage": "https://vandiestbrothers.bandcamp.com/album/seward",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "seward-4057185357",
+      "title": "371",
+      "artist": "Van Diest Brothers",
+      "albumTitle": "Seward.",
+      "albumKey": "seward",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:11",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vandiestbrothers.bandcamp.com/track/371",
+      "bandcampEmbedTrackId": "4057185357",
+      "sourcePage": "https://vandiestbrothers.bandcamp.com/album/seward",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "seward-1707751850",
+      "title": "505",
+      "artist": "Van Diest Brothers",
+      "albumTitle": "Seward.",
+      "albumKey": "seward",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vandiestbrothers.bandcamp.com/track/505",
+      "bandcampEmbedTrackId": "1707751850",
+      "sourcePage": "https://vandiestbrothers.bandcamp.com/album/seward",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "seward-3376592152",
+      "title": "549",
+      "artist": "Van Diest Brothers",
+      "albumTitle": "Seward.",
+      "albumKey": "seward",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "9:09",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vandiestbrothers.bandcamp.com/track/549",
+      "bandcampEmbedTrackId": "3376592152",
+      "sourcePage": "https://vandiestbrothers.bandcamp.com/album/seward",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "seward-1905680863",
+      "title": "1329",
+      "artist": "Van Diest Brothers",
+      "albumTitle": "Seward.",
+      "albumKey": "seward",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "22:08",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vandiestbrothers.bandcamp.com/track/1329",
+      "bandcampEmbedTrackId": "1905680863",
+      "sourcePage": "https://vandiestbrothers.bandcamp.com/album/seward",
+      "accent": "#8fd9c7"
+    }
+  ]
+}

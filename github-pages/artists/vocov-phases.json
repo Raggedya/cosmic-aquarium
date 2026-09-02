@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "vocov-phases",
+  "artist": "VOCOV",
+  "bandcampUrl": "https://vocovmusic.bandcamp.com/album/phases",
+  "releaseTitle": "Phases",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "backfill-200-2026-09-02",
+  "status": "published",
+  "metadataTags": [
+    "electronic"
+  ],
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vocovmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-02T01:00:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "phases",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "phases-585079647",
+      "title": "Resonae",
+      "artist": "VOCOV",
+      "albumTitle": "Phases",
+      "albumKey": "phases",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:37",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vocovmusic.bandcamp.com/track/resonae",
+      "bandcampEmbedTrackId": "585079647",
+      "sourcePage": "https://vocovmusic.bandcamp.com/album/phases",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "phases-2692667624",
+      "title": "Harmora",
+      "artist": "VOCOV",
+      "albumTitle": "Phases",
+      "albumKey": "phases",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:06",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vocovmusic.bandcamp.com/track/harmora",
+      "bandcampEmbedTrackId": "2692667624",
+      "sourcePage": "https://vocovmusic.bandcamp.com/album/phases",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "phases-597462661",
+      "title": "Fazion",
+      "artist": "VOCOV",
+      "albumTitle": "Phases",
+      "albumKey": "phases",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:35",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vocovmusic.bandcamp.com/track/fazion",
+      "bandcampEmbedTrackId": "597462661",
+      "sourcePage": "https://vocovmusic.bandcamp.com/album/phases",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "phases-4131415349",
+      "title": "Orryx",
+      "artist": "VOCOV",
+      "albumTitle": "Phases",
+      "albumKey": "phases",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:13",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vocovmusic.bandcamp.com/track/orryx",
+      "bandcampEmbedTrackId": "4131415349",
+      "sourcePage": "https://vocovmusic.bandcamp.com/album/phases",
+      "accent": "#ffb66d"
+    }
+  ]
+}
