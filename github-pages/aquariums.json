@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T04:01:13.694Z",
+  "generatedAt": "2026-09-02T04:55:13.929Z",
   "aquariums": [
     {
       "id": "52hz-nicolas-mollin-cahier-de-vacances",
@@ -3170,6 +3170,26 @@
       "waters": [
         "heavy",
         "loud"
+      ]
+    },
+    {
+      "id": "spencer-p-jones",
+      "slug": "spencer-p-jones",
+      "artist": "Spencer P. Jones",
+      "release": "Fait Accompli",
+      "releaseDate": "2014-04-30 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 60,
+      "bandcampUrl": "https://spencerpjones.bandcamp.com/music",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": null,
+      "url": "https://raggedya.github.io/cosmic-aquarium/spencer-p-jones/",
+      "status": "published",
+      "waters": [
+        "heavy"
       ]
     },
     {
