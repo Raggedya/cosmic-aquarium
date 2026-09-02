@@ -9,7 +9,9 @@ import subprocess
 import sys
 import threading
 import time
+import urllib.error
 import urllib.parse
+import urllib.request
 import webbrowser
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -28,6 +30,7 @@ LOCATION_STATUS_WORKFLOW = "set-collection-status.yml"
 DELIVERY_REPOSITORY = "Raggedya/groove-vultures-deep-cuts-fan-challenge"
 DELIVERY_WORKFLOW = "cosmic-aquarium-delivery.yml"
 PAGES_BASE = "https://raggedya.github.io/cosmic-aquarium"
+RAW_CATALOGUE_BASE = "https://raw.githubusercontent.com/Raggedya/cosmic-aquarium/main"
 INK = "#07071d"
 PAPER = "#f5f3fb"
 MUTED = "#9993ad"
@@ -67,6 +70,21 @@ def release_date_label(value: object) -> str:
 def resource_path(relative: str) -> Path:
     base = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parents[1]))
     return base / relative
+
+
+def decode_json_object(raw: object, source: str) -> dict:
+    """Decode one catalogue document without leaking low-level JSON errors to the UI."""
+    if isinstance(raw, (bytes, bytearray)):
+        raw = raw.decode("utf-8-sig", errors="replace")
+    if not isinstance(raw, str) or not raw.strip():
+        raise RuntimeError(f"No catalogue data was returned for {source}. Please check your connection and try again.")
+    try:
+        value = json.loads(raw)
+    except json.JSONDecodeError as error:
+        raise RuntimeError(f"The catalogue response for {source} was incomplete. Please refresh the library.") from error
+    if not isinstance(value, dict):
+        raise RuntimeError(f"The catalogue response for {source} had an unexpected format.")
+    return value
 
 
 def slugify(value: str) -> str:
@@ -319,10 +337,9 @@ class CosmicAquariumStudio(tk.Tk):
 
     def _load_library(self) -> None:
         try:
-            gh = self._github_cli()
-            artists = self._remote_json(gh, "github-pages/artists-index.json").get("artists", [])
-            aquariums = self._remote_json(gh, "github-pages/aquariums.json").get("aquariums", [])
-            collections = self._remote_json(gh, "github-pages/collections/index.json").get("collections", [])
+            artists = self._remote_json("github-pages/artists-index.json").get("artists", [])
+            aquariums = self._remote_json("github-pages/aquariums.json").get("aquariums", [])
+            collections = self._remote_json("github-pages/collections/index.json").get("collections", [])
             aquarium_by_slug = {entry.get("slug"): entry for entry in aquariums}
             mode = self.library_mode
             if mode == "master":
@@ -345,10 +362,38 @@ class CosmicAquariumStudio(tk.Tk):
         except Exception as error:
             self.after(0, lambda message=str(error): self._library_error(message))
 
-    def _remote_json(self, gh: str, source: str) -> dict:
-        process = subprocess.run([gh, "api", "-H", "Accept: application/vnd.github.raw+json", f"repos/{REPOSITORY}/contents/{source}"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
-        value = json.loads(process.stdout)
-        return value if isinstance(value, dict) else {}
+    def _remote_json(self, source: str) -> dict:
+        """Read public catalogue data directly, with the GitHub CLI as a fallback."""
+        url = RAW_CATALOGUE_BASE + "/" + urllib.parse.quote(source, safe="/")
+        request = urllib.request.Request(
+            url,
+            headers={"Accept": "application/json", "User-Agent": "Cosmic-Aquaria-Library/1.0"},
+        )
+        direct_error: Exception | None = None
+        try:
+            with urllib.request.urlopen(request, timeout=20) as response:
+                return decode_json_object(response.read(), source)
+        except (OSError, urllib.error.URLError, RuntimeError) as error:
+            direct_error = error
+
+        gh = shutil.which("gh")
+        if gh:
+            try:
+                process = subprocess.run(
+                    [gh, "api", "-H", "Accept: application/vnd.github.raw+json", f"repos/{REPOSITORY}/contents/{source}"],
+                    check=True,
+                    capture_output=True,
+                    text=True,
+                    creationflags=self._creation_flags(),
+                )
+                return decode_json_object(process.stdout, source)
+            except (OSError, subprocess.SubprocessError, RuntimeError):
+                pass
+
+        raise RuntimeError(
+            f"The Cosmic Aquaria catalogue could not be reached for {source}. "
+            "Please check your internet connection and refresh the library."
+        ) from direct_error
 
     def _render_library(self, entries: list[dict]) -> None:
         self._library_busy = False
