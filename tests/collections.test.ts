@@ -61,3 +61,28 @@ test('Explore Another stays inside the parent collection when that was the entry
   assert.match(staticExperience,/let collectionSlug = ''/);
   assert.match(staticExperience,/collections\/.*encodeURIComponent\(collectionSlug\).*\.json/);
 });
+
+test('the Master Library generates seven Style collections without copying artists', async () => {
+  const build = await readFile(new URL('../scripts/build-github-pages.mjs', import.meta.url),'utf8');
+  assert.match(build,/\['heavy','dreamy','quiet','electronic','dark','loud','strange'\]/);
+  assert.match(build,/id:'style:'\+water/);
+  assert.match(build,/artistId:artist\.id/);
+  assert.match(build,/memberships\.push/);
+});
+
+test('Location Aquaria begin with a centre world and seven water portals', async () => {
+  const experience = await readFile(new URL('../github-pages/assets/collection.js', import.meta.url),'utf8');
+  const template = await readFile(new URL('../templates/collection-index.html', import.meta.url),'utf8');
+  assert.match(template,/collection-portals/);
+  assert.match(experience,/value\.type==='location'/);
+  assert.match(experience,/\['heavy','dreamy','quiet','electronic','dark','loud','strange'\]/);
+  assert.match(experience,/memberWaters\(member\)\.includes\(water\)/);
+});
+
+test('collection random API filters by water and avoids short-lived recent artists', async () => {
+  const worker = await readFile(new URL('../services/cosmic-worker/src/index.js', import.meta.url),'utf8');
+  assert.match(worker,/url\.searchParams\.get\('water'\)/);
+  assert.match(worker,/aquarium_water aw/);
+  assert.match(worker,/url\.searchParams\.get\('recent'\)/);
+  assert.match(worker,/ORDER BY RANDOM\(\) LIMIT 1/);
+});

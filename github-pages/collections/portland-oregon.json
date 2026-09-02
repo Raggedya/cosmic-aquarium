@@ -38,7 +38,15 @@
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-wobblies/",
       "existingAquarium": false,
       "displayEnabled": true,
-      "addedAt": "2026-09-02T06:10:39Z"
+      "addedAt": "2026-09-02T06:10:39Z",
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "quiet"
+      ]
     },
     {
       "artistId": "bandcamp:ourspdx",
@@ -52,7 +60,15 @@
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ours/",
       "existingAquarium": false,
       "displayEnabled": true,
-      "addedAt": "2026-09-02T06:10:39Z"
+      "addedAt": "2026-09-02T06:10:39Z",
+      "waters": [
+        "dreamy",
+        "dark"
+      ],
+      "styles": [
+        "dreamy",
+        "dark"
+      ]
     },
     {
       "artistId": "bandcamp:daystarpdx",
@@ -66,7 +82,15 @@
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/daystar/",
       "existingAquarium": false,
       "displayEnabled": true,
-      "addedAt": "2026-09-02T06:10:39Z"
+      "addedAt": "2026-09-02T06:10:39Z",
+      "waters": [
+        "dark",
+        "loud"
+      ],
+      "styles": [
+        "dark",
+        "loud"
+      ]
     }
   ]
 }

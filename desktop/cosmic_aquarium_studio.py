@@ -23,6 +23,7 @@ REPOSITORY = "Raggedya/cosmic-aquarium"
 WORKFLOW = "create-artist.yml"
 STATUS_WORKFLOW = "set-aquarium-status.yml"
 LOCATION_WORKFLOW = "research-location.yml"
+LABEL_WORKFLOW = "research-label.yml"
 LOCATION_STATUS_WORKFLOW = "set-collection-status.yml"
 DELIVERY_REPOSITORY = "Raggedya/groove-vultures-deep-cuts-fan-challenge"
 DELIVERY_WORKFLOW = "cosmic-aquarium-delivery.yml"
@@ -37,6 +38,15 @@ THEMES = (
     {"id": "violet", "label": "VIOLET HAZE", "asset": "flowers/anemone.png", "bg": "#17103b", "accent": "#c584f0"},
     {"id": "chrome", "label": "CHROME SKULLS", "asset": "skulls/chrome-skull-silver.png", "bg": "#020305", "accent": "#a9c8f6"},
     {"id": "glass", "label": "GLASS GARDEN", "asset": "glass/crystal-flower.png", "bg": "#080721", "accent": "#b49cff"},
+)
+LIBRARY_MODES = (
+    ("master", "MASTER LIBRARY"),
+    ("locations", "LOCATIONS"),
+    ("labels", "LABELS"),
+    ("styles", "STYLES"),
+    ("daily", "DAILY DISCOVERY"),
+    ("published", "PUBLISHED"),
+    ("themes", "THEMES"),
 )
 
 
@@ -87,7 +97,7 @@ class CosmicAquariumStudio(tk.Tk):
         self._busy = False
         self._library_busy = False
         self._library_entries: list[dict] = []
-        self.library_mode = "artists"
+        self.library_mode = "master"
         self.visual_style = "cosmic"
         self.theme_canvases: dict[str, tk.Canvas] = {}
         self.theme_images: list[ImageTk.PhotoImage] = []
@@ -186,24 +196,30 @@ class CosmicAquariumStudio(tk.Tk):
     def _build_library(self, shell: tk.Frame) -> None:
         library = tk.Frame(shell, bg=INK)
         self.library_view = library
-        library.grid(row=1, column=0, columnspan=2, sticky="nsew", padx=82, pady=(42, 30))
+        library.grid(row=1, column=0, columnspan=2, sticky="nsew", padx=58, pady=(30, 22))
         library.grid_columnconfigure(0, weight=1)
-        library.grid_rowconfigure(4, weight=1)
+        library.grid_rowconfigure(6, weight=1)
 
         heading = tk.Frame(library, bg=INK)
         heading.grid(row=0, column=0, sticky="ew")
-        tk.Label(heading, text="AQUARIUM LIBRARY", bg=INK, fg=LAVENDER, font=("Segoe UI Semibold", 9)).pack(side="left")
+        tk.Label(heading, text="COSMIC AQUARIA CONTROL ROOM", bg=INK, fg=LAVENDER, font=("Segoe UI Semibold", 9)).pack(side="left")
         tk.Button(heading, text="REFRESH", command=self._start_load_library, bg=INK, fg=MUTED, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), cursor="hand2").pack(side="right")
-        self.locations_tab = tk.Button(heading, text="LOCATIONS", command=lambda: self._set_library_mode("locations"), bg=INK, fg=MUTED, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=12, cursor="hand2")
-        self.locations_tab.pack(side="right")
-        self.artists_tab = tk.Button(heading, text="ARTISTS", command=lambda: self._set_library_mode("artists"), bg=INK, fg=LAVENDER, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=12, cursor="hand2")
-        self.artists_tab.pack(side="right")
-        tk.Label(library, text="Everything begins published. Switch any Aquarium off whenever you choose.", bg=INK, fg=PAPER, font=("Georgia", 22), anchor="w").grid(row=1, column=0, sticky="ew", pady=(16, 7))
+
+        mode_bar = tk.Frame(library, bg=INK)
+        mode_bar.grid(row=1, column=0, sticky="ew", pady=(14, 0))
+        self.library_mode_buttons: dict[str, tk.Button] = {}
+        for mode, label in LIBRARY_MODES:
+            button = tk.Button(mode_bar, text=label, command=lambda value=mode: self._set_library_mode(value), bg=INK, fg=LAVENDER if mode == "master" else MUTED, activebackground=INK, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 7), padx=9, cursor="hand2")
+            button.pack(side="left")
+            self.library_mode_buttons[mode] = button
+
+        self.library_heading = tk.Label(library, text="ONE ARTIST. ONE AQUARIUM. MANY DOORWAYS.", bg=INK, fg=PAPER, font=("Georgia", 22), anchor="w")
+        self.library_heading.grid(row=2, column=0, sticky="ew", pady=(14, 6))
         self.library_status = tk.Label(library, text="", bg=INK, fg=MUTED, font=("Segoe UI", 9), anchor="w")
-        self.library_status.grid(row=2, column=0, sticky="ew", pady=(0, 18))
+        self.library_status.grid(row=3, column=0, sticky="ew", pady=(0, 12))
 
         self.location_form = tk.Frame(library, bg="#0b0b24", padx=18, pady=14)
-        self.location_form.grid(row=3, column=0, sticky="ew", pady=(0, 14))
+        self.location_form.grid(row=4, column=0, sticky="ew", pady=(0, 10))
         self.location_form.grid_columnconfigure(0, weight=1)
         tk.Label(self.location_form, text="NEW LOCATION", bg="#0b0b24", fg=LAVENDER, font=("Segoe UI Semibold", 8)).grid(row=0, column=0, sticky="w")
         self.location_entry = tk.Entry(self.location_form, bg="#0b0b24", fg=PAPER, insertbackground=LAVENDER, relief="flat", bd=0, font=("Segoe UI", 11))
@@ -213,10 +229,40 @@ class CosmicAquariumStudio(tk.Tk):
         self.location_max.delete(0, "end"); self.location_max.insert(0, "25")
         self.location_max.grid(row=1, column=1, padx=(0, 12))
         tk.Button(self.location_form, text="CREATE LOCATION", command=self._start_create_location, bg=LAVENDER, fg="#09091e", activebackground="#ded4ff", relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=18, pady=9, cursor="hand2").grid(row=1, column=2)
-        tk.Label(self.location_form, text="Research is verified before artists appear. Existing Artist Aquariums are reused; they are never duplicated.", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=2, column=0, columnspan=3, sticky="w", pady=(6, 0))
+        tk.Label(self.location_form, text="Research creates a reviewable draft. Verified artists reuse their canonical Artist Aquarium; publishing remains your decision.", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=2, column=0, columnspan=3, sticky="w", pady=(6, 0))
+
+        self.label_form = tk.Frame(library, bg="#0b0b24", padx=18, pady=14)
+        self.label_form.grid(row=4, column=0, sticky="ew", pady=(0, 10))
+        self.label_form.grid_columnconfigure(1, weight=1)
+        tk.Label(self.label_form, text="NEW LABEL", bg="#0b0b24", fg=LAVENDER, font=("Segoe UI Semibold", 8)).grid(row=0, column=0, columnspan=4, sticky="w")
+        tk.Label(self.label_form, text="NAME", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 7)).grid(row=1, column=0, sticky="w", pady=(8, 0))
+        self.label_name_entry = tk.Entry(self.label_form, bg="#12112e", fg=PAPER, insertbackground=LAVENDER, relief="flat", bd=0, font=("Segoe UI", 10), width=24)
+        self.label_name_entry.grid(row=2, column=0, sticky="ew", padx=(0, 10), ipady=7)
+        tk.Label(self.label_form, text="PUBLIC WEBSITE OR ROSTER URL", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 7)).grid(row=1, column=1, sticky="w", pady=(8, 0))
+        self.label_url_entry = tk.Entry(self.label_form, bg="#12112e", fg=PAPER, insertbackground=LAVENDER, relief="flat", bd=0, font=("Segoe UI", 10))
+        self.label_url_entry.grid(row=2, column=1, sticky="ew", padx=(0, 10), ipady=7)
+        tk.Button(self.label_form, text="RESEARCH LABEL", command=self._start_create_label, bg=LAVENDER, fg="#09091e", activebackground="#ded4ff", relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=18, pady=9, cursor="hand2").grid(row=2, column=2)
+
+        filter_bar = tk.Frame(library, bg=INK)
+        filter_bar.grid(row=5, column=0, sticky="ew", pady=(0, 10))
+        filter_bar.grid_columnconfigure(0, weight=1)
+        self.library_search = tk.Entry(filter_bar, bg="#0b0b24", fg=PAPER, insertbackground=LAVENDER, relief="flat", bd=0, font=("Segoe UI", 9))
+        self.library_search.grid(row=0, column=0, sticky="ew", ipady=8, padx=(0, 10))
+        self.library_search.insert(0, "")
+        self.library_search.bind("<KeyRelease>", lambda _event: self._apply_library_filters())
+        self.library_filter = tk.StringVar(value="all")
+        self.library_sort = tk.StringVar(value="name")
+        status_menu = tk.OptionMenu(filter_bar, self.library_filter, "all", "published", "draft", "disabled", command=lambda _value: self._apply_library_filters())
+        status_menu.configure(bg="#0b0b24", fg=MUTED, activebackground="#171531", activeforeground=PAPER, relief="flat", bd=0, highlightthickness=0, font=("Segoe UI", 8), width=10)
+        status_menu["menu"].configure(bg="#0b0b24", fg=PAPER)
+        status_menu.grid(row=0, column=1, padx=(0, 8))
+        sort_menu = tk.OptionMenu(filter_bar, self.library_sort, "name", "updated", "status", command=lambda _value: self._apply_library_filters())
+        sort_menu.configure(bg="#0b0b24", fg=MUTED, activebackground="#171531", activeforeground=PAPER, relief="flat", bd=0, highlightthickness=0, font=("Segoe UI", 8), width=9)
+        sort_menu["menu"].configure(bg="#0b0b24", fg=PAPER)
+        sort_menu.grid(row=0, column=2)
 
         list_shell = tk.Frame(library, bg=INK, highlightbackground=LINE, highlightthickness=1)
-        list_shell.grid(row=4, column=0, sticky="nsew")
+        list_shell.grid(row=6, column=0, sticky="nsew")
         list_shell.grid_columnconfigure(0, weight=1)
         list_shell.grid_rowconfigure(0, weight=1)
         self.library_canvas = tk.Canvas(list_shell, bg=INK, highlightthickness=0)
@@ -229,16 +275,23 @@ class CosmicAquariumStudio(tk.Tk):
         self.library_list.bind("<Configure>", lambda _event: self.library_canvas.configure(scrollregion=self.library_canvas.bbox("all")))
         self.library_canvas.bind("<Configure>", lambda event: self.library_canvas.itemconfigure(self.library_window, width=event.width))
         self.location_form.grid_remove()
+        self.label_form.grid_remove()
         self.library_view.grid_remove()
 
     def _set_library_mode(self, mode: str) -> None:
-        self.library_mode = "locations" if mode == "locations" else "artists"
-        self.artists_tab.configure(fg=LAVENDER if self.library_mode == "artists" else MUTED)
-        self.locations_tab.configure(fg=LAVENDER if self.library_mode == "locations" else MUTED)
-        if self.library_mode == "locations":
-            self.location_form.grid()
-        else:
-            self.location_form.grid_remove()
+        valid = {item[0] for item in LIBRARY_MODES}
+        self.library_mode = mode if mode in valid else "master"
+        for key, button in self.library_mode_buttons.items():
+            button.configure(fg=LAVENDER if key == self.library_mode else MUTED)
+        self.location_form.grid() if self.library_mode == "locations" else self.location_form.grid_remove()
+        self.label_form.grid() if self.library_mode == "labels" else self.label_form.grid_remove()
+        headings = {
+            "master": "ONE ARTIST. ONE AQUARIUM. MANY DOORWAYS.", "locations": "BUILD A WORLD ATLAS OF INDEPENDENT MUSIC.",
+            "labels": "LABEL ROSTERS BECOME DOORWAYS, NOT COPIES.", "styles": "SEVEN WATERS. ONE CANONICAL LIBRARY.",
+            "daily": "TODAY'S DISCOVERIES STRENGTHEN THE MASTER LIBRARY.", "published": "EVERY LIVE AQUARIUM AND COLLECTION.",
+            "themes": "VISUAL WORLDS REMAIN INDEPENDENT OF GENRE.",
+        }
+        self.library_heading.configure(text=headings[self.library_mode])
         self._start_load_library()
 
     def _show_creator(self) -> None:
@@ -267,39 +320,137 @@ class CosmicAquariumStudio(tk.Tk):
     def _load_library(self) -> None:
         try:
             gh = self._github_cli()
-            source = "github-pages/collections/index.json" if self.library_mode == "locations" else "github-pages/aquariums.json"
-            process = subprocess.run([
-                gh, "api", "-H", "Accept: application/vnd.github.raw+json",
-                f"repos/{REPOSITORY}/contents/{source}",
-            ], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
-            catalogue = json.loads(process.stdout)
-            key = "collections" if self.library_mode == "locations" else "aquariums"
-            entries = catalogue.get(key, []) if isinstance(catalogue, dict) else []
-            if self.library_mode == "locations":
-                entries = [entry for entry in entries if entry.get("type") == "location"]
+            artists = self._remote_json(gh, "github-pages/artists-index.json").get("artists", [])
+            aquariums = self._remote_json(gh, "github-pages/aquariums.json").get("aquariums", [])
+            collections = self._remote_json(gh, "github-pages/collections/index.json").get("collections", [])
+            aquarium_by_slug = {entry.get("slug"): entry for entry in aquariums}
+            mode = self.library_mode
+            if mode == "master":
+                entries = [{**artist, **{key: value for key, value in aquarium_by_slug.get(artist.get("aquariumSlug"), {}).items() if key not in {"id", "status"}}, "artistStatus": artist.get("status", "published"), "status": aquarium_by_slug.get(artist.get("aquariumSlug"), {}).get("status", artist.get("status", "published"))} for artist in artists]
+            elif mode == "locations":
+                entries = [entry for entry in collections if entry.get("type") == "location"]
+            elif mode == "labels":
+                entries = [entry for entry in collections if entry.get("type") == "label"]
+            elif mode == "styles":
+                entries = [entry for entry in collections if entry.get("type") in {"genre", "style"}]
+                if not entries:
+                    entries = [{"name": water.upper(), "slug": "style-" + water, "type": "genre", "status": "published", "memberCount": sum(water in (artist.get("waters") or []) for artist in artists), "url": PAGES_BASE + "/collections/style-" + water + "/"} for water in ("heavy", "dreamy", "quiet", "electronic", "dark", "loud", "strange")]
+            elif mode == "daily":
+                entries = [entry for entry in aquariums if entry.get("dailyBatchId")]
+            elif mode == "published":
+                entries = [entry for entry in aquariums if entry.get("status", "published") == "published"]
+            else:
+                entries = [{**theme, "name": theme["label"], "status": "available", "memberCount": sum(entry.get("visualStyle") == theme["id"] for entry in aquariums)} for theme in THEMES]
             self.after(0, lambda: self._render_library(entries))
         except Exception as error:
             self.after(0, lambda message=str(error): self._library_error(message))
 
+    def _remote_json(self, gh: str, source: str) -> dict:
+        process = subprocess.run([gh, "api", "-H", "Accept: application/vnd.github.raw+json", f"repos/{REPOSITORY}/contents/{source}"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+        value = json.loads(process.stdout)
+        return value if isinstance(value, dict) else {}
+
     def _render_library(self, entries: list[dict]) -> None:
         self._library_busy = False
-        name_key = "name" if self.library_mode == "locations" else "artist"
-        self._library_entries = sorted(entries, key=lambda entry: str(entry.get(name_key, "")).casefold())
+        self._library_entries = list(entries)
+        self._apply_library_filters()
+
+    def _apply_library_filters(self) -> None:
+        if not hasattr(self, "library_list"):
+            return
+        query = self.library_search.get().strip().casefold() if hasattr(self, "library_search") else ""
+        status_filter = self.library_filter.get() if hasattr(self, "library_filter") else "all"
+        entries = [entry for entry in self._library_entries if (not query or query in json.dumps(entry, ensure_ascii=False).casefold()) and (status_filter == "all" or str(entry.get("status", "published")) == status_filter)]
+        sort_mode = self.library_sort.get() if hasattr(self, "library_sort") else "name"
+        if sort_mode == "updated":
+            entries.sort(key=lambda entry: str(entry.get("updatedAt") or entry.get("lastUpdated") or entry.get("releaseDate") or ""), reverse=True)
+        elif sort_mode == "status":
+            entries.sort(key=lambda entry: (str(entry.get("status", "")), self._entry_name(entry).casefold()))
+        else:
+            entries.sort(key=lambda entry: self._entry_name(entry).casefold())
         for child in self.library_list.winfo_children():
             child.destroy()
-        if not self._library_entries:
+        if not entries:
             empty = tk.Frame(self.library_list, bg=INK, padx=34, pady=64)
             empty.pack(fill="both", expand=True)
-            noun = "LOCATION LIBRARY" if self.library_mode == "locations" else "LIBRARY"
-            tk.Label(empty, text=f"YOUR {noun} IS EMPTY", bg=INK, fg=PAPER, font=("Georgia", 23)).pack()
-            tk.Label(empty, text="Create a location above." if self.library_mode == "locations" else "Create an Aquarium and it will appear here, already published.", bg=INK, fg=MUTED, font=("Segoe UI", 10), pady=12).pack()
-            self.library_status.configure(text="0 LOCATIONS" if self.library_mode == "locations" else "0 AQUARIUMS  ·  READY FOR A FRESH START", fg=MUTED)
+            tk.Label(empty, text="NO MATCHING RESULTS", bg=INK, fg=PAPER, font=("Georgia", 23)).pack()
+            tk.Label(empty, text="Adjust the search or create a new collection.", bg=INK, fg=MUTED, font=("Segoe UI", 10), pady=12).pack()
+            self.library_status.configure(text="0 RESULTS", fg=MUTED)
             return
-        published = sum(1 for entry in self._library_entries if entry.get("status", "published") == "published")
-        noun = "LOCATIONS" if self.library_mode == "locations" else "AQUARIUMS"
-        self.library_status.configure(text=f"{len(self._library_entries)} {noun}  ·  {published} PUBLISHED", fg=MUTED)
-        for entry in self._library_entries:
-            self._location_row(entry) if self.library_mode == "locations" else self._library_row(entry)
+        published = sum(1 for entry in entries if entry.get("status", "published") == "published")
+        noun = {"master": "CANONICAL ARTISTS", "locations": "LOCATIONS", "labels": "LABELS", "styles": "STYLE COLLECTIONS", "daily": "DAILY AQUARIA", "published": "PUBLISHED AQUARIA", "themes": "THEMES"}[self.library_mode]
+        self.library_status.configure(text=f"{len(entries)} {noun}" + (f"  ·  {published} PUBLISHED" if self.library_mode != "themes" else ""), fg=MUTED)
+        for entry in entries:
+            if self.library_mode == "master": self._master_row(entry)
+            elif self.library_mode in {"locations", "labels", "styles"}: self._collection_row(entry)
+            elif self.library_mode == "themes": self._theme_row(entry)
+            else: self._library_row(entry)
+
+    @staticmethod
+    def _entry_name(entry: dict) -> str:
+        return str(entry.get("name") or entry.get("artist") or entry.get("label") or entry.get("slug") or "")
+
+    def _master_row(self, entry: dict) -> None:
+        row = tk.Frame(self.library_list, bg="#0b0b24", padx=18, pady=12)
+        row.pack(fill="x", padx=1, pady=(1, 0)); row.grid_columnconfigure(0, weight=1)
+        name = str(entry.get("name") or entry.get("artist") or "Untitled artist")
+        release = str(entry.get("release") or "Bandcamp")
+        location = str(entry.get("primaryLocation") or entry.get("location") or "LOCATION UNVERIFIED")
+        styles = ", ".join(str(value).upper() for value in (entry.get("waters") or [])) or "STYLE REVIEW"
+        labels = ", ".join(str(value) for value in (entry.get("labels") or [])) or "NO LABEL MEMBERSHIP"
+        updated = release_date_label(entry.get("lastUpdated") or entry.get("releaseDate"))
+        tk.Label(row, text=name.upper(), bg="#0b0b24", fg=PAPER, font=("Segoe UI Semibold", 10), anchor="w").grid(row=0, column=0, sticky="w")
+        tk.Label(row, text=f"{location}   ·   {styles}", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=1, column=0, sticky="w", pady=(3, 0))
+        tk.Label(row, text=f"{release}   ·   {labels}   ·   {updated}", bg="#0b0b24", fg="#746f87", font=("Segoe UI", 8), anchor="w").grid(row=2, column=0, sticky="w", pady=(3, 0))
+        actions = tk.Frame(row, bg="#0b0b24"); actions.grid(row=0, column=1, rowspan=3)
+        for label, command in (
+            ("OPEN ARTIST", lambda item=entry: webbrowser.open(str(item.get("aquariumUrl") or item.get("url") or ""))),
+            ("BANDCAMP", lambda item=entry: webbrowser.open(str(item.get("bandcampArtistUrl") or item.get("bandcampUrl") or ""))),
+            ("EDIT", lambda item=entry: webbrowser.open(f"https://github.com/{REPOSITORY}/blob/main/github-pages/artists/{item.get('aquariumSlug') or item.get('slug')}.json")),
+            ("REBUILD", lambda item=entry: self._prepare_rebuild(item)),
+        ):
+            tk.Button(actions, text=label, command=command, bg="#0b0b24", fg=MUTED, activebackground="#0b0b24", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 7), padx=7, cursor="hand2").pack(side="left")
+        published = entry.get("status", "published") == "published"
+        tk.Button(row, text="ON" if published else "OFF", command=lambda item=entry: self._start_toggle(item), bg=LAVENDER if published else "#26243b", fg="#09091e" if published else MUTED, activebackground="#ded4ff", relief="flat", bd=0, font=("Segoe UI Semibold", 8), width=7, pady=7, cursor="hand2").grid(row=0, column=2, rowspan=3, padx=(8, 0))
+
+    def _prepare_rebuild(self, entry: dict) -> None:
+        self.artist.delete(0, "end"); self.artist.insert(0, str(entry.get("name") or entry.get("artist") or ""))
+        self.bandcamp.delete(0, "end"); self.bandcamp.insert(0, str(entry.get("bandcampArtistUrl") or entry.get("bandcampUrl") or ""))
+        style = str(entry.get("visualStyle") or "cosmic")
+        self._select_style(style if style in self.theme_canvases else "cosmic", announce=False)
+        self._show_creator(); self.status.configure(text="READY TO REBUILD THE CANONICAL ARTIST AQUARIUM", fg=LAVENDER)
+
+    def _collection_row(self, entry: dict) -> None:
+        row = tk.Frame(self.library_list, bg="#0b0b24", padx=20, pady=14)
+        row.pack(fill="x", padx=1, pady=(1, 0)); row.grid_columnconfigure(0, weight=1)
+        name = str(entry.get("name") or entry.get("slug") or "Untitled collection")
+        count = int(entry.get("memberCount") or 0)
+        kind = "STYLE" if entry.get("type") in {"genre", "style"} else str(entry.get("type") or "collection").upper()
+        tk.Label(row, text=name.upper(), bg="#0b0b24", fg=PAPER, font=("Segoe UI Semibold", 10), anchor="w").grid(row=0, column=0, sticky="w")
+        tk.Label(row, text=f"{count} CANONICAL ARTIST" + ("" if count == 1 else "S") + f"  ·  {kind} DOORWAY  ·  NO DUPLICATE ARTIST AQUARIA", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=1, column=0, sticky="w", pady=(4, 0))
+        actions = tk.Frame(row, bg="#0b0b24"); actions.grid(row=0, column=1, rowspan=2)
+        url = str(entry.get("url") or f"{PAGES_BASE}/collections/{entry.get('slug')}/")
+        json_url = f"{PAGES_BASE}/collections/{entry.get('slug')}.json"
+        tk.Button(actions, text="OPEN", command=lambda: webbrowser.open(url), bg="#0b0b24", fg=MUTED, activebackground="#0b0b24", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 7), padx=8, cursor="hand2").pack(side="left")
+        tk.Button(actions, text="VIEW ARTISTS", command=lambda: webbrowser.open(json_url), bg="#0b0b24", fg=MUTED, activebackground="#0b0b24", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 7), padx=8, cursor="hand2").pack(side="left")
+        if entry.get("type") == "location":
+            tk.Button(actions, text="REFRESH RESEARCH", command=lambda item=entry: self._refresh_location(item), bg="#0b0b24", fg=MUTED, activebackground="#0b0b24", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 7), padx=8, cursor="hand2").pack(side="left")
+        published = entry.get("status") == "published"
+        if entry.get("type") in {"genre", "style"}:
+            tk.Label(row, text="LIVE", bg="#161330", fg=LAVENDER, font=("Segoe UI Semibold", 8), width=7, pady=8).grid(row=0, column=2, rowspan=2, padx=(8, 0))
+        else:
+            tk.Button(row, text="ON" if published else "OFF", command=lambda item=entry: self._start_location_toggle(item), bg=LAVENDER if published else "#26243b", fg="#09091e" if published else MUTED, activebackground="#ded4ff", relief="flat", bd=0, font=("Segoe UI Semibold", 8), width=7, pady=7, cursor="hand2").grid(row=0, column=2, rowspan=2, padx=(8, 0))
+
+    def _refresh_location(self, entry: dict) -> None:
+        self.location_entry.delete(0, "end"); self.location_entry.insert(0, str(entry.get("name") or ""))
+        self._start_create_location()
+
+    def _theme_row(self, entry: dict) -> None:
+        row = tk.Frame(self.library_list, bg="#0b0b24", padx=20, pady=15)
+        row.pack(fill="x", padx=1, pady=(1, 0)); row.grid_columnconfigure(0, weight=1)
+        tk.Label(row, text=str(entry.get("name") or "THEME"), bg="#0b0b24", fg=PAPER, font=("Segoe UI Semibold", 10), anchor="w").grid(row=0, column=0, sticky="w")
+        tk.Label(row, text=f"{int(entry.get('memberCount') or 0)} ARTIST AQUARIA  ·  CREATIVE CHOICE, NEVER GENRE-ASSIGNED", bg="#0b0b24", fg=MUTED, font=("Segoe UI", 8), anchor="w").grid(row=1, column=0, sticky="w", pady=(4, 0))
+        tk.Button(row, text="USE THEME", command=lambda item=entry: (self._select_style(str(item.get("id")), announce=False), self._show_creator()), bg="#0b0b24", fg=LAVENDER, activebackground="#0b0b24", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 8), padx=18, cursor="hand2").grid(row=0, column=1, rowspan=2)
 
     def _location_row(self, entry: dict) -> None:
         row = tk.Frame(self.library_list, bg="#0b0b24", padx=20, pady=14)
@@ -335,6 +486,36 @@ class CosmicAquariumStudio(tk.Tk):
             run_id = self._find_run(gh, started, REPOSITORY, LOCATION_WORKFLOW)
             if self._watch_run(gh, run_id, REPOSITORY) != "success":
                 raise RuntimeError(self._workflow_failure(gh, run_id, REPOSITORY, "The location research could not be completed."))
+            self._load_library()
+        except Exception as error:
+            self.after(0, lambda message=str(error): self._library_error(message))
+
+    def _start_create_label(self) -> None:
+        if self._library_busy:
+            return
+        name = self.label_name_entry.get().strip()
+        url = self.label_url_entry.get().strip()
+        if not name:
+            messagebox.showerror("Label Library", "Enter the label name.")
+            return
+        try:
+            parsed = urllib.parse.urlparse(url)
+            if parsed.scheme != "https" or not parsed.hostname or parsed.username or parsed.password:
+                raise ValueError
+        except ValueError:
+            messagebox.showerror("Label Library", "Enter the public HTTPS label or roster URL.")
+            return
+        self._library_busy = True
+        self.library_status.configure(text=f"RESEARCHING {name.upper()}…", fg=LAVENDER)
+        threading.Thread(target=self._run_create_label, args=(name, url), daemon=True).start()
+
+    def _run_create_label(self, name: str, url: str) -> None:
+        try:
+            gh = self._github_cli(); started = dt.datetime.now(dt.timezone.utc)
+            subprocess.run([gh, "workflow", "run", LABEL_WORKFLOW, "--repo", REPOSITORY, "-f", f"label_name={name}", "-f", f"website={url}", "-f", f"roster_url={url}", "-f", "max_artists=100", "-f", "build_missing=true"], check=True, capture_output=True, text=True, creationflags=self._creation_flags())
+            run_id = self._find_run(gh, started, REPOSITORY, LABEL_WORKFLOW)
+            if self._watch_run(gh, run_id, REPOSITORY) != "success":
+                raise RuntimeError(self._workflow_failure(gh, run_id, REPOSITORY, "The label research could not be completed."))
             self._load_library()
         except Exception as error:
             self.after(0, lambda message=str(error): self._library_error(message))

@@ -1,6 +1,6 @@
 # Cosmic Aquaria Studio
 
-A deliberately minimal Windows creator for publishing artist editions.
+A Windows creator and private control room for publishing and operating Cosmic Aquaria.
 
 The interface asks for only:
 
@@ -8,6 +8,8 @@ The interface asks for only:
 - official Bandcamp URL
 - delivery email
 - one of seven visual flower worlds selected by thumbnail
+
+The Library area exposes the canonical Master Library plus Locations, Labels, Styles, Daily Discovery, Published Aquaria and Themes. Search, filtering and sorting operate over the generated catalogue. Location and Label research run in serialized background workflows, reuse canonical Artist Aquaria and create reviewable Collection drafts before publication.
 
 Create dispatches the repository's `create-artist.yml` workflow using the authenticated GitHub CLI. GitHub builds the artist page, imports public track metadata when available, creates and independently decode-verifies the floral QR, and publishes GitHub Pages. The Studio then hands the finished link and QR to the existing secret-enabled Resend workflow.
 

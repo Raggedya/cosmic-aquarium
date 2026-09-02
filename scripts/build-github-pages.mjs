@@ -90,6 +90,15 @@ const canonicalArtists=[...canonicalCandidates.entries()].map(([id,entry])=>({
   aquariumSlug:entry.slug,
   aquariumUrl:entry.url,
   status:entry.status,
+  release:entry.release,
+  releaseDate:entry.releaseDate,
+  trackCount:entry.trackCount,
+  visualStyle:entry.visualStyle,
+  waters:entry.waters,
+  lastUpdated:entry.releaseDate || null,
+  memberships:[],
+  primaryLocation:null,
+  labels:[],
 })).sort((a,b)=>a.name.localeCompare(b.name));
 await fs.writeFile(path.join(pages,'artists-index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:canonicalArtists},null,2)+'\n');
 await fs.writeFile(path.join(pages,'aquariums.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),aquariums:aquariumRegistry},null,2)+'\n');
@@ -108,7 +117,10 @@ for(const filename of collectionFiles){
       const artist=canonicalById.get(membership.artistId);
       if(!artist||seen.has(artist.id)) continue;
       seen.add(artist.id);
-      members.push({...membership,artistId:artist.id,artistName:artist.name,aquariumSlug:artist.aquariumSlug,aquariumUrl:artist.aquariumUrl,bandcampArtistUrl:artist.bandcampArtistUrl});
+      members.push({...membership,artistId:artist.id,artistName:artist.name,aquariumSlug:artist.aquariumSlug,aquariumUrl:artist.aquariumUrl,bandcampArtistUrl:artist.bandcampArtistUrl,waters:artist.waters||[],styles:artist.waters||[]});
+      artist.memberships.push({id:source.id||source.slug,slug:source.slug,name:source.name,type:source.type,status:source.status||'draft'});
+      if(source.type==='location'&&!artist.primaryLocation&&membership.displayEnabled!==false&&['verified','high_confidence'].includes(membership.verificationStatus)) artist.primaryLocation=source.location?.canonicalLocation||source.name;
+      if(source.type==='label'&&membership.displayEnabled!==false) artist.labels.push(source.name);
     }
     const collection={...source,schemaVersion:1,members,updatedAt:source.updatedAt||new Date().toISOString()};
     await fs.writeFile(path.join(pages,'collections',source.slug+'.json'),JSON.stringify(collection,null,2)+'\n');
@@ -117,6 +129,22 @@ for(const filename of collectionFiles){
     collectionRegistry.push({id:collection.id||collection.slug,slug:collection.slug,name:collection.name,type:collection.type,status:collection.status||'draft',memberCount:members.filter(member=>member.displayEnabled!==false&&['verified','high_confidence'].includes(member.verificationStatus)).length,url:'https://raggedya.github.io/cosmic-aquarium/collections/'+encodeURIComponent(collection.slug)+'/',location:collection.location||null,updatedAt:collection.updatedAt});
   }catch(error){console.warn('Skipped invalid collection manifest: '+filename,error)}
 }
+for(const water of ['heavy','dreamy','quiet','electronic','dark','loud','strange']){
+  const slug='style-'+water;
+  const members=canonicalArtists.filter(artist=>artist.status==='published'&&(artist.waters||[]).includes(water)).map(artist=>({
+    artistId:artist.id,artistName:artist.name,aquariumSlug:artist.aquariumSlug,aquariumUrl:artist.aquariumUrl,
+    bandcampArtistUrl:artist.bandcampArtistUrl,verificationStatus:'verified',verificationScore:1,
+    source:'automatic-style-classification',evidence:`Canonical ${water.toUpperCase()} style membership`,displayEnabled:true,
+    waters:artist.waters||[],styles:artist.waters||[],
+  }));
+  const collection={schemaVersion:1,id:'style:'+water,slug,name:water.toUpperCase(),type:'genre',description:`Canonical ${water.toUpperCase()} style doorway.`,status:'published',instruction:'TOUCH AN ARTIST',theme:'cosmic',createdAt:new Date().toISOString(),updatedAt:new Date().toISOString(),members};
+  await fs.writeFile(path.join(pages,'collections',slug+'.json'),JSON.stringify(collection,null,2)+'\n');
+  const directory=path.join(pages,'collections',slug);await fs.mkdir(directory,{recursive:true});
+  await fs.writeFile(path.join(directory,'index.html'),renderCollection(collection));
+  collectionRegistry.push({id:collection.id,slug,name:collection.name,type:collection.type,status:collection.status,memberCount:members.length,url:'https://raggedya.github.io/cosmic-aquarium/collections/'+slug+'/',location:null,updatedAt:collection.updatedAt});
+  for(const artist of canonicalArtists.filter(item=>(item.waters||[]).includes(water))) artist.memberships.push({id:collection.id,slug,name:collection.name,type:'genre',status:'published'});
+}
+await fs.writeFile(path.join(pages,'artists-index.json'),JSON.stringify({schemaVersion:2,generatedAt:new Date().toISOString(),artists:canonicalArtists},null,2)+'\n');
 await fs.writeFile(path.join(pages,'collections','index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),collections:collectionRegistry},null,2)+'\n');
 await fs.writeFile(path.join(pages,'index.html'),renderLanding());
 console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s) and '+collectionRegistry.length+' collection(s).');

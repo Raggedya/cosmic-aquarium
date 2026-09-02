@@ -347,7 +347,7 @@ def research_location(location_query: str, max_artists: int, genre: str | None, 
         "name": location["displayName"],
         "type": "location",
         "description": "Independent Bandcamp artists strongly associated with " + location["canonicalLocation"] + ".",
-        "status": "published" if any(item["displayEnabled"] for item in members) else "draft",
+        "status": "draft",
         "instruction": "TOUCH AN ARTIST",
         "theme": "location",
         "createdAt": now,
@@ -359,13 +359,14 @@ def research_location(location_query: str, max_artists: int, genre: str | None, 
     if prior_path.exists():
         prior = json.loads(prior_path.read_text(encoding="utf-8"))
         collection["createdAt"] = prior.get("createdAt", now)
+        collection["status"] = prior.get("status", "draft")
         merged = {item["artistId"]: item for item in prior.get("members", [])}
         merged.update({item["artistId"]: item for item in members})
         collection["members"] = list(merged.values())
     prior_path.write_text(json.dumps(collection, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     counts = {key: sum(1 for item in candidates if item.verificationStatus == key) for key in ("verified", "high_confidence", "probable", "unverified", "rejected")}
     run_id = now.replace(":", "").replace("-", "") + "-" + slug
-    log = {"id": run_id, "location": location, "timestamp": now, "sources": provider_log, "candidatesFound": len(candidates), **counts, "duplicates": sum(1 for item in candidates if item.existingAquarium), "newArtists": sum(1 for item in candidates if not item.existingAquarium), "errors": sum(1 for item in candidates if item.verificationStatus == "unverified"), "durationSeconds": round(time.monotonic() - started, 2), "collectionSlug": slug}
+    log = {"id": run_id, "location": location, "timestamp": now, "sources": provider_log, "candidatesFound": len(candidates), **counts, "duplicates": sum(1 for item in candidates if item.existingAquarium), "newArtists": sum(1 for item in candidates if not item.existingAquarium), "errors": sum(1 for item in candidates if item.verificationStatus == "unverified"), "durationSeconds": round(time.monotonic() - started, 2), "collectionSlug": slug, "candidates": [asdict(item) for item in candidates]}
     (RESEARCH_DIR / f"{run_id}.json").write_text(json.dumps(log, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return {"collection": collection, "research": log, "candidates": [asdict(item) for item in candidates]}
 

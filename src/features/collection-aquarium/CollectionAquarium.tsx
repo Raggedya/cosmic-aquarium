@@ -8,6 +8,7 @@ import { nextVisibleMembers, publishableMembers, shuffledMemberDeck } from '@/sr
 import type { ArtistCollection, CollectionMember } from '@/src/types/collection';
 
 const flowers = ['/flowers/anemone.png', '/flowers/cosmos.png', '/flowers/poppy.png'];
+const waters = ['heavy', 'dreamy', 'quiet', 'electronic', 'dark', 'loud', 'strange'] as const;
 
 function secureRandom() {
   const values = new Uint32Array(1);
@@ -19,6 +20,7 @@ export function CollectionAquarium({ collectionSlug }: { collectionSlug: string 
   const [collection, setCollection] = useState<ArtistCollection | null>(null);
   const [visible, setVisible] = useState<CollectionMember[]>([]);
   const [selected, setSelected] = useState<CollectionMember | null>(null);
+  const [activeWater, setActiveWater] = useState<string | null>(null);
   const [announcement, setAnnouncement] = useState('Touch an unknown artist object.');
   const deck = useRef<CollectionMember[]>([]);
 
@@ -33,7 +35,8 @@ export function CollectionAquarium({ collectionSlug }: { collectionSlug: string 
         const members = publishableMembers(next);
         deck.current = shuffledMemberDeck(members, secureRandom);
         setCollection(next);
-        setVisible(nextVisibleMembers(deck.current, matchMedia('(max-width: 430px)').matches ? 10 : 14));
+        setActiveWater(next.type === 'location' ? null : 'anywhere');
+        setVisible(next.type === 'location' ? [] : nextVisibleMembers(deck.current, matchMedia('(max-width: 430px)').matches ? 10 : 14));
         setAnnouncement(`${next.name}. ${members.length} artists are waiting to be discovered.`);
       })
       .catch((error: unknown) => {
@@ -48,8 +51,18 @@ export function CollectionAquarium({ collectionSlug }: { collectionSlug: string 
     top: `${18 + ((index * 23) % 64)}%`,
     animationDelay: `${-(index * 2.7)}s`,
     animationDuration: `${24 + (index % 5) * 3}s`,
-    transform: `scale(${.66 + (index % 4) * .11})`,
+    '--object-scale': String(.66 + (index % 4) * .11),
   })), [visible]);
+
+  function chooseWater(water: string) {
+    if (!collection) return;
+    const members = publishableMembers(collection).filter((member) => water === 'anywhere' || [...(member.waters ?? []), ...(member.styles ?? [])].map((value) => value.toLowerCase()).includes(water));
+    if (!members.length) return;
+    deck.current = shuffledMemberDeck(members, secureRandom);
+    setVisible(nextVisibleMembers(deck.current, matchMedia('(max-width: 430px)').matches ? 10 : 14));
+    setActiveWater(water);
+    setAnnouncement(`${collection.name}. Drifting through ${water === 'anywhere' ? 'all artists' : water}.`);
+  }
 
   function reveal(member: CollectionMember) {
     setSelected(member);
@@ -71,9 +84,17 @@ export function CollectionAquarium({ collectionSlug }: { collectionSlug: string 
       <header className="collection-title">
         <Link className="collection-home" href="/" aria-label="Return to Cosmic Aquaria home"><span aria-hidden="true">✦</span></Link>
         <h1>{collection?.name ?? 'COSMIC AQUARIA'}</h1>
-        <p>{collection?.instruction ?? 'TOUCH AN ARTIST'}</p>
+        <p>{activeWater && activeWater !== 'anywhere' ? `${activeWater.toUpperCase()} · TOUCH AN ARTIST` : collection?.instruction ?? 'TOUCH AN ARTIST'}</p>
       </header>
-      <div className="collection-field" aria-label="Unknown artist objects">
+      {collection?.type === 'location' && activeWater === null ? (
+        <section className="collection-portals" aria-label="Choose how to drift through this location">
+          {[{id: 'anywhere', label: collection.location?.city ?? collection.name, hero: true}, ...waters.map((water) => ({id: water, label: water.toUpperCase(), hero: false}))].map((choice) => {
+            const available = choice.hero || publishableMembers(collection).some((member) => [...(member.waters ?? []), ...(member.styles ?? [])].map((value) => value.toLowerCase()).includes(choice.id));
+            return <button key={choice.id} type="button" disabled={!available} className={`collection-portal ${choice.hero ? 'collection-portal-main' : `collection-portal-${choice.id}`}`} onClick={() => chooseWater(choice.id)} aria-label={`Discover ${choice.hero ? 'any' : choice.label} artists from ${collection.name}`}><img src={`/doorway/world-${choice.hero ? 'anywhere' : choice.id}.webp`} alt="" /><span>{choice.label}</span></button>;
+          })}
+        </section>
+      ) : null}
+      <div className="collection-field" hidden={collection?.type === 'location' && activeWater === null} aria-label="Unknown artist objects">
         {visible.map((member, index) => (
           <button key={member.artistId} type="button" className="collection-object" style={positions[index] as CSSProperties} onClick={() => reveal(member)} aria-label="Discover this unknown artist">
             <img src={flowers[index % flowers.length]} alt="" draggable="false" />

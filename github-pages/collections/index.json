@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-02T06:19:28.011Z",
+  "generatedAt": "2026-09-02T06:59:56.996Z",
   "collections": [
     {
       "id": "location:portland-oregon",
@@ -26,6 +26,83 @@
         "lastResearchedAt": "2026-09-02T06:10:39Z"
       },
       "updatedAt": "2026-09-02T06:10:39Z"
+    },
+    {
+      "id": "style:heavy",
+      "slug": "style-heavy",
+      "name": "HEAVY",
+      "type": "genre",
+      "status": "published",
+      "memberCount": 38,
+      "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-heavy/",
+      "location": null,
+      "updatedAt": "2026-09-02T06:59:56.905Z"
+    },
+    {
+      "id": "style:dreamy",
+      "slug": "style-dreamy",
+      "name": "DREAMY",
+      "type": "genre",
+      "status": "published",
+      "memberCount": 40,
+      "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-dreamy/",
+      "location": null,
+      "updatedAt": "2026-09-02T06:59:56.914Z"
+    },
+    {
+      "id": "style:quiet",
+      "slug": "style-quiet",
+      "name": "QUIET",
+      "type": "genre",
+      "status": "published",
+      "memberCount": 39,
+      "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-quiet/",
+      "location": null,
+      "updatedAt": "2026-09-02T06:59:56.924Z"
+    },
+    {
+      "id": "style:electronic",
+      "slug": "style-electronic",
+      "name": "ELECTRONIC",
+      "type": "genre",
+      "status": "published",
+      "memberCount": 38,
+      "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-electronic/",
+      "location": null,
+      "updatedAt": "2026-09-02T06:59:56.940Z"
+    },
+    {
+      "id": "style:dark",
+      "slug": "style-dark",
+      "name": "DARK",
+      "type": "genre",
+      "status": "published",
+      "memberCount": 39,
+      "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-dark/",
+      "location": null,
+      "updatedAt": "2026-09-02T06:59:56.949Z"
+    },
+    {
+      "id": "style:loud",
+      "slug": "style-loud",
+      "name": "LOUD",
+      "type": "genre",
+      "status": "published",
+      "memberCount": 40,
+      "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-loud/",
+      "location": null,
+      "updatedAt": "2026-09-02T06:59:56.962Z"
+    },
+    {
+      "id": "style:strange",
+      "slug": "style-strange",
+      "name": "STRANGE",
+      "type": "genre",
+      "status": "published",
+      "memberCount": 34,
+      "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-strange/",
+      "location": null,
+      "updatedAt": "2026-09-02T06:59:56.972Z"
     }
   ]
 }

@@ -1,0 +1,96 @@
+name: Create or Refresh Label Library
+
+on:
+  workflow_dispatch:
+    inputs:
+      label_name:
+        description: Label name
+        required: true
+        type: string
+      website:
+        description: Public label website
+        required: true
+        type: string
+      roster_url:
+        description: Optional public roster page
+        required: false
+        type: string
+      max_artists:
+        description: Maximum roster artists to inspect
+        required: true
+        default: "100"
+        type: string
+      build_missing:
+        description: Build missing canonical Artist Aquaria
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cosmic-aquarium-publishing
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Research the administrator-supplied label roster
+        shell: bash
+        env:
+          LABEL_NAME: ${{ inputs.label_name }}
+          WEBSITE: ${{ inputs.website }}
+          ROSTER_URL: ${{ inputs.roster_url }}
+          MAX_ARTISTS: ${{ inputs.max_artists }}
+          BUILD_MISSING: ${{ inputs.build_missing }}
+        run: |
+          set -euo pipefail
+          arguments=(--label-name "$LABEL_NAME" --website "$WEBSITE" --max-artists "$MAX_ARTISTS")
+          if [[ -n "$ROSTER_URL" ]]; then arguments+=(--roster-url "$ROSTER_URL"); fi
+          if [[ "$BUILD_MISSING" == "true" ]]; then arguments+=(--build-missing); fi
+          python scripts/label_collections.py "${arguments[@]}"
+      - name: Build and verify the complete public site
+        run: |
+          node --experimental-strip-types scripts/build-github-pages.mjs
+          npm test
+          npm run typecheck
+          python -m unittest discover -s tests -p "*_test.py"
+      - name: Commit the label and canonical artists
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "Cosmic Aquaria Label Research"
+          git config user.email "cosmic-aquarium@users.noreply.github.com"
+          git add automation github-pages
+          if ! git diff --cached --quiet; then
+            git commit -m "Create ${{ inputs.label_name }} label library"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: github-pages
+      - name: Publish permanent Label and Artist URLs
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Sync canonical artists and collections
+        env:
+          COSMIC_WORKER_SYNC_TOKEN: ${{ secrets.COSMIC_WORKER_SYNC_TOKEN }}
+        run: node scripts/sync-worker.mjs

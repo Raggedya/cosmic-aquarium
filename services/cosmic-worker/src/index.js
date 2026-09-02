@@ -101,6 +101,11 @@ async function randomAquarium(url, env) {
 
 async function randomCollectionArtist(url, env, slug) {
   const exclude = clean(url.searchParams.get('exclude'), 160);
+  const requestedWater = clean(url.searchParams.get('water'),24)?.toLowerCase() || null;
+  const water = requestedWater && WATERS.has(requestedWater) ? requestedWater : null;
+  const recent = (url.searchParams.get('recent') || '').split(',').map(value=>value.trim()).filter(Boolean).slice(0,8);
+  const exclusions = [exclude,...recent].filter(Boolean);
+  const exclusionSql = exclusions.length ? ` AND ca.artist_id NOT IN (${exclusions.map(()=>'?').join(',')})` : '';
   const entry = await env.DB.prepare(`SELECT ar.primary_aquarium_id AS id,a.slug,a.artist,a.release_title,a.aquarium_url,ca.artist_id
     FROM collection c
     INNER JOIN collection_artist ca ON ca.collection_id=c.id
@@ -109,10 +114,11 @@ async function randomCollectionArtist(url, env, slug) {
     WHERE c.slug=? AND c.status='published' AND ca.display_enabled=1
       AND ca.verification_status IN ('verified','high_confidence')
       AND ar.status='published' AND a.status='published' AND a.disabled_at IS NULL
-      AND (? IS NULL OR ca.artist_id<>?)
+      AND (? IS NULL OR EXISTS (SELECT 1 FROM aquarium_water aw WHERE aw.aquarium_id=ar.primary_aquarium_id AND aw.water=?))
+      ${exclusionSql}
     ORDER BY RANDOM() LIMIT 1`)
-    .bind(slug,exclude,exclude).first();
-  return entry ? json(entry,200,CORS) : json({error:'no_collection_artist_available'},404,CORS);
+    .bind(slug,water,water,...exclusions).first();
+  return entry ? json({...entry,water:water||'anywhere'},200,CORS) : json({error:'no_collection_artist_available'},404,CORS);
 }
 
 async function syncCatalogue(request, env) {
@@ -133,21 +139,22 @@ async function syncCatalogue(request, env) {
   for (const item of artists) {
     if (!item?.id || !item?.bandcampArtistUrl) continue;
     const now = item.updatedAt || new Date().toISOString();
+    const primaryLocationMembership = (item.memberships||[]).find(membership=>membership.type==='location');
     statements.push(env.DB.prepare(`INSERT INTO artist
-      (id,name,canonical_name,bandcamp_artist_url,primary_aquarium_id,status,created_at,updated_at)
-      VALUES (?,?,?,?,?,?,?,?)
-      ON CONFLICT(id) DO UPDATE SET name=excluded.name,canonical_name=excluded.canonical_name,bandcamp_artist_url=excluded.bandcamp_artist_url,primary_aquarium_id=excluded.primary_aquarium_id,status=excluded.status,updated_at=excluded.updated_at`)
-      .bind(item.id,item.name||'',item.canonicalName||String(item.name||'').toLowerCase(),item.bandcampArtistUrl,null,item.status==='disabled'?'disabled':'published',item.createdAt||now,now));
+      (id,name,canonical_name,bandcamp_artist_url,primary_aquarium_id,status,created_at,updated_at,display_name,slug,primary_location_id,country,metadata)
+      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
+      ON CONFLICT(id) DO UPDATE SET name=excluded.name,canonical_name=excluded.canonical_name,bandcamp_artist_url=excluded.bandcamp_artist_url,primary_aquarium_id=excluded.primary_aquarium_id,status=excluded.status,updated_at=excluded.updated_at,display_name=excluded.display_name,slug=excluded.slug,primary_location_id=excluded.primary_location_id,country=excluded.country,metadata=excluded.metadata`)
+      .bind(item.id,item.name||'',item.canonicalName||String(item.name||'').toLowerCase(),item.bandcampArtistUrl,null,item.status==='disabled'?'disabled':'published',item.createdAt||now,now,item.name||'',item.aquariumSlug||null,primaryLocationMembership?.id||null,String(item.primaryLocation||'').split(',').at(-1)?.trim()||null,JSON.stringify({waters:item.waters||[],labels:item.labels||[],memberships:item.memberships||[],release:item.release||null,releaseDate:item.releaseDate||null,trackCount:item.trackCount||0})));
   }
   for (const item of aquariums) {
     if (!item?.id || !item?.url) continue;
     const status = item.status === 'disabled' ? 'disabled' : 'published';
     const disabledAt = status === 'disabled' ? (item.disabledAt||new Date().toISOString()) : null;
     statements.push(env.DB.prepare(`INSERT INTO aquarium
-      (id,slug,artist,release_title,bandcamp_url,aquarium_url,theme,status,daily_batch_id,created_at,published_at,disabled_at,artist_id)
-      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)
-      ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at),disabled_at=excluded.disabled_at,artist_id=excluded.artist_id`)
-      .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,status,item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString(),disabledAt,item.canonicalArtistId||null));
+      (id,slug,artist,release_title,bandcamp_url,aquarium_url,theme,status,daily_batch_id,created_at,published_at,disabled_at,artist_id,type,configuration,updated_at)
+      VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+      ON CONFLICT(id) DO UPDATE SET artist=excluded.artist,release_title=excluded.release_title,bandcamp_url=COALESCE(excluded.bandcamp_url,aquarium.bandcamp_url),aquarium_url=excluded.aquarium_url,theme=COALESCE(excluded.theme,aquarium.theme),status=excluded.status,daily_batch_id=COALESCE(excluded.daily_batch_id,aquarium.daily_batch_id),published_at=COALESCE(aquarium.published_at,excluded.published_at),disabled_at=excluded.disabled_at,artist_id=excluded.artist_id,type=excluded.type,configuration=excluded.configuration,updated_at=excluded.updated_at`)
+      .bind(item.id,item.slug||item.id,item.artist||'',item.release||'',item.bandcampUrl||null,item.url,item.visualStyle||null,status,item.dailyBatchId||null,item.createdAt||new Date().toISOString(),item.publishedAt||new Date().toISOString(),disabledAt,item.canonicalArtistId||null,'artist',JSON.stringify({flowerCountMin:item.flowerCountMin||10,flowerCountMax:item.flowerCountMax||14,objectType:item.objectType||'flowers'}),item.updatedAt||new Date().toISOString()));
     statements.push(env.DB.prepare("DELETE FROM aquarium_water WHERE aquarium_id=? AND assigned_by='automatic' AND NOT EXISTS (SELECT 1 FROM aquarium_water WHERE aquarium_id=? AND assigned_by='manual')").bind(item.id,item.id));
     for (const water of [...new Set(Array.isArray(item.waters) ? item.waters.map(value=>String(value).toLowerCase()).filter(value=>WATERS.has(value)) : [])]) {
       statements.push(env.DB.prepare("INSERT OR IGNORE INTO aquarium_water (aquarium_id,water,assigned_by,confidence,updated_at) SELECT ?,?,?,?,? WHERE NOT EXISTS (SELECT 1 FROM aquarium_water WHERE aquarium_id=? AND assigned_by='manual')").bind(item.id,water,'automatic',null,new Date().toISOString(),item.id));
@@ -178,8 +185,8 @@ async function syncCatalogue(request, env) {
     for (const member of Array.isArray(item.members)?item.members:[]) {
       if (!member?.artistId) continue;
       statements.push(env.DB.prepare(`INSERT OR REPLACE INTO collection_artist
-        (collection_id,artist_id,verification_status,verification_score,source,evidence,display_enabled,added_at)
-        VALUES (?,?,?,?,?,?,?,?)`).bind(item.id,member.artistId,member.verificationStatus||'unverified',member.verificationScore??null,member.source||null,member.evidence||null,member.displayEnabled===true?1:0,member.addedAt||now));
+        (collection_id,artist_id,verification_status,verification_score,source,evidence,display_enabled,added_at,confidence,membership_status,administrator_override,updated_at)
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?)`).bind(item.id,member.artistId,member.verificationStatus||'unverified',member.verificationScore??null,member.source||null,member.evidence||null,member.displayEnabled===true?1:0,member.addedAt||now,member.confidence??member.verificationScore??null,member.status||'active',member.administratorOverride===true?1:0,now));
     }
   }
   if (statements.length) await env.DB.batch(statements);

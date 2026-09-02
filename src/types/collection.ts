@@ -11,6 +11,15 @@ export interface CanonicalArtist {
   aquariumUrl: string;
   status: 'published' | 'disabled';
   location?: string | null;
+  primaryLocation?: string | null;
+  release?: string | null;
+  releaseDate?: string | null;
+  trackCount?: number;
+  visualStyle?: string;
+  waters?: string[];
+  labels?: string[];
+  lastUpdated?: string | null;
+  memberships?: Array<{id: string; slug: string; name: string; type: CollectionType; status: string}>;
 }
 
 export interface CollectionMember {
@@ -25,6 +34,8 @@ export interface CollectionMember {
   evidence?: string | null;
   displayEnabled: boolean;
   addedAt?: string;
+  waters?: string[];
+  styles?: string[];
 }
 
 export interface LocationMetadata {

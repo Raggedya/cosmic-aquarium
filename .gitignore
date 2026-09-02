@@ -45,5 +45,7 @@ next-env.d.ts
 /dist/*.exe
 /desktop-dist/
 /desktop/cosmic-aquarium.ico
+/backups/
+/tmp/
 __pycache__/
 *.pyc

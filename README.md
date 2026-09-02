@@ -37,3 +37,9 @@ The Pages workflow deploys `github-pages/`. Artist URLs follow:
 `https://raggedya.github.io/cosmic-aquarium/<artist-slug>/`
 
 The primary Sites deployment continues to serve the polished development version and manifest-driven artist routes.
+
+## Master Library and Collections
+
+The Windows Studio is also the private control room for the canonical Master Library, Locations, Labels, Styles, Daily Discovery, Published Aquaria and Themes. The governing rule is **one Artist, one primary Artist Aquarium, many Collection doorways**. Album and track URLs on the same Bandcamp artist host resolve to the same canonical Artist identity.
+
+Locations and Labels contain memberships, verification evidence and publishing state; they do not contain copies of Artist Aquaria. The seven Styles are generated over the same canonical artists. See [the architecture and operator workflow](docs/master-library-architecture.md) and [the migration baseline](docs/migration-report-2026-09-02.md).
