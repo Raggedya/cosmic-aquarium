@@ -31,7 +31,12 @@ ARTISTS_DIR = ROOT / "github-pages" / "artists"
 COLLECTIONS_DIR = ROOT / "automation" / "collections"
 RESEARCH_DIR = ROOT / "automation" / "research"
 USER_AGENT = "CosmicAquariaLocationResearch/1.0 (+https://raggedya.github.io/cosmic-aquarium/)"
+SEARCH_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/128.0 Safari/537.36"
 MAX_RESPONSE_BYTES = 2_000_000
+
+DISCOVERY_ALIASES = {
+    "newcastle australia": ["Newcastle, NSW", "Newcastle NSW", "Mulubinba"],
+}
 
 KNOWN_LOCATIONS = {
     "portland oregon": ("Portland", "Oregon", "United States", 45.5152, -122.6784),
@@ -160,7 +165,7 @@ class DuckDuckGoProvider:
         query = f'site:bandcamp.com "{location["displayName"]}"' + (f' "{genre}"' if genre else "")
         endpoint = "https://html.duckduckgo.com/html/?" + urllib.parse.urlencode({"q": query})
         try:
-            document = fetch_text(endpoint)
+            document = fetch_text(endpoint, user_agent=SEARCH_USER_AGENT)
         except Exception:
             return []
         links = re.findall(r'href=["\']([^"\']+)["\']', document, flags=re.I)
@@ -171,6 +176,34 @@ class DuckDuckGoProvider:
                 link = urllib.parse.parse_qs(parsed.query).get("uddg", [""])[0]
             decoded.append(link)
         return unique_bandcamp_roots(decoded, limit)
+
+
+class YahooSearchProvider:
+    """Public web-search fallback used when the other result feeds omit Bandcamp pages."""
+
+    name = "yahoo-html-public-search"
+
+    def discover(self, location: dict, genre: str | None, limit: int) -> list[str]:
+        location_key = ascii_key(location.get("canonicalLocation") or location.get("displayName") or "")
+        phrases = list(dict.fromkeys([
+            *(location.get("aliases") or []),
+            *DISCOVERY_ALIASES.get(location_key, []),
+        ]))
+        urls: list[str] = []
+        for phrase in phrases:
+            query = f'site:bandcamp.com "{phrase}"' + (f' "{genre}"' if genre else "")
+            endpoint = "https://search.yahoo.com/search?" + urllib.parse.urlencode({"p": query, "n": min(limit, 100)})
+            try:
+                document = html.unescape(fetch_text(endpoint, user_agent=SEARCH_USER_AGENT))
+            except Exception:
+                continue
+            urls.extend(re.findall(r'href=["\']([^"\']+)["\']', document, flags=re.I))
+            urls.extend(urllib.parse.unquote(match) for match in re.findall(r'/RU=([^/]+)/RK=', document, flags=re.I))
+            urls = unique_bandcamp_roots(urls, limit)
+            if len(urls) >= limit:
+                break
+            time.sleep(.25)
+        return unique_bandcamp_roots(urls, limit)
 
 
 def unique_bandcamp_roots(values: list[str], limit: int) -> list[str]:
@@ -190,8 +223,8 @@ def unique_bandcamp_roots(values: list[str], limit: int) -> list[str]:
     return result
 
 
-def fetch_text(url: str) -> str:
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html,application/xhtml+xml,application/rss+xml"})
+def fetch_text(url: str, *, user_agent: str = USER_AGENT) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": user_agent, "Accept": "text/html,application/xhtml+xml,application/rss+xml"})
     with urllib.request.urlopen(request, timeout=20) as response:
         content_type = response.headers.get("content-type", "")
         if not any(kind in content_type for kind in ("text", "xml", "html")):
@@ -279,7 +312,7 @@ def research_location(location_query: str, max_artists: int, genre: str | None, 
     started = time.monotonic()
     now = dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     location = normalize_location(location_query, allow_network=allow_network_geocode)
-    providers: list[DiscoveryProvider] = [BingRssProvider(), DuckDuckGoProvider()]
+    providers: list[DiscoveryProvider] = [BingRssProvider(), DuckDuckGoProvider(), YahooSearchProvider()]
     urls = unique_bandcamp_roots(candidate_urls or [], max_artists * 4)
     provider_log = []
     for provider in providers:

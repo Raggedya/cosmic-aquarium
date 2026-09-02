@@ -2,6 +2,7 @@ import importlib.util
 import pathlib
 import sys
 import unittest
+from unittest import mock
 
 
 MODULE_PATH = pathlib.Path(__file__).resolve().parents[1] / "scripts" / "location_collections.py"
@@ -39,6 +40,18 @@ class LocationCollectionTests(unittest.TestCase):
         status, score, _ = MODULE.verify_location({"profileLocation":"Seattle, Washington","document":""}, location)
         self.assertEqual(status, "rejected")
         self.assertEqual(score, 0.0)
+
+    def test_yahoo_redirects_are_decoded_into_canonical_bandcamp_roots(self):
+        document = (
+            '<a href="https://r.search.yahoo.com/x/RU=https%3a%2f%2fexample.bandcamp.com%2falbum%2frelease/RK=2/RS=x">'
+            'Example</a>'
+        )
+        with mock.patch.object(MODULE, "fetch_text", return_value=document):
+            with mock.patch.object(MODULE.time, "sleep"):
+                found = MODULE.YahooSearchProvider().discover(
+                    MODULE.normalize_location("Melbourne, Australia", allow_network=False), None, 10
+                )
+        self.assertEqual(found, ["https://example.bandcamp.com/"])
 
 
 if __name__ == "__main__":
