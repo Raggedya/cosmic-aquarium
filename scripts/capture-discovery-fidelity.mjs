@@ -59,7 +59,7 @@ for (const size of sizes) {
   }));
 
   const catalogue = await page.evaluate(async () => (await (await fetch('./aquariums.json')).json()).aquariums);
-  const release = catalogue.find((entry) => entry.status === 'published' && entry.waters?.includes('quiet')) || catalogue.find((entry) => entry.status === 'published');
+  const release = catalogue.find((entry) => entry.status === 'published' && entry.waters?.includes('dark')) || catalogue.find((entry) => entry.status === 'published');
   const playerUrl = new URL(baseUrl);
   playerUrl.searchParams.set('release', release.slug);
   playerUrl.searchParams.set('categories', release.waters?.[0] || 'anything');
@@ -67,16 +67,17 @@ for (const size of sizes) {
   await page.locator('.player-screen.is-active').waitFor();
   const bubbleBefore = await page.locator('.bubble-tube').evaluate((element) => element.toDataURL());
   await page.locator('.bandcamp-transport iframe').focus();
-  await page.waitForFunction(() => document.querySelector('.bubble-visualiser')?.getAttribute('data-playback') === 'playing');
+  await page.waitForFunction(() => document.querySelector('.liquid-surface')?.getAttribute('data-playback') === 'playing');
   await page.waitForTimeout(900);
-  const visualiserBefore = await page.locator('.bubble-visualiser').evaluate((element) => element.toDataURL());
+  const liquidBefore = await page.locator('.liquid-surface').evaluate((element) => element.toDataURL());
   await page.waitForTimeout(700);
   const bubbleAfter = await page.locator('.bubble-tube').evaluate((element) => element.toDataURL());
-  const visualiserAfter = await page.locator('.bubble-visualiser').evaluate((element) => element.toDataURL());
+  const liquidAfter = await page.locator('.liquid-surface').evaluate((element) => element.toDataURL());
   await page.screenshot({ path: path.join(outputDirectory, `${label}-player-playing-${size.width}x${size.height}.png`) });
-  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-bubble-sparse-${size.width}x${size.height}.png`) });
+  await page.waitForTimeout(2400);
+  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-tall-peak-${size.width}x${size.height}.png`) });
   await page.locator('.bandcamp-transport iframe').focus();
-  await page.waitForFunction(() => document.querySelector('.bubble-visualiser')?.getAttribute('data-playback') === 'idle');
+  await page.waitForFunction(() => document.querySelector('.liquid-surface')?.getAttribute('data-playback') === 'idle');
   await page.waitForTimeout(420);
   await page.screenshot({ path: path.join(outputDirectory, `${label}-player-settling-${size.width}x${size.height}.png`) });
   await page.waitForTimeout(1500);
@@ -101,25 +102,14 @@ for (const size of sizes) {
     const artist = artistsById.get(entry.canonicalArtistId) || {};
     return `${artist.primaryLocation || ''} ${(entry.waters || []).join(' ')} ${entry.releaseDate || ''} ${(artist.labels || []).join(' ')} SUPPORT THE ARTIST`.length;
   };
-  const richEntry = catalogue.find((entry) => entry.status === 'published' && entry.waters?.includes('loud')) || release;
-  const richUrl = new URL(baseUrl);
-  richUrl.searchParams.set('release',richEntry.slug);
-  richUrl.searchParams.set('categories',richEntry.waters?.[0] || 'anything');
-  await page.goto(richUrl.toString(), { waitUntil: 'networkidle' });
-  await page.locator('.player-screen.is-active').waitFor();
-  await page.locator('.bandcamp-transport iframe').focus();
-  await page.waitForFunction(() => document.querySelector('.bubble-visualiser')?.getAttribute('data-playback') === 'playing');
-  await page.waitForTimeout(900);
-  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-bubble-rich-${size.width}x${size.height}.png`) });
-
-  const longEntry = [...catalogue].filter((entry) => entry.status === 'published').sort((a,b) => String(b.artist||'').length-String(a.artist||'').length || tickerLength(b)-tickerLength(a))[0];
+  const longEntry = [...catalogue].filter((entry) => entry.status === 'published').sort((a,b) => tickerLength(b)-tickerLength(a))[0];
   const longUrl = new URL(baseUrl);
   longUrl.searchParams.set('release',longEntry.slug);
   longUrl.searchParams.set('categories',longEntry.waters?.[0] || 'anything');
   await page.goto(longUrl.toString(), { waitUntil: 'networkidle' });
   await page.locator('.player-screen.is-active').waitFor();
   await page.waitForTimeout(450);
-  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-long-artist-${size.width}x${size.height}.png`) });
+  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-long-ticker-${size.width}x${size.height}.png`) });
 
   const metrics = await page.evaluate(() => ({
     viewportWidth: innerWidth,
@@ -135,9 +125,8 @@ for (const size of sizes) {
       copiesMatch:[...document.querySelectorAll('.ticker-copy')].every((copy,index,copies)=>copy.textContent===copies[0].textContent),
       text:document.querySelector('.ticker-copy')?.textContent,
     },
-    bubbleVisualiser:window.CosmicBubbleVisualiser?.getState?.()||null,
   }));
-  results.push({ size, release: release.slug, richRelease:richEntry.slug, longArtist:longEntry.artist, goHoldObservedMs, interaction, audioState, bubbleTubeChanged:bubbleBefore!==bubbleAfter, bubbleVisualiserChanged:visualiserBefore!==visualiserAfter, next:{before:beforeNext,after:afterNext}, consoleErrors, metrics });
+  results.push({ size, release: release.slug, goHoldObservedMs, interaction, audioState, bubbleTubeChanged:bubbleBefore!==bubbleAfter, liquidSurfaceChanged:liquidBefore!==liquidAfter, next:{before:beforeNext,after:afterNext}, consoleErrors, metrics });
   await context.close();
 }
 
