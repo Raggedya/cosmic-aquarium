@@ -198,7 +198,9 @@ button { border: 0; }
 .player-screen .release-line span.is-very-long { font-size:.68em; letter-spacing:.08em; }
 .player-screen .spectrum { position:absolute; top:48%; left:8%; right:8%; height:28%; padding:0; gap:.82%; border-bottom:0; box-shadow:none; filter:drop-shadow(0 0 2px #45ff60); }
 .player-screen .spectrum::after { content:""; position:absolute; left:0; right:0; bottom:0; height:1px; background:linear-gradient(90deg,transparent,#9affaa 5% 95%,transparent); box-shadow:0 0 5px #36ff52; }
-.player-screen .spectrum i { width:.7%; min-width:1px; clip-path:none; border-radius:999px 999px 0 0; background:linear-gradient(180deg,#fff,#aaffb4 22%,#38ff58 70%,rgba(24,255,57,.1)); box-shadow:0 0 2px #d9ffde,0 0 5px #35ff52; }
+.player-screen .spectrum i { width:.7%; min-width:1px; clip-path:none; border-radius:999px 999px 0 0; background:linear-gradient(180deg,#fff,#aaffb4 22%,#38ff58 70%,rgba(24,255,57,.1)); box-shadow:0 0 2px #d9ffde,0 0 5px #35ff52; transition:height 86ms cubic-bezier(.2,.7,.3,1),opacity 180ms ease,filter 180ms ease; will-change:height; }
+.player-screen .spectrum[data-playback="idle"] i { opacity:.48; filter:saturate(.72); }
+.player-screen .spectrum[data-playback="playing"] i { opacity:1; filter:saturate(1.12) brightness(1.08); }
 .player-screen .transport-row { position:absolute; left:7%; right:7%; bottom:16.3%; margin:0; display:flex; justify-content:space-between; gap:1em; font-family:"Bahnschrift SemiCondensed","Arial Narrow",sans-serif; font-size:clamp(7px,1.8vw,14px); letter-spacing:.11em; color:#dcffe1; pointer-events:none; }
 .player-screen .transport-hint { text-align:left; }
 .player-screen .bandcamp-transport { position:absolute; z-index:8; left:6%; right:6%; bottom:4.4%; width:auto; height:clamp(38px,10.8%,42px); overflow:hidden; clip-path:none; opacity:1; border:1px solid rgba(132,255,146,.36); border-radius:999px; background:#001006; box-shadow:0 0 0 2px rgba(0,5,2,.86),inset 0 0 9px rgba(0,0,0,.8),0 0 7px rgba(55,255,83,.34); }

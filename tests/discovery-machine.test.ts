@@ -172,7 +172,7 @@ test('ticker facts are sourced only from stored catalogue metadata',()=>{
   assert.match(text,/SUPPORT THE ARTIST/);
 });
 
-test('official Bandcamp playback is not misrepresented as analyser-driven',async()=>{
+test('official Bandcamp playback has a truthful transport-coupled animated spectrum',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/Official Bandcamp playback controls/);
   assert.match(template,/PLAY \/ PAUSE ON BANDCAMP/);
@@ -180,9 +180,14 @@ test('official Bandcamp playback is not misrepresented as analyser-driven',async
   const transportRule=css.match(/\.player-screen \.bandcamp-transport \{[^}]*\}/)?.[0]||'';
   assert.doesNotMatch(transportRule,/position:fixed|left:-10000px|width:1px/);
   assert.match(transportRule,/opacity:1/);
-  assert.match(template,/data-analysis="unavailable"/);
-  assert.match(template,/Live analysis is unavailable/);
+  assert.match(template,/data-analysis="transport-coupled"/);
+  assert.match(template,/Direct audio-frequency analysis is unavailable/);
   assert.doesNotMatch(runtime,/createMediaElementSource|createMediaStreamSource/);
+  assert.match(runtime,/function renderSpectrum/);
+  assert.match(runtime,/requestAnimationFrame\(frame\)/);
+  assert.match(runtime,/bandcampFrame\.addEventListener\('focus',onBandcampFrameInteraction\)/);
+  assert.match(runtime,/event\.data==='playerinited'/);
+  assert.match(css,/\.spectrum\[data-playback="playing"\]/);
 });
 
 test('the visual system uses layered liquid glass with controlled per-control variation',async()=>{

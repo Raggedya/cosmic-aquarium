@@ -18,6 +18,8 @@ const nextButton = document.querySelector('[data-action="next"]');
 const changeButton = document.querySelector('.change-categories');
 const soundToggles = [...document.querySelectorAll('.sound-toggle')];
 const bandcampFrame = document.querySelector('.bandcamp-transport iframe');
+const spectrum = document.querySelector('.spectrum');
+const spectrumBars = [...document.querySelectorAll('.spectrum i')];
 const bubbleTubeCanvas = document.querySelector('.bubble-tube');
 const bubbleTubeContext = bubbleTubeCanvas?.getContext('2d');
 const canvas = document.querySelector('.destruction-canvas');
@@ -40,6 +42,11 @@ let lastImpactAt = 0;
 let audioContext = null;
 let bubbleTubeFrame = 0;
 let bubbleTubeStartedAt = 0;
+let spectrumFrame = 0;
+let spectrumStartedAt = 0;
+let spectrumPlaybackActive = false;
+let spectrumProfile = [];
+let bandcampFrameFocused = false;
 
 const BUBBLE_TUBE_PARTICLES = Object.freeze([
   {y:.5,r:.31,duration:34.5,phase:.08,wobble:.022,depth:1.14,duty:.31,major:true},
@@ -504,14 +511,70 @@ function formatDuration(value) {
 
 function setSpectrumSeed(seed) {
   let number = [...String(seed)].reduce((value,char)=>(value*33+char.charCodeAt(0))>>>0,5381);
-  const bars = [...document.querySelectorAll('.spectrum i')];
-  const midpoint = (bars.length - 1) / 2;
-  bars.forEach((bar,index)=>{
+  const midpoint = (spectrumBars.length - 1) / 2;
+  spectrumProfile = spectrumBars.map((bar,index)=>{
     number = (number * 1664525 + 1013904223) >>> 0;
     const centre = 1 - Math.abs(index-midpoint)/(midpoint+.5);
-    const height = Math.round(10 + centre*54 + (number%29));
-    bar.style.setProperty('--h',`${Math.min(96,height)}%`);
+    const profile = {
+      centre,
+      base: 8 + centre*39 + (number%17),
+      phase: ((number>>>8)%628)/100,
+      speed: .78 + ((number>>>16)%75)/100,
+      accent: .66 + ((number>>>24)%34)/100,
+    };
+    bar.style.setProperty('--h',`${Math.min(88,Math.round(profile.base))}%`);
+    return profile;
   });
+}
+
+function renderSpectrum(now=performance.now(),staticFrame=false) {
+  if(!spectrumBars.length)return;
+  const elapsed=(now-spectrumStartedAt)/1000;
+  const active=spectrumPlaybackActive&&!staticFrame;
+  const energy=active?1:.075;
+  const bass=(Math.sin(elapsed*5.35)+1)/2;
+  const mid=(Math.sin(elapsed*8.15+.7)+Math.sin(elapsed*3.1+1.9)+2)/4;
+  const air=(Math.sin(elapsed*12.4+2.2)+1)/2;
+  spectrumBars.forEach((bar,index)=>{
+    const profile=spectrumProfile[index]||{centre:.5,base:35,phase:index*.31,speed:1,accent:.8};
+    const local=(Math.sin(elapsed*(4.2+profile.speed*2.3)+profile.phase)+1)/2;
+    const shimmer=(Math.sin(elapsed*(10.8+profile.speed)+profile.phase*1.7)+1)/2;
+    const band=index/spectrumBars.length;
+    const bandEnergy=band<.28?bass:band<.72?mid:air;
+    const shaped=.22+bandEnergy*.48+local*.21+shimmer*.09;
+    const height=active
+      ? 6+Math.min(91,profile.base*(.47+shaped*profile.accent)+profile.centre*bass*24)
+      : 5+profile.centre*4+local*energy*8;
+    bar.style.setProperty('--h',`${height.toFixed(2)}%`);
+  });
+}
+
+function stopSpectrum(){if(spectrumFrame)cancelAnimationFrame(spectrumFrame);spectrumFrame=0;}
+
+function startSpectrum(){
+  stopSpectrum();
+  if(!spectrum||!playerScreen.classList.contains('is-active'))return;
+  spectrumStartedAt=performance.now();
+  if(reducedMotion.matches){renderSpectrum(spectrumStartedAt,true);return;}
+  const frame=now=>{
+    if(document.hidden||!playerScreen.classList.contains('is-active')){spectrumFrame=0;return;}
+    renderSpectrum(now);spectrumFrame=requestAnimationFrame(frame);
+  };
+  spectrumFrame=requestAnimationFrame(frame);
+}
+
+function setSpectrumPlayback(active,{restart=false}={}){
+  spectrumPlaybackActive=Boolean(active);
+  spectrum?.setAttribute('data-playback',spectrumPlaybackActive?'playing':'idle');
+  if(restart||(!spectrumFrame&&playerScreen.classList.contains('is-active')))startSpectrum();
+}
+
+function onBandcampFrameInteraction(){
+  if(!bandcampFrameFocused){
+    bandcampFrameFocused=true;
+    setSpectrumPlayback(!spectrumPlaybackActive);
+    requestAnimationFrame(()=>{bandcampFrame.blur();bandcampFrameFocused=false;});
+  }
 }
 
 function setFittedText(element, value, longAt, veryLongAt) {
@@ -532,6 +595,7 @@ function populatePlayer(entry, manifest) {
   document.querySelector('.duration').textContent = formatDuration(track.duration);
   document.querySelector('.ticker-track span').textContent = buildTickerFacts(manifest,entry,artistEntry);
   bandcampFrame.title=`Official Bandcamp playback controls for ${track.title} by ${manifest.artist}`;
+  setSpectrumPlayback(false);
   bandcampFrame.src = `https://bandcamp.com/EmbeddedPlayer/track=${encodeURIComponent(track.bandcampEmbedTrackId)}/size=small/bgcol=001a08/linkcol=67ff7b/tracklist=false/artwork=none/transparent=true/`;
   buyLink.href = validBandcampUrl(manifest.bandcampUrl);
   buyLink.setAttribute('aria-label',`Buy ${manifest.releaseTitle || 'this release'} by ${manifest.artist} on Bandcamp`);
@@ -555,12 +619,15 @@ function showPlayer({push=true}={}) {
   playerScreen.setAttribute('aria-hidden','false');
   selectionScreen.setAttribute('aria-hidden','true');
   startBubbleTube();
+  startSpectrum();
   if (push) history.pushState({view:'player'},'',playerUrl());
 }
 
 function showSelection({historyMode='push'}={}) {
   isLocked=false;
   stopBubbleTube();
+  stopSpectrum();
+  setSpectrumPlayback(false);
   goButton.classList.remove('is-broken');
   selectionScreen.classList.add('is-active');
   playerScreen.classList.remove('is-active');
@@ -711,12 +778,17 @@ buyLink.addEventListener('click',()=>recordEvent('buy_click',currentEntry?.slug,
 changeButton.addEventListener('click',()=>showSelection());
 for(const button of soundToggles)button.addEventListener('click',onSoundToggle);
 addEventListener('popstate',()=>void restoreLocation());
-document.addEventListener('visibilitychange',()=>{
-  if(document.hidden){stopBubbleTube();if(audioContext?.state==='running')void audioContext.suspend();}
-  else if(playerScreen.classList.contains('is-active'))startBubbleTube();
+bandcampFrame.addEventListener('focus',onBandcampFrameInteraction);
+addEventListener('blur',()=>setTimeout(()=>{if(document.activeElement===bandcampFrame)onBandcampFrameInteraction();},0));
+addEventListener('message',event=>{
+  if(event.source===bandcampFrame.contentWindow&&event.origin==='https://bandcamp.com'&&event.data==='playerinited')setSpectrumPlayback(false,{restart:true});
 });
-reducedMotion.addEventListener?.('change',()=>{if(playerScreen.classList.contains('is-active'))startBubbleTube();});
-addEventListener('resize',()=>{if(playerScreen.classList.contains('is-active'))startBubbleTube();},{passive:true});
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden){stopBubbleTube();stopSpectrum();if(audioContext?.state==='running')void audioContext.suspend();}
+  else if(playerScreen.classList.contains('is-active')){startBubbleTube();startSpectrum();}
+});
+reducedMotion.addEventListener?.('change',()=>{if(playerScreen.classList.contains('is-active')){startBubbleTube();startSpectrum();}});
+addEventListener('resize',()=>{if(playerScreen.classList.contains('is-active')){startBubbleTube();startSpectrum();}},{passive:true});
 
 window.CosmicGlassAudio=Object.freeze({
   playGlassBreak,
