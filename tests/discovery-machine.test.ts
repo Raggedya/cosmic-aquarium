@@ -210,8 +210,29 @@ test('player ticker is optically recessed and the upper chamber has a contained 
   assert.match(css,/\.bubble-tube[^}]+mask-image/);
   assert.match(runtime,/BUBBLE_TUBE_PARTICLES/);
   assert.match(runtime,/duration:17\.2/);
+  assert.match(runtime,/r:\.31,duration:34\.5[^}]+duty:\.31,major:true/);
+  assert.match(runtime,/const highlightX=width\*\.53/);
+  assert.match(runtime,/globalCompositeOperation='screen'/);
   assert.match(runtime,/if\(reducedMotion\.matches\)\{drawBubbleTube\(bubbleTubeStartedAt,true\);return;\}/);
   assert.match(runtime,/document\.hidden\|\|!playerScreen\.classList\.contains\('is-active'\)/);
+});
+
+test('player actions use the approved concise labels without changing their material controls',async()=>{
+  const [template,css,shareSkin,nextSkin]=await Promise.all([
+    read('templates/universe-index.html'),
+    read('app/discovery-machine.css'),
+    readBytes('public/discovery-fidelity/player-share-blank.webp'),
+    readBytes('public/discovery-fidelity/player-next-blank.webp'),
+  ]);
+  assert.match(template,/data-action="share"><span>SHARE<\/span>/);
+  assert.match(template,/data-action="buy"[^>]+><span>BUY<br>MUSIC<\/span>/);
+  assert.match(template,/data-action="next"><span>NEXT<\/span>/);
+  assert.doesNotMatch(template,/SHARE<br>JUKEBOX|NEXT<br>JUKEBOX/);
+  assert.match(css,/player-share-blank\.webp/);
+  assert.match(css,/player-next-blank\.webp/);
+  assert.match(css,/button:nth-child\(1\) span[^}]+button:nth-child\(3\) span[^}]+opacity:1/);
+  assert.ok(shareSkin.length>25000);
+  assert.ok(nextSkin.length>25000);
 });
 
 test('forensic plates are continuous, lossless-built and fracture states are preloaded',async()=>{

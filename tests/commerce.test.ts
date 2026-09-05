@@ -28,9 +28,10 @@ test('every edition makes an explicit, safe commerce decision', async () => {
 test('the canonical player exposes only SHARE, BUY and NEXT in the requested order', async () => {
   const runtime = await readFile(path.resolve('github-pages', 'assets', 'discovery-machine.js'), 'utf8');
   const template = await readFile(path.resolve('templates', 'universe-index.html'), 'utf8');
-  assert.match(template, /SHARE<br>JUKEBOX/);
+  assert.match(template, /data-action="share"><span>SHARE<\/span>/);
   assert.match(template, /BUY<br>MUSIC/);
-  assert.match(template, /NEXT<br>JUKEBOX/);
+  assert.match(template, /data-action="next"><span>NEXT<\/span>/);
+  assert.doesNotMatch(template, /SHARE<br>JUKEBOX|NEXT<br>JUKEBOX/);
   assert.ok(template.indexOf('data-action="share"') < template.indexOf('data-action="buy"'));
   assert.ok(template.indexOf('data-action="buy"') < template.indexOf('data-action="next"'));
   assert.match(runtime, /navigator\.share/);

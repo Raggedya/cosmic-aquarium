@@ -28,7 +28,7 @@ const discoveryFidelityAssetNames = [
   'selector-break-dark.webp','selector-break-loud.webp','selector-break-strange.webp','selector-break-anything.webp',
   'selector-selected-heavy.webp','selector-selected-dreamy.webp','selector-selected-quiet.webp','selector-selected-electronic.webp',
   'selector-selected-dark.webp','selector-selected-loud.webp','selector-selected-strange.webp','selector-selected-anything.webp',
-  'player-ticker-shell.webp','player-main-frame.webp','player-share.webp','player-buy.webp','player-next.webp','player-footer.webp',
+  'player-ticker-shell.webp','player-main-frame.webp','player-share.webp','player-share-blank.webp','player-buy.webp','player-next.webp','player-next-blank.webp','player-footer.webp',
 ];
 const discoveryFidelityAssets = await Promise.all(discoveryFidelityAssetNames.map((name) => fs.readFile(path.join(root,'public','discovery-fidelity',name))));
 const glassAudioSourceNames = [

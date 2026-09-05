@@ -198,10 +198,11 @@ button { border: 0; }
 .player-screen .player-actions { gap:0; padding:0; }
 .player-actions button, .player-actions a { border:0; border-radius:0; box-shadow:none; background:transparent!important; }
 .player-actions button::before, .player-actions button::after, .player-actions a::before, .player-actions a::after { display:none; }
-.player-actions button:nth-child(1) { background-image:url('./discovery-fidelity/player-share.webp'); }
+.player-actions button:nth-child(1) { background-image:url('./discovery-fidelity/player-share-blank.webp'); }
 .player-actions a:nth-child(2) { background-image:url('./discovery-fidelity/player-buy.webp'); }
-.player-actions button:nth-child(3) { background-image:url('./discovery-fidelity/player-next.webp'); }
+.player-actions button:nth-child(3) { background-image:url('./discovery-fidelity/player-next-blank.webp'); }
 .player-actions span { opacity:0; }
+.player-actions button:nth-child(1) span, .player-actions button:nth-child(3) span { opacity:1; text-transform:uppercase; }
 .player-screen .bandcamp-footer { margin:0; border:0; border-radius:0; box-shadow:none; background:transparent; }
 .player-screen .bandcamp-footer::before, .player-screen .bandcamp-footer::after { display:none; }
 .player-screen .bandcamp-footer > * { opacity:0; }

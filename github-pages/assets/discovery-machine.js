@@ -39,6 +39,7 @@ let bubbleTubeFrame = 0;
 let bubbleTubeStartedAt = 0;
 
 const BUBBLE_TUBE_PARTICLES = Object.freeze([
+  {y:.5,r:.31,duration:34.5,phase:.08,wobble:.022,depth:1.14,duty:.31,major:true},
   {y:.31,r:.105,duration:12.7,phase:.03,wobble:.052,depth:.92},
   {y:.66,r:.047,duration:8.9,phase:.14,wobble:.09,depth:.61},
   {y:.43,r:.071,duration:15.8,phase:.22,wobble:.045,depth:.78},
@@ -72,9 +73,11 @@ function drawBubbleTube(now=performance.now(),staticFrame=false) {
   bubbleTubeContext.clearRect(0,0,width,height);
   for(const bubble of BUBBLE_TUBE_PARTICLES){
     const cycle=staticFrame ? bubble.phase : (((now-bubbleTubeStartedAt)/1000/bubble.duration)+bubble.phase)%1;
+    if(bubble.duty&&cycle>bubble.duty)continue;
+    const travel=bubble.duty?cycle/bubble.duty:cycle;
     const radius=Math.max(1.6,height*bubble.r);
-    const x=-radius+cycle*(width+radius*2);
-    const y=height*(bubble.y+Math.sin(cycle*Math.PI*2+bubble.phase*8.3)*bubble.wobble);
+    const x=-radius+travel*(width+radius*2);
+    const y=height*(bubble.y+Math.sin(travel*Math.PI*2+bubble.phase*8.3)*bubble.wobble);
     const alpha=.34+bubble.depth*.52;
     const body=bubbleTubeContext.createRadialGradient(x-radius*.34,y-radius*.42,radius*.04,x,y,radius);
     body.addColorStop(0,`rgba(244,255,246,${alpha})`);
@@ -89,6 +92,24 @@ function drawBubbleTube(now=performance.now(),staticFrame=false) {
     bubbleTubeContext.stroke();
     bubbleTubeContext.fillStyle=`rgba(255,255,255,${alpha*.86})`;
     bubbleTubeContext.beginPath();bubbleTubeContext.ellipse(x-radius*.32,y-radius*.38,radius*.16,radius*.1,-.55,0,Math.PI*2);bubbleTubeContext.fill();
+    if(bubble.major){
+      bubbleTubeContext.save();
+      bubbleTubeContext.beginPath();bubbleTubeContext.arc(x,y,radius*.92,0,Math.PI*2);bubbleTubeContext.clip();
+      const highlightX=width*.53;
+      const highlight=bubbleTubeContext.createLinearGradient(highlightX-radius*.52,0,highlightX+radius*.52,0);
+      highlight.addColorStop(0,'rgba(232,255,237,0)');
+      highlight.addColorStop(.36,'rgba(232,255,237,.16)');
+      highlight.addColorStop(.5,'rgba(255,255,255,.86)');
+      highlight.addColorStop(.64,'rgba(160,255,177,.2)');
+      highlight.addColorStop(1,'rgba(232,255,237,0)');
+      bubbleTubeContext.globalCompositeOperation='screen';
+      bubbleTubeContext.fillStyle=highlight;
+      bubbleTubeContext.fillRect(highlightX-radius*.56,y-radius, radius*1.12,radius*2);
+      bubbleTubeContext.restore();
+      bubbleTubeContext.strokeStyle='rgba(239,255,242,.62)';
+      bubbleTubeContext.lineWidth=Math.max(.8,radius*.09);
+      bubbleTubeContext.beginPath();bubbleTubeContext.arc(x,y,radius*.82,-2.72,-.68);bubbleTubeContext.stroke();
+    }
   }
 }
 
