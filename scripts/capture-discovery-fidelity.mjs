@@ -13,19 +13,24 @@ for (let index = 2; index < process.argv.length; index += 2) {
 const baseUrl = argumentsMap.get('--base-url') || 'http://127.0.0.1:8765/cosmic-aquarium/';
 const outputDirectory = path.resolve(argumentsMap.get('--output') || 'artifacts/two-screen-fidelity');
 const label = argumentsMap.get('--label') || 'current';
+const deviceScaleFactor = Number(argumentsMap.get('--dpr') || '1');
 const chromeExecutable = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
-const sizes = [
+const configuredSizes = [
   { width: 390, height: 844 },
   { width: 393, height: 852 },
   { width: 430, height: 932 },
 ];
+const requestedSize = argumentsMap.get('--single')?.match(/^(\d+)x(\d+)$/);
+const sizes = requestedSize
+  ? [{ width: Number(requestedSize[1]), height: Number(requestedSize[2]) }]
+  : configuredSizes;
 
 await fs.mkdir(outputDirectory, { recursive: true });
 const browser = await chromium.launch({ executablePath: chromeExecutable, headless: true });
 const results = [];
 
 for (const size of sizes) {
-  const context = await browser.newContext({ viewport: size, deviceScaleFactor: 1, reducedMotion: 'no-preference' });
+  const context = await browser.newContext({ viewport: size, deviceScaleFactor, reducedMotion: 'no-preference' });
   const page = await context.newPage();
   const consoleErrors = [];
   page.on('console', (message) => {

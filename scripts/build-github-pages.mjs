@@ -20,11 +20,14 @@ const discoveryCore = await fs.readFile(path.join(pages,'assets','discovery-mach
 const doorwayAssetNames = ['cosmic-depth.webp','botanical-crown.webp','botanical-garden.webp','world-anywhere.webp','world-heavy.webp','world-dreamy.webp','world-electronic.webp','world-quiet.webp','world-loud.webp','world-dark.webp','world-strange.webp'];
 const doorwayAssets = await Promise.all(doorwayAssetNames.map((name) => fs.readFile(path.join(root,'public','doorway',name))));
 const discoveryFidelityAssetNames = [
+  'selector-chassis.webp','player-chassis-clean.webp',
   'selector-heavy.webp','selector-dreamy.webp','selector-quiet.webp','selector-electronic.webp',
   'selector-dark.webp','selector-loud.webp','selector-strange.webp','selector-anything.webp',
   'selector-dark-broken.webp','selector-bandcamp.webp','selector-go.webp',
   'selector-break-heavy.webp','selector-break-dreamy.webp','selector-break-quiet.webp','selector-break-electronic.webp',
   'selector-break-dark.webp','selector-break-loud.webp','selector-break-strange.webp','selector-break-anything.webp',
+  'selector-selected-heavy.webp','selector-selected-dreamy.webp','selector-selected-quiet.webp','selector-selected-electronic.webp',
+  'selector-selected-dark.webp','selector-selected-loud.webp','selector-selected-strange.webp','selector-selected-anything.webp',
   'player-ticker-shell.webp','player-main-frame.webp','player-share.webp','player-buy.webp','player-next.webp','player-footer.webp',
 ];
 const discoveryFidelityAssets = await Promise.all(discoveryFidelityAssetNames.map((name) => fs.readFile(path.join(root,'public','discovery-fidelity',name))));

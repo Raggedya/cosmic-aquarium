@@ -173,12 +173,21 @@ function formatDuration(value) {
 
 function setSpectrumSeed(seed) {
   let number = [...String(seed)].reduce((value,char)=>(value*33+char.charCodeAt(0))>>>0,5381);
-  document.querySelectorAll('.spectrum i').forEach((bar,index)=>{
+  const bars = [...document.querySelectorAll('.spectrum i')];
+  const midpoint = (bars.length - 1) / 2;
+  bars.forEach((bar,index)=>{
     number = (number * 1664525 + 1013904223) >>> 0;
-    const centre = 1 - Math.abs(index-15.5)/16;
+    const centre = 1 - Math.abs(index-midpoint)/(midpoint+.5);
     const height = Math.round(10 + centre*54 + (number%29));
     bar.style.setProperty('--h',`${Math.min(96,height)}%`);
   });
+}
+
+function setFittedText(element, value, longAt, veryLongAt) {
+  const text = String(value || '');
+  element.textContent = text;
+  element.classList.toggle('is-long',text.length > longAt);
+  element.classList.toggle('is-very-long',text.length > veryLongAt);
 }
 
 function populatePlayer(entry, manifest) {
@@ -186,9 +195,9 @@ function populatePlayer(entry, manifest) {
   if (!track) throw new Error('no_playable_track');
   currentEntry=entry; currentManifest=manifest; currentTrack=track;
   const artistEntry = artistsById.get(entry.canonicalArtistId) || {};
-  document.querySelector('#now-playing-heading').textContent = manifest.artist;
-  document.querySelector('.release-title').textContent = manifest.releaseTitle || track.albumTitle || 'BANDCAMP RELEASE';
-  document.querySelector('.track-title').textContent = track.title;
+  setFittedText(document.querySelector('#now-playing-heading'),manifest.artist,17,25);
+  setFittedText(document.querySelector('.release-title'),manifest.releaseTitle || track.albumTitle || 'BANDCAMP RELEASE',20,32);
+  setFittedText(document.querySelector('.track-title'),track.title,20,32);
   document.querySelector('.duration').textContent = formatDuration(track.duration);
   document.querySelector('.ticker-track span').textContent = buildTickerFacts(manifest,entry,artistEntry);
   document.querySelector('.bandcamp-transport iframe').src = `https://bandcamp.com/EmbeddedPlayer/track=${encodeURIComponent(track.bandcampEmbedTrackId)}/size=small/bgcol=001a08/linkcol=67ff7b/tracklist=false/artwork=none/transparent=true/`;

@@ -112,25 +112,39 @@ test('the visual system uses layered liquid glass with controlled per-control va
   assert.match(template,/material-bubble--footer-d/);
 });
 
-test('canonical photographic material is applied per component rather than as a flattened hotspot screen',async()=>{
+test('canonical photographic material uses continuous plates behind real controls',async()=>{
   const [template,css,build]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css'),read('scripts/build-github-pages.mjs')]);
   assert.doesNotMatch(template,/background-image[^>]+selector-canonical/);
-  assert.match(css,/selector-heavy\.webp/);
-  assert.match(css,/selector-dark-broken\.webp/);
-  assert.match(css,/player-main-frame\.webp/);
-  assert.match(css,/player-share\.webp/);
+  assert.match(css,/selector-chassis\.webp/);
+  assert.match(css,/selector-selected-dark\.webp/);
+  assert.match(css,/player-chassis-clean\.webp/);
+  assert.equal((template.match(/class="glass-key"/g)||[]).length,8);
   assert.match(build,/discovery-fidelity/);
 });
 
 test('every category has a distinct photographic collapse treatment and player return is Home',async()=>{
   const [template,css,build]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css'),read('scripts/build-github-pages.mjs')]);
-  for(const category of ['heavy','dreamy','quiet','electronic','loud','strange','anything']){
-    assert.match(css,new RegExp(`selector-break-${category}\\.webp`));
-    assert.match(build,new RegExp(`selector-break-${category}\\.webp`));
+  for(const category of CATEGORIES){
+    assert.match(css,new RegExp(`selector-selected-${category}\\.webp`));
+    assert.match(build,new RegExp(`selector-selected-${category}\\.webp`));
   }
-  assert.match(css,/selector-dark-broken\.webp/);
   assert.match(template,/aria-label="Home — choose music categories">Home<\/button>/);
   assert.doesNotMatch(template,/>‹ CHANGE<\/button>/);
+});
+
+test('forensic plates are continuous, lossless-built and fracture states are preloaded',async()=>{
+  const [template,css,buildScript]=await Promise.all([
+    read('templates/universe-index.html'),read('app/discovery-machine.css'),read('scripts/build-discovery-fidelity-assets.py'),
+  ]);
+  assert.match(css,/selector-chassis\.webp/);
+  assert.match(css,/player-chassis-clean\.webp/);
+  assert.match(css,/\.selection-grid \{ gap:0; filter:none; \}/);
+  assert.match(css,/\.discovery-machine::before, \.discovery-machine::after \{ display:none; \}/);
+  assert.match(buildScript,/lossless=True/);
+  for(const category of CATEGORIES){
+    assert.match(css,new RegExp(`selector-selected-${category}\\.webp`));
+    assert.match(template,new RegExp(`rel="preload" as="image" href="\\{\\{BASE\\}\\}/assets/discovery-fidelity/selector-selected-${category}\\.webp"`));
+  }
 });
 
 test('the commitment control uses the canonical high-energy green glass material',async()=>{
