@@ -19,3 +19,19 @@ Interaction smoke results:
 - no uncaught page or console errors were observed.
 - the spectrum is marked `data-analysis="unavailable"`; it is not represented as audio-reactive.
 
+## Live production smoke
+
+After the GitHub Pages deployment, the same mobile browser suite verified the public HTTPS URL:
+
+- title: `Cosmic Aquaria — Independent music discovery`
+- exactly two listener screens and eight category controls
+- 390 × 844 body matched the viewport with no overflow
+- DARK + STRANGE resolved João Jardel — *Megapop*
+- BUY MUSIC exactly matched the stored release URL
+- the official Bandcamp iframe used numeric track ID `4150286046`
+- direct player refresh restored the same release
+- the legacy release URL redirected to `?release=joao-jardel-megapop`
+- the legacy DARK style URL reopened the canonical selector with DARK selected
+- `/admin/` returned 404 on the public static origin
+- the public Worker health endpoint returned 200
+- no uncaught page or console errors were observed
