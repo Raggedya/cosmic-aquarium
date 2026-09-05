@@ -201,7 +201,7 @@ test('universe statistics are generated from published manifests and distinct pl
   assert.doesNotMatch(build,/canonicalArtistCount:\s*\d/);
 });
 
-test('official Bandcamp playback has a truthful transport-coupled liquid surface',async()=>{
+test('official Bandcamp playback has truthful transport-coupled dual analogue meters',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/Official Bandcamp playback controls/);
   assert.match(template,/PLAY \/ PAUSE ON BANDCAMP/);
@@ -209,22 +209,25 @@ test('official Bandcamp playback has a truthful transport-coupled liquid surface
   const transportRule=css.match(/\.player-screen \.bandcamp-transport \{[^}]*\}/)?.[0]||'';
   assert.doesNotMatch(transportRule,/position:fixed|left:-10000px|width:1px/);
   assert.match(transportRule,/opacity:1/);
-  assert.match(template,/canvas class="liquid-surface"/);
+  assert.equal((template.match(/class="vu-meter"/g)||[]).length,2);
+  assert.equal((template.match(/data-vu-needle/g)||[]).length,2);
   assert.match(template,/data-analysis="transport-coupled"/);
-  assert.match(template,/Direct audio-frequency analysis is unavailable/);
-  assert.doesNotMatch(template,/class="spectrum"|<i><\/i>/);
+  assert.ok(template.indexOf('<div class="vu-meter-row"')<template.indexOf('<h2 id="now-playing-heading"'));
+  assert.ok(template.indexOf('<h2 id="now-playing-heading"')<template.indexOf('<p class="release-line"'));
+  assert.doesNotMatch(template,/liquid-surface|class="spectrum"/);
   assert.doesNotMatch(runtime,/createMediaElementSource|createMediaStreamSource/);
-  assert.match(runtime,/function renderLiquidSurface/);
-  assert.match(runtime,/function liquidSurfaceY/);
-  assert.match(runtime,/function drawLiquidPeakBodies/);
-  assert.match(runtime,/function drawLiquidReflection/);
-  assert.match(runtime,/function drawLiquidDroplets/);
-  assert.match(runtime,/liquidEnergy\+=\(target-liquidEnergy\)/);
-  assert.match(runtime,/requestAnimationFrame\(frame\)/);
+  assert.match(runtime,/function buildVuMeters/);
+  assert.match(runtime,/function setMeterSeed/);
+  assert.match(runtime,/function proceduralMeterTarget/);
+  assert.match(runtime,/channel\.velocity\+=\(channel\.target-channel\.level\)\*stiffness\*delta/);
+  assert.match(runtime,/const stiffness=\(rising\?48:18\)/);
+  assert.match(runtime,/meterPlaybackStartedAt\)\/720/);
+  assert.match(runtime,/leftAngle:meterChannels\[0\]\.angle,rightAngle:meterChannels\[1\]\.angle/);
   assert.match(runtime,/bandcampFrame\.addEventListener\('focus',onBandcampFrameInteraction\)/);
   assert.match(runtime,/event\.data==='playerinited'/);
-  assert.match(css,/\.liquid-surface\[data-playback="playing"\]/);
-  assert.doesNotMatch(css,/\.spectrum\s+i|nth-child\([^)]*\)\{--h/);
+  assert.match(css,/\.vu-meter-row\[data-playback="playing"\]/);
+  assert.match(css,/\.vu-red-arc/);
+  assert.doesNotMatch(css,/\.liquid-surface|\.spectrum\s+i|nth-child\([^)]*\)\{--h/);
 });
 
 test('the visual system uses layered liquid glass with controlled per-control variation',async()=>{

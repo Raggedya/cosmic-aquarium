@@ -21,8 +21,8 @@
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-go-broken.webp">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-mobile.mp3">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-go-mobile.mp3">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=ae68083e6579">
-  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=ae68083e6579"></script>
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=a77f4f32d80b">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=a77f4f32d80b"></script>
 </head>
 <body>
   <main class="discovery-machine" data-base="/cosmic-aquarium" aria-label="Cosmic Aquaria independent music discovery machine">
@@ -67,9 +67,44 @@
       <section class="now-playing-panel">
         <div class="bubble bubble--one" aria-hidden="true"></div><div class="bubble bubble--two" aria-hidden="true"></div><div class="bubble bubble--three" aria-hidden="true"></div><div class="bubble bubble--four" aria-hidden="true"></div><div class="bubble bubble--five" aria-hidden="true"></div><div class="bubble bubble--six" aria-hidden="true"></div><div class="bubble bubble--seven" aria-hidden="true"></div><div class="bubble bubble--eight" aria-hidden="true"></div>
         <p class="eyebrow">NOW PLAYING</p>
+        <div class="vu-meter-row" aria-hidden="true" data-analysis="transport-coupled" data-playback="idle">
+          <div class="vu-meter" data-channel="left">
+            <svg class="vu-meter-face" viewBox="0 0 320 190" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="vu-shell-left" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#effff1"/><stop offset=".09" stop-color="#2eff58"/><stop offset=".3" stop-color="#003d17"/><stop offset=".48" stop-color="#baffc4"/><stop offset=".67" stop-color="#006326"/><stop offset=".86" stop-color="#eefff1"/><stop offset="1" stop-color="#001107"/></linearGradient>
+                <radialGradient id="vu-face-left" cx="42%" cy="21%" r="86%"><stop offset="0" stop-color="#08772c"/><stop offset=".36" stop-color="#03471c"/><stop offset=".78" stop-color="#001708"/><stop offset="1" stop-color="#000603"/></radialGradient>
+                <linearGradient id="vu-needle-left" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#e6c67f"/><stop offset=".68" stop-color="#fff8d9"/><stop offset="1" stop-color="#fff"/></linearGradient>
+                <filter id="vu-glow-left" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <path class="vu-shell" d="M18 181Q7 181 7 166V50Q7 18 39 10Q160-3 281 10Q313 18 313 50V166Q313 181 302 181H18Z" fill="url(#vu-shell-left)"/>
+              <path class="vu-cavity" d="M24 166V52Q24 32 47 26Q160 14 273 26Q296 32 296 52V166Q296 171 289 171H31Q24 171 24 166Z" fill="url(#vu-face-left)"/>
+              <g class="vu-scale" data-vu-scale></g>
+              <text class="vu-channel" x="160" y="142">L</text>
+              <g class="vu-needle" data-vu-needle transform="rotate(-58 160 167)"><path d="M157.8 166L159.1 50Q160 45 160.9 50L162.2 166Z" fill="url(#vu-needle-left)" filter="url(#vu-glow-left)"/></g>
+              <g class="vu-hub"><circle cx="160" cy="167" r="20"/><circle cx="160" cy="167" r="13"/><path d="M160 153V181M146 167H174"/></g>
+              <path class="vu-glass-glint" d="M32 49Q45 31 75 28Q170 15 267 29"/>
+            </svg>
+          </div>
+          <div class="vu-meter" data-channel="right">
+            <svg class="vu-meter-face" viewBox="0 0 320 190" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="vu-shell-right" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#effff1"/><stop offset=".09" stop-color="#2eff58"/><stop offset=".3" stop-color="#003d17"/><stop offset=".48" stop-color="#baffc4"/><stop offset=".67" stop-color="#006326"/><stop offset=".86" stop-color="#eefff1"/><stop offset="1" stop-color="#001107"/></linearGradient>
+                <radialGradient id="vu-face-right" cx="42%" cy="21%" r="86%"><stop offset="0" stop-color="#08772c"/><stop offset=".36" stop-color="#03471c"/><stop offset=".78" stop-color="#001708"/><stop offset="1" stop-color="#000603"/></radialGradient>
+                <linearGradient id="vu-needle-right" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#e6c67f"/><stop offset=".68" stop-color="#fff8d9"/><stop offset="1" stop-color="#fff"/></linearGradient>
+                <filter id="vu-glow-right" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <path class="vu-shell" d="M18 181Q7 181 7 166V50Q7 18 39 10Q160-3 281 10Q313 18 313 50V166Q313 181 302 181H18Z" fill="url(#vu-shell-right)"/>
+              <path class="vu-cavity" d="M24 166V52Q24 32 47 26Q160 14 273 26Q296 32 296 52V166Q296 171 289 171H31Q24 171 24 166Z" fill="url(#vu-face-right)"/>
+              <g class="vu-scale" data-vu-scale></g>
+              <text class="vu-channel" x="160" y="142">R</text>
+              <g class="vu-needle" data-vu-needle transform="rotate(-58 160 167)"><path d="M157.8 166L159.1 50Q160 45 160.9 50L162.2 166Z" fill="url(#vu-needle-right)" filter="url(#vu-glow-right)"/></g>
+              <g class="vu-hub"><circle cx="160" cy="167" r="20"/><circle cx="160" cy="167" r="13"/><path d="M160 153V181M146 167H174"/></g>
+              <path class="vu-glass-glint" d="M32 49Q45 31 75 28Q170 15 267 29"/>
+            </svg>
+          </div>
+        </div>
         <h2 id="now-playing-heading"></h2>
         <p class="release-line"><span class="release-title"></span><b aria-hidden="true">•</b><span class="track-title"></span></p>
-        <canvas class="liquid-surface" role="img" aria-label="A transport-responsive emerald liquid surface. Direct audio-frequency analysis is unavailable across the Bandcamp frame boundary." data-analysis="transport-coupled" data-playback="idle"></canvas>
         <div class="transport-row"><span class="transport-hint">PLAY / PAUSE ON BANDCAMP</span><span class="duration" aria-label="Track duration">—:—</span></div>
         <div class="bandcamp-transport" aria-label="Official Bandcamp playback controls"><iframe title="Official Bandcamp playback controls" loading="eager" allow="autoplay" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe></div>
       </section>
