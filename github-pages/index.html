@@ -21,8 +21,8 @@
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-go-broken.webp">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-mobile.mp3">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-go-mobile.mp3">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=a77f4f32d80b">
-  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=a77f4f32d80b"></script>
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=2c9f0c70e498">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=2c9f0c70e498"></script>
 </head>
 <body>
   <main class="discovery-machine" data-base="/cosmic-aquarium" aria-label="Cosmic Aquaria independent music discovery machine">
@@ -71,41 +71,65 @@
           <div class="vu-meter" data-channel="left">
             <svg class="vu-meter-face" viewBox="0 0 320 190" preserveAspectRatio="none">
               <defs>
-                <linearGradient id="vu-shell-left" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#effff1"/><stop offset=".09" stop-color="#2eff58"/><stop offset=".3" stop-color="#003d17"/><stop offset=".48" stop-color="#baffc4"/><stop offset=".67" stop-color="#006326"/><stop offset=".86" stop-color="#eefff1"/><stop offset="1" stop-color="#001107"/></linearGradient>
-                <radialGradient id="vu-face-left" cx="42%" cy="21%" r="86%"><stop offset="0" stop-color="#08772c"/><stop offset=".36" stop-color="#03471c"/><stop offset=".78" stop-color="#001708"/><stop offset="1" stop-color="#000603"/></radialGradient>
-                <linearGradient id="vu-needle-left" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#e6c67f"/><stop offset=".68" stop-color="#fff8d9"/><stop offset="1" stop-color="#fff"/></linearGradient>
-                <filter id="vu-glow-left" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                <linearGradient id="vu-shell-left" x1=".03" y1=".04" x2=".94" y2=".96"><stop offset="0" stop-color="#f7fff8"/><stop offset=".045" stop-color="#73ff8c"/><stop offset=".12" stop-color="#052f15"/><stop offset=".25" stop-color="#00a43b"/><stop offset=".39" stop-color="#001008"/><stop offset=".53" stop-color="#c9ffd1"/><stop offset=".59" stop-color="#087a31"/><stop offset=".77" stop-color="#001008"/><stop offset=".9" stop-color="#9dffab"/><stop offset="1" stop-color="#000704"/></linearGradient>
+                <radialGradient id="vu-face-left" cx="38%" cy="17%" r="91%"><stop offset="0" stop-color="#0b5d29"/><stop offset=".27" stop-color="#052f18"/><stop offset=".62" stop-color="#01140b"/><stop offset=".88" stop-color="#000704"/><stop offset="1" stop-color="#000201"/></radialGradient>
+                <linearGradient id="vu-bezel-left" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#dffff0" stop-opacity=".9"/><stop offset=".1" stop-color="#079b3d" stop-opacity=".8"/><stop offset=".45" stop-color="#001109"/><stop offset=".86" stop-color="#0b6f31" stop-opacity=".58"/><stop offset="1" stop-color="#000402"/></linearGradient>
+                <linearGradient id="vu-pane-left" x1=".1" y1="0" x2=".85" y2="1"><stop stop-color="#fff" stop-opacity=".38"/><stop offset=".24" stop-color="#dfffe6" stop-opacity=".08"/><stop offset=".58" stop-color="#0b7031" stop-opacity=".03"/><stop offset="1" stop-color="#000" stop-opacity=".22"/></linearGradient>
+                <linearGradient id="vu-needle-left" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#7f6030"/><stop offset=".18" stop-color="#d9bb78"/><stop offset=".7" stop-color="#fff3c9"/><stop offset="1" stop-color="#fffdf3"/></linearGradient>
+                <radialGradient id="vu-hub-left" cx="34%" cy="27%" r="73%"><stop stop-color="#fffde9"/><stop offset=".12" stop-color="#b6d9b8"/><stop offset=".31" stop-color="#244c32"/><stop offset=".55" stop-color="#020a06"/><stop offset=".78" stop-color="#2f8d4a"/><stop offset="1" stop-color="#000402"/></radialGradient>
+                <clipPath id="vu-clip-left"><path d="M27 165V53Q27 35 49 29Q160 18 271 29Q293 35 293 53V165Q293 168 287 168H33Q27 168 27 165Z"/></clipPath>
+                <pattern id="vu-texture-left" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="1.4" cy="2.1" r=".45" fill="#dfffe4"/><circle cx="6.8" cy="6.1" r=".28" fill="#7dab83"/><path d="M3 7l2-.35" stroke="#d9f4dc" stroke-width=".2"/></pattern>
               </defs>
+              <path class="vu-bezel-shadow" d="M14 182Q4 180 4 165V48Q4 15 38 6Q160-7 282 6Q316 15 316 48V165Q316 181 304 182Z"/>
               <path class="vu-shell" d="M18 181Q7 181 7 166V50Q7 18 39 10Q160-3 281 10Q313 18 313 50V166Q313 181 302 181H18Z" fill="url(#vu-shell-left)"/>
+              <path class="vu-inner-bezel" d="M21 169V49Q21 26 45 20Q160 8 275 20Q299 26 299 49V169Q299 176 291 176H29Q21 176 21 169Z" fill="url(#vu-bezel-left)"/>
               <path class="vu-cavity" d="M24 166V52Q24 32 47 26Q160 14 273 26Q296 32 296 52V166Q296 171 289 171H31Q24 171 24 166Z" fill="url(#vu-face-left)"/>
+              <rect class="vu-face-texture" x="25" y="25" width="270" height="144" clip-path="url(#vu-clip-left)" fill="url(#vu-texture-left)"/>
+              <path class="vu-face-pane" d="M27 165V53Q27 35 49 29Q160 18 271 29Q293 35 293 53V165Q293 168 287 168H33Q27 168 27 165Z" fill="url(#vu-pane-left)"/>
               <g class="vu-scale" data-vu-scale></g>
               <text class="vu-channel" x="160" y="142">L</text>
-              <g class="vu-needle" data-vu-needle transform="rotate(-58 160 167)"><path d="M157.8 166L159.1 50Q160 45 160.9 50L162.2 166Z" fill="url(#vu-needle-left)" filter="url(#vu-glow-left)"/></g>
-              <g class="vu-hub"><circle cx="160" cy="167" r="20"/><circle cx="160" cy="167" r="13"/><path d="M160 153V181M146 167H174"/></g>
-              <path class="vu-glass-glint" d="M32 49Q45 31 75 28Q170 15 267 29"/>
+              <g class="vu-needle-shadow" data-vu-shadow transform="translate(1.2 1.6) rotate(-58 160 167)"><path d="M157.9 167L159.45 48L160.55 48L162.1 167Z"/></g>
+              <g class="vu-needle" data-vu-needle transform="rotate(-58 160 167)"><path class="vu-needle-body" d="M158.2 167L159.35 49Q160 45 160.65 49L161.8 167Z" fill="url(#vu-needle-left)"/><path class="vu-needle-highlight" d="M159.75 165L159.86 52Q160 49 160.12 52L160.25 165Z"/></g>
+              <g class="vu-hub"><circle class="vu-hub-outer" cx="160" cy="167" r="20"/><circle class="vu-hub-rim" cx="160" cy="167" r="14" fill="url(#vu-hub-left)"/><circle class="vu-hub-core" cx="160" cy="167" r="8"/><path class="vu-hub-slot" d="M160 160V174"/><path class="vu-hub-highlight" d="M151.5 163Q156 155 164 156"/></g>
+              <circle class="vu-mount-screw" cx="38" cy="157" r="3"/><circle class="vu-mount-screw" cx="282" cy="157" r="3"/>
+              <path class="vu-glass-reflection" d="M35 52C83 25 180 17 279 34L261 61C180 42 101 44 46 70Z"/>
+              <path class="vu-glass-glint" d="M34 46Q82 24 151 22Q231 19 276 35"/>
+              <path class="vu-micro-scratch" d="M73 116l24-5M238 78l18-4"/>
             </svg>
           </div>
           <div class="vu-meter" data-channel="right">
             <svg class="vu-meter-face" viewBox="0 0 320 190" preserveAspectRatio="none">
               <defs>
-                <linearGradient id="vu-shell-right" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#effff1"/><stop offset=".09" stop-color="#2eff58"/><stop offset=".3" stop-color="#003d17"/><stop offset=".48" stop-color="#baffc4"/><stop offset=".67" stop-color="#006326"/><stop offset=".86" stop-color="#eefff1"/><stop offset="1" stop-color="#001107"/></linearGradient>
-                <radialGradient id="vu-face-right" cx="42%" cy="21%" r="86%"><stop offset="0" stop-color="#08772c"/><stop offset=".36" stop-color="#03471c"/><stop offset=".78" stop-color="#001708"/><stop offset="1" stop-color="#000603"/></radialGradient>
-                <linearGradient id="vu-needle-right" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#e6c67f"/><stop offset=".68" stop-color="#fff8d9"/><stop offset="1" stop-color="#fff"/></linearGradient>
-                <filter id="vu-glow-right" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                <linearGradient id="vu-shell-right" x1=".05" y1=".01" x2=".95" y2=".97"><stop offset="0" stop-color="#dcffe2"/><stop offset=".06" stop-color="#21ea54"/><stop offset=".15" stop-color="#042714"/><stop offset=".31" stop-color="#008e36"/><stop offset=".43" stop-color="#001008"/><stop offset=".57" stop-color="#dcffe1"/><stop offset=".64" stop-color="#0b7431"/><stop offset=".8" stop-color="#000a05"/><stop offset=".92" stop-color="#baffc4"/><stop offset="1" stop-color="#000603"/></linearGradient>
+                <radialGradient id="vu-face-right" cx="58%" cy="19%" r="94%"><stop offset="0" stop-color="#0a5527"/><stop offset=".3" stop-color="#042b17"/><stop offset=".66" stop-color="#01110a"/><stop offset=".9" stop-color="#000603"/><stop offset="1" stop-color="#000201"/></radialGradient>
+                <linearGradient id="vu-bezel-right" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#d9ffe1" stop-opacity=".84"/><stop offset=".1" stop-color="#078b38" stop-opacity=".8"/><stop offset=".45" stop-color="#001008"/><stop offset=".86" stop-color="#0c6630" stop-opacity=".58"/><stop offset="1" stop-color="#000402"/></linearGradient>
+                <linearGradient id="vu-pane-right" x1=".92" y1="0" x2=".18" y2="1"><stop stop-color="#fff" stop-opacity=".32"/><stop offset=".22" stop-color="#e6ffea" stop-opacity=".07"/><stop offset=".57" stop-color="#0a682e" stop-opacity=".025"/><stop offset="1" stop-color="#000" stop-opacity=".24"/></linearGradient>
+                <linearGradient id="vu-needle-right" x1="0" y1="1" x2="0" y2="0"><stop stop-color="#775728"/><stop offset=".18" stop-color="#d6b773"/><stop offset=".7" stop-color="#fff1c6"/><stop offset="1" stop-color="#fffdf4"/></linearGradient>
+                <radialGradient id="vu-hub-right" cx="38%" cy="25%" r="76%"><stop stop-color="#fffce7"/><stop offset=".12" stop-color="#b1d5b5"/><stop offset=".31" stop-color="#21482f"/><stop offset=".55" stop-color="#020a06"/><stop offset=".78" stop-color="#2b8345"/><stop offset="1" stop-color="#000402"/></radialGradient>
+                <clipPath id="vu-clip-right"><path d="M27 165V53Q27 35 49 29Q160 18 271 29Q293 35 293 53V165Q293 168 287 168H33Q27 168 27 165Z"/></clipPath>
+                <pattern id="vu-texture-right" width="11" height="11" patternUnits="userSpaceOnUse"><circle cx="2.1" cy="7.3" r=".38" fill="#dfffe4"/><circle cx="8.2" cy="2.7" r=".25" fill="#789c7e"/><path d="M5 9l2.3-.4" stroke="#d9f4dc" stroke-width=".18"/></pattern>
               </defs>
+              <path class="vu-bezel-shadow" d="M14 182Q4 180 4 165V48Q4 15 38 6Q160-7 282 6Q316 15 316 48V165Q316 181 304 182Z"/>
               <path class="vu-shell" d="M18 181Q7 181 7 166V50Q7 18 39 10Q160-3 281 10Q313 18 313 50V166Q313 181 302 181H18Z" fill="url(#vu-shell-right)"/>
+              <path class="vu-inner-bezel" d="M21 169V49Q21 26 45 20Q160 8 275 20Q299 26 299 49V169Q299 176 291 176H29Q21 176 21 169Z" fill="url(#vu-bezel-right)"/>
               <path class="vu-cavity" d="M24 166V52Q24 32 47 26Q160 14 273 26Q296 32 296 52V166Q296 171 289 171H31Q24 171 24 166Z" fill="url(#vu-face-right)"/>
+              <rect class="vu-face-texture" x="25" y="25" width="270" height="144" clip-path="url(#vu-clip-right)" fill="url(#vu-texture-right)"/>
+              <path class="vu-face-pane" d="M27 165V53Q27 35 49 29Q160 18 271 29Q293 35 293 53V165Q293 168 287 168H33Q27 168 27 165Z" fill="url(#vu-pane-right)"/>
               <g class="vu-scale" data-vu-scale></g>
               <text class="vu-channel" x="160" y="142">R</text>
-              <g class="vu-needle" data-vu-needle transform="rotate(-58 160 167)"><path d="M157.8 166L159.1 50Q160 45 160.9 50L162.2 166Z" fill="url(#vu-needle-right)" filter="url(#vu-glow-right)"/></g>
-              <g class="vu-hub"><circle cx="160" cy="167" r="20"/><circle cx="160" cy="167" r="13"/><path d="M160 153V181M146 167H174"/></g>
-              <path class="vu-glass-glint" d="M32 49Q45 31 75 28Q170 15 267 29"/>
+              <g class="vu-needle-shadow" data-vu-shadow transform="translate(.6 1.8) rotate(-58 160 167)"><path d="M157.9 167L159.45 48L160.55 48L162.1 167Z"/></g>
+              <g class="vu-needle" data-vu-needle transform="rotate(-58 160 167)"><path class="vu-needle-body" d="M158.2 167L159.35 49Q160 45 160.65 49L161.8 167Z" fill="url(#vu-needle-right)"/><path class="vu-needle-highlight" d="M159.75 165L159.86 52Q160 49 160.12 52L160.25 165Z"/></g>
+              <g class="vu-hub"><circle class="vu-hub-outer" cx="160" cy="167" r="20"/><circle class="vu-hub-rim" cx="160" cy="167" r="14" fill="url(#vu-hub-right)"/><circle class="vu-hub-core" cx="160" cy="167" r="8"/><path class="vu-hub-slot" d="M160 160V174"/><path class="vu-hub-highlight" d="M152 162Q157 155 165 156"/></g>
+              <circle class="vu-mount-screw" cx="38" cy="157" r="3"/><circle class="vu-mount-screw" cx="282" cy="157" r="3"/>
+              <path class="vu-glass-reflection" d="M43 38C121 18 225 23 284 52L267 70C205 50 120 45 49 62Z"/>
+              <path class="vu-glass-glint" d="M43 39Q111 18 192 22Q251 24 280 43"/>
+              <path class="vu-micro-scratch" d="M61 89l17-3M223 126l29-5"/>
             </svg>
           </div>
         </div>
         <h2 id="now-playing-heading"></h2>
         <p class="release-line"><span class="release-title"></span><b aria-hidden="true">•</b><span class="track-title"></span></p>
-        <div class="transport-row"><span class="transport-hint">PLAY / PAUSE ON BANDCAMP</span><span class="duration" aria-label="Track duration">—:—</span></div>
+        <div class="transport-row"><span class="duration" aria-label="Track duration">—:—</span></div>
         <div class="bandcamp-transport" aria-label="Official Bandcamp playback controls"><iframe title="Official Bandcamp playback controls" loading="eager" allow="autoplay" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe></div>
       </section>
       <nav class="player-actions" aria-label="Current discovery actions">

@@ -21,9 +21,11 @@ const tickerTrack = document.querySelector('.ticker-track');
 const tickerStream = document.querySelector('.ticker-stream');
 const tickerCopies = [...document.querySelectorAll('.ticker-copy')];
 const tickerAccessible = document.querySelector('.ticker-accessible');
+const bandcampTransport = document.querySelector('.bandcamp-transport');
 const bandcampFrame = document.querySelector('.bandcamp-transport iframe');
 const meterRow = document.querySelector('.vu-meter-row');
 const meterNeedles = [...document.querySelectorAll('[data-vu-needle]')];
+const meterNeedleShadows = [...document.querySelectorAll('[data-vu-shadow]')];
 const meterScales = [...document.querySelectorAll('[data-vu-scale]')];
 const bubbleTubeCanvas = document.querySelector('.bubble-tube');
 const bubbleTubeContext = bubbleTubeCanvas?.getContext('2d');
@@ -49,16 +51,16 @@ let audioContext = null;
 let bubbleTubeFrame = 0;
 let bubbleTubeStartedAt = 0;
 let meterFrame = 0;
-let meterStartedAt = 0;
 let meterLastFrameAt = 0;
+let meterPlayElapsed = 0;
 let meterPlaybackActive = false;
 let meterPlaybackStartedAt = 0;
 let meterSeed = 5381;
 let meterProfile = null;
 let meterSettleUntil = 0;
 let meterChannels = [
-  {level:0,velocity:0,target:0,angle:-58},
-  {level:0,velocity:0,target:0,angle:-58},
+  {level:0,velocity:0,target:0,angle:-58,peak:0},
+  {level:0,velocity:0,target:0,angle:-58,peak:0},
 ];
 let bandcampFrameFocused = false;
 let tickerQueue = [];
@@ -680,53 +682,77 @@ function setMeterSeed(seed,waters=[]){
   meterSeed=[...String(seed)].reduce((value,char)=>(Math.imul(value,33)+char.charCodeAt(0))>>>0,5381);
   const category=String(waters.find(value=>value!=='anything')||'anything').toLowerCase();
   const characters={
-    heavy:{activity:1.02,pace:.82,stereo:.16},
-    dreamy:{activity:.82,pace:.7,stereo:.22},
-    quiet:{activity:.56,pace:.58,stereo:.12},
-    electronic:{activity:.9,pace:1.12,stereo:.18},
-    dark:{activity:.72,pace:.64,stereo:.15},
-    loud:{activity:1.08,pace:1.06,stereo:.2},
-    strange:{activity:.91,pace:.89,stereo:.3},
-    anything:{activity:.84,pace:.84,stereo:.2},
+    heavy:{activity:1.04,pace:.9,stereo:.13,release:.94,transients:1.14},
+    dreamy:{activity:.82,pace:.72,stereo:.18,release:.76,transients:.76},
+    quiet:{activity:.56,pace:.62,stereo:.1,release:.84,transients:.48},
+    electronic:{activity:.91,pace:1.12,stereo:.16,release:1.08,transients:1.08},
+    dark:{activity:.73,pace:.68,stereo:.12,release:.83,transients:.78},
+    loud:{activity:1.08,pace:1.05,stereo:.17,release:1.04,transients:1.2},
+    strange:{activity:.9,pace:.88,stereo:.25,release:.9,transients:1.02},
+    anything:{activity:.85,pace:.86,stereo:.16,release:.9,transients:.92},
   };
   const character=characters[category]||characters.anything;
   meterProfile={
     category,
     character,
-    tempo:72+Math.round(meterRandom(5)*70),
-    phaseA:meterRandom(11)*Math.PI*2,
-    phaseB:meterRandom(17)*Math.PI*2,
-    phaseL:meterRandom(23)*Math.PI*2,
-    phaseR:meterRandom(29)*Math.PI*2,
-    accentEvery:3+Math.floor(meterRandom(31)*4),
+    pulsePeriod:.42+meterRandom(5)*.31,
+    slowPeriod:4.8+meterRandom(11)*4.7,
+    phrasePeriod:.72+meterRandom(17)*1.18,
+    channelPeriod:.4+meterRandom(23)*.44,
   };
+  meterPlayElapsed=0;
   meterChannels=[
-    {level:0,velocity:0,target:0,angle:METER_REST_ANGLE},
-    {level:0,velocity:0,target:0,angle:METER_REST_ANGLE},
+    {level:0,velocity:0,target:0,angle:METER_REST_ANGLE,peak:0},
+    {level:0,velocity:0,target:0,angle:METER_REST_ANGLE,peak:0},
   ];
-  for(const needle of meterNeedles)needle.setAttribute('transform',`rotate(${METER_REST_ANGLE} ${METER_PIVOT.x} ${METER_PIVOT.y})`);
+  for(const needle of meterNeedles)needle.style.transform=`rotate(${METER_REST_ANGLE}deg)`;
+  for(const shadow of meterNeedleShadows)shadow.style.transform=`translate(1px,1.6px) rotate(${METER_REST_ANGLE}deg)`;
+}
+
+function meterHash(index,salt=0){
+  let value=(meterSeed^Math.imul(index+1,0x9e3779b1)^Math.imul(salt+17,0x85ebca6b))>>>0;
+  value^=value>>>16;value=Math.imul(value,0x7feb352d);value^=value>>>15;value=Math.imul(value,0x846ca68b);value^=value>>>16;
+  return (value>>>0)/4294967296;
+}
+
+function meterEnvelope(time,period,salt){
+  const cursor=Math.max(0,time)/period;
+  const index=Math.floor(cursor);
+  const fraction=cursor-index;
+  const eased=fraction*fraction*(3-2*fraction);
+  const start=meterHash(index,salt);
+  const end=meterHash(index+1,salt);
+  return start+(end-start)*eased;
+}
+
+function meterTransient(time,channelIndex){
+  const period=meterProfile.pulsePeriod*(channelIndex?1.037:.973);
+  const cursor=Math.max(0,time)/period;
+  const index=Math.floor(cursor);
+  const phase=cursor-index;
+  const strength=meterHash(index,channelIndex?151:139);
+  if(strength<.42)return 0;
+  const rarity=strength>.93?1.65:strength>.8?1.05:.55;
+  return Math.exp(-phase*(strength>.93?7:11))*((strength-.42)/.58)*rarity;
 }
 
 function proceduralMeterTarget(elapsed,channelIndex){
   if(!meterProfile||!meterPlaybackActive)return 0;
-  const {character,tempo,phaseA,phaseB,phaseL,phaseR,accentEvery}=meterProfile;
+  const {character,slowPeriod,phrasePeriod,channelPeriod}=meterProfile;
   const time=elapsed*character.pace;
-  const wake=reducedMotion.matches?.58:Math.min(1,Math.max(0,(performance.now()-meterPlaybackStartedAt)/720));
-  const beat=time*tempo/60;
-  const beatPhase=beat-Math.floor(beat);
-  const beatNumber=Math.floor(beat);
-  const transient=Math.exp(-beatPhase*10.5)*(beatNumber%accentEvery===0?1:.58);
-  const slow=.5+.5*Math.sin(time*.73+phaseA);
-  const mid=.5+.5*Math.sin(time*1.91+phaseB+Math.sin(time*.17)*.8);
-  const texture=.5+.5*Math.sin(time*4.37+(channelIndex?phaseR:phaseL));
-  const shared=.13+slow*.18+mid*.23+transient*.23;
-  const stereoWave=Math.sin(time*(channelIndex?2.57:2.31)+(channelIndex?phaseR:phaseL));
-  const stereoBurst=Math.pow(Math.max(0,Math.sin(time*(channelIndex?1.37:1.21)+(channelIndex?phaseB:phaseA))),8);
-  const rarePeak=Math.pow(Math.max(0,Math.sin(time*.63+phaseA+(channelIndex?.48:0))),10)*.52;
-  const relatedOffset=(stereoWave*.055+texture*.04+stereoBurst*character.stereo)*(channelIndex?1:-.82);
-  const ceiling=channelIndex?.96:.93;
-  let target=(shared+relatedOffset+rarePeak)*character.activity*wake;
-  if(reducedMotion.matches)target=.08+target*.28;
+  const wake=reducedMotion.matches?.5:Math.min(1,Math.max(0,(performance.now()-meterPlaybackStartedAt)/640));
+  const slow=meterEnvelope(time,slowPeriod,31);
+  const phrase=meterEnvelope(time,phrasePeriod,47);
+  const sharedTransient=Math.max(meterTransient(time,0),meterTransient(time+.08,1)*.72);
+  const channel=meterEnvelope(time,channelPeriod,channelIndex?83:71)-.5;
+  const bias=meterEnvelope(time,2.3+channelIndex*.37,channelIndex?109:101)-.5;
+  const independentTransient=meterTransient(time+(channelIndex?.12:.03),channelIndex);
+  const sustained=.16+slow*.22+phrase*.24;
+  const transient=(sharedTransient*.68+independentTransient*.32)*.78*character.transients;
+  const relatedOffset=(channel*.12+bias*.07)*(.55+character.stereo)*(channelIndex?1:-.88);
+  const ceiling=channelIndex?.94:.92;
+  let target=(sustained+transient+relatedOffset)*character.activity*wake;
+  if(reducedMotion.matches)target=.07+target*.24;
   return Math.max(0,Math.min(ceiling,target));
 }
 
@@ -734,20 +760,24 @@ function renderVuMeters(now=performance.now()){
   if(!meterNeedles.length)return;
   const delta=meterLastFrameAt?Math.min(.034,(now-meterLastFrameAt)/1000):.016;
   meterLastFrameAt=now;
-  const elapsed=(now-meterStartedAt)/1000;
+  if(meterPlaybackActive)meterPlayElapsed+=delta;
   for(let index=0;index<meterChannels.length;index++){
     const channel=meterChannels[index];
-    channel.target=proceduralMeterTarget(elapsed,index);
+    channel.target=proceduralMeterTarget(meterPlayElapsed,index);
     const rising=channel.target>channel.level;
-    const motionScale=reducedMotion.matches?.42:1;
-    const stiffness=(rising?48:18)*motionScale;
-    const damping=(rising?10.5:7.2)/Math.max(.72,motionScale);
-    channel.velocity+=(channel.target-channel.level)*stiffness*delta;
-    channel.velocity*=Math.exp(-damping*delta);
-    channel.level=Math.max(-.025,Math.min(1.04,channel.level+channel.velocity*delta));
-    const micro=meterPlaybackActive&&!reducedMotion.matches?Math.sin(elapsed*(index?23.1:21.7)+(index?1.6:.2))*.18:0;
+    const motionScale=reducedMotion.matches?.46:1;
+    const stiffness=(rising?178:28*meterProfile.character.release)*motionScale;
+    const damping=(rising?17.6:8.4)/Math.max(.72,motionScale);
+    const acceleration=(channel.target-channel.level)*stiffness-channel.velocity*damping;
+    channel.velocity+=acceleration*delta;
+    channel.level=Math.max(-.018,Math.min(1.015,channel.level+channel.velocity*delta));
+    channel.peak=Math.max(channel.peak*.994,channel.level);
+    const micro=meterPlaybackActive&&!reducedMotion.matches?(meterEnvelope(meterPlayElapsed,.095,index?197:193)-.5)*.14:0;
     channel.angle=METER_REST_ANGLE+(METER_MAX_ANGLE-METER_REST_ANGLE)*channel.level+micro;
-    meterNeedles[index]?.setAttribute('transform',`rotate(${channel.angle.toFixed(2)} ${METER_PIVOT.x} ${METER_PIVOT.y})`);
+    if(meterNeedles[index])meterNeedles[index].style.transform=`rotate(${channel.angle.toFixed(2)}deg)`;
+    const shadowX=(.9+Math.sin(channel.angle*Math.PI/180)*.7).toFixed(2);
+    const shadowY=(1.45-Math.cos(channel.angle*Math.PI/180)*.18).toFixed(2);
+    if(meterNeedleShadows[index])meterNeedleShadows[index].style.transform=`translate(${shadowX}px,${shadowY}px) rotate(${channel.angle.toFixed(2)}deg)`;
   }
 }
 
@@ -755,15 +785,15 @@ function stopVuMeters({rest=false}={}){
   if(meterFrame)cancelAnimationFrame(meterFrame);
   meterFrame=0;meterLastFrameAt=0;
   if(rest){
-    meterChannels.forEach(channel=>{channel.level=0;channel.velocity=0;channel.target=0;channel.angle=METER_REST_ANGLE;});
-    for(const needle of meterNeedles)needle.setAttribute('transform',`rotate(${METER_REST_ANGLE} ${METER_PIVOT.x} ${METER_PIVOT.y})`);
+    meterChannels.forEach(channel=>{channel.level=0;channel.velocity=0;channel.target=0;channel.angle=METER_REST_ANGLE;channel.peak=0;});
+    for(const needle of meterNeedles)needle.style.transform=`rotate(${METER_REST_ANGLE}deg)`;
+    for(const shadow of meterNeedleShadows)shadow.style.transform=`translate(1px,1.6px) rotate(${METER_REST_ANGLE}deg)`;
   }
 }
 
 function startVuMeters(){
   stopVuMeters();
   if(!meterRow||!playerScreen.classList.contains('is-active'))return;
-  if(!meterStartedAt)meterStartedAt=performance.now();
   const frame=now=>{
     if(document.hidden||!playerScreen.classList.contains('is-active')){meterFrame=0;return;}
     renderVuMeters(now);
@@ -778,8 +808,9 @@ function setMeterPlayback(active,{restart=false}={}){
   const next=Boolean(active);
   if(next&&!meterPlaybackActive)meterPlaybackStartedAt=performance.now();
   meterPlaybackActive=next;
-  if(!next)meterSettleUntil=performance.now()+(reducedMotion.matches?1800:1350);
+  if(!next)meterSettleUntil=performance.now()+(reducedMotion.matches?1800:1200);
   meterRow?.setAttribute('data-playback',meterPlaybackActive?'playing':'idle');
+  bandcampTransport?.setAttribute('data-playback',meterPlaybackActive?'playing':'idle');
   if(restart||meterPlaybackActive||!meterFrame)startVuMeters();
 }
 
@@ -841,11 +872,10 @@ function populatePlayer(entry, manifest) {
   setTickerQueue(buildTickerMessages({...manifest,selectedTrackTitle:track.title},entry,artistEntry,universeStats));
   bandcampFrame.title=`Official Bandcamp playback controls for ${track.title} by ${manifest.artist}`;
   setMeterPlayback(false);
-  bandcampFrame.src = `https://bandcamp.com/EmbeddedPlayer/track=${encodeURIComponent(track.bandcampEmbedTrackId)}/size=small/bgcol=001a08/linkcol=67ff7b/tracklist=false/artwork=none/transparent=true/`;
+  bandcampFrame.src = `https://bandcamp.com/EmbeddedPlayer/track=${encodeURIComponent(track.bandcampEmbedTrackId)}/size=small/bgcol=000000/linkcol=67ff7b/tracklist=false/artwork=none/transparent=true/`;
   buyLink.href = validBandcampUrl(manifest.bandcampUrl);
   buyLink.setAttribute('aria-label',`Buy ${manifest.releaseTitle || 'this release'} by ${manifest.artist} on Bandcamp`);
   shareButton.setAttribute('aria-label',`Share ${manifest.releaseTitle || track.title} by ${manifest.artist}`);
-  meterStartedAt=performance.now();
   setMeterSeed(track.id || track.bandcampEmbedTrackId,entry.waters?.length?entry.waters:[...selected]);
   const history = pushHistory(readJson(historyKey,[]),entry.slug,SESSION_HISTORY_LIMIT);
   sessionStorage.setItem(historyKey,JSON.stringify(history));
@@ -1049,7 +1079,7 @@ window.CosmicGlassAudio=Object.freeze({
 
 window.CosmicVuMeters=Object.freeze({
   setPlaying:setMeterPlayback,
-  getState(){return {playback:meterPlaybackActive?'playing':'idle',source:'procedural-transport-coupled',leftAngle:meterChannels[0].angle,rightAngle:meterChannels[1].angle,leftLevel:meterChannels[0].level,rightLevel:meterChannels[1].level,category:meterProfile?.category||'anything'};},
+  getState(){return {playback:meterPlaybackActive?'playing':'idle',source:'procedural-transport-coupled',elapsed:meterPlayElapsed,leftAngle:meterChannels[0].angle,rightAngle:meterChannels[1].angle,leftLevel:meterChannels[0].level,rightLevel:meterChannels[1].level,leftTarget:meterChannels[0].target,rightTarget:meterChannels[1].target,leftVelocity:meterChannels[0].velocity,rightVelocity:meterChannels[1].velocity,category:meterProfile?.category||'anything'};},
 });
 
 recordEvent('session_start','discovery-machine',{product:'two-screen-discovery'});
