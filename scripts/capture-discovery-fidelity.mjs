@@ -73,7 +73,15 @@ for (const size of sizes) {
   await page.waitForTimeout(700);
   const bubbleAfter = await page.locator('.bubble-tube').evaluate((element) => element.toDataURL());
   const liquidAfter = await page.locator('.liquid-surface').evaluate((element) => element.toDataURL());
-  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-${size.width}x${size.height}.png`) });
+  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-playing-${size.width}x${size.height}.png`) });
+  await page.waitForTimeout(2400);
+  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-tall-peak-${size.width}x${size.height}.png`) });
+  await page.locator('.bandcamp-transport iframe').focus();
+  await page.waitForFunction(() => document.querySelector('.liquid-surface')?.getAttribute('data-playback') === 'idle');
+  await page.waitForTimeout(420);
+  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-settling-${size.width}x${size.height}.png`) });
+  await page.waitForTimeout(1500);
+  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-paused-${size.width}x${size.height}.png`) });
   const beforeNext = {
     slug: new URL(page.url()).searchParams.get('release'),
     categories: new URL(page.url()).searchParams.get('categories'),
@@ -100,6 +108,7 @@ for (const size of sizes) {
   longUrl.searchParams.set('categories',longEntry.waters?.[0] || 'anything');
   await page.goto(longUrl.toString(), { waitUntil: 'networkidle' });
   await page.locator('.player-screen.is-active').waitFor();
+  await page.waitForTimeout(450);
   await page.screenshot({ path: path.join(outputDirectory, `${label}-player-long-ticker-${size.width}x${size.height}.png`) });
 
   const metrics = await page.evaluate(() => ({
@@ -108,6 +117,14 @@ for (const size of sizes) {
     documentWidth: document.documentElement.scrollWidth,
     documentHeight: document.documentElement.scrollHeight,
     machine: document.querySelector('.discovery-machine')?.getBoundingClientRect().toJSON(),
+    ticker:{
+      color:getComputedStyle(document.querySelector('.ticker-copy')).color,
+      animationName:getComputedStyle(document.querySelector('.ticker-stream')).animationName,
+      animationDuration:getComputedStyle(document.querySelector('.ticker-stream')).animationDuration,
+      copyCount:document.querySelectorAll('.ticker-copy').length,
+      copiesMatch:[...document.querySelectorAll('.ticker-copy')].every((copy,index,copies)=>copy.textContent===copies[0].textContent),
+      text:document.querySelector('.ticker-copy')?.textContent,
+    },
   }));
   results.push({ size, release: release.slug, goHoldObservedMs, interaction, audioState, bubbleTubeChanged:bubbleBefore!==bubbleAfter, liquidSurfaceChanged:liquidBefore!==liquidAfter, next:{before:beforeNext,after:afterNext}, consoleErrors, metrics });
   await context.close();

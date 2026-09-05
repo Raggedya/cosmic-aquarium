@@ -21,8 +21,8 @@
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-go-broken.webp">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-mobile.mp3">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-go-mobile.mp3">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=17b76bf05bce">
-  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=17b76bf05bce"></script>
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=ae68083e6579">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=ae68083e6579"></script>
 </head>
 <body>
   <main class="discovery-machine" data-base="/cosmic-aquarium" aria-label="Cosmic Aquaria independent music discovery machine">
@@ -56,7 +56,13 @@
         <i class="material-bubble material-bubble--ticker-a" aria-hidden="true"></i>
         <i class="material-bubble material-bubble--ticker-b" aria-hidden="true"></i>
         <i class="material-bubble material-bubble--ticker-c" aria-hidden="true"></i>
-        <div class="ticker-track"><span>MUSIC LIVES HERE&nbsp;&nbsp; • &nbsp;&nbsp;SUPPORT ARTISTS&nbsp;&nbsp; • &nbsp;&nbsp;GOOD VIBES</span></div>
+        <div class="ticker-track" aria-live="polite">
+          <div class="ticker-stream" aria-hidden="true">
+            <span class="ticker-copy">MUSIC LIVES HERE&nbsp;&nbsp; • &nbsp;&nbsp;SUPPORT ARTISTS&nbsp;&nbsp; • &nbsp;&nbsp;GOOD VIBES&nbsp;&nbsp; • &nbsp;&nbsp;</span>
+            <span class="ticker-copy">MUSIC LIVES HERE&nbsp;&nbsp; • &nbsp;&nbsp;SUPPORT ARTISTS&nbsp;&nbsp; • &nbsp;&nbsp;GOOD VIBES&nbsp;&nbsp; • &nbsp;&nbsp;</span>
+          </div>
+          <span class="visually-hidden ticker-accessible">MUSIC LIVES HERE • SUPPORT ARTISTS • GOOD VIBES</span>
+        </div>
       </div>
       <section class="now-playing-panel">
         <div class="bubble bubble--one" aria-hidden="true"></div><div class="bubble bubble--two" aria-hidden="true"></div><div class="bubble bubble--three" aria-hidden="true"></div><div class="bubble bubble--four" aria-hidden="true"></div><div class="bubble bubble--five" aria-hidden="true"></div><div class="bubble bubble--six" aria-hidden="true"></div><div class="bubble bubble--seven" aria-hidden="true"></div><div class="bubble bubble--eight" aria-hidden="true"></div>

@@ -216,6 +216,8 @@ test('official Bandcamp playback has a truthful transport-coupled liquid surface
   assert.doesNotMatch(runtime,/createMediaElementSource|createMediaStreamSource/);
   assert.match(runtime,/function renderLiquidSurface/);
   assert.match(runtime,/function liquidSurfaceY/);
+  assert.match(runtime,/function drawLiquidPeakBodies/);
+  assert.match(runtime,/function drawLiquidReflection/);
   assert.match(runtime,/function drawLiquidDroplets/);
   assert.match(runtime,/liquidEnergy\+=\(target-liquidEnergy\)/);
   assert.match(runtime,/requestAnimationFrame\(frame\)/);
@@ -281,7 +283,14 @@ test('player ticker is optically recessed and the upper chamber has a contained 
   assert.match(template,/canvas class="bubble-tube" aria-hidden="true"/);
   assert.match(css,/\.ticker-shell::before[^}]+inset[^}]+box-shadow/);
   assert.match(css,/\.ticker-shell::after[^}]+pointer-events:none/);
-  assert.match(css,/\.ticker-track span \{ font-size:clamp\(12px,3\.55vw,28px\)/);
+  assert.match(template,/class="ticker-stream"/);
+  assert.equal((template.match(/class="ticker-copy"/g)||[]).length,2);
+  assert.match(css,/\.player-screen \.ticker-copy \{ font-size:clamp\(12px,3\.55vw,28px\)/);
+  assert.match(css,/color:#fff4d4/);
+  assert.match(css,/@keyframes ticker-scroll[\s\S]+translate3d\(calc\(8px - var\(--ticker-distance\)\)/);
+  assert.match(runtime,/const continuous=`\$\{tickerQueue\.join\('  •  '\)\}  •  `/);
+  assert.match(runtime,/distance\/speed/);
+  assert.doesNotMatch(runtime,/showTickerMessage|tickerTimer/);
   assert.match(css,/\.bubble-tube[^}]+mask-image/);
   assert.match(runtime,/BUBBLE_TUBE_PARTICLES/);
   assert.match(runtime,/duration:17\.2/);
