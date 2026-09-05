@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-05T00:00:33.038Z",
-  "updatedAt": "2026-09-05T00:00:33.038Z",
+  "createdAt": "2026-09-05T06:40:07.822Z",
+  "updatedAt": "2026-09-05T06:40:07.822Z",
   "members": [
     {
       "artistId": "bandcamp:activedarkfilament",
@@ -119,26 +119,6 @@
       ],
       "styles": [
         "electronic"
-      ]
-    },
-    {
-      "artistId": "bandcamp:callmeafriend",
-      "artistName": "boy",
-      "aquariumSlug": "boy-burnt-scriptures-v-science-fiction",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/boy-burnt-scriptures-v-science-fiction/",
-      "bandcampArtistUrl": "https://callmeafriend.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical ELECTRONIC style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "dark"
-      ],
-      "styles": [
-        "electronic",
-        "dark"
       ]
     },
     {
@@ -364,6 +344,48 @@
       ]
     },
     {
+      "artistId": "bandcamp:inquietoht",
+      "artistName": "InquietoMusik",
+      "aquariumSlug": "inquietomusik-hablame-sobre-la-ira-inq033",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/inquietomusik-hablame-sobre-la-ira-inq033/",
+      "bandcampArtistUrl": "https://inquietoht.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical ELECTRONIC style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "heavy",
+        "loud"
+      ],
+      "styles": [
+        "electronic",
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:jeffrum",
+      "artistName": "Jeff Rum",
+      "aquariumSlug": "jeff-rum-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jeff-rum-ep/",
+      "bandcampArtistUrl": "https://jeffrum.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical ELECTRONIC style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dark",
+        "electronic"
+      ],
+      "styles": [
+        "dark",
+        "electronic"
+      ]
+    },
+    {
       "artistId": "bandcamp:marcuspalt",
       "artistName": "Marcus Palt",
       "aquariumSlug": "marcus-palt-the-white-and-the-black",
@@ -387,6 +409,24 @@
       "aquariumSlug": "mulphia-ghosts-in-the-box-part-ii",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mulphia-ghosts-in-the-box-part-ii/",
       "bandcampArtistUrl": "https://mulphia.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical ELECTRONIC style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic"
+      ],
+      "styles": [
+        "electronic"
+      ]
+    },
+    {
+      "artistId": "bandcamp:noizebot",
+      "artistName": "Noize Bot",
+      "aquariumSlug": "noize-bot-dancing-alone-in-someone-else-s-dream",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/noize-bot-dancing-alone-in-someone-else-s-dream/",
+      "bandcampArtistUrl": "https://noizebot.bandcamp.com/",
       "verificationStatus": "verified",
       "verificationScore": 1,
       "source": "automatic-style-classification",
@@ -531,6 +571,26 @@
       "styles": [
         "electronic",
         "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:synerythm",
+      "artistName": "Synerythm",
+      "aquariumSlug": "synerythm-snr024",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/synerythm-snr024/",
+      "bandcampArtistUrl": "https://synerythm.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical ELECTRONIC style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "styles": [
+        "electronic",
+        "quiet"
       ]
     },
     {

@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-05T00:00:33.033Z",
-  "updatedAt": "2026-09-05T00:00:33.033Z",
+  "createdAt": "2026-09-05T06:40:07.821Z",
+  "updatedAt": "2026-09-05T06:40:07.821Z",
   "members": [
     {
       "artistId": "bandcamp:52hz-music",
@@ -456,6 +456,26 @@
       ]
     },
     {
+      "artistId": "bandcamp:josearellano",
+      "artistName": "Jose Arellano",
+      "aquariumSlug": "jose-arellano-erratika",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jose-arellano-erratika/",
+      "bandcampArtistUrl": "https://josearellano.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "heavy"
+      ],
+      "styles": [
+        "quiet",
+        "heavy"
+      ]
+    },
+    {
       "artistId": "bandcamp:midnightfusion",
       "artistName": "Midnight Fusion",
       "aquariumSlug": "midnight-fusion-chicago-blues-slow-electric-blues-guitar",
@@ -471,6 +491,44 @@
       ],
       "styles": [
         "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:misstake-studios",
+      "artistName": "MISSTAKE STUDIOS",
+      "aquariumSlug": "misstake-studios-tandem",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/misstake-studios-tandem/",
+      "bandcampArtistUrl": "https://misstake-studios.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet"
+      ],
+      "styles": [
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:nicochkifi",
+      "artistName": "Nico Chkifi",
+      "aquariumSlug": "nico-chkifi-brayani-with-bram-de-looze-and-yannick-peeters",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nico-chkifi-brayani-with-bram-de-looze-and-yannick-peeters/",
+      "bandcampArtistUrl": "https://nicochkifi.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "styles": [
+        "quiet",
+        "strange"
       ]
     },
     {
@@ -546,6 +604,26 @@
       ]
     },
     {
+      "artistId": "bandcamp:sonnovdrone",
+      "artistName": "sonnov",
+      "aquariumSlug": "sonnov-pinaha",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sonnov-pinaha/",
+      "bandcampArtistUrl": "https://sonnovdrone.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "dark"
+      ],
+      "styles": [
+        "quiet",
+        "dark"
+      ]
+    },
+    {
       "artistId": "bandcamp:soundspeedgradient",
       "artistName": "sound speed gradient",
       "aquariumSlug": "sound-speed-gradient-askmeabout4onthefloor-com",
@@ -582,6 +660,26 @@
       ]
     },
     {
+      "artistId": "bandcamp:synerythm",
+      "artistName": "Synerythm",
+      "aquariumSlug": "synerythm-snr024",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/synerythm-snr024/",
+      "bandcampArtistUrl": "https://synerythm.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "styles": [
+        "electronic",
+        "quiet"
+      ]
+    },
+    {
       "artistId": "bandcamp:terrestrialsmusic",
       "artistName": "Terrestials",
       "aquariumSlug": "terrestials",
@@ -599,6 +697,26 @@
       "styles": [
         "dark",
         "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:thecamdenproject",
+      "artistName": "The Camden Project",
+      "aquariumSlug": "the-camden-project-partial-concussion",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-camden-project-partial-concussion/",
+      "bandcampArtistUrl": "https://thecamdenproject.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "styles": [
+        "quiet",
+        "strange"
       ]
     },
     {

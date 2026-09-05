@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-05T00:00:33.024Z",
-  "updatedAt": "2026-09-05T00:00:33.024Z",
+  "createdAt": "2026-09-05T06:40:07.820Z",
+  "updatedAt": "2026-09-05T06:40:07.820Z",
   "members": [
     {
       "artistId": "bandcamp:activedarkfilament",
@@ -252,6 +252,28 @@
       ]
     },
     {
+      "artistId": "bandcamp:frostbitemechanica",
+      "artistName": "Frostbite Mechanica",
+      "aquariumSlug": "frostbite-mechanica-gloria-in-the-winter-storm-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/frostbite-mechanica-gloria-in-the-winter-storm-ep/",
+      "bandcampArtistUrl": "https://frostbitemechanica.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical HEAVY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "heavy",
+        "dark",
+        "loud"
+      ],
+      "styles": [
+        "heavy",
+        "dark",
+        "loud"
+      ]
+    },
+    {
       "artistId": "bandcamp:lesdmouleurs",
       "artistName": "Georges Perché",
       "aquariumSlug": "georges-perche-don-t-believe-what-i-see",
@@ -292,6 +314,48 @@
       ]
     },
     {
+      "artistId": "bandcamp:inquietoht",
+      "artistName": "InquietoMusik",
+      "aquariumSlug": "inquietomusik-hablame-sobre-la-ira-inq033",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/inquietomusik-hablame-sobre-la-ira-inq033/",
+      "bandcampArtistUrl": "https://inquietoht.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical HEAVY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "heavy",
+        "loud"
+      ],
+      "styles": [
+        "electronic",
+        "heavy",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:interestingtapesfromindia",
+      "artistName": "Interesting Tapes From India",
+      "aquariumSlug": "interesting-tapes-from-india-soundtrack-to-baharon-ke-manzil",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/interesting-tapes-from-india-soundtrack-to-baharon-ke-manzil/",
+      "bandcampArtistUrl": "https://interestingtapesfromindia.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical HEAVY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "heavy"
+      ],
+      "styles": [
+        "dreamy",
+        "heavy"
+      ]
+    },
+    {
       "artistId": "bandcamp:irinduskofficial",
       "artistName": "Irin Dusk",
       "aquariumSlug": "irin-dusk-ruins-ep",
@@ -309,6 +373,26 @@
       "styles": [
         "heavy",
         "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:josearellano",
+      "artistName": "Jose Arellano",
+      "aquariumSlug": "jose-arellano-erratika",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jose-arellano-erratika/",
+      "bandcampArtistUrl": "https://josearellano.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical HEAVY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "heavy"
+      ],
+      "styles": [
+        "quiet",
+        "heavy"
       ]
     },
     {
@@ -496,6 +580,26 @@
       ]
     },
     {
+      "artistId": "bandcamp:rxhxsxaxhxsxcxc",
+      "artistName": "Rectal Hidradenitis Suppurativa and Hypogastric Squamous Cell Carcinoma",
+      "aquariumSlug": "rectal-hidradenitis-suppurativa-and-hypogastric-squamous-cell-carcinoma",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rectal-hidradenitis-suppurativa-and-hypogastric-squamous-cell-carcinoma/",
+      "bandcampArtistUrl": "https://rxhxsxaxhxsxcxc.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical HEAVY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "styles": [
+        "heavy",
+        "loud"
+      ]
+    },
+    {
       "artistId": "bandcamp:sandekalaband",
       "artistName": "Sandekala",
       "aquariumSlug": "sandekala-mata-pedang-penghabisan",
@@ -533,6 +637,26 @@
       "styles": [
         "heavy",
         "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:smokeaggression",
+      "artistName": "Smoke Aggression",
+      "aquariumSlug": "smoke-aggression-hoffmahn-the-her-best-friend-is-really-hot-version-1999",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/smoke-aggression-hoffmahn-the-her-best-friend-is-really-hot-version-1999/",
+      "bandcampArtistUrl": "https://smokeaggression.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical HEAVY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "styles": [
+        "loud",
+        "heavy"
       ]
     },
     {

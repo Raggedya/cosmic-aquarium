@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "slug": "misstake-studios-tandem",
+  "artist": "MISSTAKE STUDIOS",
+  "bandcampUrl": "https://misstake-studios.bandcamp.com/album/tandem",
+  "releaseTitle": "Tandem",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "pop",
+    "Basel"
+  ],
+  "primaryLocation": "Basel, Switzerland",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://misstake-studios.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:39:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tandem",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tandem-136589100",
+      "title": "fast gefühlt...",
+      "artist": "MISSTAKE STUDIOS",
+      "albumTitle": "Tandem",
+      "albumKey": "tandem",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://misstake-studios.bandcamp.com/track/fast-gef-hlt",
+      "bandcampEmbedTrackId": "136589100",
+      "sourcePage": "https://misstake-studios.bandcamp.com/album/tandem",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tandem-2242084350",
+      "title": "Umwege",
+      "artist": "MISSTAKE STUDIOS",
+      "albumTitle": "Tandem",
+      "albumKey": "tandem",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://misstake-studios.bandcamp.com/track/umwege",
+      "bandcampEmbedTrackId": "2242084350",
+      "sourcePage": "https://misstake-studios.bandcamp.com/album/tandem",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "tandem-4037364969",
+      "title": "Tandem",
+      "artist": "MISSTAKE STUDIOS",
+      "albumTitle": "Tandem",
+      "albumKey": "tandem",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:28",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://misstake-studios.bandcamp.com/track/tandem",
+      "bandcampEmbedTrackId": "4037364969",
+      "sourcePage": "https://misstake-studios.bandcamp.com/album/tandem",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "tandem-2566208147",
+      "title": "Zwickmühle",
+      "artist": "MISSTAKE STUDIOS",
+      "albumTitle": "Tandem",
+      "albumKey": "tandem",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:34",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://misstake-studios.bandcamp.com/track/zwickm-hle",
+      "bandcampEmbedTrackId": "2566208147",
+      "sourcePage": "https://misstake-studios.bandcamp.com/album/tandem",
+      "accent": "#ffb66d"
+    }
+  ]
+}

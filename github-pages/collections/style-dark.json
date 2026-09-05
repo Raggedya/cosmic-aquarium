@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-05T00:00:33.047Z",
-  "updatedAt": "2026-09-05T00:00:33.047Z",
+  "createdAt": "2026-09-05T06:40:07.822Z",
+  "updatedAt": "2026-09-05T06:40:07.822Z",
   "members": [
     {
       "artistId": "bandcamp:weareaeria",
@@ -65,26 +65,6 @@
       "styles": [
         "dark",
         "quiet"
-      ]
-    },
-    {
-      "artistId": "bandcamp:callmeafriend",
-      "artistName": "boy",
-      "aquariumSlug": "boy-burnt-scriptures-v-science-fiction",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/boy-burnt-scriptures-v-science-fiction/",
-      "bandcampArtistUrl": "https://callmeafriend.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "dark"
-      ],
-      "styles": [
-        "electronic",
-        "dark"
       ]
     },
     {
@@ -208,6 +188,28 @@
       ]
     },
     {
+      "artistId": "bandcamp:frostbitemechanica",
+      "artistName": "Frostbite Mechanica",
+      "aquariumSlug": "frostbite-mechanica-gloria-in-the-winter-storm-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/frostbite-mechanica-gloria-in-the-winter-storm-ep/",
+      "bandcampArtistUrl": "https://frostbitemechanica.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical DARK style membership",
+      "displayEnabled": true,
+      "waters": [
+        "heavy",
+        "dark",
+        "loud"
+      ],
+      "styles": [
+        "heavy",
+        "dark",
+        "loud"
+      ]
+    },
+    {
       "artistId": "bandcamp:ghostlace",
       "artistName": "Ghostlace",
       "aquariumSlug": "ghostlace-watching-the-city-lights",
@@ -261,6 +263,26 @@
       ],
       "styles": [
         "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:jeffrum",
+      "artistName": "Jeff Rum",
+      "aquariumSlug": "jeff-rum-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jeff-rum-ep/",
+      "bandcampArtistUrl": "https://jeffrum.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical DARK style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dark",
+        "electronic"
+      ],
+      "styles": [
+        "dark",
+        "electronic"
       ]
     },
     {
@@ -558,6 +580,26 @@
         "dark"
       ],
       "styles": [
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:sonnovdrone",
+      "artistName": "sonnov",
+      "aquariumSlug": "sonnov-pinaha",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sonnov-pinaha/",
+      "bandcampArtistUrl": "https://sonnovdrone.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical DARK style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "dark"
+      ],
+      "styles": [
+        "quiet",
         "dark"
       ]
     },

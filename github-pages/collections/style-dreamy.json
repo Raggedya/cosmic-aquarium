@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-05T00:00:33.028Z",
-  "updatedAt": "2026-09-05T00:00:33.028Z",
+  "createdAt": "2026-09-05T06:40:07.821Z",
+  "updatedAt": "2026-09-05T06:40:07.821Z",
   "members": [
     {
       "artistId": "bandcamp:5fingerballad",
@@ -55,6 +55,24 @@
       "aquariumSlug": "bing-satellites-in-the-eastern-sky",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bing-satellites-in-the-eastern-sky/",
       "bandcampArtistUrl": "https://bingsatellites.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical DREAMY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy"
+      ],
+      "styles": [
+        "dreamy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:callmeafriend",
+      "artistName": "boy",
+      "aquariumSlug": "boy-attention-getters",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/boy-attention-getters/",
+      "bandcampArtistUrl": "https://callmeafriend.bandcamp.com/",
       "verificationStatus": "verified",
       "verificationScore": 1,
       "source": "automatic-style-classification",
@@ -330,6 +348,26 @@
       ]
     },
     {
+      "artistId": "bandcamp:interestingtapesfromindia",
+      "artistName": "Interesting Tapes From India",
+      "aquariumSlug": "interesting-tapes-from-india-soundtrack-to-baharon-ke-manzil",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/interesting-tapes-from-india-soundtrack-to-baharon-ke-manzil/",
+      "bandcampArtistUrl": "https://interestingtapesfromindia.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical DREAMY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "heavy"
+      ],
+      "styles": [
+        "dreamy",
+        "heavy"
+      ]
+    },
+    {
       "artistId": "bandcamp:kilamdapro1",
       "artistName": "kilamdapro",
       "aquariumSlug": "kilamdapro-rove-moniker",
@@ -438,6 +476,26 @@
         "dreamy"
       ],
       "styles": [
+        "dreamy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:nottheenvelopes",
+      "artistName": "Not The Envelopes",
+      "aquariumSlug": "not-the-envelopes-papers-scars",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/not-the-envelopes-papers-scars/",
+      "bandcampArtistUrl": "https://nottheenvelopes.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical DREAMY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud",
+        "dreamy"
+      ],
+      "styles": [
+        "loud",
         "dreamy"
       ]
     },
