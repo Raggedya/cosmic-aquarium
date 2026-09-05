@@ -20,7 +20,7 @@ const discoveryCore = await fs.readFile(path.join(pages,'assets','discovery-mach
 const doorwayAssetNames = ['cosmic-depth.webp','botanical-crown.webp','botanical-garden.webp','world-anywhere.webp','world-heavy.webp','world-dreamy.webp','world-electronic.webp','world-quiet.webp','world-loud.webp','world-dark.webp','world-strange.webp'];
 const doorwayAssets = await Promise.all(doorwayAssetNames.map((name) => fs.readFile(path.join(root,'public','doorway',name))));
 const discoveryFidelityAssetNames = [
-  'selector-chassis.webp','player-chassis-clean.webp',
+  'selector-chassis.webp','player-chassis-clean.webp','player-chassis-concise-actions-v3.webp',
   'selector-heavy.webp','selector-dreamy.webp','selector-quiet.webp','selector-electronic.webp',
   'selector-dark.webp','selector-loud.webp','selector-strange.webp','selector-anything.webp',
   'selector-dark-broken.webp','selector-bandcamp.webp','selector-go.webp','selector-go-broken.webp',

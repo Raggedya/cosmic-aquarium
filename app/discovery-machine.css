@@ -165,7 +165,7 @@ button { border: 0; }
 .selection-screen > .go-key.is-broken { filter:none; background:url('./discovery-fidelity/selector-go-broken.webp?v=wide-collapse-1') center/100% 100% no-repeat!important; }
 .selection-screen > .go-key.is-broken > .crack-layer { display:none; }
 
-.player-screen { padding:0; box-shadow:none; background:url('./discovery-fidelity/player-chassis-clean.webp') center/100% 100% no-repeat; }
+.player-screen { padding:0; box-shadow:none; background:url('./discovery-fidelity/player-chassis-concise-actions-v3.webp') center/100% 100% no-repeat; }
 .player-screen::before { display:none; }
 .player-screen .change-categories { top:1.8%; left:4.1%; width:12.8%; height:3.3%; aspect-ratio:auto; padding:0; overflow:hidden; opacity:1; color:#edfff0; border:0; border-radius:999px; background:radial-gradient(ellipse at 50% 0,rgba(120,255,138,.16),transparent 58%),linear-gradient(#001d0a,#000804); box-shadow:0 0 0 2px rgba(0,8,3,.9),0 0 0 3px rgba(151,255,163,.34),inset 0 0 0 1px rgba(209,255,216,.22),inset 0 2px 6px rgba(113,255,130,.12),inset 0 -3px 7px #000,0 0 6px rgba(45,255,76,.38); font-family:"Bahnschrift SemiCondensed","Arial Narrow",sans-serif; font-size:clamp(7px,1.85vw,14px); font-weight:520; letter-spacing:.15em; text-indent:.15em; text-transform:uppercase; text-shadow:0 0 2px #fff,0 0 5px #45ff5c; }
 .player-screen .change-categories:active { transform:scale(.95); filter:brightness(.72); }
@@ -198,11 +198,7 @@ button { border: 0; }
 .player-screen .player-actions { gap:0; padding:0; }
 .player-actions button, .player-actions a { border:0; border-radius:0; box-shadow:none; background:transparent!important; }
 .player-actions button::before, .player-actions button::after, .player-actions a::before, .player-actions a::after { display:none; }
-.player-actions button:nth-child(1) { background:url('./discovery-fidelity/player-share-blank.webp') center/100% 100% no-repeat!important; }
-.player-actions a:nth-child(2) { background-image:url('./discovery-fidelity/player-buy.webp'); }
-.player-actions button:nth-child(3) { background:url('./discovery-fidelity/player-next-blank.webp') center/100% 100% no-repeat!important; }
 .player-actions span { opacity:0; }
-.player-actions button:nth-child(1) span, .player-actions button:nth-child(3) span { opacity:1; text-transform:uppercase; }
 .player-screen .bandcamp-footer { margin:0; border:0; border-radius:0; box-shadow:none; background:transparent; }
 .player-screen .bandcamp-footer::before, .player-screen .bandcamp-footer::after { display:none; }
 .player-screen .bandcamp-footer > * { opacity:0; }

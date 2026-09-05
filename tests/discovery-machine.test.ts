@@ -168,7 +168,7 @@ test('canonical photographic material uses continuous plates behind real control
   assert.doesNotMatch(template,/background-image[^>]+selector-canonical/);
   assert.match(css,/selector-chassis\.webp/);
   assert.match(css,/selector-selected-dark\.webp/);
-  assert.match(css,/player-chassis-clean\.webp/);
+  assert.match(css,/player-chassis-concise-actions-v3\.webp/);
   assert.equal((template.match(/class="glass-key"/g)||[]).length,8);
   assert.match(build,/discovery-fidelity/);
 });
@@ -217,22 +217,20 @@ test('player ticker is optically recessed and the upper chamber has a contained 
   assert.match(runtime,/document\.hidden\|\|!playerScreen\.classList\.contains\('is-active'\)/);
 });
 
-test('player actions use the approved concise labels without changing their material controls',async()=>{
-  const [template,css,shareSkin,nextSkin]=await Promise.all([
+test('player actions use one baked concise-label layer without duplicate live text',async()=>{
+  const [template,css,chassis]=await Promise.all([
     read('templates/universe-index.html'),
     read('app/discovery-machine.css'),
-    readBytes('public/discovery-fidelity/player-share-blank.webp'),
-    readBytes('public/discovery-fidelity/player-next-blank.webp'),
+    readBytes('public/discovery-fidelity/player-chassis-concise-actions-v3.webp'),
   ]);
   assert.match(template,/data-action="share"><span>SHARE<\/span>/);
   assert.match(template,/data-action="buy"[^>]+><span>BUY<br>MUSIC<\/span>/);
   assert.match(template,/data-action="next"><span>NEXT<\/span>/);
   assert.doesNotMatch(template,/SHARE<br>JUKEBOX|NEXT<br>JUKEBOX/);
-  assert.match(css,/player-share-blank\.webp'\) center\/100% 100% no-repeat!important/);
-  assert.match(css,/player-next-blank\.webp'\) center\/100% 100% no-repeat!important/);
-  assert.match(css,/button:nth-child\(1\) span[^}]+button:nth-child\(3\) span[^}]+opacity:1/);
-  assert.ok(shareSkin.length>25000);
-  assert.ok(nextSkin.length>25000);
+  assert.match(css,/player-chassis-concise-actions-v3\.webp/);
+  assert.match(css,/\.player-actions span \{ opacity:0; \}/);
+  assert.doesNotMatch(css,/button:nth-child\(1\) span|button:nth-child\(3\) span/);
+  assert.ok(chassis.length>1000000);
 });
 
 test('forensic plates are continuous, lossless-built and fracture states are preloaded',async()=>{
@@ -240,7 +238,7 @@ test('forensic plates are continuous, lossless-built and fracture states are pre
     read('templates/universe-index.html'),read('app/discovery-machine.css'),read('scripts/build-discovery-fidelity-assets.py'),
   ]);
   assert.match(css,/selector-chassis\.webp/);
-  assert.match(css,/player-chassis-clean\.webp/);
+  assert.match(css,/player-chassis-concise-actions-v3\.webp/);
   assert.match(css,/\.selection-grid \{ gap:0; filter:none; \}/);
   assert.match(css,/\.discovery-machine::before, \.discovery-machine::after \{ display:none; \}/);
   assert.match(buildScript,/lossless=True/);
