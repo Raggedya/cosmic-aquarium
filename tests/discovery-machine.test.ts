@@ -99,10 +99,31 @@ test('official Bandcamp playback is not misrepresented as analyser-driven',async
   assert.doesNotMatch(runtime,/createMediaElementSource|createMediaStreamSource/);
 });
 
+test('the visual system uses layered liquid glass with controlled per-control variation',async()=>{
+  const [template,css]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css')]);
+  for(const layer of ['conic-gradient','radial-gradient','inset','mix-blend-mode']) assert.match(css,new RegExp(layer));
+  assert.match(css,/--body-a/);
+  assert.match(css,/--glint-x/);
+  assert.match(css,/\.glass-key\[data-category="heavy"\]/);
+  assert.match(css,/\.glass-key\[data-category="anything"\]/);
+  assert.match(css,/\.material-bubble--ticker-a/);
+  assert.match(css,/\.material-bubble--footer-d/);
+  assert.match(template,/material-bubble--ticker-a/);
+  assert.match(template,/material-bubble--footer-d/);
+});
+
+test('the commitment control retains a distinct warm glass material',async()=>{
+  const css=await read('app/discovery-machine.css');
+  const goRule=css.match(/\.go-key \{[^}]+\}/)?.[0]||'';
+  assert.match(goRule,/#fff3b0/);
+  assert.match(goRule,/#dca52f/);
+  assert.match(goRule,/rgba\(255,177,28/);
+});
+
 test('reduced motion, mobile containment and browser history are explicit',async()=>{
   const [css,runtime]=await Promise.all([read('app/discovery-machine.css'),read('github-pages/assets/discovery-machine.js')]);
-  assert.match(css,/prefers-reduced-motion:reduce/);
-  assert.match(css,/overflow:hidden/);
+  assert.match(css,/prefers-reduced-motion:\s*reduce/);
+  assert.match(css,/overflow:\s*hidden/);
   assert.match(runtime,/popstate/);
   assert.match(runtime,/history\.pushState/);
   assert.match(runtime,/document\.hidden/);

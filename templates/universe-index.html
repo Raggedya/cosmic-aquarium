@@ -37,7 +37,12 @@
 
     <section class="machine-screen player-screen" data-screen="player" aria-labelledby="now-playing-heading" aria-hidden="true">
       <button class="change-categories" type="button" aria-label="Change music categories">‹ CHANGE</button>
-      <div class="ticker-shell" aria-label="Artist and release information"><div class="ticker-track"><span>MUSIC LIVES HERE&nbsp;&nbsp; • &nbsp;&nbsp;SUPPORT ARTISTS&nbsp;&nbsp; • &nbsp;&nbsp;GOOD VIBES</span></div></div>
+      <div class="ticker-shell" aria-label="Artist and release information">
+        <i class="material-bubble material-bubble--ticker-a" aria-hidden="true"></i>
+        <i class="material-bubble material-bubble--ticker-b" aria-hidden="true"></i>
+        <i class="material-bubble material-bubble--ticker-c" aria-hidden="true"></i>
+        <div class="ticker-track"><span>MUSIC LIVES HERE&nbsp;&nbsp; • &nbsp;&nbsp;SUPPORT ARTISTS&nbsp;&nbsp; • &nbsp;&nbsp;GOOD VIBES</span></div>
+      </div>
       <section class="now-playing-panel">
         <div class="bubble bubble--one" aria-hidden="true"></div><div class="bubble bubble--two" aria-hidden="true"></div><div class="bubble bubble--three" aria-hidden="true"></div><div class="bubble bubble--four" aria-hidden="true"></div>
         <p class="eyebrow">NOW PLAYING</p>
@@ -54,7 +59,13 @@
         <a data-action="buy" href="https://bandcamp.com/" target="_blank" rel="noopener noreferrer"><span>BUY<br>MUSIC</span></a>
         <button type="button" data-action="next"><span>NEXT<br>JUKEBOX</span></button>
       </nav>
-      <div class="bandcamp-footer" aria-label="Playback and purchase through Bandcamp"><span class="signal signal--left" aria-hidden="true"></span><span class="bandcamp-wordmark"><i aria-hidden="true"></i>bandcamp</span><span class="signal signal--right" aria-hidden="true"></span></div>
+      <div class="bandcamp-footer" aria-label="Playback and purchase through Bandcamp">
+        <i class="material-bubble material-bubble--footer-a" aria-hidden="true"></i>
+        <i class="material-bubble material-bubble--footer-b" aria-hidden="true"></i>
+        <i class="material-bubble material-bubble--footer-c" aria-hidden="true"></i>
+        <i class="material-bubble material-bubble--footer-d" aria-hidden="true"></i>
+        <span class="signal signal--left" aria-hidden="true"></span><span class="bandcamp-wordmark"><i aria-hidden="true"></i>bandcamp</span><span class="signal signal--right" aria-hidden="true"></span>
+      </div>
       <p class="visually-hidden player-status" role="status" aria-live="polite"></p>
     </section>
     <canvas class="destruction-canvas" aria-hidden="true"></canvas>
