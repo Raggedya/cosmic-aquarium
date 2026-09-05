@@ -7,7 +7,7 @@ test('the player returns to category selection without creating a third screen',
   const runtime = await readFile(path.resolve('github-pages', 'assets', 'discovery-machine.js'), 'utf8');
   const template = await readFile(path.resolve('templates', 'universe-index.html'), 'utf8');
   assert.match(template,/class="change-categories"/);
-  assert.match(template,/aria-label="Change music categories"/);
+  assert.match(template,/aria-label="Home — choose music categories">Home<\/button>/);
   assert.equal((template.match(/data-screen=/g)||[]).length,2);
   assert.match(runtime,/changeButton\.addEventListener\('click',\(\)=>showSelection\(\)\)/);
   assert.match(runtime,/addEventListener\('popstate'/);

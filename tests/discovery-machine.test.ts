@@ -122,6 +122,17 @@ test('canonical photographic material is applied per component rather than as a 
   assert.match(build,/discovery-fidelity/);
 });
 
+test('every category has a distinct photographic collapse treatment and player return is Home',async()=>{
+  const [template,css,build]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css'),read('scripts/build-github-pages.mjs')]);
+  for(const category of ['heavy','dreamy','quiet','electronic','loud','strange','anything']){
+    assert.match(css,new RegExp(`selector-break-${category}\\.webp`));
+    assert.match(build,new RegExp(`selector-break-${category}\\.webp`));
+  }
+  assert.match(css,/selector-dark-broken\.webp/);
+  assert.match(template,/aria-label="Home — choose music categories">Home<\/button>/);
+  assert.doesNotMatch(template,/>‹ CHANGE<\/button>/);
+});
+
 test('the commitment control uses the canonical high-energy green glass material',async()=>{
   const css=await read('app/discovery-machine.css');
   const goRule=css.match(/\.go-key \{[^}]+\}/)?.[0]||'';

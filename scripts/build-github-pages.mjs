@@ -23,6 +23,8 @@ const discoveryFidelityAssetNames = [
   'selector-heavy.webp','selector-dreamy.webp','selector-quiet.webp','selector-electronic.webp',
   'selector-dark.webp','selector-loud.webp','selector-strange.webp','selector-anything.webp',
   'selector-dark-broken.webp','selector-bandcamp.webp','selector-go.webp',
+  'selector-break-heavy.webp','selector-break-dreamy.webp','selector-break-quiet.webp','selector-break-electronic.webp',
+  'selector-break-dark.webp','selector-break-loud.webp','selector-break-strange.webp','selector-break-anything.webp',
   'player-ticker-shell.webp','player-main-frame.webp','player-share.webp','player-buy.webp','player-next.webp','player-footer.webp',
 ];
 const discoveryFidelityAssets = await Promise.all(discoveryFidelityAssetNames.map((name) => fs.readFile(path.join(root,'public','discovery-fidelity',name))));
