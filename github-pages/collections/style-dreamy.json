@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-05T06:34:08.886Z",
-  "updatedAt": "2026-09-05T06:34:08.886Z",
+  "createdAt": "2026-09-05T00:00:33.028Z",
+  "updatedAt": "2026-09-05T00:00:33.028Z",
   "members": [
     {
       "artistId": "bandcamp:5fingerballad",
@@ -55,24 +55,6 @@
       "aquariumSlug": "bing-satellites-in-the-eastern-sky",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bing-satellites-in-the-eastern-sky/",
       "bandcampArtistUrl": "https://bingsatellites.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DREAMY style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dreamy"
-      ],
-      "styles": [
-        "dreamy"
-      ]
-    },
-    {
-      "artistId": "bandcamp:callmeafriend",
-      "artistName": "boy",
-      "aquariumSlug": "boy-attention-getters",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/boy-attention-getters/",
-      "bandcampArtistUrl": "https://callmeafriend.bandcamp.com/",
       "verificationStatus": "verified",
       "verificationScore": 1,
       "source": "automatic-style-classification",
@@ -176,26 +158,6 @@
         "dreamy"
       ],
       "styles": [
-        "dreamy"
-      ]
-    },
-    {
-      "artistId": "bandcamp:jesusoverflow",
-      "artistName": "DUB$ - A.K.A. SMOKE JESUS",
-      "aquariumSlug": "dub-a-k-a-smoke-jesus-modern-day-psalms-pt-2-spoken-word-poetry",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dub-a-k-a-smoke-jesus-modern-day-psalms-pt-2-spoken-word-poetry/",
-      "bandcampArtistUrl": "https://jesusoverflow.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DREAMY style membership",
-      "displayEnabled": true,
-      "waters": [
-        "heavy",
-        "dreamy"
-      ],
-      "styles": [
-        "heavy",
         "dreamy"
       ]
     },
@@ -350,26 +312,6 @@
       ]
     },
     {
-      "artistId": "bandcamp:hetontstaandeensemble",
-      "artistName": "Het Ontstaande Ensemble",
-      "aquariumSlug": "het-ontstaande-ensemble-what-a-trip",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/het-ontstaande-ensemble-what-a-trip/",
-      "bandcampArtistUrl": "https://hetontstaandeensemble.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DREAMY style membership",
-      "displayEnabled": true,
-      "waters": [
-        "strange",
-        "dreamy"
-      ],
-      "styles": [
-        "strange",
-        "dreamy"
-      ]
-    },
-    {
       "artistId": "bandcamp:hotzex",
       "artistName": "Hot Zex",
       "aquariumSlug": "hot-zex-school-days-tape-archive-vol-i-1991-1993",
@@ -385,26 +327,6 @@
       ],
       "styles": [
         "dreamy"
-      ]
-    },
-    {
-      "artistId": "bandcamp:interestingtapesfromindia",
-      "artistName": "Interesting Tapes From India",
-      "aquariumSlug": "interesting-tapes-from-india-soundtrack-to-baharon-ke-manzil",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/interesting-tapes-from-india-soundtrack-to-baharon-ke-manzil/",
-      "bandcampArtistUrl": "https://interestingtapesfromindia.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DREAMY style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dreamy",
-        "heavy"
-      ],
-      "styles": [
-        "dreamy",
-        "heavy"
       ]
     },
     {
@@ -502,46 +424,6 @@
       ]
     },
     {
-      "artistId": "bandcamp:nahhphet",
-      "artistName": "nahhphet",
-      "aquariumSlug": "nahhphet-not-everything-was-meant-to-be-analyzed",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nahhphet-not-everything-was-meant-to-be-analyzed/",
-      "bandcampArtistUrl": "https://nahhphet.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DREAMY style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "dreamy"
-      ],
-      "styles": [
-        "electronic",
-        "dreamy"
-      ]
-    },
-    {
-      "artistId": "bandcamp:nelfuoco",
-      "artistName": "Nel Fuoco",
-      "aquariumSlug": "nel-fuoco-we-have-a-problem",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nel-fuoco-we-have-a-problem/",
-      "bandcampArtistUrl": "https://nelfuoco.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DREAMY style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dreamy",
-        "quiet"
-      ],
-      "styles": [
-        "dreamy",
-        "quiet"
-      ]
-    },
-    {
       "artistId": "bandcamp:noonsomewhere",
       "artistName": "Noon Somewhere",
       "aquariumSlug": "noon-somewhere-dead-end",
@@ -556,26 +438,6 @@
         "dreamy"
       ],
       "styles": [
-        "dreamy"
-      ]
-    },
-    {
-      "artistId": "bandcamp:nottheenvelopes",
-      "artistName": "Not The Envelopes",
-      "aquariumSlug": "not-the-envelopes-papers-scars",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/not-the-envelopes-papers-scars/",
-      "bandcampArtistUrl": "https://nottheenvelopes.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DREAMY style membership",
-      "displayEnabled": true,
-      "waters": [
-        "loud",
-        "dreamy"
-      ],
-      "styles": [
-        "loud",
         "dreamy"
       ]
     },
@@ -818,46 +680,6 @@
         "dreamy"
       ],
       "styles": [
-        "dreamy"
-      ]
-    },
-    {
-      "artistId": "bandcamp:starbound2026",
-      "artistName": "starbound.",
-      "aquariumSlug": "starbound-forget-everything",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/starbound-forget-everything/",
-      "bandcampArtistUrl": "https://starbound2026.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DREAMY style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dreamy",
-        "loud"
-      ],
-      "styles": [
-        "dreamy",
-        "loud"
-      ]
-    },
-    {
-      "artistId": "bandcamp:tapwaterfish",
-      "artistName": "TAPWATERFISH",
-      "aquariumSlug": "tapwaterfish-twflip-vol-3",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tapwaterfish-twflip-vol-3/",
-      "bandcampArtistUrl": "https://tapwaterfish.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DREAMY style membership",
-      "displayEnabled": true,
-      "waters": [
-        "strange",
-        "dreamy"
-      ],
-      "styles": [
-        "strange",
         "dreamy"
       ]
     },

@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-05T06:34:08.889Z",
-  "updatedAt": "2026-09-05T06:34:08.889Z",
+  "createdAt": "2026-09-05T00:00:33.047Z",
+  "updatedAt": "2026-09-05T00:00:33.047Z",
   "members": [
     {
       "artistId": "bandcamp:weareaeria",
@@ -30,72 +30,6 @@
       ]
     },
     {
-      "artistId": "bandcamp:allgrena",
-      "artistName": "Allgrena",
-      "aquariumSlug": "allgrena-last-exit",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/allgrena-last-exit/",
-      "bandcampArtistUrl": "https://allgrena.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "dark",
-        "heavy"
-      ],
-      "styles": [
-        "electronic",
-        "dark",
-        "heavy"
-      ]
-    },
-    {
-      "artistId": "bandcamp:annobasilisk",
-      "artistName": "Anno Basilisk",
-      "aquariumSlug": "anno-basilisk-satanic-anthology-2001-2005",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/anno-basilisk-satanic-anthology-2001-2005/",
-      "bandcampArtistUrl": "https://annobasilisk.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dark",
-        "heavy",
-        "loud"
-      ],
-      "styles": [
-        "dark",
-        "heavy",
-        "loud"
-      ]
-    },
-    {
-      "artistId": "bandcamp:balatrofan242",
-      "artistName": "BalatroFan242",
-      "aquariumSlug": "balatrofan242-054-peak-life-plans",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/balatrofan242-054-peak-life-plans/",
-      "bandcampArtistUrl": "https://balatrofan242.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "quiet",
-        "dark",
-        "loud"
-      ],
-      "styles": [
-        "quiet",
-        "dark",
-        "loud"
-      ]
-    },
-    {
       "artistId": "bandcamp:balloo-music",
       "artistName": "balloo",
       "aquariumSlug": "balloo-die-zeit-der-wunder-ist-vorbei",
@@ -110,28 +44,6 @@
         "dark"
       ],
       "styles": [
-        "dark"
-      ]
-    },
-    {
-      "artistId": "bandcamp:berggefluister93",
-      "artistName": "Berggeflüster",
-      "aquariumSlug": "berggefluster-revelations-about-the-other-heaven-pt-1",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/berggefluster-revelations-about-the-other-heaven-pt-1/",
-      "bandcampArtistUrl": "https://berggefluister93.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "quiet",
-        "dark"
-      ],
-      "styles": [
-        "electronic",
-        "quiet",
         "dark"
       ]
     },
@@ -156,6 +68,26 @@
       ]
     },
     {
+      "artistId": "bandcamp:callmeafriend",
+      "artistName": "boy",
+      "aquariumSlug": "boy-burnt-scriptures-v-science-fiction",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/boy-burnt-scriptures-v-science-fiction/",
+      "bandcampArtistUrl": "https://callmeafriend.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical DARK style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "dark"
+      ],
+      "styles": [
+        "electronic",
+        "dark"
+      ]
+    },
+    {
       "artistId": "bandcamp:cammcguffie",
       "artistName": "cam mcguffie",
       "aquariumSlug": "cam-mcguffie-head-was-haunted",
@@ -173,72 +105,6 @@
       "styles": [
         "dreamy",
         "dark"
-      ]
-    },
-    {
-      "artistId": "bandcamp:corenhg",
-      "artistName": "Coren HG",
-      "aquariumSlug": "coren-hg-rabbit-s-journey-ep-2026",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/coren-hg-rabbit-s-journey-ep-2026/",
-      "bandcampArtistUrl": "https://corenhg.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "quiet",
-        "dark",
-        "heavy"
-      ],
-      "styles": [
-        "quiet",
-        "dark",
-        "heavy"
-      ]
-    },
-    {
-      "artistId": "bandcamp:cthultists",
-      "artistName": "CTHULTISTS",
-      "aquariumSlug": "cthultists-a-greater-schism",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/cthultists-a-greater-schism/",
-      "bandcampArtistUrl": "https://cthultists.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dark",
-        "heavy",
-        "loud"
-      ],
-      "styles": [
-        "dark",
-        "heavy",
-        "loud"
-      ]
-    },
-    {
-      "artistId": "bandcamp:cursefaen",
-      "artistName": "Curse",
-      "aquariumSlug": "curse-slaughter-of-the-stars-2006",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/curse-slaughter-of-the-stars-2006/",
-      "bandcampArtistUrl": "https://cursefaen.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dark",
-        "heavy",
-        "loud"
-      ],
-      "styles": [
-        "dark",
-        "heavy",
-        "loud"
       ]
     },
     {
@@ -342,72 +208,6 @@
       ]
     },
     {
-      "artistId": "bandcamp:flesheaterforest",
-      "artistName": "Flesheaterforest",
-      "aquariumSlug": "flesheaterforest-mage",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/flesheaterforest-mage/",
-      "bandcampArtistUrl": "https://flesheaterforest.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "quiet",
-        "dark",
-        "loud"
-      ],
-      "styles": [
-        "quiet",
-        "dark",
-        "loud"
-      ]
-    },
-    {
-      "artistId": "bandcamp:forgottentearsrecords",
-      "artistName": "Forgotten Tears Records",
-      "aquariumSlug": "forgotten-tears-records-ftr-012-smutsiga-begar-i-beroendeforhallanden",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/forgotten-tears-records-ftr-012-smutsiga-begar-i-beroendeforhallanden/",
-      "bandcampArtistUrl": "https://forgottentearsrecords.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "dark",
-        "heavy",
-        "loud"
-      ],
-      "styles": [
-        "dark",
-        "heavy",
-        "loud"
-      ]
-    },
-    {
-      "artistId": "bandcamp:frostbitemechanica",
-      "artistName": "Frostbite Mechanica",
-      "aquariumSlug": "frostbite-mechanica-gloria-in-the-winter-storm-ep",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/frostbite-mechanica-gloria-in-the-winter-storm-ep/",
-      "bandcampArtistUrl": "https://frostbitemechanica.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "heavy",
-        "dark",
-        "loud"
-      ],
-      "styles": [
-        "heavy",
-        "dark",
-        "loud"
-      ]
-    },
-    {
       "artistId": "bandcamp:ghostlace",
       "artistName": "Ghostlace",
       "aquariumSlug": "ghostlace-watching-the-city-lights",
@@ -464,28 +264,6 @@
       ]
     },
     {
-      "artistId": "bandcamp:jendrikschmidt",
-      "artistName": "Jendrik Schmidt",
-      "aquariumSlug": "jendrik-schmidt-pinhole-part-1",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jendrik-schmidt-pinhole-part-1/",
-      "bandcampArtistUrl": "https://jendrikschmidt.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "dark",
-        "heavy"
-      ],
-      "styles": [
-        "electronic",
-        "dark",
-        "heavy"
-      ]
-    },
-    {
       "artistId": "bandcamp:johnbruninski",
       "artistName": "John Bruninski",
       "aquariumSlug": "john-bruninski-35y-selection-1991-2026",
@@ -524,28 +302,6 @@
       ]
     },
     {
-      "artistId": "bandcamp:krystalpavlovic",
-      "artistName": "Krystal Pavlović",
-      "aquariumSlug": "krystal-pavlovic-setlist-6-1-2026",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/krystal-pavlovic-setlist-6-1-2026/",
-      "bandcampArtistUrl": "https://krystalpavlovic.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "heavy",
-        "dark"
-      ],
-      "styles": [
-        "electronic",
-        "heavy",
-        "dark"
-      ]
-    },
-    {
       "artistId": "bandcamp:mimizgb",
       "artistName": "MIMI",
       "aquariumSlug": "mimi-omatucada",
@@ -580,26 +336,6 @@
         "dark"
       ],
       "styles": [
-        "dark"
-      ]
-    },
-    {
-      "artistId": "bandcamp:otheos",
-      "artistName": "otheos",
-      "aquariumSlug": "otheos-drift",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/otheos-drift/",
-      "bandcampArtistUrl": "https://otheos.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "quiet",
-        "dark"
-      ],
-      "styles": [
-        "quiet",
         "dark"
       ]
     },
@@ -826,26 +562,6 @@
       ]
     },
     {
-      "artistId": "bandcamp:sonnovdrone",
-      "artistName": "sonnov",
-      "aquariumSlug": "sonnov-pinaha",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sonnov-pinaha/",
-      "bandcampArtistUrl": "https://sonnovdrone.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "quiet",
-        "dark"
-      ],
-      "styles": [
-        "quiet",
-        "dark"
-      ]
-    },
-    {
       "artistId": "bandcamp:s0rd",
       "artistName": "SØRD",
       "aquariumSlug": "srd-the-horror",
@@ -900,26 +616,6 @@
       ]
     },
     {
-      "artistId": "bandcamp:swivelhead1",
-      "artistName": "SwivelHead",
-      "aquariumSlug": "swivelhead-perfect-sky",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/swivelhead-perfect-sky/",
-      "bandcampArtistUrl": "https://swivelhead1.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "dark"
-      ],
-      "styles": [
-        "electronic",
-        "dark"
-      ]
-    },
-    {
       "artistId": "bandcamp:terrestrialsmusic",
       "artistName": "Terrestials",
       "aquariumSlug": "terrestials",
@@ -957,28 +653,6 @@
       "styles": [
         "dark",
         "strange"
-      ]
-    },
-    {
-      "artistId": "bandcamp:thenewromantics",
-      "artistName": "The New Romantics",
-      "aquariumSlug": "the-new-romantics-selfishly-now-i-see-you",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-new-romantics-selfishly-now-i-see-you/",
-      "bandcampArtistUrl": "https://thenewromantics.bandcamp.com/",
-      "verificationStatus": "verified",
-      "verificationScore": 1,
-      "source": "automatic-style-classification",
-      "evidence": "Canonical DARK style membership",
-      "displayEnabled": true,
-      "waters": [
-        "electronic",
-        "dark",
-        "heavy"
-      ],
-      "styles": [
-        "electronic",
-        "dark",
-        "heavy"
       ]
     },
     {
