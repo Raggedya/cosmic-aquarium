@@ -19,16 +19,25 @@ const discoveryScript = await fs.readFile(path.join(pages,'assets','discovery-ma
 const discoveryCore = await fs.readFile(path.join(pages,'assets','discovery-machine-core.js'),'utf8');
 const doorwayAssetNames = ['cosmic-depth.webp','botanical-crown.webp','botanical-garden.webp','world-anywhere.webp','world-heavy.webp','world-dreamy.webp','world-electronic.webp','world-quiet.webp','world-loud.webp','world-dark.webp','world-strange.webp'];
 const doorwayAssets = await Promise.all(doorwayAssetNames.map((name) => fs.readFile(path.join(root,'public','doorway',name))));
+const discoveryFidelityAssetNames = [
+  'selector-heavy.webp','selector-dreamy.webp','selector-quiet.webp','selector-electronic.webp',
+  'selector-dark.webp','selector-loud.webp','selector-strange.webp','selector-anything.webp',
+  'selector-dark-broken.webp','selector-bandcamp.webp','selector-go.webp',
+  'player-ticker-shell.webp','player-main-frame.webp','player-share.webp','player-buy.webp','player-next.webp','player-footer.webp',
+];
+const discoveryFidelityAssets = await Promise.all(discoveryFidelityAssetNames.map((name) => fs.readFile(path.join(root,'public','discovery-fidelity',name))));
 const minimumFlowerCount = 10;
 const maximumFlowerCount = 14;
 const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore);
 doorwayAssets.forEach((asset) => assetHash.update(asset));
+discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
 const assetVersion = assetHash.digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#000}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','skulls'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','glass'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','doorway'),{recursive:true});
+await fs.mkdir(path.join(pages,'assets','discovery-fidelity'),{recursive:true});
 await fs.mkdir(path.join(pages,'artists'),{recursive:true});
 await fs.mkdir(path.join(pages,'collections'),{recursive:true});
 await fs.writeFile(path.join(pages,'assets','site.css'),reset+css);
@@ -42,6 +51,9 @@ await fs.copyFile(path.join(root,'public','skulls','chrome-skull-silver.png'),pa
 await fs.copyFile(path.join(root,'public','glass','crystal-flower.png'),path.join(pages,'assets','glass','crystal-flower.png'));
 for (const name of doorwayAssetNames) {
   await fs.copyFile(path.join(root,'public','doorway',name),path.join(pages,'assets','doorway',name));
+}
+for (const name of discoveryFidelityAssetNames) {
+  await fs.copyFile(path.join(root,'public','discovery-fidelity',name),path.join(pages,'assets','discovery-fidelity',name));
 }
 for (const name of ['cosmic-aquaria-qr-standard.png','cosmic-aquaria-qr-branded.png']) {
   try { await fs.copyFile(path.join(root,'public',name),path.join(pages,name)); } catch {}

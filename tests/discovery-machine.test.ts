@@ -112,12 +112,22 @@ test('the visual system uses layered liquid glass with controlled per-control va
   assert.match(template,/material-bubble--footer-d/);
 });
 
-test('the commitment control retains a distinct warm glass material',async()=>{
+test('canonical photographic material is applied per component rather than as a flattened hotspot screen',async()=>{
+  const [template,css,build]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css'),read('scripts/build-github-pages.mjs')]);
+  assert.doesNotMatch(template,/background-image[^>]+selector-canonical/);
+  assert.match(css,/selector-heavy\.webp/);
+  assert.match(css,/selector-dark-broken\.webp/);
+  assert.match(css,/player-main-frame\.webp/);
+  assert.match(css,/player-share\.webp/);
+  assert.match(build,/discovery-fidelity/);
+});
+
+test('the commitment control uses the canonical high-energy green glass material',async()=>{
   const css=await read('app/discovery-machine.css');
   const goRule=css.match(/\.go-key \{[^}]+\}/)?.[0]||'';
-  assert.match(goRule,/#fff3b0/);
-  assert.match(goRule,/#dca52f/);
-  assert.match(goRule,/rgba\(255,177,28/);
+  assert.match(goRule,/#bbff8a/);
+  assert.match(goRule,/#22ee3e/);
+  assert.match(goRule,/rgba\(36,255,65/);
 });
 
 test('reduced motion, mobile containment and browser history are explicit',async()=>{
