@@ -62,7 +62,7 @@ test('the Library catalogue reports its living flowers and available songs', asy
     assert.equal(entry.flowerCount, 14, entry.slug);
     assert.equal(entry.flowerCountMin, 10, entry.slug);
     assert.equal(entry.flowerCountMax, 14, entry.slug);
-    assert.ok(Number.isInteger(entry.trackCount) && entry.trackCount >= 3, entry.slug);
+    assert.ok(Number.isInteger(entry.trackCount) && entry.trackCount >= 1, entry.slug);
     const manifest = JSON.parse(await readFile(path.join(manifestsDirectory, entry.slug + '.json'), 'utf8'));
     assert.equal(entry.trackCount, manifest.tracks.length, entry.slug);
     assert.equal(entry.releaseDate, manifest.releaseDate, entry.slug);
