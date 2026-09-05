@@ -42,12 +42,15 @@ for (const size of sizes) {
   await page.locator('[data-category="dark"]').click();
   await page.waitForTimeout(180);
   await page.screenshot({ path: path.join(outputDirectory, `${label}-selector-dark-${size.width}x${size.height}.png`) });
+  const audioState = await page.evaluate(() => window.CosmicGlassAudio?.getState?.() || null);
 
   await page.locator('[data-category="strange"]').click();
   const transitionStartedAt = Date.now();
   await page.locator('.go-key').click();
+  const goBrokenProof = page.screenshot({ path: path.join(outputDirectory, `${label}-selector-go-broken-${size.width}x${size.height}.png`) });
   await page.waitForFunction(() => document.querySelector('.player-screen')?.classList.contains('is-active'));
   const goHoldObservedMs = Date.now() - transitionStartedAt;
+  await goBrokenProof;
   const interaction = await page.evaluate(() => ({
     selected: [...document.querySelectorAll('.glass-key.is-selected')].map((element) => element.getAttribute('data-category')),
     playerVisible: document.querySelector('.player-screen')?.classList.contains('is-active'),
@@ -61,6 +64,9 @@ for (const size of sizes) {
   playerUrl.searchParams.set('categories', release.waters?.[0] || 'anything');
   await page.goto(playerUrl.toString(), { waitUntil: 'networkidle' });
   await page.locator('.player-screen.is-active').waitFor();
+  const bubbleBefore = await page.locator('.bubble-tube').evaluate((element) => element.toDataURL());
+  await page.waitForTimeout(700);
+  const bubbleAfter = await page.locator('.bubble-tube').evaluate((element) => element.toDataURL());
   await page.screenshot({ path: path.join(outputDirectory, `${label}-player-${size.width}x${size.height}.png`) });
 
   const metrics = await page.evaluate(() => ({
@@ -70,7 +76,7 @@ for (const size of sizes) {
     documentHeight: document.documentElement.scrollHeight,
     machine: document.querySelector('.discovery-machine')?.getBoundingClientRect().toJSON(),
   }));
-  results.push({ size, release: release.slug, goHoldObservedMs, interaction, consoleErrors, metrics });
+  results.push({ size, release: release.slug, goHoldObservedMs, interaction, audioState, bubbleTubeChanged:bubbleBefore!==bubbleAfter, consoleErrors, metrics });
   await context.close();
 }
 

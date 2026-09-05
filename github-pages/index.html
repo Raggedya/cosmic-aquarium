@@ -17,8 +17,9 @@
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-selected-loud.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-selected-strange.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-selected-anything.webp">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=0a478e988185">
-  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=0a478e988185"></script>
+  <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-go-broken.webp">
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=cf356387d8e1">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=cf356387d8e1"></script>
 </head>
 <body>
   <main class="discovery-machine" data-base="/cosmic-aquarium" aria-label="Cosmic Aquaria independent music discovery machine">
@@ -46,6 +47,7 @@
     <section class="machine-screen player-screen" data-screen="player" aria-labelledby="now-playing-heading" aria-hidden="true">
       <button class="change-categories" type="button" aria-label="Home — choose music categories">Home</button>
       <div class="ticker-shell" aria-label="Artist and release information">
+        <canvas class="bubble-tube" aria-hidden="true"></canvas>
         <i class="material-bubble material-bubble--ticker-a" aria-hidden="true"></i>
         <i class="material-bubble material-bubble--ticker-b" aria-hidden="true"></i>
         <i class="material-bubble material-bubble--ticker-c" aria-hidden="true"></i>

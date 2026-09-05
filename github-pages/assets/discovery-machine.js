@@ -16,6 +16,8 @@ const shareButton = document.querySelector('[data-action="share"]');
 const buyLink = document.querySelector('[data-action="buy"]');
 const nextButton = document.querySelector('[data-action="next"]');
 const changeButton = document.querySelector('.change-categories');
+const bubbleTubeCanvas = document.querySelector('.bubble-tube');
+const bubbleTubeContext = bubbleTubeCanvas?.getContext('2d');
 const canvas = document.querySelector('.destruction-canvas');
 const context = canvas?.getContext('2d');
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
@@ -33,6 +35,136 @@ let currentTrack = null;
 let isLocked = false;
 let lastImpactAt = 0;
 let audioContext = null;
+let bubbleTubeFrame = 0;
+let bubbleTubeStartedAt = 0;
+
+const BUBBLE_TUBE_PARTICLES = Object.freeze([
+  {y:.31,r:.105,duration:12.7,phase:.03,wobble:.052,depth:.92},
+  {y:.66,r:.047,duration:8.9,phase:.14,wobble:.09,depth:.61},
+  {y:.43,r:.071,duration:15.8,phase:.22,wobble:.045,depth:.78},
+  {y:.72,r:.026,duration:10.6,phase:.33,wobble:.11,depth:.48},
+  {y:.25,r:.039,duration:17.2,phase:.41,wobble:.058,depth:.55},
+  {y:.55,r:.087,duration:13.9,phase:.51,wobble:.041,depth:.86},
+  {y:.35,r:.021,duration:7.8,phase:.59,wobble:.13,depth:.42},
+  {y:.68,r:.057,duration:11.4,phase:.68,wobble:.073,depth:.69},
+  {y:.22,r:.031,duration:16.4,phase:.76,wobble:.068,depth:.51},
+  {y:.49,r:.116,duration:14.8,phase:.86,wobble:.035,depth:1},
+  {y:.73,r:.018,duration:9.7,phase:.94,wobble:.12,depth:.38},
+]);
+
+function fitBubbleTube() {
+  if (!bubbleTubeCanvas || !bubbleTubeContext) return null;
+  const rect=bubbleTubeCanvas.getBoundingClientRect();
+  const ratio=Math.min(devicePixelRatio||1,2);
+  const width=Math.max(1,Math.round(rect.width*ratio));
+  const height=Math.max(1,Math.round(rect.height*ratio));
+  if(bubbleTubeCanvas.width!==width||bubbleTubeCanvas.height!==height){
+    bubbleTubeCanvas.width=width;bubbleTubeCanvas.height=height;
+  }
+  bubbleTubeContext.setTransform(ratio,0,0,ratio,0,0);
+  return rect;
+}
+
+function drawBubbleTube(now=performance.now(),staticFrame=false) {
+  const rect=fitBubbleTube();
+  if(!rect||!bubbleTubeContext)return;
+  const {width,height}=rect;
+  bubbleTubeContext.clearRect(0,0,width,height);
+  for(const bubble of BUBBLE_TUBE_PARTICLES){
+    const cycle=staticFrame ? bubble.phase : (((now-bubbleTubeStartedAt)/1000/bubble.duration)+bubble.phase)%1;
+    const radius=Math.max(1.6,height*bubble.r);
+    const x=-radius+cycle*(width+radius*2);
+    const y=height*(bubble.y+Math.sin(cycle*Math.PI*2+bubble.phase*8.3)*bubble.wobble);
+    const alpha=.34+bubble.depth*.52;
+    const body=bubbleTubeContext.createRadialGradient(x-radius*.34,y-radius*.42,radius*.04,x,y,radius);
+    body.addColorStop(0,`rgba(244,255,246,${alpha})`);
+    body.addColorStop(.12,`rgba(157,255,176,${alpha*.48})`);
+    body.addColorStop(.55,`rgba(0,126,41,${alpha*.24})`);
+    body.addColorStop(.78,`rgba(0,12,4,${alpha*.72})`);
+    body.addColorStop(1,`rgba(177,255,188,${alpha*.6})`);
+    bubbleTubeContext.fillStyle=body;
+    bubbleTubeContext.beginPath();bubbleTubeContext.arc(x,y,radius,0,Math.PI*2);bubbleTubeContext.fill();
+    bubbleTubeContext.lineWidth=Math.max(.55,radius*.075);
+    bubbleTubeContext.strokeStyle=`rgba(218,255,225,${alpha*.72})`;
+    bubbleTubeContext.stroke();
+    bubbleTubeContext.fillStyle=`rgba(255,255,255,${alpha*.86})`;
+    bubbleTubeContext.beginPath();bubbleTubeContext.ellipse(x-radius*.32,y-radius*.38,radius*.16,radius*.1,-.55,0,Math.PI*2);bubbleTubeContext.fill();
+  }
+}
+
+function stopBubbleTube(){if(bubbleTubeFrame)cancelAnimationFrame(bubbleTubeFrame);bubbleTubeFrame=0;}
+
+function startBubbleTube(){
+  stopBubbleTube();
+  if(!bubbleTubeCanvas||!bubbleTubeContext||!playerScreen.classList.contains('is-active'))return;
+  bubbleTubeStartedAt=performance.now();
+  if(reducedMotion.matches){drawBubbleTube(bubbleTubeStartedAt,true);return;}
+  const frame=now=>{
+    if(document.hidden||!playerScreen.classList.contains('is-active')){bubbleTubeFrame=0;return;}
+    drawBubbleTube(now,false);bubbleTubeFrame=requestAnimationFrame(frame);
+  };
+  bubbleTubeFrame=requestAnimationFrame(frame);
+}
+
+const GLASS_AUDIO_FILES = Object.freeze({
+  plate:'glass-plate-crunching',
+  debris:'glass-debris-014',
+  settle:'picture-frame-shards',
+  shards:'glass-shards-moved-07',
+});
+
+const GLASS_AUDIO_SEGMENTS = Object.freeze({
+  pressure:[
+    {source:'plate',offset:2.38,duration:.105,filter:'lowpass',frequency:1850,gain:.72},
+    {source:'plate',offset:5.00,duration:.095,filter:'lowpass',frequency:1650,gain:.78},
+    {source:'plate',offset:8.20,duration:.11,filter:'lowpass',frequency:2050,gain:.68},
+  ],
+  crack:[
+    {source:'shards',offset:.105,duration:.13,filter:'highpass',frequency:720,gain:.64},
+    {source:'plate',offset:2.71,duration:.145,filter:'highpass',frequency:640,gain:.72},
+    {source:'debris',offset:.38,duration:.14,filter:'highpass',frequency:780,gain:.82},
+    {source:'shards',offset:.51,duration:.14,filter:'highpass',frequency:850,gain:.58},
+  ],
+  crunch:[
+    {source:'plate',offset:2.39,duration:.39,filter:'bandpass',frequency:1750,q:.45,gain:.76},
+    {source:'shards',offset:.12,duration:.34,filter:'bandpass',frequency:2100,q:.38,gain:.62},
+    {source:'debris',offset:.56,duration:.37,filter:'bandpass',frequency:1900,q:.42,gain:.88},
+    {source:'plate',offset:5.02,duration:.42,filter:'bandpass',frequency:1550,q:.4,gain:.72},
+  ],
+  settle:[
+    {source:'settle',offset:.38,duration:.46,filter:'highpass',frequency:1450,gain:1.32},
+    {source:'debris',offset:2.22,duration:.48,filter:'highpass',frequency:1350,gain:.72},
+    {source:'settle',offset:.91,duration:.5,filter:'highpass',frequency:1650,gain:1.4},
+    {source:'shards',offset:.52,duration:.4,filter:'highpass',frequency:1500,gain:.42},
+  ],
+});
+
+const GLASS_AUDIO_PROFILES = Object.freeze({
+  heavy:{master:.91,pressure:1.18,crack:1.02,crunch:1.22,settle:.7,rate:.965,crunchDelay:.082,settleDelay:.34,haptic:[16,34,8]},
+  dreamy:{master:.78,pressure:.72,crack:.82,crunch:.72,settle:1.12,rate:1.028,crunchDelay:.1,settleDelay:.3,haptic:[10,42,5]},
+  quiet:{master:.66,pressure:.62,crack:.68,crunch:.58,settle:.76,rate:1.012,crunchDelay:.094,settleDelay:.28,haptic:9},
+  electronic:{master:.78,pressure:.74,crack:.96,crunch:.72,settle:.75,rate:1.035,crunchDelay:.078,settleDelay:.27,haptic:[11,30,5]},
+  dark:{master:.86,pressure:1.15,crack:.94,crunch:1.08,settle:.65,rate:.95,crunchDelay:.086,settleDelay:.35,haptic:[17,36,7]},
+  loud:{master:.96,pressure:1.04,crack:1.2,crunch:1.27,settle:.82,rate:.982,crunchDelay:.072,settleDelay:.32,haptic:[19,31,9]},
+  strange:{master:.8,pressure:.86,crack:.9,crunch:.92,settle:1.05,rate:.995,crunchDelay:.116,settleDelay:.39,haptic:[12,48,7]},
+  anything:{master:.82,pressure:.9,crack:.94,crunch:.94,settle:.88,rate:1,crunchDelay:.09,settleDelay:.32,haptic:[13,36,6]},
+  go:{master:.98,pressure:1.18,crack:1.16,crunch:1.3,settle:.92,rate:.972,crunchDelay:.078,settleDelay:.36,haptic:[20,38,10]},
+});
+
+const glassAudio = {
+  buffers:new Map(),
+  encoded:new Map(),
+  activeNodes:new Set(),
+  preloadPromise:null,
+  decodePromise:null,
+  output:null,
+  limiter:null,
+  format:null,
+  sequence:0,
+  activated:false,
+  failed:false,
+  muted:localStorage.getItem('cosmic-aquaria:muted') === 'true',
+};
 
 function readJson(key, fallback) {
   try { return JSON.parse(sessionStorage.getItem(key) || '') ?? fallback; } catch { return fallback; }
@@ -74,44 +206,136 @@ function seedCracks() {
   goButton.querySelector('.crack-layer').innerHTML = crackMarkup('go');
 }
 
-function ensureAudioContext() {
-  if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)();
-  if (audioContext.state === 'suspended') void audioContext.resume();
+function ensureAudioContext(resume = true) {
+  if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)({latencyHint:'interactive'});
+  if (resume && audioContext.state === 'suspended') void audioContext.resume();
   return audioContext;
 }
 
-function impactSound(restoring = false) {
-  const now = performance.now();
-  if (now - lastImpactAt < 42) return;
-  lastImpactAt = now;
+function glassAudioUrl(name,format) {
+  return `${base}/assets/audio/glass/source/${GLASS_AUDIO_FILES[name]}.${format}`;
+}
+
+function preloadGlassAudio() {
+  if (glassAudio.preloadPromise) return glassAudio.preloadPromise;
+  const probe = document.createElement('audio');
+  glassAudio.format = probe.canPlayType('audio/ogg; codecs="vorbis"') ? 'ogg' : 'mp3';
+  glassAudio.preloadPromise = Promise.all(Object.keys(GLASS_AUDIO_FILES).map(async name=>{
+    const response = await fetch(glassAudioUrl(name,glassAudio.format),{cache:'force-cache',credentials:'same-origin'});
+    if (!response.ok) throw new Error(`glass_audio_${response.status}`);
+    glassAudio.encoded.set(name,await response.arrayBuffer());
+  })).catch(()=>{glassAudio.failed=true;});
   try {
-    const audio = ensureAudioContext();
-    const start = audio.currentTime;
-    const master = audio.createGain();
-    master.gain.setValueAtTime(restoring ? .08 : .13,start);
-    master.gain.exponentialRampToValueAtTime(.001,start + (restoring ? .12 : .24));
-    master.connect(audio.destination);
+    const audio=ensureAudioContext(false);
+    glassAudio.decodePromise=glassAudio.preloadPromise.then(async()=>{
+      if(glassAudio.failed) return;
+      await Promise.all([...glassAudio.encoded].map(async([name,encoded])=>{
+        glassAudio.buffers.set(name,await audio.decodeAudioData(encoded.slice(0)));
+      }));
+    }).catch(()=>{glassAudio.failed=true;});
+  } catch { glassAudio.failed=true; }
+  return glassAudio.preloadPromise;
+}
 
-    const snap = audio.createOscillator();
-    const snapGain = audio.createGain();
-    snap.type = 'triangle';
-    snap.frequency.setValueAtTime(restoring ? 520 : 165,start);
-    snap.frequency.exponentialRampToValueAtTime(restoring ? 1050 : 68,start + .065);
-    snapGain.gain.setValueAtTime(.55,start);
-    snapGain.gain.exponentialRampToValueAtTime(.001,start + .085);
-    snap.connect(snapGain).connect(master);
-    snap.start(start); snap.stop(start + .09);
+function activateGlassAudio() {
+  glassAudio.activated=true;
+  try { void ensureAudioContext(true).resume(); } catch { glassAudio.failed=true; }
+}
 
-    const frames = Math.floor(audio.sampleRate * .22);
-    const buffer = audio.createBuffer(1,frames,audio.sampleRate);
-    const data = buffer.getChannelData(0);
-    for (let index=0;index<frames;index++) data[index] = (Math.random()*2-1) * Math.pow(1-index/frames,restoring?4:2.2);
-    const debris = audio.createBufferSource();
-    const filter = audio.createBiquadFilter();
-    filter.type='highpass'; filter.frequency.value = restoring ? 1900 : 950;
-    debris.buffer=buffer; debris.connect(filter).connect(master); debris.start(start); debris.stop(start+.22);
-  } catch {}
-  if (navigator.vibrate) navigator.vibrate(restoring ? 5 : 13);
+function glassAudioMuted() {
+  return glassAudio.muted || localStorage.getItem('cosmic-aquaria:muted') === 'true';
+}
+
+function glassAudioOutput(audio) {
+  if(glassAudio.output) return glassAudio.output;
+  const output=audio.createGain();
+  const limiter=audio.createDynamicsCompressor();
+  output.gain.value=.46;
+  limiter.threshold.value=-9;
+  limiter.knee.value=5;
+  limiter.ratio.value=2.4;
+  limiter.attack.value=.0025;
+  limiter.release.value=.095;
+  output.connect(limiter).connect(audio.destination);
+  glassAudio.output=output;
+  glassAudio.limiter=limiter;
+  return output;
+}
+
+function chooseGlassSegment(layer,type) {
+  const candidates=GLASS_AUDIO_SEGMENTS[layer];
+  const typeOffset=Object.keys(GLASS_AUDIO_PROFILES).indexOf(type);
+  const index=Math.abs(glassAudio.sequence+typeOffset+(layer.length*3))%candidates.length;
+  return candidates[index];
+}
+
+function scheduleGlassSegment(audio,recipe,when,profile,layer,variation=0) {
+  const buffer=glassAudio.buffers.get(recipe.source);
+  if(!buffer) return;
+  const source=audio.createBufferSource();
+  const filter=audio.createBiquadFilter();
+  const gain=audio.createGain();
+  const panner=audio.createStereoPanner?.();
+  const jitter=(Math.random()-.5)*.025;
+  const pitch=(Math.random()-.5)*.055;
+  source.buffer=buffer;
+  source.playbackRate.value=Math.max(.9,Math.min(1.1,profile.rate+pitch));
+  filter.type=recipe.filter;
+  filter.frequency.value=recipe.frequency;
+  if(recipe.q) filter.Q.value=recipe.q;
+  const layerGain=profile[layer] ?? 1;
+  gain.gain.value=recipe.gain*layerGain*profile.master;
+  source.connect(filter).connect(gain);
+  const output=glassAudioOutput(audio);
+  if(panner){panner.pan.value=Math.max(-.08,Math.min(.08,variation));gain.connect(panner).connect(output);}else gain.connect(output);
+  const start=Math.max(audio.currentTime+.002,when+jitter);
+  source.start(start,Math.max(0,recipe.offset+jitter),recipe.duration);
+  glassAudio.activeNodes.add(source);
+  source.onended=()=>{glassAudio.activeNodes.delete(source);source.disconnect();filter.disconnect();gain.disconnect();panner?.disconnect();};
+}
+
+function playGlassBreak(type='anything',{restoring=false,control=false}={}) {
+  const now = performance.now();
+  if (now - lastImpactAt < 48 || glassAudioMuted()) return false;
+  lastImpactAt = now;
+  const profile=GLASS_AUDIO_PROFILES[type] || GLASS_AUDIO_PROFILES.anything;
+  let scheduled=false;
+  try {
+    const audio=ensureAudioContext(true);
+    if(glassAudio.activated && glassAudio.buffers.size){
+      const start = audio.currentTime;
+      glassAudio.sequence=(glassAudio.sequence+1)%2048;
+      if(restoring){
+        scheduleGlassSegment(audio,chooseGlassSegment('settle',type),start,profile,'settle',-.025);
+      }else if(control){
+        scheduleGlassSegment(audio,chooseGlassSegment('pressure',type),start,profile,'pressure',0);
+        scheduleGlassSegment(audio,chooseGlassSegment('settle',type),start+.06,profile,'settle',.025);
+      }else{
+        scheduleGlassSegment(audio,chooseGlassSegment('pressure',type),start,profile,'pressure',-.025);
+        scheduleGlassSegment(audio,chooseGlassSegment('crack',type),start+.045,profile,'crack',.018);
+        scheduleGlassSegment(audio,chooseGlassSegment('crunch',type),start+profile.crunchDelay,profile,'crunch',-.015);
+        scheduleGlassSegment(audio,chooseGlassSegment('crack',`${type}-micro`),start+.135,profile,'crack',.045);
+        scheduleGlassSegment(audio,chooseGlassSegment('settle',type),start+profile.settleDelay,profile,'settle',.035);
+        if(type==='go') scheduleGlassSegment(audio,GLASS_AUDIO_SEGMENTS.crunch[2],start+.17,profile,'crunch',-.045);
+      }
+      scheduled=true;
+    }
+  } catch { glassAudio.failed=true; return false; }
+  if(navigator.vibrate) navigator.vibrate(restoring?5:(control?8:profile.haptic));
+  return scheduled;
+}
+
+function playGlassDisintegration() {
+  if(glassAudioMuted()) return;
+  try{
+    const audio=ensureAudioContext(true);
+    if(!glassAudio.activated||!glassAudio.buffers.size)return;
+    const profile={...GLASS_AUDIO_PROFILES.anything,master:.42,crunch:.6,settle:.82,rate:1.018};
+    const start=audio.currentTime;
+    scheduleGlassSegment(audio,GLASS_AUDIO_SEGMENTS.crunch[1],start,profile,'crunch',-.07);
+    scheduleGlassSegment(audio,GLASS_AUDIO_SEGMENTS.settle[1],start+.12,profile,'settle',.07);
+    scheduleGlassSegment(audio,GLASS_AUDIO_SEGMENTS.settle[2],start+.3,profile,'settle',-.04);
+  }catch{}
 }
 
 function updateSelection(next, announce = true) {
@@ -130,11 +354,10 @@ function updateSelection(next, announce = true) {
 
 function onCategory(event) {
   if (isLocked) return;
-  ensureAudioContext();
   const category = event.currentTarget.dataset.category;
   const wasSelected = selected.has(category);
   updateSelection(nextSelection(selected,category));
-  impactSound(wasSelected);
+  playGlassBreak(category,{restoring:wasSelected});
   if (category === 'anything' && !wasSelected) recordEvent('drift_anywhere_selected','discovery-machine',{selection:['anything']});
   else recordEvent('water_selected','discovery-machine',{water:category,action:wasSelected?'deselected':'selected',selection:[...selected]});
 }
@@ -220,11 +443,13 @@ function showPlayer({push=true}={}) {
   playerScreen.classList.add('is-active');
   playerScreen.setAttribute('aria-hidden','false');
   selectionScreen.setAttribute('aria-hidden','true');
+  startBubbleTube();
   if (push) history.pushState({view:'player'},'',playerUrl());
 }
 
 function showSelection({historyMode='push'}={}) {
   isLocked=false;
+  stopBubbleTube();
   goButton.classList.remove('is-broken');
   selectionScreen.classList.add('is-active');
   playerScreen.classList.remove('is-active');
@@ -232,6 +457,8 @@ function showSelection({historyMode='push'}={}) {
   selectionScreen.setAttribute('aria-hidden','false');
   document.querySelector('.bandcamp-transport iframe').src='about:blank';
   currentEntry=currentManifest=currentTrack=null;
+  selected=new Set();
+  sessionStorage.removeItem(selectionKey);
   updateSelection(selected,false);
   const target = `${base.replace(/\/$/,'')}/`;
   if (historyMode==='push') history.pushState({view:'selection'},'',target);
@@ -288,13 +515,14 @@ function delay(ms){return new Promise(resolve=>setTimeout(resolve,ms));}
 
 async function onGo() {
   if (isLocked || !selected.size || !catalogue.length) return;
-  isLocked=true; updateSelection(selected,false); goButton.classList.add('is-broken'); impactSound(false);
+  isLocked=true; updateSelection(selected,false); goButton.classList.add('is-broken'); playGlassBreak('go');
   machineStatus.textContent='The glass is giving way.';
   recordEvent('doorway_open','discovery-machine',{source:'go_pressed',selection:[...selected]});
   const discovery=resolveDiscovery();
   const [,result]=await Promise.all([delay(GO_HOLD_MS),discovery]).catch(error=>[null,{error}]);
   if(result?.error){isLocked=false;goButton.classList.remove('is-broken');updateSelection(selected,false);machineStatus.textContent=result.error.message;return;}
   populatePlayer(result.entry,result.manifest);
+  playGlassDisintegration();
   await disintegrate();
   isLocked=false;
   recordEvent('doorway_to_aquarium_transition',result.entry.slug,{selection:[...selected],transition:'disintegration'});
@@ -302,7 +530,7 @@ async function onGo() {
 
 async function onNext() {
   if (isLocked) return;
-  isLocked=true; nextButton.disabled=true; playerScreen.classList.add('is-changing'); impactSound(false);
+  isLocked=true; nextButton.disabled=true; playerScreen.classList.add('is-changing'); playGlassBreak('anything',{control:true});
   const previousSlug=currentEntry.slug;
   recordEvent('explore_click',previousSlug,{selection:[...selected]});
   try {
@@ -334,7 +562,10 @@ async function loadInitialData() {
   if(artistsResponse?.ok){const data=await artistsResponse.json();artistsById=new Map((data.artists||[]).map(artist=>[artist.id,artist]));}
   const params=new URLSearchParams(location.search);
   const requestedSelection=normalizeSelection((params.get('categories')||'').split(',').filter(Boolean));
-  updateSelection(requestedSelection.length?requestedSelection:readJson(selectionKey,[]),false);
+  // A normal homepage entry is always pristine. Only an explicit deep link may
+  // arrive with a category selection; session state is retained solely while
+  // the listener remains in the active Player flow.
+  updateSelection(requestedSelection,false);
   const requested=params.get('release');
   if(requested){
     const entry=catalogue.find(item=>item.slug===requested&&item.status==='published');
@@ -357,6 +588,9 @@ async function restoreLocation() {
 }
 
 seedCracks();
+preloadGlassAudio();
+document.addEventListener('pointerdown',activateGlassAudio,{once:true,capture:true});
+document.addEventListener('keydown',activateGlassAudio,{once:true,capture:true});
 for(const button of categoryButtons) button.addEventListener('click',onCategory);
 goButton.addEventListener('click',()=>void onGo());
 nextButton.addEventListener('click',()=>void onNext());
@@ -364,7 +598,18 @@ shareButton.addEventListener('click',()=>void onShare());
 buyLink.addEventListener('click',()=>recordEvent('buy_click',currentEntry?.slug,{url:buyLink.href}));
 changeButton.addEventListener('click',()=>showSelection());
 addEventListener('popstate',()=>void restoreLocation());
-document.addEventListener('visibilitychange',()=>{if(document.hidden&&audioContext?.state==='running')void audioContext.suspend();});
+document.addEventListener('visibilitychange',()=>{
+  if(document.hidden){stopBubbleTube();if(audioContext?.state==='running')void audioContext.suspend();}
+  else if(playerScreen.classList.contains('is-active'))startBubbleTube();
+});
+reducedMotion.addEventListener?.('change',()=>{if(playerScreen.classList.contains('is-active'))startBubbleTube();});
+addEventListener('resize',()=>{if(playerScreen.classList.contains('is-active'))startBubbleTube();},{passive:true});
+
+window.CosmicGlassAudio=Object.freeze({
+  playGlassBreak,
+  setMuted(value){glassAudio.muted=Boolean(value);localStorage.setItem('cosmic-aquaria:muted',String(glassAudio.muted));},
+  getState(){return {activated:glassAudio.activated,muted:glassAudioMuted(),loaded:glassAudio.buffers.size,failed:glassAudio.failed,activeNodes:glassAudio.activeNodes.size};},
+});
 
 recordEvent('session_start','discovery-machine',{product:'two-screen-discovery'});
 loadInitialData().catch(error=>{machineStatus.textContent=error.message;goButton.disabled=true;});

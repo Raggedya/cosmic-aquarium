@@ -1,0 +1,51 @@
+{
+  "assetFamily": "Cosmic Aquaria tactile glass interaction",
+  "licensePolicy": "Every source is dedicated to the public domain under CC0 1.0.",
+  "runtimeTreatment": "Short close-mic regions are scheduled as pressure, fracture, crunch, and settle layers. Web Audio applies restrained filtering, gain, timing, playback-rate, and stereo variation; no oscillator or generated noise is used.",
+  "sources": [
+    {
+      "id": "plate",
+      "files": ["glass-plate-crunching.ogg", "glass-plate-crunching.mp3"],
+      "sourceTitle": "Glass-Plate Crunching.wav",
+      "creator": "LanooskiProductions",
+      "sourceUrl": "https://freesound.org/people/LanooskiProductions/sounds/394794/",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "use": ["pressure", "primary fracture", "granular crunch"],
+      "modifications": "Freesound high-quality preview transcodes retained; runtime plays short regions with close filtering, gain shaping, and subtle pitch variation."
+    },
+    {
+      "id": "debris",
+      "files": ["glass-debris-014.ogg", "glass-debris-014.mp3"],
+      "sourceTitle": "ZXAudiocraft - Glass - Debris 014.wav",
+      "creator": "zxaudiocraft",
+      "sourceUrl": "https://freesound.org/people/zxaudiocraft/sounds/521346/",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "use": ["bright fracture", "dense crunch", "disintegration debris"],
+      "modifications": "Freesound high-quality preview transcodes retained; runtime plays short regions with band/high-pass filtering, gain shaping, and subtle pitch variation."
+    },
+    {
+      "id": "settle",
+      "files": ["picture-frame-shards.ogg", "picture-frame-shards.mp3"],
+      "sourceTitle": "Pick up shattered picture frame, glass shards.wav",
+      "creator": "SpliceSound",
+      "sourceUrl": "https://freesound.org/people/SpliceSound/sounds/156579/",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "use": ["micro ticks", "small-shard settle", "deselection residue"],
+      "modifications": "Freesound high-quality preview transcodes retained; runtime isolates short high-frequency regions and applies restrained gain."
+    },
+    {
+      "id": "shards",
+      "files": ["glass-shards-moved-07.ogg", "glass-shards-moved-07.mp3"],
+      "sourceTitle": "Glass_Shards_Being_Moved_07",
+      "creator": "BlondPanda",
+      "sourceUrl": "https://freesound.org/people/BlondPanda/sounds/778591/",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "use": ["close crack", "shard rub", "secondary microfracture"],
+      "modifications": "Freesound high-quality preview transcodes retained; runtime uses short high-pass/band-pass regions with subtle timing and stereo variation."
+    }
+  ]
+}

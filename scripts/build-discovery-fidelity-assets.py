@@ -113,7 +113,14 @@ def clean_selector_label(tile: Image.Image, category: str) -> Image.Image:
 
 
 OUTPUT.mkdir(parents=True, exist_ok=True)
-selector = Image.open(REFERENCE / "selector-canonical-v2.png").convert("RGB")
+selector_source = Image.open(REFERENCE / "selector-canonical.jpg").convert("RGB")
+if selector_source.size != (750, 1280):
+    raise RuntimeError(f"Unexpected pristine selector dimensions: {selector_source.size}")
+# The clean chassis must originate from the pristine reference. The prior v2
+# source accidentally contained the selected DARK state and contaminated every
+# fresh homepage render. Upscale once here so every derived plate shares a
+# consistent high-resolution grid.
+selector = selector_source.resize((960, 1639), Image.Resampling.LANCZOS)
 broken = Image.open(REFERENCE / "selector-broken-dark-canonical.jpg").convert("RGB")
 player = Image.open(REFERENCE / "player-canonical-v2.png").convert("RGB")
 
@@ -144,6 +151,14 @@ for row, names in enumerate(categories):
 export(broken, (0, 535, 375, 801), "selector-dark-broken.webp")
 export(selector, (0, 1063, 750, 1137), "selector-bandcamp.webp")
 export(selector, (0, 1137, 750, 1280), "selector-go.webp")
+
+# Dedicated photorealistic wide-pill collapse, generated from the locked selector.
+# Only this lower control crop is consumed; the rest of the generated frame is discarded.
+go_broken_source = Image.open(GENERATED / "selector-go-broken-imagegen.png").convert("RGB")
+if go_broken_source.size != (960, 1639):
+    raise RuntimeError(f"Unexpected generated GO fracture dimensions: {go_broken_source.size}")
+go_broken = go_broken_source.crop(scaled_box(go_broken_source, (0, 1137, 750, 1280)))
+save_lossless(go_broken, "selector-go-broken.webp")
 
 export(player, (0, 0, 750, 211), "player-ticker-shell.webp")
 export(player, (0, 208, 750, 781), "player-main-frame.webp")

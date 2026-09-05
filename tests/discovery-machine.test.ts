@@ -9,6 +9,7 @@ import {
 import { classifyWaters, validWaters, WATERS } from '../scripts/water-classifier.mjs';
 
 const read = (path: string) => readFile(new URL(`../${path}`, import.meta.url), 'utf8');
+const readBytes = (path: string) => readFile(new URL(`../${path}`, import.meta.url));
 const catalogue = [
   {slug:'heavy-one',status:'published',bandcampUrl:'https://one.bandcamp.com/album/a',waters:['heavy']},
   {slug:'dark-strange',status:'published',bandcampUrl:'https://two.bandcamp.com/album/b',waters:['dark','strange']},
@@ -68,6 +69,56 @@ test('GO retains the deliberate 1.5 second hold and locks interaction',async()=>
   assert.match(runtime,/isLocked=true/);
   assert.match(runtime,/Promise\.all\(\[delay\(GO_HOLD_MS\),discovery\]\)/);
   assert.match(runtime,/disintegrate\(\)/);
+});
+
+test('glass interaction audio uses layered real recordings rather than procedural synthesis',async()=>{
+  const runtime=await read('github-pages/assets/discovery-machine.js');
+  for(const layer of ['pressure','crack','crunch','settle']) assert.match(runtime,new RegExp(`${layer}:\\[`));
+  for(const source of ['glass-plate-crunching','glass-debris-014','picture-frame-shards','glass-shards-moved-07']) assert.match(runtime,new RegExp(source));
+  assert.doesNotMatch(runtime,/createOscillator|createBuffer\(1,frames|Math\.random\(\)\*2-1/);
+  assert.match(runtime,/createDynamicsCompressor/);
+  assert.match(runtime,/output\.gain\.value=\.46/);
+});
+
+test('every category and GO has a distinct fracture personality',async()=>{
+  const runtime=await read('github-pages/assets/discovery-machine.js');
+  for(const category of [...CATEGORIES,'go']) assert.match(runtime,new RegExp(`\\b${category}:\\{master:`));
+  assert.match(runtime,/type==='go'[^\n]+GLASS_AUDIO_SEGMENTS\.crunch/);
+  assert.match(runtime,/playGlassDisintegration\(\);[\s\S]{0,40}await disintegrate\(\)/);
+});
+
+test('glass audio preloads once, waits for a gesture, respects mute and never blocks selection',async()=>{
+  const runtime=await read('github-pages/assets/discovery-machine.js');
+  assert.match(runtime,/if \(glassAudio\.preloadPromise\) return glassAudio\.preloadPromise/);
+  assert.match(runtime,/glassAudio\.activated && glassAudio\.buffers\.size/);
+  assert.match(runtime,/cosmic-aquaria:muted/);
+  assert.match(runtime,/document\.addEventListener\('pointerdown',activateGlassAudio,\{once:true,capture:true\}\)/);
+  assert.match(runtime,/updateSelection\(nextSelection\(selected,category\)\);\s*playGlassBreak\(category,\{restoring:wasSelected\}\)/);
+  assert.match(runtime,/catch \{ glassAudio\.failed=true; return false; \}/);
+});
+
+test('deselection produces only residual shards while GO fractures before its hold',async()=>{
+  const runtime=await read('github-pages/assets/discovery-machine.js');
+  assert.match(runtime,/if\(restoring\)\{\s*scheduleGlassSegment\(audio,chooseGlassSegment\('settle'/);
+  assert.match(runtime,/goButton\.classList\.add\('is-broken'\); playGlassBreak\('go'\);[\s\S]{0,260}Promise\.all\(\[delay\(GO_HOLD_MS\),discovery\]\)/);
+});
+
+test('CC0 audio provenance and dual browser formats are packaged into the public build',async()=>{
+  const [metadataText,license,build]=await Promise.all([
+    read('public/audio/glass/source/metadata.json'),read('public/audio/glass/source/LICENSE.md'),read('scripts/build-github-pages.mjs'),
+  ]);
+  const metadata=JSON.parse(metadataText);
+  assert.equal(metadata.sources.length,4);
+  assert.ok(metadata.sources.every((source: {license:string; sourceUrl:string; files:string[]})=>source.license==='CC0 1.0'&&source.sourceUrl.startsWith('https://freesound.org/')&&source.files.some(file=>file.endsWith('.ogg'))&&source.files.some(file=>file.endsWith('.mp3'))));
+  assert.match(license,/Creative Commons CC0 1\.0/);
+  assert.match(build,/glassAudioAssets\.forEach\(\(asset\) => assetHash\.update\(asset\)\)/);
+  for(const source of metadata.sources){
+    for(const file of source.files){
+      const bytes=await readBytes(`public/audio/glass/source/${file}`);
+      assert.ok(bytes.length>10000,`${file} should contain a real compressed recording`);
+      assert.match(build,new RegExp(file.replace('.','\\.')));
+    }
+  }
 });
 
 test('deep links and share URLs remain on the canonical application',()=>{
@@ -130,6 +181,37 @@ test('every category has a distinct photographic collapse treatment and player r
   }
   assert.match(template,/aria-label="Home — choose music categories">Home<\/button>/);
   assert.doesNotMatch(template,/>‹ CHANGE<\/button>/);
+});
+
+test('fresh homepage state is pristine while explicit deep-link categories remain supported',async()=>{
+  const runtime=await read('github-pages/assets/discovery-machine.js');
+  assert.match(runtime,/updateSelection\(requestedSelection,false\)/);
+  assert.doesNotMatch(runtime,/requestedSelection\.length\?requestedSelection:readJson\(selectionKey/);
+  assert.match(runtime,/selected=new Set\(\);\s*sessionStorage\.removeItem\(selectionKey\);\s*updateSelection\(selected,false\)/);
+});
+
+test('GO uses a dedicated wide photographic collapse plate rather than a generic crack overlay',async()=>{
+  const [template,css,build,asset]=await Promise.all([
+    read('templates/universe-index.html'),read('app/discovery-machine.css'),read('scripts/build-discovery-fidelity-assets.py'),readBytes('public/discovery-fidelity/selector-go-broken.webp'),
+  ]);
+  assert.match(template,/selector-go-broken\.webp/);
+  assert.match(css,/\.go-key\.is-broken[^}]+selector-go-broken\.webp/);
+  assert.match(css,/\.go-key\.is-broken > \.crack-layer \{ display:none; \}/);
+  assert.match(build,/selector-go-broken-imagegen\.png/);
+  assert.ok(asset.length>100000,'GO collapse should be a detailed photographic plate');
+});
+
+test('player ticker is optically recessed and the upper chamber has a contained living bubble tube',async()=>{
+  const [template,css,runtime]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css'),read('github-pages/assets/discovery-machine.js')]);
+  assert.match(template,/canvas class="bubble-tube" aria-hidden="true"/);
+  assert.match(css,/\.ticker-shell::before[^}]+inset[^}]+box-shadow/);
+  assert.match(css,/\.ticker-shell::after[^}]+pointer-events:none/);
+  assert.match(css,/\.ticker-track span \{ font-size:clamp\(12px,3\.55vw,28px\)/);
+  assert.match(css,/\.bubble-tube[^}]+mask-image/);
+  assert.match(runtime,/BUBBLE_TUBE_PARTICLES/);
+  assert.match(runtime,/duration:17\.2/);
+  assert.match(runtime,/if\(reducedMotion\.matches\)\{drawBubbleTube\(bubbleTubeStartedAt,true\);return;\}/);
+  assert.match(runtime,/document\.hidden\|\|!playerScreen\.classList\.contains\('is-active'\)/);
 });
 
 test('forensic plates are continuous, lossless-built and fracture states are preloaded',async()=>{

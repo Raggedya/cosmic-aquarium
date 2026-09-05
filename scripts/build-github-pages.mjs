@@ -23,7 +23,7 @@ const discoveryFidelityAssetNames = [
   'selector-chassis.webp','player-chassis-clean.webp',
   'selector-heavy.webp','selector-dreamy.webp','selector-quiet.webp','selector-electronic.webp',
   'selector-dark.webp','selector-loud.webp','selector-strange.webp','selector-anything.webp',
-  'selector-dark-broken.webp','selector-bandcamp.webp','selector-go.webp',
+  'selector-dark-broken.webp','selector-bandcamp.webp','selector-go.webp','selector-go-broken.webp',
   'selector-break-heavy.webp','selector-break-dreamy.webp','selector-break-quiet.webp','selector-break-electronic.webp',
   'selector-break-dark.webp','selector-break-loud.webp','selector-break-strange.webp','selector-break-anything.webp',
   'selector-selected-heavy.webp','selector-selected-dreamy.webp','selector-selected-quiet.webp','selector-selected-electronic.webp',
@@ -31,11 +31,20 @@ const discoveryFidelityAssetNames = [
   'player-ticker-shell.webp','player-main-frame.webp','player-share.webp','player-buy.webp','player-next.webp','player-footer.webp',
 ];
 const discoveryFidelityAssets = await Promise.all(discoveryFidelityAssetNames.map((name) => fs.readFile(path.join(root,'public','discovery-fidelity',name))));
+const glassAudioSourceNames = [
+  'glass-plate-crunching.mp3','glass-plate-crunching.ogg',
+  'glass-debris-014.mp3','glass-debris-014.ogg',
+  'picture-frame-shards.mp3','picture-frame-shards.ogg',
+  'glass-shards-moved-07.mp3','glass-shards-moved-07.ogg',
+  'metadata.json','LICENSE.md',
+];
+const glassAudioAssets = await Promise.all(glassAudioSourceNames.map((name) => fs.readFile(path.join(root,'public','audio','glass','source',name))));
 const minimumFlowerCount = 10;
 const maximumFlowerCount = 14;
 const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore);
 doorwayAssets.forEach((asset) => assetHash.update(asset));
 discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
+glassAudioAssets.forEach((asset) => assetHash.update(asset));
 const assetVersion = assetHash.digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#000}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
@@ -43,6 +52,7 @@ await fs.mkdir(path.join(pages,'assets','skulls'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','glass'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','doorway'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','discovery-fidelity'),{recursive:true});
+await fs.mkdir(path.join(pages,'assets','audio','glass','source'),{recursive:true});
 await fs.mkdir(path.join(pages,'artists'),{recursive:true});
 await fs.mkdir(path.join(pages,'collections'),{recursive:true});
 await fs.writeFile(path.join(pages,'assets','site.css'),reset+css);
@@ -59,6 +69,9 @@ for (const name of doorwayAssetNames) {
 }
 for (const name of discoveryFidelityAssetNames) {
   await fs.copyFile(path.join(root,'public','discovery-fidelity',name),path.join(pages,'assets','discovery-fidelity',name));
+}
+for (const name of glassAudioSourceNames) {
+  await fs.copyFile(path.join(root,'public','audio','glass','source',name),path.join(pages,'assets','audio','glass','source',name));
 }
 for (const name of ['cosmic-aquaria-qr-standard.png','cosmic-aquaria-qr-branded.png']) {
   try { await fs.copyFile(path.join(root,'public',name),path.join(pages,name)); } catch {}
