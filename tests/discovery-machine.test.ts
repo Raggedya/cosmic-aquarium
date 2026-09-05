@@ -4,7 +4,7 @@ import test from 'node:test';
 import {
   CATEGORIES, CRACK_VARIANTS, GO_HOLD_MS, SESSION_HISTORY_LIMIT,
   nextSelection, normalizeSelection, eligibleReleases, chooseRelease,
-  pushHistory, buildShareUrl, buildTickerFacts, validBandcampUrl, pickPlayableTrack, artistIdentity,
+  pushHistory, buildShareUrl, buildTickerFacts, buildTickerMessages, validBandcampUrl, pickPlayableTrack, artistIdentity,
 } from '../github-pages/assets/discovery-machine-core.js';
 import { classifyWaters, validWaters, WATERS } from '../scripts/water-classifier.mjs';
 
@@ -103,7 +103,7 @@ test('glass interaction audio uses layered real recordings rather than procedura
   for(const source of ['glass-plate-crunching','glass-debris-014','picture-frame-shards','glass-shards-moved-07']) assert.match(runtime,new RegExp(source));
   assert.doesNotMatch(runtime,/createOscillator|createBuffer\(1,frames|Math\.random\(\)\*2-1/);
   assert.match(runtime,/createDynamicsCompressor/);
-  assert.match(runtime,/output\.gain\.value=\.46/);
+  assert.match(runtime,/output\.gain\.value=\.72/);
 });
 
 test('every category and GO has a distinct fracture personality',async()=>{
@@ -122,9 +122,12 @@ test('glass audio preloads once, waits for a gesture, respects mute and never bl
   assert.match(runtime,/pulseSilentUnlock\(audio\)/);
   assert.match(runtime,/glassAudio\.pendingImpact=\{type,options:\{restoring,control\}\}/);
   assert.match(runtime,/safari\?\['mp3','ogg'\]:\['ogg','mp3'\]/);
+  assert.match(runtime,/function playDirectImpact/);
+  assert.match(runtime,/glass-impact-mobile\.mp3/);
+  assert.match(runtime,/Promise\.allSettled/);
   assert.match(runtime,/updateSoundControls\(\)/);
   assert.match(runtime,/updateSelection\(nextSelection\(selected,category\)\);\s*playGlassBreak\(category,\{restoring:wasSelected\}\)/);
-  assert.match(runtime,/catch \{ glassAudio\.failed=true; return false; \}/);
+  assert.match(runtime,/catch\(error\) \{ glassAudio\.failed=true;glassAudio\.lastError=String\(error\);updateAudioDebug\(\);return false; \}/);
 });
 
 test('deselection produces only residual shards while GO fractures before its hold',async()=>{
@@ -167,9 +170,35 @@ test('ticker facts are sourced only from stored catalogue metadata',()=>{
   const text=buildTickerFacts({releaseDate:'2026-08-22T00:00:00Z',waters:['dreamy']},{waters:['dreamy']},{primaryLocation:'Melbourne, Australia',labels:['Low Light Records']});
   assert.match(text,/MELBOURNE, AUSTRALIA/);
   assert.match(text,/DREAMY/);
-  assert.match(text,/RELEASED AUG 2026/);
+  assert.match(text,/RELEASED 22 AUG 2026/);
   assert.match(text,/LOW LIGHT RECORDS/);
-  assert.match(text,/SUPPORT THE ARTIST/);
+  assert.match(text,/SUPPORT INDEPENDENT ARTISTS/);
+});
+
+test('ticker rotates factual artist, release, bio, style and generated universe statistics',()=>{
+  const messages=buildTickerMessages(
+    {artist:'Aneira',releaseTitle:'Rotations',selectedTrackTitle:'Steady as a Speedy Oak',releaseDate:'2026-08-22T00:00:00Z',waters:['dreamy','strange'],metadataTags:['ambient','experimental'],bioShort:'Atmospheric textural music from Melbourne.'},
+    {waters:['dreamy','strange']},
+    {primaryLocation:'Melbourne, Australia'},
+    {canonicalArtistCount:220,publishedReleaseCount:227,playableTrackCount:2398,newToday:20},
+  );
+  assert.match(messages[0],/ANEIRA.*MELBOURNE, AUSTRALIA/);
+  assert.ok(messages.some(message=>/ROTATIONS.*STEADY AS A SPEEDY OAK/.test(message)));
+  assert.ok(messages.some(message=>/ATMOSPHERIC TEXTURAL MUSIC/.test(message)));
+  assert.ok(messages.some(message=>/DREAMY \+ STRANGE/.test(message)));
+  assert.ok(messages.some(message=>/220 ARTISTS.*227 RELEASES.*2,398 PLAYABLE SONGS/.test(message)));
+  assert.ok(messages.every(message=>!/(undefined|null|n\/a)/i.test(message)));
+});
+
+test('universe statistics are generated from published manifests and distinct playable track ids',async()=>{
+  const [stats,build]=await Promise.all([read('github-pages/universe-stats.json'),read('scripts/build-github-pages.mjs')]);
+  const parsed=JSON.parse(stats);
+  assert.ok(parsed.canonicalArtistCount>=200);
+  assert.ok(parsed.publishedReleaseCount>=parsed.canonicalArtistCount);
+  assert.ok(parsed.playableTrackCount>=parsed.publishedReleaseCount);
+  assert.match(build,/playableTrackIds\.add\(trackId\)/);
+  assert.match(build,/publishedReleaseCount:aquariumRegistry\.filter/);
+  assert.doesNotMatch(build,/canonicalArtistCount:\s*\d/);
 });
 
 test('official Bandcamp playback has a truthful transport-coupled animated spectrum',async()=>{

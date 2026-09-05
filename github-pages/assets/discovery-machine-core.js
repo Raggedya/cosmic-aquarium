@@ -88,18 +88,53 @@ export function buildShareUrl(origin, base, slug, selection) {
   return url.toString();
 }
 
-export function buildTickerFacts(manifest, registryEntry = {}, artistEntry = {}) {
-  const facts = [];
-  if (artistEntry.primaryLocation) facts.push(String(artistEntry.primaryLocation).toUpperCase());
-  const waters = (registryEntry.waters || manifest.waters || []).map(value => String(value).toUpperCase());
-  if (waters.length) facts.push(waters.join(' + '));
-  if (manifest.releaseDate) {
-    const date = new Date(manifest.releaseDate);
-    if (!Number.isNaN(date.valueOf())) facts.push(`RELEASED ${date.toLocaleDateString('en-AU',{month:'short',year:'numeric'}).toUpperCase()}`);
+function tickerText(value, limit = 220) {
+  return String(value || '').replace(/\s+/g,' ').trim().slice(0,limit).toUpperCase();
+}
+
+function usefulTags(values = [], waters = []) {
+  const ignored = new Set(['music','independent','album','bandcamp',...waters.map(value=>String(value).toLowerCase())]);
+  return [...new Set(values.map(value=>tickerText(value,32)).filter(value=>value&&!ignored.has(value.toLowerCase())))].slice(0,3);
+}
+
+export function buildTickerMessages(manifest, registryEntry = {}, artistEntry = {}, universeStats = {}) {
+  const messages = [];
+  const artist=tickerText(manifest.artist || registryEntry.artist || artistEntry.name,90);
+  const location=tickerText(manifest.primaryLocation || registryEntry.primaryLocation || artistEntry.primaryLocation,90);
+  const release=tickerText(manifest.releaseTitle || registryEntry.release,110);
+  const track=tickerText(manifest.selectedTrackTitle,110);
+  const waters=(registryEntry.waters || manifest.waters || []).map(value=>tickerText(value,32)).filter(Boolean);
+  const tags=usefulTags(manifest.metadataTags || registryEntry.metadataTags || [],waters);
+  const bio=tickerText(manifest.bioShort || registryEntry.bioShort || artistEntry.bioShort,180);
+  const labels=(manifest.labels || artistEntry.labels || []).map(value=>tickerText(value,70)).filter(Boolean);
+
+  if(artist) messages.push(location?`${artist}  •  ${location}`:artist);
+  if(release || track) messages.push(['NOW PLAYING',release,track].filter(Boolean).join('  •  '));
+  if(bio) messages.push(bio);
+  else {
+    const context=[...tags,...waters].slice(0,3);
+    if(context.length&&location) messages.push(`${context.join(' / ')} MUSIC FROM ${location}`);
   }
-  if (artistEntry.labels?.length) facts.push(String(artistEntry.labels[0]).toUpperCase());
-  facts.push('SUPPORT THE ARTIST');
-  return [...new Set(facts)].join('  •  ');
+  const style=[waters.length?waters.join(' + '):'',...tags].filter(Boolean);
+  if(style.length) messages.push(style.join('  •  '));
+  if(manifest.releaseDate || registryEntry.releaseDate) {
+    const date=new Date(manifest.releaseDate || registryEntry.releaseDate);
+    if(!Number.isNaN(date.valueOf())) messages.push(`RELEASED ${date.toLocaleDateString('en-AU',{day:'numeric',month:'short',year:'numeric'}).toUpperCase()}`);
+  }
+  if(labels.length) messages.push(`LABEL  •  ${labels[0]}`);
+  const artists=Number(universeStats.canonicalArtistCount || universeStats.artists || 0);
+  const releases=Number(universeStats.publishedReleaseCount || universeStats.releases || 0);
+  const songs=Number(universeStats.playableTrackCount || universeStats.playableTracks || 0);
+  if(artists>0&&releases>0&&songs>0) messages.push(`COSMIC AQUARIA  •  ${artists.toLocaleString('en-AU')} ARTISTS  •  ${releases.toLocaleString('en-AU')} RELEASES  •  ${songs.toLocaleString('en-AU')} PLAYABLE SONGS`);
+  if(Number(universeStats.newToday)>0) messages.push(`${Number(universeStats.newToday).toLocaleString('en-AU')} NEW DISCOVERIES ADDED TODAY`);
+  else if(Number(universeStats.newThisWeek)>0) messages.push(`${Number(universeStats.newThisWeek).toLocaleString('en-AU')} NEW RELEASES ADDED THIS WEEK`);
+  messages.push('SUPPORT INDEPENDENT ARTISTS  •  BUY MUSIC DIRECT FROM THE ARTIST');
+  messages.push('MUSIC LIVES HERE  •  GOOD VIBES  •  BANDCAMP');
+  return [...new Set(messages.map(value=>tickerText(value)).filter(value=>value&&!/\b(?:UNDEFINED|NULL|N\/A)\b/.test(value)))];
+}
+
+export function buildTickerFacts(manifest, registryEntry = {}, artistEntry = {}, universeStats = {}) {
+  return buildTickerMessages(manifest,registryEntry,artistEntry,universeStats).join('  •  ') || 'SUPPORT INDEPENDENT ARTISTS';
 }
 
 export function validBandcampUrl(value) {

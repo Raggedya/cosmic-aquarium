@@ -1,7 +1,7 @@
 import {
   CRACK_VARIANTS, GO_HOLD_MS, DESTRUCTION_MS, SESSION_HISTORY_LIMIT,
   nextSelection, normalizeSelection, chooseRelease, pushHistory, buildShareUrl,
-  buildTickerFacts, validBandcampUrl, pickPlayableTrack, artistIdentity,
+  buildTickerMessages, validBandcampUrl, pickPlayableTrack, artistIdentity,
 } from './discovery-machine-core.js';
 
 const machine = document.querySelector('.discovery-machine');
@@ -17,6 +17,7 @@ const buyLink = document.querySelector('[data-action="buy"]');
 const nextButton = document.querySelector('[data-action="next"]');
 const changeButton = document.querySelector('.change-categories');
 const soundToggles = [...document.querySelectorAll('.sound-toggle')];
+const tickerTextElement = document.querySelector('.ticker-track span');
 const bandcampFrame = document.querySelector('.bandcamp-transport iframe');
 const spectrum = document.querySelector('.spectrum');
 const spectrumBars = [...document.querySelectorAll('.spectrum i')];
@@ -33,6 +34,7 @@ const sessionKey = 'cosmic-aquaria:analytics-session';
 
 let catalogue = [];
 let artistsById = new Map();
+let universeStats = {};
 let selected = new Set();
 let currentEntry = null;
 let currentManifest = null;
@@ -47,6 +49,9 @@ let spectrumStartedAt = 0;
 let spectrumPlaybackActive = false;
 let spectrumProfile = [];
 let bandcampFrameFocused = false;
+let tickerQueue = [];
+let tickerIndex = 0;
+let tickerTimer = 0;
 
 const BUBBLE_TUBE_PARTICLES = Object.freeze([
   {y:.5,r:.31,duration:34.5,phase:.08,wobble:.022,depth:1.14,duty:.31,major:true},
@@ -143,6 +148,7 @@ const GLASS_AUDIO_FILES = Object.freeze({
   settle:'picture-frame-shards',
   shards:'glass-shards-moved-07',
 });
+const DIRECT_IMPACT_FILES=Object.freeze({impact:'glass-impact-mobile.mp3',go:'glass-impact-go-mobile.mp3'});
 
 const GLASS_AUDIO_SEGMENTS = Object.freeze({
   pressure:[
@@ -192,10 +198,17 @@ const glassAudio = {
   pendingImpact:null,
   output:null,
   limiter:null,
+  directPools:new Map(),
   format:null,
+  formatBySource:{},
   sequence:0,
   activated:false,
   failed:false,
+  directFallback:false,
+  lastType:null,
+  lastTriggeredAt:null,
+  lastSourceStartedAt:null,
+  lastError:null,
   muted:readPersistentMute(),
 };
 
@@ -260,14 +273,77 @@ function glassAudioUrl(name,format) {
   return `${base}/assets/audio/glass/source/${GLASS_AUDIO_FILES[name]}.${format}`;
 }
 
+function useDirectAudioFallback() {
+  const ua=navigator.userAgent;
+  const ios=/iPad|iPhone|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+  const desktopSafari=/AppleWebKit/i.test(ua)&&!/Chrome|Chromium|CriOS|Edg|Android/i.test(ua);
+  return ios||desktopSafari;
+}
+
+function updateAudioDebug() {
+  const state={
+    contextState:audioContext?.state||'unavailable',
+    format:glassAudio.directFallback?'mp3-direct':glassAudio.format,
+    encodedBuffers:glassAudio.encoded.size,
+    decodedBuffers:glassAudio.buffers.size,
+    muted:glassAudioMuted(),
+    failed:glassAudio.failed,
+    lastType:glassAudio.lastType,
+    lastTriggeredAt:glassAudio.lastTriggeredAt,
+    lastSourceStartedAt:glassAudio.lastSourceStartedAt,
+    masterGain:glassAudio.output?.gain?.value??.72,
+    directFallback:glassAudio.directFallback,
+    lastError:glassAudio.lastError,
+  };
+  document.documentElement.dataset.glassAudioState=state.contextState;
+  document.documentElement.dataset.glassAudioFormat=String(state.format||'pending');
+  document.documentElement.dataset.glassAudioBuffers=String(state.decodedBuffers);
+  document.documentElement.dataset.glassAudioLast=String(state.lastType||'none');
+  document.documentElement.dataset.glassAudioStarted=String(Boolean(state.lastSourceStartedAt));
+  return state;
+}
+
+function prepareDirectImpactAudio() {
+  glassAudio.directFallback=useDirectAudioFallback();
+  if(!glassAudio.directFallback)return;
+  for(const kind of ['impact','go']){
+    const source=`${base}/assets/audio/glass/${DIRECT_IMPACT_FILES[kind]}`;
+    const pool=Array.from({length:3},()=>{
+      const audio=new Audio(source);
+      audio.preload='auto';audio.playsInline=true;audio.setAttribute('aria-hidden','true');audio.className='glass-impact-audio';
+      audio.addEventListener('playing',()=>{glassAudio.lastSourceStartedAt=new Date().toISOString();updateAudioDebug();},{passive:true});
+      audio.addEventListener('error',()=>{glassAudio.lastError=`direct_${kind}_failed`;updateAudioDebug();},{passive:true});
+      document.body.append(audio);
+      return audio;
+    });
+    glassAudio.directPools.set(kind,pool);
+  }
+  updateAudioDebug();
+}
+
+function playDirectImpact(type,profile,{restoring=false,control=false}={}) {
+  const kind=type==='go'?'go':'impact';
+  const pool=glassAudio.directPools.get(kind);
+  if(!pool?.length)return false;
+  const audio=pool[glassAudio.sequence%pool.length];
+  try{audio.pause();audio.currentTime=restoring ? .31 : 0;}catch{}
+  audio.volume=Math.min(1,(control ? .48 : restoring ? .42 : .86)*profile.master);
+  audio.playbackRate=Math.max(.92,Math.min(1.08,profile.rate+((glassAudio.sequence%5)-2)*.011));
+  glassAudio.lastType=type;glassAudio.lastTriggeredAt=new Date().toISOString();glassAudio.failed=false;
+  const started=audio.play();
+  if(started?.then)started.then(()=>{glassAudio.activated=true;glassAudio.lastSourceStartedAt=new Date().toISOString();updateAudioDebug();}).catch(error=>{glassAudio.lastError=String(error?.name||error);updateAudioDebug();});
+  updateAudioDebug();
+  return true;
+}
+
 function preloadGlassAudio() {
   if (glassAudio.preloadPromise) return glassAudio.preloadPromise;
   const probe = document.createElement('audio');
-  const safari=/AppleWebKit/i.test(navigator.userAgent)&&!/Chrome|Chromium|CriOS|Edg/i.test(navigator.userAgent);
+  const safari=useDirectAudioFallback();
   const supported={mp3:Boolean(probe.canPlayType('audio/mpeg')),ogg:Boolean(probe.canPlayType('audio/ogg; codecs="vorbis"'))};
   const formats=(safari?['mp3','ogg']:['ogg','mp3']).filter(format=>supported[format]);
   if(!formats.length) formats.push('mp3');
-  glassAudio.preloadPromise = Promise.all(Object.keys(GLASS_AUDIO_FILES).map(async name=>{
+  glassAudio.preloadPromise = Promise.allSettled(Object.keys(GLASS_AUDIO_FILES).map(async name=>{
     let lastError=null;
     for(const format of formats){
       try{
@@ -275,11 +351,16 @@ function preloadGlassAudio() {
         if(!response.ok)throw new Error(`glass_audio_${response.status}`);
         glassAudio.encoded.set(name,await response.arrayBuffer());
         glassAudio.format=glassAudio.format||format;
+        glassAudio.formatBySource[name]=format;
         return;
       }catch(error){lastError=error;}
     }
     throw lastError||new Error('glass_audio_unavailable');
-  })).catch(()=>{glassAudio.failed=true;});
+  })).then(results=>{
+    glassAudio.failed=glassAudio.encoded.size===0;
+    if(glassAudio.failed)glassAudio.lastError=results.filter(result=>result.status==='rejected').map(result=>String(result.reason)).join('; ').slice(0,240);
+    updateAudioDebug();
+  });
   return glassAudio.preloadPromise;
 }
 
@@ -287,11 +368,13 @@ function decodeGlassAudio(audio) {
   if(glassAudio.buffers.size===Object.keys(GLASS_AUDIO_FILES).length)return Promise.resolve();
   if(glassAudio.decodePromise)return glassAudio.decodePromise;
   glassAudio.decodePromise=preloadGlassAudio().then(async()=>{
-    if(glassAudio.failed)return;
-    await Promise.all([...glassAudio.encoded].map(async([name,encoded])=>{
+    const decoded=await Promise.allSettled([...glassAudio.encoded].map(async([name,encoded])=>{
       if(!glassAudio.buffers.has(name))glassAudio.buffers.set(name,await audio.decodeAudioData(encoded.slice(0)));
     }));
-  }).catch(()=>{glassAudio.failed=true;});
+    glassAudio.failed=glassAudio.buffers.size===0;
+    if(glassAudio.failed)glassAudio.lastError=decoded.filter(result=>result.status==='rejected').map(result=>String(result.reason)).join('; ').slice(0,240);
+    updateAudioDebug();
+  }).catch(error=>{glassAudio.failed=true;glassAudio.lastError=String(error);updateAudioDebug();});
   return glassAudio.decodePromise;
 }
 
@@ -315,12 +398,12 @@ function activateGlassAudio() {
       if(audio.state==='suspended')await audio.resume();
       await decodeGlassAudio(audio);
       glassAudio.activated=audio.state==='running'&&glassAudio.buffers.size>0;
-      glassAudio.failed=!glassAudio.activated;
+      glassAudio.failed=!glassAudio.activated&&!glassAudio.directFallback;
       const pending=glassAudio.pendingImpact;
       glassAudio.pendingImpact=null;
       if(pending&&glassAudio.activated&&!glassAudioMuted())playGlassBreak(pending.type,pending.options);
-    }catch{glassAudio.failed=true;glassAudio.activated=false;}
-    finally{glassAudio.activationPromise=null;updateSoundControls();}
+    }catch(error){glassAudio.failed=!glassAudio.directFallback;glassAudio.activated=false;glassAudio.lastError=String(error);}
+    finally{glassAudio.activationPromise=null;updateSoundControls();updateAudioDebug();}
     return glassAudio.activated;
   })();
   return glassAudio.activationPromise;
@@ -343,27 +426,31 @@ function setGlassAudioMuted(value) {
   glassAudio.muted=Boolean(value);
   writePersistentMute(glassAudio.muted);
   glassAudio.pendingImpact=null;
+  if(glassAudio.muted)for(const pool of glassAudio.directPools.values())for(const audio of pool){audio.pause();try{audio.currentTime=0;}catch{}}
   updateSoundControls();
+  updateAudioDebug();
 }
 
 function onSoundToggle() {
   const nextMuted=!glassAudioMuted();
   setGlassAudioMuted(nextMuted);
   recordEvent('glass_sound_toggle','discovery-machine',{enabled:!nextMuted});
-  if(!nextMuted)void activateGlassAudio().then(active=>{if(active)playGlassBreak('anything',{control:true});});
+  if(!nextMuted){playGlassBreak('anything',{control:true});void activateGlassAudio();}
 }
 
 function glassAudioOutput(audio) {
   if(glassAudio.output) return glassAudio.output;
   const output=audio.createGain();
+  const presence=audio.createBiquadFilter();
   const limiter=audio.createDynamicsCompressor();
-  output.gain.value=.46;
-  limiter.threshold.value=-9;
+  output.gain.value=.72;
+  presence.type='peaking';presence.frequency.value=2400;presence.Q.value=.72;presence.gain.value=3.2;
+  limiter.threshold.value=-7;
   limiter.knee.value=5;
   limiter.ratio.value=2.4;
   limiter.attack.value=.0025;
   limiter.release.value=.095;
-  output.connect(limiter).connect(audio.destination);
+  output.connect(presence).connect(limiter).connect(audio.destination);
   glassAudio.output=output;
   glassAudio.limiter=limiter;
   return output;
@@ -397,6 +484,7 @@ function scheduleGlassSegment(audio,recipe,when,profile,layer,variation=0) {
   if(panner){panner.pan.value=Math.max(-.08,Math.min(.08,variation));gain.connect(panner).connect(output);}else gain.connect(output);
   const start=Math.max(audio.currentTime+.002,when+jitter);
   source.start(start,Math.max(0,recipe.offset+jitter),recipe.duration);
+  glassAudio.lastSourceStartedAt=new Date().toISOString();
   glassAudio.activeNodes.add(source);
   source.onended=()=>{glassAudio.activeNodes.delete(source);source.disconnect();filter.disconnect();gain.disconnect();panner?.disconnect();};
 }
@@ -406,6 +494,13 @@ function playGlassBreak(type='anything',{restoring=false,control=false}={}) {
   if (now - lastImpactAt < 48 || glassAudioMuted()) return false;
   const profile=GLASS_AUDIO_PROFILES[type] || GLASS_AUDIO_PROFILES.anything;
   let scheduled=false;
+  glassAudio.sequence=(glassAudio.sequence+1)%2048;
+  if(glassAudio.directFallback){
+    lastImpactAt=now;
+    scheduled=playDirectImpact(type,profile,{restoring,control});
+    try { navigator.vibrate?.(restoring?5:(control?8:profile.haptic)); } catch {}
+    return scheduled;
+  }
   try {
     const audio=ensureAudioContext(false);
     if(!glassAudio.activated||audio.state!=='running'||!glassAudio.buffers.size){
@@ -416,7 +511,6 @@ function playGlassBreak(type='anything',{restoring=false,control=false}={}) {
     lastImpactAt = now;
     if(glassAudio.activated && glassAudio.buffers.size){
       const start = audio.currentTime;
-      glassAudio.sequence=(glassAudio.sequence+1)%2048;
       if(restoring){
         scheduleGlassSegment(audio,chooseGlassSegment('settle',type),start,profile,'settle',-.025);
       }else if(control){
@@ -431,8 +525,9 @@ function playGlassBreak(type='anything',{restoring=false,control=false}={}) {
         if(type==='go') scheduleGlassSegment(audio,GLASS_AUDIO_SEGMENTS.crunch[2],start+.17,profile,'crunch',-.045);
       }
       scheduled=true;
+      glassAudio.lastType=type;glassAudio.lastTriggeredAt=new Date().toISOString();glassAudio.failed=false;updateAudioDebug();
     }
-  } catch { glassAudio.failed=true; return false; }
+  } catch(error) { glassAudio.failed=true;glassAudio.lastError=String(error);updateAudioDebug();return false; }
   try { navigator.vibrate?.(restoring?5:(control?8:profile.haptic)); } catch {}
   return scheduled;
 }
@@ -584,6 +679,30 @@ function setFittedText(element, value, longAt, veryLongAt) {
   element.classList.toggle('is-very-long',text.length > veryLongAt);
 }
 
+function stopTicker() {
+  if(tickerTimer)clearTimeout(tickerTimer);
+  tickerTimer=0;
+}
+
+function showTickerMessage() {
+  stopTicker();
+  if(!tickerTextElement||!tickerQueue.length)return;
+  const message=tickerQueue[tickerIndex%tickerQueue.length];
+  tickerTextElement.classList.remove('is-scrolling');
+  tickerTextElement.textContent=message;
+  tickerTextElement.style.setProperty('--ticker-duration',`${Math.max(10,Math.min(24,8+message.length*.075)).toFixed(1)}s`);
+  void tickerTextElement.offsetWidth;
+  if(!reducedMotion.matches)tickerTextElement.classList.add('is-scrolling');
+  const visibleMs=reducedMotion.matches?6500:Math.max(10000,Math.min(24000,8000+message.length*75))+900;
+  tickerTimer=setTimeout(()=>{tickerIndex=(tickerIndex+1)%tickerQueue.length;showTickerMessage();},visibleMs);
+}
+
+function setTickerQueue(messages) {
+  tickerQueue=messages.filter(Boolean);
+  tickerIndex=0;
+  showTickerMessage();
+}
+
 function populatePlayer(entry, manifest) {
   const track = pickPlayableTrack(manifest);
   if (!track) throw new Error('no_playable_track');
@@ -593,7 +712,7 @@ function populatePlayer(entry, manifest) {
   setFittedText(document.querySelector('.release-title'),manifest.releaseTitle || entry.release || track.albumTitle || track.title,20,32);
   setFittedText(document.querySelector('.track-title'),track.title,20,32);
   document.querySelector('.duration').textContent = formatDuration(track.duration);
-  document.querySelector('.ticker-track span').textContent = buildTickerFacts(manifest,entry,artistEntry);
+  setTickerQueue(buildTickerMessages({...manifest,selectedTrackTitle:track.title},entry,artistEntry,universeStats));
   bandcampFrame.title=`Official Bandcamp playback controls for ${track.title} by ${manifest.artist}`;
   setSpectrumPlayback(false);
   bandcampFrame.src = `https://bandcamp.com/EmbeddedPlayer/track=${encodeURIComponent(track.bandcampEmbedTrackId)}/size=small/bgcol=001a08/linkcol=67ff7b/tracklist=false/artwork=none/transparent=true/`;
@@ -627,6 +746,7 @@ function showSelection({historyMode='push'}={}) {
   isLocked=false;
   stopBubbleTube();
   stopSpectrum();
+  stopTicker();
   setSpectrumPlayback(false);
   goButton.classList.remove('is-broken');
   selectionScreen.classList.add('is-active');
@@ -732,12 +852,13 @@ async function onShare() {
 }
 
 async function loadInitialData() {
-  const [catalogueResponse,artistsResponse]=await Promise.all([
-    fetch(`${base}/aquariums.json`,{cache:'no-store'}),fetch(`${base}/artists-index.json`,{cache:'no-store'}).catch(()=>null),
+  const [catalogueResponse,artistsResponse,statsResponse]=await Promise.all([
+    fetch(`${base}/aquariums.json`,{cache:'no-store'}),fetch(`${base}/artists-index.json`,{cache:'no-store'}).catch(()=>null),fetch(`${base}/universe-stats.json`,{cache:'no-store'}).catch(()=>null),
   ]);
   if(!catalogueResponse.ok) throw new Error('The Cosmic Aquaria library could not be opened.');
   catalogue=(await catalogueResponse.json()).aquariums || [];
   if(artistsResponse?.ok){const data=await artistsResponse.json();artistsById=new Map((data.artists||[]).map(artist=>[artist.id,artist]));}
+  if(statsResponse?.ok)universeStats=await statsResponse.json();
   const params=new URLSearchParams(location.search);
   const requestedSelection=normalizeSelection((params.get('categories')||'').split(',').filter(Boolean));
   // A normal homepage entry is always pristine. Only an explicit deep link may
@@ -766,6 +887,7 @@ async function restoreLocation() {
 }
 
 seedCracks();
+prepareDirectImpactAudio();
 preloadGlassAudio();
 updateSoundControls();
 document.addEventListener('pointerdown',()=>void activateGlassAudio(),{capture:true,passive:true});
@@ -787,14 +909,14 @@ document.addEventListener('visibilitychange',()=>{
   if(document.hidden){stopBubbleTube();stopSpectrum();if(audioContext?.state==='running')void audioContext.suspend();}
   else if(playerScreen.classList.contains('is-active')){startBubbleTube();startSpectrum();}
 });
-reducedMotion.addEventListener?.('change',()=>{if(playerScreen.classList.contains('is-active')){startBubbleTube();startSpectrum();}});
+reducedMotion.addEventListener?.('change',()=>{if(playerScreen.classList.contains('is-active')){startBubbleTube();startSpectrum();showTickerMessage();}});
 addEventListener('resize',()=>{if(playerScreen.classList.contains('is-active')){startBubbleTube();startSpectrum();}},{passive:true});
 
 window.CosmicGlassAudio=Object.freeze({
   playGlassBreak,
   setMuted:setGlassAudioMuted,
   activate:activateGlassAudio,
-  getState(){return {activated:glassAudio.activated,muted:glassAudioMuted(),loaded:glassAudio.buffers.size,failed:glassAudio.failed,format:glassAudio.format,contextState:audioContext?.state||'unavailable',activeNodes:glassAudio.activeNodes.size};},
+  getState(){return {...updateAudioDebug(),activeNodes:glassAudio.activeNodes.size};},
 });
 
 recordEvent('session_start','discovery-machine',{product:'two-screen-discovery'});

@@ -38,13 +38,16 @@ const glassAudioSourceNames = [
   'glass-shards-moved-07.mp3','glass-shards-moved-07.ogg',
   'metadata.json','LICENSE.md',
 ];
+const glassAudioImpactNames = ['glass-impact-mobile.mp3','glass-impact-go-mobile.mp3'];
 const glassAudioAssets = await Promise.all(glassAudioSourceNames.map((name) => fs.readFile(path.join(root,'public','audio','glass','source',name))));
+const glassAudioImpacts = await Promise.all(glassAudioImpactNames.map((name) => fs.readFile(path.join(root,'public','audio','glass',name))));
 const minimumFlowerCount = 10;
 const maximumFlowerCount = 14;
 const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore);
 doorwayAssets.forEach((asset) => assetHash.update(asset));
 discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
 glassAudioAssets.forEach((asset) => assetHash.update(asset));
+glassAudioImpacts.forEach((asset) => assetHash.update(asset));
 const assetVersion = assetHash.digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#001807}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
@@ -73,6 +76,9 @@ for (const name of discoveryFidelityAssetNames) {
 for (const name of glassAudioSourceNames) {
   await fs.copyFile(path.join(root,'public','audio','glass','source',name),path.join(pages,'assets','audio','glass','source',name));
 }
+for (const name of glassAudioImpactNames) {
+  await fs.copyFile(path.join(root,'public','audio','glass',name),path.join(pages,'assets','audio','glass',name));
+}
 await fs.copyFile(path.join(root,'public','discovery.webmanifest'),path.join(pages,'discovery.webmanifest'));
 for (const name of ['cosmic-aquaria-qr-standard.png','cosmic-aquaria-qr-branded.png']) {
   try { await fs.copyFile(path.join(root,'public',name),path.join(pages,name)); } catch {}
@@ -82,6 +88,7 @@ const artistManifestFiles = (await fs.readdir(path.join(pages,'artists')))
   .sort();
 const aquariumRegistry=[];
 const canonicalCandidates=new Map();
+const playableTrackIds=new Set();
 for (const filename of artistManifestFiles) {
   try {
     const artistManifest = JSON.parse(await fs.readFile(path.join(pages,'artists',filename),'utf8'));
@@ -104,6 +111,8 @@ for (const filename of artistManifestFiles) {
         objectType:artistManifest.visualStyle === 'chrome' ? 'skulls' : artistManifest.visualStyle === 'glass' ? 'glass flowers' : 'flowers',
         dailyBatchId:artistManifest.dailyBatchId || null,
         primaryLocation:artistManifest.primaryLocation || null,
+        metadataTags:Array.isArray(artistManifest.metadataTags) ? artistManifest.metadataTags : [],
+        bioShort:artistManifest.bioShort || null,
         url:'https://raggedya.github.io/cosmic-aquarium/'+encodeURIComponent(artistManifest.slug)+'/',
         status:artistManifest.status || 'published',
         canonicalArtistId,
@@ -111,6 +120,10 @@ for (const filename of artistManifestFiles) {
         waters: validWaters(artistManifest.waters).length ? validWaters(artistManifest.waters) : classifyWaters({tags:artistManifest.metadataTags||[],text:`${artistManifest.artist} ${artistManifest.releaseTitle||''}`,seed:artistManifest.slug}),
       };
       aquariumRegistry.push(registryEntry);
+      if(registryEntry.status==='published') for(const track of artistManifest.tracks||[]){
+        const trackId=String(track.bandcampEmbedTrackId||'');
+        if(/^\d+$/.test(trackId)&&isBandcampUrl(track.bandcampUrl)) playableTrackIds.add(trackId);
+      }
       const current=canonicalCandidates.get(canonicalArtistId);
       if(!current || canonicalPreference(registryEntry,current)>0) canonicalCandidates.set(canonicalArtistId,registryEntry);
     }
@@ -134,6 +147,7 @@ const canonicalArtists=[...canonicalCandidates.entries()].map(([id,entry])=>({
   lastUpdated:entry.releaseDate || null,
   memberships:[],
   primaryLocation:entry.primaryLocation || null,
+  bioShort:entry.bioShort || null,
   labels:[],
 })).sort((a,b)=>a.name.localeCompare(b.name));
 await fs.writeFile(path.join(pages,'artists-index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:canonicalArtists},null,2)+'\n');
@@ -182,6 +196,20 @@ for(const water of ['heavy','dreamy','quiet','electronic','dark','loud','strange
 }
 await fs.writeFile(path.join(pages,'artists-index.json'),JSON.stringify({schemaVersion:2,generatedAt:new Date().toISOString(),artists:canonicalArtists},null,2)+'\n');
 await fs.writeFile(path.join(pages,'collections','index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),collections:collectionRegistry},null,2)+'\n');
+const now=new Date();
+const today=now.toISOString().slice(0,10);
+const weekStart=new Date(now);weekStart.setUTCDate(weekStart.getUTCDate()-6);weekStart.setUTCHours(0,0,0,0);
+const datedPublished=aquariumRegistry.filter(entry=>entry.status==='published'&&/^\d{4}-\d{2}-\d{2}$/.test(String(entry.dailyBatchId||'')));
+const universeStats={
+  schemaVersion:1,
+  canonicalArtistCount:canonicalArtists.filter(artist=>artist.status==='published').length,
+  publishedReleaseCount:aquariumRegistry.filter(entry=>entry.status==='published').length,
+  playableTrackCount:playableTrackIds.size,
+  newToday:datedPublished.filter(entry=>entry.dailyBatchId===today).length,
+  newThisWeek:datedPublished.filter(entry=>new Date(`${entry.dailyBatchId}T00:00:00Z`)>=weekStart).length,
+  updatedAt:now.toISOString(),
+};
+await fs.writeFile(path.join(pages,'universe-stats.json'),JSON.stringify(universeStats,null,2)+'\n');
 await fs.writeFile(path.join(pages,'index.html'),renderLanding());
 console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s) and '+collectionRegistry.length+' collection(s).');
 
@@ -201,6 +229,9 @@ function renderCollection(collection){
 }
 function bandcampArtistRoot(value){
   try{const url=new URL(String(value||''));const host=url.hostname.toLowerCase().replace(/^www\./,'');return url.protocol==='https:'&&host.endsWith('.bandcamp.com')&&host!=='bandcamp.com'?'https://'+host+'/':null}catch{return null}
+}
+function isBandcampUrl(value){
+  try{const url=new URL(String(value||''));const host=url.hostname.toLowerCase().replace(/^www\./,'');return url.protocol==='https:'&&(host==='bandcamp.com'||host.endsWith('.bandcamp.com'))&&!url.username&&!url.password}catch{return false}
 }
 function canonicalPreference(candidate,current){
   const published=value=>value.status==='published'?1:0;

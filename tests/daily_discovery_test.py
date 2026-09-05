@@ -13,7 +13,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 import daily_discovery
 import create_artist as creator
-from create_artist import BandcampPageParser, MINIMUM_TRACK_COUNT, discover_tracks
+from create_artist import BandcampPageParser, MINIMUM_TRACK_COUNT, concise_bio, discover_tracks, location_from_json_ld
 
 
 class DailyDiscoveryTests(unittest.TestCase):
@@ -48,6 +48,13 @@ class DailyDiscoveryTests(unittest.TestCase):
         parser.feed('<a class="tag" href="/tag/shoegaze">shoegaze</a><a class="tag"> dark ambient </a>')
         self.assertEqual(parser.tags, ["shoegaze", "dark ambient"])
 
+    def test_ticker_enrichment_uses_factual_bandcamp_fields_and_rejects_generic_copy(self):
+        parser = BandcampPageParser()
+        parser.feed('<script type="application/ld+json">{"foundingLocation":{"@type":"Place","name":"Melbourne, Australia"}}</script>')
+        self.assertEqual(location_from_json_ld(parser), "Melbourne, Australia")
+        self.assertEqual(concise_bio("13 track album", "Artist"), "")
+        self.assertEqual(concise_bio("Artist, atmospheric textural music recorded in Melbourne.", "Artist"), "atmospheric textural music recorded in Melbourne.")
+
     def test_one_verified_release_track_is_enough_to_publish(self):
         self.assertEqual(MINIMUM_TRACK_COUNT, 1)
 
@@ -60,10 +67,12 @@ class DailyDiscoveryTests(unittest.TestCase):
 
     def test_daily_dry_run_does_not_publish_before_bookkeeping_succeeds(self):
         track = {"albumKey": "release", "accent": "#fff", "albumTitle": "Release"}
-        discovered = ([track], "https://artist.bandcamp.com/album/release", True, "https://artist.bandcamp.com/", "2026-09-01", ["ambient"])
+        discovered = ([track], "https://artist.bandcamp.com/album/release", True, "https://artist.bandcamp.com/", "2026-09-01", ["ambient"], "Atmospheric music from Melbourne.", "Melbourne, Australia")
         with tempfile.TemporaryDirectory() as folder, patch.object(creator, "PAGES", Path(folder)), patch.object(creator, "discover_tracks", return_value=discovered):
             result = creator.create_artist("Artist", "https://artist.bandcamp.com/album/release", "cosmic", "https://example.test", generate_qr=False, persist=False)
             self.assertIsNotNone(result["_manifest"])
+            self.assertEqual(result["_manifest"]["bioShort"], "Atmospheric music from Melbourne.")
+            self.assertEqual(result["_manifest"]["primaryLocation"], "Melbourne, Australia")
             self.assertEqual(list(Path(folder).rglob("*")), [])
 
 
