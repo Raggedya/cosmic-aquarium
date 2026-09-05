@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "slug": "swivelhead-perfect-sky",
+  "artist": "SwivelHead",
+  "bandcampUrl": "https://swivelhead1.bandcamp.com/album/perfect-sky-2",
+  "releaseTitle": "perfect sky.",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "waters": [
+    "electronic",
+    "dark"
+  ],
+  "metadata_tags": [
+    "London"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://swivelhead1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "perfect-sky",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "perfect-sky-2714002736",
+      "title": "brek n dub",
+      "artist": "SwivelHead",
+      "albumTitle": "perfect sky.",
+      "albumKey": "perfect-sky",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://swivelhead1.bandcamp.com/track/brek-n-dub-2",
+      "bandcampEmbedTrackId": "2714002736",
+      "sourcePage": "https://swivelhead1.bandcamp.com/album/perfect-sky-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "perfect-sky-3176992403",
+      "title": "expressive breakbeat fuck about",
+      "artist": "SwivelHead",
+      "albumTitle": "perfect sky.",
+      "albumKey": "perfect-sky",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://swivelhead1.bandcamp.com/track/expressive-breakbeat-fuck-about-2",
+      "bandcampEmbedTrackId": "3176992403",
+      "sourcePage": "https://swivelhead1.bandcamp.com/album/perfect-sky-2",
+      "accent": "#88d7ff"
+    }
+  ]
+}

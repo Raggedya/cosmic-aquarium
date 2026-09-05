@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "tango-recordings-6400-crew-hipp-e-tony",
+  "artist": "Tango recordings",
+  "bandcampUrl": "https://tangorecordings.bandcamp.com/album/6400-crew-hipp-e-tony",
+  "releaseTitle": "6400 Crew - Hipp-e & Tony",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "funk",
+    "funky house",
+    "house",
+    "tech house",
+    "west coast house",
+    "house music",
+    "tribal house",
+    "Oakland"
+  ],
+  "primaryLocation": "Oakland, California",
+  "waters": [
+    "electronic"
+  ],
+  "metadata_tags": [
+    "funk",
+    "funky house",
+    "house",
+    "tech house",
+    "west coast house",
+    "house music",
+    "tribal house",
+    "Oakland"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tangorecordings.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "6400-crew-hipp-e-tony",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "6400-crew-hipp-e-tony-2006619856",
+      "title": "Down In a Land",
+      "artist": "Tango recordings",
+      "albumTitle": "6400 Crew - Hipp-e & Tony",
+      "albumKey": "6400-crew-hipp-e-tony",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:40",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tangorecordings.bandcamp.com/track/down-in-a-land",
+      "bandcampEmbedTrackId": "2006619856",
+      "sourcePage": "https://tangorecordings.bandcamp.com/album/6400-crew-hipp-e-tony",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "6400-crew-hipp-e-tony-3338922018",
+      "title": "lovedub",
+      "artist": "Tango recordings",
+      "albumTitle": "6400 Crew - Hipp-e & Tony",
+      "albumKey": "6400-crew-hipp-e-tony",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tangorecordings.bandcamp.com/track/lovedub",
+      "bandcampEmbedTrackId": "3338922018",
+      "sourcePage": "https://tangorecordings.bandcamp.com/album/6400-crew-hipp-e-tony",
+      "accent": "#88d7ff"
+    }
+  ]
+}

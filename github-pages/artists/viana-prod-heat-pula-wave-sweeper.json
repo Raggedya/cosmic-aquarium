@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "slug": "viana-prod-heat-pula-wave-sweeper",
+  "artist": "VIANA PROD",
+  "bandcampUrl": "https://vianaprod.bandcamp.com/album/heat-pula-wave-sweeper",
+  "releaseTitle": "HEAT PULA WAVE / SWEEPER",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "drum & bass",
+    "dubstep",
+    "electronic",
+    "grime",
+    "jungle",
+    "ukg",
+    "Teresina"
+  ],
+  "primaryLocation": "Teresina, Brazil",
+  "waters": [
+    "electronic"
+  ],
+  "metadata_tags": [
+    "drum & bass",
+    "dubstep",
+    "electronic",
+    "grime",
+    "jungle",
+    "ukg",
+    "Teresina"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vianaprod.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:34:01Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "heat-pula-wave-sweeper",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "heat-pula-wave-sweeper-3411851457",
+      "title": "HEAT PULA WAVE [VIANA MIX]",
+      "artist": "VIANA PROD",
+      "albumTitle": "HEAT PULA WAVE / SWEEPER",
+      "albumKey": "heat-pula-wave-sweeper",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vianaprod.bandcamp.com/track/heat-pula-wave-viana-mix",
+      "bandcampEmbedTrackId": "3411851457",
+      "sourcePage": "https://vianaprod.bandcamp.com/album/heat-pula-wave-sweeper",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "heat-pula-wave-sweeper-1423807287",
+      "title": "SWEEPER RIDDIM [VIANA MIX]",
+      "artist": "VIANA PROD",
+      "albumTitle": "HEAT PULA WAVE / SWEEPER",
+      "albumKey": "heat-pula-wave-sweeper",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:12",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vianaprod.bandcamp.com/track/sweeper-riddim-viana-mix",
+      "bandcampEmbedTrackId": "1423807287",
+      "sourcePage": "https://vianaprod.bandcamp.com/album/heat-pula-wave-sweeper",
+      "accent": "#88d7ff"
+    }
+  ]
+}

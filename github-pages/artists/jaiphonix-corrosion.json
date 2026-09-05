@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "jaiphonix-corrosion",
+  "artist": "Jaiphonix",
+  "bandcampUrl": "https://jaiphonix.bandcamp.com/album/corrosion",
+  "releaseTitle": "Corrosion",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "electro",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "waters": [
+    "electronic"
+  ],
+  "metadata_tags": [
+    "electronic",
+    "electro",
+    "United Kingdom"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jaiphonix.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "corrosion",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "corrosion-2074778754",
+      "title": "Hazardous Liquid",
+      "artist": "Jaiphonix",
+      "albumTitle": "Corrosion",
+      "albumKey": "corrosion",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:30",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jaiphonix.bandcamp.com/track/hazardous-liquid",
+      "bandcampEmbedTrackId": "2074778754",
+      "sourcePage": "https://jaiphonix.bandcamp.com/album/corrosion",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "corrosion-3118656932",
+      "title": "Hydrochloric",
+      "artist": "Jaiphonix",
+      "albumTitle": "Corrosion",
+      "albumKey": "corrosion",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jaiphonix.bandcamp.com/track/hydrochloric",
+      "bandcampEmbedTrackId": "3118656932",
+      "sourcePage": "https://jaiphonix.bandcamp.com/album/corrosion",
+      "accent": "#88d7ff"
+    }
+  ]
+}

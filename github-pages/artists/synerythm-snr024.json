@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "slug": "synerythm-snr024",
+  "artist": "Synerythm",
+  "bandcampUrl": "https://synerythm.bandcamp.com/album/snr024",
+  "releaseTitle": "SNR024",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "deep minimal",
+    "minimal house",
+    "trinimal",
+    "Romania"
+  ],
+  "primaryLocation": "Romania",
+  "waters": [
+    "electronic",
+    "quiet"
+  ],
+  "metadata_tags": [
+    "electronic",
+    "deep minimal",
+    "minimal house",
+    "trinimal",
+    "Romania"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://synerythm.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:32:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "snr024",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "snr024-1247271559",
+      "title": "Hybrid",
+      "artist": "Synerythm",
+      "albumTitle": "SNR024",
+      "albumKey": "snr024",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://synerythm.bandcamp.com/track/hybrid",
+      "bandcampEmbedTrackId": "1247271559",
+      "sourcePage": "https://synerythm.bandcamp.com/album/snr024",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "snr024-3270292367",
+      "title": "In time",
+      "artist": "Synerythm",
+      "albumTitle": "SNR024",
+      "albumKey": "snr024",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://synerythm.bandcamp.com/track/in-time",
+      "bandcampEmbedTrackId": "3270292367",
+      "sourcePage": "https://synerythm.bandcamp.com/album/snr024",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "snr024-2971487772",
+      "title": "Gatka",
+      "artist": "Synerythm",
+      "albumTitle": "SNR024",
+      "albumKey": "snr024",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:10",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://synerythm.bandcamp.com/track/gatka",
+      "bandcampEmbedTrackId": "2971487772",
+      "sourcePage": "https://synerythm.bandcamp.com/album/snr024",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

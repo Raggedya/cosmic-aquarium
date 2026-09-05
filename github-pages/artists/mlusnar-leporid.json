@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "slug": "mlusnar-leporid",
+  "artist": "Mlusnar",
+  "bandcampUrl": "https://saginawnoise.bandcamp.com/album/leporid",
+  "releaseTitle": "Leporid",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "ambient noise",
+    "harsh noise",
+    "harsh noise wall",
+    "noise",
+    "noisecore",
+    "noisecore...",
+    "Saginaw"
+  ],
+  "primaryLocation": "Saginaw, Michigan",
+  "waters": [
+    "loud",
+    "quiet",
+    "strange"
+  ],
+  "metadata_tags": [
+    "experimental",
+    "ambient noise",
+    "harsh noise",
+    "harsh noise wall",
+    "noise",
+    "noisecore",
+    "noisecore...",
+    "Saginaw"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://saginawnoise.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "leporid",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "leporid-1780377204",
+      "title": "Side A - \"Diminished Cohesion\"",
+      "artist": "Mlusnar",
+      "albumTitle": "Leporid",
+      "albumKey": "leporid",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://saginawnoise.bandcamp.com/track/side-a-diminished-cohesion",
+      "bandcampEmbedTrackId": "1780377204",
+      "sourcePage": "https://saginawnoise.bandcamp.com/album/leporid",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "leporid-2518664395",
+      "title": "Side B - \"Irresistible Tragedy\"",
+      "artist": "Mlusnar",
+      "albumTitle": "Leporid",
+      "albumKey": "leporid",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://saginawnoise.bandcamp.com/track/side-b-irresistible-tragedy",
+      "bandcampEmbedTrackId": "2518664395",
+      "sourcePage": "https://saginawnoise.bandcamp.com/album/leporid",
+      "accent": "#88d7ff"
+    }
+  ]
+}

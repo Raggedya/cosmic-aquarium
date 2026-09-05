@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "slug": "uno-loop-one-whole-peace",
+  "artist": "Uno Loop",
+  "bandcampUrl": "https://unoloop.bandcamp.com/album/one-whole-peace",
+  "releaseTitle": "One Whole Peace",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "world",
+    "african",
+    "funk",
+    "jazz",
+    "latin",
+    "psych"
+  ],
+  "primaryLocation": null,
+  "waters": [
+    "strange"
+  ],
+  "metadata_tags": [
+    "world",
+    "african",
+    "funk",
+    "jazz",
+    "latin",
+    "psych"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://unoloop.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "one-whole-peace",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "one-whole-peace-669884373",
+      "title": "Opening",
+      "artist": "Uno Loop",
+      "albumTitle": "One Whole Peace",
+      "albumKey": "one-whole-peace",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "14:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://unoloop.bandcamp.com/track/opening",
+      "bandcampEmbedTrackId": "669884373",
+      "sourcePage": "https://unoloop.bandcamp.com/album/one-whole-peace",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "one-whole-peace-1548648017",
+      "title": "Greenpoint",
+      "artist": "Uno Loop",
+      "albumTitle": "One Whole Peace",
+      "albumKey": "one-whole-peace",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "12:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://unoloop.bandcamp.com/track/greenpoint",
+      "bandcampEmbedTrackId": "1548648017",
+      "sourcePage": "https://unoloop.bandcamp.com/album/one-whole-peace",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "one-whole-peace-4148998122",
+      "title": "One Whole Peace",
+      "artist": "Uno Loop",
+      "albumTitle": "One Whole Peace",
+      "albumKey": "one-whole-peace",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "26:05",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://unoloop.bandcamp.com/track/one-whole-peace",
+      "bandcampEmbedTrackId": "4148998122",
+      "sourcePage": "https://unoloop.bandcamp.com/album/one-whole-peace",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "slug": "a-slow-and-painful-execution-017-a",
+  "artist": "A Slow And Painful Execution",
+  "bandcampUrl": "https://aslowandpainfulexecution.bandcamp.com/album/017-a",
+  "releaseTitle": "017: a",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "hell"
+  ],
+  "primaryLocation": "hell, Michigan",
+  "waters": [
+    "strange"
+  ],
+  "metadata_tags": [
+    "experimental",
+    "hell"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://aslowandpainfulexecution.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:32:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "017-a",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "017-a-372500065",
+      "title": "017: a",
+      "artist": "A Slow And Painful Execution",
+      "albumTitle": "017: a",
+      "albumKey": "017-a",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:37",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aslowandpainfulexecution.bandcamp.com/track/017-a",
+      "bandcampEmbedTrackId": "372500065",
+      "sourcePage": "https://aslowandpainfulexecution.bandcamp.com/album/017-a",
+      "accent": "#c3b4f4"
+    }
+  ]
+}

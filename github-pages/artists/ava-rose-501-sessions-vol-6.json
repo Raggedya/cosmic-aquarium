@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "slug": "ava-rose-501-sessions-vol-6",
+  "artist": "ava rose",
+  "bandcampUrl": "https://avarosemusic.bandcamp.com/album/501-sessions-vol-6",
+  "releaseTitle": "501 SESSIONS, VOL. 6",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "acoustic",
+    "acoustic pop",
+    "folk pop",
+    "singer-songwriter",
+    "Charlotte"
+  ],
+  "primaryLocation": "Charlotte, North Carolina",
+  "waters": [
+    "quiet"
+  ],
+  "metadata_tags": [
+    "acoustic",
+    "acoustic pop",
+    "folk pop",
+    "singer-songwriter",
+    "Charlotte"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://avarosemusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:01Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "501-sessions-vol-6",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "501-sessions-vol-6-1483298341",
+      "title": "NOBODY DOES TOO (501 SESSIONS)",
+      "artist": "ava rose",
+      "albumTitle": "501 SESSIONS, VOL. 6",
+      "albumKey": "501-sessions-vol-6",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://avarosemusic.bandcamp.com/track/nobody-does-too-501-sessions",
+      "bandcampEmbedTrackId": "1483298341",
+      "sourcePage": "https://avarosemusic.bandcamp.com/album/501-sessions-vol-6",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "501-sessions-vol-6-584548257",
+      "title": "MYSTERY (501 SESSIONS)",
+      "artist": "ava rose",
+      "albumTitle": "501 SESSIONS, VOL. 6",
+      "albumKey": "501-sessions-vol-6",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:51",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://avarosemusic.bandcamp.com/track/mystery-501-sessions",
+      "bandcampEmbedTrackId": "584548257",
+      "sourcePage": "https://avarosemusic.bandcamp.com/album/501-sessions-vol-6",
+      "accent": "#88d7ff"
+    }
+  ]
+}

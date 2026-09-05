@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "slug": "otheos-drift",
+  "artist": "otheos",
+  "bandcampUrl": "https://otheos.bandcamp.com/album/drift",
+  "releaseTitle": "Drift",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "ambient",
+    "dark ambient",
+    "meditation music",
+    "new age",
+    "Santa Cruz"
+  ],
+  "primaryLocation": "Santa Cruz, California",
+  "waters": [
+    "quiet",
+    "dark"
+  ],
+  "metadata_tags": [
+    "ambient",
+    "dark ambient",
+    "meditation music",
+    "new age",
+    "Santa Cruz"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://otheos.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "drift",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "drift-1846320992",
+      "title": "Rhodes Drift I",
+      "artist": "otheos",
+      "albumTitle": "Drift",
+      "albumKey": "drift",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://otheos.bandcamp.com/track/rhodes-drift-i",
+      "bandcampEmbedTrackId": "1846320992",
+      "sourcePage": "https://otheos.bandcamp.com/album/drift",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "drift-2232416357",
+      "title": "Rhodes Drift II",
+      "artist": "otheos",
+      "albumTitle": "Drift",
+      "albumKey": "drift",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://otheos.bandcamp.com/track/rhodes-drift-ii",
+      "bandcampEmbedTrackId": "2232416357",
+      "sourcePage": "https://otheos.bandcamp.com/album/drift",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "drift-3197331016",
+      "title": "Rhodes Drift III",
+      "artist": "otheos",
+      "albumTitle": "Drift",
+      "albumKey": "drift",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:40",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://otheos.bandcamp.com/track/rhodes-drift-iii",
+      "bandcampEmbedTrackId": "3197331016",
+      "sourcePage": "https://otheos.bandcamp.com/album/drift",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "drift-219423246",
+      "title": "Rhodes Drift IV",
+      "artist": "otheos",
+      "albumTitle": "Drift",
+      "albumKey": "drift",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:02",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://otheos.bandcamp.com/track/rhodes-drift-iv",
+      "bandcampEmbedTrackId": "219423246",
+      "sourcePage": "https://otheos.bandcamp.com/album/drift",
+      "accent": "#ffb66d"
+    }
+  ]
+}

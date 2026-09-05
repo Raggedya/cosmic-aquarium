@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "p-half-life",
+  "artist": "ÆP",
+  "bandcampUrl": "https://aepcreative.bandcamp.com/album/half-life",
+  "releaseTitle": "Half-Life",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "ambient",
+    "experimental",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "waters": [
+    "quiet",
+    "strange"
+  ],
+  "metadata_tags": [
+    "ambient",
+    "experimental",
+    "Chicago"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://aepcreative.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:32:56Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "half-life",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "half-life-4274753371",
+      "title": "home",
+      "artist": "ÆP",
+      "albumTitle": "Half-Life",
+      "albumKey": "half-life",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aepcreative.bandcamp.com/track/home",
+      "bandcampEmbedTrackId": "4274753371",
+      "sourcePage": "https://aepcreative.bandcamp.com/album/half-life",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "half-life-3457136096",
+      "title": "glass",
+      "artist": "ÆP",
+      "albumTitle": "Half-Life",
+      "albumKey": "half-life",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aepcreative.bandcamp.com/track/glass",
+      "bandcampEmbedTrackId": "3457136096",
+      "sourcePage": "https://aepcreative.bandcamp.com/album/half-life",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "half-life-2362463988",
+      "title": "weightless",
+      "artist": "ÆP",
+      "albumTitle": "Half-Life",
+      "albumKey": "half-life",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aepcreative.bandcamp.com/track/weightless",
+      "bandcampEmbedTrackId": "2362463988",
+      "sourcePage": "https://aepcreative.bandcamp.com/album/half-life",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "half-life-4007967234",
+      "title": "dream observer",
+      "artist": "ÆP",
+      "albumTitle": "Half-Life",
+      "albumKey": "half-life",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:03",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aepcreative.bandcamp.com/track/dream-observer",
+      "bandcampEmbedTrackId": "4007967234",
+      "sourcePage": "https://aepcreative.bandcamp.com/album/half-life",
+      "accent": "#ffb66d"
+    }
+  ]
+}

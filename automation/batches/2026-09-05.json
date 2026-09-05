@@ -1,0 +1,789 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-09-05",
+  "batchDate": "2026-09-05",
+  "targetCount": 20,
+  "status": "generation_pending",
+  "generatedCount": 0,
+  "publishedCount": 0,
+  "emailStatus": "pending",
+  "createdAt": "2026-09-05T06:32:09.061505+00:00",
+  "aquariums": [],
+  "failures": [
+    {
+      "artist": "MISSTAKE STUDIOS",
+      "release": "Tandem",
+      "bandcampUrl": "https://misstake-studios.bandcamp.com/album/tandem",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Red Head Redemption",
+      "release": "Sunny With a Chance of Fallout",
+      "bandcampUrl": "https://redheadredemption.bandcamp.com/album/sunny-with-a-chance-of-fallout",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Smoke Aggression",
+      "release": "Hoffmahn: The \"Her Best Friend Is Really Hot\" version (1999)",
+      "bandcampUrl": "https://smokeaggression.bandcamp.com/album/hoffmahn-the-her-best-friend-is-really-hot-version-1999",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "boy",
+      "release": "Attention Getters",
+      "bandcampUrl": "https://callmeafriend.bandcamp.com/album/attention-getters",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Morbid Oath Records",
+      "release": "RAMERAS DEL DIABLO",
+      "bandcampUrl": "https://morbidoathrecords.bandcamp.com/album/rameras-del-diablo",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Jeff Rum",
+      "release": "EP",
+      "bandcampUrl": "https://jeffrum.bandcamp.com/album/ep",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Not The Envelopes",
+      "release": "Papers Scars",
+      "bandcampUrl": "https://nottheenvelopes.bandcamp.com/album/papers-scars",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Interesting Tapes From India",
+      "release": "Soundtrack To “Baharon Ke Manzil”",
+      "bandcampUrl": "https://interestingtapesfromindia.bandcamp.com/album/soundtrack-to-baharon-ke-manzil",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Rectal Hidradenitis Suppurativa and Hypogastric Squamous Cell Carcinoma",
+      "release": "Split w/ Body Parts Found in Dumpster",
+      "bandcampUrl": "https://rxhxsxaxhxsxcxc.bandcamp.com/album/split-w-body-parts-found-in-dumpster",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "The Camden Project",
+      "release": "Partial Concussion",
+      "bandcampUrl": "https://thecamdenproject.bandcamp.com/album/partial-concussion",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "PK Waves",
+      "release": "Memory Dispersal Unit",
+      "bandcampUrl": "https://pkwaves.bandcamp.com/album/memory-dispersal-unit",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "sonnov",
+      "release": "pinaha",
+      "bandcampUrl": "https://sonnovdrone.bandcamp.com/album/pinaha",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "InquietoMusik",
+      "release": "Hablame Sobre La ira [INQ033]",
+      "bandcampUrl": "https://inquietoht.bandcamp.com/album/hablame-sobre-la-ira-inq033",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Nico Chkifi",
+      "release": "BRAYANI with Bram De Looze and Yannick Peeters",
+      "bandcampUrl": "https://nicochkifi.bandcamp.com/album/brayani-with-bram-de-looze-and-yannick-peeters",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Jose Arellano",
+      "release": "Erratika",
+      "bandcampUrl": "https://josearellano.bandcamp.com/album/erratika",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Juxtaposition",
+      "release": "demos & hopeful thoughts of mutual prosperity",
+      "bandcampUrl": "https://juxtaposition.bandcamp.com/album/demos-hopeful-thoughts-of-mutual-prosperity",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Synerythm",
+      "release": "SNR024",
+      "bandcampUrl": "https://synerythm.bandcamp.com/album/snr024",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Noize Bot",
+      "release": "Dancing Alone in Someone Else's Dream",
+      "bandcampUrl": "https://noizebot.bandcamp.com/album/dancing-alone-in-someone-elses-dream",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "UNIQUE SOUNDS LABEL",
+      "release": "Naffi-i Inna Different Style ( Full Tracks Sent Once Downloaded )",
+      "bandcampUrl": "https://naffi-i.bandcamp.com/album/naffi-i-inna-different-style-full-tracks-sent-once-downloaded",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Zetes Entos",
+      "release": "Courage",
+      "bandcampUrl": "https://zetesentos.bandcamp.com/album/courage-2",
+      "reason": "Cosmic Aquaria requires at least 1 publicly available Bandcamp songs; only 0 could be verified for Zetes Entos."
+    },
+    {
+      "artist": "Frostbite Mechanica",
+      "release": "Gloria in the Winter Storm (EP)",
+      "bandcampUrl": "https://frostbitemechanica.bandcamp.com/album/gloria-in-the-winter-storm-ep",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Jeff Rum",
+      "release": "Has Legs",
+      "bandcampUrl": "https://jeffrum.bandcamp.com/album/has-legs",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "BalatroFan242",
+      "release": "054: Peak Life Plans",
+      "bandcampUrl": "https://balatrofan242.bandcamp.com/album/054-peak-life-plans",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Curse",
+      "release": "Slaughter of the Stars (2006)",
+      "bandcampUrl": "https://cursefaen.bandcamp.com/album/slaughter-of-the-stars-2006-2",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Park West Records",
+      "release": "From Far Away",
+      "bandcampUrl": "https://parkwestrecords.bandcamp.com/album/from-far-away",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "hafaduck",
+      "release": "Plastic People",
+      "bandcampUrl": "https://hafaduck.bandcamp.com/album/plastic-people",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "ZOMBY",
+      "release": "WHERE WERE U IN '92?",
+      "bandcampUrl": "https://zombymusic.bandcamp.com/album/where-were-u-in-92",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Orb Tapes",
+      "release": "Shogun on Acid",
+      "bandcampUrl": "https://orbtapes.bandcamp.com/album/shogun-on-acid",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Stolen Flowers Of The Dead",
+      "release": "Carnations Near The Sorrow Factory",
+      "bandcampUrl": "https://stolenflowersofthedead.bandcamp.com/album/carnations-near-the-sorrow-factory-2",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Bulimia Natilius ^_^",
+      "release": "Gurocenter",
+      "bandcampUrl": "https://bulimianatilius.bandcamp.com/album/gurocenter",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Shaltter0",
+      "release": "Eletronic vibes #2",
+      "bandcampUrl": "https://shaltter0.bandcamp.com/album/eletronic-vibes-2",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Devil Dubs",
+      "release": "The Mixtape Series Vol. 1 - DVLTAPE001",
+      "bandcampUrl": "https://devildubsjunglism.bandcamp.com/album/the-mixtape-series-vol-1-dvltape001",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "T.K.A",
+      "release": "FEAR",
+      "bandcampUrl": "https://itakma.bandcamp.com/album/fear",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "UPGRADE",
+      "release": "LACK OF EMPATHY",
+      "bandcampUrl": "https://time2upgrade.bandcamp.com/album/lack-of-empathy-2",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "enduser",
+      "release": "Vertigo - From the Window",
+      "bandcampUrl": "https://end-user.bandcamp.com/album/vertigo-from-the-window",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Ric Pecchi",
+      "release": "Night Bloom",
+      "bandcampUrl": "https://ricpecchi.bandcamp.com/album/night-bloom",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "nahhphet",
+      "release": "not everything was meant to be analyzed",
+      "bandcampUrl": "https://nahhphet.bandcamp.com/album/not-everything-was-meant-to-be-analyzed",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "The New Romantics",
+      "release": "Selfishly / Now I See You",
+      "bandcampUrl": "https://thenewromantics.bandcamp.com/album/selfishly-now-i-see-you",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Asukawa",
+      "release": "SEROQUEL LUST",
+      "bandcampUrl": "https://asukawa.bandcamp.com/album/seroquel-lust",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Avana Blue",
+      "release": "Lost",
+      "bandcampUrl": "https://avanablue.bandcamp.com/album/lost",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Pinkshift",
+      "release": "Saccharine (Deluxe)",
+      "bandcampUrl": "https://pinkshift.bandcamp.com/album/saccharine-deluxe",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "starbound.",
+      "release": "Forget Everything",
+      "bandcampUrl": "https://starbound2026.bandcamp.com/album/forget-everything",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Pawnschlonche",
+      "release": "Let's Be Perfectly Vague",
+      "bandcampUrl": "https://pawnschlonche.bandcamp.com/album/lets-be-perfectly-vague",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "CalaSang",
+      "release": "CalaSang Directe Plaça de la Reina, Palma",
+      "bandcampUrl": "https://calasang.bandcamp.com/album/calasang-directe-pla-a-de-la-reina-palma",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "whoremembers",
+      "release": "Morrowe",
+      "bandcampUrl": "https://whor3members.bandcamp.com/album/morrowe",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Berggeflüster",
+      "release": "Revelations about the other Heaven pt. 1",
+      "bandcampUrl": "https://berggefluister93.bandcamp.com/album/revelations-about-the-other-heaven-pt-1",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Discaso",
+      "release": "Demo 2026",
+      "bandcampUrl": "https://discaso.bandcamp.com/album/demo-2026",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "A Slow And Painful Execution",
+      "release": "017: a",
+      "bandcampUrl": "https://aslowandpainfulexecution.bandcamp.com/album/017-a",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Nervous Records",
+      "release": "La Partita",
+      "bandcampUrl": "https://nervousrecords.bandcamp.com/album/la-partita",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Bad History Month",
+      "release": "BAD BLOOD LOST VERSIONS ft. Ruah",
+      "bandcampUrl": "https://fathistorymonth.bandcamp.com/album/bad-blood-lost-versions-ft-ruah",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "ÆP",
+      "release": "Half-Life",
+      "bandcampUrl": "https://aepcreative.bandcamp.com/album/half-life",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "slrdur",
+      "release": "Window Beetle",
+      "bandcampUrl": "https://slrdur.bandcamp.com/album/window-beetle",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "TSCHA",
+      "release": "A1",
+      "bandcampUrl": "https://mistexplorer.bandcamp.com/album/a1",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Torso Aberto",
+      "release": "Vomit abortion",
+      "bandcampUrl": "https://torsoaberto.bandcamp.com/album/vomit-abortion",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "aliquid novi",
+      "release": "solverem",
+      "bandcampUrl": "https://aliquidnovi.bandcamp.com/album/solverem",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "tyaga Inc",
+      "release": "Super Eight",
+      "bandcampUrl": "https://tyagaa.bandcamp.com/album/super-eight",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "ava rose",
+      "release": "501 SESSIONS, VOL. 6",
+      "bandcampUrl": "https://avarosemusic.bandcamp.com/album/501-sessions-vol-6",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Outpatient X",
+      "release": "Warped",
+      "bandcampUrl": "https://outpatientx.bandcamp.com/album/warped",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "BAINS THE PRINCE",
+      "release": "SELECTION",
+      "bandcampUrl": "https://bainstheprince.bandcamp.com/album/selection",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "SwivelHead",
+      "release": "perfect sky.",
+      "bandcampUrl": "https://swivelhead1.bandcamp.com/album/perfect-sky-2",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Flesheaterforest",
+      "release": "Mage",
+      "bandcampUrl": "https://flesheaterforest.bandcamp.com/album/mage",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "monoKraK netlabel",
+      "release": "[monoKraK149] Dadive \"Habemus Bestiam EP\"",
+      "bandcampUrl": "https://monokraknetlabel.bandcamp.com/album/monokrak149-dadive-habemus-bestiam-ep",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Het Ontstaande Ensemble",
+      "release": "WHAT A TRIP",
+      "bandcampUrl": "https://hetontstaandeensemble.bandcamp.com/album/what-a-trip",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "CHARLES TREES",
+      "release": "mixed messages",
+      "bandcampUrl": "https://charlestrees.bandcamp.com/album/mixed-messages",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Jaiphonix",
+      "release": "Corrosion",
+      "bandcampUrl": "https://jaiphonix.bandcamp.com/album/corrosion",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "STREETVOICE AKA MADDHEADSET",
+      "release": "RAWKIND (DELUXE EDITION)",
+      "bandcampUrl": "https://maddheadset.bandcamp.com/album/rawkind-deluxe-edition",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Benji Tunez",
+      "release": "Prelude to Labellum",
+      "bandcampUrl": "https://benjitunez.bandcamp.com/album/prelude-to-labellum",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "All once",
+      "release": "Everywhere at the end of time (Stage 7 hypothetical)",
+      "bandcampUrl": "https://allonce.bandcamp.com/album/everywhere-at-the-end-of-time-stage-7-hypothetical",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "effus",
+      "release": "DnB tries #1",
+      "bandcampUrl": "https://theeffus.bandcamp.com/album/dnb-tries-1",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Fubar",
+      "release": "No Savior Coming",
+      "bandcampUrl": "https://fubarmc.bandcamp.com/album/no-savior-coming",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "notbyseb",
+      "release": "2023 Banger Single",
+      "bandcampUrl": "https://notbyseb.bandcamp.com/album/2023-banger-single",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Mathieu Paulin",
+      "release": "Août 2026",
+      "bandcampUrl": "https://mathieupaulin.bandcamp.com/album/ao-t-2026",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Rectangle Creep",
+      "release": "The Breaching EP",
+      "bandcampUrl": "https://rectanglecreep.bandcamp.com/album/the-breaching-ep",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "The Plaqueys",
+      "release": "The Plaqueys",
+      "bandcampUrl": "https://theplaqueys.bandcamp.com/album/the-plaqueys",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Mlusnar",
+      "release": "Leporid",
+      "bandcampUrl": "https://saginawnoise.bandcamp.com/album/leporid",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Zerin Sakech",
+      "release": "I have to go Number One",
+      "bandcampUrl": "https://zerinsakech.bandcamp.com/album/i-have-to-go-number-one",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Important Hair",
+      "release": "3 Songs",
+      "bandcampUrl": "https://importanthair.bandcamp.com/album/3-songs",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "2K",
+      "release": "FEEDBACK LOOPS VOL.3",
+      "bandcampUrl": "https://2knoise.bandcamp.com/album/feedback-loops-vol-3",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "ghost|lung",
+      "release": "Preapologia & The Great Nothing Returns",
+      "bandcampUrl": "https://ghostlungfamilyband.bandcamp.com/album/preapologia-the-great-nothing-returns",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "otheos",
+      "release": "Drift",
+      "bandcampUrl": "https://otheos.bandcamp.com/album/drift",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "CTHULTISTS",
+      "release": "A Greater Schism",
+      "bandcampUrl": "https://cthultists.bandcamp.com/album/a-greater-schism-2",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Shiloh Dynasty",
+      "release": "Rooted in You",
+      "bandcampUrl": "https://shilohdynasty.bandcamp.com/album/rooted-in-you",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Dautzenberg Press",
+      "release": "From Computer with Love (vol.6)",
+      "bandcampUrl": "https://dautzenbergpress.bandcamp.com/album/from-computer-with-love-vol-6",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Tango recordings",
+      "release": "6400 Crew - Hipp-e & Tony",
+      "bandcampUrl": "https://tangorecordings.bandcamp.com/album/6400-crew-hipp-e-tony",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "André Miranda",
+      "release": "VIOLÊNCIA",
+      "bandcampUrl": "https://anmir.bandcamp.com/album/viol-ncia",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Sprout And The Orange",
+      "release": "Sprout Live @ Papa Petes 7 - 1 - 06",
+      "bandcampUrl": "https://sproutandtheorange.bandcamp.com/album/sprout-live-papa-petes-7-1-06",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Nel Fuoco",
+      "release": "WE HAVE A PROBLEM",
+      "bandcampUrl": "https://nelfuoco.bandcamp.com/album/we-have-a-problem",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Believer",
+      "release": "The Prayers of the Saints",
+      "bandcampUrl": "https://believer1.bandcamp.com/album/the-prayers-of-the-saints",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Phillip Johns",
+      "release": "Echoes of Silence",
+      "bandcampUrl": "https://philjohns1.bandcamp.com/album/echoes-of-silence",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Sofia Salvo",
+      "release": "Live Sola Set",
+      "bandcampUrl": "https://sofiasalvo.bandcamp.com/album/live-sola-set",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Dreadsender",
+      "release": "Not For Sale Vol. 1",
+      "bandcampUrl": "https://dreadsender.bandcamp.com/album/not-for-sale-vol-1",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "&",
+      "release": "Las Máquinas Deseantes",
+      "bandcampUrl": "https://italpark09.bandcamp.com/album/las-m-quinas-deseantes",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Zoofles",
+      "release": "Prism",
+      "bandcampUrl": "https://zoofles.bandcamp.com/album/prism",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Allgrena",
+      "release": "Last Exit",
+      "bandcampUrl": "https://allgrena.bandcamp.com/album/last-exit",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Uno Loop",
+      "release": "One Whole Peace",
+      "bandcampUrl": "https://unoloop.bandcamp.com/album/one-whole-peace",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "SupaSchokoBear",
+      "release": "Afterlight",
+      "bandcampUrl": "https://supaschokobear.bandcamp.com/album/afterlight",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Hesh Pierre",
+      "release": "SHUFFLE",
+      "bandcampUrl": "https://heshpierre.bandcamp.com/album/shuffle",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "RUBBERS",
+      "release": "Lustra Blush",
+      "bandcampUrl": "https://r-u-b-b-e-r-s.bandcamp.com/album/lustra-blush-2",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "RUBBERS",
+      "release": "O/U",
+      "bandcampUrl": "https://r-u-b-b-e-r-s.bandcamp.com/album/o-u",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Jendrik Schmidt",
+      "release": "Pinhole Part 1",
+      "bandcampUrl": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "licht-ung",
+      "release": "14. juni 2026",
+      "bandcampUrl": "https://licht-ung.bandcamp.com/album/14-juni-2026",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Silvnex",
+      "release": "A Race to be First (Demo)",
+      "bandcampUrl": "https://silvnex.bandcamp.com/album/a-race-to-be-first-demo",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "DUB$ - A.K.A. SMOKE JESUS",
+      "release": "MODERN DAY PSALMS PT.2 - Spoken Word Poetry",
+      "bandcampUrl": "https://jesusoverflow.bandcamp.com/album/modern-day-psalms-pt-2-spoken-word-poetry",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Coren HG",
+      "release": "Rabbit's Journey EP (2026)",
+      "bandcampUrl": "https://corenhg.bandcamp.com/album/rabbits-journey-ep-2026",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Em-Cee",
+      "release": "Feel Good - The Remixes",
+      "bandcampUrl": "https://em-cee.bandcamp.com/album/feel-good-the-remixes",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Forgotten Tears Records",
+      "release": "[FTR-012]Smutsiga begär i beroendeförhållanden",
+      "bandcampUrl": "https://forgottentearsrecords.bandcamp.com/album/ftr-012-smutsiga-beg-r-i-beroendef-rh-llanden",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Randy Franklin",
+      "release": "The iPhone Sessions Part Two",
+      "bandcampUrl": "https://randyfranklin.bandcamp.com/album/the-iphone-sessions-part-two",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Psychedelic Olds Portal",
+      "release": "Xerox & Illumination - The Beast Within",
+      "bandcampUrl": "https://psyoldsportal.bandcamp.com/album/xerox-illumination-the-beast-within",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Pegar Fogo",
+      "release": "o sol rompeu o ar",
+      "bandcampUrl": "https://pegarfogo.bandcamp.com/album/o-sol-rompeu-o-ar",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Boogie Down Edits",
+      "release": "IN DA CLUB House and Freestyle Edits",
+      "bandcampUrl": "https://boogiedownedits.bandcamp.com/album/in-da-club-house-and-freestyle-edits",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "novemthree",
+      "release": "Goose Meadow",
+      "bandcampUrl": "https://novemthree.bandcamp.com/album/goose-meadow",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "TAPWATERFISH",
+      "release": "TWFLIP$ VOL 3",
+      "bandcampUrl": "https://tapwaterfish.bandcamp.com/album/twflip-vol-3",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "TRUANCY",
+      "release": "BLACK",
+      "bandcampUrl": "https://7ruancy.bandcamp.com/album/black",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Train of Poetry",
+      "release": "Succulent P Single",
+      "bandcampUrl": "https://trainofpoetry.bandcamp.com/album/succulent-p-single",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "poule goguen",
+      "release": "no purpose",
+      "bandcampUrl": "https://poulegoguen.bandcamp.com/album/no-purpose",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Anno Basilisk",
+      "release": "Satanic Anthology 2001-2005",
+      "bandcampUrl": "https://annobasilisk.bandcamp.com/album/satanic-anthology-2001-2005",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Yheti",
+      "release": "Sleight of Sound",
+      "bandcampUrl": "https://yheti.bandcamp.com/album/sleight-of-sound",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Zoofles",
+      "release": "Prism Instrumentals",
+      "bandcampUrl": "https://zoofles.bandcamp.com/album/prism-instrumentals",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Nervous Records",
+      "release": "Pushin On feat Slikk Tim",
+      "bandcampUrl": "https://nervousrecords.bandcamp.com/album/pushin-on-feat-slikk-tim",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Krystal Pavlović",
+      "release": "Setlist 6/1/2026",
+      "bandcampUrl": "https://krystalpavlovic.bandcamp.com/album/setlist-6-1-2026",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Releaux",
+      "release": "Songs of Silent Seas, Vol. 1",
+      "bandcampUrl": "https://releaux.bandcamp.com/album/songs-of-silent-seas-vol-1",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "VIANA PROD",
+      "release": "HEAT PULA WAVE / SWEEPER",
+      "bandcampUrl": "https://vianaprod.bandcamp.com/album/heat-pula-wave-sweeper",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "MacGuffin",
+      "release": "MacGuffin, the Demo, II",
+      "bandcampUrl": "https://macguffintheband.bandcamp.com/album/macguffin-the-demo-ii",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Interesting Tapes From India",
+      "release": "Divine Offerings Of Dikshitar",
+      "bandcampUrl": "https://interestingtapesfromindia.bandcamp.com/album/divine-offerings-of-dikshitar",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "A Slow And Painful Execution",
+      "release": "018: Pour In The Soy Sauce, It Will Compliment The 𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅𒐫𒈙꧅",
+      "bandcampUrl": "https://aslowandpainfulexecution.bandcamp.com/album/018-pour-in-the-soy-sauce-it-will-compliment-the",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Playedby.wav",
+      "release": "Larry Lan - Berlin Tones",
+      "bandcampUrl": "https://playedbywav.bandcamp.com/album/larry-lan-berlin-tones",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Michel Banabila",
+      "release": "Slipped Away",
+      "bandcampUrl": "https://banabila.bandcamp.com/album/slipped-away",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Stir Up Your Grey Matter Records",
+      "release": "Enneagram Study",
+      "bandcampUrl": "https://stirupyourgreymatter.bandcamp.com/album/enneagram-study",
+      "reason": "'metadata_tags'"
+    },
+    {
+      "artist": "Randy Franklin",
+      "release": "The iPhone Sessions Part Three",
+      "bandcampUrl": "https://randyfranklin.bandcamp.com/album/the-iphone-sessions-part-three",
+      "reason": "'metadata_tags'"
+    }
+  ],
+  "completedAt": null
+}

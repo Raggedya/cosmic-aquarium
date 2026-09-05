@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "jeff-rum-ep",
+  "artist": "Jeff Rum",
+  "bandcampUrl": "https://jeffrum.bandcamp.com/album/ep",
+  "releaseTitle": "EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "soundtrack",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "waters": [
+    "dark",
+    "electronic"
+  ],
+  "metadata_tags": [
+    "soundtrack",
+    "New York"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jeffrum.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:32:14Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ep-4273671899",
+      "title": "Coumbite",
+      "artist": "Jeff Rum",
+      "albumTitle": "EP",
+      "albumKey": "ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jeffrum.bandcamp.com/track/coumbite",
+      "bandcampEmbedTrackId": "4273671899",
+      "sourcePage": "https://jeffrum.bandcamp.com/album/ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ep-3089479651",
+      "title": "Bali Hai",
+      "artist": "Jeff Rum",
+      "albumTitle": "EP",
+      "albumKey": "ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jeffrum.bandcamp.com/track/bali-hai",
+      "bandcampEmbedTrackId": "3089479651",
+      "sourcePage": "https://jeffrum.bandcamp.com/album/ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ep-2964962366",
+      "title": "Spice Jamie",
+      "artist": "Jeff Rum",
+      "albumTitle": "EP",
+      "albumKey": "ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:59",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jeffrum.bandcamp.com/track/spice-jamie",
+      "bandcampEmbedTrackId": "2964962366",
+      "sourcePage": "https://jeffrum.bandcamp.com/album/ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ep-1347225355",
+      "title": "The Lord is my Shepard",
+      "artist": "Jeff Rum",
+      "albumTitle": "EP",
+      "albumKey": "ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:35",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jeffrum.bandcamp.com/track/the-lord-is-my-shepard",
+      "bandcampEmbedTrackId": "1347225355",
+      "sourcePage": "https://jeffrum.bandcamp.com/album/ep",
+      "accent": "#ffb66d"
+    }
+  ]
+}

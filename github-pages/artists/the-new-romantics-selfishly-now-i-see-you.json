@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-new-romantics-selfishly-now-i-see-you",
+  "artist": "The New Romantics",
+  "bandcampUrl": "https://thenewromantics.bandcamp.com/album/selfishly-now-i-see-you",
+  "releaseTitle": "Selfishly / Now I See You",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "factory pop",
+    "knoxville",
+    "new-wave",
+    "post-punk",
+    "synthesizer music",
+    "Knoxville"
+  ],
+  "primaryLocation": "Knoxville, Tennessee",
+  "waters": [
+    "electronic",
+    "dark",
+    "heavy"
+  ],
+  "metadata_tags": [
+    "electronic",
+    "factory pop",
+    "knoxville",
+    "new-wave",
+    "post-punk",
+    "synthesizer music",
+    "Knoxville"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thenewromantics.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:32:44Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "selfishly-now-i-see-you",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "selfishly-now-i-see-you-1636301799",
+      "title": "Selfishly",
+      "artist": "The New Romantics",
+      "albumTitle": "Selfishly / Now I See You",
+      "albumKey": "selfishly-now-i-see-you",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thenewromantics.bandcamp.com/track/selfishly",
+      "bandcampEmbedTrackId": "1636301799",
+      "sourcePage": "https://thenewromantics.bandcamp.com/album/selfishly-now-i-see-you",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "selfishly-now-i-see-you-2210193544",
+      "title": "Now I See You",
+      "artist": "The New Romantics",
+      "albumTitle": "Selfishly / Now I See You",
+      "albumKey": "selfishly-now-i-see-you",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thenewromantics.bandcamp.com/track/now-i-see-you",
+      "bandcampEmbedTrackId": "2210193544",
+      "sourcePage": "https://thenewromantics.bandcamp.com/album/selfishly-now-i-see-you",
+      "accent": "#88d7ff"
+    }
+  ]
+}

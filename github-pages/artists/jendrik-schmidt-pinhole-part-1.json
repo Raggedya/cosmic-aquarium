@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "jendrik-schmidt-pinhole-part-1",
+  "artist": "Jendrik Schmidt",
+  "bandcampUrl": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+  "releaseTitle": "Pinhole Part 1",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "dark ambient",
+    "experimental",
+    "industrial",
+    "noise",
+    "techno",
+    "Kassel"
+  ],
+  "primaryLocation": "Kassel, Germany",
+  "waters": [
+    "electronic",
+    "dark",
+    "heavy"
+  ],
+  "metadata_tags": [
+    "electronic",
+    "dark ambient",
+    "experimental",
+    "industrial",
+    "noise",
+    "techno",
+    "Kassel"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jendrikschmidt.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pinhole-part-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pinhole-part-1-492043184",
+      "title": "Closed Circuit",
+      "artist": "Jendrik Schmidt",
+      "albumTitle": "Pinhole Part 1",
+      "albumKey": "pinhole-part-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jendrikschmidt.bandcamp.com/track/closed-circuit",
+      "bandcampEmbedTrackId": "492043184",
+      "sourcePage": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "pinhole-part-1-3446971249",
+      "title": "Between Stations",
+      "artist": "Jendrik Schmidt",
+      "albumTitle": "Pinhole Part 1",
+      "albumKey": "pinhole-part-1",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jendrikschmidt.bandcamp.com/track/between-stations",
+      "bandcampEmbedTrackId": "3446971249",
+      "sourcePage": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "pinhole-part-1-466930457",
+      "title": "Orient Express",
+      "artist": "Jendrik Schmidt",
+      "albumTitle": "Pinhole Part 1",
+      "albumKey": "pinhole-part-1",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:53",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jendrikschmidt.bandcamp.com/track/orient-express",
+      "bandcampEmbedTrackId": "466930457",
+      "sourcePage": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

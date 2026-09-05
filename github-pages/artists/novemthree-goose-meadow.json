@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "slug": "novemthree-goose-meadow",
+  "artist": "novemthree",
+  "bandcampUrl": "https://novemthree.bandcamp.com/album/goose-meadow",
+  "releaseTitle": "Goose Meadow",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "folk",
+    "acoustic",
+    "dronefolk",
+    "ritual",
+    "singer-songwriter",
+    "Eau Claire"
+  ],
+  "primaryLocation": "Eau Claire, Wisconsin",
+  "waters": [
+    "quiet"
+  ],
+  "metadata_tags": [
+    "folk",
+    "acoustic",
+    "dronefolk",
+    "ritual",
+    "singer-songwriter",
+    "Eau Claire"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://novemthree.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:51Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "goose-meadow",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "goose-meadow-3682132722",
+      "title": "Goose Meadow",
+      "artist": "novemthree",
+      "albumTitle": "Goose Meadow",
+      "albumKey": "goose-meadow",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://novemthree.bandcamp.com/track/goose-meadow",
+      "bandcampEmbedTrackId": "3682132722",
+      "sourcePage": "https://novemthree.bandcamp.com/album/goose-meadow",
+      "accent": "#c3b4f4"
+    }
+  ]
+}

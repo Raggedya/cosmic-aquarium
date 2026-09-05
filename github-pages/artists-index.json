@@ -1,7 +1,79 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-05T00:00:33.062Z",
+  "generatedAt": "2026-09-05T06:34:08.891Z",
   "artists": [
+    {
+      "id": "bandcamp:italpark09",
+      "name": "&",
+      "canonicalName": "",
+      "bandcampArtistUrl": "https://italpark09.bandcamp.com/",
+      "aquariumSlug": "las-maquinas-deseantes",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/las-maquinas-deseantes/",
+      "status": "published",
+      "release": "Las Máquinas Deseantes",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 9,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Mar Del Plata, Argentina",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:2knoise",
+      "name": "2K",
+      "canonicalName": "2k",
+      "bandcampArtistUrl": "https://2knoise.bandcamp.com/",
+      "aquariumSlug": "2k-feedback-loops-vol-3",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/2k-feedback-loops-vol-3/",
+      "status": "published",
+      "release": "FEEDBACK LOOPS VOL.3",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 12,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Kolkata, India",
+      "labels": []
+    },
     {
       "id": "bandcamp:52hz-music",
       "name": "52Hz & Nicolas Mollin",
@@ -56,6 +128,34 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:aslowandpainfulexecution",
+      "name": "A Slow And Painful Execution",
+      "canonicalName": "a slow and painful execution",
+      "bandcampArtistUrl": "https://aslowandpainfulexecution.bandcamp.com/",
+      "aquariumSlug": "a-slow-and-painful-execution-017-a",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/a-slow-and-painful-execution-017-a/",
+      "status": "published",
+      "release": "017: a",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "hell, Michigan",
       "labels": []
     },
     {
@@ -151,6 +251,42 @@
       "labels": []
     },
     {
+      "id": "bandcamp:aepcreative",
+      "name": "ÆP",
+      "canonicalName": "p",
+      "bandcampArtistUrl": "https://aepcreative.bandcamp.com/",
+      "aquariumSlug": "p-half-life",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/p-half-life/",
+      "status": "published",
+      "release": "Half-Life",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Chicago, Illinois",
+      "labels": []
+    },
+    {
       "id": "bandcamp:weareaeria",
       "name": "ÆRIA",
       "canonicalName": "ria",
@@ -176,6 +312,122 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:aliquidnovi",
+      "name": "aliquid novi",
+      "canonicalName": "aliquid novi",
+      "bandcampArtistUrl": "https://aliquidnovi.bandcamp.com/",
+      "aquariumSlug": "aliquid-novi-solverem",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/aliquid-novi-solverem/",
+      "status": "published",
+      "release": "solverem",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 5,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Mc Murray, Pennsylvania",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:allonce",
+      "name": "All once",
+      "canonicalName": "all once",
+      "bandcampArtistUrl": "https://allonce.bandcamp.com/",
+      "aquariumSlug": "all-once-everywhere-at-the-end-of-time-stage-7-hypothetical",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/all-once-everywhere-at-the-end-of-time-stage-7-hypothetical/",
+      "status": "published",
+      "release": "Everywhere at the end of time (Stage 7 hypothetical)",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "trackCount": 9,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet"
+      ],
+      "lastUpdated": "2026-08-31 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Fargo, North Dakota",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:allgrena",
+      "name": "Allgrena",
+      "canonicalName": "allgrena",
+      "bandcampArtistUrl": "https://allgrena.bandcamp.com/",
+      "aquariumSlug": "allgrena-last-exit",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/allgrena-last-exit/",
+      "status": "published",
+      "release": "Last Exit",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "dark",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Vienna, Austria",
       "labels": []
     },
     {
@@ -207,6 +459,42 @@
       "labels": []
     },
     {
+      "id": "bandcamp:anmir",
+      "name": "André Miranda",
+      "canonicalName": "andre miranda",
+      "bandcampArtistUrl": "https://anmir.bandcamp.com/",
+      "aquariumSlug": "andre-miranda-violencia",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/andre-miranda-violencia/",
+      "status": "published",
+      "release": "VIOLÊNCIA",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "BA, Brazil",
+      "labels": []
+    },
+    {
       "id": "bandcamp:aneira",
       "name": "aneira",
       "canonicalName": "aneira",
@@ -232,6 +520,50 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:annobasilisk",
+      "name": "Anno Basilisk",
+      "canonicalName": "anno basilisk",
+      "bandcampArtistUrl": "https://annobasilisk.bandcamp.com/",
+      "aquariumSlug": "anno-basilisk-satanic-anthology-2001-2005",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/anno-basilisk-satanic-anthology-2001-2005/",
+      "status": "published",
+      "release": "Satanic Anthology 2001-2005",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 25,
+      "visualStyle": "cosmic",
+      "waters": [
+        "dark",
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Bristol, UK",
       "labels": []
     },
     {
@@ -291,6 +623,42 @@
       "labels": []
     },
     {
+      "id": "bandcamp:asukawa",
+      "name": "Asukawa",
+      "canonicalName": "asukawa",
+      "bandcampArtistUrl": "https://asukawa.bandcamp.com/",
+      "aquariumSlug": "asukawa-seroquel-lust",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/asukawa-seroquel-lust/",
+      "status": "published",
+      "release": "SEROQUEL LUST",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Sweden",
+      "labels": []
+    },
+    {
       "id": "bandcamp:atagal",
       "name": "Atagal",
       "canonicalName": "atagal",
@@ -316,6 +684,62 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:avarosemusic",
+      "name": "ava rose",
+      "canonicalName": "ava rose",
+      "bandcampArtistUrl": "https://avarosemusic.bandcamp.com/",
+      "aquariumSlug": "ava-rose-501-sessions-vol-6",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ava-rose-501-sessions-vol-6/",
+      "status": "published",
+      "release": "501 SESSIONS, VOL. 6",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Charlotte, North Carolina",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:avanablue",
+      "name": "Avana Blue",
+      "canonicalName": "avana blue",
+      "bandcampArtistUrl": "https://avanablue.bandcamp.com/",
+      "aquariumSlug": "avana-blue-lost",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/avana-blue-lost/",
+      "status": "published",
+      "release": "Lost",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 5,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Manchester, UK",
       "labels": []
     },
     {
@@ -380,6 +804,114 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:fathistorymonth",
+      "name": "Bad History Month",
+      "canonicalName": "bad history month",
+      "bandcampArtistUrl": "https://fathistorymonth.bandcamp.com/",
+      "aquariumSlug": "bad-history-month-bad-blood-lost-versions-ft-ruah",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bad-history-month-bad-blood-lost-versions-ft-ruah/",
+      "status": "published",
+      "release": "BAD BLOOD LOST VERSIONS ft. Ruah",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Philadelphia, Pennsylvania",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:bainstheprince",
+      "name": "BAINS THE PRINCE",
+      "canonicalName": "bains the prince",
+      "bandcampArtistUrl": "https://bainstheprince.bandcamp.com/",
+      "aquariumSlug": "bains-the-prince-selection",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bains-the-prince-selection/",
+      "status": "published",
+      "release": "SELECTION",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "England, UK",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:balatrofan242",
+      "name": "BalatroFan242",
+      "canonicalName": "balatrofan242",
+      "bandcampArtistUrl": "https://balatrofan242.bandcamp.com/",
+      "aquariumSlug": "balatrofan242-054-peak-life-plans",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/balatrofan242-054-peak-life-plans/",
+      "status": "published",
+      "release": "054: Peak Life Plans",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "dark",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "UK",
       "labels": []
     },
     {
@@ -508,6 +1040,122 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:believer1",
+      "name": "Believer",
+      "canonicalName": "believer",
+      "bandcampArtistUrl": "https://believer1.bandcamp.com/",
+      "aquariumSlug": "believer-the-prayers-of-the-saints",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/believer-the-prayers-of-the-saints/",
+      "status": "published",
+      "release": "The Prayers of the Saints",
+      "releaseDate": "2026-09-03 00:00:00 UTC",
+      "trackCount": 13,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-03 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Washington",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:benjitunez",
+      "name": "Benji Tunez",
+      "canonicalName": "benji tunez",
+      "bandcampArtistUrl": "https://benjitunez.bandcamp.com/",
+      "aquariumSlug": "benji-tunez-prelude-to-labellum",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/benji-tunez-prelude-to-labellum/",
+      "status": "published",
+      "release": "Prelude to Labellum",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 8,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Tampa, Florida",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:berggefluister93",
+      "name": "Berggeflüster",
+      "canonicalName": "berggefluster",
+      "bandcampArtistUrl": "https://berggefluister93.bandcamp.com/",
+      "aquariumSlug": "berggefluster-revelations-about-the-other-heaven-pt-1",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/berggefluster-revelations-about-the-other-heaven-pt-1/",
+      "status": "published",
+      "release": "Revelations about the other Heaven pt. 1",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet",
+        "dark"
+      ],
+      "lastUpdated": "2026-09-02 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Poland",
       "labels": []
     },
     {
@@ -731,22 +1379,21 @@
       "labels": []
     },
     {
-      "id": "bandcamp:callmeafriend",
-      "name": "boy",
-      "canonicalName": "boy",
-      "bandcampArtistUrl": "https://callmeafriend.bandcamp.com/",
-      "aquariumSlug": "boy-burnt-scriptures-v-science-fiction",
-      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/boy-burnt-scriptures-v-science-fiction/",
+      "id": "bandcamp:boogiedownedits",
+      "name": "Boogie Down Edits",
+      "canonicalName": "boogie down edits",
+      "bandcampArtistUrl": "https://boogiedownedits.bandcamp.com/",
+      "aquariumSlug": "boogie-down-edits-in-da-club-house-and-freestyle-edits",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/boogie-down-edits-in-da-club-house-and-freestyle-edits/",
       "status": "published",
-      "release": "Burnt Scriptures V [Science Fiction]",
-      "releaseDate": "2026-08-28 00:00:00 UTC",
-      "trackCount": 12,
+      "release": "IN DA CLUB House and Freestyle Edits",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 9,
       "visualStyle": "cosmic",
       "waters": [
-        "electronic",
-        "dark"
+        "electronic"
       ],
-      "lastUpdated": "2026-08-28 00:00:00 UTC",
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
       "memberships": [
         {
           "id": "style:electronic",
@@ -754,16 +1401,37 @@
           "name": "ELECTRONIC",
           "type": "genre",
           "status": "published"
-        },
+        }
+      ],
+      "primaryLocation": "Los Angeles, California",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:callmeafriend",
+      "name": "boy",
+      "canonicalName": "boy",
+      "bandcampArtistUrl": "https://callmeafriend.bandcamp.com/",
+      "aquariumSlug": "boy-attention-getters",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/boy-attention-getters/",
+      "status": "published",
+      "release": "Attention Getters",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 15,
+      "visualStyle": "cosmic",
+      "waters": [
+        "dreamy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
         {
-          "id": "style:dark",
-          "slug": "style-dark",
-          "name": "DARK",
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
           "type": "genre",
           "status": "published"
         }
       ],
-      "primaryLocation": null,
+      "primaryLocation": "Virginia Beach, Virginia",
       "labels": []
     },
     {
@@ -792,6 +1460,42 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:bulimianatilius",
+      "name": "Bulimia Natilius ^_^",
+      "canonicalName": "bulimia natilius",
+      "bandcampArtistUrl": "https://bulimianatilius.bandcamp.com/",
+      "aquariumSlug": "bulimia-natilius-gurocenter",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bulimia-natilius-gurocenter/",
+      "status": "published",
+      "release": "Gurocenter",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Saint Petersburg, Russia",
       "labels": []
     },
     {
@@ -856,6 +1560,34 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:calasang",
+      "name": "CalaSang",
+      "canonicalName": "calasang",
+      "bandcampArtistUrl": "https://calasang.bandcamp.com/",
+      "aquariumSlug": "calasang-calasang-directe-placa-de-la-reina-palma",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/calasang-calasang-directe-placa-de-la-reina-palma/",
+      "status": "published",
+      "release": "CalaSang Directe Plaça de la Reina, Palma",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 14,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Manacor, Spain",
       "labels": []
     },
     {
@@ -1015,6 +1747,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:charlestrees",
+      "name": "CHARLES TREES",
+      "canonicalName": "charles trees",
+      "bandcampArtistUrl": "https://charlestrees.bandcamp.com/",
+      "aquariumSlug": "charles-trees-mixed-messages",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/charles-trees-mixed-messages/",
+      "status": "published",
+      "release": "mixed messages",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 17,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Detroit, Michigan",
+      "labels": []
+    },
+    {
       "id": "bandcamp:chrisanderson1973",
       "name": "Chris Anderson",
       "canonicalName": "chris anderson",
@@ -1143,6 +1903,50 @@
       "labels": []
     },
     {
+      "id": "bandcamp:corenhg",
+      "name": "Coren HG",
+      "canonicalName": "coren hg",
+      "bandcampArtistUrl": "https://corenhg.bandcamp.com/",
+      "aquariumSlug": "coren-hg-rabbit-s-journey-ep-2026",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/coren-hg-rabbit-s-journey-ep-2026/",
+      "status": "published",
+      "release": "Rabbit's Journey EP (2026)",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "dark",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "New York, New York",
+      "labels": []
+    },
+    {
       "id": "bandcamp:cosmiccrushsatx",
       "name": "Cosmic Crush",
       "canonicalName": "cosmic crush",
@@ -1215,6 +2019,94 @@
       "labels": []
     },
     {
+      "id": "bandcamp:cthultists",
+      "name": "CTHULTISTS",
+      "canonicalName": "cthultists",
+      "bandcampArtistUrl": "https://cthultists.bandcamp.com/",
+      "aquariumSlug": "cthultists-a-greater-schism",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/cthultists-a-greater-schism/",
+      "status": "published",
+      "release": "A Greater Schism",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 10,
+      "visualStyle": "cosmic",
+      "waters": [
+        "dark",
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Columbus, Ohio",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:cursefaen",
+      "name": "Curse",
+      "canonicalName": "curse",
+      "bandcampArtistUrl": "https://cursefaen.bandcamp.com/",
+      "aquariumSlug": "curse-slaughter-of-the-stars-2006",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/curse-slaughter-of-the-stars-2006/",
+      "status": "published",
+      "release": "Slaughter of the Stars (2006)",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "trackCount": 8,
+      "visualStyle": "cosmic",
+      "waters": [
+        "dark",
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-01 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Iceland",
+      "labels": []
+    },
+    {
       "id": "bandcamp:darrelsmithjr",
       "name": "Darrel Smith Jr.",
       "canonicalName": "darrel smith jr",
@@ -1240,6 +2132,42 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:dautzenbergpress",
+      "name": "Dautzenberg Press",
+      "canonicalName": "dautzenberg press",
+      "bandcampArtistUrl": "https://dautzenbergpress.bandcamp.com/",
+      "aquariumSlug": "dautzenberg-press-from-computer-with-love-vol-6",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dautzenberg-press-from-computer-with-love-vol-6/",
+      "status": "published",
+      "release": "From Computer with Love (vol.6)",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 15,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Brussels, Belgium",
       "labels": []
     },
     {
@@ -1342,6 +2270,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:devildubsjunglism",
+      "name": "Devil Dubs",
+      "canonicalName": "devil dubs",
+      "bandcampArtistUrl": "https://devildubsjunglism.bandcamp.com/",
+      "aquariumSlug": "devil-dubs-the-mixtape-series-vol-1-dvltape001",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/devil-dubs-the-mixtape-series-vol-1-dvltape001/",
+      "status": "published",
+      "release": "The Mixtape Series Vol. 1 - DVLTAPE001",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Brussels, Belgium",
+      "labels": []
+    },
+    {
       "id": "bandcamp:latogato",
       "name": "Dingo Date Night",
       "canonicalName": "dingo date night",
@@ -1367,6 +2323,42 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:discaso",
+      "name": "Discaso",
+      "canonicalName": "discaso",
+      "bandcampArtistUrl": "https://discaso.bandcamp.com/",
+      "aquariumSlug": "discaso-demo-2026",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/discaso-demo-2026/",
+      "status": "published",
+      "release": "Demo 2026",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Uberlândia, Brazil",
       "labels": []
     },
     {
@@ -1562,6 +2554,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:dreadsender",
+      "name": "Dreadsender",
+      "canonicalName": "dreadsender",
+      "bandcampArtistUrl": "https://dreadsender.bandcamp.com/",
+      "aquariumSlug": "dreadsender-not-for-sale-vol-1",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dreadsender-not-for-sale-vol-1/",
+      "status": "published",
+      "release": "Not For Sale Vol. 1",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Atlanta, Georgia",
+      "labels": []
+    },
+    {
       "id": "bandcamp:dressedinsunlight",
       "name": "Dressed In Sunlight",
       "canonicalName": "dressed in sunlight",
@@ -1651,6 +2671,42 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:jesusoverflow",
+      "name": "DUB$ - A.K.A. SMOKE JESUS",
+      "canonicalName": "dub a k a smoke jesus",
+      "bandcampArtistUrl": "https://jesusoverflow.bandcamp.com/",
+      "aquariumSlug": "dub-a-k-a-smoke-jesus-modern-day-psalms-pt-2-spoken-word-poetry",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dub-a-k-a-smoke-jesus-modern-day-psalms-pt-2-spoken-word-poetry/",
+      "status": "published",
+      "release": "MODERN DAY PSALMS PT.2 - Spoken Word Poetry",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "trackCount": 15,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy",
+        "dreamy"
+      ],
+      "lastUpdated": "2026-08-31 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Florida",
       "labels": []
     },
     {
@@ -1774,6 +2830,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:theeffus",
+      "name": "effus",
+      "canonicalName": "effus",
+      "bandcampArtistUrl": "https://theeffus.bandcamp.com/",
+      "aquariumSlug": "effus-dnb-tries-1",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/effus-dnb-tries-1/",
+      "status": "published",
+      "release": "DnB tries #1",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Moscow, Russia",
+      "labels": []
+    },
+    {
       "id": "bandcamp:tungtungsahur",
       "name": "ellasantini12709",
       "canonicalName": "ellasantini12709",
@@ -1799,6 +2883,34 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:em-cee",
+      "name": "Em-Cee",
+      "canonicalName": "em cee",
+      "bandcampArtistUrl": "https://em-cee.bandcamp.com/",
+      "aquariumSlug": "em-cee-feel-good-the-remixes",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/em-cee-feel-good-the-remixes/",
+      "status": "published",
+      "release": "Feel Good - The Remixes",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "UK",
       "labels": []
     },
     {
@@ -1835,6 +2947,34 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:end-user",
+      "name": "enduser",
+      "canonicalName": "enduser",
+      "bandcampArtistUrl": "https://end-user.bandcamp.com/",
+      "aquariumSlug": "enduser-vertigo-from-the-window",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/enduser-vertigo-from-the-window/",
+      "status": "published",
+      "release": "Vertigo - From the Window",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Stockholm, Sweden",
       "labels": []
     },
     {
@@ -1950,6 +3090,174 @@
       "labels": []
     },
     {
+      "id": "bandcamp:flesheaterforest",
+      "name": "Flesheaterforest",
+      "canonicalName": "flesheaterforest",
+      "bandcampArtistUrl": "https://flesheaterforest.bandcamp.com/",
+      "aquariumSlug": "flesheaterforest-mage",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/flesheaterforest-mage/",
+      "status": "published",
+      "release": "Mage",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 16,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "dark",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Arkansas",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:forgottentearsrecords",
+      "name": "Forgotten Tears Records",
+      "canonicalName": "forgotten tears records",
+      "bandcampArtistUrl": "https://forgottentearsrecords.bandcamp.com/",
+      "aquariumSlug": "forgotten-tears-records-ftr-012-smutsiga-begar-i-beroendeforhallanden",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/forgotten-tears-records-ftr-012-smutsiga-begar-i-beroendeforhallanden/",
+      "status": "published",
+      "release": "[FTR-012]Smutsiga begär i beroendeförhållanden",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 11,
+      "visualStyle": "cosmic",
+      "waters": [
+        "dark",
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Japan",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:frostbitemechanica",
+      "name": "Frostbite Mechanica",
+      "canonicalName": "frostbite mechanica",
+      "bandcampArtistUrl": "https://frostbitemechanica.bandcamp.com/",
+      "aquariumSlug": "frostbite-mechanica-gloria-in-the-winter-storm-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/frostbite-mechanica-gloria-in-the-winter-storm-ep/",
+      "status": "published",
+      "release": "Gloria in the Winter Storm (EP)",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy",
+        "dark",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Minneapolis, Minnesota",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:fubarmc",
+      "name": "Fubar",
+      "canonicalName": "fubar",
+      "bandcampArtistUrl": "https://fubarmc.bandcamp.com/",
+      "aquariumSlug": "fubar-no-savior-coming",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/fubar-no-savior-coming/",
+      "status": "published",
+      "release": "No Savior Coming",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Chicago, Illinois",
+      "labels": []
+    },
+    {
       "id": "bandcamp:lesdmouleurs",
       "name": "Georges Perché",
       "canonicalName": "georges perche",
@@ -1983,6 +3291,42 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:ghostlungfamilyband",
+      "name": "ghost|lung",
+      "canonicalName": "ghost lung",
+      "bandcampArtistUrl": "https://ghostlungfamilyband.bandcamp.com/",
+      "aquariumSlug": "ghost-lung-preapologia-the-great-nothing-returns",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ghost-lung-preapologia-the-great-nothing-returns/",
+      "status": "published",
+      "release": "Preapologia & The Great Nothing Returns",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Redding, California",
       "labels": []
     },
     {
@@ -2190,6 +3534,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:hafaduck",
+      "name": "hafaduck",
+      "canonicalName": "hafaduck",
+      "bandcampArtistUrl": "https://hafaduck.bandcamp.com/",
+      "aquariumSlug": "hafaduck-plastic-people",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hafaduck-plastic-people/",
+      "status": "published",
+      "release": "Plastic People",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 11,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": null,
+      "labels": []
+    },
+    {
       "id": "bandcamp:halotidesband",
       "name": "halo tides",
       "canonicalName": "halo tides",
@@ -2307,6 +3679,70 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:heshpierre",
+      "name": "Hesh Pierre",
+      "canonicalName": "hesh pierre",
+      "bandcampArtistUrl": "https://heshpierre.bandcamp.com/",
+      "aquariumSlug": "hesh-pierre-shuffle",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hesh-pierre-shuffle/",
+      "status": "published",
+      "release": "SHUFFLE",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 10,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Los Angeles, California",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:hetontstaandeensemble",
+      "name": "Het Ontstaande Ensemble",
+      "canonicalName": "het ontstaande ensemble",
+      "bandcampArtistUrl": "https://hetontstaandeensemble.bandcamp.com/",
+      "aquariumSlug": "het-ontstaande-ensemble-what-a-trip",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/het-ontstaande-ensemble-what-a-trip/",
+      "status": "published",
+      "release": "WHAT A TRIP",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange",
+        "dreamy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Amsterdam, Netherlands",
       "labels": []
     },
     {
@@ -2530,6 +3966,122 @@
       "labels": []
     },
     {
+      "id": "bandcamp:importanthair",
+      "name": "Important Hair",
+      "canonicalName": "important hair",
+      "bandcampArtistUrl": "https://importanthair.bandcamp.com/",
+      "aquariumSlug": "important-hair-3-songs",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/important-hair-3-songs/",
+      "status": "published",
+      "release": "3 Songs",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Waterloo, Ontario",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:inquietoht",
+      "name": "InquietoMusik",
+      "canonicalName": "inquietomusik",
+      "bandcampArtistUrl": "https://inquietoht.bandcamp.com/",
+      "aquariumSlug": "inquietomusik-hablame-sobre-la-ira-inq033",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/inquietomusik-hablame-sobre-la-ira-inq033/",
+      "status": "published",
+      "release": "Hablame Sobre La ira [INQ033]",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Santiago, Chile",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:interestingtapesfromindia",
+      "name": "Interesting Tapes From India",
+      "canonicalName": "interesting tapes from india",
+      "bandcampArtistUrl": "https://interestingtapesfromindia.bandcamp.com/",
+      "aquariumSlug": "interesting-tapes-from-india-soundtrack-to-baharon-ke-manzil",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/interesting-tapes-from-india-soundtrack-to-baharon-ke-manzil/",
+      "status": "published",
+      "release": "Soundtrack To “Baharon Ke Manzil”",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 11,
+      "visualStyle": "cosmic",
+      "waters": [
+        "dreamy",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Chicago, Illinois",
+      "labels": []
+    },
+    {
       "id": "bandcamp:irinduskofficial",
       "name": "Irin Dusk",
       "canonicalName": "irin dusk",
@@ -2591,6 +4143,114 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:jaiphonix",
+      "name": "Jaiphonix",
+      "canonicalName": "jaiphonix",
+      "bandcampArtistUrl": "https://jaiphonix.bandcamp.com/",
+      "aquariumSlug": "jaiphonix-corrosion",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jaiphonix-corrosion/",
+      "status": "published",
+      "release": "Corrosion",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "UK",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:jeffrum",
+      "name": "Jeff Rum",
+      "canonicalName": "jeff rum",
+      "bandcampArtistUrl": "https://jeffrum.bandcamp.com/",
+      "aquariumSlug": "jeff-rum-has-legs",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jeff-rum-has-legs/",
+      "status": "published",
+      "release": "Has Legs",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange",
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "New York, New York",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:jendrikschmidt",
+      "name": "Jendrik Schmidt",
+      "canonicalName": "jendrik schmidt",
+      "bandcampArtistUrl": "https://jendrikschmidt.bandcamp.com/",
+      "aquariumSlug": "jendrik-schmidt-pinhole-part-1",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jendrik-schmidt-pinhole-part-1/",
+      "status": "published",
+      "release": "Pinhole Part 1",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "dark",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Kassel, Germany",
       "labels": []
     },
     {
@@ -2706,6 +4366,70 @@
       "labels": []
     },
     {
+      "id": "bandcamp:josearellano",
+      "name": "Jose Arellano",
+      "canonicalName": "jose arellano",
+      "bandcampArtistUrl": "https://josearellano.bandcamp.com/",
+      "aquariumSlug": "jose-arellano-erratika",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jose-arellano-erratika/",
+      "status": "published",
+      "release": "Erratika",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Bogotá, Colombia",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:juxtaposition",
+      "name": "Juxtaposition",
+      "canonicalName": "juxtaposition",
+      "bandcampArtistUrl": "https://juxtaposition.bandcamp.com/",
+      "aquariumSlug": "juxtaposition-demos-hopeful-thoughts-of-mutual-prosperity",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/juxtaposition-demos-hopeful-thoughts-of-mutual-prosperity/",
+      "status": "published",
+      "release": "demos & hopeful thoughts of mutual prosperity",
+      "releaseDate": "2026-08-29 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-08-29 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Norway",
+      "labels": []
+    },
+    {
       "id": "bandcamp:kilamdapro1",
       "name": "kilamdapro",
       "canonicalName": "kilamdapro",
@@ -2811,6 +4535,50 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:krystalpavlovic",
+      "name": "Krystal Pavlović",
+      "canonicalName": "krystal pavlovic",
+      "bandcampArtistUrl": "https://krystalpavlovic.bandcamp.com/",
+      "aquariumSlug": "krystal-pavlovic-setlist-6-1-2026",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/krystal-pavlovic-setlist-6-1-2026/",
+      "status": "published",
+      "release": "Setlist 6/1/2026",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "heavy",
+        "dark"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Baltimore, Maryland",
       "labels": []
     },
     {
@@ -2934,6 +4702,50 @@
       "labels": []
     },
     {
+      "id": "bandcamp:licht-ung",
+      "name": "licht-ung",
+      "canonicalName": "licht ung",
+      "bandcampArtistUrl": "https://licht-ung.bandcamp.com/",
+      "aquariumSlug": "licht-ung-14-juni-2026",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/licht-ung-14-juni-2026/",
+      "status": "published",
+      "release": "14. juni 2026",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "heavy",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Burscheid, Germany",
+      "labels": []
+    },
+    {
       "id": "bandcamp:lostgenerationct",
       "name": "Lost Generation",
       "canonicalName": "lost generation",
@@ -3042,6 +4854,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:macguffintheband",
+      "name": "MacGuffin",
+      "canonicalName": "macguffin",
+      "bandcampArtistUrl": "https://macguffintheband.bandcamp.com/",
+      "aquariumSlug": "macguffin-macguffin-the-demo-ii",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/macguffin-macguffin-the-demo-ii/",
+      "status": "published",
+      "release": "MacGuffin, the Demo, II",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "San Antonio, Texas",
+      "labels": []
+    },
+    {
       "id": "bandcamp:marcuspalt",
       "name": "Marcus Palt",
       "canonicalName": "marcus palt",
@@ -3067,6 +4907,86 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:mathieupaulin",
+      "name": "Mathieu Paulin",
+      "canonicalName": "mathieu paulin",
+      "bandcampArtistUrl": "https://mathieupaulin.bandcamp.com/",
+      "aquariumSlug": "mathieu-paulin-aout-2026",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mathieu-paulin-aout-2026/",
+      "status": "published",
+      "release": "Août 2026",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "electronic",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Bayonne, France",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:banabila",
+      "name": "Michel Banabila",
+      "canonicalName": "michel banabila",
+      "bandcampArtistUrl": "https://banabila.bandcamp.com/",
+      "aquariumSlug": "michel-banabila-slipped-away",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/michel-banabila-slipped-away/",
+      "status": "published",
+      "release": "Slipped Away",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Rotterdam, Netherlands",
       "labels": []
     },
     {
@@ -3198,6 +5118,114 @@
       "labels": []
     },
     {
+      "id": "bandcamp:misstake-studios",
+      "name": "MISSTAKE STUDIOS",
+      "canonicalName": "misstake studios",
+      "bandcampArtistUrl": "https://misstake-studios.bandcamp.com/",
+      "aquariumSlug": "misstake-studios-tandem",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/misstake-studios-tandem/",
+      "status": "published",
+      "release": "Tandem",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Basel, Switzerland",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:saginawnoise",
+      "name": "Mlusnar",
+      "canonicalName": "mlusnar",
+      "bandcampArtistUrl": "https://saginawnoise.bandcamp.com/",
+      "aquariumSlug": "mlusnar-leporid",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mlusnar-leporid/",
+      "status": "published",
+      "release": "Leporid",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "quiet",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Saginaw, Michigan",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:monokraknetlabel",
+      "name": "monoKraK netlabel",
+      "canonicalName": "monokrak netlabel",
+      "bandcampArtistUrl": "https://monokraknetlabel.bandcamp.com/",
+      "aquariumSlug": "monokrak-netlabel-monokrak149-dadive-habemus-bestiam-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/monokrak-netlabel-monokrak149-dadive-habemus-bestiam-ep/",
+      "status": "published",
+      "release": "[monoKraK149] Dadive \"Habemus Bestiam EP\"",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Genève, Switzerland",
+      "labels": []
+    },
+    {
       "id": "bandcamp:mooneclipse0",
       "name": "MoonEclipse / Mithril Helm",
       "canonicalName": "mooneclipse mithril helm",
@@ -3226,6 +5254,42 @@
       "labels": []
     },
     {
+      "id": "bandcamp:morbidoathrecords",
+      "name": "Morbid Oath Records",
+      "canonicalName": "morbid oath records",
+      "bandcampArtistUrl": "https://morbidoathrecords.bandcamp.com/",
+      "aquariumSlug": "morbid-oath-records-rameras-del-diablo",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/morbid-oath-records-rameras-del-diablo/",
+      "status": "published",
+      "release": "RAMERAS DEL DIABLO",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Lima, Peru",
+      "labels": []
+    },
+    {
       "id": "bandcamp:mulphia",
       "name": "mulpHia",
       "canonicalName": "mulphia",
@@ -3251,6 +5315,150 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:nahhphet",
+      "name": "nahhphet",
+      "canonicalName": "nahhphet",
+      "bandcampArtistUrl": "https://nahhphet.bandcamp.com/",
+      "aquariumSlug": "nahhphet-not-everything-was-meant-to-be-analyzed",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nahhphet-not-everything-was-meant-to-be-analyzed/",
+      "status": "published",
+      "release": "not everything was meant to be analyzed",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 10,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "dreamy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Los Angeles, California",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:nelfuoco",
+      "name": "Nel Fuoco",
+      "canonicalName": "nel fuoco",
+      "bandcampArtistUrl": "https://nelfuoco.bandcamp.com/",
+      "aquariumSlug": "nel-fuoco-we-have-a-problem",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nel-fuoco-we-have-a-problem/",
+      "status": "published",
+      "release": "WE HAVE A PROBLEM",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 9,
+      "visualStyle": "cosmic",
+      "waters": [
+        "dreamy",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Providence, Rhode Island",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:nervousrecords",
+      "name": "Nervous Records",
+      "canonicalName": "nervous records",
+      "bandcampArtistUrl": "https://nervousrecords.bandcamp.com/",
+      "aquariumSlug": "nervous-records-la-partita",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nervous-records-la-partita/",
+      "status": "published",
+      "release": "La Partita",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "New York, New York",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:nicochkifi",
+      "name": "Nico Chkifi",
+      "canonicalName": "nico chkifi",
+      "bandcampArtistUrl": "https://nicochkifi.bandcamp.com/",
+      "aquariumSlug": "nico-chkifi-brayani-with-bram-de-looze-and-yannick-peeters",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nico-chkifi-brayani-with-bram-de-looze-and-yannick-peeters/",
+      "status": "published",
+      "release": "BRAYANI with Bram De Looze and Yannick Peeters",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 8,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Brussels, Belgium",
       "labels": []
     },
     {
@@ -3326,6 +5534,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:noizebot",
+      "name": "Noize Bot",
+      "canonicalName": "noize bot",
+      "bandcampArtistUrl": "https://noizebot.bandcamp.com/",
+      "aquariumSlug": "noize-bot-dancing-alone-in-someone-else-s-dream",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/noize-bot-dancing-alone-in-someone-else-s-dream/",
+      "status": "published",
+      "release": "Dancing Alone in Someone Else's Dream",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 13,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Detroit, Michigan",
+      "labels": []
+    },
+    {
       "id": "bandcamp:noonsomewhere",
       "name": "Noon Somewhere",
       "canonicalName": "noon somewhere",
@@ -3351,6 +5587,98 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:nottheenvelopes",
+      "name": "Not The Envelopes",
+      "canonicalName": "not the envelopes",
+      "bandcampArtistUrl": "https://nottheenvelopes.bandcamp.com/",
+      "aquariumSlug": "not-the-envelopes-papers-scars",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/not-the-envelopes-papers-scars/",
+      "status": "published",
+      "release": "Papers Scars",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "dreamy"
+      ],
+      "lastUpdated": "2026-09-02 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "London, UK",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:notbyseb",
+      "name": "notbyseb",
+      "canonicalName": "notbyseb",
+      "bandcampArtistUrl": "https://notbyseb.bandcamp.com/",
+      "aquariumSlug": "notbyseb-2023-banger-single",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/notbyseb-2023-banger-single/",
+      "status": "published",
+      "release": "2023 Banger Single",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Bogotá, Colombia",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:novemthree",
+      "name": "novemthree",
+      "canonicalName": "novemthree",
+      "bandcampArtistUrl": "https://novemthree.bandcamp.com/",
+      "aquariumSlug": "novemthree-goose-meadow",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/novemthree-goose-meadow/",
+      "status": "published",
+      "release": "Goose Meadow",
+      "releaseDate": "2026-08-30 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet"
+      ],
+      "lastUpdated": "2026-08-30 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Eau Claire, Wisconsin",
       "labels": []
     },
     {
@@ -3438,6 +5766,78 @@
       "labels": []
     },
     {
+      "id": "bandcamp:orbtapes",
+      "name": "Orb Tapes",
+      "canonicalName": "orb tapes",
+      "bandcampArtistUrl": "https://orbtapes.bandcamp.com/",
+      "aquariumSlug": "orb-tapes-shogun-on-acid",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/orb-tapes-shogun-on-acid/",
+      "status": "published",
+      "release": "Shogun on Acid",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 9,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Pennsylvania",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:otheos",
+      "name": "otheos",
+      "canonicalName": "otheos",
+      "bandcampArtistUrl": "https://otheos.bandcamp.com/",
+      "aquariumSlug": "otheos-drift",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/otheos-drift/",
+      "status": "published",
+      "release": "Drift",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "dark"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Santa Cruz, California",
+      "labels": []
+    },
+    {
       "id": "bandcamp:ourspdx",
       "name": "Ours.",
       "canonicalName": "ours",
@@ -3481,6 +5881,42 @@
       "labels": []
     },
     {
+      "id": "bandcamp:outpatientx",
+      "name": "Outpatient X",
+      "canonicalName": "outpatient x",
+      "bandcampArtistUrl": "https://outpatientx.bandcamp.com/",
+      "aquariumSlug": "outpatient-x-warped",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/outpatient-x-warped/",
+      "status": "published",
+      "release": "Warped",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "California",
+      "labels": []
+    },
+    {
       "id": "bandcamp:vozdamorteprod",
       "name": "Ov Crow",
       "canonicalName": "ov crow",
@@ -3517,6 +5953,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:parkwestrecords",
+      "name": "Park West Records",
+      "canonicalName": "park west records",
+      "bandcampArtistUrl": "https://parkwestrecords.bandcamp.com/",
+      "aquariumSlug": "park-west-records-from-far-away",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/park-west-records-from-far-away/",
+      "status": "published",
+      "release": "From Far Away",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "New York, New York",
+      "labels": []
+    },
+    {
       "id": "bandcamp:entre26",
       "name": "Paskal Vallis · Manfred · Fall Fever (VCO) · Markots · JM21 · Greenbot",
       "canonicalName": "paskal vallis manfred fall fever vco markots jm21 greenbot",
@@ -3545,6 +6009,42 @@
       "labels": []
     },
     {
+      "id": "bandcamp:pawnschlonche",
+      "name": "Pawnschlonche",
+      "canonicalName": "pawnschlonche",
+      "bandcampArtistUrl": "https://pawnschlonche.bandcamp.com/",
+      "aquariumSlug": "pawnschlonche-let-s-be-perfectly-vague",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/pawnschlonche-let-s-be-perfectly-vague/",
+      "status": "published",
+      "release": "Let's Be Perfectly Vague",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 5,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Raleigh, North Carolina",
+      "labels": []
+    },
+    {
       "id": "bandcamp:pcrv",
       "name": "PCRV",
       "canonicalName": "pcrv",
@@ -3570,6 +6070,34 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:pegarfogo",
+      "name": "Pegar Fogo",
+      "canonicalName": "pegar fogo",
+      "bandcampArtistUrl": "https://pegarfogo.bandcamp.com/",
+      "aquariumSlug": "pegar-fogo-o-sol-rompeu-o-ar",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/pegar-fogo-o-sol-rompeu-o-ar/",
+      "status": "published",
+      "release": "o sol rompeu o ar",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 10,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Brussels, Belgium",
       "labels": []
     },
     {
@@ -3665,6 +6193,106 @@
       "labels": []
     },
     {
+      "id": "bandcamp:philjohns1",
+      "name": "Phillip Johns",
+      "canonicalName": "phillip johns",
+      "bandcampArtistUrl": "https://philjohns1.bandcamp.com/",
+      "aquariumSlug": "phillip-johns-echoes-of-silence",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/phillip-johns-echoes-of-silence/",
+      "status": "published",
+      "release": "Echoes of Silence",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 12,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "England, UK",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:pinkshift",
+      "name": "Pinkshift",
+      "canonicalName": "pinkshift",
+      "bandcampArtistUrl": "https://pinkshift.bandcamp.com/",
+      "aquariumSlug": "pinkshift-saccharine-deluxe",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/pinkshift-saccharine-deluxe/",
+      "status": "published",
+      "release": "Saccharine (Deluxe)",
+      "releaseDate": "2026-08-12 00:00:00 UTC",
+      "trackCount": 10,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "lastUpdated": "2026-08-12 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Baltimore, Maryland",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:pkwaves",
+      "name": "PK Waves",
+      "canonicalName": "pk waves",
+      "bandcampArtistUrl": "https://pkwaves.bandcamp.com/",
+      "aquariumSlug": "pk-waves-memory-dispersal-unit",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/pk-waves-memory-dispersal-unit/",
+      "status": "published",
+      "release": "Memory Dispersal Unit",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 8,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "San Luis Obispo, California",
+      "labels": []
+    },
+    {
       "id": "bandcamp:a-trainofthought",
       "name": "PLATPHORM RECORDINGS",
       "canonicalName": "platphorm recordings",
@@ -3693,6 +6321,42 @@
       "labels": []
     },
     {
+      "id": "bandcamp:playedbywav",
+      "name": "Playedby.wav",
+      "canonicalName": "playedby wav",
+      "bandcampArtistUrl": "https://playedbywav.bandcamp.com/",
+      "aquariumSlug": "playedby-wav-larry-lan-berlin-tones",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/playedby-wav-larry-lan-berlin-tones/",
+      "status": "published",
+      "release": "Larry Lan - Berlin Tones",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Bucharest, Romania",
+      "labels": []
+    },
+    {
       "id": "bandcamp:playlist111",
       "name": "PLAYLIST",
       "canonicalName": "playlist",
@@ -3718,6 +6382,42 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:poulegoguen",
+      "name": "poule goguen",
+      "canonicalName": "poule goguen",
+      "bandcampArtistUrl": "https://poulegoguen.bandcamp.com/",
+      "aquariumSlug": "poule-goguen-no-purpose",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/poule-goguen-no-purpose/",
+      "status": "published",
+      "release": "no purpose",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Moncton, New Brunswick",
       "labels": []
     },
     {
@@ -3969,6 +6669,142 @@
       "labels": []
     },
     {
+      "id": "bandcamp:randyfranklin",
+      "name": "Randy Franklin",
+      "canonicalName": "randy franklin",
+      "bandcampArtistUrl": "https://randyfranklin.bandcamp.com/",
+      "aquariumSlug": "randy-franklin-the-iphone-sessions-part-two",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/randy-franklin-the-iphone-sessions-part-two/",
+      "status": "published",
+      "release": "The iPhone Sessions Part Two",
+      "releaseDate": "2026-08-29 00:00:00 UTC",
+      "trackCount": 21,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "quiet"
+      ],
+      "lastUpdated": "2026-08-29 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Charlotte",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:rxhxsxaxhxsxcxc",
+      "name": "Rectal Hidradenitis Suppurativa and Hypogastric Squamous Cell Carcinoma",
+      "canonicalName": "rectal hidradenitis suppurativa and hypogastric squamous cell carcinoma",
+      "bandcampArtistUrl": "https://rxhxsxaxhxsxcxc.bandcamp.com/",
+      "aquariumSlug": "rectal-hidradenitis-suppurativa-and-hypogastric-squamous-cell-carcinoma",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rectal-hidradenitis-suppurativa-and-hypogastric-squamous-cell-carcinoma/",
+      "status": "published",
+      "release": "Split w/ Body Parts Found in Dumpster",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Johannesburg, South Africa",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:rectanglecreep",
+      "name": "Rectangle Creep",
+      "canonicalName": "rectangle creep",
+      "bandcampArtistUrl": "https://rectanglecreep.bandcamp.com/",
+      "aquariumSlug": "rectangle-creep-the-breaching-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rectangle-creep-the-breaching-ep/",
+      "status": "published",
+      "release": "The Breaching EP",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 11,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Rochester, New York",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:redheadredemption",
+      "name": "Red Head Redemption",
+      "canonicalName": "red head redemption",
+      "bandcampArtistUrl": "https://redheadredemption.bandcamp.com/",
+      "aquariumSlug": "red-head-redemption-sunny-with-a-chance-of-fallout",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/red-head-redemption-sunny-with-a-chance-of-fallout/",
+      "status": "published",
+      "release": "Sunny With a Chance of Fallout",
+      "releaseDate": "2026-08-07 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-08-07 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Asbury Park, New Jersey",
+      "labels": []
+    },
+    {
       "id": "bandcamp:redhexset",
       "name": "Red Hex",
       "canonicalName": "red hex",
@@ -4025,6 +6861,42 @@
       "labels": []
     },
     {
+      "id": "bandcamp:releaux",
+      "name": "Releaux",
+      "canonicalName": "releaux",
+      "bandcampArtistUrl": "https://releaux.bandcamp.com/",
+      "aquariumSlug": "releaux-songs-of-silent-seas-vol-1",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/releaux-songs-of-silent-seas-vol-1/",
+      "status": "published",
+      "release": "Songs of Silent Seas, Vol. 1",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": null,
+      "labels": []
+    },
+    {
       "id": "bandcamp:renegaderobot",
       "name": "Renegade Robot",
       "canonicalName": "renegade robot",
@@ -4050,6 +6922,34 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:ricpecchi",
+      "name": "Ric Pecchi",
+      "canonicalName": "ric pecchi",
+      "bandcampArtistUrl": "https://ricpecchi.bandcamp.com/",
+      "aquariumSlug": "ric-pecchi-night-bloom",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ric-pecchi-night-bloom/",
+      "status": "published",
+      "release": "Night Bloom",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "trackCount": 5,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet"
+      ],
+      "lastUpdated": "2026-08-28 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "London, UK",
       "labels": []
     },
     {
@@ -4198,6 +7098,50 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:r-u-b-b-e-r-s",
+      "name": "RUBBERS",
+      "canonicalName": "rubbers",
+      "bandcampArtistUrl": "https://r-u-b-b-e-r-s.bandcamp.com/",
+      "aquariumSlug": "rubbers-o-u",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rubbers-o-u/",
+      "status": "published",
+      "release": "O/U",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Munich, Germany",
       "labels": []
     },
     {
@@ -4385,6 +7329,42 @@
       "labels": []
     },
     {
+      "id": "bandcamp:shaltter0",
+      "name": "Shaltter0",
+      "canonicalName": "shaltter0",
+      "bandcampArtistUrl": "https://shaltter0.bandcamp.com/",
+      "aquariumSlug": "shaltter0-eletronic-vibes-2",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/shaltter0-eletronic-vibes-2/",
+      "status": "published",
+      "release": "Eletronic vibes #2",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 15,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Chicago, Illinois",
+      "labels": []
+    },
+    {
       "id": "bandcamp:sheeple13",
       "name": "Sheeple",
       "canonicalName": "sheeple",
@@ -4418,6 +7398,42 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:shilohdynasty",
+      "name": "Shiloh Dynasty",
+      "canonicalName": "shiloh dynasty",
+      "bandcampArtistUrl": "https://shilohdynasty.bandcamp.com/",
+      "aquariumSlug": "shiloh-dynasty-rooted-in-you",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/shiloh-dynasty-rooted-in-you/",
+      "status": "published",
+      "release": "Rooted in You",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "trackCount": 10,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-01 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Los Angeles, California",
       "labels": []
     },
     {
@@ -4533,6 +7549,78 @@
       "labels": []
     },
     {
+      "id": "bandcamp:silvnex",
+      "name": "Silvnex",
+      "canonicalName": "silvnex",
+      "bandcampArtistUrl": "https://silvnex.bandcamp.com/",
+      "aquariumSlug": "silvnex-a-race-to-be-first-demo",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/silvnex-a-race-to-be-first-demo/",
+      "status": "published",
+      "release": "A Race to be First (Demo)",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet",
+        "strange"
+      ],
+      "lastUpdated": "2026-08-28 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:slrdur",
+      "name": "slrdur",
+      "canonicalName": "slrdur",
+      "bandcampArtistUrl": "https://slrdur.bandcamp.com/",
+      "aquariumSlug": "slrdur-window-beetle",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/slrdur-window-beetle/",
+      "status": "published",
+      "release": "Window Beetle",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Scotland, UK",
+      "labels": []
+    },
+    {
       "id": "bandcamp:odderecords",
       "name": "SLÜG",
       "canonicalName": "slug",
@@ -4561,6 +7649,78 @@
       "labels": []
     },
     {
+      "id": "bandcamp:smokeaggression",
+      "name": "Smoke Aggression",
+      "canonicalName": "smoke aggression",
+      "bandcampArtistUrl": "https://smokeaggression.bandcamp.com/",
+      "aquariumSlug": "smoke-aggression-hoffmahn-the-her-best-friend-is-really-hot-version-1999",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/smoke-aggression-hoffmahn-the-her-best-friend-is-really-hot-version-1999/",
+      "status": "published",
+      "release": "Hoffmahn: The \"Her Best Friend Is Really Hot\" version (1999)",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 12,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Champaign, Illinois",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:sofiasalvo",
+      "name": "Sofia Salvo",
+      "canonicalName": "sofia salvo",
+      "bandcampArtistUrl": "https://sofiasalvo.bandcamp.com/",
+      "aquariumSlug": "sofia-salvo-live-sola-set",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sofia-salvo-live-sola-set/",
+      "status": "published",
+      "release": "Live Sola Set",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Berlin, Germany",
+      "labels": []
+    },
+    {
       "id": "bandcamp:someformofbody",
       "name": "someformofbody",
       "canonicalName": "someformofbody",
@@ -4586,6 +7746,42 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:sonnovdrone",
+      "name": "sonnov",
+      "canonicalName": "sonnov",
+      "bandcampArtistUrl": "https://sonnovdrone.bandcamp.com/",
+      "aquariumSlug": "sonnov-pinaha",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sonnov-pinaha/",
+      "status": "published",
+      "release": "pinaha",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 205,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "dark"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Russia",
       "labels": []
     },
     {
@@ -4737,6 +7933,186 @@
       "labels": []
     },
     {
+      "id": "bandcamp:sproutandtheorange",
+      "name": "Sprout And The Orange",
+      "canonicalName": "sprout and the orange",
+      "bandcampArtistUrl": "https://sproutandtheorange.bandcamp.com/",
+      "aquariumSlug": "sprout-and-the-orange-sprout-live-papa-petes-7-1-06",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sprout-and-the-orange-sprout-live-papa-petes-7-1-06/",
+      "status": "published",
+      "release": "Sprout Live @ Papa Petes 7 - 1 - 06",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Saginaw, Michigan",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:starbound2026",
+      "name": "starbound.",
+      "canonicalName": "starbound",
+      "bandcampArtistUrl": "https://starbound2026.bandcamp.com/",
+      "aquariumSlug": "starbound-forget-everything",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/starbound-forget-everything/",
+      "status": "published",
+      "release": "Forget Everything",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 9,
+      "visualStyle": "cosmic",
+      "waters": [
+        "dreamy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Halifax, Nova Scotia",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:stirupyourgreymatter",
+      "name": "Stir Up Your Grey Matter Records",
+      "canonicalName": "stir up your grey matter records",
+      "bandcampArtistUrl": "https://stirupyourgreymatter.bandcamp.com/",
+      "aquariumSlug": "stir-up-your-grey-matter-records-enneagram-study",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/stir-up-your-grey-matter-records-enneagram-study/",
+      "status": "published",
+      "release": "Enneagram Study",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "loud",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Lansing, Michigan",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:stolenflowersofthedead",
+      "name": "Stolen Flowers Of The Dead",
+      "canonicalName": "stolen flowers of the dead",
+      "bandcampArtistUrl": "https://stolenflowersofthedead.bandcamp.com/",
+      "aquariumSlug": "stolen-flowers-of-the-dead-carnations-near-the-sorrow-factory",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/stolen-flowers-of-the-dead-carnations-near-the-sorrow-factory/",
+      "status": "published",
+      "release": "Carnations Near The Sorrow Factory",
+      "releaseDate": "2026-09-01 00:00:00 UTC",
+      "trackCount": 6,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-01 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "UK",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:maddheadset",
+      "name": "STREETVOICE AKA MADDHEADSET",
+      "canonicalName": "streetvoice aka maddheadset",
+      "bandcampArtistUrl": "https://maddheadset.bandcamp.com/",
+      "aquariumSlug": "streetvoice-aka-maddheadset-rawkind-deluxe-edition",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/streetvoice-aka-maddheadset-rawkind-deluxe-edition/",
+      "status": "published",
+      "release": "RAWKIND (DELUXE EDITION)",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 8,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Seattle, Washington",
+      "labels": []
+    },
+    {
       "id": "bandcamp:stungofficial",
       "name": "Stung",
       "canonicalName": "stung",
@@ -4801,6 +8177,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:supaschokobear",
+      "name": "SupaSchokoBear",
+      "canonicalName": "supaschokobear",
+      "bandcampArtistUrl": "https://supaschokobear.bandcamp.com/",
+      "aquariumSlug": "supaschokobear-afterlight",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/supaschokobear-afterlight/",
+      "status": "published",
+      "release": "Afterlight",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 10,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Würzburg, Germany",
+      "labels": []
+    },
+    {
       "id": "bandcamp:super-frogsavestokyo",
       "name": "Super-Frog Saves Tokyo",
       "canonicalName": "super frog saves tokyo",
@@ -4829,6 +8233,78 @@
       "labels": []
     },
     {
+      "id": "bandcamp:swivelhead1",
+      "name": "SwivelHead",
+      "canonicalName": "swivelhead",
+      "bandcampArtistUrl": "https://swivelhead1.bandcamp.com/",
+      "aquariumSlug": "swivelhead-perfect-sky",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/swivelhead-perfect-sky/",
+      "status": "published",
+      "release": "perfect sky.",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "dark"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "London, UK",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:synerythm",
+      "name": "Synerythm",
+      "canonicalName": "synerythm",
+      "bandcampArtistUrl": "https://synerythm.bandcamp.com/",
+      "aquariumSlug": "synerythm-snr024",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/synerythm-snr024/",
+      "status": "published",
+      "release": "SNR024",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Romania",
+      "labels": []
+    },
+    {
       "id": "bandcamp:synthesisrecords",
       "name": "synthesis.records",
       "canonicalName": "synthesis records",
@@ -4854,6 +8330,106 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:itakma",
+      "name": "T.K.A",
+      "canonicalName": "t k a",
+      "bandcampArtistUrl": "https://itakma.bandcamp.com/",
+      "aquariumSlug": "t-k-a-fear",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/t-k-a-fear/",
+      "status": "published",
+      "release": "FEAR",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 13,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Huntsville, Alabama",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:tangorecordings",
+      "name": "Tango recordings",
+      "canonicalName": "tango recordings",
+      "bandcampArtistUrl": "https://tangorecordings.bandcamp.com/",
+      "aquariumSlug": "tango-recordings-6400-crew-hipp-e-tony",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tango-recordings-6400-crew-hipp-e-tony/",
+      "status": "published",
+      "release": "6400 Crew - Hipp-e & Tony",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Oakland, California",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:tapwaterfish",
+      "name": "TAPWATERFISH",
+      "canonicalName": "tapwaterfish",
+      "bandcampArtistUrl": "https://tapwaterfish.bandcamp.com/",
+      "aquariumSlug": "tapwaterfish-twflip-vol-3",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tapwaterfish-twflip-vol-3/",
+      "status": "published",
+      "release": "TWFLIP$ VOL 3",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 8,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange",
+        "dreamy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Palmdale, California",
       "labels": []
     },
     {
@@ -4890,6 +8466,42 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:thecamdenproject",
+      "name": "The Camden Project",
+      "canonicalName": "the camden project",
+      "bandcampArtistUrl": "https://thecamdenproject.bandcamp.com/",
+      "aquariumSlug": "the-camden-project-partial-concussion",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-camden-project-partial-concussion/",
+      "status": "published",
+      "release": "Partial Concussion",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-02 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Port Townsend, Washington",
       "labels": []
     },
     {
@@ -5049,6 +8661,50 @@
       "labels": []
     },
     {
+      "id": "bandcamp:thenewromantics",
+      "name": "The New Romantics",
+      "canonicalName": "the new romantics",
+      "bandcampArtistUrl": "https://thenewromantics.bandcamp.com/",
+      "aquariumSlug": "the-new-romantics-selfishly-now-i-see-you",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-new-romantics-selfishly-now-i-see-you/",
+      "status": "published",
+      "release": "Selfishly / Now I See You",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "dark",
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Knoxville, Tennessee",
+      "labels": []
+    },
+    {
       "id": "bandcamp:thepixelrain",
       "name": "The Pixel Rain",
       "canonicalName": "the pixel rain",
@@ -5074,6 +8730,34 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:theplaqueys",
+      "name": "The Plaqueys",
+      "canonicalName": "the plaqueys",
+      "bandcampArtistUrl": "https://theplaqueys.bandcamp.com/",
+      "aquariumSlug": "the-plaqueys-the-plaqueys",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-plaqueys-the-plaqueys/",
+      "status": "published",
+      "release": "The Plaqueys",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 12,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Mc Gregor Bay, Ontario",
       "labels": []
     },
     {
@@ -5212,6 +8896,50 @@
       "labels": []
     },
     {
+      "id": "bandcamp:torsoaberto",
+      "name": "Torso Aberto",
+      "canonicalName": "torso aberto",
+      "bandcampArtistUrl": "https://torsoaberto.bandcamp.com/",
+      "aquariumSlug": "torso-aberto-vomit-abortion",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/torso-aberto-vomit-abortion/",
+      "status": "published",
+      "release": "Vomit abortion",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy",
+        "loud",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Tavira, Portugal",
+      "labels": []
+    },
+    {
       "id": "bandcamp:txmxaxlxcxcx",
       "name": "Torture Massacre And Limb Chopping Carnival",
       "canonicalName": "torture massacre and limb chopping carnival",
@@ -5245,6 +8973,114 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:trainofpoetry",
+      "name": "Train of Poetry",
+      "canonicalName": "train of poetry",
+      "bandcampArtistUrl": "https://trainofpoetry.bandcamp.com/",
+      "aquariumSlug": "train-of-poetry-succulent-p-single",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/train-of-poetry-succulent-p-single/",
+      "status": "published",
+      "release": "Succulent P Single",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Barcelona, Spain",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:7ruancy",
+      "name": "TRUANCY",
+      "canonicalName": "truancy",
+      "bandcampArtistUrl": "https://7ruancy.bandcamp.com/",
+      "aquariumSlug": "truancy-black",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/truancy-black/",
+      "status": "published",
+      "release": "BLACK",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Richmond, Virginia",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:mistexplorer",
+      "name": "TSCHA",
+      "canonicalName": "tscha",
+      "bandcampArtistUrl": "https://mistexplorer.bandcamp.com/",
+      "aquariumSlug": "tscha-a1",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tscha-a1/",
+      "status": "published",
+      "release": "A1",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 12,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Germany",
       "labels": []
     },
     {
@@ -5312,6 +9148,50 @@
       "labels": []
     },
     {
+      "id": "bandcamp:tyagaa",
+      "name": "tyaga Inc",
+      "canonicalName": "tyaga inc",
+      "bandcampArtistUrl": "https://tyagaa.bandcamp.com/",
+      "aquariumSlug": "tyaga-inc-super-eight",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tyaga-inc-super-eight/",
+      "status": "published",
+      "release": "Super Eight",
+      "releaseDate": "2026-09-03 00:00:00 UTC",
+      "trackCount": 11,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-03 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "China",
+      "labels": []
+    },
+    {
       "id": "bandcamp:underpall",
       "name": "Underpall",
       "canonicalName": "underpall",
@@ -5345,6 +9225,98 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:naffi-i",
+      "name": "UNIQUE SOUNDS LABEL",
+      "canonicalName": "unique sounds label",
+      "bandcampArtistUrl": "https://naffi-i.bandcamp.com/",
+      "aquariumSlug": "unique-sounds-label-naffi-i-inna-different-style-full-tracks-sent-once-d",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/unique-sounds-label-naffi-i-inna-different-style-full-tracks-sent-once-d/",
+      "status": "published",
+      "release": "Naffi-i Inna Different Style ( Full Tracks Sent Once Downloaded )",
+      "releaseDate": "2026-09-05 00:00:00 UTC",
+      "trackCount": 5,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-09-05 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "UK",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:unoloop",
+      "name": "Uno Loop",
+      "canonicalName": "uno loop",
+      "bandcampArtistUrl": "https://unoloop.bandcamp.com/",
+      "aquariumSlug": "uno-loop-one-whole-peace",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/uno-loop-one-whole-peace/",
+      "status": "published",
+      "release": "One Whole Peace",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:time2upgrade",
+      "name": "UPGRADE",
+      "canonicalName": "upgrade",
+      "bandcampArtistUrl": "https://time2upgrade.bandcamp.com/",
+      "aquariumSlug": "upgrade-lack-of-empathy",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/upgrade-lack-of-empathy/",
+      "status": "published",
+      "release": "LACK OF EMPATHY",
+      "releaseDate": "2026-09-05 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-05 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Indonesia",
       "labels": []
     },
     {
@@ -5548,6 +9520,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:vianaprod",
+      "name": "VIANA PROD",
+      "canonicalName": "viana prod",
+      "bandcampArtistUrl": "https://vianaprod.bandcamp.com/",
+      "aquariumSlug": "viana-prod-heat-pula-wave-sweeper",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/viana-prod-heat-pula-wave-sweeper/",
+      "status": "published",
+      "release": "HEAT PULA WAVE / SWEEPER",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Teresina, Brazil",
+      "labels": []
+    },
+    {
       "id": "bandcamp:maggotsemenrecords",
       "name": "Visceral Pulsating Membrane//XAXNXTXIXHXUXMXAXNX",
       "canonicalName": "visceral pulsating membrane xaxnxtxixhxuxmxaxnx",
@@ -5701,6 +9701,50 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:whor3members",
+      "name": "whoremembers",
+      "canonicalName": "whoremembers",
+      "bandcampArtistUrl": "https://whor3members.bandcamp.com/",
+      "aquariumSlug": "whoremembers-morrowe",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/whoremembers-morrowe/",
+      "status": "published",
+      "release": "Morrowe",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "loud",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Nova Scotia",
       "labels": []
     },
     {
@@ -5972,6 +10016,34 @@
       "labels": []
     },
     {
+      "id": "bandcamp:yheti",
+      "name": "Yheti",
+      "canonicalName": "yheti",
+      "bandcampArtistUrl": "https://yheti.bandcamp.com/",
+      "aquariumSlug": "yheti-sleight-of-sound",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/yheti-sleight-of-sound/",
+      "status": "published",
+      "release": "Sleight of Sound",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": null,
+      "labels": []
+    },
+    {
       "id": "bandcamp:zachpaquette",
       "name": "Zach Paquette",
       "canonicalName": "zach paquette",
@@ -6061,6 +10133,114 @@
         }
       ],
       "primaryLocation": null,
+      "labels": []
+    },
+    {
+      "id": "bandcamp:zerinsakech",
+      "name": "Zerin Sakech",
+      "canonicalName": "zerin sakech",
+      "bandcampArtistUrl": "https://zerinsakech.bandcamp.com/",
+      "aquariumSlug": "zerin-sakech-i-have-to-go-number-one",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/zerin-sakech-i-have-to-go-number-one/",
+      "status": "published",
+      "release": "I have to go Number One",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 18,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Sacramento, California",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:zombymusic",
+      "name": "ZOMBY",
+      "canonicalName": "zomby",
+      "bandcampArtistUrl": "https://zombymusic.bandcamp.com/",
+      "aquariumSlug": "zomby-where-were-u-in-92",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/zomby-where-were-u-in-92/",
+      "status": "published",
+      "release": "WHERE WERE U IN '92?",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 14,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "heavy",
+        "loud"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "London, UK",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:zoofles",
+      "name": "Zoofles",
+      "canonicalName": "zoofles",
+      "bandcampArtistUrl": "https://zoofles.bandcamp.com/",
+      "aquariumSlug": "zoofles-prism",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/zoofles-prism/",
+      "status": "published",
+      "release": "Prism",
+      "releaseDate": "2026-09-05 00:00:00 UTC",
+      "trackCount": 17,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-05 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "primaryLocation": "Australia",
       "labels": []
     },
     {

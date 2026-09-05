@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "slug": "ghost-lung-preapologia-the-great-nothing-returns",
+  "artist": "ghost|lung",
+  "bandcampUrl": "https://ghostlungfamilyband.bandcamp.com/album/preapologia-the-great-nothing-returns",
+  "releaseTitle": "Preapologia & The Great Nothing Returns",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "alternative",
+    "emo",
+    "grunge",
+    "indie rock",
+    "noise rock",
+    "Redding"
+  ],
+  "primaryLocation": "Redding, California",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "metadata_tags": [
+    "alternative",
+    "emo",
+    "grunge",
+    "indie rock",
+    "noise rock",
+    "Redding"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ghostlungfamilyband.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "preapologia-the-great-nothing-returns",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "preapologia-the-great-nothing-returns-3467125905",
+      "title": "Preapologia",
+      "artist": "ghost|lung",
+      "albumTitle": "Preapologia & The Great Nothing Returns",
+      "albumKey": "preapologia-the-great-nothing-returns",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ghostlungfamilyband.bandcamp.com/track/preapologia",
+      "bandcampEmbedTrackId": "3467125905",
+      "sourcePage": "https://ghostlungfamilyband.bandcamp.com/album/preapologia-the-great-nothing-returns",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "preapologia-the-great-nothing-returns-585340429",
+      "title": "The Great Nothing Returns",
+      "artist": "ghost|lung",
+      "albumTitle": "Preapologia & The Great Nothing Returns",
+      "albumKey": "preapologia-the-great-nothing-returns",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ghostlungfamilyband.bandcamp.com/track/the-great-nothing-returns",
+      "bandcampEmbedTrackId": "585340429",
+      "sourcePage": "https://ghostlungfamilyband.bandcamp.com/album/preapologia-the-great-nothing-returns",
+      "accent": "#88d7ff"
+    }
+  ]
+}

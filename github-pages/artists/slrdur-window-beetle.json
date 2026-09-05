@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "slug": "slrdur-window-beetle",
+  "artist": "slrdur",
+  "bandcampUrl": "https://slrdur.bandcamp.com/album/window-beetle",
+  "releaseTitle": "Window Beetle",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "funk",
+    "hip-hop",
+    "rap",
+    "jazz and improvised music",
+    "United Kingdom"
+  ],
+  "primaryLocation": "Scotland, UK",
+  "waters": [
+    "strange"
+  ],
+  "metadata_tags": [
+    "experimental",
+    "funk",
+    "hip-hop",
+    "rap",
+    "jazz and improvised music",
+    "United Kingdom"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://slrdur.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:32:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "window-beetle",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "window-beetle-1343402509",
+      "title": "Window Beetle",
+      "artist": "slrdur",
+      "albumTitle": "Window Beetle",
+      "albumKey": "window-beetle",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:45",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://slrdur.bandcamp.com/track/window-beetle-2",
+      "bandcampEmbedTrackId": "1343402509",
+      "sourcePage": "https://slrdur.bandcamp.com/album/window-beetle",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "window-beetle-4039626009",
+      "title": "Sleep, Beetle. ☾ (window beetle slowed)",
+      "artist": "slrdur",
+      "albumTitle": "Window Beetle",
+      "albumKey": "window-beetle",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://slrdur.bandcamp.com/track/sleep-beetle-window-beetle-slowed",
+      "bandcampEmbedTrackId": "4039626009",
+      "sourcePage": "https://slrdur.bandcamp.com/album/window-beetle",
+      "accent": "#88d7ff"
+    }
+  ]
+}

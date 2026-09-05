@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "slug": "dreadsender-not-for-sale-vol-1",
+  "artist": "Dreadsender",
+  "bandcampUrl": "https://dreadsender.bandcamp.com/album/not-for-sale-vol-1",
+  "releaseTitle": "Not For Sale Vol. 1",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "bass",
+    "breaks",
+    "dubstep",
+    "electro",
+    "electronic",
+    "techno",
+    "club",
+    "deconstructed club",
+    "nreaks",
+    "Atlanta"
+  ],
+  "primaryLocation": "Atlanta, Georgia",
+  "waters": [
+    "electronic"
+  ],
+  "metadata_tags": [
+    "bass",
+    "breaks",
+    "dubstep",
+    "electro",
+    "electronic",
+    "techno",
+    "club",
+    "deconstructed club",
+    "nreaks",
+    "Atlanta"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dreadsender.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "not-for-sale-vol-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "not-for-sale-vol-1-2458594777",
+      "title": "Blow Off",
+      "artist": "Dreadsender",
+      "albumTitle": "Not For Sale Vol. 1",
+      "albumKey": "not-for-sale-vol-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:14",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dreadsender.bandcamp.com/track/blow-off",
+      "bandcampEmbedTrackId": "2458594777",
+      "sourcePage": "https://dreadsender.bandcamp.com/album/not-for-sale-vol-1",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "not-for-sale-vol-1-645885987",
+      "title": "Buncha Crunch 2k26",
+      "artist": "Dreadsender",
+      "albumTitle": "Not For Sale Vol. 1",
+      "albumKey": "not-for-sale-vol-1",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dreadsender.bandcamp.com/track/buncha-crunch-2k26",
+      "bandcampEmbedTrackId": "645885987",
+      "sourcePage": "https://dreadsender.bandcamp.com/album/not-for-sale-vol-1",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "not-for-sale-vol-1-1762450716",
+      "title": "Somersault",
+      "artist": "Dreadsender",
+      "albumTitle": "Not For Sale Vol. 1",
+      "albumKey": "not-for-sale-vol-1",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:33",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dreadsender.bandcamp.com/track/somersault",
+      "bandcampEmbedTrackId": "1762450716",
+      "sourcePage": "https://dreadsender.bandcamp.com/album/not-for-sale-vol-1",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "andre-miranda-violencia",
+  "artist": "André Miranda",
+  "bandcampUrl": "https://anmir.bandcamp.com/album/viol-ncia",
+  "releaseTitle": "VIOLÊNCIA",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "ambient",
+    "trap",
+    "atmospheric",
+    "chill-out",
+    "noise",
+    "pagode",
+    "pagode baiano",
+    "post-rock",
+    "soundscapes",
+    "trip hop",
+    "Brazil"
+  ],
+  "primaryLocation": "BA, Brazil",
+  "waters": [
+    "loud",
+    "quiet"
+  ],
+  "metadata_tags": [
+    "ambient",
+    "trap",
+    "atmospheric",
+    "chill-out",
+    "noise",
+    "pagode",
+    "pagode baiano",
+    "post-rock",
+    "soundscapes",
+    "trip hop",
+    "Brazil"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://anmir.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "violencia",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "violencia-3520501649",
+      "title": "VIOLÊNCIA",
+      "artist": "André Miranda",
+      "albumTitle": "VIOLÊNCIA",
+      "albumKey": "violencia",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anmir.bandcamp.com/track/viol-ncia",
+      "bandcampEmbedTrackId": "3520501649",
+      "sourcePage": "https://anmir.bandcamp.com/album/viol-ncia",
+      "accent": "#c3b4f4"
+    }
+  ]
+}

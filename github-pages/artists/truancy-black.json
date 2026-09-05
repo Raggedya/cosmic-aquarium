@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "slug": "truancy-black",
+  "artist": "TRUANCY",
+  "bandcampUrl": "https://7ruancy.bandcamp.com/album/black",
+  "releaseTitle": "BLACK",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "dance",
+    "electronic",
+    "dreamy",
+    "dreamy pop",
+    "electro",
+    "synth pop",
+    "vapornoise",
+    "Richmond"
+  ],
+  "primaryLocation": "Richmond, Virginia",
+  "waters": [
+    "electronic",
+    "loud"
+  ],
+  "metadata_tags": [
+    "dance",
+    "electronic",
+    "dreamy",
+    "dreamy pop",
+    "electro",
+    "synth pop",
+    "vapornoise",
+    "Richmond"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://7ruancy.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "black",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "black-1570437060",
+      "title": "ORBY",
+      "artist": "TRUANCY",
+      "albumTitle": "BLACK",
+      "albumKey": "black",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://7ruancy.bandcamp.com/track/orby",
+      "bandcampEmbedTrackId": "1570437060",
+      "sourcePage": "https://7ruancy.bandcamp.com/album/black",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "black-2296955780",
+      "title": "CHAMPAGNE CASANOVA",
+      "artist": "TRUANCY",
+      "albumTitle": "BLACK",
+      "albumKey": "black",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://7ruancy.bandcamp.com/track/champagne-casanova",
+      "bandcampEmbedTrackId": "2296955780",
+      "sourcePage": "https://7ruancy.bandcamp.com/album/black",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "black-1484436125",
+      "title": "COWPOKE",
+      "artist": "TRUANCY",
+      "albumTitle": "BLACK",
+      "albumKey": "black",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:46",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://7ruancy.bandcamp.com/track/cowpoke-2",
+      "bandcampEmbedTrackId": "1484436125",
+      "sourcePage": "https://7ruancy.bandcamp.com/album/black",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "black-1141788569",
+      "title": "ANGEL",
+      "artist": "TRUANCY",
+      "albumTitle": "BLACK",
+      "albumKey": "black",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:16",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://7ruancy.bandcamp.com/track/angel",
+      "bandcampEmbedTrackId": "1141788569",
+      "sourcePage": "https://7ruancy.bandcamp.com/album/black",
+      "accent": "#ffb66d"
+    }
+  ]
+}

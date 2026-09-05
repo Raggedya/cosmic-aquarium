@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "discaso-demo-2026",
+  "artist": "Discaso",
+  "bandcampUrl": "https://discaso.bandcamp.com/album/demo-2026",
+  "releaseTitle": "Demo 2026",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "punk",
+    "crust",
+    "d-beat",
+    "hardcore",
+    "raw punk",
+    "Uberlândia"
+  ],
+  "primaryLocation": "Uberlândia, Brazil",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "metadata_tags": [
+    "punk",
+    "crust",
+    "d-beat",
+    "hardcore",
+    "raw punk",
+    "Uberlândia"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://discaso.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:32:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "demo-2026",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "demo-2026-986764706",
+      "title": "Escravos Da Modernidade",
+      "artist": "Discaso",
+      "albumTitle": "Demo 2026",
+      "albumKey": "demo-2026",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:19",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://discaso.bandcamp.com/track/escravos-da-modernidade",
+      "bandcampEmbedTrackId": "986764706",
+      "sourcePage": "https://discaso.bandcamp.com/album/demo-2026",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "demo-2026-4006871816",
+      "title": "Embalado A Vácuo",
+      "artist": "Discaso",
+      "albumTitle": "Demo 2026",
+      "albumKey": "demo-2026",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:40",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://discaso.bandcamp.com/track/embalado-a-v-cuo",
+      "bandcampEmbedTrackId": "4006871816",
+      "sourcePage": "https://discaso.bandcamp.com/album/demo-2026",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "demo-2026-1689577577",
+      "title": "Punir E Vigiar",
+      "artist": "Discaso",
+      "albumTitle": "Demo 2026",
+      "albumKey": "demo-2026",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:41",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://discaso.bandcamp.com/track/punir-e-vigiar",
+      "bandcampEmbedTrackId": "1689577577",
+      "sourcePage": "https://discaso.bandcamp.com/album/demo-2026",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

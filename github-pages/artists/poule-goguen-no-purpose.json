@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "slug": "poule-goguen-no-purpose",
+  "artist": "poule goguen",
+  "bandcampUrl": "https://poulegoguen.bandcamp.com/album/no-purpose",
+  "releaseTitle": "no purpose",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-05",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "ambient",
+    "guitar",
+    "outsider music",
+    "weirdo",
+    "Moncton"
+  ],
+  "primaryLocation": "Moncton, New Brunswick",
+  "waters": [
+    "strange",
+    "quiet"
+  ],
+  "metadata_tags": [
+    "experimental",
+    "ambient",
+    "guitar",
+    "outsider music",
+    "weirdo",
+    "Moncton"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://poulegoguen.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T06:33:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "no-purpose",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "no-purpose-1693850914",
+      "title": "no purpose",
+      "artist": "poule goguen",
+      "albumTitle": "no purpose",
+      "albumKey": "no-purpose",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "17:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://poulegoguen.bandcamp.com/track/no-purpose",
+      "bandcampEmbedTrackId": "1693850914",
+      "sourcePage": "https://poulegoguen.bandcamp.com/album/no-purpose",
+      "accent": "#c3b4f4"
+    }
+  ]
+}
