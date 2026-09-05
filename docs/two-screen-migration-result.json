@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-05T00:00:00+10:00",
+  "source": "github-pages/artists/*.json",
+  "canonicalPublicUrl": "https://raggedya.github.io/cosmic-aquarium/",
+  "counts": {
+    "releaseManifestsFound": 207,
+    "publishedEligibleReleases": 207,
+    "canonicalArtistsRepresented": 201,
+    "tracksRetained": 2077,
+    "duplicateReleaseUrlsRemoved": 0,
+    "recordsRewritten": 0,
+    "recordsDeleted": 0
+  },
+  "catalogueMigrationRequired": false,
+  "listenerScreens": ["category-selection", "player"],
+  "categories": ["heavy", "dreamy", "quiet", "electronic", "dark", "loud", "strange"],
+  "anythingMeaning": "all published eligible releases",
+  "legacyRoutePolicy": {
+    "releaseRoute": "redirect-to-canonical-player-deep-link",
+    "styleCollectionRoute": "redirect-to-canonical-category-selection",
+    "otherCollectionRoute": "redirect-to-canonical-root"
+  },
+  "audioAnalysis": {
+    "playback": "official-public-bandcamp-iframe",
+    "liveFrequencyAnalysis": false,
+    "reason": "The cross-origin Bandcamp iframe does not expose its audio stream to this origin's Web Audio API."
+  }
+}

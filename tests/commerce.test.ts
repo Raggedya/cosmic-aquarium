@@ -25,28 +25,18 @@ test('every edition makes an explicit, safe commerce decision', async () => {
   }
 });
 
-test('the three intentional listener actions use the requested staged reveal', async () => {
-  const runtime = await readFile(path.resolve('github-pages', 'assets', 'site.js'), 'utf8');
-  const styles = await readFile(path.resolve('github-pages', 'assets', 'site.css'), 'utf8');
-  const template = await readFile(path.resolve('templates', 'artist-index.html'), 'utf8');
-  const reactExperience = await readFile(path.resolve('src', 'features', 'cosmic-aquarium', 'CosmicAquarium.tsx'), 'utf8');
-  assert.match(template, /SHARE<br>AQUARIUM/);
-  assert.match(template, /BUY MUSIC/);
-  assert.match(template, /EXPLORE<br>ANOTHER<br>AQUARIUM/);
-  assert.ok(template.indexOf('aquarium-action--share') < template.indexOf('aquarium-action--buy'));
-  assert.ok(template.indexOf('aquarium-action--buy') < template.indexOf('aquarium-action--explore'));
+test('the canonical player exposes only SHARE, BUY and NEXT in the requested order', async () => {
+  const runtime = await readFile(path.resolve('github-pages', 'assets', 'discovery-machine.js'), 'utf8');
+  const template = await readFile(path.resolve('templates', 'universe-index.html'), 'utf8');
+  assert.match(template, /SHARE<br>JUKEBOX/);
+  assert.match(template, /BUY<br>MUSIC/);
+  assert.match(template, /NEXT<br>JUKEBOX/);
+  assert.ok(template.indexOf('data-action="share"') < template.indexOf('data-action="buy"'));
+  assert.ok(template.indexOf('data-action="buy"') < template.indexOf('data-action="next"'));
   assert.match(runtime, /navigator\.share/);
-  assert.match(runtime, /aquariums\.json/);
-  assert.match(runtime, /show-buy-action/);
-  assert.match(runtime, /show-secondary-actions/);
-  assert.match(runtime, /buyActionTimer = setTimeout\([\s\S]*?8000\);/);
-  assert.match(runtime, /secondaryActionTimer = setTimeout\([\s\S]*?12000\);/);
-  assert.match(reactExperience, /setTimeout\(\(\) => setBuyActionVisible\(true\), 8000\)/);
-  assert.match(reactExperience, /setTimeout\(\(\) => setSecondaryActionsVisible\(true\), 12000\)/);
-  assert.doesNotMatch(runtime, /function openTrack\([^)]*\) \{\s*clearTimeout\(secondaryActionTimer\)/);
-  assert.doesNotMatch(runtime, /release-current'[\s\S]{0,160}classList\.remove\('show-buy-action'/);
-  assert.doesNotMatch(styles, /purchase-invitation-pulse/);
-  assert.doesNotMatch(styles, /\.aquarium-action--buy\s*\{[^}]*width:/);
+  assert.match(runtime, /buildShareUrl/);
+  assert.match(runtime, /validBandcampUrl\(manifest\.bandcampUrl\)/);
+  assert.match(runtime, /resolveDiscovery\(\)/);
 });
 
 test('starting Bandcamp playback hides the controls but keeps the song title', async () => {

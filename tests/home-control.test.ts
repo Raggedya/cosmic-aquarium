@@ -3,24 +3,15 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 
-test('aquarium home control preserves the brand mark for 15 seconds before activating', async () => {
-  const runtime = await readFile(path.resolve('github-pages', 'assets', 'site.js'), 'utf8');
-  const template = await readFile(path.resolve('templates', 'artist-index.html'), 'utf8');
-  const reactExperience = await readFile(path.resolve('src', 'features', 'cosmic-aquarium', 'CosmicAquarium.tsx'), 'utf8');
-
-  assert.match(template, /class="cosmic-home-control"/);
-  assert.match(template, /href="\{\{BASE\}\}\/"/);
-  assert.match(template, /aria-label="Return to Cosmic Aquaria home"/);
-  assert.match(template, /aria-hidden="true" tabindex="-1"/);
-  assert.match(runtime, /setTimeout\(\(\) => \{/);
-  assert.match(runtime, /\},15000\)/);
-  assert.match(runtime, /homeControl\.classList\.add\('is-home'\)/);
-  assert.match(runtime, /removeAttribute\('aria-hidden'\)/);
-  assert.match(runtime, /clearTimeout\(homeControlTimer\)/);
-  assert.match(reactExperience, /setHomeControlActive\(true\), 15000/);
-  assert.match(reactExperience, /return \(\) => window\.clearTimeout\(timer\)/);
-  assert.match(reactExperience, /setTimeout\(\(\) => setHomeDestination\(safeParent \?\? '\/'\), 0\)/);
-  assert.match(reactExperience, /window\.location\.assign\(homeDestination\)/);
+test('the player returns to category selection without creating a third screen', async () => {
+  const runtime = await readFile(path.resolve('github-pages', 'assets', 'discovery-machine.js'), 'utf8');
+  const template = await readFile(path.resolve('templates', 'universe-index.html'), 'utf8');
+  assert.match(template,/class="change-categories"/);
+  assert.match(template,/aria-label="Change music categories"/);
+  assert.equal((template.match(/data-screen=/g)||[]).length,2);
+  assert.match(runtime,/changeButton\.addEventListener\('click',\(\)=>showSelection\(\)\)/);
+  assert.match(runtime,/addEventListener\('popstate'/);
+  assert.match(runtime,/history\.pushState/);
 });
 
 test('home transition stays within the original circular footprint and supports reduced motion', async () => {

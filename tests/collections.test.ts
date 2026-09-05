@@ -70,13 +70,12 @@ test('the Master Library generates seven Style collections without copying artis
   assert.match(build,/memberships\.push/);
 });
 
-test('Location Aquaria begin with a centre world and seven water portals', async () => {
-  const experience = await readFile(new URL('../github-pages/assets/collection.js', import.meta.url),'utf8');
+test('legacy collection routes now preserve useful style intent in the canonical two-screen app', async () => {
   const template = await readFile(new URL('../templates/collection-index.html', import.meta.url),'utf8');
-  assert.match(template,/collection-portals/);
-  assert.match(experience,/value\.type==='location'/);
-  assert.match(experience,/\['heavy','dreamy','quiet','electronic','dark','loud','strange'\]/);
-  assert.match(experience,/memberWaters\(member\)\.includes\(water\)/);
+  assert.match(template,/slug\.startsWith\('style-'\)/);
+  assert.match(template,/\?categories=/);
+  assert.match(template,/location\.replace/);
+  assert.doesNotMatch(template,/collection-portals|collection-field|collection-reveal/);
 });
 
 test('collection random API filters by water and avoids short-lived recent artists', async () => {

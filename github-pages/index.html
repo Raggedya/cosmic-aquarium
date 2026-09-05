@@ -3,31 +3,61 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#050314">
-  <meta name="description" content="Enter Cosmic Aquaria and let independent music find you.">
-  <title>Cosmic Aquaria — Touch Something</title>
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/doorway.css?v=ca5a72cf72c5">
-  <script defer src="/cosmic-aquarium/assets/doorway.js?v=ca5a72cf72c5"></script>
+  <meta name="theme-color" content="#001807">
+  <meta name="description" content="Break the glass and let independent music find you.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%2300c83b%22/></svg>">
+  <title>Cosmic Aquaria — Independent music discovery</title>
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=6b6391d0ebbc">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=6b6391d0ebbc"></script>
 </head>
 <body>
-  <main class="universe-doorway" aria-label="Enter the Cosmic Aquaria universe" data-base="/cosmic-aquarium">
-    <img class="doorway-background" src="/cosmic-aquarium/assets/doorway/cosmic-depth.webp" alt="" aria-hidden="true">
-    <div class="doorway-nebula" aria-hidden="true"></div>
-    <img class="doorway-botanicals doorway-botanicals--crown" src="/cosmic-aquarium/assets/doorway/botanical-crown.webp" alt="" aria-hidden="true">
-    <img class="doorway-botanicals doorway-botanicals--garden" src="/cosmic-aquarium/assets/doorway/botanical-garden.webp" alt="" aria-hidden="true">
-    <header class="doorway-title"><span class="doorway-mark" aria-hidden="true"><i></i></span><h1>COSMIC<br>AQUARIA</h1><p>TOUCH SOMETHING.</p></header>
-    <div class="doorway-field">
-      <button type="button" class="doorway-bubble doorway-bubble--heavy" data-water="heavy" style="--home-x:25%;--home-y:30%;--bubble-size:177px" aria-label="Drift into a random heavy Aquarium"><img class="doorway-bubble__world" src="/cosmic-aquarium/assets/doorway/world-heavy.webp" alt="" aria-hidden="true" draggable="false"><span class="doorway-bubble__label">HEAVY</span></button>
-      <button type="button" class="doorway-bubble doorway-bubble--dreamy" data-water="dreamy" style="--home-x:75%;--home-y:30%;--bubble-size:177px" aria-label="Drift into a random dreamy Aquarium"><img class="doorway-bubble__world" src="/cosmic-aquarium/assets/doorway/world-dreamy.webp" alt="" aria-hidden="true" draggable="false"><span class="doorway-bubble__label">DREAMY</span></button>
-      <button type="button" class="doorway-bubble doorway-bubble--quiet" data-water="quiet" style="--home-x:18%;--home-y:48%;--bubble-size:168px" aria-label="Drift into a random quiet Aquarium"><img class="doorway-bubble__world" src="/cosmic-aquarium/assets/doorway/world-quiet.webp" alt="" aria-hidden="true" draggable="false"><span class="doorway-bubble__label">QUIET</span></button>
-      <button type="button" class="doorway-bubble doorway-bubble--anywhere" data-water="anywhere" style="--home-x:50%;--home-y:48%;--bubble-size:212px" aria-label="Drift anywhere into a random published Aquarium"><img class="doorway-bubble__world" src="/cosmic-aquarium/assets/doorway/world-anywhere.webp" alt="" aria-hidden="true" draggable="false"><span class="doorway-bubble__label">DRIFT<br>ANYWHERE</span><i aria-hidden="true">→</i></button>
-      <button type="button" class="doorway-bubble doorway-bubble--electronic" data-water="electronic" style="--home-x:82%;--home-y:48%;--bubble-size:177px" aria-label="Drift into a random electronic Aquarium"><img class="doorway-bubble__world" src="/cosmic-aquarium/assets/doorway/world-electronic.webp" alt="" aria-hidden="true" draggable="false"><span class="doorway-bubble__label">ELECTRONIC</span></button>
-      <button type="button" class="doorway-bubble doorway-bubble--dark" data-water="dark" style="--home-x:25%;--home-y:67%;--bubble-size:177px" aria-label="Drift into a random dark Aquarium"><img class="doorway-bubble__world" src="/cosmic-aquarium/assets/doorway/world-dark.webp" alt="" aria-hidden="true" draggable="false"><span class="doorway-bubble__label">DARK</span></button>
-      <button type="button" class="doorway-bubble doorway-bubble--loud" data-water="loud" style="--home-x:75%;--home-y:67%;--bubble-size:177px" aria-label="Drift into a random loud Aquarium"><img class="doorway-bubble__world" src="/cosmic-aquarium/assets/doorway/world-loud.webp" alt="" aria-hidden="true" draggable="false"><span class="doorway-bubble__label">LOUD</span></button>
-      <button type="button" class="doorway-bubble doorway-bubble--strange" data-water="strange" style="--home-x:50%;--home-y:76%;--bubble-size:168px" aria-label="Drift into a random strange Aquarium"><img class="doorway-bubble__world" src="/cosmic-aquarium/assets/doorway/world-strange.webp" alt="" aria-hidden="true" draggable="false"><span class="doorway-bubble__label">STRANGE</span></button>
-    </div>
-    <footer class="doorway-footer"><p>Let the Music find you</p></footer>
-    <p class="visually-hidden" role="status" aria-live="polite">Choose a water, or drift anywhere.</p>
+  <main class="discovery-machine" data-base="/cosmic-aquarium" aria-label="Cosmic Aquaria independent music discovery machine">
+    <section class="machine-screen selection-screen is-active" data-screen="selection" aria-labelledby="selection-title">
+      <h1 id="selection-title" class="visually-hidden">Choose the kind of music you feel like hearing</h1>
+      <div class="selection-grid" role="group" aria-label="Music categories">
+        <button class="glass-key" type="button" data-category="heavy" aria-pressed="false"><span>HEAVY</span><i class="crack-layer" aria-hidden="true"></i></button>
+        <button class="glass-key" type="button" data-category="dreamy" aria-pressed="false"><span>DREAMY</span><i class="crack-layer" aria-hidden="true"></i></button>
+        <button class="glass-key" type="button" data-category="quiet" aria-pressed="false"><span>QUIET</span><i class="crack-layer" aria-hidden="true"></i></button>
+        <button class="glass-key" type="button" data-category="electronic" aria-pressed="false"><span>ELECTRONIC</span><i class="crack-layer" aria-hidden="true"></i></button>
+        <button class="glass-key" type="button" data-category="dark" aria-pressed="false"><span>DARK</span><i class="crack-layer" aria-hidden="true"></i></button>
+        <button class="glass-key" type="button" data-category="loud" aria-pressed="false"><span>LOUD</span><i class="crack-layer" aria-hidden="true"></i></button>
+        <button class="glass-key" type="button" data-category="strange" aria-pressed="false"><span>STRANGE</span><i class="crack-layer" aria-hidden="true"></i></button>
+        <button class="glass-key" type="button" data-category="anything" aria-pressed="false"><span>ANYTHING</span><i class="crack-layer" aria-hidden="true"></i></button>
+      </div>
+      <div class="bandcamp-bridge" aria-label="Music is played through Bandcamp">
+        <span class="signal signal--left" aria-hidden="true"></span><span class="bandcamp-wordmark"><i aria-hidden="true"></i>bandcamp</span><span class="signal signal--right" aria-hidden="true"></span>
+      </div>
+      <button class="go-key" type="button" disabled aria-disabled="true">
+        <span class="go-line" aria-hidden="true"></span><strong>GO</strong><span class="go-line" aria-hidden="true"></span><i class="crack-layer" aria-hidden="true"></i>
+      </button>
+      <p class="visually-hidden machine-status" role="status" aria-live="polite">Choose one or more categories.</p>
+    </section>
+
+    <section class="machine-screen player-screen" data-screen="player" aria-labelledby="now-playing-heading" aria-hidden="true">
+      <button class="change-categories" type="button" aria-label="Change music categories">‹ CHANGE</button>
+      <div class="ticker-shell" aria-label="Artist and release information"><div class="ticker-track"><span>MUSIC LIVES HERE&nbsp;&nbsp; • &nbsp;&nbsp;SUPPORT ARTISTS&nbsp;&nbsp; • &nbsp;&nbsp;GOOD VIBES</span></div></div>
+      <section class="now-playing-panel">
+        <div class="bubble bubble--one" aria-hidden="true"></div><div class="bubble bubble--two" aria-hidden="true"></div><div class="bubble bubble--three" aria-hidden="true"></div><div class="bubble bubble--four" aria-hidden="true"></div>
+        <p class="eyebrow">NOW PLAYING</p>
+        <h2 id="now-playing-heading">COSMIC AQUARIA</h2>
+        <p class="release-line"><span class="release-title">INDEPENDENT MUSIC</span><b aria-hidden="true">•</b><span class="track-title">BANDCAMP</span></p>
+        <div class="spectrum" aria-label="Decorative spectrum display. Live analysis is unavailable for the cross-origin Bandcamp player." data-analysis="unavailable" aria-live="off">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="transport-row" aria-hidden="true"><span>0:00</span><div class="transport-rail"><i></i></div><span class="duration">0:00</span></div>
+        <div class="bandcamp-transport"><iframe title="Official Bandcamp player" loading="eager" allow="autoplay" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      </section>
+      <nav class="player-actions" aria-label="Current discovery actions">
+        <button type="button" data-action="share"><span>SHARE<br>JUKEBOX</span></button>
+        <a data-action="buy" href="https://bandcamp.com/" target="_blank" rel="noopener noreferrer"><span>BUY<br>MUSIC</span></a>
+        <button type="button" data-action="next"><span>NEXT<br>JUKEBOX</span></button>
+      </nav>
+      <div class="bandcamp-footer" aria-label="Playback and purchase through Bandcamp"><span class="signal signal--left" aria-hidden="true"></span><span class="bandcamp-wordmark"><i aria-hidden="true"></i>bandcamp</span><span class="signal signal--right" aria-hidden="true"></span></div>
+      <p class="visually-hidden player-status" role="status" aria-live="polite"></p>
+    </section>
+    <canvas class="destruction-canvas" aria-hidden="true"></canvas>
   </main>
 </body>
 </html>

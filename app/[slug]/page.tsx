@@ -1,6 +1,6 @@
-import { CosmicAquarium } from '@/src/features/cosmic-aquarium/CosmicAquarium';
+import { redirect } from 'next/navigation';
 
 export default async function ArtistAquariumPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  return <CosmicAquarium manifestSlug={slug} />;
+  redirect(`https://raggedya.github.io/cosmic-aquarium/?release=${encodeURIComponent(slug)}`);
 }

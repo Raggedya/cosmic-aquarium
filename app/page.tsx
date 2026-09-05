@@ -1,5 +1,5 @@
-import { UniverseDoorway } from '@/src/features/universe-doorway/UniverseDoorway';
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return <UniverseDoorway />;
+  redirect('https://raggedya.github.io/cosmic-aquarium/');
 }

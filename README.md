@@ -1,6 +1,12 @@
 # Cosmic Aquaria
 
-Cosmic Aquaria turns a Bandcamp artist into a living flower-based discovery experience. Every generated edition has its own GitHub Pages URL and scan-verified floral QR artwork.
+Cosmic Aquaria is a two-screen independent-music discovery machine. A listener breaks one or more glass category controls, presses GO, and receives a random eligible Bandcamp release in the canonical player. The public listener is one data-driven application; releases do not receive bespoke front ends.
+
+The canonical public URL is:
+
+`https://raggedya.github.io/cosmic-aquarium/`
+
+See [the two-screen migration audit](docs/TWO_SCREEN_DISCOVERY_MIGRATION.md) for the preservation boundary, legacy redirects, and Bandcamp audio-analysis limitation.
 
 ## Creator workflow
 
@@ -11,7 +17,7 @@ The Windows Studio asks for four things:
 3. delivery email
 4. one of seven independent visual flower worlds
 
-Create dispatches the GitHub Actions workflow. The workflow imports public page metadata when it is available, generates an artist manifest, creates the page, renders and independently decodes the QR artwork, and publishes GitHub Pages. The Studio then hands the finished link and QR to the existing Resend delivery workflow.
+Create dispatches the GitHub Actions workflow. The workflow imports public page metadata when it is available, generates a release manifest, renders and independently decodes the QR artwork, and publishes the catalogue. The Studio then hands the finished link and QR to the existing Resend delivery workflow. A new release becomes eligible in the shared listener without a bespoke UI build.
 
 The Windows build is produced as `desktop-dist/Cosmic Aquaria Studio.exe` by `desktop/build-windows.ps1`. GitHub Actions also offers a downloadable Windows artifact.
 
@@ -32,11 +38,11 @@ Official references:
 
 ## Publishing
 
-The Pages workflow deploys `github-pages/`. Artist URLs follow:
+The Pages workflow deploys `github-pages/`. Durable release links follow:
 
-`https://raggedya.github.io/cosmic-aquarium/<artist-slug>/`
+`https://raggedya.github.io/cosmic-aquarium/?release=<release-slug>&categories=<category-list>`
 
-The primary Sites deployment continues to serve the polished development version and manifest-driven artist routes.
+Historical `/<artist-or-release-slug>/` URLs remain generated, but redirect into the canonical player. Historical style collection URLs preserve their category when returning to the canonical selection screen. The owner-gated Sites deployment redirects to the same canonical public application when next deployed.
 
 ## Master Library and Collections
 
