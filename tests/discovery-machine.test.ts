@@ -201,7 +201,7 @@ test('universe statistics are generated from published manifests and distinct pl
   assert.doesNotMatch(build,/canonicalArtistCount:\s*\d/);
 });
 
-test('official Bandcamp playback has a truthful transport-coupled liquid surface',async()=>{
+test('official Bandcamp playback has a truthful transport-coupled bubble visualiser',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/Official Bandcamp playback controls/);
   assert.match(template,/PLAY \/ PAUSE ON BANDCAMP/);
@@ -209,21 +209,25 @@ test('official Bandcamp playback has a truthful transport-coupled liquid surface
   const transportRule=css.match(/\.player-screen \.bandcamp-transport \{[^}]*\}/)?.[0]||'';
   assert.doesNotMatch(transportRule,/position:fixed|left:-10000px|width:1px/);
   assert.match(transportRule,/opacity:1/);
-  assert.match(template,/canvas class="liquid-surface"/);
+  assert.match(template,/canvas class="bubble-visualiser"/);
   assert.match(template,/data-analysis="transport-coupled"/);
-  assert.match(template,/Direct audio-frequency analysis is unavailable/);
+  assert.match(template,/Bandcamp frame does not expose audio-frequency data/);
   assert.doesNotMatch(template,/class="spectrum"|<i><\/i>/);
   assert.doesNotMatch(runtime,/createMediaElementSource|createMediaStreamSource/);
-  assert.match(runtime,/function renderLiquidSurface/);
-  assert.match(runtime,/function liquidSurfaceY/);
-  assert.match(runtime,/function drawLiquidPeakBodies/);
-  assert.match(runtime,/function drawLiquidReflection/);
-  assert.match(runtime,/function drawLiquidDroplets/);
-  assert.match(runtime,/liquidEnergy\+=\(target-liquidEnergy\)/);
+  assert.match(runtime,/function renderBubbleVisualiser/);
+  assert.match(runtime,/function drawGlassBubble/);
+  assert.match(runtime,/function bubblePosition/);
+  assert.match(runtime,/bubbleActivity\+=\(target-bubbleActivity\)/);
+  assert.match(runtime,/heavy:\{count:18,large:4/);
+  assert.match(runtime,/dreamy:\{count:28,large:3/);
+  assert.match(runtime,/quiet:\{count:16,large:2/);
+  assert.match(runtime,/data-bubble-count/);
   assert.match(runtime,/requestAnimationFrame\(frame\)/);
   assert.match(runtime,/bandcampFrame\.addEventListener\('focus',onBandcampFrameInteraction\)/);
   assert.match(runtime,/event\.data==='playerinited'/);
-  assert.match(css,/\.liquid-surface\[data-playback="playing"\]/);
+  assert.match(css,/\.bubble-visualiser\[data-playback="playing"\]/);
+  assert.doesNotMatch(template,/liquid-surface|class="spectrum"/);
+  assert.doesNotMatch(runtime,/renderLiquidSurface|liquidSurfaceY|drawLiquidPeakBodies/);
   assert.doesNotMatch(css,/\.spectrum\s+i|nth-child\([^)]*\)\{--h/);
 });
 
@@ -238,6 +242,19 @@ test('the visual system uses layered liquid glass with controlled per-control va
   assert.match(css,/\.material-bubble--footer-d/);
   assert.match(template,/material-bubble--ticker-a/);
   assert.match(template,/material-bubble--footer-d/);
+});
+
+test('player material hierarchy is midnight pearl with warm information and emerald action jewels',async()=>{
+  const css=await read('app/discovery-machine.css');
+  assert.match(css,/--midnight-0:#030708/);
+  assert.match(css,/--midnight-1:#061014/);
+  assert.match(css,/--pearl:#fff8e7/);
+  assert.match(css,/--champagne:#ead7a3/);
+  assert.match(css,/background-blend-mode:multiply,luminosity/);
+  assert.match(css,/\.player-screen \.ticker-shell[^}]+rgba\(15,28,29/);
+  assert.match(css,/\.player-screen \.bandcamp-footer[^}]+rgba\(10,33,32/);
+  assert.match(css,/\.player-screen \.player-actions button[^}]+#147348/);
+  assert.match(css,/\.player-screen \.now-playing-panel h2[^}]+white-space:normal/);
 });
 
 test('canonical photographic material uses continuous plates behind real controls',async()=>{
@@ -301,7 +318,7 @@ test('player ticker is optically recessed and the upper chamber has a contained 
   assert.match(runtime,/document\.hidden\|\|!playerScreen\.classList\.contains\('is-active'\)/);
 });
 
-test('player actions use one baked concise-label layer without duplicate live text',async()=>{
+test('player actions expose concise live labels over opaque emerald pearl wells',async()=>{
   const [template,css,chassis]=await Promise.all([
     read('templates/universe-index.html'),
     read('app/discovery-machine.css'),
@@ -312,7 +329,8 @@ test('player actions use one baked concise-label layer without duplicate live te
   assert.match(template,/data-action="next"><span>NEXT<\/span>/);
   assert.doesNotMatch(template,/SHARE<br>JUKEBOX|NEXT<br>JUKEBOX/);
   assert.match(css,/player-chassis-concise-actions-v3\.webp/);
-  assert.match(css,/\.player-actions span \{ opacity:0; \}/);
+  assert.match(css,/\.player-screen \.player-actions span \{ opacity:1;/);
+  assert.match(css,/linear-gradient\(150deg,#147348 0,#075331 38%,#042c21 68%,#020a0b 100%\)/);
   assert.doesNotMatch(css,/button:nth-child\(1\) span|button:nth-child\(3\) span/);
   assert.ok(chassis.length>1000000);
 });
