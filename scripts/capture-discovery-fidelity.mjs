@@ -66,8 +66,13 @@ for (const size of sizes) {
   await page.goto(playerUrl.toString(), { waitUntil: 'networkidle' });
   await page.locator('.player-screen.is-active').waitFor();
   const bubbleBefore = await page.locator('.bubble-tube').evaluate((element) => element.toDataURL());
+  await page.locator('.bandcamp-transport iframe').focus();
+  await page.waitForFunction(() => document.querySelector('.liquid-surface')?.getAttribute('data-playback') === 'playing');
+  await page.waitForTimeout(900);
+  const liquidBefore = await page.locator('.liquid-surface').evaluate((element) => element.toDataURL());
   await page.waitForTimeout(700);
   const bubbleAfter = await page.locator('.bubble-tube').evaluate((element) => element.toDataURL());
+  const liquidAfter = await page.locator('.liquid-surface').evaluate((element) => element.toDataURL());
   await page.screenshot({ path: path.join(outputDirectory, `${label}-player-${size.width}x${size.height}.png`) });
   const beforeNext = {
     slug: new URL(page.url()).searchParams.get('release'),
@@ -104,7 +109,7 @@ for (const size of sizes) {
     documentHeight: document.documentElement.scrollHeight,
     machine: document.querySelector('.discovery-machine')?.getBoundingClientRect().toJSON(),
   }));
-  results.push({ size, release: release.slug, goHoldObservedMs, interaction, audioState, bubbleTubeChanged:bubbleBefore!==bubbleAfter, next:{before:beforeNext,after:afterNext}, consoleErrors, metrics });
+  results.push({ size, release: release.slug, goHoldObservedMs, interaction, audioState, bubbleTubeChanged:bubbleBefore!==bubbleAfter, liquidSurfaceChanged:liquidBefore!==liquidAfter, next:{before:beforeNext,after:afterNext}, consoleErrors, metrics });
   await context.close();
 }
 

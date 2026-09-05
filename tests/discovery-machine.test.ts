@@ -201,7 +201,7 @@ test('universe statistics are generated from published manifests and distinct pl
   assert.doesNotMatch(build,/canonicalArtistCount:\s*\d/);
 });
 
-test('official Bandcamp playback has a truthful transport-coupled animated spectrum',async()=>{
+test('official Bandcamp playback has a truthful transport-coupled liquid surface',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/Official Bandcamp playback controls/);
   assert.match(template,/PLAY \/ PAUSE ON BANDCAMP/);
@@ -209,14 +209,20 @@ test('official Bandcamp playback has a truthful transport-coupled animated spect
   const transportRule=css.match(/\.player-screen \.bandcamp-transport \{[^}]*\}/)?.[0]||'';
   assert.doesNotMatch(transportRule,/position:fixed|left:-10000px|width:1px/);
   assert.match(transportRule,/opacity:1/);
+  assert.match(template,/canvas class="liquid-surface"/);
   assert.match(template,/data-analysis="transport-coupled"/);
   assert.match(template,/Direct audio-frequency analysis is unavailable/);
+  assert.doesNotMatch(template,/class="spectrum"|<i><\/i>/);
   assert.doesNotMatch(runtime,/createMediaElementSource|createMediaStreamSource/);
-  assert.match(runtime,/function renderSpectrum/);
+  assert.match(runtime,/function renderLiquidSurface/);
+  assert.match(runtime,/function liquidSurfaceY/);
+  assert.match(runtime,/function drawLiquidDroplets/);
+  assert.match(runtime,/liquidEnergy\+=\(target-liquidEnergy\)/);
   assert.match(runtime,/requestAnimationFrame\(frame\)/);
   assert.match(runtime,/bandcampFrame\.addEventListener\('focus',onBandcampFrameInteraction\)/);
   assert.match(runtime,/event\.data==='playerinited'/);
-  assert.match(css,/\.spectrum\[data-playback="playing"\]/);
+  assert.match(css,/\.liquid-surface\[data-playback="playing"\]/);
+  assert.doesNotMatch(css,/\.spectrum\s+i|nth-child\([^)]*\)\{--h/);
 });
 
 test('the visual system uses layered liquid glass with controlled per-control variation',async()=>{
