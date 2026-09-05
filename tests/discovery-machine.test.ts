@@ -228,8 +228,8 @@ test('player actions use the approved concise labels without changing their mate
   assert.match(template,/data-action="buy"[^>]+><span>BUY<br>MUSIC<\/span>/);
   assert.match(template,/data-action="next"><span>NEXT<\/span>/);
   assert.doesNotMatch(template,/SHARE<br>JUKEBOX|NEXT<br>JUKEBOX/);
-  assert.match(css,/player-share-blank\.webp/);
-  assert.match(css,/player-next-blank\.webp/);
+  assert.match(css,/player-share-blank\.webp'\) center\/100% 100% no-repeat!important/);
+  assert.match(css,/player-next-blank\.webp'\) center\/100% 100% no-repeat!important/);
   assert.match(css,/button:nth-child\(1\) span[^}]+button:nth-child\(3\) span[^}]+opacity:1/);
   assert.ok(shareSkin.length>25000);
   assert.ok(nextSkin.length>25000);
