@@ -13,7 +13,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 import daily_discovery
 import create_artist as creator
-from create_artist import BandcampPageParser, MINIMUM_TRACK_COUNT, concise_bio, discover_tracks, location_from_json_ld
+import backfill_ticker_bios
+from create_artist import BandcampPageParser, MINIMUM_TRACK_COUNT, concise_bio, discover_tracks, location_from_json_ld, metadata_bio
 
 
 class DailyDiscoveryTests(unittest.TestCase):
@@ -54,9 +55,24 @@ class DailyDiscoveryTests(unittest.TestCase):
         self.assertEqual(location_from_json_ld(parser), "Melbourne, Australia")
         self.assertEqual(concise_bio("13 track album", "Artist"), "")
         self.assertEqual(concise_bio("Artist, atmospheric textural music recorded in Melbourne.", "Artist"), "atmospheric textural music recorded in Melbourne.")
+        self.assertEqual(metadata_bio("Artist", ["ambient", "experimental"], ["quiet"], "Melbourne, Australia"), "Artist — ambient / experimental music from Melbourne, Australia.")
 
     def test_one_verified_release_track_is_enough_to_publish(self):
         self.assertEqual(MINIMUM_TRACK_COUNT, 1)
+
+    def test_ticker_bio_backfill_is_idempotent_and_preserves_curated_copy(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            missing = root / "missing.json"
+            curated = root / "curated.json"
+            missing.write_text(json.dumps({"artist": "Missing Artist", "metadataTags": ["ambient"], "waters": ["quiet"], "primaryLocation": "Sydney, Australia"}), encoding="utf-8")
+            curated.write_text(json.dumps({"artist": "Curated Artist", "bioShort": "A carefully curated biography.", "bioSource": "manual"}), encoding="utf-8")
+            first = backfill_ticker_bios.backfill(root)
+            second = backfill_ticker_bios.backfill(root)
+            self.assertEqual(first["updated"], 1)
+            self.assertEqual(second["updated"], 0)
+            self.assertEqual(json.loads(curated.read_text())["bioShort"], "A carefully curated biography.")
+            self.assertEqual(json.loads(missing.read_text())["bioSource"], "metadata-derived")
 
     def test_unplayable_release_does_not_borrow_tracks_from_other_albums(self):
         parser = BandcampPageParser()
@@ -72,6 +88,7 @@ class DailyDiscoveryTests(unittest.TestCase):
             result = creator.create_artist("Artist", "https://artist.bandcamp.com/album/release", "cosmic", "https://example.test", generate_qr=False, persist=False)
             self.assertIsNotNone(result["_manifest"])
             self.assertEqual(result["_manifest"]["bioShort"], "Atmospheric music from Melbourne.")
+            self.assertEqual(result["_manifest"]["bioSource"], "bandcamp-description")
             self.assertEqual(result["_manifest"]["primaryLocation"], "Melbourne, Australia")
             self.assertEqual(list(Path(folder).rglob("*")), [])
 

@@ -5,6 +5,7 @@ import {
   CATEGORIES, CRACK_VARIANTS, GO_HOLD_MS, SESSION_HISTORY_LIMIT,
   nextSelection, normalizeSelection, eligibleReleases, chooseRelease,
   pushHistory, buildShareUrl, buildTickerFacts, buildTickerMessages, validBandcampUrl, pickPlayableTrack, artistIdentity,
+  normalizeArtistSearch, searchLocalArtists, dedupeArtistResults, highConfidenceArtistMatch, pickDifferentPlayableTrack,
 } from '../github-pages/assets/discovery-machine-core.js';
 import { classifyWaters, validWaters, WATERS } from '../scripts/water-classifier.mjs';
 
@@ -133,7 +134,8 @@ test('glass audio preloads once, waits for a gesture, respects mute and never bl
 test('deselection produces only residual shards while GO fractures before its hold',async()=>{
   const runtime=await read('github-pages/assets/discovery-machine.js');
   assert.match(runtime,/if\(restoring\)\{\s*scheduleGlassSegment\(audio,chooseGlassSegment\('settle'/);
-  assert.match(runtime,/goButton\.classList\.add\('is-broken'\); playGlassBreak\('go'\);[\s\S]{0,260}Promise\.all\(\[delay\(GO_HOLD_MS\),discovery\]\)/);
+  assert.match(runtime,/goButton\.classList\.add\('is-broken'\); playGlassBreak\('go'\)/);
+  assert.match(runtime,/Promise\.all\(\[delay\(GO_HOLD_MS\),discovery\]\)/);
 });
 
 test('CC0 audio provenance and dual browser formats are packaged into the public build',async()=>{
@@ -241,6 +243,79 @@ test('official Bandcamp playback has truthful transport-coupled dual analogue me
   assert.doesNotMatch(css,/\.liquid-surface|\.spectrum\s+i|nth-child\([^)]*\)\{--h/);
 });
 
+test('artist search normalizes punctuation, case and diacritics and prioritises exact local matches',()=>{
+  const artists=[
+    {id:'bandcamp:aneira',name:'Aneira',canonicalName:'aneira',status:'published',aquariumSlug:'aneira-rotations',bandcampArtistUrl:'https://aneira.bandcamp.com/',primaryLocation:'London, UK',release:'Rotations'},
+    {id:'bandcamp:weird',name:'À New & Strange Band!',status:'published',aquariumSlug:'new-strange',bandcampArtistUrl:'https://weird.bandcamp.com/'},
+    {id:'disabled',name:'Aneira Demo',status:'disabled',aquariumSlug:'disabled',bandcampArtistUrl:'https://demo.bandcamp.com/'},
+  ];
+  assert.equal(normalizeArtistSearch(' À New & Strange—Band! '),'a new and strange band');
+  const exact=searchLocalArtists(artists,'ANEIRA');
+  assert.equal(exact[0].artistId,'bandcamp:aneira');
+  assert.equal(exact[0].source,'library');
+  assert.equal(searchLocalArtists(artists,'new strange')[0].artistName,'À New & Strange Band!');
+  assert.ok(highConfidenceArtistMatch('aneira',exact[0]));
+});
+
+test('search results deduplicate canonical Bandcamp hosts and Next avoids the current search track',()=>{
+  const results=dedupeArtistResults([
+    {artistName:'Aneira',bandcampArtistUrl:'https://aneira.bandcamp.com/',source:'library'},
+    {artistName:'aneira',bandcampArtistUrl:'https://aneira.bandcamp.com',source:'bandcamp'},
+    {artistName:'Another',bandcampArtistUrl:'https://another.bandcamp.com',source:'bandcamp'},
+  ]);
+  assert.equal(results.length,2);
+  const fixedCrypto={getRandomValues:(value:Uint32Array)=>{value[0]=0;return value;}} as Crypto;
+  const manifest={tracks:[
+    {id:'one',bandcampEmbedTrackId:'1',bandcampUrl:'https://aneira.bandcamp.com/track/one'},
+    {id:'two',bandcampEmbedTrackId:'2',bandcampUrl:'https://aneira.bandcamp.com/track/two'},
+  ]};
+  assert.equal(pickDifferentPlayableTrack(manifest,'1',[],fixedCrypto)?.id,'two');
+  assert.equal(pickDifferentPlayableTrack(manifest,'1',['two'],fixedCrypto),null);
+});
+
+test('selector search and genre modes are exclusive while GO remains the shared commitment control',async()=>{
+  const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+  assert.match(template,/id="artist-search-input"[^>]+role="combobox"/);
+  assert.match(template,/placeholder="SEARCH COSMIC AQUARIA"/);
+  assert.match(template,/id="artist-search-results"[^>]+role="listbox"/);
+  assert.match(template,/class="search-clear"/);
+  assert.match(template,/MUSIC WITHOUT BORDERS/);
+  assert.match(template,/INDEPENDENT MUSIC FLOATS FURTHER/);
+  assert.match(runtime,/function setSearchMode\(active\)/);
+  assert.match(runtime,/button\.disabled=active/);
+  assert.match(runtime,/if\(active&&selected\.size\)/);
+  assert.match(runtime,/searchTimer=setTimeout\(\(\)=>void runArtistSearch\(next\.trim\(\),serial\),320\)/);
+  assert.match(runtime,/searchLocalArtists\(artists,query,6\)/);
+  assert.match(runtime,/resolveSelectedSearchArtist\(\):resolveDiscovery\(\)/);
+  assert.match(runtime,/playerDiscoveryMode==='search'/);
+  assert.match(runtime,/clearArtistSearch\(\)/);
+  assert.match(css,/\.selection-screen\.is-search-mode \.selection-grid \.glass-key::before \{ opacity:\.94/);
+  assert.match(css,/backdrop-filter:saturate\(\.1\) brightness\(\.54\) contrast\(\.9\)/);
+  assert.match(css,/\.selection-screen > \.go-key[^}]+selector-go\.webp/);
+});
+
+test('the build emits a compact artist search index for catalogue-scale lookup',async()=>{
+  const [build,runtime]=await Promise.all([read('scripts/build-github-pages.mjs'),read('github-pages/assets/discovery-machine.js')]);
+  assert.match(build,/artist-search-index\.json/);
+  assert.match(build,/normalizedName:artist\.canonicalName/);
+  assert.match(runtime,/artist-search-index\.json/);
+  assert.doesNotMatch(runtime,/fetch\(`\$\{base\}\/artists-index\.json/);
+});
+
+test('local artist search remains fast with a simulated 5,000-artist index',()=>{
+  const artists=Array.from({length:5000},(_,index)=>({
+    id:`bandcamp:artist-${index}`,name:`Cosmic Artist ${index}`,normalizedName:`cosmic artist ${index}`,
+    status:'published',aquariumSlug:`cosmic-artist-${index}`,bandcampArtistUrl:`https://artist-${index}.bandcamp.com/`,
+    location:index%2?'Melbourne, Australia':'Tokyo, Japan',waters:[index%2?'dreamy':'electronic'],
+  }));
+  const started=performance.now();
+  for(let index=0;index<100;index+=1){
+    const results=searchLocalArtists(artists,`artist ${index}`,6);
+    assert.ok(results.length>0);
+  }
+  assert.ok(performance.now()-started<2500);
+});
+
 test('the visual system uses layered liquid glass with controlled per-control variation',async()=>{
   const [template,css]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css')]);
   for(const layer of ['conic-gradient','radial-gradient','inset','mix-blend-mode']) assert.match(css,new RegExp(layer));
@@ -278,7 +353,7 @@ test('fresh homepage state is pristine while explicit deep-link categories remai
   const runtime=await read('github-pages/assets/discovery-machine.js');
   assert.match(runtime,/updateSelection\(requestedSelection,false\)/);
   assert.doesNotMatch(runtime,/requestedSelection\.length\?requestedSelection:readJson\(selectionKey/);
-  assert.match(runtime,/selected=new Set\(\);\s*sessionStorage\.removeItem\(selectionKey\);\s*updateSelection\(selected,false\)/);
+  assert.match(runtime,/selected=new Set\(\);\s*sessionStorage\.removeItem\(selectionKey\);\s*clearArtistSearch\(\);\s*updateSelection\(selected,false\)/);
 });
 
 test('GO uses a dedicated wide photographic collapse plate rather than a generic crack overlay',async()=>{

@@ -80,6 +80,77 @@ export function pushHistory(history, slug, limit = SESSION_HISTORY_LIMIT) {
   return [slug, ...history].filter((value, index, all) => value && all.indexOf(value) === index).slice(0, limit);
 }
 
+export function normalizeArtistSearch(value) {
+  return String(value || '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g,'')
+    .toLocaleLowerCase('en')
+    .replace(/&/g,' and ')
+    .replace(/[^a-z0-9]+/g,' ')
+    .trim()
+    .replace(/\s+/g,' ');
+}
+
+function searchScore(artist, query) {
+  const name=normalizeArtistSearch(artist?.name || artist?.artistName);
+  const canonical=normalizeArtistSearch(artist?.normalizedName || artist?.canonicalName || name);
+  if(!name || !query)return -1;
+  if(name===query || canonical===query)return 1000;
+  if(name.startsWith(query) || canonical.startsWith(query))return 760-Math.min(180,name.length-query.length);
+  const queryWords=query.split(' ');
+  const nameWords=name.split(' ');
+  if(queryWords.every(word=>nameWords.some(candidate=>candidate.startsWith(word))))return 560-queryWords.length;
+  const position=name.indexOf(query);
+  return position>=0?360-position:-1;
+}
+
+export function searchLocalArtists(artists, value, limit = 6) {
+  const query=normalizeArtistSearch(value);
+  if(query.length<2)return [];
+  return (Array.isArray(artists)?artists:[])
+    .filter(artist=>artist?.status==='published'&&artist?.aquariumSlug)
+    .map(artist=>({artist,score:searchScore(artist,query)}))
+    .filter(item=>item.score>=0)
+    .sort((left,right)=>right.score-left.score||String(left.artist.name).localeCompare(String(right.artist.name)))
+    .slice(0,Math.max(1,limit))
+    .map(({artist})=>({
+      source:'library',
+      artistId:artist.id,
+      artistName:artist.name,
+      canonicalName:artist.normalizedName || artist.canonicalName || normalizeArtistSearch(artist.name),
+      bandcampArtistUrl:artist.bandcampArtistUrl,
+      location:artist.location || artist.primaryLocation || '',
+      context:[artist.release,(artist.waters||[]).map(value=>String(value).toUpperCase()).join(' + ')].filter(Boolean).join('  •  '),
+      aquariumSlug:artist.aquariumSlug,
+    }));
+}
+
+export function dedupeArtistResults(results, limit = 8) {
+  const seen=new Set();
+  const output=[];
+  for(const result of Array.isArray(results)?results:[]){
+    let key='';
+    try{key=new URL(result?.bandcampArtistUrl).hostname.toLowerCase().replace(/^www\./,'');}catch{}
+    key=key||normalizeArtistSearch(result?.artistName);
+    if(!key||seen.has(key))continue;
+    seen.add(key);output.push(result);
+    if(output.length>=limit)break;
+  }
+  return output;
+}
+
+export function highConfidenceArtistMatch(query, result) {
+  return Boolean(result)&&normalizeArtistSearch(query)===normalizeArtistSearch(result.artistName);
+}
+
+export function pickDifferentPlayableTrack(manifest, currentTrackId, recentTrackIds = [], cryptoApi = globalThis.crypto) {
+  const blocked=new Set([String(currentTrackId||''),...(recentTrackIds||[]).map(String)]);
+  const playable=(manifest?.tracks||[]).filter(track=>/^\d+$/.test(String(track.bandcampEmbedTrackId||''))&&validBandcampUrl(track.bandcampUrl));
+  const fresh=playable.filter(track=>!blocked.has(String(track.id||track.bandcampEmbedTrackId))&&!blocked.has(String(track.bandcampEmbedTrackId)));
+  const pool=fresh.length?fresh:recentTrackIds.length?[]:playable.filter(track=>String(track.bandcampEmbedTrackId)!==String(currentTrackId||''));
+  return pool[secureRandomIndex(pool.length,cryptoApi)]||null;
+}
+
 export function buildShareUrl(origin, base, slug, selection) {
   const url = new URL(`${base.replace(/\/$/,'')}/`, origin);
   url.searchParams.set('release', slug);

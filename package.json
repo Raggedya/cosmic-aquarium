@@ -9,6 +9,7 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "build:pages": "node --experimental-strip-types scripts/build-github-pages.mjs",
+    "catalogue:bulk-status": "python scripts/bulk_library_status.py",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "typecheck": "tsc --noEmit",

@@ -21,13 +21,29 @@
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-go-broken.webp">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-mobile.mp3">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-go-mobile.mp3">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=2c9f0c70e498">
-  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=2c9f0c70e498"></script>
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=7a91920ea541">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=7a91920ea541"></script>
 </head>
 <body>
   <main class="discovery-machine" data-base="/cosmic-aquarium" aria-label="Cosmic Aquaria independent music discovery machine">
     <section class="machine-screen selection-screen is-active" data-screen="selection" aria-labelledby="selection-title">
       <h1 id="selection-title" class="visually-hidden">Choose the kind of music you feel like hearing</h1>
+      <header class="selector-masthead" aria-label="Music discovery through Bandcamp">
+        <i class="masthead-bubble masthead-bubble--left" aria-hidden="true"></i>
+        <span class="bandcamp-wordmark"><i aria-hidden="true"></i>bandcamp</span>
+        <small>MUSIC WITHOUT BORDERS</small>
+        <i class="masthead-bubble masthead-bubble--right" aria-hidden="true"></i>
+        <button class="sound-toggle sound-toggle--selection" type="button" aria-pressed="true" aria-label="Glass sounds on. Press to turn them off.">SOUND ON</button>
+      </header>
+      <div class="artist-search" data-search-state="idle">
+        <label class="visually-hidden" for="artist-search-input">Search the Cosmic Aquaria artist library</label>
+        <span class="search-icon" aria-hidden="true"></span>
+        <input id="artist-search-input" type="search" inputmode="search" autocomplete="off" autocapitalize="words" spellcheck="false" maxlength="80" placeholder="SEARCH COSMIC AQUARIA" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="artist-search-results" aria-activedescendant="">
+        <span class="search-shimmer" aria-hidden="true"><i></i><i></i><i></i></span>
+        <button class="search-clear" type="button" aria-label="Clear artist search" hidden>×</button>
+        <div id="artist-search-results" class="search-results" role="listbox" aria-label="Cosmic Aquaria and optional Bandcamp artist results" hidden></div>
+        <p class="search-feedback" role="status" aria-live="polite"></p>
+      </div>
       <div class="selection-grid" role="group" aria-label="Music categories">
         <button class="glass-key" type="button" data-category="heavy" aria-pressed="false"><span>HEAVY</span><i class="crack-layer" aria-hidden="true"></i></button>
         <button class="glass-key" type="button" data-category="dreamy" aria-pressed="false"><span>DREAMY</span><i class="crack-layer" aria-hidden="true"></i></button>
@@ -38,13 +54,10 @@
         <button class="glass-key" type="button" data-category="strange" aria-pressed="false"><span>STRANGE</span><i class="crack-layer" aria-hidden="true"></i></button>
         <button class="glass-key" type="button" data-category="anything" aria-pressed="false"><span>ANYTHING</span><i class="crack-layer" aria-hidden="true"></i></button>
       </div>
-      <div class="bandcamp-bridge" aria-label="Music is played through Bandcamp">
-        <span class="signal signal--left" aria-hidden="true"></span><span class="bandcamp-wordmark"><i aria-hidden="true"></i>bandcamp</span><span class="signal signal--right" aria-hidden="true"></span>
-        <button class="sound-toggle sound-toggle--selection" type="button" aria-pressed="true" aria-label="Glass sounds on. Press to turn them off.">SOUND ON</button>
-      </div>
       <button class="go-key" type="button" disabled aria-disabled="true">
         <span class="go-line" aria-hidden="true"></span><strong>GO</strong><span class="go-line" aria-hidden="true"></span><i class="crack-layer" aria-hidden="true"></i>
       </button>
+      <footer class="selector-footer"><span></span><small>INDEPENDENT MUSIC FLOATS FURTHER</small><span></span></footer>
       <p class="visually-hidden machine-status" role="status" aria-live="polite">Choose one or more categories.</p>
     </section>
 

@@ -9,6 +9,7 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
+import urllib.error
 from email.utils import parsedate_to_datetime
 from html.parser import HTMLParser
 from pathlib import Path
@@ -100,11 +101,22 @@ def validate_bandcamp_url(value: str) -> str:
 
 def fetch_page(url: str) -> tuple[BandcampPageParser, str]:
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "text/html"})
-    with urllib.request.urlopen(request, timeout=25) as response:
-        if "text/html" not in (response.headers.get_content_type() or ""):
-            raise ValueError("Bandcamp did not return an HTML page")
-        body = response.read(4_000_000).decode(response.headers.get_content_charset() or "utf-8", "replace")
-        final_url = response.geturl()
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(request, timeout=25) as response:
+                if "text/html" not in (response.headers.get_content_type() or ""):
+                    raise ValueError("Bandcamp did not return an HTML page")
+                body = response.read(4_000_000).decode(response.headers.get_content_charset() or "utf-8", "replace")
+                final_url = response.geturl()
+            break
+        except urllib.error.HTTPError as error:
+            if error.code in {404, 410} or (error.code != 429 and error.code < 500) or attempt == 2:
+                raise
+            time.sleep(1.5 * (2**attempt))
+        except (urllib.error.URLError, TimeoutError):
+            if attempt == 2:
+                raise
+            time.sleep(1.5 * (2**attempt))
     parser = BandcampPageParser()
     parser.feed(body)
     return parser, final_url
@@ -171,6 +183,27 @@ def concise_bio(value: Any, artist: str = "") -> str:
     if len(text) > 180:
         text = text[:177].rsplit(" ", 1)[0].rstrip(" ,.;:") + "…"
     return text
+
+
+def metadata_bio(artist: str, tags: list[str], waters: list[str], location: str = "") -> str:
+    """Build a factual ticker fallback from stored metadata, never invented biography."""
+    useful = []
+    ignored = {"music", "independent", "bandcamp", *(water.casefold() for water in waters)}
+    for value in tags:
+        clean = " ".join(str(value or "").split()).strip(" -|•")
+        if clean and clean.casefold() not in ignored and clean.casefold() not in {item.casefold() for item in useful}:
+            useful.append(clean)
+        if len(useful) >= 3:
+            break
+    style = " / ".join(useful) if useful else " + ".join(water.upper() for water in waters)
+    place = " ".join(str(location or "").split())
+    if style and place:
+        return concise_bio(f"{artist.strip()} — {style} music from {place}.")
+    if style:
+        return concise_bio(f"{artist.strip()} — {style} music in Cosmic Aquaria.")
+    if place:
+        return concise_bio(f"Independent music from {place}.")
+    return concise_bio(f"{artist.strip()} — independent artist in Cosmic Aquaria.")
 
 
 def location_from_json_ld(parser: BandcampPageParser) -> str:
@@ -372,6 +405,8 @@ def create_artist(
     assigned_waters = valid_waters(waters) or classify_waters(
         merged_tags, f"{artist} {release_title}", f"{artist}:{release_title}:{resolved_url}"
     )
+    stored_location = " ".join(primary_location.split()) or discovered_location or None
+    stored_bio = discovered_bio or metadata_bio(artist, merged_tags, assigned_waters, stored_location or "")
     manifest = {
         "schemaVersion": 1,
         "slug": slug,
@@ -382,8 +417,9 @@ def create_artist(
         "dailyBatchId": batch_id or None,
         "status": "published",
         "metadataTags": merged_tags,
-        "primaryLocation": " ".join(primary_location.split()) or discovered_location or None,
-        "bioShort": discovered_bio or None,
+        "primaryLocation": stored_location,
+        "bioShort": stored_bio,
+        "bioSource": "bandcamp-description" if discovered_bio else "metadata-derived",
         "waters": assigned_waters,
         "commerceAvailable": commerce_available,
         "commerceUrl": commerce_url,

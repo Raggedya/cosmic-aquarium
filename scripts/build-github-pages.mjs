@@ -195,6 +195,19 @@ for(const water of ['heavy','dreamy','quiet','electronic','dark','loud','strange
   for(const artist of canonicalArtists.filter(item=>(item.waters||[]).includes(water))) artist.memberships.push({id:collection.id,slug,name:collection.name,type:'genre',status:'published'});
 }
 await fs.writeFile(path.join(pages,'artists-index.json'),JSON.stringify({schemaVersion:2,generatedAt:new Date().toISOString(),artists:canonicalArtists},null,2)+'\n');
+const artistSearchIndex=canonicalArtists.filter(artist=>artist.status==='published').map(artist=>({
+  id:artist.id,
+  name:artist.name,
+  normalizedName:artist.canonicalName,
+  location:artist.primaryLocation||null,
+  waters:artist.waters||[],
+  aliases:[],
+  aquariumSlug:artist.aquariumSlug,
+  bandcampArtistUrl:artist.bandcampArtistUrl,
+  release:artist.release||null,
+  status:'published',
+}));
+await fs.writeFile(path.join(pages,'artist-search-index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:artistSearchIndex},null,2)+'\n');
 await fs.writeFile(path.join(pages,'collections','index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),collections:collectionRegistry},null,2)+'\n');
 const now=new Date();
 const today=now.toISOString().slice(0,10);

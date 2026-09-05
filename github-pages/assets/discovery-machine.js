@@ -2,6 +2,7 @@ import {
   CRACK_VARIANTS, GO_HOLD_MS, DESTRUCTION_MS, SESSION_HISTORY_LIMIT,
   nextSelection, normalizeSelection, chooseRelease, pushHistory, buildShareUrl,
   buildTickerMessages, validBandcampUrl, pickPlayableTrack, artistIdentity,
+  searchLocalArtists, dedupeArtistResults, highConfidenceArtistMatch, pickDifferentPlayableTrack,
 } from './discovery-machine-core.js';
 
 const machine = document.querySelector('.discovery-machine');
@@ -17,6 +18,11 @@ const buyLink = document.querySelector('[data-action="buy"]');
 const nextButton = document.querySelector('[data-action="next"]');
 const changeButton = document.querySelector('.change-categories');
 const soundToggles = [...document.querySelectorAll('.sound-toggle')];
+const artistSearch = document.querySelector('.artist-search');
+const artistSearchInput = document.querySelector('#artist-search-input');
+const searchClear = document.querySelector('.search-clear');
+const searchResultsPanel = document.querySelector('#artist-search-results');
+const searchFeedback = document.querySelector('.search-feedback');
 const tickerTrack = document.querySelector('.ticker-track');
 const tickerStream = document.querySelector('.ticker-stream');
 const tickerCopies = [...document.querySelectorAll('.ticker-copy')];
@@ -63,6 +69,18 @@ let meterChannels = [
   {level:0,velocity:0,target:0,angle:-58,peak:0},
 ];
 let bandcampFrameFocused = false;
+let artists=[];
+let searchQuery='';
+let searchResults=[];
+let selectedSearchArtist=null;
+let selectorMode='GENRE_IDLE';
+let searchTimer=0;
+let searchRequestSerial=0;
+let searchAbortController=null;
+let searchActiveIndex=-1;
+let playerDiscoveryMode='genre';
+let currentSearchContext=null;
+let searchTrackHistory=[];
 let tickerQueue = [];
 let tickerLayoutFrame = 0;
 
@@ -558,7 +576,143 @@ function playGlassDisintegration() {
   }catch{}
 }
 
+function isSearchMode(){return searchQuery.trim().length>0;}
+
+function setSelectorMode(mode){
+  selectorMode=mode;
+  selectionScreen.dataset.mode=mode;
+}
+
+function setSearchState(state,feedback=''){
+  artistSearch?.setAttribute('data-search-state',state);
+  if(searchFeedback)searchFeedback.textContent=feedback;
+}
+
+function refreshGoState(){
+  const searchReady=isSearchMode()&&catalogue.length>0;
+  const genreReady=!isSearchMode()&&selected.size>0&&catalogue.length>0;
+  const ready=(searchReady||genreReady)&&!isLocked;
+  goButton.disabled=!ready;
+  goButton.setAttribute('aria-disabled',String(!ready));
+}
+
+function setSearchMode(active){
+  selectionScreen.classList.toggle('is-search-mode',active);
+  for(const button of categoryButtons){
+    button.disabled=active;
+    button.setAttribute('aria-disabled',String(active));
+  }
+  if(active&&selected.size){
+    selected=new Set();
+    sessionStorage.removeItem(selectionKey);
+    for(const button of categoryButtons){button.classList.remove('is-selected');button.setAttribute('aria-pressed','false');}
+  }
+  setSelectorMode(active?(selectedSearchArtist?'SEARCH_SELECTED':'SEARCH_TYPING'):(selected.size?'GENRE_SELECTED':'GENRE_IDLE'));
+  refreshGoState();
+}
+
+function closeSearchResults(){
+  searchActiveIndex=-1;
+  if(searchResultsPanel){searchResultsPanel.hidden=true;searchResultsPanel.replaceChildren();}
+  artistSearchInput?.setAttribute('aria-expanded','false');
+  artistSearchInput?.setAttribute('aria-activedescendant','');
+}
+
+function renderSearchResults(results,feedback=''){
+  searchResults=dedupeArtistResults(results,8);
+  searchActiveIndex=-1;
+  if(!searchResultsPanel)return;
+  searchResultsPanel.replaceChildren();
+  for(const [index,result] of searchResults.entries()){
+    const option=document.createElement('button');
+    option.type='button';option.className='search-result';option.id=`artist-result-${index}`;option.role='option';
+    option.setAttribute('aria-selected','false');option.dataset.index=String(index);
+    const name=document.createElement('strong');name.textContent=result.artistName;
+    const context=document.createElement('small');context.textContent=[result.location,result.context].filter(Boolean).join('  •  ')||'ARTIST';
+    const source=document.createElement('em');source.textContent=result.source==='library'?'IN COSMIC AQUARIA':'ON BANDCAMP';
+    option.append(name,context,source);
+    option.addEventListener('click',()=>selectSearchResult(index));
+    searchResultsPanel.append(option);
+  }
+  const visible=searchResults.length>0;
+  searchResultsPanel.hidden=!visible;
+  artistSearchInput?.setAttribute('aria-expanded',String(visible));
+  setSearchState(selectedSearchArtist?'selected':'idle',feedback);
+}
+
+function selectSearchResult(index){
+  const result=searchResults[index];
+  if(!result)return;
+  selectedSearchArtist=result;
+  searchQuery=result.artistName;
+  artistSearchInput.value=result.artistName;
+  searchClear.hidden=false;
+  closeSearchResults();
+  setSearchMode(true);
+  setSearchState('selected','');
+  machineStatus.textContent=`${result.artistName} selected. Press GO.`;
+  refreshGoState();
+}
+
+function setActiveSearchResult(index){
+  if(!searchResults.length)return;
+  searchActiveIndex=(index+searchResults.length)%searchResults.length;
+  for(const [itemIndex,element] of [...searchResultsPanel.children].entries()){
+    const active=itemIndex===searchActiveIndex;
+    element.classList.toggle('is-active',active);element.setAttribute('aria-selected',String(active));
+  }
+  const activeElement=searchResultsPanel.children[searchActiveIndex];
+  artistSearchInput.setAttribute('aria-activedescendant',activeElement?.id||'');
+  activeElement?.scrollIntoView({block:'nearest'});
+}
+
+async function runArtistSearch(query,serial){
+  const local=searchLocalArtists(artists,query,6);
+  if(serial!==searchRequestSerial||query!==searchQuery)return;
+  renderSearchResults(local,local.length?'CHOOSE AN ARTIST':'NOT YET IN COSMIC AQUARIA');
+  setSearchState(selectedSearchArtist?'selected':'idle',local.length?'':'NOT YET IN COSMIC AQUARIA');
+}
+
+function onSearchInput(){
+  const next=artistSearchInput.value.slice(0,80);
+  searchQuery=next;
+  if(selectedSearchArtist&&selectedSearchArtist.artistName!==next)selectedSearchArtist=null;
+  searchClear.hidden=!next;
+  clearTimeout(searchTimer);searchRequestSerial+=1;searchAbortController?.abort();
+  const active=next.trim().length>0;
+  setSearchMode(active);
+  if(!active){selectedSearchArtist=null;closeSearchResults();setSearchState('idle','');machineStatus.textContent='Choose one or more categories.';return;}
+  if(next.trim().length<2){closeSearchResults();setSearchState('idle','KEEP TYPING');machineStatus.textContent='Enter at least two characters to search.';return;}
+  const local=searchLocalArtists(artists,next,6);
+  renderSearchResults(local,local.length?'COSMIC AQUARIA RESULTS':'');
+  const serial=searchRequestSerial;
+  searchTimer=setTimeout(()=>void runArtistSearch(next.trim(),serial),320);
+  machineStatus.textContent='Search mode. Choose an artist in Cosmic Aquaria, then press GO.';
+}
+
+function clearArtistSearch({focus=false}={}){
+  clearTimeout(searchTimer);searchRequestSerial+=1;searchAbortController?.abort();
+  searchQuery='';searchResults=[];selectedSearchArtist=null;searchActiveIndex=-1;
+  if(artistSearchInput)artistSearchInput.value='';
+  if(searchClear)searchClear.hidden=true;
+  closeSearchResults();setSearchState('idle','');setSearchMode(false);
+  machineStatus.textContent='Choose one or more categories.';
+  if(focus)artistSearchInput?.focus({preventScroll:true});
+}
+
+function onSearchKeydown(event){
+  if(event.key==='ArrowDown'){event.preventDefault();setActiveSearchResult(searchActiveIndex+1);}
+  else if(event.key==='ArrowUp'){event.preventDefault();setActiveSearchResult(searchActiveIndex-1);}
+  else if(event.key==='Enter'){
+    event.preventDefault();
+    if(searchActiveIndex>=0)selectSearchResult(searchActiveIndex);
+    else if(searchResults.length===1||highConfidenceArtistMatch(searchQuery,searchResults[0]))selectSearchResult(0);
+    else {renderSearchResults(searchResults,'CHOOSE AN ARTIST');}
+  }else if(event.key==='Escape'){event.preventDefault();clearArtistSearch({focus:true});}
+}
+
 function updateSelection(next, announce = true) {
+  if(isSearchMode())next=[];
   selected = new Set(normalizeSelection(next));
   sessionStorage.setItem(selectionKey,JSON.stringify([...selected]));
   for (const button of categoryButtons) {
@@ -566,14 +720,12 @@ function updateSelection(next, announce = true) {
     button.classList.toggle('is-selected',active);
     button.setAttribute('aria-pressed',String(active));
   }
-  const ready = selected.size > 0 && catalogue.length > 0 && !isLocked;
-  goButton.disabled = !ready;
-  goButton.setAttribute('aria-disabled',String(!ready));
+  refreshGoState();
   if (announce) machineStatus.textContent = selected.size ? `${[...selected].map(value=>value.toUpperCase()).join(', ')} selected.` : 'Choose one or more categories.';
 }
 
 function onCategory(event) {
-  if (isLocked) return;
+  if (isLocked || isSearchMode() || event.currentTarget.disabled) return;
   const category = event.currentTarget.dataset.category;
   const wasSelected = selected.has(category);
   updateSelection(nextSelection(selected,category));
@@ -610,6 +762,34 @@ async function resolveDiscovery(preferred = null) {
     catch (error) { recordEvent('track_selected',entry.slug,{result:'skipped',reason:String(error?.message||error)}); }
   }
   throw new Error('No playable release is currently available for this selection.');
+}
+
+async function resolveSearchArtist(result,{excludeReleaseId='',preferredReleaseId='',preferredReleaseType=''}={}){
+  if(result?.source==='library'){
+    const entry=catalogue.find(item=>item.slug===result.aquariumSlug&&item.status==='published');
+    if(!entry)throw new Error('This library artist is temporarily unavailable.');
+    return {entry,manifest:await fetchManifest(entry),search:{source:'library',artistId:result.artistId,artistName:result.artistName,bandcampArtistUrl:result.bandcampArtistUrl}};
+  }
+  if(!isSearchMode())setSelectorMode(selected.size?'GENRE_SELECTED':'GENRE_IDLE');
+  if(!/^\d+$/.test(String(result?.bandId||''))||!validBandcampUrl(result?.bandcampArtistUrl))throw new Error('Choose a valid Bandcamp artist.');
+  const params=new URLSearchParams({band_id:String(result.bandId),artist_url:result.bandcampArtistUrl});
+  if(excludeReleaseId)params.set('exclude_release',String(excludeReleaseId));
+  if(preferredReleaseId){params.set('release_id',String(preferredReleaseId));params.set('release_type',preferredReleaseType==='track'?'t':'a');}
+  const response=await fetch(`${workerBase}/api/search/artist?${params}`,{credentials:'omit'});
+  if(!response.ok)throw new Error(response.status===404?'No playable Bandcamp release was found for this artist.':'Bandcamp search is temporarily unavailable.');
+  const payload=await response.json();
+  if(!payload?.entry||!payload?.manifest||!pickPlayableTrack(payload.manifest))throw new Error('No playable Bandcamp release was found for this artist.');
+  return payload;
+}
+
+async function resolveSelectedSearchArtist(){
+  let result=selectedSearchArtist;
+  if(!result){
+    const exact=searchResults.find(candidate=>highConfidenceArtistMatch(searchQuery,candidate));
+    if(exact)result=exact;
+  }
+  if(!result){renderSearchResults(searchResults,'CHOOSE AN ARTIST');throw new Error('Choose an artist from the search results.');}
+  return resolveSearchArtist(result);
 }
 
 function formatDuration(value) {
@@ -860,8 +1040,8 @@ function setTickerQueue(messages) {
   layoutTicker();
 }
 
-function populatePlayer(entry, manifest) {
-  const track = pickPlayableTrack(manifest);
+function populatePlayer(entry, manifest, {trackOverride=null}={}) {
+  const track = trackOverride || pickPlayableTrack(manifest);
   if (!track) throw new Error('no_playable_track');
   currentEntry=entry; currentManifest=manifest; currentTrack=track;
   const artistEntry = artistsById.get(entry.canonicalArtistId) || {};
@@ -877,16 +1057,28 @@ function populatePlayer(entry, manifest) {
   buyLink.setAttribute('aria-label',`Buy ${manifest.releaseTitle || 'this release'} by ${manifest.artist} on Bandcamp`);
   shareButton.setAttribute('aria-label',`Share ${manifest.releaseTitle || track.title} by ${manifest.artist}`);
   setMeterSeed(track.id || track.bandcampEmbedTrackId,entry.waters?.length?entry.waters:[...selected]);
+  if(playerDiscoveryMode==='search')searchTrackHistory=pushHistory(searchTrackHistory,String(track.id||track.bandcampEmbedTrackId),Math.max(20,manifest.tracks?.length||20));
   const history = pushHistory(readJson(historyKey,[]),entry.slug,SESSION_HISTORY_LIMIT);
   sessionStorage.setItem(historyKey,JSON.stringify(history));
   const artistHistory = pushHistory(readJson(artistHistoryKey,[]),artistIdentity(entry),SESSION_HISTORY_LIMIT);
   sessionStorage.setItem(artistHistoryKey,JSON.stringify(artistHistory));
   playerStatus.textContent = `${track.title}, from ${manifest.releaseTitle}, by ${manifest.artist}, is ready. Use the official Bandcamp play control to listen.`;
-  recordEvent('track_selected',entry.slug,{result:'loaded',release:manifest.releaseTitle,categories:[...selected]});
+  recordEvent('track_selected',entry.slug,{result:'loaded',release:manifest.releaseTitle,categories:[...selected],mode:playerDiscoveryMode});
 }
 
 function playerUrl(entry = currentEntry) {
-  return buildShareUrl(location.origin,base,entry.slug,[...selected]);
+  if(playerDiscoveryMode==='search'&&currentSearchContext?.source==='bandcamp'){
+    const url=new URL(`${base.replace(/\/$/,'')}/`,location.origin);
+    url.searchParams.set('searchBand',String(currentSearchContext.bandId));
+    url.searchParams.set('searchUrl',currentSearchContext.bandcampArtistUrl);
+    if(currentSearchContext.releaseId)url.searchParams.set('searchRelease',String(currentSearchContext.releaseId));
+    if(currentSearchContext.releaseType)url.searchParams.set('searchType',currentSearchContext.releaseType);
+    if(currentTrack?.bandcampEmbedTrackId)url.searchParams.set('track',String(currentTrack.bandcampEmbedTrackId));
+    return url.toString();
+  }
+  const url=new URL(buildShareUrl(location.origin,base,entry.slug,[...selected]));
+  if(playerDiscoveryMode==='search'&&currentSearchContext?.source==='library')url.searchParams.set('searchArtist',currentSearchContext.artistId);
+  return url.toString();
 }
 
 function showPlayer({push=true}={}) {
@@ -912,8 +1104,10 @@ function showSelection({historyMode='push'}={}) {
   selectionScreen.setAttribute('aria-hidden','false');
   bandcampFrame.src='about:blank';
   currentEntry=currentManifest=currentTrack=null;
+  playerDiscoveryMode='genre';currentSearchContext=null;searchTrackHistory=[];
   selected=new Set();
   sessionStorage.removeItem(selectionKey);
+  clearArtistSearch();
   updateSelection(selected,false);
   const target = `${base.replace(/\/$/,'')}/`;
   if (historyMode==='push') history.pushState({view:'selection'},'',target);
@@ -969,18 +1163,30 @@ function disintegrate() {
 function delay(ms){return new Promise(resolve=>setTimeout(resolve,ms));}
 
 async function onGo() {
-  if (isLocked || !selected.size || !catalogue.length) return;
-  isLocked=true; updateSelection(selected,false); goButton.classList.add('is-broken'); playGlassBreak('go');
+  const searchMode=isSearchMode();
+  if (isLocked || (!searchMode&&!selected.size) || !catalogue.length) return;
+  isLocked=true; setSelectorMode('TRANSITIONING'); updateSelection(selected,false); setSelectorMode('TRANSITIONING'); goButton.classList.add('is-broken'); playGlassBreak('go');
   machineStatus.textContent='The glass is giving way.';
-  recordEvent('doorway_open','discovery-machine',{source:'go_pressed',selection:[...selected]});
-  const discovery=resolveDiscovery();
+  recordEvent('doorway_open','discovery-machine',{source:'go_pressed',selection:[...selected],mode:searchMode?'search':'genre',artist:selectedSearchArtist?.artistName||null});
+  const discovery=searchMode?resolveSelectedSearchArtist():resolveDiscovery();
   const [,result]=await Promise.all([delay(GO_HOLD_MS),discovery]).catch(error=>[null,{error}]);
-  if(result?.error){isLocked=false;goButton.classList.remove('is-broken');updateSelection(selected,false);machineStatus.textContent=result.error.message;return;}
+  if(result?.error){isLocked=false;goButton.classList.remove('is-broken');updateSelection(selected,false);setSearchMode(searchMode);machineStatus.textContent=result.error.message;return;}
+  playerDiscoveryMode=searchMode?'search':'genre';
+  currentSearchContext=searchMode?{
+    source:result.search?.source||selectedSearchArtist?.source,
+    artistId:result.search?.artistId||selectedSearchArtist?.artistId,
+    artistName:result.search?.artistName||selectedSearchArtist?.artistName,
+    bandcampArtistUrl:result.search?.bandcampArtistUrl||selectedSearchArtist?.bandcampArtistUrl,
+    bandId:result.search?.bandId||selectedSearchArtist?.bandId,
+    releaseId:result.search?.releaseId||null,
+    releaseType:result.search?.releaseType||null,
+  }:null;
+  searchTrackHistory=[];
   populatePlayer(result.entry,result.manifest);
   playGlassDisintegration();
   await disintegrate();
   isLocked=false;
-  recordEvent('doorway_to_aquarium_transition',result.entry.slug,{selection:[...selected],transition:'disintegration'});
+  recordEvent('doorway_to_aquarium_transition',result.entry.slug,{selection:[...selected],transition:'disintegration',mode:playerDiscoveryMode});
 }
 
 async function onNext() {
@@ -989,9 +1195,23 @@ async function onNext() {
   const previousSlug=currentEntry.slug;
   recordEvent('explore_click',previousSlug,{selection:[...selected]});
   try {
-    const result=await resolveDiscovery();
+    let result;
+    let trackOverride=null;
+    if(playerDiscoveryMode==='search'){
+      trackOverride=pickDifferentPlayableTrack(currentManifest,currentTrack?.bandcampEmbedTrackId,searchTrackHistory);
+      if(trackOverride)result={entry:currentEntry,manifest:currentManifest};
+      else if(currentSearchContext?.source==='library'){
+        const alternatives=catalogue.filter(entry=>entry.status==='published'&&entry.canonicalArtistId===currentSearchContext.artistId&&entry.slug!==currentEntry.slug);
+        const nextEntry=alternatives.find(entry=>!searchTrackHistory.includes(entry.slug))||alternatives[0];
+        if(nextEntry)result={entry:nextEntry,manifest:await fetchManifest(nextEntry)};
+        else throw new Error('No other playable track by this artist is currently available.');
+      }else{
+        result=await resolveSearchArtist(currentSearchContext,{excludeReleaseId:currentSearchContext.releaseId});
+        currentSearchContext={...currentSearchContext,...result.search};
+      }
+    }else result=await resolveDiscovery();
     await delay(reducedMotion.matches?0:260);
-    populatePlayer(result.entry,result.manifest);
+    populatePlayer(result.entry,result.manifest,{trackOverride});
     history.replaceState({view:'player'},'',playerUrl(result.entry));
     recordEvent('aquarium_transition',result.entry.slug,{sourceAquariumId:previousSlug,destinationAquariumId:result.entry.slug,selection:[...selected]});
   } catch(error) { playerStatus.textContent=error.message; }
@@ -1010,13 +1230,22 @@ async function onShare() {
 
 async function loadInitialData() {
   const [catalogueResponse,artistsResponse,statsResponse]=await Promise.all([
-    fetch(`${base}/aquariums.json`,{cache:'no-store'}),fetch(`${base}/artists-index.json`,{cache:'no-store'}).catch(()=>null),fetch(`${base}/universe-stats.json`,{cache:'no-store'}).catch(()=>null),
+    fetch(`${base}/aquariums.json`,{cache:'no-store'}),fetch(`${base}/artist-search-index.json`,{cache:'no-store'}).catch(()=>null),fetch(`${base}/universe-stats.json`,{cache:'no-store'}).catch(()=>null),
   ]);
   if(!catalogueResponse.ok) throw new Error('The Cosmic Aquaria library could not be opened.');
   catalogue=(await catalogueResponse.json()).aquariums || [];
-  if(artistsResponse?.ok){const data=await artistsResponse.json();artistsById=new Map((data.artists||[]).map(artist=>[artist.id,artist]));}
+  if(artistsResponse?.ok){const data=await artistsResponse.json();artists=data.artists||[];artistsById=new Map(artists.map(artist=>[artist.id,artist]));}
   if(statsResponse?.ok)universeStats=await statsResponse.json();
   const params=new URLSearchParams(location.search);
+  const searchBand=params.get('searchBand');
+  const searchUrl=params.get('searchUrl');
+  if(/^\d+$/.test(searchBand||'')&&validBandcampUrl(searchUrl)){
+    const searched={source:'bandcamp',bandId:searchBand,bandcampArtistUrl:searchUrl,artistName:'Bandcamp artist'};
+    const result=await resolveSearchArtist(searched,{preferredReleaseId:params.get('searchRelease')||'',preferredReleaseType:params.get('searchType')||''});
+    playerDiscoveryMode='search';currentSearchContext={...searched,...result.search};searchTrackHistory=[];
+    const preferredTrack=(result.manifest.tracks||[]).find(track=>String(track.bandcampEmbedTrackId)===params.get('track'))||null;
+    populatePlayer(result.entry,result.manifest,{trackOverride:preferredTrack});showPlayer({push:false});history.replaceState({view:'player'},'',playerUrl(result.entry));return;
+  }
   const requestedSelection=normalizeSelection((params.get('categories')||'').split(',').filter(Boolean));
   // A normal homepage entry is always pristine. Only an explicit deep link may
   // arrive with a category selection; session state is retained solely while
@@ -1025,20 +1254,38 @@ async function loadInitialData() {
   const requested=params.get('release');
   if(requested){
     const entry=catalogue.find(item=>item.slug===requested&&item.status==='published');
-    if(entry){if(!selected.size)selected=new Set(entry.waters?.length?entry.waters:['anything']);updateSelection(selected,false);const result=await resolveDiscovery(entry);populatePlayer(result.entry,result.manifest);showPlayer({push:false});history.replaceState({view:'player'},'',playerUrl(result.entry));return;}
+    if(entry){
+      const searchedArtist=params.get('searchArtist');
+      if(searchedArtist&&searchedArtist===entry.canonicalArtistId){playerDiscoveryMode='search';currentSearchContext={source:'library',artistId:searchedArtist,artistName:entry.artist,bandcampArtistUrl:entry.canonicalBandcampUrl||entry.bandcampUrl};}
+      else {if(!selected.size)selected=new Set(entry.waters?.length?entry.waters:['anything']);updateSelection(selected,false);}
+      const result=await resolveDiscovery(entry);populatePlayer(result.entry,result.manifest);showPlayer({push:false});history.replaceState({view:'player'},'',playerUrl(result.entry));return;
+    }
   }
+  clearArtistSearch();
   history.replaceState({view:'selection'},'',`${base.replace(/\/$/,'')}/`);
 }
 
 async function restoreLocation() {
   const params=new URLSearchParams(location.search);
+  const searchBand=params.get('searchBand');
+  const searchUrl=params.get('searchUrl');
+  if(/^\d+$/.test(searchBand||'')&&validBandcampUrl(searchUrl)){
+    try{
+      const searched={source:'bandcamp',bandId:searchBand,bandcampArtistUrl:searchUrl,artistName:'Bandcamp artist'};
+      const result=await resolveSearchArtist(searched,{preferredReleaseId:params.get('searchRelease')||'',preferredReleaseType:params.get('searchType')||''});
+      playerDiscoveryMode='search';currentSearchContext={...searched,...result.search};searchTrackHistory=[];
+      const preferredTrack=(result.manifest.tracks||[]).find(track=>String(track.bandcampEmbedTrackId)===params.get('track'))||null;
+      populatePlayer(result.entry,result.manifest,{trackOverride:preferredTrack});showPlayer({push:false});return;
+    }catch{showSelection({historyMode:'replace'});return;}
+  }
   const slug=params.get('release');
   if(!slug){showSelection({historyMode:'none'});return;}
   const entry=catalogue.find(item=>item.slug===slug&&item.status==='published');
   if(!entry){showSelection({historyMode:'replace'});return;}
   const requestedSelection=normalizeSelection((params.get('categories')||'').split(',').filter(Boolean));
-  selected=new Set(requestedSelection.length?requestedSelection:(entry.waters?.length?entry.waters:['anything']));
-  updateSelection(selected,false);
+  const searchedArtist=params.get('searchArtist');
+  if(searchedArtist&&searchedArtist===entry.canonicalArtistId){playerDiscoveryMode='search';currentSearchContext={source:'library',artistId:searchedArtist,artistName:entry.artist,bandcampArtistUrl:entry.canonicalBandcampUrl||entry.bandcampUrl};selected=new Set();}
+  else {playerDiscoveryMode='genre';currentSearchContext=null;selected=new Set(requestedSelection.length?requestedSelection:(entry.waters?.length?entry.waters:['anything']));updateSelection(selected,false);}
   try{const manifest=await fetchManifest(entry);populatePlayer(entry,manifest);showPlayer({push:false});}
   catch{showSelection({historyMode:'replace'});}
 }
@@ -1051,6 +1298,11 @@ updateSoundControls();
 document.addEventListener('pointerdown',()=>void activateGlassAudio(),{capture:true,passive:true});
 document.addEventListener('keydown',()=>void activateGlassAudio(),{capture:true});
 for(const button of categoryButtons) button.addEventListener('click',onCategory);
+artistSearchInput.addEventListener('input',onSearchInput);
+artistSearchInput.addEventListener('keydown',onSearchKeydown);
+artistSearchInput.addEventListener('focus',()=>{if(searchResults.length)renderSearchResults(searchResults);});
+searchClear.addEventListener('click',()=>clearArtistSearch({focus:true}));
+document.addEventListener('pointerdown',event=>{if(!artistSearch?.contains(event.target))closeSearchResults();},{passive:true});
 goButton.addEventListener('click',()=>void onGo());
 nextButton.addEventListener('click',()=>void onNext());
 shareButton.addEventListener('click',()=>void onShare());
@@ -1080,6 +1332,11 @@ window.CosmicGlassAudio=Object.freeze({
 window.CosmicVuMeters=Object.freeze({
   setPlaying:setMeterPlayback,
   getState(){return {playback:meterPlaybackActive?'playing':'idle',source:'procedural-transport-coupled',elapsed:meterPlayElapsed,leftAngle:meterChannels[0].angle,rightAngle:meterChannels[1].angle,leftLevel:meterChannels[0].level,rightLevel:meterChannels[1].level,leftTarget:meterChannels[0].target,rightTarget:meterChannels[1].target,leftVelocity:meterChannels[0].velocity,rightVelocity:meterChannels[1].velocity,category:meterProfile?.category||'anything'};},
+});
+
+window.CosmicArtistSearch=Object.freeze({
+  clear:clearArtistSearch,
+  getState(){return {query:searchQuery,mode:selectorMode,selected:selectedSearchArtist?{...selectedSearchArtist}:null,resultCount:searchResults.length,playerMode:playerDiscoveryMode,context:currentSearchContext?{...currentSearchContext}:null};},
 });
 
 recordEvent('session_start','discovery-machine',{product:'two-screen-discovery'});
