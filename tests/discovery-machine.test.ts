@@ -4,7 +4,7 @@ import test from 'node:test';
 import {
   CATEGORIES, CRACK_VARIANTS, GO_HOLD_MS, SESSION_HISTORY_LIMIT,
   nextSelection, normalizeSelection, eligibleReleases, chooseRelease,
-  pushHistory, buildShareUrl, buildTickerFacts, validBandcampUrl, pickPlayableTrack,
+  pushHistory, buildShareUrl, buildTickerFacts, validBandcampUrl, pickPlayableTrack, artistIdentity,
 } from '../github-pages/assets/discovery-machine-core.js';
 import { classifyWaters, validWaters, WATERS } from '../scripts/water-classifier.mjs';
 
@@ -16,6 +16,7 @@ const catalogue = [
   {slug:'quiet-one',status:'published',bandcampUrl:'https://three.bandcamp.com/album/c',waters:['quiet']},
   {slug:'inactive',status:'disabled',bandcampUrl:'https://four.bandcamp.com/album/d',waters:['heavy']},
   {slug:'broken',status:'published',bandcampUrl:null,waters:['heavy']},
+  {slug:'mock-url',status:'published',bandcampUrl:'https://example.test/fake',waters:['heavy']},
 ];
 
 test('the listener has exactly eight canonical category controls and two screens', async () => {
@@ -55,6 +56,31 @@ test('session history prevents immediate repeats and is bounded',()=>{
   const result=pushHistory(history,'new-release');
   assert.equal(result.length,SESSION_HISTORY_LIMIT);
   assert.equal(result[0],'new-release');
+});
+
+test('discovery selects an artist first so large discographies cannot dominate',()=>{
+  const artistWeightedCatalogue=[
+    {slug:'large-1',canonicalArtistId:'artist:large',status:'published',bandcampUrl:'https://large.bandcamp.com/album/1',waters:['dark']},
+    {slug:'large-2',canonicalArtistId:'artist:large',status:'published',bandcampUrl:'https://large.bandcamp.com/album/2',waters:['dark']},
+    {slug:'large-3',canonicalArtistId:'artist:large',status:'published',bandcampUrl:'https://large.bandcamp.com/album/3',waters:['dark']},
+    {slug:'small-1',canonicalArtistId:'artist:small',status:'published',bandcampUrl:'https://small.bandcamp.com/album/1',waters:['dark']},
+  ];
+  const picks=[0,0];
+  const firstArtistThenRelease={getRandomValues:(value:Uint32Array)=>{value[0]=picks.shift()??0;return value;}} as Crypto;
+  assert.equal(chooseRelease(artistWeightedCatalogue,['dark'],[],firstArtistThenRelease)?.slug,'large-1');
+  const skipLargeArtist={getRandomValues:(value:Uint32Array)=>{value[0]=0;return value;}} as Crypto;
+  assert.equal(chooseRelease(artistWeightedCatalogue,['dark'],[],skipLargeArtist,['artist:large'])?.slug,'small-1');
+  assert.equal(artistIdentity(artistWeightedCatalogue[0]),'artist:large');
+});
+
+test('the production catalogue contains only real playable Bandcamp records',async()=>{
+  const registry=JSON.parse(await read('github-pages/aquariums.json')).aquariums;
+  assert.ok(registry.length>=200);
+  assert.ok(registry.every((entry:{artist:string;release:string;status:string;bandcampUrl:string;canonicalArtistId:string})=>entry.artist&&entry.release&&entry.status==='published'&&validBandcampUrl(entry.bandcampUrl)&&entry.canonicalArtistId));
+  for(const entry of registry){
+    const manifest=JSON.parse(await read(`github-pages/artists/${entry.slug}.json`));
+    assert.ok(pickPlayableTrack(manifest),`${entry.slug} must expose at least one lawful playable track`);
+  }
 });
 
 test('crack geometry is deterministic and not universally identical',()=>{
@@ -263,6 +289,18 @@ test('reduced motion, mobile containment and browser history are explicit',async
   assert.match(runtime,/popstate/);
   assert.match(runtime,/history\.pushState/);
   assert.match(runtime,/document\.hidden/);
+});
+
+test('mobile viewport is edge-to-edge emerald with safe-area-aware controls',async()=>{
+  const [template,css,manifest]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css'),read('public/discovery.webmanifest')]);
+  assert.match(template,/viewport-fit=cover/);
+  assert.match(template,/rel="manifest"/);
+  assert.match(css,/html, body[^}]+background: #001807/);
+  assert.match(css,/@media \(max-width:768px\)[\s\S]{0,260}\.discovery-machine \{ position:fixed; inset:0; width:100vw; height:100vh; height:100svh; height:100dvh/);
+  assert.match(css,/env\(safe-area-inset-top,0px\)/);
+  const parsed=JSON.parse(manifest);
+  assert.equal(parsed.display,'standalone');
+  assert.equal(parsed.background_color,'#001807');
 });
 
 test('legacy artist and collection routes redirect into the canonical root',async()=>{

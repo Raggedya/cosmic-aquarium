@@ -1,7 +1,7 @@
 import {
   CRACK_VARIANTS, GO_HOLD_MS, DESTRUCTION_MS, SESSION_HISTORY_LIMIT,
   nextSelection, normalizeSelection, chooseRelease, pushHistory, buildShareUrl,
-  buildTickerFacts, validBandcampUrl, pickPlayableTrack,
+  buildTickerFacts, validBandcampUrl, pickPlayableTrack, artistIdentity,
 } from './discovery-machine-core.js';
 
 const machine = document.querySelector('.discovery-machine');
@@ -23,6 +23,7 @@ const context = canvas?.getContext('2d');
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const workerBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
 const historyKey = 'cosmic-aquaria:discovery-history';
+const artistHistoryKey = 'cosmic-aquaria:discovery-artist-history';
 const selectionKey = 'cosmic-aquaria:category-selection';
 const sessionKey = 'cosmic-aquaria:analytics-session';
 
@@ -342,7 +343,7 @@ function playGlassBreak(type='anything',{restoring=false,control=false}={}) {
       scheduled=true;
     }
   } catch { glassAudio.failed=true; return false; }
-  if(navigator.vibrate) navigator.vibrate(restoring?5:(control?8:profile.haptic));
+  try { navigator.vibrate?.(restoring?5:(control?8:profile.haptic)); } catch {}
   return scheduled;
 }
 
@@ -398,12 +399,15 @@ async function fetchManifest(entry) {
 
 async function resolveDiscovery(preferred = null) {
   const history = readJson(historyKey,[]);
+  const artistHistory = readJson(artistHistoryKey,[]);
   const attempted = new Set();
-  if (preferred) attempted.add(preferred.slug);
+  const attemptedArtists = new Set();
+  if (preferred) { attempted.add(preferred.slug); attemptedArtists.add(artistIdentity(preferred)); }
   for (let attempt=0;attempt<8;attempt++) {
-    const entry = attempt===0 && preferred ? preferred : chooseRelease(catalogue,[...selected],[...history,...attempted]);
+    const entry = attempt===0 && preferred ? preferred : chooseRelease(catalogue,[...selected],[...history,...attempted],globalThis.crypto,[...artistHistory,...attemptedArtists]);
     if (!entry) break;
     attempted.add(entry.slug);
+    attemptedArtists.add(artistIdentity(entry));
     try { return {entry,manifest:await fetchManifest(entry)}; }
     catch (error) { recordEvent('track_selected',entry.slug,{result:'skipped',reason:String(error?.message||error)}); }
   }
@@ -440,7 +444,7 @@ function populatePlayer(entry, manifest) {
   currentEntry=entry; currentManifest=manifest; currentTrack=track;
   const artistEntry = artistsById.get(entry.canonicalArtistId) || {};
   setFittedText(document.querySelector('#now-playing-heading'),manifest.artist,17,25);
-  setFittedText(document.querySelector('.release-title'),manifest.releaseTitle || track.albumTitle || 'BANDCAMP RELEASE',20,32);
+  setFittedText(document.querySelector('.release-title'),manifest.releaseTitle || entry.release || track.albumTitle || track.title,20,32);
   setFittedText(document.querySelector('.track-title'),track.title,20,32);
   document.querySelector('.duration').textContent = formatDuration(track.duration);
   document.querySelector('.ticker-track span').textContent = buildTickerFacts(manifest,entry,artistEntry);
@@ -451,6 +455,8 @@ function populatePlayer(entry, manifest) {
   setSpectrumSeed(track.id || track.bandcampEmbedTrackId);
   const history = pushHistory(readJson(historyKey,[]),entry.slug,SESSION_HISTORY_LIMIT);
   sessionStorage.setItem(historyKey,JSON.stringify(history));
+  const artistHistory = pushHistory(readJson(artistHistoryKey,[]),artistIdentity(entry),SESSION_HISTORY_LIMIT);
+  sessionStorage.setItem(artistHistoryKey,JSON.stringify(artistHistory));
   playerStatus.textContent = `Now playing ${track.title}, from ${manifest.releaseTitle}, by ${manifest.artist}.`;
   recordEvent('track_selected',entry.slug,{result:'loaded',release:manifest.releaseTitle,categories:[...selected]});
 }

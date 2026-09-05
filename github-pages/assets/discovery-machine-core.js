@@ -35,10 +35,14 @@ export function eligibleReleases(catalogue, selection, recent = []) {
   const selected = normalizeSelection(selection);
   if (!selected.length) return [];
   const recentSet = new Set(recent);
-  const all = catalogue.filter(entry => entry && entry.slug && entry.status === 'published' && entry.bandcampUrl);
+  const all = catalogue.filter(entry => entry && entry.slug && entry.status === 'published' && validBandcampUrl(entry.bandcampUrl));
   const inScope = selected.includes('anything') ? all : all.filter(entry => selected.some(category => (entry.waters || []).includes(category)));
   const fresh = inScope.filter(entry => !recentSet.has(entry.slug));
   return fresh.length ? fresh : inScope;
+}
+
+export function artistIdentity(entry) {
+  return String(entry?.canonicalArtistId || entry?.canonicalBandcampUrl || entry?.artist || entry?.slug || '').trim().toLowerCase();
 }
 
 export function secureRandomIndex(length, cryptoApi = globalThis.crypto) {
@@ -52,9 +56,24 @@ export function secureRandomIndex(length, cryptoApi = globalThis.crypto) {
   return Math.floor(Math.random() * length);
 }
 
-export function chooseRelease(catalogue, selection, recent = [], cryptoApi = globalThis.crypto) {
+export function chooseRelease(catalogue, selection, recent = [], cryptoApi = globalThis.crypto, recentArtists = []) {
   const pool = eligibleReleases(catalogue, selection, recent);
-  return pool[secureRandomIndex(pool.length, cryptoApi)] || null;
+  const groups = new Map();
+  for (const entry of pool) {
+    const artistId = artistIdentity(entry);
+    if (!artistId) continue;
+    const releases = groups.get(artistId) || [];
+    releases.push(entry);
+    groups.set(artistId, releases);
+  }
+  const recentArtistSet = new Set(recentArtists.map(value => String(value).toLowerCase()));
+  const allArtists = [...groups.entries()];
+  const freshArtists = allArtists.filter(([artistId]) => !recentArtistSet.has(artistId));
+  const artistPool = freshArtists.length ? freshArtists : allArtists;
+  const selectedArtist = artistPool[secureRandomIndex(artistPool.length, cryptoApi)];
+  if (!selectedArtist) return null;
+  const releases = selectedArtist[1];
+  return releases[secureRandomIndex(releases.length, cryptoApi)] || null;
 }
 
 export function pushHistory(history, slug, limit = SESSION_HISTORY_LIMIT) {

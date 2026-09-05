@@ -46,7 +46,7 @@ doorwayAssets.forEach((asset) => assetHash.update(asset));
 discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
 glassAudioAssets.forEach((asset) => assetHash.update(asset));
 const assetVersion = assetHash.digest('hex').slice(0,12);
-const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#000}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
+const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#001807}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','skulls'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','glass'),{recursive:true});
@@ -73,6 +73,7 @@ for (const name of discoveryFidelityAssetNames) {
 for (const name of glassAudioSourceNames) {
   await fs.copyFile(path.join(root,'public','audio','glass','source',name),path.join(pages,'assets','audio','glass','source',name));
 }
+await fs.copyFile(path.join(root,'public','discovery.webmanifest'),path.join(pages,'discovery.webmanifest'));
 for (const name of ['cosmic-aquaria-qr-standard.png','cosmic-aquaria-qr-branded.png']) {
   try { await fs.copyFile(path.join(root,'public',name),path.join(pages,name)); } catch {}
 }

@@ -51,6 +51,7 @@ for (const size of sizes) {
   await page.waitForFunction(() => document.querySelector('.player-screen')?.classList.contains('is-active'));
   const goHoldObservedMs = Date.now() - transitionStartedAt;
   await goBrokenProof;
+  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-transition-${size.width}x${size.height}.png`) });
   const interaction = await page.evaluate(() => ({
     selected: [...document.querySelectorAll('.glass-key.is-selected')].map((element) => element.getAttribute('data-category')),
     playerVisible: document.querySelector('.player-screen')?.classList.contains('is-active'),
@@ -68,6 +69,33 @@ for (const size of sizes) {
   await page.waitForTimeout(700);
   const bubbleAfter = await page.locator('.bubble-tube').evaluate((element) => element.toDataURL());
   await page.screenshot({ path: path.join(outputDirectory, `${label}-player-${size.width}x${size.height}.png`) });
+  const beforeNext = {
+    slug: new URL(page.url()).searchParams.get('release'),
+    categories: new URL(page.url()).searchParams.get('categories'),
+    buyUrl: await page.locator('[data-action="buy"]').getAttribute('href'),
+    expectedBuyUrl: release.bandcampUrl,
+  };
+  await page.locator('[data-action="next"]').click();
+  await page.waitForFunction((slug) => new URL(location.href).searchParams.get('release') !== slug, beforeNext.slug);
+  const afterNext = {
+    slug: new URL(page.url()).searchParams.get('release'),
+    categories: new URL(page.url()).searchParams.get('categories'),
+    buyUrl: await page.locator('[data-action="buy"]').getAttribute('href'),
+  };
+
+  const artistData = (await (await page.request.get(new URL('artists-index.json',baseUrl).toString())).json()).artists || [];
+  const artistsById = new Map(artistData.map((artist) => [artist.id,artist]));
+  const tickerLength = (entry) => {
+    const artist = artistsById.get(entry.canonicalArtistId) || {};
+    return `${artist.primaryLocation || ''} ${(entry.waters || []).join(' ')} ${entry.releaseDate || ''} ${(artist.labels || []).join(' ')} SUPPORT THE ARTIST`.length;
+  };
+  const longEntry = [...catalogue].filter((entry) => entry.status === 'published').sort((a,b) => tickerLength(b)-tickerLength(a))[0];
+  const longUrl = new URL(baseUrl);
+  longUrl.searchParams.set('release',longEntry.slug);
+  longUrl.searchParams.set('categories',longEntry.waters?.[0] || 'anything');
+  await page.goto(longUrl.toString(), { waitUntil: 'networkidle' });
+  await page.locator('.player-screen.is-active').waitFor();
+  await page.screenshot({ path: path.join(outputDirectory, `${label}-player-long-ticker-${size.width}x${size.height}.png`) });
 
   const metrics = await page.evaluate(() => ({
     viewportWidth: innerWidth,
@@ -76,7 +104,7 @@ for (const size of sizes) {
     documentHeight: document.documentElement.scrollHeight,
     machine: document.querySelector('.discovery-machine')?.getBoundingClientRect().toJSON(),
   }));
-  results.push({ size, release: release.slug, goHoldObservedMs, interaction, audioState, bubbleTubeChanged:bubbleBefore!==bubbleAfter, consoleErrors, metrics });
+  results.push({ size, release: release.slug, goHoldObservedMs, interaction, audioState, bubbleTubeChanged:bubbleBefore!==bubbleAfter, next:{before:beforeNext,after:afterNext}, consoleErrors, metrics });
   await context.close();
 }
 
