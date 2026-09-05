@@ -105,6 +105,11 @@ button { border: 0; }
 .transport-rail::after { content: ""; position: absolute; left: var(--progress); top: 50%; width: clamp(11px,3.2vw,24px); aspect-ratio: 1; transform: translate(-50%,-50%); border-radius: 50%; border: 1px solid rgba(239,255,241,.9); background: radial-gradient(circle at 31% 25%,#fff 0 6%,#aaffb4 12%,#15c444 47%,#003717 76%,#001107 100%); box-shadow: inset -3px -4px 7px rgba(0,0,0,.7),inset 3px 3px 6px rgba(255,255,255,.44),0 0 8px #54ff6d; }
 .bandcamp-transport { position: absolute; z-index: 4; left: 12%; right: 12%; bottom: 2.8%; height: 7.4%; overflow: hidden; border: 1px solid rgba(120,255,140,.35); border-radius: 999px; background:#001006; box-shadow: inset 0 0 10px rgba(0,0,0,.9),0 0 8px rgba(55,255,83,.42); }
 .bandcamp-transport iframe { width: 100%; height: 100%; border: 0; background: #001006; color-scheme: dark; filter: grayscale(1) sepia(1) hue-rotate(72deg) saturate(4) brightness(.5) contrast(1.25); opacity:.86; }
+.sound-toggle { z-index:12; min-width:0; padding:0; color:#edfff0; border:0; border-radius:999px; background:radial-gradient(ellipse at 50% 0,rgba(120,255,138,.16),transparent 58%),linear-gradient(#001d0a,#000804); box-shadow:0 0 0 2px rgba(0,8,3,.9),0 0 0 3px rgba(151,255,163,.34),inset 0 0 0 1px rgba(209,255,216,.22),inset 0 2px 6px rgba(113,255,130,.12),inset 0 -3px 7px #000,0 0 6px rgba(45,255,76,.38); font-family:"Bahnschrift SemiCondensed","Arial Narrow",sans-serif; font-size:clamp(6px,1.65vw,13px); font-weight:520; letter-spacing:.1em; text-indent:.1em; text-transform:uppercase; text-shadow:0 0 2px #fff,0 0 5px #45ff5c; cursor:pointer; touch-action:manipulation; }
+.sound-toggle[aria-pressed="false"] { color:#b8c7ba; text-shadow:none; filter:saturate(.45) brightness(.72); }
+.sound-toggle:active { transform:scale(.95); filter:brightness(.72); }
+.sound-toggle--selection { position:absolute; right:2.1%; width:14.5%; height:52%; }
+.sound-toggle--player { position:absolute; top:max(1.8%,calc(env(safe-area-inset-top,0px) + 4px)); right:4.1%; width:14.5%; height:3.3%; }
 .bubble { position: absolute; z-index: 2; border-radius: 50%; border: 1px solid rgba(226,255,231,.74); background: radial-gradient(circle at 28% 22%,rgba(255,255,255,.8) 0 4%,rgba(158,255,173,.22) 12%,rgba(0,84,29,.14) 55%,rgba(0,9,3,.38) 75%); box-shadow: inset 4px 5px 8px rgba(255,255,255,.3),inset -5px -6px 9px rgba(0,14,4,.78),0 0 7px rgba(67,255,94,.62); opacity: .76; }
 .bubble--one{width:6%;aspect-ratio:1;left:4%;top:8%}.bubble--two{width:3%;aspect-ratio:1;right:9%;top:7%}.bubble--three{width:7.6%;aspect-ratio:1;right:3.5%;bottom:17%}.bubble--four{width:3.8%;aspect-ratio:1;left:7%;bottom:24%}
 .bubble--five{width:2.2%;aspect-ratio:1;left:5.2%;top:25%}.bubble--six{width:4.8%;aspect-ratio:1;right:4.7%;top:31%}.bubble--seven{width:2.6%;aspect-ratio:1;right:7.2%;bottom:34%}.bubble--eight{width:5.4%;aspect-ratio:1;left:3.5%;bottom:9%}
@@ -157,6 +162,7 @@ button { border: 0; }
 .selection-grid .glass-key[data-category="anything"].is-selected > .crack-layer { background-image:url('./discovery-fidelity/selector-break-anything.webp'); }
 .selection-screen > .bandcamp-bridge { border:0; box-shadow:none; background:transparent; }
 .selection-screen > .bandcamp-bridge > * { opacity:0; }
+.selection-screen > .bandcamp-bridge > .sound-toggle { opacity:1; }
 .selection-screen > .go-key { border:0; border-radius:0; box-shadow:none; background:transparent; }
 .selection-screen > .go-key::before, .selection-screen > .go-key::after { display:none; }
 .selection-screen > .go-key > :not(.crack-layer) { opacity:0; }
@@ -192,8 +198,10 @@ button { border: 0; }
 .player-screen .spectrum { position:absolute; top:48%; left:8%; right:8%; height:28%; padding:0; gap:.82%; border-bottom:0; box-shadow:none; filter:drop-shadow(0 0 2px #45ff60); }
 .player-screen .spectrum::after { content:""; position:absolute; left:0; right:0; bottom:0; height:1px; background:linear-gradient(90deg,transparent,#9affaa 5% 95%,transparent); box-shadow:0 0 5px #36ff52; }
 .player-screen .spectrum i { width:.7%; min-width:1px; clip-path:none; border-radius:999px 999px 0 0; background:linear-gradient(180deg,#fff,#aaffb4 22%,#38ff58 70%,rgba(24,255,57,.1)); box-shadow:0 0 2px #d9ffde,0 0 5px #35ff52; }
-.player-screen .transport-row { position:absolute; left:6%; right:6%; bottom:8.5%; margin:0; }
-.player-screen .bandcamp-transport { position:fixed; width:1px; height:1px; left:-10000px; right:auto; bottom:auto; overflow:hidden; clip-path:inset(50%); opacity:.001; }
+.player-screen .transport-row { position:absolute; left:7%; right:7%; bottom:16.3%; margin:0; display:flex; justify-content:space-between; gap:1em; font-family:"Bahnschrift SemiCondensed","Arial Narrow",sans-serif; font-size:clamp(7px,1.8vw,14px); letter-spacing:.11em; color:#dcffe1; pointer-events:none; }
+.player-screen .transport-hint { text-align:left; }
+.player-screen .bandcamp-transport { position:absolute; z-index:8; left:6%; right:6%; bottom:4.4%; width:auto; height:clamp(38px,10.8%,42px); overflow:hidden; clip-path:none; opacity:1; border:1px solid rgba(132,255,146,.36); border-radius:999px; background:#001006; box-shadow:0 0 0 2px rgba(0,5,2,.86),inset 0 0 9px rgba(0,0,0,.8),0 0 7px rgba(55,255,83,.34); }
+.player-screen .bandcamp-transport iframe { display:block; width:100%; height:42px; min-height:42px; border:0; background:#001006; color-scheme:dark; filter:none; opacity:1; }
 .player-screen .bubble, .player-screen .material-bubble { display:none; }
 .player-screen .player-actions { gap:0; padding:0; }
 .player-actions button, .player-actions a { border:0; border-radius:0; box-shadow:none; background:transparent!important; }

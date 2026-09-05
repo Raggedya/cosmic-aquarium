@@ -16,6 +16,8 @@ const shareButton = document.querySelector('[data-action="share"]');
 const buyLink = document.querySelector('[data-action="buy"]');
 const nextButton = document.querySelector('[data-action="next"]');
 const changeButton = document.querySelector('.change-categories');
+const soundToggles = [...document.querySelectorAll('.sound-toggle')];
+const bandcampFrame = document.querySelector('.bandcamp-transport iframe');
 const bubbleTubeCanvas = document.querySelector('.bubble-tube');
 const bubbleTubeContext = bubbleTubeCanvas?.getContext('2d');
 const canvas = document.querySelector('.destruction-canvas');
@@ -179,14 +181,25 @@ const glassAudio = {
   activeNodes:new Set(),
   preloadPromise:null,
   decodePromise:null,
+  activationPromise:null,
+  pendingImpact:null,
   output:null,
   limiter:null,
   format:null,
   sequence:0,
   activated:false,
   failed:false,
-  muted:localStorage.getItem('cosmic-aquaria:muted') === 'true',
+  muted:readPersistentMute(),
 };
+
+function readPersistentMute() {
+  try { return localStorage.getItem('cosmic-aquaria:muted') === 'true'; }
+  catch { return false; }
+}
+
+function writePersistentMute(value) {
+  try { localStorage.setItem('cosmic-aquaria:muted',String(Boolean(value))); } catch {}
+}
 
 function readJson(key, fallback) {
   try { return JSON.parse(sessionStorage.getItem(key) || '') ?? fallback; } catch { return fallback; }
@@ -229,7 +242,9 @@ function seedCracks() {
 }
 
 function ensureAudioContext(resume = true) {
-  if (!audioContext) audioContext = new (window.AudioContext || window.webkitAudioContext)({latencyHint:'interactive'});
+  const AudioContextConstructor=window.AudioContext||window.webkitAudioContext;
+  if(!AudioContextConstructor) throw new Error('web_audio_unavailable');
+  if (!audioContext) audioContext = new AudioContextConstructor({latencyHint:'interactive'});
   if (resume && audioContext.state === 'suspended') void audioContext.resume();
   return audioContext;
 }
@@ -241,31 +256,94 @@ function glassAudioUrl(name,format) {
 function preloadGlassAudio() {
   if (glassAudio.preloadPromise) return glassAudio.preloadPromise;
   const probe = document.createElement('audio');
-  glassAudio.format = probe.canPlayType('audio/ogg; codecs="vorbis"') ? 'ogg' : 'mp3';
+  const safari=/AppleWebKit/i.test(navigator.userAgent)&&!/Chrome|Chromium|CriOS|Edg/i.test(navigator.userAgent);
+  const supported={mp3:Boolean(probe.canPlayType('audio/mpeg')),ogg:Boolean(probe.canPlayType('audio/ogg; codecs="vorbis"'))};
+  const formats=(safari?['mp3','ogg']:['ogg','mp3']).filter(format=>supported[format]);
+  if(!formats.length) formats.push('mp3');
   glassAudio.preloadPromise = Promise.all(Object.keys(GLASS_AUDIO_FILES).map(async name=>{
-    const response = await fetch(glassAudioUrl(name,glassAudio.format),{cache:'force-cache',credentials:'same-origin'});
-    if (!response.ok) throw new Error(`glass_audio_${response.status}`);
-    glassAudio.encoded.set(name,await response.arrayBuffer());
+    let lastError=null;
+    for(const format of formats){
+      try{
+        const response=await fetch(glassAudioUrl(name,format),{cache:'force-cache',credentials:'same-origin'});
+        if(!response.ok)throw new Error(`glass_audio_${response.status}`);
+        glassAudio.encoded.set(name,await response.arrayBuffer());
+        glassAudio.format=glassAudio.format||format;
+        return;
+      }catch(error){lastError=error;}
+    }
+    throw lastError||new Error('glass_audio_unavailable');
   })).catch(()=>{glassAudio.failed=true;});
-  try {
-    const audio=ensureAudioContext(false);
-    glassAudio.decodePromise=glassAudio.preloadPromise.then(async()=>{
-      if(glassAudio.failed) return;
-      await Promise.all([...glassAudio.encoded].map(async([name,encoded])=>{
-        glassAudio.buffers.set(name,await audio.decodeAudioData(encoded.slice(0)));
-      }));
-    }).catch(()=>{glassAudio.failed=true;});
-  } catch { glassAudio.failed=true; }
   return glassAudio.preloadPromise;
 }
 
+function decodeGlassAudio(audio) {
+  if(glassAudio.buffers.size===Object.keys(GLASS_AUDIO_FILES).length)return Promise.resolve();
+  if(glassAudio.decodePromise)return glassAudio.decodePromise;
+  glassAudio.decodePromise=preloadGlassAudio().then(async()=>{
+    if(glassAudio.failed)return;
+    await Promise.all([...glassAudio.encoded].map(async([name,encoded])=>{
+      if(!glassAudio.buffers.has(name))glassAudio.buffers.set(name,await audio.decodeAudioData(encoded.slice(0)));
+    }));
+  }).catch(()=>{glassAudio.failed=true;});
+  return glassAudio.decodePromise;
+}
+
+function pulseSilentUnlock(audio) {
+  const buffer=audio.createBuffer(1,1,22050);
+  const source=audio.createBufferSource();
+  const gain=audio.createGain();
+  gain.gain.value=0;
+  source.buffer=buffer;
+  source.connect(gain).connect(audio.destination);
+  source.start(0);
+  source.onended=()=>{source.disconnect();gain.disconnect();};
+}
+
 function activateGlassAudio() {
-  glassAudio.activated=true;
-  try { void ensureAudioContext(true).resume(); } catch { glassAudio.failed=true; }
+  if(glassAudio.activationPromise)return glassAudio.activationPromise;
+  glassAudio.activationPromise=(async()=>{
+    try{
+      const audio=ensureAudioContext(false);
+      pulseSilentUnlock(audio);
+      if(audio.state==='suspended')await audio.resume();
+      await decodeGlassAudio(audio);
+      glassAudio.activated=audio.state==='running'&&glassAudio.buffers.size>0;
+      glassAudio.failed=!glassAudio.activated;
+      const pending=glassAudio.pendingImpact;
+      glassAudio.pendingImpact=null;
+      if(pending&&glassAudio.activated&&!glassAudioMuted())playGlassBreak(pending.type,pending.options);
+    }catch{glassAudio.failed=true;glassAudio.activated=false;}
+    finally{glassAudio.activationPromise=null;updateSoundControls();}
+    return glassAudio.activated;
+  })();
+  return glassAudio.activationPromise;
 }
 
 function glassAudioMuted() {
-  return glassAudio.muted || localStorage.getItem('cosmic-aquaria:muted') === 'true';
+  return glassAudio.muted;
+}
+
+function updateSoundControls() {
+  const muted=glassAudioMuted();
+  for(const button of soundToggles){
+    button.textContent=muted?'SOUND OFF':'SOUND ON';
+    button.setAttribute('aria-pressed',String(!muted));
+    button.setAttribute('aria-label',muted?'Glass sounds off. Press to turn them on.':'Glass sounds on. Press to turn them off.');
+  }
+}
+
+function setGlassAudioMuted(value) {
+  glassAudio.muted=Boolean(value);
+  writePersistentMute(glassAudio.muted);
+  glassAudio.pendingImpact=null;
+  updateSoundControls();
+}
+
+function onSoundToggle() {
+  const nextMuted=!glassAudioMuted();
+  setGlassAudioMuted(nextMuted);
+  recordEvent('glass_sound_toggle','discovery-machine',{enabled:!nextMuted});
+  if(!nextMuted)void activateGlassAudio().then(active=>{if(active)playGlassBreak('anything',{control:true});});
 }
 
 function glassAudioOutput(audio) {
@@ -319,11 +397,16 @@ function scheduleGlassSegment(audio,recipe,when,profile,layer,variation=0) {
 function playGlassBreak(type='anything',{restoring=false,control=false}={}) {
   const now = performance.now();
   if (now - lastImpactAt < 48 || glassAudioMuted()) return false;
-  lastImpactAt = now;
   const profile=GLASS_AUDIO_PROFILES[type] || GLASS_AUDIO_PROFILES.anything;
   let scheduled=false;
   try {
-    const audio=ensureAudioContext(true);
+    const audio=ensureAudioContext(false);
+    if(!glassAudio.activated||audio.state!=='running'||!glassAudio.buffers.size){
+      glassAudio.pendingImpact={type,options:{restoring,control}};
+      void activateGlassAudio();
+      return false;
+    }
+    lastImpactAt = now;
     if(glassAudio.activated && glassAudio.buffers.size){
       const start = audio.currentTime;
       glassAudio.sequence=(glassAudio.sequence+1)%2048;
@@ -448,7 +531,8 @@ function populatePlayer(entry, manifest) {
   setFittedText(document.querySelector('.track-title'),track.title,20,32);
   document.querySelector('.duration').textContent = formatDuration(track.duration);
   document.querySelector('.ticker-track span').textContent = buildTickerFacts(manifest,entry,artistEntry);
-  document.querySelector('.bandcamp-transport iframe').src = `https://bandcamp.com/EmbeddedPlayer/track=${encodeURIComponent(track.bandcampEmbedTrackId)}/size=small/bgcol=001a08/linkcol=67ff7b/tracklist=false/artwork=none/transparent=true/`;
+  bandcampFrame.title=`Official Bandcamp playback controls for ${track.title} by ${manifest.artist}`;
+  bandcampFrame.src = `https://bandcamp.com/EmbeddedPlayer/track=${encodeURIComponent(track.bandcampEmbedTrackId)}/size=small/bgcol=001a08/linkcol=67ff7b/tracklist=false/artwork=none/transparent=true/`;
   buyLink.href = validBandcampUrl(manifest.bandcampUrl);
   buyLink.setAttribute('aria-label',`Buy ${manifest.releaseTitle || 'this release'} by ${manifest.artist} on Bandcamp`);
   shareButton.setAttribute('aria-label',`Share ${manifest.releaseTitle || track.title} by ${manifest.artist}`);
@@ -457,7 +541,7 @@ function populatePlayer(entry, manifest) {
   sessionStorage.setItem(historyKey,JSON.stringify(history));
   const artistHistory = pushHistory(readJson(artistHistoryKey,[]),artistIdentity(entry),SESSION_HISTORY_LIMIT);
   sessionStorage.setItem(artistHistoryKey,JSON.stringify(artistHistory));
-  playerStatus.textContent = `Now playing ${track.title}, from ${manifest.releaseTitle}, by ${manifest.artist}.`;
+  playerStatus.textContent = `${track.title}, from ${manifest.releaseTitle}, by ${manifest.artist}, is ready. Use the official Bandcamp play control to listen.`;
   recordEvent('track_selected',entry.slug,{result:'loaded',release:manifest.releaseTitle,categories:[...selected]});
 }
 
@@ -482,7 +566,7 @@ function showSelection({historyMode='push'}={}) {
   playerScreen.classList.remove('is-active');
   playerScreen.setAttribute('aria-hidden','true');
   selectionScreen.setAttribute('aria-hidden','false');
-  document.querySelector('.bandcamp-transport iframe').src='about:blank';
+  bandcampFrame.src='about:blank';
   currentEntry=currentManifest=currentTrack=null;
   selected=new Set();
   sessionStorage.removeItem(selectionKey);
@@ -616,14 +700,16 @@ async function restoreLocation() {
 
 seedCracks();
 preloadGlassAudio();
-document.addEventListener('pointerdown',activateGlassAudio,{once:true,capture:true});
-document.addEventListener('keydown',activateGlassAudio,{once:true,capture:true});
+updateSoundControls();
+document.addEventListener('pointerdown',()=>void activateGlassAudio(),{capture:true,passive:true});
+document.addEventListener('keydown',()=>void activateGlassAudio(),{capture:true});
 for(const button of categoryButtons) button.addEventListener('click',onCategory);
 goButton.addEventListener('click',()=>void onGo());
 nextButton.addEventListener('click',()=>void onNext());
 shareButton.addEventListener('click',()=>void onShare());
 buyLink.addEventListener('click',()=>recordEvent('buy_click',currentEntry?.slug,{url:buyLink.href}));
 changeButton.addEventListener('click',()=>showSelection());
+for(const button of soundToggles)button.addEventListener('click',onSoundToggle);
 addEventListener('popstate',()=>void restoreLocation());
 document.addEventListener('visibilitychange',()=>{
   if(document.hidden){stopBubbleTube();if(audioContext?.state==='running')void audioContext.suspend();}
@@ -634,8 +720,9 @@ addEventListener('resize',()=>{if(playerScreen.classList.contains('is-active'))s
 
 window.CosmicGlassAudio=Object.freeze({
   playGlassBreak,
-  setMuted(value){glassAudio.muted=Boolean(value);localStorage.setItem('cosmic-aquaria:muted',String(glassAudio.muted));},
-  getState(){return {activated:glassAudio.activated,muted:glassAudioMuted(),loaded:glassAudio.buffers.size,failed:glassAudio.failed,activeNodes:glassAudio.activeNodes.size};},
+  setMuted:setGlassAudioMuted,
+  activate:activateGlassAudio,
+  getState(){return {activated:glassAudio.activated,muted:glassAudioMuted(),loaded:glassAudio.buffers.size,failed:glassAudio.failed,format:glassAudio.format,contextState:audioContext?.state||'unavailable',activeNodes:glassAudio.activeNodes.size};},
 });
 
 recordEvent('session_start','discovery-machine',{product:'two-screen-discovery'});

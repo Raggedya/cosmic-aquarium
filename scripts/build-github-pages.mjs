@@ -103,6 +103,7 @@ for (const filename of artistManifestFiles) {
         visualStyle:artistManifest.visualStyle || 'cosmic',
         objectType:artistManifest.visualStyle === 'chrome' ? 'skulls' : artistManifest.visualStyle === 'glass' ? 'glass flowers' : 'flowers',
         dailyBatchId:artistManifest.dailyBatchId || null,
+        primaryLocation:artistManifest.primaryLocation || null,
         url:'https://raggedya.github.io/cosmic-aquarium/'+encodeURIComponent(artistManifest.slug)+'/',
         status:artistManifest.status || 'published',
         canonicalArtistId,
@@ -132,7 +133,7 @@ const canonicalArtists=[...canonicalCandidates.entries()].map(([id,entry])=>({
   waters:entry.waters,
   lastUpdated:entry.releaseDate || null,
   memberships:[],
-  primaryLocation:null,
+  primaryLocation:entry.primaryLocation || null,
   labels:[],
 })).sort((a,b)=>a.name.localeCompare(b.name));
 await fs.writeFile(path.join(pages,'artists-index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:canonicalArtists},null,2)+'\n');

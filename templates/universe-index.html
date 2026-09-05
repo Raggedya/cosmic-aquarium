@@ -38,6 +38,7 @@
       </div>
       <div class="bandcamp-bridge" aria-label="Music is played through Bandcamp">
         <span class="signal signal--left" aria-hidden="true"></span><span class="bandcamp-wordmark"><i aria-hidden="true"></i>bandcamp</span><span class="signal signal--right" aria-hidden="true"></span>
+        <button class="sound-toggle sound-toggle--selection" type="button" aria-pressed="true" aria-label="Glass sounds on. Press to turn them off.">SOUND ON</button>
       </div>
       <button class="go-key" type="button" disabled aria-disabled="true">
         <span class="go-line" aria-hidden="true"></span><strong>GO</strong><span class="go-line" aria-hidden="true"></span><i class="crack-layer" aria-hidden="true"></i>
@@ -47,6 +48,7 @@
 
     <section class="machine-screen player-screen" data-screen="player" aria-labelledby="now-playing-heading" aria-hidden="true">
       <button class="change-categories" type="button" aria-label="Home — choose music categories">Home</button>
+      <button class="sound-toggle sound-toggle--player" type="button" aria-pressed="true" aria-label="Glass sounds on. Press to turn them off.">SOUND ON</button>
       <div class="ticker-shell" aria-label="Artist and release information">
         <canvas class="bubble-tube" aria-hidden="true"></canvas>
         <i class="material-bubble material-bubble--ticker-a" aria-hidden="true"></i>
@@ -65,8 +67,8 @@
           <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
           <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
         </div>
-        <div class="transport-row" aria-hidden="true"><span>0:00</span><div class="transport-rail"><i></i></div><span class="duration">0:00</span></div>
-        <div class="bandcamp-transport"><iframe title="Official Bandcamp player" loading="eager" allow="autoplay" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+        <div class="transport-row"><span class="transport-hint">PLAY / PAUSE ON BANDCAMP</span><span class="duration" aria-label="Track duration">—:—</span></div>
+        <div class="bandcamp-transport" aria-label="Official Bandcamp playback controls"><iframe title="Official Bandcamp playback controls" loading="eager" allow="autoplay" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe></div>
       </section>
       <nav class="player-actions" aria-label="Current discovery actions">
         <button type="button" data-action="share"><span>SHARE</span></button>

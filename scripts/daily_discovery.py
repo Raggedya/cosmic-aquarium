@@ -4,6 +4,7 @@ import argparse
 import datetime as dt
 import hashlib
 import json
+import re
 import time
 import urllib.parse
 import urllib.request
@@ -34,26 +35,39 @@ class BandcampDiscoverProvider:
     """A replaceable adapter for Bandcamp's public, undocumented Discover response."""
 
     def discover_new_releases(self, size: int = 60) -> list[dict[str, Any]]:
-        payload = {
+        requested = max(20, size)
+        payload: dict[str, Any] = {
             "category_id": 0,
             "tag_norm_names": [],
             "geoname_id": 0,
             "slice": "new",
             "time_facet_id": None,
             "cursor": None,
-            "size": min(60, max(20, size)),
+            "size": min(60, requested),
             "include_result_types": ["a"],
             "followed_bands": False,
         }
-        request = urllib.request.Request(
-            DISCOVER_URL,
-            data=json.dumps(payload).encode("utf-8"),
-            headers={"User-Agent": USER_AGENT, "Content-Type": "application/json; charset=UTF-8", "Accept": "application/json"},
-            method="POST",
-        )
-        with urllib.request.urlopen(request, timeout=30) as response:
-            body = json.load(response)
-        return [item for item in body.get("results", []) if isinstance(item, dict) and item.get("item_type") == "a"]
+        results: list[dict[str, Any]] = []
+        seen_ids: set[str] = set()
+        for _ in range(4):
+            request = urllib.request.Request(
+                DISCOVER_URL,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={"User-Agent": USER_AGENT, "Content-Type": "application/json; charset=UTF-8", "Accept": "application/json"},
+                method="POST",
+            )
+            with urllib.request.urlopen(request, timeout=30) as response:
+                body = json.load(response)
+            page = [item for item in body.get("results", []) if isinstance(item, dict) and item.get("item_type") == "a"]
+            for item in page:
+                identity = str(item.get("item_id") or item.get("item_url") or "")
+                if identity and identity not in seen_ids:
+                    seen_ids.add(identity)
+                    results.append(item)
+            if len(results) >= requested or not page or not body.get("cursor"):
+                break
+            payload["cursor"] = body["cursor"]
+        return results[:requested]
 
 
 def read_json(path: Path, fallback: Any) -> Any:
@@ -71,6 +85,43 @@ def write_json(path: Path, value: Any) -> None:
 def style_for(sequence_index: int) -> str:
     """Alternate strictly between Cosmic Bloom and Violet Haze."""
     return AUTOMATED_VISUAL_STYLES[sequence_index % len(AUTOMATED_VISUAL_STYLES)]
+
+
+def candidate_rejection_reason(item: dict[str, Any], batch_date: dt.date, completed_urls: set[str]) -> str | None:
+    url = canonical_bandcamp_url(str(item.get("item_url") or ""))
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme != "https" or not ((parsed.hostname or "") == "bandcamp.com" or (parsed.hostname or "").endswith(".bandcamp.com")):
+        return "invalid_bandcamp_url"
+    if url in completed_urls:
+        return "duplicate_release_url"
+    if not str(item.get("item_id") or "").strip():
+        return "missing_bandcamp_item_id"
+    artist = " ".join(str(item.get("band_name") or "").split())
+    release = " ".join(str(item.get("title") or "").split())
+    if not artist or not release:
+        return "missing_artist_or_release"
+    obvious_non_release = re.compile(r"\b(test release|testing only|sample pack|sound effects? pack|placeholder|do not buy|development build)\b", re.I)
+    if obvious_non_release.search(f"{artist} {release}"):
+        return "test_or_non_music_entry"
+    release_text = str(item.get("release_date") or "")[:10]
+    try:
+        release_date = dt.date.fromisoformat(release_text)
+    except ValueError:
+        return "invalid_release_date"
+    if not (batch_date - dt.timedelta(days=31) <= release_date <= batch_date):
+        return "outside_discovery_window"
+    return None
+
+
+def resolve_batch_date(requested: str = "", today: dt.date | None = None) -> str:
+    if requested:
+        dt.date.fromisoformat(requested)
+        return requested
+    for path in sorted(BATCHES.glob("*.json"), reverse=True):
+        batch = read_json(path, {})
+        if int(batch.get("publishedCount") or 0) < int(batch.get("targetCount") or 20):
+            return str(batch.get("batchDate") or path.stem)
+    return (today or dt.datetime.now(dt.timezone.utc).date()).isoformat()
 
 
 def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = None) -> dict[str, Any]:
@@ -100,20 +151,12 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
     if not needed:
         return batch
 
-    candidates = (provider or BandcampDiscoverProvider()).discover_new_releases(60)
-    cutoff = date - dt.timedelta(days=31)
+    candidates = (provider or BandcampDiscoverProvider()).discover_new_releases(max(180, target * 8))
     eligible: list[dict[str, Any]] = []
     for item in candidates:
-        url = canonical_bandcamp_url(str(item.get("item_url") or ""))
-        if not url.startswith("https://") or url in completed_urls or item.get("is_free_download") is True:
-            continue
-        release_text = str(item.get("release_date") or "")[:10]
-        try:
-            release_date = dt.date.fromisoformat(release_text)
-        except ValueError:
-            continue
-        if cutoff <= release_date <= date:
+        if candidate_rejection_reason(item, date, completed_urls) is None:
             eligible.append(item)
+    eligible.sort(key=lambda item: hashlib.sha256(f"{batch_date}|{item.get('item_url')}".encode()).hexdigest())
 
     for item in eligible:
         if len(batch["aquariums"]) >= target:
@@ -141,6 +184,7 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
                 batch_id=batch_date,
                 generate_qr=False,
                 metadata_tags=item.get("tags") if isinstance(item.get("tags"), list) else [],
+                primary_location=str(item.get("band_location") or item.get("location") or ""),
             )
             record = {
                 "id": aquarium_slug,
@@ -150,7 +194,8 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
                 "bandcampUrl": url,
                 "releaseDate": str(item.get("release_date") or ""),
                 "artworkReference": item.get("art_url") or item.get("art_id"),
-                "tags": item.get("tags") if isinstance(item.get("tags"), list) else [],
+                "tags": result["metadata_tags"],
+                "location": str(item.get("band_location") or item.get("location") or "").strip() or None,
                 "waters": result["waters"],
                 "discoveredAt": dt.datetime.now(dt.timezone.utc).isoformat(),
                 "aquariumUrl": result["page_url"].split("?", 1)[0],
@@ -180,10 +225,11 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Create or resume the daily Cosmic Aquaria batch")
-    parser.add_argument("--date", default=dt.datetime.now(dt.timezone.utc).date().isoformat())
+    parser.add_argument("--date", default="")
     parser.add_argument("--target", type=int, default=20)
     args = parser.parse_args()
-    result = run(args.date, max(1, min(20, args.target)))
+    batch_date = resolve_batch_date(args.date)
+    result = run(batch_date, max(1, min(20, args.target)))
     print(json.dumps({"batch": result["id"], "status": result["status"], "published": result["publishedCount"], "target": result["targetCount"]}))
 
 

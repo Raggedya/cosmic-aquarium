@@ -118,7 +118,11 @@ test('glass audio preloads once, waits for a gesture, respects mute and never bl
   assert.match(runtime,/if \(glassAudio\.preloadPromise\) return glassAudio\.preloadPromise/);
   assert.match(runtime,/glassAudio\.activated && glassAudio\.buffers\.size/);
   assert.match(runtime,/cosmic-aquaria:muted/);
-  assert.match(runtime,/document\.addEventListener\('pointerdown',activateGlassAudio,\{once:true,capture:true\}\)/);
+  assert.match(runtime,/document\.addEventListener\('pointerdown',\(\)=>void activateGlassAudio\(\),\{capture:true,passive:true\}\)/);
+  assert.match(runtime,/pulseSilentUnlock\(audio\)/);
+  assert.match(runtime,/glassAudio\.pendingImpact=\{type,options:\{restoring,control\}\}/);
+  assert.match(runtime,/safari\?\['mp3','ogg'\]:\['ogg','mp3'\]/);
+  assert.match(runtime,/updateSoundControls\(\)/);
   assert.match(runtime,/updateSelection\(nextSelection\(selected,category\)\);\s*playGlassBreak\(category,\{restoring:wasSelected\}\)/);
   assert.match(runtime,/catch \{ glassAudio\.failed=true; return false; \}/);
 });
@@ -169,8 +173,13 @@ test('ticker facts are sourced only from stored catalogue metadata',()=>{
 });
 
 test('official Bandcamp playback is not misrepresented as analyser-driven',async()=>{
-  const [template,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
-  assert.match(template,/bandcamp\.com\/EmbeddedPlayer|Official Bandcamp player/);
+  const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+  assert.match(template,/Official Bandcamp playback controls/);
+  assert.match(template,/PLAY \/ PAUSE ON BANDCAMP/);
+  assert.doesNotMatch(template,/>0:00<|transport-rail/);
+  const transportRule=css.match(/\.player-screen \.bandcamp-transport \{[^}]*\}/)?.[0]||'';
+  assert.doesNotMatch(transportRule,/position:fixed|left:-10000px|width:1px/);
+  assert.match(transportRule,/opacity:1/);
   assert.match(template,/data-analysis="unavailable"/);
   assert.match(template,/Live analysis is unavailable/);
   assert.doesNotMatch(runtime,/createMediaElementSource|createMediaStreamSource/);

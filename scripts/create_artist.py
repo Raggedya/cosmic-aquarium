@@ -24,7 +24,7 @@ COLORS = ("#c3b4f4", "#88d7ff", "#ff6f8f", "#ffb66d", "#8fd9c7", "#a492ff")
 AUTOMATED_VISUAL_STYLES = ("cosmic", "violet")
 CUSTOM_VISUAL_STYLES = (*AUTOMATED_VISUAL_STYLES, "chrome", "glass")
 VISUAL_STYLES = CUSTOM_VISUAL_STYLES
-MINIMUM_TRACK_COUNT = 3
+MINIMUM_TRACK_COUNT = 1
 USER_AGENT = "CosmicAquariumCreator/1.0 (+https://github.com/Raggedya/cosmic-aquarium)"
 
 
@@ -35,6 +35,8 @@ class BandcampPageParser(HTMLParser):
         self.album_links: set[str] = set()
         self.has_merch_link = False
         self.og: dict[str, str] = {}
+        self.tags: list[str] = []
+        self._capture_tag = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = dict(attrs)
@@ -48,8 +50,21 @@ class BandcampPageParser(HTMLParser):
             self.album_links.add(href)
         if tag == "a" and (href == "/merch" or href.startswith("/merch/")):
             self.has_merch_link = True
+        classes = set((values.get("class") or "").split())
+        if tag == "a" and "tag" in classes:
+            self._capture_tag = True
         if tag == "meta" and values.get("property", "").startswith("og:") and values.get("content"):
             self.og[values["property"] or ""] = values["content"] or ""
+
+    def handle_data(self, data: str) -> None:
+        if self._capture_tag:
+            value = " ".join(data.split()).strip()
+            if value and value not in self.tags:
+                self.tags.append(value)
+
+    def handle_endtag(self, tag: str) -> None:
+        if tag == "a":
+            self._capture_tag = False
 
 
 def slugify(value: str) -> str:
@@ -186,7 +201,7 @@ def validate_possible_track_link(value: str) -> bool:
         return False
 
 
-def discover_tracks(url: str, artist: str) -> tuple[list[dict[str, Any]], str, bool, str | None, str]:
+def discover_tracks(url: str, artist: str) -> tuple[list[dict[str, Any]], str, bool, str | None, str, list[str]]:
     parser, final_url = fetch_page(url)
     commerce_available = page_offers_commerce(parser)
     commerce_url = artist_store_url(final_url)
@@ -195,8 +210,14 @@ def discover_tracks(url: str, artist: str) -> tuple[list[dict[str, Any]], str, b
     for payload in parser.tralbum:
         release_date = release_date or release_date_from_payload(payload)
         tracks.extend(tracks_from_payload(payload, final_url, artist, len(tracks)))
-    if len(deduplicate(tracks)) >= MINIMUM_TRACK_COUNT:
-        return deduplicate(tracks), final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None, release_date
+    page_tracks = deduplicate(tracks)
+    if len(page_tracks) >= MINIMUM_TRACK_COUNT:
+        return page_tracks, final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None, release_date, parser.tags
+
+    # A submitted release/track URL must prove that exact edition is playable.
+    # Only an artist-root manual import may search the artist's wider catalogue.
+    if re.match(r"^/(album|track)/", urllib.parse.urlparse(final_url).path):
+        return [], final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None, release_date, parser.tags
 
     origin = urllib.parse.urlunparse(urllib.parse.urlparse(final_url)._replace(path="", params="", query="", fragment=""))
     music_parser, _ = fetch_page(origin.rstrip("/") + "/music")
@@ -215,7 +236,7 @@ def discover_tracks(url: str, artist: str) -> tuple[list[dict[str, Any]], str, b
             tracks.extend(tracks_from_payload(payload, album_url, artist, len(tracks)))
         if len(tracks) >= 60:
             break
-    return deduplicate(tracks[:60]), final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None, release_date
+    return deduplicate(tracks[:60]), final_url, bool(commerce_url and commerce_available), commerce_url if commerce_available else None, release_date, parser.tags
 
 
 def deduplicate(tracks: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -257,6 +278,7 @@ def create_artist(
     generate_qr: bool = True,
     metadata_tags: list[str] | None = None,
     waters: list[str] | None = None,
+    primary_location: str = "",
 ) -> dict[str, Any]:
     artist = " ".join(title.split())
     if not artist:
@@ -266,10 +288,10 @@ def create_artist(
         raise ValueError("Unknown visual style")
     slug = slugify(slug_override) if slug_override else slugify(artist)
     try:
-        tracks, resolved_url, commerce_available, commerce_url, discovered_release_date = discover_tracks(destination_source, artist)
+        tracks, resolved_url, commerce_available, commerce_url, discovered_release_date, discovered_tags = discover_tracks(destination_source, artist)
         import_status = "public-page-manifest" if tracks else "official-link-fallback"
     except Exception:
-        tracks, resolved_url, commerce_available, commerce_url, discovered_release_date, import_status = [], destination_source, False, None, "", "official-link-fallback"
+        tracks, resolved_url, commerce_available, commerce_url, discovered_release_date, discovered_tags, import_status = [], destination_source, False, None, "", [], "official-link-fallback"
 
     if len(tracks) < MINIMUM_TRACK_COUNT:
         raise ValueError(
@@ -281,8 +303,9 @@ def create_artist(
     for track in tracks:
         albums.setdefault(track["albumKey"], track["accent"])
     from water_classifier import classify_waters, valid_waters
+    merged_tags = list(dict.fromkeys([*(metadata_tags or []), *discovered_tags]))
     assigned_waters = valid_waters(waters) or classify_waters(
-        metadata_tags or [], f"{artist} {release_title}", f"{artist}:{release_title}:{resolved_url}"
+        merged_tags, f"{artist} {release_title}", f"{artist}:{release_title}:{resolved_url}"
     )
     manifest = {
         "schemaVersion": 1,
@@ -293,8 +316,10 @@ def create_artist(
         "releaseDate": normalize_release_date(release_date or discovered_release_date) or None,
         "dailyBatchId": batch_id or None,
         "status": "published",
-        "metadataTags": metadata_tags or [],
+        "metadataTags": merged_tags,
+        "primaryLocation": " ".join(primary_location.split()) or None,
         "waters": assigned_waters,
+        "metadata_tags": merged_tags,
         "commerceAvailable": commerce_available,
         "commerceUrl": commerce_url,
         "visualStyle": visual_style,
@@ -334,6 +359,10 @@ def main() -> None:
     parser.add_argument("--visual-style", choices=VISUAL_STYLES, default="cosmic")
     parser.add_argument("--base-url", default="https://raggedya.github.io/cosmic-aquarium")
     parser.add_argument("--cache-key", default="")
+    parser.add_argument("--release-title", default="")
+    parser.add_argument("--release-date", default="")
+    parser.add_argument("--location", default="")
+    parser.add_argument("--water", action="append", choices=("heavy", "dreamy", "quiet", "electronic", "dark", "loud", "strange"), default=[])
     parser.add_argument("--skip-qr-verification", action="store_true")
     args = parser.parse_args()
     result = create_artist(
@@ -343,6 +372,10 @@ def main() -> None:
         args.base_url,
         not args.skip_qr_verification,
         args.cache_key,
+        release_title=args.release_title,
+        release_date=args.release_date,
+        waters=args.water,
+        primary_location=args.location,
     )
     print(json.dumps(result, separators=(",", ":")))
 

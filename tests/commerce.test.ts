@@ -117,9 +117,9 @@ test('only Cosmic Bloom and Violet Haze can be assigned', async () => {
   }
 });
 
-test('only artists with at least three verified Bandcamp songs are eligible', async () => {
+test('only releases with at least one verified Bandcamp song are eligible', async () => {
   const creator = await readFile(path.resolve('scripts', 'create_artist.py'), 'utf8');
-  assert.match(creator, /MINIMUM_TRACK_COUNT = 3/);
+  assert.match(creator, /MINIMUM_TRACK_COUNT = 1/);
   assert.match(creator, /if len\(tracks\) < MINIMUM_TRACK_COUNT:/);
   assert.match(creator, /requires at least \{MINIMUM_TRACK_COUNT\} publicly available Bandcamp songs/);
   assert.doesNotMatch(creator, /Track metadata unavailable; no catalogue data was fabricated/);
