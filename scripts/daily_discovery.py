@@ -11,7 +11,7 @@ import urllib.request
 from pathlib import Path
 from typing import Any, Protocol
 
-from create_artist import AUTOMATED_VISUAL_STYLES, create_artist, slugify
+from create_artist import AUTOMATED_VISUAL_STYLES, create_artist, persist_artist_files, slugify
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -185,7 +185,9 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
                 generate_qr=False,
                 metadata_tags=item.get("tags") if isinstance(item.get("tags"), list) else [],
                 primary_location=str(item.get("band_location") or item.get("location") or ""),
+                persist=False,
             )
+            manifest = result.pop("_manifest")
             record = {
                 "id": aquarium_slug,
                 "artist": artist,
@@ -202,6 +204,7 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
                 "visualStyle": result["visual_style"],
                 "status": "published",
             }
+            persist_artist_files(aquarium_slug, artist, manifest)
             batch["aquariums"].append(record)
             history["releases"].append(record)
             completed_urls.add(url)

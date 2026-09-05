@@ -12,6 +12,7 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
 import daily_discovery
+import create_artist as creator
 from create_artist import BandcampPageParser, MINIMUM_TRACK_COUNT, discover_tracks
 
 
@@ -56,6 +57,14 @@ class DailyDiscoveryTests(unittest.TestCase):
             tracks, *_ = discover_tracks("https://artist.bandcamp.com/album/unplayable", "Artist")
         self.assertEqual(tracks, [])
         self.assertEqual(fetch.call_count, 1)
+
+    def test_daily_dry_run_does_not_publish_before_bookkeeping_succeeds(self):
+        track = {"albumKey": "release", "accent": "#fff", "albumTitle": "Release"}
+        discovered = ([track], "https://artist.bandcamp.com/album/release", True, "https://artist.bandcamp.com/", "2026-09-01", ["ambient"])
+        with tempfile.TemporaryDirectory() as folder, patch.object(creator, "PAGES", Path(folder)), patch.object(creator, "discover_tracks", return_value=discovered):
+            result = creator.create_artist("Artist", "https://artist.bandcamp.com/album/release", "cosmic", "https://example.test", generate_qr=False, persist=False)
+            self.assertIsNotNone(result["_manifest"])
+            self.assertEqual(list(Path(folder).rglob("*")), [])
 
 
 if __name__ == "__main__":

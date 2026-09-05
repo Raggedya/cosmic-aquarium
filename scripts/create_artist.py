@@ -264,6 +264,21 @@ def render_html(slug: str, artist: str) -> str:
             .replace("{{ASSET_VERSION}}", asset_version))
 
 
+def persist_artist_files(slug: str, artist: str, manifest: dict[str, Any]) -> None:
+    manifest_directory = PAGES / "artists"
+    page_directory = PAGES / slug
+    manifest_directory.mkdir(parents=True, exist_ok=True)
+    page_directory.mkdir(parents=True, exist_ok=True)
+    manifest_path = manifest_directory / f"{slug}.json"
+    page_path = page_directory / "index.html"
+    manifest_temp = manifest_path.with_suffix(".json.tmp")
+    page_temp = page_path.with_suffix(".html.tmp")
+    manifest_temp.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    page_temp.write_text(render_html(slug, artist), encoding="utf-8")
+    manifest_temp.replace(manifest_path)
+    page_temp.replace(page_path)
+
+
 def create_artist(
     title: str,
     bandcamp_url: str,
@@ -279,6 +294,7 @@ def create_artist(
     metadata_tags: list[str] | None = None,
     waters: list[str] | None = None,
     primary_location: str = "",
+    persist: bool = True,
 ) -> dict[str, Any]:
     artist = " ".join(title.split())
     if not artist:
@@ -319,7 +335,6 @@ def create_artist(
         "metadataTags": merged_tags,
         "primaryLocation": " ".join(primary_location.split()) or None,
         "waters": assigned_waters,
-        "metadata_tags": merged_tags,
         "commerceAvailable": commerce_available,
         "commerceUrl": commerce_url,
         "visualStyle": visual_style,
@@ -328,10 +343,8 @@ def create_artist(
         "albums": [{"key": key, "color": color} for key, color in albums.items()],
         "tracks": tracks,
     }
-    (PAGES / "artists").mkdir(parents=True, exist_ok=True)
-    (PAGES / slug).mkdir(parents=True, exist_ok=True)
-    (PAGES / "artists" / f"{slug}.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    (PAGES / slug / "index.html").write_text(render_html(slug, artist), encoding="utf-8")
+    if persist:
+        persist_artist_files(slug, artist, manifest)
 
     edition_key = re.sub(r"[^A-Za-z0-9_-]", "", cache_key) or time.strftime("%Y%m%d%H%M%S", time.gmtime())
     destination = base_url.rstrip("/") + "/" + urllib.parse.quote(slug) + "/?edition=" + urllib.parse.quote(edition_key)
@@ -348,6 +361,8 @@ def create_artist(
         "commerce_available": commerce_available,
         "visual_style": visual_style,
         "waters": assigned_waters,
+        "metadata_tags": merged_tags,
+        "_manifest": manifest if not persist else None,
     }
     return result
 
