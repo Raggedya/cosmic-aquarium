@@ -18,8 +18,14 @@ on:
         required: true
         default: "1000"
         type: string
+      resume_run_id:
+        description: Optional prior workflow run ID whose saved batch workspace should be resumed
+        required: false
+        default: ""
+        type: string
 
 permissions:
+  actions: read
   contents: write
   pages: write
   id-token: write
@@ -72,6 +78,15 @@ jobs:
           if [[ "$DRY_RUN" == "true" ]]; then suffix="-dry-run"; fi
           echo "batch_id=bulk-5000-batch-${batch_number}${suffix}" >> "$GITHUB_OUTPUT"
           echo "target=$target" >> "$GITHUB_OUTPUT"
+      - name: Restore a saved incomplete batch workspace
+        if: inputs.resume_run_id != ''
+        uses: actions/download-artifact@v4
+        with:
+          name: bulk-workspace-${{ steps.batch.outputs.batch_id }}
+          path: .
+          github-token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          run-id: ${{ inputs.resume_run_id }}
       - name: Require a completed dry run before publishing
         if: inputs.dry_run == false
         shell: bash
@@ -100,6 +115,16 @@ jobs:
           args=(--batch-id "$BATCH_ID" --target-accepted "$TARGET" --candidate-limit "$CANDIDATE_LIMIT")
           if [[ "$DRY_RUN" == "true" ]]; then args+=(--dry-run); fi
           python scripts/bulk_expand_library.py "${args[@]}" | tee bulk-result.json
+      - name: Preserve the recoverable batch workspace
+        if: always() && steps.batch.outputs.batch_id != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: bulk-workspace-${{ steps.batch.outputs.batch_id }}
+          path: |
+            automation/bulk
+            github-pages
+          if-no-files-found: error
+          retention-days: 30
       - name: Rebuild public catalogue
         if: inputs.dry_run == false
         run: npm run build:pages
