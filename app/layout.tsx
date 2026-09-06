@@ -4,8 +4,8 @@ import './cosmic-aquarium.css';
 import './doorway.css';
 import './collection-aquarium.css';
 
-const title = 'Cosmic Aquaria — Enter Without Knowing';
-const description = 'Choose a water or drift anywhere. Let independent music find you inside the living Cosmic Aquaria universe.';
+const title = 'AGGITS — Melbourne Music Machine';
+const description = 'Pull the lever and let Melbourne music find you: 500 independent artists, thousands of real Bandcamp tracks, one mysterious machine.';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://project-b-side.raggedya.chatgpt.site'),
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       url: '/og-cosmic-aquarium.png',
       width: 1200,
       height: 630,
-      alt: 'Cosmic Aquaria — realistic flowers flowing through deep space, each carrying an Immigrant Union song',
+      alt: 'AGGITS Melbourne Music Machine',
     }],
   },
   twitter: {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
-    title: 'Cosmic Aquaria',
+    title: 'AGGITS',
   },
 };
 
@@ -39,7 +39,7 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   viewportFit: 'cover',
-  themeColor: '#01040d',
+  themeColor: '#160b05',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

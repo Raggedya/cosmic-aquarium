@@ -236,3 +236,27 @@ export function pickPlayableTrack(manifest, cryptoApi = globalThis.crypto) {
   const tracks = (manifest?.tracks || []).filter(track => /^\d+$/.test(String(track.bandcampEmbedTrackId || '')) && validBandcampUrl(track.bandcampUrl));
   return tracks[secureRandomIndex(tracks.length, cryptoApi)] || null;
 }
+
+export const MACHINE_STATES = Object.freeze([
+  'BOOT','IDLE','LEVER_PULL','SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP',
+  'EVALUATE','LOSS','NEAR_MISS','WIN','WIN_CELEBRATION','LOADING_TRACK','PLAYING','PLAY_ERROR',
+]);
+
+export function machineMatchProbability(lossesSinceMatch = 0) {
+  return [0.18,0.27,0.39,0.62,1][Math.min(4,Math.max(0,Number(lossesSinceMatch)||0))];
+}
+
+export function decideMachineResult(lossesSinceMatch = 0, matchRoll = Math.random(), nearMissRoll = Math.random()) {
+  const match = Number(matchRoll) < machineMatchProbability(lossesSinceMatch);
+  return {match,nearMiss:!match && Number(nearMissRoll) < 0.24,nextLossesSinceMatch:match?0:Math.min(4,(Number(lossesSinceMatch)||0)+1)};
+}
+
+export function isThreeArtistMatch(entries) {
+  if(!Array.isArray(entries)||entries.length!==3)return false;
+  const identities=entries.map(artistIdentity);
+  return Boolean(identities[0])&&identities.every(identity=>identity===identities[0]);
+}
+
+export function playableMelbourneEntries(catalogue) {
+  return (Array.isArray(catalogue)?catalogue:[]).filter(entry=>entry?.status==='published'&&entry?.slug&&validBandcampUrl(entry.bandcampUrl)&&Array.isArray(entry.universeMembership)&&entry.universeMembership.includes('melbourne')&&Number(entry.trackCount)>0);
+}

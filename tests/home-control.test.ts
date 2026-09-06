@@ -3,15 +3,15 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 
-test('the player returns to category selection without creating a third screen', async () => {
+test('HOME resets the approved single-screen machine without creating another screen', async () => {
   const runtime = await readFile(path.resolve('github-pages', 'assets', 'discovery-machine.js'), 'utf8');
   const template = await readFile(path.resolve('templates', 'universe-index.html'), 'utf8');
-  assert.match(template,/class="change-categories"/);
-  assert.match(template,/aria-label="Home — choose music categories">Home<\/button>/);
-  assert.equal((template.match(/data-screen=/g)||[]).length,2);
-  assert.match(runtime,/changeButton\.addEventListener\('click',\(\)=>showSelection\(\)\)/);
+  assert.match(template,/data-action="home">HOME<\/button>/);
+  assert.equal((template.match(/class="music-machine"/g)||[]).length,1);
+  assert.equal((template.match(/data-screen=/g)||[]).length,0);
+  assert.match(runtime,/homeButton\.addEventListener\('click',resetMachine\)/);
   assert.match(runtime,/addEventListener\('popstate'/);
-  assert.match(runtime,/history\.pushState/);
+  assert.match(runtime,/history\.replaceState/);
 });
 
 test('home transition stays within the original circular footprint and supports reduced motion', async () => {

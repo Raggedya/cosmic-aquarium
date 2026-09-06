@@ -31,6 +31,8 @@ const discoveryFidelityAssetNames = [
   'player-ticker-shell.webp','player-main-frame.webp','player-share.webp','player-share-blank.webp','player-buy.webp','player-next.webp','player-next-blank.webp','player-footer.webp',
 ];
 const discoveryFidelityAssets = await Promise.all(discoveryFidelityAssetNames.map((name) => fs.readFile(path.join(root,'public','discovery-fidelity',name))));
+const musicMachineAssetNames = ['aggits-cabinet.webp','aggits-lever.webp'];
+const musicMachineAssets = await Promise.all(musicMachineAssetNames.map((name) => fs.readFile(path.join(root,'public','music-machine',name))));
 const glassAudioSourceNames = [
   'glass-plate-crunching.mp3','glass-plate-crunching.ogg',
   'glass-debris-014.mp3','glass-debris-014.ogg',
@@ -46,6 +48,7 @@ const maximumFlowerCount = 14;
 const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore);
 doorwayAssets.forEach((asset) => assetHash.update(asset));
 discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
+musicMachineAssets.forEach((asset) => assetHash.update(asset));
 glassAudioAssets.forEach((asset) => assetHash.update(asset));
 glassAudioImpacts.forEach((asset) => assetHash.update(asset));
 const assetVersion = assetHash.digest('hex').slice(0,12);
@@ -55,6 +58,7 @@ await fs.mkdir(path.join(pages,'assets','skulls'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','glass'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','doorway'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','discovery-fidelity'),{recursive:true});
+await fs.mkdir(path.join(pages,'assets','music-machine'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','audio','glass','source'),{recursive:true});
 await fs.mkdir(path.join(pages,'artists'),{recursive:true});
 await fs.mkdir(path.join(pages,'collections'),{recursive:true});
@@ -72,6 +76,9 @@ for (const name of doorwayAssetNames) {
 }
 for (const name of discoveryFidelityAssetNames) {
   await fs.copyFile(path.join(root,'public','discovery-fidelity',name),path.join(pages,'assets','discovery-fidelity',name));
+}
+for (const name of musicMachineAssetNames) {
+  await fs.copyFile(path.join(root,'public','music-machine',name),path.join(pages,'assets','music-machine',name));
 }
 for (const name of glassAudioSourceNames) {
   await fs.copyFile(path.join(root,'public','audio','glass','source',name),path.join(pages,'assets','audio','glass','source',name));
