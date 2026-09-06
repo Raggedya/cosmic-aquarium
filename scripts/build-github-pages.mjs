@@ -43,6 +43,7 @@ const glassAudioAssets = await Promise.all(glassAudioSourceNames.map((name) => f
 const glassAudioImpacts = await Promise.all(glassAudioImpactNames.map((name) => fs.readFile(path.join(root,'public','audio','glass',name))));
 const minimumFlowerCount = 10;
 const maximumFlowerCount = 14;
+const publicUniverse = 'global';
 const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore);
 doorwayAssets.forEach((asset) => assetHash.update(asset));
 discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
@@ -93,6 +94,7 @@ if(melbourneMembership.universe!=='melbourne'||!melbourneMembership.artists||typ
 const aquariumRegistry=[];
 const canonicalCandidates=new Map();
 const playableTrackIdsByArtist=new Map();
+const playableReleaseSlugs=new Set();
 for (const filename of artistManifestFiles) {
   try {
     const artistManifest = JSON.parse(await fs.readFile(path.join(pages,'artists',filename),'utf8'));
@@ -119,13 +121,13 @@ for (const filename of artistManifestFiles) {
         dailyBatchId:artistManifest.dailyBatchId || null,
         primaryLocation:displayLocation,
         metadataTags:Array.isArray(artistManifest.metadataTags) ? artistManifest.metadataTags : [],
-        bioShort:factualTickerBio(artistManifest.artist,artistManifest.metadataTags,waters,displayLocation),
-        bioSource:'catalogue-factual-summary',
+        bioShort:artistManifest.bioShort || factualTickerBio(artistManifest.artist,artistManifest.metadataTags,waters,displayLocation),
+        bioSource:artistManifest.bioShort ? (artistManifest.bioSource || 'catalogue') : 'catalogue-factual-summary',
         url:'https://raggedya.github.io/cosmic-aquarium/'+encodeURIComponent(artistManifest.slug)+'/',
         status:artistManifest.status || 'published',
         canonicalArtistId,
         canonicalBandcampUrl,
-        universeMembership:locationMembership?.eligible===true?['melbourne']:[],
+        universeMembership:locationMembership?.eligible===true?[publicUniverse,'melbourne']:[publicUniverse],
         locationConfidence:locationMembership?.locationConfidence||'UNKNOWN',
         suburb:locationMembership?.suburb||null,
         city:locationMembership?.city||null,
@@ -137,6 +139,7 @@ for (const filename of artistManifestFiles) {
       if(registryEntry.status==='published') for(const track of artistManifest.tracks||[]){
         const trackId=String(track.bandcampEmbedTrackId||'');
         if(/^\d+$/.test(trackId)&&isBandcampUrl(track.bandcampUrl)){
+          playableReleaseSlugs.add(artistManifest.slug);
           if(!playableTrackIdsByArtist.has(canonicalArtistId))playableTrackIdsByArtist.set(canonicalArtistId,new Set());
           playableTrackIdsByArtist.get(canonicalArtistId).add(trackId);
         }
@@ -164,8 +167,11 @@ const allCanonicalArtists=[...canonicalCandidates.entries()].map(([id,entry])=>{
   visualStyle:entry.visualStyle,
   waters:entry.waters,
   lastUpdated:entry.releaseDate || null,
-  memberships:locationMembership?.eligible===true?[{id:'universe:melbourne',slug:'melbourne',name:'MELBOURNE',type:'universe',status:'published'}]:[],
-  universeMembership:locationMembership?.eligible===true?['melbourne']:[],
+  memberships:[
+    {id:'universe:global',slug:'global',name:'COSMIC AQUARIA',type:'universe',status:'published'},
+    ...(locationMembership?.eligible===true?[{id:'universe:melbourne',slug:'melbourne',name:'MELBOURNE',type:'universe',status:'published'}]:[]),
+  ],
+  universeMembership:locationMembership?.eligible===true?[publicUniverse,'melbourne']:[publicUniverse],
   locationConfidence:locationMembership?.locationConfidence||'UNKNOWN',
   primaryLocation:locationMembership?.suburb?`${locationMembership.suburb}, Melbourne`:(locationMembership?.eligible===true?'Melbourne, Australia':entry.primaryLocation||null),
   rawLocation:locationMembership?.rawLocation||entry.primaryLocation||null,
@@ -177,13 +183,17 @@ const allCanonicalArtists=[...canonicalCandidates.entries()].map(([id,entry])=>{
   bioShort:entry.bioShort || null,
   labels:[],
 })}).sort((a,b)=>a.name.localeCompare(b.name));
-const eligibleArtistIds=new Set(Object.entries(melbourneMembership.artists).filter(([,item])=>item?.eligible===true).map(([id])=>id));
-const canonicalArtists=allCanonicalArtists.filter(artist=>artist.status==='published'&&eligibleArtistIds.has(artist.id));
-const melbourneAquariumRegistry=aquariumRegistry.filter(entry=>entry.status==='published'&&eligibleArtistIds.has(entry.canonicalArtistId));
+const canonicalArtists=allCanonicalArtists.filter(artist=>artist.status==='published');
+const publicArtistIds=new Set(canonicalArtists.map(artist=>artist.id));
+const publicAquariumRegistry=aquariumRegistry.filter(entry=>entry.status==='published'&&publicArtistIds.has(entry.canonicalArtistId));
 const playableTrackIds=new Set();
-for(const artistId of eligibleArtistIds)for(const trackId of playableTrackIdsByArtist.get(artistId)||[])playableTrackIds.add(trackId);
+for(const artistId of publicArtistIds)for(const trackId of playableTrackIdsByArtist.get(artistId)||[])playableTrackIds.add(trackId);
+const releasesWithoutPlayableTracks=publicAquariumRegistry.filter(entry=>!playableReleaseSlugs.has(entry.slug));
+if(releasesWithoutPlayableTracks.length) throw new Error(`${releasesWithoutPlayableTracks.length} published releases have no playable Bandcamp tracks.`);
+if(canonicalArtists.length!==allCanonicalArtists.filter(artist=>artist.status==='published').length) throw new Error('The public artist index does not contain every published canonical artist.');
+if(publicAquariumRegistry.length!==aquariumRegistry.filter(entry=>entry.status==='published').length) throw new Error('The public release registry does not contain every published release.');
 await fs.writeFile(path.join(pages,'artists-index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:canonicalArtists},null,2)+'\n');
-await fs.writeFile(path.join(pages,'aquariums.json'),JSON.stringify({schemaVersion:2,universe:'melbourne',generatedAt:new Date().toISOString(),aquariums:melbourneAquariumRegistry},null,2)+'\n');
+await fs.writeFile(path.join(pages,'aquariums.json'),JSON.stringify({schemaVersion:2,universe:publicUniverse,generatedAt:new Date().toISOString(),aquariums:publicAquariumRegistry},null,2)+'\n');
 const canonicalById=new Map(canonicalArtists.map(artist=>[artist.id,artist]));
 const collectionSourceDirectory=path.join(root,'automation','collections');
 await fs.mkdir(collectionSourceDirectory,{recursive:true});
@@ -244,17 +254,17 @@ await fs.writeFile(path.join(pages,'collections','index.json'),JSON.stringify({s
 const now=new Date();
 const today=now.toISOString().slice(0,10);
 const weekStart=new Date(now);weekStart.setUTCDate(weekStart.getUTCDate()-6);weekStart.setUTCHours(0,0,0,0);
-const datedPublished=melbourneAquariumRegistry.filter(entry=>/^\d{4}-\d{2}-\d{2}$/.test(String(entry.dailyBatchId||'')));
+const datedPublished=publicAquariumRegistry.filter(entry=>/^\d{4}-\d{2}-\d{2}$/.test(String(entry.dailyBatchId||'')));
 const representedSuburbs=new Set(canonicalArtists.map(artist=>artist.suburb).filter(Boolean));
 const universeStats={
   schemaVersion:2,
-  universe:'melbourne',
+  universe:publicUniverse,
   artists:canonicalArtists.length,
-  releases:melbourneAquariumRegistry.length,
+  releases:publicAquariumRegistry.length,
   playableTracks:playableTrackIds.size,
   suburbs:representedSuburbs.size,
   canonicalArtistCount:canonicalArtists.length,
-  publishedReleaseCount:melbourneAquariumRegistry.length,
+  publishedReleaseCount:publicAquariumRegistry.length,
   playableTrackCount:playableTrackIds.size,
   newToday:datedPublished.filter(entry=>entry.dailyBatchId===today).length,
   newThisWeek:datedPublished.filter(entry=>new Date(`${entry.dailyBatchId}T00:00:00Z`)>=weekStart).length,
@@ -282,7 +292,7 @@ function factualTickerBio(artist,tags,waters,location){
   const ignored=new Set(['music','melbourne','australia','victoria','independent',...(waters||[]).map(value=>String(value).toLowerCase())]);
   const styles=[...new Set([...(Array.isArray(tags)?tags:[]),...(waters||[])].map(value=>String(value||'').trim().toLowerCase()).filter(value=>value&&!ignored.has(value.replace(/[^a-z0-9]+/g,''))&&!ignored.has(value.replace(/[^a-z0-9]+/g,' ').trim())))].slice(0,3);
   const description=styles.length?styles.join(' / '):'independent';
-  return `${artist} — ${description} music from ${location||'Melbourne, Australia'}.`;
+  return location ? `${artist} — ${description} music from ${location}.` : `${artist} — ${description} independent music.`;
 }
 function bandcampArtistRoot(value){
   try{const url=new URL(String(value||''));const host=url.hostname.toLowerCase().replace(/^www\./,'');return url.protocol==='https:'&&host.endsWith('.bandcamp.com')&&host!=='bandcamp.com'?'https://'+host+'/':null}catch{return null}

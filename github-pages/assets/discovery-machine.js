@@ -647,16 +647,16 @@ function renderSearchResults(results,feedback=''){
     searchResultsPanel.append(option);
   }
   if(!searchResults.length&&searchQuery.trim().length>=2){
-    const prompt=document.createElement('p');prompt.className='search-radar-copy';prompt.textContent="CAN'T SEE THEM? KNOW A MELBOURNE ARTIST WE'VE MISSED?";
+    const prompt=document.createElement('p');prompt.className='search-radar-copy';prompt.textContent="CAN'T SEE THEM? KNOW AN ARTIST WE'VE MISSED?";
     const suggestion=document.createElement('a');suggestion.className='search-suggestion';suggestion.textContent='ADD TO OUR RADAR';suggestion.target='_blank';suggestion.rel='noopener noreferrer';
-    const issueTitle=`Melbourne artist suggestion: ${searchQuery.trim()}`;
-    const issueBody=`Status: MELBOURNE_CANDIDATE\n\nArtist name: ${searchQuery.trim()}\nBandcamp URL: \nMelbourne location evidence: \n\nPlease do not publish until identity, geography, playability, duplicate status, and waters are validated.`;
-    suggestion.href=`https://github.com/Raggedya/cosmic-aquarium/issues/new?${new URLSearchParams({title:issueTitle,body:issueBody,labels:'melbourne-candidate'})}`;
+    const issueTitle=`Cosmic Aquaria artist suggestion: ${searchQuery.trim()}`;
+    const issueBody=`Status: ARTIST_CANDIDATE\n\nArtist name: ${searchQuery.trim()}\nBandcamp URL: \nLocation evidence: \n\nPlease do not publish until identity, playability, duplicate status, and waters are validated.`;
+    suggestion.href=`https://github.com/Raggedya/cosmic-aquarium/issues/new?${new URLSearchParams({title:issueTitle,body:issueBody})}`;
     searchResultsPanel.append(prompt,suggestion);
   }
   const visible=searchResults.length>0||searchQuery.trim().length>=2;
   searchResultsPanel.setAttribute('role',searchResults.length?'listbox':'region');
-  searchResultsPanel.setAttribute('aria-label',searchResults.length?'Validated Melbourne artist results':'Suggest a Melbourne artist');
+  searchResultsPanel.setAttribute('aria-label',searchResults.length?'Validated Cosmic Aquaria artist results':'Suggest an artist');
   searchResultsPanel.hidden=!visible;
   artistSearchInput?.setAttribute('aria-expanded',String(visible));
   setSearchState(selectedSearchArtist?'selected':'idle',feedback);
@@ -792,7 +792,7 @@ async function resolveSearchArtist(result,{excludeReleaseId='',preferredReleaseI
     if(!entry)throw new Error('This library artist is temporarily unavailable.');
     return {entry,manifest:await fetchManifest(entry),search:{source:'library',artistId:result.artistId,artistName:result.artistName,bandcampArtistUrl:result.bandcampArtistUrl}};
   }
-  throw new Error('Choose a validated Melbourne artist from Cosmic Aquaria.');
+  throw new Error('Choose a validated artist from Cosmic Aquaria.');
 }
 
 async function resolveSelectedSearchArtist(){
@@ -1081,7 +1081,7 @@ function populatePlayer(entry, manifest, {trackOverride=null}={}) {
 
 function playerUrl(entry = currentEntry) {
   const url=new URL(buildShareUrl(location.origin,base,entry.slug,[...selected]));
-  url.searchParams.set('universe','melbourne');
+  url.searchParams.set('universe',String(universeStats.universe||'global'));
   if(playerDiscoveryMode==='search'&&currentSearchContext?.source==='library')url.searchParams.set('searchArtist',currentSearchContext.artistId);
   return url.toString();
 }

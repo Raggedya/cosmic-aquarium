@@ -76,15 +76,29 @@ test('discovery selects an artist first so large discographies cannot dominate',
 });
 
 test('the production catalogue contains only real playable Bandcamp records',async()=>{
-  const catalogue=JSON.parse(await read('github-pages/aquariums.json'));
+  const [catalogue,artistIndex,searchIndex]=await Promise.all([
+    read('github-pages/aquariums.json').then(JSON.parse),
+    read('github-pages/artists-index.json').then(JSON.parse),
+    read('github-pages/artist-search-index.json').then(JSON.parse),
+  ]);
   const registry=catalogue.aquariums;
-  assert.equal(catalogue.universe,'melbourne');
-  assert.ok(registry.length>=1);
-  assert.ok(registry.every((entry:{artist:string;release:string;status:string;bandcampUrl:string;canonicalArtistId:string;universeMembership:string[]})=>entry.artist&&entry.release&&entry.status==='published'&&validBandcampUrl(entry.bandcampUrl)&&entry.canonicalArtistId&&entry.universeMembership.includes('melbourne')));
+  assert.equal(catalogue.universe,'global');
+  assert.equal(registry.length,2747);
+  assert.equal(new Set(registry.map((entry:{canonicalArtistId:string})=>entry.canonicalArtistId)).size,2740);
+  assert.equal(artistIndex.artists.length,2740);
+  assert.equal(searchIndex.artists.length,2740);
+  assert.ok(registry.every((entry:{artist:string;release:string;status:string;bandcampUrl:string;canonicalArtistId:string;universeMembership:string[]})=>entry.artist&&entry.release&&entry.status==='published'&&validBandcampUrl(entry.bandcampUrl)&&entry.canonicalArtistId&&entry.universeMembership.includes('global')));
+  const playableTrackIds=new Set<string>();
   for(const entry of registry){
     const manifest=JSON.parse(await read(`github-pages/artists/${entry.slug}.json`));
     assert.ok(pickPlayableTrack(manifest),`${entry.slug} must expose at least one lawful playable track`);
+    for(const track of manifest.tracks||[]){
+      assert.match(String(track.bandcampEmbedTrackId||''),/^\d+$/);
+      assert.ok(validBandcampUrl(track.bandcampUrl),`${entry.slug}/${track.title} must have a valid Bandcamp URL`);
+      playableTrackIds.add(String(track.bandcampEmbedTrackId));
+    }
   }
+  assert.equal(playableTrackIds.size,23192);
 });
 
 test('crack geometry is deterministic and not universally identical',()=>{
@@ -185,7 +199,7 @@ test('ticker rotates factual artist, release, bio, style and generated universe 
     {artist:'Aneira',releaseTitle:'Rotations',selectedTrackTitle:'Steady as a Speedy Oak',releaseDate:'2026-08-22T00:00:00Z',waters:['dreamy','strange'],metadataTags:['ambient','experimental'],bioShort:'Atmospheric textural music from Melbourne.'},
     {waters:['dreamy','strange']},
     {primaryLocation:'Melbourne, Australia'},
-    {canonicalArtistCount:220,publishedReleaseCount:227,playableTrackCount:2398,newToday:20},
+    {universe:'melbourne',canonicalArtistCount:220,publishedReleaseCount:227,playableTrackCount:2398,newToday:20},
   );
   assert.match(messages[0],/ANEIRA.*MELBOURNE, AUSTRALIA/);
   assert.ok(messages.some(message=>/ROTATIONS.*STEADY AS A SPEEDY OAK/.test(message)));
@@ -193,6 +207,17 @@ test('ticker rotates factual artist, release, bio, style and generated universe 
   assert.ok(messages.some(message=>/DREAMY \+ STRANGE/.test(message)));
   assert.ok(messages.some(message=>/220 MELBOURNE ARTISTS.*2,398 PLAYABLE TRACKS FROM MELBOURNE/.test(message)));
   assert.ok(messages.every(message=>!/(undefined|null|n\/a)/i.test(message)));
+});
+
+test('global ticker reports the complete catalogue without mislabelling it Melbourne',()=>{
+  const messages=buildTickerMessages(
+    {artist:'Global Artist',releaseTitle:'Release',selectedTrackTitle:'Track',bioShort:'Independent music.'},
+    {},
+    {primaryLocation:'Tokyo, Japan'},
+    {universe:'global',canonicalArtistCount:2740,publishedReleaseCount:2747,playableTrackCount:23192},
+  );
+  assert.ok(messages.some(message=>/2,740 INDEPENDENT ARTISTS.*23,192 PLAYABLE TRACKS/.test(message)));
+  assert.ok(messages.every(message=>!/MELBOURNE MUSIC LIVES HERE|PLAYABLE TRACKS FROM MELBOURNE/.test(message)));
 });
 
 test('Melbourne culture ticker preserves all ten canonical segments verbatim',()=>{
@@ -239,12 +264,12 @@ test('runtime advances Melbourne culture by session while retaining the seamless
 test('universe statistics are generated from published manifests and distinct playable track ids',async()=>{
   const [stats,build]=await Promise.all([read('github-pages/universe-stats.json'),read('scripts/build-github-pages.mjs')]);
   const parsed=JSON.parse(stats);
-  assert.equal(parsed.universe,'melbourne');
-  assert.ok(parsed.canonicalArtistCount>=1);
+  assert.equal(parsed.universe,'global');
+  assert.equal(parsed.canonicalArtistCount,2740);
   assert.ok(parsed.publishedReleaseCount>=parsed.canonicalArtistCount);
   assert.ok(parsed.playableTrackCount>=parsed.publishedReleaseCount);
-  assert.match(build,/eligibleArtistIds/);
-  assert.match(build,/publishedReleaseCount:melbourneAquariumRegistry\.length/);
+  assert.match(build,/publicArtistIds/);
+  assert.match(build,/publishedReleaseCount:publicAquariumRegistry\.length/);
   assert.doesNotMatch(build,/canonicalArtistCount:\s*\d/);
 });
 

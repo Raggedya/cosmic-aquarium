@@ -25,5 +25,72 @@
     "researchStatus": "ready",
     "lastResearchedAt": "2026-09-02T06:10:39Z"
   },
-  "members": []
+  "members": [
+    {
+      "artistId": "bandcamp:thewobblies",
+      "artistName": "The Wobblies",
+      "bandcampArtistUrl": "https://thewobblies.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "administrator-supplied",
+      "evidence": "Bandcamp profile location: Portland, Oregon",
+      "aquariumSlug": "the-wobblies",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-wobblies/",
+      "existingAquarium": false,
+      "displayEnabled": true,
+      "addedAt": "2026-09-02T06:10:39Z",
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:ourspdx",
+      "artistName": "Ours.",
+      "bandcampArtistUrl": "https://ourspdx.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "administrator-supplied",
+      "evidence": "Bandcamp profile location: Portland, Oregon",
+      "aquariumSlug": "ours",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ours/",
+      "existingAquarium": false,
+      "displayEnabled": true,
+      "addedAt": "2026-09-02T06:10:39Z",
+      "waters": [
+        "dreamy",
+        "dark"
+      ],
+      "styles": [
+        "dreamy",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:daystarpdx",
+      "artistName": "Daystar",
+      "bandcampArtistUrl": "https://daystarpdx.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "administrator-supplied",
+      "evidence": "Bandcamp profile location: Portland, Oregon",
+      "aquariumSlug": "daystar",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/daystar/",
+      "existingAquarium": false,
+      "displayEnabled": true,
+      "addedAt": "2026-09-02T06:10:39Z",
+      "waters": [
+        "dark",
+        "loud"
+      ],
+      "styles": [
+        "dark",
+        "loud"
+      ]
+    }
+  ]
 }
