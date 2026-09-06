@@ -1,0 +1,770 @@
+{
+  "batchId": "bulk-5000-batch-02-dry-run",
+  "mode": "dry-run",
+  "status": "complete",
+  "candidatesDiscovered": 1500,
+  "acceptedNewArtists": 500,
+  "duplicatesRejected": 218,
+  "invalidOrDead": 22,
+  "noPlayableTrack": 8,
+  "manualReview": 350,
+  "otherQualityRejects": 4,
+  "rejectionReasons": {
+    "DUPLICATE_ARTIST": 218,
+    "MANUAL_REVIEW": 350,
+    "NO_PLAYABLE_TRACK": 8,
+    "SPAM_OR_PLACEHOLDER": 4,
+    "UNSUPPORTED_PAGE": 22
+  },
+  "waterDistribution": {
+    "heavy": 158,
+    "dreamy": 90,
+    "electronic": 83,
+    "quiet": 90,
+    "loud": 195,
+    "dark": 84,
+    "strange": 57
+  },
+  "countryDistribution": {
+    "United States": 209,
+    "United Kingdom": 80,
+    "Germany": 20,
+    "Unresolved": 18,
+    "France": 16,
+    "Brazil": 11,
+    "Australia": 10,
+    "Japan": 10,
+    "Ireland": 9,
+    "Netherlands": 9,
+    "Canada": 8,
+    "Sweden": 7,
+    "Italy": 6,
+    "Portugal": 6,
+    "Argentina": 5,
+    "Spain": 5,
+    "Georgia": 5,
+    "Poland": 4,
+    "Romania": 3,
+    "Norway": 3,
+    "Chile": 3,
+    "Finland": 2,
+    "Mexico": 2,
+    "New Zealand": 2,
+    "Belgium": 2,
+    "Czechia": 2,
+    "Denmark": 2,
+    "Austria": 2,
+    "South Korea": 2,
+    "Indonesia": 1,
+    "China": 1,
+    "Estonia": 1,
+    "Hungary": 1,
+    "Iceland": 1,
+    "Russia": 1,
+    "Lithuania": 1,
+    "Latvia": 1,
+    "Ukraine": 1,
+    "Bulgaria": 1,
+    "Israel": 1,
+    "Malaysia": 1,
+    "Croatia": 1,
+    "Colombia": 1
+  },
+  "acceptedBySourceTag": {
+    "grunge": 23,
+    "stoner-metal": 20,
+    "sludge": 19,
+    "garage-rock": 19,
+    "dream-pop": 18,
+    "post-hardcore": 18,
+    "hardcore": 17,
+    "ethereal": 17,
+    "breakbeat": 17,
+    "post-metal": 16,
+    "slowcore": 16,
+    "piano": 16,
+    "goth": 15,
+    "noise-rock": 14,
+    "house": 14,
+    "shoegaze": 13,
+    "idm": 13,
+    "black-metal": 13,
+    "metal": 13,
+    "acoustic": 12,
+    "ambient-pop": 12,
+    "punk": 11,
+    "post-punk": 11,
+    "electro": 10,
+    "avant-garde": 10,
+    "noise": 10,
+    "folk": 10,
+    "field-recordings": 10,
+    "darkwave": 9,
+    "psychedelic": 9,
+    "minimal": 8,
+    "coldwave": 8,
+    "outsider": 7,
+    "ambient": 7,
+    "musique-concrete": 7,
+    "techno": 7,
+    "dark-ambient": 7,
+    "sound-art": 6,
+    "experimental": 6,
+    "doom": 5,
+    "free-jazz": 5,
+    "electronic": 2
+  },
+  "acceptedBySourceSlice": {
+    "top": 325,
+    "new": 175
+  },
+  "qaSample": [
+    {
+      "artist": "Unsheathed Glory",
+      "release": "Featherfey",
+      "bandcampUrl": "https://unsheathedglory.bandcamp.com/album/featherfey",
+      "waters": [
+        "dark",
+        "quiet"
+      ],
+      "trackCount": 8,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Post Inner Circle",
+      "release": "tipsy / somemore",
+      "bandcampUrl": "https://postinnercircle.bandcamp.com/album/tipsy-somemore",
+      "waters": [
+        "dreamy"
+      ],
+      "trackCount": 2,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "Eyesack AlMommytree",
+      "release": "AlMommytree Collection I {{𖣠TOKEN №×7𖣠}}",
+      "bandcampUrl": "https://eyesackalmommytree.bandcamp.com/album/almommytree-collection-i-token-7",
+      "waters": [
+        "loud"
+      ],
+      "trackCount": 8,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "LMajor",
+      "release": "Deep Deadly Dub",
+      "bandcampUrl": "https://lmajormusic.bandcamp.com/album/deep-deadly-dub",
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "trackCount": 4,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "haustra",
+      "release": "dismal, hapless ditz Vol. 1",
+      "bandcampUrl": "https://haustra.bandcamp.com/album/dismal-hapless-ditz-vol-1",
+      "waters": [
+        "loud"
+      ],
+      "trackCount": 7,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "Travelyan",
+      "release": "Modular Forms and Elliptic Curves",
+      "bandcampUrl": "https://travelyan.bandcamp.com/album/modular-forms-and-elliptic-curves",
+      "waters": [
+        "quiet"
+      ],
+      "trackCount": 30,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "Caesar",
+      "release": "EP023",
+      "bandcampUrl": "https://caesar.bandcamp.com/album/ep023",
+      "waters": [
+        "quiet"
+      ],
+      "trackCount": 3,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "LUME",
+      "release": "Blinding Love",
+      "bandcampUrl": "https://lume.bandcamp.com/album/blinding-love",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "trackCount": 7,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "Salt Queen",
+      "release": "ARE U OK",
+      "bandcampUrl": "https://saltqueen.bandcamp.com/album/are-u-ok",
+      "waters": [
+        "electronic"
+      ],
+      "trackCount": 2,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Beartooth",
+      "release": "Pure Ecstasy",
+      "bandcampUrl": "https://beartooth.bandcamp.com/album/pure-ecstasy",
+      "waters": [
+        "heavy",
+        "loud"
+      ],
+      "trackCount": 11,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "SIIE",
+      "release": "Sabotage Remixes",
+      "bandcampUrl": "https://siie.bandcamp.com/album/sabotage-remixes",
+      "waters": [
+        "dark"
+      ],
+      "trackCount": 2,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "Oddkut",
+      "release": "Sound System EP VOL.2",
+      "bandcampUrl": "https://oddkut.bandcamp.com/album/sound-system-ep-vol-2",
+      "waters": [
+        "electronic"
+      ],
+      "trackCount": 4,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Whitelands",
+      "release": "Sunlight Echoes",
+      "bandcampUrl": "https://whitelands.bandcamp.com/album/sunlight-echoes",
+      "waters": [
+        "dark"
+      ],
+      "trackCount": 10,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "The Callous Daoboys",
+      "release": "God Smiles Upon The Callous Daoboys",
+      "bandcampUrl": "https://thecallousdaoboys.bandcamp.com/album/god-smiles-upon-the-callous-daoboys",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "trackCount": 3,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Moral Injury",
+      "release": "Hideous Reputation",
+      "bandcampUrl": "https://moralinjury.bandcamp.com/album/hideous-reputation",
+      "waters": [
+        "heavy"
+      ],
+      "trackCount": 6,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "Sense May",
+      "release": "Mundane Dreams",
+      "bandcampUrl": "https://sensemay.bandcamp.com/album/mundane-dreams",
+      "waters": [
+        "loud"
+      ],
+      "trackCount": 5,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Surf John",
+      "release": "A Very Surf John Christmas",
+      "bandcampUrl": "https://surfjohn.bandcamp.com/album/a-very-surf-john-christmas",
+      "waters": [
+        "strange"
+      ],
+      "trackCount": 10,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Court of Violets",
+      "release": "Court of Violets",
+      "bandcampUrl": "https://courtofviolets.bandcamp.com/album/court-of-violets",
+      "waters": [
+        "strange"
+      ],
+      "trackCount": 7,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Chuck Johnson",
+      "release": "Trine Phase",
+      "bandcampUrl": "https://chuckjohnson.bandcamp.com/album/trine-phase",
+      "waters": [
+        "quiet"
+      ],
+      "trackCount": 1,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Kos-mos",
+      "release": "Bet You Know",
+      "bandcampUrl": "https://kos-mos.bandcamp.com/album/bet-you-know",
+      "waters": [
+        "dreamy",
+        "quiet"
+      ],
+      "trackCount": 4,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Ivo Vicic",
+      "release": "Thunderstorm and birds in spring",
+      "bandcampUrl": "https://ivovicic.bandcamp.com/album/thunderstorm-and-birds-in-spring",
+      "waters": [
+        "quiet",
+        "electronic"
+      ],
+      "trackCount": 8,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Not Operator",
+      "release": "Godzilla's Caulk: Caulkin' 'Bout You",
+      "bandcampUrl": "https://notoperator1.bandcamp.com/album/godzillas-caulk-caulkin-bout-you",
+      "waters": [
+        "dark"
+      ],
+      "trackCount": 8,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Emmet Cohen",
+      "release": "Universal Truth",
+      "bandcampUrl": "https://emmetcohen.bandcamp.com/album/universal-truth",
+      "waters": [
+        "quiet"
+      ],
+      "trackCount": 8,
+      "bioSource": "bandcamp-description"
+    },
+    {
+      "artist": "Ethan Sherman",
+      "release": "River of Stars",
+      "bandcampUrl": "https://ethansherman.bandcamp.com/album/river-of-stars",
+      "waters": [
+        "quiet"
+      ],
+      "trackCount": 8,
+      "bioSource": "metadata-derived"
+    },
+    {
+      "artist": "private browsing",
+      "release": "A Storm Is Coming",
+      "bandcampUrl": "https://privatebrowsinglol.bandcamp.com/album/a-storm-is-coming",
+      "waters": [
+        "quiet"
+      ],
+      "trackCount": 3,
+      "bioSource": "bandcamp-description"
+    }
+  ],
+  "waterQaSamples": {
+    "heavy": [
+      {
+        "artist": "Mortuary Cave",
+        "release": "Darkness Echoes",
+        "bandcampUrl": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+        "waters": [
+          "heavy"
+        ],
+        "trackCount": 5,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Kowloon Walled City",
+        "release": "Container Ships",
+        "bandcampUrl": "https://kowloonwalledcity.bandcamp.com/album/container-ships",
+        "waters": [
+          "loud",
+          "heavy"
+        ],
+        "trackCount": 7,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Sev Lezu",
+        "release": "Blood Conscript",
+        "bandcampUrl": "https://sevlezu.bandcamp.com/album/blood-conscript",
+        "waters": [
+          "heavy",
+          "loud"
+        ],
+        "trackCount": 7,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Bleeding Antlers",
+        "release": "Songs of Praise",
+        "bandcampUrl": "https://bleedingantlers.bandcamp.com/album/songs-of-praise",
+        "waters": [
+          "heavy",
+          "loud"
+        ],
+        "trackCount": 7,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "glass beach",
+        "release": "plastic death",
+        "bandcampUrl": "https://glassbeach.bandcamp.com/album/plastic-death",
+        "waters": [
+          "dark",
+          "heavy",
+          "loud"
+        ],
+        "trackCount": 13,
+        "bioSource": "metadata-derived"
+      }
+    ],
+    "dreamy": [
+      {
+        "artist": "landfill",
+        "release": "it might be nice",
+        "bandcampUrl": "https://landfilllennon.bandcamp.com/album/it-might-be-nice",
+        "waters": [
+          "dreamy"
+        ],
+        "trackCount": 1,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Hoarse",
+        "release": "Calla",
+        "bandcampUrl": "https://hoarseyay.bandcamp.com/album/calla-2",
+        "waters": [
+          "dreamy"
+        ],
+        "trackCount": 6,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Saint Bambi",
+        "release": "Doppelgängers",
+        "bandcampUrl": "https://saintbambi.bandcamp.com/album/doppelg-ngers",
+        "waters": [
+          "dreamy"
+        ],
+        "trackCount": 6,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Mirror Of Venus",
+        "release": "Never Say Forever",
+        "bandcampUrl": "https://mirrorofvenus.bandcamp.com/album/never-say-forever",
+        "waters": [
+          "dreamy"
+        ],
+        "trackCount": 9,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Beach Vacation",
+        "release": "Delayed Affection",
+        "bandcampUrl": "https://beachvacation.bandcamp.com/album/delayed-affection",
+        "waters": [
+          "dreamy"
+        ],
+        "trackCount": 10,
+        "bioSource": "metadata-derived"
+      }
+    ],
+    "electronic": [
+      {
+        "artist": "Dual Monitor",
+        "release": "Dual Monitor - Ring Finger (Red Hot Sultry Summer of Dub Mix)",
+        "bandcampUrl": "https://dualmonitor.bandcamp.com/album/dual-monitor-ring-finger-red-hot-sultry-summer-of-dub-mix",
+        "waters": [
+          "electronic"
+        ],
+        "trackCount": 1,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Enrico Dragoni",
+        "release": "Pure Sleek - Play Under Pressure (PCTL002)",
+        "bandcampUrl": "https://dragoni.bandcamp.com/album/pure-sleek-play-under-pressure-pctl002",
+        "waters": [
+          "electronic"
+        ],
+        "trackCount": 4,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Lone",
+        "release": "Hyperphantasia",
+        "bandcampUrl": "https://lone.bandcamp.com/album/hyperphantasia",
+        "waters": [
+          "electronic"
+        ],
+        "trackCount": 16,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Salt Queen",
+        "release": "ARE U OK",
+        "bandcampUrl": "https://saltqueen.bandcamp.com/album/are-u-ok",
+        "waters": [
+          "electronic"
+        ],
+        "trackCount": 2,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Robag Wruhme",
+        "release": "FUMAXOHN",
+        "bandcampUrl": "https://robagwruhme.bandcamp.com/album/fumaxohn",
+        "waters": [
+          "electronic"
+        ],
+        "trackCount": 4,
+        "bioSource": "bandcamp-description"
+      }
+    ],
+    "quiet": [
+      {
+        "artist": "EliotSiuyin",
+        "release": "aiiir",
+        "bandcampUrl": "https://eliotsiuyin.bandcamp.com/album/aiiir",
+        "waters": [
+          "dreamy",
+          "quiet"
+        ],
+        "trackCount": 3,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Panopticon",
+        "release": "Det Hjemsøkte Hjertet",
+        "bandcampUrl": "https://thetruepanopticon.bandcamp.com/album/det-hjems-kte-hjertet",
+        "waters": [
+          "quiet"
+        ],
+        "trackCount": 7,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Tripmastaz",
+        "release": "Tripmastaz Remixes 2010-2020 v.3",
+        "bandcampUrl": "https://tripmastaz.bandcamp.com/album/tripmastaz-remixes-2010-2020-v-3",
+        "waters": [
+          "quiet"
+        ],
+        "trackCount": 10,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Tyshawn Sorey",
+        "release": "Members... Don't!",
+        "bandcampUrl": "https://tyshawn-sorey.bandcamp.com/album/members-dont",
+        "waters": [
+          "strange",
+          "quiet",
+          "dreamy"
+        ],
+        "trackCount": 7,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "The Narcissist Cookbook",
+        "release": "MOTH",
+        "bandcampUrl": "https://thenarcissistcookbook.bandcamp.com/album/moth",
+        "waters": [
+          "quiet"
+        ],
+        "trackCount": 15,
+        "bioSource": "metadata-derived"
+      }
+    ],
+    "loud": [
+      {
+        "artist": "MELT-BANANA",
+        "release": "3+5",
+        "bandcampUrl": "https://meltbananaofficial.bandcamp.com/album/3-5",
+        "waters": [
+          "loud"
+        ],
+        "trackCount": 9,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Dimscûa",
+        "release": "Grief & Silence - EP",
+        "bandcampUrl": "https://dimscua.bandcamp.com/album/grief-silence-ep",
+        "waters": [
+          "heavy",
+          "loud"
+        ],
+        "trackCount": 3,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "The Baby Seals",
+        "release": "Live At The Portland Arms Supporting Lydia Lunch",
+        "bandcampUrl": "https://thebabyseals.bandcamp.com/album/live-at-the-portland-arms-supporting-lydia-lunch",
+        "waters": [
+          "loud"
+        ],
+        "trackCount": 10,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Meitei / 冥丁",
+        "release": "Kwaidan / 怪談 (5th Anniversary Edition)",
+        "bandcampUrl": "https://meitei.bandcamp.com/album/kwaidan-5th-anniversary-edition",
+        "waters": [
+          "strange",
+          "electronic",
+          "loud"
+        ],
+        "trackCount": 12,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "novely",
+        "release": "Moments Past Remain",
+        "bandcampUrl": "https://novely.bandcamp.com/album/moments-past-remain",
+        "waters": [
+          "loud",
+          "heavy"
+        ],
+        "trackCount": 5,
+        "bioSource": "metadata-derived"
+      }
+    ],
+    "dark": [
+      {
+        "artist": "Stinking Lizaveta",
+        "release": "Cassandra, Prophet of Doom",
+        "bandcampUrl": "https://stinkinglizavetaofficial.bandcamp.com/album/cassandra-prophet-of-doom",
+        "waters": [
+          "heavy",
+          "dark",
+          "loud"
+        ],
+        "trackCount": 8,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Khemmis",
+        "release": "Khemmis",
+        "bandcampUrl": "https://khemmis.bandcamp.com/album/khemmis-2",
+        "waters": [
+          "heavy",
+          "dark"
+        ],
+        "trackCount": 8,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Curse Jar",
+        "release": "The Cave",
+        "bandcampUrl": "https://cursejards.bandcamp.com/album/the-cave",
+        "waters": [
+          "dark",
+          "heavy",
+          "loud"
+        ],
+        "trackCount": 5,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Somnarium (Michael Meara)",
+        "release": "Ouranos",
+        "bandcampUrl": "https://somnarium.bandcamp.com/album/ouranos",
+        "waters": [
+          "dark",
+          "quiet"
+        ],
+        "trackCount": 4,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "Crippling Alcoholism",
+        "release": "With Love From A Padded Room",
+        "bandcampUrl": "https://cripplingalcoholism.bandcamp.com/album/with-love-from-a-padded-room",
+        "waters": [
+          "dark"
+        ],
+        "trackCount": 12,
+        "bioSource": "metadata-derived"
+      }
+    ],
+    "strange": [
+      {
+        "artist": "Shawn Edward Hansen",
+        "release": "Station To Station 4 - Sound Installation, Red",
+        "bandcampUrl": "https://shawnedwardhansen.bandcamp.com/album/station-to-station-4-sound-installation-red",
+        "waters": [
+          "strange",
+          "loud"
+        ],
+        "trackCount": 1,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "anagram",
+        "release": "anagram demos",
+        "bandcampUrl": "https://anagram33.bandcamp.com/album/anagram-demos",
+        "waters": [
+          "strange"
+        ],
+        "trackCount": 3,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Jane Remover",
+        "release": "Census Designated",
+        "bandcampUrl": "https://janeremover.bandcamp.com/album/census-designated",
+        "waters": [
+          "dreamy",
+          "strange",
+          "quiet"
+        ],
+        "trackCount": 10,
+        "bioSource": "metadata-derived"
+      },
+      {
+        "artist": "The GO",
+        "release": "Free Electricity",
+        "bandcampUrl": "https://listentothego.bandcamp.com/album/free-electricity",
+        "waters": [
+          "dreamy",
+          "strange"
+        ],
+        "trackCount": 10,
+        "bioSource": "bandcamp-description"
+      },
+      {
+        "artist": "Hypnogram",
+        "release": "Autogynephilia - Collected Gameboy Works 2013-2026",
+        "bandcampUrl": "https://hypnogram.bandcamp.com/album/autogynephilia-collected-gameboy-works-2013-2026",
+        "waters": [
+          "strange"
+        ],
+        "trackCount": 36,
+        "bioSource": "bandcamp-description"
+      }
+    ]
+  },
+  "startedAt": "2026-09-06T00:24:44.577477+00:00",
+  "completedAt": "2026-09-06T00:37:56.973826+00:00"
+}

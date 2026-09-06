@@ -1,0 +1,135 @@
+{
+  "batchId": "bulk-5000-batch-02-dry-run",
+  "accepted": 500,
+  "target": 500,
+  "structuralChecks": "PASS",
+  "networkSampleSize": 25,
+  "liveResults": [
+    {
+      "artist": "Unsheathed Glory",
+      "url": "https://unsheathedglory.bandcamp.com/album/featherfey",
+      "playable": true
+    },
+    {
+      "artist": "Post Inner Circle",
+      "url": "https://postinnercircle.bandcamp.com/album/tipsy-somemore",
+      "playable": true
+    },
+    {
+      "artist": "Eyesack AlMommytree",
+      "url": "https://eyesackalmommytree.bandcamp.com/album/almommytree-collection-i-token-7",
+      "playable": true
+    },
+    {
+      "artist": "LMajor",
+      "url": "https://lmajormusic.bandcamp.com/album/deep-deadly-dub",
+      "playable": true
+    },
+    {
+      "artist": "haustra",
+      "url": "https://haustra.bandcamp.com/album/dismal-hapless-ditz-vol-1",
+      "playable": true
+    },
+    {
+      "artist": "Travelyan",
+      "url": "https://travelyan.bandcamp.com/album/modular-forms-and-elliptic-curves",
+      "playable": true
+    },
+    {
+      "artist": "Caesar",
+      "url": "https://caesar.bandcamp.com/album/ep023",
+      "playable": true
+    },
+    {
+      "artist": "LUME",
+      "url": "https://lume.bandcamp.com/album/blinding-love",
+      "playable": true
+    },
+    {
+      "artist": "Salt Queen",
+      "url": "https://saltqueen.bandcamp.com/album/are-u-ok",
+      "playable": true
+    },
+    {
+      "artist": "Beartooth",
+      "url": "https://beartooth.bandcamp.com/album/pure-ecstasy",
+      "playable": true
+    },
+    {
+      "artist": "SIIE",
+      "url": "https://siie.bandcamp.com/album/sabotage-remixes",
+      "playable": true
+    },
+    {
+      "artist": "Oddkut",
+      "url": "https://oddkut.bandcamp.com/album/sound-system-ep-vol-2",
+      "playable": true
+    },
+    {
+      "artist": "Whitelands",
+      "url": "https://whitelands.bandcamp.com/album/sunlight-echoes",
+      "playable": true
+    },
+    {
+      "artist": "The Callous Daoboys",
+      "url": "https://thecallousdaoboys.bandcamp.com/album/god-smiles-upon-the-callous-daoboys",
+      "playable": true
+    },
+    {
+      "artist": "Moral Injury",
+      "url": "https://moralinjury.bandcamp.com/album/hideous-reputation",
+      "playable": true
+    },
+    {
+      "artist": "Sense May",
+      "url": "https://sensemay.bandcamp.com/album/mundane-dreams",
+      "playable": true
+    },
+    {
+      "artist": "Surf John",
+      "url": "https://surfjohn.bandcamp.com/album/a-very-surf-john-christmas",
+      "playable": true
+    },
+    {
+      "artist": "Court of Violets",
+      "url": "https://courtofviolets.bandcamp.com/album/court-of-violets",
+      "playable": true
+    },
+    {
+      "artist": "Chuck Johnson",
+      "url": "https://chuckjohnson.bandcamp.com/album/trine-phase",
+      "playable": true
+    },
+    {
+      "artist": "Kos-mos",
+      "url": "https://kos-mos.bandcamp.com/album/bet-you-know",
+      "playable": true
+    },
+    {
+      "artist": "Ivo Vicic",
+      "url": "https://ivovicic.bandcamp.com/album/thunderstorm-and-birds-in-spring",
+      "playable": true
+    },
+    {
+      "artist": "Not Operator",
+      "url": "https://notoperator1.bandcamp.com/album/godzillas-caulk-caulkin-bout-you",
+      "playable": true
+    },
+    {
+      "artist": "Emmet Cohen",
+      "url": "https://emmetcohen.bandcamp.com/album/universal-truth",
+      "playable": true
+    },
+    {
+      "artist": "Ethan Sherman",
+      "url": "https://ethansherman.bandcamp.com/album/river-of-stars",
+      "playable": true
+    },
+    {
+      "artist": "private browsing",
+      "url": "https://privatebrowsinglol.bandcamp.com/album/a-storm-is-coming",
+      "playable": true
+    }
+  ],
+  "errors": []
+}
