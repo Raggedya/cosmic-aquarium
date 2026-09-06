@@ -120,15 +120,16 @@ test('official Bandcamp playback, real purchase links and track fallback validat
 
 test('winner playback is requested automatically and degrades to an integrated tap-to-play control',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
-  assert.match(template,/data-action="play-winner"/);
+  assert.match(template,/class="bandcamp-play-cue"/);
   assert.match(template,/Official Bandcamp playback controls/);
   assert.match(runtime,/autoplay=true/);
   assert.match(runtime,/schedulePlaybackFallback/);
   assert.match(runtime,/setState\('AUTOPLAY_ATTEMPT'/);
   assert.match(runtime,/setState\('AWAITING_PLAY'/);
-  assert.match(runtime,/winnerPlayButton\.addEventListener\('click',requestWinnerPlayback\)/);
+  assert.match(runtime,/SILENT\? TAP THE PLAY BUTTON/);
   assert.match(runtime,/function animateLeverAndSpin\(\)\{if\(locked\)return;ensureAudio\(\)/);
   assert.match(css,/data-machine-state="AWAITING_PLAY"/);
+  assert.match(css,/\.bandcamp-play-cue\{[^}]*pointer-events:none/);
 });
 
 test('the live source of truth is exactly 500 Melbourne artists and 3,744 playable tracks',async()=>{

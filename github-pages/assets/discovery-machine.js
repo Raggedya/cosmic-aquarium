@@ -14,7 +14,6 @@ const shareButton=document.querySelector('[data-action="share"]');
 const stopButton=document.querySelector('[data-action="pause"]');
 const homeButton=document.querySelector('[data-action="home"]');
 const soundButton=document.querySelector('[data-action="sound"]');
-const winnerPlayButton=document.querySelector('[data-action="play-winner"]');
 const frame=document.querySelector('.bandcamp-slot iframe');
 const statusNode=document.querySelector('.machine-status');
 const needles=[...document.querySelectorAll('[data-meter-needle]')];
@@ -55,7 +54,6 @@ let meterLastAt=0;
 let meterSeed=5381;
 let meterChannels=[{x:0,v:0},{x:0,v:0}];
 let autoplayFallbackTimer=0;
-let currentEmbedUrl='';
 let bandcampEngaged=false;
 
 function readStorage(key){try{return localStorage.getItem(key)}catch{return null}}
@@ -73,7 +71,6 @@ function recordEvent(eventType,details={}){
 function setState(next,message=''){
   if(!stateSet.has(next))throw new Error(`Unknown machine state: ${next}`);
   state=next;machine.dataset.machineState=next;
-  winnerPlayButton.hidden=next!=='AWAITING_PLAY';
   if(message)statusNode.textContent=message;
   window.dispatchEvent(new CustomEvent('aggits:state',{detail:{state:next}}));
 }
@@ -240,24 +237,15 @@ function spinReel(index,finalEntry,stopAfter){
   });
 }
 
-function stopPlayback(){clearTimeout(autoplayFallbackTimer);autoplayFallbackTimer=0;bandcampEngaged=false;currentEmbedUrl='';winnerPlayButton.hidden=true;frame.src='about:blank';currentTrack=null;stopButton.disabled=true;stopButton.textContent='STOP';setMeterMode('idle')}
+function stopPlayback(){clearTimeout(autoplayFallbackTimer);autoplayFallbackTimer=0;bandcampEngaged=false;frame.src='about:blank';currentTrack=null;stopButton.disabled=true;stopButton.textContent='STOP';setMeterMode('idle')}
 
 function schedulePlaybackFallback(delay=1800){
   clearTimeout(autoplayFallbackTimer);
   autoplayFallbackTimer=setTimeout(()=>{
     if(!currentTrack||bandcampEngaged)return;
-    winnerPlayButton.setAttribute('aria-label',`Play ${currentTrack.title} by ${currentManifest.artist}`);
     setState('AWAITING_PLAY',`Autoplay may be unavailable. Play ${currentTrack.title} by ${currentManifest.artist}.`);
+    showTicker(`SILENT? TAP THE PLAY BUTTON • ${currentTrack.title} • ${currentManifest.artist}`);
   },delay);
-}
-
-function requestWinnerPlayback(){
-  if(!currentTrack||!currentEmbedUrl)return;
-  ensureAudio();bandcampEngaged=false;
-  setState('AUTOPLAY_ATTEMPT',`Requesting playback of ${currentTrack.title} by ${currentManifest.artist}.`);
-  showTicker(`STARTING • ${currentTrack.title} • ${currentManifest.artist}`);
-  frame.src=`${currentEmbedUrl}?gesture=${Date.now()}`;
-  schedulePlaybackFallback(1200);
 }
 
 async function loadWinningTrack(entry,{fromDeepLink=false}={}){
@@ -267,8 +255,8 @@ async function loadWinningTrack(entry,{fromDeepLink=false}={}){
     currentEntry=entry;currentManifest=manifest;currentTrack=track;setMeterMode('idle',track.id||track.bandcampEmbedTrackId);
     const embedId=encodeURIComponent(track.bandcampEmbedTrackId);
     frame.title=`Official Bandcamp playback controls for ${track.title} by ${manifest.artist}`;
-    currentEmbedUrl=`https://bandcamp.com/EmbeddedPlayer/track=${embedId}/size=small/bgcol=120904/linkcol=f2b654/tracklist=false/artwork=none/transparent=true/autoplay=true/`;
-    bandcampEngaged=false;frame.src=currentEmbedUrl;
+    const embedUrl=`https://bandcamp.com/EmbeddedPlayer/track=${embedId}/size=small/bgcol=120904/linkcol=f2b654/tracklist=false/artwork=none/transparent=true/autoplay=true/`;
+    bandcampEngaged=false;frame.src=embedUrl;
     const purchase=validBandcampUrl(track.bandcampUrl)||validBandcampUrl(manifest.bandcampUrl);
     buyLink.href=purchase;buyLink.target='_blank';buyLink.rel='noopener noreferrer';buyLink.setAttribute('aria-disabled','false');buyLink.tabIndex=0;buyLink.setAttribute('aria-label',`Buy ${track.title} by ${manifest.artist} on Bandcamp`);
     shareButton.disabled=false;stopButton.disabled=false;
@@ -335,8 +323,8 @@ async function loadData(){
 buildMeters();startMeters();soundButton.textContent=soundOff?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!soundOff));
 lever.addEventListener('pointerdown',onLeverDown);lever.addEventListener('pointermove',onLeverMove);lever.addEventListener('pointerup',onLeverUp);lever.addEventListener('pointercancel',onLeverUp);
 lever.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();animateLeverAndSpin()}});
-shareButton.addEventListener('click',()=>void shareCurrent());buyLink.addEventListener('click',()=>recordEvent('buy_click',{url:buyLink.href}));stopButton.addEventListener('click',stopCurrent);homeButton.addEventListener('click',resetMachine);soundButton.addEventListener('click',toggleSound);winnerPlayButton.addEventListener('click',requestWinnerPlayback);
-function markBandcampPlayback(){if(!currentTrack)return;bandcampEngaged=true;clearTimeout(autoplayFallbackTimer);winnerPlayButton.hidden=true;setState('PLAYING',`Playing ${currentTrack.title} by ${currentManifest.artist} through Bandcamp.`);setMeterMode('playing',currentTrack.id);startTickerRotation([`NOW PLAYING • ${currentTrack.title} • ${currentManifest.artist}`,...currentTickerFacts]);recordEvent('bandcamp_click',{artist:currentManifest.artist,track:currentTrack.title})}
+shareButton.addEventListener('click',()=>void shareCurrent());buyLink.addEventListener('click',()=>recordEvent('buy_click',{url:buyLink.href}));stopButton.addEventListener('click',stopCurrent);homeButton.addEventListener('click',resetMachine);soundButton.addEventListener('click',toggleSound);
+function markBandcampPlayback(){if(!currentTrack)return;bandcampEngaged=true;clearTimeout(autoplayFallbackTimer);setState('PLAYING',`Playing ${currentTrack.title} by ${currentManifest.artist} through Bandcamp.`);setMeterMode('playing',currentTrack.id);startTickerRotation([`NOW PLAYING • ${currentTrack.title} • ${currentManifest.artist}`,...currentTickerFacts]);recordEvent('bandcamp_click',{artist:currentManifest.artist,track:currentTrack.title})}
 frame.addEventListener('focus',markBandcampPlayback);addEventListener('blur',()=>setTimeout(()=>{if(document.activeElement===frame)markBandcampPlayback()},0));addEventListener('popstate',()=>location.reload());
 document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(meterFrame);stopMotor()}else startMeters()});
 loadData().catch(error=>{setState('PLAY_ERROR','The Melbourne library could not be opened.');showTicker('MACHINE RESTING — PLEASE REFRESH');console.error(error)});
