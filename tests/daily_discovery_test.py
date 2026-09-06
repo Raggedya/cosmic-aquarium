@@ -38,6 +38,24 @@ class DailyDiscoveryTests(unittest.TestCase):
         self.assertEqual(daily_discovery.candidate_rejection_reason(self.candidate(title="Test Release"), date, set()), "test_or_non_music_entry")
         self.assertEqual(daily_discovery.candidate_rejection_reason(self.candidate(band_location="Sydney, Australia"), date, set()), "outside_or_unverified_greater_melbourne")
 
+    def test_bandcamp_discovery_is_scoped_to_melbourne_before_validation(self):
+        class EmptyResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self):
+                return b'{"results": [], "cursor": null}'
+
+        with patch("daily_discovery.urllib.request.urlopen", return_value=EmptyResponse()) as open_url:
+            self.assertEqual(daily_discovery.BandcampDiscoverProvider().discover_new_releases(20), [])
+        request = open_url.call_args.args[0]
+        payload = json.loads(request.data)
+        self.assertEqual(payload["geoname_id"], daily_discovery.MELBOURNE_GEONAME_ID)
+        self.assertEqual(daily_discovery.MELBOURNE_GEONAME_ID, 2158177)
+
     def test_incomplete_batch_is_resumed_before_a_new_date(self):
         with tempfile.TemporaryDirectory() as folder:
             batches = Path(folder)

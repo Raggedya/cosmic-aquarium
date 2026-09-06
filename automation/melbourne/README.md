@@ -53,8 +53,9 @@ Melbourne location, playability, deduplication, and water classification gates.
 
 ## Retired global automation
 
-The old global 5,000-artist workflow is preserved but hard-disabled. The daily
-schedule is paused. Manual daily runs now reject candidates that lack confirmed
-Greater Melbourne location evidence and rebuild membership before publication.
+The old global 5,000-artist workflow is preserved but hard-disabled. Daily
+discovery starts with Bandcamp's Melbourne location filter (GeoNames `2158177`)
+and still rejects every candidate that lacks confirmed Greater Melbourne
+location evidence before rebuilding membership and publishing.
 The migration sync archives missing global Worker rows by setting them disabled;
 it does not delete catalogue or analytics records.

@@ -20,6 +20,7 @@ AUTOMATION = ROOT / "automation"
 BATCHES = AUTOMATION / "batches"
 HISTORY = AUTOMATION / "releases.json"
 DISCOVER_URL = "https://bandcamp.com/api/discover/1/discover_web"
+MELBOURNE_GEONAME_ID = 2158177
 USER_AGENT = "CosmicAquariumDiscovery/1.0 (+https://github.com/Raggedya/cosmic-aquarium)"
 
 
@@ -33,14 +34,14 @@ class ReleaseProvider(Protocol):
 
 
 class BandcampDiscoverProvider:
-    """A replaceable adapter for Bandcamp's public, undocumented Discover response."""
+    """A replaceable adapter for Bandcamp's public Melbourne Discover response."""
 
     def discover_new_releases(self, size: int = 60) -> list[dict[str, Any]]:
         requested = max(20, size)
         payload: dict[str, Any] = {
             "category_id": 0,
             "tag_norm_names": [],
-            "geoname_id": 0,
+            "geoname_id": MELBOURNE_GEONAME_ID,
             "slice": "new",
             "time_facet_id": None,
             "cursor": None,
