@@ -29,6 +29,31 @@ def canonical_bandcamp_url(value: str) -> str:
     return urllib.parse.urlunparse((parsed.scheme, parsed.netloc.lower(), parsed.path.rstrip("/") or "/", "", "", ""))
 
 
+def candidate_artist_keys(item: dict[str, Any]) -> set[str]:
+    keys: set[str] = set()
+    band_id = str(item.get("band_id") or "").strip()
+    if band_id:
+        keys.add(f"bandcamp-id:{band_id}")
+    for value in (item.get("band_url"), item.get("item_url")):
+        host = (urllib.parse.urlparse(str(value or "")).hostname or "").lower()
+        if host and (host == "bandcamp.com" or host.endswith(".bandcamp.com")):
+            keys.add(f"bandcamp-host:{host}")
+    return keys
+
+
+def manifest_artist_keys(manifest: dict[str, Any]) -> set[str]:
+    keys: set[str] = set()
+    identity = manifest.get("canonicalIdentity") if isinstance(manifest.get("canonicalIdentity"), dict) else {}
+    band_id = str(identity.get("bandcampBandId") or "").strip()
+    if band_id:
+        keys.add(f"bandcamp-id:{band_id}")
+    for field in ("canonicalBandcampUrl", "bandcampUrl", "commerceUrl"):
+        host = (urllib.parse.urlparse(str(manifest.get(field) or "")).hostname or "").lower()
+        if host and (host == "bandcamp.com" or host.endswith(".bandcamp.com")):
+            keys.add(f"bandcamp-host:{host}")
+    return keys
+
+
 class ReleaseProvider(Protocol):
     def discover_new_releases(self, size: int = 60) -> list[dict[str, Any]]: ...
 
@@ -89,13 +114,20 @@ def style_for(sequence_index: int) -> str:
     return AUTOMATED_VISUAL_STYLES[sequence_index % len(AUTOMATED_VISUAL_STYLES)]
 
 
-def candidate_rejection_reason(item: dict[str, Any], batch_date: dt.date, completed_urls: set[str]) -> str | None:
+def candidate_rejection_reason(
+    item: dict[str, Any],
+    batch_date: dt.date,
+    completed_urls: set[str],
+    completed_artist_keys: set[str] | None = None,
+) -> str | None:
     url = canonical_bandcamp_url(str(item.get("item_url") or ""))
     parsed = urllib.parse.urlparse(url)
     if parsed.scheme != "https" or not ((parsed.hostname or "") == "bandcamp.com" or (parsed.hostname or "").endswith(".bandcamp.com")):
         return "invalid_bandcamp_url"
     if url in completed_urls:
         return "duplicate_release_url"
+    if completed_artist_keys and candidate_artist_keys(item) & completed_artist_keys:
+        return "duplicate_artist"
     if not str(item.get("item_id") or "").strip():
         return "missing_bandcamp_item_id"
     artist = " ".join(str(item.get("band_name") or "").split())
@@ -152,19 +184,27 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
     })
     completed_urls = {canonical_bandcamp_url(item["bandcampUrl"]) for item in history["releases"] if item.get("bandcampUrl")}
     completed_urls.update(canonical_bandcamp_url(item["bandcampUrl"]) for item in batch["aquariums"] if item.get("bandcampUrl"))
+    completed_artist_keys: set[str] = set()
     for manifest_path in (ROOT / "github-pages" / "artists").glob("*.json"):
         manifest = read_json(manifest_path, {})
         if manifest.get("bandcampUrl"):
             completed_urls.add(canonical_bandcamp_url(manifest["bandcampUrl"]))
+        completed_artist_keys.update(manifest_artist_keys(manifest))
     needed = max(0, target - len(batch["aquariums"]))
     if not needed:
         return batch
 
     candidates = (provider or BandcampDiscoverProvider()).discover_new_releases(max(180, target * 8))
     eligible: list[dict[str, Any]] = []
+    seen_candidate_artists: set[str] = set()
     for item in candidates:
-        if candidate_rejection_reason(item, date, completed_urls) is None:
-            eligible.append(item)
+        artist_keys = candidate_artist_keys(item)
+        if candidate_rejection_reason(item, date, completed_urls, completed_artist_keys) is not None:
+            continue
+        if artist_keys and artist_keys & seen_candidate_artists:
+            continue
+        eligible.append(item)
+        seen_candidate_artists.update(artist_keys)
     eligible.sort(key=lambda item: hashlib.sha256(f"{batch_date}|{item.get('item_url')}".encode()).hexdigest())
 
     for item in eligible:
@@ -217,6 +257,7 @@ def run(batch_date: str, target: int = 20, provider: ReleaseProvider | None = No
             batch["aquariums"].append(record)
             history["releases"].append(record)
             completed_urls.add(url)
+            completed_artist_keys.update(candidate_artist_keys(item))
         except Exception as error:
             batch["failures"].append({"artist": artist, "release": release, "bandcampUrl": url, "reason": str(error)[:500]})
         batch["generatedCount"] = len(batch["aquariums"])

@@ -38,6 +38,23 @@ class DailyDiscoveryTests(unittest.TestCase):
         self.assertEqual(daily_discovery.candidate_rejection_reason(self.candidate(title="Test Release"), date, set()), "test_or_non_music_entry")
         self.assertEqual(daily_discovery.candidate_rejection_reason(self.candidate(band_location="Sydney, Australia"), date, set()), "outside_or_unverified_greater_melbourne")
 
+    def test_candidate_artist_identity_deduplicates_band_id_and_host(self):
+        date = dt.date(2026, 9, 5)
+        candidate = self.candidate(band_id=123, band_url="https://excellent.bandcamp.com?from=discover_page")
+        keys = daily_discovery.candidate_artist_keys(candidate)
+        self.assertEqual(keys, {"bandcamp-id:123", "bandcamp-host:excellent.bandcamp.com"})
+        self.assertEqual(
+            daily_discovery.candidate_rejection_reason(candidate, date, set(), {"bandcamp-id:123"}),
+            "duplicate_artist",
+        )
+
+    def test_manifest_artist_identity_uses_canonical_bandcamp_fields(self):
+        keys = daily_discovery.manifest_artist_keys({
+            "bandcampUrl": "https://excellent.bandcamp.com/album/release",
+            "canonicalIdentity": {"bandcampBandId": "123"},
+        })
+        self.assertEqual(keys, {"bandcamp-id:123", "bandcamp-host:excellent.bandcamp.com"})
+
     def test_bandcamp_discovery_is_scoped_to_melbourne_before_validation(self):
         class EmptyResponse:
             def __enter__(self):
