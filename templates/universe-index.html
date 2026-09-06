@@ -10,7 +10,7 @@
   <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-lever.webp">
   <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-marquee-v2.webp">
   <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-reel-v2.webp">
-  <link rel="preload" as="audio" type="audio/mpeg" href="{{BASE}}/assets/audio/glass/glass-impact-mobile.mp3">
+  <link rel="preload" as="audio" type="audio/mpeg" href="{{BASE}}/assets/audio/machine/reel-wheel-mixkit-1932.mp3">
   <link rel="stylesheet" href="{{BASE}}/assets/discovery-machine.css?v={{ASSET_VERSION}}">
   <script type="module" src="{{BASE}}/assets/discovery-machine.js?v={{ASSET_VERSION}}"></script>
   <title>AGGITS — Melbourne Music Machine</title>
@@ -58,17 +58,17 @@
         <div class="reel" data-reel="2"><div class="reel-strip"><span></span><strong>MUSIC</strong><span></span></div></div>
         <i class="payline-arrow payline-arrow--right" aria-hidden="true"></i><div class="payline" aria-hidden="true"></div>
       </section>
-      <section class="ticker-panel" aria-label="Machine messages"><div class="ticker-window"><span class="ticker-copy">PULL FOR MELBOURNE</span></div></section>
+      <section class="ticker-panel" aria-label="Machine messages"><div class="ticker-window"><span class="ticker-copy">LET’S PLAY</span></div></section>
       <section class="machine-controls" aria-label="Current music controls">
         <button type="button" class="secondary-button" data-action="share" disabled>SHARE</button>
-        <a class="buy-button" data-action="buy" aria-disabled="true" tabindex="-1"><span>BUY<br>MUSIC</span></a>
+        <button type="button" class="buy-button" data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled><span>BUY<br>MUSIC</span></button>
         <button type="button" class="secondary-button" data-action="pause" disabled>STOP</button>
       </section>
       <section class="bandcamp-slot" aria-label="Official Bandcamp playback"><span class="bandcamp-play-cue" aria-hidden="true">▶</span><iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe></section>
       <div class="speaker-label" aria-hidden="true">GOOD MUSIC<br>ALWAYS PLAYS</div>
       <button class="lever" type="button" aria-label="Pull the lever to discover a Melbourne artist" aria-describedby="machine-instructions"><img src="{{BASE}}/assets/music-machine/aggits-lever.webp" alt="" draggable="false"><span class="lever-hint">PULL</span></button>
     </div>
-    <p id="machine-instructions" class="visually-hidden">Drag the side lever down past the resistance point, or press it, to spin three real Melbourne artist reels. Three matching artists reveal and play a song.</p>
+    <p id="machine-instructions" class="visually-hidden">Drag the side lever down past the resistance point, or press it, to spin three real Melbourne artist reels. Three matching artists reveal a Play control for a real Bandcamp song.</p>
     <p class="machine-status visually-hidden" role="status" aria-live="assertive">Loading the Melbourne music machine.</p>
   </main>
 </body>

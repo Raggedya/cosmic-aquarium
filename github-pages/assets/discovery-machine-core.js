@@ -239,7 +239,7 @@ export function pickPlayableTrack(manifest, cryptoApi = globalThis.crypto) {
 
 export const MACHINE_STATES = Object.freeze([
   'BOOT','IDLE','LEVER_PULL','SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP',
-  'EVALUATE','LOSS','NEAR_MISS','WIN','WIN_CELEBRATION','LOADING_TRACK','AUTOPLAY_ATTEMPT','AWAITING_PLAY','PLAYING','PLAY_ERROR',
+  'EVALUATE','LOSS','NEAR_MISS','WIN','WIN_CELEBRATION','LOADING_TRACK','READY_TO_PLAY','AUTOPLAY_ATTEMPT','AWAITING_PLAY','PLAYING','PLAY_ERROR',
 ]);
 
 export function machineMatchProbability(lossesSinceMatch = 0) {

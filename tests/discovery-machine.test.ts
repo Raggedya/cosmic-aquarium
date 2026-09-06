@@ -82,7 +82,7 @@ test('the AGGITS marquee uses the reference-matched riveted metal artwork while 
 });
 
 test('the formal state machine covers the complete mechanical and playback sequence',()=>{
-  for(const required of ['BOOT','IDLE','LEVER_PULL','SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP','EVALUATE','LOSS','NEAR_MISS','WIN','WIN_CELEBRATION','LOADING_TRACK','AUTOPLAY_ATTEMPT','AWAITING_PLAY','PLAYING','PLAY_ERROR'])assert.ok(MACHINE_STATES.includes(required));
+  for(const required of ['BOOT','IDLE','LEVER_PULL','SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP','EVALUATE','LOSS','NEAR_MISS','WIN','WIN_CELEBRATION','LOADING_TRACK','READY_TO_PLAY','AUTOPLAY_ATTEMPT','AWAITING_PLAY','PLAYING','PLAY_ERROR'])assert.ok(MACHINE_STATES.includes(required));
 });
 
 test('the twin meters and centre inscription share a recessed cabinet instrument cavity',async()=>{
@@ -94,19 +94,21 @@ test('the twin meters and centre inscription share a recessed cabinet instrument
   assert.doesNotMatch(css,/\.vu-meter\{[^}]*drop-shadow/);
 });
 
-test('the red central control is BUY MUSIC and never spins the reels',async()=>{
+test('the central control is never a spin control and switches from PLAY to BUY MUSIC',async()=>{
   const [template,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
   assert.match(template,/class="buy-button" data-action="buy"/);
   assert.match(template,/BUY<br>MUSIC/);
-  assert.match(runtime,/buyLink\.addEventListener\('click',\(\)=>recordEvent\('buy_click'/);
+  assert.match(runtime,/buyLink\.addEventListener\('click',activatePrimary\)/);
+  assert.match(runtime,/if\(primaryAction==='play'\)\{beginWinningPlayback\(\);return\}/);
+  assert.match(runtime,/if\(primaryAction==='buy'&&currentPurchaseUrl\)/);
   assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',[\s\S]{0,80}runSpin/);
 });
 
-test('BUY and SHARE remain dormant until a real winning track is resolved',async()=>{
+test('the primary control and SHARE remain dormant until a real winning track is resolved',async()=>{
   const [template,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
-  assert.match(template,/data-action="buy" aria-disabled="true" tabindex="-1"/);
+  assert.match(template,/data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled/);
   assert.match(template,/data-action="share" disabled/);
-  assert.match(runtime,/buyLink\.setAttribute\('aria-disabled','false'\)/);
+  assert.match(runtime,/setPrimaryMode\('play'\)/);
   assert.match(runtime,/shareButton\.disabled=false/);
 });
 
@@ -118,11 +120,14 @@ test('official Bandcamp playback, real purchase links and track fallback validat
   assert.match(runtime,/if\(!validBandcampUrl\(manifest\.bandcampUrl\)\|\|!pickPlayableTrack\(manifest\)\)/);
 });
 
-test('winner playback is requested automatically and degrades to an integrated tap-to-play control',async()=>{
+test('a winner becomes a green PLAY control, requests Bandcamp on press, then becomes BUY after six seconds',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/class="bandcamp-play-cue"/);
   assert.match(template,/Official Bandcamp playback controls/);
   assert.match(runtime,/autoplay=true/);
+  assert.match(runtime,/setState\('READY_TO_PLAY'/);
+  assert.match(runtime,/function beginWinningPlayback/);
+  assert.match(runtime,/buyRevealTimer=setTimeout\(\(\)=>\{if\(!currentTrack\)return;setPrimaryMode\('buy'\)\},6000\)/);
   assert.match(runtime,/schedulePlaybackFallback/);
   assert.match(runtime,/setState\('AUTOPLAY_ATTEMPT'/);
   assert.match(runtime,/setState\('AWAITING_PLAY'/);
@@ -130,6 +135,7 @@ test('winner playback is requested automatically and degrades to an integrated t
   assert.match(runtime,/function animateLeverAndSpin\(\)\{if\(locked\)return;ensureAudio\(\)/);
   assert.match(css,/data-machine-state="AWAITING_PLAY"/);
   assert.match(css,/\.bandcamp-play-cue\{[^}]*pointer-events:none/);
+  assert.match(css,/\.buy-button\[data-primary-mode="play"\]\{background:radial-gradient\([^}]*#55e96a/);
 });
 
 test('the live source of truth is exactly 500 Melbourne artists and 3,744 playable tracks',async()=>{
@@ -157,20 +163,18 @@ test('machine statistics are generated instead of hard-coded from the reference 
   assert.doesNotMatch(template,/23,?000/);
   assert.match(template,/data-stat="artists"/);
   assert.match(template,/data-stat="tracks"/);
-  assert.match(runtime,/stats\.playableTracks\|\|stats\.playableTrackCount/);
+  assert.match(runtime,/stats\.playableTrackCount\|\|stats\.playableTracks/);
 });
 
-test('ticker retains artist, track, biography and Melbourne context after a match',()=>{
-  const messages=buildTickerMessages(
-    {artist:'Porchlight',releaseTitle:'Night Music',selectedTrackTitle:'Five Minutes',bioShort:'Melbourne post-punk trio.'},
-    {waters:['dark'],suburb:'Brunswick'},
-    {primaryLocation:'Brunswick, Melbourne'},
-    {universe:'melbourne',canonicalArtistCount:500,publishedReleaseCount:500,playableTrackCount:3744},
-    {universe:'melbourne',cultureSegmentCount:1},
-  );
-  assert.match(messages[0],/PORCHLIGHT.*BRUNSWICK.*MELBOURNE/);
-  assert.ok(messages.some(item=>item.includes('FIVE MINUTES')));
-  assert.ok(messages.some(item=>item.includes('MELBOURNE POST-PUNK TRIO')));
+test('idle ticker says only LET’S PLAY and playback rotates only the supplied Melbourne culture sequence',async()=>{
+  const [template,runtime,culture]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/ticker/melbourne-culture.js')]);
+  assert.match(template,/class="ticker-copy">LET’S PLAY</);
+  assert.match(runtime,/function idleMessages\(\)\{return\['LET’S PLAY'\]\}/);
+  assert.match(runtime,/startTickerRotation\(cultureTickerMessages\(\),31000\)/);
+  assert.doesNotMatch(runtime,/buildTickerMessages/);
+  assert.match(culture,/MELBOURNE MUSIC ISN'T ONE SCENE/);
+  assert.match(culture,/TRIPLE R 102\.7/);
+  assert.match(culture,/PBS 106\.7/);
 });
 
 test('analogue meters use damped ballistics and distinguish idle, spin, celebration and playback',async()=>{
@@ -181,13 +185,17 @@ test('analogue meters use damped ballistics and distinguish idle, spin, celebrat
   assert.match(runtime,/procedural-transport-coupled/);
 });
 
-test('mechanical sound, distinct thunks, haptics and a quiet loss are implemented without casino effects',async()=>{
-  const runtime=await read('github-pages/assets/discovery-machine.js');
+test('licensed reel-wheel audio, synchronized stop clicks, haptics and a quiet loss replace glass crashes',async()=>{
+  const [template,runtime,license]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/audio/machine/LICENSE.md')]);
+  assert.match(template,/reel-wheel-mixkit-1932\.mp3/);
+  assert.match(runtime,/reelSoundUrl=.*reel-wheel-mixkit-1932\.mp3/);
   assert.match(runtime,/function leverClack/);
   assert.match(runtime,/function reelThunk/);
   assert.match(runtime,/function startMotor/);
   assert.match(runtime,/function celebrationSound/);
   assert.match(runtime,/navigator\.vibrate/);
+  assert.doesNotMatch(runtime,/glass-impact|function impact/);
+  assert.match(license,/Mixkit item 1932/);
   assert.doesNotMatch(runtime,/confetti|laser|coin|payout|credits/i);
 });
 
@@ -208,11 +216,13 @@ test('share deep links remain canonical and carry Melbourne universe state',()=>
   assert.equal(buildShareUrl('https://raggedya.github.io','/cosmic-aquarium','porchlight',['anything']),'https://raggedya.github.io/cosmic-aquarium/?release=porchlight&categories=anything');
 });
 
-test('the public build packages the cabinet, lever, marquee and physical reel assets',async()=>{
+test('the public build packages the cabinet, lever, marquee, physical reels and reel sound',async()=>{
   const build=await read('scripts/build-github-pages.mjs');
   assert.match(build,/aggits-cabinet\.webp/);
   assert.match(build,/aggits-lever\.webp/);
   assert.match(build,/aggits-marquee-v2\.webp/);
   assert.match(build,/aggits-reel-v2\.webp/);
   assert.match(build,/musicMachineAssets\.forEach/);
+  assert.match(build,/reel-wheel-mixkit-1932\.mp3/);
+  assert.match(build,/machineAudioAssets\.forEach/);
 });
