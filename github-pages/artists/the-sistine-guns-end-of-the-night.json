@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-sistine-guns-end-of-the-night",
+  "artist": "The Sistine Guns",
+  "bandcampUrl": "https://thesistineguns.bandcamp.com/album/end-of-the-night",
+  "releaseTitle": "End of The Night",
+  "releaseDate": "2026-09-11 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "rock",
+    "Melbourne",
+    "alternative",
+    "post-punk"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "The Sistine Guns — rock / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thesistineguns.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:53:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "end-of-the-night",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "end-of-the-night-456842958",
+      "title": "End of the Night",
+      "artist": "The Sistine Guns",
+      "albumTitle": "End of The Night",
+      "albumKey": "end-of-the-night",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thesistineguns.bandcamp.com/album/end-of-the-night",
+      "bandcampEmbedTrackId": "456842958",
+      "sourcePage": "https://thesistineguns.bandcamp.com/album/end-of-the-night",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "end-of-the-night-193970349",
+      "title": "Star",
+      "artist": "The Sistine Guns",
+      "albumTitle": "End of The Night",
+      "albumKey": "end-of-the-night",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thesistineguns.bandcamp.com/album/end-of-the-night",
+      "bandcampEmbedTrackId": "193970349",
+      "sourcePage": "https://thesistineguns.bandcamp.com/album/end-of-the-night",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:53:22.442429+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thesistineguns.bandcamp.com",
+    "bandcampBandId": "992849346",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thesistineguns.bandcamp.com/album/end-of-the-night",
+    "discoveredAt": "2026-09-06T05:51:00.935783+00:00",
+    "importedAt": "2026-09-06T05:53:22.442429+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

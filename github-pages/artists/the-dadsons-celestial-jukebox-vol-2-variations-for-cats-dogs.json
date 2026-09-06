@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-dadsons-celestial-jukebox-vol-2-variations-for-cats-dogs",
+  "artist": "The Dadsons",
+  "bandcampUrl": "https://thedadsons.bandcamp.com/album/celestial-jukebox-vol-2-variations-for-cats-dogs",
+  "releaseTitle": "Celestial Jukebox Vol.2 Variations for Cats & Dogs",
+  "releaseDate": "2026-08-10 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "Melbourne",
+    "ambient",
+    "punk",
+    "rock",
+    "composition",
+    "deep listening",
+    "drone",
+    "garage rock",
+    "jazzy",
+    "psychedelic"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Variations for Cats & Dogs are an assembly of various recordings, stitched together into two half-hour pieces. For deep or passive listening. Variations: - Norns Shield -…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thedadsons.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:00:15Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "celestial-jukebox-vol-2-variations-for-cats-dogs",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "celestial-jukebox-vol-2-variations-for-cats-dogs-1676090855",
+      "title": "Variations",
+      "artist": "The Dadsons",
+      "albumTitle": "Celestial Jukebox Vol.2 Variations for Cats & Dogs",
+      "albumKey": "celestial-jukebox-vol-2-variations-for-cats-dogs",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "28:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thedadsons.bandcamp.com/track/variations-2",
+      "bandcampEmbedTrackId": "1676090855",
+      "sourcePage": "https://thedadsons.bandcamp.com/album/celestial-jukebox-vol-2-variations-for-cats-dogs",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "celestial-jukebox-vol-2-variations-for-cats-dogs-3274821786",
+      "title": "For Cats & Dogs",
+      "artist": "The Dadsons",
+      "albumTitle": "Celestial Jukebox Vol.2 Variations for Cats & Dogs",
+      "albumKey": "celestial-jukebox-vol-2-variations-for-cats-dogs",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "33:14",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thedadsons.bandcamp.com/track/for-cats-dogs",
+      "bandcampEmbedTrackId": "3274821786",
+      "sourcePage": "https://thedadsons.bandcamp.com/album/celestial-jukebox-vol-2-variations-for-cats-dogs",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:00:15.074431+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thedadsons.bandcamp.com",
+    "bandcampBandId": "255923241",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thedadsons.bandcamp.com/album/celestial-jukebox-vol-2-variations-for-cats-dogs",
+    "discoveredAt": "2026-09-06T05:51:42.957700+00:00",
+    "importedAt": "2026-09-06T06:00:15.074431+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

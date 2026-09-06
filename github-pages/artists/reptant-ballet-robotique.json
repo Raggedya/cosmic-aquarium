@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "slug": "reptant-ballet-robotique",
+  "artist": "Reptant",
+  "bandcampUrl": "https://reptant-the-lizard.bandcamp.com/album/ballet-robotique",
+  "releaseTitle": "Ballet Robotique",
+  "releaseDate": "2026-05-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "Melbourne",
+    "electronic",
+    "acid",
+    "ambient",
+    "breakbeat",
+    "downtempo",
+    "house",
+    "leftfield",
+    "techno",
+    "trance"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Release 75. Reptant's third. The reptilian overlord surfaces only once every 25 – right on the jubilee, without fail. Combining menace and kitsch the way only the Rotterdam…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://reptant-the-lizard.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:54:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ballet-robotique",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ballet-robotique-2272107975",
+      "title": "Ballet Robotique",
+      "artist": "Reptant",
+      "albumTitle": "Ballet Robotique",
+      "albumKey": "ballet-robotique",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reptant-the-lizard.bandcamp.com/track/ballet-robotique",
+      "bandcampEmbedTrackId": "2272107975",
+      "sourcePage": "https://reptant-the-lizard.bandcamp.com/album/ballet-robotique",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ballet-robotique-4105628961",
+      "title": "Future Proof",
+      "artist": "Reptant",
+      "albumTitle": "Ballet Robotique",
+      "albumKey": "ballet-robotique",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reptant-the-lizard.bandcamp.com/track/future-proof",
+      "bandcampEmbedTrackId": "4105628961",
+      "sourcePage": "https://reptant-the-lizard.bandcamp.com/album/ballet-robotique",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ballet-robotique-466710490",
+      "title": "To Be Continued...",
+      "artist": "Reptant",
+      "albumTitle": "Ballet Robotique",
+      "albumKey": "ballet-robotique",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:38",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reptant-the-lizard.bandcamp.com/track/to-be-continued",
+      "bandcampEmbedTrackId": "466710490",
+      "sourcePage": "https://reptant-the-lizard.bandcamp.com/album/ballet-robotique",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:54:45.164415+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "reptant-the-lizard.bandcamp.com",
+    "bandcampBandId": "3094879694",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://reptant-the-lizard.bandcamp.com/album/ballet-robotique",
+    "discoveredAt": "2026-09-06T05:51:42.951786+00:00",
+    "importedAt": "2026-09-06T05:54:45.164415+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

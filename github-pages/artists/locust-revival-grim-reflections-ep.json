@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "locust-revival-grim-reflections-ep",
+  "artist": "Locust Revival",
+  "bandcampUrl": "https://locustrevivalmademesad.bandcamp.com/album/grim-reflections-ep",
+  "releaseTitle": "Grim Reflections EP",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "goth",
+    "Melbourne",
+    "alternative",
+    "post-punk",
+    "darkwave",
+    "gothic rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Locust Revival — goth / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://locustrevivalmademesad.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:54:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "grim-reflections-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "grim-reflections-ep-925410626",
+      "title": "Reflected Image",
+      "artist": "Locust Revival",
+      "albumTitle": "Grim Reflections EP",
+      "albumKey": "grim-reflections-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:45",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://locustrevivalmademesad.bandcamp.com/track/reflected-image",
+      "bandcampEmbedTrackId": "925410626",
+      "sourcePage": "https://locustrevivalmademesad.bandcamp.com/album/grim-reflections-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "grim-reflections-ep-50766022",
+      "title": "Romeo Spikes",
+      "artist": "Locust Revival",
+      "albumTitle": "Grim Reflections EP",
+      "albumKey": "grim-reflections-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://locustrevivalmademesad.bandcamp.com/track/romeo-spikes",
+      "bandcampEmbedTrackId": "50766022",
+      "sourcePage": "https://locustrevivalmademesad.bandcamp.com/album/grim-reflections-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "grim-reflections-ep-601796831",
+      "title": "Ortega",
+      "artist": "Locust Revival",
+      "albumTitle": "Grim Reflections EP",
+      "albumKey": "grim-reflections-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:09",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://locustrevivalmademesad.bandcamp.com/track/ortega",
+      "bandcampEmbedTrackId": "601796831",
+      "sourcePage": "https://locustrevivalmademesad.bandcamp.com/album/grim-reflections-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "grim-reflections-ep-4117421300",
+      "title": "tired of myself",
+      "artist": "Locust Revival",
+      "albumTitle": "Grim Reflections EP",
+      "albumKey": "grim-reflections-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:52",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://locustrevivalmademesad.bandcamp.com/track/tired-of-myself",
+      "bandcampEmbedTrackId": "4117421300",
+      "sourcePage": "https://locustrevivalmademesad.bandcamp.com/album/grim-reflections-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:54:57.690228+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "locustrevivalmademesad.bandcamp.com",
+    "bandcampBandId": "2044407761",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://locustrevivalmademesad.bandcamp.com/album/grim-reflections-ep",
+    "discoveredAt": "2026-09-06T05:51:42.951786+00:00",
+    "importedAt": "2026-09-06T05:54:57.690228+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

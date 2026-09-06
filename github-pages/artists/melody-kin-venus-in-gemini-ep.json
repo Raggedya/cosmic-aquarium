@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "slug": "melody-kin-venus-in-gemini-ep",
+  "artist": "Melody Kin",
+  "bandcampUrl": "https://melodykin.bandcamp.com/album/venus-in-gemini-ep",
+  "releaseTitle": "Venus in Gemini (EP)",
+  "releaseDate": "2026-05-08 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "",
+    "Melbourne",
+    "contemporary r&b",
+    "r&b/soul",
+    "rnb",
+    "neo soul",
+    "soul hip hop"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Melody Kin — Melbourne / contemporary r&b / r&b/soul music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange",
+    "loud",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://melodykin.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:55:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "venus-in-gemini-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "venus-in-gemini-ep-175676528",
+      "title": "On Time",
+      "artist": "Melody Kin",
+      "albumTitle": "Venus in Gemini (EP)",
+      "albumKey": "venus-in-gemini-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://melodykin.bandcamp.com/track/on-time",
+      "bandcampEmbedTrackId": "175676528",
+      "sourcePage": "https://melodykin.bandcamp.com/album/venus-in-gemini-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "venus-in-gemini-ep-3150878088",
+      "title": "Venus in Gemini",
+      "artist": "Melody Kin",
+      "albumTitle": "Venus in Gemini (EP)",
+      "albumKey": "venus-in-gemini-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://melodykin.bandcamp.com/track/venus-in-gemini-2",
+      "bandcampEmbedTrackId": "3150878088",
+      "sourcePage": "https://melodykin.bandcamp.com/album/venus-in-gemini-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "venus-in-gemini-ep-424667064",
+      "title": "Wanna Go",
+      "artist": "Melody Kin",
+      "albumTitle": "Venus in Gemini (EP)",
+      "albumKey": "venus-in-gemini-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:45",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://melodykin.bandcamp.com/track/wanna-go-2",
+      "bandcampEmbedTrackId": "424667064",
+      "sourcePage": "https://melodykin.bandcamp.com/album/venus-in-gemini-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "venus-in-gemini-ep-3402985288",
+      "title": "Let Yourself Be Soft",
+      "artist": "Melody Kin",
+      "albumTitle": "Venus in Gemini (EP)",
+      "albumKey": "venus-in-gemini-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:46",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://melodykin.bandcamp.com/track/let-yourself-be-soft-2",
+      "bandcampEmbedTrackId": "3402985288",
+      "sourcePage": "https://melodykin.bandcamp.com/album/venus-in-gemini-ep",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "venus-in-gemini-ep-1450542607",
+      "title": "Play On",
+      "artist": "Melody Kin",
+      "albumTitle": "Venus in Gemini (EP)",
+      "albumKey": "venus-in-gemini-ep",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "3:23",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://melodykin.bandcamp.com/track/play-on",
+      "bandcampEmbedTrackId": "1450542607",
+      "sourcePage": "https://melodykin.bandcamp.com/album/venus-in-gemini-ep",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:55:43.813288+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "melodykin.bandcamp.com",
+    "bandcampBandId": "474779653",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://melodykin.bandcamp.com/album/venus-in-gemini-ep",
+    "discoveredAt": "2026-09-06T05:51:42.952681+00:00",
+    "importedAt": "2026-09-06T05:55:43.813288+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

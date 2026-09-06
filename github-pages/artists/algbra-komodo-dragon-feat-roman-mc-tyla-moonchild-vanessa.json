@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "slug": "algbra-komodo-dragon-feat-roman-mc-tyla-moonchild-vanessa",
+  "artist": "ALGBRA",
+  "bandcampUrl": "https://algbra.bandcamp.com/album/komodo-dragon-feat-roman-mc-tyla-moonchild-vanessa",
+  "releaseTitle": "KOMODO DRAGON (feat. Roman MC, Tyla Moonchild & Vanessa)",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "hip-hop",
+    "Melbourne",
+    "electronic",
+    "house",
+    "jazz",
+    "rnb",
+    "hip hop"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "ALGBRA unleashes “KOMODO DRAGON,” the first taste his forthcoming album on Inner Tribe Records, featuring the legendary Roman MC of Bullhorn alongside Tyla Moonchild of Dakini…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://algbra.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:06:41Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "komodo-dragon-feat-roman-mc-tyla-moonchild-vanessa",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "komodo-dragon-feat-roman-mc-tyla-moonchild-vanessa-3909038623",
+      "title": "KOMODO DRAGON (feat. Roman MC, Tyla Moonchild & Vanessa)",
+      "artist": "ALGBRA",
+      "albumTitle": "KOMODO DRAGON (feat. Roman MC, Tyla Moonchild & Vanessa)",
+      "albumKey": "komodo-dragon-feat-roman-mc-tyla-moonchild-vanessa",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://algbra.bandcamp.com/track/komodo-dragon-feat-roman-mc-tyla-moonchild-vanessa",
+      "bandcampEmbedTrackId": "3909038623",
+      "sourcePage": "https://algbra.bandcamp.com/album/komodo-dragon-feat-roman-mc-tyla-moonchild-vanessa",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:06:41.297710+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "algbra.bandcamp.com",
+    "bandcampBandId": "3832158375",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://algbra.bandcamp.com/album/komodo-dragon-feat-roman-mc-tyla-moonchild-vanessa",
+    "discoveredAt": "2026-09-06T05:51:42.970047+00:00",
+    "importedAt": "2026-09-06T06:06:41.297710+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

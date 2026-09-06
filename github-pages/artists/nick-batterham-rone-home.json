@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "slug": "nick-batterham-rone-home",
+  "artist": "Nick Batterham",
+  "bandcampUrl": "https://nickbatterham.bandcamp.com/album/rone-home",
+  "releaseTitle": "RONE - HOME",
+  "releaseDate": "2026-06-11 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "contemporary-classical",
+    "Melbourne",
+    "acoustic",
+    "classical",
+    "contemporary classical",
+    "singer-songwriter"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Soundtrack to RONE - HOME installation at Chadstone Shopping Centre",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nickbatterham.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:03:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rone-home",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rone-home-552164587",
+      "title": "As The Days Progress",
+      "artist": "Nick Batterham",
+      "albumTitle": "RONE - HOME",
+      "albumKey": "rone-home",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nickbatterham.bandcamp.com/track/as-the-days-progress",
+      "bandcampEmbedTrackId": "552164587",
+      "sourcePage": "https://nickbatterham.bandcamp.com/album/rone-home",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "rone-home-2622779319",
+      "title": "In Moonlight Hours",
+      "artist": "Nick Batterham",
+      "albumTitle": "RONE - HOME",
+      "albumKey": "rone-home",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:59",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nickbatterham.bandcamp.com/track/in-moonlight-hours",
+      "bandcampEmbedTrackId": "2622779319",
+      "sourcePage": "https://nickbatterham.bandcamp.com/album/rone-home",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:04.550949+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nickbatterham.bandcamp.com",
+    "bandcampBandId": "3777083820",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nickbatterham.bandcamp.com/album/rone-home",
+    "discoveredAt": "2026-09-06T05:51:42.961130+00:00",
+    "importedAt": "2026-09-06T06:03:04.550949+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

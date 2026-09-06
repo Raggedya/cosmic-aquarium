@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "slug": "warren-burt-four-pieces-2012-2013",
+  "artist": "Warren Burt",
+  "bandcampUrl": "https://mrwarrenburt.bandcamp.com/album/four-pieces-2012-2013",
+  "releaseTitle": "Four Pieces 2012-2013",
+  "releaseDate": "2014-01-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "musique-concrete",
+    "Melbourne",
+    "2010s",
+    "audiopaint n. fournel",
+    "composers desktop project",
+    "experimental",
+    "fbi radio sydney",
+    "grm tools evolution",
+    "musique concrete",
+    "process pack program",
+    "environmental",
+    "ic program",
+    "sonification"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Four very different pieces, for different uses. \"100xJohn\" was written for Intelligent Music's John Cage 100th celebrations. It consists of short recordings of the environment…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mrwarrenburt.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:10:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "four-pieces-2012-2013",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "four-pieces-2012-2013-2916668765",
+      "title": "100xJohn: The View from Wombat Hill",
+      "artist": "Warren Burt",
+      "albumTitle": "Four Pieces 2012-2013",
+      "albumKey": "four-pieces-2012-2013",
+      "year": 2014,
+      "trackNumber": 1,
+      "duration": "16:52",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mrwarrenburt.bandcamp.com/track/100xjohn-the-view-from-wombat-hill",
+      "bandcampEmbedTrackId": "2916668765",
+      "sourcePage": "https://mrwarrenburt.bandcamp.com/album/four-pieces-2012-2013",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "four-pieces-2012-2013-1188298192",
+      "title": "Samples IV for Orchestral Samples",
+      "artist": "Warren Burt",
+      "albumTitle": "Four Pieces 2012-2013",
+      "albumKey": "four-pieces-2012-2013",
+      "year": 2014,
+      "trackNumber": 2,
+      "duration": "19:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mrwarrenburt.bandcamp.com/track/samples-iv-for-orchestral-samples",
+      "bandcampEmbedTrackId": "1188298192",
+      "sourcePage": "https://mrwarrenburt.bandcamp.com/album/four-pieces-2012-2013",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "four-pieces-2012-2013-3517603752",
+      "title": "Like Billy Pilgrim, He Had Come Unstuck in Time",
+      "artist": "Warren Burt",
+      "albumTitle": "Four Pieces 2012-2013",
+      "albumKey": "four-pieces-2012-2013",
+      "year": 2014,
+      "trackNumber": 3,
+      "duration": "18:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mrwarrenburt.bandcamp.com/track/like-billy-pilgrim-he-had-come-unstuck-in-time",
+      "bandcampEmbedTrackId": "3517603752",
+      "sourcePage": "https://mrwarrenburt.bandcamp.com/album/four-pieces-2012-2013",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "four-pieces-2012-2013-845881405",
+      "title": "Messier 15 in Three Different Modes for an Hour",
+      "artist": "Warren Burt",
+      "albumTitle": "Four Pieces 2012-2013",
+      "albumKey": "four-pieces-2012-2013",
+      "year": 2014,
+      "trackNumber": 4,
+      "duration": "60:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mrwarrenburt.bandcamp.com/track/messier-15-in-three-different-modes-for-an-hour",
+      "bandcampEmbedTrackId": "845881405",
+      "sourcePage": "https://mrwarrenburt.bandcamp.com/album/four-pieces-2012-2013",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:10:57.839666+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mrwarrenburt.bandcamp.com",
+    "bandcampBandId": "3450423235",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mrwarrenburt.bandcamp.com/album/four-pieces-2012-2013",
+    "discoveredAt": "2026-09-06T05:51:42.978068+00:00",
+    "importedAt": "2026-09-06T06:10:57.839666+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

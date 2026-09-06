@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "watchtower-watchtower-radiant-moon-ep",
+  "artist": "WATCHTOWER",
+  "bandcampUrl": "https://watchtowerwatchtower.bandcamp.com/album/watchtower-radiant-moon-ep",
+  "releaseTitle": "WATCHTOWER: RADIANT MOON EP",
+  "releaseDate": "2015-03-10 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "Melbourne",
+    "metal",
+    "doom",
+    "doom metal",
+    "heavy",
+    "heavy metal",
+    "sludge",
+    "sludge metal",
+    "stoner",
+    "stoner metal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "WATCHTOWER: RADIANT MOON WAS RECORDED AND MIXED BY JASON FULLER AT GOATSOUND STUDIOS MELBOURNE IN NOVEMBER 2014. MASTERING HANDLED BY BRAD BOATRIGHT AT AUDIOSIEGE ENGINEERING…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://watchtowerwatchtower.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:07:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "watchtower-radiant-moon-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "watchtower-radiant-moon-ep-2386968985",
+      "title": "RADIANT MOON",
+      "artist": "WATCHTOWER",
+      "albumTitle": "WATCHTOWER: RADIANT MOON EP",
+      "albumKey": "watchtower-radiant-moon-ep",
+      "year": 2015,
+      "trackNumber": 1,
+      "duration": "9:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://watchtowerwatchtower.bandcamp.com/track/radiant-moon-2",
+      "bandcampEmbedTrackId": "2386968985",
+      "sourcePage": "https://watchtowerwatchtower.bandcamp.com/album/watchtower-radiant-moon-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "watchtower-radiant-moon-ep-2363688317",
+      "title": "LIVING HEADS",
+      "artist": "WATCHTOWER",
+      "albumTitle": "WATCHTOWER: RADIANT MOON EP",
+      "albumKey": "watchtower-radiant-moon-ep",
+      "year": 2015,
+      "trackNumber": 2,
+      "duration": "7:09",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://watchtowerwatchtower.bandcamp.com/track/living-heads",
+      "bandcampEmbedTrackId": "2363688317",
+      "sourcePage": "https://watchtowerwatchtower.bandcamp.com/album/watchtower-radiant-moon-ep",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:07:38.090877+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "watchtowerwatchtower.bandcamp.com",
+    "bandcampBandId": "495724554",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://watchtowerwatchtower.bandcamp.com/album/watchtower-radiant-moon-ep",
+    "discoveredAt": "2026-09-06T05:51:42.972057+00:00",
+    "importedAt": "2026-09-06T06:07:38.090877+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

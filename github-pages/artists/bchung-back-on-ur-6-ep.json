@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "slug": "bchung-back-on-ur-6-ep",
+  "artist": "Bchung",
+  "bandcampUrl": "https://bchung04.bandcamp.com/album/back-on-ur-6-ep",
+  "releaseTitle": "Back On Ur 6 EP",
+  "releaseDate": "2026-06-26 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "Melbourne",
+    "electronic",
+    "garage",
+    "house",
+    "peak time",
+    "speed garage",
+    "tech house"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Bchung presents his self-release debut EP 2 cuts of raw, grungy and unforgiving peak time 4x4 garage. Chunky old school drums, deep subs and massive builds ready for those late…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bchung04.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:06:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "back-on-ur-6-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "back-on-ur-6-ep-3608726959",
+      "title": "Back On Ur 6",
+      "artist": "Bchung",
+      "albumTitle": "Back On Ur 6 EP",
+      "albumKey": "back-on-ur-6-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bchung04.bandcamp.com/track/back-on-ur-6",
+      "bandcampEmbedTrackId": "3608726959",
+      "sourcePage": "https://bchung04.bandcamp.com/album/back-on-ur-6-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "back-on-ur-6-ep-3987867920",
+      "title": "Pump Dat Body",
+      "artist": "Bchung",
+      "albumTitle": "Back On Ur 6 EP",
+      "albumKey": "back-on-ur-6-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bchung04.bandcamp.com/track/pump-dat-body",
+      "bandcampEmbedTrackId": "3987867920",
+      "sourcePage": "https://bchung04.bandcamp.com/album/back-on-ur-6-ep",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:06:26.008013+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bchung04.bandcamp.com",
+    "bandcampBandId": "2783891766",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bchung04.bandcamp.com/album/back-on-ur-6-ep",
+    "discoveredAt": "2026-09-06T05:51:42.969049+00:00",
+    "importedAt": "2026-09-06T06:06:26.008013+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

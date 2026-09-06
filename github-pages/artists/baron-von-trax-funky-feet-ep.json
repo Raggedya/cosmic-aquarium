@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "baron-von-trax-funky-feet-ep",
+  "artist": "Baron Von Trax",
+  "bandcampUrl": "https://baronvontrax.bandcamp.com/album/funky-feet-ep",
+  "releaseTitle": "Funky Feet EP",
+  "releaseDate": "2024-06-28 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "trance",
+    "Melbourne",
+    "electronic",
+    "eurodance",
+    "eurotrance"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "hi cutiepies, centre court & i are so so so excited to release this ep for ur delectation comprising of two collabs and two solo tracks we hope you enjoy them as much as we…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "dark",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://baronvontrax.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:27:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "funky-feet-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "funky-feet-ep-1480564257",
+      "title": "Funky Feet",
+      "artist": "Baron Von Trax",
+      "albumTitle": "Funky Feet EP",
+      "albumKey": "funky-feet-ep",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "5:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baronvontrax.bandcamp.com/track/funky-feet",
+      "bandcampEmbedTrackId": "1480564257",
+      "sourcePage": "https://baronvontrax.bandcamp.com/album/funky-feet-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "funky-feet-ep-1697266323",
+      "title": "Close To Me",
+      "artist": "Baron Von Trax",
+      "albumTitle": "Funky Feet EP",
+      "albumKey": "funky-feet-ep",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "4:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baronvontrax.bandcamp.com/track/close-to-me",
+      "bandcampEmbedTrackId": "1697266323",
+      "sourcePage": "https://baronvontrax.bandcamp.com/album/funky-feet-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "funky-feet-ep-2690143056",
+      "title": "Centre Court - I Don't Want Flowers",
+      "artist": "Baron Von Trax",
+      "albumTitle": "Funky Feet EP",
+      "albumKey": "funky-feet-ep",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "4:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baronvontrax.bandcamp.com/track/i-dont-want-flowers",
+      "bandcampEmbedTrackId": "2690143056",
+      "sourcePage": "https://baronvontrax.bandcamp.com/album/funky-feet-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "funky-feet-ep-252807840",
+      "title": "Baron Von Trax - Lost Without A Trace",
+      "artist": "Baron Von Trax",
+      "albumTitle": "Funky Feet EP",
+      "albumKey": "funky-feet-ep",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "6:45",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baronvontrax.bandcamp.com/track/lost-without-a-trace",
+      "bandcampEmbedTrackId": "252807840",
+      "sourcePage": "https://baronvontrax.bandcamp.com/album/funky-feet-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:27:49.528803+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "baronvontrax.bandcamp.com",
+    "bandcampBandId": "2620241689",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://baronvontrax.bandcamp.com/album/funky-feet-ep",
+    "discoveredAt": "2026-09-06T05:51:42.980067+00:00",
+    "importedAt": "2026-09-06T06:27:49.528803+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

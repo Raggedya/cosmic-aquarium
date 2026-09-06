@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "slug": "wylora-pillar-of-the-desert",
+  "artist": "Wylora",
+  "bandcampUrl": "https://wylora.bandcamp.com/album/pillar-of-the-desert",
+  "releaseTitle": "Pillar Of The Desert",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "Melbourne",
+    "ambient",
+    "dark ambient",
+    "dungeon synth",
+    "fantasy",
+    "game music"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "[ REALM_016 ] PILLAR OF THE DESERT Coordinates: 36°11'27.9\"N 112°27'11.9\"W Tired, dazed, disillusioned & doubting. These emotions had been my own doing. I was the one who put…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://wylora.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:05:03Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pillar-of-the-desert",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pillar-of-the-desert-3389448814",
+      "title": "Pillar Of The Desert",
+      "artist": "Wylora",
+      "albumTitle": "Pillar Of The Desert",
+      "albumKey": "pillar-of-the-desert",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wylora.bandcamp.com/track/pillar-of-the-desert",
+      "bandcampEmbedTrackId": "3389448814",
+      "sourcePage": "https://wylora.bandcamp.com/album/pillar-of-the-desert",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:05:03.240135+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "wylora.bandcamp.com",
+    "bandcampBandId": "1651378879",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://wylora.bandcamp.com/album/pillar-of-the-desert",
+    "discoveredAt": "2026-09-06T05:51:42.965167+00:00",
+    "importedAt": "2026-09-06T06:05:03.240135+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

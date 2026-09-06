@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "slug": "asha-trips-earthling",
+  "artist": "Asha Trips",
+  "bandcampUrl": "https://ashatrips.bandcamp.com/album/earthling",
+  "releaseTitle": "Earthling",
+  "releaseDate": "2023-03-16 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "Melbourne",
+    "experimental",
+    "ambient pop",
+    "indie soul",
+    "instrumental",
+    "pop",
+    "psych",
+    "psych pop",
+    "psychedelic"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Asha Trips — ambient-pop / Melbourne / experimental music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ashatrips.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:09:35Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "earthling",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "earthling-3606226122",
+      "title": "L.S.F.",
+      "artist": "Asha Trips",
+      "albumTitle": "Earthling",
+      "albumKey": "earthling",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "2:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ashatrips.bandcamp.com/track/l-s-f-2",
+      "bandcampEmbedTrackId": "3606226122",
+      "sourcePage": "https://ashatrips.bandcamp.com/album/earthling",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "earthling-1912034937",
+      "title": "Earthling",
+      "artist": "Asha Trips",
+      "albumTitle": "Earthling",
+      "albumKey": "earthling",
+      "year": 2023,
+      "trackNumber": 2,
+      "duration": "3:22",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ashatrips.bandcamp.com/track/earthling",
+      "bandcampEmbedTrackId": "1912034937",
+      "sourcePage": "https://ashatrips.bandcamp.com/album/earthling",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "earthling-3388660338",
+      "title": "Gems",
+      "artist": "Asha Trips",
+      "albumTitle": "Earthling",
+      "albumKey": "earthling",
+      "year": 2023,
+      "trackNumber": 3,
+      "duration": "2:54",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ashatrips.bandcamp.com/track/gems",
+      "bandcampEmbedTrackId": "3388660338",
+      "sourcePage": "https://ashatrips.bandcamp.com/album/earthling",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "earthling-1436552056",
+      "title": "Colours",
+      "artist": "Asha Trips",
+      "albumTitle": "Earthling",
+      "albumKey": "earthling",
+      "year": 2023,
+      "trackNumber": 4,
+      "duration": "3:08",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ashatrips.bandcamp.com/track/colours",
+      "bandcampEmbedTrackId": "1436552056",
+      "sourcePage": "https://ashatrips.bandcamp.com/album/earthling",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:09:35.385175+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ashatrips.bandcamp.com",
+    "bandcampBandId": "1374963132",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ashatrips.bandcamp.com/album/earthling",
+    "discoveredAt": "2026-09-06T05:51:42.977066+00:00",
+    "importedAt": "2026-09-06T06:09:35.385175+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

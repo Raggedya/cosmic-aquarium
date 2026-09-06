@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "luke-alessi-rainbow-road-bubble-yum",
+  "artist": "Luke Alessi",
+  "bandcampUrl": "https://lukealessi.bandcamp.com/album/rainbow-road-bubble-yum",
+  "releaseTitle": "Rainbow Road / Bubble Yum",
+  "releaseDate": "2025-10-03 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "Melbourne",
+    "electronic",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Luke Alessi Rainbow Road / Bubble Yum EP Released on Earths Only Paradise, listen/purchase here: https://earthsonlyparadise.lnk.to/RainbowRoadBubbleYum October 3, 2025",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lukealessi.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:04:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rainbow-road-bubble-yum",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rainbow-road-bubble-yum-4262635942",
+      "title": "Rainbow Road",
+      "artist": "Luke Alessi",
+      "albumTitle": "Rainbow Road / Bubble Yum",
+      "albumKey": "rainbow-road-bubble-yum",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "6:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lukealessi.bandcamp.com/track/rainbow-road",
+      "bandcampEmbedTrackId": "4262635942",
+      "sourcePage": "https://lukealessi.bandcamp.com/album/rainbow-road-bubble-yum",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "rainbow-road-bubble-yum-2686983308",
+      "title": "Bubble Yum",
+      "artist": "Luke Alessi",
+      "albumTitle": "Rainbow Road / Bubble Yum",
+      "albumKey": "rainbow-road-bubble-yum",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "5:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lukealessi.bandcamp.com/track/bubble-yum",
+      "bandcampEmbedTrackId": "2686983308",
+      "sourcePage": "https://lukealessi.bandcamp.com/album/rainbow-road-bubble-yum",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:04:52.897458+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lukealessi.bandcamp.com",
+    "bandcampBandId": "3780555223",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lukealessi.bandcamp.com/album/rainbow-road-bubble-yum",
+    "discoveredAt": "2026-09-06T05:51:42.965167+00:00",
+    "importedAt": "2026-09-06T06:04:52.897458+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

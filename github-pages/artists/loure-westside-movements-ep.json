@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "slug": "loure-westside-movements-ep",
+  "artist": "Loure",
+  "bandcampUrl": "https://loure.bandcamp.com/album/westside-movements-ep",
+  "releaseTitle": "Westside Movements EP",
+  "releaseDate": "2017-04-28 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "Melbourne",
+    "deep house",
+    "electronic",
+    "deephouse",
+    "house",
+    "house music",
+    "housemusic",
+    "jazzy"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Loure is 22 year old, Melbourne based producer Thomas Guida. Deriving influence from a vast range of musical outfits, he delivers a refreshing take on his interpretation of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://loure.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:27:39Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "westside-movements-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "westside-movements-ep-1531354664",
+      "title": "In The Evenings",
+      "artist": "Loure",
+      "albumTitle": "Westside Movements EP",
+      "albumKey": "westside-movements-ep",
+      "year": 2017,
+      "trackNumber": 1,
+      "duration": "4:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loure.bandcamp.com/track/in-the-evenings",
+      "bandcampEmbedTrackId": "1531354664",
+      "sourcePage": "https://loure.bandcamp.com/album/westside-movements-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "westside-movements-ep-727749882",
+      "title": "Keep It Real",
+      "artist": "Loure",
+      "albumTitle": "Westside Movements EP",
+      "albumKey": "westside-movements-ep",
+      "year": 2017,
+      "trackNumber": 2,
+      "duration": "6:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loure.bandcamp.com/track/keep-it-real",
+      "bandcampEmbedTrackId": "727749882",
+      "sourcePage": "https://loure.bandcamp.com/album/westside-movements-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "westside-movements-ep-300710990",
+      "title": "Step In",
+      "artist": "Loure",
+      "albumTitle": "Westside Movements EP",
+      "albumKey": "westside-movements-ep",
+      "year": 2017,
+      "trackNumber": 3,
+      "duration": "5:49",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loure.bandcamp.com/track/step-in",
+      "bandcampEmbedTrackId": "300710990",
+      "sourcePage": "https://loure.bandcamp.com/album/westside-movements-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "westside-movements-ep-2254825460",
+      "title": "Vue",
+      "artist": "Loure",
+      "albumTitle": "Westside Movements EP",
+      "albumKey": "westside-movements-ep",
+      "year": 2017,
+      "trackNumber": 4,
+      "duration": "5:58",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loure.bandcamp.com/track/vue",
+      "bandcampEmbedTrackId": "2254825460",
+      "sourcePage": "https://loure.bandcamp.com/album/westside-movements-ep",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "westside-movements-ep-1540047975",
+      "title": "In The Evenings (Hidden Spheres remix)",
+      "artist": "Loure",
+      "albumTitle": "Westside Movements EP",
+      "albumKey": "westside-movements-ep",
+      "year": 2017,
+      "trackNumber": 5,
+      "duration": "5:43",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loure.bandcamp.com/track/in-the-evenings-hidden-spheres-remix",
+      "bandcampEmbedTrackId": "1540047975",
+      "sourcePage": "https://loure.bandcamp.com/album/westside-movements-ep",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:27:39.660610+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "loure.bandcamp.com",
+    "bandcampBandId": "3897867916",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://loure.bandcamp.com/album/westside-movements-ep",
+    "discoveredAt": "2026-09-06T05:51:42.980067+00:00",
+    "importedAt": "2026-09-06T06:27:39.661609+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

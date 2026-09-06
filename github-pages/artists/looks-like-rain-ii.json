@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "slug": "looks-like-rain-ii",
+  "artist": "Looks Like Rain",
+  "bandcampUrl": "https://lookslikerain.bandcamp.com/album/ii",
+  "releaseTitle": "II",
+  "releaseDate": "2019-05-31 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "rock",
+    "Melbourne",
+    "alternative",
+    "low"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Looks Like Rain — rock / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lookslikerain.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:10:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ii",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ii-2055405704",
+      "title": "Shadows On Mars",
+      "artist": "Looks Like Rain",
+      "albumTitle": "II",
+      "albumKey": "ii",
+      "year": 2019,
+      "trackNumber": 1,
+      "duration": "3:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lookslikerain.bandcamp.com/track/shadows-on-mars",
+      "bandcampEmbedTrackId": "2055405704",
+      "sourcePage": "https://lookslikerain.bandcamp.com/album/ii",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ii-1243602217",
+      "title": "Agincourt",
+      "artist": "Looks Like Rain",
+      "albumTitle": "II",
+      "albumKey": "ii",
+      "year": 2019,
+      "trackNumber": 2,
+      "duration": "4:27",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lookslikerain.bandcamp.com/track/agincourt",
+      "bandcampEmbedTrackId": "1243602217",
+      "sourcePage": "https://lookslikerain.bandcamp.com/album/ii",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ii-2409915216",
+      "title": "Cold Front",
+      "artist": "Looks Like Rain",
+      "albumTitle": "II",
+      "albumKey": "ii",
+      "year": 2019,
+      "trackNumber": 3,
+      "duration": "3:28",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lookslikerain.bandcamp.com/track/cold-front",
+      "bandcampEmbedTrackId": "2409915216",
+      "sourcePage": "https://lookslikerain.bandcamp.com/album/ii",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ii-123369928",
+      "title": "Sold My Heart",
+      "artist": "Looks Like Rain",
+      "albumTitle": "II",
+      "albumKey": "ii",
+      "year": 2019,
+      "trackNumber": 4,
+      "duration": "3:53",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lookslikerain.bandcamp.com/track/sold-my-heart",
+      "bandcampEmbedTrackId": "123369928",
+      "sourcePage": "https://lookslikerain.bandcamp.com/album/ii",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "ii-1318663885",
+      "title": "Beside Myself",
+      "artist": "Looks Like Rain",
+      "albumTitle": "II",
+      "albumKey": "ii",
+      "year": 2019,
+      "trackNumber": 5,
+      "duration": "4:26",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lookslikerain.bandcamp.com/track/beside-myself",
+      "bandcampEmbedTrackId": "1318663885",
+      "sourcePage": "https://lookslikerain.bandcamp.com/album/ii",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:10:43.775446+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lookslikerain.bandcamp.com",
+    "bandcampBandId": "2888061910",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lookslikerain.bandcamp.com/album/ii",
+    "discoveredAt": "2026-09-06T05:51:42.978068+00:00",
+    "importedAt": "2026-09-06T06:10:43.775446+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

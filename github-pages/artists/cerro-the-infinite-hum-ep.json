@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "slug": "cerro-the-infinite-hum-ep",
+  "artist": "Cerro",
+  "bandcampUrl": "https://soundofcerro.bandcamp.com/album/the-infinite-hum-ep",
+  "releaseTitle": "The Infinite Hum EP",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "Melbourne",
+    "balearic house",
+    "dub house",
+    "electronic",
+    "house",
+    "detroit techno",
+    "dub"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Proto Exotica notches its third release with The Infinite Hum EP, the debut project from Melbourne producer Mateo Torres Rodriguez under his new alias: Cerro. Cerro is a…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://soundofcerro.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:57:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-infinite-hum-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-infinite-hum-ep-1546263780",
+      "title": "The Bright Side",
+      "artist": "Cerro",
+      "albumTitle": "The Infinite Hum EP",
+      "albumKey": "the-infinite-hum-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:31",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundofcerro.bandcamp.com/track/the-bright-side",
+      "bandcampEmbedTrackId": "1546263780",
+      "sourcePage": "https://soundofcerro.bandcamp.com/album/the-infinite-hum-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-infinite-hum-ep-677878054",
+      "title": "Unending Journey",
+      "artist": "Cerro",
+      "albumTitle": "The Infinite Hum EP",
+      "albumKey": "the-infinite-hum-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundofcerro.bandcamp.com/track/unending-journey",
+      "bandcampEmbedTrackId": "677878054",
+      "sourcePage": "https://soundofcerro.bandcamp.com/album/the-infinite-hum-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-infinite-hum-ep-2908261995",
+      "title": "Power of the Small",
+      "artist": "Cerro",
+      "albumTitle": "The Infinite Hum EP",
+      "albumKey": "the-infinite-hum-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:46",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundofcerro.bandcamp.com/track/power-of-the-small",
+      "bandcampEmbedTrackId": "2908261995",
+      "sourcePage": "https://soundofcerro.bandcamp.com/album/the-infinite-hum-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-infinite-hum-ep-3101119791",
+      "title": "The Bright Side (Andras Remix)",
+      "artist": "Cerro",
+      "albumTitle": "The Infinite Hum EP",
+      "albumKey": "the-infinite-hum-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:53",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundofcerro.bandcamp.com/track/the-bright-side-andras-remix",
+      "bandcampEmbedTrackId": "3101119791",
+      "sourcePage": "https://soundofcerro.bandcamp.com/album/the-infinite-hum-ep",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "the-infinite-hum-ep-44432695",
+      "title": "Indubitably",
+      "artist": "Cerro",
+      "albumTitle": "The Infinite Hum EP",
+      "albumKey": "the-infinite-hum-ep",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "5:43",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundofcerro.bandcamp.com/track/indubitably",
+      "bandcampEmbedTrackId": "44432695",
+      "sourcePage": "https://soundofcerro.bandcamp.com/album/the-infinite-hum-ep",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:57:59.144749+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "soundofcerro.bandcamp.com",
+    "bandcampBandId": "4113853234",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://soundofcerro.bandcamp.com/album/the-infinite-hum-ep",
+    "discoveredAt": "2026-09-06T05:51:42.954187+00:00",
+    "importedAt": "2026-09-06T05:57:59.144749+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

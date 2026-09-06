@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "slug": "len-leise-len-leise-edits-ll001",
+  "artist": "Len Leise",
+  "bandcampUrl": "https://lenleise.bandcamp.com/album/len-leise-edits-ll001",
+  "releaseTitle": "Len Leise Edits (LL001)",
+  "releaseDate": "2015-05-26 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "industrial",
+    "Melbourne",
+    "ambient",
+    "balearic",
+    "boogie",
+    "disco",
+    "house"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Limited edition edits. Side A 'Stars for Jorge' turned into more of a remix and the B side 'Desperado Dining' is much simpler in execution. These started as edits for me to…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lenleise.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:55:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "len-leise-edits-ll001",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "len-leise-edits-ll001-3155902132",
+      "title": "Stars for Jorge",
+      "artist": "Len Leise",
+      "albumTitle": "Len Leise Edits (LL001)",
+      "albumKey": "len-leise-edits-ll001",
+      "year": 2015,
+      "trackNumber": 1,
+      "duration": "5:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lenleise.bandcamp.com/track/stars-for-jorge",
+      "bandcampEmbedTrackId": "3155902132",
+      "sourcePage": "https://lenleise.bandcamp.com/album/len-leise-edits-ll001",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "len-leise-edits-ll001-754746646",
+      "title": "Desperado Dining",
+      "artist": "Len Leise",
+      "albumTitle": "Len Leise Edits (LL001)",
+      "albumKey": "len-leise-edits-ll001",
+      "year": 2015,
+      "trackNumber": 2,
+      "duration": "5:07",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lenleise.bandcamp.com/track/desperado-dining",
+      "bandcampEmbedTrackId": "754746646",
+      "sourcePage": "https://lenleise.bandcamp.com/album/len-leise-edits-ll001",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:55:00.353358+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lenleise.bandcamp.com",
+    "bandcampBandId": "2230617977",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lenleise.bandcamp.com/album/len-leise-edits-ll001",
+    "discoveredAt": "2026-09-06T05:51:42.951786+00:00",
+    "importedAt": "2026-09-06T05:55:00.353358+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

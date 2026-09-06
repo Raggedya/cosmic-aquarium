@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "nathan-abbey-alice-in-abbeyland",
+  "artist": "Nathan Abbey",
+  "bandcampUrl": "https://nathanabbey.bandcamp.com/album/alice-in-abbeyland",
+  "releaseTitle": "Alice in Abbeyland",
+  "releaseDate": "2026-08-17 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "psychedelic",
+    "Melbourne",
+    "alternative",
+    "singer-songwriter"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Nathan Abbey — psychedelic / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nathanabbey.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:01:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "alice-in-abbeyland",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "alice-in-abbeyland-3180093884",
+      "title": "Alice in Abbeyland",
+      "artist": "Nathan Abbey",
+      "albumTitle": "Alice in Abbeyland",
+      "albumKey": "alice-in-abbeyland",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "28:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nathanabbey.bandcamp.com/track/alice-in-abbeyland",
+      "bandcampEmbedTrackId": "3180093884",
+      "sourcePage": "https://nathanabbey.bandcamp.com/album/alice-in-abbeyland",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:01:07.547445+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nathanabbey.bandcamp.com",
+    "bandcampBandId": "883898511",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nathanabbey.bandcamp.com/album/alice-in-abbeyland",
+    "discoveredAt": "2026-09-06T05:51:42.959704+00:00",
+    "importedAt": "2026-09-06T06:01:07.547445+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

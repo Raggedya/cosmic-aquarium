@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "slug": "lothario-iou-ep",
+  "artist": "Lothario",
+  "bandcampUrl": "https://lotharioxx.bandcamp.com/album/iou-ep",
+  "releaseTitle": "IOU EP",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "garage",
+    "Melbourne",
+    "low-fi",
+    "melbourne",
+    "punk",
+    "rock n roll"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Melbourne’s garage-punk champions Lothario enter 2026, guns a blazing with their latest grip of songs titled IOU EP. Following their well-received debut full length record…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lotharioxx.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:28:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "iou-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "iou-ep-2852236497",
+      "title": "IOU",
+      "artist": "Lothario",
+      "albumTitle": "IOU EP",
+      "albumKey": "iou-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:35",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lotharioxx.bandcamp.com/track/iou",
+      "bandcampEmbedTrackId": "2852236497",
+      "sourcePage": "https://lotharioxx.bandcamp.com/album/iou-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "iou-ep-2934452827",
+      "title": "The Animal",
+      "artist": "Lothario",
+      "albumTitle": "IOU EP",
+      "albumKey": "iou-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:14",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lotharioxx.bandcamp.com/track/the-animal-2",
+      "bandcampEmbedTrackId": "2934452827",
+      "sourcePage": "https://lotharioxx.bandcamp.com/album/iou-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "iou-ep-1080955450",
+      "title": "Bad Actor",
+      "artist": "Lothario",
+      "albumTitle": "IOU EP",
+      "albumKey": "iou-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:21",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lotharioxx.bandcamp.com/track/bad-actor",
+      "bandcampEmbedTrackId": "1080955450",
+      "sourcePage": "https://lotharioxx.bandcamp.com/album/iou-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:28:40.523957+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lotharioxx.bandcamp.com",
+    "bandcampBandId": "1859367279",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lotharioxx.bandcamp.com/album/iou-ep",
+    "discoveredAt": "2026-09-06T05:51:42.980067+00:00",
+    "importedAt": "2026-09-06T06:28:40.523957+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

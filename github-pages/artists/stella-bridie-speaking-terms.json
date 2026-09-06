@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "slug": "stella-bridie-speaking-terms",
+  "artist": "Stella Bridie",
+  "bandcampUrl": "https://stellabridie.bandcamp.com/album/speaking-terms",
+  "releaseTitle": "Speaking Terms",
+  "releaseDate": "2024-11-28 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "Melbourne",
+    "alternative",
+    "dream pop",
+    "indie pop",
+    "indie rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "On 'Speaking Terms', Stella Bridie faces fear with humour as she stoically addresses the inner and external uglies that hinder. Flagrantly frank - not be confused as…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://stellabridie.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:07:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "speaking-terms",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "speaking-terms-3249929749",
+      "title": "Organ Donor",
+      "artist": "Stella Bridie",
+      "albumTitle": "Speaking Terms",
+      "albumKey": "speaking-terms",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "2:39",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stellabridie.bandcamp.com/track/organ-donor-2",
+      "bandcampEmbedTrackId": "3249929749",
+      "sourcePage": "https://stellabridie.bandcamp.com/album/speaking-terms",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "speaking-terms-931576622",
+      "title": "He Didn't Mean It",
+      "artist": "Stella Bridie",
+      "albumTitle": "Speaking Terms",
+      "albumKey": "speaking-terms",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "4:31",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stellabridie.bandcamp.com/track/he-didnt-mean-it-2",
+      "bandcampEmbedTrackId": "931576622",
+      "sourcePage": "https://stellabridie.bandcamp.com/album/speaking-terms",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "speaking-terms-1089312848",
+      "title": "Headlights",
+      "artist": "Stella Bridie",
+      "albumTitle": "Speaking Terms",
+      "albumKey": "speaking-terms",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "4:11",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stellabridie.bandcamp.com/track/headlights",
+      "bandcampEmbedTrackId": "1089312848",
+      "sourcePage": "https://stellabridie.bandcamp.com/album/speaking-terms",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "speaking-terms-2091055674",
+      "title": "6 Foot Drop",
+      "artist": "Stella Bridie",
+      "albumTitle": "Speaking Terms",
+      "albumKey": "speaking-terms",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "3:56",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stellabridie.bandcamp.com/track/6-foot-drop",
+      "bandcampEmbedTrackId": "2091055674",
+      "sourcePage": "https://stellabridie.bandcamp.com/album/speaking-terms",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:07:58.362891+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "stellabridie.bandcamp.com",
+    "bandcampBandId": "3098030739",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://stellabridie.bandcamp.com/album/speaking-terms",
+    "discoveredAt": "2026-09-06T05:51:42.972937+00:00",
+    "importedAt": "2026-09-06T06:07:58.362891+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

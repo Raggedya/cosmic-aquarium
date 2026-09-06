@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "slug": "ulo-s-uphoria",
+  "artist": "Ulo S.",
+  "bandcampUrl": "https://uloshark.bandcamp.com/album/uphoria",
+  "releaseTitle": "Uphoria",
+  "releaseDate": "2024-06-25 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "Melbourne",
+    "electronic",
+    "house",
+    "tech house",
+    "techno",
+    "electro",
+    "electronica"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "An essential and prolific figure in Australia’s electronic music community, producer Reptant officially presents his new tech-house inspired alias Ulo. S for ANIMA13. What…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://uloshark.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:03:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "uphoria",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "uphoria-2499656244",
+      "title": "Beat Seeker",
+      "artist": "Ulo S.",
+      "albumTitle": "Uphoria",
+      "albumKey": "uphoria",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "7:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://uloshark.bandcamp.com/track/beat-seeker",
+      "bandcampEmbedTrackId": "2499656244",
+      "sourcePage": "https://uloshark.bandcamp.com/album/uphoria",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "uphoria-3739381500",
+      "title": "It's Phizzy in Here",
+      "artist": "Ulo S.",
+      "albumTitle": "Uphoria",
+      "albumKey": "uphoria",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "6:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://uloshark.bandcamp.com/track/its-phizzy-in-here",
+      "bandcampEmbedTrackId": "3739381500",
+      "sourcePage": "https://uloshark.bandcamp.com/album/uphoria",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "uphoria-1618627577",
+      "title": "Uphoria",
+      "artist": "Ulo S.",
+      "albumTitle": "Uphoria",
+      "albumKey": "uphoria",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "7:46",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://uloshark.bandcamp.com/track/uphoria",
+      "bandcampEmbedTrackId": "1618627577",
+      "sourcePage": "https://uloshark.bandcamp.com/album/uphoria",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "uphoria-3809127006",
+      "title": "Uphoria (Last Bean Of The Night Dub)",
+      "artist": "Ulo S.",
+      "albumTitle": "Uphoria",
+      "albumKey": "uphoria",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "7:25",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://uloshark.bandcamp.com/track/uphoria-last-bean-of-the-night-dub",
+      "bandcampEmbedTrackId": "3809127006",
+      "sourcePage": "https://uloshark.bandcamp.com/album/uphoria",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:00.151776+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "uloshark.bandcamp.com",
+    "bandcampBandId": "1485554393",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://uloshark.bandcamp.com/album/uphoria",
+    "discoveredAt": "2026-09-06T05:51:42.961130+00:00",
+    "importedAt": "2026-09-06T06:03:00.151776+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

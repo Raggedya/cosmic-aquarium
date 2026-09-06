@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "callous-faulter-callous-faulter",
+  "artist": "Callous Faulter",
+  "bandcampUrl": "https://callousfaulter.bandcamp.com/album/callous-faulter",
+  "releaseTitle": "Callous Faulter",
+  "releaseDate": "2026-06-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "Melbourne",
+    "atmospheric black metal",
+    "black metal",
+    "blackgaze",
+    "death metal",
+    "extreme metal",
+    "metal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Callous Faulter — post-metal / Melbourne / atmospheric black metal music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://callousfaulter.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:58:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "callous-faulter",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "callous-faulter-3321468749",
+      "title": "The Isolationist",
+      "artist": "Callous Faulter",
+      "albumTitle": "Callous Faulter",
+      "albumKey": "callous-faulter",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "17:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://callousfaulter.bandcamp.com/track/the-isolationist",
+      "bandcampEmbedTrackId": "3321468749",
+      "sourcePage": "https://callousfaulter.bandcamp.com/album/callous-faulter",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "callous-faulter-3158144047",
+      "title": "Ocean Views",
+      "artist": "Callous Faulter",
+      "albumTitle": "Callous Faulter",
+      "albumKey": "callous-faulter",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "16:07",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://callousfaulter.bandcamp.com/track/ocean-views",
+      "bandcampEmbedTrackId": "3158144047",
+      "sourcePage": "https://callousfaulter.bandcamp.com/album/callous-faulter",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:58:59.695566+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "callousfaulter.bandcamp.com",
+    "bandcampBandId": "722744800",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://callousfaulter.bandcamp.com/album/callous-faulter",
+    "discoveredAt": "2026-09-06T05:51:42.955192+00:00",
+    "importedAt": "2026-09-06T05:58:59.695566+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

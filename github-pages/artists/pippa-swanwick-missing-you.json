@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "pippa-swanwick-missing-you",
+  "artist": "Pippa Swanwick",
+  "bandcampUrl": "https://pippaswanwick.bandcamp.com/album/missing-you",
+  "releaseTitle": "Missing You",
+  "releaseDate": "2025-09-16 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "Melbourne",
+    "pop",
+    "alternative",
+    "alternative pop",
+    "ambient pop"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Naarm/Melbourne singer-songwriter Pippa Swanwick unveils her debut EP Missing You, a deeply personal four-track collection of artifacts from Pippa’s life. This atmospheric…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://pippaswanwick.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:59:15Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "missing-you",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "missing-you-2918113630",
+      "title": "Missing You",
+      "artist": "Pippa Swanwick",
+      "albumTitle": "Missing You",
+      "albumKey": "missing-you",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "4:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pippaswanwick.bandcamp.com/track/missing-you-2",
+      "bandcampEmbedTrackId": "2918113630",
+      "sourcePage": "https://pippaswanwick.bandcamp.com/album/missing-you",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "missing-you-627415859",
+      "title": "Change",
+      "artist": "Pippa Swanwick",
+      "albumTitle": "Missing You",
+      "albumKey": "missing-you",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "3:44",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pippaswanwick.bandcamp.com/track/change",
+      "bandcampEmbedTrackId": "627415859",
+      "sourcePage": "https://pippaswanwick.bandcamp.com/album/missing-you",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "missing-you-4175287164",
+      "title": "Caller ID",
+      "artist": "Pippa Swanwick",
+      "albumTitle": "Missing You",
+      "albumKey": "missing-you",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "3:12",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pippaswanwick.bandcamp.com/track/caller-id",
+      "bandcampEmbedTrackId": "4175287164",
+      "sourcePage": "https://pippaswanwick.bandcamp.com/album/missing-you",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "missing-you-1836354440",
+      "title": "Shake That",
+      "artist": "Pippa Swanwick",
+      "albumTitle": "Missing You",
+      "albumKey": "missing-you",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "2:31",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pippaswanwick.bandcamp.com/track/shake-that",
+      "bandcampEmbedTrackId": "1836354440",
+      "sourcePage": "https://pippaswanwick.bandcamp.com/album/missing-you",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:59:15.388565+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "pippaswanwick.bandcamp.com",
+    "bandcampBandId": "1276979311",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://pippaswanwick.bandcamp.com/album/missing-you",
+    "discoveredAt": "2026-09-06T05:51:42.956695+00:00",
+    "importedAt": "2026-09-06T05:59:15.388565+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

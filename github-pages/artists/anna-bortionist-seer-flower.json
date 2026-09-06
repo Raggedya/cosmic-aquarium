@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "slug": "anna-bortionist-seer-flower",
+  "artist": "anna bortionist",
+  "bandcampUrl": "https://annabortionist.bandcamp.com/album/seer-flower",
+  "releaseTitle": "seer flower",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "industrial",
+    "Melbourne",
+    "experimental",
+    "ritual ambient",
+    "dark ambient",
+    "drone",
+    "dronenoise",
+    "noise"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "paridolia",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://annabortionist.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:03:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "seer-flower",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "seer-flower-1341262694",
+      "title": "vocal flowers",
+      "artist": "anna bortionist",
+      "albumTitle": "seer flower",
+      "albumKey": "seer-flower",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://annabortionist.bandcamp.com/track/vocal-flowers",
+      "bandcampEmbedTrackId": "1341262694",
+      "sourcePage": "https://annabortionist.bandcamp.com/album/seer-flower",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "seer-flower-4079880997",
+      "title": "ghostless",
+      "artist": "anna bortionist",
+      "albumTitle": "seer flower",
+      "albumKey": "seer-flower",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:50",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://annabortionist.bandcamp.com/track/ghostless",
+      "bandcampEmbedTrackId": "4079880997",
+      "sourcePage": "https://annabortionist.bandcamp.com/album/seer-flower",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "seer-flower-476193420",
+      "title": "fola",
+      "artist": "anna bortionist",
+      "albumTitle": "seer flower",
+      "albumKey": "seer-flower",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://annabortionist.bandcamp.com/track/fola",
+      "bandcampEmbedTrackId": "476193420",
+      "sourcePage": "https://annabortionist.bandcamp.com/album/seer-flower",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "seer-flower-1913706154",
+      "title": "sleep paralysis",
+      "artist": "anna bortionist",
+      "albumTitle": "seer flower",
+      "albumKey": "seer-flower",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:54",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://annabortionist.bandcamp.com/track/sleep-paralysis",
+      "bandcampEmbedTrackId": "1913706154",
+      "sourcePage": "https://annabortionist.bandcamp.com/album/seer-flower",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:37.669678+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "annabortionist.bandcamp.com",
+    "bandcampBandId": "608506816",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://annabortionist.bandcamp.com/album/seer-flower",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:03:37.669678+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

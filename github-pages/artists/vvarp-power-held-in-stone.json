@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "slug": "vvarp-power-held-in-stone",
+  "artist": "VVARP",
+  "bandcampUrl": "https://vvarp.bandcamp.com/album/power-held-in-stone",
+  "releaseTitle": "Power Held In Stone",
+  "releaseDate": "2025-08-08 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "Melbourne",
+    "metal",
+    "doom",
+    "doom metal",
+    "folk horror",
+    "sludge",
+    "stoner metal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Power Held In Stone is an imagined soundtrack for a folk horror film that exists only in our collective imagination. It tells the story of rebellion against invading…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vvarp.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:02:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "power-held-in-stone",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "power-held-in-stone-3482106431",
+      "title": "Druid Warfare",
+      "artist": "VVARP",
+      "albumTitle": "Power Held In Stone",
+      "albumKey": "power-held-in-stone",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "4:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vvarp.bandcamp.com/track/druid-warfare",
+      "bandcampEmbedTrackId": "3482106431",
+      "sourcePage": "https://vvarp.bandcamp.com/album/power-held-in-stone",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "power-held-in-stone-2955588013",
+      "title": "A Path Through The Veil",
+      "artist": "VVARP",
+      "albumTitle": "Power Held In Stone",
+      "albumKey": "power-held-in-stone",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "6:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vvarp.bandcamp.com/track/a-path-through-the-veil-2",
+      "bandcampEmbedTrackId": "2955588013",
+      "sourcePage": "https://vvarp.bandcamp.com/album/power-held-in-stone",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "power-held-in-stone-4164965094",
+      "title": "Equinox Portal",
+      "artist": "VVARP",
+      "albumTitle": "Power Held In Stone",
+      "albumKey": "power-held-in-stone",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "6:23",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vvarp.bandcamp.com/track/equinox-portal-2",
+      "bandcampEmbedTrackId": "4164965094",
+      "sourcePage": "https://vvarp.bandcamp.com/album/power-held-in-stone",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "power-held-in-stone-1825406032",
+      "title": "Iron Cloak",
+      "artist": "VVARP",
+      "albumTitle": "Power Held In Stone",
+      "albumKey": "power-held-in-stone",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "6:43",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vvarp.bandcamp.com/track/iron-cloak",
+      "bandcampEmbedTrackId": "1825406032",
+      "sourcePage": "https://vvarp.bandcamp.com/album/power-held-in-stone",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "power-held-in-stone-1054351933",
+      "title": "Stone Silhouette",
+      "artist": "VVARP",
+      "albumTitle": "Power Held In Stone",
+      "albumKey": "power-held-in-stone",
+      "year": 2025,
+      "trackNumber": 5,
+      "duration": "10:02",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vvarp.bandcamp.com/track/stone-silhouette",
+      "bandcampEmbedTrackId": "1054351933",
+      "sourcePage": "https://vvarp.bandcamp.com/album/power-held-in-stone",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:02:37.714878+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "vvarp.bandcamp.com",
+    "bandcampBandId": "2966270422",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://vvarp.bandcamp.com/album/power-held-in-stone",
+    "discoveredAt": "2026-09-06T05:51:42.961130+00:00",
+    "importedAt": "2026-09-06T06:02:37.714878+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

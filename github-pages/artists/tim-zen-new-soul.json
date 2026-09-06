@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "slug": "tim-zen-new-soul",
+  "artist": "Tim Zen",
+  "bandcampUrl": "https://timzen.bandcamp.com/album/new-soul",
+  "releaseTitle": "New Soul",
+  "releaseDate": "2026-07-17 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "Melbourne",
+    "alternative",
+    "dream pop",
+    "electronic",
+    "experimental",
+    "indie rock",
+    "r&b",
+    "soul",
+    "trip hop"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Tim Zen — dream-pop / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://timzen.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:04:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "new-soul",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "new-soul-309486858",
+      "title": "A Difference",
+      "artist": "Tim Zen",
+      "albumTitle": "New Soul",
+      "albumKey": "new-soul",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://timzen.bandcamp.com/track/a-difference",
+      "bandcampEmbedTrackId": "309486858",
+      "sourcePage": "https://timzen.bandcamp.com/album/new-soul",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "new-soul-1770229031",
+      "title": "New Soul",
+      "artist": "Tim Zen",
+      "albumTitle": "New Soul",
+      "albumKey": "new-soul",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://timzen.bandcamp.com/track/new-soul",
+      "bandcampEmbedTrackId": "1770229031",
+      "sourcePage": "https://timzen.bandcamp.com/album/new-soul",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "new-soul-58954328",
+      "title": "Charged",
+      "artist": "Tim Zen",
+      "albumTitle": "New Soul",
+      "albumKey": "new-soul",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://timzen.bandcamp.com/track/charged",
+      "bandcampEmbedTrackId": "58954328",
+      "sourcePage": "https://timzen.bandcamp.com/album/new-soul",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "new-soul-1219825091",
+      "title": "Tame It",
+      "artist": "Tim Zen",
+      "albumTitle": "New Soul",
+      "albumKey": "new-soul",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:18",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://timzen.bandcamp.com/track/tame-it",
+      "bandcampEmbedTrackId": "1219825091",
+      "sourcePage": "https://timzen.bandcamp.com/album/new-soul",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:04:24.221777+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "timzen.bandcamp.com",
+    "bandcampBandId": "970348317",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://timzen.bandcamp.com/album/new-soul",
+    "discoveredAt": "2026-09-06T05:51:42.965167+00:00",
+    "importedAt": "2026-09-06T06:04:24.221777+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

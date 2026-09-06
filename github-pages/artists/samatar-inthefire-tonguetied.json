@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "slug": "samatar-inthefire-tonguetied",
+  "artist": "SAMATAR",
+  "bandcampUrl": "https://samatar.bandcamp.com/album/inthefire-tonguetied",
+  "releaseTitle": "inthefire!/tonguetied!",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "world",
+    "Melbourne",
+    "canberra",
+    "hip-hop/rap",
+    "melbourne",
+    "eets music",
+    "experimental",
+    "experimental hip hop",
+    "lo-fi",
+    "rap"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "tracks 10, 11 of fragments of a faded past written, produced, and mixed by samatar mohamed mastered by will klep (voidhood) CBR FOREVER",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://samatar.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:58:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "inthefire-tonguetied",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "inthefire-tonguetied-1079900368",
+      "title": "inthefire!",
+      "artist": "SAMATAR",
+      "albumTitle": "inthefire!/tonguetied!",
+      "albumKey": "inthefire-tonguetied",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:39",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://samatar.bandcamp.com/track/inthefire",
+      "bandcampEmbedTrackId": "1079900368",
+      "sourcePage": "https://samatar.bandcamp.com/album/inthefire-tonguetied",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "inthefire-tonguetied-1376825392",
+      "title": "tonguetied!",
+      "artist": "SAMATAR",
+      "albumTitle": "inthefire!/tonguetied!",
+      "albumKey": "inthefire-tonguetied",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://samatar.bandcamp.com/track/tonguetied",
+      "bandcampEmbedTrackId": "1376825392",
+      "sourcePage": "https://samatar.bandcamp.com/album/inthefire-tonguetied",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:58:49.598381+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "samatar.bandcamp.com",
+    "bandcampBandId": "3996396243",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://samatar.bandcamp.com/album/inthefire-tonguetied",
+    "discoveredAt": "2026-09-06T05:51:42.955192+00:00",
+    "importedAt": "2026-09-06T05:58:49.598381+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

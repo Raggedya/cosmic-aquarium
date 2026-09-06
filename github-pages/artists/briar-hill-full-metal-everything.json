@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "slug": "briar-hill-full-metal-everything",
+  "artist": "Briar Hill",
+  "bandcampUrl": "https://briarhill.bandcamp.com/album/full-metal-everything",
+  "releaseTitle": "Full Metal Everything",
+  "releaseDate": "2026-06-29 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "Melbourne",
+    "metal",
+    "metalcore",
+    "emo"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Briar Hill — post-hardcore / Melbourne / metal music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://briarhill.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:53:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "full-metal-everything",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "full-metal-everything-3846548507",
+      "title": "Lonely People With Metal Hearts Aren't Living",
+      "artist": "Briar Hill",
+      "albumTitle": "Full Metal Everything",
+      "albumKey": "full-metal-everything",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://briarhill.bandcamp.com/track/lonely-people-with-metal-hearts-arent-living",
+      "bandcampEmbedTrackId": "3846548507",
+      "sourcePage": "https://briarhill.bandcamp.com/album/full-metal-everything",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "full-metal-everything-3150749615",
+      "title": "Full Metal Everything",
+      "artist": "Briar Hill",
+      "albumTitle": "Full Metal Everything",
+      "albumKey": "full-metal-everything",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://briarhill.bandcamp.com/track/full-metal-everything",
+      "bandcampEmbedTrackId": "3150749615",
+      "sourcePage": "https://briarhill.bandcamp.com/album/full-metal-everything",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "full-metal-everything-1633920697",
+      "title": "A Non-Living, Living Person",
+      "artist": "Briar Hill",
+      "albumTitle": "Full Metal Everything",
+      "albumKey": "full-metal-everything",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:05",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://briarhill.bandcamp.com/track/a-non-living-living-person",
+      "bandcampEmbedTrackId": "1633920697",
+      "sourcePage": "https://briarhill.bandcamp.com/album/full-metal-everything",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "full-metal-everything-2054301502",
+      "title": "Botchla",
+      "artist": "Briar Hill",
+      "albumTitle": "Full Metal Everything",
+      "albumKey": "full-metal-everything",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:57",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://briarhill.bandcamp.com/track/botchla",
+      "bandcampEmbedTrackId": "2054301502",
+      "sourcePage": "https://briarhill.bandcamp.com/album/full-metal-everything",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "full-metal-everything-943687124",
+      "title": "Words Of Lonely Meaning",
+      "artist": "Briar Hill",
+      "albumTitle": "Full Metal Everything",
+      "albumKey": "full-metal-everything",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:45",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://briarhill.bandcamp.com/track/words-of-lonely-meaning",
+      "bandcampEmbedTrackId": "943687124",
+      "sourcePage": "https://briarhill.bandcamp.com/album/full-metal-everything",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:53:16.077303+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "briarhill.bandcamp.com",
+    "bandcampBandId": "2711404176",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://briarhill.bandcamp.com/album/full-metal-everything",
+    "discoveredAt": "2026-09-06T05:50:51.725638+00:00",
+    "importedAt": "2026-09-06T05:53:16.077303+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

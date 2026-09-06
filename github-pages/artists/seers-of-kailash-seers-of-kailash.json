@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "slug": "seers-of-kailash-seers-of-kailash",
+  "artist": "Seers of Kailash",
+  "bandcampUrl": "https://seersofkailash.bandcamp.com/album/seers-of-kailash",
+  "releaseTitle": "Seers of Kailash",
+  "releaseDate": "2026-03-04 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "Melbourne",
+    "rock",
+    "heavy rock",
+    "heavy rock stoner",
+    "psychedelic rock",
+    "stoner metal",
+    "stoner rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Seers of Kailash — stoner-metal / Melbourne / rock music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://seersofkailash.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:55:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "seers-of-kailash",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "seers-of-kailash-143769073",
+      "title": "Kailash Rising",
+      "artist": "Seers of Kailash",
+      "albumTitle": "Seers of Kailash",
+      "albumKey": "seers-of-kailash",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://seersofkailash.bandcamp.com/track/kailash-rising-2",
+      "bandcampEmbedTrackId": "143769073",
+      "sourcePage": "https://seersofkailash.bandcamp.com/album/seers-of-kailash",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "seers-of-kailash-1917217297",
+      "title": "The Watchers",
+      "artist": "Seers of Kailash",
+      "albumTitle": "Seers of Kailash",
+      "albumKey": "seers-of-kailash",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://seersofkailash.bandcamp.com/track/the-watchers",
+      "bandcampEmbedTrackId": "1917217297",
+      "sourcePage": "https://seersofkailash.bandcamp.com/album/seers-of-kailash",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "seers-of-kailash-83384645",
+      "title": "Olympus Mons",
+      "artist": "Seers of Kailash",
+      "albumTitle": "Seers of Kailash",
+      "albumKey": "seers-of-kailash",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:37",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://seersofkailash.bandcamp.com/track/olympus-mons",
+      "bandcampEmbedTrackId": "83384645",
+      "sourcePage": "https://seersofkailash.bandcamp.com/album/seers-of-kailash",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:55:53.132790+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "seersofkailash.bandcamp.com",
+    "bandcampBandId": "2159392867",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://seersofkailash.bandcamp.com/album/seers-of-kailash",
+    "discoveredAt": "2026-09-06T05:51:42.952681+00:00",
+    "importedAt": "2026-09-06T05:55:53.132790+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "slug": "ill-eagle-dj-s-ill-eagle-dj-s-feat-deepwest-crushing",
+  "artist": "ill-eagle dj's",
+  "bandcampUrl": "https://ill-eagledjs.bandcamp.com/album/ill-eagle-djs-feat-deepwest-crushing",
+  "releaseTitle": "ill-eagle dj's feat. deepwest - crushing",
+  "releaseDate": "2026-07-27 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "Melbourne",
+    "electronic",
+    "house",
+    "breakbeat",
+    "breaks",
+    "disco",
+    "edits",
+    "remixes",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "ill-eagle dj's — electro / Melbourne / house music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ill-eagledjs.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:01:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ill-eagle-dj-s-feat-deepwest-crushing",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ill-eagle-dj-s-feat-deepwest-crushing-1485122296",
+      "title": "ill-eagle dj's feat. deepwest - crushing",
+      "artist": "ill-eagle dj's",
+      "albumTitle": "ill-eagle dj's feat. deepwest - crushing",
+      "albumKey": "ill-eagle-dj-s-feat-deepwest-crushing",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ill-eagledjs.bandcamp.com/track/ill-eagle-djs-feat-deepwest-crushing",
+      "bandcampEmbedTrackId": "1485122296",
+      "sourcePage": "https://ill-eagledjs.bandcamp.com/album/ill-eagle-djs-feat-deepwest-crushing",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:01:40.836993+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ill-eagledjs.bandcamp.com",
+    "bandcampBandId": "3182778753",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ill-eagledjs.bandcamp.com/album/ill-eagle-djs-feat-deepwest-crushing",
+    "discoveredAt": "2026-09-06T05:51:42.959704+00:00",
+    "importedAt": "2026-09-06T06:01:40.836993+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

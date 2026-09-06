@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "slug": "piccolo-blu-stealing-your-wifi",
+  "artist": "piccolo blu",
+  "bandcampUrl": "https://piccoloblu.bandcamp.com/album/stealing-your-wifi",
+  "releaseTitle": "stealing your wifi",
+  "releaseDate": "2026-08-09 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "Melbourne",
+    "electronic",
+    "pop",
+    "chill",
+    "downtempo",
+    "downtempo and chill",
+    "electronic music",
+    "female vocalist",
+    "female vocals"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Piccolo Blu's debut EP 'stealing your wifi' was written, recorded and produced in a hotel room. Late night techno textures and layered vocals carry old notebook poems through…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://piccoloblu.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:04:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "stealing-your-wifi",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "stealing-your-wifi-3853980682",
+      "title": "blu curtain",
+      "artist": "piccolo blu",
+      "albumTitle": "stealing your wifi",
+      "albumKey": "stealing-your-wifi",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://piccoloblu.bandcamp.com/track/blu-curtain",
+      "bandcampEmbedTrackId": "3853980682",
+      "sourcePage": "https://piccoloblu.bandcamp.com/album/stealing-your-wifi",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "stealing-your-wifi-2906649000",
+      "title": "want me whole",
+      "artist": "piccolo blu",
+      "albumTitle": "stealing your wifi",
+      "albumKey": "stealing-your-wifi",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://piccoloblu.bandcamp.com/track/want-me-whole",
+      "bandcampEmbedTrackId": "2906649000",
+      "sourcePage": "https://piccoloblu.bandcamp.com/album/stealing-your-wifi",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "stealing-your-wifi-3895193931",
+      "title": "limerence",
+      "artist": "piccolo blu",
+      "albumTitle": "stealing your wifi",
+      "albumKey": "stealing-your-wifi",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:28",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://piccoloblu.bandcamp.com/track/limerence",
+      "bandcampEmbedTrackId": "3895193931",
+      "sourcePage": "https://piccoloblu.bandcamp.com/album/stealing-your-wifi",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "stealing-your-wifi-2251362346",
+      "title": "at last",
+      "artist": "piccolo blu",
+      "albumTitle": "stealing your wifi",
+      "albumKey": "stealing-your-wifi",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:27",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://piccoloblu.bandcamp.com/track/at-last",
+      "bandcampEmbedTrackId": "2251362346",
+      "sourcePage": "https://piccoloblu.bandcamp.com/album/stealing-your-wifi",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:04:55.066012+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "piccoloblu.bandcamp.com",
+    "bandcampBandId": "2266724801",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://piccoloblu.bandcamp.com/album/stealing-your-wifi",
+    "discoveredAt": "2026-09-06T05:51:42.965167+00:00",
+    "importedAt": "2026-09-06T06:04:55.066012+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

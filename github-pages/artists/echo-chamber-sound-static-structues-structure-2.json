@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "echo-chamber-sound-static-structues-structure-2",
+  "artist": "Echo Chamber Sound",
+  "bandcampUrl": "https://echochambersound.bandcamp.com/album/static-structues-structure-2",
+  "releaseTitle": "Static Structues - Structure 2",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "Melbourne",
+    "dub",
+    "dubstep",
+    "jungle",
+    "reggae"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Echo Chamber Sound — Melbourne / dub / dubstep music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://echochambersound.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:03:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "static-structues-structure-2",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "static-structues-structure-2-2276095630",
+      "title": "Broken Hearted",
+      "artist": "Echo Chamber Sound",
+      "albumTitle": "Static Structues - Structure 2",
+      "albumKey": "static-structues-structure-2",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://echochambersound.bandcamp.com/track/broken-hearted",
+      "bandcampEmbedTrackId": "2276095630",
+      "sourcePage": "https://echochambersound.bandcamp.com/album/static-structues-structure-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "static-structues-structure-2-59981066",
+      "title": "Danger Danger",
+      "artist": "Echo Chamber Sound",
+      "albumTitle": "Static Structues - Structure 2",
+      "albumKey": "static-structues-structure-2",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:56",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://echochambersound.bandcamp.com/track/danger-danger",
+      "bandcampEmbedTrackId": "59981066",
+      "sourcePage": "https://echochambersound.bandcamp.com/album/static-structues-structure-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "static-structues-structure-2-3920325620",
+      "title": "Love Sensation",
+      "artist": "Echo Chamber Sound",
+      "albumTitle": "Static Structues - Structure 2",
+      "albumKey": "static-structues-structure-2",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:49",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://echochambersound.bandcamp.com/track/love-sensation",
+      "bandcampEmbedTrackId": "3920325620",
+      "sourcePage": "https://echochambersound.bandcamp.com/album/static-structues-structure-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "static-structues-structure-2-2239427943",
+      "title": "Ruff Kutt",
+      "artist": "Echo Chamber Sound",
+      "albumTitle": "Static Structues - Structure 2",
+      "albumKey": "static-structues-structure-2",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:25",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://echochambersound.bandcamp.com/track/ruff-kutt",
+      "bandcampEmbedTrackId": "2239427943",
+      "sourcePage": "https://echochambersound.bandcamp.com/album/static-structues-structure-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:09.075827+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "echochambersound.bandcamp.com",
+    "bandcampBandId": "2533079655",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://echochambersound.bandcamp.com/album/static-structues-structure-2",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:03:09.075827+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

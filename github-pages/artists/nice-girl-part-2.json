@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "nice-girl-part-2",
+  "artist": "Nice Girl",
+  "bandcampUrl": "https://nicegirl.bandcamp.com/album/part-2",
+  "releaseTitle": "Part 2",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Nice Girl — Melbourne music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nicegirl.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:09:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "part-2",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "part-2-2509733381",
+      "title": "Hot Water",
+      "artist": "Nice Girl",
+      "albumTitle": "Part 2",
+      "albumKey": "part-2",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nicegirl.bandcamp.com/track/hot-water",
+      "bandcampEmbedTrackId": "2509733381",
+      "sourcePage": "https://nicegirl.bandcamp.com/album/part-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "part-2-4078074486",
+      "title": "Go",
+      "artist": "Nice Girl",
+      "albumTitle": "Part 2",
+      "albumKey": "part-2",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:26",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nicegirl.bandcamp.com/track/go",
+      "bandcampEmbedTrackId": "4078074486",
+      "sourcePage": "https://nicegirl.bandcamp.com/album/part-2",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:09:57.302859+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nicegirl.bandcamp.com",
+    "bandcampBandId": "2394038070",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nicegirl.bandcamp.com/album/part-2",
+    "discoveredAt": "2026-09-06T05:51:42.977066+00:00",
+    "importedAt": "2026-09-06T06:09:57.302859+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

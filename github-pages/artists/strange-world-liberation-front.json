@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "strange-world-liberation-front",
+  "artist": "Strange World",
+  "bandcampUrl": "https://strangeworld1.bandcamp.com/album/liberation-front",
+  "releaseTitle": "Liberation Front",
+  "releaseDate": "2026-07-18 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "trance",
+    "Melbourne",
+    "electronic",
+    "club",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Liberation Front - EP Mix & Master - @hasvat_informant Artwork - @denzellmau @41445914_u @paul0fduty",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://strangeworld1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:06:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "liberation-front",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "liberation-front-4224662445",
+      "title": "Liberation Front",
+      "artist": "Strange World",
+      "albumTitle": "Liberation Front",
+      "albumKey": "liberation-front",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://strangeworld1.bandcamp.com/track/liberation-front",
+      "bandcampEmbedTrackId": "4224662445",
+      "sourcePage": "https://strangeworld1.bandcamp.com/album/liberation-front",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "liberation-front-989622155",
+      "title": "Evangelical",
+      "artist": "Strange World",
+      "albumTitle": "Liberation Front",
+      "albumKey": "liberation-front",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:06",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://strangeworld1.bandcamp.com/track/evangelical",
+      "bandcampEmbedTrackId": "989622155",
+      "sourcePage": "https://strangeworld1.bandcamp.com/album/liberation-front",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "liberation-front-2572557380",
+      "title": "New Liife!",
+      "artist": "Strange World",
+      "albumTitle": "Liberation Front",
+      "albumKey": "liberation-front",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:46",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://strangeworld1.bandcamp.com/track/new-liife",
+      "bandcampEmbedTrackId": "2572557380",
+      "sourcePage": "https://strangeworld1.bandcamp.com/album/liberation-front",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "liberation-front-2822668683",
+      "title": "Past The Horizon",
+      "artist": "Strange World",
+      "albumTitle": "Liberation Front",
+      "albumKey": "liberation-front",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:33",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://strangeworld1.bandcamp.com/track/past-the-horizon",
+      "bandcampEmbedTrackId": "2822668683",
+      "sourcePage": "https://strangeworld1.bandcamp.com/album/liberation-front",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:06:38.927111+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "strangeworld1.bandcamp.com",
+    "bandcampBandId": "3786273449",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://strangeworld1.bandcamp.com/album/liberation-front",
+    "discoveredAt": "2026-09-06T05:51:42.970047+00:00",
+    "importedAt": "2026-09-06T06:06:38.927111+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

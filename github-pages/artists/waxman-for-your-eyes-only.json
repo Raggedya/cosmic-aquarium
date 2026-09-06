@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "slug": "waxman-for-your-eyes-only",
+  "artist": "Waxman",
+  "bandcampUrl": "https://waxmanband.bandcamp.com/album/for-your-eyes-only",
+  "releaseTitle": "for your eyes only_",
+  "releaseDate": "2025-12-31 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "Melbourne",
+    "punk",
+    "experimental rock",
+    "noise rock",
+    "post-hardcore",
+    "post-punk",
+    "post-rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Jamie on Drums Kyan on Guitars Tommy on Bass All on Vox Cover art by Tommy and Hektor (instagram @i.forgot.my.face) Historically, documents were physically sealed with wax to…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://waxmanband.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:01:56Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "for-your-eyes-only",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "for-your-eyes-only-2006844470",
+      "title": "Between You and Me",
+      "artist": "Waxman",
+      "albumTitle": "for your eyes only_",
+      "albumKey": "for-your-eyes-only",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "6:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://waxmanband.bandcamp.com/track/between-you-and-me",
+      "bandcampEmbedTrackId": "2006844470",
+      "sourcePage": "https://waxmanband.bandcamp.com/album/for-your-eyes-only",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "for-your-eyes-only-1423792412",
+      "title": "Portents",
+      "artist": "Waxman",
+      "albumTitle": "for your eyes only_",
+      "albumKey": "for-your-eyes-only",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "5:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://waxmanband.bandcamp.com/track/portents",
+      "bandcampEmbedTrackId": "1423792412",
+      "sourcePage": "https://waxmanband.bandcamp.com/album/for-your-eyes-only",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "for-your-eyes-only-1889708518",
+      "title": "Smoke Bomb",
+      "artist": "Waxman",
+      "albumTitle": "for your eyes only_",
+      "albumKey": "for-your-eyes-only",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "3:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://waxmanband.bandcamp.com/track/smoke-bomb",
+      "bandcampEmbedTrackId": "1889708518",
+      "sourcePage": "https://waxmanband.bandcamp.com/album/for-your-eyes-only",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "for-your-eyes-only-4275156529",
+      "title": "Waxman",
+      "artist": "Waxman",
+      "albumTitle": "for your eyes only_",
+      "albumKey": "for-your-eyes-only",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "5:48",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://waxmanband.bandcamp.com/track/waxman",
+      "bandcampEmbedTrackId": "4275156529",
+      "sourcePage": "https://waxmanband.bandcamp.com/album/for-your-eyes-only",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:01:56.057716+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "waxmanband.bandcamp.com",
+    "bandcampBandId": "3360466450",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://waxmanband.bandcamp.com/album/for-your-eyes-only",
+    "discoveredAt": "2026-09-06T05:51:42.961130+00:00",
+    "importedAt": "2026-09-06T06:01:56.057716+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

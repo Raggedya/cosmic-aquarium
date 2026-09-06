@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "slug": "harvey-sutherland-debt-collection-remixes",
+  "artist": "Harvey Sutherland",
+  "bandcampUrl": "https://harveysutherland.bandcamp.com/album/debt-collection-remixes",
+  "releaseTitle": "Debt (Collection) (Remixes)",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "Melbourne",
+    "electronic",
+    "funk",
+    "beats",
+    "dance",
+    "frogs",
+    "house",
+    "neurotic funk",
+    "soul",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Last year, Harvey Sutherland released his second album Debt - a record about the cost of doing business in the meme economy, which saw the Australian producer reducing his…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://harveysutherland.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:01:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "debt-collection-remixes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "debt-collection-remixes-1935657352",
+      "title": "Remember (Jorg Kuning Remix)",
+      "artist": "Harvey Sutherland",
+      "albumTitle": "Debt (Collection) (Remixes)",
+      "albumKey": "debt-collection-remixes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://harveysutherland.bandcamp.com/track/remember-jorg-kuning-remix",
+      "bandcampEmbedTrackId": "1935657352",
+      "sourcePage": "https://harveysutherland.bandcamp.com/album/debt-collection-remixes",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "debt-collection-remixes-2009004534",
+      "title": "Theme For Z (Will Hofbauer's W, X, Y & Z Mix)",
+      "artist": "Harvey Sutherland",
+      "albumTitle": "Debt (Collection) (Remixes)",
+      "albumKey": "debt-collection-remixes",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:59",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://harveysutherland.bandcamp.com/track/theme-for-z-will-hofbauers-w-x-y-z-mix",
+      "bandcampEmbedTrackId": "2009004534",
+      "sourcePage": "https://harveysutherland.bandcamp.com/album/debt-collection-remixes",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "debt-collection-remixes-1703625212",
+      "title": "Body Language (3kelves & Dylan C. Greene Remix)",
+      "artist": "Harvey Sutherland",
+      "albumTitle": "Debt (Collection) (Remixes)",
+      "albumKey": "debt-collection-remixes",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:27",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://harveysutherland.bandcamp.com/track/body-language-3kelves-dylan-c-greene-remix",
+      "bandcampEmbedTrackId": "1703625212",
+      "sourcePage": "https://harveysutherland.bandcamp.com/album/debt-collection-remixes",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:01:27.403013+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "harveysutherland.bandcamp.com",
+    "bandcampBandId": "343512306",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://harveysutherland.bandcamp.com/album/debt-collection-remixes",
+    "discoveredAt": "2026-09-06T05:51:42.959704+00:00",
+    "importedAt": "2026-09-06T06:01:27.403013+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "slug": "amaranth-todd-gunbox-ep",
+  "artist": "amaranth_todd",
+  "bandcampUrl": "https://amaranthtodd.bandcamp.com/album/gunbox-ep",
+  "releaseTitle": "gunbox ep",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "Melbourne",
+    "electronic",
+    "ambient",
+    "glitch",
+    "hyperglitch"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "It's my birthday and I'll release an EP if I want to.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://amaranthtodd.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:57:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "gunbox-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "gunbox-ep-3593559213",
+      "title": "darkroom",
+      "artist": "amaranth_todd",
+      "albumTitle": "gunbox ep",
+      "albumKey": "gunbox-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amaranthtodd.bandcamp.com/track/darkroom",
+      "bandcampEmbedTrackId": "3593559213",
+      "sourcePage": "https://amaranthtodd.bandcamp.com/album/gunbox-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "gunbox-ep-3602903510",
+      "title": "airgap",
+      "artist": "amaranth_todd",
+      "albumTitle": "gunbox ep",
+      "albumKey": "gunbox-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amaranthtodd.bandcamp.com/track/airgap",
+      "bandcampEmbedTrackId": "3602903510",
+      "sourcePage": "https://amaranthtodd.bandcamp.com/album/gunbox-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "gunbox-ep-3717775316",
+      "title": "gunbox",
+      "artist": "amaranth_todd",
+      "albumTitle": "gunbox ep",
+      "albumKey": "gunbox-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:40",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amaranthtodd.bandcamp.com/track/gunbox",
+      "bandcampEmbedTrackId": "3717775316",
+      "sourcePage": "https://amaranthtodd.bandcamp.com/album/gunbox-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:57:52.289608+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "amaranthtodd.bandcamp.com",
+    "bandcampBandId": "3448211883",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://amaranthtodd.bandcamp.com/album/gunbox-ep",
+    "discoveredAt": "2026-09-06T05:51:42.954187+00:00",
+    "importedAt": "2026-09-06T05:57:52.289608+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "slug": "atomizer-demo-ii-2002",
+  "artist": "Atomizer",
+  "bandcampUrl": "https://atomizer.bandcamp.com/album/demo-ii-2002",
+  "releaseTitle": "Demo II 2002",
+  "releaseDate": "2002-08-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "death-metal",
+    "Melbourne",
+    "black metal",
+    "death metal",
+    "metal",
+    "thrash metal",
+    "punk",
+    "trad metal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Pre production demo from July 2002 featuring tracks from the forthcoming Only Weapon Of Choice album from December 2003.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://atomizer.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:51:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "demo-ii-2002",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "demo-ii-2002-851842430",
+      "title": "And The Hunt Starts Again - Demo II 2002",
+      "artist": "Atomizer",
+      "albumTitle": "Demo II 2002",
+      "albumKey": "demo-ii-2002",
+      "year": 2002,
+      "trackNumber": 1,
+      "duration": "3:30",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atomizer.bandcamp.com/track/and-the-hunt-starts-again-demo-ii-2002",
+      "bandcampEmbedTrackId": "851842430",
+      "sourcePage": "https://atomizer.bandcamp.com/album/demo-ii-2002",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "demo-ii-2002-1720706079",
+      "title": "For Blackness Absolute V1 - Demo II 2002",
+      "artist": "Atomizer",
+      "albumTitle": "Demo II 2002",
+      "albumKey": "demo-ii-2002",
+      "year": 2002,
+      "trackNumber": 2,
+      "duration": "3:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atomizer.bandcamp.com/track/for-blackness-absolute-v1-demo-ii-2002",
+      "bandcampEmbedTrackId": "1720706079",
+      "sourcePage": "https://atomizer.bandcamp.com/album/demo-ii-2002",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "demo-ii-2002-3841003307",
+      "title": "For Blackness Absolute V2 - Demo II 2002",
+      "artist": "Atomizer",
+      "albumTitle": "Demo II 2002",
+      "albumKey": "demo-ii-2002",
+      "year": 2002,
+      "trackNumber": 3,
+      "duration": "3:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atomizer.bandcamp.com/track/for-blackness-absolute-v2-demo-ii-2002",
+      "bandcampEmbedTrackId": "3841003307",
+      "sourcePage": "https://atomizer.bandcamp.com/album/demo-ii-2002",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:51:57.737635+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "atomizer.bandcamp.com",
+    "bandcampBandId": "560200187",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://atomizer.bandcamp.com/album/demo-ii-2002",
+    "discoveredAt": "2026-09-06T05:48:34.124320+00:00",
+    "importedAt": "2026-09-06T05:51:57.737635+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

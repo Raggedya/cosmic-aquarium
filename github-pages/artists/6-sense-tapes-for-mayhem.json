@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "6-sense-tapes-for-mayhem",
+  "artist": "6 SENSE",
+  "bandcampUrl": "https://6sensee.bandcamp.com/album/tapes-for-mayhem-2",
+  "releaseTitle": "TAPES FOR MAYHEM",
+  "releaseDate": "2023-07-17 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "Melbourne",
+    "electronic",
+    "groove",
+    "rave",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "6 SENSE — breakbeat / Melbourne / groove music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://6sensee.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:03:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tapes-for-mayhem",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tapes-for-mayhem-835465831",
+      "title": "Right Is Wrong",
+      "artist": "6 SENSE",
+      "albumTitle": "TAPES FOR MAYHEM",
+      "albumKey": "tapes-for-mayhem",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "5:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://6sensee.bandcamp.com/track/right-is-wrong",
+      "bandcampEmbedTrackId": "835465831",
+      "sourcePage": "https://6sensee.bandcamp.com/album/tapes-for-mayhem-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tapes-for-mayhem-3886456067",
+      "title": "Disorderly Conduct",
+      "artist": "6 SENSE",
+      "albumTitle": "TAPES FOR MAYHEM",
+      "albumKey": "tapes-for-mayhem",
+      "year": 2023,
+      "trackNumber": 2,
+      "duration": "7:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://6sensee.bandcamp.com/track/disorderly-conduct",
+      "bandcampEmbedTrackId": "3886456067",
+      "sourcePage": "https://6sensee.bandcamp.com/album/tapes-for-mayhem-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "tapes-for-mayhem-2287443925",
+      "title": "On This Side",
+      "artist": "6 SENSE",
+      "albumTitle": "TAPES FOR MAYHEM",
+      "albumKey": "tapes-for-mayhem",
+      "year": 2023,
+      "trackNumber": 3,
+      "duration": "5:32",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://6sensee.bandcamp.com/track/on-this-side",
+      "bandcampEmbedTrackId": "2287443925",
+      "sourcePage": "https://6sensee.bandcamp.com/album/tapes-for-mayhem-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "tapes-for-mayhem-1238872530",
+      "title": "Ghetto Blaster",
+      "artist": "6 SENSE",
+      "albumTitle": "TAPES FOR MAYHEM",
+      "albumKey": "tapes-for-mayhem",
+      "year": 2023,
+      "trackNumber": 4,
+      "duration": "7:33",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://6sensee.bandcamp.com/track/ghetto-blaster",
+      "bandcampEmbedTrackId": "1238872530",
+      "sourcePage": "https://6sensee.bandcamp.com/album/tapes-for-mayhem-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:16.869270+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "6sensee.bandcamp.com",
+    "bandcampBandId": "1913818012",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://6sensee.bandcamp.com/album/tapes-for-mayhem-2",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:03:16.869270+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

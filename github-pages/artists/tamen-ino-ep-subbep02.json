@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "slug": "tamen-ino-ep-subbep02",
+  "artist": "Tamen",
+  "bandcampUrl": "https://tamen.bandcamp.com/album/ino-ep-subbep02",
+  "releaseTitle": "Ino EP [SUBBEP02]",
+  "releaseDate": "2024-03-15 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "drum-bass",
+    "Melbourne",
+    "140",
+    "160",
+    "drum & bass",
+    "electronic",
+    "jungle dnb",
+    "bass music",
+    "breakbeat",
+    "drum and bass",
+    "drum n bass",
+    "drum'n'bass",
+    "drumfunk",
+    "jungle"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Pre-listen all tracks: https://soundcloud.com/subb1996/sets/ino",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "loud",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tamen.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:10:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ino-ep-subbep02",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ino-ep-subbep02-1973962119",
+      "title": "Subvert",
+      "artist": "Tamen",
+      "albumTitle": "Ino EP [SUBBEP02]",
+      "albumKey": "ino-ep-subbep02",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "4:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tamen.bandcamp.com/track/subvert",
+      "bandcampEmbedTrackId": "1973962119",
+      "sourcePage": "https://tamen.bandcamp.com/album/ino-ep-subbep02",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ino-ep-subbep02-3785429544",
+      "title": "Paradigm",
+      "artist": "Tamen",
+      "albumTitle": "Ino EP [SUBBEP02]",
+      "albumKey": "ino-ep-subbep02",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "5:07",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tamen.bandcamp.com/track/paradigm",
+      "bandcampEmbedTrackId": "3785429544",
+      "sourcePage": "https://tamen.bandcamp.com/album/ino-ep-subbep02",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ino-ep-subbep02-3127921086",
+      "title": "Ino",
+      "artist": "Tamen",
+      "albumTitle": "Ino EP [SUBBEP02]",
+      "albumKey": "ino-ep-subbep02",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "5:35",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tamen.bandcamp.com/track/ino",
+      "bandcampEmbedTrackId": "3127921086",
+      "sourcePage": "https://tamen.bandcamp.com/album/ino-ep-subbep02",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ino-ep-subbep02-2911481472",
+      "title": "Uma",
+      "artist": "Tamen",
+      "albumTitle": "Ino EP [SUBBEP02]",
+      "albumKey": "ino-ep-subbep02",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "5:14",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tamen.bandcamp.com/track/uma",
+      "bandcampEmbedTrackId": "2911481472",
+      "sourcePage": "https://tamen.bandcamp.com/album/ino-ep-subbep02",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:10:09.284662+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tamen.bandcamp.com",
+    "bandcampBandId": "36555521",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tamen.bandcamp.com/album/ino-ep-subbep02",
+    "discoveredAt": "2026-09-06T05:51:42.978068+00:00",
+    "importedAt": "2026-09-06T06:10:09.284662+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

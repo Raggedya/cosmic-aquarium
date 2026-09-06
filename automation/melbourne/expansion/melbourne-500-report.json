@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "batchId": "melbourne-500-2026-09-06",
+  "status": "complete",
+  "startingEligibleArtists": 56,
+  "finalEligibleArtists": 500,
+  "targetTotal": 500,
+  "acceptedArtists": 444,
+  "newArtists": 444,
+  "existingArtistsActivated": 0,
+  "candidateCount": 3500,
+  "rejectedCount": 374,
+  "playableTracks": 3744,
+  "artistsWithTickerBio": 500,
+  "waterDistribution": {
+    "HEAVY": 144,
+    "DREAMY": 112,
+    "QUIET": 125,
+    "ELECTRONIC": 101,
+    "DARK": 89,
+    "LOUD": 178,
+    "STRANGE": 94
+  },
+  "generatedAt": "2026-09-06T06:28:55.332366+00:00"
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "slug": "steve-turner-escape-velocity",
+  "artist": "Steve Turner",
+  "bandcampUrl": "https://steveturnerbc.bandcamp.com/album/escape-velocity",
+  "releaseTitle": "Escape Velocity",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "metal",
+    "Melbourne",
+    "ambient",
+    "electronica",
+    "fusion",
+    "guitar",
+    "progressive",
+    "rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "we are proud to say this recording was made the way musicians have been doing it for decades. all guitars were recorded using microphones and physical amps. no modelling or…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://steveturnerbc.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:51:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "escape-velocity",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "escape-velocity-1187672101",
+      "title": "Escape Velocity",
+      "artist": "Steve Turner",
+      "albumTitle": "Escape Velocity",
+      "albumKey": "escape-velocity",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steveturnerbc.bandcamp.com/track/escape-velocity",
+      "bandcampEmbedTrackId": "1187672101",
+      "sourcePage": "https://steveturnerbc.bandcamp.com/album/escape-velocity",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "escape-velocity-612932867",
+      "title": "Release",
+      "artist": "Steve Turner",
+      "albumTitle": "Escape Velocity",
+      "albumKey": "escape-velocity",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steveturnerbc.bandcamp.com/track/release",
+      "bandcampEmbedTrackId": "612932867",
+      "sourcePage": "https://steveturnerbc.bandcamp.com/album/escape-velocity",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "escape-velocity-3747381614",
+      "title": "Recalibrate the Solar Wind Generators (2026)",
+      "artist": "Steve Turner",
+      "albumTitle": "Escape Velocity",
+      "albumKey": "escape-velocity",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:10",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steveturnerbc.bandcamp.com/track/recalibrate-the-solar-wind-generators-2026",
+      "bandcampEmbedTrackId": "3747381614",
+      "sourcePage": "https://steveturnerbc.bandcamp.com/album/escape-velocity",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "escape-velocity-3730099224",
+      "title": "The Deeper One's Dreaming",
+      "artist": "Steve Turner",
+      "albumTitle": "Escape Velocity",
+      "albumKey": "escape-velocity",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:59",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steveturnerbc.bandcamp.com/track/the-deeper-ones-dreaming",
+      "bandcampEmbedTrackId": "3730099224",
+      "sourcePage": "https://steveturnerbc.bandcamp.com/album/escape-velocity",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "escape-velocity-783828492",
+      "title": "Diluvian",
+      "artist": "Steve Turner",
+      "albumTitle": "Escape Velocity",
+      "albumKey": "escape-velocity",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "3:26",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steveturnerbc.bandcamp.com/track/diluvian",
+      "bandcampEmbedTrackId": "783828492",
+      "sourcePage": "https://steveturnerbc.bandcamp.com/album/escape-velocity",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:51:49.263683+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "steveturnerbc.bandcamp.com",
+    "bandcampBandId": "182174370",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://steveturnerbc.bandcamp.com/album/escape-velocity",
+    "discoveredAt": "2026-09-06T05:48:09.567883+00:00",
+    "importedAt": "2026-09-06T05:51:49.263683+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

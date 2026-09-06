@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "slug": "joanna-hannan-launderette-ep",
+  "artist": "Joanna Hannan",
+  "bandcampUrl": "https://joannahannan.bandcamp.com/album/launderette-ep",
+  "releaseTitle": "Launderette EP",
+  "releaseDate": "2026-08-18 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "Melbourne",
+    "alternative",
+    "ambient electronic",
+    "drone ambient",
+    "indie folk",
+    "industrial",
+    "popindie",
+    "singer-songwriter",
+    "triphop"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Joanna Hannan — grunge / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://joannahannan.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:55:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "launderette-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "launderette-ep-229745731",
+      "title": "Washing Drum Mallet",
+      "artist": "Joanna Hannan",
+      "albumTitle": "Launderette EP",
+      "albumKey": "launderette-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:40",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://joannahannan.bandcamp.com/track/washing-drum-mallet",
+      "bandcampEmbedTrackId": "229745731",
+      "sourcePage": "https://joannahannan.bandcamp.com/album/launderette-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "launderette-ep-191383222",
+      "title": "Dripdrop",
+      "artist": "Joanna Hannan",
+      "albumTitle": "Launderette EP",
+      "albumKey": "launderette-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://joannahannan.bandcamp.com/track/dripdrop",
+      "bandcampEmbedTrackId": "191383222",
+      "sourcePage": "https://joannahannan.bandcamp.com/album/launderette-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "launderette-ep-2737867301",
+      "title": "Launderette",
+      "artist": "Joanna Hannan",
+      "albumTitle": "Launderette EP",
+      "albumKey": "launderette-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:22",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://joannahannan.bandcamp.com/track/launderette",
+      "bandcampEmbedTrackId": "2737867301",
+      "sourcePage": "https://joannahannan.bandcamp.com/album/launderette-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:55:16.803974+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "joannahannan.bandcamp.com",
+    "bandcampBandId": "1858382506",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://joannahannan.bandcamp.com/album/launderette-ep",
+    "discoveredAt": "2026-09-06T05:51:42.952681+00:00",
+    "importedAt": "2026-09-06T05:55:16.803974+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

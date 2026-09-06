@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "slug": "peter-knight-phosphenes",
+  "artist": "Peter Knight",
+  "bandcampUrl": "https://peterknight.bandcamp.com/album/phosphenes",
+  "releaseTitle": "Phosphenes",
+  "releaseDate": "2026-11-06 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "contemporary-classical",
+    "Melbourne",
+    "ambient",
+    "experimental",
+    "dark ambient",
+    "fourth-world",
+    "jazz-and-improvised-music"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Phosphenes takes its name from the shapes and colours you see when you close your eyes, the perception of light stimulated by something other than light. This is non-narrative…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://peterknight.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:54:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "phosphenes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "phosphenes-2911669267",
+      "title": "Impression I",
+      "artist": "Peter Knight",
+      "albumTitle": "Phosphenes",
+      "albumKey": "phosphenes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "9:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://peterknight.bandcamp.com/track/impression-i",
+      "bandcampEmbedTrackId": "2911669267",
+      "sourcePage": "https://peterknight.bandcamp.com/album/phosphenes",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "phosphenes-4066047391",
+      "title": "Impression II",
+      "artist": "Peter Knight",
+      "albumTitle": "Phosphenes",
+      "albumKey": "phosphenes",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://peterknight.bandcamp.com/album/phosphenes",
+      "bandcampEmbedTrackId": "4066047391",
+      "sourcePage": "https://peterknight.bandcamp.com/album/phosphenes",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "phosphenes-730520067",
+      "title": "Impression III",
+      "artist": "Peter Knight",
+      "albumTitle": "Phosphenes",
+      "albumKey": "phosphenes",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://peterknight.bandcamp.com/album/phosphenes",
+      "bandcampEmbedTrackId": "730520067",
+      "sourcePage": "https://peterknight.bandcamp.com/album/phosphenes",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "phosphenes-538781763",
+      "title": "Impression IV",
+      "artist": "Peter Knight",
+      "albumTitle": "Phosphenes",
+      "albumKey": "phosphenes",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://peterknight.bandcamp.com/album/phosphenes",
+      "bandcampEmbedTrackId": "538781763",
+      "sourcePage": "https://peterknight.bandcamp.com/album/phosphenes",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:54:40.712301+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "peterknight.bandcamp.com",
+    "bandcampBandId": "2472801984",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://peterknight.bandcamp.com/album/phosphenes",
+    "discoveredAt": "2026-09-06T05:51:42.951786+00:00",
+    "importedAt": "2026-09-06T05:54:40.712301+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "slug": "tender-chook-ropes-chains-and-ropes",
+  "artist": "Tender Chook",
+  "bandcampUrl": "https://tenderchook.bandcamp.com/album/ropes-chains-and-ropes",
+  "releaseTitle": "Ropes, Chains and Ropes",
+  "releaseDate": "2026-08-04 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "acoustic",
+    "Melbourne",
+    "aussie",
+    "australian",
+    "country",
+    "country soul",
+    "driving",
+    "indie",
+    "pop",
+    "rock",
+    "folk",
+    "old time",
+    "roots"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "They say backyard chooks are happiest in a flock of at least 3. It’s true. You can google it. Not being the kind to argue with poultry experts the world over, Tender Chook…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tenderchook.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:06:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ropes-chains-and-ropes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ropes-chains-and-ropes-3911639447",
+      "title": "HEAVY DRINKING",
+      "artist": "Tender Chook",
+      "albumTitle": "Ropes, Chains and Ropes",
+      "albumKey": "ropes-chains-and-ropes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tenderchook.bandcamp.com/track/heavy-drinking",
+      "bandcampEmbedTrackId": "3911639447",
+      "sourcePage": "https://tenderchook.bandcamp.com/album/ropes-chains-and-ropes",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ropes-chains-and-ropes-3421745005",
+      "title": "Deep Down",
+      "artist": "Tender Chook",
+      "albumTitle": "Ropes, Chains and Ropes",
+      "albumKey": "ropes-chains-and-ropes",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tenderchook.bandcamp.com/track/deep-down",
+      "bandcampEmbedTrackId": "3421745005",
+      "sourcePage": "https://tenderchook.bandcamp.com/album/ropes-chains-and-ropes",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ropes-chains-and-ropes-1123078580",
+      "title": "You Make The Coffee",
+      "artist": "Tender Chook",
+      "albumTitle": "Ropes, Chains and Ropes",
+      "albumKey": "ropes-chains-and-ropes",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:55",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tenderchook.bandcamp.com/track/you-make-the-coffee",
+      "bandcampEmbedTrackId": "1123078580",
+      "sourcePage": "https://tenderchook.bandcamp.com/album/ropes-chains-and-ropes",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:06:19.001225+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tenderchook.bandcamp.com",
+    "bandcampBandId": "2333948744",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tenderchook.bandcamp.com/album/ropes-chains-and-ropes",
+    "discoveredAt": "2026-09-06T05:51:42.969049+00:00",
+    "importedAt": "2026-09-06T06:06:19.001225+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

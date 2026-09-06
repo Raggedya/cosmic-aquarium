@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "slug": "loif-active-mind",
+  "artist": "LOIF",
+  "bandcampUrl": "https://loif.bandcamp.com/album/active-mind",
+  "releaseTitle": "Active Mind",
+  "releaseDate": "2020-12-04 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "drum-bass",
+    "Melbourne",
+    "drum & bass",
+    "electronic",
+    "dubstep",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Second EP from Naarm/Melbourne producer LOIF Previews: https://soundbutt.com/loiflan/active-mind-previews Produced by LOIF LSDNB produced by LOIF + Ménage Artwork by Liam…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://loif.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:06:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "active-mind",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "active-mind-1138341733",
+      "title": "Active Mind",
+      "artist": "LOIF",
+      "albumTitle": "Active Mind",
+      "albumKey": "active-mind",
+      "year": 2020,
+      "trackNumber": 1,
+      "duration": "5:44",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loif.bandcamp.com/track/active-mind",
+      "bandcampEmbedTrackId": "1138341733",
+      "sourcePage": "https://loif.bandcamp.com/album/active-mind",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "active-mind-3330854682",
+      "title": "Quarantek",
+      "artist": "LOIF",
+      "albumTitle": "Active Mind",
+      "albumKey": "active-mind",
+      "year": 2020,
+      "trackNumber": 2,
+      "duration": "6:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loif.bandcamp.com/track/quarantek",
+      "bandcampEmbedTrackId": "3330854682",
+      "sourcePage": "https://loif.bandcamp.com/album/active-mind",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "active-mind-215742730",
+      "title": "LOIF & Ménage - LSDNB",
+      "artist": "LOIF",
+      "albumTitle": "Active Mind",
+      "albumKey": "active-mind",
+      "year": 2020,
+      "trackNumber": 3,
+      "duration": "6:55",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loif.bandcamp.com/track/loif-m-nage-lsdnb",
+      "bandcampEmbedTrackId": "215742730",
+      "sourcePage": "https://loif.bandcamp.com/album/active-mind",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "active-mind-393428831",
+      "title": "Short End of the Stick",
+      "artist": "LOIF",
+      "albumTitle": "Active Mind",
+      "albumKey": "active-mind",
+      "year": 2020,
+      "trackNumber": 4,
+      "duration": "6:26",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loif.bandcamp.com/track/short-end-of-the-stick",
+      "bandcampEmbedTrackId": "393428831",
+      "sourcePage": "https://loif.bandcamp.com/album/active-mind",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "active-mind-1056273032",
+      "title": "Intel",
+      "artist": "LOIF",
+      "albumTitle": "Active Mind",
+      "albumKey": "active-mind",
+      "year": 2020,
+      "trackNumber": 5,
+      "duration": "7:00",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://loif.bandcamp.com/track/intel",
+      "bandcampEmbedTrackId": "1056273032",
+      "sourcePage": "https://loif.bandcamp.com/album/active-mind",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:06:34.640271+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "loif.bandcamp.com",
+    "bandcampBandId": "1584773791",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://loif.bandcamp.com/album/active-mind",
+    "discoveredAt": "2026-09-06T05:51:42.970047+00:00",
+    "importedAt": "2026-09-06T06:06:34.640271+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

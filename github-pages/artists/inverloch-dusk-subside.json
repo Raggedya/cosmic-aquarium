@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "slug": "inverloch-dusk-subside",
+  "artist": "Inverloch",
+  "bandcampUrl": "https://inverloch.bandcamp.com/album/dusk-subside",
+  "releaseTitle": "Dusk | Subside",
+  "releaseDate": "2012-04-10 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "grindcore",
+    "Melbourne",
+    "metal",
+    "ambient",
+    "black metal",
+    "death doom",
+    "death metal",
+    "doom",
+    "doom metal",
+    "drone",
+    "experiemental",
+    "funeral doom",
+    "progressive",
+    "shoegaze"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Melbourne, Australia’s Inverloch, featuring 2/4 of the legendary diSEMBOWELMENT pick right up where diSEMBOWELMENT left off close to two decades ago. Inverloch’s debut mini-lp…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://inverloch.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:07:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dusk-subside",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dusk-subside-25648305",
+      "title": "Within Frozen Beauty",
+      "artist": "Inverloch",
+      "albumTitle": "Dusk | Subside",
+      "albumKey": "dusk-subside",
+      "year": 2012,
+      "trackNumber": 1,
+      "duration": "7:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://inverloch.bandcamp.com/track/within-frozen-beauty",
+      "bandcampEmbedTrackId": "25648305",
+      "sourcePage": "https://inverloch.bandcamp.com/album/dusk-subside",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dusk-subside-1384759488",
+      "title": "The Menin Road",
+      "artist": "Inverloch",
+      "albumTitle": "Dusk | Subside",
+      "albumKey": "dusk-subside",
+      "year": 2012,
+      "trackNumber": 2,
+      "duration": "6:21",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://inverloch.bandcamp.com/track/the-menin-road",
+      "bandcampEmbedTrackId": "1384759488",
+      "sourcePage": "https://inverloch.bandcamp.com/album/dusk-subside",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "dusk-subside-901252175",
+      "title": "Shadows of the Flame",
+      "artist": "Inverloch",
+      "albumTitle": "Dusk | Subside",
+      "albumKey": "dusk-subside",
+      "year": 2012,
+      "trackNumber": 3,
+      "duration": "8:44",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://inverloch.bandcamp.com/track/shadows-of-the-flame",
+      "bandcampEmbedTrackId": "901252175",
+      "sourcePage": "https://inverloch.bandcamp.com/album/dusk-subside",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:07:45.956669+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "inverloch.bandcamp.com",
+    "bandcampBandId": "1241058226",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://inverloch.bandcamp.com/album/dusk-subside",
+    "discoveredAt": "2026-09-06T05:51:42.972937+00:00",
+    "importedAt": "2026-09-06T06:07:45.956669+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

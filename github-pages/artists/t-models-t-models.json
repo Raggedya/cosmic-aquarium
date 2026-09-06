@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "slug": "t-models-t-models",
+  "artist": "T-Models",
+  "bandcampUrl": "https://t-models.bandcamp.com/album/t-models",
+  "releaseTitle": "T-Models",
+  "releaseDate": "2026-05-07 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "Melbourne",
+    "punk",
+    "anarcho-punk",
+    "melbourne punk",
+    "noise rock",
+    "post-punk",
+    "rock and roll"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "T-Models self titled debut EP is a clobber-fest masterclass in monumental post-punk. A plaster cast of temperance smoldering and scattering itself - in typical anarchic…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://t-models.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:00:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "t-models",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "t-models-1284279907",
+      "title": "450BC",
+      "artist": "T-Models",
+      "albumTitle": "T-Models",
+      "albumKey": "t-models",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://t-models.bandcamp.com/track/450bc-2",
+      "bandcampEmbedTrackId": "1284279907",
+      "sourcePage": "https://t-models.bandcamp.com/album/t-models",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "t-models-1878210729",
+      "title": "Portrait of Swine",
+      "artist": "T-Models",
+      "albumTitle": "T-Models",
+      "albumKey": "t-models",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:51",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://t-models.bandcamp.com/track/portrait-of-swine",
+      "bandcampEmbedTrackId": "1878210729",
+      "sourcePage": "https://t-models.bandcamp.com/album/t-models",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "t-models-2048566242",
+      "title": "Amphetamine Pulse",
+      "artist": "T-Models",
+      "albumTitle": "T-Models",
+      "albumKey": "t-models",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:47",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://t-models.bandcamp.com/track/amphetamine-pulse-2",
+      "bandcampEmbedTrackId": "2048566242",
+      "sourcePage": "https://t-models.bandcamp.com/album/t-models",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "t-models-2833346935",
+      "title": "(No) New Sensations",
+      "artist": "T-Models",
+      "albumTitle": "T-Models",
+      "albumKey": "t-models",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:41",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://t-models.bandcamp.com/track/no-new-sensations",
+      "bandcampEmbedTrackId": "2833346935",
+      "sourcePage": "https://t-models.bandcamp.com/album/t-models",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:00:12.824537+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "t-models.bandcamp.com",
+    "bandcampBandId": "3854053311",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://t-models.bandcamp.com/album/t-models",
+    "discoveredAt": "2026-09-06T05:51:42.957700+00:00",
+    "importedAt": "2026-09-06T06:00:12.824537+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

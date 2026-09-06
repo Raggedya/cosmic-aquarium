@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-derrys-the-end",
+  "artist": "The Derrys",
+  "bandcampUrl": "https://thederrys1.bandcamp.com/album/the-end",
+  "releaseTitle": "The End",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "Melbourne",
+    "alternative",
+    "punk",
+    "rock",
+    "alternative rock",
+    "garage rock",
+    "pub rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Recorded together in the studio before the band went on hiatus, this unreleased three-track vault collection delves into the complexities of love, loss, and new beginnings…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thederrys1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:05:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-end",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-end-2324600844",
+      "title": "Forest",
+      "artist": "The Derrys",
+      "albumTitle": "The End",
+      "albumKey": "the-end",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thederrys1.bandcamp.com/album/the-end",
+      "bandcampEmbedTrackId": "2324600844",
+      "sourcePage": "https://thederrys1.bandcamp.com/album/the-end",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-end-3029006357",
+      "title": "Maybe",
+      "artist": "The Derrys",
+      "albumTitle": "The End",
+      "albumKey": "the-end",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thederrys1.bandcamp.com/album/the-end",
+      "bandcampEmbedTrackId": "3029006357",
+      "sourcePage": "https://thederrys1.bandcamp.com/album/the-end",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-end-3920193962",
+      "title": "Its all good (F**k you)",
+      "artist": "The Derrys",
+      "albumTitle": "The End",
+      "albumKey": "the-end",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thederrys1.bandcamp.com/album/the-end",
+      "bandcampEmbedTrackId": "3920193962",
+      "sourcePage": "https://thederrys1.bandcamp.com/album/the-end",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:05:12.400832+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thederrys1.bandcamp.com",
+    "bandcampBandId": "525845372",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thederrys1.bandcamp.com/album/the-end",
+    "discoveredAt": "2026-09-06T05:51:42.966927+00:00",
+    "importedAt": "2026-09-06T06:05:12.400832+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

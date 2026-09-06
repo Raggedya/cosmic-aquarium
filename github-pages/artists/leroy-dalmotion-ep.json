@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "leroy-dalmotion-ep",
+  "artist": "LEROY",
+  "bandcampUrl": "https://leroysound.bandcamp.com/album/dalmotion-ep",
+  "releaseTitle": "Dalmotion EP",
+  "releaseDate": "2026-07-03 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "Melbourne",
+    "deep tech",
+    "electronic",
+    "house"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "LEROY — minimal / Melbourne / deep tech music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://leroysound.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:08:20Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dalmotion-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dalmotion-ep-1479153859",
+      "title": "Dalmotion",
+      "artist": "LEROY",
+      "albumTitle": "Dalmotion EP",
+      "albumKey": "dalmotion-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://leroysound.bandcamp.com/track/dalmotion",
+      "bandcampEmbedTrackId": "1479153859",
+      "sourcePage": "https://leroysound.bandcamp.com/album/dalmotion-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dalmotion-ep-1164585778",
+      "title": "Ripped",
+      "artist": "LEROY",
+      "albumTitle": "Dalmotion EP",
+      "albumKey": "dalmotion-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://leroysound.bandcamp.com/track/ripped",
+      "bandcampEmbedTrackId": "1164585778",
+      "sourcePage": "https://leroysound.bandcamp.com/album/dalmotion-ep",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:08:20.615375+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "leroysound.bandcamp.com",
+    "bandcampBandId": "2628060313",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://leroysound.bandcamp.com/album/dalmotion-ep",
+    "discoveredAt": "2026-09-06T05:51:42.972937+00:00",
+    "importedAt": "2026-09-06T06:08:20.615375+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

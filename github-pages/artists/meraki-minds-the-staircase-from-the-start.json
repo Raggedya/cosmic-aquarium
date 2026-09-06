@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "slug": "meraki-minds-the-staircase-from-the-start",
+  "artist": "Meraki Minds",
+  "bandcampUrl": "https://merakiminds.bandcamp.com/album/the-staircase-from-the-start",
+  "releaseTitle": "The Staircase // From The Start",
+  "releaseDate": "2026-08-08 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "jangle-pop",
+    "Melbourne",
+    "alternative",
+    "ballarat",
+    "female fronted",
+    "melbourne",
+    "victoria",
+    "alvvays",
+    "indie pop",
+    "indiepop",
+    "jangle",
+    "jangle pop",
+    "newmusic indie music"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "These two tunes were recorded with the help of the Ballarat Arts Foundation by Sam Boon at Sunny South Studios. These were our first and last professional recordings, as we…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://merakiminds.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:54:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-staircase-from-the-start",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-staircase-from-the-start-656512794",
+      "title": "The Staircase",
+      "artist": "Meraki Minds",
+      "albumTitle": "The Staircase // From The Start",
+      "albumKey": "the-staircase-from-the-start",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://merakiminds.bandcamp.com/track/the-staircase",
+      "bandcampEmbedTrackId": "656512794",
+      "sourcePage": "https://merakiminds.bandcamp.com/album/the-staircase-from-the-start",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-staircase-from-the-start-2122952756",
+      "title": "From The Start",
+      "artist": "Meraki Minds",
+      "albumTitle": "The Staircase // From The Start",
+      "albumKey": "the-staircase-from-the-start",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://merakiminds.bandcamp.com/track/from-the-start",
+      "bandcampEmbedTrackId": "2122952756",
+      "sourcePage": "https://merakiminds.bandcamp.com/album/the-staircase-from-the-start",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:54:31.577675+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "merakiminds.bandcamp.com",
+    "bandcampBandId": "2133286495",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://merakiminds.bandcamp.com/album/the-staircase-from-the-start",
+    "discoveredAt": "2026-09-06T05:51:42.949684+00:00",
+    "importedAt": "2026-09-06T05:54:31.577675+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

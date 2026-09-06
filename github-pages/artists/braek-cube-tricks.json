@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "slug": "braek-cube-tricks",
+  "artist": "BRAEK",
+  "bandcampUrl": "https://braek.bandcamp.com/album/cube-tricks",
+  "releaseTitle": "Cube Tricks",
+  "releaseDate": "2026-05-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "Melbourne",
+    "electronic",
+    "leftfield bass",
+    "breaks",
+    "breaks and breakbeat",
+    "experimental electronic",
+    "glitch",
+    "hyperbreaks",
+    "leftfield-bass. electronic",
+    "psychedelic"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Cube tricks explores fractured geometry where each track behaves like a shifting face of a sonic cube. Released on Oval Harmonique Artwork- Jarrah Goodwill Mastering- Matt…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://braek.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:27:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "cube-tricks",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cube-tricks-1322523068",
+      "title": "Spektrz",
+      "artist": "BRAEK",
+      "albumTitle": "Cube Tricks",
+      "albumKey": "cube-tricks",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://braek.bandcamp.com/track/spektrz",
+      "bandcampEmbedTrackId": "1322523068",
+      "sourcePage": "https://braek.bandcamp.com/album/cube-tricks",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "cube-tricks-1682236735",
+      "title": "Serpent Tongue",
+      "artist": "BRAEK",
+      "albumTitle": "Cube Tricks",
+      "albumKey": "cube-tricks",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://braek.bandcamp.com/track/serpent-tongue",
+      "bandcampEmbedTrackId": "1682236735",
+      "sourcePage": "https://braek.bandcamp.com/album/cube-tricks",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "cube-tricks-3064444997",
+      "title": "Bug Sniffer",
+      "artist": "BRAEK",
+      "albumTitle": "Cube Tricks",
+      "albumKey": "cube-tricks",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:06",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://braek.bandcamp.com/track/bug-sniffer",
+      "bandcampEmbedTrackId": "3064444997",
+      "sourcePage": "https://braek.bandcamp.com/album/cube-tricks",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "cube-tricks-53379985",
+      "title": "Neon Ancestor",
+      "artist": "BRAEK",
+      "albumTitle": "Cube Tricks",
+      "albumKey": "cube-tricks",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://braek.bandcamp.com/track/neon-ancestor",
+      "bandcampEmbedTrackId": "53379985",
+      "sourcePage": "https://braek.bandcamp.com/album/cube-tricks",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:27:31.741345+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "braek.bandcamp.com",
+    "bandcampBandId": "4113310445",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://braek.bandcamp.com/album/cube-tricks",
+    "discoveredAt": "2026-09-06T05:51:42.979069+00:00",
+    "importedAt": "2026-09-06T06:27:31.743286+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

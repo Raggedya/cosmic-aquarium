@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "slug": "hieroglitch-226-9-1",
+  "artist": "hieroglitch",
+  "bandcampUrl": "https://hieroglitch.bandcamp.com/album/226-9-1",
+  "releaseTitle": "226-9-1",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "Melbourne",
+    "electronic",
+    "breakcore",
+    "chaos",
+    "experimental",
+    "harsh ambient",
+    "rhythmic industrial",
+    "rhythmic noise"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "hieroglitch — idm / Melbourne / breakcore music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hieroglitch.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:54:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "226-9-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "226-9-1-1671163513",
+      "title": "226-9-1_1",
+      "artist": "hieroglitch",
+      "albumTitle": "226-9-1",
+      "albumKey": "226-9-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "14:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hieroglitch.bandcamp.com/track/226-9-1-1",
+      "bandcampEmbedTrackId": "1671163513",
+      "sourcePage": "https://hieroglitch.bandcamp.com/album/226-9-1",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:54:42.660522+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hieroglitch.bandcamp.com",
+    "bandcampBandId": "1743439800",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hieroglitch.bandcamp.com/album/226-9-1",
+    "discoveredAt": "2026-09-06T05:51:42.951786+00:00",
+    "importedAt": "2026-09-06T05:54:42.660522+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

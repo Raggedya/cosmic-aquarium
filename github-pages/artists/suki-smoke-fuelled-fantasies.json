@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "slug": "suki-smoke-fuelled-fantasies",
+  "artist": "suki",
+  "bandcampUrl": "https://anyoneknowsuki.bandcamp.com/album/smoke-fuelled-fantasies",
+  "releaseTitle": "Smoke Fuelled Fantasies",
+  "releaseDate": "2026-06-26 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "Melbourne",
+    "electronic",
+    "minimal",
+    "tech house",
+    "trance",
+    "acid",
+    "ambient",
+    "breakbeat",
+    "downtempo",
+    "house",
+    "leftfield",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Thrill by name, thrill by nature, Will Howard christens a new alias on his Kalahari debut. Spitting venom straight out of the gate, this is boisterous sci-fi dramatixxx…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://anyoneknowsuki.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:52:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "smoke-fuelled-fantasies",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "smoke-fuelled-fantasies-1785561290",
+      "title": "The Voices",
+      "artist": "suki",
+      "albumTitle": "Smoke Fuelled Fantasies",
+      "albumKey": "smoke-fuelled-fantasies",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anyoneknowsuki.bandcamp.com/track/the-voices",
+      "bandcampEmbedTrackId": "1785561290",
+      "sourcePage": "https://anyoneknowsuki.bandcamp.com/album/smoke-fuelled-fantasies",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "smoke-fuelled-fantasies-4241959637",
+      "title": "Down The Burrow",
+      "artist": "suki",
+      "albumTitle": "Smoke Fuelled Fantasies",
+      "albumKey": "smoke-fuelled-fantasies",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anyoneknowsuki.bandcamp.com/track/down-the-burrow",
+      "bandcampEmbedTrackId": "4241959637",
+      "sourcePage": "https://anyoneknowsuki.bandcamp.com/album/smoke-fuelled-fantasies",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "smoke-fuelled-fantasies-3898625387",
+      "title": "Globelite",
+      "artist": "suki",
+      "albumTitle": "Smoke Fuelled Fantasies",
+      "albumKey": "smoke-fuelled-fantasies",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:39",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anyoneknowsuki.bandcamp.com/track/globelite",
+      "bandcampEmbedTrackId": "3898625387",
+      "sourcePage": "https://anyoneknowsuki.bandcamp.com/album/smoke-fuelled-fantasies",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "smoke-fuelled-fantasies-1609560383",
+      "title": "Day Dreamer",
+      "artist": "suki",
+      "albumTitle": "Smoke Fuelled Fantasies",
+      "albumKey": "smoke-fuelled-fantasies",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:44",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anyoneknowsuki.bandcamp.com/track/day-dreamer",
+      "bandcampEmbedTrackId": "1609560383",
+      "sourcePage": "https://anyoneknowsuki.bandcamp.com/album/smoke-fuelled-fantasies",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:52:40.228561+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "anyoneknowsuki.bandcamp.com",
+    "bandcampBandId": "3330141344",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://anyoneknowsuki.bandcamp.com/album/smoke-fuelled-fantasies",
+    "discoveredAt": "2026-09-06T05:49:50.906350+00:00",
+    "importedAt": "2026-09-06T05:52:40.228561+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

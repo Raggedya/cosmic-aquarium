@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "slug": "death-pictures-july-demo",
+  "artist": "Death Pictures",
+  "bandcampUrl": "https://deathpictures.bandcamp.com/album/july-demo",
+  "releaseTitle": "July (Demo)",
+  "releaseDate": "2026-07-20 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "Melbourne",
+    "alternative",
+    "ambient rock",
+    "diy",
+    "emo noise",
+    "noise rock",
+    "sad",
+    "shit",
+    "slowcore"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Death Pictures — noise-rock / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://deathpictures.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:53:11Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "july-demo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "july-demo-4171245488",
+      "title": "Intro",
+      "artist": "Death Pictures",
+      "albumTitle": "July (Demo)",
+      "albumKey": "july-demo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deathpictures.bandcamp.com/track/intro",
+      "bandcampEmbedTrackId": "4171245488",
+      "sourcePage": "https://deathpictures.bandcamp.com/album/july-demo",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "july-demo-3609767974",
+      "title": "Letting You Go",
+      "artist": "Death Pictures",
+      "albumTitle": "July (Demo)",
+      "albumKey": "july-demo",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deathpictures.bandcamp.com/track/letting-you-go",
+      "bandcampEmbedTrackId": "3609767974",
+      "sourcePage": "https://deathpictures.bandcamp.com/album/july-demo",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "july-demo-525019627",
+      "title": "The Meaning",
+      "artist": "Death Pictures",
+      "albumTitle": "July (Demo)",
+      "albumKey": "july-demo",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deathpictures.bandcamp.com/track/the-meaning",
+      "bandcampEmbedTrackId": "525019627",
+      "sourcePage": "https://deathpictures.bandcamp.com/album/july-demo",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "july-demo-2913652724",
+      "title": "The Death Pictures",
+      "artist": "Death Pictures",
+      "albumTitle": "July (Demo)",
+      "albumKey": "july-demo",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:33",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deathpictures.bandcamp.com/track/the-death-pictures",
+      "bandcampEmbedTrackId": "2913652724",
+      "sourcePage": "https://deathpictures.bandcamp.com/album/july-demo",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:53:11.394597+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "deathpictures.bandcamp.com",
+    "bandcampBandId": "3035606925",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://deathpictures.bandcamp.com/album/july-demo",
+    "discoveredAt": "2026-09-06T05:50:44.347978+00:00",
+    "importedAt": "2026-09-06T05:53:11.394597+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "slug": "khan-that-fair-and-warlike-form-return-to-dust",
+  "artist": "Khan",
+  "bandcampUrl": "https://khanofficial.bandcamp.com/album/that-fair-and-warlike-form-return-to-dust",
+  "releaseTitle": "That Fair and Warlike Form // Return to Dust",
+  "releaseDate": "2025-10-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "psychedelic",
+    "Melbourne",
+    "progressive rock",
+    "rock",
+    "alternative-rock",
+    "desert rock",
+    "heavy rock",
+    "heavy-psych",
+    "prog",
+    "progressive",
+    "psychedelic rock",
+    "stoner"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Vinyl, CDs & Cassettes are all available through Full Contact Safari Records. https://fullcontactsafarirecords.com",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://khanofficial.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:59:11Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "that-fair-and-warlike-form-return-to-dust",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "that-fair-and-warlike-form-return-to-dust-2070160552",
+      "title": "That Fair and Warlike Form",
+      "artist": "Khan",
+      "albumTitle": "That Fair and Warlike Form // Return to Dust",
+      "albumKey": "that-fair-and-warlike-form-return-to-dust",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "23:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://khanofficial.bandcamp.com/track/that-fair-and-warlike-form",
+      "bandcampEmbedTrackId": "2070160552",
+      "sourcePage": "https://khanofficial.bandcamp.com/album/that-fair-and-warlike-form-return-to-dust",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "that-fair-and-warlike-form-return-to-dust-2495660519",
+      "title": "Return to Dust",
+      "artist": "Khan",
+      "albumTitle": "That Fair and Warlike Form // Return to Dust",
+      "albumKey": "that-fair-and-warlike-form-return-to-dust",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "22:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://khanofficial.bandcamp.com/track/return-to-dust",
+      "bandcampEmbedTrackId": "2495660519",
+      "sourcePage": "https://khanofficial.bandcamp.com/album/that-fair-and-warlike-form-return-to-dust",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:59:11.130849+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "khanofficial.bandcamp.com",
+    "bandcampBandId": "352935896",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://khanofficial.bandcamp.com/album/that-fair-and-warlike-form-return-to-dust",
+    "discoveredAt": "2026-09-06T05:51:42.956695+00:00",
+    "importedAt": "2026-09-06T05:59:11.130849+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

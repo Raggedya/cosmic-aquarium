@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "relief-pop-snake-whistle",
+  "artist": "Relief Pop",
+  "bandcampUrl": "https://reliefpop.bandcamp.com/album/snake-whistle",
+  "releaseTitle": "Snake Whistle",
+  "releaseDate": "2025-01-20 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "jangle-pop",
+    "Melbourne",
+    "alternative",
+    "guitar pop",
+    "jangle pop"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Relief Pop — jangle-pop / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://reliefpop.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:59:23Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "snake-whistle",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "snake-whistle-96624784",
+      "title": "Future Crime",
+      "artist": "Relief Pop",
+      "albumTitle": "Snake Whistle",
+      "albumKey": "snake-whistle",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "1:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reliefpop.bandcamp.com/track/future-crime",
+      "bandcampEmbedTrackId": "96624784",
+      "sourcePage": "https://reliefpop.bandcamp.com/album/snake-whistle",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "snake-whistle-2949932317",
+      "title": "End of the Line",
+      "artist": "Relief Pop",
+      "albumTitle": "Snake Whistle",
+      "albumKey": "snake-whistle",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "4:12",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reliefpop.bandcamp.com/track/end-of-the-line",
+      "bandcampEmbedTrackId": "2949932317",
+      "sourcePage": "https://reliefpop.bandcamp.com/album/snake-whistle",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "snake-whistle-387479130",
+      "title": "Snake Oil",
+      "artist": "Relief Pop",
+      "albumTitle": "Snake Whistle",
+      "albumKey": "snake-whistle",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "2:23",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reliefpop.bandcamp.com/track/snake-oil",
+      "bandcampEmbedTrackId": "387479130",
+      "sourcePage": "https://reliefpop.bandcamp.com/album/snake-whistle",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "snake-whistle-3546604098",
+      "title": "Intifada",
+      "artist": "Relief Pop",
+      "albumTitle": "Snake Whistle",
+      "albumKey": "snake-whistle",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "3:49",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reliefpop.bandcamp.com/track/intifada",
+      "bandcampEmbedTrackId": "3546604098",
+      "sourcePage": "https://reliefpop.bandcamp.com/album/snake-whistle",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:59:23.227812+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "reliefpop.bandcamp.com",
+    "bandcampBandId": "3086372238",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://reliefpop.bandcamp.com/album/snake-whistle",
+    "discoveredAt": "2026-09-06T05:51:42.956695+00:00",
+    "importedAt": "2026-09-06T05:59:23.227812+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

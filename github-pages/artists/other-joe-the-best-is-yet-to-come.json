@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "slug": "other-joe-the-best-is-yet-to-come",
+  "artist": "Other Joe",
+  "bandcampUrl": "https://other-joe.bandcamp.com/album/the-best-is-yet-to-come-2",
+  "releaseTitle": "the best is yet to come",
+  "releaseDate": "2026-06-25 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "Melbourne",
+    "ambient",
+    "naarm",
+    "contemporary classical",
+    "downtempo",
+    "trip hop"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "There’s something knowingly anachronistic about Joseph Buchan’s latest on Theory Therapy, 'the best is yet to come'. Across three tracks, the Naarm producer leans into the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://other-joe.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:57:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-best-is-yet-to-come",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-best-is-yet-to-come-4136140796",
+      "title": "inhale the Mist",
+      "artist": "Other Joe",
+      "albumTitle": "the best is yet to come",
+      "albumKey": "the-best-is-yet-to-come",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://other-joe.bandcamp.com/track/inhale-the-mist",
+      "bandcampEmbedTrackId": "4136140796",
+      "sourcePage": "https://other-joe.bandcamp.com/album/the-best-is-yet-to-come-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-best-is-yet-to-come-4073010692",
+      "title": "Three Months Off",
+      "artist": "Other Joe",
+      "albumTitle": "the best is yet to come",
+      "albumKey": "the-best-is-yet-to-come",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://other-joe.bandcamp.com/track/three-months-off",
+      "bandcampEmbedTrackId": "4073010692",
+      "sourcePage": "https://other-joe.bandcamp.com/album/the-best-is-yet-to-come-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-best-is-yet-to-come-86440896",
+      "title": "they live amongst us",
+      "artist": "Other Joe",
+      "albumTitle": "the best is yet to come",
+      "albumKey": "the-best-is-yet-to-come",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:57",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://other-joe.bandcamp.com/track/they-live-amongst-us",
+      "bandcampEmbedTrackId": "86440896",
+      "sourcePage": "https://other-joe.bandcamp.com/album/the-best-is-yet-to-come-2",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:57:17.949273+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "other-joe.bandcamp.com",
+    "bandcampBandId": "1049798282",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://other-joe.bandcamp.com/album/the-best-is-yet-to-come-2",
+    "discoveredAt": "2026-09-06T05:51:42.952681+00:00",
+    "importedAt": "2026-09-06T05:57:17.949273+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

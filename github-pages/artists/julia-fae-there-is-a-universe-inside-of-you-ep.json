@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "slug": "julia-fae-there-is-a-universe-inside-of-you-ep",
+  "artist": "Julía Faé",
+  "bandcampUrl": "https://juliafae.bandcamp.com/album/there-is-a-universe-inside-of-you-ep",
+  "releaseTitle": "There Is a Universe Inside of You - EP",
+  "releaseDate": "2026-08-25 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "world",
+    "Melbourne",
+    "ambient universal",
+    "folk acoustic",
+    "harp meditation music",
+    "music medicine",
+    "soulful etheric"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Julía Faé Debut EP",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://juliafae.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:00:39Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "there-is-a-universe-inside-of-you-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "there-is-a-universe-inside-of-you-ep-3171947346",
+      "title": "There Is a Universe Inside of You",
+      "artist": "Julía Faé",
+      "albumTitle": "There Is a Universe Inside of You - EP",
+      "albumKey": "there-is-a-universe-inside-of-you-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:30",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://juliafae.bandcamp.com/track/there-is-a-universe-inside-of-you",
+      "bandcampEmbedTrackId": "3171947346",
+      "sourcePage": "https://juliafae.bandcamp.com/album/there-is-a-universe-inside-of-you-ep",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:00:39.446293+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "juliafae.bandcamp.com",
+    "bandcampBandId": "3367263878",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://juliafae.bandcamp.com/album/there-is-a-universe-inside-of-you-ep",
+    "discoveredAt": "2026-09-06T05:51:42.958701+00:00",
+    "importedAt": "2026-09-06T06:00:39.446293+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "princeling-high-functioning",
+  "artist": "PRINCELING",
+  "bandcampUrl": "https://princeling.bandcamp.com/album/high-functioning",
+  "releaseTitle": "High Functioning",
+  "releaseDate": "2026-07-27 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "Melbourne",
+    "electronic",
+    "idm",
+    "ambient techno",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "PRINCELING — breakbeat / Melbourne / idm music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://princeling.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:08:32Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "high-functioning",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "high-functioning-1004604839",
+      "title": "High Functioning",
+      "artist": "PRINCELING",
+      "albumTitle": "High Functioning",
+      "albumKey": "high-functioning",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://princeling.bandcamp.com/track/high-functioning",
+      "bandcampEmbedTrackId": "1004604839",
+      "sourcePage": "https://princeling.bandcamp.com/album/high-functioning",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "high-functioning-3608001712",
+      "title": "Perfect Little Girl",
+      "artist": "PRINCELING",
+      "albumTitle": "High Functioning",
+      "albumKey": "high-functioning",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:40",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://princeling.bandcamp.com/track/perfect-little-girl",
+      "bandcampEmbedTrackId": "3608001712",
+      "sourcePage": "https://princeling.bandcamp.com/album/high-functioning",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "high-functioning-156700567",
+      "title": "Personality Deterioration",
+      "artist": "PRINCELING",
+      "albumTitle": "High Functioning",
+      "albumKey": "high-functioning",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:43",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://princeling.bandcamp.com/track/personality-deterioration",
+      "bandcampEmbedTrackId": "156700567",
+      "sourcePage": "https://princeling.bandcamp.com/album/high-functioning",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "high-functioning-24000411",
+      "title": "Cortex",
+      "artist": "PRINCELING",
+      "albumTitle": "High Functioning",
+      "albumKey": "high-functioning",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:30",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://princeling.bandcamp.com/track/cortex",
+      "bandcampEmbedTrackId": "24000411",
+      "sourcePage": "https://princeling.bandcamp.com/album/high-functioning",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:08:32.667146+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "princeling.bandcamp.com",
+    "bandcampBandId": "2322905602",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://princeling.bandcamp.com/album/high-functioning",
+    "discoveredAt": "2026-09-06T05:51:42.974050+00:00",
+    "importedAt": "2026-09-06T06:08:32.667146+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

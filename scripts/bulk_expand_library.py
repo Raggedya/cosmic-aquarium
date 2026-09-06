@@ -67,11 +67,12 @@ NON_MUSIC_PRODUCT = re.compile(
 
 
 class DiscoverFeed:
-    def __init__(self, water: str, tag: str, slice_name: str = "top", skip: int = 0) -> None:
+    def __init__(self, water: str, tag: str, slice_name: str = "top", skip: int = 0, geoname_id: int = 0) -> None:
         self.water = water
         self.tag = tag
         self.slice_name = slice_name
         self.remaining_skip = max(0, skip)
+        self.geoname_id = max(0, geoname_id)
         self.cursor: str | None = None
         self.exhausted = False
         self.items: deque[dict[str, Any]] = deque()
@@ -80,7 +81,7 @@ class DiscoverFeed:
         if self.exhausted:
             return
         payload = {
-            "category_id": 0, "tag_norm_names": [self.tag], "geoname_id": 0, "slice": self.slice_name,
+            "category_id": 0, "tag_norm_names": [self.tag], "geoname_id": self.geoname_id, "slice": self.slice_name,
             "time_facet_id": None, "cursor": self.cursor, "size": PAGE_SIZE,
             "include_result_types": ["a"], "followed_bands": False,
         }

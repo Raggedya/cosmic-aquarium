@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "slug": "normal-pleasure-satisfied",
+  "artist": "Normal Pleasure",
+  "bandcampUrl": "https://normalpleasure.bandcamp.com/album/satisfied",
+  "releaseTitle": "Satisfied?",
+  "releaseDate": "2026-06-15 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dance",
+    "Melbourne",
+    "electronic",
+    "bass",
+    "breaks",
+    "house",
+    "plunderphonics",
+    "sampling"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Normal Pleasure — dance / Melbourne / bass music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic",
+    "quiet",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://normalpleasure.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:01:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "satisfied",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "satisfied-2117658167",
+      "title": "Normal Pleasure, The RAH Band - Satisfied?",
+      "artist": "Normal Pleasure",
+      "albumTitle": "Satisfied?",
+      "albumKey": "satisfied",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://normalpleasure.bandcamp.com/track/satisfied",
+      "bandcampEmbedTrackId": "2117658167",
+      "sourcePage": "https://normalpleasure.bandcamp.com/album/satisfied",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:01:43.004960+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "normalpleasure.bandcamp.com",
+    "bandcampBandId": "427148501",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://normalpleasure.bandcamp.com/album/satisfied",
+    "discoveredAt": "2026-09-06T05:51:42.959704+00:00",
+    "importedAt": "2026-09-06T06:01:43.004960+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "aksfx-b-sides-original-music-from-big-walk",
+  "artist": "aksfx",
+  "bandcampUrl": "https://aksfx.bandcamp.com/album/b-sides-original-music-from-big-walk",
+  "releaseTitle": "B-Sides (Original Music from Big Walk)",
+  "releaseDate": "2026-08-03 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Original music from Big Walk, a new videogame by House House and friends and published by Panic. Big Walk is a cooperative multiplayer adventure about teamwork and talking…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://aksfx.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:03:06Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "b-sides-original-music-from-big-walk",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "b-sides-original-music-from-big-walk-2986828173",
+      "title": "Silent Gauntlet",
+      "artist": "aksfx",
+      "albumTitle": "B-Sides (Original Music from Big Walk)",
+      "albumKey": "b-sides-original-music-from-big-walk",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "25:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aksfx.bandcamp.com/track/silent-gauntlet",
+      "bandcampEmbedTrackId": "2986828173",
+      "sourcePage": "https://aksfx.bandcamp.com/album/b-sides-original-music-from-big-walk",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "b-sides-original-music-from-big-walk-244163873",
+      "title": "Menu Music",
+      "artist": "aksfx",
+      "albumTitle": "B-Sides (Original Music from Big Walk)",
+      "albumKey": "b-sides-original-music-from-big-walk",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:03",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aksfx.bandcamp.com/track/menu-music",
+      "bandcampEmbedTrackId": "244163873",
+      "sourcePage": "https://aksfx.bandcamp.com/album/b-sides-original-music-from-big-walk",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "b-sides-original-music-from-big-walk-4067578287",
+      "title": "Mic Select",
+      "artist": "aksfx",
+      "albumTitle": "B-Sides (Original Music from Big Walk)",
+      "albumKey": "b-sides-original-music-from-big-walk",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:09",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aksfx.bandcamp.com/track/mic-select",
+      "bandcampEmbedTrackId": "4067578287",
+      "sourcePage": "https://aksfx.bandcamp.com/album/b-sides-original-music-from-big-walk",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "b-sides-original-music-from-big-walk-3685416377",
+      "title": "Credits",
+      "artist": "aksfx",
+      "albumTitle": "B-Sides (Original Music from Big Walk)",
+      "albumKey": "b-sides-original-music-from-big-walk",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aksfx.bandcamp.com/track/credits",
+      "bandcampEmbedTrackId": "3685416377",
+      "sourcePage": "https://aksfx.bandcamp.com/album/b-sides-original-music-from-big-walk",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:06.839595+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "aksfx.bandcamp.com",
+    "bandcampBandId": "6876852",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://aksfx.bandcamp.com/album/b-sides-original-music-from-big-walk",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:03:06.839595+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

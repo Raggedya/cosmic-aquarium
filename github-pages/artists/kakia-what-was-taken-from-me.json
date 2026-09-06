@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "kakia-what-was-taken-from-me",
+  "artist": "KAKIA",
+  "bandcampUrl": "https://kakia.bandcamp.com/album/what-was-taken-from-me",
+  "releaseTitle": "What Was Taken From Me",
+  "releaseDate": "2026-08-23 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "Melbourne",
+    "black metal",
+    "metal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "KAKIA — black-metal / Melbourne / black metal music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kakia.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:01:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "what-was-taken-from-me",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "what-was-taken-from-me-4246550006",
+      "title": "What Was Taken From Me",
+      "artist": "KAKIA",
+      "albumTitle": "What Was Taken From Me",
+      "albumKey": "what-was-taken-from-me",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kakia.bandcamp.com/track/what-was-taken-from-me",
+      "bandcampEmbedTrackId": "4246550006",
+      "sourcePage": "https://kakia.bandcamp.com/album/what-was-taken-from-me",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "what-was-taken-from-me-3297829607",
+      "title": "My Final Breath",
+      "artist": "KAKIA",
+      "albumTitle": "What Was Taken From Me",
+      "albumKey": "what-was-taken-from-me",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kakia.bandcamp.com/track/my-final-breath",
+      "bandcampEmbedTrackId": "3297829607",
+      "sourcePage": "https://kakia.bandcamp.com/album/what-was-taken-from-me",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "what-was-taken-from-me-4186754934",
+      "title": "Blood For Belial",
+      "artist": "KAKIA",
+      "albumTitle": "What Was Taken From Me",
+      "albumKey": "what-was-taken-from-me",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:16",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kakia.bandcamp.com/track/blood-for-belial",
+      "bandcampEmbedTrackId": "4186754934",
+      "sourcePage": "https://kakia.bandcamp.com/album/what-was-taken-from-me",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "what-was-taken-from-me-4229930930",
+      "title": "Incinerate",
+      "artist": "KAKIA",
+      "albumTitle": "What Was Taken From Me",
+      "albumKey": "what-was-taken-from-me",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:36",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kakia.bandcamp.com/track/incinerate",
+      "bandcampEmbedTrackId": "4229930930",
+      "sourcePage": "https://kakia.bandcamp.com/album/what-was-taken-from-me",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:01:52.567948+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kakia.bandcamp.com",
+    "bandcampBandId": "4126135386",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kakia.bandcamp.com/album/what-was-taken-from-me",
+    "discoveredAt": "2026-09-06T05:51:42.959704+00:00",
+    "importedAt": "2026-09-06T06:01:52.567948+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

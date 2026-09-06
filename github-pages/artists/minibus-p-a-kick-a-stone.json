@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "minibus-p-a-kick-a-stone",
+  "artist": "Minibus",
+  "bandcampUrl": "https://minibusband.bandcamp.com/album/p-a-kick-a-stone",
+  "releaseTitle": "P&A / Kick a Stone",
+  "releaseDate": "2026-08-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "Melbourne",
+    "dolewave",
+    "rock",
+    "garage rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "A fan of Jonathan Richman? Yo La Tengo? Flying Nun Records? Then take a vacation with us. Check the timetable. Jump on board. Slide down the slippery dip. Sing and dance on the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://minibusband.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:06:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "p-a-kick-a-stone",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "p-a-kick-a-stone-2386723000",
+      "title": "Plants and Animals",
+      "artist": "Minibus",
+      "albumTitle": "P&A / Kick a Stone",
+      "albumKey": "p-a-kick-a-stone",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://minibusband.bandcamp.com/track/plants-and-animals",
+      "bandcampEmbedTrackId": "2386723000",
+      "sourcePage": "https://minibusband.bandcamp.com/album/p-a-kick-a-stone",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "p-a-kick-a-stone-2861848633",
+      "title": "Kick a Stone",
+      "artist": "Minibus",
+      "albumTitle": "P&A / Kick a Stone",
+      "albumKey": "p-a-kick-a-stone",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:01",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://minibusband.bandcamp.com/track/kick-a-stone",
+      "bandcampEmbedTrackId": "2861848633",
+      "sourcePage": "https://minibusband.bandcamp.com/album/p-a-kick-a-stone",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:06:55.124793+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "minibusband.bandcamp.com",
+    "bandcampBandId": "778717837",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://minibusband.bandcamp.com/album/p-a-kick-a-stone",
+    "discoveredAt": "2026-09-06T05:51:42.970047+00:00",
+    "importedAt": "2026-09-06T06:06:55.124793+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

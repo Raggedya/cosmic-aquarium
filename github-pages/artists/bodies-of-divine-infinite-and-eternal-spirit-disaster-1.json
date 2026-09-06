@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "slug": "bodies-of-divine-infinite-and-eternal-spirit-disaster-1",
+  "artist": "bodies of divine infinite and eternal spirit",
+  "bandcampUrl": "https://b-odies.bandcamp.com/album/disaster-1",
+  "releaseTitle": "disaster 1",
+  "releaseDate": "2026-06-08 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "Melbourne",
+    "alternative",
+    "experimental",
+    "choir",
+    "drone",
+    "experimental rock",
+    "improvisation",
+    "longform",
+    "neofolk",
+    "post-punk"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "a statement from bodies of divine infinite and eternal spirit: here is our largest production to date. our largest group of musicians. our longest song. our biggest disaster…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://b-odies.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:28:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "disaster-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "disaster-1-79417047",
+      "title": "disaster 1",
+      "artist": "bodies of divine infinite and eternal spirit",
+      "albumTitle": "disaster 1",
+      "albumKey": "disaster-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "46:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://b-odies.bandcamp.com/track/disaster-1",
+      "bandcampEmbedTrackId": "79417047",
+      "sourcePage": "https://b-odies.bandcamp.com/album/disaster-1",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:28:22.012346+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "b-odies.bandcamp.com",
+    "bandcampBandId": "1411853504",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://b-odies.bandcamp.com/album/disaster-1",
+    "discoveredAt": "2026-09-06T05:51:42.980067+00:00",
+    "importedAt": "2026-09-06T06:28:22.013333+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

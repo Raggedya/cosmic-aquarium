@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "slug": "aristo-g-rave-edit-06-love-s-gonna-get-you",
+  "artist": "Aristo G",
+  "bandcampUrl": "https://aristog.bandcamp.com/album/rave-edit-06-loves-gonna-get-you",
+  "releaseTitle": "RAVE EDIT 06: Love's Gonna Get You",
+  "releaseDate": "2026-02-27 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "ebm",
+    "Melbourne",
+    "disco edit",
+    "disco house",
+    "electronic",
+    "house",
+    "disco",
+    "edit",
+    "edits",
+    "postpunk",
+    "remix"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Aristo G — ebm / Melbourne / disco edit music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "dreamy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://aristog.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:03:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rave-edit-06-love-s-gonna-get-you",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rave-edit-06-love-s-gonna-get-you-3740490036",
+      "title": "Love's Gonna Get U (Aristo G's Stripped Warehouse Mix)",
+      "artist": "Aristo G",
+      "albumTitle": "RAVE EDIT 06: Love's Gonna Get You",
+      "albumKey": "rave-edit-06-love-s-gonna-get-you",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aristog.bandcamp.com/track/loves-gonna-get-u-aristo-gs-stripped-warehouse-mix",
+      "bandcampEmbedTrackId": "3740490036",
+      "sourcePage": "https://aristog.bandcamp.com/album/rave-edit-06-loves-gonna-get-you",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:40.188711+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "aristog.bandcamp.com",
+    "bandcampBandId": "1482597127",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://aristog.bandcamp.com/album/rave-edit-06-loves-gonna-get-you",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:03:40.188711+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

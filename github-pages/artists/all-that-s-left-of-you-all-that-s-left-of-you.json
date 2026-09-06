@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "slug": "all-that-s-left-of-you-all-that-s-left-of-you",
+  "artist": "all that's left of you",
+  "bandcampUrl": "https://allthatsleftofyou.bandcamp.com/album/all-thats-left-of-you-2",
+  "releaseTitle": "all that's left of you",
+  "releaseDate": "2026-06-05 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "Melbourne",
+    "punk",
+    "emo",
+    "screamo",
+    "skramz"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "all that's left of you is: val - guitar/vocals ben - bass caleb - drums",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://allthatsleftofyou.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:55:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "all-that-s-left-of-you",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "all-that-s-left-of-you-3339420865",
+      "title": "intro (feat. teeth dreams)",
+      "artist": "all that's left of you",
+      "albumTitle": "all that's left of you",
+      "albumKey": "all-that-s-left-of-you",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://allthatsleftofyou.bandcamp.com/track/intro-feat-teeth-dreams",
+      "bandcampEmbedTrackId": "3339420865",
+      "sourcePage": "https://allthatsleftofyou.bandcamp.com/album/all-thats-left-of-you-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "all-that-s-left-of-you-44135592",
+      "title": "the consequences of if and when",
+      "artist": "all that's left of you",
+      "albumTitle": "all that's left of you",
+      "albumKey": "all-that-s-left-of-you",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:01",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://allthatsleftofyou.bandcamp.com/track/the-consequences-of-if-and-when",
+      "bandcampEmbedTrackId": "44135592",
+      "sourcePage": "https://allthatsleftofyou.bandcamp.com/album/all-thats-left-of-you-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "all-that-s-left-of-you-1102940195",
+      "title": "vanishing point",
+      "artist": "all that's left of you",
+      "albumTitle": "all that's left of you",
+      "albumKey": "all-that-s-left-of-you",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:13",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://allthatsleftofyou.bandcamp.com/track/vanishing-point",
+      "bandcampEmbedTrackId": "1102940195",
+      "sourcePage": "https://allthatsleftofyou.bandcamp.com/album/all-thats-left-of-you-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "all-that-s-left-of-you-932645947",
+      "title": "listen!",
+      "artist": "all that's left of you",
+      "albumTitle": "all that's left of you",
+      "albumKey": "all-that-s-left-of-you",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:13",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://allthatsleftofyou.bandcamp.com/track/listen",
+      "bandcampEmbedTrackId": "932645947",
+      "sourcePage": "https://allthatsleftofyou.bandcamp.com/album/all-thats-left-of-you-2",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "all-that-s-left-of-you-2334472580",
+      "title": "good song",
+      "artist": "all that's left of you",
+      "albumTitle": "all that's left of you",
+      "albumKey": "all-that-s-left-of-you",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:48",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://allthatsleftofyou.bandcamp.com/track/good-song",
+      "bandcampEmbedTrackId": "2334472580",
+      "sourcePage": "https://allthatsleftofyou.bandcamp.com/album/all-thats-left-of-you-2",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:55:12.533023+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "allthatsleftofyou.bandcamp.com",
+    "bandcampBandId": "3171417108",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://allthatsleftofyou.bandcamp.com/album/all-thats-left-of-you-2",
+    "discoveredAt": "2026-09-06T05:51:42.952681+00:00",
+    "importedAt": "2026-09-06T05:55:12.533023+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

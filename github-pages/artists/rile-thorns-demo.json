@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "rile-thorns-demo",
+  "artist": "Rile",
+  "bandcampUrl": "https://rilehc.bandcamp.com/album/thorns-demo",
+  "releaseTitle": "Thorns Demo",
+  "releaseDate": "2026-05-18 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "Melbourne",
+    "metal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Rile — hardcore / Melbourne / metal music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rilehc.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:00:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "thorns-demo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "thorns-demo-2979746952",
+      "title": "Blessing",
+      "artist": "Rile",
+      "albumTitle": "Thorns Demo",
+      "albumKey": "thorns-demo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rilehc.bandcamp.com/track/blessing",
+      "bandcampEmbedTrackId": "2979746952",
+      "sourcePage": "https://rilehc.bandcamp.com/album/thorns-demo",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "thorns-demo-887094743",
+      "title": "Break The Wall",
+      "artist": "Rile",
+      "albumTitle": "Thorns Demo",
+      "albumKey": "thorns-demo",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rilehc.bandcamp.com/track/break-the-wall",
+      "bandcampEmbedTrackId": "887094743",
+      "sourcePage": "https://rilehc.bandcamp.com/album/thorns-demo",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "thorns-demo-1886666585",
+      "title": "Split Skin",
+      "artist": "Rile",
+      "albumTitle": "Thorns Demo",
+      "albumKey": "thorns-demo",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:12",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rilehc.bandcamp.com/track/split-skin",
+      "bandcampEmbedTrackId": "1886666585",
+      "sourcePage": "https://rilehc.bandcamp.com/album/thorns-demo",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "thorns-demo-3665643891",
+      "title": "Judgement",
+      "artist": "Rile",
+      "albumTitle": "Thorns Demo",
+      "albumKey": "thorns-demo",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:46",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rilehc.bandcamp.com/track/judgement",
+      "bandcampEmbedTrackId": "3665643891",
+      "sourcePage": "https://rilehc.bandcamp.com/album/thorns-demo",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:00:46.771311+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "rilehc.bandcamp.com",
+    "bandcampBandId": "1763580940",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://rilehc.bandcamp.com/album/thorns-demo",
+    "discoveredAt": "2026-09-06T05:51:42.958701+00:00",
+    "importedAt": "2026-09-06T06:00:46.771311+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

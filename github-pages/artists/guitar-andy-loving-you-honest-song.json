@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "slug": "guitar-andy-loving-you-honest-song",
+  "artist": "Guitar Andy",
+  "bandcampUrl": "https://guitarandy.bandcamp.com/album/loving-you-honest-song",
+  "releaseTitle": "Loving You / Honest Song",
+  "releaseDate": "2026-08-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "world",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Guitar Andy — world / Melbourne music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://guitarandy.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:05:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "loving-you-honest-song",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "loving-you-honest-song-3258280034",
+      "title": "Loving You",
+      "artist": "Guitar Andy",
+      "albumTitle": "Loving You / Honest Song",
+      "albumKey": "loving-you-honest-song",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://guitarandy.bandcamp.com/track/loving-you",
+      "bandcampEmbedTrackId": "3258280034",
+      "sourcePage": "https://guitarandy.bandcamp.com/album/loving-you-honest-song",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "loving-you-honest-song-2235026907",
+      "title": "Honest Song",
+      "artist": "Guitar Andy",
+      "albumTitle": "Loving You / Honest Song",
+      "albumKey": "loving-you-honest-song",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://guitarandy.bandcamp.com/track/honest-song",
+      "bandcampEmbedTrackId": "2235026907",
+      "sourcePage": "https://guitarandy.bandcamp.com/album/loving-you-honest-song",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:05:46.616553+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "guitarandy.bandcamp.com",
+    "bandcampBandId": "2123106030",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://guitarandy.bandcamp.com/album/loving-you-honest-song",
+    "discoveredAt": "2026-09-06T05:51:42.966927+00:00",
+    "importedAt": "2026-09-06T06:05:46.616553+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

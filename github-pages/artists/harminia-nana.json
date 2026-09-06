@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "harminia-nana",
+  "artist": "harminia",
+  "bandcampUrl": "https://harminia.bandcamp.com/album/nana",
+  "releaseTitle": "nana",
+  "releaseDate": "2026-07-27 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "Melbourne",
+    "rock",
+    "alternative rock",
+    "indie pop",
+    "indie rock",
+    "shoegaze"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "harminia's debut EP “nana” was released on July 27, 2026. Inspired by Ai Yazawa’s iconic manga NANA and the cultural atmosphere of the early 2000s. The EP is a preservation of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://harminia.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:03:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "nana",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "nana-3562751397",
+      "title": "nana",
+      "artist": "harminia",
+      "albumTitle": "nana",
+      "albumKey": "nana",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://harminia.bandcamp.com/track/nana",
+      "bandcampEmbedTrackId": "3562751397",
+      "sourcePage": "https://harminia.bandcamp.com/album/nana",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "nana-2599909345",
+      "title": "osteotomy",
+      "artist": "harminia",
+      "albumTitle": "nana",
+      "albumKey": "nana",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:21",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://harminia.bandcamp.com/track/osteotomy",
+      "bandcampEmbedTrackId": "2599909345",
+      "sourcePage": "https://harminia.bandcamp.com/album/nana",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "nana-2370597228",
+      "title": "posthumously, evangeline",
+      "artist": "harminia",
+      "albumTitle": "nana",
+      "albumKey": "nana",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:39",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://harminia.bandcamp.com/track/posthumously-evangeline",
+      "bandcampEmbedTrackId": "2370597228",
+      "sourcePage": "https://harminia.bandcamp.com/album/nana",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "nana-86564198",
+      "title": "nana (Instrumental)",
+      "artist": "harminia",
+      "albumTitle": "nana",
+      "albumKey": "nana",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:34",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://harminia.bandcamp.com/track/nana-instrumental",
+      "bandcampEmbedTrackId": "86564198",
+      "sourcePage": "https://harminia.bandcamp.com/album/nana",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:50.290776+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "harminia.bandcamp.com",
+    "bandcampBandId": "133151983",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://harminia.bandcamp.com/album/nana",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:03:50.290776+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "slug": "erica-carrot-collision-hole-1",
+  "artist": "Erica Carrot Collision Hole",
+  "bandcampUrl": "https://ericacarrotcollisionhole.bandcamp.com/album/1",
+  "releaseTitle": "#1",
+  "releaseDate": "2026-07-13 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "Melbourne",
+    "alternative",
+    "aussie",
+    "cover",
+    "eddy current",
+    "garage",
+    "korg",
+    "pop",
+    "punk",
+    "queer",
+    "roland",
+    "smut",
+    "synth"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "1. Precious Rose 2. Rush To Relax 3. Which Way To Go Release #1 is a sample pack of classic Eddy Current Suppression Ring covers, gone through the Erica Carrot mincer…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ericacarrotcollisionhole.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:55:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "1-2278064093",
+      "title": "Precious Rose",
+      "artist": "Erica Carrot Collision Hole",
+      "albumTitle": "#1",
+      "albumKey": "1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericacarrotcollisionhole.bandcamp.com/track/precious-rose",
+      "bandcampEmbedTrackId": "2278064093",
+      "sourcePage": "https://ericacarrotcollisionhole.bandcamp.com/album/1",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "1-1764698204",
+      "title": "Rush To Relax",
+      "artist": "Erica Carrot Collision Hole",
+      "albumTitle": "#1",
+      "albumKey": "1",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:31",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericacarrotcollisionhole.bandcamp.com/track/rush-to-relax",
+      "bandcampEmbedTrackId": "1764698204",
+      "sourcePage": "https://ericacarrotcollisionhole.bandcamp.com/album/1",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "1-412070723",
+      "title": "Which Way To Go",
+      "artist": "Erica Carrot Collision Hole",
+      "albumTitle": "#1",
+      "albumKey": "1",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:45",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericacarrotcollisionhole.bandcamp.com/track/which-way-to-go",
+      "bandcampEmbedTrackId": "412070723",
+      "sourcePage": "https://ericacarrotcollisionhole.bandcamp.com/album/1",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:55:48.574373+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ericacarrotcollisionhole.bandcamp.com",
+    "bandcampBandId": "614116795",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ericacarrotcollisionhole.bandcamp.com/album/1",
+    "discoveredAt": "2026-09-06T05:51:42.952681+00:00",
+    "importedAt": "2026-09-06T05:55:48.574373+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "nebulas-infinite-suite",
+  "artist": "Nebulaś",
+  "bandcampUrl": "https://nebulas.bandcamp.com/album/infinite-suite",
+  "releaseTitle": "Infinite - Suite",
+  "releaseDate": "2025-12-04 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "piano",
+    "Melbourne",
+    "electronic",
+    "experimental",
+    "idm",
+    "ambient",
+    "electronica"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Nebulaś — piano / Melbourne / electronic music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nebulas.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:01:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "infinite-suite",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "infinite-suite-4011076497",
+      "title": "Infinite",
+      "artist": "Nebulaś",
+      "albumTitle": "Infinite - Suite",
+      "albumKey": "infinite-suite",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "2:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nebulas.bandcamp.com/track/infinite-2",
+      "bandcampEmbedTrackId": "4011076497",
+      "sourcePage": "https://nebulas.bandcamp.com/album/infinite-suite",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "infinite-suite-3785163201",
+      "title": "Infinitum",
+      "artist": "Nebulaś",
+      "albumTitle": "Infinite - Suite",
+      "albumKey": "infinite-suite",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "3:35",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nebulas.bandcamp.com/track/infinitum-2",
+      "bandcampEmbedTrackId": "3785163201",
+      "sourcePage": "https://nebulas.bandcamp.com/album/infinite-suite",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "infinite-suite-3182793226",
+      "title": "Infinite - Alternative Version",
+      "artist": "Nebulaś",
+      "albumTitle": "Infinite - Suite",
+      "albumKey": "infinite-suite",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "3:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nebulas.bandcamp.com/track/infinite-alternative-version",
+      "bandcampEmbedTrackId": "3182793226",
+      "sourcePage": "https://nebulas.bandcamp.com/album/infinite-suite",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "infinite-suite-3395475041",
+      "title": "Infinitum (Ben's Keys)",
+      "artist": "Nebulaś",
+      "albumTitle": "Infinite - Suite",
+      "albumKey": "infinite-suite",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "1:47",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nebulas.bandcamp.com/track/infinitum-bens-keys-2",
+      "bandcampEmbedTrackId": "3395475041",
+      "sourcePage": "https://nebulas.bandcamp.com/album/infinite-suite",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:01:25.213979+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nebulas.bandcamp.com",
+    "bandcampBandId": "1986686877",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nebulas.bandcamp.com/album/infinite-suite",
+    "discoveredAt": "2026-09-06T05:51:42.959704+00:00",
+    "importedAt": "2026-09-06T06:01:25.213979+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -8,9 +8,133 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-06T05:12:58.880Z",
-  "updatedAt": "2026-09-06T05:12:58.880Z",
+  "createdAt": "2026-09-06T06:29:45.946Z",
+  "updatedAt": "2026-09-06T06:29:45.946Z",
   "members": [
+    {
+      "artistId": "bandcamp:ajheath",
+      "artistName": "A.J. Heath",
+      "aquariumSlug": "a-j-heath-golden-hour",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/a-j-heath-golden-hour/",
+      "bandcampArtistUrl": "https://ajheath.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "dreamy",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:airwolfparadise",
+      "artistName": "Airwolf Paradise",
+      "aquariumSlug": "airwolf-paradise-din-da-da-ft-kevin-aviance-dj-gomi",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/airwolf-paradise-din-da-da-ft-kevin-aviance-dj-gomi/",
+      "bandcampArtistUrl": "https://airwolfparadise.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:angelesmusic",
+      "artistName": "Angeles",
+      "aquariumSlug": "angeles-selected-songs-2020-2024",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/angeles-selected-songs-2020-2024/",
+      "bandcampArtistUrl": "https://angelesmusic.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:arbes",
+      "artistName": "Arbes",
+      "aquariumSlug": "arbes-counterways",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/arbes-counterways/",
+      "bandcampArtistUrl": "https://arbes.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange",
+        "electronic"
+      ],
+      "styles": [
+        "dreamy",
+        "strange",
+        "electronic"
+      ]
+    },
+    {
+      "artistId": "bandcamp:aristog",
+      "artistName": "Aristo G",
+      "aquariumSlug": "aristo-g-rave-edit-06-love-s-gonna-get-you",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/aristo-g-rave-edit-06-love-s-gonna-get-you/",
+      "bandcampArtistUrl": "https://aristog.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dark",
+        "dreamy",
+        "strange"
+      ],
+      "styles": [
+        "dark",
+        "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:ashleyballat",
+      "artistName": "Ashley Ballat",
+      "aquariumSlug": "ashley-ballat-ashes",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ashley-ballat-ashes/",
+      "bandcampArtistUrl": "https://ashleyballat.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "loud"
+      ],
+      "styles": [
+        "strange",
+        "loud"
+      ]
+    },
     {
       "artistId": "bandcamp:beisselgreen",
       "artistName": "Beissel/Green",
@@ -30,6 +154,210 @@
       ]
     },
     {
+      "artistId": "bandcamp:biscottimusic",
+      "artistName": "Biscotti",
+      "aquariumSlug": "biscotti-new-pollution",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/biscotti-new-pollution/",
+      "bandcampArtistUrl": "https://biscottimusic.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:brendanbonsack",
+      "artistName": "Brendan Bonsack",
+      "aquariumSlug": "brendan-bonsack-constantly-mostly",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/brendan-bonsack-constantly-mostly/",
+      "bandcampArtistUrl": "https://brendanbonsack.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dark",
+        "loud"
+      ],
+      "styles": [
+        "strange",
+        "dark",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:cavs",
+      "artistName": "CAVS",
+      "aquariumSlug": "cavs-sojourn",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/cavs-sojourn/",
+      "bandcampArtistUrl": "https://cavs.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy",
+        "dark"
+      ],
+      "styles": [
+        "strange",
+        "dreamy",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:chefchung",
+      "artistName": "chef chung",
+      "aquariumSlug": "chef-chung-warrior-pounds-the-mortar",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/chef-chung-warrior-pounds-the-mortar/",
+      "bandcampArtistUrl": "https://chefchung.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "heavy",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "heavy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:cheryldurongpisitkul",
+      "artistName": "Cheryl Durongpisitkul",
+      "aquariumSlug": "cheryl-durongpisitkul-i-still-miss-you",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/cheryl-durongpisitkul-i-still-miss-you/",
+      "bandcampArtistUrl": "https://cheryldurongpisitkul.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:choofinbastards",
+      "artistName": "Choof",
+      "aquariumSlug": "choof-a-very-special-blend-of-psychology-and-extreme-violence",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/choof-a-very-special-blend-of-psychology-and-extreme-violence/",
+      "bandcampArtistUrl": "https://choofinbastards.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "heavy",
+        "strange"
+      ],
+      "styles": [
+        "heavy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:coldarcy",
+      "artistName": "Col Darcy",
+      "aquariumSlug": "col-darcy-redemption",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/col-darcy-redemption/",
+      "bandcampArtistUrl": "https://coldarcy.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:coolsounds1",
+      "artistName": "Cool Sounds",
+      "aquariumSlug": "cool-sounds-like-that",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/cool-sounds-like-that/",
+      "bandcampArtistUrl": "https://coolsounds1.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange"
+      ],
+      "styles": [
+        "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:dawnagain",
+      "artistName": "Dawn Again",
+      "aquariumSlug": "dawn-again-pints-of-ambient-nectar",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dawn-again-pints-of-ambient-nectar/",
+      "bandcampArtistUrl": "https://dawnagain.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "quiet",
+        "strange"
+      ],
+      "styles": [
+        "dreamy",
+        "quiet",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:dugidugi",
+      "artistName": "Dugi",
+      "aquariumSlug": "dugi-paranoid-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dugi-paranoid-ep/",
+      "bandcampArtistUrl": "https://dugidugi.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "strange"
+      ]
+    },
+    {
       "artistId": "bandcamp:dvntdrlng",
       "artistName": "DVNT DRLNG",
       "aquariumSlug": "dvnt-drlng-f-ck-ants-two-tenna-s",
@@ -45,6 +373,792 @@
       ],
       "styles": [
         "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:dylanvanderschyff",
+      "artistName": "Dylan van der Schyff",
+      "aquariumSlug": "dylan-van-der-schyff-birds-of-australia",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dylan-van-der-schyff-birds-of-australia/",
+      "bandcampArtistUrl": "https://dylanvanderschyff.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "loud"
+      ],
+      "styles": [
+        "strange",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:fancyweapon",
+      "artistName": "Fancy Weapon",
+      "aquariumSlug": "fancy-weapon-fancy-weapon",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/fancy-weapon-fancy-weapon/",
+      "bandcampArtistUrl": "https://fancyweapon.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:feltbody",
+      "artistName": "felt body",
+      "aquariumSlug": "felt-body-in-my-house-a-universe",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/felt-body-in-my-house-a-universe/",
+      "bandcampArtistUrl": "https://feltbody.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "electronic"
+      ],
+      "styles": [
+        "strange",
+        "electronic"
+      ]
+    },
+    {
+      "artistId": "bandcamp:ghostcoterie",
+      "artistName": "Ghost Coterie",
+      "aquariumSlug": "ghost-coterie-music-for-walking-in-japan",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ghost-coterie-music-for-walking-in-japan/",
+      "bandcampArtistUrl": "https://ghostcoterie.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "electronic",
+        "strange"
+      ],
+      "styles": [
+        "quiet",
+        "electronic",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:glassbeams",
+      "artistName": "Glass Beams",
+      "aquariumSlug": "glass-beams-mahal",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/glass-beams-mahal/",
+      "bandcampArtistUrl": "https://glassbeams.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "heavy",
+        "dark"
+      ],
+      "styles": [
+        "strange",
+        "heavy",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:guitarandy",
+      "artistName": "Guitar Andy",
+      "aquariumSlug": "guitar-andy-loving-you-honest-song",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/guitar-andy-loving-you-honest-song/",
+      "bandcampArtistUrl": "https://guitarandy.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:handclap",
+      "artistName": "Hand Clap",
+      "aquariumSlug": "hand-clap-emp019-upon-reflection",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hand-clap-emp019-upon-reflection/",
+      "bandcampArtistUrl": "https://handclap.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "quiet",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:hiatuskaiyote",
+      "artistName": "Hiatus Kaiyote",
+      "aquariumSlug": "hiatus-kaiyote-love-heart-cheat-code",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hiatus-kaiyote-love-heart-cheat-code/",
+      "bandcampArtistUrl": "https://hiatuskaiyote.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:hydrocephalus",
+      "artistName": "Hydrocephalus",
+      "aquariumSlug": "hydrocephalus-autoabolition",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hydrocephalus-autoabolition/",
+      "bandcampArtistUrl": "https://hydrocephalus.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet",
+        "dark"
+      ],
+      "styles": [
+        "strange",
+        "quiet",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:hyperbaroq",
+      "artistName": "hyperbaroq",
+      "aquariumSlug": "hyperbaroq-tripudiis-sonis-variis-a-jubilation-of-sounds",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hyperbaroq-tripudiis-sonis-variis-a-jubilation-of-sounds/",
+      "bandcampArtistUrl": "https://hyperbaroq.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dark",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "dark",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:illschlr",
+      "artistName": "illschlr",
+      "aquariumSlug": "illschlr-the-state-of-rnb",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/illschlr-the-state-of-rnb/",
+      "bandcampArtistUrl": "https://illschlr.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "electronic"
+      ],
+      "styles": [
+        "strange",
+        "electronic"
+      ]
+    },
+    {
+      "artistId": "bandcamp:jimmyringsbeats",
+      "artistName": "Jimmy Rings Beats",
+      "aquariumSlug": "jimmy-rings-beats-skitstape",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/jimmy-rings-beats-skitstape/",
+      "bandcampArtistUrl": "https://jimmyringsbeats.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:juliafae",
+      "artistName": "Julía Faé",
+      "aquariumSlug": "julia-fae-there-is-a-universe-inside-of-you-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/julia-fae-there-is-a-universe-inside-of-you-ep/",
+      "bandcampArtistUrl": "https://juliafae.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:julienwilson",
+      "artistName": "Julien Wilson",
+      "aquariumSlug": "julien-wilson-stock",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/julien-wilson-stock/",
+      "bandcampArtistUrl": "https://julienwilson.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "heavy",
+        "electronic"
+      ],
+      "styles": [
+        "strange",
+        "heavy",
+        "electronic"
+      ]
+    },
+    {
+      "artistId": "bandcamp:katiedey",
+      "artistName": "katie dey",
+      "aquariumSlug": "katie-dey-never-falter-hero-girl",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/katie-dey-never-falter-hero-girl/",
+      "bandcampArtistUrl": "https://katiedey.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange",
+        "loud"
+      ],
+      "styles": [
+        "dreamy",
+        "strange",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:khanofficial",
+      "artistName": "Khan",
+      "aquariumSlug": "khan-that-fair-and-warlike-form-return-to-dust",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/khan-that-fair-and-warlike-form-return-to-dust/",
+      "bandcampArtistUrl": "https://khanofficial.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange"
+      ],
+      "styles": [
+        "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:kylemuirolliecox",
+      "artistName": "Kyle Muir & Ollie Cox",
+      "aquariumSlug": "kyle-muir-ollie-cox-revving",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/kyle-muir-ollie-cox-revving/",
+      "bandcampArtistUrl": "https://kylemuirolliecox.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy",
+        "electronic"
+      ],
+      "styles": [
+        "strange",
+        "dreamy",
+        "electronic"
+      ]
+    },
+    {
+      "artistId": "bandcamp:lazrbees",
+      "artistName": "LAZR BEES",
+      "aquariumSlug": "lazr-bees-space-honey-e-p",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lazr-bees-space-honey-e-p/",
+      "bandcampArtistUrl": "https://lazrbees.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "electronic",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "electronic",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:leahlinda",
+      "artistName": "Leah Linda",
+      "aquariumSlug": "leah-linda-in-season",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/leah-linda-in-season/",
+      "bandcampArtistUrl": "https://leahlinda.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange"
+      ],
+      "styles": [
+        "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:leahsenior",
+      "artistName": "Leah Senior",
+      "aquariumSlug": "leah-senior-pt-roadknight",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/leah-senior-pt-roadknight/",
+      "bandcampArtistUrl": "https://leahsenior.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "loud",
+        "strange"
+      ],
+      "styles": [
+        "quiet",
+        "loud",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:leehannah",
+      "artistName": "Lee Hannah",
+      "aquariumSlug": "lee-hannah-fioruisce",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lee-hannah-fioruisce/",
+      "bandcampArtistUrl": "https://leehannah.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:lehmannbsmith",
+      "artistName": "Lehmann B Smith",
+      "aquariumSlug": "lehmann-b-smith-three-knots",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lehmann-b-smith-three-knots/",
+      "bandcampArtistUrl": "https://lehmannbsmith.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "strange",
+        "heavy"
+      ],
+      "styles": [
+        "quiet",
+        "strange",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:lisalerkenfeldt",
+      "artistName": "Lisa Lerkenfeldt",
+      "aquariumSlug": "lisa-lerkenfeldt-halos-of-perception",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lisa-lerkenfeldt-halos-of-perception/",
+      "bandcampArtistUrl": "https://lisalerkenfeldt.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy",
+        "dark"
+      ],
+      "styles": [
+        "strange",
+        "dreamy",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:markchurchill",
+      "artistName": "Mark Churchill",
+      "aquariumSlug": "mark-churchill-sinister-inhibitor",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mark-churchill-sinister-inhibitor/",
+      "bandcampArtistUrl": "https://markchurchill.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange"
+      ],
+      "styles": [
+        "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:marleydelprete",
+      "artistName": "Marley Del Prete",
+      "aquariumSlug": "marley-del-prete-sacred-heart-sama-featuring-nat-birchall",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/marley-del-prete-sacred-heart-sama-featuring-nat-birchall/",
+      "bandcampArtistUrl": "https://marleydelprete.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "electronic",
+        "dark"
+      ],
+      "styles": [
+        "strange",
+        "electronic",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:mckimmie",
+      "artistName": "McKimmie",
+      "aquariumSlug": "mckimmie-jason-bourne",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mckimmie-jason-bourne/",
+      "bandcampArtistUrl": "https://mckimmie.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:melodykin",
+      "artistName": "Melody Kin",
+      "aquariumSlug": "melody-kin-venus-in-gemini-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/melody-kin-venus-in-gemini-ep/",
+      "bandcampArtistUrl": "https://melodykin.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "loud",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "loud",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:miabarham",
+      "artistName": "Mia Barham",
+      "aquariumSlug": "mia-barham-inwards",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mia-barham-inwards/",
+      "bandcampArtistUrl": "https://miabarham.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:mickharvey1",
+      "artistName": "Mick Harvey",
+      "aquariumSlug": "mick-harvey-psychedelia-in-white",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mick-harvey-psychedelia-in-white/",
+      "bandcampArtistUrl": "https://mickharvey1.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "styles": [
+        "quiet",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:mildlife",
+      "artistName": "Mildlife",
+      "aquariumSlug": "mildlife-live-on-earth",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mildlife-live-on-earth/",
+      "bandcampArtistUrl": "https://mildlife.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "dreamy",
+        "strange"
+      ],
+      "styles": [
+        "quiet",
+        "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:milkbargang",
+      "artistName": "Milk Bar Gang",
+      "aquariumSlug": "milk-bar-gang-beijing-baby",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/milk-bar-gang-beijing-baby/",
+      "bandcampArtistUrl": "https://milkbargang.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange",
+        "quiet"
+      ],
+      "styles": [
+        "dreamy",
+        "strange",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:mondo-freaks",
+      "artistName": "Mondo Freaks",
+      "aquariumSlug": "mondo-freaks-won-t-you-decide-musclecars-remix",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mondo-freaks-won-t-you-decide-musclecars-remix/",
+      "bandcampArtistUrl": "https://mondo-freaks.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "heavy",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "heavy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:mudratmp3",
+      "artistName": "MUDRAT",
+      "aquariumSlug": "mudrat-social-cohesion",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mudrat-social-cohesion/",
+      "bandcampArtistUrl": "https://mudratmp3.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "strange",
+        "dark"
+      ],
+      "styles": [
+        "electronic",
+        "strange",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:natbartsch",
+      "artistName": "Nat Bartsch",
+      "aquariumSlug": "nat-bartsch-nat-bartsch-trio",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nat-bartsch-nat-bartsch-trio/",
+      "bandcampArtistUrl": "https://natbartsch.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:nathanabbey",
+      "artistName": "Nathan Abbey",
+      "aquariumSlug": "nathan-abbey-alice-in-abbeyland",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nathan-abbey-alice-in-abbeyland/",
+      "bandcampArtistUrl": "https://nathanabbey.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange"
+      ],
+      "styles": [
+        "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:notdrowningwaving",
+      "artistName": "Not Drowning, Waving",
+      "aquariumSlug": "not-drowning-waving-malira",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/not-drowning-waving-malira/",
+      "bandcampArtistUrl": "https://notdrowningwaving.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:nunnayabusiness",
+      "artistName": "Nunnaya Business",
+      "aquariumSlug": "nunnaya-business-album-signal-through-colonial-noise",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/nunnaya-business-album-signal-through-colonial-noise/",
+      "bandcampArtistUrl": "https://nunnayabusiness.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "loud"
+      ],
+      "styles": [
+        "strange",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:olanajanfa",
+      "artistName": "Olana",
+      "aquariumSlug": "olana-chicken-on-bike-skillful-man",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/olana-chicken-on-bike-skillful-man/",
+      "bandcampArtistUrl": "https://olanajanfa.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "quiet"
       ]
     },
     {
@@ -70,6 +1184,458 @@
       ]
     },
     {
+      "artistId": "bandcamp:bandoperation",
+      "artistName": "OPERATION:",
+      "aquariumSlug": "operation-live-at-the-brunswick-green",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/operation-live-at-the-brunswick-green/",
+      "bandcampArtistUrl": "https://bandoperation.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "electronic",
+        "loud"
+      ],
+      "styles": [
+        "strange",
+        "electronic",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:paddyfitzgerald",
+      "artistName": "Paddy Fitzgerald",
+      "aquariumSlug": "paddy-fitzgerald-floot-bird",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/paddy-fitzgerald-floot-bird/",
+      "bandcampArtistUrl": "https://paddyfitzgerald.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "loud",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "loud",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:palmsprings",
+      "artistName": "Palm Springs",
+      "aquariumSlug": "palm-springs-turning-yr-back-on-the-dolphin",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/palm-springs-turning-yr-back-on-the-dolphin/",
+      "bandcampArtistUrl": "https://palmsprings.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:papaphilia",
+      "artistName": "Papaphilia",
+      "aquariumSlug": "papaphilia-remembrance-of-things-to-come",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/papaphilia-remembrance-of-things-to-come/",
+      "bandcampArtistUrl": "https://papaphilia.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "heavy",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "heavy",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:paulbronson",
+      "artistName": "Paul Bronson",
+      "aquariumSlug": "paul-bronson-the-day-before-payday-blues-demos",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/paul-bronson-the-day-before-payday-blues-demos/",
+      "bandcampArtistUrl": "https://paulbronson.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:paulhetherington",
+      "artistName": "Paul Hetherington",
+      "aquariumSlug": "paul-hetherington-addicted-to-you-the-remixes",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/paul-hetherington-addicted-to-you-the-remixes/",
+      "bandcampArtistUrl": "https://paulhetherington.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:peterknight",
+      "artistName": "Peter Knight",
+      "aquariumSlug": "peter-knight-phosphenes",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/peter-knight-phosphenes/",
+      "bandcampArtistUrl": "https://peterknight.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "styles": [
+        "quiet",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:pooroldbillofficial",
+      "artistName": "Poor Old Bill",
+      "aquariumSlug": "poor-old-bill-morbid-dedication",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/poor-old-bill-morbid-dedication/",
+      "bandcampArtistUrl": "https://pooroldbillofficial.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:quiversss",
+      "artistName": "Quivers",
+      "aquariumSlug": "quivers-oyster-cuts",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/quivers-oyster-cuts/",
+      "bandcampArtistUrl": "https://quiversss.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "loud",
+        "strange"
+      ],
+      "styles": [
+        "dreamy",
+        "loud",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:rainbowchan",
+      "artistName": "Rainbow Chan",
+      "aquariumSlug": "rainbow-chan-the-bridal-lament",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rainbow-chan-the-bridal-lament/",
+      "bandcampArtistUrl": "https://rainbowchan.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:ritarevell",
+      "artistName": "Rita Revell",
+      "aquariumSlug": "rita-revell-x-d-in-stone",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/rita-revell-x-d-in-stone/",
+      "bandcampArtistUrl": "https://ritarevell.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dark"
+      ],
+      "styles": [
+        "strange",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:therobinfox",
+      "artistName": "Robin Fox",
+      "aquariumSlug": "robin-fox-colossus",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/robin-fox-colossus/",
+      "bandcampArtistUrl": "https://therobinfox.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "dreamy",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:rogeralsop",
+      "artistName": "Roger Alsop",
+      "aquariumSlug": "roger-alsop-quiet-ghosts",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/roger-alsop-quiet-ghosts/",
+      "bandcampArtistUrl": "https://rogeralsop.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "styles": [
+        "quiet",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:rubygill",
+      "artistName": "Ruby Gill",
+      "aquariumSlug": "ruby-gill-some-kind-of-control",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ruby-gill-some-kind-of-control/",
+      "bandcampArtistUrl": "https://rubygill.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "strange"
+      ],
+      "styles": [
+        "quiet",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:saliatahn",
+      "artistName": "saliatahn",
+      "aquariumSlug": "saliatahn-untitled-session-june-2026-ep",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/saliatahn-untitled-session-june-2026-ep/",
+      "bandcampArtistUrl": "https://saliatahn.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "dreamy",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:samatar",
+      "artistName": "SAMATAR",
+      "aquariumSlug": "samatar-inthefire-tonguetied",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/samatar-inthefire-tonguetied/",
+      "bandcampArtistUrl": "https://samatar.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy"
+      ],
+      "styles": [
+        "strange",
+        "dreamy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:scotttinkler",
+      "artistName": "Scott Tinkler",
+      "aquariumSlug": "scott-tinkler-shrike-like",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/scott-tinkler-shrike-like/",
+      "bandcampArtistUrl": "https://scotttinkler.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy"
+      ],
+      "styles": [
+        "strange",
+        "dreamy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:silonicssonics",
+      "artistName": "Silonics",
+      "aquariumSlug": "silonics-the-whittlesea-sound-project-the-album-ss016",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/silonics-the-whittlesea-sound-project-the-album-ss016/",
+      "bandcampArtistUrl": "https://silonicssonics.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "electronic",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "electronic",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:simonjkaris",
+      "artistName": "Simon J Karis",
+      "aquariumSlug": "simon-j-karis-071-smashed-platitudes-lauren-lauren-lauren",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/simon-j-karis-071-smashed-platitudes-lauren-lauren-lauren/",
+      "bandcampArtistUrl": "https://simonjkaris.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "quiet",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:sleep-d",
+      "artistName": "Sleep D",
+      "aquariumSlug": "sleep-d-flashed-glass",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sleep-d-flashed-glass/",
+      "bandcampArtistUrl": "https://sleep-d.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:sleepdecade",
+      "artistName": "Sleep Decade",
+      "aquariumSlug": "sleep-decade-into-spinning-lights",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sleep-decade-into-spinning-lights/",
+      "bandcampArtistUrl": "https://sleepdecade.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange",
+        "dark"
+      ],
+      "styles": [
+        "dreamy",
+        "strange",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:slowcoachingmusic",
+      "artistName": "Slowcoaching",
+      "aquariumSlug": "slowcoaching-i-m-in-my-brain-again",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/slowcoaching-i-m-in-my-brain-again/",
+      "bandcampArtistUrl": "https://slowcoachingmusic.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "quiet",
+        "strange"
+      ],
+      "styles": [
+        "dreamy",
+        "quiet",
+        "strange"
+      ]
+    },
+    {
       "artistId": "bandcamp:somnarium",
       "artistName": "Somnarium (Michael Meara)",
       "aquariumSlug": "somnarium-michael-meara-ouranos",
@@ -89,6 +1655,300 @@
         "dark",
         "quiet",
         "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:spillwaystrings",
+      "artistName": "Spillway",
+      "aquariumSlug": "spillway-beige-salmon-demos",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/spillway-beige-salmon-demos/",
+      "bandcampArtistUrl": "https://spillwaystrings.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:synergytrilogy",
+      "artistName": "Synergy Trilogy",
+      "aquariumSlug": "synergy-trilogy-synergy-trilogy-aus-edition",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/synergy-trilogy-synergy-trilogy-aus-edition/",
+      "bandcampArtistUrl": "https://synergytrilogy.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "electronic",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "electronic",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:tamen",
+      "artistName": "Tamen",
+      "aquariumSlug": "tamen-ino-ep-subbep02",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tamen-ino-ep-subbep02/",
+      "bandcampArtistUrl": "https://tamen.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "loud",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "loud",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:amplifiedelephants",
+      "artistName": "THE AMPLIFIED ELEPHANTS",
+      "aquariumSlug": "the-amplified-elephants-the-awe-machine",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-amplified-elephants-the-awe-machine/",
+      "bandcampArtistUrl": "https://amplifiedelephants.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:thecatsmiaow",
+      "artistName": "The Cat's Miaow",
+      "aquariumSlug": "the-cat-s-miaow-when-you-smiled-and-turned-away",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-cat-s-miaow-when-you-smiled-and-turned-away/",
+      "bandcampArtistUrl": "https://thecatsmiaow.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange"
+      ],
+      "styles": [
+        "dreamy",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:jamesworse",
+      "artistName": "the James Worse Public Address Method",
+      "aquariumSlug": "the-james-worse-public-address-method-oxtensmoot",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/the-james-worse-public-address-method-oxtensmoot/",
+      "bandcampArtistUrl": "https://jamesworse.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "dreamy",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:timscanlan",
+      "artistName": "Tim Scanlan",
+      "aquariumSlug": "tim-scanlan-live-in-tokyo",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tim-scanlan-live-in-tokyo/",
+      "bandcampArtistUrl": "https://timscanlan.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "quiet",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:timidcryptid",
+      "artistName": "Timid Cryptid",
+      "aquariumSlug": "timid-cryptid-apropos-of-nothing",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/timid-cryptid-apropos-of-nothing/",
+      "bandcampArtistUrl": "https://timidcryptid.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "loud"
+      ],
+      "styles": [
+        "strange",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:tonydupe",
+      "artistName": "Tony Dupé",
+      "aquariumSlug": "tony-dupe-assembly-organ-and-birds-at-pella-desert-church",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tony-dupe-assembly-organ-and-birds-at-pella-desert-church/",
+      "bandcampArtistUrl": "https://tonydupe.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "loud",
+        "dark"
+      ],
+      "styles": [
+        "strange",
+        "loud",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:mrtonymartin",
+      "artistName": "Tony Martin",
+      "aquariumSlug": "tony-martin-bits-of-get-this",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/tony-martin-bits-of-get-this/",
+      "bandcampArtistUrl": "https://mrtonymartin.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dreamy",
+        "heavy"
+      ],
+      "styles": [
+        "strange",
+        "dreamy",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:ungusungusungus",
+      "artistName": "Ungus Ungus Ungus",
+      "aquariumSlug": "ungus-ungus-ungus-the-fun-house",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ungus-ungus-ungus-the-fun-house/",
+      "bandcampArtistUrl": "https://ungusungusungus.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "electronic"
+      ],
+      "styles": [
+        "strange",
+        "electronic"
+      ]
+    },
+    {
+      "artistId": "bandcamp:mrwarrenburt",
+      "artistName": "Warren Burt",
+      "aquariumSlug": "warren-burt-four-pieces-2012-2013",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/warren-burt-four-pieces-2012-2013/",
+      "bandcampArtistUrl": "https://mrwarrenburt.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:wintermcquinnacaciapip",
+      "artistName": "Winter McQuinn & Acacia Pip",
+      "aquariumSlug": "winter-mcquinn-acacia-pip-disassociating-on-the-travelator",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/winter-mcquinn-acacia-pip-disassociating-on-the-travelator/",
+      "bandcampArtistUrl": "https://wintermcquinnacaciapip.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "dreamy",
+        "strange",
+        "heavy"
+      ],
+      "styles": [
+        "dreamy",
+        "strange",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:zanzibarchanel",
+      "artistName": "Zanzibar Chanel",
+      "aquariumSlug": "zanzibar-chanel-pigsweat-001-big-bone-bitch",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/zanzibar-chanel-pigsweat-001-big-bone-bitch/",
+      "bandcampArtistUrl": "https://zanzibarchanel.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange",
+        "dark",
+        "quiet"
+      ],
+      "styles": [
+        "strange",
+        "dark",
+        "quiet"
       ]
     }
   ]

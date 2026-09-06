@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "amla-birds-of-birdwood",
+  "artist": "amla",
+  "bandcampUrl": "https://amlamusic.bandcamp.com/album/birds-of-birdwood",
+  "releaseTitle": "Birds of Birdwood",
+  "releaseDate": "2026-04-20 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "Melbourne",
+    "ambient",
+    "world",
+    "improvisational",
+    "instrumental",
+    "soundscapes"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "A set of four short songs created from bird calls I heard while in Birdwood, NSW.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://amlamusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:59:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "birds-of-birdwood",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "birds-of-birdwood-1129840649",
+      "title": "Morning Bird",
+      "artist": "amla",
+      "albumTitle": "Birds of Birdwood",
+      "albumKey": "birds-of-birdwood",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:44",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amlamusic.bandcamp.com/track/morning-bird",
+      "bandcampEmbedTrackId": "1129840649",
+      "sourcePage": "https://amlamusic.bandcamp.com/album/birds-of-birdwood",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "birds-of-birdwood-1422586838",
+      "title": "Pensive Bird",
+      "artist": "amla",
+      "albumTitle": "Birds of Birdwood",
+      "albumKey": "birds-of-birdwood",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amlamusic.bandcamp.com/track/pensive-bird",
+      "bandcampEmbedTrackId": "1422586838",
+      "sourcePage": "https://amlamusic.bandcamp.com/album/birds-of-birdwood",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "birds-of-birdwood-4146960330",
+      "title": "Mysterious Bird",
+      "artist": "amla",
+      "albumTitle": "Birds of Birdwood",
+      "albumKey": "birds-of-birdwood",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:34",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amlamusic.bandcamp.com/track/mysterious-bird",
+      "bandcampEmbedTrackId": "4146960330",
+      "sourcePage": "https://amlamusic.bandcamp.com/album/birds-of-birdwood",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "birds-of-birdwood-245384379",
+      "title": "Content Bird",
+      "artist": "amla",
+      "albumTitle": "Birds of Birdwood",
+      "albumKey": "birds-of-birdwood",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:20",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amlamusic.bandcamp.com/track/content-bird",
+      "bandcampEmbedTrackId": "245384379",
+      "sourcePage": "https://amlamusic.bandcamp.com/album/birds-of-birdwood",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:59:08.640839+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "amlamusic.bandcamp.com",
+    "bandcampBandId": "2362312380",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://amlamusic.bandcamp.com/album/birds-of-birdwood",
+    "discoveredAt": "2026-09-06T05:51:42.956695+00:00",
+    "importedAt": "2026-09-06T05:59:08.640839+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

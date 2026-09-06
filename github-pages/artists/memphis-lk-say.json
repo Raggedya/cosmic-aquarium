@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "slug": "memphis-lk-say",
+  "artist": "MEMPHIS LK",
+  "bandcampUrl": "https://memphislk.bandcamp.com/album/say",
+  "releaseTitle": "Say",
+  "releaseDate": "2024-10-04 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dance",
+    "Melbourne",
+    "electronic",
+    "breakbeat",
+    "garage",
+    "pop",
+    "two step"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "MEMPHIS LK — dance / Melbourne / breakbeat music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://memphislk.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:06:32Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "say",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "say-3585097074",
+      "title": "Don't Touch Me Baby",
+      "artist": "MEMPHIS LK",
+      "albumTitle": "Say",
+      "albumKey": "say",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "4:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://memphislk.bandcamp.com/track/dont-touch-me-baby",
+      "bandcampEmbedTrackId": "3585097074",
+      "sourcePage": "https://memphislk.bandcamp.com/album/say",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "say-3558067825",
+      "title": "Just The Way You Are",
+      "artist": "MEMPHIS LK",
+      "albumTitle": "Say",
+      "albumKey": "say",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "5:09",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://memphislk.bandcamp.com/track/just-the-way-you-are",
+      "bandcampEmbedTrackId": "3558067825",
+      "sourcePage": "https://memphislk.bandcamp.com/album/say",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "say-52667169",
+      "title": "Need You Now",
+      "artist": "MEMPHIS LK",
+      "albumTitle": "Say",
+      "albumKey": "say",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "3:42",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://memphislk.bandcamp.com/track/need-you-now",
+      "bandcampEmbedTrackId": "52667169",
+      "sourcePage": "https://memphislk.bandcamp.com/album/say",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "say-3927046217",
+      "title": "Say",
+      "artist": "MEMPHIS LK",
+      "albumTitle": "Say",
+      "albumKey": "say",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "2:54",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://memphislk.bandcamp.com/track/say",
+      "bandcampEmbedTrackId": "3927046217",
+      "sourcePage": "https://memphislk.bandcamp.com/album/say",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "say-2260247805",
+      "title": "Prosper",
+      "artist": "MEMPHIS LK",
+      "albumTitle": "Say",
+      "albumKey": "say",
+      "year": 2024,
+      "trackNumber": 5,
+      "duration": "3:47",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://memphislk.bandcamp.com/track/prosper",
+      "bandcampEmbedTrackId": "2260247805",
+      "sourcePage": "https://memphislk.bandcamp.com/album/say",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:06:32.012742+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "memphislk.bandcamp.com",
+    "bandcampBandId": "462676526",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://memphislk.bandcamp.com/album/say",
+    "discoveredAt": "2026-09-06T05:51:42.970047+00:00",
+    "importedAt": "2026-09-06T06:06:32.012742+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

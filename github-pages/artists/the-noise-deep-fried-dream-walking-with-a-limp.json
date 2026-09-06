@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-noise-deep-fried-dream-walking-with-a-limp",
+  "artist": "The Noise",
+  "bandcampUrl": "https://thenoiseau.bandcamp.com/album/deep-fried-dream-walking-with-a-limp",
+  "releaseTitle": "Deep Fried Dream/Walking with a Limp",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "Melbourne",
+    "alternative",
+    "dream pop",
+    "indie rock",
+    "rock",
+    "shoegaze"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "The Noise — dream-pop / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thenoiseau.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:59:06Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "deep-fried-dream-walking-with-a-limp",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "deep-fried-dream-walking-with-a-limp-2260671253",
+      "title": "Deep Fried Dream",
+      "artist": "The Noise",
+      "albumTitle": "Deep Fried Dream/Walking with a Limp",
+      "albumKey": "deep-fried-dream-walking-with-a-limp",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:35",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thenoiseau.bandcamp.com/track/deep-fried-dream",
+      "bandcampEmbedTrackId": "2260671253",
+      "sourcePage": "https://thenoiseau.bandcamp.com/album/deep-fried-dream-walking-with-a-limp",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "deep-fried-dream-walking-with-a-limp-3475486282",
+      "title": "Walking with a Limp",
+      "artist": "The Noise",
+      "albumTitle": "Deep Fried Dream/Walking with a Limp",
+      "albumKey": "deep-fried-dream-walking-with-a-limp",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thenoiseau.bandcamp.com/track/walking-with-a-limp",
+      "bandcampEmbedTrackId": "3475486282",
+      "sourcePage": "https://thenoiseau.bandcamp.com/album/deep-fried-dream-walking-with-a-limp",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:59:06.370765+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thenoiseau.bandcamp.com",
+    "bandcampBandId": "3065941384",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thenoiseau.bandcamp.com/album/deep-fried-dream-walking-with-a-limp",
+    "discoveredAt": "2026-09-06T05:51:42.956695+00:00",
+    "importedAt": "2026-09-06T05:59:06.370765+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

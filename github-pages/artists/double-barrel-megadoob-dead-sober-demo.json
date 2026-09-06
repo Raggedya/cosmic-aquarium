@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "double-barrel-megadoob-dead-sober-demo",
+  "artist": "DOUBLE-BARREL MEGADOOB",
+  "bandcampUrl": "https://double-barrelmegadoob.bandcamp.com/album/dead-sober-demo",
+  "releaseTitle": "DEAD SOBER DEMO",
+  "releaseDate": "2026-06-24 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "Melbourne",
+    "metal",
+    "progressive stoner",
+    "doom metal",
+    "progressive doom metal",
+    "sludge metal",
+    "stoner metal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "DOUBLE-BARREL MEGADOOB — stoner-metal / Melbourne / metal music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://double-barrelmegadoob.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:54:03Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dead-sober-demo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dead-sober-demo-1957662569",
+      "title": "BFS",
+      "artist": "DOUBLE-BARREL MEGADOOB",
+      "albumTitle": "DEAD SOBER DEMO",
+      "albumKey": "dead-sober-demo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://double-barrelmegadoob.bandcamp.com/track/bfs",
+      "bandcampEmbedTrackId": "1957662569",
+      "sourcePage": "https://double-barrelmegadoob.bandcamp.com/album/dead-sober-demo",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dead-sober-demo-997627298",
+      "title": "CHRONIC CANNIBALS",
+      "artist": "DOUBLE-BARREL MEGADOOB",
+      "albumTitle": "DEAD SOBER DEMO",
+      "albumKey": "dead-sober-demo",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:03",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://double-barrelmegadoob.bandcamp.com/track/chronic-cannibals",
+      "bandcampEmbedTrackId": "997627298",
+      "sourcePage": "https://double-barrelmegadoob.bandcamp.com/album/dead-sober-demo",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:54:03.165654+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "double-barrelmegadoob.bandcamp.com",
+    "bandcampBandId": "2032379029",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://double-barrelmegadoob.bandcamp.com/album/dead-sober-demo",
+    "discoveredAt": "2026-09-06T05:51:42.948684+00:00",
+    "importedAt": "2026-09-06T05:54:03.165654+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

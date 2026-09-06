@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "slug": "mondo-freaks-won-t-you-decide-musclecars-remix",
+  "artist": "Mondo Freaks",
+  "bandcampUrl": "https://mondo-freaks.bandcamp.com/album/wont-you-decide-musclecars-remix",
+  "releaseTitle": "Won't You Decide (musclecars Remix)",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dance",
+    "Melbourne",
+    "deep house",
+    "electronica",
+    "funk",
+    "boogie",
+    "boogie funk",
+    "soul"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Mondo Freaks are a 10 piece Melbourne Boogie/Funk act who released their debut album in late 2025 to global acclaim. Following on from remixes of “Turn This Love Around” from…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "heavy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mondo-freaks.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:54:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "won-t-you-decide-musclecars-remix",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "won-t-you-decide-musclecars-remix-2695369295",
+      "title": "Won't You Decide (musclecars Remix) [feat. musclecars]",
+      "artist": "Mondo Freaks",
+      "albumTitle": "Won't You Decide (musclecars Remix)",
+      "albumKey": "won-t-you-decide-musclecars-remix",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mondo-freaks.bandcamp.com/track/wont-you-decide-musclecars-remix-feat-musclecars",
+      "bandcampEmbedTrackId": "2695369295",
+      "sourcePage": "https://mondo-freaks.bandcamp.com/album/wont-you-decide-musclecars-remix",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "won-t-you-decide-musclecars-remix-3425876237",
+      "title": "Won't You Decide (musclecars Remix Instrumental) [feat. musclecars]",
+      "artist": "Mondo Freaks",
+      "albumTitle": "Won't You Decide (musclecars Remix)",
+      "albumKey": "won-t-you-decide-musclecars-remix",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mondo-freaks.bandcamp.com/track/wont-you-decide-musclecars-remix-instrumental-feat-musclecars",
+      "bandcampEmbedTrackId": "3425876237",
+      "sourcePage": "https://mondo-freaks.bandcamp.com/album/wont-you-decide-musclecars-remix",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "won-t-you-decide-musclecars-remix-467621673",
+      "title": "Won't You Decide",
+      "artist": "Mondo Freaks",
+      "albumTitle": "Won't You Decide (musclecars Remix)",
+      "albumKey": "won-t-you-decide-musclecars-remix",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:20",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mondo-freaks.bandcamp.com/track/wont-you-decide-3",
+      "bandcampEmbedTrackId": "467621673",
+      "sourcePage": "https://mondo-freaks.bandcamp.com/album/wont-you-decide-musclecars-remix",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:54:49.476960+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mondo-freaks.bandcamp.com",
+    "bandcampBandId": "2993971320",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mondo-freaks.bandcamp.com/album/wont-you-decide-musclecars-remix",
+    "discoveredAt": "2026-09-06T05:51:42.951786+00:00",
+    "importedAt": "2026-09-06T05:54:49.476960+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

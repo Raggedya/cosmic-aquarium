@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "universe": "melbourne",
-  "generatedAt": "2026-09-06T02:03:51.141138+00:00",
-  "count": 81,
+  "generatedAt": "2026-09-06T06:29:07.003543+00:00",
+  "count": 165,
   "artists": [
     {
       "artistId": "bandcamp:abyssalrift-label",
@@ -40,6 +40,286 @@
       ]
     },
     {
+      "artistId": "bandcamp:alfi",
+      "artist": "Alfi",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 8,
+      "aquariumSlugs": [
+        "alfi-no-more-a-roving"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:amongsttheangels",
+      "artist": "Amongst the Angels",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 3,
+      "aquariumSlugs": [
+        "amongst-the-angels-hymns-from-death-s-bedside"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:aphoticapathy",
+      "artist": "Aphotic Apathy",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 11,
+      "aquariumSlugs": [
+        "aphotic-apathy-the-elders"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:ashencryptds",
+      "artist": "ASHENCRYPT",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "ashencrypt-ashencrypt"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:baisanfrantisz",
+      "artist": "Baisan & Frantisz",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 1,
+      "aquariumSlugs": [
+        "baisan-frantisz-au-bout-de-la-nuit"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:bandcola",
+      "artist": "Cola",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 11,
+      "aquariumSlugs": [
+        "cola-cost-of-living-adjustment"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:barrykramer",
+      "artist": "Barry Kramer",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 8,
+      "aquariumSlugs": [
+        "barry-kramer-a-good-enough-soundtrack-for-metal-gear-1-2"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:belialpelegrim",
+      "artist": "Belial Pelegrim",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 18,
+      "aquariumSlugs": [
+        "belial-pelegrim-the-geometry-of-vanishing"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:bettyhammerschlag",
       "artist": "Betty Hammerschlag",
       "classification": "LOCATION_UNKNOWN",
@@ -59,6 +339,146 @@
       "playableTrackCount": 13,
       "aquariumSlugs": [
         "betty-hammerschlag-psycho-summer"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:binaural-space",
+      "artist": "Binaural Space",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "binaural-space-neural-bloom"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:bio-mass",
+      "artist": "Biomass",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 8,
+      "aquariumSlugs": [
+        "biomass-wobbegong-mothership"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:blackmountaintransmitter",
+      "artist": "Black Mountain Transmitter",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "black-mountain-transmitter-the-dracula-tracks"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:bleachedcross",
+      "artist": "Bleached Cross",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 10,
+      "aquariumSlugs": [
+        "bleached-cross-wrath"
       ],
       "evidenceRecords": [
         {
@@ -145,6 +565,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:carseatheadrest",
+      "artist": "Car Seat Headrest",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 10,
+      "aquariumSlugs": [
+        "car-seat-headrest-twin-fantasy"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:caselangveirs",
       "artist": "case/lang/veirs",
       "classification": "LOCATION_UNKNOWN",
@@ -164,6 +619,41 @@
       "playableTrackCount": 27,
       "aquariumSlugs": [
         "case-lang-veirs-case-lang-veirs-10th-anniversary-edition"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:cering",
+      "artist": "CERiNG",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "cering-scapes"
       ],
       "evidenceRecords": [
         {
@@ -215,6 +705,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:clairematildamoon",
+      "artist": "Claire Matilda Moon",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 11,
+      "aquariumSlugs": [
+        "claire-matilda-moon-saltwater-nostalgia-199x"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:cmon3tta",
       "artist": "cmon3tta",
       "classification": "LOCATION_UNKNOWN",
@@ -250,6 +775,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:cobaltbloom",
+      "artist": "cobalt bloom",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 12,
+      "aquariumSlugs": [
+        "cobalt-bloom-liminal"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:coffinfodder",
       "artist": "Coffin Fodder",
       "classification": "LOCATION_UNKNOWN",
@@ -269,6 +829,76 @@
       "playableTrackCount": 3,
       "aquariumSlugs": [
         "coffin-fodder-cacoffiny"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:controlledbleeding",
+      "artist": "Controlled Bleeding",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 6,
+      "aquariumSlugs": [
+        "controlled-bleeding-knees-bones"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:crql",
+      "artist": "crql",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "crql-third-time-s-a-charm"
       ],
       "evidenceRecords": [
         {
@@ -425,6 +1055,111 @@
       ]
     },
     {
+      "artistId": "bandcamp:dimcityofficial",
+      "artist": "Dim City",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "dim-city-m-a-d-018-dim-city-juicy-boy-ep"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:diplodocus",
+      "artist": "Diplodocus",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 10,
+      "aquariumSlugs": [
+        "diplodocus-slow-and-heavy-tyrannic-edition"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:dlinavolny",
+      "artist": "Dlina Volny",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 17,
+      "aquariumSlugs": [
+        "dlina-volny-in-between-2025"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:donnybenet",
       "artist": "Donny Benét",
       "classification": "LOCATION_UNKNOWN",
@@ -444,6 +1179,41 @@
       "playableTrackCount": 60,
       "aquariumSlugs": [
         "donny-benet"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:doonkanda",
+      "artist": "Doon Kanda",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 13,
+      "aquariumSlugs": [
+        "doon-kanda-celest"
       ],
       "evidenceRecords": [
         {
@@ -495,6 +1265,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:duskbunnyglade",
+      "artist": "duskbunny glade",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 15,
+      "aquariumSlugs": [
+        "duskbunny-glade-2nd-person"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:eeriesilence",
       "artist": "Black Wilderness",
       "classification": "LOCATION_UNKNOWN",
@@ -514,6 +1319,251 @@
       "playableTrackCount": 8,
       "aquariumSlugs": [
         "black-wilderness-woodland-of-incorporeal-shadows"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:endhitsband",
+      "artist": "end hits",
+      "classification": "MELBOURNE_POSSIBLE",
+      "locationConfidence": "LOW",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": "Australia",
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne.",
+      "releaseCount": 1,
+      "playableTrackCount": 3,
+      "aquariumSlugs": [
+        "end-hits-heart-crime-heavy-snow"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_POSSIBLE",
+          "confidence": "LOW",
+          "rawLocation": "Australia",
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:exitiumsui",
+      "artist": "Exitium Sui",
+      "classification": "MELBOURNE_POSSIBLE",
+      "locationConfidence": "LOW",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": "Australia",
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne.",
+      "releaseCount": 1,
+      "playableTrackCount": 7,
+      "aquariumSlugs": [
+        "exitium-sui-unravelling"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_POSSIBLE",
+          "confidence": "LOW",
+          "rawLocation": "Australia",
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:fawnbiii",
+      "artist": "fawnbiii",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "fawnbiii-may-the-heart-forget-your-love"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:flavorfoley",
+      "artist": "FLAVOR FOLEY",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "flavor-foley-streetcat"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:forn",
+      "artist": "FÓRN",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 6,
+      "aquariumSlugs": [
+        "forn-live-in-hamburg"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:fullonteeth",
+      "artist": "Full On Teeth",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 6,
+      "aquariumSlugs": [
+        "full-on-teeth-full-on-teeth-ii-songs-demos"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:ghostwoman",
+      "artist": "GHOSTWOMAN®",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 11,
+      "aquariumSlugs": [
+        "ghostwoman-welcome-to-the-civilized-world"
       ],
       "evidenceRecords": [
         {
@@ -670,6 +1720,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:gothsforpalestine",
+      "artist": "Goths For Palestine",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 31,
+      "aquariumSlugs": [
+        "goths-for-palestine-goths-for-palestine-vol-ii"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:graylok",
       "artist": "GRAYLOK",
       "classification": "LOCATION_UNKNOWN",
@@ -724,6 +1809,216 @@
       "playableTrackCount": 10,
       "aquariumSlugs": [
         "grevusanjl-lost-in-the-moment"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:grinsichore",
+      "artist": "Grinsichore",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "grinsichore-halibut-2"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:hashishian",
+      "artist": "Hashishian",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 6,
+      "aquariumSlugs": [
+        "hashishian-sand-dragon"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:hauntedhouseparty",
+      "artist": "Haunted House Party",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 18,
+      "aquariumSlugs": [
+        "haunted-house-party-are-you-afraid"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:hellishform",
+      "artist": "Hellish Form",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "hellish-form-remains"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:herbrobertson",
+      "artist": "Herb Robertson",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 6,
+      "aquariumSlugs": [
+        "herb-robertson-unexpected-herb-robertson-solo"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:hillofsorcery",
+      "artist": "Hill Of Sorcery",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "hill-of-sorcery-the-ruins-of-gondolin"
       ],
       "evidenceRecords": [
         {
@@ -1055,6 +2350,181 @@
       ]
     },
     {
+      "artistId": "bandcamp:kelela",
+      "artist": "Kelela",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 12,
+      "aquariumSlugs": [
+        "kelela-in-the-blue-light"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:kevinrichardmartin",
+      "artist": "Kevin Richard Martin",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 14,
+      "aquariumSlugs": [
+        "kevin-richard-martin-blue-loops"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:kidneystone",
+      "artist": "KIDNEYSTONE",
+      "classification": "MELBOURNE_POSSIBLE",
+      "locationConfidence": "LOW",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": "Australia",
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne.",
+      "releaseCount": 1,
+      "playableTrackCount": 19,
+      "aquariumSlugs": [
+        "kidneystone-kidney-stone"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_POSSIBLE",
+          "confidence": "LOW",
+          "rawLocation": "Australia",
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:kylebobbydunn",
+      "artist": "kyle bobby dunn",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 1,
+      "aquariumSlugs": [
+        "kyle-bobby-dunn-extrication-music"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:lesfleursdutapis",
+      "artist": "Les Fleurs du Tapis",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 12,
+      "aquariumSlugs": [
+        "les-fleurs-du-tapis-ninja-barbecue"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:lisabelladonna",
       "artist": "Lisa Bella Donna",
       "classification": "LOCATION_UNKNOWN",
@@ -1074,6 +2544,41 @@
       "playableTrackCount": 7,
       "aquariumSlugs": [
         "lisa-bella-donna-mindframes"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:lorenzweber",
+      "artist": "Lorenz Weber",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 8,
+      "aquariumSlugs": [
+        "lorenz-weber-lavin"
       ],
       "evidenceRecords": [
         {
@@ -1125,6 +2630,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:mankindundone",
+      "artist": "Mankind Undone",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "mankind-undone-thin-execution"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:mentasauce",
       "artist": "Menta Sauce",
       "classification": "LOCATION_UNKNOWN",
@@ -1144,6 +2684,41 @@
       "playableTrackCount": 4,
       "aquariumSlugs": [
         "menta-sauce-fantasy-ep"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:mfdoom",
+      "artist": "MF DOOM",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 15,
+      "aquariumSlugs": [
+        "mf-doom-mm-food"
       ],
       "evidenceRecords": [
         {
@@ -1191,6 +2766,76 @@
           "country": "Australia",
           "source": "manifest.primaryLocation",
           "evidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:musicanniehall",
+      "artist": "Annie Hall",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "annie-hall-future-sports"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:nationoflanguage",
+      "artist": "Nation of Language",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "nation-of-language-tougher-than-the-rest"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
         }
       ]
     },
@@ -1300,6 +2945,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:noxsolis",
+      "artist": "Nox Solis",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "nox-solis-vetus-luna"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:oddkut",
       "artist": "Oddkut",
       "classification": "LOCATION_UNKNOWN",
@@ -1370,6 +3050,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:on4word",
+      "artist": "on4word",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 15,
+      "aquariumSlugs": [
+        "on4word-parallel-universe-46"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:ooomensch",
       "artist": "OOO",
       "classification": "LOCATION_UNKNOWN",
@@ -1405,6 +3120,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:oracogan",
+      "artist": "Ora Cogan",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 10,
+      "aquariumSlugs": [
+        "ora-cogan-hard-hearted-woman"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:orbitaldot",
       "artist": "orbitaldot",
       "classification": "LOCATION_UNKNOWN",
@@ -1424,6 +3174,76 @@
       "playableTrackCount": 48,
       "aquariumSlugs": [
         "orbitaldot-mesmalie-soundtrack"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:orsband",
+      "artist": "ORS",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 10,
+      "aquariumSlugs": [
+        "ors-grey-to-gold-to-tears"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:oscarpeterson",
+      "artist": "Oscar Peterson",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 43,
+      "aquariumSlugs": [
+        "oscar-peterson-world-tour"
       ],
       "evidenceRecords": [
         {
@@ -1580,6 +3400,76 @@
       ]
     },
     {
+      "artistId": "bandcamp:permissiontodisappear",
+      "artist": "Permission To Disappear",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 15,
+      "aquariumSlugs": [
+        "permission-to-disappear-the-soft-collapse"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:pfrrr",
+      "artist": "PFR",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 8,
+      "aquariumSlugs": [
+        "pfr-she-was-only-a-dream"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:pizzapuppies",
       "artist": "👍 The Pizza Puppies 👍",
       "classification": "LOCATION_UNKNOWN",
@@ -1615,6 +3505,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:poniesatdawn",
+      "artist": "Ponies at Dawn",
+      "classification": "MELBOURNE_POSSIBLE",
+      "locationConfidence": "LOW",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": "Australia",
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne.",
+      "releaseCount": 1,
+      "playableTrackCount": 57,
+      "aquariumSlugs": [
+        "ponies-at-dawn-respite"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_POSSIBLE",
+          "confidence": "LOW",
+          "rawLocation": "Australia",
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:primalband",
       "artist": "Primal",
       "classification": "LOCATION_UNKNOWN",
@@ -1634,6 +3559,41 @@
       "playableTrackCount": 4,
       "aquariumSlugs": [
         "primal-deus-satanicus"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:prolapse2",
+      "artist": "Prolapse",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 6,
+      "aquariumSlugs": [
+        "prolapse-prelp-15-prolapse-mary-anne-hobbs-sessions-97-98"
       ],
       "evidenceRecords": [
         {
@@ -1685,6 +3645,146 @@
       ]
     },
     {
+      "artistId": "bandcamp:pussyhermits",
+      "artist": "Pussyhermits",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "pussyhermits-for-all-those-f-ckers-who-can-t-keep-their-heads-straight"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:questmaster",
+      "artist": "Quest Master",
+      "classification": "MELBOURNE_POSSIBLE",
+      "locationConfidence": "LOW",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": "Australia",
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne.",
+      "releaseCount": 1,
+      "playableTrackCount": 12,
+      "aquariumSlugs": [
+        "quest-master-the-twelve-temples"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_POSSIBLE",
+          "confidence": "LOW",
+          "rawLocation": "Australia",
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:raphaelweinroth-browne",
+      "artist": "Raphael Weinroth-Browne",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 9,
+      "aquariumSlugs": [
+        "raphael-weinroth-browne-empyrean"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:residualsignal",
+      "artist": "Residual Signal",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 7,
+      "aquariumSlugs": [
+        "residual-signal-file-27-958"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:resonantlanguage",
       "artist": "Resonant Language",
       "classification": "LOCATION_UNKNOWN",
@@ -1704,6 +3804,111 @@
       "playableTrackCount": 6,
       "aquariumSlugs": [
         "resonant-language-discorporate"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:reveriedream",
+      "artist": "reverie",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 8,
+      "aquariumSlugs": [
+        "reverie-ordet-or-an-ode-to-your-past-lives"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:ricechinorbtin",
+      "artist": "Rice Chin Orb Tin",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 15,
+      "aquariumSlugs": [
+        "rice-chin-orb-tin-telepathetic-ghost"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:rinwic",
+      "artist": "Rinwic",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "rinwic-phase-s"
       ],
       "evidenceRecords": [
         {
@@ -1930,6 +4135,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:saulwilliams",
+      "artist": "SAUL WILLIAMS",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 14,
+      "aquariumSlugs": [
+        "saul-williams-leap-life"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:serpentcolumn",
       "artist": "Serpent Column",
       "classification": "LOCATION_UNKNOWN",
@@ -2070,6 +4310,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:shesoutthere",
+      "artist": "She's Out There",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 10,
+      "aquariumSlugs": [
+        "she-s-out-there-special"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:shiving",
       "artist": "Shiving",
       "classification": "MELBOURNE_POSSIBLE",
@@ -2102,6 +4377,41 @@
           "lga": "Whitehorse",
           "source": "manifest.primaryLocation+Vicmap",
           "evidence": "Locality name is within Metropolitan Melbourne but country/state is absent or ambiguous."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:sidest",
+      "artist": "sidest",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "sidest-first"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
         }
       ]
     },
@@ -2265,6 +4575,41 @@
       "playableTrackCount": 11,
       "aquariumSlugs": [
         "softcult-when-a-flower-doesn-t-grow"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:softdrinkmillionaire",
+      "artist": "Softdrink Millionaire",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "softdrink-millionaire-the-good-ep"
       ],
       "evidenceRecords": [
         {
@@ -2491,6 +4836,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:summerheat",
+      "artist": "summer heat",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "summer-heat-discontinued-hatred"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:supergoing",
       "artist": "super going",
       "classification": "MELBOURNE_POSSIBLE",
@@ -2561,6 +4941,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:templeguard",
+      "artist": "Temple Guard",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 8,
+      "aquariumSlugs": [
+        "temple-guard-citadel-in-flames"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:thecigarrillos",
       "artist": "The Cigarrillos",
       "classification": "LOCATION_UNKNOWN",
@@ -2580,6 +4995,76 @@
       "playableTrackCount": 7,
       "aquariumSlugs": [
         "the-cigarrillos"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:theinfinityring",
+      "artist": "The Infinity Ring",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 10,
+      "aquariumSlugs": [
+        "the-infinity-ring-the-isle-of-skye"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:themareustoo",
+      "artist": "Them Are Us Too",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "them-are-us-too-part-time-punks-session"
       ],
       "evidenceRecords": [
         {
@@ -2701,6 +5186,41 @@
       ]
     },
     {
+      "artistId": "bandcamp:tofiemusic",
+      "artist": "TOFIE",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "tofie-dance-of-the-spiritwild"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:toxickunt",
       "artist": "Toxic Künt",
       "classification": "LOCATION_UNKNOWN",
@@ -2720,6 +5240,76 @@
       "playableTrackCount": 3,
       "aquariumSlugs": [
         "toxic-kunt-all-this-piss-ep"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:tsohgeht",
+      "artist": "Tsohgeht",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 12,
+      "aquariumSlugs": [
+        "tsohgeht-i-got-nothing-to-lose"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:twen",
+      "artist": "twen",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 10,
+      "aquariumSlugs": [
+        "twen-fate-euphoric"
       ],
       "evidenceRecords": [
         {
@@ -2771,6 +5361,146 @@
       ]
     },
     {
+      "artistId": "bandcamp:umbre-music",
+      "artist": "umbre",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 3,
+      "aquariumSlugs": [
+        "umbre-lazy-river"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:vavavol",
+      "artist": "Vava Vol",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 7,
+      "aquariumSlugs": [
+        "vava-vol-euphonious-noise-vol-4"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:veilburnerband",
+      "artist": "VEILBURNER",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 9,
+      "aquariumSlugs": [
+        "veilburner-all-that-glimmers-is-gloam"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:verdinbrothers",
+      "artist": "Verdin Brothers",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 9,
+      "aquariumSlugs": [
+        "verdin-brothers-the-crooked-serpent"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:weareaeria",
       "artist": "ÆRIA",
       "classification": "LOCATION_UNKNOWN",
@@ -2806,6 +5536,112 @@
       ]
     },
     {
+      "artistId": "bandcamp:wepyrrhicconquerors",
+      "artist": "We Pyrrhic Conquerors",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 7,
+      "aquariumSlugs": [
+        "we-pyrrhic-conquerors-how-to-murder-the-world"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:wettuna",
+      "artist": "WET TUNA",
+      "classification": "MELBOURNE_POSSIBLE",
+      "locationConfidence": "MEDIUM",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": "Vermont",
+      "city": "Melbourne",
+      "suburb": "Vermont",
+      "locality": "Vermont",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": "Whitehorse",
+      "locationSource": "manifest.primaryLocation+Vicmap",
+      "locationEvidence": "Locality name is within Metropolitan Melbourne but country/state is absent or ambiguous.",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "wet-tuna-get-on-the-busted"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_POSSIBLE",
+          "confidence": "MEDIUM",
+          "rawLocation": "Vermont",
+          "locality": "Vermont",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "lga": "Whitehorse",
+          "source": "manifest.primaryLocation+Vicmap",
+          "evidence": "Locality name is within Metropolitan Melbourne but country/state is absent or ambiguous."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:windinsea",
+      "artist": "Windin Sea",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 1,
+      "aquariumSlugs": [
+        "windin-sea-024-she-tied-my-boat-to-the-north-star-lest-a-nightmare-shoul"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
       "artistId": "bandcamp:worldwidewebiskonstantine",
       "artist": "Webkon™",
       "classification": "LOCATION_UNKNOWN",
@@ -2825,6 +5661,111 @@
       "playableTrackCount": 13,
       "aquariumSlugs": [
         "webkontm-p-l-a-c-i-d-a-q-u-a-t-i-c-s"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:wraithstorm",
+      "artist": "Wraithstorm",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 11,
+      "aquariumSlugs": [
+        "wraithstorm-revenant"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "LOCATION_UNKNOWN",
+          "confidence": "UNKNOWN",
+          "rawLocation": null,
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": null,
+          "source": null,
+          "evidence": "No stored location evidence."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:ylhooi",
+      "artist": "YL Hooi",
+      "classification": "MELBOURNE_POSSIBLE",
+      "locationConfidence": "LOW",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": "Australia",
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne.",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "yl-hooi-running-around-83"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_POSSIBLE",
+          "confidence": "LOW",
+          "rawLocation": "Australia",
+          "locality": null,
+          "city": null,
+          "region": null,
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Australia/Victoria alone is insufficient proof of Greater Melbourne."
+        }
+      ]
+    },
+    {
+      "artistId": "bandcamp:zodameta",
+      "artist": "zodameta",
+      "classification": "LOCATION_UNKNOWN",
+      "locationConfidence": "UNKNOWN",
+      "universeMembership": [],
+      "eligible": false,
+      "rawLocation": null,
+      "city": null,
+      "suburb": null,
+      "locality": null,
+      "region": null,
+      "country": null,
+      "lga": null,
+      "locationSource": null,
+      "locationEvidence": "No stored location evidence.",
+      "releaseCount": 1,
+      "playableTrackCount": 7,
+      "aquariumSlugs": [
+        "zodameta-same-waveslength"
       ],
       "evidenceRecords": [
         {

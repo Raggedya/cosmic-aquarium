@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "slug": "komune-steppin-out",
+  "artist": "KÖMUNE",
+  "bandcampUrl": "https://komune.bandcamp.com/album/steppin-out",
+  "releaseTitle": "Steppin' Out",
+  "releaseDate": "2026-03-24 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "Melbourne",
+    "alternative",
+    "doom pop",
+    "electronic",
+    "experimental",
+    "industrial",
+    "noise rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "If Concrete Serpentine fails in its attempt to complete the mirror stage, the second release, Joe Jackson’s Steppin’ Out (1982), recuperates energy to sling another feedback…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://komune.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:03:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "steppin-out",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "steppin-out-3933471290",
+      "title": "Steppin' Out",
+      "artist": "KÖMUNE",
+      "albumTitle": "Steppin' Out",
+      "albumKey": "steppin-out",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://komune.bandcamp.com/track/steppin-out",
+      "bandcampEmbedTrackId": "3933471290",
+      "sourcePage": "https://komune.bandcamp.com/album/steppin-out",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:43.403582+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "komune.bandcamp.com",
+    "bandcampBandId": "2527573541",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://komune.bandcamp.com/album/steppin-out",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:03:43.403582+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

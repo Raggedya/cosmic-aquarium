@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "slug": "sex-mask-sex-mask",
+  "artist": "Sex Mask",
+  "bandcampUrl": "https://sexmask.bandcamp.com/album/sex-mask",
+  "releaseTitle": "Sex Mask",
+  "releaseDate": "2026-08-20 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "indie-rock",
+    "Melbourne",
+    "punk",
+    "alternative rock",
+    "indie rock",
+    "post-punk"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Sex Mask — indie-rock / Melbourne / punk music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sexmask.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:10:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sex-mask",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sex-mask-2425426285",
+      "title": "Raid",
+      "artist": "Sex Mask",
+      "albumTitle": "Sex Mask",
+      "albumKey": "sex-mask",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sexmask.bandcamp.com/track/raid",
+      "bandcampEmbedTrackId": "2425426285",
+      "sourcePage": "https://sexmask.bandcamp.com/album/sex-mask",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sex-mask-36035417",
+      "title": "Sweat",
+      "artist": "Sex Mask",
+      "albumTitle": "Sex Mask",
+      "albumKey": "sex-mask",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sexmask.bandcamp.com/track/sweat",
+      "bandcampEmbedTrackId": "36035417",
+      "sourcePage": "https://sexmask.bandcamp.com/album/sex-mask",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "sex-mask-1247676629",
+      "title": "Lockjaw",
+      "artist": "Sex Mask",
+      "albumTitle": "Sex Mask",
+      "albumKey": "sex-mask",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:55",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sexmask.bandcamp.com/track/lockjaw",
+      "bandcampEmbedTrackId": "1247676629",
+      "sourcePage": "https://sexmask.bandcamp.com/album/sex-mask",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "sex-mask-3217408993",
+      "title": "Drug Reference",
+      "artist": "Sex Mask",
+      "albumTitle": "Sex Mask",
+      "albumKey": "sex-mask",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:40",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sexmask.bandcamp.com/track/drug-reference",
+      "bandcampEmbedTrackId": "3217408993",
+      "sourcePage": "https://sexmask.bandcamp.com/album/sex-mask",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "sex-mask-678718174",
+      "title": "TYFU",
+      "artist": "Sex Mask",
+      "albumTitle": "Sex Mask",
+      "albumKey": "sex-mask",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "3:05",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sexmask.bandcamp.com/track/tyfu",
+      "bandcampEmbedTrackId": "678718174",
+      "sourcePage": "https://sexmask.bandcamp.com/album/sex-mask",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:10:45.914461+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sexmask.bandcamp.com",
+    "bandcampBandId": "2644586448",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sexmask.bandcamp.com/album/sex-mask",
+    "discoveredAt": "2026-09-06T05:51:42.978068+00:00",
+    "importedAt": "2026-09-06T06:10:45.914461+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

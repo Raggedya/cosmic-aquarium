@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "slug": "burn-the-memory-goodbyes-are-the-hardest",
+  "artist": "burn the memory",
+  "bandcampUrl": "https://burnthememory.bandcamp.com/album/goodbyes-are-the-hardest",
+  "releaseTitle": "goodbyes are the hardest",
+  "releaseDate": "2026-07-27 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "Melbourne",
+    "alternative",
+    "chudcore",
+    "indie",
+    "melbourne",
+    "music stuff"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "burn the memory — slowcore / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://burnthememory.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:54:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "goodbyes-are-the-hardest",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "goodbyes-are-the-hardest-1050916509",
+      "title": "prayer (demo)",
+      "artist": "burn the memory",
+      "albumTitle": "goodbyes are the hardest",
+      "albumKey": "goodbyes-are-the-hardest",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://burnthememory.bandcamp.com/track/prayer-demo",
+      "bandcampEmbedTrackId": "1050916509",
+      "sourcePage": "https://burnthememory.bandcamp.com/album/goodbyes-are-the-hardest",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "goodbyes-are-the-hardest-3438788890",
+      "title": "goodbyes are the hardest (demo)",
+      "artist": "burn the memory",
+      "albumTitle": "goodbyes are the hardest",
+      "albumKey": "goodbyes-are-the-hardest",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://burnthememory.bandcamp.com/track/goodbyes-are-the-hardest-demo",
+      "bandcampEmbedTrackId": "3438788890",
+      "sourcePage": "https://burnthememory.bandcamp.com/album/goodbyes-are-the-hardest",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:54:19.893914+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "burnthememory.bandcamp.com",
+    "bandcampBandId": "2568100624",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://burnthememory.bandcamp.com/album/goodbyes-are-the-hardest",
+    "discoveredAt": "2026-09-06T05:51:42.949684+00:00",
+    "importedAt": "2026-09-06T05:54:19.893914+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "slug": "eden-burns-big-beat-manifesto-vol-ii",
+  "artist": "Eden Burns",
+  "bandcampUrl": "https://edenburns.bandcamp.com/album/big-beat-manifesto-vol-ii",
+  "releaseTitle": "Big Beat Manifesto Vol. II",
+  "releaseDate": "2021-02-12 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dance",
+    "Melbourne",
+    "electronic",
+    "big beat",
+    "club",
+    "house",
+    "party",
+    "rave"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Big Beat Manifesto is echoing across the globe, gaining followers by the minute. Join the tribe & to help spread the message of the Big Beat! „Beat moves feet. Feet do dance…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "dark",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://edenburns.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:03:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "big-beat-manifesto-vol-ii",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "big-beat-manifesto-vol-ii-18332043",
+      "title": "Invercargill",
+      "artist": "Eden Burns",
+      "albumTitle": "Big Beat Manifesto Vol. II",
+      "albumKey": "big-beat-manifesto-vol-ii",
+      "year": 2021,
+      "trackNumber": 1,
+      "duration": "6:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://edenburns.bandcamp.com/track/invercargill",
+      "bandcampEmbedTrackId": "18332043",
+      "sourcePage": "https://edenburns.bandcamp.com/album/big-beat-manifesto-vol-ii",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "big-beat-manifesto-vol-ii-1318212626",
+      "title": "Intro Manus",
+      "artist": "Eden Burns",
+      "albumTitle": "Big Beat Manifesto Vol. II",
+      "albumKey": "big-beat-manifesto-vol-ii",
+      "year": 2021,
+      "trackNumber": 2,
+      "duration": "3:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://edenburns.bandcamp.com/track/intro-manus",
+      "bandcampEmbedTrackId": "1318212626",
+      "sourcePage": "https://edenburns.bandcamp.com/album/big-beat-manifesto-vol-ii",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "big-beat-manifesto-vol-ii-1783892280",
+      "title": "22 Dance Demo",
+      "artist": "Eden Burns",
+      "albumTitle": "Big Beat Manifesto Vol. II",
+      "albumKey": "big-beat-manifesto-vol-ii",
+      "year": 2021,
+      "trackNumber": 3,
+      "duration": "7:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://edenburns.bandcamp.com/track/22-dance-demo",
+      "bandcampEmbedTrackId": "1783892280",
+      "sourcePage": "https://edenburns.bandcamp.com/album/big-beat-manifesto-vol-ii",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "big-beat-manifesto-vol-ii-1958784694",
+      "title": "Yes You Sexy",
+      "artist": "Eden Burns",
+      "albumTitle": "Big Beat Manifesto Vol. II",
+      "albumKey": "big-beat-manifesto-vol-ii",
+      "year": 2021,
+      "trackNumber": 4,
+      "duration": "5:21",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://edenburns.bandcamp.com/track/yes-you-sexy",
+      "bandcampEmbedTrackId": "1958784694",
+      "sourcePage": "https://edenburns.bandcamp.com/album/big-beat-manifesto-vol-ii",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:21.413248+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "edenburns.bandcamp.com",
+    "bandcampBandId": "914325736",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://edenburns.bandcamp.com/album/big-beat-manifesto-vol-ii",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:03:21.413248+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

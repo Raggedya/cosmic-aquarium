@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "8link8-ekofisk",
+  "artist": "8link8",
+  "bandcampUrl": "https://8link8.bandcamp.com/album/ekofisk",
+  "releaseTitle": "Ekofisk",
+  "releaseDate": "2026-04-09 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "ambient",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "8link8 — ambient / Melbourne music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://8link8.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:57:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ekofisk",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ekofisk-490777491",
+      "title": "Saltire Alpha",
+      "artist": "8link8",
+      "albumTitle": "Ekofisk",
+      "albumKey": "ekofisk",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://8link8.bandcamp.com/track/saltire-alpha",
+      "bandcampEmbedTrackId": "490777491",
+      "sourcePage": "https://8link8.bandcamp.com/album/ekofisk",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ekofisk-1791095551",
+      "title": "Piper B",
+      "artist": "8link8",
+      "albumTitle": "Ekofisk",
+      "albumKey": "ekofisk",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://8link8.bandcamp.com/track/piper-b",
+      "bandcampEmbedTrackId": "1791095551",
+      "sourcePage": "https://8link8.bandcamp.com/album/ekofisk",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ekofisk-2892174334",
+      "title": "Sedco 703",
+      "artist": "8link8",
+      "albumTitle": "Ekofisk",
+      "albumKey": "ekofisk",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:17",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://8link8.bandcamp.com/track/sedco-703",
+      "bandcampEmbedTrackId": "2892174334",
+      "sourcePage": "https://8link8.bandcamp.com/album/ekofisk",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ekofisk-2974750583",
+      "title": "Troll A",
+      "artist": "8link8",
+      "albumTitle": "Ekofisk",
+      "albumKey": "ekofisk",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:17",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://8link8.bandcamp.com/track/troll-a",
+      "bandcampEmbedTrackId": "2974750583",
+      "sourcePage": "https://8link8.bandcamp.com/album/ekofisk",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:57:40.618869+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "8link8.bandcamp.com",
+    "bandcampBandId": "3313922924",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://8link8.bandcamp.com/album/ekofisk",
+    "discoveredAt": "2026-09-06T05:51:42.954187+00:00",
+    "importedAt": "2026-09-06T05:57:40.618869+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

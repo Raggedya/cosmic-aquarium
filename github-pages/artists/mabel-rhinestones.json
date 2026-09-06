@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "mabel-rhinestones",
+  "artist": "Mabel",
+  "bandcampUrl": "https://mabelmabel.bandcamp.com/album/rhinestones",
+  "releaseTitle": "Rhinestones",
+  "releaseDate": "2026-07-24 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "techno",
+    "Melbourne",
+    "acid",
+    "electronic",
+    "hard house",
+    "progressive house"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Mabel debuts on Butter Sessions with Rhinestones, a collection of pounding progressive house excursions that lean into the deep end. Balancing blissful nostalgia with a sharp…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mabelmabel.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:09:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rhinestones",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rhinestones-3660589302",
+      "title": "This Dog Goes Subwoof",
+      "artist": "Mabel",
+      "albumTitle": "Rhinestones",
+      "albumKey": "rhinestones",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mabelmabel.bandcamp.com/track/this-dog-goes-subwoof",
+      "bandcampEmbedTrackId": "3660589302",
+      "sourcePage": "https://mabelmabel.bandcamp.com/album/rhinestones",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "rhinestones-1442781542",
+      "title": "Sleaze",
+      "artist": "Mabel",
+      "albumTitle": "Rhinestones",
+      "albumKey": "rhinestones",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mabelmabel.bandcamp.com/track/sleaze",
+      "bandcampEmbedTrackId": "1442781542",
+      "sourcePage": "https://mabelmabel.bandcamp.com/album/rhinestones",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "rhinestones-1702950230",
+      "title": "Rhinestones",
+      "artist": "Mabel",
+      "albumTitle": "Rhinestones",
+      "albumKey": "rhinestones",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:18",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mabelmabel.bandcamp.com/track/rhinestones",
+      "bandcampEmbedTrackId": "1702950230",
+      "sourcePage": "https://mabelmabel.bandcamp.com/album/rhinestones",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "rhinestones-1529147529",
+      "title": "Hummingbird",
+      "artist": "Mabel",
+      "albumTitle": "Rhinestones",
+      "albumKey": "rhinestones",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:59",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mabelmabel.bandcamp.com/track/hummingbird",
+      "bandcampEmbedTrackId": "1529147529",
+      "sourcePage": "https://mabelmabel.bandcamp.com/album/rhinestones",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:09:59.744848+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mabelmabel.bandcamp.com",
+    "bandcampBandId": "3805885197",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mabelmabel.bandcamp.com/album/rhinestones",
+    "discoveredAt": "2026-09-06T05:51:42.977066+00:00",
+    "importedAt": "2026-09-06T06:09:59.744848+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

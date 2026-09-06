@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "slug": "purient-wbwu",
+  "artist": "Purient",
+  "bandcampUrl": "https://purient.bandcamp.com/album/wbwu-3",
+  "releaseTitle": "WBWU",
+  "releaseDate": "2022-05-11 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "ebm",
+    "Melbourne",
+    "electronic",
+    "dance",
+    "dance pop",
+    "experimental"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Purient — ebm / Melbourne / electronic music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://purient.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:06:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "wbwu",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "wbwu-426654304",
+      "title": "WBWU",
+      "artist": "Purient",
+      "albumTitle": "WBWU",
+      "albumKey": "wbwu",
+      "year": 2022,
+      "trackNumber": 1,
+      "duration": "3:19",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://purient.bandcamp.com/track/wbwu",
+      "bandcampEmbedTrackId": "426654304",
+      "sourcePage": "https://purient.bandcamp.com/album/wbwu-3",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "wbwu-38411718",
+      "title": "A Great Strength",
+      "artist": "Purient",
+      "albumTitle": "WBWU",
+      "albumKey": "wbwu",
+      "year": 2022,
+      "trackNumber": 2,
+      "duration": "3:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://purient.bandcamp.com/track/a-great-strength",
+      "bandcampEmbedTrackId": "38411718",
+      "sourcePage": "https://purient.bandcamp.com/album/wbwu-3",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "wbwu-2749366153",
+      "title": "Lucidity",
+      "artist": "Purient",
+      "albumTitle": "WBWU",
+      "albumKey": "wbwu",
+      "year": 2022,
+      "trackNumber": 3,
+      "duration": "4:10",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://purient.bandcamp.com/track/lucidity",
+      "bandcampEmbedTrackId": "2749366153",
+      "sourcePage": "https://purient.bandcamp.com/album/wbwu-3",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:06:49.226733+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "purient.bandcamp.com",
+    "bandcampBandId": "1754946912",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://purient.bandcamp.com/album/wbwu-3",
+    "discoveredAt": "2026-09-06T05:51:42.970047+00:00",
+    "importedAt": "2026-09-06T06:06:49.226733+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

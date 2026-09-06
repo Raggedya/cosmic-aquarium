@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-world-at-a-glance-spatial-proximity-ep",
+  "artist": "The World At A Glance",
+  "bandcampUrl": "https://worldataglance.bandcamp.com/album/spatial-proximity-ep",
+  "releaseTitle": "Spatial Proximity EP",
+  "releaseDate": "2012-10-04 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "Melbourne",
+    "art punk",
+    "emo",
+    "noise punk",
+    "post metal",
+    "punk",
+    "screamo"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "The World At A Glance — post-metal / Melbourne / art punk music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://worldataglance.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:00:54Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "spatial-proximity-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "spatial-proximity-ep-3060620021",
+      "title": "Re-Birth",
+      "artist": "The World At A Glance",
+      "albumTitle": "Spatial Proximity EP",
+      "albumKey": "spatial-proximity-ep",
+      "year": 2012,
+      "trackNumber": 1,
+      "duration": "2:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://worldataglance.bandcamp.com/track/re-birth",
+      "bandcampEmbedTrackId": "3060620021",
+      "sourcePage": "https://worldataglance.bandcamp.com/album/spatial-proximity-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "spatial-proximity-ep-3989941580",
+      "title": "Cloud Gate",
+      "artist": "The World At A Glance",
+      "albumTitle": "Spatial Proximity EP",
+      "albumKey": "spatial-proximity-ep",
+      "year": 2012,
+      "trackNumber": 2,
+      "duration": "1:07",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://worldataglance.bandcamp.com/track/cloud-gate",
+      "bandcampEmbedTrackId": "3989941580",
+      "sourcePage": "https://worldataglance.bandcamp.com/album/spatial-proximity-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "spatial-proximity-ep-3537422412",
+      "title": "West Tipping it's Hat to the East",
+      "artist": "The World At A Glance",
+      "albumTitle": "Spatial Proximity EP",
+      "albumKey": "spatial-proximity-ep",
+      "year": 2012,
+      "trackNumber": 3,
+      "duration": "1:42",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://worldataglance.bandcamp.com/track/west-tipping-its-hat-to-the-east",
+      "bandcampEmbedTrackId": "3537422412",
+      "sourcePage": "https://worldataglance.bandcamp.com/album/spatial-proximity-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:00:54.284519+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "worldataglance.bandcamp.com",
+    "bandcampBandId": "358220914",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://worldataglance.bandcamp.com/album/spatial-proximity-ep",
+    "discoveredAt": "2026-09-06T05:51:42.958701+00:00",
+    "importedAt": "2026-09-06T06:00:54.284519+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

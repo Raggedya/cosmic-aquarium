@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "slug": "no-zu-heat-beat",
+  "artist": "NO ZU",
+  "bandcampUrl": "https://nozu.bandcamp.com/album/heat-beat",
+  "releaseTitle": "Heat Beat",
+  "releaseDate": "2022-11-18 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dance",
+    "Melbourne",
+    "funk",
+    "experimental",
+    "heatbeat",
+    "post punk"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Melbourne \"heat beat\" icons NO ZU regroup after the passing of vocalist Daphne Camf, to release their first new original music since 2016. NO ZU have stormed stages from…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nozu.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:10:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "heat-beat",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "heat-beat-2304142071",
+      "title": "Liquid Love",
+      "artist": "NO ZU",
+      "albumTitle": "Heat Beat",
+      "albumKey": "heat-beat",
+      "year": 2022,
+      "trackNumber": 1,
+      "duration": "5:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nozu.bandcamp.com/track/liquid-love",
+      "bandcampEmbedTrackId": "2304142071",
+      "sourcePage": "https://nozu.bandcamp.com/album/heat-beat",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "heat-beat-2431759315",
+      "title": "Mind Melt",
+      "artist": "NO ZU",
+      "albumTitle": "Heat Beat",
+      "albumKey": "heat-beat",
+      "year": 2022,
+      "trackNumber": 2,
+      "duration": "5:11",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nozu.bandcamp.com/track/mind-melt",
+      "bandcampEmbedTrackId": "2431759315",
+      "sourcePage": "https://nozu.bandcamp.com/album/heat-beat",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "heat-beat-2882838501",
+      "title": "Cosmetic Beat",
+      "artist": "NO ZU",
+      "albumTitle": "Heat Beat",
+      "albumKey": "heat-beat",
+      "year": 2022,
+      "trackNumber": 3,
+      "duration": "6:47",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nozu.bandcamp.com/track/cosmetic-beat",
+      "bandcampEmbedTrackId": "2882838501",
+      "sourcePage": "https://nozu.bandcamp.com/album/heat-beat",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "heat-beat-2869329585",
+      "title": "Heat Beat Head",
+      "artist": "NO ZU",
+      "albumTitle": "Heat Beat",
+      "albumKey": "heat-beat",
+      "year": 2022,
+      "trackNumber": 4,
+      "duration": "5:56",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nozu.bandcamp.com/track/heat-beat-head",
+      "bandcampEmbedTrackId": "2869329585",
+      "sourcePage": "https://nozu.bandcamp.com/album/heat-beat",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "heat-beat-1704302948",
+      "title": "Phone Call Meltdown",
+      "artist": "NO ZU",
+      "albumTitle": "Heat Beat",
+      "albumKey": "heat-beat",
+      "year": 2022,
+      "trackNumber": 5,
+      "duration": "1:57",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nozu.bandcamp.com/track/phone-call-meltdown",
+      "bandcampEmbedTrackId": "1704302948",
+      "sourcePage": "https://nozu.bandcamp.com/album/heat-beat",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:10:04.425779+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nozu.bandcamp.com",
+    "bandcampBandId": "3466517008",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nozu.bandcamp.com/album/heat-beat",
+    "discoveredAt": "2026-09-06T05:51:42.977066+00:00",
+    "importedAt": "2026-09-06T06:10:04.425779+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

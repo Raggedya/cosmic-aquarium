@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "slug": "celltowers-hi-speed-hi-five",
+  "artist": "celltowers",
+  "bandcampUrl": "https://celltowers.bandcamp.com/album/hi-speed-hi-five-2",
+  "releaseTitle": "hi-speed hi-five",
+  "releaseDate": "2026-06-19 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "Melbourne",
+    "alternative",
+    "punk",
+    "rock",
+    "alternative rock",
+    "indie",
+    "indie rock",
+    "post-punk"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "hi-speed hi-five is an amalgamation of post-punk, indie, and alternative rock. Spanning over 4 tracks, it is a more focused look into celltowers sound and ever evolving sonics.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://celltowers.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:26:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hi-speed-hi-five",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hi-speed-hi-five-1554225570",
+      "title": "lite blu",
+      "artist": "celltowers",
+      "albumTitle": "hi-speed hi-five",
+      "albumKey": "hi-speed-hi-five",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://celltowers.bandcamp.com/track/lite-blu-2",
+      "bandcampEmbedTrackId": "1554225570",
+      "sourcePage": "https://celltowers.bandcamp.com/album/hi-speed-hi-five-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hi-speed-hi-five-2136275673",
+      "title": "lizard of leisure",
+      "artist": "celltowers",
+      "albumTitle": "hi-speed hi-five",
+      "albumKey": "hi-speed-hi-five",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://celltowers.bandcamp.com/track/lizard-of-leisure-3",
+      "bandcampEmbedTrackId": "2136275673",
+      "sourcePage": "https://celltowers.bandcamp.com/album/hi-speed-hi-five-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "hi-speed-hi-five-937704738",
+      "title": "mush",
+      "artist": "celltowers",
+      "albumTitle": "hi-speed hi-five",
+      "albumKey": "hi-speed-hi-five",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:32",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://celltowers.bandcamp.com/track/mush",
+      "bandcampEmbedTrackId": "937704738",
+      "sourcePage": "https://celltowers.bandcamp.com/album/hi-speed-hi-five-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "hi-speed-hi-five-727464360",
+      "title": "transmitter",
+      "artist": "celltowers",
+      "albumTitle": "hi-speed hi-five",
+      "albumKey": "hi-speed-hi-five",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:50",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://celltowers.bandcamp.com/track/transmitter",
+      "bandcampEmbedTrackId": "727464360",
+      "sourcePage": "https://celltowers.bandcamp.com/album/hi-speed-hi-five-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:26:38.757977+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "celltowers.bandcamp.com",
+    "bandcampBandId": "326879536",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://celltowers.bandcamp.com/album/hi-speed-hi-five-2",
+    "discoveredAt": "2026-09-06T05:51:42.979069+00:00",
+    "importedAt": "2026-09-06T06:26:38.757977+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

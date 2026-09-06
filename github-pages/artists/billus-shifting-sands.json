@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "billus-shifting-sands",
+  "artist": "Billus",
+  "bandcampUrl": "https://billusmoon.bandcamp.com/album/shifting-sands",
+  "releaseTitle": "Shifting Sands",
+  "releaseDate": "2022-12-02 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "Melbourne",
+    "electronic",
+    "breaks",
+    "deep techno",
+    "house",
+    "tech house"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "A breath of fresh air for Animalia, as the label floats into its next release with a breezy, house tinged EP, tinged with the scent of summer and euphoria. Emerging new local…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://billusmoon.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:04:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "shifting-sands",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "shifting-sands-711307759",
+      "title": "Shifting Sands",
+      "artist": "Billus",
+      "albumTitle": "Shifting Sands",
+      "albumKey": "shifting-sands",
+      "year": 2022,
+      "trackNumber": 1,
+      "duration": "6:20",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://billusmoon.bandcamp.com/track/shifting-sands",
+      "bandcampEmbedTrackId": "711307759",
+      "sourcePage": "https://billusmoon.bandcamp.com/album/shifting-sands",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "shifting-sands-3957585200",
+      "title": "Splay",
+      "artist": "Billus",
+      "albumTitle": "Shifting Sands",
+      "albumKey": "shifting-sands",
+      "year": 2022,
+      "trackNumber": 2,
+      "duration": "6:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://billusmoon.bandcamp.com/track/splay",
+      "bandcampEmbedTrackId": "3957585200",
+      "sourcePage": "https://billusmoon.bandcamp.com/album/shifting-sands",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "shifting-sands-2505327398",
+      "title": "Cubic",
+      "artist": "Billus",
+      "albumTitle": "Shifting Sands",
+      "albumKey": "shifting-sands",
+      "year": 2022,
+      "trackNumber": 3,
+      "duration": "6:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://billusmoon.bandcamp.com/track/cubic",
+      "bandcampEmbedTrackId": "2505327398",
+      "sourcePage": "https://billusmoon.bandcamp.com/album/shifting-sands",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "shifting-sands-225702217",
+      "title": "Under the Canopy",
+      "artist": "Billus",
+      "albumTitle": "Shifting Sands",
+      "albumKey": "shifting-sands",
+      "year": 2022,
+      "trackNumber": 4,
+      "duration": "5:12",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://billusmoon.bandcamp.com/track/under-the-canopy",
+      "bandcampEmbedTrackId": "225702217",
+      "sourcePage": "https://billusmoon.bandcamp.com/album/shifting-sands",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:04:43.294356+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "billusmoon.bandcamp.com",
+    "bandcampBandId": "1075028852",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://billusmoon.bandcamp.com/album/shifting-sands",
+    "discoveredAt": "2026-09-06T05:51:42.965167+00:00",
+    "importedAt": "2026-09-06T06:04:43.294356+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

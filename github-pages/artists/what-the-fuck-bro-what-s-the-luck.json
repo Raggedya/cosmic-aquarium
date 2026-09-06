@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "what-the-fuck-bro-what-s-the-luck",
+  "artist": "WHAT THE FUCK BRO!?",
+  "bandcampUrl": "https://whatthefuckbro.bandcamp.com/album/whats-the-luck",
+  "releaseTitle": "What's the Luck?",
+  "releaseDate": "2026-08-13 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "metal",
+    "Melbourne",
+    "experimental",
+    "jazz fusion",
+    "multi-genre",
+    "pop rock",
+    "rock",
+    "clean version"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "'What's the Luck?' is the second single by WHAT THE FUCK BRO!? from their debut album WHAT THE FUCK?. Released specifically as a clean version of the album's title track, it is…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://whatthefuckbro.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:00:41Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "what-s-the-luck",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "what-s-the-luck-1302496455",
+      "title": "What's the Luck",
+      "artist": "WHAT THE FUCK BRO!?",
+      "albumTitle": "What's the Luck?",
+      "albumKey": "what-s-the-luck",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://whatthefuckbro.bandcamp.com/track/whats-the-luck",
+      "bandcampEmbedTrackId": "1302496455",
+      "sourcePage": "https://whatthefuckbro.bandcamp.com/album/whats-the-luck",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "what-s-the-luck-2503286385",
+      "title": "Change for the Worse",
+      "artist": "WHAT THE FUCK BRO!?",
+      "albumTitle": "What's the Luck?",
+      "albumKey": "what-s-the-luck",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:12",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://whatthefuckbro.bandcamp.com/track/change-for-the-worse",
+      "bandcampEmbedTrackId": "2503286385",
+      "sourcePage": "https://whatthefuckbro.bandcamp.com/album/whats-the-luck",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:00:41.866616+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "whatthefuckbro.bandcamp.com",
+    "bandcampBandId": "1032119718",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://whatthefuckbro.bandcamp.com/album/whats-the-luck",
+    "discoveredAt": "2026-09-06T05:51:42.958701+00:00",
+    "importedAt": "2026-09-06T06:00:41.866616+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

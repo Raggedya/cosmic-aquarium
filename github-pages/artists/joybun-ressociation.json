@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "slug": "joybun-ressociation",
+  "artist": "joybun",
+  "bandcampUrl": "https://thejoybun.bandcamp.com/album/ressociation",
+  "releaseTitle": "ressociation",
+  "releaseDate": "2026-01-09 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "Melbourne",
+    "punk",
+    "emo",
+    "screamo",
+    "skramz"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "joybun — post-hardcore / Melbourne / punk music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thejoybun.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:53:14Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ressociation",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ressociation-3191116582",
+      "title": "grieving the relief of the angels burden",
+      "artist": "joybun",
+      "albumTitle": "ressociation",
+      "albumKey": "ressociation",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:52",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thejoybun.bandcamp.com/track/grieving-the-relief-of-the-angels-burden",
+      "bandcampEmbedTrackId": "3191116582",
+      "sourcePage": "https://thejoybun.bandcamp.com/album/ressociation",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ressociation-1059253789",
+      "title": "ignorance was bliss until ignorance was sin",
+      "artist": "joybun",
+      "albumTitle": "ressociation",
+      "albumKey": "ressociation",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thejoybun.bandcamp.com/track/ignorance-was-bliss-until-ignorance-was-sin",
+      "bandcampEmbedTrackId": "1059253789",
+      "sourcePage": "https://thejoybun.bandcamp.com/album/ressociation",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ressociation-1409850623",
+      "title": "my sprites and souls fell down and away into void",
+      "artist": "joybun",
+      "albumTitle": "ressociation",
+      "albumKey": "ressociation",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:24",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thejoybun.bandcamp.com/track/my-sprites-and-souls-fell-down-and-away-into-void",
+      "bandcampEmbedTrackId": "1409850623",
+      "sourcePage": "https://thejoybun.bandcamp.com/album/ressociation",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ressociation-240500117",
+      "title": "and i became nothing but an old dream of bluest sky now swallowed",
+      "artist": "joybun",
+      "albumTitle": "ressociation",
+      "albumKey": "ressociation",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:27",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thejoybun.bandcamp.com/track/and-i-became-nothing-but-an-old-dream-of-bluest-sky-now-swallowed",
+      "bandcampEmbedTrackId": "240500117",
+      "sourcePage": "https://thejoybun.bandcamp.com/album/ressociation",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "ressociation-1765078140",
+      "title": "but now i know and now i see the colour of the sunrise",
+      "artist": "joybun",
+      "albumTitle": "ressociation",
+      "albumKey": "ressociation",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "6:10",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thejoybun.bandcamp.com/track/but-now-i-know-and-now-i-see-the-colour-of-the-sunrise",
+      "bandcampEmbedTrackId": "1765078140",
+      "sourcePage": "https://thejoybun.bandcamp.com/album/ressociation",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:53:14.098802+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thejoybun.bandcamp.com",
+    "bandcampBandId": "770651142",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thejoybun.bandcamp.com/album/ressociation",
+    "discoveredAt": "2026-09-06T05:50:49.622899+00:00",
+    "importedAt": "2026-09-06T05:53:14.098802+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

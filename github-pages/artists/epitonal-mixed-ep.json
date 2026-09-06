@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "slug": "epitonal-mixed-ep",
+  "artist": "Epitonal",
+  "bandcampUrl": "https://epitonal.bandcamp.com/album/mixed-ep",
+  "releaseTitle": "Mixed EP",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "drum-bass",
+    "Melbourne",
+    "chillstep",
+    "drum & bass",
+    "electronic",
+    "ambient electronic",
+    "chill",
+    "deep",
+    "dnb",
+    "house",
+    "progressive"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "This isn't an EP—it's a sonic shape-shifter. Seamlessly fusing techno, drum and bass and chill sounds, this project throws out the genre playbook to create a sound that is…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "heavy",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://epitonal.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:52:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "mixed-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "mixed-ep-3027873585",
+      "title": "Opener",
+      "artist": "Epitonal",
+      "albumTitle": "Mixed EP",
+      "albumKey": "mixed-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://epitonal.bandcamp.com/track/opener",
+      "bandcampEmbedTrackId": "3027873585",
+      "sourcePage": "https://epitonal.bandcamp.com/album/mixed-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "mixed-ep-1842916120",
+      "title": "Viscosity",
+      "artist": "Epitonal",
+      "albumTitle": "Mixed EP",
+      "albumKey": "mixed-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://epitonal.bandcamp.com/track/viscosity-2",
+      "bandcampEmbedTrackId": "1842916120",
+      "sourcePage": "https://epitonal.bandcamp.com/album/mixed-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "mixed-ep-2964813792",
+      "title": "Sleeping at Noon",
+      "artist": "Epitonal",
+      "albumTitle": "Mixed EP",
+      "albumKey": "mixed-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:20",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://epitonal.bandcamp.com/track/sleeping-at-noon-2",
+      "bandcampEmbedTrackId": "2964813792",
+      "sourcePage": "https://epitonal.bandcamp.com/album/mixed-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "mixed-ep-474931947",
+      "title": "Monday",
+      "artist": "Epitonal",
+      "albumTitle": "Mixed EP",
+      "albumKey": "mixed-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:09",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://epitonal.bandcamp.com/track/monday",
+      "bandcampEmbedTrackId": "474931947",
+      "sourcePage": "https://epitonal.bandcamp.com/album/mixed-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:52:49.319260+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "epitonal.bandcamp.com",
+    "bandcampBandId": "2965219777",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://epitonal.bandcamp.com/album/mixed-ep",
+    "discoveredAt": "2026-09-06T05:50:01.759872+00:00",
+    "importedAt": "2026-09-06T05:52:49.319260+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

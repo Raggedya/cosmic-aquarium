@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "slug": "bongcleaner-bongcleaner",
+  "artist": "Bongcleaner",
+  "bandcampUrl": "https://bongcleanerdoom.bandcamp.com/album/bongcleaner-2",
+  "releaseTitle": "Bongcleaner",
+  "releaseDate": "2023-07-07 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "Melbourne",
+    "metal",
+    "doom",
+    "doom metal",
+    "sludge",
+    "stoner",
+    "stoner doom",
+    "stoner metal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Debut EP of Melbourne 3 piece stoner doom BONGCLEANER Quirky, tongue in cheek lyrics to sludgy down-tuned riffs",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bongcleanerdoom.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:07:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bongcleaner",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bongcleaner-169904206",
+      "title": "Bongcleaner",
+      "artist": "Bongcleaner",
+      "albumTitle": "Bongcleaner",
+      "albumKey": "bongcleaner",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "5:33",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bongcleanerdoom.bandcamp.com/track/bongcleaner",
+      "bandcampEmbedTrackId": "169904206",
+      "sourcePage": "https://bongcleanerdoom.bandcamp.com/album/bongcleaner-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bongcleaner-4216809029",
+      "title": "Magic Circle",
+      "artist": "Bongcleaner",
+      "albumTitle": "Bongcleaner",
+      "albumKey": "bongcleaner",
+      "year": 2023,
+      "trackNumber": 2,
+      "duration": "5:13",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bongcleanerdoom.bandcamp.com/track/magic-circle",
+      "bandcampEmbedTrackId": "4216809029",
+      "sourcePage": "https://bongcleanerdoom.bandcamp.com/album/bongcleaner-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "bongcleaner-1726468284",
+      "title": "Snow Bunny",
+      "artist": "Bongcleaner",
+      "albumTitle": "Bongcleaner",
+      "albumKey": "bongcleaner",
+      "year": 2023,
+      "trackNumber": 3,
+      "duration": "3:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bongcleanerdoom.bandcamp.com/track/snow-bunny",
+      "bandcampEmbedTrackId": "1726468284",
+      "sourcePage": "https://bongcleanerdoom.bandcamp.com/album/bongcleaner-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "bongcleaner-1346155582",
+      "title": "Bongxiety",
+      "artist": "Bongcleaner",
+      "albumTitle": "Bongcleaner",
+      "albumKey": "bongcleaner",
+      "year": 2023,
+      "trackNumber": 4,
+      "duration": "5:04",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bongcleanerdoom.bandcamp.com/track/bongxiety-2",
+      "bandcampEmbedTrackId": "1346155582",
+      "sourcePage": "https://bongcleanerdoom.bandcamp.com/album/bongcleaner-2",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "bongcleaner-3231318010",
+      "title": "Dead Seeds",
+      "artist": "Bongcleaner",
+      "albumTitle": "Bongcleaner",
+      "albumKey": "bongcleaner",
+      "year": 2023,
+      "trackNumber": 5,
+      "duration": "7:23",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bongcleanerdoom.bandcamp.com/track/dead-seeds",
+      "bandcampEmbedTrackId": "3231318010",
+      "sourcePage": "https://bongcleanerdoom.bandcamp.com/album/bongcleaner-2",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:07:40.498425+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bongcleanerdoom.bandcamp.com",
+    "bandcampBandId": "196749581",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bongcleanerdoom.bandcamp.com/album/bongcleaner-2",
+    "discoveredAt": "2026-09-06T05:51:42.972057+00:00",
+    "importedAt": "2026-09-06T06:07:40.499427+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "slug": "roy-myers-gunhawk",
+  "artist": "Roy Myers",
+  "bandcampUrl": "https://roymyers.bandcamp.com/album/gunhawk",
+  "releaseTitle": "GUNHAWK",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "jazz",
+    "Melbourne",
+    "alternative",
+    "hip-hop",
+    "rap",
+    "cinematic soundscape",
+    "hiphop instrumental",
+    "modern"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "GUNHAWK by Phil Gektor and Roy Myers is Roy's second EP. Roy produced each beat by remixing his first EP - Take All My Loves: A Sonic Film. Phil Gektor graced this…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://roymyers.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:59:41Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "gunhawk",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "gunhawk-3105430239",
+      "title": "GUNHAWK",
+      "artist": "Roy Myers",
+      "albumTitle": "GUNHAWK",
+      "albumKey": "gunhawk",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:18",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://roymyers.bandcamp.com/track/gunhawk",
+      "bandcampEmbedTrackId": "3105430239",
+      "sourcePage": "https://roymyers.bandcamp.com/album/gunhawk",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "gunhawk-732040810",
+      "title": "VENGEANCE",
+      "artist": "Roy Myers",
+      "albumTitle": "GUNHAWK",
+      "albumKey": "gunhawk",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://roymyers.bandcamp.com/track/vengeance",
+      "bandcampEmbedTrackId": "732040810",
+      "sourcePage": "https://roymyers.bandcamp.com/album/gunhawk",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "gunhawk-126952679",
+      "title": "E-BIKE",
+      "artist": "Roy Myers",
+      "albumTitle": "GUNHAWK",
+      "albumKey": "gunhawk",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://roymyers.bandcamp.com/track/e-bike",
+      "bandcampEmbedTrackId": "126952679",
+      "sourcePage": "https://roymyers.bandcamp.com/album/gunhawk",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "gunhawk-2639242911",
+      "title": "PPPPPARTY",
+      "artist": "Roy Myers",
+      "albumTitle": "GUNHAWK",
+      "albumKey": "gunhawk",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:23",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://roymyers.bandcamp.com/track/ppppparty",
+      "bandcampEmbedTrackId": "2639242911",
+      "sourcePage": "https://roymyers.bandcamp.com/album/gunhawk",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:59:41.960827+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "roymyers.bandcamp.com",
+    "bandcampBandId": "2310229622",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://roymyers.bandcamp.com/album/gunhawk",
+    "discoveredAt": "2026-09-06T05:51:42.956695+00:00",
+    "importedAt": "2026-09-06T05:59:41.960827+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

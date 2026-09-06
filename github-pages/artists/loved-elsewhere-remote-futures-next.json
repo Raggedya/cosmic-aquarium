@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "slug": "loved-elsewhere-remote-futures-next",
+  "artist": "Loved Elsewhere",
+  "bandcampUrl": "https://lovedelsewhere.bandcamp.com/album/remote-futures-next",
+  "releaseTitle": "Remote Futures Next",
+  "releaseDate": "2025-07-26 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "Melbourne",
+    "electronic",
+    "ambient electronic",
+    "cinematic",
+    "electronica",
+    "experimental electronic"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Loved Elsewhere — coldwave / Melbourne / electronic music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lovedelsewhere.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:03:35Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "remote-futures-next",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "remote-futures-next-2850522164",
+      "title": "Vision Obscure",
+      "artist": "Loved Elsewhere",
+      "albumTitle": "Remote Futures Next",
+      "albumKey": "remote-futures-next",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "6:19",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovedelsewhere.bandcamp.com/track/vision-obscure",
+      "bandcampEmbedTrackId": "2850522164",
+      "sourcePage": "https://lovedelsewhere.bandcamp.com/album/remote-futures-next",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "remote-futures-next-290118060",
+      "title": "Sa",
+      "artist": "Loved Elsewhere",
+      "albumTitle": "Remote Futures Next",
+      "albumKey": "remote-futures-next",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "7:47",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovedelsewhere.bandcamp.com/track/sa",
+      "bandcampEmbedTrackId": "290118060",
+      "sourcePage": "https://lovedelsewhere.bandcamp.com/album/remote-futures-next",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "remote-futures-next-518644646",
+      "title": "Memory Transfer",
+      "artist": "Loved Elsewhere",
+      "albumTitle": "Remote Futures Next",
+      "albumKey": "remote-futures-next",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "4:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovedelsewhere.bandcamp.com/track/memory-transfer",
+      "bandcampEmbedTrackId": "518644646",
+      "sourcePage": "https://lovedelsewhere.bandcamp.com/album/remote-futures-next",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "remote-futures-next-1993317931",
+      "title": "Sit Quietly Watch It Happen",
+      "artist": "Loved Elsewhere",
+      "albumTitle": "Remote Futures Next",
+      "albumKey": "remote-futures-next",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "7:59",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovedelsewhere.bandcamp.com/track/sit-quietly-watch-it-happen",
+      "bandcampEmbedTrackId": "1993317931",
+      "sourcePage": "https://lovedelsewhere.bandcamp.com/album/remote-futures-next",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "remote-futures-next-269145666",
+      "title": "Outsiders Lament",
+      "artist": "Loved Elsewhere",
+      "albumTitle": "Remote Futures Next",
+      "albumKey": "remote-futures-next",
+      "year": 2025,
+      "trackNumber": 5,
+      "duration": "4:41",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovedelsewhere.bandcamp.com/track/outsiders-lament",
+      "bandcampEmbedTrackId": "269145666",
+      "sourcePage": "https://lovedelsewhere.bandcamp.com/album/remote-futures-next",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:03:35.644153+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lovedelsewhere.bandcamp.com",
+    "bandcampBandId": "1498725820",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lovedelsewhere.bandcamp.com/album/remote-futures-next",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:03:35.644153+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "slug": "airwolf-paradise-din-da-da-ft-kevin-aviance-dj-gomi",
+  "artist": "Airwolf Paradise",
+  "bandcampUrl": "https://airwolfparadise.bandcamp.com/album/din-da-da-ft-kevin-aviance-dj-gomi",
+  "releaseTitle": "Din Da Da (ft. Kevin Aviance & DJ Gomi)",
+  "releaseDate": "2026-01-23 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dance",
+    "Melbourne",
+    "edm",
+    "electronic",
+    "hard groove",
+    "hard house",
+    "house",
+    "tech house",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Released on Southern Fried Records",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://airwolfparadise.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:58:03Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "din-da-da-ft-kevin-aviance-dj-gomi",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "din-da-da-ft-kevin-aviance-dj-gomi-2743978942",
+      "title": "Din Da Da [Extended Mix]",
+      "artist": "Airwolf Paradise",
+      "albumTitle": "Din Da Da (ft. Kevin Aviance & DJ Gomi)",
+      "albumKey": "din-da-da-ft-kevin-aviance-dj-gomi",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://airwolfparadise.bandcamp.com/track/din-da-da-extended-mix",
+      "bandcampEmbedTrackId": "2743978942",
+      "sourcePage": "https://airwolfparadise.bandcamp.com/album/din-da-da-ft-kevin-aviance-dj-gomi",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:58:03.835983+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "airwolfparadise.bandcamp.com",
+    "bandcampBandId": "340225679",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://airwolfparadise.bandcamp.com/album/din-da-da-ft-kevin-aviance-dj-gomi",
+    "discoveredAt": "2026-09-06T05:51:42.954187+00:00",
+    "importedAt": "2026-09-06T05:58:03.835983+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

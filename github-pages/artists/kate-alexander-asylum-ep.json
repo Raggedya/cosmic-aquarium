@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "slug": "kate-alexander-asylum-ep",
+  "artist": "Kate Alexander",
+  "bandcampUrl": "https://katealexander.bandcamp.com/album/asylum-ep",
+  "releaseTitle": "Asylum EP",
+  "releaseDate": "2015-03-30 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "Melbourne",
+    "alternative",
+    "australia",
+    "melbourne",
+    "brunswick",
+    "dark jangle",
+    "electric",
+    "guitar",
+    "pop",
+    "rock",
+    "singer-songwriter"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Kate Alexander: Guitar & Vocals Giles Warren: Guitar, vocals & bass All tracks by Kate Alexander Arrangements by Kate Alexander and Giles Warren Recorded, produced & mixed by…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://katealexander.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:08:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "asylum-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "asylum-ep-2379468461",
+      "title": "Asylum",
+      "artist": "Kate Alexander",
+      "albumTitle": "Asylum EP",
+      "albumKey": "asylum-ep",
+      "year": 2015,
+      "trackNumber": 1,
+      "duration": "3:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://katealexander.bandcamp.com/track/asylum",
+      "bandcampEmbedTrackId": "2379468461",
+      "sourcePage": "https://katealexander.bandcamp.com/album/asylum-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "asylum-ep-2618387597",
+      "title": "Puppet",
+      "artist": "Kate Alexander",
+      "albumTitle": "Asylum EP",
+      "albumKey": "asylum-ep",
+      "year": 2015,
+      "trackNumber": 2,
+      "duration": "4:19",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://katealexander.bandcamp.com/track/puppet",
+      "bandcampEmbedTrackId": "2618387597",
+      "sourcePage": "https://katealexander.bandcamp.com/album/asylum-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "asylum-ep-1990214305",
+      "title": "Aliens",
+      "artist": "Kate Alexander",
+      "albumTitle": "Asylum EP",
+      "albumKey": "asylum-ep",
+      "year": 2015,
+      "trackNumber": 3,
+      "duration": "5:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://katealexander.bandcamp.com/track/aliens",
+      "bandcampEmbedTrackId": "1990214305",
+      "sourcePage": "https://katealexander.bandcamp.com/album/asylum-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "asylum-ep-3794904184",
+      "title": "To Water",
+      "artist": "Kate Alexander",
+      "albumTitle": "Asylum EP",
+      "albumKey": "asylum-ep",
+      "year": 2015,
+      "trackNumber": 4,
+      "duration": "5:21",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://katealexander.bandcamp.com/track/to-water",
+      "bandcampEmbedTrackId": "3794904184",
+      "sourcePage": "https://katealexander.bandcamp.com/album/asylum-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:08:55.877776+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "katealexander.bandcamp.com",
+    "bandcampBandId": "2199296309",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://katealexander.bandcamp.com/album/asylum-ep",
+    "discoveredAt": "2026-09-06T05:51:42.974050+00:00",
+    "importedAt": "2026-09-06T06:08:55.877776+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

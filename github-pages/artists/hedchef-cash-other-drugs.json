@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "slug": "hedchef-cash-other-drugs",
+  "artist": "Hedchef",
+  "bandcampUrl": "https://hedchef.bandcamp.com/album/cash-other-drugs",
+  "releaseTitle": "Cash & Other Drugs",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "Melbourne",
+    "electronic",
+    "uk techno",
+    "uk bass",
+    "breakbeat",
+    "techno"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "PREVIEWS: https://soundcloud.com/scuffedrecs/hedchef-cash-other-drugs-previews UK-born, Melbourne-based producer Hedchef makes his return to Scuffed Recordings for his third…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hedchef.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:57:56Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "cash-other-drugs",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cash-other-drugs-2490262492",
+      "title": "Inescapable",
+      "artist": "Hedchef",
+      "albumTitle": "Cash & Other Drugs",
+      "albumKey": "cash-other-drugs",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hedchef.bandcamp.com/track/inescapable",
+      "bandcampEmbedTrackId": "2490262492",
+      "sourcePage": "https://hedchef.bandcamp.com/album/cash-other-drugs",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "cash-other-drugs-2159195486",
+      "title": "Zero-Sum Game",
+      "artist": "Hedchef",
+      "albumTitle": "Cash & Other Drugs",
+      "albumKey": "cash-other-drugs",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hedchef.bandcamp.com/track/zero-sum-game",
+      "bandcampEmbedTrackId": "2159195486",
+      "sourcePage": "https://hedchef.bandcamp.com/album/cash-other-drugs",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "cash-other-drugs-1949598463",
+      "title": "Japanese Fighting Spiders",
+      "artist": "Hedchef",
+      "albumTitle": "Cash & Other Drugs",
+      "albumKey": "cash-other-drugs",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:36",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hedchef.bandcamp.com/track/japanese-fighting-spiders",
+      "bandcampEmbedTrackId": "1949598463",
+      "sourcePage": "https://hedchef.bandcamp.com/album/cash-other-drugs",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:57:56.658579+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hedchef.bandcamp.com",
+    "bandcampBandId": "879135159",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hedchef.bandcamp.com/album/cash-other-drugs",
+    "discoveredAt": "2026-09-06T05:51:42.954187+00:00",
+    "importedAt": "2026-09-06T05:57:56.658579+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

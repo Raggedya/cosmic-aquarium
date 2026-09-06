@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "paz-giannis-riddim-e-p",
+  "artist": "Paz",
+  "bandcampUrl": "https://pazisms.bandcamp.com/album/giannis-riddim-e-p",
+  "releaseTitle": "Giannis Riddim E.P",
+  "releaseDate": "2026-06-19 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "drum-bass",
+    "Melbourne",
+    "club music",
+    "drum & bass",
+    "electronic",
+    "jungle",
+    "uk funky"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "“When the internet was tolerable, we would punch UK Funky.mp3/ 4share into google and search for Crazy Cousins remixes”. Giannis Riddim - I wanted to imagine the soundtrack…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "dark",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://pazisms.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:27:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "giannis-riddim-e-p",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "giannis-riddim-e-p-1000170044",
+      "title": "Giannis Riddim",
+      "artist": "Paz",
+      "albumTitle": "Giannis Riddim E.P",
+      "albumKey": "giannis-riddim-e-p",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pazisms.bandcamp.com/track/giannis-riddim",
+      "bandcampEmbedTrackId": "1000170044",
+      "sourcePage": "https://pazisms.bandcamp.com/album/giannis-riddim-e-p",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "giannis-riddim-e-p-1053582578",
+      "title": "Corolla Riddim",
+      "artist": "Paz",
+      "albumTitle": "Giannis Riddim E.P",
+      "albumKey": "giannis-riddim-e-p",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pazisms.bandcamp.com/track/corolla-riddim",
+      "bandcampEmbedTrackId": "1053582578",
+      "sourcePage": "https://pazisms.bandcamp.com/album/giannis-riddim-e-p",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:27:45.354195+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "pazisms.bandcamp.com",
+    "bandcampBandId": "2043910605",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://pazisms.bandcamp.com/album/giannis-riddim-e-p",
+    "discoveredAt": "2026-09-06T05:51:42.980067+00:00",
+    "importedAt": "2026-09-06T06:27:45.354195+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

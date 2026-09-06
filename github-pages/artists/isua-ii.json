@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "isua-ii",
+  "artist": "ISUA",
+  "bandcampUrl": "https://isua.bandcamp.com/album/ii",
+  "releaseTitle": "II",
+  "releaseDate": "2025-12-15 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "Melbourne",
+    "metal",
+    "doom",
+    "doom metal",
+    "post-hardcore",
+    "post-sludge",
+    "riffs",
+    "sludge metal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "ISUA's new EP marks their third release and their most punishing yet. Building on the bleak foundations of their previous material, the band pushes further into a dense…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://isua.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:55:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ii",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ii-3196501732",
+      "title": "Frail Hands",
+      "artist": "ISUA",
+      "albumTitle": "II",
+      "albumKey": "ii",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "5:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://isua.bandcamp.com/track/frail-hands",
+      "bandcampEmbedTrackId": "3196501732",
+      "sourcePage": "https://isua.bandcamp.com/album/ii",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ii-2032244116",
+      "title": "Tempest",
+      "artist": "ISUA",
+      "albumTitle": "II",
+      "albumKey": "ii",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "8:55",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://isua.bandcamp.com/track/tempest",
+      "bandcampEmbedTrackId": "2032244116",
+      "sourcePage": "https://isua.bandcamp.com/album/ii",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:55:46.439994+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "isua.bandcamp.com",
+    "bandcampBandId": "2773150489",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://isua.bandcamp.com/album/ii",
+    "discoveredAt": "2026-09-06T05:51:42.952681+00:00",
+    "importedAt": "2026-09-06T05:55:46.439994+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

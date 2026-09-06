@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "alaric-ambient-1",
+  "artist": "Alaric",
+  "bandcampUrl": "https://alaric2.bandcamp.com/album/ambient-1",
+  "releaseTitle": "ambient 1",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "Melbourne",
+    "ambient",
+    "ambient electronic",
+    "dark ambient",
+    "noise ambient"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Alaric — dark-ambient / Melbourne / ambient music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://alaric2.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:06:44Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ambient-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ambient-1-3471348450",
+      "title": "crickets",
+      "artist": "Alaric",
+      "albumTitle": "ambient 1",
+      "albumKey": "ambient-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alaric2.bandcamp.com/track/crickets",
+      "bandcampEmbedTrackId": "3471348450",
+      "sourcePage": "https://alaric2.bandcamp.com/album/ambient-1",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ambient-1-1710906031",
+      "title": "downed cycle",
+      "artist": "Alaric",
+      "albumTitle": "ambient 1",
+      "albumKey": "ambient-1",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alaric2.bandcamp.com/track/downed-cycle",
+      "bandcampEmbedTrackId": "1710906031",
+      "sourcePage": "https://alaric2.bandcamp.com/album/ambient-1",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ambient-1-3097602731",
+      "title": "crows and noise",
+      "artist": "Alaric",
+      "albumTitle": "ambient 1",
+      "albumKey": "ambient-1",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alaric2.bandcamp.com/track/crows-and-noise",
+      "bandcampEmbedTrackId": "3097602731",
+      "sourcePage": "https://alaric2.bandcamp.com/album/ambient-1",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ambient-1-320927431",
+      "title": "bleeps for personal contact",
+      "artist": "Alaric",
+      "albumTitle": "ambient 1",
+      "albumKey": "ambient-1",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:23",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alaric2.bandcamp.com/track/bleeps-for-personal-contact",
+      "bandcampEmbedTrackId": "320927431",
+      "sourcePage": "https://alaric2.bandcamp.com/album/ambient-1",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:06:44.175737+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "alaric2.bandcamp.com",
+    "bandcampBandId": "1119182532",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://alaric2.bandcamp.com/album/ambient-1",
+    "discoveredAt": "2026-09-06T05:51:42.970047+00:00",
+    "importedAt": "2026-09-06T06:06:44.175737+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

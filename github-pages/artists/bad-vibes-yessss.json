@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "slug": "bad-vibes-yessss",
+  "artist": "BAD VIBES",
+  "bandcampUrl": "https://bad-vibes-music.bandcamp.com/album/yessss",
+  "releaseTitle": "yessss",
+  "releaseDate": "2026-01-29 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "Melbourne",
+    "alternative",
+    "rock",
+    "experimental",
+    "post-rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Vocals on Paw Patrol and Crazy Raptor by Jack (4), Sonny (2) and Jasper (7).",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bad-vibes-music.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:04:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "yessss",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "yessss-298869950",
+      "title": "Intro",
+      "artist": "BAD VIBES",
+      "albumTitle": "yessss",
+      "albumKey": "yessss",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bad-vibes-music.bandcamp.com/track/intro",
+      "bandcampEmbedTrackId": "298869950",
+      "sourcePage": "https://bad-vibes-music.bandcamp.com/album/yessss",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "yessss-2767725714",
+      "title": "Paw Patrol",
+      "artist": "BAD VIBES",
+      "albumTitle": "yessss",
+      "albumKey": "yessss",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bad-vibes-music.bandcamp.com/track/paw-patrol",
+      "bandcampEmbedTrackId": "2767725714",
+      "sourcePage": "https://bad-vibes-music.bandcamp.com/album/yessss",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "yessss-3989623805",
+      "title": "Crazy Raptor",
+      "artist": "BAD VIBES",
+      "albumTitle": "yessss",
+      "albumKey": "yessss",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:58",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bad-vibes-music.bandcamp.com/track/crazy-raptor",
+      "bandcampEmbedTrackId": "3989623805",
+      "sourcePage": "https://bad-vibes-music.bandcamp.com/album/yessss",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "yessss-2663360062",
+      "title": "Paw Patrol (instrumental)",
+      "artist": "BAD VIBES",
+      "albumTitle": "yessss",
+      "albumKey": "yessss",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:38",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bad-vibes-music.bandcamp.com/track/paw-patrol-instrumental",
+      "bandcampEmbedTrackId": "2663360062",
+      "sourcePage": "https://bad-vibes-music.bandcamp.com/album/yessss",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "yessss-1958789622",
+      "title": "Crazy Raptor (instrumental)",
+      "artist": "BAD VIBES",
+      "albumTitle": "yessss",
+      "albumKey": "yessss",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:58",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bad-vibes-music.bandcamp.com/track/crazy-raptor-instrumental",
+      "bandcampEmbedTrackId": "1958789622",
+      "sourcePage": "https://bad-vibes-music.bandcamp.com/album/yessss",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:04:12.585550+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bad-vibes-music.bandcamp.com",
+    "bandcampBandId": "1109588843",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bad-vibes-music.bandcamp.com/album/yessss",
+    "discoveredAt": "2026-09-06T05:51:42.964161+00:00",
+    "importedAt": "2026-09-06T06:04:12.585550+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

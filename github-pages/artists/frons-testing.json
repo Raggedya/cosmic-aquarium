@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "slug": "frons-testing",
+  "artist": "Frons",
+  "bandcampUrl": "https://frons.bandcamp.com/album/testing",
+  "releaseTitle": "Testing",
+  "releaseDate": "2026-08-19 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "post-punk",
+    "Melbourne",
+    "alternative",
+    "punk",
+    "rock"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Frons — post-punk / Melbourne / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://frons.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:28:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "testing",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "testing-3634799486",
+      "title": "Can I Play",
+      "artist": "Frons",
+      "albumTitle": "Testing",
+      "albumKey": "testing",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://frons.bandcamp.com/track/can-i-play",
+      "bandcampEmbedTrackId": "3634799486",
+      "sourcePage": "https://frons.bandcamp.com/album/testing",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "testing-20238711",
+      "title": "Anna",
+      "artist": "Frons",
+      "albumTitle": "Testing",
+      "albumKey": "testing",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://frons.bandcamp.com/track/anna",
+      "bandcampEmbedTrackId": "20238711",
+      "sourcePage": "https://frons.bandcamp.com/album/testing",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "testing-1213459224",
+      "title": "I Lay Awake",
+      "artist": "Frons",
+      "albumTitle": "Testing",
+      "albumKey": "testing",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:34",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://frons.bandcamp.com/track/i-lay-awake",
+      "bandcampEmbedTrackId": "1213459224",
+      "sourcePage": "https://frons.bandcamp.com/album/testing",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:28:08.961365+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "frons.bandcamp.com",
+    "bandcampBandId": "2594176479",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://frons.bandcamp.com/album/testing",
+    "discoveredAt": "2026-09-06T05:51:42.980067+00:00",
+    "importedAt": "2026-09-06T06:28:08.962331+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

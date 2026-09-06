@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "slug": "operation-live-at-the-brunswick-green",
+  "artist": "OPERATION:",
+  "bandcampUrl": "https://bandoperation.bandcamp.com/album/live-at-the-brunswick-green",
+  "releaseTitle": "Live at the Brunswick Green",
+  "releaseDate": "2025-03-18 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "free-improvisation",
+    "Melbourne",
+    "avant-garde jazz",
+    "experimental",
+    "free improvisation",
+    "jazz and improvised music",
+    "multimedia",
+    "noise"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "OPERATION: — free-improvisation / Melbourne / avant-garde jazz music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange",
+    "electronic",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bandoperation.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T06:04:05Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "live-at-the-brunswick-green",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "live-at-the-brunswick-green-613052324",
+      "title": "Listen, give sound. Listen, receive sound.",
+      "artist": "OPERATION:",
+      "albumTitle": "Live at the Brunswick Green",
+      "albumKey": "live-at-the-brunswick-green",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "8:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bandoperation.bandcamp.com/track/listen-give-sound-listen-receive-sound",
+      "bandcampEmbedTrackId": "613052324",
+      "sourcePage": "https://bandoperation.bandcamp.com/album/live-at-the-brunswick-green",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "live-at-the-brunswick-green-3384094284",
+      "title": "Two",
+      "artist": "OPERATION:",
+      "albumTitle": "Live at the Brunswick Green",
+      "albumKey": "live-at-the-brunswick-green",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "10:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bandoperation.bandcamp.com/track/two",
+      "bandcampEmbedTrackId": "3384094284",
+      "sourcePage": "https://bandoperation.bandcamp.com/album/live-at-the-brunswick-green",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "live-at-the-brunswick-green-1587105904",
+      "title": "Radio",
+      "artist": "OPERATION:",
+      "albumTitle": "Live at the Brunswick Green",
+      "albumKey": "live-at-the-brunswick-green",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "11:56",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bandoperation.bandcamp.com/track/radio",
+      "bandcampEmbedTrackId": "1587105904",
+      "sourcePage": "https://bandoperation.bandcamp.com/album/live-at-the-brunswick-green",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "live-at-the-brunswick-green-274160871",
+      "title": "Albini",
+      "artist": "OPERATION:",
+      "albumTitle": "Live at the Brunswick Green",
+      "albumKey": "live-at-the-brunswick-green",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "12:59",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bandoperation.bandcamp.com/track/albini-3",
+      "bandcampEmbedTrackId": "274160871",
+      "sourcePage": "https://bandoperation.bandcamp.com/album/live-at-the-brunswick-green",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "live-at-the-brunswick-green-997602605",
+      "title": "Laundry Day",
+      "artist": "OPERATION:",
+      "albumTitle": "Live at the Brunswick Green",
+      "albumKey": "live-at-the-brunswick-green",
+      "year": 2025,
+      "trackNumber": 5,
+      "duration": "4:05",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bandoperation.bandcamp.com/track/laundry-day-2",
+      "bandcampEmbedTrackId": "997602605",
+      "sourcePage": "https://bandoperation.bandcamp.com/album/live-at-the-brunswick-green",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:04:05.504724+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bandoperation.bandcamp.com",
+    "bandcampBandId": "2915243169",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bandoperation.bandcamp.com/album/live-at-the-brunswick-green",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:04:05.504724+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

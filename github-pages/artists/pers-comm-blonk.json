@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "slug": "pers-comm-blonk",
+  "artist": "Pers Comm",
+  "bandcampUrl": "https://perscomm.bandcamp.com/album/blonk",
+  "releaseTitle": "blonk",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "Melbourne",
+    "breaks.",
+    "electronic",
+    "experimental",
+    "house",
+    "tech house",
+    "breaks",
+    "electro",
+    "maximal"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Couple of from a couple of months of listenin' All done in house :) Enjoy",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://perscomm.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:54:35Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "blonk",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "blonk-3716081781",
+      "title": "big wob",
+      "artist": "Pers Comm",
+      "albumTitle": "blonk",
+      "albumKey": "blonk",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:50",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://perscomm.bandcamp.com/track/big-wob",
+      "bandcampEmbedTrackId": "3716081781",
+      "sourcePage": "https://perscomm.bandcamp.com/album/blonk",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "blonk-3550840672",
+      "title": "chase down anspach",
+      "artist": "Pers Comm",
+      "albumTitle": "blonk",
+      "albumKey": "blonk",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://perscomm.bandcamp.com/track/chase-down-anspach",
+      "bandcampEmbedTrackId": "3550840672",
+      "sourcePage": "https://perscomm.bandcamp.com/album/blonk",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "blonk-1765834482",
+      "title": "super leuk",
+      "artist": "Pers Comm",
+      "albumTitle": "blonk",
+      "albumKey": "blonk",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:09",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://perscomm.bandcamp.com/track/super-leuk",
+      "bandcampEmbedTrackId": "1765834482",
+      "sourcePage": "https://perscomm.bandcamp.com/album/blonk",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "blonk-1367707417",
+      "title": "son of wob",
+      "artist": "Pers Comm",
+      "albumTitle": "blonk",
+      "albumKey": "blonk",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:03",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://perscomm.bandcamp.com/track/son-of-wob",
+      "bandcampEmbedTrackId": "1367707417",
+      "sourcePage": "https://perscomm.bandcamp.com/album/blonk",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:54:35.763469+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "perscomm.bandcamp.com",
+    "bandcampBandId": "868414926",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://perscomm.bandcamp.com/album/blonk",
+    "discoveredAt": "2026-09-06T05:51:42.950681+00:00",
+    "importedAt": "2026-09-06T05:54:35.763469+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "slug": "mia-barham-inwards",
+  "artist": "Mia Barham",
+  "bandcampUrl": "https://miabarham.bandcamp.com/album/inwards",
+  "releaseTitle": "Inwards",
+  "releaseDate": "2024-01-29 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "Melbourne",
+    "jazz",
+    "australian jazz",
+    "contemporary jazz",
+    "flute",
+    "free jazz",
+    "jazz sextet",
+    "saxophone"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Mia Barham Sextet Personnel Mia Barham I Alto Saxophone and Flute Ashley Ballat I Trumpet Dean Kalaitzidis I Tenor Saxophone Miro Lauritz I Piano and Vibraphone Monty Shnier I…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://miabarham.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T06:04:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "inwards",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "inwards-427439087",
+      "title": "Murmurs",
+      "artist": "Mia Barham",
+      "albumTitle": "Inwards",
+      "albumKey": "inwards",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "4:40",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://miabarham.bandcamp.com/track/murmurs",
+      "bandcampEmbedTrackId": "427439087",
+      "sourcePage": "https://miabarham.bandcamp.com/album/inwards",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "inwards-2607766267",
+      "title": "Conjure",
+      "artist": "Mia Barham",
+      "albumTitle": "Inwards",
+      "albumKey": "inwards",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "9:06",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://miabarham.bandcamp.com/track/conjure",
+      "bandcampEmbedTrackId": "2607766267",
+      "sourcePage": "https://miabarham.bandcamp.com/album/inwards",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "inwards-1275354954",
+      "title": "Solace",
+      "artist": "Mia Barham",
+      "albumTitle": "Inwards",
+      "albumKey": "inwards",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "6:41",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://miabarham.bandcamp.com/track/solace",
+      "bandcampEmbedTrackId": "1275354954",
+      "sourcePage": "https://miabarham.bandcamp.com/album/inwards",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "inwards-3112358406",
+      "title": "Hush (feat. Julien Wilson)",
+      "artist": "Mia Barham",
+      "albumTitle": "Inwards",
+      "albumKey": "inwards",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "8:31",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://miabarham.bandcamp.com/track/hush-feat-julien-wilson",
+      "bandcampEmbedTrackId": "3112358406",
+      "sourcePage": "https://miabarham.bandcamp.com/album/inwards",
+      "accent": "#ffb66d"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T06:04:02.828381+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "miabarham.bandcamp.com",
+    "bandcampBandId": "3438781812",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://miabarham.bandcamp.com/album/inwards",
+    "discoveredAt": "2026-09-06T05:51:42.962637+00:00",
+    "importedAt": "2026-09-06T06:04:02.828381+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

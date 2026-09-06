@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "slug": "glass-beams-mahal",
+  "artist": "Glass Beams",
+  "bandcampUrl": "https://glassbeams.bandcamp.com/album/mahal",
+  "releaseTitle": "Mahal",
+  "releaseDate": "2024-03-22 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "world",
+    "Melbourne",
+    "australia",
+    "experimental",
+    "india",
+    "contemporary jazz",
+    "psych"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Glass Beams have announced their highly anticipated EP ‘Mahal’, out on March 22nd on their new label home Ninja Tune. Released alongside the news is the EP’s titular track…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://glassbeams.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:53:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "mahal",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "mahal-1010369168",
+      "title": "Horizon",
+      "artist": "Glass Beams",
+      "albumTitle": "Mahal",
+      "albumKey": "mahal",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "0:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glassbeams.bandcamp.com/track/horizon",
+      "bandcampEmbedTrackId": "1010369168",
+      "sourcePage": "https://glassbeams.bandcamp.com/album/mahal",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "mahal-2513382485",
+      "title": "Mahal",
+      "artist": "Glass Beams",
+      "albumTitle": "Mahal",
+      "albumKey": "mahal",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "3:21",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glassbeams.bandcamp.com/track/mahal",
+      "bandcampEmbedTrackId": "2513382485",
+      "sourcePage": "https://glassbeams.bandcamp.com/album/mahal",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "mahal-3769070234",
+      "title": "Orb",
+      "artist": "Glass Beams",
+      "albumTitle": "Mahal",
+      "albumKey": "mahal",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "4:54",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glassbeams.bandcamp.com/track/orb",
+      "bandcampEmbedTrackId": "3769070234",
+      "sourcePage": "https://glassbeams.bandcamp.com/album/mahal",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "mahal-812259949",
+      "title": "Snake Oil",
+      "artist": "Glass Beams",
+      "albumTitle": "Mahal",
+      "albumKey": "mahal",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "4:55",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glassbeams.bandcamp.com/track/snake-oil",
+      "bandcampEmbedTrackId": "812259949",
+      "sourcePage": "https://glassbeams.bandcamp.com/album/mahal",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "mahal-2299393601",
+      "title": "Black Sand",
+      "artist": "Glass Beams",
+      "albumTitle": "Mahal",
+      "albumKey": "mahal",
+      "year": 2024,
+      "trackNumber": 5,
+      "duration": "4:38",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glassbeams.bandcamp.com/track/black-sand",
+      "bandcampEmbedTrackId": "2299393601",
+      "sourcePage": "https://glassbeams.bandcamp.com/album/mahal",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:53:46.454068+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "glassbeams.bandcamp.com",
+    "bandcampBandId": "783398464",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://glassbeams.bandcamp.com/album/mahal",
+    "discoveredAt": "2026-09-06T05:51:41.115175+00:00",
+    "importedAt": "2026-09-06T05:53:46.454068+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}

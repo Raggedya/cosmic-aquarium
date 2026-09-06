@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "slug": "lava-fangs-nothing-better-get-together",
+  "artist": "Lava Fangs",
+  "bandcampUrl": "https://lavafangs.bandcamp.com/album/nothing-better-get-together",
+  "releaseTitle": "Nothing Better/Get Together",
+  "releaseDate": "2026-09-17 00:00:00 UTC",
+  "dailyBatchId": "melbourne-500-2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "garage",
+    "Melbourne",
+    "rock",
+    "mod",
+    "power pop",
+    "powerpop",
+    "punk",
+    "surf"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "In early 2025, Lava Fangs headed into their home studio, Casa de Kensington, to record some new material for the 'Pop Aid 2' benefit album, organised and released by US based…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lavafangs.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:58:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "nothing-better-get-together",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "nothing-better-get-together-3606400991",
+      "title": "Nothing Better",
+      "artist": "Lava Fangs",
+      "albumTitle": "Nothing Better/Get Together",
+      "albumKey": "nothing-better-get-together",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lavafangs.bandcamp.com/track/nothing-better",
+      "bandcampEmbedTrackId": "3606400991",
+      "sourcePage": "https://lavafangs.bandcamp.com/album/nothing-better-get-together",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "nothing-better-get-together-3086349719",
+      "title": "Get Together",
+      "artist": "Lava Fangs",
+      "albumTitle": "Nothing Better/Get Together",
+      "albumKey": "nothing-better-get-together",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lavafangs.bandcamp.com/album/nothing-better-get-together",
+      "bandcampEmbedTrackId": "3086349719",
+      "sourcePage": "https://lavafangs.bandcamp.com/album/nothing-better-get-together",
+      "accent": "#88d7ff"
+    }
+  ],
+  "locationValidation": {
+    "classification": "MELBOURNE_CONFIRMED",
+    "confidence": "CONFIRMED",
+    "source": "bandcamp-discover-geoname",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "geonameId": 2158177,
+    "observedAt": "2026-09-06T05:58:34.265483+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lavafangs.bandcamp.com",
+    "bandcampBandId": "3981744991",
+    "source": "bandcamp-public-artist-index"
+  },
+  "provenance": {
+    "sourceType": "bandcamp-discover-melbourne",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lavafangs.bandcamp.com/album/nothing-better-get-together",
+    "discoveredAt": "2026-09-06T05:51:42.955192+00:00",
+    "importedAt": "2026-09-06T05:58:34.265483+00:00",
+    "batchId": "melbourne-500-2026-09-06"
+  }
+}
