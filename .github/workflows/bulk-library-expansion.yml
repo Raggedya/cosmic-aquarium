@@ -83,10 +83,37 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: bulk-workspace-${{ steps.batch.outputs.batch_id }}
-          path: .
+          path: .bulk-resume
           github-token: ${{ github.token }}
           repository: ${{ github.repository }}
           run-id: ${{ inputs.resume_run_id }}
+      - name: Restore only batch-owned catalogue files
+        if: inputs.resume_run_id != ''
+        shell: bash
+        env:
+          BATCH_ID: ${{ steps.batch.outputs.batch_id }}
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, shutil
+
+          source = pathlib.Path('.bulk-resume')
+          destination = pathlib.Path('.')
+          shutil.copytree(source / 'automation' / 'bulk', destination / 'automation' / 'bulk', dirs_exist_ok=True)
+          state_kind = 'dry-runs' if os.environ['BATCH_ID'].endswith('-dry-run') else 'batches'
+          state_path = destination / 'automation' / 'bulk' / state_kind / f"{os.environ['BATCH_ID']}.json"
+          state = json.loads(state_path.read_text(encoding='utf-8'))
+          for record in state.get('accepted', []):
+              slug = str(record.get('id') or '').strip()
+              if not slug:
+                  continue
+              manifest = source / 'github-pages' / 'artists' / f'{slug}.json'
+              route = source / 'github-pages' / slug
+              if manifest.exists():
+                  shutil.copy2(manifest, destination / 'github-pages' / 'artists' / manifest.name)
+              if route.exists():
+                  shutil.copytree(route, destination / 'github-pages' / slug, dirs_exist_ok=True)
+          shutil.rmtree(source)
+          PY
       - name: Require a completed dry run before publishing
         if: inputs.dry_run == false
         shell: bash

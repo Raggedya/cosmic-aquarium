@@ -276,7 +276,10 @@ test('search results deduplicate canonical Bandcamp hosts and Next avoids the cu
 test('selector search and genre modes are exclusive while GO remains the shared commitment control',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/id="artist-search-input"[^>]+role="combobox"/);
-  assert.match(template,/placeholder="SEARCH COSMIC AQUARIA"/);
+  assert.match(template,/placeholder="SEARCH ARTIST OR BAND"/);
+  assert.match(template,/class="search-menu"[^>]*>[\s\S]*DISCOVER[\s\S]*EXPLORE[\s\S]*GO FURTHER/);
+  const masthead=template.match(/<header class="selector-masthead"[\s\S]*?<\/header>/)?.[0]??'';
+  assert.doesNotMatch(masthead,/sound-toggle--selection/);
   assert.match(template,/id="artist-search-results"[^>]+role="listbox"/);
   assert.match(template,/class="search-clear"/);
   assert.match(template,/MUSIC WITHOUT BORDERS/);

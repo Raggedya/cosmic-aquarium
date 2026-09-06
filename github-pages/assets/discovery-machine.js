@@ -304,7 +304,7 @@ function glassAudioUrl(name,format) {
   return `${base}/assets/audio/glass/source/${GLASS_AUDIO_FILES[name]}.${format}`;
 }
 
-function useDirectAudioFallback() {
+function shouldUseDirectAudioFallback() {
   const ua=navigator.userAgent;
   const ios=/iPad|iPhone|iPod/i.test(ua)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
   const desktopSafari=/AppleWebKit/i.test(ua)&&!/Chrome|Chromium|CriOS|Edg|Android/i.test(ua);
@@ -335,7 +335,7 @@ function updateAudioDebug() {
 }
 
 function prepareDirectImpactAudio() {
-  glassAudio.directFallback=useDirectAudioFallback();
+  glassAudio.directFallback=shouldUseDirectAudioFallback();
   if(!glassAudio.directFallback)return;
   for(const kind of ['impact','go']){
     const source=`${base}/assets/audio/glass/${DIRECT_IMPACT_FILES[kind]}`;
@@ -370,7 +370,7 @@ function playDirectImpact(type,profile,{restoring=false,control=false}={}) {
 function preloadGlassAudio() {
   if (glassAudio.preloadPromise) return glassAudio.preloadPromise;
   const probe = document.createElement('audio');
-  const safari=useDirectAudioFallback();
+  const safari=shouldUseDirectAudioFallback();
   const supported={mp3:Boolean(probe.canPlayType('audio/mpeg')),ogg:Boolean(probe.canPlayType('audio/ogg; codecs="vorbis"'))};
   const formats=(safari?['mp3','ogg']:['ogg','mp3']).filter(format=>supported[format]);
   if(!formats.length) formats.push('mp3');
