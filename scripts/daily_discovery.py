@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Any, Protocol
 
 from create_artist import AUTOMATED_VISUAL_STYLES, create_artist, persist_artist_files, slugify
+from audit_melbourne_universe import GEOGRAPHY, classify_manifest, read_json as read_melbourne_json
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -110,6 +111,13 @@ def candidate_rejection_reason(item: dict[str, Any], batch_date: dt.date, comple
         return "invalid_release_date"
     if not (batch_date - dt.timedelta(days=31) <= release_date <= batch_date):
         return "outside_discovery_window"
+    geography = read_melbourne_json(GEOGRAPHY, {})
+    decision = classify_manifest({
+        "primaryLocation": str(item.get("band_location") or item.get("location") or ""),
+        "bioShort": "",
+    }, geography)
+    if decision.get("classification") != "MELBOURNE_CONFIRMED" or decision.get("confidence") not in {"CONFIRMED", "HIGH"}:
+        return "outside_or_unverified_greater_melbourne"
     return None
 
 

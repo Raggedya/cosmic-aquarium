@@ -1,9 +1,14 @@
 {
-  "schemaVersion": 1,
-  "canonicalArtistCount": 1220,
-  "publishedReleaseCount": 1227,
-  "playableTrackCount": 10638,
+  "schemaVersion": 2,
+  "universe": "melbourne",
+  "artists": 13,
+  "releases": 13,
+  "playableTracks": 141,
+  "suburbs": 0,
+  "canonicalArtistCount": 13,
+  "publishedReleaseCount": 13,
+  "playableTrackCount": 141,
   "newToday": 0,
-  "newThisWeek": 40,
-  "updatedAt": "2026-09-06T01:09:32.581Z"
+  "newThisWeek": 0,
+  "updatedAt": "2026-09-06T01:47:24.975Z"
 }

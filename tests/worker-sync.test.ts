@@ -14,6 +14,14 @@ test('catalogue reconciliation avoids oversized SQL and writes in bounded batche
   assert.match(worker, /await runStatementBatches\(env,statements\)/);
 });
 
+test('Melbourne migration archives global Worker rows instead of deleting them', () => {
+  const sync=fs.readFileSync(path.join(root,'scripts','sync-worker.mjs'),'utf8');
+  assert.match(sync,/archiveMissing:process\.env\.ARCHIVE_MISSING==='true'/);
+  assert.match(worker,/body\?\.archiveMissing === true/);
+  assert.match(worker,/UPDATE aquarium SET status='disabled'/);
+  assert.match(worker,/UPDATE artist SET status='disabled'/);
+});
+
 test('a reporting sync outage does not turn a published Aquarium into a creation failure', () => {
   assert.match(desktop, /library_current = self\._watch_run/);
   assert.match(desktop, /except \(OSError, subprocess\.SubprocessError, RuntimeError\):/);

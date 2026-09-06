@@ -10,6 +10,8 @@
     "build": "vinext build",
     "build:pages": "node --experimental-strip-types scripts/build-github-pages.mjs",
     "catalogue:bulk-status": "python scripts/bulk_library_status.py",
+    "catalogue:melbourne-geography": "python scripts/refresh_melbourne_geography.py",
+    "catalogue:melbourne-audit": "python scripts/audit_melbourne_universe.py",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "typecheck": "tsc --noEmit",

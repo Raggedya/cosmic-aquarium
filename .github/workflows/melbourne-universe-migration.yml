@@ -1,0 +1,50 @@
+name: Publish Melbourne Universe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cosmic-aquarium-publishing
+  cancel-in-progress: false
+
+jobs:
+  validate-publish-sync:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate Melbourne membership from preserved source catalogue
+        run: python scripts/audit_melbourne_universe.py --output melbourne-audit.json
+      - name: Build Melbourne-only public catalogue
+        run: npm run build:pages
+      - name: Test migration and player compatibility
+        run: |
+          npm test
+          python -m unittest discover -s tests -p '*_test.py'
+          node --check services/cosmic-worker/src/index.js
+          python -m py_compile scripts/audit_melbourne_universe.py scripts/refresh_melbourne_geography.py scripts/daily_discovery.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: github-pages
+      - name: Publish Melbourne listener universe
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Replace Worker discovery pool with Melbourne catalogue
+        env:
+          COSMIC_WORKER_SYNC_TOKEN: ${{ secrets.COSMIC_WORKER_SYNC_TOKEN }}
+          ARCHIVE_MISSING: "true"
+        run: node scripts/sync-worker.mjs

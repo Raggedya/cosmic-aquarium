@@ -142,7 +142,17 @@ async function syncCatalogue(request, env) {
   const changedArtistIds = new Set();
   const statements = [];
   const staleStatements = [];
-  if (body?.fullReplace === true) {
+  if (body?.archiveMissing === true) {
+    const ids = new Set(aquariums.map(item=>clean(item?.id,96)).filter(Boolean));
+    const archivedAt = new Date().toISOString();
+    for (const row of currentRows.results || []) {
+      if (!ids.has(row.id)) staleStatements.push(env.DB.prepare("UPDATE aquarium SET status='disabled',disabled_at=COALESCE(disabled_at,?),updated_at=? WHERE id=?").bind(archivedAt,archivedAt,row.id));
+    }
+    const artistIds = new Set(artists.map(item=>clean(item?.id,160)).filter(Boolean));
+    for (const row of currentArtistRows.results || []) {
+      if (!artistIds.has(row.id)) staleStatements.push(env.DB.prepare("UPDATE artist SET status='disabled',updated_at=? WHERE id=?").bind(archivedAt,row.id));
+    }
+  } else if (body?.fullReplace === true) {
     const ids = new Set(aquariums.map(item=>clean(item?.id,96)).filter(Boolean));
     for (const row of currentRows.results || []) {
       if (!ids.has(row.id)) staleStatements.push(env.DB.prepare('DELETE FROM aquarium WHERE id=?').bind(row.id));
@@ -215,7 +225,7 @@ async function syncCatalogue(request, env) {
       VALUES (?,?,?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET status=excluded.status,generated_count=excluded.generated_count,published_count=excluded.published_count,email_status=excluded.email_status,completed_at=excluded.completed_at`)
       .bind(batch.id,batch.batchDate||batch.id,batch.targetCount||20,batch.status||'generation_pending',batch.generatedCount||0,batch.publishedCount||0,batch.emailStatus||'pending',batch.createdAt||new Date().toISOString(),batch.completedAt||null).run();
   }
-  return json({ok:true,synced:aquariums.length,changed:statements.length,removed:staleStatements.length,artists:artists.length,collections:collections.length,reconciled:body?.fullReplace===true,batch:batch?.id||null});
+  return json({ok:true,synced:aquariums.length,changed:statements.length,archived:body?.archiveMissing===true?staleStatements.length:0,removed:body?.fullReplace===true?staleStatements.length:0,artists:artists.length,collections:collections.length,reconciled:body?.fullReplace===true||body?.archiveMissing===true,universe:clean(body?.universe,40)||'global',batch:batch?.id||null});
 }
 
 async function overview(env) {

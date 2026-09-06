@@ -25,6 +25,7 @@ class DailyDiscoveryTests(unittest.TestCase):
             "band_name": "Excellent Artist",
             "title": "A Real Release",
             "release_date": "2026-09-01",
+            "band_location": "Melbourne, Australia",
         }
         value.update(changes)
         return value
@@ -35,6 +36,7 @@ class DailyDiscoveryTests(unittest.TestCase):
         self.assertEqual(daily_discovery.candidate_rejection_reason(self.candidate(item_url="https://example.com/a"), date, set()), "invalid_bandcamp_url")
         self.assertEqual(daily_discovery.candidate_rejection_reason(self.candidate(), date, {"https://excellent.bandcamp.com/album/release"}), "duplicate_release_url")
         self.assertEqual(daily_discovery.candidate_rejection_reason(self.candidate(title="Test Release"), date, set()), "test_or_non_music_entry")
+        self.assertEqual(daily_discovery.candidate_rejection_reason(self.candidate(band_location="Sydney, Australia"), date, set()), "outside_or_unverified_greater_melbourne")
 
     def test_incomplete_batch_is_resumed_before_a_new_date(self):
         with tempfile.TemporaryDirectory() as folder:

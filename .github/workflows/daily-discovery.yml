@@ -1,8 +1,10 @@
 name: Daily Cosmic Aquaria Discovery
 
 on:
-  schedule:
-    - cron: "30 0 * * *"
+  # Automatic discovery is intentionally paused while the catalogue migrates
+  # from a global feed to validated Greater Melbourne membership. Keep manual
+  # dispatch available for controlled migration tests; do not restore a
+  # schedule until daily_discovery.py rejects every unverified location.
   workflow_dispatch:
     inputs:
       batch_date:
@@ -61,6 +63,8 @@ jobs:
           batch_date="$(python -c 'import json; print(json.load(open("daily-result.json"))["batch"])')"
           echo "batch_date=$batch_date" >> "$GITHUB_OUTPUT"
           echo "target_count=$target_count" >> "$GITHUB_OUTPUT"
+      - name: Rebuild validated Melbourne membership
+        run: python scripts/audit_melbourne_universe.py
       - name: Rebuild permanent pages and catalogue
         run: npm run build:pages
       - name: Verify generated application

@@ -634,7 +634,17 @@ function renderSearchResults(results,feedback=''){
     option.addEventListener('click',()=>selectSearchResult(index));
     searchResultsPanel.append(option);
   }
-  const visible=searchResults.length>0;
+  if(!searchResults.length&&searchQuery.trim().length>=2){
+    const prompt=document.createElement('p');prompt.className='search-radar-copy';prompt.textContent="CAN'T SEE THEM? KNOW A MELBOURNE ARTIST WE'VE MISSED?";
+    const suggestion=document.createElement('a');suggestion.className='search-suggestion';suggestion.textContent='ADD TO OUR RADAR';suggestion.target='_blank';suggestion.rel='noopener noreferrer';
+    const issueTitle=`Melbourne artist suggestion: ${searchQuery.trim()}`;
+    const issueBody=`Status: MELBOURNE_CANDIDATE\n\nArtist name: ${searchQuery.trim()}\nBandcamp URL: \nMelbourne location evidence: \n\nPlease do not publish until identity, geography, playability, duplicate status, and waters are validated.`;
+    suggestion.href=`https://github.com/Raggedya/cosmic-aquarium/issues/new?${new URLSearchParams({title:issueTitle,body:issueBody,labels:'melbourne-candidate'})}`;
+    searchResultsPanel.append(prompt,suggestion);
+  }
+  const visible=searchResults.length>0||searchQuery.trim().length>=2;
+  searchResultsPanel.setAttribute('role',searchResults.length?'listbox':'region');
+  searchResultsPanel.setAttribute('aria-label',searchResults.length?'Validated Melbourne artist results':'Suggest a Melbourne artist');
   searchResultsPanel.hidden=!visible;
   artistSearchInput?.setAttribute('aria-expanded',String(visible));
   setSearchState(selectedSearchArtist?'selected':'idle',feedback);
@@ -669,8 +679,8 @@ function setActiveSearchResult(index){
 async function runArtistSearch(query,serial){
   const local=searchLocalArtists(artists,query,6);
   if(serial!==searchRequestSerial||query!==searchQuery)return;
-  renderSearchResults(local,local.length?'CHOOSE AN ARTIST':'NOT YET IN COSMIC AQUARIA');
-  setSearchState(selectedSearchArtist?'selected':'idle',local.length?'':'NOT YET IN COSMIC AQUARIA');
+  renderSearchResults(local,local.length?'CHOOSE AN ARTIST':"CAN'T SEE THEM?");
+  setSearchState(selectedSearchArtist?'selected':'idle',local.length?'':"CAN'T SEE THEM?");
 }
 
 function onSearchInput(){
@@ -770,16 +780,7 @@ async function resolveSearchArtist(result,{excludeReleaseId='',preferredReleaseI
     if(!entry)throw new Error('This library artist is temporarily unavailable.');
     return {entry,manifest:await fetchManifest(entry),search:{source:'library',artistId:result.artistId,artistName:result.artistName,bandcampArtistUrl:result.bandcampArtistUrl}};
   }
-  if(!isSearchMode())setSelectorMode(selected.size?'GENRE_SELECTED':'GENRE_IDLE');
-  if(!/^\d+$/.test(String(result?.bandId||''))||!validBandcampUrl(result?.bandcampArtistUrl))throw new Error('Choose a valid Bandcamp artist.');
-  const params=new URLSearchParams({band_id:String(result.bandId),artist_url:result.bandcampArtistUrl});
-  if(excludeReleaseId)params.set('exclude_release',String(excludeReleaseId));
-  if(preferredReleaseId){params.set('release_id',String(preferredReleaseId));params.set('release_type',preferredReleaseType==='track'?'t':'a');}
-  const response=await fetch(`${workerBase}/api/search/artist?${params}`,{credentials:'omit'});
-  if(!response.ok)throw new Error(response.status===404?'No playable Bandcamp release was found for this artist.':'Bandcamp search is temporarily unavailable.');
-  const payload=await response.json();
-  if(!payload?.entry||!payload?.manifest||!pickPlayableTrack(payload.manifest))throw new Error('No playable Bandcamp release was found for this artist.');
-  return payload;
+  throw new Error('Choose a validated Melbourne artist from Cosmic Aquaria.');
 }
 
 async function resolveSelectedSearchArtist(){
@@ -1067,16 +1068,8 @@ function populatePlayer(entry, manifest, {trackOverride=null}={}) {
 }
 
 function playerUrl(entry = currentEntry) {
-  if(playerDiscoveryMode==='search'&&currentSearchContext?.source==='bandcamp'){
-    const url=new URL(`${base.replace(/\/$/,'')}/`,location.origin);
-    url.searchParams.set('searchBand',String(currentSearchContext.bandId));
-    url.searchParams.set('searchUrl',currentSearchContext.bandcampArtistUrl);
-    if(currentSearchContext.releaseId)url.searchParams.set('searchRelease',String(currentSearchContext.releaseId));
-    if(currentSearchContext.releaseType)url.searchParams.set('searchType',currentSearchContext.releaseType);
-    if(currentTrack?.bandcampEmbedTrackId)url.searchParams.set('track',String(currentTrack.bandcampEmbedTrackId));
-    return url.toString();
-  }
   const url=new URL(buildShareUrl(location.origin,base,entry.slug,[...selected]));
+  url.searchParams.set('universe','melbourne');
   if(playerDiscoveryMode==='search'&&currentSearchContext?.source==='library')url.searchParams.set('searchArtist',currentSearchContext.artistId);
   return url.toString();
 }
@@ -1237,15 +1230,6 @@ async function loadInitialData() {
   if(artistsResponse?.ok){const data=await artistsResponse.json();artists=data.artists||[];artistsById=new Map(artists.map(artist=>[artist.id,artist]));}
   if(statsResponse?.ok)universeStats=await statsResponse.json();
   const params=new URLSearchParams(location.search);
-  const searchBand=params.get('searchBand');
-  const searchUrl=params.get('searchUrl');
-  if(/^\d+$/.test(searchBand||'')&&validBandcampUrl(searchUrl)){
-    const searched={source:'bandcamp',bandId:searchBand,bandcampArtistUrl:searchUrl,artistName:'Bandcamp artist'};
-    const result=await resolveSearchArtist(searched,{preferredReleaseId:params.get('searchRelease')||'',preferredReleaseType:params.get('searchType')||''});
-    playerDiscoveryMode='search';currentSearchContext={...searched,...result.search};searchTrackHistory=[];
-    const preferredTrack=(result.manifest.tracks||[]).find(track=>String(track.bandcampEmbedTrackId)===params.get('track'))||null;
-    populatePlayer(result.entry,result.manifest,{trackOverride:preferredTrack});showPlayer({push:false});history.replaceState({view:'player'},'',playerUrl(result.entry));return;
-  }
   const requestedSelection=normalizeSelection((params.get('categories')||'').split(',').filter(Boolean));
   // A normal homepage entry is always pristine. Only an explicit deep link may
   // arrive with a category selection; session state is retained solely while
@@ -1267,17 +1251,6 @@ async function loadInitialData() {
 
 async function restoreLocation() {
   const params=new URLSearchParams(location.search);
-  const searchBand=params.get('searchBand');
-  const searchUrl=params.get('searchUrl');
-  if(/^\d+$/.test(searchBand||'')&&validBandcampUrl(searchUrl)){
-    try{
-      const searched={source:'bandcamp',bandId:searchBand,bandcampArtistUrl:searchUrl,artistName:'Bandcamp artist'};
-      const result=await resolveSearchArtist(searched,{preferredReleaseId:params.get('searchRelease')||'',preferredReleaseType:params.get('searchType')||''});
-      playerDiscoveryMode='search';currentSearchContext={...searched,...result.search};searchTrackHistory=[];
-      const preferredTrack=(result.manifest.tracks||[]).find(track=>String(track.bandcampEmbedTrackId)===params.get('track'))||null;
-      populatePlayer(result.entry,result.manifest,{trackOverride:preferredTrack});showPlayer({push:false});return;
-    }catch{showSelection({historyMode:'replace'});return;}
-  }
   const slug=params.get('release');
   if(!slug){showSelection({historyMode:'none'});return;}
   const entry=catalogue.find(item=>item.slug===slug&&item.status==='published');

@@ -171,21 +171,22 @@ function usefulTags(values = [], waters = []) {
 export function buildTickerMessages(manifest, registryEntry = {}, artistEntry = {}, universeStats = {}) {
   const messages = [];
   const artist=tickerText(manifest.artist || registryEntry.artist || artistEntry.name,90);
-  const location=tickerText(manifest.primaryLocation || registryEntry.primaryLocation || artistEntry.primaryLocation,90);
+  const suburb=tickerText(registryEntry.suburb || artistEntry.suburb,70);
+  const location=tickerText(suburb?`${suburb} • MELBOURNE`:(artistEntry.primaryLocation || registryEntry.primaryLocation || manifest.primaryLocation || 'MELBOURNE, AUSTRALIA'),90);
   const release=tickerText(manifest.releaseTitle || registryEntry.release,110);
   const track=tickerText(manifest.selectedTrackTitle,110);
   const waters=(registryEntry.waters || manifest.waters || []).map(value=>tickerText(value,32)).filter(Boolean);
   const tags=usefulTags(manifest.metadataTags || registryEntry.metadataTags || [],waters);
-  const bio=tickerText(manifest.bioShort || registryEntry.bioShort || artistEntry.bioShort,180);
+  const bio=tickerText(registryEntry.bioShort || artistEntry.bioShort || manifest.bioShort,180);
   const labels=(manifest.labels || artistEntry.labels || []).map(value=>tickerText(value,70)).filter(Boolean);
 
   if(artist) messages.push(location?`${artist}  •  ${location}`:artist);
-  if(release || track) messages.push(['NOW PLAYING',release,track].filter(Boolean).join('  •  '));
   if(bio) messages.push(bio);
   else {
     const context=[...tags,...waters].slice(0,3);
     if(context.length&&location) messages.push(`${context.join(' / ')} MUSIC FROM ${location}`);
   }
+  if(release || track) messages.push(['NOW PLAYING',release,track].filter(Boolean).join('  •  '));
   const style=[waters.length?waters.join(' + '):'',...tags].filter(Boolean);
   if(style.length) messages.push(style.join('  •  '));
   if(manifest.releaseDate || registryEntry.releaseDate) {
@@ -196,11 +197,12 @@ export function buildTickerMessages(manifest, registryEntry = {}, artistEntry = 
   const artists=Number(universeStats.canonicalArtistCount || universeStats.artists || 0);
   const releases=Number(universeStats.publishedReleaseCount || universeStats.releases || 0);
   const songs=Number(universeStats.playableTrackCount || universeStats.playableTracks || 0);
-  if(artists>0&&releases>0&&songs>0) messages.push(`COSMIC AQUARIA  •  ${artists.toLocaleString('en-AU')} ARTISTS  •  ${releases.toLocaleString('en-AU')} RELEASES  •  ${songs.toLocaleString('en-AU')} PLAYABLE SONGS`);
-  if(Number(universeStats.newToday)>0) messages.push(`${Number(universeStats.newToday).toLocaleString('en-AU')} NEW DISCOVERIES ADDED TODAY`);
-  else if(Number(universeStats.newThisWeek)>0) messages.push(`${Number(universeStats.newThisWeek).toLocaleString('en-AU')} NEW RELEASES ADDED THIS WEEK`);
+  const suburbs=Number(universeStats.suburbs || 0);
+  if(artists>0&&releases>0&&songs>0) messages.push([`${artists.toLocaleString('en-AU')} MELBOURNE ARTISTS`,`${songs.toLocaleString('en-AU')} PLAYABLE TRACKS FROM MELBOURNE`,suburbs>0?`${suburbs.toLocaleString('en-AU')} MELBOURNE SUBURBS REPRESENTED`:null].filter(Boolean).join('  •  '));
+  if(Number(universeStats.newToday)>0) messages.push(`${Number(universeStats.newToday).toLocaleString('en-AU')} NEW MELBOURNE ARTISTS ADDED TODAY`);
+  else if(Number(universeStats.newThisWeek)>0) messages.push(`${Number(universeStats.newThisWeek).toLocaleString('en-AU')} NEW MELBOURNE ARTISTS ADDED THIS WEEK`);
   messages.push('SUPPORT INDEPENDENT ARTISTS  •  BUY MUSIC DIRECT FROM THE ARTIST');
-  messages.push('MUSIC LIVES HERE  •  GOOD VIBES  •  BANDCAMP');
+  messages.push('MELBOURNE MUSIC LIVES HERE  •  BANDCAMP');
   return [...new Set(messages.map(value=>tickerText(value)).filter(value=>value&&!/\b(?:UNDEFINED|NULL|N\/A)\b/.test(value)))];
 }
 

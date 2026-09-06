@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#001807">
-  <meta name="description" content="Break the glass and let independent music find you.">
+  <meta name="description" content="Break the glass and discover independent music from Melbourne.">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="manifest" href="/cosmic-aquarium/discovery.webmanifest">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%2300c83b%22/></svg>">
-  <title>Cosmic Aquaria — Independent music discovery</title>
+  <title>Cosmic Aquaria — Discover Melbourne music</title>
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-selected-heavy.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-selected-dreamy.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-selected-quiet.webp">
@@ -21,11 +21,11 @@
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/discovery-fidelity/selector-go-broken.webp">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-mobile.mp3">
   <link rel="preload" as="audio" type="audio/mpeg" href="/cosmic-aquarium/assets/audio/glass/glass-impact-go-mobile.mp3">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=962aaffaaa51">
-  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=962aaffaaa51"></script>
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=d730b9a0c67a">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=d730b9a0c67a"></script>
 </head>
 <body>
-  <main class="discovery-machine" data-base="/cosmic-aquarium" aria-label="Cosmic Aquaria independent music discovery machine">
+  <main class="discovery-machine" data-base="/cosmic-aquarium" aria-label="Cosmic Aquaria Melbourne independent music discovery machine">
     <section class="machine-screen selection-screen is-active" data-screen="selection" aria-labelledby="selection-title">
       <h1 id="selection-title" class="visually-hidden">Choose the kind of music you feel like hearing</h1>
       <header class="selector-masthead" aria-label="Music discovery through Bandcamp">
@@ -49,13 +49,13 @@
         </span>
       </header>
       <div class="artist-search" data-search-state="idle">
-        <label class="visually-hidden" for="artist-search-input">Search the Cosmic Aquaria artist library</label>
+        <label class="visually-hidden" for="artist-search-input">Search validated Melbourne artists in Cosmic Aquaria</label>
         <span class="search-icon" aria-hidden="true"></span>
         <input id="artist-search-input" type="search" inputmode="search" autocomplete="off" autocapitalize="words" spellcheck="false" maxlength="80" placeholder="SEARCH ARTIST OR BAND" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="artist-search-results" aria-activedescendant="">
         <span class="search-menu" aria-hidden="true"><i>DISCOVER</i><i>EXPLORE</i><i>GO FURTHER</i></span>
         <span class="search-shimmer" aria-hidden="true"><i></i><i></i><i></i></span>
         <button class="search-clear" type="button" aria-label="Clear artist search" hidden>×</button>
-        <div id="artist-search-results" class="search-results" role="listbox" aria-label="Cosmic Aquaria and optional Bandcamp artist results" hidden></div>
+        <div id="artist-search-results" class="search-results" role="listbox" aria-label="Validated Melbourne artists in Cosmic Aquaria" hidden></div>
         <p class="search-feedback" role="status" aria-live="polite"></p>
       </div>
       <div class="selection-grid" role="group" aria-label="Music categories">

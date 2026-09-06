@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "universe": "melbourne",
+  "generatedAt": "2026-09-06T01:47:20.711301+00:00",
+  "sourceManifestCount": 1227,
+  "canonicalArtistCount": 1220,
+  "invalidManifestCount": 0,
+  "invalidManifests": [],
+  "classificationCounts": {
+    "MELBOURNE_CONFIRMED": 13,
+    "NON_MELBOURNE_CONFIRMED": 1126,
+    "MELBOURNE_POSSIBLE": 6,
+    "LOCATION_UNKNOWN": 75,
+    "LOCATION_CONFLICT": 0
+  },
+  "confidenceCounts": {
+    "CONFIRMED": 11,
+    "HIGH": 1128,
+    "MEDIUM": 1,
+    "LOW": 5,
+    "UNKNOWN": 75
+  },
+  "eligibleMelbourneArtists": 13,
+  "eligibleMelbourneReleases": 13,
+  "eligibleMelbournePlayableTracks": 141,
+  "eligibleArtistsWithTickerBio": 13,
+  "eligibleSuburbs": [],
+  "waterDistribution": {
+    "HEAVY": 3,
+    "DREAMY": 1,
+    "QUIET": 3,
+    "ELECTRONIC": 3,
+    "DARK": 1,
+    "LOUD": 4,
+    "STRANGE": 1
+  },
+  "reviewQueueCount": 81,
+  "quarantinedNonMelbourneCount": 1126,
+  "geography": {
+    "lgaCount": 31,
+    "localityCount": 532,
+    "retrievedAt": "2026-09-06T01:29:41.168041+00:00"
+  }
+}

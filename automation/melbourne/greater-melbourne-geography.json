@@ -1,0 +1,2713 @@
+{
+  "schemaVersion": 1,
+  "universe": "melbourne",
+  "definition": "The 31 Local Government Areas identified by the Victorian Government as Metropolitan Melbourne.",
+  "metropolitanLgas": [
+    "Banyule",
+    "Bayside",
+    "Boroondara",
+    "Brimbank",
+    "Cardinia",
+    "Casey",
+    "Darebin",
+    "Frankston",
+    "Glen Eira",
+    "Greater Dandenong",
+    "Hobsons Bay",
+    "Hume",
+    "Kingston",
+    "Knox",
+    "Manningham",
+    "Maribyrnong",
+    "Maroondah",
+    "Melbourne",
+    "Melton",
+    "Monash",
+    "Moonee Valley",
+    "Merri-Bek",
+    "Mornington Peninsula",
+    "Nillumbik",
+    "Port Phillip",
+    "Stonnington",
+    "Whitehorse",
+    "Whittlesea",
+    "Wyndham",
+    "Yarra",
+    "Yarra Ranges"
+  ],
+  "localityCount": 532,
+  "localities": {
+    "abbotsford": {
+      "name": "Abbotsford",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "aberfeldie": {
+      "name": "Aberfeldie",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "aintree": {
+      "name": "Aintree",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "airport west": {
+      "name": "Airport West",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "albanvale": {
+      "name": "Albanvale",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "albert park": {
+      "name": "Albert Park",
+      "lga": "Port Phillip",
+      "absLgaCode": "25900"
+    },
+    "albion": {
+      "name": "Albion",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "alphington": {
+      "name": "Alphington",
+      "lga": "Darebin",
+      "absLgaCode": "21890"
+    },
+    "altona": {
+      "name": "Altona",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "altona meadows": {
+      "name": "Altona Meadows",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "altona north": {
+      "name": "Altona North",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "ardeer": {
+      "name": "Ardeer",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "armadale": {
+      "name": "Armadale",
+      "lga": "Stonnington",
+      "absLgaCode": "26350"
+    },
+    "arthurs creek": {
+      "name": "Arthurs Creek",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "arthurs seat": {
+      "name": "Arthurs Seat",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "ascot vale": {
+      "name": "Ascot Vale",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "ashburton": {
+      "name": "Ashburton",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "ashwood": {
+      "name": "Ashwood",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "aspendale": {
+      "name": "Aspendale",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "aspendale gardens": {
+      "name": "Aspendale Gardens",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "attwood": {
+      "name": "Attwood",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "avondale heights": {
+      "name": "Avondale Heights",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "avonsleigh": {
+      "name": "Avonsleigh",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "badger creek": {
+      "name": "Badger Creek",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "balaclava": {
+      "name": "Balaclava",
+      "lga": "Port Phillip",
+      "absLgaCode": "25900"
+    },
+    "balnarring": {
+      "name": "Balnarring",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "balnarring beach": {
+      "name": "Balnarring Beach",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "balwyn": {
+      "name": "Balwyn",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "balwyn north": {
+      "name": "Balwyn North",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "bangholme": {
+      "name": "Bangholme",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "baxter": {
+      "name": "Baxter",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "bayles": {
+      "name": "Bayles",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "bayswater": {
+      "name": "Bayswater",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "bayswater north": {
+      "name": "Bayswater North",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "beaconsfield": {
+      "name": "Beaconsfield",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "beaconsfield upper": {
+      "name": "Beaconsfield Upper",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "beaumaris": {
+      "name": "Beaumaris",
+      "lga": "Bayside",
+      "absLgaCode": "20910"
+    },
+    "beenak": {
+      "name": "Beenak",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "belgrave": {
+      "name": "Belgrave",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "belgrave heights": {
+      "name": "Belgrave Heights",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "belgrave south": {
+      "name": "Belgrave South",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "bellfield": {
+      "name": "Bellfield",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "bend of islands": {
+      "name": "Bend Of Islands",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "bentleigh": {
+      "name": "Bentleigh",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "bentleigh east": {
+      "name": "Bentleigh East",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "berwick": {
+      "name": "Berwick",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "big pats creek": {
+      "name": "Big Pats Creek",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "bittern": {
+      "name": "Bittern",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "black rock": {
+      "name": "Black Rock",
+      "lga": "Bayside",
+      "absLgaCode": "20910"
+    },
+    "blackburn": {
+      "name": "Blackburn",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "blackburn north": {
+      "name": "Blackburn North",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "blackburn south": {
+      "name": "Blackburn South",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "blairgowrie": {
+      "name": "Blairgowrie",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "blind bight": {
+      "name": "Blind Bight",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "bonbeach": {
+      "name": "Bonbeach",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "boneo": {
+      "name": "Boneo",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "bonnie brook": {
+      "name": "Bonnie Brook",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "boronia": {
+      "name": "Boronia",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "botanic ridge": {
+      "name": "Botanic Ridge",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "box hill": {
+      "name": "Box Hill",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "box hill north": {
+      "name": "Box Hill North",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "box hill south": {
+      "name": "Box Hill South",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "braeside": {
+      "name": "Braeside",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "braybrook": {
+      "name": "Braybrook",
+      "lga": "Maribyrnong",
+      "absLgaCode": "24330"
+    },
+    "briar hill": {
+      "name": "Briar Hill",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "brighton": {
+      "name": "Brighton",
+      "lga": "Bayside",
+      "absLgaCode": "20910"
+    },
+    "brighton east": {
+      "name": "Brighton East",
+      "lga": "Bayside",
+      "absLgaCode": "20910"
+    },
+    "broadmeadows": {
+      "name": "Broadmeadows",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "brookfield": {
+      "name": "Brookfield",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "brooklyn": {
+      "name": "Brooklyn",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "brunswick": {
+      "name": "Brunswick",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "brunswick east": {
+      "name": "Brunswick East",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "brunswick west": {
+      "name": "Brunswick West",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "bulla": {
+      "name": "Bulla",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "bulleen": {
+      "name": "Bulleen",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "bundoora": {
+      "name": "Bundoora",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "bunyip": {
+      "name": "Bunyip",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "bunyip north": {
+      "name": "Bunyip North",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "burnley": {
+      "name": "Burnley",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "burnside": {
+      "name": "Burnside",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "burnside heights": {
+      "name": "Burnside Heights",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "burwood": {
+      "name": "Burwood",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "burwood east": {
+      "name": "Burwood East",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "cairnlea": {
+      "name": "Cairnlea",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "calder park": {
+      "name": "Calder Park",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "caldermeade": {
+      "name": "Caldermeade",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "cambarville": {
+      "name": "Cambarville",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "camberwell": {
+      "name": "Camberwell",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "campbellfield": {
+      "name": "Campbellfield",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "cannons creek": {
+      "name": "Cannons Creek",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "canterbury": {
+      "name": "Canterbury",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "cape schanck": {
+      "name": "Cape Schanck",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "capel sound": {
+      "name": "Capel Sound",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "cardinia": {
+      "name": "Cardinia",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "carlton": {
+      "name": "Carlton",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "carlton north": {
+      "name": "Carlton North",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "carnegie": {
+      "name": "Carnegie",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "caroline springs": {
+      "name": "Caroline Springs",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "carrum": {
+      "name": "Carrum",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "carrum downs": {
+      "name": "Carrum Downs",
+      "lga": "Frankston",
+      "absLgaCode": "22170"
+    },
+    "catani": {
+      "name": "Catani",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "caulfield": {
+      "name": "Caulfield",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "caulfield east": {
+      "name": "Caulfield East",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "caulfield north": {
+      "name": "Caulfield North",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "caulfield south": {
+      "name": "Caulfield South",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "chadstone": {
+      "name": "Chadstone",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "chelsea": {
+      "name": "Chelsea",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "chelsea heights": {
+      "name": "Chelsea Heights",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "cheltenham": {
+      "name": "Cheltenham",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "chirnside park": {
+      "name": "Chirnside Park",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "christmas hills": {
+      "name": "Christmas Hills",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "chum creek": {
+      "name": "Chum Creek",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "clarinda": {
+      "name": "Clarinda",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "clayton": {
+      "name": "Clayton",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "clayton south": {
+      "name": "Clayton South",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "clematis": {
+      "name": "Clematis",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "clifton hill": {
+      "name": "Clifton Hill",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "clyde": {
+      "name": "Clyde",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "clyde north": {
+      "name": "Clyde North",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "cobblebank": {
+      "name": "Cobblebank",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "coburg": {
+      "name": "Coburg",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "coburg north": {
+      "name": "Coburg North",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "cockatoo": {
+      "name": "Cockatoo",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "cocoroc": {
+      "name": "Cocoroc",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "coldstream": {
+      "name": "Coldstream",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "collingwood": {
+      "name": "Collingwood",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "coolaroo": {
+      "name": "Coolaroo",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "cora lynn": {
+      "name": "Cora Lynn",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "cottles bridge": {
+      "name": "Cottles Bridge",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "craigieburn": {
+      "name": "Craigieburn",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "cranbourne": {
+      "name": "Cranbourne",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "cranbourne east": {
+      "name": "Cranbourne East",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "cranbourne north": {
+      "name": "Cranbourne North",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "cranbourne south": {
+      "name": "Cranbourne South",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "cranbourne west": {
+      "name": "Cranbourne West",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "cremorne": {
+      "name": "Cremorne",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "crib point": {
+      "name": "Crib Point",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "croydon": {
+      "name": "Croydon",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "croydon hills": {
+      "name": "Croydon Hills",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "croydon north": {
+      "name": "Croydon North",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "croydon south": {
+      "name": "Croydon South",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "dallas": {
+      "name": "Dallas",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "dalmore": {
+      "name": "Dalmore",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "dandenong": {
+      "name": "Dandenong",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "dandenong north": {
+      "name": "Dandenong North",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "dandenong south": {
+      "name": "Dandenong South",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "deanside": {
+      "name": "Deanside",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "deepdene": {
+      "name": "Deepdene",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "deer park": {
+      "name": "Deer Park",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "delahey": {
+      "name": "Delahey",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "derrimut": {
+      "name": "Derrimut",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "devon meadows": {
+      "name": "Devon Meadows",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "dewhurst": {
+      "name": "Dewhurst",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "diamond creek": {
+      "name": "Diamond Creek",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "diggers rest": {
+      "name": "Diggers Rest",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "dingley village": {
+      "name": "Dingley Village",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "dixons creek": {
+      "name": "Dixons Creek",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "docklands": {
+      "name": "Docklands",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "don valley": {
+      "name": "Don Valley",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "doncaster": {
+      "name": "Doncaster",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "doncaster east": {
+      "name": "Doncaster East",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "donnybrook": {
+      "name": "Donnybrook",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "donvale": {
+      "name": "Donvale",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "doreen": {
+      "name": "Doreen",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "doveton": {
+      "name": "Doveton",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "dromana": {
+      "name": "Dromana",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "eaglemont": {
+      "name": "Eaglemont",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "east melbourne": {
+      "name": "East Melbourne",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "east warburton": {
+      "name": "East Warburton",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "eden park": {
+      "name": "Eden Park",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "edithvale": {
+      "name": "Edithvale",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "elsternwick": {
+      "name": "Elsternwick",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "eltham": {
+      "name": "Eltham",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "eltham north": {
+      "name": "Eltham North",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "elwood": {
+      "name": "Elwood",
+      "lga": "Port Phillip",
+      "absLgaCode": "25900"
+    },
+    "emerald": {
+      "name": "Emerald",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "endeavour hills": {
+      "name": "Endeavour Hills",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "epping": {
+      "name": "Epping",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "essendon": {
+      "name": "Essendon",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "essendon fields": {
+      "name": "Essendon Fields",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "essendon north": {
+      "name": "Essendon North",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "essendon west": {
+      "name": "Essendon West",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "eumemmerring": {
+      "name": "Eumemmerring",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "exford": {
+      "name": "Exford",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "eynesbury": {
+      "name": "Eynesbury",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "fairfield": {
+      "name": "Fairfield",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "fawkner": {
+      "name": "Fawkner",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "fernshaw": {
+      "name": "Fernshaw",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "ferntree gully": {
+      "name": "Ferntree Gully",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "ferny creek": {
+      "name": "Ferny Creek",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "fieldstone": {
+      "name": "Fieldstone",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "fingal": {
+      "name": "Fingal",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "fitzroy": {
+      "name": "Fitzroy",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "fitzroy north": {
+      "name": "Fitzroy North",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "flemington": {
+      "name": "Flemington",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "flinders": {
+      "name": "Flinders",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "footscray": {
+      "name": "Footscray",
+      "lga": "Maribyrnong",
+      "absLgaCode": "24330"
+    },
+    "forest hill": {
+      "name": "Forest Hill",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "frankston": {
+      "name": "Frankston",
+      "lga": "Frankston",
+      "absLgaCode": "22170"
+    },
+    "frankston north": {
+      "name": "Frankston North",
+      "lga": "Frankston",
+      "absLgaCode": "22170"
+    },
+    "frankston south": {
+      "name": "Frankston South",
+      "lga": "Frankston",
+      "absLgaCode": "22170"
+    },
+    "fraser rise": {
+      "name": "Fraser Rise",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "gardenvale": {
+      "name": "Gardenvale",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "garfield": {
+      "name": "Garfield",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "garfield north": {
+      "name": "Garfield North",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "gembrook": {
+      "name": "Gembrook",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "gilderoy": {
+      "name": "Gilderoy",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "gladstone park": {
+      "name": "Gladstone Park",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "gladysdale": {
+      "name": "Gladysdale",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "glen huntly": {
+      "name": "Glen Huntly",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "glen iris": {
+      "name": "Glen Iris",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "glen waverley": {
+      "name": "Glen Waverley",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "glenroy": {
+      "name": "Glenroy",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "gowanbrae": {
+      "name": "Gowanbrae",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "grangefields": {
+      "name": "Grangefields",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "greensborough": {
+      "name": "Greensborough",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "greenvale": {
+      "name": "Greenvale",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "gruyere": {
+      "name": "Gruyere",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "guys hill": {
+      "name": "Guys Hill",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "hadfield": {
+      "name": "Hadfield",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "hallam": {
+      "name": "Hallam",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "hampton": {
+      "name": "Hampton",
+      "lga": "Bayside",
+      "absLgaCode": "20910"
+    },
+    "hampton east": {
+      "name": "Hampton East",
+      "lga": "Bayside",
+      "absLgaCode": "20910"
+    },
+    "hampton park": {
+      "name": "Hampton Park",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "harkaway": {
+      "name": "Harkaway",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "harkness": {
+      "name": "Harkness",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "hastings": {
+      "name": "Hastings",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "hawthorn": {
+      "name": "Hawthorn",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "hawthorn east": {
+      "name": "Hawthorn East",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "healesville": {
+      "name": "Healesville",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "heath hill": {
+      "name": "Heath Hill",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "heatherton": {
+      "name": "Heatherton",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "heathmont": {
+      "name": "Heathmont",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "heidelberg": {
+      "name": "Heidelberg",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "heidelberg heights": {
+      "name": "Heidelberg Heights",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "heidelberg west": {
+      "name": "Heidelberg West",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "highett": {
+      "name": "Highett",
+      "lga": "Bayside",
+      "absLgaCode": "20910"
+    },
+    "hillside": {
+      "name": "Hillside",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "hmas cerberus": {
+      "name": "Hmas Cerberus",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "hoddles creek": {
+      "name": "Hoddles Creek",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "hoppers crossing": {
+      "name": "Hoppers Crossing",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "hughesdale": {
+      "name": "Hughesdale",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "humevale": {
+      "name": "Humevale",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "huntingdale": {
+      "name": "Huntingdale",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "hurstbridge": {
+      "name": "Hurstbridge",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "iona": {
+      "name": "Iona",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "ivanhoe": {
+      "name": "Ivanhoe",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "ivanhoe east": {
+      "name": "Ivanhoe East",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "jacana": {
+      "name": "Jacana",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "junction village": {
+      "name": "Junction Village",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "kalkallo": {
+      "name": "Kalkallo",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "kallista": {
+      "name": "Kallista",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "kalorama": {
+      "name": "Kalorama",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "kangaroo ground": {
+      "name": "Kangaroo Ground",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "kealba": {
+      "name": "Kealba",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "keilor": {
+      "name": "Keilor",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "keilor downs": {
+      "name": "Keilor Downs",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "keilor east": {
+      "name": "Keilor East",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "keilor lodge": {
+      "name": "Keilor Lodge",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "keilor north": {
+      "name": "Keilor North",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "keilor park": {
+      "name": "Keilor Park",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "kensington": {
+      "name": "Kensington",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "kew": {
+      "name": "Kew",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "kew east": {
+      "name": "Kew East",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "keysborough": {
+      "name": "Keysborough",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "kilsyth": {
+      "name": "Kilsyth",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "kilsyth south": {
+      "name": "Kilsyth South",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "kings park": {
+      "name": "Kings Park",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "kingsbury": {
+      "name": "Kingsbury",
+      "lga": "Darebin",
+      "absLgaCode": "21890"
+    },
+    "kingsville": {
+      "name": "Kingsville",
+      "lga": "Maribyrnong",
+      "absLgaCode": "24330"
+    },
+    "knoxfield": {
+      "name": "Knoxfield",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "koo wee rup": {
+      "name": "Koo Wee Rup",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "koo wee rup north": {
+      "name": "Koo Wee Rup North",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "kooyong": {
+      "name": "Kooyong",
+      "lga": "Stonnington",
+      "absLgaCode": "26350"
+    },
+    "kurunjang": {
+      "name": "Kurunjang",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "lalor": {
+      "name": "Lalor",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "lang lang": {
+      "name": "Lang Lang",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "lang lang east": {
+      "name": "Lang Lang East",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "langwarrin": {
+      "name": "Langwarrin",
+      "lga": "Frankston",
+      "absLgaCode": "22170"
+    },
+    "langwarrin south": {
+      "name": "Langwarrin South",
+      "lga": "Frankston",
+      "absLgaCode": "22170"
+    },
+    "launching place": {
+      "name": "Launching Place",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "laverton": {
+      "name": "Laverton",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "laverton north": {
+      "name": "Laverton North",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "lilydale": {
+      "name": "Lilydale",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "lower plenty": {
+      "name": "Lower Plenty",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "lynbrook": {
+      "name": "Lynbrook",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "lyndhurst": {
+      "name": "Lyndhurst",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "lysterfield": {
+      "name": "Lysterfield",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "lysterfield south": {
+      "name": "Lysterfield South",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "macclesfield": {
+      "name": "Macclesfield",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "macleod": {
+      "name": "Macleod",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "maidstone": {
+      "name": "Maidstone",
+      "lga": "Maribyrnong",
+      "absLgaCode": "24330"
+    },
+    "main ridge": {
+      "name": "Main Ridge",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "malvern": {
+      "name": "Malvern",
+      "lga": "Stonnington",
+      "absLgaCode": "26350"
+    },
+    "malvern east": {
+      "name": "Malvern East",
+      "lga": "Stonnington",
+      "absLgaCode": "26350"
+    },
+    "mambourin": {
+      "name": "Mambourin",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "manor lakes": {
+      "name": "Manor Lakes",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "maribyrnong": {
+      "name": "Maribyrnong",
+      "lga": "Maribyrnong",
+      "absLgaCode": "24330"
+    },
+    "maryknoll": {
+      "name": "Maryknoll",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "mccrae": {
+      "name": "Mccrae",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "mckinnon": {
+      "name": "Mckinnon",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "mcmahons creek": {
+      "name": "Mcmahons Creek",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "meadow heights": {
+      "name": "Meadow Heights",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "melbourne": {
+      "name": "Melbourne",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "melbourne airport": {
+      "name": "Melbourne Airport",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "melton": {
+      "name": "Melton",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "melton south": {
+      "name": "Melton South",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "melton west": {
+      "name": "Melton West",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "mentone": {
+      "name": "Mentone",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "menzies creek": {
+      "name": "Menzies Creek",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "mernda": {
+      "name": "Mernda",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "merricks": {
+      "name": "Merricks",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "merricks beach": {
+      "name": "Merricks Beach",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "merricks north": {
+      "name": "Merricks North",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "mickleham": {
+      "name": "Mickleham",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "middle park": {
+      "name": "Middle Park",
+      "lga": "Port Phillip",
+      "absLgaCode": "25900"
+    },
+    "mill park": {
+      "name": "Mill Park",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "millgrove": {
+      "name": "Millgrove",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "mitcham": {
+      "name": "Mitcham",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "monbulk": {
+      "name": "Monbulk",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "monomeith": {
+      "name": "Monomeith",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "mont albert": {
+      "name": "Mont Albert",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "mont albert north": {
+      "name": "Mont Albert North",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "montmorency": {
+      "name": "Montmorency",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "montrose": {
+      "name": "Montrose",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "moonee ponds": {
+      "name": "Moonee Ponds",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "moorabbin": {
+      "name": "Moorabbin",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "moorabbin airport": {
+      "name": "Moorabbin Airport",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "moorooduc": {
+      "name": "Moorooduc",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "mooroolbark": {
+      "name": "Mooroolbark",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "mordialloc": {
+      "name": "Mordialloc",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "mornington": {
+      "name": "Mornington",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "mount burnett": {
+      "name": "Mount Burnett",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "mount cottrell": {
+      "name": "Mount Cottrell",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "mount dandenong": {
+      "name": "Mount Dandenong",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "mount eliza": {
+      "name": "Mount Eliza",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "mount evelyn": {
+      "name": "Mount Evelyn",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "mount martha": {
+      "name": "Mount Martha",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "mount toolebewong": {
+      "name": "Mount Toolebewong",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "mount waverley": {
+      "name": "Mount Waverley",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "mulgrave": {
+      "name": "Mulgrave",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "murrumbeena": {
+      "name": "Murrumbeena",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "nangana": {
+      "name": "Nangana",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "nar nar goon": {
+      "name": "Nar Nar Goon",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "nar nar goon north": {
+      "name": "Nar Nar Goon North",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "narre warren": {
+      "name": "Narre Warren",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "narre warren east": {
+      "name": "Narre Warren East",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "narre warren north": {
+      "name": "Narre Warren North",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "narre warren south": {
+      "name": "Narre Warren South",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "newport": {
+      "name": "Newport",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "niddrie": {
+      "name": "Niddrie",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "noble park": {
+      "name": "Noble Park",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "noble park north": {
+      "name": "Noble Park North",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "north melbourne": {
+      "name": "North Melbourne",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "north warrandyte": {
+      "name": "North Warrandyte",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "northcote": {
+      "name": "Northcote",
+      "lga": "Darebin",
+      "absLgaCode": "21890"
+    },
+    "notting hill": {
+      "name": "Notting Hill",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "nunawading": {
+      "name": "Nunawading",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "nutfield": {
+      "name": "Nutfield",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "oak park": {
+      "name": "Oak Park",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "oaklands junction": {
+      "name": "Oaklands Junction",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "oakleigh": {
+      "name": "Oakleigh",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "oakleigh east": {
+      "name": "Oakleigh East",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "oakleigh south": {
+      "name": "Oakleigh South",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "officer": {
+      "name": "Officer",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "officer south": {
+      "name": "Officer South",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "olinda": {
+      "name": "Olinda",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "ormond": {
+      "name": "Ormond",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "pakenham": {
+      "name": "Pakenham",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "pakenham south": {
+      "name": "Pakenham South",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "pakenham upper": {
+      "name": "Pakenham Upper",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "panton hill": {
+      "name": "Panton Hill",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "park orchards": {
+      "name": "Park Orchards",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "parkdale": {
+      "name": "Parkdale",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "parkville": {
+      "name": "Parkville",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "pascoe vale": {
+      "name": "Pascoe Vale",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "pascoe vale south": {
+      "name": "Pascoe Vale South",
+      "lga": "Merri-Bek",
+      "absLgaCode": "25250"
+    },
+    "patterson lakes": {
+      "name": "Patterson Lakes",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "pearcedale": {
+      "name": "Pearcedale",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "plenty": {
+      "name": "Plenty",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "plumpton": {
+      "name": "Plumpton",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "point cook": {
+      "name": "Point Cook",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "point leo": {
+      "name": "Point Leo",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "port melbourne": {
+      "name": "Port Melbourne",
+      "lga": "Port Phillip",
+      "absLgaCode": "25900"
+    },
+    "portsea": {
+      "name": "Portsea",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "powelltown": {
+      "name": "Powelltown",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "prahran": {
+      "name": "Prahran",
+      "lga": "Stonnington",
+      "absLgaCode": "26350"
+    },
+    "preston": {
+      "name": "Preston",
+      "lga": "Darebin",
+      "absLgaCode": "21890"
+    },
+    "princes hill": {
+      "name": "Princes Hill",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "quandong": {
+      "name": "Quandong",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "ravenhall": {
+      "name": "Ravenhall",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "red hill": {
+      "name": "Red Hill",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "red hill south": {
+      "name": "Red Hill South",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "reefton": {
+      "name": "Reefton",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "research": {
+      "name": "Research",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "reservoir": {
+      "name": "Reservoir",
+      "lga": "Darebin",
+      "absLgaCode": "21890"
+    },
+    "richmond": {
+      "name": "Richmond",
+      "lga": "Yarra",
+      "absLgaCode": "27350"
+    },
+    "ringwood": {
+      "name": "Ringwood",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "ringwood east": {
+      "name": "Ringwood East",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "ringwood north": {
+      "name": "Ringwood North",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "ripponlea": {
+      "name": "Ripponlea",
+      "lga": "Port Phillip",
+      "absLgaCode": "25900"
+    },
+    "rockbank": {
+      "name": "Rockbank",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "rosanna": {
+      "name": "Rosanna",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "rosebud": {
+      "name": "Rosebud",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "rowville": {
+      "name": "Rowville",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "roxburgh park": {
+      "name": "Roxburgh Park",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "rye": {
+      "name": "Rye",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "rythdale": {
+      "name": "Rythdale",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "safety beach": {
+      "name": "Safety Beach",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "sandhurst": {
+      "name": "Sandhurst",
+      "lga": "Frankston",
+      "absLgaCode": "22170"
+    },
+    "sandringham": {
+      "name": "Sandringham",
+      "lga": "Bayside",
+      "absLgaCode": "20910"
+    },
+    "sassafras": {
+      "name": "Sassafras",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "scoresby": {
+      "name": "Scoresby",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "seabrook": {
+      "name": "Seabrook",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "seaford": {
+      "name": "Seaford",
+      "lga": "Frankston",
+      "absLgaCode": "22170"
+    },
+    "seaholme": {
+      "name": "Seaholme",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "seddon": {
+      "name": "Seddon",
+      "lga": "Maribyrnong",
+      "absLgaCode": "24330"
+    },
+    "selby": {
+      "name": "Selby",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "seville": {
+      "name": "Seville",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "seville east": {
+      "name": "Seville East",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "sherbrooke": {
+      "name": "Sherbrooke",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "shoreham": {
+      "name": "Shoreham",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "silvan": {
+      "name": "Silvan",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "skye": {
+      "name": "Skye",
+      "lga": "Frankston",
+      "absLgaCode": "22170"
+    },
+    "smiths gully": {
+      "name": "Smiths Gully",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "somers": {
+      "name": "Somers",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "somerton": {
+      "name": "Somerton",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "somerville": {
+      "name": "Somerville",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "sorrento": {
+      "name": "Sorrento",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "south kingsville": {
+      "name": "South Kingsville",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "south melbourne": {
+      "name": "South Melbourne",
+      "lga": "Port Phillip",
+      "absLgaCode": "25900"
+    },
+    "south morang": {
+      "name": "South Morang",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "south wharf": {
+      "name": "South Wharf",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "south yarra": {
+      "name": "South Yarra",
+      "lga": "Stonnington",
+      "absLgaCode": "26350"
+    },
+    "southbank": {
+      "name": "Southbank",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "spotswood": {
+      "name": "Spotswood",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "springvale": {
+      "name": "Springvale",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "springvale south": {
+      "name": "Springvale South",
+      "lga": "Greater Dandenong",
+      "absLgaCode": "22670"
+    },
+    "st albans": {
+      "name": "St Albans",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "st andrews": {
+      "name": "St Andrews",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "st andrews beach": {
+      "name": "St Andrews Beach",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "st helena": {
+      "name": "St Helena",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "st kilda": {
+      "name": "St Kilda",
+      "lga": "Port Phillip",
+      "absLgaCode": "25900"
+    },
+    "st kilda east": {
+      "name": "St Kilda East",
+      "lga": "Glen Eira",
+      "absLgaCode": "22310"
+    },
+    "st kilda west": {
+      "name": "St Kilda West",
+      "lga": "Port Phillip",
+      "absLgaCode": "25900"
+    },
+    "steels creek": {
+      "name": "Steels Creek",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "strathewen": {
+      "name": "Strathewen",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "strathmore": {
+      "name": "Strathmore",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "strathmore heights": {
+      "name": "Strathmore Heights",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "strathtulloh": {
+      "name": "Strathtulloh",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "sunbury": {
+      "name": "Sunbury",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "sunshine": {
+      "name": "Sunshine",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "sunshine north": {
+      "name": "Sunshine North",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "sunshine west": {
+      "name": "Sunshine West",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "surrey hills": {
+      "name": "Surrey Hills",
+      "lga": "Boroondara",
+      "absLgaCode": "21110"
+    },
+    "sydenham": {
+      "name": "Sydenham",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "tarneit": {
+      "name": "Tarneit",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "tarrawarra": {
+      "name": "Tarrawarra",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "taylors hill": {
+      "name": "Taylors Hill",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "taylors lakes": {
+      "name": "Taylors Lakes",
+      "lga": "Brimbank",
+      "absLgaCode": "21180"
+    },
+    "tecoma": {
+      "name": "Tecoma",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "templestowe": {
+      "name": "Templestowe",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "templestowe lower": {
+      "name": "Templestowe Lower",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "the basin": {
+      "name": "The Basin",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "the patch": {
+      "name": "The Patch",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "thomastown": {
+      "name": "Thomastown",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "thornbury": {
+      "name": "Thornbury",
+      "lga": "Darebin",
+      "absLgaCode": "21890"
+    },
+    "thornhill park": {
+      "name": "Thornhill Park",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "three bridges": {
+      "name": "Three Bridges",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "tonimbuk": {
+      "name": "Tonimbuk",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "toolern vale": {
+      "name": "Toolern Vale",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "tooradin": {
+      "name": "Tooradin",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "toorak": {
+      "name": "Toorak",
+      "lga": "Stonnington",
+      "absLgaCode": "26350"
+    },
+    "tootgarook": {
+      "name": "Tootgarook",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "tottenham": {
+      "name": "Tottenham",
+      "lga": "Maribyrnong",
+      "absLgaCode": "24330"
+    },
+    "travancore": {
+      "name": "Travancore",
+      "lga": "Moonee Valley",
+      "absLgaCode": "25060"
+    },
+    "tremont": {
+      "name": "Tremont",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "truganina": {
+      "name": "Truganina",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "tuerong": {
+      "name": "Tuerong",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "tullamarine": {
+      "name": "Tullamarine",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "tyabb": {
+      "name": "Tyabb",
+      "lga": "Mornington Peninsula",
+      "absLgaCode": "25340"
+    },
+    "tynong": {
+      "name": "Tynong",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "tynong north": {
+      "name": "Tynong North",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "upper ferntree gully": {
+      "name": "Upper Ferntree Gully",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "upwey": {
+      "name": "Upwey",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "vermont": {
+      "name": "Vermont",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "vermont south": {
+      "name": "Vermont South",
+      "lga": "Whitehorse",
+      "absLgaCode": "26980"
+    },
+    "vervale": {
+      "name": "Vervale",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "viewbank": {
+      "name": "Viewbank",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "wandin east": {
+      "name": "Wandin East",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "wandin north": {
+      "name": "Wandin North",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "wantirna": {
+      "name": "Wantirna",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "wantirna south": {
+      "name": "Wantirna South",
+      "lga": "Knox",
+      "absLgaCode": "23670"
+    },
+    "warburton": {
+      "name": "Warburton",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "warneet": {
+      "name": "Warneet",
+      "lga": "Casey",
+      "absLgaCode": "21610"
+    },
+    "warrandyte": {
+      "name": "Warrandyte",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "warrandyte south": {
+      "name": "Warrandyte South",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "warranwood": {
+      "name": "Warranwood",
+      "lga": "Maroondah",
+      "absLgaCode": "24410"
+    },
+    "waterways": {
+      "name": "Waterways",
+      "lga": "Kingston",
+      "absLgaCode": "23430"
+    },
+    "watsonia": {
+      "name": "Watsonia",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "watsonia north": {
+      "name": "Watsonia North",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "watsons creek": {
+      "name": "Watsons Creek",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "wattle glen": {
+      "name": "Wattle Glen",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "weir views": {
+      "name": "Weir Views",
+      "lga": "Melton",
+      "absLgaCode": "24650"
+    },
+    "werribee": {
+      "name": "Werribee",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "werribee south": {
+      "name": "Werribee South",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "wesburn": {
+      "name": "Wesburn",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "west footscray": {
+      "name": "West Footscray",
+      "lga": "Maribyrnong",
+      "absLgaCode": "24330"
+    },
+    "west melbourne": {
+      "name": "West Melbourne",
+      "lga": "Melbourne",
+      "absLgaCode": "24600"
+    },
+    "westmeadows": {
+      "name": "Westmeadows",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "wheelers hill": {
+      "name": "Wheelers Hill",
+      "lga": "Monash",
+      "absLgaCode": "24970"
+    },
+    "whittlesea": {
+      "name": "Whittlesea",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "wildwood": {
+      "name": "Wildwood",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    },
+    "williams landing": {
+      "name": "Williams Landing",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "williamstown": {
+      "name": "Williamstown",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "williamstown north": {
+      "name": "Williamstown North",
+      "lga": "Hobsons Bay",
+      "absLgaCode": "23110"
+    },
+    "windsor": {
+      "name": "Windsor",
+      "lga": "Stonnington",
+      "absLgaCode": "26350"
+    },
+    "wollert": {
+      "name": "Wollert",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "wonga park": {
+      "name": "Wonga Park",
+      "lga": "Manningham",
+      "absLgaCode": "24210"
+    },
+    "woodstock": {
+      "name": "Woodstock",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "woori yallock": {
+      "name": "Woori Yallock",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "wyndham vale": {
+      "name": "Wyndham Vale",
+      "lga": "Wyndham",
+      "absLgaCode": "27260"
+    },
+    "yallambie": {
+      "name": "Yallambie",
+      "lga": "Banyule",
+      "absLgaCode": "20660"
+    },
+    "yan yean": {
+      "name": "Yan Yean",
+      "lga": "Whittlesea",
+      "absLgaCode": "27070"
+    },
+    "yannathan": {
+      "name": "Yannathan",
+      "lga": "Cardinia",
+      "absLgaCode": "21450"
+    },
+    "yarra glen": {
+      "name": "Yarra Glen",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "yarra junction": {
+      "name": "Yarra Junction",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "yarrambat": {
+      "name": "Yarrambat",
+      "lga": "Nillumbik",
+      "absLgaCode": "25710"
+    },
+    "yarraville": {
+      "name": "Yarraville",
+      "lga": "Maribyrnong",
+      "absLgaCode": "24330"
+    },
+    "yellingbo": {
+      "name": "Yellingbo",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "yering": {
+      "name": "Yering",
+      "lga": "Yarra Ranges",
+      "absLgaCode": "27450"
+    },
+    "yuroke": {
+      "name": "Yuroke",
+      "lga": "Hume",
+      "absLgaCode": "23270"
+    }
+  },
+  "sources": [
+    {
+      "name": "Victorian Government — Metropolitan Melbourne",
+      "url": "https://liveinmelbourne.vic.gov.au/discover/melbourne/metropolitan-melbourne"
+    },
+    {
+      "name": "Vicmap Admin REST API — authoritative locality and LGA boundaries",
+      "url": "https://services-ap1.arcgis.com/P744lA0wf4LlBZ84/ArcGIS/rest/services/Vicmap_Admin/FeatureServer"
+    }
+  ],
+  "method": "Vicmap locality polygon centroid spatially joined to the 31 Metropolitan Melbourne LGA polygons.",
+  "retrievedAt": "2026-09-06T01:29:41.168041+00:00"
+}

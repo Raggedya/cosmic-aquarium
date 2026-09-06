@@ -75,9 +75,11 @@ test('discovery selects an artist first so large discographies cannot dominate',
 });
 
 test('the production catalogue contains only real playable Bandcamp records',async()=>{
-  const registry=JSON.parse(await read('github-pages/aquariums.json')).aquariums;
-  assert.ok(registry.length>=200);
-  assert.ok(registry.every((entry:{artist:string;release:string;status:string;bandcampUrl:string;canonicalArtistId:string})=>entry.artist&&entry.release&&entry.status==='published'&&validBandcampUrl(entry.bandcampUrl)&&entry.canonicalArtistId));
+  const catalogue=JSON.parse(await read('github-pages/aquariums.json'));
+  const registry=catalogue.aquariums;
+  assert.equal(catalogue.universe,'melbourne');
+  assert.ok(registry.length>=1);
+  assert.ok(registry.every((entry:{artist:string;release:string;status:string;bandcampUrl:string;canonicalArtistId:string;universeMembership:string[]})=>entry.artist&&entry.release&&entry.status==='published'&&validBandcampUrl(entry.bandcampUrl)&&entry.canonicalArtistId&&entry.universeMembership.includes('melbourne')));
   for(const entry of registry){
     const manifest=JSON.parse(await read(`github-pages/artists/${entry.slug}.json`));
     assert.ok(pickPlayableTrack(manifest),`${entry.slug} must expose at least one lawful playable track`);
@@ -188,18 +190,19 @@ test('ticker rotates factual artist, release, bio, style and generated universe 
   assert.ok(messages.some(message=>/ROTATIONS.*STEADY AS A SPEEDY OAK/.test(message)));
   assert.ok(messages.some(message=>/ATMOSPHERIC TEXTURAL MUSIC/.test(message)));
   assert.ok(messages.some(message=>/DREAMY \+ STRANGE/.test(message)));
-  assert.ok(messages.some(message=>/220 ARTISTS.*227 RELEASES.*2,398 PLAYABLE SONGS/.test(message)));
+  assert.ok(messages.some(message=>/220 MELBOURNE ARTISTS.*2,398 PLAYABLE TRACKS FROM MELBOURNE/.test(message)));
   assert.ok(messages.every(message=>!/(undefined|null|n\/a)/i.test(message)));
 });
 
 test('universe statistics are generated from published manifests and distinct playable track ids',async()=>{
   const [stats,build]=await Promise.all([read('github-pages/universe-stats.json'),read('scripts/build-github-pages.mjs')]);
   const parsed=JSON.parse(stats);
-  assert.ok(parsed.canonicalArtistCount>=200);
+  assert.equal(parsed.universe,'melbourne');
+  assert.ok(parsed.canonicalArtistCount>=1);
   assert.ok(parsed.publishedReleaseCount>=parsed.canonicalArtistCount);
   assert.ok(parsed.playableTrackCount>=parsed.publishedReleaseCount);
-  assert.match(build,/playableTrackIds\.add\(trackId\)/);
-  assert.match(build,/publishedReleaseCount:aquariumRegistry\.filter/);
+  assert.match(build,/eligibleArtistIds/);
+  assert.match(build,/publishedReleaseCount:melbourneAquariumRegistry\.length/);
   assert.doesNotMatch(build,/canonicalArtistCount:\s*\d/);
 });
 

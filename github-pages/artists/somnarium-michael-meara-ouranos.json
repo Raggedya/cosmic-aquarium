@@ -22,8 +22,13 @@
   "bioSource": "metadata-derived",
   "waters": [
     "dark",
-    "quiet"
+    "quiet",
+    "strange"
   ],
+  "waterOverride": {
+    "source": "manual-melbourne-migration-review",
+    "evidence": "Bandcamp tags include drone, minimal, modern classical and space music."
+  },
   "commerceAvailable": true,
   "commerceUrl": "https://somnarium.bandcamp.com/",
   "visualStyle": "violet",

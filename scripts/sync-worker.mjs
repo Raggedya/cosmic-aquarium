@@ -21,7 +21,7 @@ if(process.env.BATCH_DATE){
 const response=await fetch(endpoint,{
   method:'POST',
   headers:{authorization:`Bearer ${token}`,'content-type':'application/json'},
-  body:JSON.stringify({aquariums:catalogue.aquariums||[],artists:artistIndex.artists||[],collections,batch,fullReplace:process.env.FULL_REPLACE==='true'}),
+  body:JSON.stringify({aquariums:catalogue.aquariums||[],artists:artistIndex.artists||[],collections,batch,fullReplace:process.env.FULL_REPLACE==='true',archiveMissing:process.env.ARCHIVE_MISSING==='true',universe:catalogue.universe||'global'}),
 });
 const result=await response.json().catch(()=>({}));
 if(!response.ok) throw new Error(`Universe discovery sync failed: ${response.status} ${JSON.stringify(result)}`);

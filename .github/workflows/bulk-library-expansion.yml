@@ -1,4 +1,4 @@
-name: Cosmic Aquaria Bulk Library Expansion
+name: ARCHIVED — Global Cosmic Aquaria Expansion
 
 on:
   workflow_dispatch:
@@ -36,6 +36,9 @@ concurrency:
 
 jobs:
   validate-and-publish:
+    # Product decision 2026-09-06: the global 5,000-artist programme is retired.
+    # Preserve the workflow for audit/recovery, but never execute it.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
