@@ -1,3 +1,11 @@
+import {
+  MELBOURNE_CULTURE_SEGMENTS,
+  getMelbourneCultureSegments,
+  advanceMelbourneCultureIndex,
+} from './ticker/melbourne-culture.js';
+
+export { MELBOURNE_CULTURE_SEGMENTS, getMelbourneCultureSegments, advanceMelbourneCultureIndex };
+
 export const CATEGORIES = Object.freeze(['heavy','dreamy','quiet','electronic','dark','loud','strange','anything']);
 export const FILTER_CATEGORIES = Object.freeze(CATEGORIES.filter(category => category !== 'anything'));
 export const GO_HOLD_MS = 1500;
@@ -168,7 +176,7 @@ function usefulTags(values = [], waters = []) {
   return [...new Set(values.map(value=>tickerText(value,32)).filter(value=>value&&!ignored.has(value.toLowerCase())))].slice(0,3);
 }
 
-export function buildTickerMessages(manifest, registryEntry = {}, artistEntry = {}, universeStats = {}) {
+export function buildTickerMessages(manifest, registryEntry = {}, artistEntry = {}, universeStats = {}, options = {}) {
   const messages = [];
   const artist=tickerText(manifest.artist || registryEntry.artist || artistEntry.name,90);
   const suburb=tickerText(registryEntry.suburb || artistEntry.suburb,70);
@@ -179,14 +187,17 @@ export function buildTickerMessages(manifest, registryEntry = {}, artistEntry = 
   const tags=usefulTags(manifest.metadataTags || registryEntry.metadataTags || [],waters);
   const bio=tickerText(registryEntry.bioShort || artistEntry.bioShort || manifest.bioShort,180);
   const labels=(manifest.labels || artistEntry.labels || []).map(value=>tickerText(value,70)).filter(Boolean);
+  const universe=String(options.universe || universeStats.universe || '').trim().toLowerCase();
+  const cultureSegments=getMelbourneCultureSegments(universe,options.cultureStartIndex,options.cultureSegmentCount ?? 2);
 
   if(artist) messages.push(location?`${artist}  •  ${location}`:artist);
+  if(release || track) messages.push(['NOW PLAYING',release,track].filter(Boolean).join('  •  '));
   if(bio) messages.push(bio);
   else {
     const context=[...tags,...waters].slice(0,3);
     if(context.length&&location) messages.push(`${context.join(' / ')} MUSIC FROM ${location}`);
   }
-  if(release || track) messages.push(['NOW PLAYING',release,track].filter(Boolean).join('  •  '));
+  if(cultureSegments[0]) messages.push(cultureSegments[0]);
   const style=[waters.length?waters.join(' + '):'',...tags].filter(Boolean);
   if(style.length) messages.push(style.join('  •  '));
   if(manifest.releaseDate || registryEntry.releaseDate) {
@@ -199,11 +210,14 @@ export function buildTickerMessages(manifest, registryEntry = {}, artistEntry = 
   const songs=Number(universeStats.playableTrackCount || universeStats.playableTracks || 0);
   const suburbs=Number(universeStats.suburbs || 0);
   if(artists>0&&releases>0&&songs>0) messages.push([`${artists.toLocaleString('en-AU')} MELBOURNE ARTISTS`,`${songs.toLocaleString('en-AU')} PLAYABLE TRACKS FROM MELBOURNE`,suburbs>0?`${suburbs.toLocaleString('en-AU')} MELBOURNE SUBURBS REPRESENTED`:null].filter(Boolean).join('  •  '));
+  if(artist) messages.push(['CURRENT ARTIST',artist,location].filter(Boolean).join('  •  '));
+  if(cultureSegments[1]) messages.push(cultureSegments[1]);
   if(Number(universeStats.newToday)>0) messages.push(`${Number(universeStats.newToday).toLocaleString('en-AU')} NEW MELBOURNE ARTISTS ADDED TODAY`);
   else if(Number(universeStats.newThisWeek)>0) messages.push(`${Number(universeStats.newThisWeek).toLocaleString('en-AU')} NEW MELBOURNE ARTISTS ADDED THIS WEEK`);
   messages.push('SUPPORT INDEPENDENT ARTISTS  •  BUY MUSIC DIRECT FROM THE ARTIST');
   messages.push('MELBOURNE MUSIC LIVES HERE  •  BANDCAMP');
-  return [...new Set(messages.map(value=>tickerText(value)).filter(value=>value&&!/\b(?:UNDEFINED|NULL|N\/A)\b/.test(value)))];
+  const cultureSet=new Set(cultureSegments);
+  return [...new Set(messages.map(value=>tickerText(value,cultureSet.has(value)?600:220)).filter(value=>value&&!/\b(?:UNDEFINED|NULL|N\/A)\b/.test(value)))];
 }
 
 export function buildTickerFacts(manifest, registryEntry = {}, artistEntry = {}, universeStats = {}) {

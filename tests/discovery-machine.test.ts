@@ -6,6 +6,7 @@ import {
   nextSelection, normalizeSelection, eligibleReleases, chooseRelease,
   pushHistory, buildShareUrl, buildTickerFacts, buildTickerMessages, validBandcampUrl, pickPlayableTrack, artistIdentity,
   normalizeArtistSearch, searchLocalArtists, dedupeArtistResults, highConfidenceArtistMatch, pickDifferentPlayableTrack,
+  MELBOURNE_CULTURE_SEGMENTS, getMelbourneCultureSegments, advanceMelbourneCultureIndex,
 } from '../github-pages/assets/discovery-machine-core.js';
 import { classifyWaters, validWaters, WATERS } from '../scripts/water-classifier.mjs';
 
@@ -192,6 +193,47 @@ test('ticker rotates factual artist, release, bio, style and generated universe 
   assert.ok(messages.some(message=>/DREAMY \+ STRANGE/.test(message)));
   assert.ok(messages.some(message=>/220 MELBOURNE ARTISTS.*2,398 PLAYABLE TRACKS FROM MELBOURNE/.test(message)));
   assert.ok(messages.every(message=>!/(undefined|null|n\/a)/i.test(message)));
+});
+
+test('Melbourne culture ticker preserves all ten canonical segments verbatim',()=>{
+  const passage="MELBOURNE MUSIC ISN'T ONE SCENE. IT'S A THOUSAND LITTLE ONES THAT KEEP BUMPING INTO EACH OTHER. IT'S A NEW BAND AT THE OLD BAR ON A WEDNESDAY, A SWEATY NIGHT AT THE TOTE, THE NORTHCOTE SOCIAL CLUB BANDROOM, THE CORNER, THE CROXTON, HOWLER, THE NIGHT CAT, THE RETREAT, JAZZLAB, BAR OPEN AND THE ESPY. IT'S BRUNSWICK AND NORTHCOTE, FITZROY AND COLLINGWOOD, THORNBURY, PRESTON, FOOTSCRAY AND ST KILDA. IT'S POST-PUNK BESIDE SHOEGAZE, DOOM BESIDE DREAM-POP, GARAGE, PSYCH, HARDCORE, TECHNO, HOUSE, JAZZ, SOUL, COUNTRY, AMBIENT, NOISE AND SOMETHING MADE IN A BEDROOM THAT DOESN'T HAVE A GENRE YET. TRIPLE R 102.7 IS PART OF THE CITY'S MUSICAL MEMORY — LISTENER-FUNDED, VOLUNTEER-PRESENTED RADIO WHERE THE PERSON BEHIND THE MICROPHONE ACTUALLY CHOOSES THE RECORDS. IN 2026 IT'S CELEBRATING 50 YEARS OF CHAMPIONING LOCAL MUSIC, ARTS AND VOICES THAT COMMERCIAL RADIO OFTEN MISSES. PBS 106.7 IS ITS DIFFERENT BUT EQUALLY MELBOURNE COUSIN: SPECIALIST MUSIC OBSESSIVES, MORE THAN 80 PROGRAMS, VOLUNTEER ANNOUNCERS WITH THEIR OWN TASTES AND RECORD COLLECTIONS, AND A DEEP COMMITMENT TO THE LITTLE-HEARD AND UNDER-REPRESENTED. THAT'S WHY MUSIC HERE FEELS PERSONAL. THE BAND YOU SEE IN A TINY ROOM TONIGHT MIGHT BE PLAYED ON RRR OR PBS TOMORROW, WORK AT THE RECORD SHOP YOU VISIT ON SATURDAY, PLAY IN TWO OTHER BANDS, AND BE STANDING NEXT TO YOU AT SOMEONE ELSE'S GIG ON SUNDAY. MELBOURNE DOESN'T JUST HAVE A MUSIC INDUSTRY. IT HAS A MUSIC ECOSYSTEM — MUSICIANS, PUNTERS, BANDROOMS, COMMUNITY RADIO, RECORD SHOPS, LABELS, POSTERS ON POLES, LATE TRAMS HOME AND PEOPLE WHO STILL GO OUT JUST TO HEAR SOMETHING THEY'VE NEVER HEARD BEFORE.";
+  assert.equal(MELBOURNE_CULTURE_SEGMENTS.length,10);
+  assert.equal(MELBOURNE_CULTURE_SEGMENTS.join(' '),passage);
+  const reachable=new Set<number>();
+  for(let index=0;index<MELBOURNE_CULTURE_SEGMENTS.length;index+=2){
+    for(const segment of getMelbourneCultureSegments('melbourne',index,2))reachable.add(MELBOURNE_CULTURE_SEGMENTS.indexOf(segment));
+  }
+  assert.deepEqual([...reachable].sort((a,b)=>a-b),[0,1,2,3,4,5,6,7,8,9]);
+  assert.equal(advanceMelbourneCultureIndex(0,2),2);
+  assert.equal(advanceMelbourneCultureIndex(8,2),0);
+});
+
+test('culture segments are Melbourne-scoped and remain secondary to fresh artist metadata',()=>{
+  const manifestA={artist:'Aneira',releaseTitle:'Rotations',selectedTrackTitle:'White Plane 125',bioShort:'Atmospheric textural music from Melbourne.'};
+  const stats={universe:'melbourne',canonicalArtistCount:33,publishedReleaseCount:33,playableTrackCount:252};
+  const first=buildTickerMessages(manifestA,{}, {primaryLocation:'Melbourne, Australia'},stats,{cultureStartIndex:4,cultureSegmentCount:2});
+  assert.match(first[0],/^ANEIRA/);
+  assert.match(first[1],/^NOW PLAYING.*ROTATIONS.*WHITE PLANE 125/);
+  assert.ok(first.indexOf(MELBOURNE_CULTURE_SEGMENTS[4])>first.findIndex(message=>message.includes('ATMOSPHERIC TEXTURAL MUSIC')));
+  assert.ok(first.includes(MELBOURNE_CULTURE_SEGMENTS[5]));
+  assert.ok(first.every(message=>message&& !/(undefined|null|n\/a)/i.test(message)));
+  assert.deepEqual(getMelbourneCultureSegments('tokyo',0,2),[]);
+  const outside=buildTickerMessages(manifestA,{}, {},{...stats,universe:'tokyo'},{cultureStartIndex:0,cultureSegmentCount:2});
+  assert.ok(outside.every(message=>!MELBOURNE_CULTURE_SEGMENTS.includes(message)));
+
+  const second=buildTickerMessages({artist:'Cable Ties',releaseTitle:'All Her Plans',selectedTrackTitle:'Time For You'}, {}, {primaryLocation:'Melbourne, Australia'},stats,{cultureStartIndex:6,cultureSegmentCount:2});
+  assert.match(second[0],/^CABLE TIES/);
+  assert.ok(second.every(message=>!message.includes('ANEIRA')));
+  assert.ok(second.includes(MELBOURNE_CULTURE_SEGMENTS[6]));
+});
+
+test('runtime advances Melbourne culture by session while retaining the seamless long-text ticker',async()=>{
+  const runtime=await read('github-pages/assets/discovery-machine.js');
+  assert.match(runtime,/cosmic-aquaria:melbourne-culture-index/);
+  assert.match(runtime,/advanceMelbourneCultureIndex\(cultureStartIndex,cultureSegmentsPerArtist\)/);
+  assert.match(runtime,/buildTickerMessages\([^\n]+takeCultureTickerOptions\(\)\)/);
+  assert.match(runtime,/const continuous=`\$\{tickerQueue\.join\('  •  '\)\}  •  `/);
+  assert.match(runtime,/const speed=reducedMotion\.matches\?18:44/);
 });
 
 test('universe statistics are generated from published manifests and distinct playable track ids',async()=>{

@@ -3,6 +3,7 @@ import {
   nextSelection, normalizeSelection, chooseRelease, pushHistory, buildShareUrl,
   buildTickerMessages, validBandcampUrl, pickPlayableTrack, artistIdentity,
   searchLocalArtists, dedupeArtistResults, highConfidenceArtistMatch, pickDifferentPlayableTrack,
+  advanceMelbourneCultureIndex,
 } from './discovery-machine-core.js';
 
 const machine = document.querySelector('.discovery-machine');
@@ -43,6 +44,8 @@ const historyKey = 'cosmic-aquaria:discovery-history';
 const artistHistoryKey = 'cosmic-aquaria:discovery-artist-history';
 const selectionKey = 'cosmic-aquaria:category-selection';
 const sessionKey = 'cosmic-aquaria:analytics-session';
+const cultureTickerIndexKey = 'cosmic-aquaria:melbourne-culture-index';
+const cultureSegmentsPerArtist = 2;
 
 let catalogue = [];
 let artistsById = new Map();
@@ -254,6 +257,15 @@ function writePersistentMute(value) {
 
 function readJson(key, fallback) {
   try { return JSON.parse(sessionStorage.getItem(key) || '') ?? fallback; } catch { return fallback; }
+}
+
+function takeCultureTickerOptions() {
+  const universe=String(universeStats.universe||'').trim().toLowerCase();
+  if(universe!=='melbourne')return {universe,cultureSegmentCount:0};
+  const stored=Number.parseInt(sessionStorage.getItem(cultureTickerIndexKey)||'0',10);
+  const cultureStartIndex=Number.isFinite(stored)?stored:0;
+  sessionStorage.setItem(cultureTickerIndexKey,String(advanceMelbourneCultureIndex(cultureStartIndex,cultureSegmentsPerArtist)));
+  return {universe,cultureStartIndex,cultureSegmentCount:cultureSegmentsPerArtist};
 }
 
 function sessionId() {
@@ -1050,7 +1062,7 @@ function populatePlayer(entry, manifest, {trackOverride=null}={}) {
   setFittedText(document.querySelector('.release-title'),manifest.releaseTitle || entry.release || track.albumTitle || track.title,20,32);
   setFittedText(document.querySelector('.track-title'),track.title,20,32);
   document.querySelector('.duration').textContent = formatDuration(track.duration);
-  setTickerQueue(buildTickerMessages({...manifest,selectedTrackTitle:track.title},entry,artistEntry,universeStats));
+  setTickerQueue(buildTickerMessages({...manifest,selectedTrackTitle:track.title},entry,artistEntry,universeStats,takeCultureTickerOptions()));
   bandcampFrame.title=`Official Bandcamp playback controls for ${track.title} by ${manifest.artist}`;
   setMeterPlayback(false);
   bandcampFrame.src = `https://bandcamp.com/EmbeddedPlayer/track=${encodeURIComponent(track.bandcampEmbedTrackId)}/size=small/bgcol=000000/linkcol=67ff7b/tracklist=false/artwork=none/transparent=true/`;
