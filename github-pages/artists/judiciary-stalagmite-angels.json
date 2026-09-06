@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "judiciary-stalagmite-angels",
+  "artist": "Judiciary",
+  "bandcampUrl": "https://judiciarytx.bandcamp.com/album/stalagmite-angels",
+  "releaseTitle": "Stalagmite Angels",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "metal",
+    "thrash",
+    "west texas",
+    "Texas"
+  ],
+  "primaryLocation": "Texas",
+  "bioShort": "Judiciary — hardcore / metal / thrash music from Texas.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://judiciarytx.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:02:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "stalagmite-angels",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "stalagmite-angels-803870692",
+      "title": "Wall of Skulls",
+      "artist": "Judiciary",
+      "albumTitle": "Stalagmite Angels",
+      "albumKey": "stalagmite-angels",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://judiciarytx.bandcamp.com/track/wall-of-skulls",
+      "bandcampEmbedTrackId": "803870692",
+      "sourcePage": "https://judiciarytx.bandcamp.com/album/stalagmite-angels",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "stalagmite-angels-597093317",
+      "title": "Sanguine Reality",
+      "artist": "Judiciary",
+      "albumTitle": "Stalagmite Angels",
+      "albumKey": "stalagmite-angels",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://judiciarytx.bandcamp.com/track/sanguine-reality",
+      "bandcampEmbedTrackId": "597093317",
+      "sourcePage": "https://judiciarytx.bandcamp.com/album/stalagmite-angels",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "stalagmite-angels-3992419278",
+      "title": "Hymns of a Calcified Warpath",
+      "artist": "Judiciary",
+      "albumTitle": "Stalagmite Angels",
+      "albumKey": "stalagmite-angels",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:35",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://judiciarytx.bandcamp.com/track/hymns-of-a-calcified-warpath",
+      "bandcampEmbedTrackId": "3992419278",
+      "sourcePage": "https://judiciarytx.bandcamp.com/album/stalagmite-angels",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "stalagmite-angels-2815161773",
+      "title": "Soul Sutra",
+      "artist": "Judiciary",
+      "albumTitle": "Stalagmite Angels",
+      "albumKey": "stalagmite-angels",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:48",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://judiciarytx.bandcamp.com/track/soul-sutra",
+      "bandcampEmbedTrackId": "2815161773",
+      "sourcePage": "https://judiciarytx.bandcamp.com/album/stalagmite-angels",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "stalagmite-angels-595085662",
+      "title": "Death Knell",
+      "artist": "Judiciary",
+      "albumTitle": "Stalagmite Angels",
+      "albumKey": "stalagmite-angels",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "3:51",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://judiciarytx.bandcamp.com/track/death-knell",
+      "bandcampEmbedTrackId": "595085662",
+      "sourcePage": "https://judiciarytx.bandcamp.com/album/stalagmite-angels",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://judiciarytx.bandcamp.com/album/stalagmite-angels",
+    "discoveredAt": "2026-09-05T23:57:21.407224+00:00",
+    "importedAt": "2026-09-06T00:02:43.693880+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "judiciarytx.bandcamp.com",
+    "bandcampBandId": "1055694631",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:43.693902+00:00"
+  }
+}

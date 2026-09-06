@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "anti-spectacular-i-am-this-flesh",
+  "artist": "Anti-Spectacular",
+  "bandcampUrl": "https://anti-spectacular.bandcamp.com/album/i-am-this-flesh",
+  "releaseTitle": "I Am This Flesh",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "punk",
+    "alternative",
+    "rock",
+    "alt rock",
+    "alternative rock",
+    "diy",
+    "funk rock",
+    "grunge",
+    "punk rock",
+    "toronto",
+    "Toronto"
+  ],
+  "primaryLocation": "Toronto, Ontario",
+  "bioShort": "Anti-Spectacular — punk / alternative / rock music from Toronto, Ontario.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://anti-spectacular.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:05:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-am-this-flesh",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-am-this-flesh-790904425",
+      "title": "The Wicked Go Unpunished",
+      "artist": "Anti-Spectacular",
+      "albumTitle": "I Am This Flesh",
+      "albumKey": "i-am-this-flesh",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:18",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anti-spectacular.bandcamp.com/track/the-wicked-go-unpunished",
+      "bandcampEmbedTrackId": "790904425",
+      "sourcePage": "https://anti-spectacular.bandcamp.com/album/i-am-this-flesh",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "i-am-this-flesh-1839318945",
+      "title": "I'm Buying a Gun",
+      "artist": "Anti-Spectacular",
+      "albumTitle": "I Am This Flesh",
+      "albumKey": "i-am-this-flesh",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:14",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anti-spectacular.bandcamp.com/track/im-buying-a-gun",
+      "bandcampEmbedTrackId": "1839318945",
+      "sourcePage": "https://anti-spectacular.bandcamp.com/album/i-am-this-flesh",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "i-am-this-flesh-3451422255",
+      "title": "The Greatest Feeling at the Time",
+      "artist": "Anti-Spectacular",
+      "albumTitle": "I Am This Flesh",
+      "albumKey": "i-am-this-flesh",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:54",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anti-spectacular.bandcamp.com/track/the-greatest-feeling-at-the-time",
+      "bandcampEmbedTrackId": "3451422255",
+      "sourcePage": "https://anti-spectacular.bandcamp.com/album/i-am-this-flesh",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "i-am-this-flesh-2847456559",
+      "title": "Deliver the Americans",
+      "artist": "Anti-Spectacular",
+      "albumTitle": "I Am This Flesh",
+      "albumKey": "i-am-this-flesh",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:36",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anti-spectacular.bandcamp.com/track/deliver-the-americans",
+      "bandcampEmbedTrackId": "2847456559",
+      "sourcePage": "https://anti-spectacular.bandcamp.com/album/i-am-this-flesh",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://anti-spectacular.bandcamp.com/album/i-am-this-flesh",
+    "discoveredAt": "2026-09-05T23:57:21.413062+00:00",
+    "importedAt": "2026-09-06T00:05:21.850177+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "anti-spectacular.bandcamp.com",
+    "bandcampBandId": "2164980326",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:21.850197+00:00"
+  }
+}

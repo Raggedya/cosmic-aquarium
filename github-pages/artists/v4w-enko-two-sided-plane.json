@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "v4w-enko-two-sided-plane",
+  "artist": "v4w.enko",
+  "bandcampUrl": "https://v4wenko.bandcamp.com/album/two-sided-plane",
+  "releaseTitle": "Two-Sided Plane",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "experimental",
+    "abstract",
+    "algorithmic",
+    "computer",
+    "electronica",
+    "fmsynthesis",
+    "glitch",
+    "max msp",
+    "modular",
+    "raw",
+    "rhythm",
+    "sequence",
+    "sequencer",
+    "Ukraine"
+  ],
+  "primaryLocation": "Ukraine",
+  "bioShort": "Two sides of sequence, two sides of sound surface, two-sided plane is one but has two sides. Two tracks recorded in real-time during setting up generative sequencer`s demo…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://v4wenko.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:03:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "two-sided-plane",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "two-sided-plane-3033112169",
+      "title": "Side One",
+      "artist": "v4w.enko",
+      "albumTitle": "Two-Sided Plane",
+      "albumKey": "two-sided-plane",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://v4wenko.bandcamp.com/track/side-one",
+      "bandcampEmbedTrackId": "3033112169",
+      "sourcePage": "https://v4wenko.bandcamp.com/album/two-sided-plane",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "two-sided-plane-705733121",
+      "title": "Another Side",
+      "artist": "v4w.enko",
+      "albumTitle": "Two-Sided Plane",
+      "albumKey": "two-sided-plane",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:36",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://v4wenko.bandcamp.com/track/another-side",
+      "bandcampEmbedTrackId": "705733121",
+      "sourcePage": "https://v4wenko.bandcamp.com/album/two-sided-plane",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://v4wenko.bandcamp.com/album/two-sided-plane",
+    "discoveredAt": "2026-09-05T23:57:21.409451+00:00",
+    "importedAt": "2026-09-06T00:03:53.125754+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "v4wenko.bandcamp.com",
+    "bandcampBandId": "677026518",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:03:53.125775+00:00"
+  }
+}

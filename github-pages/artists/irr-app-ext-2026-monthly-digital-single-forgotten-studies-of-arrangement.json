@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "irr-app-ext-2026-monthly-digital-single-forgotten-studies-of-arrangement",
+  "artist": "irr. app. (ext.)",
+  "bandcampUrl": "https://irrappext.bandcamp.com/album/2026-monthly-digital-single-forgotten-studies-of-arrangement-and-form-august",
+  "releaseTitle": "2026 Monthly Digital Single: Forgotten Studies Of Arrangement And Form [August]",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "sound-art",
+    "experimental",
+    "avant-garde",
+    "improvisation",
+    "sound art",
+    "Hillsboro"
+  ],
+  "primaryLocation": "Hillsboro, Oregon",
+  "bioShort": "\"Who are you? Who are you right now, this very moment? What are your ideas? What do you have to contribute to the world? I simply don't care about your ancestry, your family…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "quiet",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://irrappext.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:01:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "2026-monthly-digital-single-forgotten-studies-of-arrangement-and-form-au",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "2026-monthly-digital-single-forgotten-studies-of-arrangement-and-form-au-402510608",
+      "title": "Arrangement Fifteen",
+      "artist": "irr. app. (ext.)",
+      "albumTitle": "2026 Monthly Digital Single: Forgotten Studies Of Arrangement And Form [August]",
+      "albumKey": "2026-monthly-digital-single-forgotten-studies-of-arrangement-and-form-au",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://irrappext.bandcamp.com/track/arrangement-fifteen",
+      "bandcampEmbedTrackId": "402510608",
+      "sourcePage": "https://irrappext.bandcamp.com/album/2026-monthly-digital-single-forgotten-studies-of-arrangement-and-form-august",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "2026-monthly-digital-single-forgotten-studies-of-arrangement-and-form-au-3819437380",
+      "title": "Arrangement Sixteen",
+      "artist": "irr. app. (ext.)",
+      "albumTitle": "2026 Monthly Digital Single: Forgotten Studies Of Arrangement And Form [August]",
+      "albumKey": "2026-monthly-digital-single-forgotten-studies-of-arrangement-and-form-au",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://irrappext.bandcamp.com/track/arrangement-sixteen",
+      "bandcampEmbedTrackId": "3819437380",
+      "sourcePage": "https://irrappext.bandcamp.com/album/2026-monthly-digital-single-forgotten-studies-of-arrangement-and-form-august",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://irrappext.bandcamp.com/album/2026-monthly-digital-single-forgotten-studies-of-arrangement-and-form-august",
+    "discoveredAt": "2026-09-05T23:57:21.405292+00:00",
+    "importedAt": "2026-09-06T00:01:48.407488+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "irrappext.bandcamp.com",
+    "bandcampBandId": "1621732551",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:01:48.407509+00:00"
+  }
+}

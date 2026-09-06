@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "callers-surveillance-souvenir-single",
+  "artist": "Callers",
+  "bandcampUrl": "https://callers.bandcamp.com/album/surveillance-souvenir-single",
+  "releaseTitle": "Surveillance/Souvenir Single",
+  "releaseDate": "2026-08-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "ambient pop",
+    "jangle pop",
+    "rock",
+    "instrumental",
+    "post-punk",
+    "Bellingham"
+  ],
+  "primaryLocation": "Bellingham, Washington",
+  "bioShort": "Recorded at make.shift in Bellingham, Wa Souvenir written by Andy McCluskey and Paul Humphreys from Orchestral Manoeuvres in the Dark",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://callers.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:04:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "surveillance-souvenir-single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "surveillance-souvenir-single-1502827812",
+      "title": "Surveillance",
+      "artist": "Callers",
+      "albumTitle": "Surveillance/Souvenir Single",
+      "albumKey": "surveillance-souvenir-single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://callers.bandcamp.com/track/surveillance",
+      "bandcampEmbedTrackId": "1502827812",
+      "sourcePage": "https://callers.bandcamp.com/album/surveillance-souvenir-single",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "surveillance-souvenir-single-4281339253",
+      "title": "Souvenir",
+      "artist": "Callers",
+      "albumTitle": "Surveillance/Souvenir Single",
+      "albumKey": "surveillance-souvenir-single",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://callers.bandcamp.com/track/souvenir",
+      "bandcampEmbedTrackId": "4281339253",
+      "sourcePage": "https://callers.bandcamp.com/album/surveillance-souvenir-single",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://callers.bandcamp.com/album/surveillance-souvenir-single",
+    "discoveredAt": "2026-09-05T23:57:21.410175+00:00",
+    "importedAt": "2026-09-06T00:04:09.960276+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "callers.bandcamp.com",
+    "bandcampBandId": "352434716",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:04:09.960311+00:00"
+  }
+}

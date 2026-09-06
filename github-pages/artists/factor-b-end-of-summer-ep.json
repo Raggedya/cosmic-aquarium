@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "factor-b-end-of-summer-ep",
+  "artist": "Factor B",
+  "bandcampUrl": "https://factorb.bandcamp.com/album/end-of-summer-ep",
+  "releaseTitle": "End of Summer EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "progressive",
+    "progressive trance",
+    "techno.",
+    "trance",
+    "uplifting trance",
+    "Netherlands"
+  ],
+  "primaryLocation": "Netherlands",
+  "bioShort": "End of Summer EP",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://factorb.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:06:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "end-of-summer-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "end-of-summer-ep-2862099723",
+      "title": "The Overview Effect (2026 Club Mix)",
+      "artist": "Factor B",
+      "albumTitle": "End of Summer EP",
+      "albumKey": "end-of-summer-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://factorb.bandcamp.com/track/the-overview-effect-2026-club-mix",
+      "bandcampEmbedTrackId": "2862099723",
+      "sourcePage": "https://factorb.bandcamp.com/album/end-of-summer-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "end-of-summer-ep-4105567519",
+      "title": "Summer Daze (Club Mix)",
+      "artist": "Factor B",
+      "albumTitle": "End of Summer EP",
+      "albumKey": "end-of-summer-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:23",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://factorb.bandcamp.com/track/summer-daze-club-mix",
+      "bandcampEmbedTrackId": "4105567519",
+      "sourcePage": "https://factorb.bandcamp.com/album/end-of-summer-ep",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://factorb.bandcamp.com/album/end-of-summer-ep",
+    "discoveredAt": "2026-09-05T23:57:21.414645+00:00",
+    "importedAt": "2026-09-06T00:06:13.870325+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "factorb.bandcamp.com",
+    "bandcampBandId": "54592970",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:06:13.870347+00:00"
+  }
+}

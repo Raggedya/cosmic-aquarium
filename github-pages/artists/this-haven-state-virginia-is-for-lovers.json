@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "this-haven-state-virginia-is-for-lovers",
+  "artist": "This Haven State",
+  "bandcampUrl": "https://thishavenstate.bandcamp.com/album/virginia-is-for-lovers",
+  "releaseTitle": "Virginia Is For Lovers",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "dmv",
+    "dmv d.c",
+    "dmv music",
+    "electronic",
+    "nottingham",
+    "washington d.c.",
+    "washington dc",
+    "dark electronic",
+    "darkwave",
+    "ebm",
+    "slowed + reverb",
+    "slowed and reverb",
+    "witch house",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "This Haven State returns with \"Virginia Is For Lovers\", an ode to a year spent living in the DMV. First single from the upcoming debut album \"All The Havensmen\". Includes the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thishavenstate.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:59:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "virginia-is-for-lovers",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "virginia-is-for-lovers-180231979",
+      "title": "Virginia Is For Lovers",
+      "artist": "This Haven State",
+      "albumTitle": "Virginia Is For Lovers",
+      "albumKey": "virginia-is-for-lovers",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thishavenstate.bandcamp.com/track/virginia-is-for-lovers",
+      "bandcampEmbedTrackId": "180231979",
+      "sourcePage": "https://thishavenstate.bandcamp.com/album/virginia-is-for-lovers",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "virginia-is-for-lovers-2409262685",
+      "title": "Virginia Is For Lovers (Foggy Bottom Mix)",
+      "artist": "This Haven State",
+      "albumTitle": "Virginia Is For Lovers",
+      "albumKey": "virginia-is-for-lovers",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thishavenstate.bandcamp.com/track/virginia-is-for-lovers-foggy-bottom-mix",
+      "bandcampEmbedTrackId": "2409262685",
+      "sourcePage": "https://thishavenstate.bandcamp.com/album/virginia-is-for-lovers",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thishavenstate.bandcamp.com/album/virginia-is-for-lovers",
+    "discoveredAt": "2026-09-05T23:57:21.400663+00:00",
+    "importedAt": "2026-09-05T23:59:31.844009+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thishavenstate.bandcamp.com",
+    "bandcampBandId": "3129088417",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:59:31.844030+00:00"
+  }
+}

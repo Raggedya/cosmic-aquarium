@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "udera-silhouettes",
+  "artist": "UDERA",
+  "bandcampUrl": "https://udera.bandcamp.com/album/silhouettes",
+  "releaseTitle": "Silhouettes",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "metal",
+    "rock",
+    "ambient",
+    "cinematic",
+    "France"
+  ],
+  "primaryLocation": "Grand Est, France",
+  "bioShort": "UDERA — coldwave / metal / rock music from Grand Est, France.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://udera.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:05:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "silhouettes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "silhouettes-3505094216",
+      "title": "Toxique",
+      "artist": "UDERA",
+      "albumTitle": "Silhouettes",
+      "albumKey": "silhouettes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://udera.bandcamp.com/track/toxique",
+      "bandcampEmbedTrackId": "3505094216",
+      "sourcePage": "https://udera.bandcamp.com/album/silhouettes",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "silhouettes-3847433968",
+      "title": "Fake U",
+      "artist": "UDERA",
+      "albumTitle": "Silhouettes",
+      "albumKey": "silhouettes",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://udera.bandcamp.com/track/fake-u",
+      "bandcampEmbedTrackId": "3847433968",
+      "sourcePage": "https://udera.bandcamp.com/album/silhouettes",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "silhouettes-4260368216",
+      "title": "Silhouettes",
+      "artist": "UDERA",
+      "albumTitle": "Silhouettes",
+      "albumKey": "silhouettes",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:07",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://udera.bandcamp.com/track/silhouettes",
+      "bandcampEmbedTrackId": "4260368216",
+      "sourcePage": "https://udera.bandcamp.com/album/silhouettes",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "silhouettes-1786036499",
+      "title": "Les égarés",
+      "artist": "UDERA",
+      "albumTitle": "Silhouettes",
+      "albumKey": "silhouettes",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:02",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://udera.bandcamp.com/track/les-gar-s-2",
+      "bandcampEmbedTrackId": "1786036499",
+      "sourcePage": "https://udera.bandcamp.com/album/silhouettes",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "silhouettes-3983621722",
+      "title": "Glitch",
+      "artist": "UDERA",
+      "albumTitle": "Silhouettes",
+      "albumKey": "silhouettes",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "5:59",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://udera.bandcamp.com/track/glitch-2",
+      "bandcampEmbedTrackId": "3983621722",
+      "sourcePage": "https://udera.bandcamp.com/album/silhouettes",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://udera.bandcamp.com/album/silhouettes",
+    "discoveredAt": "2026-09-05T23:57:21.414225+00:00",
+    "importedAt": "2026-09-06T00:05:59.175388+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "udera.bandcamp.com",
+    "bandcampBandId": "2163211164",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:59.175409+00:00"
+  }
+}

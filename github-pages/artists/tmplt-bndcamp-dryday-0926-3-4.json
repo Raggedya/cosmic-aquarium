@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "tmplt-bndcamp-dryday-0926-3-4",
+  "artist": "TMPLT",
+  "bandcampUrl": "https://tmplt.bandcamp.com/album/bndcamp-dryday-0926-3-4",
+  "releaseTitle": "BNDCAMP DRYDAY 0926 _3-4",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "beats",
+    "dubstep",
+    "electronica",
+    "techno",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "TMPLT — breakbeat / beats / dubstep music from Berlin, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tmplt.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:58:54Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bndcamp-dryday-0926-3-4",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bndcamp-dryday-0926-3-4-998924854",
+      "title": "BNDCAMP DRYDAY 0926 _4",
+      "artist": "TMPLT",
+      "albumTitle": "BNDCAMP DRYDAY 0926 _3-4",
+      "albumKey": "bndcamp-dryday-0926-3-4",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tmplt.bandcamp.com/track/bndcamp-dryday-0926-4",
+      "bandcampEmbedTrackId": "998924854",
+      "sourcePage": "https://tmplt.bandcamp.com/album/bndcamp-dryday-0926-3-4",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bndcamp-dryday-0926-3-4-2576441659",
+      "title": "BNDCAMP DRYDAY 0926 _3",
+      "artist": "TMPLT",
+      "albumTitle": "BNDCAMP DRYDAY 0926 _3-4",
+      "albumKey": "bndcamp-dryday-0926-3-4",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tmplt.bandcamp.com/track/bndcamp-dryday-0926-3",
+      "bandcampEmbedTrackId": "2576441659",
+      "sourcePage": "https://tmplt.bandcamp.com/album/bndcamp-dryday-0926-3-4",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tmplt.bandcamp.com/album/bndcamp-dryday-0926-3-4",
+    "discoveredAt": "2026-09-05T23:57:21.399412+00:00",
+    "importedAt": "2026-09-05T23:58:54.275754+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tmplt.bandcamp.com",
+    "bandcampBandId": "1361682929",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:54.275775+00:00"
+  }
+}

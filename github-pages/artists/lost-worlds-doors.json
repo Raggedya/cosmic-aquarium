@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "lost-worlds-doors",
+  "artist": "Lost Worlds",
+  "bandcampUrl": "https://lostworlds1.bandcamp.com/album/doors",
+  "releaseTitle": "Doors",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "punk",
+    "rock",
+    "indy",
+    "rock n roll",
+    "rocknroll",
+    "Brisbane"
+  ],
+  "primaryLocation": "Brisbane, Australia",
+  "bioShort": "Written Lee McRae, Tom Prior & Ian MacDonald",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lostworlds1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:58:39Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "doors",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "doors-2337444280",
+      "title": "Silent Age",
+      "artist": "Lost Worlds",
+      "albumTitle": "Doors",
+      "albumKey": "doors",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lostworlds1.bandcamp.com/track/silent-age",
+      "bandcampEmbedTrackId": "2337444280",
+      "sourcePage": "https://lostworlds1.bandcamp.com/album/doors",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "doors-4169580750",
+      "title": "R.I.T.B.",
+      "artist": "Lost Worlds",
+      "albumTitle": "Doors",
+      "albumKey": "doors",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:02",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lostworlds1.bandcamp.com/track/r-i-t-b",
+      "bandcampEmbedTrackId": "4169580750",
+      "sourcePage": "https://lostworlds1.bandcamp.com/album/doors",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "doors-1246843479",
+      "title": "Ice Cream Truck",
+      "artist": "Lost Worlds",
+      "albumTitle": "Doors",
+      "albumKey": "doors",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:30",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lostworlds1.bandcamp.com/track/ice-cream-truck",
+      "bandcampEmbedTrackId": "1246843479",
+      "sourcePage": "https://lostworlds1.bandcamp.com/album/doors",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "doors-3141468429",
+      "title": "Star Command",
+      "artist": "Lost Worlds",
+      "albumTitle": "Doors",
+      "albumKey": "doors",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:40",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lostworlds1.bandcamp.com/track/star-command",
+      "bandcampEmbedTrackId": "3141468429",
+      "sourcePage": "https://lostworlds1.bandcamp.com/album/doors",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lostworlds1.bandcamp.com/album/doors",
+    "discoveredAt": "2026-09-05T23:57:21.398747+00:00",
+    "importedAt": "2026-09-05T23:58:39.757347+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lostworlds1.bandcamp.com",
+    "bandcampBandId": "1874868728",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:39.757369+00:00"
+  }
+}

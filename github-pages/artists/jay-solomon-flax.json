@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "jay-solomon-flax",
+  "artist": "Jay Solomon",
+  "bandcampUrl": "https://jaysolomonmusic.bandcamp.com/album/flax",
+  "releaseTitle": "Flax",
+  "releaseDate": "2026-08-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "pop",
+    "ambient pop",
+    "singer-songwriter"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Jay Solomon — ambient-pop / pop / ambient pop music in Cosmic Aquaria.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jaysolomonmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:05:41Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "flax",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "flax-4102596562",
+      "title": "Flax",
+      "artist": "Jay Solomon",
+      "albumTitle": "Flax",
+      "albumKey": "flax",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jaysolomonmusic.bandcamp.com/track/flax",
+      "bandcampEmbedTrackId": "4102596562",
+      "sourcePage": "https://jaysolomonmusic.bandcamp.com/album/flax",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "flax-4202698848",
+      "title": "Flax (Radio Edit)",
+      "artist": "Jay Solomon",
+      "albumTitle": "Flax",
+      "albumKey": "flax",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:42",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jaysolomonmusic.bandcamp.com/track/flax-radio-edit",
+      "bandcampEmbedTrackId": "4202698848",
+      "sourcePage": "https://jaysolomonmusic.bandcamp.com/album/flax",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jaysolomonmusic.bandcamp.com/album/flax",
+    "discoveredAt": "2026-09-05T23:57:21.413740+00:00",
+    "importedAt": "2026-09-06T00:05:41.054282+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jaysolomonmusic.bandcamp.com",
+    "bandcampBandId": "4068625910",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:41.054316+00:00"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "slug": "god-s-hate-won-t-be-disgraced",
+  "artist": "God's Hate",
+  "bandcampUrl": "https://godshate.bandcamp.com/album/wont-be-disgraced",
+  "releaseTitle": "Won't Be Disgraced",
+  "releaseDate": "2026-08-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "metal",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "God's Hate — hardcore / metal / Los Angeles music from Los Angeles, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://godshate.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:07:01Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "won-t-be-disgraced",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "won-t-be-disgraced-2433138324",
+      "title": "Won't Be Disgraced",
+      "artist": "God's Hate",
+      "albumTitle": "Won't Be Disgraced",
+      "albumKey": "won-t-be-disgraced",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:19",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://godshate.bandcamp.com/track/wont-be-disgraced",
+      "bandcampEmbedTrackId": "2433138324",
+      "sourcePage": "https://godshate.bandcamp.com/album/wont-be-disgraced",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "won-t-be-disgraced-3557526987",
+      "title": "I Am The Cure",
+      "artist": "God's Hate",
+      "albumTitle": "Won't Be Disgraced",
+      "albumKey": "won-t-be-disgraced",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:55",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://godshate.bandcamp.com/track/i-am-the-cure",
+      "bandcampEmbedTrackId": "3557526987",
+      "sourcePage": "https://godshate.bandcamp.com/album/wont-be-disgraced",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "won-t-be-disgraced-772436484",
+      "title": "Warriors Will Reign",
+      "artist": "God's Hate",
+      "albumTitle": "Won't Be Disgraced",
+      "albumKey": "won-t-be-disgraced",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:20",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://godshate.bandcamp.com/track/warriors-will-reign",
+      "bandcampEmbedTrackId": "772436484",
+      "sourcePage": "https://godshate.bandcamp.com/album/wont-be-disgraced",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://godshate.bandcamp.com/album/wont-be-disgraced",
+    "discoveredAt": "2026-09-05T23:57:21.416258+00:00",
+    "importedAt": "2026-09-06T00:07:01.350968+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "godshate.bandcamp.com",
+    "bandcampBandId": "1783379779",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:07:01.350990+00:00"
+  }
+}

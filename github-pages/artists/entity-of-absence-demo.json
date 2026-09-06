@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "entity-of-absence-demo",
+  "artist": "Entity of Absence",
+  "bandcampUrl": "https://entityofabsence.bandcamp.com/album/demo",
+  "releaseTitle": "Demo",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "extreme metal",
+    "metal",
+    "black and roll",
+    "progressive metal",
+    "Bozeman"
+  ],
+  "primaryLocation": "Bozeman, montana",
+  "bioShort": "This album finished composition in late 2023, after some revisions, Aleister Freud and The Empathist began recording drums and guitars live in June of 2026. メイ provided bass…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://entityofabsence.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:59:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "demo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "demo-2108464280",
+      "title": "Ice on My Grave",
+      "artist": "Entity of Absence",
+      "albumTitle": "Demo",
+      "albumKey": "demo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:39",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://entityofabsence.bandcamp.com/track/ice-on-my-grave",
+      "bandcampEmbedTrackId": "2108464280",
+      "sourcePage": "https://entityofabsence.bandcamp.com/album/demo",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "demo-4070223510",
+      "title": "Timeless Void",
+      "artist": "Entity of Absence",
+      "albumTitle": "Demo",
+      "albumKey": "demo",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://entityofabsence.bandcamp.com/track/timeless-void",
+      "bandcampEmbedTrackId": "4070223510",
+      "sourcePage": "https://entityofabsence.bandcamp.com/album/demo",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "demo-811176302",
+      "title": "A Burning Canvas",
+      "artist": "Entity of Absence",
+      "albumTitle": "Demo",
+      "albumKey": "demo",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:26",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://entityofabsence.bandcamp.com/track/a-burning-canvas",
+      "bandcampEmbedTrackId": "811176302",
+      "sourcePage": "https://entityofabsence.bandcamp.com/album/demo",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://entityofabsence.bandcamp.com/album/demo",
+    "discoveredAt": "2026-09-05T23:57:21.399789+00:00",
+    "importedAt": "2026-09-05T23:59:07.662948+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "entityofabsence.bandcamp.com",
+    "bandcampBandId": "1036421616",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:59:07.662969+00:00"
+  }
+}

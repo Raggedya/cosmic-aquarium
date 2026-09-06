@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "slug": "commodo-speedway-ep",
+  "artist": "Commodo",
+  "bandcampUrl": "https://commodomusic.bandcamp.com/album/speedway-ep",
+  "releaseTitle": "Speedway EP",
+  "releaseDate": "2026-09-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "post-punk",
+    "electronic",
+    "bass music",
+    "beats",
+    "dubstep",
+    "grime",
+    "hip-hop",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Commodo — post-punk / electronic / bass music music from UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://commodomusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:59:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "speedway-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "speedway-ep-193702648",
+      "title": "Speedway",
+      "artist": "Commodo",
+      "albumTitle": "Speedway EP",
+      "albumKey": "speedway-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:27",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://commodomusic.bandcamp.com/track/speedway",
+      "bandcampEmbedTrackId": "193702648",
+      "sourcePage": "https://commodomusic.bandcamp.com/album/speedway-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "speedway-ep-2147454555",
+      "title": "HIIGH",
+      "artist": "Commodo",
+      "albumTitle": "Speedway EP",
+      "albumKey": "speedway-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://commodomusic.bandcamp.com/album/speedway-ep",
+      "bandcampEmbedTrackId": "2147454555",
+      "sourcePage": "https://commodomusic.bandcamp.com/album/speedway-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "speedway-ep-3326189054",
+      "title": "Betrayer",
+      "artist": "Commodo",
+      "albumTitle": "Speedway EP",
+      "albumKey": "speedway-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://commodomusic.bandcamp.com/album/speedway-ep",
+      "bandcampEmbedTrackId": "3326189054",
+      "sourcePage": "https://commodomusic.bandcamp.com/album/speedway-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://commodomusic.bandcamp.com/album/speedway-ep",
+    "discoveredAt": "2026-09-05T23:57:21.401542+00:00",
+    "importedAt": "2026-09-05T23:59:58.924980+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "commodomusic.bandcamp.com",
+    "bandcampBandId": "488219240",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:59:58.925002+00:00"
+  }
+}

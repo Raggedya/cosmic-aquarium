@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "bed-maker-the-mark",
+  "artist": "Bed Maker",
+  "bandcampUrl": "https://bedmakerdc.bandcamp.com/album/the-mark",
+  "releaseTitle": "The Mark",
+  "releaseDate": "2026-09-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "post-punk",
+    "dc",
+    "punk",
+    "alternative",
+    "Washington"
+  ],
+  "primaryLocation": "Washington, D.C.",
+  "bioShort": "The record features two new songs that represent the band’s dynamic in the studio and on stage. Recorded and mixed at Tonal Park by Ian MacKaye and Don Godwin.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bedmakerdc.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:01:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-mark",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-mark-1705000425",
+      "title": "The Mark",
+      "artist": "Bed Maker",
+      "albumTitle": "The Mark",
+      "albumKey": "the-mark",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bedmakerdc.bandcamp.com/album/the-mark",
+      "bandcampEmbedTrackId": "1705000425",
+      "sourcePage": "https://bedmakerdc.bandcamp.com/album/the-mark",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-mark-2811428705",
+      "title": "What Boy Where",
+      "artist": "Bed Maker",
+      "albumTitle": "The Mark",
+      "albumKey": "the-mark",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bedmakerdc.bandcamp.com/album/the-mark",
+      "bandcampEmbedTrackId": "2811428705",
+      "sourcePage": "https://bedmakerdc.bandcamp.com/album/the-mark",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bedmakerdc.bandcamp.com/album/the-mark",
+    "discoveredAt": "2026-09-05T23:57:21.405172+00:00",
+    "importedAt": "2026-09-06T00:01:43.614762+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bedmakerdc.bandcamp.com",
+    "bandcampBandId": "2079971253",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:01:43.614783+00:00"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "slug": "jester-girl-melodies-like-drums",
+  "artist": "Jester Girl",
+  "bandcampUrl": "https://jestergirl.bandcamp.com/album/melodies-like-drums",
+  "releaseTitle": "Melodies Like Drums",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "hardgroovetechno",
+    "hardgroove",
+    "hardgroove techno",
+    "hypnotic techno",
+    "minimal techno",
+    "techno",
+    "Arizona"
+  ],
+  "primaryLocation": "Arizona",
+  "bioShort": "Jester Girl — minimal / electronic / hardgroovetechno music from Arizona.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jestergirl.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:59:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "melodies-like-drums",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "melodies-like-drums-2862719133",
+      "title": "Melodies Like Drums",
+      "artist": "Jester Girl",
+      "albumTitle": "Melodies Like Drums",
+      "albumKey": "melodies-like-drums",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jestergirl.bandcamp.com/track/melodies-like-drums",
+      "bandcampEmbedTrackId": "2862719133",
+      "sourcePage": "https://jestergirl.bandcamp.com/album/melodies-like-drums",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "melodies-like-drums-2001640383",
+      "title": "Seismic Activity",
+      "artist": "Jester Girl",
+      "albumTitle": "Melodies Like Drums",
+      "albumKey": "melodies-like-drums",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jestergirl.bandcamp.com/track/seismic-activity",
+      "bandcampEmbedTrackId": "2001640383",
+      "sourcePage": "https://jestergirl.bandcamp.com/album/melodies-like-drums",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jestergirl.bandcamp.com/album/melodies-like-drums",
+    "discoveredAt": "2026-09-05T23:57:21.401275+00:00",
+    "importedAt": "2026-09-05T23:59:47.968097+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jestergirl.bandcamp.com",
+    "bandcampBandId": "2065709618",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:59:47.968118+00:00"
+  }
+}

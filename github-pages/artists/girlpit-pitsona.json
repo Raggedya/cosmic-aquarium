@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "girlpit-pitsona",
+  "artist": "girlpit",
+  "bandcampUrl": "https://girlpit.bandcamp.com/album/pitsona",
+  "releaseTitle": "pitsona",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "electronic",
+    "experimental",
+    "ambient",
+    "Missoula"
+  ],
+  "primaryLocation": "Missoula, montana",
+  "bioShort": "girlpit — noise / electronic / experimental music from Missoula, montana.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://girlpit.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:08:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pitsona",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pitsona-1803343403",
+      "title": "Chastely",
+      "artist": "girlpit",
+      "albumTitle": "pitsona",
+      "albumKey": "pitsona",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://girlpit.bandcamp.com/track/chastely",
+      "bandcampEmbedTrackId": "1803343403",
+      "sourcePage": "https://girlpit.bandcamp.com/album/pitsona",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "pitsona-331428086",
+      "title": "Water Oracle (Reaches the Ocean)",
+      "artist": "girlpit",
+      "albumTitle": "pitsona",
+      "albumKey": "pitsona",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://girlpit.bandcamp.com/track/water-oracle-reaches-the-ocean",
+      "bandcampEmbedTrackId": "331428086",
+      "sourcePage": "https://girlpit.bandcamp.com/album/pitsona",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "pitsona-19700701",
+      "title": "Dream Wire",
+      "artist": "girlpit",
+      "albumTitle": "pitsona",
+      "albumKey": "pitsona",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:05",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://girlpit.bandcamp.com/track/dream-wire",
+      "bandcampEmbedTrackId": "19700701",
+      "sourcePage": "https://girlpit.bandcamp.com/album/pitsona",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "pitsona-1098981499",
+      "title": "Vibrachord for Slumbering Entities",
+      "artist": "girlpit",
+      "albumTitle": "pitsona",
+      "albumKey": "pitsona",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "9:08",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://girlpit.bandcamp.com/track/vibrachord-for-slumbering-entities",
+      "bandcampEmbedTrackId": "1098981499",
+      "sourcePage": "https://girlpit.bandcamp.com/album/pitsona",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://girlpit.bandcamp.com/album/pitsona",
+    "discoveredAt": "2026-09-05T23:57:21.418680+00:00",
+    "importedAt": "2026-09-06T00:08:04.187215+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "girlpit.bandcamp.com",
+    "bandcampBandId": "738998884",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:08:04.187236+00:00"
+  }
+}

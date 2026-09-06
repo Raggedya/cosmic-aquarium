@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "slug": "dave-newhouse-improvika-ii",
+  "artist": "Dave Newhouse",
+  "bandcampUrl": "https://davenewhouse.bandcamp.com/album/improvika-ii",
+  "releaseTitle": "IMPROVIKA II",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "dave newhouse",
+    "electronic",
+    "experimental",
+    "jazz",
+    "the muffins",
+    "dark ambient noise",
+    "free jazz",
+    "Maryland"
+  ],
+  "primaryLocation": "Maryland",
+  "bioShort": "Dark Ambient / Electronic / Free Jazz / Experimental. This purchase includes BOTH the IMPROVIKA I and IMPROVIKA II CD-Rs. The IMPROVIKA I CD is NOT available on the IMPROVIKA I…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://davenewhouse.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:08:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "improvika-ii",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "improvika-ii-1752236203",
+      "title": "IMPROVIKA II",
+      "artist": "Dave Newhouse",
+      "albumTitle": "IMPROVIKA II",
+      "albumKey": "improvika-ii",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "30:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://davenewhouse.bandcamp.com/track/improvika-ii",
+      "bandcampEmbedTrackId": "1752236203",
+      "sourcePage": "https://davenewhouse.bandcamp.com/album/improvika-ii",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "improvika-ii-329631107",
+      "title": "10 Second Pause",
+      "artist": "Dave Newhouse",
+      "albumTitle": "IMPROVIKA II",
+      "albumKey": "improvika-ii",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://davenewhouse.bandcamp.com/track/10-second-pause",
+      "bandcampEmbedTrackId": "329631107",
+      "sourcePage": "https://davenewhouse.bandcamp.com/album/improvika-ii",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "improvika-ii-1936441482",
+      "title": "Bonus Track",
+      "artist": "Dave Newhouse",
+      "albumTitle": "IMPROVIKA II",
+      "albumKey": "improvika-ii",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:58",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://davenewhouse.bandcamp.com/track/bonus-track",
+      "bandcampEmbedTrackId": "1936441482",
+      "sourcePage": "https://davenewhouse.bandcamp.com/album/improvika-ii",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://davenewhouse.bandcamp.com/album/improvika-ii",
+    "discoveredAt": "2026-09-05T23:57:21.418922+00:00",
+    "importedAt": "2026-09-06T00:08:12.212175+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "davenewhouse.bandcamp.com",
+    "bandcampBandId": "4319185",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:08:12.212195+00:00"
+  }
+}

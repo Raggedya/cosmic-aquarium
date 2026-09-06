@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "les-animaux-sauvages-analog-jams-part-2",
+  "artist": "Les Animaux Sauvages",
+  "bandcampUrl": "https://lesanimauxsauvages.bandcamp.com/album/analog-jams-part-2",
+  "releaseTitle": "Analog Jams Part 2",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "electronic",
+    "electro",
+    "minimal synth",
+    "minimal wave",
+    "post punk",
+    "Sofia"
+  ],
+  "primaryLocation": "Sofia, Bulgaria",
+  "bioShort": "Les Animaux Sauvages — coldwave / electronic / electro music from Sofia, Bulgaria.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lesanimauxsauvages.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:08:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "analog-jams-part-2",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "analog-jams-part-2-2486274674",
+      "title": "Fight Club",
+      "artist": "Les Animaux Sauvages",
+      "albumTitle": "Analog Jams Part 2",
+      "albumKey": "analog-jams-part-2",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lesanimauxsauvages.bandcamp.com/track/fight-club",
+      "bandcampEmbedTrackId": "2486274674",
+      "sourcePage": "https://lesanimauxsauvages.bandcamp.com/album/analog-jams-part-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "analog-jams-part-2-1111403308",
+      "title": "Mistic River",
+      "artist": "Les Animaux Sauvages",
+      "albumTitle": "Analog Jams Part 2",
+      "albumKey": "analog-jams-part-2",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lesanimauxsauvages.bandcamp.com/track/mistic-river",
+      "bandcampEmbedTrackId": "1111403308",
+      "sourcePage": "https://lesanimauxsauvages.bandcamp.com/album/analog-jams-part-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "analog-jams-part-2-2999024801",
+      "title": "Extazia",
+      "artist": "Les Animaux Sauvages",
+      "albumTitle": "Analog Jams Part 2",
+      "albumKey": "analog-jams-part-2",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:44",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lesanimauxsauvages.bandcamp.com/track/extazia",
+      "bandcampEmbedTrackId": "2999024801",
+      "sourcePage": "https://lesanimauxsauvages.bandcamp.com/album/analog-jams-part-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "analog-jams-part-2-2300329689",
+      "title": "Like 82",
+      "artist": "Les Animaux Sauvages",
+      "albumTitle": "Analog Jams Part 2",
+      "albumKey": "analog-jams-part-2",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:55",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lesanimauxsauvages.bandcamp.com/track/like-82",
+      "bandcampEmbedTrackId": "2300329689",
+      "sourcePage": "https://lesanimauxsauvages.bandcamp.com/album/analog-jams-part-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lesanimauxsauvages.bandcamp.com/album/analog-jams-part-2",
+    "discoveredAt": "2026-09-05T23:57:21.418795+00:00",
+    "importedAt": "2026-09-06T00:08:09.836177+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lesanimauxsauvages.bandcamp.com",
+    "bandcampBandId": "16120458",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:08:09.836197+00:00"
+  }
+}

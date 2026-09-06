@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "living-hour-magnet-ep",
+  "artist": "Living Hour",
+  "bandcampUrl": "https://livinghourband.bandcamp.com/album/magnet-ep-3",
+  "releaseTitle": "Magnet EP",
+  "releaseDate": "2026-09-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "rock",
+    "ambient",
+    "ambient folk",
+    "bedroom pop",
+    "dream pop",
+    "indie",
+    "indie folk",
+    "indie pop",
+    "shoegaze",
+    "Winnipeg"
+  ],
+  "primaryLocation": "Winnipeg, Manitoba",
+  "bioShort": "Living Hour is back with a new EP! Living Hour transforms the passage of time into something both urgent and sacred. Anchored by Sam Sarty’s vivid lyricism, shaped by years as…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://livinghourband.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:07:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "magnet-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "magnet-ep-1391652344",
+      "title": "Magnet",
+      "artist": "Living Hour",
+      "albumTitle": "Magnet EP",
+      "albumKey": "magnet-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://livinghourband.bandcamp.com/track/magnet-3",
+      "bandcampEmbedTrackId": "1391652344",
+      "sourcePage": "https://livinghourband.bandcamp.com/album/magnet-ep-3",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "magnet-ep-1394774216",
+      "title": "Good Afternoon",
+      "artist": "Living Hour",
+      "albumTitle": "Magnet EP",
+      "albumKey": "magnet-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://livinghourband.bandcamp.com/album/magnet-ep-3",
+      "bandcampEmbedTrackId": "1394774216",
+      "sourcePage": "https://livinghourband.bandcamp.com/album/magnet-ep-3",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "magnet-ep-2783194136",
+      "title": "Half Can (Demo Version)",
+      "artist": "Living Hour",
+      "albumTitle": "Magnet EP",
+      "albumKey": "magnet-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://livinghourband.bandcamp.com/album/magnet-ep-3",
+      "bandcampEmbedTrackId": "2783194136",
+      "sourcePage": "https://livinghourband.bandcamp.com/album/magnet-ep-3",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "magnet-ep-1432177180",
+      "title": "Big Shadow (Original Demo)",
+      "artist": "Living Hour",
+      "albumTitle": "Magnet EP",
+      "albumKey": "magnet-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://livinghourband.bandcamp.com/album/magnet-ep-3",
+      "bandcampEmbedTrackId": "1432177180",
+      "sourcePage": "https://livinghourband.bandcamp.com/album/magnet-ep-3",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://livinghourband.bandcamp.com/album/magnet-ep-3",
+    "discoveredAt": "2026-09-05T23:57:21.416414+00:00",
+    "importedAt": "2026-09-06T00:07:09.112110+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "livinghourband.bandcamp.com",
+    "bandcampBandId": "1434238095",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:07:09.112131+00:00"
+  }
+}

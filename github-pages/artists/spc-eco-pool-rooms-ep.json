@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "spc-eco-pool-rooms-ep",
+  "artist": "SPC ECO",
+  "bandcampUrl": "https://spceco.bandcamp.com/album/pool-rooms-ep",
+  "releaseTitle": "Pool Rooms EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "alternative",
+    "curve",
+    "dean garcia",
+    "dream pop",
+    "duo",
+    "electronic",
+    "modular",
+    "poolrooms",
+    "pop noir",
+    "rose berlin",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Produced Mixed and Recorded by Dean Garcia Recorded at The Nights Watch - Aug-Sept 2026 Recorded on Ableton 11 - Mac All Songs Written By Rose Berlin and Dean Garcia Rose…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://spceco.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:58:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pool-rooms-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pool-rooms-ep-1108111585",
+      "title": "Hiding",
+      "artist": "SPC ECO",
+      "albumTitle": "Pool Rooms EP",
+      "albumKey": "pool-rooms-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://spceco.bandcamp.com/track/hiding",
+      "bandcampEmbedTrackId": "1108111585",
+      "sourcePage": "https://spceco.bandcamp.com/album/pool-rooms-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "pool-rooms-ep-1753702290",
+      "title": "Pool Rooms",
+      "artist": "SPC ECO",
+      "albumTitle": "Pool Rooms EP",
+      "albumKey": "pool-rooms-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://spceco.bandcamp.com/track/pool-rooms",
+      "bandcampEmbedTrackId": "1753702290",
+      "sourcePage": "https://spceco.bandcamp.com/album/pool-rooms-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "pool-rooms-ep-3064466939",
+      "title": "Round n Round",
+      "artist": "SPC ECO",
+      "albumTitle": "Pool Rooms EP",
+      "albumKey": "pool-rooms-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://spceco.bandcamp.com/track/round-n-round",
+      "bandcampEmbedTrackId": "3064466939",
+      "sourcePage": "https://spceco.bandcamp.com/album/pool-rooms-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "pool-rooms-ep-3110544835",
+      "title": "Growing Pains",
+      "artist": "SPC ECO",
+      "albumTitle": "Pool Rooms EP",
+      "albumKey": "pool-rooms-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:38",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://spceco.bandcamp.com/track/growing-pains",
+      "bandcampEmbedTrackId": "3110544835",
+      "sourcePage": "https://spceco.bandcamp.com/album/pool-rooms-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://spceco.bandcamp.com/album/pool-rooms-ep",
+    "discoveredAt": "2026-09-05T23:57:21.398796+00:00",
+    "importedAt": "2026-09-05T23:58:40.963529+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "spceco.bandcamp.com",
+    "bandcampBandId": "3192059657",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:40.963550+00:00"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "glok-glok-x-bytes-the-remixes",
+  "artist": "GLOK",
+  "bandcampUrl": "https://glok.bandcamp.com/album/glok-x-bytes-the-remixes",
+  "releaseTitle": "GLOK X BYTES: THE REMIXES",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "electronic",
+    "ambient",
+    "balearic",
+    "kosmische musik",
+    "techno",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Since starting Bytes in 2019 we’ve fielded a lot of emails/DMs along the lines of, “Is this ever going to be released on vinyl?” The bulk of these requests have concerned…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://glok.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:57:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "glok-x-bytes-the-remixes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "glok-x-bytes-the-remixes-3156331433",
+      "title": "Solitary (GLOK REMIX) - Franz Kirmann",
+      "artist": "GLOK",
+      "albumTitle": "GLOK X BYTES: THE REMIXES",
+      "albumKey": "glok-x-bytes-the-remixes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "10:27",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glok.bandcamp.com/track/solitary-glok-remix-franz-kirmann",
+      "bandcampEmbedTrackId": "3156331433",
+      "sourcePage": "https://glok.bandcamp.com/album/glok-x-bytes-the-remixes",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "glok-x-bytes-the-remixes-3176695076",
+      "title": "Chaldean Oracle (GLOK REMIX) - Steve Queralt and Michael Smith",
+      "artist": "GLOK",
+      "albumTitle": "GLOK X BYTES: THE REMIXES",
+      "albumKey": "glok-x-bytes-the-remixes",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:50",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glok.bandcamp.com/track/chaldean-oracle-glok-remix-steve-queralt-and-michael-smith",
+      "bandcampEmbedTrackId": "3176695076",
+      "sourcePage": "https://glok.bandcamp.com/album/glok-x-bytes-the-remixes",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "glok-x-bytes-the-remixes-1555760015",
+      "title": "Gone Gold (GLOK REMIX) - Herrmann Kristoffersen",
+      "artist": "GLOK",
+      "albumTitle": "GLOK X BYTES: THE REMIXES",
+      "albumKey": "glok-x-bytes-the-remixes",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "9:33",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glok.bandcamp.com/track/gone-gold-glok-remix-herrmann-kristoffersen",
+      "bandcampEmbedTrackId": "1555760015",
+      "sourcePage": "https://glok.bandcamp.com/album/glok-x-bytes-the-remixes",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "glok-x-bytes-the-remixes-3891277872",
+      "title": "Eternity (GLOK REMIX) - Seagoth",
+      "artist": "GLOK",
+      "albumTitle": "GLOK X BYTES: THE REMIXES",
+      "albumKey": "glok-x-bytes-the-remixes",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:15",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glok.bandcamp.com/track/eternity-glok-remix-seagoth",
+      "bandcampEmbedTrackId": "3891277872",
+      "sourcePage": "https://glok.bandcamp.com/album/glok-x-bytes-the-remixes",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://glok.bandcamp.com/album/glok-x-bytes-the-remixes",
+    "discoveredAt": "2026-09-05T23:57:21.397188+00:00",
+    "importedAt": "2026-09-05T23:57:58.019157+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "glok.bandcamp.com",
+    "bandcampBandId": "2230030729",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:58.019179+00:00"
+  }
+}

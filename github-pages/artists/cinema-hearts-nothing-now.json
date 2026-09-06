@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "cinema-hearts-nothing-now",
+  "artist": "Cinema Hearts",
+  "bandcampUrl": "https://cinemahearts.bandcamp.com/album/nothing-now",
+  "releaseTitle": "Nothing Now",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "alternative",
+    "alternative rock",
+    "garage rock",
+    "indie rock",
+    "power pop",
+    "singer-songwriter",
+    "Washington"
+  ],
+  "primaryLocation": "Washington, D.C.",
+  "bioShort": "Cinema Hearts — garage-rock / alternative / alternative rock music from Washington, D.C..",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://cinemahearts.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:06:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "nothing-now",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "nothing-now-689280283",
+      "title": "Nothing Now",
+      "artist": "Cinema Hearts",
+      "albumTitle": "Nothing Now",
+      "albumKey": "nothing-now",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cinemahearts.bandcamp.com/track/nothing-now-2",
+      "bandcampEmbedTrackId": "689280283",
+      "sourcePage": "https://cinemahearts.bandcamp.com/album/nothing-now",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "nothing-now-936881817",
+      "title": "Kinda High School",
+      "artist": "Cinema Hearts",
+      "albumTitle": "Nothing Now",
+      "albumKey": "nothing-now",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:15",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cinemahearts.bandcamp.com/track/kinda-high-school-4",
+      "bandcampEmbedTrackId": "936881817",
+      "sourcePage": "https://cinemahearts.bandcamp.com/album/nothing-now",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://cinemahearts.bandcamp.com/album/nothing-now",
+    "discoveredAt": "2026-09-05T23:57:21.415856+00:00",
+    "importedAt": "2026-09-06T00:06:50.669130+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "cinemahearts.bandcamp.com",
+    "bandcampBandId": "1687489910",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:06:50.669151+00:00"
+  }
+}

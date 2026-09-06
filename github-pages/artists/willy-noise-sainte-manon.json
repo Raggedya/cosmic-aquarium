@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "willy-noise-sainte-manon",
+  "artist": "Willy Noise",
+  "bandcampUrl": "https://willynoise.bandcamp.com/album/sainte-manon",
+  "releaseTitle": "Sainte-Manon",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "goth",
+    "post-punk",
+    "punk",
+    "shoegaze",
+    "Montreal"
+  ],
+  "primaryLocation": "Montreal, Québec",
+  "bioShort": "Toutes les Chansons ont été écrite et composé par Willy Noise, forgé par Suno IA / IA music, image génèré par copilot IA",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://willynoise.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:57:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sainte-manon",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sainte-manon-614337747",
+      "title": "Vipère",
+      "artist": "Willy Noise",
+      "albumTitle": "Sainte-Manon",
+      "albumKey": "sainte-manon",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:26",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willynoise.bandcamp.com/track/vip-re",
+      "bandcampEmbedTrackId": "614337747",
+      "sourcePage": "https://willynoise.bandcamp.com/album/sainte-manon",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sainte-manon-806808109",
+      "title": "Apocalypse",
+      "artist": "Willy Noise",
+      "albumTitle": "Sainte-Manon",
+      "albumKey": "sainte-manon",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willynoise.bandcamp.com/track/apocalypse-2",
+      "bandcampEmbedTrackId": "806808109",
+      "sourcePage": "https://willynoise.bandcamp.com/album/sainte-manon",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "sainte-manon-1060834689",
+      "title": "All",
+      "artist": "Willy Noise",
+      "albumTitle": "Sainte-Manon",
+      "albumKey": "sainte-manon",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:54",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willynoise.bandcamp.com/track/all-5",
+      "bandcampEmbedTrackId": "1060834689",
+      "sourcePage": "https://willynoise.bandcamp.com/album/sainte-manon",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "sainte-manon-3141210064",
+      "title": "Elle t'a pris dans ces bras",
+      "artist": "Willy Noise",
+      "albumTitle": "Sainte-Manon",
+      "albumKey": "sainte-manon",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:17",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willynoise.bandcamp.com/track/elle-ta-pris-dans-ces-bras-2",
+      "bandcampEmbedTrackId": "3141210064",
+      "sourcePage": "https://willynoise.bandcamp.com/album/sainte-manon",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://willynoise.bandcamp.com/album/sainte-manon",
+    "discoveredAt": "2026-09-05T23:57:05.651617+00:00",
+    "importedAt": "2026-09-05T23:57:46.811324+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "willynoise.bandcamp.com",
+    "bandcampBandId": "2292358100",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:46.811347+00:00"
+  }
+}

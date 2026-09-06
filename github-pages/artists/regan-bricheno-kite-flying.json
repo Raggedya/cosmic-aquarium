@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "slug": "regan-bricheno-kite-flying",
+  "artist": "Regan & Bricheno",
+  "bandcampUrl": "https://reganbricheno.bandcamp.com/album/kite-flying",
+  "releaseTitle": "Kite Flying",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "alternative",
+    "acoustic",
+    "alternative-folk",
+    "ambient",
+    "ambientfolk",
+    "dream pop",
+    "dreampop",
+    "electronica",
+    "folk",
+    "goth",
+    "gothic",
+    "hauntology",
+    "pastoral",
+    "pop",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Regan & Bricheno — dream-pop / alternative / acoustic music from UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "electronic",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://reganbricheno.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:57:29Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "kite-flying",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "kite-flying-91929158",
+      "title": "Kite Flying",
+      "artist": "Regan & Bricheno",
+      "albumTitle": "Kite Flying",
+      "albumKey": "kite-flying",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reganbricheno.bandcamp.com/track/kite-flying",
+      "bandcampEmbedTrackId": "91929158",
+      "sourcePage": "https://reganbricheno.bandcamp.com/album/kite-flying",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "kite-flying-816310479",
+      "title": "Kite Flying (Pylon Poet Mix)",
+      "artist": "Regan & Bricheno",
+      "albumTitle": "Kite Flying",
+      "albumKey": "kite-flying",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:42",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reganbricheno.bandcamp.com/track/kite-flying-pylon-poet-mix",
+      "bandcampEmbedTrackId": "816310479",
+      "sourcePage": "https://reganbricheno.bandcamp.com/album/kite-flying",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "kite-flying-3797205999",
+      "title": "Kite Flying (Crystallised Mix)",
+      "artist": "Regan & Bricheno",
+      "albumTitle": "Kite Flying",
+      "albumKey": "kite-flying",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:38",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reganbricheno.bandcamp.com/track/kite-flying-crystallised-mix",
+      "bandcampEmbedTrackId": "3797205999",
+      "sourcePage": "https://reganbricheno.bandcamp.com/album/kite-flying",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://reganbricheno.bandcamp.com/album/kite-flying",
+    "discoveredAt": "2026-09-05T23:56:37.996139+00:00",
+    "importedAt": "2026-09-05T23:57:29.216866+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "reganbricheno.bandcamp.com",
+    "bandcampBandId": "1251414070",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:29.216887+00:00"
+  }
+}

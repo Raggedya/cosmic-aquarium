@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "slug": "en-la-niebla-drop-of-blood",
+  "artist": "En la Niebla",
+  "bandcampUrl": "https://enlaniebla666.bandcamp.com/album/drop-of-blood",
+  "releaseTitle": "Drop of Blood",
+  "releaseDate": "2026-08-29 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "stoner doom metal",
+    "doom",
+    "doom metal",
+    "heavy metal",
+    "heavy psych",
+    "stoner",
+    "stoner doom",
+    "stoner metal",
+    "stoner rock",
+    "Córdoba"
+  ],
+  "primaryLocation": "Córdoba, Argentina",
+  "bioShort": "I NEED TO SEE! THE SUN IS DYING! SHADOWS DARKNES ME DUSK FALLS SLOWLY UNDER THE CROSS! OF BELOVED LUCIFER! UNDER THE CROSS! OF BELOVED LUCIFER! A DROP OF PLEASURE FILLS MY…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://enlaniebla666.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:05:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "drop-of-blood",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "drop-of-blood-843948494",
+      "title": "Drop of Blood",
+      "artist": "En la Niebla",
+      "albumTitle": "Drop of Blood",
+      "albumKey": "drop-of-blood",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://enlaniebla666.bandcamp.com/track/drop-of-blood",
+      "bandcampEmbedTrackId": "843948494",
+      "sourcePage": "https://enlaniebla666.bandcamp.com/album/drop-of-blood",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://enlaniebla666.bandcamp.com/album/drop-of-blood",
+    "discoveredAt": "2026-09-05T23:57:21.413575+00:00",
+    "importedAt": "2026-09-06T00:05:34.861846+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "enlaniebla666.bandcamp.com",
+    "bandcampBandId": "2370661378",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:34.861867+00:00"
+  }
+}

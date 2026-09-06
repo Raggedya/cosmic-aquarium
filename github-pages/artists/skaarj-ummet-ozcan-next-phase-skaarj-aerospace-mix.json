@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "skaarj-ummet-ozcan-next-phase-skaarj-aerospace-mix",
+  "artist": "Skaarj",
+  "bandcampUrl": "https://skaarjmusic.bandcamp.com/album/ummet-ozcan-next-phase-skaarj-aerospace-mix",
+  "releaseTitle": "Ummet Ozcan - Next Phase (Skaarj Aerospace Mix)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "broken beat",
+    "edm",
+    "electronic",
+    "breaks",
+    "Earth"
+  ],
+  "primaryLocation": "Earth, Texas",
+  "bioShort": "4 tracks - Listen to all tracks Skaarj https://band.link/skaarjmusic Support\\Поддержать https://clck.ru/3SP53j…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://skaarjmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:57:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ummet-ozcan-next-phase-skaarj-aerospace-mix",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ummet-ozcan-next-phase-skaarj-aerospace-mix-4054145047",
+      "title": "Ummet Ozcan - Next Phase (Skaarj Aerospace Mix 1)",
+      "artist": "Skaarj",
+      "albumTitle": "Ummet Ozcan - Next Phase (Skaarj Aerospace Mix)",
+      "albumKey": "ummet-ozcan-next-phase-skaarj-aerospace-mix",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://skaarjmusic.bandcamp.com/track/ummet-ozcan-next-phase-skaarj-aerospace-mix-1",
+      "bandcampEmbedTrackId": "4054145047",
+      "sourcePage": "https://skaarjmusic.bandcamp.com/album/ummet-ozcan-next-phase-skaarj-aerospace-mix",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://skaarjmusic.bandcamp.com/album/ummet-ozcan-next-phase-skaarj-aerospace-mix",
+    "discoveredAt": "2026-09-05T23:56:50.693877+00:00",
+    "importedAt": "2026-09-05T23:57:37.895050+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "skaarjmusic.bandcamp.com",
+    "bandcampBandId": "2488305633",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:37.895072+00:00"
+  }
+}

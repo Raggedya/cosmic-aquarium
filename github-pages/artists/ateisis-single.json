@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "ateisis-single",
+  "artist": "Ateisis",
+  "bandcampUrl": "https://ateisis.bandcamp.com/album/single",
+  "releaseTitle": "Звено - Single",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "death doom metal",
+    "metal",
+    "russia",
+    "russian black metal",
+    "dissonant",
+    "progressive metal",
+    "Smolensk"
+  ],
+  "primaryLocation": "Smolensk, Russia",
+  "bioShort": "A single from the new album I’m preparing, which features a shifted musical direction and a cohesive concept.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ateisis.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:01:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "single-3564134452",
+      "title": "Звено",
+      "artist": "Ateisis",
+      "albumTitle": "Звено - Single",
+      "albumKey": "single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "13:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ateisis.bandcamp.com/track/--9",
+      "bandcampEmbedTrackId": "3564134452",
+      "sourcePage": "https://ateisis.bandcamp.com/album/single",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ateisis.bandcamp.com/album/single",
+    "discoveredAt": "2026-09-05T23:57:21.405219+00:00",
+    "importedAt": "2026-09-06T00:01:46.002511+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ateisis.bandcamp.com",
+    "bandcampBandId": "1450584850",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:01:46.002532+00:00"
+  }
+}

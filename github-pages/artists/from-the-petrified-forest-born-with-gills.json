@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "from-the-petrified-forest-born-with-gills",
+  "artist": "From The Petrified Forest",
+  "bandcampUrl": "https://fromthepetrifiedforest.bandcamp.com/album/born-with-gills-2",
+  "releaseTitle": "Born With Gills",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "rock",
+    "dream pop",
+    "progressive-hardcore",
+    "shoegaze",
+    "space rock",
+    "Portland"
+  ],
+  "primaryLocation": "Portland, Oregon",
+  "bioShort": "From The Petrified Forest — post-metal / rock / dream pop music from Portland, Oregon.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://fromthepetrifiedforest.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:05:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "born-with-gills",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "born-with-gills-2520673299",
+      "title": "Bear's Breath",
+      "artist": "From The Petrified Forest",
+      "albumTitle": "Born With Gills",
+      "albumKey": "born-with-gills",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fromthepetrifiedforest.bandcamp.com/track/bears-breath",
+      "bandcampEmbedTrackId": "2520673299",
+      "sourcePage": "https://fromthepetrifiedforest.bandcamp.com/album/born-with-gills-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "born-with-gills-3407133003",
+      "title": "Mouthful of Bones",
+      "artist": "From The Petrified Forest",
+      "albumTitle": "Born With Gills",
+      "albumKey": "born-with-gills",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:24",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fromthepetrifiedforest.bandcamp.com/track/mouthful-of-bones",
+      "bandcampEmbedTrackId": "3407133003",
+      "sourcePage": "https://fromthepetrifiedforest.bandcamp.com/album/born-with-gills-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "born-with-gills-4644538",
+      "title": "Mouthful of Oak",
+      "artist": "From The Petrified Forest",
+      "albumTitle": "Born With Gills",
+      "albumKey": "born-with-gills",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:04",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fromthepetrifiedforest.bandcamp.com/track/mouthful-of-oak",
+      "bandcampEmbedTrackId": "4644538",
+      "sourcePage": "https://fromthepetrifiedforest.bandcamp.com/album/born-with-gills-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "born-with-gills-438928403",
+      "title": "Enskyment",
+      "artist": "From The Petrified Forest",
+      "albumTitle": "Born With Gills",
+      "albumKey": "born-with-gills",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:20",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fromthepetrifiedforest.bandcamp.com/track/enskyment",
+      "bandcampEmbedTrackId": "438928403",
+      "sourcePage": "https://fromthepetrifiedforest.bandcamp.com/album/born-with-gills-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://fromthepetrifiedforest.bandcamp.com/album/born-with-gills-2",
+    "discoveredAt": "2026-09-05T23:57:21.413598+00:00",
+    "importedAt": "2026-09-06T00:05:36.030242+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "fromthepetrifiedforest.bandcamp.com",
+    "bandcampBandId": "4097444086",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:36.030264+00:00"
+  }
+}

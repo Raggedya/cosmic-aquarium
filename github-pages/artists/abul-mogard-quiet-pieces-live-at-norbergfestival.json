@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "slug": "abul-mogard-quiet-pieces-live-at-norbergfestival",
+  "artist": "Abul Mogard",
+  "bandcampUrl": "https://abulmogard.bandcamp.com/album/quiet-pieces-live-at-norbergfestival",
+  "releaseTitle": "Quiet Pieces – Live at Norbergfestival",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "ambient",
+    "drone",
+    "electronic",
+    "Italy"
+  ],
+  "primaryLocation": "Italy",
+  "bioShort": "Ahead of the Berlin A/V premiere of \"Quiet Pieces\", Abul Mogard releases \"Quiet Pieces – Live at Norbergfestival\", recorded on 10 July 2026 at Norbergfestival, an experimental…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://abulmogard.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:00:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "quiet-pieces-live-at-norbergfestival",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "quiet-pieces-live-at-norbergfestival-3953912835",
+      "title": "Quiet Pieces – Live at Norbergfestival",
+      "artist": "Abul Mogard",
+      "albumTitle": "Quiet Pieces – Live at Norbergfestival",
+      "albumKey": "quiet-pieces-live-at-norbergfestival",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "54:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://abulmogard.bandcamp.com/track/quiet-pieces-live-at-norbergfestival",
+      "bandcampEmbedTrackId": "3953912835",
+      "sourcePage": "https://abulmogard.bandcamp.com/album/quiet-pieces-live-at-norbergfestival",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://abulmogard.bandcamp.com/album/quiet-pieces-live-at-norbergfestival",
+    "discoveredAt": "2026-09-05T23:57:21.402488+00:00",
+    "importedAt": "2026-09-06T00:00:26.025415+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "abulmogard.bandcamp.com",
+    "bandcampBandId": "4200507889",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:00:26.025437+00:00"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "slug": "ossx-making-a-mess-ep",
+  "artist": "OSSX",
+  "bandcampUrl": "https://ossx.bandcamp.com/album/making-a-mess-ep",
+  "releaseTitle": "MAKING A MESS EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "club",
+    "jungle",
+    "New Jersey"
+  ],
+  "primaryLocation": "New Jersey",
+  "bioShort": "OSSX — house / club / jungle music from New Jersey.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ossx.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:02:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "making-a-mess-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "making-a-mess-ep-2252145738",
+      "title": "WHAT DID WE LEARN",
+      "artist": "OSSX",
+      "albumTitle": "MAKING A MESS EP",
+      "albumKey": "making-a-mess-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:20",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ossx.bandcamp.com/track/what-did-we-learn",
+      "bandcampEmbedTrackId": "2252145738",
+      "sourcePage": "https://ossx.bandcamp.com/album/making-a-mess-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "making-a-mess-ep-2975034002",
+      "title": "GLASS NOODLES",
+      "artist": "OSSX",
+      "albumTitle": "MAKING A MESS EP",
+      "albumKey": "making-a-mess-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:04",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ossx.bandcamp.com/track/glass-noodles",
+      "bandcampEmbedTrackId": "2975034002",
+      "sourcePage": "https://ossx.bandcamp.com/album/making-a-mess-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "making-a-mess-ep-3115594791",
+      "title": "MAKING A MESS",
+      "artist": "OSSX",
+      "albumTitle": "MAKING A MESS EP",
+      "albumKey": "making-a-mess-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ossx.bandcamp.com/track/making-a-mess",
+      "bandcampEmbedTrackId": "3115594791",
+      "sourcePage": "https://ossx.bandcamp.com/album/making-a-mess-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ossx.bandcamp.com/album/making-a-mess-ep",
+    "discoveredAt": "2026-09-05T23:57:21.407501+00:00",
+    "importedAt": "2026-09-06T00:02:55.034205+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ossx.bandcamp.com",
+    "bandcampBandId": "3865049325",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:55.034227+00:00"
+  }
+}

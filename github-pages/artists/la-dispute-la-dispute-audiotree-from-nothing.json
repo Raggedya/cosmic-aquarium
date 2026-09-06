@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "la-dispute-la-dispute-audiotree-from-nothing",
+  "artist": "La Dispute",
+  "bandcampUrl": "https://ladispute.bandcamp.com/album/la-dispute-audiotree-from-nothing",
+  "releaseTitle": "La Dispute | Audiotree From Nothing",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "alternative",
+    "post hardcore",
+    "progressive rock",
+    "screamo",
+    "emo",
+    "spoken word",
+    "Grand Rapids"
+  ],
+  "primaryLocation": "Grand Rapids",
+  "bioShort": "La Dispute — post-hardcore / alternative / post hardcore music from Grand Rapids.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ladispute.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:57:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "la-dispute-audiotree-from-nothing",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "la-dispute-audiotree-from-nothing-100620295",
+      "title": "Man with Hands and Ankles Bound (Audiotree Version)",
+      "artist": "La Dispute",
+      "albumTitle": "La Dispute | Audiotree From Nothing",
+      "albumKey": "la-dispute-audiotree-from-nothing",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ladispute.bandcamp.com/track/man-with-hands-and-ankles-bound-audiotree-version",
+      "bandcampEmbedTrackId": "100620295",
+      "sourcePage": "https://ladispute.bandcamp.com/album/la-dispute-audiotree-from-nothing",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "la-dispute-audiotree-from-nothing-230469983",
+      "title": "Sibling Fistfight at Mom’s Fiftieth / The Un-Sound (Audiotree Version)",
+      "artist": "La Dispute",
+      "albumTitle": "La Dispute | Audiotree From Nothing",
+      "albumKey": "la-dispute-audiotree-from-nothing",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ladispute.bandcamp.com/track/sibling-fistfight-at-mom-s-fiftieth-the-un-sound-audiotree-version",
+      "bandcampEmbedTrackId": "230469983",
+      "sourcePage": "https://ladispute.bandcamp.com/album/la-dispute-audiotree-from-nothing",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "la-dispute-audiotree-from-nothing-1173333235",
+      "title": "Landlord Calls the Sheriff In (Audiotree Version)",
+      "artist": "La Dispute",
+      "albumTitle": "La Dispute | Audiotree From Nothing",
+      "albumKey": "la-dispute-audiotree-from-nothing",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:26",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ladispute.bandcamp.com/track/landlord-calls-the-sheriff-in-audiotree-version",
+      "bandcampEmbedTrackId": "1173333235",
+      "sourcePage": "https://ladispute.bandcamp.com/album/la-dispute-audiotree-from-nothing",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "la-dispute-audiotree-from-nothing-1089187592",
+      "title": "I Dreamt of a Room With All My Friends I Could Not Get In (Audiotree Version)",
+      "artist": "La Dispute",
+      "albumTitle": "La Dispute | Audiotree From Nothing",
+      "albumKey": "la-dispute-audiotree-from-nothing",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:28",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ladispute.bandcamp.com/track/i-dreamt-of-a-room-with-all-my-friends-i-could-not-get-in-audiotree-version",
+      "bandcampEmbedTrackId": "1089187592",
+      "sourcePage": "https://ladispute.bandcamp.com/album/la-dispute-audiotree-from-nothing",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ladispute.bandcamp.com/album/la-dispute-audiotree-from-nothing",
+    "discoveredAt": "2026-09-05T23:57:04.574435+00:00",
+    "importedAt": "2026-09-05T23:57:45.759540+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ladispute.bandcamp.com",
+    "bandcampBandId": "1134013535",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:45.759562+00:00"
+  }
+}

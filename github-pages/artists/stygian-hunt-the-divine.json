@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "stygian-hunt-the-divine",
+  "artist": "Stygian",
+  "bandcampUrl": "https://stygianbhc.bandcamp.com/album/hunt-the-divine",
+  "releaseTitle": "Hunt the Divine",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "blackened crust",
+    "blackened death metal",
+    "metal",
+    "Ravenna"
+  ],
+  "primaryLocation": "Ravenna, Italy",
+  "bioShort": "The EP explores the rejection of religious authority and the power built around dogma. From the symbolic hunt for the divine in Hunt the Divine to the confrontation between…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://stygianbhc.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:04:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hunt-the-divine",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hunt-the-divine-1669504703",
+      "title": "Verba Homini",
+      "artist": "Stygian",
+      "albumTitle": "Hunt the Divine",
+      "albumKey": "hunt-the-divine",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stygianbhc.bandcamp.com/track/verba-homini",
+      "bandcampEmbedTrackId": "1669504703",
+      "sourcePage": "https://stygianbhc.bandcamp.com/album/hunt-the-divine",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hunt-the-divine-3000505112",
+      "title": "Hunt the Divine",
+      "artist": "Stygian",
+      "albumTitle": "Hunt the Divine",
+      "albumKey": "hunt-the-divine",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:13",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stygianbhc.bandcamp.com/track/hunt-the-divine",
+      "bandcampEmbedTrackId": "3000505112",
+      "sourcePage": "https://stygianbhc.bandcamp.com/album/hunt-the-divine",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://stygianbhc.bandcamp.com/album/hunt-the-divine",
+    "discoveredAt": "2026-09-05T23:57:21.410669+00:00",
+    "importedAt": "2026-09-06T00:04:17.421844+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "stygianbhc.bandcamp.com",
+    "bandcampBandId": "863429904",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:04:17.421865+00:00"
+  }
+}

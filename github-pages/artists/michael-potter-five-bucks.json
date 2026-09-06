@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "michael-potter-five-bucks",
+  "artist": "Michael Potter",
+  "bandcampUrl": "https://michaelpotter.bandcamp.com/album/five-bucks",
+  "releaseTitle": "Five Bucks",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "avant-garde",
+    "chopped & screwed",
+    "electronic",
+    "experimental",
+    "sonic divination",
+    "ambient",
+    "field recordings",
+    "harsh noise",
+    "musique concrete",
+    "noise",
+    "Pittsburgh"
+  ],
+  "primaryLocation": "Pittsburgh, Pennsylvania",
+  "bioShort": "Live & In Stasis was originally assembled for my friend Jeff Tobias around October/November 2024. This was for a Palestinian relief effort compilation that came out in December…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://michaelpotter.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:06:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "five-bucks",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "five-bucks-553065727",
+      "title": "Live & In Stasis",
+      "artist": "Michael Potter",
+      "albumTitle": "Five Bucks",
+      "albumKey": "five-bucks",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://michaelpotter.bandcamp.com/track/live-in-stasis",
+      "bandcampEmbedTrackId": "553065727",
+      "sourcePage": "https://michaelpotter.bandcamp.com/album/five-bucks",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "five-bucks-3653296801",
+      "title": "Lost In The Layers",
+      "artist": "Michael Potter",
+      "albumTitle": "Five Bucks",
+      "albumKey": "five-bucks",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://michaelpotter.bandcamp.com/track/lost-in-the-layers-2",
+      "bandcampEmbedTrackId": "3653296801",
+      "sourcePage": "https://michaelpotter.bandcamp.com/album/five-bucks",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://michaelpotter.bandcamp.com/album/five-bucks",
+    "discoveredAt": "2026-09-05T23:57:21.416086+00:00",
+    "importedAt": "2026-09-06T00:06:55.492650+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "michaelpotter.bandcamp.com",
+    "bandcampBandId": "3797770700",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:06:55.492670+00:00"
+  }
+}

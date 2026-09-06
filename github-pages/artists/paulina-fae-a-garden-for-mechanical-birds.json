@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "paulina-fae-a-garden-for-mechanical-birds",
+  "artist": "Paulina Fae",
+  "bandcampUrl": "https://paulinafae.bandcamp.com/album/a-garden-for-mechanical-birds",
+  "releaseTitle": "A Garden For Mechanical Birds",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "experimental",
+    "ambient",
+    "dreampop",
+    "synthpop",
+    "vocalist",
+    "Chattanooga"
+  ],
+  "primaryLocation": "Chattanooga, Tennessee",
+  "bioShort": "A collection of four whimsical songs wandering somewhere between dreams and waking. With ethereal vocals and a haunting soundscape, these songs are fragments from a strange and…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://paulinafae.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:58:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-garden-for-mechanical-birds",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-garden-for-mechanical-birds-818626738",
+      "title": "A Garden For Mechanical Birds",
+      "artist": "Paulina Fae",
+      "albumTitle": "A Garden For Mechanical Birds",
+      "albumKey": "a-garden-for-mechanical-birds",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://paulinafae.bandcamp.com/track/a-garden-for-mechanical-birds",
+      "bandcampEmbedTrackId": "818626738",
+      "sourcePage": "https://paulinafae.bandcamp.com/album/a-garden-for-mechanical-birds",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-garden-for-mechanical-birds-812145608",
+      "title": "Horses at the Edge of Dreams",
+      "artist": "Paulina Fae",
+      "albumTitle": "A Garden For Mechanical Birds",
+      "albumKey": "a-garden-for-mechanical-birds",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://paulinafae.bandcamp.com/track/horses-at-the-edge-of-dreams",
+      "bandcampEmbedTrackId": "812145608",
+      "sourcePage": "https://paulinafae.bandcamp.com/album/a-garden-for-mechanical-birds",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "a-garden-for-mechanical-birds-474849701",
+      "title": "Underwater Carousel",
+      "artist": "Paulina Fae",
+      "albumTitle": "A Garden For Mechanical Birds",
+      "albumKey": "a-garden-for-mechanical-birds",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:44",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://paulinafae.bandcamp.com/track/underwater-carousel",
+      "bandcampEmbedTrackId": "474849701",
+      "sourcePage": "https://paulinafae.bandcamp.com/album/a-garden-for-mechanical-birds",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "a-garden-for-mechanical-birds-1968506572",
+      "title": "The Heart of Hidden Things",
+      "artist": "Paulina Fae",
+      "albumTitle": "A Garden For Mechanical Birds",
+      "albumKey": "a-garden-for-mechanical-birds",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:26",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://paulinafae.bandcamp.com/track/the-heart-of-hidden-things",
+      "bandcampEmbedTrackId": "1968506572",
+      "sourcePage": "https://paulinafae.bandcamp.com/album/a-garden-for-mechanical-birds",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://paulinafae.bandcamp.com/album/a-garden-for-mechanical-birds",
+    "discoveredAt": "2026-09-05T23:57:21.398287+00:00",
+    "importedAt": "2026-09-05T23:58:25.847398+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "paulinafae.bandcamp.com",
+    "bandcampBandId": "2709445570",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:25.847420+00:00"
+  }
+}

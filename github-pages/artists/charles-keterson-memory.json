@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "charles-keterson-memory",
+  "artist": "Charles Keterson",
+  "bandcampUrl": "https://charlesketerson.bandcamp.com/album/memory-2",
+  "releaseTitle": "Memory",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "ambient",
+    "dark ambient",
+    "experimental",
+    "musique-concrete",
+    "Detroit"
+  ],
+  "primaryLocation": "Detroit, Michigan",
+  "bioShort": "Charles Keterson — outsider / ambient / dark ambient music from Detroit, Michigan.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://charlesketerson.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:08:32Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "memory",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "memory-2668845757",
+      "title": "Part 1",
+      "artist": "Charles Keterson",
+      "albumTitle": "Memory",
+      "albumKey": "memory",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "20:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://charlesketerson.bandcamp.com/track/part-1-3",
+      "bandcampEmbedTrackId": "2668845757",
+      "sourcePage": "https://charlesketerson.bandcamp.com/album/memory-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "memory-755729128",
+      "title": "Part 2",
+      "artist": "Charles Keterson",
+      "albumTitle": "Memory",
+      "albumKey": "memory",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "20:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://charlesketerson.bandcamp.com/track/part-2-3",
+      "bandcampEmbedTrackId": "755729128",
+      "sourcePage": "https://charlesketerson.bandcamp.com/album/memory-2",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://charlesketerson.bandcamp.com/album/memory-2",
+    "discoveredAt": "2026-09-05T23:57:21.419795+00:00",
+    "importedAt": "2026-09-06T00:08:32.500333+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "charlesketerson.bandcamp.com",
+    "bandcampBandId": "2833624934",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:08:32.500355+00:00"
+  }
+}

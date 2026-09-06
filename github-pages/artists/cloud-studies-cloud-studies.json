@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "cloud-studies-cloud-studies",
+  "artist": "Cloud Studies",
+  "bandcampUrl": "https://cloudstudies.bandcamp.com/album/cloud-studies",
+  "releaseTitle": "Cloud Studies",
+  "releaseDate": "2026-06-19 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "goth",
+    "alternative",
+    "dreampop",
+    "gothgaze",
+    "indiepop",
+    "shoegaze",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "PRESS RELEASE ============= Following a run of singles, Cloud Studies unveil their debut eponymous EP, presenting a panoramic sound that explores shoegaze and dreampop with…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://cloudstudies.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:06:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "cloud-studies",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cloud-studies-178323965",
+      "title": "Cloud Cartography - Extended",
+      "artist": "Cloud Studies",
+      "albumTitle": "Cloud Studies",
+      "albumKey": "cloud-studies",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cloudstudies.bandcamp.com/track/cloud-cartography-extended",
+      "bandcampEmbedTrackId": "178323965",
+      "sourcePage": "https://cloudstudies.bandcamp.com/album/cloud-studies",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "cloud-studies-3991439087",
+      "title": "Dreams About",
+      "artist": "Cloud Studies",
+      "albumTitle": "Cloud Studies",
+      "albumKey": "cloud-studies",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cloudstudies.bandcamp.com/track/dreams-about",
+      "bandcampEmbedTrackId": "3991439087",
+      "sourcePage": "https://cloudstudies.bandcamp.com/album/cloud-studies",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "cloud-studies-785534210",
+      "title": "Avenue",
+      "artist": "Cloud Studies",
+      "albumTitle": "Cloud Studies",
+      "albumKey": "cloud-studies",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:43",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cloudstudies.bandcamp.com/track/avenue",
+      "bandcampEmbedTrackId": "785534210",
+      "sourcePage": "https://cloudstudies.bandcamp.com/album/cloud-studies",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "cloud-studies-3636662782",
+      "title": "Hiding Place",
+      "artist": "Cloud Studies",
+      "albumTitle": "Cloud Studies",
+      "albumKey": "cloud-studies",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:23",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cloudstudies.bandcamp.com/track/hiding-place",
+      "bandcampEmbedTrackId": "3636662782",
+      "sourcePage": "https://cloudstudies.bandcamp.com/album/cloud-studies",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://cloudstudies.bandcamp.com/album/cloud-studies",
+    "discoveredAt": "2026-09-05T23:57:21.415958+00:00",
+    "importedAt": "2026-09-06T00:06:53.100763+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "cloudstudies.bandcamp.com",
+    "bandcampBandId": "1892159133",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:06:53.100784+00:00"
+  }
+}

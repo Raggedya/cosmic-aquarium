@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "slug": "dozethrone-death-holds-the-blossom",
+  "artist": "Dozethrone",
+  "bandcampUrl": "https://dozethrone.bandcamp.com/album/death-holds-the-blossom",
+  "releaseTitle": "Death Holds the Blossom",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "art rock",
+    "doom",
+    "doom metal",
+    "experimental rock",
+    "heavy metal",
+    "instrumental",
+    "progressive metal",
+    "sludge metal",
+    "stoner metal",
+    "stoner rock",
+    "Singapore"
+  ],
+  "primaryLocation": "Singapore",
+  "bioShort": "Dozethrone — stoner-metal / metal / art rock music from Singapore.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dozethrone.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:08:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "death-holds-the-blossom",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "death-holds-the-blossom-980766711",
+      "title": "Moonlight on the Scythe",
+      "artist": "Dozethrone",
+      "albumTitle": "Death Holds the Blossom",
+      "albumKey": "death-holds-the-blossom",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "34:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dozethrone.bandcamp.com/track/moonlight-on-the-scythe",
+      "bandcampEmbedTrackId": "980766711",
+      "sourcePage": "https://dozethrone.bandcamp.com/album/death-holds-the-blossom",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "death-holds-the-blossom-3851614692",
+      "title": "Black Silence Flowers Within",
+      "artist": "Dozethrone",
+      "albumTitle": "Death Holds the Blossom",
+      "albumKey": "death-holds-the-blossom",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "15:01",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dozethrone.bandcamp.com/track/black-silence-flowers-within",
+      "bandcampEmbedTrackId": "3851614692",
+      "sourcePage": "https://dozethrone.bandcamp.com/album/death-holds-the-blossom",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "death-holds-the-blossom-869404501",
+      "title": "Death Holds the Blossom",
+      "artist": "Dozethrone",
+      "albumTitle": "Death Holds the Blossom",
+      "albumKey": "death-holds-the-blossom",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "11:32",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dozethrone.bandcamp.com/track/death-holds-the-blossom",
+      "bandcampEmbedTrackId": "869404501",
+      "sourcePage": "https://dozethrone.bandcamp.com/album/death-holds-the-blossom",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://dozethrone.bandcamp.com/album/death-holds-the-blossom",
+    "discoveredAt": "2026-09-05T23:57:21.419046+00:00",
+    "importedAt": "2026-09-06T00:08:16.376459+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "dozethrone.bandcamp.com",
+    "bandcampBandId": "339510013",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:08:16.376481+00:00"
+  }
+}

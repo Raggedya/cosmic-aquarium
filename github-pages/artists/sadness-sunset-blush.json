@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "sadness-sunset-blush",
+  "artist": "Sadness",
+  "bandcampUrl": "https://sadnessmusic.bandcamp.com/album/sunset-blush",
+  "releaseTitle": "sunset blush",
+  "releaseDate": "2026-08-23 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "blackgaze",
+    "metal",
+    "emo",
+    "post-rock"
+  ],
+  "primaryLocation": null,
+  "bioShort": "recorded July 2025",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sadnessmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:58:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sunset-blush",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sunset-blush-2212392576",
+      "title": "pink sunset",
+      "artist": "Sadness",
+      "albumTitle": "sunset blush",
+      "albumKey": "sunset-blush",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sadnessmusic.bandcamp.com/track/pink-sunset",
+      "bandcampEmbedTrackId": "2212392576",
+      "sourcePage": "https://sadnessmusic.bandcamp.com/album/sunset-blush",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sunset-blush-3839022035",
+      "title": "pink sounds",
+      "artist": "Sadness",
+      "albumTitle": "sunset blush",
+      "albumKey": "sunset-blush",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sadnessmusic.bandcamp.com/track/pink-sounds",
+      "bandcampEmbedTrackId": "3839022035",
+      "sourcePage": "https://sadnessmusic.bandcamp.com/album/sunset-blush",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "sunset-blush-276598665",
+      "title": "summer love",
+      "artist": "Sadness",
+      "albumTitle": "sunset blush",
+      "albumKey": "sunset-blush",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "9:21",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sadnessmusic.bandcamp.com/track/summer-love",
+      "bandcampEmbedTrackId": "276598665",
+      "sourcePage": "https://sadnessmusic.bandcamp.com/album/sunset-blush",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "sunset-blush-124211444",
+      "title": "istoy",
+      "artist": "Sadness",
+      "albumTitle": "sunset blush",
+      "albumKey": "sunset-blush",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "11:03",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sadnessmusic.bandcamp.com/track/istoy",
+      "bandcampEmbedTrackId": "124211444",
+      "sourcePage": "https://sadnessmusic.bandcamp.com/album/sunset-blush",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sadnessmusic.bandcamp.com/album/sunset-blush",
+    "discoveredAt": "2026-09-05T23:57:21.399189+00:00",
+    "importedAt": "2026-09-05T23:58:50.060290+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sadnessmusic.bandcamp.com",
+    "bandcampBandId": "3395381771",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:50.060326+00:00"
+  }
+}

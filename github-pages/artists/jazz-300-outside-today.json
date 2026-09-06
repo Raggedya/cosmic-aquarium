@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "jazz-300-outside-today",
+  "artist": "Jazz 300",
+  "bandcampUrl": "https://jazz300.bandcamp.com/album/outside-today",
+  "releaseTitle": "Outside Today",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "punk",
+    "indie",
+    "indie rock",
+    "lo-fi hip hop",
+    "melancholic rock",
+    "post-punk",
+    "New Jersey"
+  ],
+  "primaryLocation": "New Jersey",
+  "bioShort": "Jazz 300 — slowcore / punk / indie music from New Jersey.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jazz300.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:00:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "outside-today",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "outside-today-3243656595",
+      "title": "Outside Today",
+      "artist": "Jazz 300",
+      "albumTitle": "Outside Today",
+      "albumKey": "outside-today",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jazz300.bandcamp.com/track/outside-today",
+      "bandcampEmbedTrackId": "3243656595",
+      "sourcePage": "https://jazz300.bandcamp.com/album/outside-today",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "outside-today-1071875649",
+      "title": "Challenger",
+      "artist": "Jazz 300",
+      "albumTitle": "Outside Today",
+      "albumKey": "outside-today",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:18",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jazz300.bandcamp.com/track/challenger-2",
+      "bandcampEmbedTrackId": "1071875649",
+      "sourcePage": "https://jazz300.bandcamp.com/album/outside-today",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "outside-today-1300379255",
+      "title": "Go Golfing",
+      "artist": "Jazz 300",
+      "albumTitle": "Outside Today",
+      "albumKey": "outside-today",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:28",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jazz300.bandcamp.com/track/go-golfing-2",
+      "bandcampEmbedTrackId": "1300379255",
+      "sourcePage": "https://jazz300.bandcamp.com/album/outside-today",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jazz300.bandcamp.com/album/outside-today",
+    "discoveredAt": "2026-09-05T23:57:21.402847+00:00",
+    "importedAt": "2026-09-06T00:00:36.746216+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jazz300.bandcamp.com",
+    "bandcampBandId": "77859111",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:00:36.746237+00:00"
+  }
+}

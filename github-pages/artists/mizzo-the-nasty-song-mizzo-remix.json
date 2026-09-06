@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "slug": "mizzo-the-nasty-song-mizzo-remix",
+  "artist": "Mizzo",
+  "bandcampUrl": "https://mizzo808.bandcamp.com/album/the-nasty-song-mizzo-remix",
+  "releaseTitle": "The Nasty Song (Mizzo Remix)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "Charlotte"
+  ],
+  "primaryLocation": "Charlotte, North Carolina",
+  "bioShort": "Mizzo — breakbeat / Charlotte music from Charlotte, North Carolina.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mizzo808.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:02:56Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-nasty-song-mizzo-remix",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-nasty-song-mizzo-remix-828520323",
+      "title": "The Nasty Song (Mizzo Remix) (Clean)",
+      "artist": "Mizzo",
+      "albumTitle": "The Nasty Song (Mizzo Remix)",
+      "albumKey": "the-nasty-song-mizzo-remix",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:30",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mizzo808.bandcamp.com/track/the-nasty-song-mizzo-remix-clean-2",
+      "bandcampEmbedTrackId": "828520323",
+      "sourcePage": "https://mizzo808.bandcamp.com/album/the-nasty-song-mizzo-remix",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-nasty-song-mizzo-remix-2815540206",
+      "title": "The Nasty Song (Mizzo Remix) (Dirty)",
+      "artist": "Mizzo",
+      "albumTitle": "The Nasty Song (Mizzo Remix)",
+      "albumKey": "the-nasty-song-mizzo-remix",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mizzo808.bandcamp.com/track/the-nasty-song-mizzo-remix-dirty-2",
+      "bandcampEmbedTrackId": "2815540206",
+      "sourcePage": "https://mizzo808.bandcamp.com/album/the-nasty-song-mizzo-remix",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mizzo808.bandcamp.com/album/the-nasty-song-mizzo-remix",
+    "discoveredAt": "2026-09-05T23:57:21.407546+00:00",
+    "importedAt": "2026-09-06T00:02:56.349917+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mizzo808.bandcamp.com",
+    "bandcampBandId": "1604326649",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:56.349938+00:00"
+  }
+}

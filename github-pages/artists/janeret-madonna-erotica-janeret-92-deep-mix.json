@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "janeret-madonna-erotica-janeret-92-deep-mix",
+  "artist": "Janeret",
+  "bandcampUrl": "https://janeretmusic.bandcamp.com/album/madonna-erotica-janeret-92-deep-mix",
+  "releaseTitle": "Madonna - Erotica (Janeret 92' Deep Mix)",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "breaks",
+    "deep",
+    "electronic",
+    "jungle",
+    "Paris"
+  ],
+  "primaryLocation": "Paris, France",
+  "bioShort": "Janeret — house / breaks / deep music from Paris, France.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://janeretmusic.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:05:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "madonna-erotica-janeret-92-deep-mix",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "madonna-erotica-janeret-92-deep-mix-3791856406",
+      "title": "Madonna - Erotica (Janeret 92' Deep Mix)",
+      "artist": "Janeret",
+      "albumTitle": "Madonna - Erotica (Janeret 92' Deep Mix)",
+      "albumKey": "madonna-erotica-janeret-92-deep-mix",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:19",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://janeretmusic.bandcamp.com/track/madonna-erotica-janeret-92-deep-mix",
+      "bandcampEmbedTrackId": "3791856406",
+      "sourcePage": "https://janeretmusic.bandcamp.com/album/madonna-erotica-janeret-92-deep-mix",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "madonna-erotica-janeret-92-deep-mix-3413781729",
+      "title": "Madonna - Erotica (Janeret 92' Deep instrumental Mix)",
+      "artist": "Janeret",
+      "albumTitle": "Madonna - Erotica (Janeret 92' Deep Mix)",
+      "albumKey": "madonna-erotica-janeret-92-deep-mix",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:19",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://janeretmusic.bandcamp.com/track/madonna-erotica-janeret-92-deep-instrumental-mix",
+      "bandcampEmbedTrackId": "3413781729",
+      "sourcePage": "https://janeretmusic.bandcamp.com/album/madonna-erotica-janeret-92-deep-mix",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://janeretmusic.bandcamp.com/album/madonna-erotica-janeret-92-deep-mix",
+    "discoveredAt": "2026-09-05T23:57:21.413818+00:00",
+    "importedAt": "2026-09-06T00:05:42.589092+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "janeretmusic.bandcamp.com",
+    "bandcampBandId": "4283195781",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:42.589112+00:00"
+  }
+}

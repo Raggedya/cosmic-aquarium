@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "slug": "four-tet-human-voice",
+  "artist": "Four Tet",
+  "bandcampUrl": "https://fourtet.bandcamp.com/album/human-voice",
+  "releaseTitle": "Human Voice",
+  "releaseDate": "2026-07-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "electronic",
+    "ambient",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Four Tet — idm / ambient / London music from London, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://fourtet.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:04:29Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "human-voice",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "human-voice-1324807438",
+      "title": "Human Voice",
+      "artist": "Four Tet",
+      "albumTitle": "Human Voice",
+      "albumKey": "human-voice",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fourtet.bandcamp.com/track/human-voice",
+      "bandcampEmbedTrackId": "1324807438",
+      "sourcePage": "https://fourtet.bandcamp.com/album/human-voice",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "human-voice-3951384759",
+      "title": "T246 130ish Electribe Plaits",
+      "artist": "Four Tet",
+      "albumTitle": "Human Voice",
+      "albumKey": "human-voice",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fourtet.bandcamp.com/track/t246-130ish-electribe-plaits",
+      "bandcampEmbedTrackId": "3951384759",
+      "sourcePage": "https://fourtet.bandcamp.com/album/human-voice",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://fourtet.bandcamp.com/album/human-voice",
+    "discoveredAt": "2026-09-05T23:57:21.411074+00:00",
+    "importedAt": "2026-09-06T00:04:29.510058+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "fourtet.bandcamp.com",
+    "bandcampBandId": "3437273216",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:04:29.510079+00:00"
+  }
+}

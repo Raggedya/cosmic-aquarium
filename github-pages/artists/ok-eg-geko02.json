@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "ok-eg-geko02",
+  "artist": "OK EG",
+  "bandcampUrl": "https://okegmusic.bandcamp.com/album/geko02",
+  "releaseTitle": "GEKO02",
+  "releaseDate": "2026-09-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "electronic",
+    "acid",
+    "breaks",
+    "techno",
+    "trance",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Opening into lusher, dreamier and more abstract territory, GEKO02 is the second release on the new label by OK EG, GEKO. This record finds the Melbourne duo in the zone…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://okegmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:06:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "geko02",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "geko02-1795404065",
+      "title": "Pressure",
+      "artist": "OK EG",
+      "albumTitle": "GEKO02",
+      "albumKey": "geko02",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://okegmusic.bandcamp.com/album/geko02",
+      "bandcampEmbedTrackId": "1795404065",
+      "sourcePage": "https://okegmusic.bandcamp.com/album/geko02",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "geko02-1709079562",
+      "title": "Soft Clip",
+      "artist": "OK EG",
+      "albumTitle": "GEKO02",
+      "albumKey": "geko02",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:23",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://okegmusic.bandcamp.com/track/soft-clip",
+      "bandcampEmbedTrackId": "1709079562",
+      "sourcePage": "https://okegmusic.bandcamp.com/album/geko02",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "geko02-3873637521",
+      "title": "Lily",
+      "artist": "OK EG",
+      "albumTitle": "GEKO02",
+      "albumKey": "geko02",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://okegmusic.bandcamp.com/album/geko02",
+      "bandcampEmbedTrackId": "3873637521",
+      "sourcePage": "https://okegmusic.bandcamp.com/album/geko02",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "geko02-2308260001",
+      "title": "Vapour",
+      "artist": "OK EG",
+      "albumTitle": "GEKO02",
+      "albumKey": "geko02",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://okegmusic.bandcamp.com/album/geko02",
+      "bandcampEmbedTrackId": "2308260001",
+      "sourcePage": "https://okegmusic.bandcamp.com/album/geko02",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://okegmusic.bandcamp.com/album/geko02",
+    "discoveredAt": "2026-09-05T23:57:21.414690+00:00",
+    "importedAt": "2026-09-06T00:06:16.571706+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "okegmusic.bandcamp.com",
+    "bandcampBandId": "776925458",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:06:16.571727+00:00"
+  }
+}

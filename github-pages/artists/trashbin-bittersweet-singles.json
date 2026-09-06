@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "slug": "trashbin-bittersweet-singles",
+  "artist": "trashbin",
+  "bandcampUrl": "https://trashbinprod.bandcamp.com/album/bittersweet-singles",
+  "releaseTitle": "Bittersweet Singles",
+  "releaseDate": "2026-08-23 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "electronic",
+    "ambient pop",
+    "dub",
+    "folktronica",
+    "indie rock",
+    "indietronica",
+    "jazz-rock",
+    "math rock",
+    "post-rock",
+    "slowcore",
+    "Charleston"
+  ],
+  "primaryLocation": "Charleston, South Carolina",
+  "bioShort": "trashbin — ambient-pop / electronic / ambient pop music from Charleston, South Carolina.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://trashbinprod.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:06:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bittersweet-singles",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bittersweet-singles-3799321746",
+      "title": "Maybe Things Aren't So Bad...",
+      "artist": "trashbin",
+      "albumTitle": "Bittersweet Singles",
+      "albumKey": "bittersweet-singles",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://trashbinprod.bandcamp.com/track/maybe-things-arent-so-bad-2",
+      "bandcampEmbedTrackId": "3799321746",
+      "sourcePage": "https://trashbinprod.bandcamp.com/album/bittersweet-singles",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bittersweet-singles-3361073793",
+      "title": "Unorthodox Grip",
+      "artist": "trashbin",
+      "albumTitle": "Bittersweet Singles",
+      "albumKey": "bittersweet-singles",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:04",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://trashbinprod.bandcamp.com/track/unorthodox-grip-2",
+      "bandcampEmbedTrackId": "3361073793",
+      "sourcePage": "https://trashbinprod.bandcamp.com/album/bittersweet-singles",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://trashbinprod.bandcamp.com/album/bittersweet-singles",
+    "discoveredAt": "2026-09-05T23:57:21.414623+00:00",
+    "importedAt": "2026-09-06T00:06:12.752093+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "trashbinprod.bandcamp.com",
+    "bandcampBandId": "1185870273",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:06:12.752113+00:00"
+  }
+}

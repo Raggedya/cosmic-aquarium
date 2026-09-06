@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "dr-quinn-medicine-woman-kelp",
+  "artist": "Dr. Quinn, Medicine Woman",
+  "bandcampUrl": "https://drquinnmedicinewoman.bandcamp.com/album/kelp",
+  "releaseTitle": "Kelp!",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "experimental",
+    "drone",
+    "experimental electronic",
+    "noise",
+    "synthesizer",
+    "Cleveland"
+  ],
+  "primaryLocation": "Cleveland, Ohio",
+  "bioShort": "Dr. Quinn, Medicine Woman — outsider / experimental / drone music from Cleveland, Ohio.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://drquinnmedicinewoman.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:03:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "kelp",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "kelp-247003202",
+      "title": "Half Pint",
+      "artist": "Dr. Quinn, Medicine Woman",
+      "albumTitle": "Kelp!",
+      "albumKey": "kelp",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://drquinnmedicinewoman.bandcamp.com/track/half-pint",
+      "bandcampEmbedTrackId": "247003202",
+      "sourcePage": "https://drquinnmedicinewoman.bandcamp.com/album/kelp",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "kelp-3265077166",
+      "title": "Drift Away",
+      "artist": "Dr. Quinn, Medicine Woman",
+      "albumTitle": "Kelp!",
+      "albumKey": "kelp",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "26:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://drquinnmedicinewoman.bandcamp.com/track/drift-away",
+      "bandcampEmbedTrackId": "3265077166",
+      "sourcePage": "https://drquinnmedicinewoman.bandcamp.com/album/kelp",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "kelp-611962149",
+      "title": "Caterpillar on the Cob",
+      "artist": "Dr. Quinn, Medicine Woman",
+      "albumTitle": "Kelp!",
+      "albumKey": "kelp",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:29",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://drquinnmedicinewoman.bandcamp.com/track/caterpillar-on-the-cob",
+      "bandcampEmbedTrackId": "611962149",
+      "sourcePage": "https://drquinnmedicinewoman.bandcamp.com/album/kelp",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "kelp-280834343",
+      "title": "Kalimba",
+      "artist": "Dr. Quinn, Medicine Woman",
+      "albumTitle": "Kelp!",
+      "albumKey": "kelp",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:21",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://drquinnmedicinewoman.bandcamp.com/track/kalimba",
+      "bandcampEmbedTrackId": "280834343",
+      "sourcePage": "https://drquinnmedicinewoman.bandcamp.com/album/kelp",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://drquinnmedicinewoman.bandcamp.com/album/kelp",
+    "discoveredAt": "2026-09-05T23:57:21.408067+00:00",
+    "importedAt": "2026-09-06T00:03:13.864185+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "drquinnmedicinewoman.bandcamp.com",
+    "bandcampBandId": "1805084751",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:03:13.864206+00:00"
+  }
+}

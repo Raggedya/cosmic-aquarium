@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "menta-sauce-fantasy-ep",
+  "artist": "Menta Sauce",
+  "bandcampUrl": "https://mentasauce.bandcamp.com/album/fantasy-ep",
+  "releaseTitle": "Fantasy EP",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "deep house",
+    "electronic",
+    "progressive house",
+    "tech house"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Running Hot welcomes Menta Sauce to the label. Over the past year their reputation has grown steadily through their own label Jus' Mirage, with a catalogue that moves between…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mentasauce.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:02:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "fantasy-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fantasy-ep-4092852652",
+      "title": "Stress",
+      "artist": "Menta Sauce",
+      "albumTitle": "Fantasy EP",
+      "albumKey": "fantasy-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mentasauce.bandcamp.com/track/stress",
+      "bandcampEmbedTrackId": "4092852652",
+      "sourcePage": "https://mentasauce.bandcamp.com/album/fantasy-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "fantasy-ep-3085811510",
+      "title": "Fantasy",
+      "artist": "Menta Sauce",
+      "albumTitle": "Fantasy EP",
+      "albumKey": "fantasy-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:09",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mentasauce.bandcamp.com/track/fantasy",
+      "bandcampEmbedTrackId": "3085811510",
+      "sourcePage": "https://mentasauce.bandcamp.com/album/fantasy-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "fantasy-ep-2134515291",
+      "title": "He Said",
+      "artist": "Menta Sauce",
+      "albumTitle": "Fantasy EP",
+      "albumKey": "fantasy-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:07",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mentasauce.bandcamp.com/track/he-said",
+      "bandcampEmbedTrackId": "2134515291",
+      "sourcePage": "https://mentasauce.bandcamp.com/album/fantasy-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "fantasy-ep-3102220706",
+      "title": "Feel That Way",
+      "artist": "Menta Sauce",
+      "albumTitle": "Fantasy EP",
+      "albumKey": "fantasy-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:45",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mentasauce.bandcamp.com/track/feel-that-way",
+      "bandcampEmbedTrackId": "3102220706",
+      "sourcePage": "https://mentasauce.bandcamp.com/album/fantasy-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mentasauce.bandcamp.com/album/fantasy-ep",
+    "discoveredAt": "2026-09-05T23:57:21.406578+00:00",
+    "importedAt": "2026-09-06T00:02:28.361862+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mentasauce.bandcamp.com",
+    "bandcampBandId": "3077397291",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:28.361883+00:00"
+  }
+}

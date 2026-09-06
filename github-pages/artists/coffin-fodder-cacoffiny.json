@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "coffin-fodder-cacoffiny",
+  "artist": "Coffin Fodder",
+  "bandcampUrl": "https://coffinfodder.bandcamp.com/album/cacoffiny",
+  "releaseTitle": "Cacoffiny",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "blackened thrash metal",
+    "metal",
+    "thrash metal",
+    "ukbm"
+  ],
+  "primaryLocation": null,
+  "bioShort": "The three Coffin Fodder tracks featured on the 'Cacoffiny' three-way split EP with Vampiric Coffin & Glass Coffin. Released on Grime Stone Records. Full EP avilable at…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://coffinfodder.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:08:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "cacoffiny",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cacoffiny-2562149467",
+      "title": "Unexplain'd Pool Ov Blood",
+      "artist": "Coffin Fodder",
+      "albumTitle": "Cacoffiny",
+      "albumKey": "cacoffiny",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coffinfodder.bandcamp.com/track/unexplaind-pool-ov-blood-2",
+      "bandcampEmbedTrackId": "2562149467",
+      "sourcePage": "https://coffinfodder.bandcamp.com/album/cacoffiny",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "cacoffiny-334968756",
+      "title": "Dominion Ov the Necro Wiz'rds",
+      "artist": "Coffin Fodder",
+      "albumTitle": "Cacoffiny",
+      "albumKey": "cacoffiny",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coffinfodder.bandcamp.com/track/dominion-ov-the-necro-wizrds",
+      "bandcampEmbedTrackId": "334968756",
+      "sourcePage": "https://coffinfodder.bandcamp.com/album/cacoffiny",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "cacoffiny-892776205",
+      "title": "Necrologue Ov thee Fiendish Kind",
+      "artist": "Coffin Fodder",
+      "albumTitle": "Cacoffiny",
+      "albumKey": "cacoffiny",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:22",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coffinfodder.bandcamp.com/track/necrologue-ov-thee-fiendish-kind",
+      "bandcampEmbedTrackId": "892776205",
+      "sourcePage": "https://coffinfodder.bandcamp.com/album/cacoffiny",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://coffinfodder.bandcamp.com/album/cacoffiny",
+    "discoveredAt": "2026-09-05T23:57:21.418817+00:00",
+    "importedAt": "2026-09-06T00:08:10.925997+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "coffinfodder.bandcamp.com",
+    "bandcampBandId": "2207317105",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:08:10.926018+00:00"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "slug": "sudden-language-eyezonyou",
+  "artist": "Sudden Language",
+  "bandcampUrl": "https://suddenlanguage.bandcamp.com/album/eyezonyou",
+  "releaseTitle": "EyezOnYou",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "bass-music",
+    "breaks",
+    "jungle",
+    "jungle-dnb"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Sudden Language — breakbeat / bass-music / breaks music in Cosmic Aquaria.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://suddenlanguage.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:59:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "eyezonyou",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "eyezonyou-1294977499",
+      "title": "EyezOnYou",
+      "artist": "Sudden Language",
+      "albumTitle": "EyezOnYou",
+      "albumKey": "eyezonyou",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suddenlanguage.bandcamp.com/track/eyezonyou",
+      "bandcampEmbedTrackId": "1294977499",
+      "sourcePage": "https://suddenlanguage.bandcamp.com/album/eyezonyou",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "eyezonyou-3464768356",
+      "title": "Mezmerized",
+      "artist": "Sudden Language",
+      "albumTitle": "EyezOnYou",
+      "albumKey": "eyezonyou",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suddenlanguage.bandcamp.com/track/mezmerized",
+      "bandcampEmbedTrackId": "3464768356",
+      "sourcePage": "https://suddenlanguage.bandcamp.com/album/eyezonyou",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "eyezonyou-4285155933",
+      "title": "all the time",
+      "artist": "Sudden Language",
+      "albumTitle": "EyezOnYou",
+      "albumKey": "eyezonyou",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:59",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suddenlanguage.bandcamp.com/track/all-the-time",
+      "bandcampEmbedTrackId": "4285155933",
+      "sourcePage": "https://suddenlanguage.bandcamp.com/album/eyezonyou",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://suddenlanguage.bandcamp.com/album/eyezonyou",
+    "discoveredAt": "2026-09-05T23:57:21.400264+00:00",
+    "importedAt": "2026-09-05T23:59:18.134750+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "suddenlanguage.bandcamp.com",
+    "bandcampBandId": "2733474232",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:59:18.134771+00:00"
+  }
+}

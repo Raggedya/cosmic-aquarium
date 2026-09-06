@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "slug": "keygen-church-oscuro-domine",
+  "artist": "KEYGEN CHURCH",
+  "bandcampUrl": "https://keygenchurch.bandcamp.com/album/oscuro-domine",
+  "releaseTitle": "Oscuro Domine",
+  "releaseDate": "2026-07-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "doom",
+    "black metal",
+    "death metal",
+    "electronic",
+    "experimental",
+    "metal",
+    "thrash metal",
+    "baroque",
+    "classical",
+    "doom metal",
+    "gothic metal",
+    "industrial",
+    "orchestral",
+    "progressive metal",
+    "rock",
+    "synth metal",
+    "Rome"
+  ],
+  "primaryLocation": "Rome, Italy",
+  "bioShort": "Oscuro Codice. Oscuro Domine. 01010010 01100101 01101100 01100101 01100001 01110011 01100101 01100100 00100000 01100001 01110100 00100000 01101111 01101110 00100000 01110100…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://keygenchurch.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:00:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "oscuro-domine",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "oscuro-domine-111491887",
+      "title": "Oscuro",
+      "artist": "KEYGEN CHURCH",
+      "albumTitle": "Oscuro Domine",
+      "albumKey": "oscuro-domine",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://keygenchurch.bandcamp.com/track/oscuro",
+      "bandcampEmbedTrackId": "111491887",
+      "sourcePage": "https://keygenchurch.bandcamp.com/album/oscuro-domine",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "oscuro-domine-15653281",
+      "title": "Domine",
+      "artist": "KEYGEN CHURCH",
+      "albumTitle": "Oscuro Domine",
+      "albumKey": "oscuro-domine",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:14",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://keygenchurch.bandcamp.com/track/domine",
+      "bandcampEmbedTrackId": "15653281",
+      "sourcePage": "https://keygenchurch.bandcamp.com/album/oscuro-domine",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://keygenchurch.bandcamp.com/album/oscuro-domine",
+    "discoveredAt": "2026-09-05T23:57:21.403565+00:00",
+    "importedAt": "2026-09-06T00:00:58.580010+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "keygenchurch.bandcamp.com",
+    "bandcampBandId": "4230582350",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:00:58.580031+00:00"
+  }
+}

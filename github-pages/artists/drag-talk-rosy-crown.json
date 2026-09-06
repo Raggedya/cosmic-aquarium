@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "drag-talk-rosy-crown",
+  "artist": "Drag Talk",
+  "bandcampUrl": "https://dragtalk.bandcamp.com/album/rosy-crown",
+  "releaseTitle": "Rosy Crown",
+  "releaseDate": "2024-03-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "post-punk",
+    "alternative",
+    "indie",
+    "rock",
+    "shoegaze",
+    "indie rock",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "Drag Talk — post-punk / alternative / indie music from Los Angeles, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dragtalk.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:02:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rosy-crown",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rosy-crown-1642168308",
+      "title": "The Void",
+      "artist": "Drag Talk",
+      "albumTitle": "Rosy Crown",
+      "albumKey": "rosy-crown",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "4:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dragtalk.bandcamp.com/track/the-void",
+      "bandcampEmbedTrackId": "1642168308",
+      "sourcePage": "https://dragtalk.bandcamp.com/album/rosy-crown",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "rosy-crown-2185278710",
+      "title": "Pine Barrens",
+      "artist": "Drag Talk",
+      "albumTitle": "Rosy Crown",
+      "albumKey": "rosy-crown",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "3:18",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dragtalk.bandcamp.com/track/pine-barrens",
+      "bandcampEmbedTrackId": "2185278710",
+      "sourcePage": "https://dragtalk.bandcamp.com/album/rosy-crown",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "rosy-crown-2604458517",
+      "title": "Rosy Crown",
+      "artist": "Drag Talk",
+      "albumTitle": "Rosy Crown",
+      "albumKey": "rosy-crown",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "4:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dragtalk.bandcamp.com/track/rosy-crown",
+      "bandcampEmbedTrackId": "2604458517",
+      "sourcePage": "https://dragtalk.bandcamp.com/album/rosy-crown",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "rosy-crown-3314076750",
+      "title": "Take It From Everyone",
+      "artist": "Drag Talk",
+      "albumTitle": "Rosy Crown",
+      "albumKey": "rosy-crown",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "3:32",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dragtalk.bandcamp.com/track/take-it-from-everyone",
+      "bandcampEmbedTrackId": "3314076750",
+      "sourcePage": "https://dragtalk.bandcamp.com/album/rosy-crown",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://dragtalk.bandcamp.com/album/rosy-crown",
+    "discoveredAt": "2026-09-05T23:57:21.406965+00:00",
+    "importedAt": "2026-09-06T00:02:36.384468+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "dragtalk.bandcamp.com",
+    "bandcampBandId": "741962945",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:36.384489+00:00"
+  }
+}

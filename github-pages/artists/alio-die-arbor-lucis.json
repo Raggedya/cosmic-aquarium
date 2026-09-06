@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "alio-die-arbor-lucis",
+  "artist": "ALIO DIE",
+  "bandcampUrl": "https://aliodie.bandcamp.com/album/arbor-lucis",
+  "releaseTitle": "Arbor Lucis",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "ambient",
+    "drone",
+    "electronic",
+    "dark ambient",
+    "Italy"
+  ],
+  "primaryLocation": "Italy",
+  "bioShort": "At the cutting edge of the matter, a rare magic unfolds all around, beyond any mirage. The symphony of all creation’s orchestra celebrates the essence and the mystery that…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://aliodie.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:00:51Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "arbor-lucis",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "arbor-lucis-144138936",
+      "title": "Arbor Lucis ~ Part I",
+      "artist": "ALIO DIE",
+      "albumTitle": "Arbor Lucis",
+      "albumKey": "arbor-lucis",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "26:18",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aliodie.bandcamp.com/track/arbor-lucis-part-i",
+      "bandcampEmbedTrackId": "144138936",
+      "sourcePage": "https://aliodie.bandcamp.com/album/arbor-lucis",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "arbor-lucis-4022165137",
+      "title": "Arbor Lucis ~ Part II",
+      "artist": "ALIO DIE",
+      "albumTitle": "Arbor Lucis",
+      "albumKey": "arbor-lucis",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "24:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aliodie.bandcamp.com/track/arbor-lucis-part-ii-2",
+      "bandcampEmbedTrackId": "4022165137",
+      "sourcePage": "https://aliodie.bandcamp.com/album/arbor-lucis",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "arbor-lucis-153984278",
+      "title": "Arbor Lucis ~ Part III",
+      "artist": "ALIO DIE",
+      "albumTitle": "Arbor Lucis",
+      "albumKey": "arbor-lucis",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "29:43",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aliodie.bandcamp.com/track/arbor-lucis-part-iii-2",
+      "bandcampEmbedTrackId": "153984278",
+      "sourcePage": "https://aliodie.bandcamp.com/album/arbor-lucis",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "arbor-lucis-2781064359",
+      "title": "Arbor Lucis ~ Part IV",
+      "artist": "ALIO DIE",
+      "albumTitle": "Arbor Lucis",
+      "albumKey": "arbor-lucis",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "14:26",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aliodie.bandcamp.com/track/arbor-lucis-part-iv",
+      "bandcampEmbedTrackId": "2781064359",
+      "sourcePage": "https://aliodie.bandcamp.com/album/arbor-lucis",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://aliodie.bandcamp.com/album/arbor-lucis",
+    "discoveredAt": "2026-09-05T23:57:21.403325+00:00",
+    "importedAt": "2026-09-06T00:00:51.097020+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "aliodie.bandcamp.com",
+    "bandcampBandId": "1975632186",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:00:51.097041+00:00"
+  }
+}

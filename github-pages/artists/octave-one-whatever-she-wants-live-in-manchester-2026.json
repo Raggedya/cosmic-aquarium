@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "octave-one-whatever-she-wants-live-in-manchester-2026",
+  "artist": "Octave One",
+  "bandcampUrl": "https://octaveone.bandcamp.com/album/whatever-she-wants-live-in-manchester-2026",
+  "releaseTitle": "Whatever She Wants (Live in Manchester 2026)",
+  "releaseDate": "2026-07-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "detroit house",
+    "detroit techno",
+    "electronic",
+    "techno",
+    "Detroit"
+  ],
+  "primaryLocation": "Detroit, Michigan",
+  "bioShort": "Octave One — house / detroit house / detroit techno music from Detroit, Michigan.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://octaveone.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:00:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "whatever-she-wants-live-in-manchester-2026",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "whatever-she-wants-live-in-manchester-2026-866282243",
+      "title": "Whatever She Wants (Live in Manchester 2026)",
+      "artist": "Octave One",
+      "albumTitle": "Whatever She Wants (Live in Manchester 2026)",
+      "albumKey": "whatever-she-wants-live-in-manchester-2026",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://octaveone.bandcamp.com/track/whatever-she-wants-live-in-manchester-2026",
+      "bandcampEmbedTrackId": "866282243",
+      "sourcePage": "https://octaveone.bandcamp.com/album/whatever-she-wants-live-in-manchester-2026",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://octaveone.bandcamp.com/album/whatever-she-wants-live-in-manchester-2026",
+    "discoveredAt": "2026-09-05T23:57:21.402008+00:00",
+    "importedAt": "2026-09-06T00:00:12.213362+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "octaveone.bandcamp.com",
+    "bandcampBandId": "1280885360",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:00:12.213384+00:00"
+  }
+}

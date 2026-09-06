@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "sleep-hempispheres",
+  "artist": "Sleep",
+  "bandcampUrl": "https://sleep.bandcamp.com/album/hempispheres",
+  "releaseTitle": "Hempispheres",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "doom",
+    "doom metal",
+    "metal",
+    "stoner metal",
+    "San Jose"
+  ],
+  "primaryLocation": "San Jose, California",
+  "bioShort": "Sleep — doom / doom metal / metal music from San Jose, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sleep.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:57:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hempispheres",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hempispheres-4234708795",
+      "title": "Have Spacesuit Will Travel",
+      "artist": "Sleep",
+      "albumTitle": "Hempispheres",
+      "albumKey": "hempispheres",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sleep.bandcamp.com/track/have-spacesuit-will-travel-2",
+      "bandcampEmbedTrackId": "4234708795",
+      "sourcePage": "https://sleep.bandcamp.com/album/hempispheres",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hempispheres-3507496513",
+      "title": "The Morrisist",
+      "artist": "Sleep",
+      "albumTitle": "Hempispheres",
+      "albumKey": "hempispheres",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:42",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sleep.bandcamp.com/track/the-morrisist",
+      "bandcampEmbedTrackId": "3507496513",
+      "sourcePage": "https://sleep.bandcamp.com/album/hempispheres",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "hempispheres-2687758526",
+      "title": "Hempispheres",
+      "artist": "Sleep",
+      "albumTitle": "Hempispheres",
+      "albumKey": "hempispheres",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:57",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sleep.bandcamp.com/track/hempispheres",
+      "bandcampEmbedTrackId": "2687758526",
+      "sourcePage": "https://sleep.bandcamp.com/album/hempispheres",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "hempispheres-3562300757",
+      "title": "Arrival Of The Industry Ships",
+      "artist": "Sleep",
+      "albumTitle": "Hempispheres",
+      "albumKey": "hempispheres",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "11:11",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sleep.bandcamp.com/track/arrival-of-the-industry-ships",
+      "bandcampEmbedTrackId": "3562300757",
+      "sourcePage": "https://sleep.bandcamp.com/album/hempispheres",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "hempispheres-2418423167",
+      "title": "Whole Wheat Mountain / Well Baked",
+      "artist": "Sleep",
+      "albumTitle": "Hempispheres",
+      "albumKey": "hempispheres",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "6:52",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sleep.bandcamp.com/track/whole-wheat-mountain-well-baked",
+      "bandcampEmbedTrackId": "2418423167",
+      "sourcePage": "https://sleep.bandcamp.com/album/hempispheres",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sleep.bandcamp.com/album/hempispheres",
+    "discoveredAt": "2026-09-05T23:56:29.081553+00:00",
+    "importedAt": "2026-09-05T23:57:24.497285+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sleep.bandcamp.com",
+    "bandcampBandId": "3452747418",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:24.497322+00:00"
+  }
+}

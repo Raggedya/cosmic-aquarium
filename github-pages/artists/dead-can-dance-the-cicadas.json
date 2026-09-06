@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "dead-can-dance-the-cicadas",
+  "artist": "Dead Can Dance",
+  "bandcampUrl": "https://deadcandance.bandcamp.com/album/the-cicadas",
+  "releaseTitle": "The Cicadas",
+  "releaseDate": "2026-07-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "alternative",
+    "world",
+    "gothic",
+    "world music",
+    "Epidavros"
+  ],
+  "primaryLocation": "Epidavros, Greece",
+  "bioShort": "The Cicadas is inspired by the ancient creation myth recounted by Plato in Phaedrus. While resting outside Athens, Socrates and Phaedrus are surrounded by a loud chorus of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://deadcandance.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:03:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-cicadas",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-cicadas-749522500",
+      "title": "The Cicadas",
+      "artist": "Dead Can Dance",
+      "albumTitle": "The Cicadas",
+      "albumKey": "the-cicadas",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deadcandance.bandcamp.com/track/the-cicadas",
+      "bandcampEmbedTrackId": "749522500",
+      "sourcePage": "https://deadcandance.bandcamp.com/album/the-cicadas",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://deadcandance.bandcamp.com/album/the-cicadas",
+    "discoveredAt": "2026-09-05T23:57:21.408728+00:00",
+    "importedAt": "2026-09-06T00:03:34.483492+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "deadcandance.bandcamp.com",
+    "bandcampBandId": "2936602914",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:03:34.483513+00:00"
+  }
+}

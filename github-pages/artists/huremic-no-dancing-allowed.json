@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "slug": "huremic-no-dancing-allowed",
+  "artist": "Huremic",
+  "bandcampUrl": "https://huremic.bandcamp.com/album/no-dancing-allowed",
+  "releaseTitle": "No Dancing Allowed",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "rock",
+    "epic collage",
+    "experimental rock",
+    "fusion gugak",
+    "korean folk music",
+    "noise rock",
+    "pon-chak disco",
+    "post-rock",
+    "South Korea"
+  ],
+  "primaryLocation": "Seoul, South Korea",
+  "bioShort": "On August 26, 2026, Busan live club Ovangarde received a two-month business suspension for an incident in which audience members danced during a performance. It violated a…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://huremic.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:58:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "no-dancing-allowed",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "no-dancing-allowed-2371841341",
+      "title": "전자풍류 I (Electro Pungnyu I)",
+      "artist": "Huremic",
+      "albumTitle": "No Dancing Allowed",
+      "albumKey": "no-dancing-allowed",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "13:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://huremic.bandcamp.com/track/i-electro-pungnyu-i",
+      "bandcampEmbedTrackId": "2371841341",
+      "sourcePage": "https://huremic.bandcamp.com/album/no-dancing-allowed",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "no-dancing-allowed-896379773",
+      "title": "무거리 행진 (Streetless March)",
+      "artist": "Huremic",
+      "albumTitle": "No Dancing Allowed",
+      "albumKey": "no-dancing-allowed",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://huremic.bandcamp.com/track/streetless-march",
+      "bandcampEmbedTrackId": "896379773",
+      "sourcePage": "https://huremic.bandcamp.com/album/no-dancing-allowed",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "no-dancing-allowed-2265629178",
+      "title": "본능 (Instinct)",
+      "artist": "Huremic",
+      "albumTitle": "No Dancing Allowed",
+      "albumKey": "no-dancing-allowed",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "12:45",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://huremic.bandcamp.com/track/instinct",
+      "bandcampEmbedTrackId": "2265629178",
+      "sourcePage": "https://huremic.bandcamp.com/album/no-dancing-allowed",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://huremic.bandcamp.com/album/no-dancing-allowed",
+    "discoveredAt": "2026-09-05T23:57:21.399543+00:00",
+    "importedAt": "2026-09-05T23:58:58.314852+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "huremic.bandcamp.com",
+    "bandcampBandId": "3147646276",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:58.314873+00:00"
+  }
+}

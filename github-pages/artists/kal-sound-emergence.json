@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "kal-sound-emergence",
+  "artist": "KAL Sound",
+  "bandcampUrl": "https://kalsound.bandcamp.com/album/emergence",
+  "releaseTitle": "Emergence",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "ambient",
+    "breaks",
+    "drum and bass",
+    "Chattanooga"
+  ],
+  "primaryLocation": "Chattanooga, Tennessee",
+  "bioShort": "KAL Sound — breakbeat / ambient / breaks music from Chattanooga, Tennessee.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kalsound.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:03:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "emergence",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "emergence-301113409",
+      "title": "Boot Sequence",
+      "artist": "KAL Sound",
+      "albumTitle": "Emergence",
+      "albumKey": "emergence",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kalsound.bandcamp.com/track/boot-sequence",
+      "bandcampEmbedTrackId": "301113409",
+      "sourcePage": "https://kalsound.bandcamp.com/album/emergence",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "emergence-2562591927",
+      "title": "FR-4",
+      "artist": "KAL Sound",
+      "albumTitle": "Emergence",
+      "albumKey": "emergence",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kalsound.bandcamp.com/track/fr-4",
+      "bandcampEmbedTrackId": "2562591927",
+      "sourcePage": "https://kalsound.bandcamp.com/album/emergence",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kalsound.bandcamp.com/album/emergence",
+    "discoveredAt": "2026-09-05T23:57:21.409335+00:00",
+    "importedAt": "2026-09-06T00:03:49.267621+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kalsound.bandcamp.com",
+    "bandcampBandId": "525802449",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:03:49.267642+00:00"
+  }
+}

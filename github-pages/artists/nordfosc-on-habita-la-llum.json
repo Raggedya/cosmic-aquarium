@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "slug": "nordfosc-on-habita-la-llum",
+  "artist": "NÖRDFOSC",
+  "bandcampUrl": "https://nordfosc.bandcamp.com/album/on-habita-la-llum",
+  "releaseTitle": "On habita la llum",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "doom metal",
+    "instrumental",
+    "Torelló"
+  ],
+  "primaryLocation": "Torelló, Spain",
+  "bioShort": "NÖRDFOSC — post-metal / metal / doom metal music from Torelló, Spain.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nordfosc.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:08:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "on-habita-la-llum",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "on-habita-la-llum-1846047388",
+      "title": "Tiwaz: seguint la llum del nord",
+      "artist": "NÖRDFOSC",
+      "albumTitle": "On habita la llum",
+      "albumKey": "on-habita-la-llum",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nordfosc.bandcamp.com/track/tiwaz-seguint-la-llum-del-nord",
+      "bandcampEmbedTrackId": "1846047388",
+      "sourcePage": "https://nordfosc.bandcamp.com/album/on-habita-la-llum",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "on-habita-la-llum-2291911691",
+      "title": "Ascens en espiral dins el buit",
+      "artist": "NÖRDFOSC",
+      "albumTitle": "On habita la llum",
+      "albumKey": "on-habita-la-llum",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:55",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nordfosc.bandcamp.com/track/ascens-en-espiral-dins-el-buit",
+      "bandcampEmbedTrackId": "2291911691",
+      "sourcePage": "https://nordfosc.bandcamp.com/album/on-habita-la-llum",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "on-habita-la-llum-265419307",
+      "title": "Realitats de sang que alcen pedres",
+      "artist": "NÖRDFOSC",
+      "albumTitle": "On habita la llum",
+      "albumKey": "on-habita-la-llum",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:21",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nordfosc.bandcamp.com/track/realitats-de-sang-que-alcen-pedres",
+      "bandcampEmbedTrackId": "265419307",
+      "sourcePage": "https://nordfosc.bandcamp.com/album/on-habita-la-llum",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nordfosc.bandcamp.com/album/on-habita-la-llum",
+    "discoveredAt": "2026-09-05T23:57:21.419914+00:00",
+    "importedAt": "2026-09-06T00:08:37.418864+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nordfosc.bandcamp.com",
+    "bandcampBandId": "1536922902",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:08:37.418886+00:00"
+  }
+}

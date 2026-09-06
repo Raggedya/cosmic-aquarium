@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "slug": "jendrik-schmidt-pinhole-part-1",
+  "artist": "Jendrik Schmidt",
+  "bandcampUrl": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+  "releaseTitle": "Pinhole Part 1",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "electronic",
+    "acid",
+    "techno",
+    "Kassel"
+  ],
+  "primaryLocation": "Kassel, Germany",
+  "bioShort": "After some time away, I’m back in my little studio exploring some darker, hypnotic sounds to my liking. Call it noise. This release marks Part 1 of a 3-part series, diving deep…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jendrikschmidt.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:07:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pinhole-part-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pinhole-part-1-492043184",
+      "title": "Closed Circuit",
+      "artist": "Jendrik Schmidt",
+      "albumTitle": "Pinhole Part 1",
+      "albumKey": "pinhole-part-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jendrikschmidt.bandcamp.com/track/closed-circuit",
+      "bandcampEmbedTrackId": "492043184",
+      "sourcePage": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "pinhole-part-1-3446971249",
+      "title": "Between Stations",
+      "artist": "Jendrik Schmidt",
+      "albumTitle": "Pinhole Part 1",
+      "albumKey": "pinhole-part-1",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jendrikschmidt.bandcamp.com/track/between-stations",
+      "bandcampEmbedTrackId": "3446971249",
+      "sourcePage": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "pinhole-part-1-466930457",
+      "title": "Force Within",
+      "artist": "Jendrik Schmidt",
+      "albumTitle": "Pinhole Part 1",
+      "albumKey": "pinhole-part-1",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:53",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jendrikschmidt.bandcamp.com/track/force-within",
+      "bandcampEmbedTrackId": "466930457",
+      "sourcePage": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jendrikschmidt.bandcamp.com/album/pinhole-part-1",
+    "discoveredAt": "2026-09-05T23:57:21.417788+00:00",
+    "importedAt": "2026-09-06T00:07:42.479101+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jendrikschmidt.bandcamp.com",
+    "bandcampBandId": "2424352917",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:07:42.479121+00:00"
+  }
+}

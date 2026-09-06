@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "carre-citrine-ep",
+  "artist": "Carré",
+  "bandcampUrl": "https://carre-carre.bandcamp.com/album/citrine-ep",
+  "releaseTitle": "Citrine EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "techno",
+    "electronic",
+    "bass",
+    "dubstep",
+    "ukg",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Carré — techno / bass / dubstep music from London, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://carre-carre.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:02:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "citrine-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "citrine-ep-1535669585",
+      "title": "Carré x Mercury - Spend It (Extended)",
+      "artist": "Carré",
+      "albumTitle": "Citrine EP",
+      "albumKey": "citrine-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://carre-carre.bandcamp.com/track/carr-x-mercury-spend-it-extended",
+      "bandcampEmbedTrackId": "1535669585",
+      "sourcePage": "https://carre-carre.bandcamp.com/album/citrine-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "citrine-ep-2805127891",
+      "title": "Sense of Place",
+      "artist": "Carré",
+      "albumTitle": "Citrine EP",
+      "albumKey": "citrine-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://carre-carre.bandcamp.com/track/sense-of-place",
+      "bandcampEmbedTrackId": "2805127891",
+      "sourcePage": "https://carre-carre.bandcamp.com/album/citrine-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "citrine-ep-3739832021",
+      "title": "Static",
+      "artist": "Carré",
+      "albumTitle": "Citrine EP",
+      "albumKey": "citrine-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:07",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://carre-carre.bandcamp.com/track/static",
+      "bandcampEmbedTrackId": "3739832021",
+      "sourcePage": "https://carre-carre.bandcamp.com/album/citrine-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "citrine-ep-151577085",
+      "title": "Enough",
+      "artist": "Carré",
+      "albumTitle": "Citrine EP",
+      "albumKey": "citrine-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:08",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://carre-carre.bandcamp.com/track/enough",
+      "bandcampEmbedTrackId": "151577085",
+      "sourcePage": "https://carre-carre.bandcamp.com/album/citrine-ep",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "citrine-ep-2210957655",
+      "title": "Spend It (Instrumental)",
+      "artist": "Carré",
+      "albumTitle": "Citrine EP",
+      "albumKey": "citrine-ep",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:04",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://carre-carre.bandcamp.com/track/spend-it-instrumental",
+      "bandcampEmbedTrackId": "2210957655",
+      "sourcePage": "https://carre-carre.bandcamp.com/album/citrine-ep",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://carre-carre.bandcamp.com/album/citrine-ep",
+    "discoveredAt": "2026-09-05T23:57:21.407455+00:00",
+    "importedAt": "2026-09-06T00:02:53.830649+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "carre-carre.bandcamp.com",
+    "bandcampBandId": "4102653912",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:53.830671+00:00"
+  }
+}

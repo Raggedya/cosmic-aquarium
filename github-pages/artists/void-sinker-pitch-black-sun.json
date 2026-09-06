@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "slug": "void-sinker-pitch-black-sun",
+  "artist": "Void Sinker",
+  "bandcampUrl": "https://voidsinker.bandcamp.com/album/pitch-black-sun",
+  "releaseTitle": "Pitch Black Sun",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "italy",
+    "metal",
+    "doom",
+    "doom metal",
+    "drone",
+    "drone metal",
+    "heavy metal",
+    "instrumental",
+    "sludge metal",
+    "solo project",
+    "Salerno"
+  ],
+  "primaryLocation": "Salerno, Italy",
+  "bioShort": "Void Sinker is proud to present the newest release of 2026. A terrible omen hangs over us: a pitch-black sun radiating the earth with its restless heat. Seeking shelter in the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://voidsinker.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:08:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pitch-black-sun",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pitch-black-sun-3734060039",
+      "title": "Pitch",
+      "artist": "Void Sinker",
+      "albumTitle": "Pitch Black Sun",
+      "albumKey": "pitch-black-sun",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://voidsinker.bandcamp.com/track/pitch",
+      "bandcampEmbedTrackId": "3734060039",
+      "sourcePage": "https://voidsinker.bandcamp.com/album/pitch-black-sun",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "pitch-black-sun-1079910375",
+      "title": "Black",
+      "artist": "Void Sinker",
+      "albumTitle": "Pitch Black Sun",
+      "albumKey": "pitch-black-sun",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://voidsinker.bandcamp.com/track/black",
+      "bandcampEmbedTrackId": "1079910375",
+      "sourcePage": "https://voidsinker.bandcamp.com/album/pitch-black-sun",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "pitch-black-sun-3593937942",
+      "title": "Sun",
+      "artist": "Void Sinker",
+      "albumTitle": "Pitch Black Sun",
+      "albumKey": "pitch-black-sun",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:34",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://voidsinker.bandcamp.com/track/sun",
+      "bandcampEmbedTrackId": "3593937942",
+      "sourcePage": "https://voidsinker.bandcamp.com/album/pitch-black-sun",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://voidsinker.bandcamp.com/album/pitch-black-sun",
+    "discoveredAt": "2026-09-05T23:57:21.419842+00:00",
+    "importedAt": "2026-09-06T00:08:33.691770+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "voidsinker.bandcamp.com",
+    "bandcampBandId": "2598138727",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:08:33.691791+00:00"
+  }
+}

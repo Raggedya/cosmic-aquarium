@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "base-lunar-calcomanias",
+  "artist": "Base Lunar",
+  "bandcampUrl": "https://baselunar.bandcamp.com/album/calcoman-as",
+  "releaseTitle": "Calcomanías",
+  "releaseDate": "2023-12-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "punk",
+    "rock",
+    "alternative",
+    "funk",
+    "garage",
+    "indie",
+    "Mendoza"
+  ],
+  "primaryLocation": "Mendoza, Argentina",
+  "bioShort": "Grabado en agosto de 2023 por Lautaro Oliveras y Santiago Marino en Estudio Casa de la Música, Villa Mercedes, San Luis. Drum Doctor: Bruno Potenzone Mezclado por Santiago…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://baselunar.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:05:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "calcomanias",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "calcomanias-2873122988",
+      "title": "Antes que Llegue el Viento",
+      "artist": "Base Lunar",
+      "albumTitle": "Calcomanías",
+      "albumKey": "calcomanias",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "3:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baselunar.bandcamp.com/track/antes-que-llegue-el-viento-2",
+      "bandcampEmbedTrackId": "2873122988",
+      "sourcePage": "https://baselunar.bandcamp.com/album/calcoman-as",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "calcomanias-3795741138",
+      "title": "Esas Cosas",
+      "artist": "Base Lunar",
+      "albumTitle": "Calcomanías",
+      "albumKey": "calcomanias",
+      "year": 2023,
+      "trackNumber": 2,
+      "duration": "3:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baselunar.bandcamp.com/track/esas-cosas",
+      "bandcampEmbedTrackId": "3795741138",
+      "sourcePage": "https://baselunar.bandcamp.com/album/calcoman-as",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "calcomanias-911263695",
+      "title": "Me Voy",
+      "artist": "Base Lunar",
+      "albumTitle": "Calcomanías",
+      "albumKey": "calcomanias",
+      "year": 2023,
+      "trackNumber": 3,
+      "duration": "2:54",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baselunar.bandcamp.com/track/me-voy",
+      "bandcampEmbedTrackId": "911263695",
+      "sourcePage": "https://baselunar.bandcamp.com/album/calcoman-as",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "calcomanias-844142271",
+      "title": "RF",
+      "artist": "Base Lunar",
+      "albumTitle": "Calcomanías",
+      "albumKey": "calcomanias",
+      "year": 2023,
+      "trackNumber": 4,
+      "duration": "3:21",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baselunar.bandcamp.com/track/rf",
+      "bandcampEmbedTrackId": "844142271",
+      "sourcePage": "https://baselunar.bandcamp.com/album/calcoman-as",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://baselunar.bandcamp.com/album/calcoman-as",
+    "discoveredAt": "2026-09-05T23:57:21.413151+00:00",
+    "importedAt": "2026-09-06T00:05:25.378645+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "baselunar.bandcamp.com",
+    "bandcampBandId": "1261517958",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:25.378666+00:00"
+  }
+}

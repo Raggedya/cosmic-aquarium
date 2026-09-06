@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "ladder-to-god-everything-good-in-the-world-nothing-new",
+  "artist": "Ladder to God",
+  "bandcampUrl": "https://laddertogod.bandcamp.com/album/everything-good-in-the-world-nothing-new",
+  "releaseTitle": "Everything Good In The World / Nothing New",
+  "releaseDate": "2025-10-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "alabama",
+    "alternative",
+    "dream pop",
+    "dreamo",
+    "post-rock",
+    "shoegaze",
+    "slowcore",
+    "Birmingham"
+  ],
+  "primaryLocation": "Birmingham, Alabama",
+  "bioShort": "Ladder to God — dream-pop / alabama / alternative music from Birmingham, Alabama.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "strange",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://laddertogod.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:59:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "everything-good-in-the-world-nothing-new",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "everything-good-in-the-world-nothing-new-1237444339",
+      "title": "Everything Good In The World",
+      "artist": "Ladder to God",
+      "albumTitle": "Everything Good In The World / Nothing New",
+      "albumKey": "everything-good-in-the-world-nothing-new",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "8:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://laddertogod.bandcamp.com/track/everything-good-in-the-world",
+      "bandcampEmbedTrackId": "1237444339",
+      "sourcePage": "https://laddertogod.bandcamp.com/album/everything-good-in-the-world-nothing-new",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "everything-good-in-the-world-nothing-new-1307880386",
+      "title": "Nothing New",
+      "artist": "Ladder to God",
+      "albumTitle": "Everything Good In The World / Nothing New",
+      "albumKey": "everything-good-in-the-world-nothing-new",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "5:20",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://laddertogod.bandcamp.com/track/nothing-new",
+      "bandcampEmbedTrackId": "1307880386",
+      "sourcePage": "https://laddertogod.bandcamp.com/album/everything-good-in-the-world-nothing-new",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://laddertogod.bandcamp.com/album/everything-good-in-the-world-nothing-new",
+    "discoveredAt": "2026-09-05T23:57:21.400062+00:00",
+    "importedAt": "2026-09-05T23:59:13.503198+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "laddertogod.bandcamp.com",
+    "bandcampBandId": "4084541290",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:59:13.503218+00:00"
+  }
+}

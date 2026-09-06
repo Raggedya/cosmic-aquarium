@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "slug": "molecule-plane-alstroemeria",
+  "artist": "Molecule Plane",
+  "bandcampUrl": "https://moleculeplane.bandcamp.com/album/alstroemeria",
+  "releaseTitle": "Alstroemeria",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "musique-concrete",
+    "experimental",
+    "acousmatic",
+    "acousmatic music",
+    "ambient",
+    "drone",
+    "electro-acoustic",
+    "live electronics",
+    "live music",
+    "live recording",
+    "musique acousmatique",
+    "musique concrete",
+    "Kyoto"
+  ],
+  "primaryLocation": "Kyoto, Japan",
+  "bioShort": "Molecule Plane Extra Album \"The Extra-Ordinary\" Series. They are specific to live recordings. This album is the 17th of them. This Album is a recording of a performance at…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "quiet",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://moleculeplane.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:05:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "alstroemeria",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "alstroemeria-854292921",
+      "title": "Retreat",
+      "artist": "Molecule Plane",
+      "albumTitle": "Alstroemeria",
+      "albumKey": "alstroemeria",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "40:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://moleculeplane.bandcamp.com/track/retreat",
+      "bandcampEmbedTrackId": "854292921",
+      "sourcePage": "https://moleculeplane.bandcamp.com/album/alstroemeria",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://moleculeplane.bandcamp.com/album/alstroemeria",
+    "discoveredAt": "2026-09-05T23:57:21.413407+00:00",
+    "importedAt": "2026-09-06T00:05:31.819897+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "moleculeplane.bandcamp.com",
+    "bandcampBandId": "2932423703",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:31.819918+00:00"
+  }
+}

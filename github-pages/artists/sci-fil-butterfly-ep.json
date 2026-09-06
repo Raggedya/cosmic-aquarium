@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "sci-fil-butterfly-ep",
+  "artist": "Sci-FiL",
+  "bandcampUrl": "https://sci-fil.bandcamp.com/album/butterfly-ep",
+  "releaseTitle": "Butterfly EP",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "ambient",
+    "electronic",
+    "microhouse",
+    "techno",
+    "Rome"
+  ],
+  "primaryLocation": "Rome, Italy",
+  "bioShort": "Sci-FiL — minimal / ambient / electronic music from Rome, Italy.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sci-fil.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:58:56Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "butterfly-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "butterfly-ep-2962725331",
+      "title": "Intro",
+      "artist": "Sci-FiL",
+      "albumTitle": "Butterfly EP",
+      "albumKey": "butterfly-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sci-fil.bandcamp.com/track/intro",
+      "bandcampEmbedTrackId": "2962725331",
+      "sourcePage": "https://sci-fil.bandcamp.com/album/butterfly-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "butterfly-ep-2497188788",
+      "title": "My Pain",
+      "artist": "Sci-FiL",
+      "albumTitle": "Butterfly EP",
+      "albumKey": "butterfly-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:57",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sci-fil.bandcamp.com/track/my-pain",
+      "bandcampEmbedTrackId": "2497188788",
+      "sourcePage": "https://sci-fil.bandcamp.com/album/butterfly-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "butterfly-ep-899036395",
+      "title": "Crisalide",
+      "artist": "Sci-FiL",
+      "albumTitle": "Butterfly EP",
+      "albumKey": "butterfly-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:45",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sci-fil.bandcamp.com/track/crisalide",
+      "bandcampEmbedTrackId": "899036395",
+      "sourcePage": "https://sci-fil.bandcamp.com/album/butterfly-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "butterfly-ep-4061529871",
+      "title": "Coming Home",
+      "artist": "Sci-FiL",
+      "albumTitle": "Butterfly EP",
+      "albumKey": "butterfly-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:54",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sci-fil.bandcamp.com/track/coming-home",
+      "bandcampEmbedTrackId": "4061529871",
+      "sourcePage": "https://sci-fil.bandcamp.com/album/butterfly-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sci-fil.bandcamp.com/album/butterfly-ep",
+    "discoveredAt": "2026-09-05T23:57:21.399492+00:00",
+    "importedAt": "2026-09-05T23:58:56.815162+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sci-fil.bandcamp.com",
+    "bandcampBandId": "3900019712",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:56.815183+00:00"
+  }
+}

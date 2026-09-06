@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "iikki-iikki-mix-ten-years",
+  "artist": "IIKKI",
+  "bandcampUrl": "https://iikki.bandcamp.com/album/iikki-mix-ten-years",
+  "releaseTitle": "IIKKI mix [ten years]",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "avant-garde",
+    "ambient",
+    "electronic",
+    "experimental",
+    "electroacoustic",
+    "France"
+  ],
+  "primaryLocation": "Brittany, France",
+  "bioShort": "___________________________ It’s our tenth anniversary this month, the perfect opportunity to look back over the last ten years with a free 78-minute mix featuring 31 albums…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://iikki.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:04:20Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "iikki-mix-ten-years",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "iikki-mix-ten-years-448836476",
+      "title": "Side A",
+      "artist": "IIKKI",
+      "albumTitle": "IIKKI mix [ten years]",
+      "albumKey": "iikki-mix-ten-years",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "39:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iikki.bandcamp.com/track/side-a",
+      "bandcampEmbedTrackId": "448836476",
+      "sourcePage": "https://iikki.bandcamp.com/album/iikki-mix-ten-years",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "iikki-mix-ten-years-1011664563",
+      "title": "Side B",
+      "artist": "IIKKI",
+      "albumTitle": "IIKKI mix [ten years]",
+      "albumKey": "iikki-mix-ten-years",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "39:15",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iikki.bandcamp.com/track/side-b",
+      "bandcampEmbedTrackId": "1011664563",
+      "sourcePage": "https://iikki.bandcamp.com/album/iikki-mix-ten-years",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://iikki.bandcamp.com/album/iikki-mix-ten-years",
+    "discoveredAt": "2026-09-05T23:57:21.410716+00:00",
+    "importedAt": "2026-09-06T00:04:20.212787+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "iikki.bandcamp.com",
+    "bandcampBandId": "203941630",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:04:20.212808+00:00"
+  }
+}

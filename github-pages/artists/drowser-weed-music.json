@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "drowser-weed-music",
+  "artist": "Drowser",
+  "bandcampUrl": "https://drowser420.bandcamp.com/album/weed-music",
+  "releaseTitle": "Weed Music",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "doom metal",
+    "heavy metal",
+    "stoner metal",
+    "stoner rock",
+    "Baltimore"
+  ],
+  "primaryLocation": "Baltimore, Maryland",
+  "bioShort": "Drowser — stoner-metal / metal / doom metal music from Baltimore, Maryland.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://drowser420.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:06:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "weed-music",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "weed-music-2486175419",
+      "title": "Cambrian",
+      "artist": "Drowser",
+      "albumTitle": "Weed Music",
+      "albumKey": "weed-music",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://drowser420.bandcamp.com/track/cambrian",
+      "bandcampEmbedTrackId": "2486175419",
+      "sourcePage": "https://drowser420.bandcamp.com/album/weed-music",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "weed-music-1712657926",
+      "title": "The Gastronaut/Roche Limit/Beyond The Oort/Gastronaut's Re-Entry",
+      "artist": "Drowser",
+      "albumTitle": "Weed Music",
+      "albumKey": "weed-music",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "12:31",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://drowser420.bandcamp.com/track/the-gastronaut-roche-limit-beyond-the-oort-gastronauts-re-entry",
+      "bandcampEmbedTrackId": "1712657926",
+      "sourcePage": "https://drowser420.bandcamp.com/album/weed-music",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "weed-music-2323563475",
+      "title": "Sector Sweep",
+      "artist": "Drowser",
+      "albumTitle": "Weed Music",
+      "albumKey": "weed-music",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:44",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://drowser420.bandcamp.com/track/sector-sweep-2",
+      "bandcampEmbedTrackId": "2323563475",
+      "sourcePage": "https://drowser420.bandcamp.com/album/weed-music",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "weed-music-82781350",
+      "title": "Voyager",
+      "artist": "Drowser",
+      "albumTitle": "Weed Music",
+      "albumKey": "weed-music",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "9:07",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://drowser420.bandcamp.com/track/voyager",
+      "bandcampEmbedTrackId": "82781350",
+      "sourcePage": "https://drowser420.bandcamp.com/album/weed-music",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://drowser420.bandcamp.com/album/weed-music",
+    "discoveredAt": "2026-09-05T23:57:21.414475+00:00",
+    "importedAt": "2026-09-06T00:06:04.983680+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "drowser420.bandcamp.com",
+    "bandcampBandId": "2844516637",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:06:04.983701+00:00"
+  }
+}

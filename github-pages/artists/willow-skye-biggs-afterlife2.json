@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "willow-skye-biggs-afterlife2",
+  "artist": "Willow Skye-Biggs",
+  "bandcampUrl": "https://willowskyebiggs.bandcamp.com/album/afterlife2",
+  "releaseTitle": "afterlife2",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "electronic",
+    "ambient",
+    "downtempo",
+    "electronica",
+    "experimental-club",
+    "Portland"
+  ],
+  "primaryLocation": "Portland, Oregon",
+  "bioShort": "Willow Skye-Biggs — ethereal / electronic / ambient music from Portland, Oregon.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://willowskyebiggs.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:58:51Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "afterlife2",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "afterlife2-1859795366",
+      "title": "Carrying Salt",
+      "artist": "Willow Skye-Biggs",
+      "albumTitle": "afterlife2",
+      "albumKey": "afterlife2",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willowskyebiggs.bandcamp.com/track/carrying-salt",
+      "bandcampEmbedTrackId": "1859795366",
+      "sourcePage": "https://willowskyebiggs.bandcamp.com/album/afterlife2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "afterlife2-4218924888",
+      "title": "Pours",
+      "artist": "Willow Skye-Biggs",
+      "albumTitle": "afterlife2",
+      "albumKey": "afterlife2",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:56",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willowskyebiggs.bandcamp.com/track/pours",
+      "bandcampEmbedTrackId": "4218924888",
+      "sourcePage": "https://willowskyebiggs.bandcamp.com/album/afterlife2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "afterlife2-655395780",
+      "title": "Arriving Alone",
+      "artist": "Willow Skye-Biggs",
+      "albumTitle": "afterlife2",
+      "albumKey": "afterlife2",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "11:18",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://willowskyebiggs.bandcamp.com/track/arriving-alone",
+      "bandcampEmbedTrackId": "655395780",
+      "sourcePage": "https://willowskyebiggs.bandcamp.com/album/afterlife2",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://willowskyebiggs.bandcamp.com/album/afterlife2",
+    "discoveredAt": "2026-09-05T23:57:21.399216+00:00",
+    "importedAt": "2026-09-05T23:58:51.084520+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "willowskyebiggs.bandcamp.com",
+    "bandcampBandId": "2271134613",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:51.084542+00:00"
+  }
+}

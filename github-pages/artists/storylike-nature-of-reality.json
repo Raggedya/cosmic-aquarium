@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "storylike-nature-of-reality",
+  "artist": "Storylike",
+  "bandcampUrl": "https://storylike.bandcamp.com/album/nature-of-reality",
+  "releaseTitle": "nature of reality",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "indie electronic",
+    "synth pop",
+    "Montreal"
+  ],
+  "primaryLocation": "Montreal, Québec",
+  "bioShort": "wrote, recorded, and released this within 5 hours yay!",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://storylike.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:03:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "nature-of-reality",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "nature-of-reality-4020467043",
+      "title": "going to greece",
+      "artist": "Storylike",
+      "albumTitle": "nature of reality",
+      "albumKey": "nature-of-reality",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://storylike.bandcamp.com/track/going-to-greece",
+      "bandcampEmbedTrackId": "4020467043",
+      "sourcePage": "https://storylike.bandcamp.com/album/nature-of-reality",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "nature-of-reality-1261414115",
+      "title": "in the car",
+      "artist": "Storylike",
+      "albumTitle": "nature of reality",
+      "albumKey": "nature-of-reality",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://storylike.bandcamp.com/track/in-the-car",
+      "bandcampEmbedTrackId": "1261414115",
+      "sourcePage": "https://storylike.bandcamp.com/album/nature-of-reality",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "nature-of-reality-3922041685",
+      "title": "i trust u",
+      "artist": "Storylike",
+      "albumTitle": "nature of reality",
+      "albumKey": "nature-of-reality",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://storylike.bandcamp.com/track/i-trust-u",
+      "bandcampEmbedTrackId": "3922041685",
+      "sourcePage": "https://storylike.bandcamp.com/album/nature-of-reality",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "nature-of-reality-3311184258",
+      "title": "nothing is real",
+      "artist": "Storylike",
+      "albumTitle": "nature of reality",
+      "albumKey": "nature-of-reality",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:07",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://storylike.bandcamp.com/track/nothing-is-real",
+      "bandcampEmbedTrackId": "3311184258",
+      "sourcePage": "https://storylike.bandcamp.com/album/nature-of-reality",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://storylike.bandcamp.com/album/nature-of-reality",
+    "discoveredAt": "2026-09-05T23:57:21.407777+00:00",
+    "importedAt": "2026-09-06T00:03:07.186757+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "storylike.bandcamp.com",
+    "bandcampBandId": "1344764662",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:03:07.186777+00:00"
+  }
+}

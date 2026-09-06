@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "slug": "ninety-pound-wuss-spaldo-7",
+  "artist": "Ninety Pound Wuss",
+  "bandcampUrl": "https://ninetypoundwuss.bandcamp.com/album/spaldo-7",
+  "releaseTitle": "Spaldo 7\"",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "post-punk",
+    "punk",
+    "gothic rock",
+    "hardcore punk",
+    "punk rock",
+    "seattle",
+    "Seattle"
+  ],
+  "primaryLocation": "Seattle, Washington",
+  "bioShort": "Ninety Pound Wuss — post-punk / punk / gothic rock music from Seattle, Washington.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ninetypoundwuss.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:00:23Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "spaldo-7",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "spaldo-7-1267964216",
+      "title": "The Pollutant",
+      "artist": "Ninety Pound Wuss",
+      "albumTitle": "Spaldo 7\"",
+      "albumKey": "spaldo-7",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ninetypoundwuss.bandcamp.com/track/the-pollutant-2",
+      "bandcampEmbedTrackId": "1267964216",
+      "sourcePage": "https://ninetypoundwuss.bandcamp.com/album/spaldo-7",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "spaldo-7-2312802966",
+      "title": "In Silence",
+      "artist": "Ninety Pound Wuss",
+      "albumTitle": "Spaldo 7\"",
+      "albumKey": "spaldo-7",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ninetypoundwuss.bandcamp.com/track/in-silence-2",
+      "bandcampEmbedTrackId": "2312802966",
+      "sourcePage": "https://ninetypoundwuss.bandcamp.com/album/spaldo-7",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ninetypoundwuss.bandcamp.com/album/spaldo-7",
+    "discoveredAt": "2026-09-05T23:57:21.402415+00:00",
+    "importedAt": "2026-09-06T00:00:23.774424+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ninetypoundwuss.bandcamp.com",
+    "bandcampBandId": "2506229721",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:00:23.774445+00:00"
+  }
+}

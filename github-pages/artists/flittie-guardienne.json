@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "flittie-guardienne",
+  "artist": "Flittie",
+  "bandcampUrl": "https://flittie.bandcamp.com/album/guardienne",
+  "releaseTitle": "Guardienne",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "pop",
+    "soul",
+    "experimental pop",
+    "jazz",
+    "sophistipop",
+    "Seattle"
+  ],
+  "primaryLocation": "Seattle, Washington",
+  "bioShort": "EP1",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://flittie.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:00:35Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "guardienne",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "guardienne-3780194331",
+      "title": "sound of mind",
+      "artist": "Flittie",
+      "albumTitle": "Guardienne",
+      "albumKey": "guardienne",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flittie.bandcamp.com/track/sound-of-mind-2",
+      "bandcampEmbedTrackId": "3780194331",
+      "sourcePage": "https://flittie.bandcamp.com/album/guardienne",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "guardienne-3901909216",
+      "title": "solstice",
+      "artist": "Flittie",
+      "albumTitle": "Guardienne",
+      "albumKey": "guardienne",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:51",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flittie.bandcamp.com/track/solstice",
+      "bandcampEmbedTrackId": "3901909216",
+      "sourcePage": "https://flittie.bandcamp.com/album/guardienne",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "guardienne-4072859082",
+      "title": "sentimental stain",
+      "artist": "Flittie",
+      "albumTitle": "Guardienne",
+      "albumKey": "guardienne",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:54",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flittie.bandcamp.com/track/sentimental-stain-2",
+      "bandcampEmbedTrackId": "4072859082",
+      "sourcePage": "https://flittie.bandcamp.com/album/guardienne",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "guardienne-400089026",
+      "title": "supposed",
+      "artist": "Flittie",
+      "albumTitle": "Guardienne",
+      "albumKey": "guardienne",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:42",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flittie.bandcamp.com/track/supposed",
+      "bandcampEmbedTrackId": "400089026",
+      "sourcePage": "https://flittie.bandcamp.com/album/guardienne",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://flittie.bandcamp.com/album/guardienne",
+    "discoveredAt": "2026-09-05T23:57:21.402802+00:00",
+    "importedAt": "2026-09-06T00:00:35.634353+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "flittie.bandcamp.com",
+    "bandcampBandId": "1701184865",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:00:35.634375+00:00"
+  }
+}

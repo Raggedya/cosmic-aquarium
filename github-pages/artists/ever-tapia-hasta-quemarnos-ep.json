@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "ever-tapia-hasta-quemarnos-ep",
+  "artist": "Ever Tapia",
+  "bandcampUrl": "https://evertapialive.bandcamp.com/album/hasta-quemarnos-ep",
+  "releaseTitle": "Hasta Quemarnos EP",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "hardgoove",
+    "house",
+    "techno",
+    "Chihuahua"
+  ],
+  "primaryLocation": "Chihuahua, Mexico",
+  "bioShort": "Hardgroove",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://evertapialive.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:00:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hasta-quemarnos-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hasta-quemarnos-ep-1245220135",
+      "title": "Pildora",
+      "artist": "Ever Tapia",
+      "albumTitle": "Hasta Quemarnos EP",
+      "albumKey": "hasta-quemarnos-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evertapialive.bandcamp.com/track/pildora",
+      "bandcampEmbedTrackId": "1245220135",
+      "sourcePage": "https://evertapialive.bandcamp.com/album/hasta-quemarnos-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hasta-quemarnos-ep-621541379",
+      "title": "Hasta Quemarnos",
+      "artist": "Ever Tapia",
+      "albumTitle": "Hasta Quemarnos EP",
+      "albumKey": "hasta-quemarnos-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:19",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evertapialive.bandcamp.com/track/hasta-quemarnos",
+      "bandcampEmbedTrackId": "621541379",
+      "sourcePage": "https://evertapialive.bandcamp.com/album/hasta-quemarnos-ep",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://evertapialive.bandcamp.com/album/hasta-quemarnos-ep",
+    "discoveredAt": "2026-09-05T23:57:21.402163+00:00",
+    "importedAt": "2026-09-06T00:00:16.849611+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "evertapialive.bandcamp.com",
+    "bandcampBandId": "2352712451",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:00:16.849638+00:00"
+  }
+}

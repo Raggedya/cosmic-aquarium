@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "desinteresse-stilte",
+  "artist": "Desinteresse",
+  "bandcampUrl": "https://desinteresse.bandcamp.com/album/stilte",
+  "releaseTitle": "Stilte",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "alternative",
+    "coldwave",
+    "minimal wave",
+    "postpunk",
+    "Netherlands"
+  ],
+  "primaryLocation": "LI, Netherlands",
+  "bioShort": "Desinteresse — darkwave / alternative / coldwave music from LI, Netherlands.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://desinteresse.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:04:14Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "stilte",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "stilte-834156069",
+      "title": "Stilte",
+      "artist": "Desinteresse",
+      "albumTitle": "Stilte",
+      "albumKey": "stilte",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:50",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://desinteresse.bandcamp.com/track/stilte",
+      "bandcampEmbedTrackId": "834156069",
+      "sourcePage": "https://desinteresse.bandcamp.com/album/stilte",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "stilte-3005490811",
+      "title": "Fantomen (Live in Paard, Den Haag)",
+      "artist": "Desinteresse",
+      "albumTitle": "Stilte",
+      "albumKey": "stilte",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://desinteresse.bandcamp.com/track/fantomen-live-in-paard-den-haag",
+      "bandcampEmbedTrackId": "3005490811",
+      "sourcePage": "https://desinteresse.bandcamp.com/album/stilte",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://desinteresse.bandcamp.com/album/stilte",
+    "discoveredAt": "2026-09-05T23:57:21.410551+00:00",
+    "importedAt": "2026-09-06T00:04:14.209591+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "desinteresse.bandcamp.com",
+    "bandcampBandId": "560790649",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:04:14.209612+00:00"
+  }
+}

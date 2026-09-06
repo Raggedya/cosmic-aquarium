@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "steven-brandon-what-went-wrong",
+  "artist": "Steven Brandon",
+  "bandcampUrl": "https://stevenbrandon.bandcamp.com/album/what-went-wrong-2",
+  "releaseTitle": "what went wrong",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "pop",
+    "ambient",
+    "drone",
+    "electronic",
+    "synth",
+    "tape",
+    "Illinois"
+  ],
+  "primaryLocation": "Illinois",
+  "bioShort": "recorded directly to tape in one take, no overdubs 9/4/2026 from about 12 am to 1 am \"26 years and counting!\" made in the air museum",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://stevenbrandon.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:57:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "what-went-wrong",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "what-went-wrong-1773425438",
+      "title": "what went wrong",
+      "artist": "Steven Brandon",
+      "albumTitle": "what went wrong",
+      "albumKey": "what-went-wrong",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "26:52",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stevenbrandon.bandcamp.com/track/what-went-wrong-2",
+      "bandcampEmbedTrackId": "1773425438",
+      "sourcePage": "https://stevenbrandon.bandcamp.com/album/what-went-wrong-2",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://stevenbrandon.bandcamp.com/album/what-went-wrong-2",
+    "discoveredAt": "2026-09-05T23:56:57.871366+00:00",
+    "importedAt": "2026-09-05T23:57:43.301484+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "stevenbrandon.bandcamp.com",
+    "bandcampBandId": "2929965365",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:43.301506+00:00"
+  }
+}

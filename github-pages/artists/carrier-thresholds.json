@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "slug": "carrier-thresholds",
+  "artist": "Carrier",
+  "bandcampUrl": "https://0207carrier.bandcamp.com/album/thresholds",
+  "releaseTitle": "Thresholds",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "electronic",
+    "bass",
+    "idm.",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "\"A lifetime’s love of, and immersion in, fwd UK dance musics has prompted him to chase a particular dragon of syncopated swerve and cavernous psychoacoustics to logical…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://0207carrier.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:03:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "thresholds",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "thresholds-173436397",
+      "title": "Cure",
+      "artist": "Carrier",
+      "albumTitle": "Thresholds",
+      "albumKey": "thresholds",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://0207carrier.bandcamp.com/track/cure",
+      "bandcampEmbedTrackId": "173436397",
+      "sourcePage": "https://0207carrier.bandcamp.com/album/thresholds",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "thresholds-1917170900",
+      "title": "Scout",
+      "artist": "Carrier",
+      "albumTitle": "Thresholds",
+      "albumKey": "thresholds",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:15",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://0207carrier.bandcamp.com/track/scout",
+      "bandcampEmbedTrackId": "1917170900",
+      "sourcePage": "https://0207carrier.bandcamp.com/album/thresholds",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "thresholds-4155232431",
+      "title": "Black Channels",
+      "artist": "Carrier",
+      "albumTitle": "Thresholds",
+      "albumKey": "thresholds",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:42",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://0207carrier.bandcamp.com/track/black-channels",
+      "bandcampEmbedTrackId": "4155232431",
+      "sourcePage": "https://0207carrier.bandcamp.com/album/thresholds",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://0207carrier.bandcamp.com/album/thresholds",
+    "discoveredAt": "2026-09-05T23:57:21.407963+00:00",
+    "importedAt": "2026-09-06T00:03:12.436136+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "0207carrier.bandcamp.com",
+    "bandcampBandId": "3714025877",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:03:12.436157+00:00"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "zee-look-to-your-soul",
+  "artist": "ZEE",
+  "bandcampUrl": "https://zeebeats.bandcamp.com/album/look-to-your-soul",
+  "releaseTitle": "Look To Your Soul",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "hip-hop/rap",
+    "bristol sound",
+    "hip hop",
+    "instrumental hip-hop",
+    "underground hip hop",
+    "Bristol"
+  ],
+  "primaryLocation": "Bristol, UK",
+  "bioShort": "The 19 year old Bristolian producer ZEE is back with a new two track 7” on Friendly Recordings (Bristol record shop Friendly Records label) Written and produced in Bristol by…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://zeebeats.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:02:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "look-to-your-soul",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "look-to-your-soul-3031000124",
+      "title": "Zee - Look To Your Soul",
+      "artist": "ZEE",
+      "albumTitle": "Look To Your Soul",
+      "albumKey": "look-to-your-soul",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://zeebeats.bandcamp.com/track/look-to-your-soul",
+      "bandcampEmbedTrackId": "3031000124",
+      "sourcePage": "https://zeebeats.bandcamp.com/album/look-to-your-soul",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "look-to-your-soul-2710091017",
+      "title": "Time",
+      "artist": "ZEE",
+      "albumTitle": "Look To Your Soul",
+      "albumKey": "look-to-your-soul",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:07",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://zeebeats.bandcamp.com/track/time",
+      "bandcampEmbedTrackId": "2710091017",
+      "sourcePage": "https://zeebeats.bandcamp.com/album/look-to-your-soul",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://zeebeats.bandcamp.com/album/look-to-your-soul",
+    "discoveredAt": "2026-09-05T23:57:21.406382+00:00",
+    "importedAt": "2026-09-06T00:02:19.647855+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "zeebeats.bandcamp.com",
+    "bandcampBandId": "3987326795",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:19.647877+00:00"
+  }
+}

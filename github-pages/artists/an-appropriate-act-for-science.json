@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "an-appropriate-act-for-science",
+  "artist": "an appropriate act",
+  "bandcampUrl": "https://anappropriateact.bandcamp.com/album/for-science",
+  "releaseTitle": "(for) Science",
+  "releaseDate": "2026-05-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "ambient",
+    "ambient music",
+    "ambient pop",
+    "atmospheric",
+    "cinematic ambient",
+    "experimental pop",
+    "Detroit"
+  ],
+  "primaryLocation": "Detroit, Michigan",
+  "bioShort": "an appropriate act — ambient-pop / ambient / ambient music music from Detroit, Michigan.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://anappropriateact.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:58:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "for-science",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "for-science-2259131298",
+      "title": "(for) Science",
+      "artist": "an appropriate act",
+      "albumTitle": "(for) Science",
+      "albumKey": "for-science",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anappropriateact.bandcamp.com/track/for-science",
+      "bandcampEmbedTrackId": "2259131298",
+      "sourcePage": "https://anappropriateact.bandcamp.com/album/for-science",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://anappropriateact.bandcamp.com/album/for-science",
+    "discoveredAt": "2026-09-05T23:57:21.399288+00:00",
+    "importedAt": "2026-09-05T23:58:52.107202+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "anappropriateact.bandcamp.com",
+    "bandcampBandId": "2450292842",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:52.107224+00:00"
+  }
+}

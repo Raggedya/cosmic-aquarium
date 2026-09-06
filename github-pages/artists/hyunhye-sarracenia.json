@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "hyunhye-sarracenia",
+  "artist": "HYUNHYE",
+  "bandcampUrl": "https://hyunhye.bandcamp.com/album/sarracenia",
+  "releaseTitle": "Sarracenia",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "piano",
+    "experimental",
+    "avant garde",
+    "improvisation",
+    "piano-solo",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "HYUNHYE — piano / experimental / avant garde music from Berlin, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hyunhye.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:02:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sarracenia",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sarracenia-1129463508",
+      "title": "Sarracenia 1",
+      "artist": "HYUNHYE",
+      "albumTitle": "Sarracenia",
+      "albumKey": "sarracenia",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:35",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hyunhye.bandcamp.com/track/sarracenia-1",
+      "bandcampEmbedTrackId": "1129463508",
+      "sourcePage": "https://hyunhye.bandcamp.com/album/sarracenia",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sarracenia-2305495484",
+      "title": "Sarracenia 2",
+      "artist": "HYUNHYE",
+      "albumTitle": "Sarracenia",
+      "albumKey": "sarracenia",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hyunhye.bandcamp.com/track/sarracenia-2",
+      "bandcampEmbedTrackId": "2305495484",
+      "sourcePage": "https://hyunhye.bandcamp.com/album/sarracenia",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hyunhye.bandcamp.com/album/sarracenia",
+    "discoveredAt": "2026-09-05T23:57:21.406709+00:00",
+    "importedAt": "2026-09-06T00:02:31.218210+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hyunhye.bandcamp.com",
+    "bandcampBandId": "2835643793",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:31.218231+00:00"
+  }
+}

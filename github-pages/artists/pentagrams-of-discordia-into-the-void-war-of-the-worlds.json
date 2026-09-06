@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "pentagrams-of-discordia-into-the-void-war-of-the-worlds",
+  "artist": "Pentagrams Of Discordia",
+  "bandcampUrl": "https://pentagramsofdiscordia.bandcamp.com/album/into-the-void-war-of-the-worlds",
+  "releaseTitle": "Into The Void / War Of The Worlds",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "boc",
+    "electronic",
+    "downtempo",
+    "electronic music",
+    "electronica",
+    "French Guiana"
+  ],
+  "primaryLocation": "Arrondissement of Cayenne, French Guiana",
+  "bioShort": "Limited editon black vinyl lathe with the same tracks that appeared on the clear vinyl(that shipped with the ltd editon Whispers vinyl album. **** all orders will be sent…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://pentagramsofdiscordia.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:58:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "into-the-void-war-of-the-worlds",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "into-the-void-war-of-the-worlds-2505695672",
+      "title": "Into The Void",
+      "artist": "Pentagrams Of Discordia",
+      "albumTitle": "Into The Void / War Of The Worlds",
+      "albumKey": "into-the-void-war-of-the-worlds",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pentagramsofdiscordia.bandcamp.com/track/into-the-void",
+      "bandcampEmbedTrackId": "2505695672",
+      "sourcePage": "https://pentagramsofdiscordia.bandcamp.com/album/into-the-void-war-of-the-worlds",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "into-the-void-war-of-the-worlds-402522496",
+      "title": "War Of The Worlds",
+      "artist": "Pentagrams Of Discordia",
+      "albumTitle": "Into The Void / War Of The Worlds",
+      "albumKey": "into-the-void-war-of-the-worlds",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pentagramsofdiscordia.bandcamp.com/track/war-of-the-worlds",
+      "bandcampEmbedTrackId": "402522496",
+      "sourcePage": "https://pentagramsofdiscordia.bandcamp.com/album/into-the-void-war-of-the-worlds",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://pentagramsofdiscordia.bandcamp.com/album/into-the-void-war-of-the-worlds",
+    "discoveredAt": "2026-09-05T23:57:21.397426+00:00",
+    "importedAt": "2026-09-05T23:58:02.993073+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "pentagramsofdiscordia.bandcamp.com",
+    "bandcampBandId": "3516901894",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:02.993095+00:00"
+  }
+}

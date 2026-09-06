@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "steve-roach-the-current-above-immersion-seven",
+  "artist": "Steve Roach",
+  "bandcampUrl": "https://steveroach.bandcamp.com/album/the-current-above-immersion-seven",
+  "releaseTitle": "The Current Above - Immersion Seven",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ambient",
+    "immersive",
+    "new age.",
+    "ambient electronic.",
+    "drone",
+    "meditative music",
+    "soundscape",
+    "Tucson"
+  ],
+  "primaryLocation": "Tucson, Arizona",
+  "bioShort": "European orders: https://www.deejaydead.de/en/steve-roach-the-current-above-immersion-seven-limited-cd-digipack-2026…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://steveroach.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:58:05Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-current-above-immersion-seven",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-current-above-immersion-seven-3658876491",
+      "title": "The Current Above",
+      "artist": "Steve Roach",
+      "albumTitle": "The Current Above - Immersion Seven",
+      "albumKey": "the-current-above-immersion-seven",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "79:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steveroach.bandcamp.com/track/the-current-above",
+      "bandcampEmbedTrackId": "3658876491",
+      "sourcePage": "https://steveroach.bandcamp.com/album/the-current-above-immersion-seven",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://steveroach.bandcamp.com/album/the-current-above-immersion-seven",
+    "discoveredAt": "2026-09-05T23:57:21.397537+00:00",
+    "importedAt": "2026-09-05T23:58:05.690733+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "steveroach.bandcamp.com",
+    "bandcampBandId": "3933367418",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:05.690754+00:00"
+  }
+}

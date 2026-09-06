@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "paul-sirrell-paul-sirrell-matt-craig-ladycop-2026",
+  "artist": "Paul Sirrell",
+  "bandcampUrl": "https://paulsirrell.bandcamp.com/album/paul-sirrell-matt-craig-ladycop-2026",
+  "releaseTitle": "Paul Sirrell & Matt Craig - Ladycop 2026",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "piano",
+    "electronic",
+    "hard house",
+    "house",
+    "organ",
+    "speed garage",
+    "Leeds"
+  ],
+  "primaryLocation": "Leeds, UK",
+  "bioShort": "Paul Sirrell — piano / electronic / hard house music from Leeds, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://paulsirrell.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:57:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "paul-sirrell-matt-craig-ladycop-2026",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "paul-sirrell-matt-craig-ladycop-2026-27230838",
+      "title": "Preview Track. You Get The Full Extended Track Included When Purchased.",
+      "artist": "Paul Sirrell",
+      "albumTitle": "Paul Sirrell & Matt Craig - Ladycop 2026",
+      "albumKey": "paul-sirrell-matt-craig-ladycop-2026",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:18",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://paulsirrell.bandcamp.com/track/preview-track-you-get-the-full-extended-track-included-when-purchased",
+      "bandcampEmbedTrackId": "27230838",
+      "sourcePage": "https://paulsirrell.bandcamp.com/album/paul-sirrell-matt-craig-ladycop-2026",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://paulsirrell.bandcamp.com/album/paul-sirrell-matt-craig-ladycop-2026",
+    "discoveredAt": "2026-09-05T23:56:56.743660+00:00",
+    "importedAt": "2026-09-05T23:57:42.227936+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "paulsirrell.bandcamp.com",
+    "bandcampBandId": "1363083056",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:42.227959+00:00"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "keith-lowe-between-memory-and-promise",
+  "artist": "Keith Lowe",
+  "bandcampUrl": "https://keithlowe.bandcamp.com/album/between-memory-and-promise",
+  "releaseTitle": "Between Memory and Promise",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "ambient",
+    "drone",
+    "ambient music",
+    "dark ambient music",
+    "ethereal ambient",
+    "soothing music",
+    "Seattle"
+  ],
+  "primaryLocation": "Seattle, Washington",
+  "bioShort": "\"'Between Memory and Promise' is music composed for the quiet thresholds we must cross: night and day, life and death, remorse and hope. Inspired by the shifting landscapes of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://keithlowe.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:01:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "between-memory-and-promise",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "between-memory-and-promise-4050663412",
+      "title": "Always Yesterday",
+      "artist": "Keith Lowe",
+      "albumTitle": "Between Memory and Promise",
+      "albumKey": "between-memory-and-promise",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:18",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://keithlowe.bandcamp.com/track/always-yesterday",
+      "bandcampEmbedTrackId": "4050663412",
+      "sourcePage": "https://keithlowe.bandcamp.com/album/between-memory-and-promise",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "between-memory-and-promise-1233366565",
+      "title": "In That Amphibious Light",
+      "artist": "Keith Lowe",
+      "albumTitle": "Between Memory and Promise",
+      "albumKey": "between-memory-and-promise",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "12:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://keithlowe.bandcamp.com/track/in-that-amphibious-light",
+      "bandcampEmbedTrackId": "1233366565",
+      "sourcePage": "https://keithlowe.bandcamp.com/album/between-memory-and-promise",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "between-memory-and-promise-217452160",
+      "title": "The First Star Tremored",
+      "artist": "Keith Lowe",
+      "albumTitle": "Between Memory and Promise",
+      "albumKey": "between-memory-and-promise",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:34",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://keithlowe.bandcamp.com/track/the-first-star-tremored",
+      "bandcampEmbedTrackId": "217452160",
+      "sourcePage": "https://keithlowe.bandcamp.com/album/between-memory-and-promise",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "between-memory-and-promise-2933915794",
+      "title": "The Sleep Of Stars",
+      "artist": "Keith Lowe",
+      "albumTitle": "Between Memory and Promise",
+      "albumKey": "between-memory-and-promise",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "21:15",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://keithlowe.bandcamp.com/track/the-sleep-of-stars",
+      "bandcampEmbedTrackId": "2933915794",
+      "sourcePage": "https://keithlowe.bandcamp.com/album/between-memory-and-promise",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://keithlowe.bandcamp.com/album/between-memory-and-promise",
+    "discoveredAt": "2026-09-05T23:57:21.405562+00:00",
+    "importedAt": "2026-09-06T00:01:59.738506+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "keithlowe.bandcamp.com",
+    "bandcampBandId": "2448590650",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:01:59.738528+00:00"
+  }
+}

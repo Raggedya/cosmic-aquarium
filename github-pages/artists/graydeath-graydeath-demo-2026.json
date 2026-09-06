@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "graydeath-graydeath-demo-2026",
+  "artist": "GRAYDEATH",
+  "bandcampUrl": "https://graydeath.bandcamp.com/album/graydeath-demo-2026",
+  "releaseTitle": "GRAYDEATH DEMO 2026",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "metal",
+    "metal sludge",
+    "sludge metal",
+    "Richmond"
+  ],
+  "primaryLocation": "Richmond, Virginia",
+  "bioShort": "GRAYDEATH — sludge / metal / metal sludge music from Richmond, Virginia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://graydeath.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:03:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "graydeath-demo-2026",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "graydeath-demo-2026-3252455318",
+      "title": "Overdose of Time",
+      "artist": "GRAYDEATH",
+      "albumTitle": "GRAYDEATH DEMO 2026",
+      "albumKey": "graydeath-demo-2026",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://graydeath.bandcamp.com/track/overdose-of-time",
+      "bandcampEmbedTrackId": "3252455318",
+      "sourcePage": "https://graydeath.bandcamp.com/album/graydeath-demo-2026",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "graydeath-demo-2026-942094041",
+      "title": "Silver Slug",
+      "artist": "GRAYDEATH",
+      "albumTitle": "GRAYDEATH DEMO 2026",
+      "albumKey": "graydeath-demo-2026",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:19",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://graydeath.bandcamp.com/track/silver-slug",
+      "bandcampEmbedTrackId": "942094041",
+      "sourcePage": "https://graydeath.bandcamp.com/album/graydeath-demo-2026",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://graydeath.bandcamp.com/album/graydeath-demo-2026",
+    "discoveredAt": "2026-09-05T23:57:21.408137+00:00",
+    "importedAt": "2026-09-06T00:03:16.481566+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "graydeath.bandcamp.com",
+    "bandcampBandId": "3472310329",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:03:16.481587+00:00"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "stay-another-season-nights",
+  "artist": "Stay Another Season",
+  "bandcampUrl": "https://stayanotherseason.bandcamp.com/album/nights",
+  "releaseTitle": "Nights",
+  "releaseDate": "2026-08-22 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "deep house",
+    "electronic",
+    "ambient pop",
+    "dream pop",
+    "indie pop",
+    "neo-psychedelia",
+    "outsider house",
+    "plunderphonics",
+    "Pittsburgh"
+  ],
+  "primaryLocation": "Pittsburgh, Pennsylvania",
+  "bioShort": "Stay Another Season — ambient-pop / deep house / electronic music from Pittsburgh, Pennsylvania.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://stayanotherseason.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:06:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "nights",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "nights-3115604302",
+      "title": "Nights",
+      "artist": "Stay Another Season",
+      "albumTitle": "Nights",
+      "albumKey": "nights",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stayanotherseason.bandcamp.com/track/nights",
+      "bandcampEmbedTrackId": "3115604302",
+      "sourcePage": "https://stayanotherseason.bandcamp.com/album/nights",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "nights-1592224901",
+      "title": "All Above You Now",
+      "artist": "Stay Another Season",
+      "albumTitle": "Nights",
+      "albumKey": "nights",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:14",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stayanotherseason.bandcamp.com/track/all-above-you-now",
+      "bandcampEmbedTrackId": "1592224901",
+      "sourcePage": "https://stayanotherseason.bandcamp.com/album/nights",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://stayanotherseason.bandcamp.com/album/nights",
+    "discoveredAt": "2026-09-05T23:57:21.415539+00:00",
+    "importedAt": "2026-09-06T00:06:43.622824+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "stayanotherseason.bandcamp.com",
+    "bandcampBandId": "3053965547",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:06:43.622845+00:00"
+  }
+}

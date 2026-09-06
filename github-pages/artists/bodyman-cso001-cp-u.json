@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "slug": "bodyman-cso001-cp-u",
+  "artist": "Bodyman",
+  "bandcampUrl": "https://bodyman.bandcamp.com/album/cso001-cp-u",
+  "releaseTitle": "CSO001: CP-U",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "electronic",
+    "dark wave",
+    "dubtechno",
+    "ebm",
+    "house",
+    "industrial",
+    "new wave",
+    "punk",
+    "techno",
+    "ukg",
+    "Peoria"
+  ],
+  "primaryLocation": "Peoria, Illinois",
+  "bioShort": "Bodyman presents: CSO001 “CP-U” A sensual electropunk thriller for your sacral chakra. Gargantuan machines whirring with micro-menacing precision. Blades turn, transistors hum…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bodyman.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:05:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "cso001-cp-u",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cso001-cp-u-732772731",
+      "title": "CP-U",
+      "artist": "Bodyman",
+      "albumTitle": "CSO001: CP-U",
+      "albumKey": "cso001-cp-u",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bodyman.bandcamp.com/track/cp-u",
+      "bandcampEmbedTrackId": "732772731",
+      "sourcePage": "https://bodyman.bandcamp.com/album/cso001-cp-u",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "cso001-cp-u-1546085333",
+      "title": "CP-U (nxtel remix)",
+      "artist": "Bodyman",
+      "albumTitle": "CSO001: CP-U",
+      "albumKey": "cso001-cp-u",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:20",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bodyman.bandcamp.com/track/cp-u-nxtel-remix",
+      "bandcampEmbedTrackId": "1546085333",
+      "sourcePage": "https://bodyman.bandcamp.com/album/cso001-cp-u",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bodyman.bandcamp.com/album/cso001-cp-u",
+    "discoveredAt": "2026-09-05T23:57:21.412890+00:00",
+    "importedAt": "2026-09-06T00:05:16.870108+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bodyman.bandcamp.com",
+    "bandcampBandId": "3112794155",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:16.870128+00:00"
+  }
+}

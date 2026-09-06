@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "grey-albert-doomoom-smash",
+  "artist": "Grey Albert",
+  "bandcampUrl": "https://greyalbert.bandcamp.com/album/doom-oom-smash",
+  "releaseTitle": "Doomᗡoom - Smash",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "punk",
+    "art-punk",
+    "no-wave",
+    "nyc",
+    "psychedelic-pop",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Doomᗡoom is Grey Albert/Satomi Matsuzaki & Jared Gniewek Mixed by Grey & Satomi Art by Jared Mastered by John Dieterich",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "dark",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://greyalbert.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:06:03Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "doomoom-smash",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "doomoom-smash-166556887",
+      "title": "Suckin' You Dry",
+      "artist": "Grey Albert",
+      "albumTitle": "Doomᗡoom - Smash",
+      "albumKey": "doomoom-smash",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://greyalbert.bandcamp.com/track/suckin-you-dry-2",
+      "bandcampEmbedTrackId": "166556887",
+      "sourcePage": "https://greyalbert.bandcamp.com/album/doom-oom-smash",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "doomoom-smash-3616157948",
+      "title": "Where Was Eye",
+      "artist": "Grey Albert",
+      "albumTitle": "Doomᗡoom - Smash",
+      "albumKey": "doomoom-smash",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:51",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://greyalbert.bandcamp.com/track/where-was-eye-2",
+      "bandcampEmbedTrackId": "3616157948",
+      "sourcePage": "https://greyalbert.bandcamp.com/album/doom-oom-smash",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "doomoom-smash-2139877641",
+      "title": "Da Bomb",
+      "artist": "Grey Albert",
+      "albumTitle": "Doomᗡoom - Smash",
+      "albumKey": "doomoom-smash",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:53",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://greyalbert.bandcamp.com/track/da-bomb-2",
+      "bandcampEmbedTrackId": "2139877641",
+      "sourcePage": "https://greyalbert.bandcamp.com/album/doom-oom-smash",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://greyalbert.bandcamp.com/album/doom-oom-smash",
+    "discoveredAt": "2026-09-05T23:57:21.414375+00:00",
+    "importedAt": "2026-09-06T00:06:03.560948+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "greyalbert.bandcamp.com",
+    "bandcampBandId": "444030187",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:06:03.560973+00:00"
+  }
+}

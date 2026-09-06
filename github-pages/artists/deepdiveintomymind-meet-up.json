@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "slug": "deepdiveintomymind-meet-up",
+  "artist": "Deepdiveintomymind",
+  "bandcampUrl": "https://deepdiveintomymind.bandcamp.com/album/meet-up",
+  "releaseTitle": "\"Meet up\"",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "experimental",
+    "trap",
+    "aggressive",
+    "ambient",
+    "avant-garde",
+    "bulgarian",
+    "dubstep",
+    "electronic",
+    "experimental electronic",
+    "industrial",
+    "Louisiana"
+  ],
+  "primaryLocation": "Louisiana",
+  "bioShort": "Deepdiveintomymind — noise / experimental / trap music from Louisiana.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://deepdiveintomymind.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:05:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "meet-up",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "meet-up-1236110587",
+      "title": "\"Meet up\"",
+      "artist": "Deepdiveintomymind",
+      "albumTitle": "\"Meet up\"",
+      "albumKey": "meet-up",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "15:43",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deepdiveintomymind.bandcamp.com/track/meet-up",
+      "bandcampEmbedTrackId": "1236110587",
+      "sourcePage": "https://deepdiveintomymind.bandcamp.com/album/meet-up",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://deepdiveintomymind.bandcamp.com/album/meet-up",
+    "discoveredAt": "2026-09-05T23:57:21.413173+00:00",
+    "importedAt": "2026-09-06T00:05:26.496792+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "deepdiveintomymind.bandcamp.com",
+    "bandcampBandId": "346889086",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:26.496813+00:00"
+  }
+}

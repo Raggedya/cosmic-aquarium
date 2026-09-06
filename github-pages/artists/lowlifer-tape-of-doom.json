@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "lowlifer-tape-of-doom",
+  "artist": "LowLifer",
+  "bandcampUrl": "https://lowlifer1.bandcamp.com/album/tape-of-doom",
+  "releaseTitle": "Tape Of Doom.",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "doom",
+    "doom metal",
+    "sludge",
+    "sludge metal",
+    "stoner metal",
+    "Alexandria"
+  ],
+  "primaryLocation": "Alexandria, Virginia",
+  "bioShort": "Demo tape of doom",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "dark",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lowlifer1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:01:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tape-of-doom",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tape-of-doom-342267965",
+      "title": "Last of their kind",
+      "artist": "LowLifer",
+      "albumTitle": "Tape Of Doom.",
+      "albumKey": "tape-of-doom",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:45",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lowlifer1.bandcamp.com/track/last-of-their-kind",
+      "bandcampEmbedTrackId": "342267965",
+      "sourcePage": "https://lowlifer1.bandcamp.com/album/tape-of-doom",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tape-of-doom-1771463105",
+      "title": "Green Inhalent",
+      "artist": "LowLifer",
+      "albumTitle": "Tape Of Doom.",
+      "albumKey": "tape-of-doom",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "9:09",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lowlifer1.bandcamp.com/track/green-inhalent",
+      "bandcampEmbedTrackId": "1771463105",
+      "sourcePage": "https://lowlifer1.bandcamp.com/album/tape-of-doom",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "tape-of-doom-255646447",
+      "title": "Sabbath Jam",
+      "artist": "LowLifer",
+      "albumTitle": "Tape Of Doom.",
+      "albumKey": "tape-of-doom",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:40",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lowlifer1.bandcamp.com/track/sabbath-jam",
+      "bandcampEmbedTrackId": "255646447",
+      "sourcePage": "https://lowlifer1.bandcamp.com/album/tape-of-doom",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "tape-of-doom-1583789240",
+      "title": "Please Stop Rockin",
+      "artist": "LowLifer",
+      "albumTitle": "Tape Of Doom.",
+      "albumKey": "tape-of-doom",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "14:25",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lowlifer1.bandcamp.com/track/please-stop-rockin",
+      "bandcampEmbedTrackId": "1583789240",
+      "sourcePage": "https://lowlifer1.bandcamp.com/album/tape-of-doom",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lowlifer1.bandcamp.com/album/tape-of-doom",
+    "discoveredAt": "2026-09-05T23:57:21.403636+00:00",
+    "importedAt": "2026-09-06T00:01:02.187451+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lowlifer1.bandcamp.com",
+    "bandcampBandId": "1030758661",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:01:02.187472+00:00"
+  }
+}

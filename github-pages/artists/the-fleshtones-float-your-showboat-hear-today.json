@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-fleshtones-float-your-showboat-hear-today",
+  "artist": "The Fleshtones",
+  "bandcampUrl": "https://thefleshtones.bandcamp.com/album/float-your-showboat-hear-today",
+  "releaseTitle": "Float Your Showboat / Hear Today",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "alternative",
+    "experimental",
+    "pop",
+    "pop rock",
+    "punk",
+    "classic rock",
+    "garage punk",
+    "garage rock",
+    "indie",
+    "indie rock",
+    "new wave",
+    "noise",
+    "punk rock",
+    "rock",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Garage rock legends The Fleshtones have been shaping the face of alternative music for half a century. To celebrate their golden anniversary, they're releasing the limited…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thefleshtones.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:02:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "float-your-showboat-hear-today",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "float-your-showboat-hear-today-1816396920",
+      "title": "Float Your Showboat",
+      "artist": "The Fleshtones",
+      "albumTitle": "Float Your Showboat / Hear Today",
+      "albumKey": "float-your-showboat-hear-today",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thefleshtones.bandcamp.com/track/float-your-showboat",
+      "bandcampEmbedTrackId": "1816396920",
+      "sourcePage": "https://thefleshtones.bandcamp.com/album/float-your-showboat-hear-today",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "float-your-showboat-hear-today-1605309943",
+      "title": "Hear Today",
+      "artist": "The Fleshtones",
+      "albumTitle": "Float Your Showboat / Hear Today",
+      "albumKey": "float-your-showboat-hear-today",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thefleshtones.bandcamp.com/track/hear-today",
+      "bandcampEmbedTrackId": "1605309943",
+      "sourcePage": "https://thefleshtones.bandcamp.com/album/float-your-showboat-hear-today",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thefleshtones.bandcamp.com/album/float-your-showboat-hear-today",
+    "discoveredAt": "2026-09-05T23:57:21.405880+00:00",
+    "importedAt": "2026-09-06T00:02:04.885642+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thefleshtones.bandcamp.com",
+    "bandcampBandId": "3084967713",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:04.885665+00:00"
+  }
+}

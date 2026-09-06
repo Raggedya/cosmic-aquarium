@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "super-going-photo-2-1",
+  "artist": "super going",
+  "bandcampUrl": "https://supergoing.bandcamp.com/album/photo-2-1",
+  "releaseTitle": "photo #2&1",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "experimental",
+    "ambient",
+    "drone",
+    "electronic",
+    "glitch",
+    "hypnagogic pop",
+    "Australia"
+  ],
+  "primaryLocation": "Australia",
+  "bioShort": "Recorded for an unfinished album, but due to it's length and feeling like it didn't fit sound wise, I decided to release it separately & impulsively drop this one today, enjoy!",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://supergoing.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:02:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "photo-2-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "photo-2-1-3255367328",
+      "title": "photo #2&1",
+      "artist": "super going",
+      "albumTitle": "photo #2&1",
+      "albumKey": "photo-2-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "41:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://supergoing.bandcamp.com/track/photo-2-1",
+      "bandcampEmbedTrackId": "3255367328",
+      "sourcePage": "https://supergoing.bandcamp.com/album/photo-2-1",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://supergoing.bandcamp.com/album/photo-2-1",
+    "discoveredAt": "2026-09-05T23:57:21.405948+00:00",
+    "importedAt": "2026-09-06T00:02:07.760631+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "supergoing.bandcamp.com",
+    "bandcampBandId": "948805590",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:07.760652+00:00"
+  }
+}

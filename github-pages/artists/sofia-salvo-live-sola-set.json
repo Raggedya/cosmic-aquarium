@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "slug": "sofia-salvo-live-sola-set",
+  "artist": "Sofia Salvo",
+  "bandcampUrl": "https://sofiasalvo.bandcamp.com/album/live-sola-set",
+  "releaseTitle": "Live Sola Set",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "free jazz. improvised music",
+    "jazz",
+    "baritone sax",
+    "baritone saxophone",
+    "free jazz",
+    "improvised experimental",
+    "noise",
+    "saxophone",
+    "saxophone solo",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "Recorded live at Morphine Raum in Berlin, thx to Ignacio Roulet and Constanza Pellici for the invitation and the Morphine team. Mixed by Ilia Gorovitz. Cover by Sofo",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sofiasalvo.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:01:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "live-sola-set",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "live-sola-set-1259142876",
+      "title": "desatornilleo",
+      "artist": "Sofia Salvo",
+      "albumTitle": "Live Sola Set",
+      "albumKey": "live-sola-set",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "25:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sofiasalvo.bandcamp.com/track/desatornilleo",
+      "bandcampEmbedTrackId": "1259142876",
+      "sourcePage": "https://sofiasalvo.bandcamp.com/album/live-sola-set",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sofiasalvo.bandcamp.com/album/live-sola-set",
+    "discoveredAt": "2026-09-05T23:57:21.404448+00:00",
+    "importedAt": "2026-09-06T00:01:24.650756+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sofiasalvo.bandcamp.com",
+    "bandcampBandId": "157217313",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:01:24.650776+00:00"
+  }
+}

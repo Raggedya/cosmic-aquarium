@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "wizard-s-altar-from-ancient-dreams",
+  "artist": "Wizard's Altar",
+  "bandcampUrl": "https://wizardsaltar.bandcamp.com/album/from-ancient-dreams",
+  "releaseTitle": "From Ancient Dreams",
+  "releaseDate": "2026-08-29 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "metal",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Wizard's Altar — black-metal / black metal / metal music from New York, New York.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://wizardsaltar.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:03:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "from-ancient-dreams",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "from-ancient-dreams-1119053116",
+      "title": "From Ancient Dreams",
+      "artist": "Wizard's Altar",
+      "albumTitle": "From Ancient Dreams",
+      "albumKey": "from-ancient-dreams",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "11:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wizardsaltar.bandcamp.com/track/from-ancient-dreams",
+      "bandcampEmbedTrackId": "1119053116",
+      "sourcePage": "https://wizardsaltar.bandcamp.com/album/from-ancient-dreams",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://wizardsaltar.bandcamp.com/album/from-ancient-dreams",
+    "discoveredAt": "2026-09-05T23:57:21.408816+00:00",
+    "importedAt": "2026-09-06T00:03:36.924127+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "wizardsaltar.bandcamp.com",
+    "bandcampBandId": "2661081101",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:03:36.924149+00:00"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "scanner-feral-child",
+  "artist": "Scanner",
+  "bandcampUrl": "https://scanner.bandcamp.com/album/feral-child",
+  "releaseTitle": "Feral Child",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "electronic",
+    "ambient",
+    "cinematic soundscape",
+    "electronica",
+    "experimental",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "This was released as an extremely limited 7\" lathe cut single on the Feral Child label in the UK. There were only 111 copies of this available on white vinyl. It features two…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://scanner.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:07:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "feral-child",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "feral-child-2219007520",
+      "title": "Electrocan",
+      "artist": "Scanner",
+      "albumTitle": "Feral Child",
+      "albumKey": "feral-child",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:26",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://scanner.bandcamp.com/track/electrocan",
+      "bandcampEmbedTrackId": "2219007520",
+      "sourcePage": "https://scanner.bandcamp.com/album/feral-child",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "feral-child-2457530658",
+      "title": "Swim Study Southfields",
+      "artist": "Scanner",
+      "albumTitle": "Feral Child",
+      "albumKey": "feral-child",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://scanner.bandcamp.com/track/swim-study-southfields",
+      "bandcampEmbedTrackId": "2457530658",
+      "sourcePage": "https://scanner.bandcamp.com/album/feral-child",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://scanner.bandcamp.com/album/feral-child",
+    "discoveredAt": "2026-09-05T23:57:21.416507+00:00",
+    "importedAt": "2026-09-06T00:07:10.746776+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "scanner.bandcamp.com",
+    "bandcampBandId": "74743920",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:07:10.746798+00:00"
+  }
+}

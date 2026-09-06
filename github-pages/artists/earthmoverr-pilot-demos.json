@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "earthmoverr-pilot-demos",
+  "artist": "Earthmoverr",
+  "bandcampUrl": "https://earthmoverrband.bandcamp.com/album/pilot-demos",
+  "releaseTitle": "Pilot Demos",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "doom metal",
+    "experimental",
+    "hardcore",
+    "stoner metal",
+    "Marietta"
+  ],
+  "primaryLocation": "Marietta, Ohio",
+  "bioShort": "3 phone recordings from Saturday, August 29th, 2026",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://earthmoverrband.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:04:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pilot-demos",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pilot-demos-1011431723",
+      "title": "I",
+      "artist": "Earthmoverr",
+      "albumTitle": "Pilot Demos",
+      "albumKey": "pilot-demos",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://earthmoverrband.bandcamp.com/track/i",
+      "bandcampEmbedTrackId": "1011431723",
+      "sourcePage": "https://earthmoverrband.bandcamp.com/album/pilot-demos",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "pilot-demos-1610722798",
+      "title": "II",
+      "artist": "Earthmoverr",
+      "albumTitle": "Pilot Demos",
+      "albumKey": "pilot-demos",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://earthmoverrband.bandcamp.com/track/ii",
+      "bandcampEmbedTrackId": "1610722798",
+      "sourcePage": "https://earthmoverrband.bandcamp.com/album/pilot-demos",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "pilot-demos-4222210955",
+      "title": "III",
+      "artist": "Earthmoverr",
+      "albumTitle": "Pilot Demos",
+      "albumKey": "pilot-demos",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:20",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://earthmoverrband.bandcamp.com/track/iii",
+      "bandcampEmbedTrackId": "4222210955",
+      "sourcePage": "https://earthmoverrband.bandcamp.com/album/pilot-demos",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://earthmoverrband.bandcamp.com/album/pilot-demos",
+    "discoveredAt": "2026-09-05T23:57:21.411787+00:00",
+    "importedAt": "2026-09-06T00:04:48.893311+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "earthmoverrband.bandcamp.com",
+    "bandcampBandId": "1137918756",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:04:48.893332+00:00"
+  }
+}

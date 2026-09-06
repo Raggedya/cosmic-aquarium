@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "nadja-necroausterity-forever-version",
+  "artist": "Nadja",
+  "bandcampUrl": "https://nadja.bandcamp.com/album/necroausterity-forever-version",
+  "releaseTitle": "Necroausterity (Forever Version)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "ambient",
+    "drone",
+    "experimental",
+    "metal",
+    "doom metal",
+    "full of hell",
+    "industrial",
+    "ritual",
+    "soundscape",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "An extended remix of 'Necroausterity' from our album \"Labyrinthine,\" which track features lead vocals from Full of Hell's Dylan Walker. Thematically, the track is based around…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nadja.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:05:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "necroausterity-forever-version",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "necroausterity-forever-version-3830268082",
+      "title": "Necroausterity (Forever Version)",
+      "artist": "Nadja",
+      "albumTitle": "Necroausterity (Forever Version)",
+      "albumKey": "necroausterity-forever-version",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "60:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nadja.bandcamp.com/track/necroausterity-forever-version",
+      "bandcampEmbedTrackId": "3830268082",
+      "sourcePage": "https://nadja.bandcamp.com/album/necroausterity-forever-version",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nadja.bandcamp.com/album/necroausterity-forever-version",
+    "discoveredAt": "2026-09-05T23:57:21.413620+00:00",
+    "importedAt": "2026-09-06T00:05:37.307091+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nadja.bandcamp.com",
+    "bandcampBandId": "2655147258",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:05:37.307112+00:00"
+  }
+}

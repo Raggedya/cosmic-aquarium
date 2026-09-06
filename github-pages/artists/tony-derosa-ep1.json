@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "slug": "tony-derosa-ep1",
+  "artist": "Tony DeRosa",
+  "bandcampUrl": "https://tonyderosa.bandcamp.com/album/ep1",
+  "releaseTitle": "EP1",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "beats",
+    "computer music",
+    "Pittsfield"
+  ],
+  "primaryLocation": "Pittsfield, Massachusetts",
+  "bioShort": "Tony DeRosa — breakbeat / beats / computer music music from Pittsfield, Massachusetts.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tonyderosa.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:04:54Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ep1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ep1-705739303",
+      "title": "Pick Me Up",
+      "artist": "Tony DeRosa",
+      "albumTitle": "EP1",
+      "albumKey": "ep1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tonyderosa.bandcamp.com/track/pick-me-up",
+      "bandcampEmbedTrackId": "705739303",
+      "sourcePage": "https://tonyderosa.bandcamp.com/album/ep1",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ep1-447112995",
+      "title": "No Fun",
+      "artist": "Tony DeRosa",
+      "albumTitle": "EP1",
+      "albumKey": "ep1",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tonyderosa.bandcamp.com/track/no-fun",
+      "bandcampEmbedTrackId": "447112995",
+      "sourcePage": "https://tonyderosa.bandcamp.com/album/ep1",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ep1-3725101121",
+      "title": "CMND",
+      "artist": "Tony DeRosa",
+      "albumTitle": "EP1",
+      "albumKey": "ep1",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:05",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tonyderosa.bandcamp.com/track/cmnd",
+      "bandcampEmbedTrackId": "3725101121",
+      "sourcePage": "https://tonyderosa.bandcamp.com/album/ep1",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ep1-2749190954",
+      "title": "Tramer",
+      "artist": "Tony DeRosa",
+      "albumTitle": "EP1",
+      "albumKey": "ep1",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:20",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tonyderosa.bandcamp.com/track/tramer",
+      "bandcampEmbedTrackId": "2749190954",
+      "sourcePage": "https://tonyderosa.bandcamp.com/album/ep1",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "ep1-3136928661",
+      "title": "Sentiment",
+      "artist": "Tony DeRosa",
+      "albumTitle": "EP1",
+      "albumKey": "ep1",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:23",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tonyderosa.bandcamp.com/track/sentiment",
+      "bandcampEmbedTrackId": "3136928661",
+      "sourcePage": "https://tonyderosa.bandcamp.com/album/ep1",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tonyderosa.bandcamp.com/album/ep1",
+    "discoveredAt": "2026-09-05T23:57:21.412050+00:00",
+    "importedAt": "2026-09-06T00:04:54.214803+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tonyderosa.bandcamp.com",
+    "bandcampBandId": "3629193376",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:04:54.214824+00:00"
+  }
+}

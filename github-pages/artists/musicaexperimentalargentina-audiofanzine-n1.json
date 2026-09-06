@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "slug": "musicaexperimentalargentina-audiofanzine-n1",
+  "artist": "musicaexperimentalargentina",
+  "bandcampUrl": "https://musicaexperimentalargentina.bandcamp.com/album/audiofanzine-n1",
+  "releaseTitle": "Audiofanzine N1",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "experimental",
+    "podcasts",
+    "ambient",
+    "drone",
+    "field recordings",
+    "noise",
+    "podcast music",
+    "radio",
+    "sound art",
+    "Argentina"
+  ],
+  "primaryLocation": "Argentina",
+  "bioShort": "Éste Podcast fue realizado de forma colaborativa a partir de textos que fueron publicados, en el Fanzine N⁰1 del M.E.Ar, por aristas de todo el país que participan del grupo…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://musicaexperimentalargentina.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:07:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "audiofanzine-n1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "audiofanzine-n1-24297772",
+      "title": "FN1-MEAR-01",
+      "artist": "musicaexperimentalargentina",
+      "albumTitle": "Audiofanzine N1",
+      "albumKey": "audiofanzine-n1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:27",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://musicaexperimentalargentina.bandcamp.com/track/fn1-mear-01",
+      "bandcampEmbedTrackId": "24297772",
+      "sourcePage": "https://musicaexperimentalargentina.bandcamp.com/album/audiofanzine-n1",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://musicaexperimentalargentina.bandcamp.com/album/audiofanzine-n1",
+    "discoveredAt": "2026-09-05T23:57:21.416686+00:00",
+    "importedAt": "2026-09-06T00:07:13.541093+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "musicaexperimentalargentina.bandcamp.com",
+    "bandcampBandId": "2808294099",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:07:13.541114+00:00"
+  }
+}

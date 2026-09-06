@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "misspelt-youth-dark-mode",
+  "artist": "Misspelt Youth",
+  "bandcampUrl": "https://misspeltyouth.bandcamp.com/album/dark-mode",
+  "releaseTitle": "Dark Mode",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "dark techno",
+    "electronic",
+    "edm",
+    "idm",
+    "techno",
+    "Reading"
+  ],
+  "primaryLocation": "Reading, UK",
+  "bioShort": "Three tracks created in a gloomy week in December (2025). Can you tell?",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://misspeltyouth.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:02:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dark-mode",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dark-mode-1090749909",
+      "title": "Schadenfreude",
+      "artist": "Misspelt Youth",
+      "albumTitle": "Dark Mode",
+      "albumKey": "dark-mode",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:45",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://misspeltyouth.bandcamp.com/track/schadenfreude",
+      "bandcampEmbedTrackId": "1090749909",
+      "sourcePage": "https://misspeltyouth.bandcamp.com/album/dark-mode",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dark-mode-1843578130",
+      "title": "Flutter",
+      "artist": "Misspelt Youth",
+      "albumTitle": "Dark Mode",
+      "albumKey": "dark-mode",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:57",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://misspeltyouth.bandcamp.com/track/flutter",
+      "bandcampEmbedTrackId": "1843578130",
+      "sourcePage": "https://misspeltyouth.bandcamp.com/album/dark-mode",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "dark-mode-3296302992",
+      "title": "Practical Housekeeping",
+      "artist": "Misspelt Youth",
+      "albumTitle": "Dark Mode",
+      "albumKey": "dark-mode",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:42",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://misspeltyouth.bandcamp.com/track/practical-housekeeping",
+      "bandcampEmbedTrackId": "3296302992",
+      "sourcePage": "https://misspeltyouth.bandcamp.com/album/dark-mode",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://misspeltyouth.bandcamp.com/album/dark-mode",
+    "discoveredAt": "2026-09-05T23:57:21.406053+00:00",
+    "importedAt": "2026-09-06T00:02:10.483099+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "misspeltyouth.bandcamp.com",
+    "bandcampBandId": "945153036",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:10.483120+00:00"
+  }
+}

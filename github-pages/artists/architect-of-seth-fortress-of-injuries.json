@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "slug": "architect-of-seth-fortress-of-injuries",
+  "artist": "Architect Of Seth",
+  "bandcampUrl": "https://architectofseth.bandcamp.com/album/fortress-of-injuries",
+  "releaseTitle": "Fortress of Injuries",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "death metal",
+    "metal",
+    "technical metal",
+    "thrash metal",
+    "doom metal",
+    "epic metal",
+    "heavy metal",
+    "technical death metal",
+    "France"
+  ],
+  "primaryLocation": "France",
+  "bioShort": "Recorded & produced by Pyromancer Mixing by Guillaume Doussaud (Swan Sound Studio) Mastering by Frédéric Gervais (Studio Henosis) Artwork by DeF",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://architectofseth.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:57:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "fortress-of-injuries",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fortress-of-injuries-2957519371",
+      "title": "Fortress of Injuries",
+      "artist": "Architect Of Seth",
+      "albumTitle": "Fortress of Injuries",
+      "albumKey": "fortress-of-injuries",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://architectofseth.bandcamp.com/track/fortress-of-injuries",
+      "bandcampEmbedTrackId": "2957519371",
+      "sourcePage": "https://architectofseth.bandcamp.com/album/fortress-of-injuries",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "fortress-of-injuries-2453066468",
+      "title": "Ecocide by Suicide",
+      "artist": "Architect Of Seth",
+      "albumTitle": "Fortress of Injuries",
+      "albumKey": "fortress-of-injuries",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://architectofseth.bandcamp.com/track/ecocide-by-suicide",
+      "bandcampEmbedTrackId": "2453066468",
+      "sourcePage": "https://architectofseth.bandcamp.com/album/fortress-of-injuries",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://architectofseth.bandcamp.com/album/fortress-of-injuries",
+    "discoveredAt": "2026-09-05T23:57:14.044525+00:00",
+    "importedAt": "2026-09-05T23:57:50.519527+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "architectofseth.bandcamp.com",
+    "bandcampBandId": "3303347304",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:50.519548+00:00"
+  }
+}

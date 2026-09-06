@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "slug": "language-of-flowers-prenew-16-shimmer",
+  "artist": "Language of Flowers",
+  "bandcampUrl": "https://languageofflowers.bandcamp.com/album/prenew-16-shimmer",
+  "releaseTitle": "PRENEW 16: Shimmer",
+  "releaseDate": "2026-09-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "alternative",
+    "dream pop",
+    "dreampop",
+    "indie",
+    "indie pop",
+    "indie-pop",
+    "shelflife",
+    "shoegaze",
+    "Belfast"
+  ],
+  "primaryLocation": "Belfast, UK",
+  "bioShort": "Language of Flowers — dream-pop / alternative / dream pop music from Belfast, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "dark",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://languageofflowers.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:58:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "prenew-16-shimmer",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "prenew-16-shimmer-2467353957",
+      "title": "Shimmer",
+      "artist": "Language of Flowers",
+      "albumTitle": "PRENEW 16: Shimmer",
+      "albumKey": "prenew-16-shimmer",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:26",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://languageofflowers.bandcamp.com/track/shimmer",
+      "bandcampEmbedTrackId": "2467353957",
+      "sourcePage": "https://languageofflowers.bandcamp.com/album/prenew-16-shimmer",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "prenew-16-shimmer-740697660",
+      "title": "The Co-op (Bentley demo)",
+      "artist": "Language of Flowers",
+      "albumTitle": "PRENEW 16: Shimmer",
+      "albumKey": "prenew-16-shimmer",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://languageofflowers.bandcamp.com/album/prenew-16-shimmer",
+      "bandcampEmbedTrackId": "740697660",
+      "sourcePage": "https://languageofflowers.bandcamp.com/album/prenew-16-shimmer",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://languageofflowers.bandcamp.com/album/prenew-16-shimmer",
+    "discoveredAt": "2026-09-05T23:57:21.398259+00:00",
+    "importedAt": "2026-09-05T23:58:24.649345+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "languageofflowers.bandcamp.com",
+    "bandcampBandId": "1798597215",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:24.649367+00:00"
+  }
+}

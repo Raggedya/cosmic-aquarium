@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "mark-peters-amulet",
+  "artist": "Mark Peters",
+  "bandcampUrl": "https://mark-peters.bandcamp.com/album/amulet",
+  "releaseTitle": "Amulet",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "ambient",
+    "guitar",
+    "instrumental",
+    "krautrock",
+    "Wigan"
+  ],
+  "primaryLocation": "Wigan, UK",
+  "bioShort": "In 2022 prior to the release of my last LP, ‘Red Sunset Dreams’ I started working with the bass player Dean Roby (he plays on ‘Alpenglow’ and ‘Magic Hour’ from my e.p ‘The…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mark-peters.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:02:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "amulet",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "amulet-2872437301",
+      "title": "Amulet",
+      "artist": "Mark Peters",
+      "albumTitle": "Amulet",
+      "albumKey": "amulet",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mark-peters.bandcamp.com/track/amulet",
+      "bandcampEmbedTrackId": "2872437301",
+      "sourcePage": "https://mark-peters.bandcamp.com/album/amulet",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "amulet-3504658166",
+      "title": "Amulet (Long Version)",
+      "artist": "Mark Peters",
+      "albumTitle": "Amulet",
+      "albumKey": "amulet",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mark-peters.bandcamp.com/track/amulet-long-version",
+      "bandcampEmbedTrackId": "3504658166",
+      "sourcePage": "https://mark-peters.bandcamp.com/album/amulet",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mark-peters.bandcamp.com/album/amulet",
+    "discoveredAt": "2026-09-05T23:57:21.407293+00:00",
+    "importedAt": "2026-09-06T00:02:47.361760+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mark-peters.bandcamp.com",
+    "bandcampBandId": "2673775005",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:02:47.361783+00:00"
+  }
+}

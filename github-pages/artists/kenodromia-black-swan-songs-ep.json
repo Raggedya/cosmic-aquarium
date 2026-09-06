@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "kenodromia-black-swan-songs-ep",
+  "artist": "Kenodromia",
+  "bandcampUrl": "https://kenodromia.bandcamp.com/album/black-swan-songs-ep",
+  "releaseTitle": "Black Swan Songs (EP)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "alternative indie",
+    "hard rock",
+    "metal",
+    "alternative rock",
+    "doom",
+    "sludge",
+    "stoner metal",
+    "stoner rock",
+    "Drammen"
+  ],
+  "primaryLocation": "Drammen, Norway",
+  "bioShort": "Kenodromia — stoner-metal / alternative indie / hard rock music from Drammen, Norway.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kenodromia.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:59:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "black-swan-songs-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "black-swan-songs-ep-1956257247",
+      "title": "Susan",
+      "artist": "Kenodromia",
+      "albumTitle": "Black Swan Songs (EP)",
+      "albumKey": "black-swan-songs-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "9:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kenodromia.bandcamp.com/track/susan",
+      "bandcampEmbedTrackId": "1956257247",
+      "sourcePage": "https://kenodromia.bandcamp.com/album/black-swan-songs-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "black-swan-songs-ep-3820442471",
+      "title": "Vader",
+      "artist": "Kenodromia",
+      "albumTitle": "Black Swan Songs (EP)",
+      "albumKey": "black-swan-songs-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:50",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kenodromia.bandcamp.com/track/vader",
+      "bandcampEmbedTrackId": "3820442471",
+      "sourcePage": "https://kenodromia.bandcamp.com/album/black-swan-songs-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "black-swan-songs-ep-162220012",
+      "title": "Batshit",
+      "artist": "Kenodromia",
+      "albumTitle": "Black Swan Songs (EP)",
+      "albumKey": "black-swan-songs-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:05",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kenodromia.bandcamp.com/track/batshit",
+      "bandcampEmbedTrackId": "162220012",
+      "sourcePage": "https://kenodromia.bandcamp.com/album/black-swan-songs-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "black-swan-songs-ep-731650082",
+      "title": "Lord Panic(k)",
+      "artist": "Kenodromia",
+      "albumTitle": "Black Swan Songs (EP)",
+      "albumKey": "black-swan-songs-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:01",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kenodromia.bandcamp.com/track/lord-panic-k",
+      "bandcampEmbedTrackId": "731650082",
+      "sourcePage": "https://kenodromia.bandcamp.com/album/black-swan-songs-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kenodromia.bandcamp.com/album/black-swan-songs-ep",
+    "discoveredAt": "2026-09-05T23:57:21.400921+00:00",
+    "importedAt": "2026-09-05T23:59:38.572432+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kenodromia.bandcamp.com",
+    "bandcampBandId": "373582437",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:59:38.572453+00:00"
+  }
+}

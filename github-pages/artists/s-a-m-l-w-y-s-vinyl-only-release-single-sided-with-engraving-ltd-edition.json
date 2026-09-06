@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "s-a-m-l-w-y-s-vinyl-only-release-single-sided-with-engraving-ltd-edition",
+  "artist": "S.A.M.",
+  "bandcampUrl": "https://samofdelaphine.bandcamp.com/album/l-w-y-s-vinyl-only-release-single-sided-with-engraving-ltd-edition",
+  "releaseTitle": "L.W.Y.S. (Vinyl-Only Release, Single-Sided with Engraving, Ltd Edition)",
+  "releaseDate": "2026-09-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "techhouse",
+    "ambient",
+    "minimal",
+    "techno",
+    "North Macedonia"
+  ],
+  "primaryLocation": "North Macedonia",
+  "bioShort": "45 RPM, Single-Sided with Engraved B-Side, Vinyl-Only Release, Ltd Edition. 25/09/2026 Bandcamp & One Eye Witness exclusive. Written and produced by Samuel Andre Madsen aka…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://samofdelaphine.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:57:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "l-w-y-s-vinyl-only-release-single-sided-with-engraving-ltd-edition",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "l-w-y-s-vinyl-only-release-single-sided-with-engraving-ltd-edition-920252190",
+      "title": "L.W.Y.S. (Snippet For Preview Only)",
+      "artist": "S.A.M.",
+      "albumTitle": "L.W.Y.S. (Vinyl-Only Release, Single-Sided with Engraving, Ltd Edition)",
+      "albumKey": "l-w-y-s-vinyl-only-release-single-sided-with-engraving-ltd-edition",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://samofdelaphine.bandcamp.com/track/l-w-y-s-snippet-for-preview-only",
+      "bandcampEmbedTrackId": "920252190",
+      "sourcePage": "https://samofdelaphine.bandcamp.com/album/l-w-y-s-vinyl-only-release-single-sided-with-engraving-ltd-edition",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://samofdelaphine.bandcamp.com/album/l-w-y-s-vinyl-only-release-single-sided-with-engraving-ltd-edition",
+    "discoveredAt": "2026-09-05T23:56:48.371401+00:00",
+    "importedAt": "2026-09-05T23:57:36.659203+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "samofdelaphine.bandcamp.com",
+    "bandcampBandId": "1912937072",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:36.659226+00:00"
+  }
+}

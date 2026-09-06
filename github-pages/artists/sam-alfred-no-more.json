@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "slug": "sam-alfred-no-more",
+  "artist": "Sam Alfred",
+  "bandcampUrl": "https://samalfred1.bandcamp.com/album/no-more-2",
+  "releaseTitle": "No More",
+  "releaseDate": "2026-10-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "deep house",
+    "electronic",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Sam Alfred — house / deep house / Melbourne music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://samalfred1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-05T23:58:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "no-more",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "no-more-1227299251",
+      "title": "Connected By Light (feat. Luuk van Dijk & Storm Mollison)",
+      "artist": "Sam Alfred",
+      "albumTitle": "No More",
+      "albumKey": "no-more",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://samalfred1.bandcamp.com/album/no-more-2",
+      "bandcampEmbedTrackId": "1227299251",
+      "sourcePage": "https://samalfred1.bandcamp.com/album/no-more-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "no-more-3548554612",
+      "title": "Dreamers",
+      "artist": "Sam Alfred",
+      "albumTitle": "No More",
+      "albumKey": "no-more",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://samalfred1.bandcamp.com/album/no-more-2",
+      "bandcampEmbedTrackId": "3548554612",
+      "sourcePage": "https://samalfred1.bandcamp.com/album/no-more-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "no-more-1609678189",
+      "title": "Precious Love",
+      "artist": "Sam Alfred",
+      "albumTitle": "No More",
+      "albumKey": "no-more",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://samalfred1.bandcamp.com/album/no-more-2",
+      "bandcampEmbedTrackId": "1609678189",
+      "sourcePage": "https://samalfred1.bandcamp.com/album/no-more-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "no-more-1294137068",
+      "title": "No More",
+      "artist": "Sam Alfred",
+      "albumTitle": "No More",
+      "albumKey": "no-more",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:53",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://samalfred1.bandcamp.com/track/no-more-2",
+      "bandcampEmbedTrackId": "1294137068",
+      "sourcePage": "https://samalfred1.bandcamp.com/album/no-more-2",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "no-more-1207661328",
+      "title": "Ascension",
+      "artist": "Sam Alfred",
+      "albumTitle": "No More",
+      "albumKey": "no-more",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "3:49",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://samalfred1.bandcamp.com/track/ascension",
+      "bandcampEmbedTrackId": "1207661328",
+      "sourcePage": "https://samalfred1.bandcamp.com/album/no-more-2",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://samalfred1.bandcamp.com/album/no-more-2",
+    "discoveredAt": "2026-09-05T23:57:21.398460+00:00",
+    "importedAt": "2026-09-05T23:58:31.380384+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "samalfred1.bandcamp.com",
+    "bandcampBandId": "621540006",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:58:31.380406+00:00"
+  }
+}

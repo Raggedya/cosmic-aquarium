@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "slug": "natalia-beylis-around-here-the-birds-plant-the-trees",
+  "artist": "Natalia Beylis",
+  "bandcampUrl": "https://nataliabeylis.bandcamp.com/album/around-here-the-birds-plant-the-trees",
+  "releaseTitle": "Around Here, The Birds Plant The Trees",
+  "releaseDate": "2026-07-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "musique-concrete",
+    "experimental",
+    "avant-garde",
+    "composition",
+    "ensemble",
+    "longform",
+    "musique concrete",
+    "neoclassical",
+    "noise",
+    "sound art",
+    "Ireland"
+  ],
+  "primaryLocation": "Ireland",
+  "bioShort": "This is a recording of 'Around Here, The Birds Plant The Trees' as it existed on Friday 12 December 2025. I mention a specific date, because the score for this work is…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "dreamy",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nataliabeylis.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:04:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "around-here-the-birds-plant-the-trees",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "around-here-the-birds-plant-the-trees-252250454",
+      "title": "Around Here, The Birds Plant The Trees",
+      "artist": "Natalia Beylis",
+      "albumTitle": "Around Here, The Birds Plant The Trees",
+      "albumKey": "around-here-the-birds-plant-the-trees",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "51:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nataliabeylis.bandcamp.com/track/around-here-the-birds-plant-the-trees",
+      "bandcampEmbedTrackId": "252250454",
+      "sourcePage": "https://nataliabeylis.bandcamp.com/album/around-here-the-birds-plant-the-trees",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nataliabeylis.bandcamp.com/album/around-here-the-birds-plant-the-trees",
+    "discoveredAt": "2026-09-05T23:57:21.410748+00:00",
+    "importedAt": "2026-09-06T00:04:21.398738+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nataliabeylis.bandcamp.com",
+    "bandcampBandId": "772964073",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:04:21.398760+00:00"
+  }
+}

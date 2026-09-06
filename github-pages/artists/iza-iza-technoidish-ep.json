@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "iza-iza-technoidish-ep",
+  "artist": "IZA",
+  "bandcampUrl": "https://izaiza.bandcamp.com/album/iza-techno-dish-ep",
+  "releaseTitle": "IZA - Technoïdish EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "after-hours",
+    "afterhoursounds",
+    "deep",
+    "deep techno",
+    "dub techno",
+    "hypnotic",
+    "minimal techno",
+    "techno",
+    "France"
+  ],
+  "primaryLocation": "France",
+  "bioShort": "wp : iza",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://izaiza.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:03:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "iza-technoidish-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "iza-technoidish-ep-1662110298",
+      "title": "IZA - Storm",
+      "artist": "IZA",
+      "albumTitle": "IZA - Technoïdish EP",
+      "albumKey": "iza-technoidish-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:26",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://izaiza.bandcamp.com/track/iza-storm",
+      "bandcampEmbedTrackId": "1662110298",
+      "sourcePage": "https://izaiza.bandcamp.com/album/iza-techno-dish-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "iza-technoidish-ep-1871042624",
+      "title": "IZA - Naomy",
+      "artist": "IZA",
+      "albumTitle": "IZA - Technoïdish EP",
+      "albumKey": "iza-technoidish-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://izaiza.bandcamp.com/track/iza-naomy",
+      "bandcampEmbedTrackId": "1871042624",
+      "sourcePage": "https://izaiza.bandcamp.com/album/iza-techno-dish-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "iza-technoidish-ep-902246129",
+      "title": "IZA - Traductor",
+      "artist": "IZA",
+      "albumTitle": "IZA - Technoïdish EP",
+      "albumKey": "iza-technoidish-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:18",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://izaiza.bandcamp.com/track/iza-traductor",
+      "bandcampEmbedTrackId": "902246129",
+      "sourcePage": "https://izaiza.bandcamp.com/album/iza-techno-dish-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "iza-technoidish-ep-193647303",
+      "title": "IZA - Machinax",
+      "artist": "IZA",
+      "albumTitle": "IZA - Technoïdish EP",
+      "albumKey": "iza-technoidish-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:11",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://izaiza.bandcamp.com/track/iza-machinax",
+      "bandcampEmbedTrackId": "193647303",
+      "sourcePage": "https://izaiza.bandcamp.com/album/iza-techno-dish-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://izaiza.bandcamp.com/album/iza-techno-dish-ep",
+    "discoveredAt": "2026-09-05T23:57:21.408554+00:00",
+    "importedAt": "2026-09-06T00:03:25.901621+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "izaiza.bandcamp.com",
+    "bandcampBandId": "2393296408",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:03:25.901641+00:00"
+  }
+}

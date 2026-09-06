@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "baase-a-carrion-wont",
+  "artist": "Baase",
+  "bandcampUrl": "https://baase.bandcamp.com/album/a-carrion-wont",
+  "releaseTitle": "A Carrion Wont",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "atmospheric black metal",
+    "metal",
+    "black metal",
+    "raw black metal",
+    "Todmorden"
+  ],
+  "primaryLocation": "Todmorden, UK",
+  "bioShort": "Mors prope et calida venit; nunc oculos claude, nam cadaver videre non vult.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://baase.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:59:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-carrion-wont",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-carrion-wont-1963053169",
+      "title": "A Carrion Wont",
+      "artist": "Baase",
+      "albumTitle": "A Carrion Wont",
+      "albumKey": "a-carrion-wont",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:44",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baase.bandcamp.com/track/a-carrion-wont",
+      "bandcampEmbedTrackId": "1963053169",
+      "sourcePage": "https://baase.bandcamp.com/album/a-carrion-wont",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-carrion-wont-3744168286",
+      "title": "Close Your Eyes",
+      "artist": "Baase",
+      "albumTitle": "A Carrion Wont",
+      "albumKey": "a-carrion-wont",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:57",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baase.bandcamp.com/track/close-your-eyes",
+      "bandcampEmbedTrackId": "3744168286",
+      "sourcePage": "https://baase.bandcamp.com/album/a-carrion-wont",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "a-carrion-wont-2141257345",
+      "title": "Close and Hot",
+      "artist": "Baase",
+      "albumTitle": "A Carrion Wont",
+      "albumKey": "a-carrion-wont",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baase.bandcamp.com/track/close-and-hot",
+      "bandcampEmbedTrackId": "2141257345",
+      "sourcePage": "https://baase.bandcamp.com/album/a-carrion-wont",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://baase.bandcamp.com/album/a-carrion-wont",
+    "discoveredAt": "2026-09-05T23:57:21.400686+00:00",
+    "importedAt": "2026-09-05T23:59:33.032766+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "baase.bandcamp.com",
+    "bandcampBandId": "3737637262",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:59:33.032787+00:00"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "green-teeth-the-break-up-i-never-went-through",
+  "artist": "Green Teeth",
+  "bandcampUrl": "https://greenteeth1.bandcamp.com/album/the-break-up-i-never-went-through",
+  "releaseTitle": "The Break-Up I Never Went Through",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "noise",
+    "otis",
+    "ozma",
+    "soul",
+    "Glasgow"
+  ],
+  "primaryLocation": "Glasgow, UK",
+  "bioShort": "Green Teeth — grunge / alternative / noise music from Glasgow, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://greenteeth1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:04:39Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-break-up-i-never-went-through",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-break-up-i-never-went-through-1949427558",
+      "title": "Collapse",
+      "artist": "Green Teeth",
+      "albumTitle": "The Break-Up I Never Went Through",
+      "albumKey": "the-break-up-i-never-went-through",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://greenteeth1.bandcamp.com/track/collapse",
+      "bandcampEmbedTrackId": "1949427558",
+      "sourcePage": "https://greenteeth1.bandcamp.com/album/the-break-up-i-never-went-through",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-break-up-i-never-went-through-3662121968",
+      "title": "The Key to Love",
+      "artist": "Green Teeth",
+      "albumTitle": "The Break-Up I Never Went Through",
+      "albumKey": "the-break-up-i-never-went-through",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://greenteeth1.bandcamp.com/track/the-key-to-love",
+      "bandcampEmbedTrackId": "3662121968",
+      "sourcePage": "https://greenteeth1.bandcamp.com/album/the-break-up-i-never-went-through",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-break-up-i-never-went-through-2412893204",
+      "title": "All the Pain We Could Have Had",
+      "artist": "Green Teeth",
+      "albumTitle": "The Break-Up I Never Went Through",
+      "albumKey": "the-break-up-i-never-went-through",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:03",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://greenteeth1.bandcamp.com/track/all-the-pain-we-could-have-had",
+      "bandcampEmbedTrackId": "2412893204",
+      "sourcePage": "https://greenteeth1.bandcamp.com/album/the-break-up-i-never-went-through",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-break-up-i-never-went-through-3573445630",
+      "title": "Won't Find the Words",
+      "artist": "Green Teeth",
+      "albumTitle": "The Break-Up I Never Went Through",
+      "albumKey": "the-break-up-i-never-went-through",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:34",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://greenteeth1.bandcamp.com/track/wont-find-the-words",
+      "bandcampEmbedTrackId": "3573445630",
+      "sourcePage": "https://greenteeth1.bandcamp.com/album/the-break-up-i-never-went-through",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://greenteeth1.bandcamp.com/album/the-break-up-i-never-went-through",
+    "discoveredAt": "2026-09-05T23:57:21.411413+00:00",
+    "importedAt": "2026-09-06T00:04:39.845822+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "greenteeth1.bandcamp.com",
+    "bandcampBandId": "3591846806",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:04:39.845844+00:00"
+  }
+}

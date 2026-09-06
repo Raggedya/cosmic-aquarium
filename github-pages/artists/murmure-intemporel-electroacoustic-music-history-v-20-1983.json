@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "slug": "murmure-intemporel-electroacoustic-music-history-v-20-1983",
+  "artist": "MURMURE INTEMPOREL",
+  "bandcampUrl": "https://murmureintemporel1.bandcamp.com/album/electroacoustic-music-history-v-20-1983",
+  "releaseTitle": "Electroacoustic Music History v.20 - 1983",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "musique-concrete",
+    "experimental",
+    "avant-garde",
+    "contemporary classical",
+    "electroacoustic",
+    "experimental electronic",
+    "musique concrete",
+    "France"
+  ],
+  "primaryLocation": "France",
+  "bioShort": "More than 70 years of classical avant-garde electroacoustic music. Non-official release. Private collection. 40 Volumes. Only for educational purposes. Archives Murmure…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "electronic",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://murmureintemporel1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:01:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "electroacoustic-music-history-v-20-1983",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "electroacoustic-music-history-v-20-1983-111654725",
+      "title": "Karlheinz Stockhausen - Kathinkas Gesang als Luzifers Requiem (1983)",
+      "artist": "MURMURE INTEMPOREL",
+      "albumTitle": "Electroacoustic Music History v.20 - 1983",
+      "albumKey": "electroacoustic-music-history-v-20-1983",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "31:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://murmureintemporel1.bandcamp.com/track/karlheinz-stockhausen-kathinkas-gesang-als-luzifers-requiem-1983",
+      "bandcampEmbedTrackId": "111654725",
+      "sourcePage": "https://murmureintemporel1.bandcamp.com/album/electroacoustic-music-history-v-20-1983",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "electroacoustic-music-history-v-20-1983-1767423965",
+      "title": "Tristan Murail - Désintégrations - for Ensemble and Tape (1983)",
+      "artist": "MURMURE INTEMPOREL",
+      "albumTitle": "Electroacoustic Music History v.20 - 1983",
+      "albumKey": "electroacoustic-music-history-v-20-1983",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "22:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://murmureintemporel1.bandcamp.com/track/tristan-murail-de-sinte-grations-for-ensemble-and-tape-1983",
+      "bandcampEmbedTrackId": "1767423965",
+      "sourcePage": "https://murmureintemporel1.bandcamp.com/album/electroacoustic-music-history-v-20-1983",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "electroacoustic-music-history-v-20-1983-1388279178",
+      "title": "Annette Van de Gorne - Tao - Métal (1983)",
+      "artist": "MURMURE INTEMPOREL",
+      "albumTitle": "Electroacoustic Music History v.20 - 1983",
+      "albumKey": "electroacoustic-music-history-v-20-1983",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "11:11",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://murmureintemporel1.bandcamp.com/track/annette-van-de-gorne-tao-me-tal-1983",
+      "bandcampEmbedTrackId": "1388279178",
+      "sourcePage": "https://murmureintemporel1.bandcamp.com/album/electroacoustic-music-history-v-20-1983",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://murmureintemporel1.bandcamp.com/album/electroacoustic-music-history-v-20-1983",
+    "discoveredAt": "2026-09-05T23:57:21.405328+00:00",
+    "importedAt": "2026-09-06T00:01:49.725868+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "murmureintemporel1.bandcamp.com",
+    "bandcampBandId": "4129878762",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:01:49.725890+00:00"
+  }
+}

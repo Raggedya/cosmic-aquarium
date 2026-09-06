@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "slug": "lilacs-sunlight",
+  "artist": "Lilacs",
+  "bandcampUrl": "https://soundoflilacs.bandcamp.com/album/sunlight",
+  "releaseTitle": "Sunlight",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-01",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "alternative pop",
+    "alternative rock",
+    "dream pop",
+    "folk rock",
+    "post-rock",
+    "sadcore",
+    "Minneapolis"
+  ],
+  "primaryLocation": "Minneapolis, Minnesota",
+  "bioShort": "Lilacs — slowcore / alternative / alternative pop music from Minneapolis, Minnesota.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://soundoflilacs.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-05T23:57:32Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sunlight",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sunlight-3974995790",
+      "title": "Before Sunlight",
+      "artist": "Lilacs",
+      "albumTitle": "Sunlight",
+      "albumKey": "sunlight",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:33",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundoflilacs.bandcamp.com/track/before-sunlight",
+      "bandcampEmbedTrackId": "3974995790",
+      "sourcePage": "https://soundoflilacs.bandcamp.com/album/sunlight",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sunlight-3545858382",
+      "title": "Sunlight",
+      "artist": "Lilacs",
+      "albumTitle": "Sunlight",
+      "albumKey": "sunlight",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundoflilacs.bandcamp.com/track/sunlight",
+      "bandcampEmbedTrackId": "3545858382",
+      "sourcePage": "https://soundoflilacs.bandcamp.com/album/sunlight",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://soundoflilacs.bandcamp.com/album/sunlight",
+    "discoveredAt": "2026-09-05T23:56:41.987269+00:00",
+    "importedAt": "2026-09-05T23:57:32.694245+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-01"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "soundoflilacs.bandcamp.com",
+    "bandcampBandId": "1519410846",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-05T23:57:32.694266+00:00"
+  }
+}
