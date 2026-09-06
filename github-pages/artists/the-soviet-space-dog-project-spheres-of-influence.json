@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-soviet-space-dog-project-spheres-of-influence",
+  "artist": "The Soviet Space Dog Project",
+  "bandcampUrl": "https://sovietspacedogproject.bandcamp.com/album/spheres-of-influence",
+  "releaseTitle": "Spheres of Influence",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ambient",
+    "berlin school",
+    "berlin school. electronic music",
+    "electronic",
+    "modular",
+    "norfolk modular",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Yes, I am still making music (well, my version of it). I’ve been pushing my playing into some of the older tape manipulation and early oscillator works. If I’m honest, it still…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sovietspacedogproject.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:00:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "spheres-of-influence",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "spheres-of-influence-3682470800",
+      "title": "Sphere 001",
+      "artist": "The Soviet Space Dog Project",
+      "albumTitle": "Spheres of Influence",
+      "albumKey": "spheres-of-influence",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "30:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sovietspacedogproject.bandcamp.com/track/sphere-001",
+      "bandcampEmbedTrackId": "3682470800",
+      "sourcePage": "https://sovietspacedogproject.bandcamp.com/album/spheres-of-influence",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sovietspacedogproject.bandcamp.com/album/spheres-of-influence",
+    "discoveredAt": "2026-09-06T02:57:23.011861+00:00",
+    "importedAt": "2026-09-06T03:00:53.438998+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sovietspacedogproject.bandcamp.com",
+    "bandcampBandId": "3287849209",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:00:53.438998+00:00"
+  }
+}

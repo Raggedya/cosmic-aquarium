@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "lovetoparty-lovetoparty-edits-vol-1",
+  "artist": "lovetoparty",
+  "bandcampUrl": "https://lovetoparty.bandcamp.com/album/lovetoparty-edits-vol-1",
+  "releaseTitle": "lovetoparty edits vol 1",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "balearic",
+    "deep",
+    "disco",
+    "psychedelic",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Promotional edits by lovetoparty",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lovetoparty.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:11:30Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lovetoparty-edits-vol-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lovetoparty-edits-vol-1-2077600979",
+      "title": "People Everywhere (extended edit)",
+      "artist": "lovetoparty",
+      "albumTitle": "lovetoparty edits vol 1",
+      "albumKey": "lovetoparty-edits-vol-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovetoparty.bandcamp.com/track/people-everywhere-extended-edit",
+      "bandcampEmbedTrackId": "2077600979",
+      "sourcePage": "https://lovetoparty.bandcamp.com/album/lovetoparty-edits-vol-1",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lovetoparty-edits-vol-1-1861449319",
+      "title": "Sangue Di Beirona (extended edit)",
+      "artist": "lovetoparty",
+      "albumTitle": "lovetoparty edits vol 1",
+      "albumKey": "lovetoparty-edits-vol-1",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovetoparty.bandcamp.com/track/sangue-di-beirona-extended-edit",
+      "bandcampEmbedTrackId": "1861449319",
+      "sourcePage": "https://lovetoparty.bandcamp.com/album/lovetoparty-edits-vol-1",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "lovetoparty-edits-vol-1-3043804343",
+      "title": "Oh Yeah (extended edit)",
+      "artist": "lovetoparty",
+      "albumTitle": "lovetoparty edits vol 1",
+      "albumKey": "lovetoparty-edits-vol-1",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:04",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovetoparty.bandcamp.com/track/oh-yeah-extended-edit",
+      "bandcampEmbedTrackId": "3043804343",
+      "sourcePage": "https://lovetoparty.bandcamp.com/album/lovetoparty-edits-vol-1",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "lovetoparty-edits-vol-1-1299811549",
+      "title": "Rinoceros (extended edit)",
+      "artist": "lovetoparty",
+      "albumTitle": "lovetoparty edits vol 1",
+      "albumKey": "lovetoparty-edits-vol-1",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:46",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovetoparty.bandcamp.com/track/rinoceros-extended-edit",
+      "bandcampEmbedTrackId": "1299811549",
+      "sourcePage": "https://lovetoparty.bandcamp.com/album/lovetoparty-edits-vol-1",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lovetoparty.bandcamp.com/album/lovetoparty-edits-vol-1",
+    "discoveredAt": "2026-09-06T02:57:23.022566+00:00",
+    "importedAt": "2026-09-06T03:11:30.532189+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lovetoparty.bandcamp.com",
+    "bandcampBandId": "2178751419",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:11:30.532189+00:00"
+  }
+}

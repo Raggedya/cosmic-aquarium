@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "deceits-the-first-day-of-fall",
+  "artist": "DECEITS",
+  "bandcampUrl": "https://deceitsband.bandcamp.com/album/the-first-day-of-fall",
+  "releaseTitle": "The First Day Of Fall",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "punk",
+    "coldwave",
+    "dark-punk",
+    "gothic rock",
+    "post-punk",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "DECEITS — darkwave / punk / coldwave music from Los Angeles, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://deceitsband.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:09:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-first-day-of-fall",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-first-day-of-fall-1603895448",
+      "title": "The First Day Of Fall",
+      "artist": "DECEITS",
+      "albumTitle": "The First Day Of Fall",
+      "albumKey": "the-first-day-of-fall",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deceitsband.bandcamp.com/track/the-first-day-of-fall",
+      "bandcampEmbedTrackId": "1603895448",
+      "sourcePage": "https://deceitsband.bandcamp.com/album/the-first-day-of-fall",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-first-day-of-fall-638267174",
+      "title": "The First Day Of Fall (Demo)",
+      "artist": "DECEITS",
+      "albumTitle": "The First Day Of Fall",
+      "albumKey": "the-first-day-of-fall",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:47",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deceitsband.bandcamp.com/track/the-first-day-of-fall-demo",
+      "bandcampEmbedTrackId": "638267174",
+      "sourcePage": "https://deceitsband.bandcamp.com/album/the-first-day-of-fall",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://deceitsband.bandcamp.com/album/the-first-day-of-fall",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:09:34.278225+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "deceitsband.bandcamp.com",
+    "bandcampBandId": "1380335317",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:34.278225+00:00"
+  }
+}

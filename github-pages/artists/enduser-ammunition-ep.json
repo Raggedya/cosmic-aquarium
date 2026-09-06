@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "enduser-ammunition-ep",
+  "artist": "Enduser",
+  "bandcampUrl": "https://end-user.bandcamp.com/album/ammunition-ep",
+  "releaseTitle": "Ammunition Ep",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "electronic",
+    "ragga jungle",
+    "breakcore",
+    "breakcore album",
+    "downtempo",
+    "drum & bass",
+    "melodic-breakcore",
+    "Stockholm"
+  ],
+  "primaryLocation": "Stockholm, Sweden",
+  "bioShort": "Enduser — idm / ragga jungle / breakcore music from Stockholm, Sweden.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://end-user.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:09:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ammunition-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ammunition-ep-2423719963",
+      "title": "Havoc Dub",
+      "artist": "Enduser",
+      "albumTitle": "Ammunition Ep",
+      "albumKey": "ammunition-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://end-user.bandcamp.com/track/havoc-dub",
+      "bandcampEmbedTrackId": "2423719963",
+      "sourcePage": "https://end-user.bandcamp.com/album/ammunition-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ammunition-ep-120842186",
+      "title": "Broken Dub",
+      "artist": "Enduser",
+      "albumTitle": "Ammunition Ep",
+      "albumKey": "ammunition-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:21",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://end-user.bandcamp.com/track/broken-dub",
+      "bandcampEmbedTrackId": "120842186",
+      "sourcePage": "https://end-user.bandcamp.com/album/ammunition-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ammunition-ep-1833476624",
+      "title": "Broken (Version)",
+      "artist": "Enduser",
+      "albumTitle": "Ammunition Ep",
+      "albumKey": "ammunition-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:51",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://end-user.bandcamp.com/track/broken-version",
+      "bandcampEmbedTrackId": "1833476624",
+      "sourcePage": "https://end-user.bandcamp.com/album/ammunition-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ammunition-ep-127458263",
+      "title": "Havoc (Version)",
+      "artist": "Enduser",
+      "albumTitle": "Ammunition Ep",
+      "albumKey": "ammunition-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:28",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://end-user.bandcamp.com/track/havoc-version",
+      "bandcampEmbedTrackId": "127458263",
+      "sourcePage": "https://end-user.bandcamp.com/album/ammunition-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://end-user.bandcamp.com/album/ammunition-ep",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:09:12.519528+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "end-user.bandcamp.com",
+    "bandcampBandId": "3729428059",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:12.519528+00:00"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "darqhorse-higher-worlds-ep",
+  "artist": "Darqhorse",
+  "bandcampUrl": "https://darqhorse.bandcamp.com/album/higher-worlds-ep-3",
+  "releaseTitle": "Higher Worlds EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "electronic",
+    "electronica",
+    "idm",
+    "Ireland"
+  ],
+  "primaryLocation": "Ireland",
+  "bioShort": "Darqhorse — electro / electronica / idm music from Ireland.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://darqhorse.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:14:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "higher-worlds-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "higher-worlds-ep-2417766304",
+      "title": "Holographic Sun",
+      "artist": "Darqhorse",
+      "albumTitle": "Higher Worlds EP",
+      "albumKey": "higher-worlds-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://darqhorse.bandcamp.com/track/holographic-sun-3",
+      "bandcampEmbedTrackId": "2417766304",
+      "sourcePage": "https://darqhorse.bandcamp.com/album/higher-worlds-ep-3",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "higher-worlds-ep-3100889698",
+      "title": "Projection",
+      "artist": "Darqhorse",
+      "albumTitle": "Higher Worlds EP",
+      "albumKey": "higher-worlds-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://darqhorse.bandcamp.com/track/projection-3",
+      "bandcampEmbedTrackId": "3100889698",
+      "sourcePage": "https://darqhorse.bandcamp.com/album/higher-worlds-ep-3",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "higher-worlds-ep-2283346626",
+      "title": "Cosmic Horizon",
+      "artist": "Darqhorse",
+      "albumTitle": "Higher Worlds EP",
+      "albumKey": "higher-worlds-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:03",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://darqhorse.bandcamp.com/track/cosmic-horizon-3",
+      "bandcampEmbedTrackId": "2283346626",
+      "sourcePage": "https://darqhorse.bandcamp.com/album/higher-worlds-ep-3",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "higher-worlds-ep-2253034170",
+      "title": "Portal",
+      "artist": "Darqhorse",
+      "albumTitle": "Higher Worlds EP",
+      "albumKey": "higher-worlds-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:49",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://darqhorse.bandcamp.com/track/portal-3",
+      "bandcampEmbedTrackId": "2253034170",
+      "sourcePage": "https://darqhorse.bandcamp.com/album/higher-worlds-ep-3",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://darqhorse.bandcamp.com/album/higher-worlds-ep-3",
+    "discoveredAt": "2026-09-06T02:57:23.026157+00:00",
+    "importedAt": "2026-09-06T03:14:33.331710+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "darqhorse.bandcamp.com",
+    "bandcampBandId": "828572523",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:14:33.331710+00:00"
+  }
+}

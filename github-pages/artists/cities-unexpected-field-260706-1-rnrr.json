@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "cities-unexpected-field-260706-1-rnrr",
+  "artist": "Cities Unexpected Field",
+  "bandcampUrl": "https://citiesunexpectedfield.bandcamp.com/album/2607061-rnrr",
+  "releaseTitle": "260706.1 RNRR",
+  "releaseDate": "2026-07-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "electronic",
+    "experimental",
+    "ambient pop",
+    "experimental jazz",
+    "jazz ambient",
+    "maxmsp",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Welcome, Brice",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://citiesunexpectedfield.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:06:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "260706-1-rnrr",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "260706-1-rnrr-2449765503",
+      "title": "1",
+      "artist": "Cities Unexpected Field",
+      "albumTitle": "260706.1 RNRR",
+      "albumKey": "260706-1-rnrr",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:40",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://citiesunexpectedfield.bandcamp.com/track/1",
+      "bandcampEmbedTrackId": "2449765503",
+      "sourcePage": "https://citiesunexpectedfield.bandcamp.com/album/2607061-rnrr",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "260706-1-rnrr-998811061",
+      "title": "2",
+      "artist": "Cities Unexpected Field",
+      "albumTitle": "260706.1 RNRR",
+      "albumKey": "260706-1-rnrr",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://citiesunexpectedfield.bandcamp.com/track/2",
+      "bandcampEmbedTrackId": "998811061",
+      "sourcePage": "https://citiesunexpectedfield.bandcamp.com/album/2607061-rnrr",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "260706-1-rnrr-106051463",
+      "title": "3",
+      "artist": "Cities Unexpected Field",
+      "albumTitle": "260706.1 RNRR",
+      "albumKey": "260706-1-rnrr",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "14:22",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://citiesunexpectedfield.bandcamp.com/track/3",
+      "bandcampEmbedTrackId": "106051463",
+      "sourcePage": "https://citiesunexpectedfield.bandcamp.com/album/2607061-rnrr",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "260706-1-rnrr-15517332",
+      "title": "4",
+      "artist": "Cities Unexpected Field",
+      "albumTitle": "260706.1 RNRR",
+      "albumKey": "260706-1-rnrr",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "15:08",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://citiesunexpectedfield.bandcamp.com/track/4",
+      "bandcampEmbedTrackId": "15517332",
+      "sourcePage": "https://citiesunexpectedfield.bandcamp.com/album/2607061-rnrr",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://citiesunexpectedfield.bandcamp.com/album/2607061-rnrr",
+    "discoveredAt": "2026-09-06T02:57:23.018281+00:00",
+    "importedAt": "2026-09-06T03:06:59.222877+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "citiesunexpectedfield.bandcamp.com",
+    "bandcampBandId": "3745818684",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:06:59.222877+00:00"
+  }
+}

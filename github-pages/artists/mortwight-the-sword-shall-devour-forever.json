@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "mortwight-the-sword-shall-devour-forever",
+  "artist": "Mortwight",
+  "bandcampUrl": "https://mortwight.bandcamp.com/album/the-sword-shall-devour-forever",
+  "releaseTitle": "The Sword Shall Devour Forever",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "electronic",
+    "ambient",
+    "dark ambient",
+    "dungeon synth",
+    "instrumental",
+    "martial ambient",
+    "martial industrial",
+    "synth",
+    "Denton"
+  ],
+  "primaryLocation": "Denton, Texas",
+  "bioShort": "Released in an edition of 100 records on black vinyl, available August 28 from Realm and Ritual Records",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mortwight.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:07:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-sword-shall-devour-forever",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-sword-shall-devour-forever-1650565509",
+      "title": "The Storm out of Paradise",
+      "artist": "Mortwight",
+      "albumTitle": "The Sword Shall Devour Forever",
+      "albumKey": "the-sword-shall-devour-forever",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mortwight.bandcamp.com/track/the-storm-out-of-paradise",
+      "bandcampEmbedTrackId": "1650565509",
+      "sourcePage": "https://mortwight.bandcamp.com/album/the-sword-shall-devour-forever",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-sword-shall-devour-forever-3782330587",
+      "title": "Cult of Sacrifice",
+      "artist": "Mortwight",
+      "albumTitle": "The Sword Shall Devour Forever",
+      "albumKey": "the-sword-shall-devour-forever",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mortwight.bandcamp.com/track/cult-of-sacrifice",
+      "bandcampEmbedTrackId": "3782330587",
+      "sourcePage": "https://mortwight.bandcamp.com/album/the-sword-shall-devour-forever",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-sword-shall-devour-forever-4228434596",
+      "title": "Angelus Novus (Death in Portbou)",
+      "artist": "Mortwight",
+      "albumTitle": "The Sword Shall Devour Forever",
+      "albumKey": "the-sword-shall-devour-forever",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:07",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mortwight.bandcamp.com/track/angelus-novus-death-in-portbou",
+      "bandcampEmbedTrackId": "4228434596",
+      "sourcePage": "https://mortwight.bandcamp.com/album/the-sword-shall-devour-forever",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-sword-shall-devour-forever-576062732",
+      "title": "The Sword Shall Devour Forever",
+      "artist": "Mortwight",
+      "albumTitle": "The Sword Shall Devour Forever",
+      "albumKey": "the-sword-shall-devour-forever",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "20:37",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mortwight.bandcamp.com/track/the-sword-shall-devour-forever-2",
+      "bandcampEmbedTrackId": "576062732",
+      "sourcePage": "https://mortwight.bandcamp.com/album/the-sword-shall-devour-forever",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mortwight.bandcamp.com/album/the-sword-shall-devour-forever",
+    "discoveredAt": "2026-09-06T02:57:23.019280+00:00",
+    "importedAt": "2026-09-06T03:07:58.065762+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mortwight.bandcamp.com",
+    "bandcampBandId": "1046381601",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:07:58.065762+00:00"
+  }
+}

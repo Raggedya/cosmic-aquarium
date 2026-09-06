@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "slug": "warning-watching-from-a-distance",
+  "artist": "Warning",
+  "bandcampUrl": "https://warningdoom.bandcamp.com/album/watching-from-a-distance",
+  "releaseTitle": "Watching from a Distance",
+  "releaseDate": "2017-12-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "doom",
+    "metal",
+    "uk doom",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "WARNING celebrates 20 years of their groundbreaking album Watching from a Distance with a deluxe 4xLP box set, also featuring 2017’s legendary Live at Roadburn set. Led by…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://warningdoom.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:11:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "watching-from-a-distance",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "watching-from-a-distance-2211111028",
+      "title": "Watching from a Distance",
+      "artist": "Warning",
+      "albumTitle": "Watching from a Distance",
+      "albumKey": "watching-from-a-distance",
+      "year": 2017,
+      "trackNumber": 1,
+      "duration": "12:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://warningdoom.bandcamp.com/track/watching-from-a-distance",
+      "bandcampEmbedTrackId": "2211111028",
+      "sourcePage": "https://warningdoom.bandcamp.com/album/watching-from-a-distance",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "watching-from-a-distance-3237952414",
+      "title": "Footprints",
+      "artist": "Warning",
+      "albumTitle": "Watching from a Distance",
+      "albumKey": "watching-from-a-distance",
+      "year": 2017,
+      "trackNumber": 2,
+      "duration": "7:31",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://warningdoom.bandcamp.com/track/footprints",
+      "bandcampEmbedTrackId": "3237952414",
+      "sourcePage": "https://warningdoom.bandcamp.com/album/watching-from-a-distance",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "watching-from-a-distance-3162549685",
+      "title": "Bridges",
+      "artist": "Warning",
+      "albumTitle": "Watching from a Distance",
+      "albumKey": "watching-from-a-distance",
+      "year": 2017,
+      "trackNumber": 3,
+      "duration": "11:30",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://warningdoom.bandcamp.com/track/bridges",
+      "bandcampEmbedTrackId": "3162549685",
+      "sourcePage": "https://warningdoom.bandcamp.com/album/watching-from-a-distance",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "watching-from-a-distance-2605127409",
+      "title": "Faces",
+      "artist": "Warning",
+      "albumTitle": "Watching from a Distance",
+      "albumKey": "watching-from-a-distance",
+      "year": 2017,
+      "trackNumber": 4,
+      "duration": "8:31",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://warningdoom.bandcamp.com/track/faces",
+      "bandcampEmbedTrackId": "2605127409",
+      "sourcePage": "https://warningdoom.bandcamp.com/album/watching-from-a-distance",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "watching-from-a-distance-2004118203",
+      "title": "Echoes",
+      "artist": "Warning",
+      "albumTitle": "Watching from a Distance",
+      "albumKey": "watching-from-a-distance",
+      "year": 2017,
+      "trackNumber": 5,
+      "duration": "10:16",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://warningdoom.bandcamp.com/track/echoes",
+      "bandcampEmbedTrackId": "2004118203",
+      "sourcePage": "https://warningdoom.bandcamp.com/album/watching-from-a-distance",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://warningdoom.bandcamp.com/album/watching-from-a-distance",
+    "discoveredAt": "2026-09-06T02:57:23.022566+00:00",
+    "importedAt": "2026-09-06T03:11:13.100871+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "warningdoom.bandcamp.com",
+    "bandcampBandId": "1815615830",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:11:13.100871+00:00"
+  }
+}

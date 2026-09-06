@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "pterosaur-webs-we-weave",
+  "artist": "Pterosaur",
+  "bandcampUrl": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+  "releaseTitle": "Webs We Weave",
+  "releaseDate": "2026-10-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "blackened thrash",
+    "progressive",
+    "sludge",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Pterosaur — post-metal / metal / blackened thrash music from London, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://pterosauruk.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:05:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "webs-we-weave",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "webs-we-weave-1324630502",
+      "title": "Oh, the Webs We Weave",
+      "artist": "Pterosaur",
+      "albumTitle": "Webs We Weave",
+      "albumKey": "webs-we-weave",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+      "bandcampEmbedTrackId": "1324630502",
+      "sourcePage": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "webs-we-weave-1945897339",
+      "title": "Beware the Cockerel ft. Resinator",
+      "artist": "Pterosaur",
+      "albumTitle": "Webs We Weave",
+      "albumKey": "webs-we-weave",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+      "bandcampEmbedTrackId": "1945897339",
+      "sourcePage": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "webs-we-weave-225630584",
+      "title": "Ember",
+      "artist": "Pterosaur",
+      "albumTitle": "Webs We Weave",
+      "albumKey": "webs-we-weave",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+      "bandcampEmbedTrackId": "225630584",
+      "sourcePage": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "webs-we-weave-141693860",
+      "title": "Tendrils Flail (Had Enough?)",
+      "artist": "Pterosaur",
+      "albumTitle": "Webs We Weave",
+      "albumKey": "webs-we-weave",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+      "bandcampEmbedTrackId": "141693860",
+      "sourcePage": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://pterosauruk.bandcamp.com/album/webs-we-weave",
+    "discoveredAt": "2026-09-06T02:57:23.015868+00:00",
+    "importedAt": "2026-09-06T03:05:12.503537+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "pterosauruk.bandcamp.com",
+    "bandcampBandId": "2116648542",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:05:12.503537+00:00"
+  }
+}

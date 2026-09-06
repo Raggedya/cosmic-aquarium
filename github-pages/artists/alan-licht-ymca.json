@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "alan-licht-ymca",
+  "artist": "Alan Licht",
+  "bandcampUrl": "https://alanlicht.bandcamp.com/album/ymca",
+  "releaseTitle": "YMCA",
+  "releaseDate": "2009-03-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "avant-garde",
+    "alan licht",
+    "experimental",
+    "guitar",
+    "minimalism",
+    "processed",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "YMCA is guitarist Alan Licht's first solo release since 2003's A New York Minute double CD (on XI), and his first solo vinyl outing since 1994's long out-of-print Sink the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://alanlicht.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:58:14Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ymca",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ymca-4081756611",
+      "title": "YMCA, part I",
+      "artist": "Alan Licht",
+      "albumTitle": "YMCA",
+      "albumKey": "ymca",
+      "year": 2009,
+      "trackNumber": 1,
+      "duration": "19:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alanlicht.bandcamp.com/track/ymca-part-i",
+      "bandcampEmbedTrackId": "4081756611",
+      "sourcePage": "https://alanlicht.bandcamp.com/album/ymca",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ymca-1876725398",
+      "title": "YMCA, part II",
+      "artist": "Alan Licht",
+      "albumTitle": "YMCA",
+      "albumKey": "ymca",
+      "year": 2009,
+      "trackNumber": 2,
+      "duration": "24:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alanlicht.bandcamp.com/track/ymca-part-ii",
+      "bandcampEmbedTrackId": "1876725398",
+      "sourcePage": "https://alanlicht.bandcamp.com/album/ymca",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ymca-1970610528",
+      "title": "Macy (digital bonus)",
+      "artist": "Alan Licht",
+      "albumTitle": "YMCA",
+      "albumKey": "ymca",
+      "year": 2009,
+      "trackNumber": 3,
+      "duration": "21:29",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alanlicht.bandcamp.com/track/macy-digital-bonus",
+      "bandcampEmbedTrackId": "1970610528",
+      "sourcePage": "https://alanlicht.bandcamp.com/album/ymca",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://alanlicht.bandcamp.com/album/ymca",
+    "discoveredAt": "2026-09-06T02:57:13.113879+00:00",
+    "importedAt": "2026-09-06T02:58:14.217680+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "alanlicht.bandcamp.com",
+    "bandcampBandId": "179155007",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:58:14.218681+00:00"
+  }
+}

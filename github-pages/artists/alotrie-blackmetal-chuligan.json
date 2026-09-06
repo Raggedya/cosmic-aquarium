@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "alotrie-blackmetal-chuligan",
+  "artist": "Alotrie",
+  "bandcampUrl": "https://alotrie.bandcamp.com/album/blackmetal-chulig-n",
+  "releaseTitle": "Blackmetal chuligán",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "atmospheric black metal",
+    "black metal",
+    "metal",
+    "post-black metal",
+    "one man black metal",
+    "Czechia"
+  ],
+  "primaryLocation": "Czechia",
+  "bioShort": "Czech one-man black metal driven by occult imagery and pitch-black humour. “Blackmetal chuligán” is a tongue-in-cheek anthem about a leaderless mob defending its colours…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://alotrie.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:09:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "blackmetal-chuligan",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "blackmetal-chuligan-2462885254",
+      "title": "Blackmetal chuligán",
+      "artist": "Alotrie",
+      "albumTitle": "Blackmetal chuligán",
+      "albumKey": "blackmetal-chuligan",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alotrie.bandcamp.com/track/blackmetal-chulig-n",
+      "bandcampEmbedTrackId": "2462885254",
+      "sourcePage": "https://alotrie.bandcamp.com/album/blackmetal-chulig-n",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://alotrie.bandcamp.com/album/blackmetal-chulig-n",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:09:38.960120+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "alotrie.bandcamp.com",
+    "bandcampBandId": "672952948",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:38.960120+00:00"
+  }
+}

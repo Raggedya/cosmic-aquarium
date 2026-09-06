@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "softdrink-millionaire-the-good-ep",
+  "artist": "Softdrink Millionaire",
+  "bandcampUrl": "https://softdrinkmillionaire.bandcamp.com/album/the-good-ep",
+  "releaseTitle": "The Good EP",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "alternative rock",
+    "folk",
+    "indie rock",
+    "noise.",
+    "post-punk",
+    "post-rock",
+    "slacker rock"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Softdrink Millionaire — slowcore / alternative / alternative rock music in Cosmic Aquaria.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://softdrinkmillionaire.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:15:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-good-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-good-ep-2056897174",
+      "title": "Buses",
+      "artist": "Softdrink Millionaire",
+      "albumTitle": "The Good EP",
+      "albumKey": "the-good-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://softdrinkmillionaire.bandcamp.com/track/buses",
+      "bandcampEmbedTrackId": "2056897174",
+      "sourcePage": "https://softdrinkmillionaire.bandcamp.com/album/the-good-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-good-ep-1078435755",
+      "title": "Good Skin",
+      "artist": "Softdrink Millionaire",
+      "albumTitle": "The Good EP",
+      "albumKey": "the-good-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://softdrinkmillionaire.bandcamp.com/track/good-skin-2",
+      "bandcampEmbedTrackId": "1078435755",
+      "sourcePage": "https://softdrinkmillionaire.bandcamp.com/album/the-good-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-good-ep-3036449390",
+      "title": "Good Enough",
+      "artist": "Softdrink Millionaire",
+      "albumTitle": "The Good EP",
+      "albumKey": "the-good-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:38",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://softdrinkmillionaire.bandcamp.com/track/good-enough-2",
+      "bandcampEmbedTrackId": "3036449390",
+      "sourcePage": "https://softdrinkmillionaire.bandcamp.com/album/the-good-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-good-ep-1240497002",
+      "title": "Classic Rock Legend",
+      "artist": "Softdrink Millionaire",
+      "albumTitle": "The Good EP",
+      "albumKey": "the-good-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:42",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://softdrinkmillionaire.bandcamp.com/track/classic-rock-legend",
+      "bandcampEmbedTrackId": "1240497002",
+      "sourcePage": "https://softdrinkmillionaire.bandcamp.com/album/the-good-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://softdrinkmillionaire.bandcamp.com/album/the-good-ep",
+    "discoveredAt": "2026-09-06T02:57:23.027161+00:00",
+    "importedAt": "2026-09-06T03:15:45.230889+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "softdrinkmillionaire.bandcamp.com",
+    "bandcampBandId": "1784111470",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:15:45.230889+00:00"
+  }
+}

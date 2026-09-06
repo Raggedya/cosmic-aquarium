@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "censar-warped-heart",
+  "artist": "Censar",
+  "bandcampUrl": "https://censarartist.bandcamp.com/album/warped-heart-2",
+  "releaseTitle": "Warped Heart",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "censar cork",
+    "electronic",
+    "experimental electronic",
+    "techno",
+    "Cork"
+  ],
+  "primaryLocation": "Cork, Ireland",
+  "bioShort": "When your heart is a little warped let it out x Tracks are a few years old and just wanted to share my learning and growing curve with you all xx New tunes and remixes still en…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://censarartist.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:16:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "warped-heart",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "warped-heart-808322787",
+      "title": "Warped Heart",
+      "artist": "Censar",
+      "albumTitle": "Warped Heart",
+      "albumKey": "warped-heart",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://censarartist.bandcamp.com/track/warped-heart",
+      "bandcampEmbedTrackId": "808322787",
+      "sourcePage": "https://censarartist.bandcamp.com/album/warped-heart-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "warped-heart-1409242800",
+      "title": "Mo Chroí",
+      "artist": "Censar",
+      "albumTitle": "Warped Heart",
+      "albumKey": "warped-heart",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://censarartist.bandcamp.com/track/mo-chro",
+      "bandcampEmbedTrackId": "1409242800",
+      "sourcePage": "https://censarartist.bandcamp.com/album/warped-heart-2",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://censarartist.bandcamp.com/album/warped-heart-2",
+    "discoveredAt": "2026-09-06T02:57:23.027780+00:00",
+    "importedAt": "2026-09-06T03:16:33.808330+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "censarartist.bandcamp.com",
+    "bandcampBandId": "973898776",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:16:33.808330+00:00"
+  }
+}

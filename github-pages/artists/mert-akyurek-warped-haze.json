@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "mert-akyurek-warped-haze",
+  "artist": "Mert Akyurek",
+  "bandcampUrl": "https://mertakyurek.bandcamp.com/album/warped-haze",
+  "releaseTitle": "Warped Haze",
+  "releaseDate": "2026-08-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "electronic",
+    "electro",
+    "minimal wave",
+    "Türkiye"
+  ],
+  "primaryLocation": "Türkiye",
+  "bioShort": "Mert Akyurek — coldwave / electronic / electro music from Türkiye.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mertakyurek.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:04:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "warped-haze",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "warped-haze-2840149520",
+      "title": "Warped Haze",
+      "artist": "Mert Akyurek",
+      "albumTitle": "Warped Haze",
+      "albumKey": "warped-haze",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mertakyurek.bandcamp.com/track/warped-haze",
+      "bandcampEmbedTrackId": "2840149520",
+      "sourcePage": "https://mertakyurek.bandcamp.com/album/warped-haze",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "warped-haze-1314988435",
+      "title": "Strange Absence",
+      "artist": "Mert Akyurek",
+      "albumTitle": "Warped Haze",
+      "albumKey": "warped-haze",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:35",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mertakyurek.bandcamp.com/track/strange-absence",
+      "bandcampEmbedTrackId": "1314988435",
+      "sourcePage": "https://mertakyurek.bandcamp.com/album/warped-haze",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mertakyurek.bandcamp.com/album/warped-haze",
+    "discoveredAt": "2026-09-06T02:57:23.015868+00:00",
+    "importedAt": "2026-09-06T03:04:59.245767+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mertakyurek.bandcamp.com",
+    "bandcampBandId": "4151893129",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:04:59.245767+00:00"
+  }
+}

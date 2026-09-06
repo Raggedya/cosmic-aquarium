@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "fuji-ta-iki",
+  "artist": "FUJI｜｜｜｜｜｜｜｜｜｜｜TA",
+  "bandcampUrl": "https://fujita.bandcamp.com/album/iki",
+  "releaseTitle": "iki",
+  "releaseDate": "2020-04-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "sound-art",
+    "experimental",
+    "ambient",
+    "drone",
+    "post-classical",
+    "sound art",
+    "Japan"
+  ],
+  "primaryLocation": "Japan",
+  "bioShort": "\"FUJI|||||||||||TA has created a work that operates as a beautiful nexus between the material and immaterial qualities of music. It is a lived-in dreamscape of deep, rich…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "heavy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://fujita.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:16:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "iki",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "iki-2194981054",
+      "title": "keshiki",
+      "artist": "FUJI｜｜｜｜｜｜｜｜｜｜｜TA",
+      "albumTitle": "iki",
+      "albumKey": "iki",
+      "year": 2020,
+      "trackNumber": 1,
+      "duration": "9:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fujita.bandcamp.com/track/keshiki",
+      "bandcampEmbedTrackId": "2194981054",
+      "sourcePage": "https://fujita.bandcamp.com/album/iki",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "iki-3639312201",
+      "title": "nNami",
+      "artist": "FUJI｜｜｜｜｜｜｜｜｜｜｜TA",
+      "albumTitle": "iki",
+      "albumKey": "iki",
+      "year": 2020,
+      "trackNumber": 2,
+      "duration": "9:20",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fujita.bandcamp.com/track/nnami",
+      "bandcampEmbedTrackId": "3639312201",
+      "sourcePage": "https://fujita.bandcamp.com/album/iki",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "iki-1278966478",
+      "title": "osoi",
+      "artist": "FUJI｜｜｜｜｜｜｜｜｜｜｜TA",
+      "albumTitle": "iki",
+      "albumKey": "iki",
+      "year": 2020,
+      "trackNumber": 3,
+      "duration": "10:12",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fujita.bandcamp.com/track/osoi",
+      "bandcampEmbedTrackId": "1278966478",
+      "sourcePage": "https://fujita.bandcamp.com/album/iki",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "iki-58424867",
+      "title": "sukima",
+      "artist": "FUJI｜｜｜｜｜｜｜｜｜｜｜TA",
+      "albumTitle": "iki",
+      "albumKey": "iki",
+      "year": 2020,
+      "trackNumber": 4,
+      "duration": "7:03",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fujita.bandcamp.com/track/sukima",
+      "bandcampEmbedTrackId": "58424867",
+      "sourcePage": "https://fujita.bandcamp.com/album/iki",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://fujita.bandcamp.com/album/iki",
+    "discoveredAt": "2026-09-06T02:57:23.027780+00:00",
+    "importedAt": "2026-09-06T03:16:16.262820+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "fujita.bandcamp.com",
+    "bandcampBandId": "208438854",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:16:16.262820+00:00"
+  }
+}

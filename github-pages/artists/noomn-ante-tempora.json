@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "noomn-ante-tempora",
+  "artist": "noomn",
+  "bandcampUrl": "https://noomn.bandcamp.com/album/ante-tempora",
+  "releaseTitle": "Ante Tempora",
+  "releaseDate": "2026-08-17 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "progressive rock",
+    "doom metal",
+    "post-rock",
+    "postrock",
+    "progressive metal",
+    "Wrocław"
+  ],
+  "primaryLocation": "Wrocław, Poland",
+  "bioShort": "Ante Tempora is a journey through the world in different times and different perspectives.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://noomn.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:17:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ante-tempora",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ante-tempora-569902401",
+      "title": "First Act 2.0",
+      "artist": "noomn",
+      "albumTitle": "Ante Tempora",
+      "albumKey": "ante-tempora",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://noomn.bandcamp.com/track/first-act-20",
+      "bandcampEmbedTrackId": "569902401",
+      "sourcePage": "https://noomn.bandcamp.com/album/ante-tempora",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ante-tempora-1792440498",
+      "title": "Somniphobia",
+      "artist": "noomn",
+      "albumTitle": "Ante Tempora",
+      "albumKey": "ante-tempora",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://noomn.bandcamp.com/track/somniphobia",
+      "bandcampEmbedTrackId": "1792440498",
+      "sourcePage": "https://noomn.bandcamp.com/album/ante-tempora",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ante-tempora-537905675",
+      "title": "The Wanderer",
+      "artist": "noomn",
+      "albumTitle": "Ante Tempora",
+      "albumKey": "ante-tempora",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:15",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://noomn.bandcamp.com/track/the-wanderer",
+      "bandcampEmbedTrackId": "537905675",
+      "sourcePage": "https://noomn.bandcamp.com/album/ante-tempora",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ante-tempora-3608800348",
+      "title": "Prisoner Of War",
+      "artist": "noomn",
+      "albumTitle": "Ante Tempora",
+      "albumKey": "ante-tempora",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "9:06",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://noomn.bandcamp.com/track/prisoner-of-war",
+      "bandcampEmbedTrackId": "3608800348",
+      "sourcePage": "https://noomn.bandcamp.com/album/ante-tempora",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://noomn.bandcamp.com/album/ante-tempora",
+    "discoveredAt": "2026-09-06T02:57:23.028891+00:00",
+    "importedAt": "2026-09-06T03:17:45.617478+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "noomn.bandcamp.com",
+    "bandcampBandId": "368592591",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:17:45.617478+00:00"
+  }
+}

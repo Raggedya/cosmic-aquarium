@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "chord-four-leaving-the-house",
+  "artist": "Chord Four",
+  "bandcampUrl": "https://chordfour.bandcamp.com/album/leaving-the-house",
+  "releaseTitle": "Leaving the House",
+  "releaseDate": "2025-12-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "avant-garde",
+    "california avant-garde",
+    "chamber",
+    "creative jazz",
+    "improvised music",
+    "jazz",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "Chord Four — avant-garde / california avant-garde / chamber music from Los Angeles, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://chordfour.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:15:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "leaving-the-house",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "leaving-the-house-1684636203",
+      "title": "feels like this",
+      "artist": "Chord Four",
+      "albumTitle": "Leaving the House",
+      "albumKey": "leaving-the-house",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "5:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chordfour.bandcamp.com/track/feels-like-this",
+      "bandcampEmbedTrackId": "1684636203",
+      "sourcePage": "https://chordfour.bandcamp.com/album/leaving-the-house",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "leaving-the-house-163706048",
+      "title": "Joshua Tree",
+      "artist": "Chord Four",
+      "albumTitle": "Leaving the House",
+      "albumKey": "leaving-the-house",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "5:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chordfour.bandcamp.com/track/joshua-tree",
+      "bandcampEmbedTrackId": "163706048",
+      "sourcePage": "https://chordfour.bandcamp.com/album/leaving-the-house",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "leaving-the-house-2237665253",
+      "title": "Maybe I'm Not Sorry",
+      "artist": "Chord Four",
+      "albumTitle": "Leaving the House",
+      "albumKey": "leaving-the-house",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "2:05",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chordfour.bandcamp.com/track/maybe-im-not-sorry",
+      "bandcampEmbedTrackId": "2237665253",
+      "sourcePage": "https://chordfour.bandcamp.com/album/leaving-the-house",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "leaving-the-house-1392466668",
+      "title": "Leaving the House",
+      "artist": "Chord Four",
+      "albumTitle": "Leaving the House",
+      "albumKey": "leaving-the-house",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "5:20",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chordfour.bandcamp.com/track/leaving-the-house",
+      "bandcampEmbedTrackId": "1392466668",
+      "sourcePage": "https://chordfour.bandcamp.com/album/leaving-the-house",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://chordfour.bandcamp.com/album/leaving-the-house",
+    "discoveredAt": "2026-09-06T02:57:23.027161+00:00",
+    "importedAt": "2026-09-06T03:15:31.403201+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "chordfour.bandcamp.com",
+    "bandcampBandId": "2292230949",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:15:31.403201+00:00"
+  }
+}

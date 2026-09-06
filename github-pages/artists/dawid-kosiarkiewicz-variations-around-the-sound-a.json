@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "dawid-kosiarkiewicz-variations-around-the-sound-a",
+  "artist": "Dawid Kosiarkiewicz",
+  "bandcampUrl": "https://dawidkosiarkiewicz.bandcamp.com/album/variations-around-the-sound-a",
+  "releaseTitle": "Variations around the sound A",
+  "releaseDate": "2026-10-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "experimental",
+    "avant-garde",
+    "free jazz",
+    "Poland"
+  ],
+  "primaryLocation": "Poland",
+  "bioShort": "Improvisations around the baritone saxophone's lowest note",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "electronic",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dawidkosiarkiewicz.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:08:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "variations-around-the-sound-a",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "variations-around-the-sound-a-2023358639",
+      "title": "Wariacja pierwsza",
+      "artist": "Dawid Kosiarkiewicz",
+      "albumTitle": "Variations around the sound A",
+      "albumKey": "variations-around-the-sound-a",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dawidkosiarkiewicz.bandcamp.com/album/variations-around-the-sound-a",
+      "bandcampEmbedTrackId": "2023358639",
+      "sourcePage": "https://dawidkosiarkiewicz.bandcamp.com/album/variations-around-the-sound-a",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "variations-around-the-sound-a-3144417870",
+      "title": "Wariacja druga",
+      "artist": "Dawid Kosiarkiewicz",
+      "albumTitle": "Variations around the sound A",
+      "albumKey": "variations-around-the-sound-a",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dawidkosiarkiewicz.bandcamp.com/track/wariacja-druga",
+      "bandcampEmbedTrackId": "3144417870",
+      "sourcePage": "https://dawidkosiarkiewicz.bandcamp.com/album/variations-around-the-sound-a",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "variations-around-the-sound-a-4176410728",
+      "title": "Wariacja trzecia",
+      "artist": "Dawid Kosiarkiewicz",
+      "albumTitle": "Variations around the sound A",
+      "albumKey": "variations-around-the-sound-a",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dawidkosiarkiewicz.bandcamp.com/album/variations-around-the-sound-a",
+      "bandcampEmbedTrackId": "4176410728",
+      "sourcePage": "https://dawidkosiarkiewicz.bandcamp.com/album/variations-around-the-sound-a",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "variations-around-the-sound-a-2585785342",
+      "title": "Wariacja czwarta",
+      "artist": "Dawid Kosiarkiewicz",
+      "albumTitle": "Variations around the sound A",
+      "albumKey": "variations-around-the-sound-a",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dawidkosiarkiewicz.bandcamp.com/album/variations-around-the-sound-a",
+      "bandcampEmbedTrackId": "2585785342",
+      "sourcePage": "https://dawidkosiarkiewicz.bandcamp.com/album/variations-around-the-sound-a",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://dawidkosiarkiewicz.bandcamp.com/album/variations-around-the-sound-a",
+    "discoveredAt": "2026-09-06T02:57:23.019280+00:00",
+    "importedAt": "2026-09-06T03:08:50.606086+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "dawidkosiarkiewicz.bandcamp.com",
+    "bandcampBandId": "1332232242",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:08:50.606086+00:00"
+  }
+}

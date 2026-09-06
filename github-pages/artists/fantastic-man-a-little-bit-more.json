@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "fantastic-man-a-little-bit-more",
+  "artist": "Fantastic Man",
+  "bandcampUrl": "https://fantasticman.bandcamp.com/album/a-little-bit-more",
+  "releaseTitle": "A Little Bit More",
+  "releaseDate": "2026-05-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "deep house",
+    "electronic",
+    "trance",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "First Axis of People release for 2026. Fantastic Man shifts the tone, dialling back recent trance leanings in favour of a more direct, house-driven sound. Deep chords and…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://fantasticman.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:03:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-little-bit-more",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-little-bit-more-2916554196",
+      "title": "A Little Bit More",
+      "artist": "Fantastic Man",
+      "albumTitle": "A Little Bit More",
+      "albumKey": "a-little-bit-more",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fantasticman.bandcamp.com/track/a-little-bit-more",
+      "bandcampEmbedTrackId": "2916554196",
+      "sourcePage": "https://fantasticman.bandcamp.com/album/a-little-bit-more",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-little-bit-more-2588528877",
+      "title": "Be There",
+      "artist": "Fantastic Man",
+      "albumTitle": "A Little Bit More",
+      "albumKey": "a-little-bit-more",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fantasticman.bandcamp.com/track/be-there",
+      "bandcampEmbedTrackId": "2588528877",
+      "sourcePage": "https://fantasticman.bandcamp.com/album/a-little-bit-more",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "a-little-bit-more-323968418",
+      "title": "Inhibition",
+      "artist": "Fantastic Man",
+      "albumTitle": "A Little Bit More",
+      "albumKey": "a-little-bit-more",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:01",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fantasticman.bandcamp.com/track/inhibition",
+      "bandcampEmbedTrackId": "323968418",
+      "sourcePage": "https://fantasticman.bandcamp.com/album/a-little-bit-more",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "a-little-bit-more-4046987417",
+      "title": "Prophecy",
+      "artist": "Fantastic Man",
+      "albumTitle": "A Little Bit More",
+      "albumKey": "a-little-bit-more",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:17",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fantasticman.bandcamp.com/track/prophecy",
+      "bandcampEmbedTrackId": "4046987417",
+      "sourcePage": "https://fantasticman.bandcamp.com/album/a-little-bit-more",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://fantasticman.bandcamp.com/album/a-little-bit-more",
+    "discoveredAt": "2026-09-06T02:57:23.014364+00:00",
+    "importedAt": "2026-09-06T03:03:52.263561+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "fantasticman.bandcamp.com",
+    "bandcampBandId": "2830843947",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:03:52.263561+00:00"
+  }
+}

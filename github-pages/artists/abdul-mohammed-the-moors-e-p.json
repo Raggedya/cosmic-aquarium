@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "slug": "abdul-mohammed-the-moors-e-p",
+  "artist": "Abdul Mohammed",
+  "bandcampUrl": "https://abdulmohammed.bandcamp.com/album/the-moors-e-p",
+  "releaseTitle": "The Moors E.p",
+  "releaseDate": "2026-11-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "cool jazz",
+    "jazz",
+    "avant garde jazz",
+    "ethnojazz",
+    "free improvisation",
+    "free jazz",
+    "modernist",
+    "straight ahead jazz",
+    "Tunis"
+  ],
+  "primaryLocation": "Tunis, Tunisia",
+  "bioShort": "The moors is an album that has avant garde elements combined with straight ahead elements written by William AL Adam Chongo Doran. This is part of this summer series in which…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://abdulmohammed.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:01:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-moors-e-p",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-moors-e-p-3518762815",
+      "title": "Alam lil jahl",
+      "artist": "Abdul Mohammed",
+      "albumTitle": "The Moors E.p",
+      "albumKey": "the-moors-e-p",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://abdulmohammed.bandcamp.com/track/alam-lil-jahl",
+      "bandcampEmbedTrackId": "3518762815",
+      "sourcePage": "https://abdulmohammed.bandcamp.com/album/the-moors-e-p",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-moors-e-p-3999255538",
+      "title": "Manzil Kabir",
+      "artist": "Abdul Mohammed",
+      "albumTitle": "The Moors E.p",
+      "albumKey": "the-moors-e-p",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://abdulmohammed.bandcamp.com/track/manzil-kabir",
+      "bandcampEmbedTrackId": "3999255538",
+      "sourcePage": "https://abdulmohammed.bandcamp.com/album/the-moors-e-p",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-moors-e-p-1963517949",
+      "title": "Walah sahm",
+      "artist": "Abdul Mohammed",
+      "albumTitle": "The Moors E.p",
+      "albumKey": "the-moors-e-p",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://abdulmohammed.bandcamp.com/album/the-moors-e-p",
+      "bandcampEmbedTrackId": "1963517949",
+      "sourcePage": "https://abdulmohammed.bandcamp.com/album/the-moors-e-p",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://abdulmohammed.bandcamp.com/album/the-moors-e-p",
+    "discoveredAt": "2026-09-06T02:57:23.012860+00:00",
+    "importedAt": "2026-09-06T03:01:55.927981+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "abdulmohammed.bandcamp.com",
+    "bandcampBandId": "421312354",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:01:55.927981+00:00"
+  }
+}

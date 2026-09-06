@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "venomwolf-split",
+  "artist": "Venomwolf",
+  "bandcampUrl": "https://venomwolf.bandcamp.com/album/split",
+  "releaseTitle": "Split",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "mpds",
+    "metal",
+    "speed metal",
+    "d-beat",
+    "metalpunk",
+    "Glasgow"
+  ],
+  "primaryLocation": "Glasgow, UK",
+  "bioShort": "Our contribution to the four band split from Vicious Witch Records, alongside Whipstriker, Flageladör, and Grave Altar.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://venomwolf.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:58:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "split",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "split-1181058117",
+      "title": "Deathwalker",
+      "artist": "Venomwolf",
+      "albumTitle": "Split",
+      "albumKey": "split",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:19",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://venomwolf.bandcamp.com/track/deathwalker",
+      "bandcampEmbedTrackId": "1181058117",
+      "sourcePage": "https://venomwolf.bandcamp.com/album/split",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://venomwolf.bandcamp.com/album/split",
+    "discoveredAt": "2026-09-06T02:57:23.009856+00:00",
+    "importedAt": "2026-09-06T02:58:50.829970+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "venomwolf.bandcamp.com",
+    "bandcampBandId": "621395781",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:58:50.829970+00:00"
+  }
+}

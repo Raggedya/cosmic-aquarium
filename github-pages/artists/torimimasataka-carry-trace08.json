@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "torimimasataka-carry-trace08",
+  "artist": "TORIMIMASATAKA",
+  "bandcampUrl": "https://torimimasataka.bandcamp.com/album/carry-trace08",
+  "releaseTitle": "Carry - Trace08",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "experimental",
+    "ambient",
+    "techno",
+    "Osaka"
+  ],
+  "primaryLocation": "Osaka, Japan",
+  "bioShort": "TRACE is a record of traces left each time sound passes through, arranged and continued as numbered releases. Each entry is not a finished work, but a fragment that emerges…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://torimimasataka.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:17:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "carry-trace08",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "carry-trace08-3542343537",
+      "title": "Carry",
+      "artist": "TORIMIMASATAKA",
+      "albumTitle": "Carry - Trace08",
+      "albumKey": "carry-trace08",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:50",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://torimimasataka.bandcamp.com/track/carry",
+      "bandcampEmbedTrackId": "3542343537",
+      "sourcePage": "https://torimimasataka.bandcamp.com/album/carry-trace08",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "carry-trace08-3955215461",
+      "title": "Carry(Trace)",
+      "artist": "TORIMIMASATAKA",
+      "albumTitle": "Carry - Trace08",
+      "albumKey": "carry-trace08",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:15",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://torimimasataka.bandcamp.com/track/carry-trace",
+      "bandcampEmbedTrackId": "3955215461",
+      "sourcePage": "https://torimimasataka.bandcamp.com/album/carry-trace08",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://torimimasataka.bandcamp.com/album/carry-trace08",
+    "discoveredAt": "2026-09-06T02:57:23.028891+00:00",
+    "importedAt": "2026-09-06T03:17:55.763179+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "torimimasataka.bandcamp.com",
+    "bandcampBandId": "125471844",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:17:55.763179+00:00"
+  }
+}

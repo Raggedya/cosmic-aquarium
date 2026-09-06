@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "slowcut-flesh",
+  "artist": "SLOWCUT",
+  "bandcampUrl": "https://slowcutband.bandcamp.com/album/flesh",
+  "releaseTitle": "flesh",
+  "releaseDate": "2025-07-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "metal",
+    "doom",
+    "post-metal",
+    "post-rock",
+    "Brisbane"
+  ],
+  "primaryLocation": "Brisbane, Australia",
+  "bioShort": "From the river to the sea, Palestine will be free.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://slowcutband.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:16:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "flesh",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "flesh-3533887456",
+      "title": "threaded",
+      "artist": "SLOWCUT",
+      "albumTitle": "flesh",
+      "albumKey": "flesh",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "8:40",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://slowcutband.bandcamp.com/track/threaded",
+      "bandcampEmbedTrackId": "3533887456",
+      "sourcePage": "https://slowcutband.bandcamp.com/album/flesh",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "flesh-3690010045",
+      "title": "martyred",
+      "artist": "SLOWCUT",
+      "albumTitle": "flesh",
+      "albumKey": "flesh",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "9:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://slowcutband.bandcamp.com/track/martyred",
+      "bandcampEmbedTrackId": "3690010045",
+      "sourcePage": "https://slowcutband.bandcamp.com/album/flesh",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://slowcutband.bandcamp.com/album/flesh",
+    "discoveredAt": "2026-09-06T02:57:23.027780+00:00",
+    "importedAt": "2026-09-06T03:16:59.495581+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "slowcutband.bandcamp.com",
+    "bandcampBandId": "3168454596",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:16:59.495581+00:00"
+  }
+}

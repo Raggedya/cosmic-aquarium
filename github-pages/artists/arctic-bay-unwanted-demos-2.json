@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "arctic-bay-unwanted-demos-2",
+  "artist": "Arctic Bay",
+  "bandcampUrl": "https://arcticbay.bandcamp.com/album/unwanted-demos-2",
+  "releaseTitle": "Unwanted Demos 2",
+  "releaseDate": "2026-08-19 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "rock",
+    "ambient",
+    "post-rock",
+    "Kyiv"
+  ],
+  "primaryLocation": "Kyiv, Ukraine",
+  "bioShort": "Arctic Bay — post-metal / rock / ambient music from Kyiv, Ukraine.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://arcticbay.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:14:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "unwanted-demos-2",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "unwanted-demos-2-1470917538",
+      "title": "Bloody Hell There's an Intro",
+      "artist": "Arctic Bay",
+      "albumTitle": "Unwanted Demos 2",
+      "albumKey": "unwanted-demos-2",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://arcticbay.bandcamp.com/track/bloody-hell-theres-an-intro",
+      "bandcampEmbedTrackId": "1470917538",
+      "sourcePage": "https://arcticbay.bandcamp.com/album/unwanted-demos-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "unwanted-demos-2-2973639033",
+      "title": "deftool",
+      "artist": "Arctic Bay",
+      "albumTitle": "Unwanted Demos 2",
+      "albumKey": "unwanted-demos-2",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://arcticbay.bandcamp.com/track/deftool",
+      "bandcampEmbedTrackId": "2973639033",
+      "sourcePage": "https://arcticbay.bandcamp.com/album/unwanted-demos-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "unwanted-demos-2-164375168",
+      "title": "stoner but fasta",
+      "artist": "Arctic Bay",
+      "albumTitle": "Unwanted Demos 2",
+      "albumKey": "unwanted-demos-2",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:24",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://arcticbay.bandcamp.com/track/stoner-but-fasta-2",
+      "bandcampEmbedTrackId": "164375168",
+      "sourcePage": "https://arcticbay.bandcamp.com/album/unwanted-demos-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "unwanted-demos-2-250058368",
+      "title": "i like bossk",
+      "artist": "Arctic Bay",
+      "albumTitle": "Unwanted Demos 2",
+      "albumKey": "unwanted-demos-2",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:49",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://arcticbay.bandcamp.com/track/i-like-bossk",
+      "bandcampEmbedTrackId": "250058368",
+      "sourcePage": "https://arcticbay.bandcamp.com/album/unwanted-demos-2",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "unwanted-demos-2-2438916846",
+      "title": "Oh Lord Who Makes Outro Nowadays",
+      "artist": "Arctic Bay",
+      "albumTitle": "Unwanted Demos 2",
+      "albumKey": "unwanted-demos-2",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:46",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://arcticbay.bandcamp.com/track/oh-lord-who-makes-outro-nowadays",
+      "bandcampEmbedTrackId": "2438916846",
+      "sourcePage": "https://arcticbay.bandcamp.com/album/unwanted-demos-2",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://arcticbay.bandcamp.com/album/unwanted-demos-2",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:14:17.966719+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "arcticbay.bandcamp.com",
+    "bandcampBandId": "94199091",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:14:17.966719+00:00"
+  }
+}

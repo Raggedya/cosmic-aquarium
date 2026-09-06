@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "born-bad-dreamer-sinking-feelings",
+  "artist": "Born Bad Dreamer",
+  "bandcampUrl": "https://bornbaddreamer.bandcamp.com/album/sinking-feelings",
+  "releaseTitle": "Sinking Feelings",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "experimental",
+    "dirge",
+    "drone",
+    "field recordings",
+    "free improvisation",
+    "noise",
+    "Schoharie"
+  ],
+  "primaryLocation": "Schoharie, New York",
+  "bioShort": "Born Bad Dreamer — field-recordings / experimental / dirge music from Schoharie, New York.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet",
+    "heavy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bornbaddreamer.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:15:15Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sinking-feelings",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sinking-feelings-564259518",
+      "title": "Withercrept",
+      "artist": "Born Bad Dreamer",
+      "albumTitle": "Sinking Feelings",
+      "albumKey": "sinking-feelings",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "9:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bornbaddreamer.bandcamp.com/track/withercrept",
+      "bandcampEmbedTrackId": "564259518",
+      "sourcePage": "https://bornbaddreamer.bandcamp.com/album/sinking-feelings",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sinking-feelings-1438916552",
+      "title": "Sorrow Loops Sloshing in a Spin Cycle Stomach",
+      "artist": "Born Bad Dreamer",
+      "albumTitle": "Sinking Feelings",
+      "albumKey": "sinking-feelings",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:18",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bornbaddreamer.bandcamp.com/track/sorrow-loops-sloshing-in-a-spin-cycle-stomach",
+      "bandcampEmbedTrackId": "1438916552",
+      "sourcePage": "https://bornbaddreamer.bandcamp.com/album/sinking-feelings",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bornbaddreamer.bandcamp.com/album/sinking-feelings",
+    "discoveredAt": "2026-09-06T02:57:23.026157+00:00",
+    "importedAt": "2026-09-06T03:15:15.734490+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bornbaddreamer.bandcamp.com",
+    "bandcampBandId": "485772332",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:15:15.734490+00:00"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "slug": "franco-strato-soundbox-zhh003",
+  "artist": "Franco Strato",
+  "bandcampUrl": "https://francostratomusic.bandcamp.com/album/soundbox-zhh003",
+  "releaseTitle": "Soundbox (ZHH003)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "house",
+    "argentina",
+    "berlin",
+    "deep house",
+    "microhouse",
+    "minimal deep tech",
+    "minimal house",
+    "minimal tech",
+    "minimal techno",
+    "Buenos Aires"
+  ],
+  "primaryLocation": "Buenos Aires, Argentina",
+  "bioShort": "The third release of our Heavy Hitters series comes from Argentina's rising house afficionado Franco Strato - as with all the heavy hitters, a dance floor weapon tested all…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://francostratomusic.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:09:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "soundbox-zhh003",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "soundbox-zhh003-2533648797",
+      "title": "Soundbox",
+      "artist": "Franco Strato",
+      "albumTitle": "Soundbox (ZHH003)",
+      "albumKey": "soundbox-zhh003",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://francostratomusic.bandcamp.com/album/soundbox-zhh003",
+      "bandcampEmbedTrackId": "2533648797",
+      "sourcePage": "https://francostratomusic.bandcamp.com/album/soundbox-zhh003",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://francostratomusic.bandcamp.com/album/soundbox-zhh003",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:09:22.433351+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "francostratomusic.bandcamp.com",
+    "bandcampBandId": "1199281164",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:22.433351+00:00"
+  }
+}

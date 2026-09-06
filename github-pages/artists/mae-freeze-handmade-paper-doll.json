@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "mae-freeze-handmade-paper-doll",
+  "artist": "mae freeze",
+  "bandcampUrl": "https://maefreeze.bandcamp.com/album/handmade-paper-doll",
+  "releaseTitle": "handmade paper doll",
+  "releaseDate": "2026-08-13 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "bedroom pop",
+    "alternative",
+    "hyperpop",
+    "alt rock",
+    "alternative rock",
+    "numetal",
+    "stoner metal",
+    "stoner rock",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "single + b-side ep coming this winter hopefully",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://maefreeze.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:04:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "handmade-paper-doll",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "handmade-paper-doll-791647439",
+      "title": "handmade paper doll",
+      "artist": "mae freeze",
+      "albumTitle": "handmade paper doll",
+      "albumKey": "handmade-paper-doll",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://maefreeze.bandcamp.com/track/handmade-paper-doll",
+      "bandcampEmbedTrackId": "791647439",
+      "sourcePage": "https://maefreeze.bandcamp.com/album/handmade-paper-doll",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "handmade-paper-doll-2995085303",
+      "title": "getting up and leaving (weezer cover)",
+      "artist": "mae freeze",
+      "albumTitle": "handmade paper doll",
+      "albumKey": "handmade-paper-doll",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://maefreeze.bandcamp.com/track/getting-up-and-leaving-weezer-cover",
+      "bandcampEmbedTrackId": "2995085303",
+      "sourcePage": "https://maefreeze.bandcamp.com/album/handmade-paper-doll",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://maefreeze.bandcamp.com/album/handmade-paper-doll",
+    "discoveredAt": "2026-09-06T02:57:23.014364+00:00",
+    "importedAt": "2026-09-06T03:04:28.253096+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "maefreeze.bandcamp.com",
+    "bandcampBandId": "1088320713",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:04:28.253096+00:00"
+  }
+}

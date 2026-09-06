@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "l-envers-des-ondes-laurent-paulre-l-envers-des-ondes-laurent-paulre-mix",
+  "artist": "L'Envers des Ondes - Laurent Paulré",
+  "bandcampUrl": "https://lenversdesondes.bandcamp.com/album/lenvers-des-ondes-laurent-paulr-mix-84",
+  "releaseTitle": "L'Envers des Ondes - Laurent Paulré MIX # 84",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "electronic",
+    "abstract",
+    "downtempo",
+    "drone ambient",
+    "field recordings",
+    "leftfield electronic",
+    "Paris"
+  ],
+  "primaryLocation": "Paris, France",
+  "bioShort": "Armando Trovajoli - Masquerade Gak Sato Remix - Easy tempo Cities Aviv - Martine Drift - Black Truffle Alfred Quest - High Ceilings - Old New Records Coil - Cardinal Points -…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "strange",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lenversdesondes.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:58:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "l-envers-des-ondes-laurent-paulre-mix-84",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "l-envers-des-ondes-laurent-paulre-mix-84-2123420170",
+      "title": "L'Envers des Ondes - Laurent Paulré MIX # 84",
+      "artist": "L'Envers des Ondes - Laurent Paulré",
+      "albumTitle": "L'Envers des Ondes - Laurent Paulré MIX # 84",
+      "albumKey": "l-envers-des-ondes-laurent-paulre-mix-84",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "61:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lenversdesondes.bandcamp.com/track/lenvers-des-ondes-laurent-paulr-mix-84",
+      "bandcampEmbedTrackId": "2123420170",
+      "sourcePage": "https://lenversdesondes.bandcamp.com/album/lenvers-des-ondes-laurent-paulr-mix-84",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lenversdesondes.bandcamp.com/album/lenvers-des-ondes-laurent-paulr-mix-84",
+    "discoveredAt": "2026-09-06T02:57:23.009856+00:00",
+    "importedAt": "2026-09-06T02:58:38.263449+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lenversdesondes.bandcamp.com",
+    "bandcampBandId": "4144182618",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:58:38.263449+00:00"
+  }
+}

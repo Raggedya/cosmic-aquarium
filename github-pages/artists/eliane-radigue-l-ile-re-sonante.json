@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "eliane-radigue-l-ile-re-sonante",
+  "artist": "Éliane Radigue",
+  "bandcampUrl": "https://elianeradigue.bandcamp.com/album/l-le-re-sonante",
+  "releaseTitle": "L'Île re-sonante",
+  "releaseDate": "2021-05-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "musique-concrete",
+    "experimental",
+    "acousmatic",
+    "electroacoustic",
+    "electronic",
+    "grm",
+    "ina grm",
+    "musique concrète",
+    "Paris"
+  ],
+  "primaryLocation": "Paris, France",
+  "bioShort": "L’Île re-sonante (2000), 55'04 — In 2006 “L’Île re-sonante” was awarded the Golden Nica at the Ars Electronica Festival, in Linz. ARP 2500 synthesizer and Serge Modular. Final…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "electronic",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://elianeradigue.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:04:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "l-ile-re-sonante",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "l-ile-re-sonante-2137667369",
+      "title": "L'Île re-sonante",
+      "artist": "Éliane Radigue",
+      "albumTitle": "L'Île re-sonante",
+      "albumKey": "l-ile-re-sonante",
+      "year": 2021,
+      "trackNumber": 1,
+      "duration": "55:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://elianeradigue.bandcamp.com/track/l-le-re-sonante",
+      "bandcampEmbedTrackId": "2137667369",
+      "sourcePage": "https://elianeradigue.bandcamp.com/album/l-le-re-sonante",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://elianeradigue.bandcamp.com/album/l-le-re-sonante",
+    "discoveredAt": "2026-09-06T02:57:23.014364+00:00",
+    "importedAt": "2026-09-06T03:04:21.888415+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "elianeradigue.bandcamp.com",
+    "bandcampBandId": "532649011",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:04:21.888415+00:00"
+  }
+}

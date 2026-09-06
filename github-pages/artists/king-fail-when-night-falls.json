@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "king-fail-when-night-falls",
+  "artist": "King Fail",
+  "bandcampUrl": "https://kingfail.bandcamp.com/album/when-night-falls",
+  "releaseTitle": "When Night Falls",
+  "releaseDate": "2026-08-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "alternative",
+    "metal",
+    "rock",
+    "grunge",
+    "indie rock",
+    "Savage"
+  ],
+  "primaryLocation": "Savage, Maryland",
+  "bioShort": "King Fail — outsider / alternative / metal music from Savage, Maryland.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kingfail.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:04:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "when-night-falls",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "when-night-falls-2668692166",
+      "title": "When Night Falls (2025)",
+      "artist": "King Fail",
+      "albumTitle": "When Night Falls",
+      "albumKey": "when-night-falls",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kingfail.bandcamp.com/track/when-night-falls-2025",
+      "bandcampEmbedTrackId": "2668692166",
+      "sourcePage": "https://kingfail.bandcamp.com/album/when-night-falls",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kingfail.bandcamp.com/album/when-night-falls",
+    "discoveredAt": "2026-09-06T02:57:23.014364+00:00",
+    "importedAt": "2026-09-06T03:04:25.909853+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kingfail.bandcamp.com",
+    "bandcampBandId": "2096135612",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:04:25.909853+00:00"
+  }
+}

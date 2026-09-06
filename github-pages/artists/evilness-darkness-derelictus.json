@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "evilness-darkness-derelictus",
+  "artist": "Evilness Darkness",
+  "bandcampUrl": "https://evilnessdarkness.bandcamp.com/album/derelictus",
+  "releaseTitle": "Derelictus",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "experimental",
+    "metal",
+    "dark ambient",
+    "horror",
+    "noise",
+    "France"
+  ],
+  "primaryLocation": "France",
+  "bioShort": "Evilness Darkness — black-metal / black metal / experimental music from France.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://evilnessdarkness.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:14:05Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "derelictus",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "derelictus-3722617960",
+      "title": "Derelictus",
+      "artist": "Evilness Darkness",
+      "albumTitle": "Derelictus",
+      "albumKey": "derelictus",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evilnessdarkness.bandcamp.com/track/derelictus",
+      "bandcampEmbedTrackId": "3722617960",
+      "sourcePage": "https://evilnessdarkness.bandcamp.com/album/derelictus",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "derelictus-973018",
+      "title": "Nostalgiaa (Nocturnal Depression Cover)",
+      "artist": "Evilness Darkness",
+      "albumTitle": "Derelictus",
+      "albumKey": "derelictus",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:22",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evilnessdarkness.bandcamp.com/track/nostalgiaa-nocturnal-depression-cover",
+      "bandcampEmbedTrackId": "973018",
+      "sourcePage": "https://evilnessdarkness.bandcamp.com/album/derelictus",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://evilnessdarkness.bandcamp.com/album/derelictus",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:14:05.281502+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "evilnessdarkness.bandcamp.com",
+    "bandcampBandId": "3455920448",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:14:05.281502+00:00"
+  }
+}

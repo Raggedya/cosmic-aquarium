@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "semuta-thoughtless-dreamless",
+  "artist": "SEMUTA",
+  "bandcampUrl": "https://semutamusic.bandcamp.com/album/thoughtless-dreamless-2",
+  "releaseTitle": "Thoughtless/Dreamless",
+  "releaseDate": "2026-10-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "metal",
+    "math rock",
+    "post-metal",
+    "post-rock",
+    "progressive metal",
+    "Portland"
+  ],
+  "primaryLocation": "Portland, Oregon",
+  "bioShort": "The sophomore album from Portland's SEMUTA. More Prog. More Post. More Metal.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://semutamusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:09:29Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "thoughtless-dreamless",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "thoughtless-dreamless-532773490",
+      "title": "Slow Decay",
+      "artist": "SEMUTA",
+      "albumTitle": "Thoughtless/Dreamless",
+      "albumKey": "thoughtless-dreamless",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "9:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://semutamusic.bandcamp.com/track/slow-decay-2",
+      "bandcampEmbedTrackId": "532773490",
+      "sourcePage": "https://semutamusic.bandcamp.com/album/thoughtless-dreamless-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "thoughtless-dreamless-3253545815",
+      "title": "A Relic",
+      "artist": "SEMUTA",
+      "albumTitle": "Thoughtless/Dreamless",
+      "albumKey": "thoughtless-dreamless",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://semutamusic.bandcamp.com/album/thoughtless-dreamless-2",
+      "bandcampEmbedTrackId": "3253545815",
+      "sourcePage": "https://semutamusic.bandcamp.com/album/thoughtless-dreamless-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "thoughtless-dreamless-1471931724",
+      "title": "The Well",
+      "artist": "SEMUTA",
+      "albumTitle": "Thoughtless/Dreamless",
+      "albumKey": "thoughtless-dreamless",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://semutamusic.bandcamp.com/album/thoughtless-dreamless-2",
+      "bandcampEmbedTrackId": "1471931724",
+      "sourcePage": "https://semutamusic.bandcamp.com/album/thoughtless-dreamless-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "thoughtless-dreamless-4156553153",
+      "title": "Thoughtless/Dreamless",
+      "artist": "SEMUTA",
+      "albumTitle": "Thoughtless/Dreamless",
+      "albumKey": "thoughtless-dreamless",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://semutamusic.bandcamp.com/album/thoughtless-dreamless-2",
+      "bandcampEmbedTrackId": "4156553153",
+      "sourcePage": "https://semutamusic.bandcamp.com/album/thoughtless-dreamless-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://semutamusic.bandcamp.com/album/thoughtless-dreamless-2",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:09:29.585446+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "semutamusic.bandcamp.com",
+    "bandcampBandId": "977023034",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:29.585446+00:00"
+  }
+}

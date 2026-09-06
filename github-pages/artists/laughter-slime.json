@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "laughter-slime",
+  "artist": "Laughter",
+  "bandcampUrl": "https://laughter-band.bandcamp.com/album/slime",
+  "releaseTitle": "Slime",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "alternative",
+    "shoegaze",
+    "art rock",
+    "dreampop",
+    "garage rock",
+    "hardcore",
+    "indie rock",
+    "nu-gaze",
+    "post-punk",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "London's Laughter fuse the intensity of post-hardcore and noise rock with the atmospheric textures of dreampop. Drawing inspiration from the likes of Cro-Mags, Cocteau Twins…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://laughter-band.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:01:06Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "slime",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "slime-3506279037",
+      "title": "Slime",
+      "artist": "Laughter",
+      "albumTitle": "Slime",
+      "albumKey": "slime",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:50",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://laughter-band.bandcamp.com/track/slime",
+      "bandcampEmbedTrackId": "3506279037",
+      "sourcePage": "https://laughter-band.bandcamp.com/album/slime",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "slime-3766200181",
+      "title": "Better",
+      "artist": "Laughter",
+      "albumTitle": "Slime",
+      "albumKey": "slime",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:31",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://laughter-band.bandcamp.com/track/better",
+      "bandcampEmbedTrackId": "3766200181",
+      "sourcePage": "https://laughter-band.bandcamp.com/album/slime",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "slime-1030884071",
+      "title": "Memory",
+      "artist": "Laughter",
+      "albumTitle": "Slime",
+      "albumKey": "slime",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:18",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://laughter-band.bandcamp.com/track/memory",
+      "bandcampEmbedTrackId": "1030884071",
+      "sourcePage": "https://laughter-band.bandcamp.com/album/slime",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "slime-962033325",
+      "title": "Time",
+      "artist": "Laughter",
+      "albumTitle": "Slime",
+      "albumKey": "slime",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:10",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://laughter-band.bandcamp.com/track/time",
+      "bandcampEmbedTrackId": "962033325",
+      "sourcePage": "https://laughter-band.bandcamp.com/album/slime",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://laughter-band.bandcamp.com/album/slime",
+    "discoveredAt": "2026-09-06T02:57:23.011861+00:00",
+    "importedAt": "2026-09-06T03:01:06.060269+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "laughter-band.bandcamp.com",
+    "bandcampBandId": "4180343924",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:01:06.060269+00:00"
+  }
+}

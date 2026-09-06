@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "monotooth-queer-platonic-harem",
+  "artist": "Monotooth",
+  "bandcampUrl": "https://monotooth.bandcamp.com/album/queer-platonic-harem",
+  "releaseTitle": "Queer Platonic Harem",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "doom",
+    "metal",
+    "doom metal",
+    "grindcore",
+    "heavy metal",
+    "nasty riffs",
+    "noise",
+    "progressive",
+    "riffs",
+    "stoner metal",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Follow up to the seminal EP Gong Bath Party Anthems.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://monotooth.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:59:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "queer-platonic-harem",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "queer-platonic-harem-4024368524",
+      "title": "Gimptroduction",
+      "artist": "Monotooth",
+      "albumTitle": "Queer Platonic Harem",
+      "albumKey": "queer-platonic-harem",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://monotooth.bandcamp.com/track/gimptroduction",
+      "bandcampEmbedTrackId": "4024368524",
+      "sourcePage": "https://monotooth.bandcamp.com/album/queer-platonic-harem",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "queer-platonic-harem-4102203303",
+      "title": "Peeling Flesh Played My Cousins Bar Mitzvah",
+      "artist": "Monotooth",
+      "albumTitle": "Queer Platonic Harem",
+      "albumKey": "queer-platonic-harem",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:59",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://monotooth.bandcamp.com/track/peeling-flesh-played-my-cousins-bar-mitzvah",
+      "bandcampEmbedTrackId": "4102203303",
+      "sourcePage": "https://monotooth.bandcamp.com/album/queer-platonic-harem",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "queer-platonic-harem-326005597",
+      "title": "No Matter How Offended You Are By This Track Name, It Does Not Compare To The Suffering In Gaza",
+      "artist": "Monotooth",
+      "albumTitle": "Queer Platonic Harem",
+      "albumKey": "queer-platonic-harem",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:13",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://monotooth.bandcamp.com/track/no-matter-how-offended-you-are-by-this-track-name-it-does-not-compare-to-the-suffering-in-gaza",
+      "bandcampEmbedTrackId": "326005597",
+      "sourcePage": "https://monotooth.bandcamp.com/album/queer-platonic-harem",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "queer-platonic-harem-876535631",
+      "title": "DorsalMeat",
+      "artist": "Monotooth",
+      "albumTitle": "Queer Platonic Harem",
+      "albumKey": "queer-platonic-harem",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:54",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://monotooth.bandcamp.com/track/dorsalmeat",
+      "bandcampEmbedTrackId": "876535631",
+      "sourcePage": "https://monotooth.bandcamp.com/album/queer-platonic-harem",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://monotooth.bandcamp.com/album/queer-platonic-harem",
+    "discoveredAt": "2026-09-06T02:57:23.009856+00:00",
+    "importedAt": "2026-09-06T02:59:02.596580+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "monotooth.bandcamp.com",
+    "bandcampBandId": "1631329788",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:59:02.596580+00:00"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "dj-sharaz-some-remixes-5",
+  "artist": "DJ Sharaz",
+  "bandcampUrl": "https://sharaz.bandcamp.com/album/some-remixes-5",
+  "releaseTitle": "Some Remixes 5",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "house",
+    "alternative dance",
+    "booty bass",
+    "breakbeats",
+    "Florida"
+  ],
+  "primaryLocation": "Florida",
+  "bioShort": "Howdy, folks. Welcome to the newest installment of remixes that probably shouldn’t exist. I really enjoy taking a bare vocal like the ones used here and creating something…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sharaz.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:11:32Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "some-remixes-5",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "some-remixes-5-3728642336",
+      "title": "Crashing (Sharaz Bring Me The Sun Remix Radio Edit)",
+      "artist": "DJ Sharaz",
+      "albumTitle": "Some Remixes 5",
+      "albumKey": "some-remixes-5",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:14",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sharaz.bandcamp.com/track/crashing-sharaz-bring-me-the-sun-remix-radio-edit",
+      "bandcampEmbedTrackId": "3728642336",
+      "sourcePage": "https://sharaz.bandcamp.com/album/some-remixes-5",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "some-remixes-5-2613105543",
+      "title": "Sh@des of Blu3 (Sharaz Drift Away Remix - Radio Edit)",
+      "artist": "DJ Sharaz",
+      "albumTitle": "Some Remixes 5",
+      "albumKey": "some-remixes-5",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sharaz.bandcamp.com/track/sh-des-of-blu3-sharaz-drift-away-remix-radio-edit",
+      "bandcampEmbedTrackId": "2613105543",
+      "sourcePage": "https://sharaz.bandcamp.com/album/some-remixes-5",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "some-remixes-5-3353824478",
+      "title": "Crashing (Sharaz 12\" Bring Me The Sun Remix)",
+      "artist": "DJ Sharaz",
+      "albumTitle": "Some Remixes 5",
+      "albumKey": "some-remixes-5",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:12",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sharaz.bandcamp.com/track/crashing-sharaz-12-bring-me-the-sun-remix",
+      "bandcampEmbedTrackId": "3353824478",
+      "sourcePage": "https://sharaz.bandcamp.com/album/some-remixes-5",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "some-remixes-5-4188310796",
+      "title": "Sh@des of Blu3 (Sharaz 12\" Drift Away Remix)",
+      "artist": "DJ Sharaz",
+      "albumTitle": "Some Remixes 5",
+      "albumKey": "some-remixes-5",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:52",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sharaz.bandcamp.com/track/sh-des-of-blu3-sharaz-12-drift-away-remix",
+      "bandcampEmbedTrackId": "4188310796",
+      "sourcePage": "https://sharaz.bandcamp.com/album/some-remixes-5",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sharaz.bandcamp.com/album/some-remixes-5",
+    "discoveredAt": "2026-09-06T02:57:23.022566+00:00",
+    "importedAt": "2026-09-06T03:11:32.940145+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sharaz.bandcamp.com",
+    "bandcampBandId": "1622510883",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:11:32.940145+00:00"
+  }
+}

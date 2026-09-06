@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "rettenet-sundance",
+  "artist": "rettenet",
+  "bandcampUrl": "https://rettenet.bandcamp.com/album/sundance",
+  "releaseTitle": "Sundance",
+  "releaseDate": "2026-08-20 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "alternative metal",
+    "progressive metal",
+    "Hungary"
+  ],
+  "primaryLocation": "Bács-Kiskun, Hungary",
+  "bioShort": "rettenet — post-metal / metal / alternative metal music from Bács-Kiskun, Hungary.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rettenet.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:09:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sundance",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sundance-1386708572",
+      "title": "Pigs Want To Fly",
+      "artist": "rettenet",
+      "albumTitle": "Sundance",
+      "albumKey": "sundance",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:39",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rettenet.bandcamp.com/track/pigs-want-to-fly",
+      "bandcampEmbedTrackId": "1386708572",
+      "sourcePage": "https://rettenet.bandcamp.com/album/sundance",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sundance-1904632217",
+      "title": "Bullshit Walks",
+      "artist": "rettenet",
+      "albumTitle": "Sundance",
+      "albumKey": "sundance",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:23",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rettenet.bandcamp.com/track/bullshit-walks",
+      "bandcampEmbedTrackId": "1904632217",
+      "sourcePage": "https://rettenet.bandcamp.com/album/sundance",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "sundance-2008020066",
+      "title": "I'm Fine",
+      "artist": "rettenet",
+      "albumTitle": "Sundance",
+      "albumKey": "sundance",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rettenet.bandcamp.com/track/im-fine",
+      "bandcampEmbedTrackId": "2008020066",
+      "sourcePage": "https://rettenet.bandcamp.com/album/sundance",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "sundance-1819745843",
+      "title": "Rat",
+      "artist": "rettenet",
+      "albumTitle": "Sundance",
+      "albumKey": "sundance",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:52",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rettenet.bandcamp.com/track/rat",
+      "bandcampEmbedTrackId": "1819745843",
+      "sourcePage": "https://rettenet.bandcamp.com/album/sundance",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "sundance-1933586281",
+      "title": "Sundance",
+      "artist": "rettenet",
+      "albumTitle": "Sundance",
+      "albumKey": "sundance",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "5:42",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rettenet.bandcamp.com/track/sundance",
+      "bandcampEmbedTrackId": "1933586281",
+      "sourcePage": "https://rettenet.bandcamp.com/album/sundance",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://rettenet.bandcamp.com/album/sundance",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:09:53.834698+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "rettenet.bandcamp.com",
+    "bandcampBandId": "4189160209",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:53.834698+00:00"
+  }
+}

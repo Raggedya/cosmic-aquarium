@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "slug": "funeral-eletrico-inquietude-cegueira",
+  "artist": "Funeral Elétrico",
+  "bandcampUrl": "https://funeraleletrico.bandcamp.com/album/inquietude-cegueira",
+  "releaseTitle": "Inquietude & Cegueira",
+  "releaseDate": "2026-08-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "brasil",
+    "rock",
+    "brasileiro",
+    "doom",
+    "doom metal",
+    "metal chapado",
+    "rock chapado",
+    "rock doido",
+    "stoner",
+    "stoner metal",
+    "stoner rock",
+    "Mogi Guaçu"
+  ],
+  "primaryLocation": "Mogi Guaçu, Brazil",
+  "bioShort": "Funeral Elétrico — stoner-metal / brasil / rock music from Mogi Guaçu, Brazil.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://funeraleletrico.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:16:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "inquietude-cegueira",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "inquietude-cegueira-2661885522",
+      "title": "Vírus",
+      "artist": "Funeral Elétrico",
+      "albumTitle": "Inquietude & Cegueira",
+      "albumKey": "inquietude-cegueira",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://funeraleletrico.bandcamp.com/track/v-rus",
+      "bandcampEmbedTrackId": "2661885522",
+      "sourcePage": "https://funeraleletrico.bandcamp.com/album/inquietude-cegueira",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "inquietude-cegueira-1145634914",
+      "title": "Fantasmas",
+      "artist": "Funeral Elétrico",
+      "albumTitle": "Inquietude & Cegueira",
+      "albumKey": "inquietude-cegueira",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://funeraleletrico.bandcamp.com/track/fantasmas",
+      "bandcampEmbedTrackId": "1145634914",
+      "sourcePage": "https://funeraleletrico.bandcamp.com/album/inquietude-cegueira",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "inquietude-cegueira-3776525257",
+      "title": "Druida",
+      "artist": "Funeral Elétrico",
+      "albumTitle": "Inquietude & Cegueira",
+      "albumKey": "inquietude-cegueira",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:30",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://funeraleletrico.bandcamp.com/track/druida",
+      "bandcampEmbedTrackId": "3776525257",
+      "sourcePage": "https://funeraleletrico.bandcamp.com/album/inquietude-cegueira",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://funeraleletrico.bandcamp.com/album/inquietude-cegueira",
+    "discoveredAt": "2026-09-06T02:57:23.027780+00:00",
+    "importedAt": "2026-09-06T03:16:21.102914+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "funeraleletrico.bandcamp.com",
+    "bandcampBandId": "326793803",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:16:21.102914+00:00"
+  }
+}

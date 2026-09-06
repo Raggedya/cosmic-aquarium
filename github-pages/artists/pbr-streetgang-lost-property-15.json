@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "slug": "pbr-streetgang-lost-property-15",
+  "artist": "PBR STREETGANG",
+  "bandcampUrl": "https://pbrstreetgangmusic.bandcamp.com/album/lost-property-15",
+  "releaseTitle": "LOST PROPERTY 15",
+  "releaseDate": "2026-09-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "80's synth pop",
+    "80s",
+    "deep house",
+    "electronic",
+    "house",
+    "nu disco",
+    "disco",
+    "edits",
+    "italo disco",
+    "Leeds"
+  ],
+  "primaryLocation": "Leeds, UK",
+  "bioShort": "80's Cuts part 1. Bandcamp Friday picks of the best edits from our sets this summer .. 2 undeniably big anthems, file under set starters and closers and one wrong speed sleazy…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://pbrstreetgangmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:12:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lost-property-15",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lost-property-15-2193972875",
+      "title": "Love Resurrection (Magari Tape Dub)",
+      "artist": "PBR STREETGANG",
+      "albumTitle": "LOST PROPERTY 15",
+      "albumKey": "lost-property-15",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pbrstreetgangmusic.bandcamp.com/track/love-resurrection-magari-tape-dub",
+      "bandcampEmbedTrackId": "2193972875",
+      "sourcePage": "https://pbrstreetgangmusic.bandcamp.com/album/lost-property-15",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lost-property-15-3248871210",
+      "title": "Amo Amante ( Magari Wrong Speed Dub)",
+      "artist": "PBR STREETGANG",
+      "albumTitle": "LOST PROPERTY 15",
+      "albumKey": "lost-property-15",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pbrstreetgangmusic.bandcamp.com/track/amo-amante-magari-wrong-speed-dub",
+      "bandcampEmbedTrackId": "3248871210",
+      "sourcePage": "https://pbrstreetgangmusic.bandcamp.com/album/lost-property-15",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "lost-property-15-634685183",
+      "title": "W.T.T.PleasureDome (PBR Streetgang Tape Edit)",
+      "artist": "PBR STREETGANG",
+      "albumTitle": "LOST PROPERTY 15",
+      "albumKey": "lost-property-15",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:04",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pbrstreetgangmusic.bandcamp.com/track/w-t-t-pleasuredome-pbr-streetgang-tape-edit",
+      "bandcampEmbedTrackId": "634685183",
+      "sourcePage": "https://pbrstreetgangmusic.bandcamp.com/album/lost-property-15",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://pbrstreetgangmusic.bandcamp.com/album/lost-property-15",
+    "discoveredAt": "2026-09-06T02:57:23.023576+00:00",
+    "importedAt": "2026-09-06T03:12:22.257351+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "pbrstreetgangmusic.bandcamp.com",
+    "bandcampBandId": "891830664",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:12:22.257351+00:00"
+  }
+}

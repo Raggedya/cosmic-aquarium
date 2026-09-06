@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "x-y-r-saga",
+  "artist": "x.y.r.",
+  "bandcampUrl": "https://xyrmusic.bandcamp.com/album/saga",
+  "releaseTitle": "Saga",
+  "releaseDate": "2026-11-06 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "ambient",
+    "analog synth",
+    "drone",
+    "environment",
+    "fourth world",
+    "glo-fi",
+    "new age",
+    "Russian Federation"
+  ],
+  "primaryLocation": "Russian Federation",
+  "bioShort": "On the eve of the 15th anniversary of Vladimir Karpov’s voyaging, visionary solo synth entity X.Y.R., the project unveils its vastest quest yet: Saga. Recorded and revised…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://xyrmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:05:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "saga",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "saga-2945179348",
+      "title": "Moonlight Raga",
+      "artist": "x.y.r.",
+      "albumTitle": "Saga",
+      "albumKey": "saga",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "19:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xyrmusic.bandcamp.com/track/moonlight-raga",
+      "bandcampEmbedTrackId": "2945179348",
+      "sourcePage": "https://xyrmusic.bandcamp.com/album/saga",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "saga-1662884052",
+      "title": "Etherealm",
+      "artist": "x.y.r.",
+      "albumTitle": "Saga",
+      "albumKey": "saga",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xyrmusic.bandcamp.com/album/saga",
+      "bandcampEmbedTrackId": "1662884052",
+      "sourcePage": "https://xyrmusic.bandcamp.com/album/saga",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "saga-472415201",
+      "title": "Mysterious Cave",
+      "artist": "x.y.r.",
+      "albumTitle": "Saga",
+      "albumKey": "saga",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xyrmusic.bandcamp.com/album/saga",
+      "bandcampEmbedTrackId": "472415201",
+      "sourcePage": "https://xyrmusic.bandcamp.com/album/saga",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "saga-3594380572",
+      "title": "Elysium",
+      "artist": "x.y.r.",
+      "albumTitle": "Saga",
+      "albumKey": "saga",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "20:06",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xyrmusic.bandcamp.com/track/elysium",
+      "bandcampEmbedTrackId": "3594380572",
+      "sourcePage": "https://xyrmusic.bandcamp.com/album/saga",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://xyrmusic.bandcamp.com/album/saga",
+    "discoveredAt": "2026-09-06T02:57:23.015868+00:00",
+    "importedAt": "2026-09-06T03:05:42.525924+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "xyrmusic.bandcamp.com",
+    "bandcampBandId": "3387529020",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:05:42.525924+00:00"
+  }
+}

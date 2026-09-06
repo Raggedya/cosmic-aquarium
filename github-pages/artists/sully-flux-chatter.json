@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "sully-flux-chatter",
+  "artist": "Sully",
+  "bandcampUrl": "https://sullyuk.bandcamp.com/album/flux-chatter",
+  "releaseTitle": "Flux / Chatter",
+  "releaseDate": "2026-09-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "critical music",
+    "drum & bass",
+    "sully",
+    "breaks",
+    "dnb",
+    "garage",
+    "jungle",
+    "other",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Juxtaposing acid-tipped breakbeats with influences of acoustic behaviour in nature, Sully unveils a debut release for Critical Music with two-track 12” ‘Flux’ b/w ‘Chatter’…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sullyuk.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:15:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "flux-chatter",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "flux-chatter-1210838",
+      "title": "Flux",
+      "artist": "Sully",
+      "albumTitle": "Flux / Chatter",
+      "albumKey": "flux-chatter",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sullyuk.bandcamp.com/album/flux-chatter",
+      "bandcampEmbedTrackId": "1210838",
+      "sourcePage": "https://sullyuk.bandcamp.com/album/flux-chatter",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "flux-chatter-765308193",
+      "title": "Chatter",
+      "artist": "Sully",
+      "albumTitle": "Flux / Chatter",
+      "albumKey": "flux-chatter",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sullyuk.bandcamp.com/album/flux-chatter",
+      "bandcampEmbedTrackId": "765308193",
+      "sourcePage": "https://sullyuk.bandcamp.com/album/flux-chatter",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sullyuk.bandcamp.com/album/flux-chatter",
+    "discoveredAt": "2026-09-06T02:57:23.027161+00:00",
+    "importedAt": "2026-09-06T03:15:48.528249+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sullyuk.bandcamp.com",
+    "bandcampBandId": "1575525098",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:15:48.528249+00:00"
+  }
+}

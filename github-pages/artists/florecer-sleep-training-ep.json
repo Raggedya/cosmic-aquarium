@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "florecer-sleep-training-ep",
+  "artist": "Florecer",
+  "bandcampUrl": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+  "releaseTitle": "Sleep Training EP",
+  "releaseDate": "2026-10-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "electronic",
+    "balearic",
+    "electronic music",
+    "meditative mediterranean",
+    "Half Moon Bay"
+  ],
+  "primaryLocation": "Half Moon Bay, California",
+  "bioShort": "California-based couple Allie Schulz and Alex Pasternak are Florecer, a producer and vocalist combo who draw on the energy that having their daughters gave them. 'Babies' and…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://florecermusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:00:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sleep-training-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sleep-training-ep-4000852379",
+      "title": "What I Knew",
+      "artist": "Florecer",
+      "albumTitle": "Sleep Training EP",
+      "albumKey": "sleep-training-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://florecermusic.bandcamp.com/track/what-i-knew",
+      "bandcampEmbedTrackId": "4000852379",
+      "sourcePage": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sleep-training-ep-2458607333",
+      "title": "Sleep Training",
+      "artist": "Florecer",
+      "albumTitle": "Sleep Training EP",
+      "albumKey": "sleep-training-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+      "bandcampEmbedTrackId": "2458607333",
+      "sourcePage": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "sleep-training-ep-2264184700",
+      "title": "Running Behind",
+      "artist": "Florecer",
+      "albumTitle": "Sleep Training EP",
+      "albumKey": "sleep-training-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+      "bandcampEmbedTrackId": "2264184700",
+      "sourcePage": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "sleep-training-ep-2145695271",
+      "title": "Running Behind (Chris Coco Dub)",
+      "artist": "Florecer",
+      "albumTitle": "Sleep Training EP",
+      "albumKey": "sleep-training-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+      "bandcampEmbedTrackId": "2145695271",
+      "sourcePage": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "sleep-training-ep-1082269572",
+      "title": "Sleep Training (Coyote Dub)",
+      "artist": "Florecer",
+      "albumTitle": "Sleep Training EP",
+      "albumKey": "sleep-training-ep",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "0:00",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+      "bandcampEmbedTrackId": "1082269572",
+      "sourcePage": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://florecermusic.bandcamp.com/album/sleep-training-ep",
+    "discoveredAt": "2026-09-06T02:57:23.011861+00:00",
+    "importedAt": "2026-09-06T03:00:48.531300+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "florecermusic.bandcamp.com",
+    "bandcampBandId": "1358624153",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:00:48.531300+00:00"
+  }
+}

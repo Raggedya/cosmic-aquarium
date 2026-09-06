@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "tell-the-tide-visions",
+  "artist": "Tell The Tide",
+  "bandcampUrl": "https://tellthetide.bandcamp.com/album/visions",
+  "releaseTitle": "Visions",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "acoustic",
+    "folk",
+    "filk",
+    "singer-songwriter",
+    "trip hop",
+    "triphop",
+    "Portland"
+  ],
+  "primaryLocation": "Portland, Oregon",
+  "bioShort": "Two trip hop track collaborations crafted by Tell The Tide (aka Summer and Eric) during February Album Writing Month.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tellthetide.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:04:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "visions",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "visions-1857514172",
+      "title": "The Labyrinth",
+      "artist": "Tell The Tide",
+      "albumTitle": "Visions",
+      "albumKey": "visions",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tellthetide.bandcamp.com/track/the-labyrinth",
+      "bandcampEmbedTrackId": "1857514172",
+      "sourcePage": "https://tellthetide.bandcamp.com/album/visions",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "visions-3247833021",
+      "title": "All Eyes",
+      "artist": "Tell The Tide",
+      "albumTitle": "Visions",
+      "albumKey": "visions",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tellthetide.bandcamp.com/track/all-eyes",
+      "bandcampEmbedTrackId": "3247833021",
+      "sourcePage": "https://tellthetide.bandcamp.com/album/visions",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tellthetide.bandcamp.com/album/visions",
+    "discoveredAt": "2026-09-06T02:57:23.015868+00:00",
+    "importedAt": "2026-09-06T03:04:43.060496+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tellthetide.bandcamp.com",
+    "bandcampBandId": "2112337861",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:04:43.060496+00:00"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "slug": "grace-petrie-this-is-no-time-to-panic",
+  "artist": "Grace Petrie",
+  "bandcampUrl": "https://gracepetrie.bandcamp.com/album/this-is-no-time-to-panic",
+  "releaseTitle": "This Is No Time To Panic!",
+  "releaseDate": "2025-12-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "acoustic",
+    "folk",
+    "indie",
+    "political",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Grace Petrie — acoustic / folk / indie music from UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://gracepetrie.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:07:06Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "this-is-no-time-to-panic",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "this-is-no-time-to-panic-1476378558",
+      "title": "Grace Petrie's Gonna Do Well Out of This",
+      "artist": "Grace Petrie",
+      "albumTitle": "This Is No Time To Panic!",
+      "albumKey": "this-is-no-time-to-panic",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "4:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gracepetrie.bandcamp.com/track/grace-petries-gonna-do-well-out-of-this",
+      "bandcampEmbedTrackId": "1476378558",
+      "sourcePage": "https://gracepetrie.bandcamp.com/album/this-is-no-time-to-panic",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "this-is-no-time-to-panic-3305116259",
+      "title": "ADHD",
+      "artist": "Grace Petrie",
+      "albumTitle": "This Is No Time To Panic!",
+      "albumKey": "this-is-no-time-to-panic",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "1:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gracepetrie.bandcamp.com/track/adhd",
+      "bandcampEmbedTrackId": "3305116259",
+      "sourcePage": "https://gracepetrie.bandcamp.com/album/this-is-no-time-to-panic",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "this-is-no-time-to-panic-853477272",
+      "title": "Louise",
+      "artist": "Grace Petrie",
+      "albumTitle": "This Is No Time To Panic!",
+      "albumKey": "this-is-no-time-to-panic",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "4:12",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gracepetrie.bandcamp.com/track/louise",
+      "bandcampEmbedTrackId": "853477272",
+      "sourcePage": "https://gracepetrie.bandcamp.com/album/this-is-no-time-to-panic",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "this-is-no-time-to-panic-3879048599",
+      "title": "I Have Never Liked Everyone Else Less",
+      "artist": "Grace Petrie",
+      "albumTitle": "This Is No Time To Panic!",
+      "albumKey": "this-is-no-time-to-panic",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "4:04",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gracepetrie.bandcamp.com/track/i-have-never-liked-everyone-else-less",
+      "bandcampEmbedTrackId": "3879048599",
+      "sourcePage": "https://gracepetrie.bandcamp.com/album/this-is-no-time-to-panic",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "this-is-no-time-to-panic-2445605486",
+      "title": "Occupy Your Mind",
+      "artist": "Grace Petrie",
+      "albumTitle": "This Is No Time To Panic!",
+      "albumKey": "this-is-no-time-to-panic",
+      "year": 2025,
+      "trackNumber": 5,
+      "duration": "3:00",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gracepetrie.bandcamp.com/track/occupy-your-mind",
+      "bandcampEmbedTrackId": "2445605486",
+      "sourcePage": "https://gracepetrie.bandcamp.com/album/this-is-no-time-to-panic",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://gracepetrie.bandcamp.com/album/this-is-no-time-to-panic",
+    "discoveredAt": "2026-09-06T02:57:23.018281+00:00",
+    "importedAt": "2026-09-06T03:07:06.648740+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "gracepetrie.bandcamp.com",
+    "bandcampBandId": "2154942338",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:07:06.648740+00:00"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "francis-mesrine-visioni-estemporanee",
+  "artist": "Francis Mesrine",
+  "bandcampUrl": "https://francismesrine.bandcamp.com/album/visioni-estemporanee",
+  "releaseTitle": "Visioni Estemporanee",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "ambient",
+    "cinematic",
+    "dark ambient",
+    "drone",
+    "experiemental",
+    "soundscapes",
+    "Naples"
+  ],
+  "primaryLocation": "Naples, Italy",
+  "bioShort": "Visioni Estemporanee was born from the idea of those moments that appear without warning and, for some reason, remain etched in our memory. An image glimpsed for a few seconds…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://francismesrine.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:15:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "visioni-estemporanee",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "visioni-estemporanee-2029929059",
+      "title": "Abrasione",
+      "artist": "Francis Mesrine",
+      "albumTitle": "Visioni Estemporanee",
+      "albumKey": "visioni-estemporanee",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://francismesrine.bandcamp.com/track/abrasione",
+      "bandcampEmbedTrackId": "2029929059",
+      "sourcePage": "https://francismesrine.bandcamp.com/album/visioni-estemporanee",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "visioni-estemporanee-2031308870",
+      "title": "Sedimento",
+      "artist": "Francis Mesrine",
+      "albumTitle": "Visioni Estemporanee",
+      "albumKey": "visioni-estemporanee",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://francismesrine.bandcamp.com/track/sedimento",
+      "bandcampEmbedTrackId": "2031308870",
+      "sourcePage": "https://francismesrine.bandcamp.com/album/visioni-estemporanee",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "visioni-estemporanee-324160228",
+      "title": "Rifrazione",
+      "artist": "Francis Mesrine",
+      "albumTitle": "Visioni Estemporanee",
+      "albumKey": "visioni-estemporanee",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:32",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://francismesrine.bandcamp.com/track/rifrazione",
+      "bandcampEmbedTrackId": "324160228",
+      "sourcePage": "https://francismesrine.bandcamp.com/album/visioni-estemporanee",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "visioni-estemporanee-2771276995",
+      "title": "Persistenza",
+      "artist": "Francis Mesrine",
+      "albumTitle": "Visioni Estemporanee",
+      "albumKey": "visioni-estemporanee",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:46",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://francismesrine.bandcamp.com/track/persistenza",
+      "bandcampEmbedTrackId": "2771276995",
+      "sourcePage": "https://francismesrine.bandcamp.com/album/visioni-estemporanee",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://francismesrine.bandcamp.com/album/visioni-estemporanee",
+    "discoveredAt": "2026-09-06T02:57:23.026157+00:00",
+    "importedAt": "2026-09-06T03:15:28.714623+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "francismesrine.bandcamp.com",
+    "bandcampBandId": "3254597483",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:15:28.714623+00:00"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "slug": "captain-johnny-sausage-she-ate-them-all-now-she-s-the-goddess",
+  "artist": "Captain Johnny Sausage",
+  "bandcampUrl": "https://captainjohnnysausage1.bandcamp.com/album/she-ate-them-all-now-shes-the-goddess",
+  "releaseTitle": "She Ate Them All...Now She's... The Goddess?",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "experimental",
+    "harsh ambient",
+    "acoustic lo-fi",
+    "ambient",
+    "anti-folk",
+    "antifolk",
+    "dark ambient",
+    "dark ambient noise",
+    "dark chill",
+    "dark noise",
+    "dark noise ambient",
+    "noise",
+    "outsider music",
+    "Buffalo"
+  ],
+  "primaryLocation": "Buffalo, New York",
+  "bioShort": "Captain Johnny Sausage — outsider / experimental / harsh ambient music from Buffalo, New York.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://captainjohnnysausage1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:12:44Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "she-ate-them-all-now-she-s-the-goddess",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "she-ate-them-all-now-she-s-the-goddess-989724420",
+      "title": "She Ate Them All..Now She's....the Goddess?",
+      "artist": "Captain Johnny Sausage",
+      "albumTitle": "She Ate Them All...Now She's... The Goddess?",
+      "albumKey": "she-ate-them-all-now-she-s-the-goddess",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "15:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://captainjohnnysausage1.bandcamp.com/track/she-ate-them-all-now-shes-the-goddess",
+      "bandcampEmbedTrackId": "989724420",
+      "sourcePage": "https://captainjohnnysausage1.bandcamp.com/album/she-ate-them-all-now-shes-the-goddess",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://captainjohnnysausage1.bandcamp.com/album/she-ate-them-all-now-shes-the-goddess",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:12:44.508484+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "captainjohnnysausage1.bandcamp.com",
+    "bandcampBandId": "3479892220",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:12:44.508484+00:00"
+  }
+}

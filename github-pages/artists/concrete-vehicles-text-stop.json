@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "concrete-vehicles-text-stop",
+  "artist": "Concrete Vehicles",
+  "bandcampUrl": "https://concretevehicles.bandcamp.com/album/text-stop",
+  "releaseTitle": "Text Stop",
+  "releaseDate": "2026-08-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "experimental",
+    "rock",
+    "art rock",
+    "noise rock",
+    "post-punk",
+    "Vancouver"
+  ],
+  "primaryLocation": "Vancouver, British Columbia",
+  "bioShort": "Concrete Vehicles — noise-rock / experimental / rock music from Vancouver, British Columbia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://concretevehicles.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:09:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "text-stop",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "text-stop-453183648",
+      "title": "Text Stop",
+      "artist": "Concrete Vehicles",
+      "albumTitle": "Text Stop",
+      "albumKey": "text-stop",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://concretevehicles.bandcamp.com/track/text-stop",
+      "bandcampEmbedTrackId": "453183648",
+      "sourcePage": "https://concretevehicles.bandcamp.com/album/text-stop",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://concretevehicles.bandcamp.com/album/text-stop",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:09:24.873680+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "concretevehicles.bandcamp.com",
+    "bandcampBandId": "3255625437",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:24.873680+00:00"
+  }
+}

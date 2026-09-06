@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "filip-gronlund-pray",
+  "artist": "Filip Grönlund",
+  "bandcampUrl": "https://filipgronlund.bandcamp.com/album/pray",
+  "releaseTitle": "Pray",
+  "releaseDate": "2026-09-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "house",
+    "techno",
+    "trance",
+    "Stockholm"
+  ],
+  "primaryLocation": "Stockholm, Sweden",
+  "bioShort": "Filip Grönlund — breakbeat / house / techno music from Stockholm, Sweden.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://filipgronlund.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:10:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pray",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pray-2689237067",
+      "title": "Pray (Radio Edit)",
+      "artist": "Filip Grönlund",
+      "albumTitle": "Pray",
+      "albumKey": "pray",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://filipgronlund.bandcamp.com/track/pray-radio-edit",
+      "bandcampEmbedTrackId": "2689237067",
+      "sourcePage": "https://filipgronlund.bandcamp.com/album/pray",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "pray-1254757927",
+      "title": "Miss U Pt. II (Radio Edit)",
+      "artist": "Filip Grönlund",
+      "albumTitle": "Pray",
+      "albumKey": "pray",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:27",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://filipgronlund.bandcamp.com/track/miss-u-pt-ii-radio-edit",
+      "bandcampEmbedTrackId": "1254757927",
+      "sourcePage": "https://filipgronlund.bandcamp.com/album/pray",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "pray-1987443802",
+      "title": "Absent",
+      "artist": "Filip Grönlund",
+      "albumTitle": "Pray",
+      "albumKey": "pray",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:51",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://filipgronlund.bandcamp.com/track/absent",
+      "bandcampEmbedTrackId": "1987443802",
+      "sourcePage": "https://filipgronlund.bandcamp.com/album/pray",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "pray-1023834254",
+      "title": "Pray",
+      "artist": "Filip Grönlund",
+      "albumTitle": "Pray",
+      "albumKey": "pray",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:32",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://filipgronlund.bandcamp.com/track/pray",
+      "bandcampEmbedTrackId": "1023834254",
+      "sourcePage": "https://filipgronlund.bandcamp.com/album/pray",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "pray-445687196",
+      "title": "Miss U Pt. II",
+      "artist": "Filip Grönlund",
+      "albumTitle": "Pray",
+      "albumKey": "pray",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "5:54",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://filipgronlund.bandcamp.com/track/miss-u-pt-ii-2",
+      "bandcampEmbedTrackId": "445687196",
+      "sourcePage": "https://filipgronlund.bandcamp.com/album/pray",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://filipgronlund.bandcamp.com/album/pray",
+    "discoveredAt": "2026-09-06T02:57:23.021279+00:00",
+    "importedAt": "2026-09-06T03:10:48.285681+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "filipgronlund.bandcamp.com",
+    "bandcampBandId": "2550647956",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:10:48.285681+00:00"
+  }
+}

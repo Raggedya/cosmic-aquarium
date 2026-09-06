@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "slug": "lovespirals-so-high",
+  "artist": "Lovespirals",
+  "bandcampUrl": "https://lovespirals.bandcamp.com/album/so-high",
+  "releaseTitle": "So High",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "electronic",
+    "vocal downtempo",
+    "chillout",
+    "downtempo",
+    "dream pop",
+    "electronica",
+    "female vocals",
+    "indiepop",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "“So High” takes a break from Love Spirals Downwards’ recent narrative-based work, offering a refreshing late-summer dive back into the downtempo chillout style of their…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "heavy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lovespirals.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:01:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "so-high",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "so-high-2885739952",
+      "title": "So High",
+      "artist": "Lovespirals",
+      "albumTitle": "So High",
+      "albumKey": "so-high",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lovespirals.bandcamp.com/track/so-high",
+      "bandcampEmbedTrackId": "2885739952",
+      "sourcePage": "https://lovespirals.bandcamp.com/album/so-high",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lovespirals.bandcamp.com/album/so-high",
+    "discoveredAt": "2026-09-06T02:57:23.012860+00:00",
+    "importedAt": "2026-09-06T03:01:27.765778+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lovespirals.bandcamp.com",
+    "bandcampBandId": "802472436",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:01:27.765778+00:00"
+  }
+}

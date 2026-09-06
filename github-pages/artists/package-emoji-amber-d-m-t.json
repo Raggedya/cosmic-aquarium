@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "package-emoji-amber-d-m-t",
+  "artist": "package_emoji",
+  "bandcampUrl": "https://packageemoji.bandcamp.com/album/amber-d-m-t",
+  "releaseTitle": "Amber / D.M.T",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "136",
+    "140",
+    "electronic",
+    "ukg",
+    "dance",
+    "jungle",
+    "Japan"
+  ],
+  "primaryLocation": "Tokyo, Japan",
+  "bioShort": "package_emoji — house / 136 / 140 music from Tokyo, Japan.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://packageemoji.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:13:41Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "amber-d-m-t",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "amber-d-m-t-44648555",
+      "title": "Amber",
+      "artist": "package_emoji",
+      "albumTitle": "Amber / D.M.T",
+      "albumKey": "amber-d-m-t",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:19",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://packageemoji.bandcamp.com/track/amber",
+      "bandcampEmbedTrackId": "44648555",
+      "sourcePage": "https://packageemoji.bandcamp.com/album/amber-d-m-t",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "amber-d-m-t-798246055",
+      "title": "D.M.T",
+      "artist": "package_emoji",
+      "albumTitle": "Amber / D.M.T",
+      "albumKey": "amber-d-m-t",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:22",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://packageemoji.bandcamp.com/track/d-m-t",
+      "bandcampEmbedTrackId": "798246055",
+      "sourcePage": "https://packageemoji.bandcamp.com/album/amber-d-m-t",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://packageemoji.bandcamp.com/album/amber-d-m-t",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:13:41.807991+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "packageemoji.bandcamp.com",
+    "bandcampBandId": "1852078348",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:13:41.807991+00:00"
+  }
+}

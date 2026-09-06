@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "crannbethadh-triskelion-hwit-wiell",
+  "artist": "CrannBethadh/Triskelion",
+  "bandcampUrl": "https://crannbethadhtriskelion.bandcamp.com/album/hw-t-wiell",
+  "releaseTitle": "Hwīt Wiell",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "ambient",
+    "experimental",
+    "dark ambient",
+    "drone",
+    "field recordings",
+    "Belfast"
+  ],
+  "primaryLocation": "Belfast, UK",
+  "bioShort": "We were two years in the planning, before we were able to private access to Glastonbury's White Spring, ( https://www.whitespring.org.uk ) with the guardians of one of the UK's…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "dreamy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://crannbethadhtriskelion.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:10:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hwit-wiell",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hwit-wiell-1876783052",
+      "title": "Hwit Weill",
+      "artist": "CrannBethadh/Triskelion",
+      "albumTitle": "Hwīt Wiell",
+      "albumKey": "hwit-wiell",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "68:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://crannbethadhtriskelion.bandcamp.com/track/hwit-weill",
+      "bandcampEmbedTrackId": "1876783052",
+      "sourcePage": "https://crannbethadhtriskelion.bandcamp.com/album/hw-t-wiell",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://crannbethadhtriskelion.bandcamp.com/album/hw-t-wiell",
+    "discoveredAt": "2026-09-06T02:57:23.021279+00:00",
+    "importedAt": "2026-09-06T03:10:55.705867+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "crannbethadhtriskelion.bandcamp.com",
+    "bandcampBandId": "1582213717",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:10:55.705867+00:00"
+  }
+}

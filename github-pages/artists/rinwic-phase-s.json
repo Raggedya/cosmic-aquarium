@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "slug": "rinwic-phase-s",
+  "artist": "Rinwic",
+  "bandcampUrl": "https://rinwic.bandcamp.com/album/phase-s",
+  "releaseTitle": "Phase(s)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "deep house",
+    "electronic",
+    "minimal house",
+    "deep",
+    "deephouse",
+    "electronica",
+    "house",
+    "lo-fi house",
+    "lofi",
+    "lofi house",
+    "techno",
+    "underground"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Rinwic — minimal / deep house / electronic music in Cosmic Aquaria.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rinwic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:07:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "phase-s",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "phase-s-1723616632",
+      "title": "Primary Phase",
+      "artist": "Rinwic",
+      "albumTitle": "Phase(s)",
+      "albumKey": "phase-s",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:35",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rinwic.bandcamp.com/track/primary-phase",
+      "bandcampEmbedTrackId": "1723616632",
+      "sourcePage": "https://rinwic.bandcamp.com/album/phase-s",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "phase-s-319715549",
+      "title": "Secondary Phase",
+      "artist": "Rinwic",
+      "albumTitle": "Phase(s)",
+      "albumKey": "phase-s",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:15",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rinwic.bandcamp.com/track/secondary-phase",
+      "bandcampEmbedTrackId": "319715549",
+      "sourcePage": "https://rinwic.bandcamp.com/album/phase-s",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://rinwic.bandcamp.com/album/phase-s",
+    "discoveredAt": "2026-09-06T02:57:23.018281+00:00",
+    "importedAt": "2026-09-06T03:07:49.667642+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "rinwic.bandcamp.com",
+    "bandcampBandId": "1048930203",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:07:49.667642+00:00"
+  }
+}

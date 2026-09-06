@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "slug": "suburban-architecture-visions-ep",
+  "artist": "Suburban Architecture",
+  "bandcampUrl": "https://suburbanarchitecture.bandcamp.com/album/visions-ep",
+  "releaseTitle": "Visions EP",
+  "releaseDate": "2019-09-06 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "drum & bass",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "The Visions EP is the debut release from London based DJ/Producer duo Suburban Architecture. Drawing heavily on influences from one of Drum & Bass’s most innovative and rapidly…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://suburbanarchitecture.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:57:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "visions-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "visions-ep-1857552712",
+      "title": "Visions '96",
+      "artist": "Suburban Architecture",
+      "albumTitle": "Visions EP",
+      "albumKey": "visions-ep",
+      "year": 2019,
+      "trackNumber": 1,
+      "duration": "5:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suburbanarchitecture.bandcamp.com/track/visions-96",
+      "bandcampEmbedTrackId": "1857552712",
+      "sourcePage": "https://suburbanarchitecture.bandcamp.com/album/visions-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "visions-ep-662490902",
+      "title": "Equilibrium",
+      "artist": "Suburban Architecture",
+      "albumTitle": "Visions EP",
+      "albumKey": "visions-ep",
+      "year": 2019,
+      "trackNumber": 2,
+      "duration": "6:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suburbanarchitecture.bandcamp.com/track/equilibrium",
+      "bandcampEmbedTrackId": "662490902",
+      "sourcePage": "https://suburbanarchitecture.bandcamp.com/album/visions-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "visions-ep-742257068",
+      "title": "Cubic Nature",
+      "artist": "Suburban Architecture",
+      "albumTitle": "Visions EP",
+      "albumKey": "visions-ep",
+      "year": 2019,
+      "trackNumber": 3,
+      "duration": "5:53",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suburbanarchitecture.bandcamp.com/track/cubic-nature",
+      "bandcampEmbedTrackId": "742257068",
+      "sourcePage": "https://suburbanarchitecture.bandcamp.com/album/visions-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "visions-ep-3530005624",
+      "title": "Pulses",
+      "artist": "Suburban Architecture",
+      "albumTitle": "Visions EP",
+      "albumKey": "visions-ep",
+      "year": 2019,
+      "trackNumber": 4,
+      "duration": "6:26",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suburbanarchitecture.bandcamp.com/track/pulses",
+      "bandcampEmbedTrackId": "3530005624",
+      "sourcePage": "https://suburbanarchitecture.bandcamp.com/album/visions-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://suburbanarchitecture.bandcamp.com/album/visions-ep",
+    "discoveredAt": "2026-09-06T02:56:11.049230+00:00",
+    "importedAt": "2026-09-06T02:57:45.719322+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "suburbanarchitecture.bandcamp.com",
+    "bandcampBandId": "1685512955",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:57:45.719322+00:00"
+  }
+}

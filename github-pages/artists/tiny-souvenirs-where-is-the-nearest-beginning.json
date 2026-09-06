@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "slug": "tiny-souvenirs-where-is-the-nearest-beginning",
+  "artist": "Tiny Souvenirs",
+  "bandcampUrl": "https://tinysouvenirs.bandcamp.com/album/where-is-the-nearest-beginning",
+  "releaseTitle": "Where Is The Nearest Beginning?",
+  "releaseDate": "2026-07-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "acoustic",
+    "alternative",
+    "indie pop",
+    "alt pop",
+    "ambient pop",
+    "dream pop",
+    "indie",
+    "indie rock",
+    "pop",
+    "rock",
+    "singer-songwriter",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Tiny Souvenirs — ambient-pop / acoustic / alternative music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tinysouvenirs.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:05:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "where-is-the-nearest-beginning",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "where-is-the-nearest-beginning-1158509493",
+      "title": "Where Is The Nearest Beginning?",
+      "artist": "Tiny Souvenirs",
+      "albumTitle": "Where Is The Nearest Beginning?",
+      "albumKey": "where-is-the-nearest-beginning",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tinysouvenirs.bandcamp.com/track/where-is-the-nearest-beginning",
+      "bandcampEmbedTrackId": "1158509493",
+      "sourcePage": "https://tinysouvenirs.bandcamp.com/album/where-is-the-nearest-beginning",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "where-is-the-nearest-beginning-1769948247",
+      "title": "You’ve Said It Now",
+      "artist": "Tiny Souvenirs",
+      "albumTitle": "Where Is The Nearest Beginning?",
+      "albumKey": "where-is-the-nearest-beginning",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tinysouvenirs.bandcamp.com/track/you-ve-said-it-now",
+      "bandcampEmbedTrackId": "1769948247",
+      "sourcePage": "https://tinysouvenirs.bandcamp.com/album/where-is-the-nearest-beginning",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tinysouvenirs.bandcamp.com/album/where-is-the-nearest-beginning",
+    "discoveredAt": "2026-09-06T02:57:23.015868+00:00",
+    "importedAt": "2026-09-06T03:05:21.894444+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tinysouvenirs.bandcamp.com",
+    "bandcampBandId": "3944315795",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:05:21.894444+00:00"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "emma-swift-down-and-out-in-party-city",
+  "artist": "Emma Swift",
+  "bandcampUrl": "https://emmaswift.bandcamp.com/album/down-and-out-in-party-city",
+  "releaseTitle": "Down And Out In Party City",
+  "releaseDate": "2026-09-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "folk",
+    "americana",
+    "indie",
+    "indiefolk",
+    "sadcore",
+    "Nashville"
+  ],
+  "primaryLocation": "Nashville, Tennessee",
+  "bioShort": "Emma Swift — folk / americana / indie music from Nashville, Tennessee.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://emmaswift.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:17:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "down-and-out-in-party-city",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "down-and-out-in-party-city-1744938969",
+      "title": "Down And Out In Party City",
+      "artist": "Emma Swift",
+      "albumTitle": "Down And Out In Party City",
+      "albumKey": "down-and-out-in-party-city",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://emmaswift.bandcamp.com/track/down-and-out-in-party-city-2",
+      "bandcampEmbedTrackId": "1744938969",
+      "sourcePage": "https://emmaswift.bandcamp.com/album/down-and-out-in-party-city",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "down-and-out-in-party-city-1590170245",
+      "title": "You Got Here First",
+      "artist": "Emma Swift",
+      "albumTitle": "Down And Out In Party City",
+      "albumKey": "down-and-out-in-party-city",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:26",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://emmaswift.bandcamp.com/track/you-got-here-first-2",
+      "bandcampEmbedTrackId": "1590170245",
+      "sourcePage": "https://emmaswift.bandcamp.com/album/down-and-out-in-party-city",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "down-and-out-in-party-city-346873592",
+      "title": "The Other Side of the Afternoon",
+      "artist": "Emma Swift",
+      "albumTitle": "Down And Out In Party City",
+      "albumKey": "down-and-out-in-party-city",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://emmaswift.bandcamp.com/album/down-and-out-in-party-city",
+      "bandcampEmbedTrackId": "346873592",
+      "sourcePage": "https://emmaswift.bandcamp.com/album/down-and-out-in-party-city",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "down-and-out-in-party-city-579470444",
+      "title": "I Didn't Mean To Get Weird On You, Baby",
+      "artist": "Emma Swift",
+      "albumTitle": "Down And Out In Party City",
+      "albumKey": "down-and-out-in-party-city",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://emmaswift.bandcamp.com/album/down-and-out-in-party-city",
+      "bandcampEmbedTrackId": "579470444",
+      "sourcePage": "https://emmaswift.bandcamp.com/album/down-and-out-in-party-city",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://emmaswift.bandcamp.com/album/down-and-out-in-party-city",
+    "discoveredAt": "2026-09-06T02:57:23.028891+00:00",
+    "importedAt": "2026-09-06T03:17:58.187544+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "emmaswift.bandcamp.com",
+    "bandcampBandId": "739657947",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:17:58.187544+00:00"
+  }
+}

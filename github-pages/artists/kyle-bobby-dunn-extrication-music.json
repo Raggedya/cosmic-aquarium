@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "kyle-bobby-dunn-extrication-music",
+  "artist": "kyle bobby dunn",
+  "bandcampUrl": "https://kylebobbydunn.bandcamp.com/album/extrication-music",
+  "releaseTitle": "Extrication Music",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "ambient",
+    "cinematic",
+    "classical",
+    "classical-ambient",
+    "drone",
+    "electronic",
+    "horror",
+    "hospital",
+    "Canada"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Composed in 2006 in Greensboro, North Carolina Final processing in 2026 in Montreal, Canada",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kylebobbydunn.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:05:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "extrication-music",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "extrication-music-2767460739",
+      "title": "Extrication Music",
+      "artist": "kyle bobby dunn",
+      "albumTitle": "Extrication Music",
+      "albumKey": "extrication-music",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "25:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kylebobbydunn.bandcamp.com/track/extrication-music-2",
+      "bandcampEmbedTrackId": "2767460739",
+      "sourcePage": "https://kylebobbydunn.bandcamp.com/album/extrication-music",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kylebobbydunn.bandcamp.com/album/extrication-music",
+    "discoveredAt": "2026-09-06T02:57:23.015868+00:00",
+    "importedAt": "2026-09-06T03:05:02.038537+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kylebobbydunn.bandcamp.com",
+    "bandcampBandId": "3632448179",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:05:02.038537+00:00"
+  }
+}

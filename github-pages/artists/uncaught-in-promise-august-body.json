@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "uncaught-in-promise-august-body",
+  "artist": "Uncaught (in Promise)",
+  "bandcampUrl": "https://uncaughtinpromise.bandcamp.com/album/august-body",
+  "releaseTitle": "August Body",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "metal",
+    "alt metal",
+    "doomgaze",
+    "gothic rock",
+    "hypnagogic",
+    "Toronto"
+  ],
+  "primaryLocation": "Toronto, Ontario",
+  "bioShort": "Uncaught (in Promise) — grunge / metal / alt metal music from Toronto, Ontario.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://uncaughtinpromise.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:01:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "august-body",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "august-body-4059549676",
+      "title": "August Body",
+      "artist": "Uncaught (in Promise)",
+      "albumTitle": "August Body",
+      "albumKey": "august-body",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://uncaughtinpromise.bandcamp.com/track/august-body",
+      "bandcampEmbedTrackId": "4059549676",
+      "sourcePage": "https://uncaughtinpromise.bandcamp.com/album/august-body",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://uncaughtinpromise.bandcamp.com/album/august-body",
+    "discoveredAt": "2026-09-06T02:57:23.011861+00:00",
+    "importedAt": "2026-09-06T03:01:08.152184+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "uncaughtinpromise.bandcamp.com",
+    "bandcampBandId": "2186830300",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:01:08.152184+00:00"
+  }
+}

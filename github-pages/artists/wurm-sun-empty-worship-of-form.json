@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "wurm-sun-empty-worship-of-form",
+  "artist": "Wurm Sun",
+  "bandcampUrl": "https://wurmsun.bandcamp.com/album/empty-worship-of-form",
+  "releaseTitle": "Empty Worship Of Form",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "doom metal",
+    "sludge",
+    "sludge metal",
+    "stoner metal",
+    "Columbus"
+  ],
+  "primaryLocation": "Columbus, Ohio",
+  "bioShort": "Wurm Sun — stoner-metal / metal / doom metal music from Columbus, Ohio.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://wurmsun.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:02:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "empty-worship-of-form",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "empty-worship-of-form-2290091301",
+      "title": "Aphorism",
+      "artist": "Wurm Sun",
+      "albumTitle": "Empty Worship Of Form",
+      "albumKey": "empty-worship-of-form",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:33",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wurmsun.bandcamp.com/track/aphorism-2",
+      "bandcampEmbedTrackId": "2290091301",
+      "sourcePage": "https://wurmsun.bandcamp.com/album/empty-worship-of-form",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "empty-worship-of-form-2488741477",
+      "title": "Sepulchral",
+      "artist": "Wurm Sun",
+      "albumTitle": "Empty Worship Of Form",
+      "albumKey": "empty-worship-of-form",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wurmsun.bandcamp.com/track/sepulchral-2",
+      "bandcampEmbedTrackId": "2488741477",
+      "sourcePage": "https://wurmsun.bandcamp.com/album/empty-worship-of-form",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "empty-worship-of-form-2531154161",
+      "title": "Slippage",
+      "artist": "Wurm Sun",
+      "albumTitle": "Empty Worship Of Form",
+      "albumKey": "empty-worship-of-form",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:40",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wurmsun.bandcamp.com/track/slippage-2",
+      "bandcampEmbedTrackId": "2531154161",
+      "sourcePage": "https://wurmsun.bandcamp.com/album/empty-worship-of-form",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://wurmsun.bandcamp.com/album/empty-worship-of-form",
+    "discoveredAt": "2026-09-06T02:57:23.012860+00:00",
+    "importedAt": "2026-09-06T03:02:00.797608+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "wurmsun.bandcamp.com",
+    "bandcampBandId": "2527782979",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:02:00.797608+00:00"
+  }
+}

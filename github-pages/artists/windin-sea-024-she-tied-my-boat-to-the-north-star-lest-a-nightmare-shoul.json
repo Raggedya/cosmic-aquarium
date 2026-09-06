@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "windin-sea-024-she-tied-my-boat-to-the-north-star-lest-a-nightmare-shoul",
+  "artist": "Windin Sea",
+  "bandcampUrl": "https://windinsea.bandcamp.com/album/024-she-tied-my-boat-to-the-north-star-lest-a-nightmare-should-come",
+  "releaseTitle": "024. - She Tied My Boat to the North Star Lest a Nightmare Should Come.",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "experimental",
+    "ambient",
+    "bull of heaven",
+    "drone",
+    "exploratory",
+    "field recordings",
+    "United States"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Windin Sea — field-recordings / experimental / ambient music in Cosmic Aquaria.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://windinsea.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:10:15Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "024-she-tied-my-boat-to-the-north-star-lest-a-nightmare-should-come",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "024-she-tied-my-boat-to-the-north-star-lest-a-nightmare-should-come-1946505544",
+      "title": "She Tied My Boat to the North Star Lest a Nightmare Should Come.",
+      "artist": "Windin Sea",
+      "albumTitle": "024. - She Tied My Boat to the North Star Lest a Nightmare Should Come.",
+      "albumKey": "024-she-tied-my-boat-to-the-north-star-lest-a-nightmare-should-come",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "51:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://windinsea.bandcamp.com/track/she-tied-my-boat-to-the-north-star-lest-a-nightmare-should-come-2",
+      "bandcampEmbedTrackId": "1946505544",
+      "sourcePage": "https://windinsea.bandcamp.com/album/024-she-tied-my-boat-to-the-north-star-lest-a-nightmare-should-come",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://windinsea.bandcamp.com/album/024-she-tied-my-boat-to-the-north-star-lest-a-nightmare-should-come",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:10:15.944579+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "windinsea.bandcamp.com",
+    "bandcampBandId": "1985495148",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:10:15.944579+00:00"
+  }
+}

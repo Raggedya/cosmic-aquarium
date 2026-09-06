@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "nikki-nair-the-sick-dimension",
+  "artist": "Nikki Nair",
+  "bandcampUrl": "https://nikkinair.bandcamp.com/album/the-sick-dimension",
+  "releaseTitle": "The Sick Dimension",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "breaks",
+    "techno",
+    "Atlanta"
+  ],
+  "primaryLocation": "Atlanta, Georgia",
+  "bioShort": "Los Angeles-based producer and DJ Nikki Nair has built a reputation for genre-blurring club sets and deeply considered, diverse productions. The Sick Dimension marks Nikki…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nikkinair.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:00:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-sick-dimension",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-sick-dimension-3257678736",
+      "title": "Default Mode",
+      "artist": "Nikki Nair",
+      "albumTitle": "The Sick Dimension",
+      "albumKey": "the-sick-dimension",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nikkinair.bandcamp.com/track/default-mode",
+      "bandcampEmbedTrackId": "3257678736",
+      "sourcePage": "https://nikkinair.bandcamp.com/album/the-sick-dimension",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-sick-dimension-1177408405",
+      "title": "Odd Sympathy",
+      "artist": "Nikki Nair",
+      "albumTitle": "The Sick Dimension",
+      "albumKey": "the-sick-dimension",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nikkinair.bandcamp.com/track/odd-sympathy",
+      "bandcampEmbedTrackId": "1177408405",
+      "sourcePage": "https://nikkinair.bandcamp.com/album/the-sick-dimension",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-sick-dimension-1814290613",
+      "title": "Please Do Not",
+      "artist": "Nikki Nair",
+      "albumTitle": "The Sick Dimension",
+      "albumKey": "the-sick-dimension",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:01",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nikkinair.bandcamp.com/track/please-do-not",
+      "bandcampEmbedTrackId": "1814290613",
+      "sourcePage": "https://nikkinair.bandcamp.com/album/the-sick-dimension",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-sick-dimension-1646345160",
+      "title": "One Hundred",
+      "artist": "Nikki Nair",
+      "albumTitle": "The Sick Dimension",
+      "albumKey": "the-sick-dimension",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:47",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nikkinair.bandcamp.com/track/one-hundred",
+      "bandcampEmbedTrackId": "1646345160",
+      "sourcePage": "https://nikkinair.bandcamp.com/album/the-sick-dimension",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nikkinair.bandcamp.com/album/the-sick-dimension",
+    "discoveredAt": "2026-09-06T02:57:23.010861+00:00",
+    "importedAt": "2026-09-06T03:00:07.589416+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nikkinair.bandcamp.com",
+    "bandcampBandId": "1618131718",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:00:07.589416+00:00"
+  }
+}

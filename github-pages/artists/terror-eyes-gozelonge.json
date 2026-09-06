@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "terror-eyes-gozelonge",
+  "artist": "Terror Eyes",
+  "bandcampUrl": "https://terroreyes.bandcamp.com/album/g-zelonge",
+  "releaseTitle": "gözelonge",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "experimental",
+    "beats",
+    "drone",
+    "electronic",
+    "guitar",
+    "industrial",
+    "synth",
+    "Baltimore"
+  ],
+  "primaryLocation": "Baltimore, Maryland",
+  "bioShort": "Written, produced, mixed, and mastered by Terror Eyes EP artwork by Terror Eyes and where, and why records",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://terroreyes.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:17:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "gozelonge",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "gozelonge-3759214683",
+      "title": "germania",
+      "artist": "Terror Eyes",
+      "albumTitle": "gözelonge",
+      "albumKey": "gozelonge",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://terroreyes.bandcamp.com/track/germania",
+      "bandcampEmbedTrackId": "3759214683",
+      "sourcePage": "https://terroreyes.bandcamp.com/album/g-zelonge",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "gozelonge-3430924788",
+      "title": "never kisst",
+      "artist": "Terror Eyes",
+      "albumTitle": "gözelonge",
+      "albumKey": "gozelonge",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://terroreyes.bandcamp.com/track/never-kisst",
+      "bandcampEmbedTrackId": "3430924788",
+      "sourcePage": "https://terroreyes.bandcamp.com/album/g-zelonge",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "gozelonge-2085590655",
+      "title": "words can't describe",
+      "artist": "Terror Eyes",
+      "albumTitle": "gözelonge",
+      "albumKey": "gozelonge",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:05",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://terroreyes.bandcamp.com/track/words-cant-describe",
+      "bandcampEmbedTrackId": "2085590655",
+      "sourcePage": "https://terroreyes.bandcamp.com/album/g-zelonge",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "gozelonge-287932235",
+      "title": "leave me to die",
+      "artist": "Terror Eyes",
+      "albumTitle": "gözelonge",
+      "albumKey": "gozelonge",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:08",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://terroreyes.bandcamp.com/track/leave-me-to-die",
+      "bandcampEmbedTrackId": "287932235",
+      "sourcePage": "https://terroreyes.bandcamp.com/album/g-zelonge",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://terroreyes.bandcamp.com/album/g-zelonge",
+    "discoveredAt": "2026-09-06T02:57:23.027780+00:00",
+    "importedAt": "2026-09-06T03:17:09.122442+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "terroreyes.bandcamp.com",
+    "bandcampBandId": "3083726651",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:17:09.122442+00:00"
+  }
+}

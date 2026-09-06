@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "guretti-guretti",
+  "artist": "Guretti",
+  "bandcampUrl": "https://guretti.bandcamp.com/album/guretti",
+  "releaseTitle": "Guretti",
+  "releaseDate": "2017-09-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "ambient",
+    "accordion",
+    "acoustic",
+    "alternative",
+    "bandius companion",
+    "folk",
+    "giant pulse",
+    "guretti",
+    "harp",
+    "Barcelona"
+  ],
+  "primaryLocation": "Barcelona, Spain",
+  "bioShort": "\"Guretti is the homonym first record of the musical collaboration between the accordionist Angelo Cacciolato and the visual artist and musician Tiziano Ciao. Before Angelo…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://guretti.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:07:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "guretti",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "guretti-3499675443",
+      "title": "Aquatica",
+      "artist": "Guretti",
+      "albumTitle": "Guretti",
+      "albumKey": "guretti",
+      "year": 2017,
+      "trackNumber": 1,
+      "duration": "9:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://guretti.bandcamp.com/track/aquatica",
+      "bandcampEmbedTrackId": "3499675443",
+      "sourcePage": "https://guretti.bandcamp.com/album/guretti",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "guretti-4070347156",
+      "title": "Tremorem",
+      "artist": "Guretti",
+      "albumTitle": "Guretti",
+      "albumKey": "guretti",
+      "year": 2017,
+      "trackNumber": 2,
+      "duration": "8:26",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://guretti.bandcamp.com/track/tremorem",
+      "bandcampEmbedTrackId": "4070347156",
+      "sourcePage": "https://guretti.bandcamp.com/album/guretti",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "guretti-1282975901",
+      "title": "Bonum",
+      "artist": "Guretti",
+      "albumTitle": "Guretti",
+      "albumKey": "guretti",
+      "year": 2017,
+      "trackNumber": 3,
+      "duration": "7:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://guretti.bandcamp.com/track/bonum",
+      "bandcampEmbedTrackId": "1282975901",
+      "sourcePage": "https://guretti.bandcamp.com/album/guretti",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "guretti-3005773447",
+      "title": "Exitus",
+      "artist": "Guretti",
+      "albumTitle": "Guretti",
+      "albumKey": "guretti",
+      "year": 2017,
+      "trackNumber": 4,
+      "duration": "4:44",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://guretti.bandcamp.com/track/exitus",
+      "bandcampEmbedTrackId": "3005773447",
+      "sourcePage": "https://guretti.bandcamp.com/album/guretti",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://guretti.bandcamp.com/album/guretti",
+    "discoveredAt": "2026-09-06T02:57:23.018281+00:00",
+    "importedAt": "2026-09-06T03:07:37.846357+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "guretti.bandcamp.com",
+    "bandcampBandId": "3991035163",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:07:37.846357+00:00"
+  }
+}

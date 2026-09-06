@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "wax-assassin-a-few-groovers",
+  "artist": "Wax Assassin",
+  "bandcampUrl": "https://waxassassin.bandcamp.com/album/a-few-groovers",
+  "releaseTitle": "a few groovers",
+  "releaseDate": "2025-01-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "chicago",
+    "deep house",
+    "electronic",
+    "tech house",
+    "detroit",
+    "detroit techno",
+    "ghetto house",
+    "hardgroove",
+    "minimal",
+    "techno",
+    "Detroit"
+  ],
+  "primaryLocation": "Detroit, Michigan",
+  "bioShort": "This small release includes four unreleased trax that a few dis have has been playing on Detroit soundystems lately! XTC is drugged out minimal house groover with mentions of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://waxassassin.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:57:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-few-groovers",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-few-groovers-757492234",
+      "title": "xtc",
+      "artist": "Wax Assassin",
+      "albumTitle": "a few groovers",
+      "albumKey": "a-few-groovers",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "6:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://waxassassin.bandcamp.com/track/xtc",
+      "bandcampEmbedTrackId": "757492234",
+      "sourcePage": "https://waxassassin.bandcamp.com/album/a-few-groovers",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-few-groovers-759531844",
+      "title": "kinda kickin",
+      "artist": "Wax Assassin",
+      "albumTitle": "a few groovers",
+      "albumKey": "a-few-groovers",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "5:20",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://waxassassin.bandcamp.com/track/kinda-kickin",
+      "bandcampEmbedTrackId": "759531844",
+      "sourcePage": "https://waxassassin.bandcamp.com/album/a-few-groovers",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "a-few-groovers-2960488079",
+      "title": "luv ya so much",
+      "artist": "Wax Assassin",
+      "albumTitle": "a few groovers",
+      "albumKey": "a-few-groovers",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "5:16",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://waxassassin.bandcamp.com/track/luv-ya-so-much",
+      "bandcampEmbedTrackId": "2960488079",
+      "sourcePage": "https://waxassassin.bandcamp.com/album/a-few-groovers",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "a-few-groovers-1716352145",
+      "title": "drank",
+      "artist": "Wax Assassin",
+      "albumTitle": "a few groovers",
+      "albumKey": "a-few-groovers",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "5:57",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://waxassassin.bandcamp.com/track/drank",
+      "bandcampEmbedTrackId": "1716352145",
+      "sourcePage": "https://waxassassin.bandcamp.com/album/a-few-groovers",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://waxassassin.bandcamp.com/album/a-few-groovers",
+    "discoveredAt": "2026-09-06T02:56:18.302813+00:00",
+    "importedAt": "2026-09-06T02:57:48.111593+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "waxassassin.bandcamp.com",
+    "bandcampBandId": "3533748877",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:57:48.111593+00:00"
+  }
+}

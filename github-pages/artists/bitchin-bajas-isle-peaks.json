@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "bitchin-bajas-isle-peaks",
+  "artist": "Bitchin Bajas",
+  "bandcampUrl": "https://bitchinbajas.bandcamp.com/album/isle-peaks",
+  "releaseTitle": "Isle Peaks",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "alternative",
+    "ambient",
+    "avant",
+    "experimental electronic",
+    "new age",
+    "synth",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "In the wake of the acclaimed Inland See, the on-growing analog ecosystem being animated for ten albums now by Bitchin Bajas boasts new high energy views. “Isle Peaks” speaks of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bitchinbajas.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:08:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "isle-peaks",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "isle-peaks-4208469822",
+      "title": "Ajami",
+      "artist": "Bitchin Bajas",
+      "albumTitle": "Isle Peaks",
+      "albumKey": "isle-peaks",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "16:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bitchinbajas.bandcamp.com/track/ajami",
+      "bandcampEmbedTrackId": "4208469822",
+      "sourcePage": "https://bitchinbajas.bandcamp.com/album/isle-peaks",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "isle-peaks-570445297",
+      "title": "Isle Peaks",
+      "artist": "Bitchin Bajas",
+      "albumTitle": "Isle Peaks",
+      "albumKey": "isle-peaks",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bitchinbajas.bandcamp.com/track/isle-peaks",
+      "bandcampEmbedTrackId": "570445297",
+      "sourcePage": "https://bitchinbajas.bandcamp.com/album/isle-peaks",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bitchinbajas.bandcamp.com/album/isle-peaks",
+    "discoveredAt": "2026-09-06T02:57:23.019280+00:00",
+    "importedAt": "2026-09-06T03:08:48.390569+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bitchinbajas.bandcamp.com",
+    "bandcampBandId": "2651543321",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:08:48.390569+00:00"
+  }
+}

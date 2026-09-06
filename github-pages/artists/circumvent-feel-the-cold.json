@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "slug": "circumvent-feel-the-cold",
+  "artist": "Circumvent",
+  "bandcampUrl": "https://circumventhardcore.bandcamp.com/album/feel-the-cold",
+  "releaseTitle": "Feel The Cold",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "punk",
+    "Bristol"
+  ],
+  "primaryLocation": "Bristol, UK",
+  "bioShort": "Circumvent — hardcore / punk / Bristol music from Bristol, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://circumventhardcore.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:10:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "feel-the-cold",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "feel-the-cold-3190372767",
+      "title": "Circumvent",
+      "artist": "Circumvent",
+      "albumTitle": "Feel The Cold",
+      "albumKey": "feel-the-cold",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://circumventhardcore.bandcamp.com/track/circumvent",
+      "bandcampEmbedTrackId": "3190372767",
+      "sourcePage": "https://circumventhardcore.bandcamp.com/album/feel-the-cold",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "feel-the-cold-3725844665",
+      "title": "Not Your Mate",
+      "artist": "Circumvent",
+      "albumTitle": "Feel The Cold",
+      "albumKey": "feel-the-cold",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://circumventhardcore.bandcamp.com/track/not-your-mate",
+      "bandcampEmbedTrackId": "3725844665",
+      "sourcePage": "https://circumventhardcore.bandcamp.com/album/feel-the-cold",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "feel-the-cold-899343980",
+      "title": "Dead End Path",
+      "artist": "Circumvent",
+      "albumTitle": "Feel The Cold",
+      "albumKey": "feel-the-cold",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:53",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://circumventhardcore.bandcamp.com/track/dead-end-path",
+      "bandcampEmbedTrackId": "899343980",
+      "sourcePage": "https://circumventhardcore.bandcamp.com/album/feel-the-cold",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "feel-the-cold-1691374992",
+      "title": "Hurt My Feelings",
+      "artist": "Circumvent",
+      "albumTitle": "Feel The Cold",
+      "albumKey": "feel-the-cold",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:03",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://circumventhardcore.bandcamp.com/track/hurt-my-feelings",
+      "bandcampEmbedTrackId": "1691374992",
+      "sourcePage": "https://circumventhardcore.bandcamp.com/album/feel-the-cold",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "feel-the-cold-1119808062",
+      "title": "Feel The Cold",
+      "artist": "Circumvent",
+      "albumTitle": "Feel The Cold",
+      "albumKey": "feel-the-cold",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "2:16",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://circumventhardcore.bandcamp.com/track/feel-the-cold",
+      "bandcampEmbedTrackId": "1119808062",
+      "sourcePage": "https://circumventhardcore.bandcamp.com/album/feel-the-cold",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://circumventhardcore.bandcamp.com/album/feel-the-cold",
+    "discoveredAt": "2026-09-06T02:57:23.021279+00:00",
+    "importedAt": "2026-09-06T03:10:37.975809+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "circumventhardcore.bandcamp.com",
+    "bandcampBandId": "424946000",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:10:37.975809+00:00"
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "rosaxd-moonshine",
+  "artist": "rosaxd",
+  "bandcampUrl": "https://rosaxd.bandcamp.com/album/moonshine",
+  "releaseTitle": "moonshine",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "experimental",
+    "idm",
+    "anything and everything",
+    "instrumental",
+    "post-rock",
+    "witch house",
+    "witch trap",
+    "Târgu Mureș"
+  ],
+  "primaryLocation": "Târgu Mureș, Romania",
+  "bioShort": "little bit of this and little bit of that",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rosaxd.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:02:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "moonshine",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "moonshine-621280707",
+      "title": "scaup",
+      "artist": "rosaxd",
+      "albumTitle": "moonshine",
+      "albumKey": "moonshine",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rosaxd.bandcamp.com/track/scaup",
+      "bandcampEmbedTrackId": "621280707",
+      "sourcePage": "https://rosaxd.bandcamp.com/album/moonshine",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "moonshine-2878440651",
+      "title": "deer in headlights",
+      "artist": "rosaxd",
+      "albumTitle": "moonshine",
+      "albumKey": "moonshine",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "12:40",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rosaxd.bandcamp.com/track/deer-in-headlights",
+      "bandcampEmbedTrackId": "2878440651",
+      "sourcePage": "https://rosaxd.bandcamp.com/album/moonshine",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "moonshine-2350512812",
+      "title": "moonshine",
+      "artist": "rosaxd",
+      "albumTitle": "moonshine",
+      "albumKey": "moonshine",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "9:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rosaxd.bandcamp.com/track/moonshine",
+      "bandcampEmbedTrackId": "2350512812",
+      "sourcePage": "https://rosaxd.bandcamp.com/album/moonshine",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://rosaxd.bandcamp.com/album/moonshine",
+    "discoveredAt": "2026-09-06T02:57:23.012860+00:00",
+    "importedAt": "2026-09-06T03:02:31.892768+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "rosaxd.bandcamp.com",
+    "bandcampBandId": "3074934960",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:02:31.892768+00:00"
+  }
+}

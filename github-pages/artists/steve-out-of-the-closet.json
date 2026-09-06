@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "slug": "steve-out-of-the-closet",
+  "artist": "Steve",
+  "bandcampUrl": "https://steve-ciani.bandcamp.com/album/out-of-the-closet",
+  "releaseTitle": "Out Of The Closet",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "synthpop",
+    "techno pop",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Dark Entries helps Suzanne Ciani come out of the closet as Steve! Legendary composer, sound designer, and Buchla maestra Suzanne Ciani has a staggering list of accolades and…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://steve-ciani.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:59:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "out-of-the-closet",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "out-of-the-closet-241749753",
+      "title": "Steve Goes to a Party",
+      "artist": "Steve",
+      "albumTitle": "Out Of The Closet",
+      "albumKey": "out-of-the-closet",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steve-ciani.bandcamp.com/track/steve-goes-to-a-party",
+      "bandcampEmbedTrackId": "241749753",
+      "sourcePage": "https://steve-ciani.bandcamp.com/album/out-of-the-closet",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "out-of-the-closet-1117598154",
+      "title": "Steve Saves The World",
+      "artist": "Steve",
+      "albumTitle": "Out Of The Closet",
+      "albumKey": "out-of-the-closet",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steve-ciani.bandcamp.com/track/steve-saves-the-world",
+      "bandcampEmbedTrackId": "1117598154",
+      "sourcePage": "https://steve-ciani.bandcamp.com/album/out-of-the-closet",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "out-of-the-closet-306728005",
+      "title": "Happy Birthday Wishes feat. Suzanne",
+      "artist": "Steve",
+      "albumTitle": "Out Of The Closet",
+      "albumKey": "out-of-the-closet",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:17",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steve-ciani.bandcamp.com/track/happy-birthday-wishes-feat-suzanne",
+      "bandcampEmbedTrackId": "306728005",
+      "sourcePage": "https://steve-ciani.bandcamp.com/album/out-of-the-closet",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://steve-ciani.bandcamp.com/album/out-of-the-closet",
+    "discoveredAt": "2026-09-06T02:57:23.010861+00:00",
+    "importedAt": "2026-09-06T02:59:17.140967+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "steve-ciani.bandcamp.com",
+    "bandcampBandId": "3540000565",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:59:17.140967+00:00"
+  }
+}

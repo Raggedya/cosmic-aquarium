@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "vauruva-mar-da-deriva",
+  "artist": "Vauruvã",
+  "bandcampUrl": "https://vauruva.bandcamp.com/album/mar-da-deriva",
+  "releaseTitle": "Mar da Deriva",
+  "releaseDate": "2025-05-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "folk",
+    "atmospheric black metal",
+    "black metal",
+    "metal",
+    "brasileiro",
+    "samba",
+    "Rio De Janeiro"
+  ],
+  "primaryLocation": "Rio De Janeiro, Brazil",
+  "bioShort": "Bruno Augusto Ribeiro - Letras, voz e arte da capa. Caio Lemos - Instrumentos, voz, produção e arte da capa. Feito entre a primavera de 2024 e outono de 2025.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vauruva.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:00:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "mar-da-deriva",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "mar-da-deriva-3847474059",
+      "title": "Legado",
+      "artist": "Vauruvã",
+      "albumTitle": "Mar da Deriva",
+      "albumKey": "mar-da-deriva",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "9:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vauruva.bandcamp.com/track/legado",
+      "bandcampEmbedTrackId": "3847474059",
+      "sourcePage": "https://vauruva.bandcamp.com/album/mar-da-deriva",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "mar-da-deriva-972202636",
+      "title": "Os Caçadores",
+      "artist": "Vauruvã",
+      "albumTitle": "Mar da Deriva",
+      "albumKey": "mar-da-deriva",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "10:51",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vauruva.bandcamp.com/track/os-ca-adores",
+      "bandcampEmbedTrackId": "972202636",
+      "sourcePage": "https://vauruva.bandcamp.com/album/mar-da-deriva",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "mar-da-deriva-2612205176",
+      "title": "As Selvas Vermelhas no Planeta dos Eminentes",
+      "artist": "Vauruvã",
+      "albumTitle": "Mar da Deriva",
+      "albumKey": "mar-da-deriva",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "15:28",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vauruva.bandcamp.com/track/as-selvas-vermelhas-no-planeta-dos-eminentes-2",
+      "bandcampEmbedTrackId": "2612205176",
+      "sourcePage": "https://vauruva.bandcamp.com/album/mar-da-deriva",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://vauruva.bandcamp.com/album/mar-da-deriva",
+    "discoveredAt": "2026-09-06T02:57:23.011861+00:00",
+    "importedAt": "2026-09-06T03:00:58.030634+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "vauruva.bandcamp.com",
+    "bandcampBandId": "521525286",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:00:58.030634+00:00"
+  }
+}

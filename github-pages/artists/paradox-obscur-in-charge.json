@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "slug": "paradox-obscur-in-charge",
+  "artist": "Paradox Obscur",
+  "bandcampUrl": "https://paradoxobscur.bandcamp.com/album/in-charge",
+  "releaseTitle": "In Charge",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "electronic",
+    "cold wave",
+    "dance",
+    "dark disco",
+    "ebm",
+    "electro pop",
+    "electronica",
+    "electronics",
+    "minimal electro",
+    "synthpop",
+    "synthwave",
+    "Athens"
+  ],
+  "primaryLocation": "Athens, Greece",
+  "bioShort": "Paradox Obscur — electro / cold wave / dance music from Athens, Greece.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://paradoxobscur.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:15:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "in-charge",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "in-charge-248575802",
+      "title": "To The Top",
+      "artist": "Paradox Obscur",
+      "albumTitle": "In Charge",
+      "albumKey": "in-charge",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:37",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://paradoxobscur.bandcamp.com/track/to-the-top",
+      "bandcampEmbedTrackId": "248575802",
+      "sourcePage": "https://paradoxobscur.bandcamp.com/album/in-charge",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "in-charge-59477143",
+      "title": "Late Night Underground",
+      "artist": "Paradox Obscur",
+      "albumTitle": "In Charge",
+      "albumKey": "in-charge",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://paradoxobscur.bandcamp.com/track/late-night-underground-2",
+      "bandcampEmbedTrackId": "59477143",
+      "sourcePage": "https://paradoxobscur.bandcamp.com/album/in-charge",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://paradoxobscur.bandcamp.com/album/in-charge",
+    "discoveredAt": "2026-09-06T02:57:23.027161+00:00",
+    "importedAt": "2026-09-06T03:15:53.588401+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "paradoxobscur.bandcamp.com",
+    "bandcampBandId": "777679678",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:15:53.588401+00:00"
+  }
+}

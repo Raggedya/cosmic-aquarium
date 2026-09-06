@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "rubbers-lustra-blush",
+  "artist": "RUBBERS",
+  "bandcampUrl": "https://r-u-b-b-e-r-s.bandcamp.com/album/lustra-blush-2",
+  "releaseTitle": "Lustra Blush",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "electronic",
+    "club",
+    "experimental",
+    "industrial",
+    "post punk",
+    "Munich"
+  ],
+  "primaryLocation": "Munich, Germany",
+  "bioShort": "RUBBERS — noise / electronic / club music from Munich, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://r-u-b-b-e-r-s.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:13:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lustra-blush",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lustra-blush-2143757273",
+      "title": "Lustra Blush",
+      "artist": "RUBBERS",
+      "albumTitle": "Lustra Blush",
+      "albumKey": "lustra-blush",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://r-u-b-b-e-r-s.bandcamp.com/track/lustra-blush",
+      "bandcampEmbedTrackId": "2143757273",
+      "sourcePage": "https://r-u-b-b-e-r-s.bandcamp.com/album/lustra-blush-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lustra-blush-580455525",
+      "title": "Starlite Cherry Darling",
+      "artist": "RUBBERS",
+      "albumTitle": "Lustra Blush",
+      "albumKey": "lustra-blush",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://r-u-b-b-e-r-s.bandcamp.com/track/starlite-cherry-darling",
+      "bandcampEmbedTrackId": "580455525",
+      "sourcePage": "https://r-u-b-b-e-r-s.bandcamp.com/album/lustra-blush-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "lustra-blush-436040597",
+      "title": "Run",
+      "artist": "RUBBERS",
+      "albumTitle": "Lustra Blush",
+      "albumKey": "lustra-blush",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:59",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://r-u-b-b-e-r-s.bandcamp.com/track/run",
+      "bandcampEmbedTrackId": "436040597",
+      "sourcePage": "https://r-u-b-b-e-r-s.bandcamp.com/album/lustra-blush-2",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://r-u-b-b-e-r-s.bandcamp.com/album/lustra-blush-2",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:13:57.948740+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "r-u-b-b-e-r-s.bandcamp.com",
+    "bandcampBandId": "1905354555",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:13:57.948740+00:00"
+  }
+}

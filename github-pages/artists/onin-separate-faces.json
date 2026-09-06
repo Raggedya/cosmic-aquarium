@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "onin-separate-faces",
+  "artist": "Onin",
+  "bandcampUrl": "https://onin-nino.bandcamp.com/album/separate-faces",
+  "releaseTitle": "Separate Faces",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "techno.",
+    "trance.",
+    "house.",
+    "Maribor"
+  ],
+  "primaryLocation": "Maribor, Slovenia",
+  "bioShort": "Onin — breakbeat / techno. / trance. music from Maribor, Slovenia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://onin-nino.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:04:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "separate-faces",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "separate-faces-1419518232",
+      "title": "Amano",
+      "artist": "Onin",
+      "albumTitle": "Separate Faces",
+      "albumKey": "separate-faces",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:40",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://onin-nino.bandcamp.com/track/amano",
+      "bandcampEmbedTrackId": "1419518232",
+      "sourcePage": "https://onin-nino.bandcamp.com/album/separate-faces",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "separate-faces-3228227894",
+      "title": "Sacred Proof",
+      "artist": "Onin",
+      "albumTitle": "Separate Faces",
+      "albumKey": "separate-faces",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://onin-nino.bandcamp.com/track/sacred-proof",
+      "bandcampEmbedTrackId": "3228227894",
+      "sourcePage": "https://onin-nino.bandcamp.com/album/separate-faces",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "separate-faces-3999183888",
+      "title": "Siku",
+      "artist": "Onin",
+      "albumTitle": "Separate Faces",
+      "albumKey": "separate-faces",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:59",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://onin-nino.bandcamp.com/track/siku",
+      "bandcampEmbedTrackId": "3999183888",
+      "sourcePage": "https://onin-nino.bandcamp.com/album/separate-faces",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "separate-faces-3065404793",
+      "title": "Symphony of Base",
+      "artist": "Onin",
+      "albumTitle": "Separate Faces",
+      "albumKey": "separate-faces",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:34",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://onin-nino.bandcamp.com/track/symphony-of-base",
+      "bandcampEmbedTrackId": "3065404793",
+      "sourcePage": "https://onin-nino.bandcamp.com/album/separate-faces",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "separate-faces-1403328741",
+      "title": "Alkaline",
+      "artist": "Onin",
+      "albumTitle": "Separate Faces",
+      "albumKey": "separate-faces",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "9:28",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://onin-nino.bandcamp.com/track/alkaline",
+      "bandcampEmbedTrackId": "1403328741",
+      "sourcePage": "https://onin-nino.bandcamp.com/album/separate-faces",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://onin-nino.bandcamp.com/album/separate-faces",
+    "discoveredAt": "2026-09-06T02:57:23.014364+00:00",
+    "importedAt": "2026-09-06T03:04:40.898119+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "onin-nino.bandcamp.com",
+    "bandcampBandId": "3405090514",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:04:40.898119+00:00"
+  }
+}

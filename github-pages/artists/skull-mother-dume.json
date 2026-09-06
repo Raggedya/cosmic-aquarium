@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "skull-mother-dume",
+  "artist": "Skull Mother",
+  "bandcampUrl": "https://skullmother.bandcamp.com/album/dume",
+  "releaseTitle": "Dume:",
+  "releaseDate": "2026-08-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "beer",
+    "metal",
+    "sex",
+    "stoner metal",
+    "stoner rock",
+    "Tennessee"
+  ],
+  "primaryLocation": "Tennessee",
+  "bioShort": "DRUMS-COUSIN CHUNG LEE BASS AN VOCALS=REED ROTHSCHILD RECORDED BY SAME ASS HOLES .Skull Mother From the valley of dolly parton Stoner Doom music skullmother.bandcamp.com…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://skullmother.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:13:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dume",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dume-3529099931",
+      "title": "endless sorrow",
+      "artist": "Skull Mother",
+      "albumTitle": "Dume:",
+      "albumKey": "dume",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://skullmother.bandcamp.com/track/endless-sorrow",
+      "bandcampEmbedTrackId": "3529099931",
+      "sourcePage": "https://skullmother.bandcamp.com/album/dume",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dume-3611879963",
+      "title": "drink the fire",
+      "artist": "Skull Mother",
+      "albumTitle": "Dume:",
+      "albumKey": "dume",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:09",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://skullmother.bandcamp.com/track/drink-the-fire",
+      "bandcampEmbedTrackId": "3611879963",
+      "sourcePage": "https://skullmother.bandcamp.com/album/dume",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "dume-167691844",
+      "title": "master",
+      "artist": "Skull Mother",
+      "albumTitle": "Dume:",
+      "albumKey": "dume",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:36",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://skullmother.bandcamp.com/track/master",
+      "bandcampEmbedTrackId": "167691844",
+      "sourcePage": "https://skullmother.bandcamp.com/album/dume",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "dume-4276434904",
+      "title": "the green lord",
+      "artist": "Skull Mother",
+      "albumTitle": "Dume:",
+      "albumKey": "dume",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:46",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://skullmother.bandcamp.com/track/the-green-lord",
+      "bandcampEmbedTrackId": "4276434904",
+      "sourcePage": "https://skullmother.bandcamp.com/album/dume",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://skullmother.bandcamp.com/album/dume",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:13:28.447503+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "skullmother.bandcamp.com",
+    "bandcampBandId": "3584068891",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:13:28.447503+00:00"
+  }
+}

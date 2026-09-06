@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "relinque-hunc-mundum-tractatus-logico-suicidalis-demo-iv",
+  "artist": "Relinque Hunc Mundum",
+  "bandcampUrl": "https://relinquehuncmundum.bandcamp.com/album/tractatus-logico-suicidalis-demo-iv",
+  "releaseTitle": "Tractatus Logico-Suicidalis - Demo IV",
+  "releaseDate": "2026-08-12 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "ambient",
+    "classical",
+    "experimental",
+    "noise",
+    "Kelowna"
+  ],
+  "primaryLocation": "Kelowna, British Columbia",
+  "bioShort": "Polemical Post-Metal (PPM)",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://relinquehuncmundum.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:59:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tractatus-logico-suicidalis-demo-iv",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tractatus-logico-suicidalis-demo-iv-2791634400",
+      "title": "Tractatus Logico-Suicidalis",
+      "artist": "Relinque Hunc Mundum",
+      "albumTitle": "Tractatus Logico-Suicidalis - Demo IV",
+      "albumKey": "tractatus-logico-suicidalis-demo-iv",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://relinquehuncmundum.bandcamp.com/track/tractatus-logico-suicidalis",
+      "bandcampEmbedTrackId": "2791634400",
+      "sourcePage": "https://relinquehuncmundum.bandcamp.com/album/tractatus-logico-suicidalis-demo-iv",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tractatus-logico-suicidalis-demo-iv-2455532588",
+      "title": "Cyclonopedia",
+      "artist": "Relinque Hunc Mundum",
+      "albumTitle": "Tractatus Logico-Suicidalis - Demo IV",
+      "albumKey": "tractatus-logico-suicidalis-demo-iv",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:22",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://relinquehuncmundum.bandcamp.com/track/cyclonopedia",
+      "bandcampEmbedTrackId": "2455532588",
+      "sourcePage": "https://relinquehuncmundum.bandcamp.com/album/tractatus-logico-suicidalis-demo-iv",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://relinquehuncmundum.bandcamp.com/album/tractatus-logico-suicidalis-demo-iv",
+    "discoveredAt": "2026-09-06T02:57:23.010861+00:00",
+    "importedAt": "2026-09-06T02:59:57.756539+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "relinquehuncmundum.bandcamp.com",
+    "bandcampBandId": "2813632738",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:59:57.756539+00:00"
+  }
+}

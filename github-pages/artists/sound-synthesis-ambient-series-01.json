@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "sound-synthesis-ambient-series-01",
+  "artist": "Sound Synthesis",
+  "bandcampUrl": "https://soundsynthesis.bandcamp.com/album/ambient-series-01",
+  "releaseTitle": "Ambient Series 01",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "ambient",
+    "electronic",
+    "electronica",
+    "futurepast",
+    "malta",
+    "Malta"
+  ],
+  "primaryLocation": "Malta",
+  "bioShort": "Ambient Series 01 is the first in a series of improvised ambient recordings by Sound Synthesis. Three improvisation sessions exploring texture, space and slow movement…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://soundsynthesis.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:14:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ambient-series-01",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ambient-series-01-3039348688",
+      "title": "Improv Session 01",
+      "artist": "Sound Synthesis",
+      "albumTitle": "Ambient Series 01",
+      "albumKey": "ambient-series-01",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "9:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundsynthesis.bandcamp.com/track/improv-session-01",
+      "bandcampEmbedTrackId": "3039348688",
+      "sourcePage": "https://soundsynthesis.bandcamp.com/album/ambient-series-01",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ambient-series-01-3549038015",
+      "title": "Improv Session 02",
+      "artist": "Sound Synthesis",
+      "albumTitle": "Ambient Series 01",
+      "albumKey": "ambient-series-01",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "9:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundsynthesis.bandcamp.com/track/improv-session-02",
+      "bandcampEmbedTrackId": "3549038015",
+      "sourcePage": "https://soundsynthesis.bandcamp.com/album/ambient-series-01",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ambient-series-01-708161218",
+      "title": "Improv Session 03",
+      "artist": "Sound Synthesis",
+      "albumTitle": "Ambient Series 01",
+      "albumKey": "ambient-series-01",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soundsynthesis.bandcamp.com/track/improv-session-03",
+      "bandcampEmbedTrackId": "708161218",
+      "sourcePage": "https://soundsynthesis.bandcamp.com/album/ambient-series-01",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://soundsynthesis.bandcamp.com/album/ambient-series-01",
+    "discoveredAt": "2026-09-06T02:57:23.026157+00:00",
+    "importedAt": "2026-09-06T03:14:28.275330+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "soundsynthesis.bandcamp.com",
+    "bandcampBandId": "1916135621",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:14:28.275330+00:00"
+  }
+}

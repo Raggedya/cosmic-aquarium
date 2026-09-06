@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "decorodi-topography",
+  "artist": "Decorodi",
+  "bandcampUrl": "https://decorodi.bandcamp.com/album/topography",
+  "releaseTitle": "Topography",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "breaks",
+    "electro",
+    "techno",
+    "Mariupol'"
+  ],
+  "primaryLocation": "Mariupol', Ukraine",
+  "bioShort": "Decorodi — breakbeat / breaks / electro music from Mariupol', Ukraine.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://decorodi.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:15:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "topography",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "topography-1845786103",
+      "title": "Street Life",
+      "artist": "Decorodi",
+      "albumTitle": "Topography",
+      "albumKey": "topography",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://decorodi.bandcamp.com/track/street-life",
+      "bandcampEmbedTrackId": "1845786103",
+      "sourcePage": "https://decorodi.bandcamp.com/album/topography",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "topography-2850000680",
+      "title": "Topography",
+      "artist": "Decorodi",
+      "albumTitle": "Topography",
+      "albumKey": "topography",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://decorodi.bandcamp.com/track/topography",
+      "bandcampEmbedTrackId": "2850000680",
+      "sourcePage": "https://decorodi.bandcamp.com/album/topography",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "topography-4142519498",
+      "title": "Copenhagen",
+      "artist": "Decorodi",
+      "albumTitle": "Topography",
+      "albumKey": "topography",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://decorodi.bandcamp.com/track/copenhagen",
+      "bandcampEmbedTrackId": "4142519498",
+      "sourcePage": "https://decorodi.bandcamp.com/album/topography",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "topography-611092596",
+      "title": "30 Second",
+      "artist": "Decorodi",
+      "albumTitle": "Topography",
+      "albumKey": "topography",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:31",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://decorodi.bandcamp.com/track/30-second",
+      "bandcampEmbedTrackId": "611092596",
+      "sourcePage": "https://decorodi.bandcamp.com/album/topography",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://decorodi.bandcamp.com/album/topography",
+    "discoveredAt": "2026-09-06T02:57:23.026157+00:00",
+    "importedAt": "2026-09-06T03:15:08.257580+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "decorodi.bandcamp.com",
+    "bandcampBandId": "1475196070",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:15:08.257580+00:00"
+  }
+}

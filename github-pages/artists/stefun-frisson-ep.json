@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "stefun-frisson-ep",
+  "artist": "Stefun",
+  "bandcampUrl": "https://stefunks.bandcamp.com/album/frisson-ep",
+  "releaseTitle": "Frisson EP",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "house",
+    "minimal",
+    "Malta"
+  ],
+  "primaryLocation": "Malta",
+  "bioShort": "Stefun — breakbeat / house / minimal music from Malta.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://stefunks.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:17:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "frisson-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "frisson-ep-952762042",
+      "title": "Robosapiens",
+      "artist": "Stefun",
+      "albumTitle": "Frisson EP",
+      "albumKey": "frisson-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:29",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stefunks.bandcamp.com/track/robosapiens",
+      "bandcampEmbedTrackId": "952762042",
+      "sourcePage": "https://stefunks.bandcamp.com/album/frisson-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "frisson-ep-2874984766",
+      "title": "136 Shadesss",
+      "artist": "Stefun",
+      "albumTitle": "Frisson EP",
+      "albumKey": "frisson-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:31",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stefunks.bandcamp.com/track/136-shadesss",
+      "bandcampEmbedTrackId": "2874984766",
+      "sourcePage": "https://stefunks.bandcamp.com/album/frisson-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "frisson-ep-1835864983",
+      "title": "Stampedo",
+      "artist": "Stefun",
+      "albumTitle": "Frisson EP",
+      "albumKey": "frisson-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:54",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stefunks.bandcamp.com/track/stampedo",
+      "bandcampEmbedTrackId": "1835864983",
+      "sourcePage": "https://stefunks.bandcamp.com/album/frisson-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "frisson-ep-1119218292",
+      "title": "Albus",
+      "artist": "Stefun",
+      "albumTitle": "Frisson EP",
+      "albumKey": "frisson-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:06",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stefunks.bandcamp.com/track/albus",
+      "bandcampEmbedTrackId": "1119218292",
+      "sourcePage": "https://stefunks.bandcamp.com/album/frisson-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://stefunks.bandcamp.com/album/frisson-ep",
+    "discoveredAt": "2026-09-06T02:57:23.028891+00:00",
+    "importedAt": "2026-09-06T03:17:18.859044+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "stefunks.bandcamp.com",
+    "bandcampBandId": "503010219",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:17:18.859044+00:00"
+  }
+}

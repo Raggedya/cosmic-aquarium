@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "chrome-chasm-interpreter",
+  "artist": "Chrome Chasm",
+  "bandcampUrl": "https://chromechasm.bandcamp.com/album/interpreter",
+  "releaseTitle": "Interpreter",
+  "releaseDate": "2026-10-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "experimental",
+    "acid folk",
+    "ambient electronic",
+    "cosmic americana",
+    "dark ambient",
+    "improvisation",
+    "psych rock",
+    "Houston"
+  ],
+  "primaryLocation": "Houston, Texas",
+  "bioShort": "This is the sound of dream Texas, the cinematic Texas conjured in film and 20th century literary and art myth… big dark blueing horizons swallowing the infinite distance, a…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://chromechasm.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:11:05Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "interpreter",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "interpreter-1438453311",
+      "title": "The Star (Single Edit)",
+      "artist": "Chrome Chasm",
+      "albumTitle": "Interpreter",
+      "albumKey": "interpreter",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:50",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chromechasm.bandcamp.com/track/the-star-single-edit",
+      "bandcampEmbedTrackId": "1438453311",
+      "sourcePage": "https://chromechasm.bandcamp.com/album/interpreter",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "interpreter-3506055311",
+      "title": "The Star",
+      "artist": "Chrome Chasm",
+      "albumTitle": "Interpreter",
+      "albumKey": "interpreter",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chromechasm.bandcamp.com/album/interpreter",
+      "bandcampEmbedTrackId": "3506055311",
+      "sourcePage": "https://chromechasm.bandcamp.com/album/interpreter",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "interpreter-4291322506",
+      "title": "Gabriella",
+      "artist": "Chrome Chasm",
+      "albumTitle": "Interpreter",
+      "albumKey": "interpreter",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chromechasm.bandcamp.com/album/interpreter",
+      "bandcampEmbedTrackId": "4291322506",
+      "sourcePage": "https://chromechasm.bandcamp.com/album/interpreter",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "interpreter-1718164591",
+      "title": "Animus / Bats",
+      "artist": "Chrome Chasm",
+      "albumTitle": "Interpreter",
+      "albumKey": "interpreter",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chromechasm.bandcamp.com/album/interpreter",
+      "bandcampEmbedTrackId": "1718164591",
+      "sourcePage": "https://chromechasm.bandcamp.com/album/interpreter",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://chromechasm.bandcamp.com/album/interpreter",
+    "discoveredAt": "2026-09-06T02:57:23.021279+00:00",
+    "importedAt": "2026-09-06T03:11:05.180001+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "chromechasm.bandcamp.com",
+    "bandcampBandId": "1512800959",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:11:05.180001+00:00"
+  }
+}

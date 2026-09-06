@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "choir-boy-i-ll-always-let-you-down",
+  "artist": "Choir Boy",
+  "bandcampUrl": "https://choirboy.bandcamp.com/album/ill-always-let-you-down",
+  "releaseTitle": "I'll Always Let You Down",
+  "releaseDate": "2026-04-16 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "alternative",
+    "dream pop",
+    "indie pop",
+    "newwave",
+    "synthpop",
+    "synthwave",
+    "Salt Lake City"
+  ],
+  "primaryLocation": "Salt Lake City, Utah",
+  "bioShort": "Ethereal indie darlings Choir Boy triumphantly return with their new single, \"I'll Always Let You Down,\" produced by Jorge Elbrecht (Sky Ferreira, Japanese Breakfast). It’s…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://choirboy.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:09:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-ll-always-let-you-down",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-ll-always-let-you-down-1471227931",
+      "title": "I'll Always Let You Down",
+      "artist": "Choir Boy",
+      "albumTitle": "I'll Always Let You Down",
+      "albumKey": "i-ll-always-let-you-down",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://choirboy.bandcamp.com/track/ill-always-let-you-down",
+      "bandcampEmbedTrackId": "1471227931",
+      "sourcePage": "https://choirboy.bandcamp.com/album/ill-always-let-you-down",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://choirboy.bandcamp.com/album/ill-always-let-you-down",
+    "discoveredAt": "2026-09-06T02:57:23.019280+00:00",
+    "importedAt": "2026-09-06T03:09:04.403321+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "choirboy.bandcamp.com",
+    "bandcampBandId": "1936216836",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:04.403321+00:00"
+  }
+}

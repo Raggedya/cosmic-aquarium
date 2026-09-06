@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "tofie-dance-of-the-spiritwild",
+  "artist": "TOFIE",
+  "bandcampUrl": "https://tofiemusic.bandcamp.com/album/dance-of-the-spiritwild",
+  "releaseTitle": "Dance of the Spiritwild",
+  "releaseDate": "2026-06-13 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "celtic",
+    "folk",
+    "new age",
+    "fantasy",
+    "fantasy music",
+    "fictitious language",
+    "indie folk",
+    "nature"
+  ],
+  "primaryLocation": null,
+  "bioShort": "˳✴︎ ⊹ 𓂃⋆ ⁺ ˳ TOFIE 10th Anniversary Song ✴︎ ⊹ 𓂃⋆ ⁺ ˳ MV: A sacred song within a song, in the language of the spirits. An ancient ceremony begins... 🌿 \"Dance of the Spiritwild\"…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tofiemusic.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:05:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dance-of-the-spiritwild",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dance-of-the-spiritwild-1729127496",
+      "title": "Dance of the Spiritwild",
+      "artist": "TOFIE",
+      "albumTitle": "Dance of the Spiritwild",
+      "albumKey": "dance-of-the-spiritwild",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tofiemusic.bandcamp.com/track/dance-of-the-spiritwild",
+      "bandcampEmbedTrackId": "1729127496",
+      "sourcePage": "https://tofiemusic.bandcamp.com/album/dance-of-the-spiritwild",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dance-of-the-spiritwild-1736235227",
+      "title": "Dance of the Spiritwild - Instrumental",
+      "artist": "TOFIE",
+      "albumTitle": "Dance of the Spiritwild",
+      "albumKey": "dance-of-the-spiritwild",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:47",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tofiemusic.bandcamp.com/track/dance-of-the-spiritwild-instrumental",
+      "bandcampEmbedTrackId": "1736235227",
+      "sourcePage": "https://tofiemusic.bandcamp.com/album/dance-of-the-spiritwild",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "dance-of-the-spiritwild-381137808",
+      "title": "Dance of the Spiritwild - Free Karaoke/Cover Version",
+      "artist": "TOFIE",
+      "albumTitle": "Dance of the Spiritwild",
+      "albumKey": "dance-of-the-spiritwild",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:47",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tofiemusic.bandcamp.com/track/dance-of-the-spiritwild-free-karaoke-cover-version",
+      "bandcampEmbedTrackId": "381137808",
+      "sourcePage": "https://tofiemusic.bandcamp.com/album/dance-of-the-spiritwild",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "dance-of-the-spiritwild-2533243232",
+      "title": "Dance of the Spiritwild - Acapella Version",
+      "artist": "TOFIE",
+      "albumTitle": "Dance of the Spiritwild",
+      "albumKey": "dance-of-the-spiritwild",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:47",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tofiemusic.bandcamp.com/track/dance-of-the-spiritwild-acapella-version",
+      "bandcampEmbedTrackId": "2533243232",
+      "sourcePage": "https://tofiemusic.bandcamp.com/album/dance-of-the-spiritwild",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tofiemusic.bandcamp.com/album/dance-of-the-spiritwild",
+    "discoveredAt": "2026-09-06T02:57:23.016872+00:00",
+    "importedAt": "2026-09-06T03:05:59.992712+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tofiemusic.bandcamp.com",
+    "bandcampBandId": "2587697643",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:05:59.992712+00:00"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "kate-nash-famine",
+  "artist": "Kate Nash",
+  "bandcampUrl": "https://katenashmusic.bandcamp.com/album/famine",
+  "releaseTitle": "Famine",
+  "releaseDate": "2026-04-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "pop",
+    "brit pop",
+    "garage pop",
+    "garage rock",
+    "indie pop",
+    "pop rock",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "After debuting her cover of “Famine” at a sold-out Roundhouse show in London, Kate Nash now releases the track as a single, featuring a new original verse. Kate also performs…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://katenashmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:17:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "famine",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "famine-169527140",
+      "title": "Famine",
+      "artist": "Kate Nash",
+      "albumTitle": "Famine",
+      "albumKey": "famine",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://katenashmusic.bandcamp.com/track/famine",
+      "bandcampEmbedTrackId": "169527140",
+      "sourcePage": "https://katenashmusic.bandcamp.com/album/famine",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://katenashmusic.bandcamp.com/album/famine",
+    "discoveredAt": "2026-09-06T02:57:23.028891+00:00",
+    "importedAt": "2026-09-06T03:17:26.954229+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "katenashmusic.bandcamp.com",
+    "bandcampBandId": "3494150183",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:17:26.954229+00:00"
+  }
+}

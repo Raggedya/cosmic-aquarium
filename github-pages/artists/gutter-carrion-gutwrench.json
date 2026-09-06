@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "gutter-carrion-gutwrench",
+  "artist": "Gutter Carrion",
+  "bandcampUrl": "https://guttercarrion.bandcamp.com/album/gutwrench",
+  "releaseTitle": "Gutwrench",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "experimental",
+    "feedback worship",
+    "harsh noise",
+    "harsh noise wall",
+    "hnw",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "preferably listen to this with a wrench stuck in your gut HARSH NOISE VISCERA",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://guttercarrion.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:59:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "gutwrench",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "gutwrench-3599267455",
+      "title": "Gutwrench - I",
+      "artist": "Gutter Carrion",
+      "albumTitle": "Gutwrench",
+      "albumKey": "gutwrench",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://guttercarrion.bandcamp.com/track/gutwrench-i",
+      "bandcampEmbedTrackId": "3599267455",
+      "sourcePage": "https://guttercarrion.bandcamp.com/album/gutwrench",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "gutwrench-34303843",
+      "title": "Gutwrench - II",
+      "artist": "Gutter Carrion",
+      "albumTitle": "Gutwrench",
+      "albumKey": "gutwrench",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://guttercarrion.bandcamp.com/track/gutwrench-ii",
+      "bandcampEmbedTrackId": "34303843",
+      "sourcePage": "https://guttercarrion.bandcamp.com/album/gutwrench",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://guttercarrion.bandcamp.com/album/gutwrench",
+    "discoveredAt": "2026-09-06T02:57:23.010861+00:00",
+    "importedAt": "2026-09-06T02:59:33.057438+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "guttercarrion.bandcamp.com",
+    "bandcampBandId": "1427011221",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:59:33.057438+00:00"
+  }
+}

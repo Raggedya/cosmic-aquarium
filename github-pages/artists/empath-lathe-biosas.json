@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "empath-lathe-biosas",
+  "artist": "Empath",
+  "bandcampUrl": "https://empath4.bandcamp.com/album/lathe-bi-sas",
+  "releaseTitle": "Lathe Biôsas",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "electronic",
+    "freetek",
+    "teknotribe",
+    "ambient",
+    "hardtechno",
+    "post-tribe",
+    "psytechno",
+    "techno",
+    "tekno",
+    "Tampere"
+  ],
+  "primaryLocation": "Tampere, Finland",
+  "bioShort": "Empath fell in love with that post-tribe mental psytechno-vibe menacing in the underground Europe, and visited same kind of sound design and tempo with Lathe Biõsas. music by…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://empath4.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:17:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lathe-biosas",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lathe-biosas-3954921265",
+      "title": "Psy-Op Chaos",
+      "artist": "Empath",
+      "albumTitle": "Lathe Biôsas",
+      "albumKey": "lathe-biosas",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://empath4.bandcamp.com/track/psy-op-chaos",
+      "bandcampEmbedTrackId": "3954921265",
+      "sourcePage": "https://empath4.bandcamp.com/album/lathe-bi-sas",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lathe-biosas-3724964157",
+      "title": "Lanmao Asitica",
+      "artist": "Empath",
+      "albumTitle": "Lathe Biôsas",
+      "albumKey": "lathe-biosas",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://empath4.bandcamp.com/track/lanmao-asitica",
+      "bandcampEmbedTrackId": "3724964157",
+      "sourcePage": "https://empath4.bandcamp.com/album/lathe-bi-sas",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "lathe-biosas-3408502186",
+      "title": "Microdosing Egodeath",
+      "artist": "Empath",
+      "albumTitle": "Lathe Biôsas",
+      "albumKey": "lathe-biosas",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:33",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://empath4.bandcamp.com/track/microdosing-egodeath",
+      "bandcampEmbedTrackId": "3408502186",
+      "sourcePage": "https://empath4.bandcamp.com/album/lathe-bi-sas",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "lathe-biosas-2504296772",
+      "title": "Lathe Biôsas",
+      "artist": "Empath",
+      "albumTitle": "Lathe Biôsas",
+      "albumKey": "lathe-biosas",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:04",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://empath4.bandcamp.com/track/lathe-bi-sas",
+      "bandcampEmbedTrackId": "2504296772",
+      "sourcePage": "https://empath4.bandcamp.com/album/lathe-bi-sas",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://empath4.bandcamp.com/album/lathe-bi-sas",
+    "discoveredAt": "2026-09-06T02:57:23.028891+00:00",
+    "importedAt": "2026-09-06T03:17:16.586151+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "empath4.bandcamp.com",
+    "bandcampBandId": "1208244596",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:17:16.586151+00:00"
+  }
+}

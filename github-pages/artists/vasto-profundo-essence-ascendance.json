@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "vasto-profundo-essence-ascendance",
+  "artist": "Vasto Profundo",
+  "bandcampUrl": "https://vastoprofundo.bandcamp.com/album/essence-ascendance",
+  "releaseTitle": "essence://ascendance",
+  "releaseDate": "2026-08-17 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "alternative",
+    "dreampop",
+    "post-punk",
+    "synthpop",
+    "synthwave",
+    "techno",
+    "techno-industrial",
+    "witch house",
+    "Spain"
+  ],
+  "primaryLocation": "CT, Spain",
+  "bioShort": "Vasto Profundo — coldwave / alternative / dreampop music from CT, Spain.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vastoprofundo.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:02:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "essence-ascendance",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "essence-ascendance-1421969087",
+      "title": "essence://ascendance",
+      "artist": "Vasto Profundo",
+      "albumTitle": "essence://ascendance",
+      "albumKey": "essence-ascendance",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vastoprofundo.bandcamp.com/track/essence-ascendance",
+      "bandcampEmbedTrackId": "1421969087",
+      "sourcePage": "https://vastoprofundo.bandcamp.com/album/essence-ascendance",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://vastoprofundo.bandcamp.com/album/essence-ascendance",
+    "discoveredAt": "2026-09-06T02:57:23.012860+00:00",
+    "importedAt": "2026-09-06T03:02:38.935960+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "vastoprofundo.bandcamp.com",
+    "bandcampBandId": "1805762742",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:02:38.935960+00:00"
+  }
+}

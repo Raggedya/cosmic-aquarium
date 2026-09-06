@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "slug": "lucy-la-dusk-king-in-my-empire",
+  "artist": "Lucy La Dusk",
+  "bandcampUrl": "https://lucyladusk.bandcamp.com/album/king-in-my-empire",
+  "releaseTitle": "King In My Empire",
+  "releaseDate": "2026-08-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "electronic",
+    "dance",
+    "downtempo",
+    "dub",
+    "dub techno",
+    "electro",
+    "electronica",
+    "pop",
+    "techno",
+    "vocals",
+    "Norway"
+  ],
+  "primaryLocation": "Norway",
+  "bioShort": "I'm a king",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lucyladusk.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:09:06Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "king-in-my-empire",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "king-in-my-empire-711732336",
+      "title": "King In My Empire",
+      "artist": "Lucy La Dusk",
+      "albumTitle": "King In My Empire",
+      "albumKey": "king-in-my-empire",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lucyladusk.bandcamp.com/track/king-in-my-empire",
+      "bandcampEmbedTrackId": "711732336",
+      "sourcePage": "https://lucyladusk.bandcamp.com/album/king-in-my-empire",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "king-in-my-empire-3295699563",
+      "title": "Eye Drapes",
+      "artist": "Lucy La Dusk",
+      "albumTitle": "King In My Empire",
+      "albumKey": "king-in-my-empire",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:44",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lucyladusk.bandcamp.com/track/eye-drapes",
+      "bandcampEmbedTrackId": "3295699563",
+      "sourcePage": "https://lucyladusk.bandcamp.com/album/king-in-my-empire",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "king-in-my-empire-4035816225",
+      "title": "An Angel In The Passing",
+      "artist": "Lucy La Dusk",
+      "albumTitle": "King In My Empire",
+      "albumKey": "king-in-my-empire",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:21",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lucyladusk.bandcamp.com/track/an-angel-in-the-passing",
+      "bandcampEmbedTrackId": "4035816225",
+      "sourcePage": "https://lucyladusk.bandcamp.com/album/king-in-my-empire",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lucyladusk.bandcamp.com/album/king-in-my-empire",
+    "discoveredAt": "2026-09-06T02:57:23.019280+00:00",
+    "importedAt": "2026-09-06T03:09:06.593074+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lucyladusk.bandcamp.com",
+    "bandcampBandId": "1928318614",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:06.593074+00:00"
+  }
+}

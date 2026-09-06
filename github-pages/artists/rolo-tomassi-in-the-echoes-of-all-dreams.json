@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "rolo-tomassi-in-the-echoes-of-all-dreams",
+  "artist": "Rolo Tomassi",
+  "bandcampUrl": "https://rolotomassi.bandcamp.com/album/in-the-echoes-of-all-dreams",
+  "releaseTitle": "In the Echoes of All Dreams",
+  "releaseDate": "2025-10-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "metal",
+    "progressive rock",
+    "mathcore",
+    "post-metal",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Rolo Tomassi — post-hardcore / metal / progressive rock music from UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rolotomassi.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:13:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "in-the-echoes-of-all-dreams",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "in-the-echoes-of-all-dreams-283941889",
+      "title": "Woodburn",
+      "artist": "Rolo Tomassi",
+      "albumTitle": "In the Echoes of All Dreams",
+      "albumKey": "in-the-echoes-of-all-dreams",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "3:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rolotomassi.bandcamp.com/track/woodburn",
+      "bandcampEmbedTrackId": "283941889",
+      "sourcePage": "https://rolotomassi.bandcamp.com/album/in-the-echoes-of-all-dreams",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "in-the-echoes-of-all-dreams-381531007",
+      "title": "Tempest",
+      "artist": "Rolo Tomassi",
+      "albumTitle": "In the Echoes of All Dreams",
+      "albumKey": "in-the-echoes-of-all-dreams",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "3:19",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rolotomassi.bandcamp.com/track/tempest",
+      "bandcampEmbedTrackId": "381531007",
+      "sourcePage": "https://rolotomassi.bandcamp.com/album/in-the-echoes-of-all-dreams",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "in-the-echoes-of-all-dreams-683635102",
+      "title": "Dead Language",
+      "artist": "Rolo Tomassi",
+      "albumTitle": "In the Echoes of All Dreams",
+      "albumKey": "in-the-echoes-of-all-dreams",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "3:57",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rolotomassi.bandcamp.com/track/dead-language",
+      "bandcampEmbedTrackId": "683635102",
+      "sourcePage": "https://rolotomassi.bandcamp.com/album/in-the-echoes-of-all-dreams",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "in-the-echoes-of-all-dreams-2776676415",
+      "title": "Unintending",
+      "artist": "Rolo Tomassi",
+      "albumTitle": "In the Echoes of All Dreams",
+      "albumKey": "in-the-echoes-of-all-dreams",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "4:53",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rolotomassi.bandcamp.com/track/unintending",
+      "bandcampEmbedTrackId": "2776676415",
+      "sourcePage": "https://rolotomassi.bandcamp.com/album/in-the-echoes-of-all-dreams",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://rolotomassi.bandcamp.com/album/in-the-echoes-of-all-dreams",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:13:55.452882+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "rolotomassi.bandcamp.com",
+    "bandcampBandId": "3283164613",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:13:55.452882+00:00"
+  }
+}

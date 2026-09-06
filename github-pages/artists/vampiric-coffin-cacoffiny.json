@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "vampiric-coffin-cacoffiny",
+  "artist": "Vampiric Coffin",
+  "bandcampUrl": "https://vampiriccoffin.bandcamp.com/album/cacoffiny",
+  "releaseTitle": "Cacoffiny",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "heavy metal",
+    "metal",
+    "punk",
+    "vampire",
+    "Jackson"
+  ],
+  "primaryLocation": "Jackson, Mississippi",
+  "bioShort": "These tracks are from a 3-way split with Glass Coffin and Coffin Fodder Released on Grime Stone Records",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vampiriccoffin.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:11:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "cacoffiny",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cacoffiny-2061067416",
+      "title": "Vampiric Wargoat",
+      "artist": "Vampiric Coffin",
+      "albumTitle": "Cacoffiny",
+      "albumKey": "cacoffiny",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vampiriccoffin.bandcamp.com/track/vampiric-wargoat",
+      "bandcampEmbedTrackId": "2061067416",
+      "sourcePage": "https://vampiriccoffin.bandcamp.com/album/cacoffiny",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "cacoffiny-768417908",
+      "title": "Illiterate Vampire",
+      "artist": "Vampiric Coffin",
+      "albumTitle": "Cacoffiny",
+      "albumKey": "cacoffiny",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vampiriccoffin.bandcamp.com/track/illiterate-vampire",
+      "bandcampEmbedTrackId": "768417908",
+      "sourcePage": "https://vampiriccoffin.bandcamp.com/album/cacoffiny",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "cacoffiny-1096008032",
+      "title": "Crimson Moon Eclipse",
+      "artist": "Vampiric Coffin",
+      "albumTitle": "Cacoffiny",
+      "albumKey": "cacoffiny",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:51",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vampiriccoffin.bandcamp.com/track/crimson-moon-eclipse",
+      "bandcampEmbedTrackId": "1096008032",
+      "sourcePage": "https://vampiriccoffin.bandcamp.com/album/cacoffiny",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://vampiriccoffin.bandcamp.com/album/cacoffiny",
+    "discoveredAt": "2026-09-06T02:57:23.021279+00:00",
+    "importedAt": "2026-09-06T03:11:07.460041+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "vampiriccoffin.bandcamp.com",
+    "bandcampBandId": "3790942789",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:11:07.460041+00:00"
+  }
+}

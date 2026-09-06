@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "hypramusic-zircon",
+  "artist": "HypraMusic",
+  "bandcampUrl": "https://hypra.bandcamp.com/album/zircon",
+  "releaseTitle": "Zircon",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "bass house",
+    "dance pop",
+    "electronic",
+    "cyberpunk",
+    "dark synth",
+    "dubstep",
+    "electro house",
+    "trance",
+    "New Jersey"
+  ],
+  "primaryLocation": "New Jersey",
+  "bioShort": "HypraMusic — breakbeat / bass house / dance pop music from New Jersey.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hypra.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:00:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "zircon",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "zircon-3107063577",
+      "title": "Zircon",
+      "artist": "HypraMusic",
+      "albumTitle": "Zircon",
+      "albumKey": "zircon",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hypra.bandcamp.com/track/zircon",
+      "bandcampEmbedTrackId": "3107063577",
+      "sourcePage": "https://hypra.bandcamp.com/album/zircon",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "zircon-3146460636",
+      "title": "Xenon",
+      "artist": "HypraMusic",
+      "albumTitle": "Zircon",
+      "albumKey": "zircon",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hypra.bandcamp.com/track/xenon",
+      "bandcampEmbedTrackId": "3146460636",
+      "sourcePage": "https://hypra.bandcamp.com/album/zircon",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "zircon-810652070",
+      "title": "Onyx",
+      "artist": "HypraMusic",
+      "albumTitle": "Zircon",
+      "albumKey": "zircon",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:45",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hypra.bandcamp.com/track/onyx",
+      "bandcampEmbedTrackId": "810652070",
+      "sourcePage": "https://hypra.bandcamp.com/album/zircon",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "zircon-3633192878",
+      "title": "Beams V2",
+      "artist": "HypraMusic",
+      "albumTitle": "Zircon",
+      "albumKey": "zircon",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:52",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hypra.bandcamp.com/track/beams-v2",
+      "bandcampEmbedTrackId": "3633192878",
+      "sourcePage": "https://hypra.bandcamp.com/album/zircon",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hypra.bandcamp.com/album/zircon",
+    "discoveredAt": "2026-09-06T02:57:23.011861+00:00",
+    "importedAt": "2026-09-06T03:00:09.799096+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hypra.bandcamp.com",
+    "bandcampBandId": "1797199735",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:00:09.799096+00:00"
+  }
+}

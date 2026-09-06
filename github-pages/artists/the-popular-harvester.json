@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-popular-harvester",
+  "artist": "the popular",
+  "bandcampUrl": "https://thepopular.bandcamp.com/album/harvester",
+  "releaseTitle": "Harvester",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "folk",
+    "neofolk",
+    "sadcore",
+    "Orlando"
+  ],
+  "primaryLocation": "Orlando, Florida",
+  "bioShort": "the popular — slowcore / folk / neofolk music from Orlando, Florida.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thepopular.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:57:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "harvester",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "harvester-3254874297",
+      "title": "Scythe",
+      "artist": "the popular",
+      "albumTitle": "Harvester",
+      "albumKey": "harvester",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thepopular.bandcamp.com/album/harvester",
+      "bandcampEmbedTrackId": "3254874297",
+      "sourcePage": "https://thepopular.bandcamp.com/album/harvester",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "harvester-941178245",
+      "title": "The 2008 Financial Crisis aka George Lopez at 11pm",
+      "artist": "the popular",
+      "albumTitle": "Harvester",
+      "albumKey": "harvester",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thepopular.bandcamp.com/album/harvester",
+      "bandcampEmbedTrackId": "941178245",
+      "sourcePage": "https://thepopular.bandcamp.com/album/harvester",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "harvester-2326838321",
+      "title": "I'm Sorry, Michael Jackson",
+      "artist": "the popular",
+      "albumTitle": "Harvester",
+      "albumKey": "harvester",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thepopular.bandcamp.com/album/harvester",
+      "bandcampEmbedTrackId": "2326838321",
+      "sourcePage": "https://thepopular.bandcamp.com/album/harvester",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "harvester-485892799",
+      "title": "Lighthouse (Early Version)",
+      "artist": "the popular",
+      "albumTitle": "Harvester",
+      "albumKey": "harvester",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thepopular.bandcamp.com/album/harvester",
+      "bandcampEmbedTrackId": "485892799",
+      "sourcePage": "https://thepopular.bandcamp.com/album/harvester",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thepopular.bandcamp.com/album/harvester",
+    "discoveredAt": "2026-09-06T02:56:05.340878+00:00",
+    "importedAt": "2026-09-06T02:57:40.687185+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thepopular.bandcamp.com",
+    "bandcampBandId": "652576385",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:57:40.687185+00:00"
+  }
+}

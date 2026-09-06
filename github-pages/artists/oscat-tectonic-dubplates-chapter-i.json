@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "oscat-tectonic-dubplates-chapter-i",
+  "artist": "OSCAT!",
+  "bandcampUrl": "https://oscat.bandcamp.com/album/tectonic-dubplates-chapter-i",
+  "releaseTitle": "Tectonic Dubplates: Chapter I",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "reggae",
+    "roots",
+    "atmospheric",
+    "dub",
+    "london",
+    "meditation",
+    "spacey",
+    "steppas",
+    "sweden",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Drift away into the atmospheric unknown 🌌 Introducing the new instrumental EP series, Tectonic Dubplates. a soundsystem inspired tale of dreamy, atmospheric soundscapes…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://oscat.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:12:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tectonic-dubplates-chapter-i",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tectonic-dubplates-chapter-i-2148262847",
+      "title": "Nocturnal",
+      "artist": "OSCAT!",
+      "albumTitle": "Tectonic Dubplates: Chapter I",
+      "albumKey": "tectonic-dubplates-chapter-i",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:45",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oscat.bandcamp.com/track/nocturnal",
+      "bandcampEmbedTrackId": "2148262847",
+      "sourcePage": "https://oscat.bandcamp.com/album/tectonic-dubplates-chapter-i",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tectonic-dubplates-chapter-i-1669847725",
+      "title": "Nocturnal Dub",
+      "artist": "OSCAT!",
+      "albumTitle": "Tectonic Dubplates: Chapter I",
+      "albumKey": "tectonic-dubplates-chapter-i",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oscat.bandcamp.com/track/nocturnal-dub",
+      "bandcampEmbedTrackId": "1669847725",
+      "sourcePage": "https://oscat.bandcamp.com/album/tectonic-dubplates-chapter-i",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "tectonic-dubplates-chapter-i-3547091936",
+      "title": "Lucid Dreams",
+      "artist": "OSCAT!",
+      "albumTitle": "Tectonic Dubplates: Chapter I",
+      "albumKey": "tectonic-dubplates-chapter-i",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:38",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oscat.bandcamp.com/track/lucid-dreams",
+      "bandcampEmbedTrackId": "3547091936",
+      "sourcePage": "https://oscat.bandcamp.com/album/tectonic-dubplates-chapter-i",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "tectonic-dubplates-chapter-i-1724232355",
+      "title": "Lucid Dub",
+      "artist": "OSCAT!",
+      "albumTitle": "Tectonic Dubplates: Chapter I",
+      "albumKey": "tectonic-dubplates-chapter-i",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:38",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oscat.bandcamp.com/track/lucid-dub",
+      "bandcampEmbedTrackId": "1724232355",
+      "sourcePage": "https://oscat.bandcamp.com/album/tectonic-dubplates-chapter-i",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://oscat.bandcamp.com/album/tectonic-dubplates-chapter-i",
+    "discoveredAt": "2026-09-06T02:57:23.023576+00:00",
+    "importedAt": "2026-09-06T03:12:27.076338+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "oscat.bandcamp.com",
+    "bandcampBandId": "347771143",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:12:27.076338+00:00"
+  }
+}

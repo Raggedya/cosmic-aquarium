@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "end-hits-heart-crime-heavy-snow",
+  "artist": "end hits",
+  "bandcampUrl": "https://endhitsband.bandcamp.com/album/heart-crime-heavy-snow",
+  "releaseTitle": "Heart & Crime / Heavy Snow",
+  "releaseDate": "2026-07-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "alternative",
+    "ambient pop",
+    "indie folk",
+    "indie rock",
+    "sadcore",
+    "slowcore",
+    "Australia"
+  ],
+  "primaryLocation": "Australia",
+  "bioShort": "just some voice memos of some songs i recorded and wrote over a night, its pretty poor audio quality and kinda sucks in general. recommended to listen loud or with…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://endhitsband.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:01:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "heart-crime-heavy-snow",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "heart-crime-heavy-snow-4117376248",
+      "title": "Heart & Crime",
+      "artist": "end hits",
+      "albumTitle": "Heart & Crime / Heavy Snow",
+      "albumKey": "heart-crime-heavy-snow",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://endhitsband.bandcamp.com/track/heart-crime-2",
+      "bandcampEmbedTrackId": "4117376248",
+      "sourcePage": "https://endhitsband.bandcamp.com/album/heart-crime-heavy-snow",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "heart-crime-heavy-snow-1603496089",
+      "title": "Heavy Snow",
+      "artist": "end hits",
+      "albumTitle": "Heart & Crime / Heavy Snow",
+      "albumKey": "heart-crime-heavy-snow",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:44",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://endhitsband.bandcamp.com/track/heavy-snow-2",
+      "bandcampEmbedTrackId": "1603496089",
+      "sourcePage": "https://endhitsband.bandcamp.com/album/heart-crime-heavy-snow",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "heart-crime-heavy-snow-3779526703",
+      "title": "I Can’t Believe You Actually Died",
+      "artist": "end hits",
+      "albumTitle": "Heart & Crime / Heavy Snow",
+      "albumKey": "heart-crime-heavy-snow",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:56",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://endhitsband.bandcamp.com/track/i-can-t-believe-you-actually-died-2",
+      "bandcampEmbedTrackId": "3779526703",
+      "sourcePage": "https://endhitsband.bandcamp.com/album/heart-crime-heavy-snow",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://endhitsband.bandcamp.com/album/heart-crime-heavy-snow",
+    "discoveredAt": "2026-09-06T02:57:23.012860+00:00",
+    "importedAt": "2026-09-06T03:01:34.308790+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "endhitsband.bandcamp.com",
+    "bandcampBandId": "4291883601",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:01:34.308790+00:00"
+  }
+}

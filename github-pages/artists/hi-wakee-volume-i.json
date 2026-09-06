@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "hi-wakee-volume-i",
+  "artist": "Hi-Wakee",
+  "bandcampUrl": "https://hi-wakee.bandcamp.com/album/volume-i",
+  "releaseTitle": "Volume I",
+  "releaseDate": "2026-09-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "acid",
+    "electro",
+    "house",
+    "machine funk",
+    "Germany"
+  ],
+  "primaryLocation": "Germany",
+  "bioShort": "“Volume 1” is the debut EP by Hi-Wakee, a duo made up of Dowakee (Freiburg, Germany) and DJ Hi-Flosse (Offenbach, Germany). They explore various groove-driven corners of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hi-wakee.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:06:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "volume-i",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "volume-i-3557130743",
+      "title": "Loungecid",
+      "artist": "Hi-Wakee",
+      "albumTitle": "Volume I",
+      "albumKey": "volume-i",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:27",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hi-wakee.bandcamp.com/track/loungecid",
+      "bandcampEmbedTrackId": "3557130743",
+      "sourcePage": "https://hi-wakee.bandcamp.com/album/volume-i",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "volume-i-1620233863",
+      "title": "152 bpm",
+      "artist": "Hi-Wakee",
+      "albumTitle": "Volume I",
+      "albumKey": "volume-i",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:06",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hi-wakee.bandcamp.com/track/152-bpm",
+      "bandcampEmbedTrackId": "1620233863",
+      "sourcePage": "https://hi-wakee.bandcamp.com/album/volume-i",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "volume-i-3931091549",
+      "title": "Dasweazy",
+      "artist": "Hi-Wakee",
+      "albumTitle": "Volume I",
+      "albumKey": "volume-i",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hi-wakee.bandcamp.com/track/dasweazy",
+      "bandcampEmbedTrackId": "3931091549",
+      "sourcePage": "https://hi-wakee.bandcamp.com/album/volume-i",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "volume-i-3049530098",
+      "title": "125 bpm",
+      "artist": "Hi-Wakee",
+      "albumTitle": "Volume I",
+      "albumKey": "volume-i",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:40",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hi-wakee.bandcamp.com/track/125-bpm",
+      "bandcampEmbedTrackId": "3049530098",
+      "sourcePage": "https://hi-wakee.bandcamp.com/album/volume-i",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hi-wakee.bandcamp.com/album/volume-i",
+    "discoveredAt": "2026-09-06T02:57:23.016872+00:00",
+    "importedAt": "2026-09-06T03:06:07.650402+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hi-wakee.bandcamp.com",
+    "bandcampBandId": "1064185851",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:06:07.650402+00:00"
+  }
+}

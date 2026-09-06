@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "slug": "fin-del-mar-live-session-en-ixtlan",
+  "artist": "Fin del mar",
+  "bandcampUrl": "https://findelmar.bandcamp.com/album/live-session-en-ixtlan",
+  "releaseTitle": "live session en ixtlan",
+  "releaseDate": "2026-07-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "progressive rock",
+    "rock",
+    "alternative rock",
+    "art rock",
+    "psycodelic rock",
+    "stoner",
+    "Córdoba"
+  ],
+  "primaryLocation": "Córdoba, Argentina",
+  "bioShort": "Este álbum pertenece a la sesión en vivo '' live session en ixtlan '' disponible en YouTube. Dirigida por María Veron y filmada íntegramente en VHS, la Live Session de Fin del…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://findelmar.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:13:30Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "live-session-en-ixtlan",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "live-session-en-ixtlan-3153482063",
+      "title": "El ejercicio (live session en ixtlan)",
+      "artist": "Fin del mar",
+      "albumTitle": "live session en ixtlan",
+      "albumKey": "live-session-en-ixtlan",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://findelmar.bandcamp.com/track/el-ejercicio-live-session-en-ixtlan",
+      "bandcampEmbedTrackId": "3153482063",
+      "sourcePage": "https://findelmar.bandcamp.com/album/live-session-en-ixtlan",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "live-session-en-ixtlan-1204794298",
+      "title": "Canción para naufragios (live session en ixtlan)",
+      "artist": "Fin del mar",
+      "albumTitle": "live session en ixtlan",
+      "albumKey": "live-session-en-ixtlan",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:56",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://findelmar.bandcamp.com/track/canci-n-para-naufragios-live-session-en-ixtlan",
+      "bandcampEmbedTrackId": "1204794298",
+      "sourcePage": "https://findelmar.bandcamp.com/album/live-session-en-ixtlan",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "live-session-en-ixtlan-3487103930",
+      "title": "Mínimas (live session en ixtlan)",
+      "artist": "Fin del mar",
+      "albumTitle": "live session en ixtlan",
+      "albumKey": "live-session-en-ixtlan",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:49",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://findelmar.bandcamp.com/track/m-nimas-live-session-en-ixtlan",
+      "bandcampEmbedTrackId": "3487103930",
+      "sourcePage": "https://findelmar.bandcamp.com/album/live-session-en-ixtlan",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://findelmar.bandcamp.com/album/live-session-en-ixtlan",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:13:30.448248+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "findelmar.bandcamp.com",
+    "bandcampBandId": "739180192",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:13:30.448248+00:00"
+  }
+}

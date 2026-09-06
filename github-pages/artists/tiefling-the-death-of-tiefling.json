@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "slug": "tiefling-the-death-of-tiefling",
+  "artist": "Tiefling",
+  "bandcampUrl": "https://tiefling.bandcamp.com/album/the-death-of-tiefling",
+  "releaseTitle": "the death of tiefling",
+  "releaseDate": "2026-05-12 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "diy",
+    "experimental",
+    "folk",
+    "ambient",
+    "demo",
+    "drum-and-bass",
+    "hyperpop",
+    "indie",
+    "noise",
+    "trans",
+    "Boston"
+  ],
+  "primaryLocation": "Boston, Massachusetts",
+  "bioShort": "Tiefling — outsider / diy / experimental music from Boston, Massachusetts.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tiefling.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:09:44Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-death-of-tiefling",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-death-of-tiefling-3385342720",
+      "title": "love spread thin",
+      "artist": "Tiefling",
+      "albumTitle": "the death of tiefling",
+      "albumKey": "the-death-of-tiefling",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tiefling.bandcamp.com/track/love-spread-thin",
+      "bandcampEmbedTrackId": "3385342720",
+      "sourcePage": "https://tiefling.bandcamp.com/album/the-death-of-tiefling",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-death-of-tiefling-3926190319",
+      "title": "tief's incredible string jam",
+      "artist": "Tiefling",
+      "albumTitle": "the death of tiefling",
+      "albumKey": "the-death-of-tiefling",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tiefling.bandcamp.com/track/tiefs-incredible-string-jam",
+      "bandcampEmbedTrackId": "3926190319",
+      "sourcePage": "https://tiefling.bandcamp.com/album/the-death-of-tiefling",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tiefling.bandcamp.com/album/the-death-of-tiefling",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:09:44.656679+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tiefling.bandcamp.com",
+    "bandcampBandId": "446069091",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:09:44.656679+00:00"
+  }
+}

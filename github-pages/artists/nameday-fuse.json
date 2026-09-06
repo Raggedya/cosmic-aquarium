@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "nameday-fuse",
+  "artist": "NAMEDAY",
+  "bandcampUrl": "https://nameday.bandcamp.com/album/fuse",
+  "releaseTitle": "FUSE",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "dreamo",
+    "grungegaze",
+    "post-hardcore",
+    "shoegaze",
+    "Houston"
+  ],
+  "primaryLocation": "Houston, Texas",
+  "bioShort": "NAMEDAY — slowcore / alternative / dreamo music from Houston, Texas.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nameday.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:12:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "fuse",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fuse-802192887",
+      "title": "red sleeves",
+      "artist": "NAMEDAY",
+      "albumTitle": "FUSE",
+      "albumKey": "fuse",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nameday.bandcamp.com/track/red-sleeves",
+      "bandcampEmbedTrackId": "802192887",
+      "sourcePage": "https://nameday.bandcamp.com/album/fuse",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "fuse-3917965940",
+      "title": "you & i",
+      "artist": "NAMEDAY",
+      "albumTitle": "FUSE",
+      "albumKey": "fuse",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nameday.bandcamp.com/track/you-i",
+      "bandcampEmbedTrackId": "3917965940",
+      "sourcePage": "https://nameday.bandcamp.com/album/fuse",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "fuse-2133206032",
+      "title": "less of me",
+      "artist": "NAMEDAY",
+      "albumTitle": "FUSE",
+      "albumKey": "fuse",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:05",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nameday.bandcamp.com/track/less-of-me",
+      "bandcampEmbedTrackId": "2133206032",
+      "sourcePage": "https://nameday.bandcamp.com/album/fuse",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "fuse-737459142",
+      "title": "vandal",
+      "artist": "NAMEDAY",
+      "albumTitle": "FUSE",
+      "albumKey": "fuse",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:16",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nameday.bandcamp.com/track/vandal",
+      "bandcampEmbedTrackId": "737459142",
+      "sourcePage": "https://nameday.bandcamp.com/album/fuse",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nameday.bandcamp.com/album/fuse",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:12:59.605303+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nameday.bandcamp.com",
+    "bandcampBandId": "3947022482",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:12:59.605303+00:00"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "brittany-bindrim-bellow",
+  "artist": "Brittany Bindrim",
+  "bandcampUrl": "https://brittanybindrim.bandcamp.com/album/bellow",
+  "releaseTitle": "Bellow",
+  "releaseDate": "2026-07-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "alternative",
+    "darkpop",
+    "darkwave",
+    "dream pop",
+    "electronica",
+    "industrial",
+    "synthpop",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "These broken parts you've given me to reassemble Mirror missing pieces within me Soothing burns Will we unlearn Our pain, our love Forever analogous for us These broken parts…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://brittanybindrim.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:57:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bellow",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bellow-3677505110",
+      "title": "Bellow",
+      "artist": "Brittany Bindrim",
+      "albumTitle": "Bellow",
+      "albumKey": "bellow",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:33",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://brittanybindrim.bandcamp.com/track/bellow",
+      "bandcampEmbedTrackId": "3677505110",
+      "sourcePage": "https://brittanybindrim.bandcamp.com/album/bellow",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://brittanybindrim.bandcamp.com/album/bellow",
+    "discoveredAt": "2026-09-06T02:56:00.395207+00:00",
+    "importedAt": "2026-09-06T02:57:38.022734+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "brittanybindrim.bandcamp.com",
+    "bandcampBandId": "2196130547",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:57:38.022734+00:00"
+  }
+}

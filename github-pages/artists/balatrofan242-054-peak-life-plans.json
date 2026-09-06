@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "balatrofan242-054-peak-life-plans",
+  "artist": "BalatroFan242",
+  "bandcampUrl": "https://balatrofan242.bandcamp.com/album/054-peak-life-plans",
+  "releaseTitle": "054: Peak Life Plans",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "ambient",
+    "dark ambient",
+    "drone",
+    "experimental",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "BalatroFan242 — noise / ambient / dark ambient music from UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://balatrofan242.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:16:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "054-peak-life-plans",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "054-peak-life-plans-89920508",
+      "title": "Peak Life Plans",
+      "artist": "BalatroFan242",
+      "albumTitle": "054: Peak Life Plans",
+      "albumKey": "054-peak-life-plans",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "35:20",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://balatrofan242.bandcamp.com/track/peak-life-plans",
+      "bandcampEmbedTrackId": "89920508",
+      "sourcePage": "https://balatrofan242.bandcamp.com/album/054-peak-life-plans",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://balatrofan242.bandcamp.com/album/054-peak-life-plans",
+    "discoveredAt": "2026-09-06T02:57:23.027161+00:00",
+    "importedAt": "2026-09-06T03:16:10.461054+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "balatrofan242.bandcamp.com",
+    "bandcampBandId": "2158256586",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:16:10.461054+00:00"
+  }
+}

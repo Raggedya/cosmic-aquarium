@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "fjaak-fjaak-015",
+  "artist": "FJAAK",
+  "bandcampUrl": "https://fjaak.bandcamp.com/album/fjaak-015",
+  "releaseTitle": "FJAAK 015",
+  "releaseDate": "2026-09-17 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "club",
+    "electronic",
+    "fjaak",
+    "groove",
+    "house",
+    "power",
+    "rave",
+    "spandau",
+    "techno",
+    "big room",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "Get it here: https://found.ee/FJAAK015 FJAAK returns to their own imprint with a new four track EP ‘FJAAK015’, showcasing the raw, analogue driven techno that has become…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://fjaak.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:15:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "fjaak-015",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fjaak-015-2491672362",
+      "title": "Serotonin",
+      "artist": "FJAAK",
+      "albumTitle": "FJAAK 015",
+      "albumKey": "fjaak-015",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:35",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fjaak.bandcamp.com/track/serotonin",
+      "bandcampEmbedTrackId": "2491672362",
+      "sourcePage": "https://fjaak.bandcamp.com/album/fjaak-015",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "fjaak-015-1755801924",
+      "title": "Threshold",
+      "artist": "FJAAK",
+      "albumTitle": "FJAAK 015",
+      "albumKey": "fjaak-015",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fjaak.bandcamp.com/album/fjaak-015",
+      "bandcampEmbedTrackId": "1755801924",
+      "sourcePage": "https://fjaak.bandcamp.com/album/fjaak-015",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "fjaak-015-2619505826",
+      "title": "Bio Data",
+      "artist": "FJAAK",
+      "albumTitle": "FJAAK 015",
+      "albumKey": "fjaak-015",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fjaak.bandcamp.com/album/fjaak-015",
+      "bandcampEmbedTrackId": "2619505826",
+      "sourcePage": "https://fjaak.bandcamp.com/album/fjaak-015",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "fjaak-015-3955734338",
+      "title": "Wax Pack",
+      "artist": "FJAAK",
+      "albumTitle": "FJAAK 015",
+      "albumKey": "fjaak-015",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fjaak.bandcamp.com/album/fjaak-015",
+      "bandcampEmbedTrackId": "3955734338",
+      "sourcePage": "https://fjaak.bandcamp.com/album/fjaak-015",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://fjaak.bandcamp.com/album/fjaak-015",
+    "discoveredAt": "2026-09-06T02:57:23.027161+00:00",
+    "importedAt": "2026-09-06T03:15:55.858284+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "fjaak.bandcamp.com",
+    "bandcampBandId": "1292584728",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:15:55.858284+00:00"
+  }
+}

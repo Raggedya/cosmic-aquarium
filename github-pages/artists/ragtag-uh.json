@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "ragtag-uh",
+  "artist": "RAGTAG",
+  "bandcampUrl": "https://ragtagggg.bandcamp.com/album/uh",
+  "releaseTitle": "Uh!",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "punk",
+    "alt punk rock",
+    "comedy rock",
+    "nu punk",
+    "nu-metal",
+    "punk rock",
+    "short songs",
+    "solo artist",
+    "Florida"
+  ],
+  "primaryLocation": "Florida",
+  "bioShort": "RAGTAG — grunge / punk / alt punk rock music from Florida.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ragtagggg.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:08:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "uh",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "uh-1519829092",
+      "title": "Uh!",
+      "artist": "RAGTAG",
+      "albumTitle": "Uh!",
+      "albumKey": "uh",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ragtagggg.bandcamp.com/track/uh",
+      "bandcampEmbedTrackId": "1519829092",
+      "sourcePage": "https://ragtagggg.bandcamp.com/album/uh",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ragtagggg.bandcamp.com/album/uh",
+    "discoveredAt": "2026-09-06T02:57:23.019280+00:00",
+    "importedAt": "2026-09-06T03:08:36.348903+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ragtagggg.bandcamp.com",
+    "bandcampBandId": "2859856352",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:08:36.348903+00:00"
+  }
+}

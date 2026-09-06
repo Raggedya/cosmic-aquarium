@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "agua-viva-onix-cielo",
+  "artist": "Agua Viva",
+  "bandcampUrl": "https://aguaviva1.bandcamp.com/album/onix-cielo",
+  "releaseTitle": "Onix Cielo",
+  "releaseDate": "2026-07-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "ethereal techno",
+    "femmepop",
+    "future pop-synth",
+    "pop",
+    "ambient pop",
+    "dream pop",
+    "exotica",
+    "fairy pop",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Onyx Cielo gathers voices that seem to descend from elsewhere, blending nature textures, arpeggiated fragments of vocals, and sound healing infused techno, like a nightclub…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://aguaviva1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:10:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "onix-cielo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "onix-cielo-1183213326",
+      "title": "Fluida",
+      "artist": "Agua Viva",
+      "albumTitle": "Onix Cielo",
+      "albumKey": "onix-cielo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aguaviva1.bandcamp.com/track/fluida",
+      "bandcampEmbedTrackId": "1183213326",
+      "sourcePage": "https://aguaviva1.bandcamp.com/album/onix-cielo",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "onix-cielo-1010095386",
+      "title": "Cielo Sumergido",
+      "artist": "Agua Viva",
+      "albumTitle": "Onix Cielo",
+      "albumKey": "onix-cielo",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:44",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aguaviva1.bandcamp.com/track/cielo-sumergido",
+      "bandcampEmbedTrackId": "1010095386",
+      "sourcePage": "https://aguaviva1.bandcamp.com/album/onix-cielo",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "onix-cielo-1177499393",
+      "title": "Lyra",
+      "artist": "Agua Viva",
+      "albumTitle": "Onix Cielo",
+      "albumKey": "onix-cielo",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:58",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aguaviva1.bandcamp.com/track/lyra",
+      "bandcampEmbedTrackId": "1177499393",
+      "sourcePage": "https://aguaviva1.bandcamp.com/album/onix-cielo",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "onix-cielo-3558567876",
+      "title": "Living Secret",
+      "artist": "Agua Viva",
+      "albumTitle": "Onix Cielo",
+      "albumKey": "onix-cielo",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:47",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aguaviva1.bandcamp.com/track/living-secret",
+      "bandcampEmbedTrackId": "3558567876",
+      "sourcePage": "https://aguaviva1.bandcamp.com/album/onix-cielo",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://aguaviva1.bandcamp.com/album/onix-cielo",
+    "discoveredAt": "2026-09-06T02:57:23.020280+00:00",
+    "importedAt": "2026-09-06T03:10:00.720208+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "aguaviva1.bandcamp.com",
+    "bandcampBandId": "1697464109",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:10:00.720208+00:00"
+  }
+}

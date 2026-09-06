@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "conifere-l-impot-du-sang",
+  "artist": "Conifère",
+  "bandcampUrl": "https://conifere.bandcamp.com/album/limp-t-du-sang",
+  "releaseTitle": "L'Impôt du Sang",
+  "releaseDate": "2024-04-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "black metal",
+    "metal",
+    "oldschool black metal",
+    "raw black metal",
+    "dark ambient",
+    "dungeon synth",
+    "Montreal"
+  ],
+  "primaryLocation": "Montreal, Québec",
+  "bioShort": "Nakkabre - Guitars, Synths Cauchemar - Vocals, Lyrics Garoth - Drums Martyr - Bass",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://conifere.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:04:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "l-impot-du-sang",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "l-impot-du-sang-492275841",
+      "title": "I - Liberté / II - Furia",
+      "artist": "Conifère",
+      "albumTitle": "L'Impôt du Sang",
+      "albumKey": "l-impot-du-sang",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "7:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://conifere.bandcamp.com/track/i-libert-ii-furia",
+      "bandcampEmbedTrackId": "492275841",
+      "sourcePage": "https://conifere.bandcamp.com/album/limp-t-du-sang",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "l-impot-du-sang-1707292012",
+      "title": "III - Le Grand Hyver",
+      "artist": "Conifère",
+      "albumTitle": "L'Impôt du Sang",
+      "albumKey": "l-impot-du-sang",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "5:59",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://conifere.bandcamp.com/track/iii-le-grand-hyver",
+      "bandcampEmbedTrackId": "1707292012",
+      "sourcePage": "https://conifere.bandcamp.com/album/limp-t-du-sang",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "l-impot-du-sang-56840654",
+      "title": "IV - Décombres Fumants",
+      "artist": "Conifère",
+      "albumTitle": "L'Impôt du Sang",
+      "albumKey": "l-impot-du-sang",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "5:02",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://conifere.bandcamp.com/track/iv-d-combres-fumants",
+      "bandcampEmbedTrackId": "56840654",
+      "sourcePage": "https://conifere.bandcamp.com/album/limp-t-du-sang",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "l-impot-du-sang-2170080654",
+      "title": "V - Rêve de nos Ancêtres",
+      "artist": "Conifère",
+      "albumTitle": "L'Impôt du Sang",
+      "albumKey": "l-impot-du-sang",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "12:10",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://conifere.bandcamp.com/track/v-r-ve-de-nos-anc-tres",
+      "bandcampEmbedTrackId": "2170080654",
+      "sourcePage": "https://conifere.bandcamp.com/album/limp-t-du-sang",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://conifere.bandcamp.com/album/limp-t-du-sang",
+    "discoveredAt": "2026-09-06T02:57:23.014364+00:00",
+    "importedAt": "2026-09-06T03:04:09.118335+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "conifere.bandcamp.com",
+    "bandcampBandId": "567714503",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:04:09.118335+00:00"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "marie-belle-tommy-you-killed-a-centipede",
+  "artist": "Marie belle Tommy",
+  "bandcampUrl": "https://mariebelletommy.bandcamp.com/album/you-killed-a-centipede",
+  "releaseTitle": "You Killed a Centipede",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "rock",
+    "experimental rock",
+    "home recording",
+    "minimal",
+    "slacker rock",
+    "Pittsburgh"
+  ],
+  "primaryLocation": "Pittsburgh, Pennsylvania",
+  "bioShort": "three songs featuring electric guitar and voice",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mariebelletommy.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:00:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "you-killed-a-centipede",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "you-killed-a-centipede-488553783",
+      "title": "You Killed a Centipede",
+      "artist": "Marie belle Tommy",
+      "albumTitle": "You Killed a Centipede",
+      "albumKey": "you-killed-a-centipede",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mariebelletommy.bandcamp.com/track/you-killed-a-centipede",
+      "bandcampEmbedTrackId": "488553783",
+      "sourcePage": "https://mariebelletommy.bandcamp.com/album/you-killed-a-centipede",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "you-killed-a-centipede-2488524672",
+      "title": "Leaving New York",
+      "artist": "Marie belle Tommy",
+      "albumTitle": "You Killed a Centipede",
+      "albumKey": "you-killed-a-centipede",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:01",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mariebelletommy.bandcamp.com/track/leaving-new-york",
+      "bandcampEmbedTrackId": "2488524672",
+      "sourcePage": "https://mariebelletommy.bandcamp.com/album/you-killed-a-centipede",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "you-killed-a-centipede-176524886",
+      "title": "In Bed",
+      "artist": "Marie belle Tommy",
+      "albumTitle": "You Killed a Centipede",
+      "albumKey": "you-killed-a-centipede",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:56",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mariebelletommy.bandcamp.com/track/in-bed",
+      "bandcampEmbedTrackId": "176524886",
+      "sourcePage": "https://mariebelletommy.bandcamp.com/album/you-killed-a-centipede",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mariebelletommy.bandcamp.com/album/you-killed-a-centipede",
+    "discoveredAt": "2026-09-06T02:57:23.011861+00:00",
+    "importedAt": "2026-09-06T03:00:50.870493+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mariebelletommy.bandcamp.com",
+    "bandcampBandId": "3306647239",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:00:50.870493+00:00"
+  }
+}

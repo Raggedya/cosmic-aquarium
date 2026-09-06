@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "slug": "bauhaus-the-bela-session",
+  "artist": "Bauhaus",
+  "bandcampUrl": "https://bauhaus.bandcamp.com/album/the-bela-session",
+  "releaseTitle": "The Bela Session",
+  "releaseDate": "2018-11-23 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "goth",
+    "rock",
+    "post-punk",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "The Bela Session is a full release of Bauhaus' first studio session from January 26 1979, where the iconic \"Bela Lugosi's Dead\" was recorded. This is the first and only…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bauhaus.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:15:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-bela-session",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-bela-session-3172215564",
+      "title": "Bela Lugosi's Dead (Official Version)",
+      "artist": "Bauhaus",
+      "albumTitle": "The Bela Session",
+      "albumKey": "the-bela-session",
+      "year": 2018,
+      "trackNumber": 1,
+      "duration": "9:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bauhaus.bandcamp.com/track/bela-lugosis-dead-official-version",
+      "bandcampEmbedTrackId": "3172215564",
+      "sourcePage": "https://bauhaus.bandcamp.com/album/the-bela-session",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-bela-session-2175621611",
+      "title": "Some Faces",
+      "artist": "Bauhaus",
+      "albumTitle": "The Bela Session",
+      "albumKey": "the-bela-session",
+      "year": 2018,
+      "trackNumber": 2,
+      "duration": "2:22",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bauhaus.bandcamp.com/track/some-faces",
+      "bandcampEmbedTrackId": "2175621611",
+      "sourcePage": "https://bauhaus.bandcamp.com/album/the-bela-session",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-bela-session-1077302271",
+      "title": "Bite My Hip",
+      "artist": "Bauhaus",
+      "albumTitle": "The Bela Session",
+      "albumKey": "the-bela-session",
+      "year": 2018,
+      "trackNumber": 3,
+      "duration": "2:51",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bauhaus.bandcamp.com/track/bite-my-hip",
+      "bandcampEmbedTrackId": "1077302271",
+      "sourcePage": "https://bauhaus.bandcamp.com/album/the-bela-session",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-bela-session-851067117",
+      "title": "Harry",
+      "artist": "Bauhaus",
+      "albumTitle": "The Bela Session",
+      "albumKey": "the-bela-session",
+      "year": 2018,
+      "trackNumber": 4,
+      "duration": "2:46",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bauhaus.bandcamp.com/track/harry",
+      "bandcampEmbedTrackId": "851067117",
+      "sourcePage": "https://bauhaus.bandcamp.com/album/the-bela-session",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "the-bela-session-647607966",
+      "title": "Boys (Original)",
+      "artist": "Bauhaus",
+      "albumTitle": "The Bela Session",
+      "albumKey": "the-bela-session",
+      "year": 2018,
+      "trackNumber": 5,
+      "duration": "3:03",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bauhaus.bandcamp.com/track/boys-original",
+      "bandcampEmbedTrackId": "647607966",
+      "sourcePage": "https://bauhaus.bandcamp.com/album/the-bela-session",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bauhaus.bandcamp.com/album/the-bela-session",
+    "discoveredAt": "2026-09-06T02:57:23.026157+00:00",
+    "importedAt": "2026-09-06T03:15:26.291802+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bauhaus.bandcamp.com",
+    "bandcampBandId": "3425072467",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:15:26.291802+00:00"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "dead-doe-proof-of-concept",
+  "artist": "dead doe",
+  "bandcampUrl": "https://deaddoe.bandcamp.com/album/proof-of-concept",
+  "releaseTitle": "proof of concept",
+  "releaseDate": "2026-08-19 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "emo",
+    "shoegaze",
+    "New Haven"
+  ],
+  "primaryLocation": "New Haven, Connecticut",
+  "bioShort": "dead doe — slowcore / alternative / emo music from New Haven, Connecticut.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://deaddoe.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:13:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "proof-of-concept",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "proof-of-concept-505082973",
+      "title": "melt",
+      "artist": "dead doe",
+      "albumTitle": "proof of concept",
+      "albumKey": "proof-of-concept",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deaddoe.bandcamp.com/track/melt",
+      "bandcampEmbedTrackId": "505082973",
+      "sourcePage": "https://deaddoe.bandcamp.com/album/proof-of-concept",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "proof-of-concept-1627034135",
+      "title": "garden",
+      "artist": "dead doe",
+      "albumTitle": "proof of concept",
+      "albumKey": "proof-of-concept",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:59",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deaddoe.bandcamp.com/track/garden",
+      "bandcampEmbedTrackId": "1627034135",
+      "sourcePage": "https://deaddoe.bandcamp.com/album/proof-of-concept",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "proof-of-concept-1178920581",
+      "title": "homefromwork",
+      "artist": "dead doe",
+      "albumTitle": "proof of concept",
+      "albumKey": "proof-of-concept",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:58",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deaddoe.bandcamp.com/track/homefromwork",
+      "bandcampEmbedTrackId": "1178920581",
+      "sourcePage": "https://deaddoe.bandcamp.com/album/proof-of-concept",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "proof-of-concept-2064661642",
+      "title": "serra's sanctum",
+      "artist": "dead doe",
+      "albumTitle": "proof of concept",
+      "albumKey": "proof-of-concept",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:03",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deaddoe.bandcamp.com/track/serras-sanctum",
+      "bandcampEmbedTrackId": "2064661642",
+      "sourcePage": "https://deaddoe.bandcamp.com/album/proof-of-concept",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://deaddoe.bandcamp.com/album/proof-of-concept",
+    "discoveredAt": "2026-09-06T02:57:23.024566+00:00",
+    "importedAt": "2026-09-06T03:13:37.120480+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "deaddoe.bandcamp.com",
+    "bandcampBandId": "4206958971",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:13:37.120480+00:00"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "videodome-cuck-dharma",
+  "artist": "Videodome",
+  "bandcampUrl": "https://videodome.bandcamp.com/album/cuck-dharma",
+  "releaseTitle": "Cuck Dharma",
+  "releaseDate": "2026-10-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "alternative",
+    "alt metal",
+    "noise rock",
+    "New Haven"
+  ],
+  "primaryLocation": "New Haven, Connecticut",
+  "bioShort": "Videodome — post-hardcore / alternative / alt metal music from New Haven, Connecticut.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://videodome.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:59:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "cuck-dharma",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cuck-dharma-2639760415",
+      "title": "Cuck Dharma",
+      "artist": "Videodome",
+      "albumTitle": "Cuck Dharma",
+      "albumKey": "cuck-dharma",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://videodome.bandcamp.com/track/cuck-dharma",
+      "bandcampEmbedTrackId": "2639760415",
+      "sourcePage": "https://videodome.bandcamp.com/album/cuck-dharma",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "cuck-dharma-1118835385",
+      "title": "Illuminati Humiliation Ritual",
+      "artist": "Videodome",
+      "albumTitle": "Cuck Dharma",
+      "albumKey": "cuck-dharma",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://videodome.bandcamp.com/album/cuck-dharma",
+      "bandcampEmbedTrackId": "1118835385",
+      "sourcePage": "https://videodome.bandcamp.com/album/cuck-dharma",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "cuck-dharma-4180737343",
+      "title": "Loss Prevention Officers in the Hands of An Angry God",
+      "artist": "Videodome",
+      "albumTitle": "Cuck Dharma",
+      "albumKey": "cuck-dharma",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://videodome.bandcamp.com/album/cuck-dharma",
+      "bandcampEmbedTrackId": "4180737343",
+      "sourcePage": "https://videodome.bandcamp.com/album/cuck-dharma",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "cuck-dharma-947632419",
+      "title": "Maidenless...?",
+      "artist": "Videodome",
+      "albumTitle": "Cuck Dharma",
+      "albumKey": "cuck-dharma",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://videodome.bandcamp.com/album/cuck-dharma",
+      "bandcampEmbedTrackId": "947632419",
+      "sourcePage": "https://videodome.bandcamp.com/album/cuck-dharma",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "cuck-dharma-944262665",
+      "title": "Heavy Breath Play",
+      "artist": "Videodome",
+      "albumTitle": "Cuck Dharma",
+      "albumKey": "cuck-dharma",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "0:00",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://videodome.bandcamp.com/album/cuck-dharma",
+      "bandcampEmbedTrackId": "944262665",
+      "sourcePage": "https://videodome.bandcamp.com/album/cuck-dharma",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://videodome.bandcamp.com/album/cuck-dharma",
+    "discoveredAt": "2026-09-06T02:57:23.010861+00:00",
+    "importedAt": "2026-09-06T02:59:28.688562+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "videodome.bandcamp.com",
+    "bandcampBandId": "3885687462",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:59:28.688562+00:00"
+  }
+}

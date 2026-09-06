@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "wretched-blood-magnolia",
+  "artist": "Wretched",
+  "bandcampUrl": "https://wretched1925.bandcamp.com/album/blood-magnolia",
+  "releaseTitle": "Blood Magnolia",
+  "releaseDate": "2026-08-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "groove metal",
+    "metal",
+    "sludge metal",
+    "southern metal",
+    "stoner metal",
+    "Mississippi"
+  ],
+  "primaryLocation": "Mississippi",
+  "bioShort": "Demos for the people",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://wretched1925.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:10:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "blood-magnolia",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "blood-magnolia-2799611149",
+      "title": "Blood Magnolia",
+      "artist": "Wretched",
+      "albumTitle": "Blood Magnolia",
+      "albumKey": "blood-magnolia",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wretched1925.bandcamp.com/track/blood-magnolia",
+      "bandcampEmbedTrackId": "2799611149",
+      "sourcePage": "https://wretched1925.bandcamp.com/album/blood-magnolia",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "blood-magnolia-3884670748",
+      "title": "The Killing Fields",
+      "artist": "Wretched",
+      "albumTitle": "Blood Magnolia",
+      "albumKey": "blood-magnolia",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:09",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wretched1925.bandcamp.com/track/the-killing-fields",
+      "bandcampEmbedTrackId": "3884670748",
+      "sourcePage": "https://wretched1925.bandcamp.com/album/blood-magnolia",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "blood-magnolia-2407395162",
+      "title": "Old Man of the Water",
+      "artist": "Wretched",
+      "albumTitle": "Blood Magnolia",
+      "albumKey": "blood-magnolia",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wretched1925.bandcamp.com/track/old-man-of-the-water",
+      "bandcampEmbedTrackId": "2407395162",
+      "sourcePage": "https://wretched1925.bandcamp.com/album/blood-magnolia",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "blood-magnolia-3691836391",
+      "title": "Who's War?",
+      "artist": "Wretched",
+      "albumTitle": "Blood Magnolia",
+      "albumKey": "blood-magnolia",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:16",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wretched1925.bandcamp.com/track/whos-war",
+      "bandcampEmbedTrackId": "3691836391",
+      "sourcePage": "https://wretched1925.bandcamp.com/album/blood-magnolia",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://wretched1925.bandcamp.com/album/blood-magnolia",
+    "discoveredAt": "2026-09-06T02:57:23.021279+00:00",
+    "importedAt": "2026-09-06T03:10:40.391171+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "wretched1925.bandcamp.com",
+    "bandcampBandId": "1364362245",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:10:40.391171+00:00"
+  }
+}

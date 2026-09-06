@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "beats-are-broken-turn-up-the-bass-whispering-bells",
+  "artist": "Beats Are Broken",
+  "bandcampUrl": "https://beatsarebroken.bandcamp.com/album/turn-up-the-bass-whispering-bells",
+  "releaseTitle": "Turn Up The Bass - Whispering Bells",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "oldskool rave",
+    "breaks",
+    "hardcore",
+    "Brazil"
+  ],
+  "primaryLocation": "Brazil",
+  "bioShort": "Beats Are Broken — breakbeat / oldskool rave / breaks music from Brazil.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://beatsarebroken.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:58:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "turn-up-the-bass-whispering-bells",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "turn-up-the-bass-whispering-bells-3907337086",
+      "title": "Turn Up The Bas",
+      "artist": "Beats Are Broken",
+      "albumTitle": "Turn Up The Bass - Whispering Bells",
+      "albumKey": "turn-up-the-bass-whispering-bells",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beatsarebroken.bandcamp.com/track/turn-up-the-bas",
+      "bandcampEmbedTrackId": "3907337086",
+      "sourcePage": "https://beatsarebroken.bandcamp.com/album/turn-up-the-bass-whispering-bells",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "turn-up-the-bass-whispering-bells-2753882431",
+      "title": "Whispering Bells",
+      "artist": "Beats Are Broken",
+      "albumTitle": "Turn Up The Bass - Whispering Bells",
+      "albumKey": "turn-up-the-bass-whispering-bells",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beatsarebroken.bandcamp.com/track/whispering-bells",
+      "bandcampEmbedTrackId": "2753882431",
+      "sourcePage": "https://beatsarebroken.bandcamp.com/album/turn-up-the-bass-whispering-bells",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://beatsarebroken.bandcamp.com/album/turn-up-the-bass-whispering-bells",
+    "discoveredAt": "2026-09-06T02:57:23.009856+00:00",
+    "importedAt": "2026-09-06T02:58:33.583944+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "beatsarebroken.bandcamp.com",
+    "bandcampBandId": "1438765712",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T02:58:33.583944+00:00"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "new-normal-sore",
+  "artist": "NEW NORMAL",
+  "bandcampUrl": "https://newnormal-music.bandcamp.com/album/sore",
+  "releaseTitle": "Sore",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-03",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "alternative",
+    "post-hardcore",
+    "sludge",
+    "stoner",
+    "Dresden"
+  ],
+  "primaryLocation": "Dresden, Germany",
+  "bioShort": "NEW NORMAL — post-metal / alternative / post-hardcore music from Dresden, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://newnormal-music.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:08:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sore",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sore-2154474263",
+      "title": "Sore",
+      "artist": "NEW NORMAL",
+      "albumTitle": "Sore",
+      "albumKey": "sore",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://newnormal-music.bandcamp.com/track/sore",
+      "bandcampEmbedTrackId": "2154474263",
+      "sourcePage": "https://newnormal-music.bandcamp.com/album/sore",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://newnormal-music.bandcamp.com/album/sore",
+    "discoveredAt": "2026-09-06T02:57:23.019280+00:00",
+    "importedAt": "2026-09-06T03:08:13.341179+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-03"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "newnormal-music.bandcamp.com",
+    "bandcampBandId": "3596542532",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:08:13.341179+00:00"
+  }
+}
