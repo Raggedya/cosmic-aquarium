@@ -8,9 +8,67 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-06T01:47:24.964Z",
-  "updatedAt": "2026-09-06T01:47:24.964Z",
+  "createdAt": "2026-09-06T02:03:52.115Z",
+  "updatedAt": "2026-09-06T02:03:52.115Z",
   "members": [
+    {
+      "artistId": "bandcamp:beisselgreen",
+      "artistName": "Beissel/Green",
+      "aquariumSlug": "beissel-green-convalescence",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/beissel-green-convalescence/",
+      "bandcampArtistUrl": "https://beisselgreen.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:dvntdrlng",
+      "artistName": "DVNT DRLNG",
+      "aquariumSlug": "dvnt-drlng-f-ck-ants-two-tenna-s",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dvnt-drlng-f-ck-ants-two-tenna-s/",
+      "bandcampArtistUrl": "https://dvntdrlng.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "strange"
+      ],
+      "styles": [
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:ollieolsenofficial",
+      "artistName": "Ollie Olsen Official",
+      "aquariumSlug": "ollie-olsen-official-noise-23",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ollie-olsen-official-noise-23/",
+      "bandcampArtistUrl": "https://ollieolsenofficial.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical STRANGE style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "loud",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "loud",
+        "strange"
+      ]
+    },
     {
       "artistId": "bandcamp:somnarium",
       "artistName": "Somnarium (Michael Meara)",

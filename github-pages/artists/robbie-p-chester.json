@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "slug": "robbie-p-chester",
+  "artist": "Robbie P",
+  "bandcampUrl": "https://robbiep808x.bandcamp.com/album/chester",
+  "releaseTitle": "CHESTER",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "hip-hop/rap",
+    "alternative hip-hop",
+    "australian hip hop",
+    "bitcoin rap",
+    "bitcoin song",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "I wrote and produced this track while traveling through North and Central America. After performing at CAMP NAKAMOTO in New Hampshire, I headed to Detroit and recorded at the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://robbiep808x.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:03:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "chester",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "chester-2556187806",
+      "title": "Chester",
+      "artist": "Robbie P",
+      "albumTitle": "CHESTER",
+      "albumKey": "chester",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://robbiep808x.bandcamp.com/track/chester",
+      "bandcampEmbedTrackId": "2556187806",
+      "sourcePage": "https://robbiep808x.bandcamp.com/album/chester",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "chester-1287312970",
+      "title": "Chester Instrumental",
+      "artist": "Robbie P",
+      "albumTitle": "CHESTER",
+      "albumKey": "chester",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://robbiep808x.bandcamp.com/track/chester-instrumental",
+      "bandcampEmbedTrackId": "1287312970",
+      "sourcePage": "https://robbiep808x.bandcamp.com/album/chester",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "chester-3866216416",
+      "title": "Chester (Clean Edit)",
+      "artist": "Robbie P",
+      "albumTitle": "CHESTER",
+      "albumKey": "chester",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://robbiep808x.bandcamp.com/track/chester-clean-edit",
+      "bandcampEmbedTrackId": "3866216416",
+      "sourcePage": "https://robbiep808x.bandcamp.com/album/chester",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

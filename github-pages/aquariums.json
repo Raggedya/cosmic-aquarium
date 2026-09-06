@@ -1,8 +1,47 @@
 {
   "schemaVersion": 2,
   "universe": "melbourne",
-  "generatedAt": "2026-09-06T01:47:24.907Z",
+  "generatedAt": "2026-09-06T02:03:52.111Z",
   "aquariums": [
+    {
+      "id": "actual-b-fountain",
+      "slug": "actual-b-fountain",
+      "artist": "Actual B",
+      "release": "fountain",
+      "releaseDate": "2026-09-03 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://actualbone.bandcamp.com/album/fountain",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "ambient",
+        "ambient-electronic",
+        "Melbourne"
+      ],
+      "bioShort": "Actual B — ambient / ambient-electronic music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/actual-b-fountain/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:actualbone",
+      "canonicalBandcampUrl": "https://actualbone.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "electronic",
+        "quiet"
+      ]
+    },
     {
       "id": "amyl-and-the-sniffers-truth-or-consequence-live-from-el-coyote",
       "slug": "amyl-and-the-sniffers-truth-or-consequence-live-from-el-coyote",
@@ -34,6 +73,293 @@
       "status": "published",
       "canonicalArtistId": "bandcamp:amylandthesniffers",
       "canonicalBandcampUrl": "https://amylandthesniffers.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "loud",
+        "heavy"
+      ]
+    },
+    {
+      "id": "astral-collective-horizons",
+      "slug": "astral-collective-horizons",
+      "artist": "Astral Collective",
+      "release": "Horizons",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://astralcollective.bandcamp.com/album/horizons",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "electronic",
+        "funk",
+        "fusion",
+        "groove",
+        "jazz",
+        "live",
+        "Melbourne"
+      ],
+      "bioShort": "Astral Collective — funk / fusion / groove music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/astral-collective-horizons/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:astralcollective",
+      "canonicalBandcampUrl": "https://astralcollective.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "beissel-green-convalescence",
+      "slug": "beissel-green-convalescence",
+      "artist": "Beissel/Green",
+      "release": "Convalescence",
+      "releaseDate": "2026-08-21 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://beisselgreen.bandcamp.com/album/convalescence",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "experimental",
+        "Melbourne"
+      ],
+      "bioShort": "Beissel/Green — experimental music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/beissel-green-convalescence/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:beisselgreen",
+      "canonicalBandcampUrl": "https://beisselgreen.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "bowdo-twerk",
+      "slug": "bowdo-twerk",
+      "artist": "BOWDO",
+      "release": "TWERK",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 2,
+      "bandcampUrl": "https://bowdo1.bandcamp.com/album/twerk",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "electronic",
+        "ghettotech",
+        "techno",
+        "Melbourne"
+      ],
+      "bioShort": "BOWDO — ghettotech / techno music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/bowdo-twerk/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:bowdo1",
+      "canonicalBandcampUrl": "https://bowdo1.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "electronic"
+      ]
+    },
+    {
+      "id": "bubble-kismet",
+      "slug": "bubble-kismet",
+      "artist": "Bubble",
+      "release": "Kismet",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 2,
+      "bandcampUrl": "https://bubbleukg.bandcamp.com/album/kismet",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "electronic",
+        "nukg",
+        "uk garage",
+        "ukg",
+        "dance",
+        "Melbourne"
+      ],
+      "bioShort": "Bubble — nukg / uk garage / ukg music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/bubble-kismet/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:bubbleukg",
+      "canonicalBandcampUrl": "https://bubbleukg.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "electronic",
+        "loud"
+      ]
+    },
+    {
+      "id": "chris-bieniek-transcriptions-green-dolphin-street-solo-guitar",
+      "slug": "chris-bieniek-transcriptions-green-dolphin-street-solo-guitar",
+      "artist": "Chris Bieniek Transcriptions",
+      "release": "Green Dolphin Street Solo Guitar",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 1,
+      "bandcampUrl": "https://chrisbieniektranscriptions.bandcamp.com/album/green-dolphin-street-solo-guitar",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "jazz",
+        "jazz jazz fusion",
+        "rock",
+        "blues",
+        "jazz rock fusion instrumental",
+        "Melbourne"
+      ],
+      "bioShort": "Chris Bieniek Transcriptions — jazz / jazz jazz fusion / rock music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/chris-bieniek-transcriptions-green-dolphin-street-solo-guitar/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:chrisbieniektranscriptions",
+      "canonicalBandcampUrl": "https://chrisbieniektranscriptions.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "loud"
+      ]
+    },
+    {
+      "id": "dvnt-drlng-f-ck-ants-two-tenna-s",
+      "slug": "dvnt-drlng-f-ck-ants-two-tenna-s",
+      "artist": "DVNT DRLNG",
+      "release": "F*CK ANTS: TWO TENNA'S",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://dvntdrlng.bandcamp.com/album/f-ck-ants-two-tennas",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "drum & bass",
+        "experimental",
+        "hip-hop",
+        "jungle",
+        "rap",
+        "bass",
+        "experimental hip-hop",
+        "Melbourne"
+      ],
+      "bioShort": "DVNT DRLNG — drum & bass / experimental / hip-hop music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/dvnt-drlng-f-ck-ants-two-tenna-s/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:dvntdrlng",
+      "canonicalBandcampUrl": "https://dvntdrlng.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "strange"
+      ]
+    },
+    {
+      "id": "first-born-first-served",
+      "slug": "first-born-first-served",
+      "artist": "First Born",
+      "release": "First Served",
+      "releaseDate": "2026-08-29 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 5,
+      "bandcampUrl": "https://firstb0rn.bandcamp.com/album/first-served",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "blues punk",
+        "punk",
+        "alternative rock",
+        "anarcho-punk",
+        "garage punk",
+        "lo-fi",
+        "Melbourne"
+      ],
+      "bioShort": "First Born — blues punk / punk / alternative rock music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/first-born-first-served/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:firstb0rn",
+      "canonicalBandcampUrl": "https://firstb0rn.bandcamp.com/",
       "universeMembership": [
         "melbourne"
       ],
@@ -80,6 +406,50 @@
       "waters": [
         "loud",
         "dark"
+      ]
+    },
+    {
+      "id": "hoha-rock-the-boat-hoha-jungle-edits",
+      "slug": "hoha-rock-the-boat-hoha-jungle-edits",
+      "artist": "HOHA",
+      "release": "Rock the Boat: HOHA Jungle Edits",
+      "releaseDate": "2026-08-25 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 2,
+      "bandcampUrl": "https://2hoha.bandcamp.com/album/rock-the-boat-hoha-jungle-edits",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "electronic",
+        "chill",
+        "dnb",
+        "drum and bass",
+        "jungle",
+        "remix",
+        "rnb",
+        "Melbourne"
+      ],
+      "bioShort": "HOHA — chill / dnb / drum and bass music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/hoha-rock-the-boat-hoha-jungle-edits/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:2hoha",
+      "canonicalBandcampUrl": "https://2hoha.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "electronic",
+        "loud"
       ]
     },
     {
@@ -201,6 +571,93 @@
       ]
     },
     {
+      "id": "lunar-ruins-the-expanse",
+      "slug": "lunar-ruins-the-expanse",
+      "artist": "Lunar Ruins",
+      "release": "The Expanse",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 9,
+      "bandcampUrl": "https://lunarruins1.bandcamp.com/album/the-expanse",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "alternative",
+        "grunge metal",
+        "metal",
+        "progressive rock",
+        "rock",
+        "grunge",
+        "heavy metal",
+        "post-metal",
+        "stoner rock",
+        "Melbourne"
+      ],
+      "bioShort": "Lunar Ruins — alternative / grunge metal / metal music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/lunar-ruins-the-expanse/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:lunarruins1",
+      "canonicalBandcampUrl": "https://lunarruins1.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "loud",
+        "heavy"
+      ]
+    },
+    {
+      "id": "mezz-coleman-junior-soldier",
+      "slug": "mezz-coleman-junior-soldier",
+      "artist": "Mezz Coleman",
+      "release": "Junior Soldier",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 1,
+      "bandcampUrl": "https://mezzcoleman.bandcamp.com/album/junior-soldier",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "australian",
+        "pop",
+        "indie folk pop",
+        "indie pop",
+        "singer-songwriter",
+        "Melbourne"
+      ],
+      "bioShort": "Mezz Coleman — australian / pop / indie folk pop music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/mezz-coleman-junior-soldier/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:mezzcoleman",
+      "canonicalBandcampUrl": "https://mezzcoleman.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
       "id": "ok-eg-geko02",
       "slug": "ok-eg-geko02",
       "artist": "OK EG",
@@ -243,6 +700,222 @@
       ]
     },
     {
+      "id": "ollie-olsen-official-noise-23",
+      "slug": "ollie-olsen-official-noise-23",
+      "artist": "Ollie Olsen Official",
+      "release": "Noise 23",
+      "releaseDate": "2026-09-05 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://ollieolsenofficial.bandcamp.com/album/noise-23",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "electronic",
+        "experimental",
+        "trance",
+        "avant-garde",
+        "electro-acoustic",
+        "space rock",
+        "Melbourne"
+      ],
+      "bioShort": "Ollie Olsen Official — experimental / trance / avant-garde music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ollie-olsen-official-noise-23/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:ollieolsenofficial",
+      "canonicalBandcampUrl": "https://ollieolsenofficial.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "electronic",
+        "loud",
+        "strange"
+      ]
+    },
+    {
+      "id": "precious-mess-never-enough-paradise-in-purgatory",
+      "slug": "precious-mess-never-enough-paradise-in-purgatory",
+      "artist": "Precious Mess",
+      "release": "Never Enough // Paradise In Purgatory",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 2,
+      "bandcampUrl": "https://preciousmess.bandcamp.com/album/never-enough-paradise-in-purgatory",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "alternative",
+        "indie",
+        "indie rock",
+        "rock",
+        "Melbourne"
+      ],
+      "bioShort": "Precious Mess — alternative / indie / indie rock music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/precious-mess-never-enough-paradise-in-purgatory/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:preciousmess",
+      "canonicalBandcampUrl": "https://preciousmess.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "loud"
+      ]
+    },
+    {
+      "id": "robbie-p-chester",
+      "slug": "robbie-p-chester",
+      "artist": "Robbie P",
+      "release": "CHESTER",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://robbiep808x.bandcamp.com/album/chester",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "hip-hop/rap",
+        "alternative hip-hop",
+        "australian hip hop",
+        "bitcoin rap",
+        "bitcoin song",
+        "Melbourne"
+      ],
+      "bioShort": "Robbie P — hip-hop/rap / alternative hip-hop / australian hip hop music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/robbie-p-chester/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:robbiep808x",
+      "canonicalBandcampUrl": "https://robbiep808x.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "quiet",
+        "dreamy"
+      ]
+    },
+    {
+      "id": "ronny-dap-indisposed",
+      "slug": "ronny-dap-indisposed",
+      "artist": "Ronny Dap",
+      "release": "Indisposed",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 8,
+      "bandcampUrl": "https://ronnydap.bandcamp.com/album/indisposed",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "diy",
+        "punk",
+        "rock",
+        "alternative rock",
+        "garage",
+        "Melbourne"
+      ],
+      "bioShort": "Ronny Dap — diy / punk / rock music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/ronny-dap-indisposed/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:ronnydap",
+      "canonicalBandcampUrl": "https://ronnydap.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "loud",
+        "heavy"
+      ]
+    },
+    {
+      "id": "sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi",
+      "slug": "sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi",
+      "artist": "Sad Man Caves",
+      "release": "if these walls could talk they'd be in therapy / just existing (with samples)",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://sadmancaves.bandcamp.com/album/if-these-walls-could-talk-theyd-be-in-therapy-just-existing-with-samples",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "electronic",
+        "industrail",
+        "punk",
+        "boom bap",
+        "chiptunes",
+        "dub",
+        "industrial",
+        "jungle",
+        "nine inch nails",
+        "samples",
+        "Melbourne"
+      ],
+      "bioShort": "Sad Man Caves — industrail / punk / boom bap music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:sadmancaves",
+      "canonicalBandcampUrl": "https://sadmancaves.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "electronic",
+        "heavy",
+        "dark"
+      ]
+    },
+    {
       "id": "sam-alfred-no-more",
       "slug": "sam-alfred-no-more",
       "artist": "Sam Alfred",
@@ -279,6 +952,96 @@
       "country": "Australia",
       "waters": [
         "electronic"
+      ]
+    },
+    {
+      "id": "shauny-sage-affirmation-bushwalk-1",
+      "slug": "shauny-sage-affirmation-bushwalk-1",
+      "artist": "Shauny Sage",
+      "release": "Affirmation Bushwalk 1",
+      "releaseDate": "2026-09-03 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 31,
+      "bandcampUrl": "https://shaunysage.bandcamp.com/album/affirmation-bushwalk-1",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "ambient",
+        "meditation music",
+        "acoustic guitar",
+        "breathwork music",
+        "relaxation music",
+        "Melbourne"
+      ],
+      "bioShort": "Shauny Sage — ambient / meditation music / acoustic guitar music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/shauny-sage-affirmation-bushwalk-1/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:shaunysage",
+      "canonicalBandcampUrl": "https://shaunysage.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "quiet"
+      ]
+    },
+    {
+      "id": "sol-fire-cosmic-traveller",
+      "slug": "sol-fire-cosmic-traveller",
+      "artist": "Sol.fire",
+      "release": "Cosmic Traveller",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 7,
+      "bandcampUrl": "https://solfire.bandcamp.com/album/cosmic-traveller",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "80s",
+        "ambient",
+        "ambient electronica",
+        "calming",
+        "chillwave",
+        "cruise",
+        "dreaming",
+        "dreamwave",
+        "lofi beats",
+        "space ambient",
+        "utopia",
+        "vaporwave",
+        "Melbourne"
+      ],
+      "bioShort": "Sol.fire — 80s / ambient / ambient electronica music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/sol-fire-cosmic-traveller/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:solfire",
+      "canonicalBandcampUrl": "https://solfire.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "electronic",
+        "quiet"
       ]
     },
     {
@@ -366,6 +1129,47 @@
       "country": "Australia",
       "waters": [
         "heavy",
+        "loud"
+      ]
+    },
+    {
+      "id": "strat-strat-dog-days",
+      "slug": "strat-strat-dog-days",
+      "artist": "Strat Strat",
+      "release": "Dog Days",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 4,
+      "bandcampUrl": "https://stratstrat.bandcamp.com/album/dog-days",
+      "visualStyle": "violet",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "alternative",
+        "alternative rock",
+        "furry",
+        "therian",
+        "trans",
+        "Melbourne"
+      ],
+      "bioShort": "Strat Strat — alternative / alternative rock / furry music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/strat-strat-dog-days/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:stratstrat",
+      "canonicalBandcampUrl": "https://stratstrat.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
         "loud"
       ]
     },
@@ -525,6 +1329,50 @@
       "country": "Australia",
       "waters": [
         "dreamy"
+      ]
+    },
+    {
+      "id": "william-kiss-up-n-down",
+      "slug": "william-kiss-up-n-down",
+      "artist": "William Kiss",
+      "release": "Up N Down",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "flowerCount": 14,
+      "flowerCountMin": 10,
+      "flowerCountMax": 14,
+      "trackCount": 3,
+      "bandcampUrl": "https://williamkiss.bandcamp.com/album/up-n-down",
+      "visualStyle": "cosmic",
+      "objectType": "flowers",
+      "dailyBatchId": "2026-09-06",
+      "primaryLocation": "Melbourne, Australia",
+      "metadataTags": [
+        "electronic",
+        "house",
+        "bass",
+        "club",
+        "club music",
+        "house music",
+        "juke",
+        "techno",
+        "Melbourne"
+      ],
+      "bioShort": "William Kiss — house / bass / club music from Melbourne, Australia.",
+      "bioSource": "catalogue-factual-summary",
+      "url": "https://raggedya.github.io/cosmic-aquarium/william-kiss-up-n-down/",
+      "status": "published",
+      "canonicalArtistId": "bandcamp:williamkiss",
+      "canonicalBandcampUrl": "https://williamkiss.bandcamp.com/",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "waters": [
+        "electronic"
       ]
     }
   ]

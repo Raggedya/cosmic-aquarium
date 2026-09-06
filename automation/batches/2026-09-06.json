@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-09-06",
+  "batchDate": "2026-09-06",
+  "targetCount": 20,
+  "status": "published",
+  "generatedCount": 20,
+  "publishedCount": 20,
+  "emailStatus": "pending",
+  "createdAt": "2026-09-06T02:03:28.349016+00:00",
+  "aquariums": [
+    {
+      "id": "beissel-green-convalescence",
+      "artist": "Beissel/Green",
+      "release": "Convalescence",
+      "sourceIdentifier": "2619446130",
+      "bandcampUrl": "https://beisselgreen.bandcamp.com/album/convalescence",
+      "releaseDate": "2026-08-21 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "experimental",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "strange"
+      ],
+      "discoveredAt": "2026-09-06T02:03:31.406576+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/beissel-green-convalescence/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "bowdo-twerk",
+      "artist": "BOWDO",
+      "release": "TWERK",
+      "sourceIdentifier": "2366435275",
+      "bandcampUrl": "https://bowdo1.bandcamp.com/album/twerk",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "electronic",
+        "ghettotech",
+        "techno",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "electronic"
+      ],
+      "discoveredAt": "2026-09-06T02:03:32.381242+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bowdo-twerk/",
+      "visualStyle": "violet",
+      "status": "published"
+    },
+    {
+      "id": "sol-fire-cosmic-traveller",
+      "artist": "Sol.fire",
+      "release": "Cosmic Traveller",
+      "sourceIdentifier": "1876590610",
+      "bandcampUrl": "https://solfire.bandcamp.com/album/cosmic-traveller",
+      "releaseDate": "2026-08-26 23:34:53 UTC",
+      "artworkReference": null,
+      "tags": [
+        "80s",
+        "ambient",
+        "ambient electronica",
+        "calming",
+        "chillwave",
+        "cruise",
+        "dreaming",
+        "dreamwave",
+        "lofi beats",
+        "space ambient",
+        "utopia",
+        "vaporwave",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "discoveredAt": "2026-09-06T02:03:33.518202+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sol-fire-cosmic-traveller/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "actual-b-fountain",
+      "artist": "Actual B",
+      "release": "fountain",
+      "sourceIdentifier": "2086745987",
+      "bandcampUrl": "https://actualbone.bandcamp.com/album/fountain",
+      "releaseDate": "2026-09-03 22:23:52 UTC",
+      "artworkReference": null,
+      "tags": [
+        "ambient",
+        "ambient-electronic",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "discoveredAt": "2026-09-06T02:03:34.468187+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/actual-b-fountain/",
+      "visualStyle": "violet",
+      "status": "published"
+    },
+    {
+      "id": "william-kiss-up-n-down",
+      "artist": "William Kiss",
+      "release": "Up N Down",
+      "sourceIdentifier": "210425525",
+      "bandcampUrl": "https://williamkiss.bandcamp.com/album/up-n-down",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "electronic",
+        "house",
+        "bass",
+        "club",
+        "club music",
+        "house music",
+        "juke",
+        "techno",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "electronic"
+      ],
+      "discoveredAt": "2026-09-06T02:03:35.582740+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/william-kiss-up-n-down/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "shauny-sage-affirmation-bushwalk-1",
+      "artist": "Shauny Sage",
+      "release": "Affirmation Bushwalk 1",
+      "sourceIdentifier": "1782933414",
+      "bandcampUrl": "https://shaunysage.bandcamp.com/album/affirmation-bushwalk-1",
+      "releaseDate": "2026-09-03 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "ambient",
+        "meditation music",
+        "acoustic guitar",
+        "breathwork music",
+        "relaxation music",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "quiet"
+      ],
+      "discoveredAt": "2026-09-06T02:03:36.565358+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/shauny-sage-affirmation-bushwalk-1/",
+      "visualStyle": "violet",
+      "status": "published"
+    },
+    {
+      "id": "astral-collective-horizons",
+      "artist": "Astral Collective",
+      "release": "Horizons",
+      "sourceIdentifier": "246662113",
+      "bandcampUrl": "https://astralcollective.bandcamp.com/album/horizons",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "electronic",
+        "funk",
+        "fusion",
+        "groove",
+        "jazz",
+        "live",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "electronic"
+      ],
+      "discoveredAt": "2026-09-06T02:03:37.435900+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/astral-collective-horizons/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "ollie-olsen-official-noise-23",
+      "artist": "Ollie Olsen Official",
+      "release": "Noise 23",
+      "sourceIdentifier": "1361050633",
+      "bandcampUrl": "https://ollieolsenofficial.bandcamp.com/album/noise-23",
+      "releaseDate": "2026-09-05 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "electronic",
+        "experimental",
+        "trance",
+        "avant-garde",
+        "electro-acoustic",
+        "space rock",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "electronic",
+        "loud",
+        "strange"
+      ],
+      "discoveredAt": "2026-09-06T02:03:38.390568+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ollie-olsen-official-noise-23/",
+      "visualStyle": "violet",
+      "status": "published"
+    },
+    {
+      "id": "first-born-first-served",
+      "artist": "First Born",
+      "release": "First Served",
+      "sourceIdentifier": "2196452110",
+      "bandcampUrl": "https://firstb0rn.bandcamp.com/album/first-served",
+      "releaseDate": "2026-08-29 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "blues punk",
+        "punk",
+        "alternative rock",
+        "anarcho-punk",
+        "garage punk",
+        "lo-fi",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "discoveredAt": "2026-09-06T02:03:39.389446+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/first-born-first-served/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "lunar-ruins-the-expanse",
+      "artist": "Lunar Ruins",
+      "release": "The Expanse",
+      "sourceIdentifier": "1400828704",
+      "bandcampUrl": "https://lunarruins1.bandcamp.com/album/the-expanse",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "alternative",
+        "grunge metal",
+        "metal",
+        "progressive rock",
+        "rock",
+        "grunge",
+        "heavy metal",
+        "post-metal",
+        "stoner rock",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "discoveredAt": "2026-09-06T02:03:40.419743+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lunar-ruins-the-expanse/",
+      "visualStyle": "violet",
+      "status": "published"
+    },
+    {
+      "id": "dvnt-drlng-f-ck-ants-two-tenna-s",
+      "artist": "DVNT DRLNG",
+      "release": "F*CK ANTS: TWO TENNA'S",
+      "sourceIdentifier": "2870152376",
+      "bandcampUrl": "https://dvntdrlng.bandcamp.com/album/f-ck-ants-two-tennas",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "drum & bass",
+        "experimental",
+        "hip-hop",
+        "jungle",
+        "rap",
+        "bass",
+        "experimental hip-hop",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "strange"
+      ],
+      "discoveredAt": "2026-09-06T02:03:41.427157+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dvnt-drlng-f-ck-ants-two-tenna-s/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "bubble-kismet",
+      "artist": "Bubble",
+      "release": "Kismet",
+      "sourceIdentifier": "1782940171",
+      "bandcampUrl": "https://bubbleukg.bandcamp.com/album/kismet",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "electronic",
+        "nukg",
+        "uk garage",
+        "ukg",
+        "dance",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "discoveredAt": "2026-09-06T02:03:42.600640+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bubble-kismet/",
+      "visualStyle": "violet",
+      "status": "published"
+    },
+    {
+      "id": "mezz-coleman-junior-soldier",
+      "artist": "Mezz Coleman",
+      "release": "Junior Soldier",
+      "sourceIdentifier": "2389608668",
+      "bandcampUrl": "https://mezzcoleman.bandcamp.com/album/junior-soldier",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "australian",
+        "pop",
+        "indie folk pop",
+        "indie pop",
+        "singer-songwriter",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "quiet"
+      ],
+      "discoveredAt": "2026-09-06T02:03:43.635502+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mezz-coleman-junior-soldier/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "strat-strat-dog-days",
+      "artist": "Strat Strat",
+      "release": "Dog Days",
+      "sourceIdentifier": "361878643",
+      "bandcampUrl": "https://stratstrat.bandcamp.com/album/dog-days",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "alternative",
+        "alternative rock",
+        "furry",
+        "therian",
+        "trans",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "loud"
+      ],
+      "discoveredAt": "2026-09-06T02:03:44.554957+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/strat-strat-dog-days/",
+      "visualStyle": "violet",
+      "status": "published"
+    },
+    {
+      "id": "ronny-dap-indisposed",
+      "artist": "Ronny Dap",
+      "release": "Indisposed",
+      "sourceIdentifier": "4176142986",
+      "bandcampUrl": "https://ronnydap.bandcamp.com/album/indisposed",
+      "releaseDate": "2026-08-28 20:50:47 UTC",
+      "artworkReference": null,
+      "tags": [
+        "diy",
+        "punk",
+        "rock",
+        "alternative rock",
+        "garage",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "discoveredAt": "2026-09-06T02:03:45.542153+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ronny-dap-indisposed/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "chris-bieniek-transcriptions-green-dolphin-street-solo-guitar",
+      "artist": "Chris Bieniek Transcriptions",
+      "release": "Green Dolphin Street Solo Guitar",
+      "sourceIdentifier": "2289194996",
+      "bandcampUrl": "https://chrisbieniektranscriptions.bandcamp.com/album/green-dolphin-street-solo-guitar",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "jazz",
+        "jazz jazz fusion",
+        "rock",
+        "blues",
+        "jazz rock fusion instrumental",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "loud"
+      ],
+      "discoveredAt": "2026-09-06T02:03:46.522007+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/chris-bieniek-transcriptions-green-dolphin-street-solo-guitar/",
+      "visualStyle": "violet",
+      "status": "published"
+    },
+    {
+      "id": "robbie-p-chester",
+      "artist": "Robbie P",
+      "release": "CHESTER",
+      "sourceIdentifier": "1054595883",
+      "bandcampUrl": "https://robbiep808x.bandcamp.com/album/chester",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "hip-hop/rap",
+        "alternative hip-hop",
+        "australian hip hop",
+        "bitcoin rap",
+        "bitcoin song",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "quiet",
+        "dreamy"
+      ],
+      "discoveredAt": "2026-09-06T02:03:47.378568+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/robbie-p-chester/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "hoha-rock-the-boat-hoha-jungle-edits",
+      "artist": "HOHA",
+      "release": "Rock the Boat: HOHA Jungle Edits",
+      "sourceIdentifier": "1638577191",
+      "bandcampUrl": "https://2hoha.bandcamp.com/album/rock-the-boat-hoha-jungle-edits",
+      "releaseDate": "2026-08-25 00:00:00 UTC",
+      "artworkReference": null,
+      "tags": [
+        "electronic",
+        "chill",
+        "dnb",
+        "drum and bass",
+        "jungle",
+        "remix",
+        "rnb",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "discoveredAt": "2026-09-06T02:03:48.503319+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hoha-rock-the-boat-hoha-jungle-edits/",
+      "visualStyle": "violet",
+      "status": "published"
+    },
+    {
+      "id": "sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi",
+      "artist": "Sad Man Caves",
+      "release": "if these walls could talk they'd be in therapy / just existing (with samples)",
+      "sourceIdentifier": "3889979668",
+      "bandcampUrl": "https://sadmancaves.bandcamp.com/album/if-these-walls-could-talk-theyd-be-in-therapy-just-existing-with-samples",
+      "releaseDate": "2026-09-04 02:30:05 UTC",
+      "artworkReference": null,
+      "tags": [
+        "electronic",
+        "industrail",
+        "punk",
+        "boom bap",
+        "chiptunes",
+        "dub",
+        "industrial",
+        "jungle",
+        "nine inch nails",
+        "samples",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "electronic",
+        "heavy",
+        "dark"
+      ],
+      "discoveredAt": "2026-09-06T02:03:49.404118+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi/",
+      "visualStyle": "cosmic",
+      "status": "published"
+    },
+    {
+      "id": "precious-mess-never-enough-paradise-in-purgatory",
+      "artist": "Precious Mess",
+      "release": "Never Enough // Paradise In Purgatory",
+      "sourceIdentifier": "3891725012",
+      "bandcampUrl": "https://preciousmess.bandcamp.com/album/never-enough-paradise-in-purgatory",
+      "releaseDate": "2026-08-27 04:47:57 UTC",
+      "artworkReference": null,
+      "tags": [
+        "alternative",
+        "indie",
+        "indie rock",
+        "rock",
+        "Melbourne"
+      ],
+      "location": "Melbourne, Australia",
+      "waters": [
+        "loud"
+      ],
+      "discoveredAt": "2026-09-06T02:03:50.373183+00:00",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/precious-mess-never-enough-paradise-in-purgatory/",
+      "visualStyle": "violet",
+      "status": "published"
+    }
+  ],
+  "failures": [],
+  "completedAt": "2026-09-06T02:03:50.878367+00:00"
+}

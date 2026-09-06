@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-06T01:47:24.957Z",
-  "updatedAt": "2026-09-06T01:47:24.957Z",
+  "createdAt": "2026-09-06T02:03:52.115Z",
+  "updatedAt": "2026-09-06T02:03:52.115Z",
   "members": [
     {
       "artistId": "bandcamp:amylandthesniffers",
@@ -17,6 +17,64 @@
       "aquariumSlug": "amyl-and-the-sniffers-truth-or-consequence-live-from-el-coyote",
       "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/amyl-and-the-sniffers-truth-or-consequence-live-from-el-coyote/",
       "bandcampArtistUrl": "https://amylandthesniffers.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "styles": [
+        "loud",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:bubbleukg",
+      "artistName": "Bubble",
+      "aquariumSlug": "bubble-kismet",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bubble-kismet/",
+      "bandcampArtistUrl": "https://bubbleukg.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "styles": [
+        "electronic",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:chrisbieniektranscriptions",
+      "artistName": "Chris Bieniek Transcriptions",
+      "aquariumSlug": "chris-bieniek-transcriptions-green-dolphin-street-solo-guitar",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/chris-bieniek-transcriptions-green-dolphin-street-solo-guitar/",
+      "bandcampArtistUrl": "https://chrisbieniektranscriptions.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud"
+      ],
+      "styles": [
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:firstb0rn",
+      "artistName": "First Born",
+      "aquariumSlug": "first-born-first-served",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/first-born-first-served/",
+      "bandcampArtistUrl": "https://firstb0rn.bandcamp.com/",
       "verificationStatus": "verified",
       "verificationScore": 1,
       "source": "automatic-style-classification",
@@ -49,6 +107,26 @@
       "styles": [
         "loud",
         "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:2hoha",
+      "artistName": "HOHA",
+      "aquariumSlug": "hoha-rock-the-boat-hoha-jungle-edits",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hoha-rock-the-boat-hoha-jungle-edits/",
+      "bandcampArtistUrl": "https://2hoha.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "styles": [
+        "electronic",
+        "loud"
       ]
     },
     {
@@ -94,6 +172,86 @@
       ]
     },
     {
+      "artistId": "bandcamp:lunarruins1",
+      "artistName": "Lunar Ruins",
+      "aquariumSlug": "lunar-ruins-the-expanse",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lunar-ruins-the-expanse/",
+      "bandcampArtistUrl": "https://lunarruins1.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "styles": [
+        "loud",
+        "heavy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:ollieolsenofficial",
+      "artistName": "Ollie Olsen Official",
+      "aquariumSlug": "ollie-olsen-official-noise-23",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ollie-olsen-official-noise-23/",
+      "bandcampArtistUrl": "https://ollieolsenofficial.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "loud",
+        "strange"
+      ],
+      "styles": [
+        "electronic",
+        "loud",
+        "strange"
+      ]
+    },
+    {
+      "artistId": "bandcamp:preciousmess",
+      "artistName": "Precious Mess",
+      "aquariumSlug": "precious-mess-never-enough-paradise-in-purgatory",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/precious-mess-never-enough-paradise-in-purgatory/",
+      "bandcampArtistUrl": "https://preciousmess.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud"
+      ],
+      "styles": [
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:ronnydap",
+      "artistName": "Ronny Dap",
+      "aquariumSlug": "ronny-dap-indisposed",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ronny-dap-indisposed/",
+      "bandcampArtistUrl": "https://ronnydap.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "styles": [
+        "loud",
+        "heavy"
+      ]
+    },
+    {
       "artistId": "bandcamp:squamatasludge",
       "artistName": "Squamata",
       "aquariumSlug": "squamata-from-within-without",
@@ -110,6 +268,24 @@
       ],
       "styles": [
         "heavy",
+        "loud"
+      ]
+    },
+    {
+      "artistId": "bandcamp:stratstrat",
+      "artistName": "Strat Strat",
+      "aquariumSlug": "strat-strat-dog-days",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/strat-strat-dog-days/",
+      "bandcampArtistUrl": "https://stratstrat.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical LOUD style membership",
+      "displayEnabled": true,
+      "waters": [
+        "loud"
+      ],
+      "styles": [
         "loud"
       ]
     },

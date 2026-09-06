@@ -8,9 +8,29 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-06T01:47:24.933Z",
-  "updatedAt": "2026-09-06T01:47:24.933Z",
+  "createdAt": "2026-09-06T02:03:52.113Z",
+  "updatedAt": "2026-09-06T02:03:52.113Z",
   "members": [
+    {
+      "artistId": "bandcamp:actualbone",
+      "artistName": "Actual B",
+      "aquariumSlug": "actual-b-fountain",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/actual-b-fountain/",
+      "bandcampArtistUrl": "https://actualbone.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "styles": [
+        "electronic",
+        "quiet"
+      ]
+    },
     {
       "artistId": "bandcamp:juliajacklin",
       "artistName": "Julia Jacklin",
@@ -26,6 +46,82 @@
         "quiet"
       ],
       "styles": [
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:mezzcoleman",
+      "artistName": "Mezz Coleman",
+      "aquariumSlug": "mezz-coleman-junior-soldier",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mezz-coleman-junior-soldier/",
+      "bandcampArtistUrl": "https://mezzcoleman.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet"
+      ],
+      "styles": [
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:robbiep808x",
+      "artistName": "Robbie P",
+      "aquariumSlug": "robbie-p-chester",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/robbie-p-chester/",
+      "bandcampArtistUrl": "https://robbiep808x.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "dreamy"
+      ],
+      "styles": [
+        "quiet",
+        "dreamy"
+      ]
+    },
+    {
+      "artistId": "bandcamp:shaunysage",
+      "artistName": "Shauny Sage",
+      "aquariumSlug": "shauny-sage-affirmation-bushwalk-1",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/shauny-sage-affirmation-bushwalk-1/",
+      "bandcampArtistUrl": "https://shaunysage.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet"
+      ],
+      "styles": [
+        "quiet"
+      ]
+    },
+    {
+      "artistId": "bandcamp:solfire",
+      "artistName": "Sol.fire",
+      "aquariumSlug": "sol-fire-cosmic-traveller",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sol-fire-cosmic-traveller/",
+      "bandcampArtistUrl": "https://solfire.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical QUIET style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "styles": [
+        "electronic",
         "quiet"
       ]
     },

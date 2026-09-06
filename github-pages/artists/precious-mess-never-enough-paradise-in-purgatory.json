@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "precious-mess-never-enough-paradise-in-purgatory",
+  "artist": "Precious Mess",
+  "bandcampUrl": "https://preciousmess.bandcamp.com/album/never-enough-paradise-in-purgatory",
+  "releaseTitle": "Never Enough // Paradise In Purgatory",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "alternative",
+    "indie",
+    "indie rock",
+    "rock",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Double A Side for 7\" Vinyl release Reggie - Vocals & Guitars Nate - Drums & Art Sean - Bass, Screams & Cello",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://preciousmess.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:03:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "never-enough-paradise-in-purgatory",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "never-enough-paradise-in-purgatory-3772527631",
+      "title": "Never Enough",
+      "artist": "Precious Mess",
+      "albumTitle": "Never Enough // Paradise In Purgatory",
+      "albumKey": "never-enough-paradise-in-purgatory",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://preciousmess.bandcamp.com/track/never-enough-2",
+      "bandcampEmbedTrackId": "3772527631",
+      "sourcePage": "https://preciousmess.bandcamp.com/album/never-enough-paradise-in-purgatory",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "never-enough-paradise-in-purgatory-3873021369",
+      "title": "Paradise In Purgatory",
+      "artist": "Precious Mess",
+      "albumTitle": "Never Enough // Paradise In Purgatory",
+      "albumKey": "never-enough-paradise-in-purgatory",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:12",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://preciousmess.bandcamp.com/track/paradise-in-purgatory-2",
+      "bandcampEmbedTrackId": "3873021369",
+      "sourcePage": "https://preciousmess.bandcamp.com/album/never-enough-paradise-in-purgatory",
+      "accent": "#88d7ff"
+    }
+  ]
+}

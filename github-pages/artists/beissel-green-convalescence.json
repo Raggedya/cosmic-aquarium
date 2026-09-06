@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "slug": "beissel-green-convalescence",
+  "artist": "Beissel/Green",
+  "bandcampUrl": "https://beisselgreen.bandcamp.com/album/convalescence",
+  "releaseTitle": "Convalescence",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Performed and recorded on 3/3/26 on unceded Wurundjeri Country. Largely improvised, 'Convalesence' came in response to a poetry event of the same name, hosted by Roundtable…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://beisselgreen.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:03:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "convalescence",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "convalescence-1533189476",
+      "title": "Convalescence",
+      "artist": "Beissel/Green",
+      "albumTitle": "Convalescence",
+      "albumKey": "convalescence",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "24:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beisselgreen.bandcamp.com/track/convalescence",
+      "bandcampEmbedTrackId": "1533189476",
+      "sourcePage": "https://beisselgreen.bandcamp.com/album/convalescence",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "convalescence-189478674",
+      "title": "Convalescence - Enjoyment Mix",
+      "artist": "Beissel/Green",
+      "albumTitle": "Convalescence",
+      "albumKey": "convalescence",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:06",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beisselgreen.bandcamp.com/track/convalescence-enjoyment-mix",
+      "bandcampEmbedTrackId": "189478674",
+      "sourcePage": "https://beisselgreen.bandcamp.com/album/convalescence",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "convalescence-448560815",
+      "title": "Convalescence - Ultra Low Dosage Mix",
+      "artist": "Beissel/Green",
+      "albumTitle": "Convalescence",
+      "albumKey": "convalescence",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:56",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beisselgreen.bandcamp.com/track/convalescence-ultra-low-dosage-mix",
+      "bandcampEmbedTrackId": "448560815",
+      "sourcePage": "https://beisselgreen.bandcamp.com/album/convalescence",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

@@ -1,7 +1,61 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-06T01:47:24.969Z",
+  "generatedAt": "2026-09-06T02:03:52.116Z",
   "artists": [
+    {
+      "id": "bandcamp:actualbone",
+      "name": "Actual B",
+      "canonicalName": "actual b",
+      "bandcampArtistUrl": "https://actualbone.bandcamp.com/",
+      "aquariumSlug": "actual-b-fountain",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/actual-b-fountain/",
+      "status": "published",
+      "release": "fountain",
+      "releaseDate": "2026-09-03 00:00:00 UTC",
+      "trackCount": 9,
+      "visualStyle": "violet",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-03 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Actual B — ambient / ambient-electronic music from Melbourne, Australia.",
+      "labels": []
+    },
     {
       "id": "bandcamp:amylandthesniffers",
       "name": "Amyl and the Sniffers",
@@ -57,6 +111,344 @@
       "labels": []
     },
     {
+      "id": "bandcamp:astralcollective",
+      "name": "Astral Collective",
+      "canonicalName": "astral collective",
+      "bandcampArtistUrl": "https://astralcollective.bandcamp.com/",
+      "aquariumSlug": "astral-collective-horizons",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/astral-collective-horizons/",
+      "status": "published",
+      "release": "Horizons",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 9,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Astral Collective — funk / fusion / groove music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:beisselgreen",
+      "name": "Beissel/Green",
+      "canonicalName": "beissel green",
+      "bandcampArtistUrl": "https://beisselgreen.bandcamp.com/",
+      "aquariumSlug": "beissel-green-convalescence",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/beissel-green-convalescence/",
+      "status": "published",
+      "release": "Convalescence",
+      "releaseDate": "2026-08-21 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange"
+      ],
+      "lastUpdated": "2026-08-21 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Beissel/Green — experimental music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:bowdo1",
+      "name": "BOWDO",
+      "canonicalName": "bowdo",
+      "bandcampArtistUrl": "https://bowdo1.bandcamp.com/",
+      "aquariumSlug": "bowdo-twerk",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bowdo-twerk/",
+      "status": "published",
+      "release": "TWERK",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "violet",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-08-28 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "BOWDO — ghettotech / techno music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:bubbleukg",
+      "name": "Bubble",
+      "canonicalName": "bubble",
+      "bandcampArtistUrl": "https://bubbleukg.bandcamp.com/",
+      "aquariumSlug": "bubble-kismet",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/bubble-kismet/",
+      "status": "published",
+      "release": "Kismet",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "violet",
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "lastUpdated": "2026-08-28 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Bubble — nukg / uk garage / ukg music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:chrisbieniektranscriptions",
+      "name": "Chris Bieniek Transcriptions",
+      "canonicalName": "chris bieniek transcriptions",
+      "bandcampArtistUrl": "https://chrisbieniektranscriptions.bandcamp.com/",
+      "aquariumSlug": "chris-bieniek-transcriptions-green-dolphin-street-solo-guitar",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/chris-bieniek-transcriptions-green-dolphin-street-solo-guitar/",
+      "status": "published",
+      "release": "Green Dolphin Street Solo Guitar",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "violet",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-08-26 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Chris Bieniek Transcriptions — jazz / jazz jazz fusion / rock music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:dvntdrlng",
+      "name": "DVNT DRLNG",
+      "canonicalName": "dvnt drlng",
+      "bandcampArtistUrl": "https://dvntdrlng.bandcamp.com/",
+      "aquariumSlug": "dvnt-drlng-f-ck-ants-two-tenna-s",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/dvnt-drlng-f-ck-ants-two-tenna-s/",
+      "status": "published",
+      "release": "F*CK ANTS: TWO TENNA'S",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "strange"
+      ],
+      "lastUpdated": "2026-09-02 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "DVNT DRLNG — drum & bass / experimental / hip-hop music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:firstb0rn",
+      "name": "First Born",
+      "canonicalName": "first born",
+      "bandcampArtistUrl": "https://firstb0rn.bandcamp.com/",
+      "aquariumSlug": "first-born-first-served",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/first-born-first-served/",
+      "status": "published",
+      "release": "First Served",
+      "releaseDate": "2026-08-29 00:00:00 UTC",
+      "trackCount": 5,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "lastUpdated": "2026-08-29 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "First Born — blues punk / punk / alternative rock music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
       "id": "bandcamp:harlowreign",
       "name": "Harlow Reign",
       "canonicalName": "harlow reign",
@@ -108,6 +500,60 @@
       "country": "Australia",
       "locationEvidence": "Biography explicitly describes the artist as Melbourne-based/from Melbourne.",
       "bioShort": "Harlow Reign — independent music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:2hoha",
+      "name": "HOHA",
+      "canonicalName": "hoha",
+      "bandcampArtistUrl": "https://2hoha.bandcamp.com/",
+      "aquariumSlug": "hoha-rock-the-boat-hoha-jungle-edits",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/hoha-rock-the-boat-hoha-jungle-edits/",
+      "status": "published",
+      "release": "Rock the Boat: HOHA Jungle Edits",
+      "releaseDate": "2026-08-25 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "violet",
+      "waters": [
+        "electronic",
+        "loud"
+      ],
+      "lastUpdated": "2026-08-25 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "HOHA — chill / dnb / drum and bass music from Melbourne, Australia.",
       "labels": []
     },
     {
@@ -273,6 +719,106 @@
       "labels": []
     },
     {
+      "id": "bandcamp:lunarruins1",
+      "name": "Lunar Ruins",
+      "canonicalName": "lunar ruins",
+      "bandcampArtistUrl": "https://lunarruins1.bandcamp.com/",
+      "aquariumSlug": "lunar-ruins-the-expanse",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/lunar-ruins-the-expanse/",
+      "status": "published",
+      "release": "The Expanse",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "trackCount": 9,
+      "visualStyle": "violet",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "lastUpdated": "2026-08-26 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Lunar Ruins — alternative / grunge metal / metal music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:mezzcoleman",
+      "name": "Mezz Coleman",
+      "canonicalName": "mezz coleman",
+      "bandcampArtistUrl": "https://mezzcoleman.bandcamp.com/",
+      "aquariumSlug": "mezz-coleman-junior-soldier",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/mezz-coleman-junior-soldier/",
+      "status": "published",
+      "release": "Junior Soldier",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 1,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Mezz Coleman — australian / pop / indie folk pop music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
       "id": "bandcamp:okegmusic",
       "name": "OK EG",
       "canonicalName": "ok eg",
@@ -319,6 +865,284 @@
       "labels": []
     },
     {
+      "id": "bandcamp:ollieolsenofficial",
+      "name": "Ollie Olsen Official",
+      "canonicalName": "ollie olsen official",
+      "bandcampArtistUrl": "https://ollieolsenofficial.bandcamp.com/",
+      "aquariumSlug": "ollie-olsen-official-noise-23",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ollie-olsen-official-noise-23/",
+      "status": "published",
+      "release": "Noise 23",
+      "releaseDate": "2026-09-05 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "violet",
+      "waters": [
+        "electronic",
+        "loud",
+        "strange"
+      ],
+      "lastUpdated": "2026-09-05 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:strange",
+          "slug": "style-strange",
+          "name": "STRANGE",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Ollie Olsen Official — experimental / trance / avant-garde music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:preciousmess",
+      "name": "Precious Mess",
+      "canonicalName": "precious mess",
+      "bandcampArtistUrl": "https://preciousmess.bandcamp.com/",
+      "aquariumSlug": "precious-mess-never-enough-paradise-in-purgatory",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/precious-mess-never-enough-paradise-in-purgatory/",
+      "status": "published",
+      "release": "Never Enough // Paradise In Purgatory",
+      "releaseDate": "2026-08-27 00:00:00 UTC",
+      "trackCount": 2,
+      "visualStyle": "violet",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-08-27 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Precious Mess — alternative / indie / indie rock music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:robbiep808x",
+      "name": "Robbie P",
+      "canonicalName": "robbie p",
+      "bandcampArtistUrl": "https://robbiep808x.bandcamp.com/",
+      "aquariumSlug": "robbie-p-chester",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/robbie-p-chester/",
+      "status": "published",
+      "release": "CHESTER",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "quiet",
+        "dreamy"
+      ],
+      "lastUpdated": "2026-08-28 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:dreamy",
+          "slug": "style-dreamy",
+          "name": "DREAMY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Robbie P — hip-hop/rap / alternative hip-hop / australian hip hop music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:ronnydap",
+      "name": "Ronny Dap",
+      "canonicalName": "ronny dap",
+      "bandcampArtistUrl": "https://ronnydap.bandcamp.com/",
+      "aquariumSlug": "ronny-dap-indisposed",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/ronny-dap-indisposed/",
+      "status": "published",
+      "release": "Indisposed",
+      "releaseDate": "2026-08-28 00:00:00 UTC",
+      "trackCount": 8,
+      "visualStyle": "cosmic",
+      "waters": [
+        "loud",
+        "heavy"
+      ],
+      "lastUpdated": "2026-08-28 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Ronny Dap — diy / punk / rock music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:sadmancaves",
+      "name": "Sad Man Caves",
+      "canonicalName": "sad man caves",
+      "bandcampArtistUrl": "https://sadmancaves.bandcamp.com/",
+      "aquariumSlug": "sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi/",
+      "status": "published",
+      "release": "if these walls could talk they'd be in therapy / just existing (with samples)",
+      "releaseDate": "2026-09-04 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "heavy",
+        "dark"
+      ],
+      "lastUpdated": "2026-09-04 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:heavy",
+          "slug": "style-heavy",
+          "name": "HEAVY",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:dark",
+          "slug": "style-dark",
+          "name": "DARK",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Sad Man Caves — industrail / punk / boom bap music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
       "id": "bandcamp:samalfred1",
       "name": "Sam Alfred",
       "canonicalName": "sam alfred",
@@ -362,6 +1186,106 @@
       "country": "Australia",
       "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
       "bioShort": "Sam Alfred — house / deep house music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:shaunysage",
+      "name": "Shauny Sage",
+      "canonicalName": "shauny sage",
+      "bandcampArtistUrl": "https://shaunysage.bandcamp.com/",
+      "aquariumSlug": "shauny-sage-affirmation-bushwalk-1",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/shauny-sage-affirmation-bushwalk-1/",
+      "status": "published",
+      "release": "Affirmation Bushwalk 1",
+      "releaseDate": "2026-09-03 00:00:00 UTC",
+      "trackCount": 31,
+      "visualStyle": "violet",
+      "waters": [
+        "quiet"
+      ],
+      "lastUpdated": "2026-09-03 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Shauny Sage — ambient / meditation music / acoustic guitar music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:solfire",
+      "name": "Sol.fire",
+      "canonicalName": "sol fire",
+      "bandcampArtistUrl": "https://solfire.bandcamp.com/",
+      "aquariumSlug": "sol-fire-cosmic-traveller",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sol-fire-cosmic-traveller/",
+      "status": "published",
+      "release": "Cosmic Traveller",
+      "releaseDate": "2026-08-26 00:00:00 UTC",
+      "trackCount": 7,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic",
+        "quiet"
+      ],
+      "lastUpdated": "2026-08-26 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:quiet",
+          "slug": "style-quiet",
+          "name": "QUIET",
+          "type": "genre",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Sol.fire — 80s / ambient / ambient electronica music from Melbourne, Australia.",
       "labels": []
     },
     {
@@ -478,6 +1402,52 @@
       "country": "Australia",
       "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
       "bioShort": "Squamata — post-metal / black metal / metal music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:stratstrat",
+      "name": "Strat Strat",
+      "canonicalName": "strat strat",
+      "bandcampArtistUrl": "https://stratstrat.bandcamp.com/",
+      "aquariumSlug": "strat-strat-dog-days",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/strat-strat-dog-days/",
+      "status": "published",
+      "release": "Dog Days",
+      "releaseDate": "2026-08-31 00:00:00 UTC",
+      "trackCount": 4,
+      "visualStyle": "violet",
+      "waters": [
+        "loud"
+      ],
+      "lastUpdated": "2026-08-31 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:loud",
+          "slug": "style-loud",
+          "name": "LOUD",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "Strat Strat — alternative / alternative rock / furry music from Melbourne, Australia.",
       "labels": []
     },
     {
@@ -670,6 +1640,52 @@
       "country": "Australia",
       "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
       "bioShort": "Vancouver Sleep Clinic — ethereal / alternative / beautiful music from Melbourne, Australia.",
+      "labels": []
+    },
+    {
+      "id": "bandcamp:williamkiss",
+      "name": "William Kiss",
+      "canonicalName": "william kiss",
+      "bandcampArtistUrl": "https://williamkiss.bandcamp.com/",
+      "aquariumSlug": "william-kiss-up-n-down",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/william-kiss-up-n-down/",
+      "status": "published",
+      "release": "Up N Down",
+      "releaseDate": "2026-09-02 00:00:00 UTC",
+      "trackCount": 3,
+      "visualStyle": "cosmic",
+      "waters": [
+        "electronic"
+      ],
+      "lastUpdated": "2026-09-02 00:00:00 UTC",
+      "memberships": [
+        {
+          "id": "universe:melbourne",
+          "slug": "melbourne",
+          "name": "MELBOURNE",
+          "type": "universe",
+          "status": "published"
+        },
+        {
+          "id": "style:electronic",
+          "slug": "style-electronic",
+          "name": "ELECTRONIC",
+          "type": "genre",
+          "status": "published"
+        }
+      ],
+      "universeMembership": [
+        "melbourne"
+      ],
+      "locationConfidence": "CONFIRMED",
+      "primaryLocation": "Melbourne, Australia",
+      "rawLocation": "Melbourne, Australia",
+      "suburb": null,
+      "city": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "bioShort": "William Kiss — house / bass / club music from Melbourne, Australia.",
       "labels": []
     }
   ]

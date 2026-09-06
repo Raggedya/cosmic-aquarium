@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "bubble-kismet",
+  "artist": "Bubble",
+  "bandcampUrl": "https://bubbleukg.bandcamp.com/album/kismet",
+  "releaseTitle": "Kismet",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "nukg",
+    "uk garage",
+    "ukg",
+    "dance",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "BUB018 is a celebration of the golden era! Two producers with their feet firmly in the UK underground, Jack Mensha & Jimi Dee, have teamed up to deliver two mixes of their…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bubbleukg.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:03:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "kismet",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "kismet-2614039573",
+      "title": "Kismet (4x4 Beastmode mix)",
+      "artist": "Bubble",
+      "albumTitle": "Kismet",
+      "albumKey": "kismet",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bubbleukg.bandcamp.com/track/kismet-4x4-beastmode-mix",
+      "bandcampEmbedTrackId": "2614039573",
+      "sourcePage": "https://bubbleukg.bandcamp.com/album/kismet",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "kismet-1782571066",
+      "title": "Kismet (2step mix)",
+      "artist": "Bubble",
+      "albumTitle": "Kismet",
+      "albumKey": "kismet",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:51",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bubbleukg.bandcamp.com/track/kismet-2step-mix",
+      "bandcampEmbedTrackId": "1782571066",
+      "sourcePage": "https://bubbleukg.bandcamp.com/album/kismet",
+      "accent": "#88d7ff"
+    }
+  ]
+}

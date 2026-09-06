@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "ollie-olsen-official-noise-23",
+  "artist": "Ollie Olsen Official",
+  "bandcampUrl": "https://ollieolsenofficial.bandcamp.com/album/noise-23",
+  "releaseTitle": "Noise 23",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "experimental",
+    "trance",
+    "avant-garde",
+    "electro-acoustic",
+    "space rock",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Ollie Olsen Official — experimental / trance / avant-garde music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic",
+    "loud",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ollieolsenofficial.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:03:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "noise-23",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "noise-23-4241451955",
+      "title": "Atmox",
+      "artist": "Ollie Olsen Official",
+      "albumTitle": "Noise 23",
+      "albumKey": "noise-23",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ollieolsenofficial.bandcamp.com/track/atmox",
+      "bandcampEmbedTrackId": "4241451955",
+      "sourcePage": "https://ollieolsenofficial.bandcamp.com/album/noise-23",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "noise-23-1079864319",
+      "title": "Incoming",
+      "artist": "Ollie Olsen Official",
+      "albumTitle": "Noise 23",
+      "albumKey": "noise-23",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:12",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ollieolsenofficial.bandcamp.com/track/incoming",
+      "bandcampEmbedTrackId": "1079864319",
+      "sourcePage": "https://ollieolsenofficial.bandcamp.com/album/noise-23",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "noise-23-791089537",
+      "title": "Noise 23",
+      "artist": "Ollie Olsen Official",
+      "albumTitle": "Noise 23",
+      "albumKey": "noise-23",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "22:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ollieolsenofficial.bandcamp.com/track/noise-23",
+      "bandcampEmbedTrackId": "791089537",
+      "sourcePage": "https://ollieolsenofficial.bandcamp.com/album/noise-23",
+      "accent": "#ff6f8f"
+    }
+  ]
+}

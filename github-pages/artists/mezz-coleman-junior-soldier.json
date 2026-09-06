@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "slug": "mezz-coleman-junior-soldier",
+  "artist": "Mezz Coleman",
+  "bandcampUrl": "https://mezzcoleman.bandcamp.com/album/junior-soldier",
+  "releaseTitle": "Junior Soldier",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "australian",
+    "pop",
+    "indie folk pop",
+    "indie pop",
+    "singer-songwriter",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Mezz Coleman — australian / pop / indie folk pop music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mezzcoleman.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T02:03:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "junior-soldier",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "junior-soldier-4077443790",
+      "title": "Junior Soldier",
+      "artist": "Mezz Coleman",
+      "albumTitle": "Junior Soldier",
+      "albumKey": "junior-soldier",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mezzcoleman.bandcamp.com/track/junior-soldier",
+      "bandcampEmbedTrackId": "4077443790",
+      "sourcePage": "https://mezzcoleman.bandcamp.com/album/junior-soldier",
+      "accent": "#c3b4f4"
+    }
+  ]
+}

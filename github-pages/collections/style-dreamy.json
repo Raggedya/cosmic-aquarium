@@ -8,9 +8,29 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-06T01:47:24.925Z",
-  "updatedAt": "2026-09-06T01:47:24.925Z",
+  "createdAt": "2026-09-06T02:03:52.113Z",
+  "updatedAt": "2026-09-06T02:03:52.113Z",
   "members": [
+    {
+      "artistId": "bandcamp:robbiep808x",
+      "artistName": "Robbie P",
+      "aquariumSlug": "robbie-p-chester",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/robbie-p-chester/",
+      "bandcampArtistUrl": "https://robbiep808x.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical DREAMY style membership",
+      "displayEnabled": true,
+      "waters": [
+        "quiet",
+        "dreamy"
+      ],
+      "styles": [
+        "quiet",
+        "dreamy"
+      ]
+    },
     {
       "artistId": "bandcamp:vancouversleepclinic",
       "artistName": "Vancouver Sleep Clinic",

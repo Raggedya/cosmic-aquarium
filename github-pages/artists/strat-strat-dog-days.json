@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "strat-strat-dog-days",
+  "artist": "Strat Strat",
+  "bandcampUrl": "https://stratstrat.bandcamp.com/album/dog-days",
+  "releaseTitle": "Dog Days",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "2026-09-06",
+  "status": "published",
+  "metadataTags": [
+    "alternative",
+    "alternative rock",
+    "furry",
+    "therian",
+    "trans",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "furry EP for lonely creatures best listened to when cuddling a creature",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://stratstrat.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T02:03:44Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dog-days",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dog-days-1041119066",
+      "title": "Creatures on my Mind",
+      "artist": "Strat Strat",
+      "albumTitle": "Dog Days",
+      "albumKey": "dog-days",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:50",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stratstrat.bandcamp.com/track/creatures-on-my-mind",
+      "bandcampEmbedTrackId": "1041119066",
+      "sourcePage": "https://stratstrat.bandcamp.com/album/dog-days",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dog-days-3655253851",
+      "title": "Drowning",
+      "artist": "Strat Strat",
+      "albumTitle": "Dog Days",
+      "albumKey": "dog-days",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:23",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stratstrat.bandcamp.com/track/drowning",
+      "bandcampEmbedTrackId": "3655253851",
+      "sourcePage": "https://stratstrat.bandcamp.com/album/dog-days",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "dog-days-698788781",
+      "title": "Somebody Else To Love Me",
+      "artist": "Strat Strat",
+      "albumTitle": "Dog Days",
+      "albumKey": "dog-days",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stratstrat.bandcamp.com/track/somebody-else-to-love-me",
+      "bandcampEmbedTrackId": "698788781",
+      "sourcePage": "https://stratstrat.bandcamp.com/album/dog-days",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "dog-days-4103979493",
+      "title": "Only Gets Better",
+      "artist": "Strat Strat",
+      "albumTitle": "Dog Days",
+      "albumKey": "dog-days",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:21",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stratstrat.bandcamp.com/track/only-gets-better",
+      "bandcampEmbedTrackId": "4103979493",
+      "sourcePage": "https://stratstrat.bandcamp.com/album/dog-days",
+      "accent": "#ffb66d"
+    }
+  ]
+}

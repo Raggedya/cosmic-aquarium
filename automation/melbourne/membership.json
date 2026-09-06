@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "universe": "melbourne",
-  "generatedAt": "2026-09-06T01:47:20.711301+00:00",
+  "generatedAt": "2026-09-06T02:03:51.141138+00:00",
   "publicationRule": "MELBOURNE_CONFIRMED with CONFIRMED/HIGH confidence and at least one playable track",
-  "artistCount": 1220,
-  "eligibleArtistCount": 13,
+  "artistCount": 1240,
+  "eligibleArtistCount": 33,
   "artists": {
     "bandcamp:0207carrier": {
       "artistId": "bandcamp:0207carrier",
@@ -108,6 +108,43 @@
           "country": "California",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Los Angeles, California\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:2hoha": {
+      "artistId": "bandcamp:2hoha",
+      "artist": "HOHA",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "hoha-rock-the-boat-hoha-jungle-edits"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -633,6 +670,43 @@
           "country": "British Columbia",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Vancouver, British Columbia\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:actualbone": {
+      "artistId": "bandcamp:actualbone",
+      "artist": "Actual B",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 9,
+      "aquariumSlugs": [
+        "actual-b-fountain"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -2248,6 +2322,43 @@
         }
       ]
     },
+    "bandcamp:astralcollective": {
+      "artistId": "bandcamp:astralcollective",
+      "artist": "Astral Collective",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 9,
+      "aquariumSlugs": [
+        "astral-collective-horizons"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
+        }
+      ]
+    },
     "bandcamp:astrophysicsbrazil": {
       "artistId": "bandcamp:astrophysicsbrazil",
       "artist": "ASTROPHYSICS",
@@ -3400,6 +3511,43 @@
           "country": null,
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Poland\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:beisselgreen": {
+      "artistId": "bandcamp:beisselgreen",
+      "artist": "Beissel/Green",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 3,
+      "aquariumSlugs": [
+        "beissel-green-convalescence"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -4593,6 +4741,43 @@
         }
       ]
     },
+    "bandcamp:bowdo1": {
+      "artistId": "bandcamp:bowdo1",
+      "artist": "BOWDO",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "bowdo-twerk"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
+        }
+      ]
+    },
     "bandcamp:boyharsher": {
       "artistId": "bandcamp:boyharsher",
       "artist": "Boy Harsher",
@@ -4765,6 +4950,43 @@
           "country": "France",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Toulouse, France\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:bubbleukg": {
+      "artistId": "bandcamp:bubbleukg",
+      "artist": "Bubble",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "bubble-kismet"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -6119,6 +6341,43 @@
           "country": "North Carolina",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Charlotte, North Carolina\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:chrisbieniektranscriptions": {
+      "artistId": "bandcamp:chrisbieniektranscriptions",
+      "artist": "Chris Bieniek Transcriptions",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 1,
+      "aquariumSlugs": [
+        "chris-bieniek-transcriptions-green-dolphin-street-solo-guitar"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -9972,6 +10231,43 @@
         }
       ]
     },
+    "bandcamp:dvntdrlng": {
+      "artistId": "bandcamp:dvntdrlng",
+      "artist": "DVNT DRLNG",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 3,
+      "aquariumSlugs": [
+        "dvnt-drlng-f-ck-ants-two-tenna-s"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
+        }
+      ]
+    },
     "bandcamp:dynamostairs": {
       "artistId": "bandcamp:dynamostairs",
       "artist": "Dynamo Stairs",
@@ -11859,6 +12155,43 @@
           "country": "Denmark",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Copenhagen, Denmark\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:firstb0rn": {
+      "artistId": "bandcamp:firstb0rn",
+      "artist": "First Born",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 5,
+      "aquariumSlugs": [
+        "first-born-first-served"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -21775,6 +22108,43 @@
         }
       ]
     },
+    "bandcamp:lunarruins1": {
+      "artistId": "bandcamp:lunarruins1",
+      "artist": "Lunar Ruins",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 9,
+      "aquariumSlugs": [
+        "lunar-ruins-the-expanse"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
+        }
+      ]
+    },
     "bandcamp:luqlle": {
       "artistId": "bandcamp:luqlle",
       "artist": "lúqlle",
@@ -23347,6 +23717,43 @@
           "country": "Pennsylvania",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Philadelphia, Pennsylvania\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:mezzcoleman": {
+      "artistId": "bandcamp:mezzcoleman",
+      "artist": "Mezz Coleman",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 1,
+      "aquariumSlugs": [
+        "mezz-coleman-junior-soldier"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -26479,6 +26886,43 @@
         }
       ]
     },
+    "bandcamp:ollieolsenofficial": {
+      "artistId": "bandcamp:ollieolsenofficial",
+      "artist": "Ollie Olsen Official",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 3,
+      "aquariumSlugs": [
+        "ollie-olsen-official-noise-23"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
+        }
+      ]
+    },
     "bandcamp:ollystevenson": {
       "artistId": "bandcamp:ollystevenson",
       "artist": "Olly Stevenson",
@@ -28509,6 +28953,43 @@
         }
       ]
     },
+    "bandcamp:preciousmess": {
+      "artistId": "bandcamp:preciousmess",
+      "artist": "Precious Mess",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 2,
+      "aquariumSlugs": [
+        "precious-mess-never-enough-paradise-in-purgatory"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
+        }
+      ]
+    },
     "bandcamp:primalband": {
       "artistId": "bandcamp:primalband",
       "artist": "Primal",
@@ -30224,6 +30705,43 @@
         }
       ]
     },
+    "bandcamp:robbiep808x": {
+      "artistId": "bandcamp:robbiep808x",
+      "artist": "Robbie P",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 3,
+      "aquariumSlugs": [
+        "robbie-p-chester"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
+        }
+      ]
+    },
     "bandcamp:rodrigoespinoza1": {
       "artistId": "bandcamp:rodrigoespinoza1",
       "artist": "Rodrigo Espinoza",
@@ -30396,6 +30914,43 @@
           "country": "Ontario",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Toronto, Ontario\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:ronnydap": {
+      "artistId": "bandcamp:ronnydap",
+      "artist": "Ronny Dap",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 8,
+      "aquariumSlugs": [
+        "ronny-dap-indisposed"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -30956,6 +31511,43 @@
           "country": "California",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"San Jose, California\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:sadmancaves": {
+      "artistId": "bandcamp:sadmancaves",
+      "artist": "Sad Man Caves",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -32218,6 +32810,43 @@
           "country": "Washington",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Seattle, Washington\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:shaunysage": {
+      "artistId": "bandcamp:shaunysage",
+      "artist": "Shauny Sage",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 31,
+      "aquariumSlugs": [
+        "shauny-sage-affirmation-bushwalk-1"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -33622,6 +34251,43 @@
         }
       ]
     },
+    "bandcamp:solfire": {
+      "artistId": "bandcamp:solfire",
+      "artist": "Sol.fire",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 7,
+      "aquariumSlugs": [
+        "sol-fire-cosmic-traveller"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
+        }
+      ]
+    },
     "bandcamp:solitarycorpserot": {
       "artistId": "bandcamp:solitarycorpserot",
       "artist": "Solitary Corpse Rot",
@@ -34883,6 +35549,43 @@
           "country": "Québec",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"Montreal, Québec\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:stratstrat": {
+      "artistId": "bandcamp:stratstrat",
+      "artist": "Strat Strat",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 4,
+      "aquariumSlugs": [
+        "strat-strat-dog-days"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },
@@ -41414,6 +42117,43 @@
           "country": "New York",
           "source": "manifest.primaryLocation",
           "evidence": "Stored location \"New York, New York\" does not resolve to Metropolitan Melbourne."
+        }
+      ]
+    },
+    "bandcamp:williamkiss": {
+      "artistId": "bandcamp:williamkiss",
+      "artist": "William Kiss",
+      "classification": "MELBOURNE_CONFIRMED",
+      "locationConfidence": "CONFIRMED",
+      "universeMembership": [
+        "melbourne"
+      ],
+      "eligible": true,
+      "rawLocation": "Melbourne, Australia",
+      "city": "Melbourne",
+      "suburb": null,
+      "locality": "Melbourne",
+      "region": "Victoria",
+      "country": "Australia",
+      "lga": null,
+      "locationSource": "manifest.primaryLocation",
+      "locationEvidence": "Artist-provided location is \"Melbourne, Australia\".",
+      "releaseCount": 1,
+      "playableTrackCount": 3,
+      "aquariumSlugs": [
+        "william-kiss-up-n-down"
+      ],
+      "evidenceRecords": [
+        {
+          "classification": "MELBOURNE_CONFIRMED",
+          "confidence": "CONFIRMED",
+          "rawLocation": "Melbourne, Australia",
+          "locality": "Melbourne",
+          "city": "Melbourne",
+          "region": "Victoria",
+          "country": "Australia",
+          "source": "manifest.primaryLocation",
+          "evidence": "Artist-provided location is \"Melbourne, Australia\"."
         }
       ]
     },

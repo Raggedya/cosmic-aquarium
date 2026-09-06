@@ -8,8 +8,8 @@
   "status": "published",
   "instruction": "TOUCH AN ARTIST",
   "theme": "cosmic",
-  "createdAt": "2026-09-06T01:47:24.949Z",
-  "updatedAt": "2026-09-06T01:47:24.949Z",
+  "createdAt": "2026-09-06T02:03:52.114Z",
+  "updatedAt": "2026-09-06T02:03:52.114Z",
   "members": [
     {
       "artistId": "bandcamp:harlowreign",
@@ -28,6 +28,28 @@
       ],
       "styles": [
         "loud",
+        "dark"
+      ]
+    },
+    {
+      "artistId": "bandcamp:sadmancaves",
+      "artistName": "Sad Man Caves",
+      "aquariumSlug": "sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi",
+      "aquariumUrl": "https://raggedya.github.io/cosmic-aquarium/sad-man-caves-if-these-walls-could-talk-they-d-be-in-therapy-just-existi/",
+      "bandcampArtistUrl": "https://sadmancaves.bandcamp.com/",
+      "verificationStatus": "verified",
+      "verificationScore": 1,
+      "source": "automatic-style-classification",
+      "evidence": "Canonical DARK style membership",
+      "displayEnabled": true,
+      "waters": [
+        "electronic",
+        "heavy",
+        "dark"
+      ],
+      "styles": [
+        "electronic",
+        "heavy",
         "dark"
       ]
     },
