@@ -80,14 +80,22 @@ function randomEntry(excluded=new Set()){
 
 function artistName(entry){return String(entry?.artist||'MELBOURNE').trim()}
 
+function setReelLabel(node,label){
+  const text=String(label||'MELBOURNE').replace(/\s+/g,' ').trim();
+  node.textContent=text;
+  node.classList.toggle('is-long',text.length>13);
+  node.classList.toggle('is-very-long',text.length>22);
+}
+
 function setReelRows(index,entry,neighbours=true){
   const strip=reels[index].querySelector('.reel-strip');
   const current=artistName(entry);
-  const before=neighbours?artistName(randomEntry(new Set([artistIdentity(entry)]))):current;
-  const after=neighbours?artistName(randomEntry(new Set([artistIdentity(entry),before.toLowerCase()]))):current;
-  strip.children[0].textContent=before;
-  strip.children[1].textContent=current;
-  strip.children[2].textContent=after;
+  const used=new Set([artistIdentity(entry)]);
+  const pickNeighbour=()=>{const item=randomEntry(used);if(item)used.add(artistIdentity(item));return artistName(item||entry)};
+  const before=neighbours?pickNeighbour():current;
+  const after=neighbours?pickNeighbour():current;
+  const farAfter=neighbours?pickNeighbour():current;
+  [before,current,after,farAfter].forEach((label,row)=>setReelLabel(strip.children[row],label));
 }
 
 function tickerDuration(text){return Math.max(8,Math.min(28,text.length/7.5))}

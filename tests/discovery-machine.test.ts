@@ -59,12 +59,25 @@ test('near misses remain non-matches and ordinary settles use three artists',asy
 });
 
 test('reels use real catalogue names and stop separately with physical lock-in',async()=>{
-  const [runtime,css]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+  const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(runtime,/artistName\(entry\)/);
+  assert.equal((template.match(/class="reel-strip"/g)||[]).length,3);
+  assert.equal((template.match(/<div class="reel-strip"><span><\/span><strong>[^<]+<\/strong><span><\/span><span><\/span><\/div>/g)||[]).length,3);
+  assert.match(runtime,/\[before,current,after,farAfter\]\.forEach/);
+  assert.match(runtime,/classList\.toggle\('is-very-long',text\.length>22\)/);
   assert.match(runtime,/\[1550,2200,2950\]/);
   assert.match(runtime,/reelThunk\(index\)/);
+  assert.match(css,/aggits-reel-v2\.webp/);
+  assert.match(css,/grid-template-rows:repeat\(4,1fr\)/);
   assert.match(css,/@keyframes reelLock/);
   assert.match(css,/\.reel\.is-spinning/);
+});
+
+test('the AGGITS marquee uses the reference-matched riveted metal artwork while keeping an accessible heading',async()=>{
+  const [template,css]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css')]);
+  assert.match(template,/aggits-marquee-v2\.webp/);
+  assert.match(template,/<h1 class="visually-hidden">AGGITS<\/h1>/);
+  assert.match(css,/\.aggits-marquee img/);
 });
 
 test('the formal state machine covers the complete mechanical and playback sequence',()=>{
@@ -171,9 +184,11 @@ test('share deep links remain canonical and carry Melbourne universe state',()=>
   assert.equal(buildShareUrl('https://raggedya.github.io','/cosmic-aquarium','porchlight',['anything']),'https://raggedya.github.io/cosmic-aquarium/?release=porchlight&categories=anything');
 });
 
-test('the public build packages the generated cabinet and lever assets',async()=>{
+test('the public build packages the cabinet, lever, marquee and physical reel assets',async()=>{
   const build=await read('scripts/build-github-pages.mjs');
   assert.match(build,/aggits-cabinet\.webp/);
   assert.match(build,/aggits-lever\.webp/);
+  assert.match(build,/aggits-marquee-v2\.webp/);
+  assert.match(build,/aggits-reel-v2\.webp/);
   assert.match(build,/musicMachineAssets\.forEach/);
 });

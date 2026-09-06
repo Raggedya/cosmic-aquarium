@@ -15,3 +15,15 @@ Role: separate interactive side-lever skin. Live pointer and keyboard interactio
 Prompt summary: an isolated heavy vintage lever with black Bakelite ball, aged brass/black-chrome arm and circular mechanical pivot, vertical resting orientation, realistic metal wear and warm amber highlights; no cabinet, text, symbols, hands, coins or casino imagery.
 
 The reference image and generated raster surfaces are not used to encode band names, song names, results, or controls. Those remain live, accessible and data-driven.
+
+## `aggits-marquee-v2.webp`
+
+Role: transparent photographic marquee lettering layered into the cabinet's arched crown. The accessible `AGGITS` heading remains live HTML while this asset supplies the riveted, bevelled metal surface.
+
+Final built-in ImageGen prompt: isolate and faithfully recreate only the arched word `AGGITS` from the supplied reference, preserving the exact six-letter spelling, antique slab-serif proportions, gunmetal/bronze faces, riveted edges, warm highlights, black shadows and ornamental curls on a transparent background.
+
+## `aggits-reel-v2.webp`
+
+Role: reusable blank four-position reel surface. Real artist names remain live HTML and are never baked into the image.
+
+Final built-in ImageGen prompt: recreate one blank physical reel from the supplied reference with four ivory paper name positions, dark antique brass/chrome side rims, cylindrical curvature, warm amber reflections, realistic texture and transparent surroundings; remove all printed words and symbols.
