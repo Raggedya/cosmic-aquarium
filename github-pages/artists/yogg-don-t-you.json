@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "yogg-don-t-you",
+  "artist": "Yogg",
+  "bandcampUrl": "https://yogg.bandcamp.com/album/dont-you",
+  "releaseTitle": "Don't You",
+  "releaseDate": "2026-01-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "sound-art",
+    "electronic",
+    "experimental",
+    "sound art",
+    "soundtrack music",
+    "techno",
+    "bass",
+    "dubstep",
+    "Antwerp"
+  ],
+  "primaryLocation": "Antwerp, Belgium",
+  "bioShort": "Yogg delivers the second release on his Polarized Future label, with four deep and sub-heavy cuts on ‘Don’t You’. Produced in his new Brussels studio, the EP channels the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://yogg.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:06:39Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "don-t-you",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "don-t-you-3730500052",
+      "title": "The Ductile Swing",
+      "artist": "Yogg",
+      "albumTitle": "Don't You",
+      "albumKey": "don-t-you",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://yogg.bandcamp.com/track/the-ductile-swing",
+      "bandcampEmbedTrackId": "3730500052",
+      "sourcePage": "https://yogg.bandcamp.com/album/dont-you",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "don-t-you-2134035523",
+      "title": "Don't You",
+      "artist": "Yogg",
+      "albumTitle": "Don't You",
+      "albumKey": "don-t-you",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://yogg.bandcamp.com/track/dont-you",
+      "bandcampEmbedTrackId": "2134035523",
+      "sourcePage": "https://yogg.bandcamp.com/album/dont-you",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "don-t-you-4010451291",
+      "title": "It's Always Seven",
+      "artist": "Yogg",
+      "albumTitle": "Don't You",
+      "albumKey": "don-t-you",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://yogg.bandcamp.com/track/its-always-seven",
+      "bandcampEmbedTrackId": "4010451291",
+      "sourcePage": "https://yogg.bandcamp.com/album/dont-you",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "don-t-you-3869989",
+      "title": "Low On Life",
+      "artist": "Yogg",
+      "albumTitle": "Don't You",
+      "albumKey": "don-t-you",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:03",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://yogg.bandcamp.com/track/low-on-life",
+      "bandcampEmbedTrackId": "3869989",
+      "sourcePage": "https://yogg.bandcamp.com/album/dont-you",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://yogg.bandcamp.com/album/dont-you",
+    "discoveredAt": "2026-09-06T04:49:12.997144+00:00",
+    "importedAt": "2026-09-06T05:06:39.760214+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "yogg.bandcamp.com",
+    "bandcampBandId": "598834039",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:06:39.760214+00:00"
+  }
+}

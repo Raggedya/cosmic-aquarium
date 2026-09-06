@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "ala-tila-2026-8-21-live",
+  "artist": "ala_tila",
+  "bandcampUrl": "https://alatila.bandcamp.com/album/2026821-live",
+  "releaseTitle": "2026.8.21 live@尼画廊",
+  "releaseDate": "2026-08-29 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "electronic",
+    "experimental",
+    "field recordings",
+    "live",
+    "musique concrete",
+    "toy music",
+    "Tianjin"
+  ],
+  "primaryLocation": "Tianjin, China",
+  "bioShort": "以游戏心态把玩日常的声音。 You are A toy!!!!!! record:朱文博 picture：翰忠",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "electronic",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://alatila.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:06:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "2026-8-21-live",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "2026-8-21-live-750133545",
+      "title": "1",
+      "artist": "ala_tila",
+      "albumTitle": "2026.8.21 live@尼画廊",
+      "albumKey": "2026-8-21-live",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "11:27",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alatila.bandcamp.com/track/1",
+      "bandcampEmbedTrackId": "750133545",
+      "sourcePage": "https://alatila.bandcamp.com/album/2026821-live",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "2026-8-21-live-94527954",
+      "title": "2",
+      "artist": "ala_tila",
+      "albumTitle": "2026.8.21 live@尼画廊",
+      "albumKey": "2026-8-21-live",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "12:06",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alatila.bandcamp.com/track/2",
+      "bandcampEmbedTrackId": "94527954",
+      "sourcePage": "https://alatila.bandcamp.com/album/2026821-live",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://alatila.bandcamp.com/album/2026821-live",
+    "discoveredAt": "2026-09-06T04:49:12.997144+00:00",
+    "importedAt": "2026-09-06T05:06:25.102449+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "alatila.bandcamp.com",
+    "bandcampBandId": "3597147307",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:06:25.102449+00:00"
+  }
+}

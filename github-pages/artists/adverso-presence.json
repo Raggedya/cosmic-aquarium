@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "adverso-presence",
+  "artist": "Adverso",
+  "bandcampUrl": "https://adverso.bandcamp.com/album/presence",
+  "releaseTitle": "Presence",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "metal",
+    "portuguese black metal",
+    "raw black metal",
+    "Portugal"
+  ],
+  "primaryLocation": "Portugal",
+  "bioShort": "Presence is the fourth and final chapter of Adverso's demo tetralogy. Expanding upon the suffocating desolation of Ex Inanis and the spectral, claustrophobic atmosphere of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://adverso.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:00:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "presence",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "presence-1922760371",
+      "title": "My Grave, a Portal",
+      "artist": "Adverso",
+      "albumTitle": "Presence",
+      "albumKey": "presence",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://adverso.bandcamp.com/track/my-grave-a-portal",
+      "bandcampEmbedTrackId": "1922760371",
+      "sourcePage": "https://adverso.bandcamp.com/album/presence",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "presence-1046094162",
+      "title": "Unknown",
+      "artist": "Adverso",
+      "albumTitle": "Presence",
+      "albumKey": "presence",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:19",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://adverso.bandcamp.com/track/unknown",
+      "bandcampEmbedTrackId": "1046094162",
+      "sourcePage": "https://adverso.bandcamp.com/album/presence",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "presence-1144311682",
+      "title": "There",
+      "artist": "Adverso",
+      "albumTitle": "Presence",
+      "albumKey": "presence",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:47",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://adverso.bandcamp.com/track/there",
+      "bandcampEmbedTrackId": "1144311682",
+      "sourcePage": "https://adverso.bandcamp.com/album/presence",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "presence-2789257942",
+      "title": "Presence",
+      "artist": "Adverso",
+      "albumTitle": "Presence",
+      "albumKey": "presence",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:36",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://adverso.bandcamp.com/track/presence",
+      "bandcampEmbedTrackId": "2789257942",
+      "sourcePage": "https://adverso.bandcamp.com/album/presence",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://adverso.bandcamp.com/album/presence",
+    "discoveredAt": "2026-09-06T04:49:12.989888+00:00",
+    "importedAt": "2026-09-06T05:00:00.801883+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "adverso.bandcamp.com",
+    "bandcampBandId": "3422039013",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:00:00.801883+00:00"
+  }
+}

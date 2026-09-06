@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "slug": "mili-let-s-lament",
+  "artist": "Mili",
+  "bandcampUrl": "https://project-mili.bandcamp.com/album/lets-lament",
+  "releaseTitle": "Let's Lament",
+  "releaseDate": "2024-01-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "piano",
+    "alternative",
+    "anime",
+    "bedroom",
+    "classical",
+    "electronica",
+    "fusion",
+    "indie pop",
+    "Japan"
+  ],
+  "primaryLocation": "Japan",
+  "bioShort": "Mili — piano / alternative / anime music from Japan.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://project-mili.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:01:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "let-s-lament",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "let-s-lament-4228012970",
+      "title": "In Hell We Live, Lament feat. KIHOW from MYTH & ROID (Let's Lament ver.)",
+      "artist": "Mili",
+      "albumTitle": "Let's Lament",
+      "albumKey": "let-s-lament",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "5:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://project-mili.bandcamp.com/track/in-hell-we-live-lament-feat-kihow-from-myth-roid-lets-lament-ver",
+      "bandcampEmbedTrackId": "4228012970",
+      "sourcePage": "https://project-mili.bandcamp.com/album/lets-lament",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "let-s-lament-450212681",
+      "title": "Between Two Worlds (Let's Lament ver.)",
+      "artist": "Mili",
+      "albumTitle": "Let's Lament",
+      "albumKey": "let-s-lament",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "6:02",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://project-mili.bandcamp.com/track/between-two-worlds-lets-lament-ver",
+      "bandcampEmbedTrackId": "450212681",
+      "sourcePage": "https://project-mili.bandcamp.com/album/lets-lament",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://project-mili.bandcamp.com/album/lets-lament",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:01:21.679086+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "project-mili.bandcamp.com",
+    "bandcampBandId": "513185372",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:01:21.679086+00:00"
+  }
+}

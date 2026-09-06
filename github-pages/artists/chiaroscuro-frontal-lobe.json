@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "chiaroscuro-frontal-lobe",
+  "artist": "Chiaroscuro",
+  "bandcampUrl": "https://chiaroscuromi.bandcamp.com/album/frontal-lobe",
+  "releaseTitle": "Frontal Lobe",
+  "releaseDate": "2026-08-26 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "punk",
+    "alternative",
+    "emo",
+    "pop punk",
+    "shoegaze",
+    "Detroit"
+  ],
+  "primaryLocation": "Detroit, Michigan",
+  "bioShort": "instrumental demo of a few tracks off our first album.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://chiaroscuromi.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:54:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "frontal-lobe",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "frontal-lobe-4255340184",
+      "title": "Wannabe",
+      "artist": "Chiaroscuro",
+      "albumTitle": "Frontal Lobe",
+      "albumKey": "frontal-lobe",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:33",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chiaroscuromi.bandcamp.com/track/wannabe",
+      "bandcampEmbedTrackId": "4255340184",
+      "sourcePage": "https://chiaroscuromi.bandcamp.com/album/frontal-lobe",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "frontal-lobe-2577727665",
+      "title": "Kamakazie",
+      "artist": "Chiaroscuro",
+      "albumTitle": "Frontal Lobe",
+      "albumKey": "frontal-lobe",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chiaroscuromi.bandcamp.com/track/kamakazie",
+      "bandcampEmbedTrackId": "2577727665",
+      "sourcePage": "https://chiaroscuromi.bandcamp.com/album/frontal-lobe",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "frontal-lobe-727009182",
+      "title": "Restart",
+      "artist": "Chiaroscuro",
+      "albumTitle": "Frontal Lobe",
+      "albumKey": "frontal-lobe",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:55",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chiaroscuromi.bandcamp.com/track/restart",
+      "bandcampEmbedTrackId": "727009182",
+      "sourcePage": "https://chiaroscuromi.bandcamp.com/album/frontal-lobe",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "frontal-lobe-3098549844",
+      "title": "Who Knew?",
+      "artist": "Chiaroscuro",
+      "albumTitle": "Frontal Lobe",
+      "albumKey": "frontal-lobe",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:04",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chiaroscuromi.bandcamp.com/track/who-knew",
+      "bandcampEmbedTrackId": "3098549844",
+      "sourcePage": "https://chiaroscuromi.bandcamp.com/album/frontal-lobe",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://chiaroscuromi.bandcamp.com/album/frontal-lobe",
+    "discoveredAt": "2026-09-06T04:49:12.985888+00:00",
+    "importedAt": "2026-09-06T04:54:40.740840+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "chiaroscuromi.bandcamp.com",
+    "bandcampBandId": "202381195",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:54:40.740840+00:00"
+  }
+}

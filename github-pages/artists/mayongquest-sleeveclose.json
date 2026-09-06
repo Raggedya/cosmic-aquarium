@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "slug": "mayongquest-sleeveclose",
+  "artist": "MayongQuest",
+  "bandcampUrl": "https://mayongquest.bandcamp.com/album/sleeveclose",
+  "releaseTitle": "SLEEVECLOSE",
+  "releaseDate": "2026-06-12 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "alternative",
+    "experimental",
+    "ambient",
+    "ambient pop",
+    "bedroom pop",
+    "cinematic pop",
+    "dream pop",
+    "female vocal",
+    "indie pop",
+    "indie-pop",
+    "indie-rock",
+    "intimate",
+    "mayongquest",
+    "metal",
+    "softfire",
+    "Thailand"
+  ],
+  "primaryLocation": "Thailand",
+  "bioShort": "A sleeve beside a sleeve. The thinnest layer in between. SLEEVECLOSE is a song about warmth that doesn't ask — just settles. close-mic vocal, soft-tail phrasing, warm intimate…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mayongquest.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:06:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sleeveclose",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sleeveclose-2719670277",
+      "title": "SLEEVECLOSE",
+      "artist": "MayongQuest",
+      "albumTitle": "SLEEVECLOSE",
+      "albumKey": "sleeveclose",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mayongquest.bandcamp.com/track/sleeveclose",
+      "bandcampEmbedTrackId": "2719670277",
+      "sourcePage": "https://mayongquest.bandcamp.com/album/sleeveclose",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mayongquest.bandcamp.com/album/sleeveclose",
+    "discoveredAt": "2026-09-06T04:49:12.997144+00:00",
+    "importedAt": "2026-09-06T05:06:13.234862+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mayongquest.bandcamp.com",
+    "bandcampBandId": "5175657",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:06:13.234862+00:00"
+  }
+}

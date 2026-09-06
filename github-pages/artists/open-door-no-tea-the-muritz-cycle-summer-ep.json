@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "open-door-no-tea-the-muritz-cycle-summer-ep",
+  "artist": "Open Door, No Tea",
+  "bandcampUrl": "https://open-door-no-tea.bandcamp.com/album/the-m-ritz-cycle-summer-ep",
+  "releaseTitle": "The Müritz Cycle: Summer (EP)",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "ambient",
+    "experimental",
+    "experimental electronic",
+    "field recordings",
+    "lowercase",
+    "minimalism",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "This is the second EP in a series inspired by my many hikes and birdwatching trips in the Müritz National Park north of Berlin. Two more EPs are planned, dedicated to autumn…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://open-door-no-tea.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:10:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-muritz-cycle-summer-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-muritz-cycle-summer-ep-2905177086",
+      "title": "Dry Flowers on Wood Tables",
+      "artist": "Open Door, No Tea",
+      "albumTitle": "The Müritz Cycle: Summer (EP)",
+      "albumKey": "the-muritz-cycle-summer-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://open-door-no-tea.bandcamp.com/track/dry-flowers-on-wood-tables",
+      "bandcampEmbedTrackId": "2905177086",
+      "sourcePage": "https://open-door-no-tea.bandcamp.com/album/the-m-ritz-cycle-summer-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-muritz-cycle-summer-ep-2144868514",
+      "title": "The Mind is No Hindrance",
+      "artist": "Open Door, No Tea",
+      "albumTitle": "The Müritz Cycle: Summer (EP)",
+      "albumKey": "the-muritz-cycle-summer-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://open-door-no-tea.bandcamp.com/track/the-mind-is-no-hindrance",
+      "bandcampEmbedTrackId": "2144868514",
+      "sourcePage": "https://open-door-no-tea.bandcamp.com/album/the-m-ritz-cycle-summer-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-muritz-cycle-summer-ep-3470279765",
+      "title": "City Heat (Same Place?)",
+      "artist": "Open Door, No Tea",
+      "albumTitle": "The Müritz Cycle: Summer (EP)",
+      "albumKey": "the-muritz-cycle-summer-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:22",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://open-door-no-tea.bandcamp.com/track/city-heat-same-place",
+      "bandcampEmbedTrackId": "3470279765",
+      "sourcePage": "https://open-door-no-tea.bandcamp.com/album/the-m-ritz-cycle-summer-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-muritz-cycle-summer-ep-1823234287",
+      "title": "Boek",
+      "artist": "Open Door, No Tea",
+      "albumTitle": "The Müritz Cycle: Summer (EP)",
+      "albumKey": "the-muritz-cycle-summer-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:13",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://open-door-no-tea.bandcamp.com/track/boek",
+      "bandcampEmbedTrackId": "1823234287",
+      "sourcePage": "https://open-door-no-tea.bandcamp.com/album/the-m-ritz-cycle-summer-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://open-door-no-tea.bandcamp.com/album/the-m-ritz-cycle-summer-ep",
+    "discoveredAt": "2026-09-06T04:49:13.001694+00:00",
+    "importedAt": "2026-09-06T05:10:45.850325+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "open-door-no-tea.bandcamp.com",
+    "bandcampBandId": "3130123766",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:10:45.850325+00:00"
+  }
+}

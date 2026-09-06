@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "deltabeats-river-bank-chant-ep",
+  "artist": "DeltaBeats",
+  "bandcampUrl": "https://deltabeatsmusic.bandcamp.com/album/river-bank-chant-ep",
+  "releaseTitle": "River Bank Chant EP",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "electronic",
+    "reggae",
+    "bass house",
+    "dnb",
+    "house",
+    "Louisiana"
+  ],
+  "primaryLocation": "Louisiana",
+  "bioShort": "DeltaBeats — electro / reggae / bass house music from Louisiana.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://deltabeatsmusic.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:57:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "river-bank-chant-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "river-bank-chant-ep-1481832707",
+      "title": "River Bank Chant",
+      "artist": "DeltaBeats",
+      "albumTitle": "River Bank Chant EP",
+      "albumKey": "river-bank-chant-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deltabeatsmusic.bandcamp.com/track/river-bank-chant",
+      "bandcampEmbedTrackId": "1481832707",
+      "sourcePage": "https://deltabeatsmusic.bandcamp.com/album/river-bank-chant-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "river-bank-chant-ep-3481316582",
+      "title": "River Bank Chant (Horns Version)",
+      "artist": "DeltaBeats",
+      "albumTitle": "River Bank Chant EP",
+      "albumKey": "river-bank-chant-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deltabeatsmusic.bandcamp.com/track/river-bank-chant-horns-version",
+      "bandcampEmbedTrackId": "3481316582",
+      "sourcePage": "https://deltabeatsmusic.bandcamp.com/album/river-bank-chant-ep",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://deltabeatsmusic.bandcamp.com/album/river-bank-chant-ep",
+    "discoveredAt": "2026-09-06T04:49:12.988888+00:00",
+    "importedAt": "2026-09-06T04:57:53.728719+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "deltabeatsmusic.bandcamp.com",
+    "bandcampBandId": "945945808",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:57:53.728719+00:00"
+  }
+}

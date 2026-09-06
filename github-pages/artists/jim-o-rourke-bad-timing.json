@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "jim-o-rourke-bad-timing",
+  "artist": "Jim O'Rourke",
+  "bandcampUrl": "https://jimorourke.bandcamp.com/album/bad-timing",
+  "releaseTitle": "Bad Timing",
+  "releaseDate": "1997-08-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "avant-garde",
+    "experimental",
+    "rock",
+    "genius",
+    "japan",
+    "pop rock",
+    "Tokyo"
+  ],
+  "primaryLocation": "Tokyo, Japan",
+  "bioShort": "A musing on popular standards and an all-instrumental down mainstreet, USA. Come for the history lesson, stay for the coming of age statement! Jim's pop epic is a personal…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jimorourke.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:02:11Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bad-timing",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bad-timing-258075155",
+      "title": "There's Hell in Hello But More in Goodbye",
+      "artist": "Jim O'Rourke",
+      "albumTitle": "Bad Timing",
+      "albumKey": "bad-timing",
+      "year": 1997,
+      "trackNumber": 1,
+      "duration": "9:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jimorourke.bandcamp.com/track/theres-hell-in-hello-but-more-in-goodbye",
+      "bandcampEmbedTrackId": "258075155",
+      "sourcePage": "https://jimorourke.bandcamp.com/album/bad-timing",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bad-timing-3956718515",
+      "title": "94 the Long Way",
+      "artist": "Jim O'Rourke",
+      "albumTitle": "Bad Timing",
+      "albumKey": "bad-timing",
+      "year": 1997,
+      "trackNumber": 2,
+      "duration": "13:57",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jimorourke.bandcamp.com/track/94-the-long-way",
+      "bandcampEmbedTrackId": "3956718515",
+      "sourcePage": "https://jimorourke.bandcamp.com/album/bad-timing",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "bad-timing-1871365454",
+      "title": "Bad Timing",
+      "artist": "Jim O'Rourke",
+      "albumTitle": "Bad Timing",
+      "albumKey": "bad-timing",
+      "year": 1997,
+      "trackNumber": 3,
+      "duration": "9:59",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jimorourke.bandcamp.com/track/bad-timing",
+      "bandcampEmbedTrackId": "1871365454",
+      "sourcePage": "https://jimorourke.bandcamp.com/album/bad-timing",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "bad-timing-4073776325",
+      "title": "Happy Trails",
+      "artist": "Jim O'Rourke",
+      "albumTitle": "Bad Timing",
+      "albumKey": "bad-timing",
+      "year": 1997,
+      "trackNumber": 4,
+      "duration": "10:35",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jimorourke.bandcamp.com/track/happy-trails",
+      "bandcampEmbedTrackId": "4073776325",
+      "sourcePage": "https://jimorourke.bandcamp.com/album/bad-timing",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jimorourke.bandcamp.com/album/bad-timing",
+    "discoveredAt": "2026-09-06T04:49:12.992391+00:00",
+    "importedAt": "2026-09-06T05:02:11.849020+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jimorourke.bandcamp.com",
+    "bandcampBandId": "3948138662",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:02:11.849020+00:00"
+  }
+}

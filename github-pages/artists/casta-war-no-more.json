@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "slug": "casta-war-no-more",
+  "artist": "Casta",
+  "bandcampUrl": "https://yosoycasta.bandcamp.com/album/war-no-more",
+  "releaseTitle": "WAR NO MORE",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "big beat",
+    "electronic",
+    "hip hop",
+    "acid",
+    "house",
+    "rave",
+    "techno",
+    "techno and variations",
+    "trance",
+    "trip hop",
+    "Spain"
+  ],
+  "primaryLocation": "GA, Spain",
+  "bioShort": "War No More is an EP inspired by rage, frustration and hope accumulated over the past 5 years by the war in Ukraine and the genocide in Palestine. Divide and conquer the saying…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://yosoycasta.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:55:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "war-no-more",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "war-no-more-1501798164",
+      "title": "War No More feat. Pepe Mollinedo",
+      "artist": "Casta",
+      "albumTitle": "WAR NO MORE",
+      "albumKey": "war-no-more",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://yosoycasta.bandcamp.com/track/war-no-more-feat-pepe-mollinedo",
+      "bandcampEmbedTrackId": "1501798164",
+      "sourcePage": "https://yosoycasta.bandcamp.com/album/war-no-more",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "war-no-more-1664776884",
+      "title": "Stop The Hate",
+      "artist": "Casta",
+      "albumTitle": "WAR NO MORE",
+      "albumKey": "war-no-more",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://yosoycasta.bandcamp.com/track/stop-the-hate",
+      "bandcampEmbedTrackId": "1664776884",
+      "sourcePage": "https://yosoycasta.bandcamp.com/album/war-no-more",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://yosoycasta.bandcamp.com/album/war-no-more",
+    "discoveredAt": "2026-09-06T04:49:12.985888+00:00",
+    "importedAt": "2026-09-06T04:55:04.124722+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "yosoycasta.bandcamp.com",
+    "bandcampBandId": "2340419219",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:55:04.124722+00:00"
+  }
+}

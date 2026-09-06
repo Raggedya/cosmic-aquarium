@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "eileen-porchlight",
+  "artist": "Eileen",
+  "bandcampUrl": "https://eileenband.bandcamp.com/album/porchlight",
+  "releaseTitle": "Porchlight",
+  "releaseDate": "2026-08-26 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "diy emo",
+    "indie",
+    "indie folk",
+    "indie punk",
+    "indie rock",
+    "indie rock acoustic",
+    "midwest emo",
+    "Denton"
+  ],
+  "primaryLocation": "Denton, Texas",
+  "bioShort": "Eileen — grunge / alternative / diy emo music from Denton, Texas.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://eileenband.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:53:54Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "porchlight",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "porchlight-1307574976",
+      "title": "porchlight",
+      "artist": "Eileen",
+      "albumTitle": "Porchlight",
+      "albumKey": "porchlight",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eileenband.bandcamp.com/track/porchlight",
+      "bandcampEmbedTrackId": "1307574976",
+      "sourcePage": "https://eileenband.bandcamp.com/album/porchlight",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "porchlight-527725563",
+      "title": "double down",
+      "artist": "Eileen",
+      "albumTitle": "Porchlight",
+      "albumKey": "porchlight",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:42",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eileenband.bandcamp.com/track/double-down",
+      "bandcampEmbedTrackId": "527725563",
+      "sourcePage": "https://eileenband.bandcamp.com/album/porchlight",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://eileenband.bandcamp.com/album/porchlight",
+    "discoveredAt": "2026-09-06T04:49:12.984888+00:00",
+    "importedAt": "2026-09-06T04:53:54.907290+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "eileenband.bandcamp.com",
+    "bandcampBandId": "970662463",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:53:54.907290+00:00"
+  }
+}

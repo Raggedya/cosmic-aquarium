@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "slug": "gossengoblin-tales-from-the-sun-faced-3-track-ep",
+  "artist": "Gossengoblin",
+  "bandcampUrl": "https://gossengoblin.bandcamp.com/album/tales-from-the-sun-faced-3-track-ep",
+  "releaseTitle": "Tales from the sun-faced (3-Track-EP)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "metal",
+    "punk",
+    "dungeon",
+    "dungeonsynth",
+    "epic black metal",
+    "folk black metal",
+    "rave",
+    "Germany"
+  ],
+  "primaryLocation": "Germany",
+  "bioShort": "This music is heavy inspired by allmighty Falkenbach. All recorded on my own with guitar and finished with FL-Studio. Glockenschlag das Mausoleum is an older track, with…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://gossengoblin.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:55:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tales-from-the-sun-faced-3-track-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tales-from-the-sun-faced-3-track-ep-2451545947",
+      "title": "Das Pfeifen der Windmühle",
+      "artist": "Gossengoblin",
+      "albumTitle": "Tales from the sun-faced (3-Track-EP)",
+      "albumKey": "tales-from-the-sun-faced-3-track-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gossengoblin.bandcamp.com/track/das-pfeifen-der-windm-hle",
+      "bandcampEmbedTrackId": "2451545947",
+      "sourcePage": "https://gossengoblin.bandcamp.com/album/tales-from-the-sun-faced-3-track-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tales-from-the-sun-faced-3-track-ep-2572797202",
+      "title": "Fellow Brother Corhyn",
+      "artist": "Gossengoblin",
+      "albumTitle": "Tales from the sun-faced (3-Track-EP)",
+      "albumKey": "tales-from-the-sun-faced-3-track-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gossengoblin.bandcamp.com/track/fellow-brother-corhyn",
+      "bandcampEmbedTrackId": "2572797202",
+      "sourcePage": "https://gossengoblin.bandcamp.com/album/tales-from-the-sun-faced-3-track-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "tales-from-the-sun-faced-3-track-ep-787019996",
+      "title": "Glockenschlag das Mausoleum",
+      "artist": "Gossengoblin",
+      "albumTitle": "Tales from the sun-faced (3-Track-EP)",
+      "albumKey": "tales-from-the-sun-faced-3-track-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "9:53",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gossengoblin.bandcamp.com/track/glockenschlag-das-mausoleum",
+      "bandcampEmbedTrackId": "787019996",
+      "sourcePage": "https://gossengoblin.bandcamp.com/album/tales-from-the-sun-faced-3-track-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://gossengoblin.bandcamp.com/album/tales-from-the-sun-faced-3-track-ep",
+    "discoveredAt": "2026-09-06T04:49:12.985888+00:00",
+    "importedAt": "2026-09-06T04:55:22.716756+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "gossengoblin.bandcamp.com",
+    "bandcampBandId": "3257059787",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:55:22.716756+00:00"
+  }
+}

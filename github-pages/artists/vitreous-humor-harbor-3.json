@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "vitreous-humor-harbor-3",
+  "artist": "Vitreous Humor",
+  "bandcampUrl": "https://vitreoushumor.bandcamp.com/album/harbor-3-2",
+  "releaseTitle": "Harbor +3",
+  "releaseDate": "2026-08-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "90s emocore",
+    "rock",
+    "indie rock",
+    "noise rock",
+    "Lawrence"
+  ],
+  "primaryLocation": "Lawrence, Kansas",
+  "bioShort": "Tracks 1-3 originally released in 1993 on geerhed records Track 4 previously unreleased - Recorded at Red House Studio by Ed Rose Track 5 previously released on Love Guzzler",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vitreoushumor.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:52:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "harbor-3",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "harbor-3-3579914870",
+      "title": "Harbor (7\" single version)",
+      "artist": "Vitreous Humor",
+      "albumTitle": "Harbor +3",
+      "albumKey": "harbor-3",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vitreoushumor.bandcamp.com/track/harbor-7-single-version",
+      "bandcampEmbedTrackId": "3579914870",
+      "sourcePage": "https://vitreoushumor.bandcamp.com/album/harbor-3-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "harbor-3-3626108973",
+      "title": "Stay Tuned for the Holidays",
+      "artist": "Vitreous Humor",
+      "albumTitle": "Harbor +3",
+      "albumKey": "harbor-3",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vitreoushumor.bandcamp.com/track/stay-tuned-for-the-holidays-3",
+      "bandcampEmbedTrackId": "3626108973",
+      "sourcePage": "https://vitreoushumor.bandcamp.com/album/harbor-3-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "harbor-3-3560797926",
+      "title": "Bu-Dah",
+      "artist": "Vitreous Humor",
+      "albumTitle": "Harbor +3",
+      "albumKey": "harbor-3",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:18",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vitreoushumor.bandcamp.com/track/bu-dah-3",
+      "bandcampEmbedTrackId": "3560797926",
+      "sourcePage": "https://vitreoushumor.bandcamp.com/album/harbor-3-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "harbor-3-1633746789",
+      "title": "Strained Peas",
+      "artist": "Vitreous Humor",
+      "albumTitle": "Harbor +3",
+      "albumKey": "harbor-3",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:58",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vitreoushumor.bandcamp.com/track/strained-peas",
+      "bandcampEmbedTrackId": "1633746789",
+      "sourcePage": "https://vitreoushumor.bandcamp.com/album/harbor-3-2",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "harbor-3-1169810329",
+      "title": "Harbor (original version)",
+      "artist": "Vitreous Humor",
+      "albumTitle": "Harbor +3",
+      "albumKey": "harbor-3",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "5:57",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vitreoushumor.bandcamp.com/track/harbor-original-version",
+      "bandcampEmbedTrackId": "1169810329",
+      "sourcePage": "https://vitreoushumor.bandcamp.com/album/harbor-3-2",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://vitreoushumor.bandcamp.com/album/harbor-3-2",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:52:33.655227+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "vitreoushumor.bandcamp.com",
+    "bandcampBandId": "3514152039",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:52:33.655227+00:00"
+  }
+}

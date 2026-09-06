@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "joel-h-bulsara-what-i-saw-demo-tracks",
+  "artist": "Joel H Bulsara",
+  "bandcampUrl": "https://bulsara.bandcamp.com/album/what-i-saw-demo-tracks",
+  "releaseTitle": "What I Saw (Demo Tracks)",
+  "releaseDate": "2026-07-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "blues",
+    "country",
+    "metal",
+    "doom",
+    "doom metal",
+    "stoner metal",
+    "stoner rock",
+    "Leeds"
+  ],
+  "primaryLocation": "Leeds, UK",
+  "bioShort": "A couple of raw demo tracks - unrelated to Hastur the King. One is very bluesy, about being only 20 and watching my late mother passing away, and how unfair it is that I have…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bulsara.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:52:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "what-i-saw-demo-tracks",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "what-i-saw-demo-tracks-3130395367",
+      "title": "What I Saw (Demo Version)",
+      "artist": "Joel H Bulsara",
+      "albumTitle": "What I Saw (Demo Tracks)",
+      "albumKey": "what-i-saw-demo-tracks",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bulsara.bandcamp.com/track/what-i-saw-demo-version",
+      "bandcampEmbedTrackId": "3130395367",
+      "sourcePage": "https://bulsara.bandcamp.com/album/what-i-saw-demo-tracks",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "what-i-saw-demo-tracks-3882787229",
+      "title": "Like Robins into Spring (Demo Version)",
+      "artist": "Joel H Bulsara",
+      "albumTitle": "What I Saw (Demo Tracks)",
+      "albumKey": "what-i-saw-demo-tracks",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bulsara.bandcamp.com/track/like-robins-into-spring-demo-version",
+      "bandcampEmbedTrackId": "3882787229",
+      "sourcePage": "https://bulsara.bandcamp.com/album/what-i-saw-demo-tracks",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bulsara.bandcamp.com/album/what-i-saw-demo-tracks",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:52:21.154935+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bulsara.bandcamp.com",
+    "bandcampBandId": "192831289",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:52:21.154935+00:00"
+  }
+}

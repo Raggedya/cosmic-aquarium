@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "oshiah-r3al",
+  "artist": "oshiah",
+  "bandcampUrl": "https://oshiah.bandcamp.com/album/r3al",
+  "releaseTitle": "R3AL",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "drum & bass",
+    "electronic",
+    "trance.",
+    "breaks",
+    "trance",
+    "Antarctica"
+  ],
+  "primaryLocation": "Antarctica",
+  "bioShort": "this is R3AL.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://oshiah.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:10:35Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "r3al",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "r3al-3369333111",
+      "title": "OSHIAH - LIM30",
+      "artist": "oshiah",
+      "albumTitle": "R3AL",
+      "albumKey": "r3al",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oshiah.bandcamp.com/track/oshiah-lim30",
+      "bandcampEmbedTrackId": "3369333111",
+      "sourcePage": "https://oshiah.bandcamp.com/album/r3al",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "r3al-1179573465",
+      "title": "OSHIAH - PHO3NIX",
+      "artist": "oshiah",
+      "albumTitle": "R3AL",
+      "albumKey": "r3al",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oshiah.bandcamp.com/track/oshiah-pho3nix",
+      "bandcampEmbedTrackId": "1179573465",
+      "sourcePage": "https://oshiah.bandcamp.com/album/r3al",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "r3al-4255862697",
+      "title": "OSHIAH - IMAGINARY FR3ND",
+      "artist": "oshiah",
+      "albumTitle": "R3AL",
+      "albumKey": "r3al",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:23",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oshiah.bandcamp.com/track/oshiah-imaginary-fr3nd",
+      "bandcampEmbedTrackId": "4255862697",
+      "sourcePage": "https://oshiah.bandcamp.com/album/r3al",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://oshiah.bandcamp.com/album/r3al",
+    "discoveredAt": "2026-09-06T04:49:13.001694+00:00",
+    "importedAt": "2026-09-06T05:10:35.945663+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "oshiah.bandcamp.com",
+    "bandcampBandId": "3994569191",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:10:35.945663+00:00"
+  }
+}

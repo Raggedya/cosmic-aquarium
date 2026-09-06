@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "attic-rain-land-of-the-pelicans",
+  "artist": "attic rain",
+  "bandcampUrl": "https://atticrain.bandcamp.com/album/land-of-the-pelicans",
+  "releaseTitle": "Land of the pelicans",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "electronic",
+    "house",
+    "techno",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "attic rain — electro / house / techno music from London, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://atticrain.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:58:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "land-of-the-pelicans",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "land-of-the-pelicans-1707683685",
+      "title": "to the land",
+      "artist": "attic rain",
+      "albumTitle": "Land of the pelicans",
+      "albumKey": "land-of-the-pelicans",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atticrain.bandcamp.com/track/to-the-land-2",
+      "bandcampEmbedTrackId": "1707683685",
+      "sourcePage": "https://atticrain.bandcamp.com/album/land-of-the-pelicans",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "land-of-the-pelicans-896577351",
+      "title": "portobello pelican",
+      "artist": "attic rain",
+      "albumTitle": "Land of the pelicans",
+      "albumKey": "land-of-the-pelicans",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atticrain.bandcamp.com/track/portobello-pelican",
+      "bandcampEmbedTrackId": "896577351",
+      "sourcePage": "https://atticrain.bandcamp.com/album/land-of-the-pelicans",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://atticrain.bandcamp.com/album/land-of-the-pelicans",
+    "discoveredAt": "2026-09-06T04:49:12.988888+00:00",
+    "importedAt": "2026-09-06T04:58:50.158271+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "atticrain.bandcamp.com",
+    "bandcampBandId": "4124230307",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:58:50.158271+00:00"
+  }
+}

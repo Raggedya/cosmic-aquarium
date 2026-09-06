@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "2yofuku-chronic-savor",
+  "artist": "2yofuku",
+  "bandcampUrl": "https://2yofuku.bandcamp.com/album/chronic-savor",
+  "releaseTitle": "Chronic savor",
+  "releaseDate": "2026-08-19 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "drum & bass",
+    "experimental",
+    "ambient",
+    "breakcore",
+    "experimental electronic",
+    "Fukuoka"
+  ],
+  "primaryLocation": "Fukuoka, Japan",
+  "bioShort": "7 gradual conscious steps into non-existence.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://2yofuku.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:58:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "chronic-savor",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "chronic-savor-3695554188",
+      "title": "Koufuku fugai",
+      "artist": "2yofuku",
+      "albumTitle": "Chronic savor",
+      "albumKey": "chronic-savor",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://2yofuku.bandcamp.com/track/koufuku-fugai",
+      "bandcampEmbedTrackId": "3695554188",
+      "sourcePage": "https://2yofuku.bandcamp.com/album/chronic-savor",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "chronic-savor-1809505845",
+      "title": "Rinako shukketsu",
+      "artist": "2yofuku",
+      "albumTitle": "Chronic savor",
+      "albumKey": "chronic-savor",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://2yofuku.bandcamp.com/track/rinako-shukketsu",
+      "bandcampEmbedTrackId": "1809505845",
+      "sourcePage": "https://2yofuku.bandcamp.com/album/chronic-savor",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://2yofuku.bandcamp.com/album/chronic-savor",
+    "discoveredAt": "2026-09-06T04:49:12.988888+00:00",
+    "importedAt": "2026-09-06T04:58:40.428391+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "2yofuku.bandcamp.com",
+    "bandcampBandId": "3212132959",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:58:40.428391+00:00"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "jennifer-what-sisters",
+  "artist": "Jennifer What",
+  "bandcampUrl": "https://jenniferwhat.bandcamp.com/album/sisters",
+  "releaseTitle": "Sisters",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "acoustic",
+    "alternative",
+    "chamber folk",
+    "experimental-rock",
+    "indie folk",
+    "indie rock",
+    "post-rock",
+    "psychedlic folk",
+    "shoegaze",
+    "Bellingham"
+  ],
+  "primaryLocation": "Bellingham, Washington",
+  "bioShort": "An acoustic single by Jennifer What",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jenniferwhat.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:09:44Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sisters",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sisters-306663538",
+      "title": "Sisters",
+      "artist": "Jennifer What",
+      "albumTitle": "Sisters",
+      "albumKey": "sisters",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jenniferwhat.bandcamp.com/track/sisters-2",
+      "bandcampEmbedTrackId": "306663538",
+      "sourcePage": "https://jenniferwhat.bandcamp.com/album/sisters",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jenniferwhat.bandcamp.com/album/sisters",
+    "discoveredAt": "2026-09-06T04:49:13.001145+00:00",
+    "importedAt": "2026-09-06T05:09:44.039737+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jenniferwhat.bandcamp.com",
+    "bandcampBandId": "1884145761",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:09:44.039737+00:00"
+  }
+}

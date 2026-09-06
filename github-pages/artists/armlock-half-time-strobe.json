@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "armlock-half-time-strobe",
+  "artist": "Armlock",
+  "bandcampUrl": "https://armlock.bandcamp.com/album/half-time-strobe",
+  "releaseTitle": "Half Time / Strobe",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "folk",
+    "alternative",
+    "rock",
+    "folk rock",
+    "indie",
+    "indie rock",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Armlock — folk / alternative / rock music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://armlock.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:54:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "half-time-strobe",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "half-time-strobe-2321019390",
+      "title": "Half Time",
+      "artist": "Armlock",
+      "albumTitle": "Half Time / Strobe",
+      "albumKey": "half-time-strobe",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://armlock.bandcamp.com/track/half-time",
+      "bandcampEmbedTrackId": "2321019390",
+      "sourcePage": "https://armlock.bandcamp.com/album/half-time-strobe",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "half-time-strobe-1272040389",
+      "title": "Strobe",
+      "artist": "Armlock",
+      "albumTitle": "Half Time / Strobe",
+      "albumKey": "half-time-strobe",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:40",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://armlock.bandcamp.com/track/strobe-2",
+      "bandcampEmbedTrackId": "1272040389",
+      "sourcePage": "https://armlock.bandcamp.com/album/half-time-strobe",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://armlock.bandcamp.com/album/half-time-strobe",
+    "discoveredAt": "2026-09-06T04:49:12.984888+00:00",
+    "importedAt": "2026-09-06T04:54:28.025415+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "armlock.bandcamp.com",
+    "bandcampBandId": "3199022098",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:54:28.025415+00:00"
+  }
+}

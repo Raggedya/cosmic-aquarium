@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "jun-kamoda-how-to-not-become-a-sexual-predator-zine",
+  "artist": "Jun Kamoda",
+  "bandcampUrl": "https://junkamoda.bandcamp.com/album/how-to-not-become-a-sexual-predator-zine",
+  "releaseTitle": "How To Not Become a Sexual Predator_Zine (日本語版)",
+  "releaseDate": "2026-09-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "deep house",
+    "electronic",
+    "hip hop",
+    "disco",
+    "lo-fi",
+    "Japan"
+  ],
+  "primaryLocation": "Japan",
+  "bioShort": "こちらは音楽のリリースページではなく、これは男性が性暴力を起こさないようになるにはどうすればよいか？また、男性が男性を性暴力者になることを防ぐにどうすればよいのか？に関してまとめたガイドブックのZineです。友人のDJがフェスティバルでのプレイの最中、知らない男からキスをされかけたと知り、丁度映画「Black Box…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://junkamoda.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:06:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "how-to-not-become-a-sexual-predator-zine",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "how-to-not-become-a-sexual-predator-zine-1664907022",
+      "title": "Dubsiren For The Zine (Japanese Version)",
+      "artist": "Jun Kamoda",
+      "albumTitle": "How To Not Become a Sexual Predator_Zine (日本語版)",
+      "albumKey": "how-to-not-become-a-sexual-predator-zine",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://junkamoda.bandcamp.com/track/dubsiren-for-the-zine-japanese-version",
+      "bandcampEmbedTrackId": "1664907022",
+      "sourcePage": "https://junkamoda.bandcamp.com/album/how-to-not-become-a-sexual-predator-zine",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://junkamoda.bandcamp.com/album/how-to-not-become-a-sexual-predator-zine",
+    "discoveredAt": "2026-09-06T04:49:12.997144+00:00",
+    "importedAt": "2026-09-06T05:06:17.952544+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "junkamoda.bandcamp.com",
+    "bandcampBandId": "2144665748",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:06:17.952544+00:00"
+  }
+}

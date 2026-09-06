@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "wolves-in-winterland-summerblues",
+  "artist": "Wolves in Winterland",
+  "bandcampUrl": "https://wolvesinwinterland.bandcamp.com/album/summerblues",
+  "releaseTitle": "Summerblues",
+  "releaseDate": "2026-08-20 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "rock",
+    "doom",
+    "gothic rock",
+    "heavy rock",
+    "poprock",
+    "stoner",
+    "Amsterdam"
+  ],
+  "primaryLocation": "Amsterdam, Netherlands",
+  "bioShort": "Wolves in Winterland — grunge / rock / doom music from Amsterdam, Netherlands.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://wolvesinwinterland.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:01:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "summerblues",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "summerblues-1047721296",
+      "title": "Summerblues",
+      "artist": "Wolves in Winterland",
+      "albumTitle": "Summerblues",
+      "albumKey": "summerblues",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wolvesinwinterland.bandcamp.com/track/summerblues",
+      "bandcampEmbedTrackId": "1047721296",
+      "sourcePage": "https://wolvesinwinterland.bandcamp.com/album/summerblues",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "summerblues-1666200513",
+      "title": "Shades of Sorrow",
+      "artist": "Wolves in Winterland",
+      "albumTitle": "Summerblues",
+      "albumKey": "summerblues",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wolvesinwinterland.bandcamp.com/track/shades-of-sorrow",
+      "bandcampEmbedTrackId": "1666200513",
+      "sourcePage": "https://wolvesinwinterland.bandcamp.com/album/summerblues",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://wolvesinwinterland.bandcamp.com/album/summerblues",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:01:26.533956+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "wolvesinwinterland.bandcamp.com",
+    "bandcampBandId": "1455276853",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:01:26.533956+00:00"
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "slug": "akhi-akhi001",
+  "artist": "akhi",
+  "bandcampUrl": "https://akhiwav.bandcamp.com/album/akhi001",
+  "releaseTitle": "AKHI001",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "tech house",
+    "electro",
+    "microhouse",
+    "Hungary"
+  ],
+  "primaryLocation": "Hungary",
+  "bioShort": "I've been sitting on these for a while, but I'm finally releasing them. Enjoy! More to come. Art: my wonderful girlfriend Master: DRGMST",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://akhiwav.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:52:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "akhi001",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "akhi001-2850109372",
+      "title": "lipinka",
+      "artist": "akhi",
+      "albumTitle": "AKHI001",
+      "albumKey": "akhi001",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://akhiwav.bandcamp.com/track/lipinka",
+      "bandcampEmbedTrackId": "2850109372",
+      "sourcePage": "https://akhiwav.bandcamp.com/album/akhi001",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "akhi001-3449956204",
+      "title": "pirkad",
+      "artist": "akhi",
+      "albumTitle": "AKHI001",
+      "albumKey": "akhi001",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://akhiwav.bandcamp.com/track/pirkad",
+      "bandcampEmbedTrackId": "3449956204",
+      "sourcePage": "https://akhiwav.bandcamp.com/album/akhi001",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "akhi001-2102244640",
+      "title": "bubi",
+      "artist": "akhi",
+      "albumTitle": "AKHI001",
+      "albumKey": "akhi001",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:53",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://akhiwav.bandcamp.com/track/bubi",
+      "bandcampEmbedTrackId": "2102244640",
+      "sourcePage": "https://akhiwav.bandcamp.com/album/akhi001",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://akhiwav.bandcamp.com/album/akhi001",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:52:04.458820+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "akhiwav.bandcamp.com",
+    "bandcampBandId": "3990091794",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:52:04.458820+00:00"
+  }
+}

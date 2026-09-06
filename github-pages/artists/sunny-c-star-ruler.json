@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "sunny-c-star-ruler",
+  "artist": "Sunny C",
+  "bandcampUrl": "https://thesunnyc.bandcamp.com/album/star-ruler",
+  "releaseTitle": "Star Ruler",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "electronic",
+    "dark electro",
+    "dark electronic",
+    "darkwave",
+    "ebm",
+    "gothic",
+    "Belgium"
+  ],
+  "primaryLocation": "Belgium",
+  "bioShort": "Sunny C — coldwave / electronic / dark electro music from Belgium.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thesunnyc.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:54:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "star-ruler",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "star-ruler-1763658377",
+      "title": "Star Ruler (dry mix)",
+      "artist": "Sunny C",
+      "albumTitle": "Star Ruler",
+      "albumKey": "star-ruler",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thesunnyc.bandcamp.com/track/star-ruler-dry-mix",
+      "bandcampEmbedTrackId": "1763658377",
+      "sourcePage": "https://thesunnyc.bandcamp.com/album/star-ruler",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "star-ruler-507789062",
+      "title": "Ionosphere (clear mix)",
+      "artist": "Sunny C",
+      "albumTitle": "Star Ruler",
+      "albumKey": "star-ruler",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thesunnyc.bandcamp.com/track/ionosphere-clear-mix",
+      "bandcampEmbedTrackId": "507789062",
+      "sourcePage": "https://thesunnyc.bandcamp.com/album/star-ruler",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thesunnyc.bandcamp.com/album/star-ruler",
+    "discoveredAt": "2026-09-06T04:49:12.985888+00:00",
+    "importedAt": "2026-09-06T04:54:43.064959+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thesunnyc.bandcamp.com",
+    "bandcampBandId": "3976351631",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:54:43.064959+00:00"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "alessandro-rovegno-my-eyes-see-without-looking",
+  "artist": "Alessandro Rovegno",
+  "bandcampUrl": "https://alessandrorovegno.bandcamp.com/album/my-eyes-see-without-looking",
+  "releaseTitle": "My Eyes See Without Looking",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "sound-art",
+    "acoustic",
+    "ambient",
+    "experimental",
+    "ambient electronic",
+    "contemporary classical",
+    "downtempo",
+    "drone",
+    "sound art",
+    "soundscape",
+    "Minneapolis"
+  ],
+  "primaryLocation": "Minneapolis, Minnesota",
+  "bioShort": "My Eyes See Without Looking (2025) is a soundscape composition for septet and experimental orchestra (primarily comprised of students at PiM Arts High School). Conceptually…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "loud",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://alessandrorovegno.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:08:15Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "my-eyes-see-without-looking",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "my-eyes-see-without-looking-912431901",
+      "title": "our prairial mediterranean shore",
+      "artist": "Alessandro Rovegno",
+      "albumTitle": "My Eyes See Without Looking",
+      "albumKey": "my-eyes-see-without-looking",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "15:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alessandrorovegno.bandcamp.com/track/our-prairial-mediterranean-shore",
+      "bandcampEmbedTrackId": "912431901",
+      "sourcePage": "https://alessandrorovegno.bandcamp.com/album/my-eyes-see-without-looking",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "my-eyes-see-without-looking-1817495758",
+      "title": "a ripple reflecting the shimmering of the moon",
+      "artist": "Alessandro Rovegno",
+      "albumTitle": "My Eyes See Without Looking",
+      "albumKey": "my-eyes-see-without-looking",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "15:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alessandrorovegno.bandcamp.com/track/a-ripple-reflecting-the-shimmering-of-the-moon",
+      "bandcampEmbedTrackId": "1817495758",
+      "sourcePage": "https://alessandrorovegno.bandcamp.com/album/my-eyes-see-without-looking",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "my-eyes-see-without-looking-808711372",
+      "title": "a vesper hymn",
+      "artist": "Alessandro Rovegno",
+      "albumTitle": "My Eyes See Without Looking",
+      "albumKey": "my-eyes-see-without-looking",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "16:15",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alessandrorovegno.bandcamp.com/track/a-vesper-hymn",
+      "bandcampEmbedTrackId": "808711372",
+      "sourcePage": "https://alessandrorovegno.bandcamp.com/album/my-eyes-see-without-looking",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "my-eyes-see-without-looking-3442456929",
+      "title": "the air is a transparent mist",
+      "artist": "Alessandro Rovegno",
+      "albumTitle": "My Eyes See Without Looking",
+      "albumKey": "my-eyes-see-without-looking",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "15:34",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alessandrorovegno.bandcamp.com/track/the-air-is-a-transparent-mist",
+      "bandcampEmbedTrackId": "3442456929",
+      "sourcePage": "https://alessandrorovegno.bandcamp.com/album/my-eyes-see-without-looking",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://alessandrorovegno.bandcamp.com/album/my-eyes-see-without-looking",
+    "discoveredAt": "2026-09-06T04:49:12.998143+00:00",
+    "importedAt": "2026-09-06T05:08:15.457747+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "alessandrorovegno.bandcamp.com",
+    "bandcampBandId": "1776999410",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:08:15.457747+00:00"
+  }
+}

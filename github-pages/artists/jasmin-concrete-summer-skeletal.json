@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "jasmin-concrete-summer-skeletal",
+  "artist": "Jasmín",
+  "bandcampUrl": "https://jasminhoek.bandcamp.com/album/concrete-summer-skeletal",
+  "releaseTitle": "Concrete Summer / Skeletal",
+  "releaseDate": "2026-10-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "techno",
+    "electronic",
+    "bass",
+    "club music",
+    "eletronic",
+    "Amsterdam"
+  ],
+  "primaryLocation": "Amsterdam, Netherlands",
+  "bioShort": "Jasmín — techno / bass / club music music from Amsterdam, Netherlands.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jasminhoek.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:57:51Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "concrete-summer-skeletal",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "concrete-summer-skeletal-3500897313",
+      "title": "Concrete Summer",
+      "artist": "Jasmín",
+      "albumTitle": "Concrete Summer / Skeletal",
+      "albumKey": "concrete-summer-skeletal",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jasminhoek.bandcamp.com/track/concrete-summer",
+      "bandcampEmbedTrackId": "3500897313",
+      "sourcePage": "https://jasminhoek.bandcamp.com/album/concrete-summer-skeletal",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "concrete-summer-skeletal-104948183",
+      "title": "Skeletal",
+      "artist": "Jasmín",
+      "albumTitle": "Concrete Summer / Skeletal",
+      "albumKey": "concrete-summer-skeletal",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jasminhoek.bandcamp.com/album/concrete-summer-skeletal",
+      "bandcampEmbedTrackId": "104948183",
+      "sourcePage": "https://jasminhoek.bandcamp.com/album/concrete-summer-skeletal",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jasminhoek.bandcamp.com/album/concrete-summer-skeletal",
+    "discoveredAt": "2026-09-06T04:49:12.988888+00:00",
+    "importedAt": "2026-09-06T04:57:51.572500+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jasminhoek.bandcamp.com",
+    "bandcampBandId": "637178087",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:57:51.572500+00:00"
+  }
+}

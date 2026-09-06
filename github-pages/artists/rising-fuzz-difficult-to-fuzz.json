@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "slug": "rising-fuzz-difficult-to-fuzz",
+  "artist": "Rising Fuzz",
+  "bandcampUrl": "https://risingfuzz.bandcamp.com/album/difficult-to-fuzz",
+  "releaseTitle": "Difficult to Fuzz",
+  "releaseDate": "2026-07-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "hard rock",
+    "metal",
+    "doom",
+    "fuzz rock",
+    "garage rock",
+    "heavy metal",
+    "instrumental",
+    "psychedelic rock",
+    "sludge metal",
+    "stoner metal",
+    "stoner rock",
+    "Singapore"
+  ],
+  "primaryLocation": "Singapore",
+  "bioShort": "Rising Fuzz — stoner-metal / hard rock / metal music from Singapore.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://risingfuzz.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:02:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "difficult-to-fuzz",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "difficult-to-fuzz-3269066302",
+      "title": "I Surrender to Fuzz",
+      "artist": "Rising Fuzz",
+      "albumTitle": "Difficult to Fuzz",
+      "albumKey": "difficult-to-fuzz",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:31",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://risingfuzz.bandcamp.com/track/i-surrender-to-fuzz",
+      "bandcampEmbedTrackId": "3269066302",
+      "sourcePage": "https://risingfuzz.bandcamp.com/album/difficult-to-fuzz",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "difficult-to-fuzz-1880650441",
+      "title": "Spotlight Fuzz",
+      "artist": "Rising Fuzz",
+      "albumTitle": "Difficult to Fuzz",
+      "albumKey": "difficult-to-fuzz",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:50",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://risingfuzz.bandcamp.com/track/spotlight-fuzz",
+      "bandcampEmbedTrackId": "1880650441",
+      "sourcePage": "https://risingfuzz.bandcamp.com/album/difficult-to-fuzz",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "difficult-to-fuzz-3623059784",
+      "title": "Vielleicht Der Nächste Fuzz",
+      "artist": "Rising Fuzz",
+      "albumTitle": "Difficult to Fuzz",
+      "albumKey": "difficult-to-fuzz",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:10",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://risingfuzz.bandcamp.com/track/vielleicht-der-n-chste-fuzz",
+      "bandcampEmbedTrackId": "3623059784",
+      "sourcePage": "https://risingfuzz.bandcamp.com/album/difficult-to-fuzz",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "difficult-to-fuzz-492401174",
+      "title": "Difficult to Fuzz",
+      "artist": "Rising Fuzz",
+      "albumTitle": "Difficult to Fuzz",
+      "albumKey": "difficult-to-fuzz",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:24",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://risingfuzz.bandcamp.com/track/difficult-to-fuzz",
+      "bandcampEmbedTrackId": "492401174",
+      "sourcePage": "https://risingfuzz.bandcamp.com/album/difficult-to-fuzz",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://risingfuzz.bandcamp.com/album/difficult-to-fuzz",
+    "discoveredAt": "2026-09-06T04:49:12.992391+00:00",
+    "importedAt": "2026-09-06T05:02:16.920352+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "risingfuzz.bandcamp.com",
+    "bandcampBandId": "39935002",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:02:16.920352+00:00"
+  }
+}

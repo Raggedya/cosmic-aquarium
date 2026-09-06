@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "slug": "sander-kulu-aura-absence",
+  "artist": "Sander Kulu",
+  "bandcampUrl": "https://sanderkulu.bandcamp.com/album/aura-absence",
+  "releaseTitle": "AURA:ABSENCE",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electro house",
+    "electronic",
+    "future garage",
+    "future house",
+    "house",
+    "idm",
+    "progressive house",
+    "ukg",
+    "breaks",
+    "electronica",
+    "garage",
+    "ukgarage",
+    "Tartu"
+  ],
+  "primaryLocation": "Tartu, Estonia",
+  "bioShort": "Venturing into world of UKG and future garage, trying to put a more melodic and emotional touch on it. Inspired by Overmono and Bicep.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sanderkulu.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:08:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "aura-absence",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "aura-absence-3246872748",
+      "title": "Absence",
+      "artist": "Sander Kulu",
+      "albumTitle": "AURA:ABSENCE",
+      "albumKey": "aura-absence",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sanderkulu.bandcamp.com/track/absence",
+      "bandcampEmbedTrackId": "3246872748",
+      "sourcePage": "https://sanderkulu.bandcamp.com/album/aura-absence",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "aura-absence-1158302541",
+      "title": "Aura (little did I know)",
+      "artist": "Sander Kulu",
+      "albumTitle": "AURA:ABSENCE",
+      "albumKey": "aura-absence",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:11",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sanderkulu.bandcamp.com/track/aura-little-did-i-know",
+      "bandcampEmbedTrackId": "1158302541",
+      "sourcePage": "https://sanderkulu.bandcamp.com/album/aura-absence",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "aura-absence-4093100062",
+      "title": "enough //",
+      "artist": "Sander Kulu",
+      "albumTitle": "AURA:ABSENCE",
+      "albumKey": "aura-absence",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:11",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sanderkulu.bandcamp.com/track/enough",
+      "bandcampEmbedTrackId": "4093100062",
+      "sourcePage": "https://sanderkulu.bandcamp.com/album/aura-absence",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sanderkulu.bandcamp.com/album/aura-absence",
+    "discoveredAt": "2026-09-06T04:49:12.999143+00:00",
+    "importedAt": "2026-09-06T05:08:34.199601+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sanderkulu.bandcamp.com",
+    "bandcampBandId": "763855493",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:08:34.199601+00:00"
+  }
+}

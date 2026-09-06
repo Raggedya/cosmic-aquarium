@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-offspring-i-wanna-be-sedated",
+  "artist": "The Offspring",
+  "bandcampUrl": "https://theoffspring.bandcamp.com/album/i-wanna-be-sedated",
+  "releaseTitle": "I Wanna Be Sedated",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "punk",
+    "rock",
+    "California"
+  ],
+  "primaryLocation": "California",
+  "bioShort": "The Offspring — punk / rock / California music from California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://theoffspring.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:04:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-wanna-be-sedated",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-wanna-be-sedated-4046800874",
+      "title": "I Wanna Be Sedated",
+      "artist": "The Offspring",
+      "albumTitle": "I Wanna Be Sedated",
+      "albumKey": "i-wanna-be-sedated",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://theoffspring.bandcamp.com/track/i-wanna-be-sedated",
+      "bandcampEmbedTrackId": "4046800874",
+      "sourcePage": "https://theoffspring.bandcamp.com/album/i-wanna-be-sedated",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://theoffspring.bandcamp.com/album/i-wanna-be-sedated",
+    "discoveredAt": "2026-09-06T04:49:12.995139+00:00",
+    "importedAt": "2026-09-06T05:04:00.906807+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "theoffspring.bandcamp.com",
+    "bandcampBandId": "3379870501",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:04:00.906807+00:00"
+  }
+}

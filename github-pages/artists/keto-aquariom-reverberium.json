@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "keto-aquariom-reverberium",
+  "artist": "Keto",
+  "bandcampUrl": "https://ketoaudio.bandcamp.com/album/aquariom-reverberium",
+  "releaseTitle": "Aquariom Reverberium",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "house",
+    "chillout music",
+    "hipnotic techno",
+    "minimal techno",
+    "psychedelic",
+    "psytechno",
+    "psytrance",
+    "techno",
+    "tribal techno",
+    "Brazil"
+  ],
+  "primaryLocation": "Brazil",
+  "bioShort": "Keto — minimal / electronic / house music from Brazil.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ketoaudio.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:09:54Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "aquariom-reverberium",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "aquariom-reverberium-4172508326",
+      "title": "Moonrocks",
+      "artist": "Keto",
+      "albumTitle": "Aquariom Reverberium",
+      "albumKey": "aquariom-reverberium",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ketoaudio.bandcamp.com/track/moonrocks-2",
+      "bandcampEmbedTrackId": "4172508326",
+      "sourcePage": "https://ketoaudio.bandcamp.com/album/aquariom-reverberium",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "aquariom-reverberium-556648927",
+      "title": "Moonsault",
+      "artist": "Keto",
+      "albumTitle": "Aquariom Reverberium",
+      "albumKey": "aquariom-reverberium",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ketoaudio.bandcamp.com/track/moonsault-2",
+      "bandcampEmbedTrackId": "556648927",
+      "sourcePage": "https://ketoaudio.bandcamp.com/album/aquariom-reverberium",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "aquariom-reverberium-1687173164",
+      "title": "Keto, Pontes pra Lua - Dragon's Voice",
+      "artist": "Keto",
+      "albumTitle": "Aquariom Reverberium",
+      "albumKey": "aquariom-reverberium",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ketoaudio.bandcamp.com/track/dragons-voice-2",
+      "bandcampEmbedTrackId": "1687173164",
+      "sourcePage": "https://ketoaudio.bandcamp.com/album/aquariom-reverberium",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "aquariom-reverberium-1524393057",
+      "title": "Water's Birth",
+      "artist": "Keto",
+      "albumTitle": "Aquariom Reverberium",
+      "albumKey": "aquariom-reverberium",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ketoaudio.bandcamp.com/track/waters-birth-2",
+      "bandcampEmbedTrackId": "1524393057",
+      "sourcePage": "https://ketoaudio.bandcamp.com/album/aquariom-reverberium",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ketoaudio.bandcamp.com/album/aquariom-reverberium",
+    "discoveredAt": "2026-09-06T04:49:13.001145+00:00",
+    "importedAt": "2026-09-06T05:09:54.932292+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ketoaudio.bandcamp.com",
+    "bandcampBandId": "3120833216",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:09:54.932292+00:00"
+  }
+}

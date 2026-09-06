@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "elias-broadway-i-m-the-man-who-loves-you-plateau",
+  "artist": "elias broadway",
+  "bandcampUrl": "https://eliasbroadway.bandcamp.com/album/im-the-man-who-loves-you-plateau",
+  "releaseTitle": "I'm the man who loves you / plateau",
+  "releaseDate": "2026-08-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "indie",
+    "alternative rock",
+    "cover song",
+    "cover songs",
+    "Monroe"
+  ],
+  "primaryLocation": "Monroe, North Carolina",
+  "bioShort": "Two covers recorded in two days by Elias Broadway, Jacob Thomas, and Grayson Sherwood from 8.15-8.16 2026. The first track is a shared favorite of mine and Jacob's, while…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://eliasbroadway.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:07:20Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-m-the-man-who-loves-you-plateau",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-m-the-man-who-loves-you-plateau-3439221444",
+      "title": "I'm the man who loves you - wilco",
+      "artist": "elias broadway",
+      "albumTitle": "I'm the man who loves you / plateau",
+      "albumKey": "i-m-the-man-who-loves-you-plateau",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eliasbroadway.bandcamp.com/track/im-the-man-who-loves-you-wilco",
+      "bandcampEmbedTrackId": "3439221444",
+      "sourcePage": "https://eliasbroadway.bandcamp.com/album/im-the-man-who-loves-you-plateau",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "i-m-the-man-who-loves-you-plateau-533642848",
+      "title": "Plateau - meat puppets",
+      "artist": "elias broadway",
+      "albumTitle": "I'm the man who loves you / plateau",
+      "albumKey": "i-m-the-man-who-loves-you-plateau",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:40",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eliasbroadway.bandcamp.com/track/plateau-meat-puppets",
+      "bandcampEmbedTrackId": "533642848",
+      "sourcePage": "https://eliasbroadway.bandcamp.com/album/im-the-man-who-loves-you-plateau",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://eliasbroadway.bandcamp.com/album/im-the-man-who-loves-you-plateau",
+    "discoveredAt": "2026-09-06T04:49:12.998143+00:00",
+    "importedAt": "2026-09-06T05:07:20.922927+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "eliasbroadway.bandcamp.com",
+    "bandcampBandId": "536176054",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:07:20.922927+00:00"
+  }
+}

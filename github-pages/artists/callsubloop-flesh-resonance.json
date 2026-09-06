@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "callsubloop-flesh-resonance",
+  "artist": "CallSubLoop()",
+  "bandcampUrl": "https://callsubloop.bandcamp.com/album/flesh-resonance",
+  "releaseTitle": "Flesh & Resonance",
+  "releaseDate": "2026-07-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "electronic",
+    "acid",
+    "darkwave",
+    "electro",
+    "new wave.",
+    "techno",
+    "Belgium"
+  ],
+  "primaryLocation": "Belgium",
+  "bioShort": "The EP opens from the perspective of a dancer trapped by the rhythm that enslaves him, yet it's what makes him feel truly alive. The second track shifts to the machine's point…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://callsubloop.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:10:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "flesh-resonance",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "flesh-resonance-865937390",
+      "title": "Trapped in the rhythm of the midnight pulse",
+      "artist": "CallSubLoop()",
+      "albumTitle": "Flesh & Resonance",
+      "albumKey": "flesh-resonance",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:27",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://callsubloop.bandcamp.com/track/trapped-in-the-rhythm-of-the-midnight-pulse",
+      "bandcampEmbedTrackId": "865937390",
+      "sourcePage": "https://callsubloop.bandcamp.com/album/flesh-resonance",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "flesh-resonance-2194005997",
+      "title": "Built to hold you",
+      "artist": "CallSubLoop()",
+      "albumTitle": "Flesh & Resonance",
+      "albumKey": "flesh-resonance",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:42",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://callsubloop.bandcamp.com/track/built-to-hold-you",
+      "bandcampEmbedTrackId": "2194005997",
+      "sourcePage": "https://callsubloop.bandcamp.com/album/flesh-resonance",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "flesh-resonance-1344546255",
+      "title": "Flesh, Rendered",
+      "artist": "CallSubLoop()",
+      "albumTitle": "Flesh & Resonance",
+      "albumKey": "flesh-resonance",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:40",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://callsubloop.bandcamp.com/track/flesh-rendered",
+      "bandcampEmbedTrackId": "1344546255",
+      "sourcePage": "https://callsubloop.bandcamp.com/album/flesh-resonance",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://callsubloop.bandcamp.com/album/flesh-resonance",
+    "discoveredAt": "2026-09-06T04:49:13.001694+00:00",
+    "importedAt": "2026-09-06T05:10:55.958506+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "callsubloop.bandcamp.com",
+    "bandcampBandId": "142309817",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:10:55.958506+00:00"
+  }
+}

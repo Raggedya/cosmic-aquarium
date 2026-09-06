@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "amarok-devoured",
+  "artist": "Amarok",
+  "bandcampUrl": "https://amarok.bandcamp.com/album/devoured",
+  "releaseTitle": "Devoured",
+  "releaseDate": "2018-06-22 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "doom metal",
+    "gloom metal",
+    "heavy metal",
+    "metal",
+    "slow",
+    "Chico"
+  ],
+  "primaryLocation": "Chico, California",
+  "bioShort": "Amarok — sludge / doom metal / gloom metal music from Chico, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://amarok.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:57:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "devoured",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "devoured-1685418257",
+      "title": "VI Sorceress",
+      "artist": "Amarok",
+      "albumTitle": "Devoured",
+      "albumKey": "devoured",
+      "year": 2018,
+      "trackNumber": 1,
+      "duration": "21:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amarok.bandcamp.com/track/vi-sorceress",
+      "bandcampEmbedTrackId": "1685418257",
+      "sourcePage": "https://amarok.bandcamp.com/album/devoured",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "devoured-3994340739",
+      "title": "VII Rat Tower",
+      "artist": "Amarok",
+      "albumTitle": "Devoured",
+      "albumKey": "devoured",
+      "year": 2018,
+      "trackNumber": 2,
+      "duration": "23:03",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amarok.bandcamp.com/track/vii-rat-tower",
+      "bandcampEmbedTrackId": "3994340739",
+      "sourcePage": "https://amarok.bandcamp.com/album/devoured",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "devoured-2741481960",
+      "title": "VIII Skeleton",
+      "artist": "Amarok",
+      "albumTitle": "Devoured",
+      "albumKey": "devoured",
+      "year": 2018,
+      "trackNumber": 3,
+      "duration": "11:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amarok.bandcamp.com/track/viii-skeleton",
+      "bandcampEmbedTrackId": "2741481960",
+      "sourcePage": "https://amarok.bandcamp.com/album/devoured",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "devoured-2131783632",
+      "title": "IX Devoured",
+      "artist": "Amarok",
+      "albumTitle": "Devoured",
+      "albumKey": "devoured",
+      "year": 2018,
+      "trackNumber": 4,
+      "duration": "13:45",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amarok.bandcamp.com/track/ix-devoured",
+      "bandcampEmbedTrackId": "2131783632",
+      "sourcePage": "https://amarok.bandcamp.com/album/devoured",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://amarok.bandcamp.com/album/devoured",
+    "discoveredAt": "2026-09-06T04:49:12.988888+00:00",
+    "importedAt": "2026-09-06T04:57:36.122568+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "amarok.bandcamp.com",
+    "bandcampBandId": "1004618167",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:57:36.122568+00:00"
+  }
+}

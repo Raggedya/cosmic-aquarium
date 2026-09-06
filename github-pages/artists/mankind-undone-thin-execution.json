@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "mankind-undone-thin-execution",
+  "artist": "Mankind Undone",
+  "bandcampUrl": "https://mankindundone.bandcamp.com/album/thin-execution-2",
+  "releaseTitle": "Thin Execution",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "black metal",
+    "brown metal",
+    "diy",
+    "death metal",
+    "metal",
+    "indie"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Recorded in 1 day and 2 nights at the Inner Chamber on a Focusrite 18i20 No rules were followed in the making of this album This album is dedicated to Ivan Lozano & David St…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mankindundone.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:54:01Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "thin-execution",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "thin-execution-1121041550",
+      "title": "Thin Execution",
+      "artist": "Mankind Undone",
+      "albumTitle": "Thin Execution",
+      "albumKey": "thin-execution",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:30",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mankindundone.bandcamp.com/track/thin-execution",
+      "bandcampEmbedTrackId": "1121041550",
+      "sourcePage": "https://mankindundone.bandcamp.com/album/thin-execution-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "thin-execution-1728304227",
+      "title": "Listening for Howls",
+      "artist": "Mankind Undone",
+      "albumTitle": "Thin Execution",
+      "albumKey": "thin-execution",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:42",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mankindundone.bandcamp.com/track/listening-for-howls",
+      "bandcampEmbedTrackId": "1728304227",
+      "sourcePage": "https://mankindundone.bandcamp.com/album/thin-execution-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "thin-execution-107700296",
+      "title": "Frozen Veins",
+      "artist": "Mankind Undone",
+      "albumTitle": "Thin Execution",
+      "albumKey": "thin-execution",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:10",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mankindundone.bandcamp.com/track/frozen-veins",
+      "bandcampEmbedTrackId": "107700296",
+      "sourcePage": "https://mankindundone.bandcamp.com/album/thin-execution-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "thin-execution-2787411775",
+      "title": "Waves of Rigidity",
+      "artist": "Mankind Undone",
+      "albumTitle": "Thin Execution",
+      "albumKey": "thin-execution",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:43",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mankindundone.bandcamp.com/track/waves-of-rigidity",
+      "bandcampEmbedTrackId": "2787411775",
+      "sourcePage": "https://mankindundone.bandcamp.com/album/thin-execution-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mankindundone.bandcamp.com/album/thin-execution-2",
+    "discoveredAt": "2026-09-06T04:49:12.984888+00:00",
+    "importedAt": "2026-09-06T04:54:01.881482+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mankindundone.bandcamp.com",
+    "bandcampBandId": "1633689861",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:54:01.882600+00:00"
+  }
+}

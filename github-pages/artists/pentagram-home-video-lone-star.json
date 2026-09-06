@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "pentagram-home-video-lone-star",
+  "artist": "Pentagram Home Video",
+  "bandcampUrl": "https://pentagramhomevideo.bandcamp.com/album/lone-star",
+  "releaseTitle": "Lone Star",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "lynchian",
+    "soundtrack",
+    "cassette tape",
+    "dystopian house",
+    "jarmusch",
+    "liminal",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Pentagram Home Video — shoegaze / lynchian / soundtrack music from London, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://pentagramhomevideo.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:55:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lone-star",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lone-star-3903463195",
+      "title": "Lone Star",
+      "artist": "Pentagram Home Video",
+      "albumTitle": "Lone Star",
+      "albumKey": "lone-star",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "10:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pentagramhomevideo.bandcamp.com/track/lone-star",
+      "bandcampEmbedTrackId": "3903463195",
+      "sourcePage": "https://pentagramhomevideo.bandcamp.com/album/lone-star",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lone-star-2827864156",
+      "title": "Outside The Bar Waiting On You",
+      "artist": "Pentagram Home Video",
+      "albumTitle": "Lone Star",
+      "albumKey": "lone-star",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://pentagramhomevideo.bandcamp.com/track/outside-the-bar-waiting-on-you",
+      "bandcampEmbedTrackId": "2827864156",
+      "sourcePage": "https://pentagramhomevideo.bandcamp.com/album/lone-star",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://pentagramhomevideo.bandcamp.com/album/lone-star",
+    "discoveredAt": "2026-09-06T04:49:12.986889+00:00",
+    "importedAt": "2026-09-06T04:55:36.664038+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "pentagramhomevideo.bandcamp.com",
+    "bandcampBandId": "1776577101",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:55:36.664038+00:00"
+  }
+}

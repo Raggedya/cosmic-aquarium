@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "elizabeth-veldon-to-turn-to-texts",
+  "artist": "elizabeth veldon",
+  "bandcampUrl": "https://elizabethveldon.bandcamp.com/album/to-turn-to-texts",
+  "releaseTitle": "to turn to texts/ [ ]",
+  "releaseDate": "2026-08-17 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "sound-art",
+    "experimental",
+    "avant garde",
+    "electronic",
+    "minimalism",
+    "sound art",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "titled after the subtitle to a video i produced this album treats sound as text to be constructed and read. no, i will not be explaining further. the cover is a still from a…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://elizabethveldon.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:56:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "to-turn-to-texts",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "to-turn-to-texts-1912894305",
+      "title": "to turn to texts",
+      "artist": "elizabeth veldon",
+      "albumTitle": "to turn to texts/ [ ]",
+      "albumKey": "to-turn-to-texts",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "60:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://elizabethveldon.bandcamp.com/track/to-turn-to-texts",
+      "bandcampEmbedTrackId": "1912894305",
+      "sourcePage": "https://elizabethveldon.bandcamp.com/album/to-turn-to-texts",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "to-turn-to-texts-922365725",
+      "title": "[     ]",
+      "artist": "elizabeth veldon",
+      "albumTitle": "to turn to texts/ [ ]",
+      "albumKey": "to-turn-to-texts",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "60:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://elizabethveldon.bandcamp.com/track/--17",
+      "bandcampEmbedTrackId": "922365725",
+      "sourcePage": "https://elizabethveldon.bandcamp.com/album/to-turn-to-texts",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://elizabethveldon.bandcamp.com/album/to-turn-to-texts",
+    "discoveredAt": "2026-09-06T04:49:12.987889+00:00",
+    "importedAt": "2026-09-06T04:56:50.478930+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "elizabethveldon.bandcamp.com",
+    "bandcampBandId": "981490501",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:56:50.478930+00:00"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "slug": "i-wish-i-was-good-at-bowling-junk-box-ep",
+  "artist": "I Wish I Was Good At Bowling",
+  "bandcampUrl": "https://iwishiwasgoodatbowling.bandcamp.com/album/junk-box-ep",
+  "releaseTitle": "Junk box - Ep",
+  "releaseDate": "2026-08-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "surf rock",
+    "emo",
+    "garage psych",
+    "garage rock",
+    "indie",
+    "midwest emo",
+    "psychedelic rock",
+    "shoegaze",
+    "slacker rock",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "I Wish I Was Good At Bowling — slowcore / alternative / surf rock music from Chicago, Illinois.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://iwishiwasgoodatbowling.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:11:14Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "junk-box-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "junk-box-ep-3193918320",
+      "title": "I Know (dont have a lot)",
+      "artist": "I Wish I Was Good At Bowling",
+      "albumTitle": "Junk box - Ep",
+      "albumKey": "junk-box-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iwishiwasgoodatbowling.bandcamp.com/track/i-know-dont-have-a-lot",
+      "bandcampEmbedTrackId": "3193918320",
+      "sourcePage": "https://iwishiwasgoodatbowling.bandcamp.com/album/junk-box-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "junk-box-ep-1018737161",
+      "title": "Junk box",
+      "artist": "I Wish I Was Good At Bowling",
+      "albumTitle": "Junk box - Ep",
+      "albumKey": "junk-box-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:44",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iwishiwasgoodatbowling.bandcamp.com/track/junk-box",
+      "bandcampEmbedTrackId": "1018737161",
+      "sourcePage": "https://iwishiwasgoodatbowling.bandcamp.com/album/junk-box-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "junk-box-ep-748503803",
+      "title": "No dogs allowed",
+      "artist": "I Wish I Was Good At Bowling",
+      "albumTitle": "Junk box - Ep",
+      "albumKey": "junk-box-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iwishiwasgoodatbowling.bandcamp.com/track/no-dogs-allowed",
+      "bandcampEmbedTrackId": "748503803",
+      "sourcePage": "https://iwishiwasgoodatbowling.bandcamp.com/album/junk-box-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://iwishiwasgoodatbowling.bandcamp.com/album/junk-box-ep",
+    "discoveredAt": "2026-09-06T04:49:13.001694+00:00",
+    "importedAt": "2026-09-06T05:11:14.936161+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "iwishiwasgoodatbowling.bandcamp.com",
+    "bandcampBandId": "1513526715",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:11:14.936161+00:00"
+  }
+}

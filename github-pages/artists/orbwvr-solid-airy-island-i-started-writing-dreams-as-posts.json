@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "orbwvr-solid-airy-island-i-started-writing-dreams-as-posts",
+  "artist": "orbwvr",
+  "bandcampUrl": "https://orbwvr.bandcamp.com/album/solid-airy-island-i-started-writing-dreams-as-posts",
+  "releaseTitle": "solid airy island / i started writing \"dreams\" as \"posts\"",
+  "releaseDate": "2026-07-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "experimental",
+    "fig",
+    "rock",
+    "transsexual",
+    "Concord"
+  ],
+  "primaryLocation": "Concord, North Carolina",
+  "bioShort": "orbwvr — outsider / experimental / fig music from Concord, North Carolina.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://orbwvr.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:02:54Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "solid-airy-island-i-started-writing-dreams-as-posts",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "solid-airy-island-i-started-writing-dreams-as-posts-1300874344",
+      "title": "solid airy island",
+      "artist": "orbwvr",
+      "albumTitle": "solid airy island / i started writing \"dreams\" as \"posts\"",
+      "albumKey": "solid-airy-island-i-started-writing-dreams-as-posts",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://orbwvr.bandcamp.com/track/solid-airy-island",
+      "bandcampEmbedTrackId": "1300874344",
+      "sourcePage": "https://orbwvr.bandcamp.com/album/solid-airy-island-i-started-writing-dreams-as-posts",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "solid-airy-island-i-started-writing-dreams-as-posts-2897244637",
+      "title": "i started writing \"dreams\" as \"posts\"",
+      "artist": "orbwvr",
+      "albumTitle": "solid airy island / i started writing \"dreams\" as \"posts\"",
+      "albumKey": "solid-airy-island-i-started-writing-dreams-as-posts",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://orbwvr.bandcamp.com/track/i-started-writing-dreams-as-posts",
+      "bandcampEmbedTrackId": "2897244637",
+      "sourcePage": "https://orbwvr.bandcamp.com/album/solid-airy-island-i-started-writing-dreams-as-posts",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://orbwvr.bandcamp.com/album/solid-airy-island-i-started-writing-dreams-as-posts",
+    "discoveredAt": "2026-09-06T04:49:12.992391+00:00",
+    "importedAt": "2026-09-06T05:02:54.568868+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "orbwvr.bandcamp.com",
+    "bandcampBandId": "776314712",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:02:54.568868+00:00"
+  }
+}

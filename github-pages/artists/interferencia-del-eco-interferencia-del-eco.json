@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "interferencia-del-eco-interferencia-del-eco",
+  "artist": "Interferencia del Eco",
+  "bandcampUrl": "https://interferenciadeleco.bandcamp.com/album/interferencia-del-eco",
+  "releaseTitle": "Interferencia del Eco",
+  "releaseDate": "2026-07-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "alternative",
+    "darkwave",
+    "new wave",
+    "post-punk",
+    "Spain"
+  ],
+  "primaryLocation": "Spain",
+  "bioShort": "Interferencia del Eco is an independent one-person post-punk project. Driven by prominent bass lines, harmonicas, restrained guitars, mechanical drum machines, and atmospheric…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://interferenciadeleco.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:08:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "interferencia-del-eco",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "interferencia-del-eco-612362848",
+      "title": "Breathing",
+      "artist": "Interferencia del Eco",
+      "albumTitle": "Interferencia del Eco",
+      "albumKey": "interferencia-del-eco",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:39",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://interferenciadeleco.bandcamp.com/track/breathing",
+      "bandcampEmbedTrackId": "612362848",
+      "sourcePage": "https://interferenciadeleco.bandcamp.com/album/interferencia-del-eco",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "interferencia-del-eco-2969823373",
+      "title": "Inmunidad",
+      "artist": "Interferencia del Eco",
+      "albumTitle": "Interferencia del Eco",
+      "albumKey": "interferencia-del-eco",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://interferenciadeleco.bandcamp.com/track/inmunidad",
+      "bandcampEmbedTrackId": "2969823373",
+      "sourcePage": "https://interferenciadeleco.bandcamp.com/album/interferencia-del-eco",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "interferencia-del-eco-1958824015",
+      "title": "Bolsillos de Arena",
+      "artist": "Interferencia del Eco",
+      "albumTitle": "Interferencia del Eco",
+      "albumKey": "interferencia-del-eco",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://interferenciadeleco.bandcamp.com/track/bolsillos-de-arena",
+      "bandcampEmbedTrackId": "1958824015",
+      "sourcePage": "https://interferenciadeleco.bandcamp.com/album/interferencia-del-eco",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "interferencia-del-eco-2313241316",
+      "title": "Another Life",
+      "artist": "Interferencia del Eco",
+      "albumTitle": "Interferencia del Eco",
+      "albumKey": "interferencia-del-eco",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:12",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://interferenciadeleco.bandcamp.com/track/another-life",
+      "bandcampEmbedTrackId": "2313241316",
+      "sourcePage": "https://interferenciadeleco.bandcamp.com/album/interferencia-del-eco",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "interferencia-del-eco-730023686",
+      "title": "A través del ruido",
+      "artist": "Interferencia del Eco",
+      "albumTitle": "Interferencia del Eco",
+      "albumKey": "interferencia-del-eco",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "5:20",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://interferenciadeleco.bandcamp.com/track/a-trav-s-del-ruido",
+      "bandcampEmbedTrackId": "730023686",
+      "sourcePage": "https://interferenciadeleco.bandcamp.com/album/interferencia-del-eco",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://interferenciadeleco.bandcamp.com/album/interferencia-del-eco",
+    "discoveredAt": "2026-09-06T04:49:13.000144+00:00",
+    "importedAt": "2026-09-06T05:08:47.384542+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "interferenciadeleco.bandcamp.com",
+    "bandcampBandId": "3207042751",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:08:47.384542+00:00"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "slug": "kid-busy-live-at-summertide-2025",
+  "artist": "Kid Busy",
+  "bandcampUrl": "https://kidbusy.bandcamp.com/album/live-at-summertide-2025",
+  "releaseTitle": "Live at Summertide, 2025",
+  "releaseDate": "2026-07-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "folk",
+    "loner",
+    "Conestoga"
+  ],
+  "primaryLocation": "Conestoga, Pennsylvania",
+  "bioShort": "Full set from Summertide, 2025, celebrating 10 years of radical programming at The Lace Mill. 7.6.25",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kidbusy.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:04:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "live-at-summertide-2025",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "live-at-summertide-2025-3042981410",
+      "title": "Live at Summertide 2025",
+      "artist": "Kid Busy",
+      "albumTitle": "Live at Summertide, 2025",
+      "albumKey": "live-at-summertide-2025",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "24:31",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kidbusy.bandcamp.com/track/live-at-summertide-2025",
+      "bandcampEmbedTrackId": "3042981410",
+      "sourcePage": "https://kidbusy.bandcamp.com/album/live-at-summertide-2025",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kidbusy.bandcamp.com/album/live-at-summertide-2025",
+    "discoveredAt": "2026-09-06T04:49:12.995139+00:00",
+    "importedAt": "2026-09-06T05:04:21.408057+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kidbusy.bandcamp.com",
+    "bandcampBandId": "98766700",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:04:21.408057+00:00"
+  }
+}

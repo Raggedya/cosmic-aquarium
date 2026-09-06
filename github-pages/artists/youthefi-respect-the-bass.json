@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "youthefi-respect-the-bass",
+  "artist": "Youthefi",
+  "bandcampUrl": "https://youthefi.bandcamp.com/album/respect-the-bass",
+  "releaseTitle": "Respect The Bass",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "electronic",
+    "hardstyle",
+    "bass",
+    "electronic music",
+    "Isfahan"
+  ],
+  "primaryLocation": "Isfahan, Iran",
+  "bioShort": "Youthefi — electro / hardstyle / bass music from Isfahan, Iran.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://youthefi.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:01:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "respect-the-bass",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "respect-the-bass-924274414",
+      "title": "Respect The Bass!",
+      "artist": "Youthefi",
+      "albumTitle": "Respect The Bass",
+      "albumKey": "respect-the-bass",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://youthefi.bandcamp.com/track/respect-the-bass",
+      "bandcampEmbedTrackId": "924274414",
+      "sourcePage": "https://youthefi.bandcamp.com/album/respect-the-bass",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "respect-the-bass-3520300651",
+      "title": "Respect The Bass!!",
+      "artist": "Youthefi",
+      "albumTitle": "Respect The Bass",
+      "albumKey": "respect-the-bass",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:02",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://youthefi.bandcamp.com/track/respect-the-bass-2",
+      "bandcampEmbedTrackId": "3520300651",
+      "sourcePage": "https://youthefi.bandcamp.com/album/respect-the-bass",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "respect-the-bass-2528505337",
+      "title": "Respect The Bass!!!",
+      "artist": "Youthefi",
+      "albumTitle": "Respect The Bass",
+      "albumKey": "respect-the-bass",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:49",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://youthefi.bandcamp.com/track/respect-the-bass-3",
+      "bandcampEmbedTrackId": "2528505337",
+      "sourcePage": "https://youthefi.bandcamp.com/album/respect-the-bass",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "respect-the-bass-2860694197",
+      "title": "Respect The Bass!!!!",
+      "artist": "Youthefi",
+      "albumTitle": "Respect The Bass",
+      "albumKey": "respect-the-bass",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:42",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://youthefi.bandcamp.com/track/respect-the-bass-4",
+      "bandcampEmbedTrackId": "2860694197",
+      "sourcePage": "https://youthefi.bandcamp.com/album/respect-the-bass",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://youthefi.bandcamp.com/album/respect-the-bass",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:01:18.726445+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "youthefi.bandcamp.com",
+    "bandcampBandId": "4066438611",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:01:18.726445+00:00"
+  }
+}

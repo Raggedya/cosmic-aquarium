@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "slug": "mary-anne-s-polar-rig-and-the-sound-of-speed",
+  "artist": "Mary Anne's Polar Rig",
+  "bandcampUrl": "https://maryannespolarrig.bandcamp.com/album/and-the-sound-of-speed",
+  "releaseTitle": "…and the Sound of Speed",
+  "releaseDate": "2026-09-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "alternative",
+    "fuzzpop",
+    "rock",
+    "garage rock",
+    "Malmö"
+  ],
+  "primaryLocation": "Malmö, Sweden",
+  "bioShort": "Mary Annes Polar Rig…and the sound of speed is a cross projectional art piece displaying the world building created by the two main characters and creators Fast Malin Hofvander…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://maryannespolarrig.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:50:39Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "and-the-sound-of-speed",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "and-the-sound-of-speed-744347631",
+      "title": "Healthy Habits",
+      "artist": "Mary Anne's Polar Rig",
+      "albumTitle": "…and the Sound of Speed",
+      "albumKey": "and-the-sound-of-speed",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://maryannespolarrig.bandcamp.com/track/healthy-habits-2",
+      "bandcampEmbedTrackId": "744347631",
+      "sourcePage": "https://maryannespolarrig.bandcamp.com/album/and-the-sound-of-speed",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "and-the-sound-of-speed-1313387396",
+      "title": "Feel the Future",
+      "artist": "Mary Anne's Polar Rig",
+      "albumTitle": "…and the Sound of Speed",
+      "albumKey": "and-the-sound-of-speed",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://maryannespolarrig.bandcamp.com/track/feel-the-future-2",
+      "bandcampEmbedTrackId": "1313387396",
+      "sourcePage": "https://maryannespolarrig.bandcamp.com/album/and-the-sound-of-speed",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "and-the-sound-of-speed-125508418",
+      "title": "Race Machines",
+      "artist": "Mary Anne's Polar Rig",
+      "albumTitle": "…and the Sound of Speed",
+      "albumKey": "and-the-sound-of-speed",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://maryannespolarrig.bandcamp.com/album/and-the-sound-of-speed",
+      "bandcampEmbedTrackId": "125508418",
+      "sourcePage": "https://maryannespolarrig.bandcamp.com/album/and-the-sound-of-speed",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://maryannespolarrig.bandcamp.com/album/and-the-sound-of-speed",
+    "discoveredAt": "2026-09-06T04:48:16.447844+00:00",
+    "importedAt": "2026-09-06T04:50:39.206117+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "maryannespolarrig.bandcamp.com",
+    "bandcampBandId": "2515713842",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:50:39.206117+00:00"
+  }
+}

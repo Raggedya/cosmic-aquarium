@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "slug": "soundstream-love-remedy-20th-anniversary-sst08",
+  "artist": "Soundstream",
+  "bandcampUrl": "https://sound-stream.bandcamp.com/album/love-remedy-20th-anniversary-sst08",
+  "releaseTitle": "Love Remedy 20th Anniversary SST08",
+  "releaseDate": "2019-01-20 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "disco",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "Soundstream — house / disco / Berlin music from Berlin, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sound-stream.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:59:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "love-remedy-20th-anniversary-sst08",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "love-remedy-20th-anniversary-sst08-1645570724",
+      "title": "Right Track",
+      "artist": "Soundstream",
+      "albumTitle": "Love Remedy 20th Anniversary SST08",
+      "albumKey": "love-remedy-20th-anniversary-sst08",
+      "year": 2019,
+      "trackNumber": 1,
+      "duration": "5:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sound-stream.bandcamp.com/track/right-track",
+      "bandcampEmbedTrackId": "1645570724",
+      "sourcePage": "https://sound-stream.bandcamp.com/album/love-remedy-20th-anniversary-sst08",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "love-remedy-20th-anniversary-sst08-595056445",
+      "title": "Mercury Mood",
+      "artist": "Soundstream",
+      "albumTitle": "Love Remedy 20th Anniversary SST08",
+      "albumKey": "love-remedy-20th-anniversary-sst08",
+      "year": 2019,
+      "trackNumber": 2,
+      "duration": "5:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sound-stream.bandcamp.com/track/mercury-mood",
+      "bandcampEmbedTrackId": "595056445",
+      "sourcePage": "https://sound-stream.bandcamp.com/album/love-remedy-20th-anniversary-sst08",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "love-remedy-20th-anniversary-sst08-2552811635",
+      "title": "Flash Back",
+      "artist": "Soundstream",
+      "albumTitle": "Love Remedy 20th Anniversary SST08",
+      "albumKey": "love-remedy-20th-anniversary-sst08",
+      "year": 2019,
+      "trackNumber": 3,
+      "duration": "5:34",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sound-stream.bandcamp.com/track/flash-back",
+      "bandcampEmbedTrackId": "2552811635",
+      "sourcePage": "https://sound-stream.bandcamp.com/album/love-remedy-20th-anniversary-sst08",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "love-remedy-20th-anniversary-sst08-3260387240",
+      "title": "Disco Advisor",
+      "artist": "Soundstream",
+      "albumTitle": "Love Remedy 20th Anniversary SST08",
+      "albumKey": "love-remedy-20th-anniversary-sst08",
+      "year": 2019,
+      "trackNumber": 4,
+      "duration": "6:11",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sound-stream.bandcamp.com/track/disco-advisor",
+      "bandcampEmbedTrackId": "3260387240",
+      "sourcePage": "https://sound-stream.bandcamp.com/album/love-remedy-20th-anniversary-sst08",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "love-remedy-20th-anniversary-sst08-2271314232",
+      "title": "Spotlight",
+      "artist": "Soundstream",
+      "albumTitle": "Love Remedy 20th Anniversary SST08",
+      "albumKey": "love-remedy-20th-anniversary-sst08",
+      "year": 2019,
+      "trackNumber": 5,
+      "duration": "5:27",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sound-stream.bandcamp.com/track/spotlight",
+      "bandcampEmbedTrackId": "2271314232",
+      "sourcePage": "https://sound-stream.bandcamp.com/album/love-remedy-20th-anniversary-sst08",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sound-stream.bandcamp.com/album/love-remedy-20th-anniversary-sst08",
+    "discoveredAt": "2026-09-06T04:49:12.989888+00:00",
+    "importedAt": "2026-09-06T04:59:27.994732+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sound-stream.bandcamp.com",
+    "bandcampBandId": "2028516365",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:59:27.994732+00:00"
+  }
+}

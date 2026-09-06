@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "hellish-form-remains",
+  "artist": "Hellish Form",
+  "bandcampUrl": "https://hellishform.bandcamp.com/album/remains",
+  "releaseTitle": "Remains",
+  "releaseDate": "2021-06-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "metal",
+    "doom",
+    "drone doom",
+    "funeral doom",
+    "United States"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Order the vinyl here: https://translationloss.com/products/remains",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hellishform.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:52:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "remains",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "remains-135746760",
+      "title": "Your Grave Becomes A Garden",
+      "artist": "Hellish Form",
+      "albumTitle": "Remains",
+      "albumKey": "remains",
+      "year": 2021,
+      "trackNumber": 1,
+      "duration": "14:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hellishform.bandcamp.com/track/your-grave-becomes-a-garden",
+      "bandcampEmbedTrackId": "135746760",
+      "sourcePage": "https://hellishform.bandcamp.com/album/remains",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "remains-4085842933",
+      "title": "Ache",
+      "artist": "Hellish Form",
+      "albumTitle": "Remains",
+      "albumKey": "remains",
+      "year": 2021,
+      "trackNumber": 2,
+      "duration": "6:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hellishform.bandcamp.com/track/ache",
+      "bandcampEmbedTrackId": "4085842933",
+      "sourcePage": "https://hellishform.bandcamp.com/album/remains",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "remains-3494000012",
+      "title": "Shadows With Teeth",
+      "artist": "Hellish Form",
+      "albumTitle": "Remains",
+      "albumKey": "remains",
+      "year": 2021,
+      "trackNumber": 3,
+      "duration": "12:16",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hellishform.bandcamp.com/track/shadows-with-teeth",
+      "bandcampEmbedTrackId": "3494000012",
+      "sourcePage": "https://hellishform.bandcamp.com/album/remains",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "remains-1735181629",
+      "title": "Another World",
+      "artist": "Hellish Form",
+      "albumTitle": "Remains",
+      "albumKey": "remains",
+      "year": 2021,
+      "trackNumber": 4,
+      "duration": "10:43",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hellishform.bandcamp.com/track/another-world",
+      "bandcampEmbedTrackId": "1735181629",
+      "sourcePage": "https://hellishform.bandcamp.com/album/remains",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hellishform.bandcamp.com/album/remains",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:52:19.057984+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hellishform.bandcamp.com",
+    "bandcampBandId": "3435717873",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:52:19.057984+00:00"
+  }
+}

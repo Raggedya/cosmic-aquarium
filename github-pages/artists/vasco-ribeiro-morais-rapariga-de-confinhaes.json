@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "vasco-ribeiro-morais-rapariga-de-confinhaes",
+  "artist": "vasco ribeiro morais",
+  "bandcampUrl": "https://vascoribeiromorais.bandcamp.com/album/rapariga-de-confinh-es",
+  "releaseTitle": "Rapariga de confinhães",
+  "releaseDate": "2026-08-17 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "experimental",
+    "portugal",
+    "avant-garde",
+    "blues",
+    "free jazz",
+    "rock in opposition",
+    "Sintra"
+  ],
+  "primaryLocation": "Sintra, Portugal",
+  "bioShort": "vasco ribeiro morais — free-jazz / experimental / portugal music from Sintra, Portugal.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange",
+    "dark",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vascoribeiromorais.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:07:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rapariga-de-confinhaes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rapariga-de-confinhaes-743172725",
+      "title": "Continhães, linho e melancolia",
+      "artist": "vasco ribeiro morais",
+      "albumTitle": "Rapariga de confinhães",
+      "albumKey": "rapariga-de-confinhaes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vascoribeiromorais.bandcamp.com/track/continh-es-linho-e-melancolia",
+      "bandcampEmbedTrackId": "743172725",
+      "sourcePage": "https://vascoribeiromorais.bandcamp.com/album/rapariga-de-confinh-es",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "rapariga-de-confinhaes-2840918590",
+      "title": "Tenho uma fada a correr",
+      "artist": "vasco ribeiro morais",
+      "albumTitle": "Rapariga de confinhães",
+      "albumKey": "rapariga-de-confinhaes",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vascoribeiromorais.bandcamp.com/track/tenho-uma-fada-a-correr",
+      "bandcampEmbedTrackId": "2840918590",
+      "sourcePage": "https://vascoribeiromorais.bandcamp.com/album/rapariga-de-confinh-es",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "rapariga-de-confinhaes-1088833420",
+      "title": "Brenhas e silêncio",
+      "artist": "vasco ribeiro morais",
+      "albumTitle": "Rapariga de confinhães",
+      "albumKey": "rapariga-de-confinhaes",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:20",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vascoribeiromorais.bandcamp.com/track/brenhas-e-sil-ncio",
+      "bandcampEmbedTrackId": "1088833420",
+      "sourcePage": "https://vascoribeiromorais.bandcamp.com/album/rapariga-de-confinh-es",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "rapariga-de-confinhaes-2743506961",
+      "title": "A pastora dos lobos",
+      "artist": "vasco ribeiro morais",
+      "albumTitle": "Rapariga de confinhães",
+      "albumKey": "rapariga-de-confinhaes",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:32",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vascoribeiromorais.bandcamp.com/track/a-pastora-dos-lobos",
+      "bandcampEmbedTrackId": "2743506961",
+      "sourcePage": "https://vascoribeiromorais.bandcamp.com/album/rapariga-de-confinh-es",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://vascoribeiromorais.bandcamp.com/album/rapariga-de-confinh-es",
+    "discoveredAt": "2026-09-06T04:49:12.998143+00:00",
+    "importedAt": "2026-09-06T05:07:28.486306+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "vascoribeiromorais.bandcamp.com",
+    "bandcampBandId": "3276774407",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:07:28.486306+00:00"
+  }
+}

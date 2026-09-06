@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "lunar-mantra-psychosomatika",
+  "artist": "Lunar Mantra",
+  "bandcampUrl": "https://lunarmantra.bandcamp.com/album/psychosomatika",
+  "releaseTitle": "Psychosomatika",
+  "releaseDate": "2020-01-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "experimental",
+    "ritual ambient",
+    "ambient",
+    "black metal",
+    "death metal",
+    "elemental",
+    "occult",
+    "Glasgow"
+  ],
+  "primaryLocation": "Glasgow, UK",
+  "bioShort": "The second EP release of Lunar Mantra. Psychosomatika is presented as a libation to the elements and to what and where we arise from. To clear the way for the purging of the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lunarmantra.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:03:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "psychosomatika",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "psychosomatika-3541998468",
+      "title": "Preliminary",
+      "artist": "Lunar Mantra",
+      "albumTitle": "Psychosomatika",
+      "albumKey": "psychosomatika",
+      "year": 2020,
+      "trackNumber": 1,
+      "duration": "0:44",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lunarmantra.bandcamp.com/track/preliminary",
+      "bandcampEmbedTrackId": "3541998468",
+      "sourcePage": "https://lunarmantra.bandcamp.com/album/psychosomatika",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "psychosomatika-3012503661",
+      "title": "Nexicthon",
+      "artist": "Lunar Mantra",
+      "albumTitle": "Psychosomatika",
+      "albumKey": "psychosomatika",
+      "year": 2020,
+      "trackNumber": 2,
+      "duration": "8:57",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lunarmantra.bandcamp.com/track/nexicthon",
+      "bandcampEmbedTrackId": "3012503661",
+      "sourcePage": "https://lunarmantra.bandcamp.com/album/psychosomatika",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "psychosomatika-2945223400",
+      "title": "Azothic Pyres",
+      "artist": "Lunar Mantra",
+      "albumTitle": "Psychosomatika",
+      "albumKey": "psychosomatika",
+      "year": 2020,
+      "trackNumber": 3,
+      "duration": "9:06",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lunarmantra.bandcamp.com/track/azothic-pyres",
+      "bandcampEmbedTrackId": "2945223400",
+      "sourcePage": "https://lunarmantra.bandcamp.com/album/psychosomatika",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "psychosomatika-4262249401",
+      "title": "Aghora",
+      "artist": "Lunar Mantra",
+      "albumTitle": "Psychosomatika",
+      "albumKey": "psychosomatika",
+      "year": 2020,
+      "trackNumber": 4,
+      "duration": "9:37",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lunarmantra.bandcamp.com/track/aghora",
+      "bandcampEmbedTrackId": "4262249401",
+      "sourcePage": "https://lunarmantra.bandcamp.com/album/psychosomatika",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lunarmantra.bandcamp.com/album/psychosomatika",
+    "discoveredAt": "2026-09-06T04:49:12.993396+00:00",
+    "importedAt": "2026-09-06T05:03:07.515080+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lunarmantra.bandcamp.com",
+    "bandcampBandId": "668517740",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:03:07.515080+00:00"
+  }
+}

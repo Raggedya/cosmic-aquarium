@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "blonde-redhead-blood-spilled",
+  "artist": "Blonde Redhead",
+  "bandcampUrl": "https://blonderedhead.bandcamp.com/album/blood-spilled",
+  "releaseTitle": "Blood Spilled",
+  "releaseDate": "2026-07-29 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-punk",
+    "alternative",
+    "rock",
+    "experimental rock",
+    "indie rock",
+    "noise rock",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "\"“Blood Spilled” - the latest single from Blonde Redhead - pairs cascading guitars, relentless rhythms, and one of Kazu Makino's most explosive vocal performances with an…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://blonderedhead.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:05:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "blood-spilled",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "blood-spilled-656117858",
+      "title": "Blood Spilled",
+      "artist": "Blonde Redhead",
+      "albumTitle": "Blood Spilled",
+      "albumKey": "blood-spilled",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://blonderedhead.bandcamp.com/track/blood-spilled",
+      "bandcampEmbedTrackId": "656117858",
+      "sourcePage": "https://blonderedhead.bandcamp.com/album/blood-spilled",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://blonderedhead.bandcamp.com/album/blood-spilled",
+    "discoveredAt": "2026-09-06T04:49:12.996144+00:00",
+    "importedAt": "2026-09-06T05:05:47.643790+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "blonderedhead.bandcamp.com",
+    "bandcampBandId": "1946789760",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:05:47.643790+00:00"
+  }
+}

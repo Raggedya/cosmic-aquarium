@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "bereft-the-warmth-thereof",
+  "artist": "Bereft",
+  "bandcampUrl": "https://bereftmusic.bandcamp.com/album/the-warmth-thereof",
+  "releaseTitle": "The Warmth Thereof",
+  "releaseDate": "2026-08-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "ambient",
+    "blackgaze",
+    "post black metal",
+    "post-hardcore",
+    "post-rock",
+    "screamo",
+    "shoegaze",
+    "Krasnoyarsk"
+  ],
+  "primaryLocation": "Krasnoyarsk, Russia",
+  "bioShort": "This song has always stood out from the rest of what I’ve written for this project. On one hand, it leans more toward post-black metal and screamo, but at the same time, it…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bereftmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:52:23Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-warmth-thereof",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-warmth-thereof-1993549808",
+      "title": "The Warmth Thereof",
+      "artist": "Bereft",
+      "albumTitle": "The Warmth Thereof",
+      "albumKey": "the-warmth-thereof",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bereftmusic.bandcamp.com/track/the-warmth-thereof",
+      "bandcampEmbedTrackId": "1993549808",
+      "sourcePage": "https://bereftmusic.bandcamp.com/album/the-warmth-thereof",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-warmth-thereof-2676516076",
+      "title": "The Warmth Thereof (instrumental)",
+      "artist": "Bereft",
+      "albumTitle": "The Warmth Thereof",
+      "albumKey": "the-warmth-thereof",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bereftmusic.bandcamp.com/track/the-warmth-thereof-instrumental",
+      "bandcampEmbedTrackId": "2676516076",
+      "sourcePage": "https://bereftmusic.bandcamp.com/album/the-warmth-thereof",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bereftmusic.bandcamp.com/album/the-warmth-thereof",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:52:23.438371+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bereftmusic.bandcamp.com",
+    "bandcampBandId": "188722467",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:52:23.438371+00:00"
+  }
+}

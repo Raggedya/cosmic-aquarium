@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "buran-burevestnik",
+  "artist": "Buran",
+  "bandcampUrl": "https://buranscapes.bandcamp.com/album/burevestnik",
+  "releaseTitle": "Burevestnik",
+  "releaseDate": "2026-07-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "atmospheric metal",
+    "black metal",
+    "blackgaze",
+    "doom metal",
+    "post metal",
+    "Leipzig"
+  ],
+  "primaryLocation": "Leipzig, Germany",
+  "bioShort": "Buran — post-metal / metal / atmospheric metal music from Leipzig, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://buranscapes.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:01:03Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "burevestnik",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "burevestnik-3215263873",
+      "title": "Did we reach the ocean yet?",
+      "artist": "Buran",
+      "albumTitle": "Burevestnik",
+      "albumKey": "burevestnik",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://buranscapes.bandcamp.com/track/did-we-reach-the-ocean-yet",
+      "bandcampEmbedTrackId": "3215263873",
+      "sourcePage": "https://buranscapes.bandcamp.com/album/burevestnik",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "burevestnik-1019349110",
+      "title": "The mirror which flatters not",
+      "artist": "Buran",
+      "albumTitle": "Burevestnik",
+      "albumKey": "burevestnik",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:43",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://buranscapes.bandcamp.com/track/the-mirror-which-flatters-not",
+      "bandcampEmbedTrackId": "1019349110",
+      "sourcePage": "https://buranscapes.bandcamp.com/album/burevestnik",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "burevestnik-5332315",
+      "title": "Waiting for the sun to rise",
+      "artist": "Buran",
+      "albumTitle": "Burevestnik",
+      "albumKey": "burevestnik",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:29",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://buranscapes.bandcamp.com/track/waiting-for-the-sun-to-rise",
+      "bandcampEmbedTrackId": "5332315",
+      "sourcePage": "https://buranscapes.bandcamp.com/album/burevestnik",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://buranscapes.bandcamp.com/album/burevestnik",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:01:03.465417+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "buranscapes.bandcamp.com",
+    "bandcampBandId": "2521960243",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:01:03.465417+00:00"
+  }
+}

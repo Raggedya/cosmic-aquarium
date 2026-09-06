@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "violeta-rojas-freesanto",
+  "artist": "Violeta Rojas",
+  "bandcampUrl": "https://violetarojas.bandcamp.com/album/freesanto",
+  "releaseTitle": "#FREESANTO",
+  "releaseDate": "2026-08-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "rock",
+    "acoustic rock",
+    "freesanto",
+    "teen rock",
+    "Guadalajara"
+  ],
+  "primaryLocation": "Guadalajara, Mexico",
+  "bioShort": "#FreeSanto BlvckSanto has once again been removed from Bandcamp, and we believe this treatment is deeply unfair. His music represents his story, his culture, his pain, his…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://violetarojas.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:58:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "freesanto",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "freesanto-1879840085",
+      "title": "#FREESANTO (Cicatrices)",
+      "artist": "Violeta Rojas",
+      "albumTitle": "#FREESANTO",
+      "albumKey": "freesanto",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://violetarojas.bandcamp.com/track/freesanto-cicatrices",
+      "bandcampEmbedTrackId": "1879840085",
+      "sourcePage": "https://violetarojas.bandcamp.com/album/freesanto",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://violetarojas.bandcamp.com/album/freesanto",
+    "discoveredAt": "2026-09-06T04:49:12.988888+00:00",
+    "importedAt": "2026-09-06T04:58:07.301060+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "violetarojas.bandcamp.com",
+    "bandcampBandId": "270225568",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:58:07.301060+00:00"
+  }
+}

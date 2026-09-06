@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "enola-gay-gransha-ep",
+  "artist": "Enola Gay",
+  "bandcampUrl": "https://enolagay1.bandcamp.com/album/gransha-ep",
+  "releaseTitle": "Gransha EP",
+  "releaseDate": "2021-10-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "irish punk",
+    "punk",
+    "noise punk",
+    "noise rock",
+    "post-punk",
+    "rap punk",
+    "Belfast"
+  ],
+  "primaryLocation": "Belfast, UK",
+  "bioShort": "Recorded this year and last. Gransha is a product of our surroundings. Thank you to everyone who listens. All proceeds of Through Men's Eyes go to https://rapecrisisni.org.uk/…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://enolagay1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:00:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "gransha-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "gransha-ep-1703396808",
+      "title": "Sofa Surfing",
+      "artist": "Enola Gay",
+      "albumTitle": "Gransha EP",
+      "albumKey": "gransha-ep",
+      "year": 2021,
+      "trackNumber": 1,
+      "duration": "3:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://enolagay1.bandcamp.com/track/sofa-surfing",
+      "bandcampEmbedTrackId": "1703396808",
+      "sourcePage": "https://enolagay1.bandcamp.com/album/gransha-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "gransha-ep-1187418039",
+      "title": "Scrappers",
+      "artist": "Enola Gay",
+      "albumTitle": "Gransha EP",
+      "albumKey": "gransha-ep",
+      "year": 2021,
+      "trackNumber": 2,
+      "duration": "2:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://enolagay1.bandcamp.com/track/scrappers",
+      "bandcampEmbedTrackId": "1187418039",
+      "sourcePage": "https://enolagay1.bandcamp.com/album/gransha-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "gransha-ep-2373376205",
+      "title": "Salt",
+      "artist": "Enola Gay",
+      "albumTitle": "Gransha EP",
+      "albumKey": "gransha-ep",
+      "year": 2021,
+      "trackNumber": 3,
+      "duration": "2:58",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://enolagay1.bandcamp.com/track/salt",
+      "bandcampEmbedTrackId": "2373376205",
+      "sourcePage": "https://enolagay1.bandcamp.com/album/gransha-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "gransha-ep-2327440360",
+      "title": "Through Men's Eyes",
+      "artist": "Enola Gay",
+      "albumTitle": "Gransha EP",
+      "albumKey": "gransha-ep",
+      "year": 2021,
+      "trackNumber": 4,
+      "duration": "4:37",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://enolagay1.bandcamp.com/track/through-mens-eyes",
+      "bandcampEmbedTrackId": "2327440360",
+      "sourcePage": "https://enolagay1.bandcamp.com/album/gransha-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://enolagay1.bandcamp.com/album/gransha-ep",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:00:31.451657+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "enolagay1.bandcamp.com",
+    "bandcampBandId": "2681935503",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:00:31.451657+00:00"
+  }
+}

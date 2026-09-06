@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "slug": "frigus-sky-barren-lands-flowers-and-everything",
+  "artist": "Frigus Sky",
+  "bandcampUrl": "https://frigussky.bandcamp.com/album/barren-lands-flowers-and-everything",
+  "releaseTitle": "Barren Lands / Flowers and Everything",
+  "releaseDate": "2026-08-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "jesu",
+    "metal",
+    "atmospheric sludge metal",
+    "doom",
+    "doomgaze",
+    "drone metal",
+    "post-rock",
+    "shoegaze",
+    "slowcore",
+    "Finland"
+  ],
+  "primaryLocation": "Finland",
+  "bioShort": "Second Frigus Sky single. Three songs included, 2 original songs and an additional unfinished demo track. Jesu and Planning for Burial worship. Melancholic music.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://frigussky.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:58:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "barren-lands-flowers-and-everything",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "barren-lands-flowers-and-everything-1806575656",
+      "title": "Barren Lands",
+      "artist": "Frigus Sky",
+      "albumTitle": "Barren Lands / Flowers and Everything",
+      "albumKey": "barren-lands-flowers-and-everything",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://frigussky.bandcamp.com/track/barren-lands",
+      "bandcampEmbedTrackId": "1806575656",
+      "sourcePage": "https://frigussky.bandcamp.com/album/barren-lands-flowers-and-everything",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "barren-lands-flowers-and-everything-1787144087",
+      "title": "Flowers and Everything",
+      "artist": "Frigus Sky",
+      "albumTitle": "Barren Lands / Flowers and Everything",
+      "albumKey": "barren-lands-flowers-and-everything",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:44",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://frigussky.bandcamp.com/track/flowers-and-everything",
+      "bandcampEmbedTrackId": "1787144087",
+      "sourcePage": "https://frigussky.bandcamp.com/album/barren-lands-flowers-and-everything",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "barren-lands-flowers-and-everything-1630466148",
+      "title": "Rainy Day (demo)",
+      "artist": "Frigus Sky",
+      "albumTitle": "Barren Lands / Flowers and Everything",
+      "albumKey": "barren-lands-flowers-and-everything",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:15",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://frigussky.bandcamp.com/track/rainy-day-demo",
+      "bandcampEmbedTrackId": "1630466148",
+      "sourcePage": "https://frigussky.bandcamp.com/album/barren-lands-flowers-and-everything",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://frigussky.bandcamp.com/album/barren-lands-flowers-and-everything",
+    "discoveredAt": "2026-09-06T04:49:12.988888+00:00",
+    "importedAt": "2026-09-06T04:58:33.486260+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "frigussky.bandcamp.com",
+    "bandcampBandId": "1911023082",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:58:33.486260+00:00"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "evil-eye-under-a-sabbath-moon",
+  "artist": "Evil Eye",
+  "bandcampUrl": "https://evileyenc.bandcamp.com/album/under-a-sabbath-moon",
+  "releaseTitle": "Under A Sabbath Moon",
+  "releaseDate": "2026-07-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "heavy psych",
+    "stoner metal",
+    "stoner rock",
+    "Chapel Hill"
+  ],
+  "primaryLocation": "Chapel Hill, North Carolina",
+  "bioShort": "Evil Eye — stoner-metal / metal / heavy psych music from Chapel Hill, North Carolina.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://evileyenc.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:51:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "under-a-sabbath-moon",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "under-a-sabbath-moon-2775426878",
+      "title": "Under a Sabbath Moon",
+      "artist": "Evil Eye",
+      "albumTitle": "Under A Sabbath Moon",
+      "albumKey": "under-a-sabbath-moon",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evileyenc.bandcamp.com/track/under-a-sabbath-moon",
+      "bandcampEmbedTrackId": "2775426878",
+      "sourcePage": "https://evileyenc.bandcamp.com/album/under-a-sabbath-moon",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "under-a-sabbath-moon-3878241639",
+      "title": "High Atop the Mountain at Dawn (Dreaming of the Sea)",
+      "artist": "Evil Eye",
+      "albumTitle": "Under A Sabbath Moon",
+      "albumKey": "under-a-sabbath-moon",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evileyenc.bandcamp.com/track/high-atop-the-mountain-at-dawn-dreaming-of-the-sea",
+      "bandcampEmbedTrackId": "3878241639",
+      "sourcePage": "https://evileyenc.bandcamp.com/album/under-a-sabbath-moon",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://evileyenc.bandcamp.com/album/under-a-sabbath-moon",
+    "discoveredAt": "2026-09-06T04:49:12.981379+00:00",
+    "importedAt": "2026-09-06T04:51:34.750179+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "evileyenc.bandcamp.com",
+    "bandcampBandId": "3804200549",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:51:34.750179+00:00"
+  }
+}

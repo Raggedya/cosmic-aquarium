@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "nivalis-la-flamme",
+  "artist": "Nivalis",
+  "bandcampUrl": "https://nivalis1.bandcamp.com/album/la-flamme",
+  "releaseTitle": "La Flamme",
+  "releaseDate": "2026-07-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "alternative",
+    "electronic",
+    "cold wave",
+    "goth",
+    "new wave",
+    "post-punk",
+    "synthpop",
+    "Lille"
+  ],
+  "primaryLocation": "Lille, France",
+  "bioShort": "Nivalis — coldwave / alternative / electronic music from Lille, France.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nivalis1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:59:58Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "la-flamme",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "la-flamme-651042673",
+      "title": "La Flamme",
+      "artist": "Nivalis",
+      "albumTitle": "La Flamme",
+      "albumKey": "la-flamme",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nivalis1.bandcamp.com/track/la-flamme",
+      "bandcampEmbedTrackId": "651042673",
+      "sourcePage": "https://nivalis1.bandcamp.com/album/la-flamme",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "la-flamme-1118199652",
+      "title": "Avenir",
+      "artist": "Nivalis",
+      "albumTitle": "La Flamme",
+      "albumKey": "la-flamme",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:57",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nivalis1.bandcamp.com/track/avenir",
+      "bandcampEmbedTrackId": "1118199652",
+      "sourcePage": "https://nivalis1.bandcamp.com/album/la-flamme",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "la-flamme-3205272761",
+      "title": "La Flamme (Radio Edit)",
+      "artist": "Nivalis",
+      "albumTitle": "La Flamme",
+      "albumKey": "la-flamme",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:22",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nivalis1.bandcamp.com/track/la-flamme-radio-edit",
+      "bandcampEmbedTrackId": "3205272761",
+      "sourcePage": "https://nivalis1.bandcamp.com/album/la-flamme",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nivalis1.bandcamp.com/album/la-flamme",
+    "discoveredAt": "2026-09-06T04:49:12.989888+00:00",
+    "importedAt": "2026-09-06T04:59:58.159289+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nivalis1.bandcamp.com",
+    "bandcampBandId": "70707123",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:59:58.159289+00:00"
+  }
+}

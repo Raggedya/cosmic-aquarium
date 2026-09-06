@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "ansiedad-social-el-hijo-favorito",
+  "artist": "Ansiedad Social",
+  "bandcampUrl": "https://ansiedadsocial.bandcamp.com/album/el-hijo-favorito",
+  "releaseTitle": "El Hijo Favorito",
+  "releaseDate": "2026-08-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "punk",
+    "rock",
+    "emo",
+    "indie rock",
+    "Montevideo"
+  ],
+  "primaryLocation": "Montevideo, Uruguay",
+  "bioShort": "Ansiedad Social — grunge / punk / rock music from Montevideo, Uruguay.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ansiedadsocial.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:08:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "el-hijo-favorito",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "el-hijo-favorito-1065611316",
+      "title": "Embarrarla",
+      "artist": "Ansiedad Social",
+      "albumTitle": "El Hijo Favorito",
+      "albumKey": "el-hijo-favorito",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ansiedadsocial.bandcamp.com/track/embarrarla",
+      "bandcampEmbedTrackId": "1065611316",
+      "sourcePage": "https://ansiedadsocial.bandcamp.com/album/el-hijo-favorito",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "el-hijo-favorito-3737599064",
+      "title": "En la Pecera",
+      "artist": "Ansiedad Social",
+      "albumTitle": "El Hijo Favorito",
+      "albumKey": "el-hijo-favorito",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ansiedadsocial.bandcamp.com/track/en-la-pecera",
+      "bandcampEmbedTrackId": "3737599064",
+      "sourcePage": "https://ansiedadsocial.bandcamp.com/album/el-hijo-favorito",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "el-hijo-favorito-2301684243",
+      "title": "El Hijo Favorito",
+      "artist": "Ansiedad Social",
+      "albumTitle": "El Hijo Favorito",
+      "albumKey": "el-hijo-favorito",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:41",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ansiedadsocial.bandcamp.com/track/el-hijo-favorito",
+      "bandcampEmbedTrackId": "2301684243",
+      "sourcePage": "https://ansiedadsocial.bandcamp.com/album/el-hijo-favorito",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "el-hijo-favorito-818003672",
+      "title": "Se Termina",
+      "artist": "Ansiedad Social",
+      "albumTitle": "El Hijo Favorito",
+      "albumKey": "el-hijo-favorito",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:42",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ansiedadsocial.bandcamp.com/track/se-termina",
+      "bandcampEmbedTrackId": "818003672",
+      "sourcePage": "https://ansiedadsocial.bandcamp.com/album/el-hijo-favorito",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ansiedadsocial.bandcamp.com/album/el-hijo-favorito",
+    "discoveredAt": "2026-09-06T04:49:12.999143+00:00",
+    "importedAt": "2026-09-06T05:08:45.056046+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ansiedadsocial.bandcamp.com",
+    "bandcampBandId": "2781953584",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:08:45.056046+00:00"
+  }
+}

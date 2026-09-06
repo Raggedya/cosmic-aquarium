@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "sodakill-spicecore",
+  "artist": "Sodakill",
+  "bandcampUrl": "https://sodakill.bandcamp.com/album/spicecore",
+  "releaseTitle": "Spicecore",
+  "releaseDate": "2026-08-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "hard rock",
+    "metal",
+    "punk",
+    "rock & roll",
+    "spicecore",
+    "Stockholm"
+  ],
+  "primaryLocation": "Stockholm, Sweden",
+  "bioShort": "Sodakill — grunge / hard rock / metal music from Stockholm, Sweden.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sodakill.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:05:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "spicecore",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "spicecore-3882951807",
+      "title": "Awful Smell",
+      "artist": "Sodakill",
+      "albumTitle": "Spicecore",
+      "albumKey": "spicecore",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sodakill.bandcamp.com/track/awful-smell-2",
+      "bandcampEmbedTrackId": "3882951807",
+      "sourcePage": "https://sodakill.bandcamp.com/album/spicecore",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "spicecore-3777455436",
+      "title": "Music Is My Boyfriend",
+      "artist": "Sodakill",
+      "albumTitle": "Spicecore",
+      "albumKey": "spicecore",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:55",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sodakill.bandcamp.com/track/music-is-my-boyfriend-2",
+      "bandcampEmbedTrackId": "3777455436",
+      "sourcePage": "https://sodakill.bandcamp.com/album/spicecore",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "spicecore-1331338070",
+      "title": "I Feel Sick",
+      "artist": "Sodakill",
+      "albumTitle": "Spicecore",
+      "albumKey": "spicecore",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:13",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sodakill.bandcamp.com/track/i-feel-sick",
+      "bandcampEmbedTrackId": "1331338070",
+      "sourcePage": "https://sodakill.bandcamp.com/album/spicecore",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "spicecore-4026039076",
+      "title": "Renovation",
+      "artist": "Sodakill",
+      "albumTitle": "Spicecore",
+      "albumKey": "spicecore",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:11",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sodakill.bandcamp.com/track/renovation",
+      "bandcampEmbedTrackId": "4026039076",
+      "sourcePage": "https://sodakill.bandcamp.com/album/spicecore",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sodakill.bandcamp.com/album/spicecore",
+    "discoveredAt": "2026-09-06T04:49:12.996144+00:00",
+    "importedAt": "2026-09-06T05:05:40.342637+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sodakill.bandcamp.com",
+    "bandcampBandId": "3946109699",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:05:40.342637+00:00"
+  }
+}

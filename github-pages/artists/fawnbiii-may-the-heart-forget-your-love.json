@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "fawnbiii-may-the-heart-forget-your-love",
+  "artist": "fawnbiii",
+  "bandcampUrl": "https://fawnbiii.bandcamp.com/album/may-the-heart-forget-your-love",
+  "releaseTitle": "may the heart forget your 'love'",
+  "releaseDate": "2026-05-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "ambient",
+    "ambient pop",
+    "art pop",
+    "dream pop",
+    "noise pop",
+    "static",
+    "United States"
+  ],
+  "primaryLocation": null,
+  "bioShort": "all tracks recorded and produced by fawnbiii mixed by cynthia h. o'ryan",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://fawnbiii.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:10:30Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "may-the-heart-forget-your-love",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "may-the-heart-forget-your-love-1174748687",
+      "title": "catching butterflies",
+      "artist": "fawnbiii",
+      "albumTitle": "may the heart forget your 'love'",
+      "albumKey": "may-the-heart-forget-your-love",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fawnbiii.bandcamp.com/track/catching-butterflies",
+      "bandcampEmbedTrackId": "1174748687",
+      "sourcePage": "https://fawnbiii.bandcamp.com/album/may-the-heart-forget-your-love",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "may-the-heart-forget-your-love-1235684653",
+      "title": "shotgun dream hunting",
+      "artist": "fawnbiii",
+      "albumTitle": "may the heart forget your 'love'",
+      "albumKey": "may-the-heart-forget-your-love",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:02",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fawnbiii.bandcamp.com/track/shotgun-dream-hunting",
+      "bandcampEmbedTrackId": "1235684653",
+      "sourcePage": "https://fawnbiii.bandcamp.com/album/may-the-heart-forget-your-love",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "may-the-heart-forget-your-love-2033118246",
+      "title": "where the creek bends time",
+      "artist": "fawnbiii",
+      "albumTitle": "may the heart forget your 'love'",
+      "albumKey": "may-the-heart-forget-your-love",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:20",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fawnbiii.bandcamp.com/track/where-the-creek-bends-time-2",
+      "bandcampEmbedTrackId": "2033118246",
+      "sourcePage": "https://fawnbiii.bandcamp.com/album/may-the-heart-forget-your-love",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "may-the-heart-forget-your-love-2088353886",
+      "title": "'close my door'",
+      "artist": "fawnbiii",
+      "albumTitle": "may the heart forget your 'love'",
+      "albumKey": "may-the-heart-forget-your-love",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:52",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fawnbiii.bandcamp.com/track/close-my-door",
+      "bandcampEmbedTrackId": "2088353886",
+      "sourcePage": "https://fawnbiii.bandcamp.com/album/may-the-heart-forget-your-love",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://fawnbiii.bandcamp.com/album/may-the-heart-forget-your-love",
+    "discoveredAt": "2026-09-06T04:49:13.001694+00:00",
+    "importedAt": "2026-09-06T05:10:30.189620+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "fawnbiii.bandcamp.com",
+    "bandcampBandId": "1352815687",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:10:30.189620+00:00"
+  }
+}

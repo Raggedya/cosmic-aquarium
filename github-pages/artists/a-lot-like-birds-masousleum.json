@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "slug": "a-lot-like-birds-masousleum",
+  "artist": "A Lot Like Birds",
+  "bandcampUrl": "https://alotlikebirds.bandcamp.com/album/masousleum",
+  "releaseTitle": "Masousleum",
+  "releaseDate": "2026-08-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "experimental",
+    "progressive",
+    "Sacramento"
+  ],
+  "primaryLocation": "Sacramento, California",
+  "bioShort": "2026 Born Losers Records",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://alotlikebirds.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:56:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "masousleum",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "masousleum-3727795389",
+      "title": "Mausoleum",
+      "artist": "A Lot Like Birds",
+      "albumTitle": "Masousleum",
+      "albumKey": "masousleum",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://alotlikebirds.bandcamp.com/track/mausoleum",
+      "bandcampEmbedTrackId": "3727795389",
+      "sourcePage": "https://alotlikebirds.bandcamp.com/album/masousleum",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://alotlikebirds.bandcamp.com/album/masousleum",
+    "discoveredAt": "2026-09-06T04:49:12.986889+00:00",
+    "importedAt": "2026-09-06T04:56:04.182398+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "alotlikebirds.bandcamp.com",
+    "bandcampBandId": "3848502024",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:56:04.182398+00:00"
+  }
+}

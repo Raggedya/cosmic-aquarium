@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "arassus-arassus",
+  "artist": "Arassus",
+  "bandcampUrl": "https://arassus.bandcamp.com/album/arassus",
+  "releaseTitle": "Arassus",
+  "releaseDate": "2026-01-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "metal",
+    "doom metal",
+    "psychedelic rock",
+    "rock and roll",
+    "Youngstown"
+  ],
+  "primaryLocation": "Youngstown, Ohio",
+  "bioShort": "A love letter to early daze spent rippin' with the boys. Songs about microbiology, a real witches' cave, commodification of natural resources (huge bummer), and the Devil.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://arassus.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:52:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "arassus",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "arassus-2542490864",
+      "title": "Witch in Mill Creek Park",
+      "artist": "Arassus",
+      "albumTitle": "Arassus",
+      "albumKey": "arassus",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://arassus.bandcamp.com/track/witch-in-mill-creek-park",
+      "bandcampEmbedTrackId": "2542490864",
+      "sourcePage": "https://arassus.bandcamp.com/album/arassus",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "arassus-1304349375",
+      "title": "Inoculated",
+      "artist": "Arassus",
+      "albumTitle": "Arassus",
+      "albumKey": "arassus",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://arassus.bandcamp.com/track/inoculated-4",
+      "bandcampEmbedTrackId": "1304349375",
+      "sourcePage": "https://arassus.bandcamp.com/album/arassus",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "arassus-1654941780",
+      "title": "Water Wars",
+      "artist": "Arassus",
+      "albumTitle": "Arassus",
+      "albumKey": "arassus",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://arassus.bandcamp.com/track/water-wars-2",
+      "bandcampEmbedTrackId": "1654941780",
+      "sourcePage": "https://arassus.bandcamp.com/album/arassus",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "arassus-3790816516",
+      "title": "Deceiver",
+      "artist": "Arassus",
+      "albumTitle": "Arassus",
+      "albumKey": "arassus",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:07",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://arassus.bandcamp.com/track/deceiver-2",
+      "bandcampEmbedTrackId": "3790816516",
+      "sourcePage": "https://arassus.bandcamp.com/album/arassus",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://arassus.bandcamp.com/album/arassus",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:52:47.413889+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "arassus.bandcamp.com",
+    "bandcampBandId": "784247861",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:52:47.413889+00:00"
+  }
+}

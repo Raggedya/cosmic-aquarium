@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "denham-audio-imagine-floorfiller",
+  "artist": "Denham Audio",
+  "bandcampUrl": "https://denhamaudiouk.bandcamp.com/album/imagine-floorfiller",
+  "releaseTitle": "Imagine/Floorfiller",
+  "releaseDate": "2026-08-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "breaks.",
+    "electronic",
+    "bass",
+    "bass music",
+    "breakbeat",
+    "breaks",
+    "jungle",
+    "rave",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Denham & L-VIS team up for 2 club stompers",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://denhamaudiouk.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:53:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "imagine-floorfiller",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "imagine-floorfiller-1105028202",
+      "title": "Imagine",
+      "artist": "Denham Audio",
+      "albumTitle": "Imagine/Floorfiller",
+      "albumKey": "imagine-floorfiller",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://denhamaudiouk.bandcamp.com/track/imagine",
+      "bandcampEmbedTrackId": "1105028202",
+      "sourcePage": "https://denhamaudiouk.bandcamp.com/album/imagine-floorfiller",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "imagine-floorfiller-3362593685",
+      "title": "Floorfiller",
+      "artist": "Denham Audio",
+      "albumTitle": "Imagine/Floorfiller",
+      "albumKey": "imagine-floorfiller",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://denhamaudiouk.bandcamp.com/track/floorfiller",
+      "bandcampEmbedTrackId": "3362593685",
+      "sourcePage": "https://denhamaudiouk.bandcamp.com/album/imagine-floorfiller",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://denhamaudiouk.bandcamp.com/album/imagine-floorfiller",
+    "discoveredAt": "2026-09-06T04:49:12.983883+00:00",
+    "importedAt": "2026-09-06T04:53:27.813615+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "denhamaudiouk.bandcamp.com",
+    "bandcampBandId": "2837978885",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:53:27.813615+00:00"
+  }
+}

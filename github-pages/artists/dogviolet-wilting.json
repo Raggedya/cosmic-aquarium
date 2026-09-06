@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "dogviolet-wilting",
+  "artist": "Dogviolet",
+  "bandcampUrl": "https://dogviolet.bandcamp.com/album/wilting",
+  "releaseTitle": "Wilting",
+  "releaseDate": "2026-09-22 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "goth",
+    "post-punk",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "To wilt is to become aware that something needs to change; that not all is lost if you act quickly.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dogviolet.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:04:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "wilting",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "wilting-3486500924",
+      "title": "Fig Leaves",
+      "artist": "Dogviolet",
+      "albumTitle": "Wilting",
+      "albumKey": "wilting",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dogviolet.bandcamp.com/album/wilting",
+      "bandcampEmbedTrackId": "3486500924",
+      "sourcePage": "https://dogviolet.bandcamp.com/album/wilting",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "wilting-3141081745",
+      "title": "Daisy Crowns",
+      "artist": "Dogviolet",
+      "albumTitle": "Wilting",
+      "albumKey": "wilting",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dogviolet.bandcamp.com/track/daisy-crowns-2",
+      "bandcampEmbedTrackId": "3141081745",
+      "sourcePage": "https://dogviolet.bandcamp.com/album/wilting",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "wilting-302073830",
+      "title": "Black Walnut",
+      "artist": "Dogviolet",
+      "albumTitle": "Wilting",
+      "albumKey": "wilting",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dogviolet.bandcamp.com/album/wilting",
+      "bandcampEmbedTrackId": "302073830",
+      "sourcePage": "https://dogviolet.bandcamp.com/album/wilting",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "wilting-3008278381",
+      "title": "Daughter",
+      "artist": "Dogviolet",
+      "albumTitle": "Wilting",
+      "albumKey": "wilting",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:56",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dogviolet.bandcamp.com/track/daughter-3",
+      "bandcampEmbedTrackId": "3008278381",
+      "sourcePage": "https://dogviolet.bandcamp.com/album/wilting",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://dogviolet.bandcamp.com/album/wilting",
+    "discoveredAt": "2026-09-06T04:49:12.996144+00:00",
+    "importedAt": "2026-09-06T05:04:49.905697+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "dogviolet.bandcamp.com",
+    "bandcampBandId": "2150709291",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:04:49.905697+00:00"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "nation-of-language-tougher-than-the-rest",
+  "artist": "Nation of Language",
+  "bandcampUrl": "https://nationoflanguage.bandcamp.com/album/tougher-than-the-rest",
+  "releaseTitle": "Tougher Than the Rest",
+  "releaseDate": "2026-07-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-punk",
+    "alternative",
+    "rock",
+    "sub pop",
+    "synthesizer",
+    "United States"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Nation of Language is sharing a striking new cover of Bruce Springsteen’s Tunnel of Love album track “Tougher Than the Rest.” The song will also be available on a…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nationoflanguage.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:59:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tougher-than-the-rest",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tougher-than-the-rest-4075899620",
+      "title": "Tougher Than the Rest",
+      "artist": "Nation of Language",
+      "albumTitle": "Tougher Than the Rest",
+      "albumKey": "tougher-than-the-rest",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nationoflanguage.bandcamp.com/track/tougher-than-the-rest",
+      "bandcampEmbedTrackId": "4075899620",
+      "sourcePage": "https://nationoflanguage.bandcamp.com/album/tougher-than-the-rest",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tougher-than-the-rest-3840214757",
+      "title": "The Conversation",
+      "artist": "Nation of Language",
+      "albumTitle": "Tougher Than the Rest",
+      "albumKey": "tougher-than-the-rest",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nationoflanguage.bandcamp.com/track/the-conversation",
+      "bandcampEmbedTrackId": "3840214757",
+      "sourcePage": "https://nationoflanguage.bandcamp.com/album/tougher-than-the-rest",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nationoflanguage.bandcamp.com/album/tougher-than-the-rest",
+    "discoveredAt": "2026-09-06T04:49:12.989888+00:00",
+    "importedAt": "2026-09-06T04:59:55.287881+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nationoflanguage.bandcamp.com",
+    "bandcampBandId": "1311260519",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:59:55.287881+00:00"
+  }
+}

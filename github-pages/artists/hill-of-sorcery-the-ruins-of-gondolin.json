@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "hill-of-sorcery-the-ruins-of-gondolin",
+  "artist": "Hill Of Sorcery",
+  "bandcampUrl": "https://hillofsorcery.bandcamp.com/album/the-ruins-of-gondolin",
+  "releaseTitle": "The Ruins Of Gondolin",
+  "releaseDate": "2019-09-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "ambient",
+    "atmospheric",
+    "dark ambient",
+    "darkwave",
+    "fantasy",
+    "j.r.r. tolkien",
+    "tolkien",
+    "dungeon synth",
+    "electronic",
+    "neo-folk"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Hill Of Sorcery — ethereal / ambient / atmospheric music in Cosmic Aquaria.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hillofsorcery.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:00:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-ruins-of-gondolin",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-ruins-of-gondolin-285020888",
+      "title": "The Ruins Of Gondolin",
+      "artist": "Hill Of Sorcery",
+      "albumTitle": "The Ruins Of Gondolin",
+      "albumKey": "the-ruins-of-gondolin",
+      "year": 2019,
+      "trackNumber": 1,
+      "duration": "6:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hillofsorcery.bandcamp.com/track/the-ruins-of-gondolin",
+      "bandcampEmbedTrackId": "285020888",
+      "sourcePage": "https://hillofsorcery.bandcamp.com/album/the-ruins-of-gondolin",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-ruins-of-gondolin-1839102092",
+      "title": "Elder Days",
+      "artist": "Hill Of Sorcery",
+      "albumTitle": "The Ruins Of Gondolin",
+      "albumKey": "the-ruins-of-gondolin",
+      "year": 2019,
+      "trackNumber": 2,
+      "duration": "5:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hillofsorcery.bandcamp.com/track/elder-days",
+      "bandcampEmbedTrackId": "1839102092",
+      "sourcePage": "https://hillofsorcery.bandcamp.com/album/the-ruins-of-gondolin",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hillofsorcery.bandcamp.com/album/the-ruins-of-gondolin",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:00:10.953746+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hillofsorcery.bandcamp.com",
+    "bandcampBandId": "1622875588",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:00:10.955160+00:00"
+  }
+}

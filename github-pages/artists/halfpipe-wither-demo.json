@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "slug": "halfpipe-wither-demo",
+  "artist": "Halfpipe",
+  "bandcampUrl": "https://halfpipemusicph.bandcamp.com/album/wither-demo",
+  "releaseTitle": "Wither Demo",
+  "releaseDate": "2026-07-06 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "albay",
+    "metal",
+    "metro manila",
+    "philippines",
+    "rock",
+    "bicol",
+    "daraga",
+    "demo",
+    "desert rock",
+    "heavy blues",
+    "heavy psych",
+    "heavy rock",
+    "stoner",
+    "stoner metal",
+    "stoner rock",
+    "Legazpi City"
+  ],
+  "primaryLocation": "Legazpi City, Philippines",
+  "bioShort": "WITHER DEMO A 3-track demo of our single \"Wither\" in different versions and eras of the band. Main track \"Wither Demo\", \"Godwin's Wither\" & \"Wither Live\" takes you to the arid…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://halfpipemusicph.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:03:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "wither-demo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "wither-demo-2084612675",
+      "title": "Wither Demo (2024)",
+      "artist": "Halfpipe",
+      "albumTitle": "Wither Demo",
+      "albumKey": "wither-demo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:43",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://halfpipemusicph.bandcamp.com/track/wither-demo-2024",
+      "bandcampEmbedTrackId": "2084612675",
+      "sourcePage": "https://halfpipemusicph.bandcamp.com/album/wither-demo",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "wither-demo-3750613453",
+      "title": "Wither in D (Godwin's Wither)",
+      "artist": "Halfpipe",
+      "albumTitle": "Wither Demo",
+      "albumKey": "wither-demo",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:43",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://halfpipemusicph.bandcamp.com/track/wither-in-d-godwins-wither",
+      "bandcampEmbedTrackId": "3750613453",
+      "sourcePage": "https://halfpipemusicph.bandcamp.com/album/wither-demo",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "wither-demo-2086351942",
+      "title": "Wither Live 2024 (Alulup Restobar)",
+      "artist": "Halfpipe",
+      "albumTitle": "Wither Demo",
+      "albumKey": "wither-demo",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:24",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://halfpipemusicph.bandcamp.com/track/wither-live-2024-alulup-restobar",
+      "bandcampEmbedTrackId": "2086351942",
+      "sourcePage": "https://halfpipemusicph.bandcamp.com/album/wither-demo",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://halfpipemusicph.bandcamp.com/album/wither-demo",
+    "discoveredAt": "2026-09-06T04:49:12.993396+00:00",
+    "importedAt": "2026-09-06T05:03:00.050975+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "halfpipemusicph.bandcamp.com",
+    "bandcampBandId": "3089336056",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:03:00.050975+00:00"
+  }
+}

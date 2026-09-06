@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "shonk-hopeful-romantic-ep",
+  "artist": "SHONK",
+  "bandcampUrl": "https://shonk.bandcamp.com/album/hopeful-romantic-ep",
+  "releaseTitle": "Hopeful Romantic EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "acoustic",
+    "alternative",
+    "cincinnati",
+    "alternative rock",
+    "emo",
+    "rock",
+    "singer-songwriter",
+    "Cincinnati"
+  ],
+  "primaryLocation": "Cincinnati, Ohio",
+  "bioShort": "I once felt haunted, as if my endeavors and I were tormented. Goals thwarted, relationships dismantled, my own peace and rest made turbulent. I left where I once lived, a form…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://shonk.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:09:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hopeful-romantic-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hopeful-romantic-ep-2667682852",
+      "title": "Hopeful Romantic",
+      "artist": "SHONK",
+      "albumTitle": "Hopeful Romantic EP",
+      "albumKey": "hopeful-romantic-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:40",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shonk.bandcamp.com/track/hopeful-romantic",
+      "bandcampEmbedTrackId": "2667682852",
+      "sourcePage": "https://shonk.bandcamp.com/album/hopeful-romantic-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hopeful-romantic-ep-312784161",
+      "title": "Slip Away",
+      "artist": "SHONK",
+      "albumTitle": "Hopeful Romantic EP",
+      "albumKey": "hopeful-romantic-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shonk.bandcamp.com/track/slip-away",
+      "bandcampEmbedTrackId": "312784161",
+      "sourcePage": "https://shonk.bandcamp.com/album/hopeful-romantic-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "hopeful-romantic-ep-2980176411",
+      "title": "Torment",
+      "artist": "SHONK",
+      "albumTitle": "Hopeful Romantic EP",
+      "albumKey": "hopeful-romantic-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:49",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shonk.bandcamp.com/track/torment",
+      "bandcampEmbedTrackId": "2980176411",
+      "sourcePage": "https://shonk.bandcamp.com/album/hopeful-romantic-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "hopeful-romantic-ep-640561750",
+      "title": "Herald (Sun and Moon)",
+      "artist": "SHONK",
+      "albumTitle": "Hopeful Romantic EP",
+      "albumKey": "hopeful-romantic-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:52",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shonk.bandcamp.com/track/herald-sun-and-moon",
+      "bandcampEmbedTrackId": "640561750",
+      "sourcePage": "https://shonk.bandcamp.com/album/hopeful-romantic-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://shonk.bandcamp.com/album/hopeful-romantic-ep",
+    "discoveredAt": "2026-09-06T04:49:13.000144+00:00",
+    "importedAt": "2026-09-06T05:09:16.156850+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "shonk.bandcamp.com",
+    "bandcampBandId": "2644428388",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:09:16.156850+00:00"
+  }
+}

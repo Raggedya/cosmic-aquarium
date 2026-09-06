@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "stiltje-kvar",
+  "artist": "Stiltje",
+  "bandcampUrl": "https://stiltje.bandcamp.com/album/kvar",
+  "releaseTitle": "Kvar",
+  "releaseDate": "2026-05-13 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "pop",
+    "ambient pop",
+    "indiepop",
+    "synthpop",
+    "Stockholm"
+  ],
+  "primaryLocation": "Stockholm, Sweden",
+  "bioShort": "Stiltje — ambient-pop / pop / ambient pop music from Stockholm, Sweden.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://stiltje.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:01:14Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "kvar",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "kvar-2588907268",
+      "title": "Där Jag Blev Jag",
+      "artist": "Stiltje",
+      "albumTitle": "Kvar",
+      "albumKey": "kvar",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stiltje.bandcamp.com/track/d-r-jag-blev-jag",
+      "bandcampEmbedTrackId": "2588907268",
+      "sourcePage": "https://stiltje.bandcamp.com/album/kvar",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "kvar-1072706873",
+      "title": "Be Mig Gå",
+      "artist": "Stiltje",
+      "albumTitle": "Kvar",
+      "albumKey": "kvar",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stiltje.bandcamp.com/track/be-mig-g",
+      "bandcampEmbedTrackId": "1072706873",
+      "sourcePage": "https://stiltje.bandcamp.com/album/kvar",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "kvar-1593032386",
+      "title": "Vänner",
+      "artist": "Stiltje",
+      "albumTitle": "Kvar",
+      "albumKey": "kvar",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:12",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stiltje.bandcamp.com/track/v-nner",
+      "bandcampEmbedTrackId": "1593032386",
+      "sourcePage": "https://stiltje.bandcamp.com/album/kvar",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://stiltje.bandcamp.com/album/kvar",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:01:14.160198+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "stiltje.bandcamp.com",
+    "bandcampBandId": "2976793779",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:01:14.160198+00:00"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "ambrose-veno-totalled-ep",
+  "artist": "Ambrose Veno",
+  "bandcampUrl": "https://ambroseveno1.bandcamp.com/album/totalled-ep",
+  "releaseTitle": "Totalled - EP",
+  "releaseDate": "2026-08-26 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "country-alt",
+    "rock",
+    "indie",
+    "twang",
+    "Toronto"
+  ],
+  "primaryLocation": "Toronto, Ontario",
+  "bioShort": "Ambrose Veno — grunge / alternative / country-alt music from Toronto, Ontario.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ambroseveno1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:52:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "totalled-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "totalled-ep-1313994658",
+      "title": "Totalled",
+      "artist": "Ambrose Veno",
+      "albumTitle": "Totalled - EP",
+      "albumKey": "totalled-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:31",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ambroseveno1.bandcamp.com/track/totalled",
+      "bandcampEmbedTrackId": "1313994658",
+      "sourcePage": "https://ambroseveno1.bandcamp.com/album/totalled-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "totalled-ep-3104543888",
+      "title": "Rust Out",
+      "artist": "Ambrose Veno",
+      "albumTitle": "Totalled - EP",
+      "albumKey": "totalled-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ambroseveno1.bandcamp.com/track/rust-out",
+      "bandcampEmbedTrackId": "3104543888",
+      "sourcePage": "https://ambroseveno1.bandcamp.com/album/totalled-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "totalled-ep-1722733777",
+      "title": "Boozer (demo)",
+      "artist": "Ambrose Veno",
+      "albumTitle": "Totalled - EP",
+      "albumKey": "totalled-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:56",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ambroseveno1.bandcamp.com/track/boozer-demo",
+      "bandcampEmbedTrackId": "1722733777",
+      "sourcePage": "https://ambroseveno1.bandcamp.com/album/totalled-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ambroseveno1.bandcamp.com/album/totalled-ep",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:52:08.848860+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ambroseveno1.bandcamp.com",
+    "bandcampBandId": "2148783138",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:52:08.848860+00:00"
+  }
+}

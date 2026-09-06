@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "domtuig-ff-wakke-worre",
+  "artist": "DOMTUIG",
+  "bandcampUrl": "https://domtuig.bandcamp.com/album/ff-wakke-worre",
+  "releaseTitle": "FF WAKKE WORRE",
+  "releaseDate": "2026-07-17 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "alternative",
+    "electronic",
+    "gabber",
+    "punk",
+    "techno",
+    "The Hague"
+  ],
+  "primaryLocation": "The Hague, Netherlands",
+  "bioShort": "DOMTUIG — outsider / alternative / electronic music from The Hague, Netherlands.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://domtuig.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:54:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ff-wakke-worre",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ff-wakke-worre-2669801450",
+      "title": "FF WAKKE WORRE (feat. Slome Poema)",
+      "artist": "DOMTUIG",
+      "albumTitle": "FF WAKKE WORRE",
+      "albumKey": "ff-wakke-worre",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://domtuig.bandcamp.com/track/ff-wakke-worre-feat-slome-poema",
+      "bandcampEmbedTrackId": "2669801450",
+      "sourcePage": "https://domtuig.bandcamp.com/album/ff-wakke-worre",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://domtuig.bandcamp.com/album/ff-wakke-worre",
+    "discoveredAt": "2026-09-06T04:49:12.985888+00:00",
+    "importedAt": "2026-09-06T04:54:47.682009+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "domtuig.bandcamp.com",
+    "bandcampBandId": "3479697691",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:54:47.682009+00:00"
+  }
+}

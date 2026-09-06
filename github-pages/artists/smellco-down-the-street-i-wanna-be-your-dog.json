@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "smellco-down-the-street-i-wanna-be-your-dog",
+  "artist": "Smellco",
+  "bandcampUrl": "https://smellco.bandcamp.com/album/down-the-street-i-wanna-be-your-dog",
+  "releaseTitle": "Down The Street / I Wanna Be Your Dog",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "acid rock",
+    "alternative rock",
+    "delco",
+    "indie",
+    "philly",
+    "punk",
+    "rock",
+    "stoner rock",
+    "Pennsylvania"
+  ],
+  "primaryLocation": "Pennsylvania",
+  "bioShort": "Smellco — grunge / alternative / acid rock music from Pennsylvania.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://smellco.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:00:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "down-the-street-i-wanna-be-your-dog",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "down-the-street-i-wanna-be-your-dog-3201677982",
+      "title": "Down The Street",
+      "artist": "Smellco",
+      "albumTitle": "Down The Street / I Wanna Be Your Dog",
+      "albumKey": "down-the-street-i-wanna-be-your-dog",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://smellco.bandcamp.com/track/down-the-street",
+      "bandcampEmbedTrackId": "3201677982",
+      "sourcePage": "https://smellco.bandcamp.com/album/down-the-street-i-wanna-be-your-dog",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "down-the-street-i-wanna-be-your-dog-3925064023",
+      "title": "I Wanna Be Your Dog",
+      "artist": "Smellco",
+      "albumTitle": "Down The Street / I Wanna Be Your Dog",
+      "albumKey": "down-the-street-i-wanna-be-your-dog",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:06",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://smellco.bandcamp.com/track/i-wanna-be-your-dog",
+      "bandcampEmbedTrackId": "3925064023",
+      "sourcePage": "https://smellco.bandcamp.com/album/down-the-street-i-wanna-be-your-dog",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://smellco.bandcamp.com/album/down-the-street-i-wanna-be-your-dog",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:00:34.240801+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "smellco.bandcamp.com",
+    "bandcampBandId": "3108912779",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:00:34.240801+00:00"
+  }
+}

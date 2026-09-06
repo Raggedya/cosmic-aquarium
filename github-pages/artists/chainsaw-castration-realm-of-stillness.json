@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "slug": "chainsaw-castration-realm-of-stillness",
+  "artist": "CHAINSAW CASTRATION",
+  "bandcampUrl": "https://chainsawcastration.bandcamp.com/album/realm-of-stillness-2",
+  "releaseTitle": "Realm of Stillness",
+  "releaseDate": "2026-07-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "deathcore",
+    "metal",
+    "beatdown",
+    "brutal death metal",
+    "death metal",
+    "grindcore",
+    "hardcore",
+    "slam",
+    "slamming brutal death metal",
+    "Manchester"
+  ],
+  "primaryLocation": "Manchester, UK",
+  "bioShort": "~~ Chainsaw Castration have returned to bestow the Ancient Knowledge with a brand new single ~~ \"REALM OF STILLNESS\" single + live recording from 'Violent Night 2025' 14/12/25…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://chainsawcastration.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:07:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "realm-of-stillness",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "realm-of-stillness-1072985579",
+      "title": "Realm of Stillness",
+      "artist": "CHAINSAW CASTRATION",
+      "albumTitle": "Realm of Stillness",
+      "albumKey": "realm-of-stillness",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chainsawcastration.bandcamp.com/track/realm-of-stillness",
+      "bandcampEmbedTrackId": "1072985579",
+      "sourcePage": "https://chainsawcastration.bandcamp.com/album/realm-of-stillness-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "realm-of-stillness-2539094028",
+      "title": "Realm of Stillness (Live)",
+      "artist": "CHAINSAW CASTRATION",
+      "albumTitle": "Realm of Stillness",
+      "albumKey": "realm-of-stillness",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:20",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chainsawcastration.bandcamp.com/track/realm-of-stillness-live",
+      "bandcampEmbedTrackId": "2539094028",
+      "sourcePage": "https://chainsawcastration.bandcamp.com/album/realm-of-stillness-2",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://chainsawcastration.bandcamp.com/album/realm-of-stillness-2",
+    "discoveredAt": "2026-09-06T04:49:12.998143+00:00",
+    "importedAt": "2026-09-06T05:07:38.216017+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "chainsawcastration.bandcamp.com",
+    "bandcampBandId": "1009419375",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:07:38.216017+00:00"
+  }
+}

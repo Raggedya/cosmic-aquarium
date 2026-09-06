@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "anxious-bot-quantum",
+  "artist": "ANXIOUS_BOT",
+  "bandcampUrl": "https://anxiousbot.bandcamp.com/album/quantum",
+  "releaseTitle": "Quantum",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "cinematic",
+    "dark",
+    "dark ambient",
+    "experimental electronic",
+    "piano",
+    "New Zealand"
+  ],
+  "primaryLocation": "New Zealand",
+  "bioShort": "ANXIOUS_BOT — minimal / electronic / cinematic music from New Zealand.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://anxiousbot.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:03:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "quantum",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "quantum-1285493553",
+      "title": "as you leave this world",
+      "artist": "ANXIOUS_BOT",
+      "albumTitle": "Quantum",
+      "albumKey": "quantum",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anxiousbot.bandcamp.com/track/as-you-leave-this-world",
+      "bandcampEmbedTrackId": "1285493553",
+      "sourcePage": "https://anxiousbot.bandcamp.com/album/quantum",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "quantum-3200107834",
+      "title": "brittle",
+      "artist": "ANXIOUS_BOT",
+      "albumTitle": "Quantum",
+      "albumKey": "quantum",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anxiousbot.bandcamp.com/track/brittle",
+      "bandcampEmbedTrackId": "3200107834",
+      "sourcePage": "https://anxiousbot.bandcamp.com/album/quantum",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "quantum-1281486249",
+      "title": "i don't want to anymore",
+      "artist": "ANXIOUS_BOT",
+      "albumTitle": "Quantum",
+      "albumKey": "quantum",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:49",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anxiousbot.bandcamp.com/track/i-dont-want-to-anymore",
+      "bandcampEmbedTrackId": "1281486249",
+      "sourcePage": "https://anxiousbot.bandcamp.com/album/quantum",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "quantum-351841095",
+      "title": "in the twilight",
+      "artist": "ANXIOUS_BOT",
+      "albumTitle": "Quantum",
+      "albumKey": "quantum",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:59",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anxiousbot.bandcamp.com/track/in-the-twilight",
+      "bandcampEmbedTrackId": "351841095",
+      "sourcePage": "https://anxiousbot.bandcamp.com/album/quantum",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://anxiousbot.bandcamp.com/album/quantum",
+    "discoveredAt": "2026-09-06T04:49:12.995139+00:00",
+    "importedAt": "2026-09-06T05:03:57.882410+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "anxiousbot.bandcamp.com",
+    "bandcampBandId": "3563500034",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:03:57.882410+00:00"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "magic-wands-diamond-rain",
+  "artist": "Magic Wands",
+  "bandcampUrl": "https://magic-wands.bandcamp.com/album/diamond-rain",
+  "releaseTitle": "Diamond Rain",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "goth",
+    "alternative",
+    "dream pop",
+    "noise rock",
+    "post-punk",
+    "shoegaze",
+    "Nashville"
+  ],
+  "primaryLocation": "Nashville, Tennessee",
+  "bioShort": "Magic Wands — goth / alternative / dream pop music from Nashville, Tennessee.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://magic-wands.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:53:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "diamond-rain",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "diamond-rain-647100444",
+      "title": "Diamond Rain",
+      "artist": "Magic Wands",
+      "albumTitle": "Diamond Rain",
+      "albumKey": "diamond-rain",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://magic-wands.bandcamp.com/track/diamond-rain",
+      "bandcampEmbedTrackId": "647100444",
+      "sourcePage": "https://magic-wands.bandcamp.com/album/diamond-rain",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://magic-wands.bandcamp.com/album/diamond-rain",
+    "discoveredAt": "2026-09-06T04:49:12.984888+00:00",
+    "importedAt": "2026-09-06T04:53:59.648699+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "magic-wands.bandcamp.com",
+    "bandcampBandId": "2264895237",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:53:59.648699+00:00"
+  }
+}

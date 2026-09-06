@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "slug": "bioimpedancia-caminho-de-volta",
+  "artist": "Bioimpedância",
+  "bandcampUrl": "https://bioimpedancia.bandcamp.com/album/caminho-de-volta",
+  "releaseTitle": "Caminho de volta",
+  "releaseDate": "2025-12-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "Nova Iguaçu"
+  ],
+  "primaryLocation": "Nova Iguaçu, Brazil",
+  "bioShort": "Trilha sonora original para o filme \"Caminho de Volta\", dirigido por Gabe Carvalho",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bioimpedancia.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:53:32Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "caminho-de-volta",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "caminho-de-volta-1806420481",
+      "title": "Caminho",
+      "artist": "Bioimpedância",
+      "albumTitle": "Caminho de volta",
+      "albumKey": "caminho-de-volta",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "2:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bioimpedancia.bandcamp.com/track/caminho",
+      "bandcampEmbedTrackId": "1806420481",
+      "sourcePage": "https://bioimpedancia.bandcamp.com/album/caminho-de-volta",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "caminho-de-volta-2707852980",
+      "title": "De volta",
+      "artist": "Bioimpedância",
+      "albumTitle": "Caminho de volta",
+      "albumKey": "caminho-de-volta",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "0:44",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bioimpedancia.bandcamp.com/track/de-volta",
+      "bandcampEmbedTrackId": "2707852980",
+      "sourcePage": "https://bioimpedancia.bandcamp.com/album/caminho-de-volta",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bioimpedancia.bandcamp.com/album/caminho-de-volta",
+    "discoveredAt": "2026-09-06T04:49:12.983883+00:00",
+    "importedAt": "2026-09-06T04:53:32.685733+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bioimpedancia.bandcamp.com",
+    "bandcampBandId": "1598346906",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:53:32.685733+00:00"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "fields-we-found-quiet-details-landscape-07",
+  "artist": "fields we found / quiet details",
+  "bandcampUrl": "https://fieldswefound.bandcamp.com/album/landscape-07",
+  "releaseTitle": "landscape 07",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "ambient",
+    "ciat-lonbarde",
+    "downtempo",
+    "drone",
+    "electronic",
+    "field recordings",
+    "synth",
+    "tape",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "part 7 in the landscape series - music from meditation watching the horizon - equilibrium, shifting analogue modular, digital processing, magnetic loops and layers recorded…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://fieldswefound.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:09:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "landscape-07",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "landscape-07-976910694",
+      "title": "landscape 07",
+      "artist": "fields we found / quiet details",
+      "albumTitle": "landscape 07",
+      "albumKey": "landscape-07",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "25:37",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fieldswefound.bandcamp.com/track/landscape-07",
+      "bandcampEmbedTrackId": "976910694",
+      "sourcePage": "https://fieldswefound.bandcamp.com/album/landscape-07",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://fieldswefound.bandcamp.com/album/landscape-07",
+    "discoveredAt": "2026-09-06T04:49:13.000144+00:00",
+    "importedAt": "2026-09-06T05:09:21.040875+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "fieldswefound.bandcamp.com",
+    "bandcampBandId": "49490820",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:09:21.040875+00:00"
+  }
+}

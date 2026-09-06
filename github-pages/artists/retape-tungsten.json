@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "retape-tungsten",
+  "artist": "Retape",
+  "bandcampUrl": "https://retape.bandcamp.com/album/tungsten",
+  "releaseTitle": "Tungsten",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "electronic",
+    "acid",
+    "braindance",
+    "eurorack",
+    "jungle",
+    "modular",
+    "techno",
+    "Norway"
+  ],
+  "primaryLocation": "Norway",
+  "bioShort": "s tr ø m s pe n n i n g m ot s t a n d e ff e k t",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://retape.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:03:15Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tungsten",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tungsten-3500374645",
+      "title": "Tungsten 3",
+      "artist": "Retape",
+      "albumTitle": "Tungsten",
+      "albumKey": "tungsten",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://retape.bandcamp.com/track/tungsten-3",
+      "bandcampEmbedTrackId": "3500374645",
+      "sourcePage": "https://retape.bandcamp.com/album/tungsten",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tungsten-4235291152",
+      "title": "Tungsten 2",
+      "artist": "Retape",
+      "albumTitle": "Tungsten",
+      "albumKey": "tungsten",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://retape.bandcamp.com/track/tungsten-2",
+      "bandcampEmbedTrackId": "4235291152",
+      "sourcePage": "https://retape.bandcamp.com/album/tungsten",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "tungsten-3166911206",
+      "title": "Tungsten 1",
+      "artist": "Retape",
+      "albumTitle": "Tungsten",
+      "albumKey": "tungsten",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://retape.bandcamp.com/track/tungsten-1",
+      "bandcampEmbedTrackId": "3166911206",
+      "sourcePage": "https://retape.bandcamp.com/album/tungsten",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "tungsten-1501407920",
+      "title": "Electricity",
+      "artist": "Retape",
+      "albumTitle": "Tungsten",
+      "albumKey": "tungsten",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:44",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://retape.bandcamp.com/track/electricity",
+      "bandcampEmbedTrackId": "1501407920",
+      "sourcePage": "https://retape.bandcamp.com/album/tungsten",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://retape.bandcamp.com/album/tungsten",
+    "discoveredAt": "2026-09-06T04:49:12.993396+00:00",
+    "importedAt": "2026-09-06T05:03:15.427579+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "retape.bandcamp.com",
+    "bandcampBandId": "3989309648",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:03:15.427579+00:00"
+  }
+}

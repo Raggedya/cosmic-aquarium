@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "hamnd-bortom",
+  "artist": "Hämnd",
+  "bandcampUrl": "https://hamndband.bandcamp.com/album/bortom",
+  "releaseTitle": "Bortom",
+  "releaseDate": "2026-07-17 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "metal",
+    "instrumental",
+    "post-metal",
+    "post-rock",
+    "progressive metal",
+    "Linköping"
+  ],
+  "primaryLocation": "Linköping, Sweden",
+  "bioShort": "Hämnd is a Swedish post-metal band that builds songs that slowly shift shape and hit hard when it matters. Rooted in the Swedish underground scene and shaped by experience from…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hamndband.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:06:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bortom",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bortom-112619210",
+      "title": "Mörk Vind",
+      "artist": "Hämnd",
+      "albumTitle": "Bortom",
+      "albumKey": "bortom",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "9:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hamndband.bandcamp.com/track/m-rk-vind",
+      "bandcampEmbedTrackId": "112619210",
+      "sourcePage": "https://hamndband.bandcamp.com/album/bortom",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bortom-3538110892",
+      "title": "Faller och Förvittrar",
+      "artist": "Hämnd",
+      "albumTitle": "Bortom",
+      "albumKey": "bortom",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "9:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hamndband.bandcamp.com/track/faller-och-f-rvittrar",
+      "bandcampEmbedTrackId": "3538110892",
+      "sourcePage": "https://hamndband.bandcamp.com/album/bortom",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "bortom-2456925972",
+      "title": "Orkan",
+      "artist": "Hämnd",
+      "albumTitle": "Bortom",
+      "albumKey": "bortom",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "12:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hamndband.bandcamp.com/track/orkan",
+      "bandcampEmbedTrackId": "2456925972",
+      "sourcePage": "https://hamndband.bandcamp.com/album/bortom",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "bortom-1543441261",
+      "title": "Bortom",
+      "artist": "Hämnd",
+      "albumTitle": "Bortom",
+      "albumKey": "bortom",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:34",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hamndband.bandcamp.com/track/bortom",
+      "bandcampEmbedTrackId": "1543441261",
+      "sourcePage": "https://hamndband.bandcamp.com/album/bortom",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hamndband.bandcamp.com/album/bortom",
+    "discoveredAt": "2026-09-06T04:49:12.997144+00:00",
+    "importedAt": "2026-09-06T05:06:45.386187+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hamndband.bandcamp.com",
+    "bandcampBandId": "470873227",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:06:45.386187+00:00"
+  }
+}

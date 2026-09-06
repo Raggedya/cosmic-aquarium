@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "tigran-hamasyan-for-gyumri-ep",
+  "artist": "Tigran Hamasyan",
+  "bandcampUrl": "https://tigranhamasyan.bandcamp.com/album/for-gyumri-ep",
+  "releaseTitle": "For Gyumri EP",
+  "releaseDate": "2018-02-16 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "piano",
+    "jazz",
+    "armenian",
+    "folk",
+    "improvisation",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "Pianist/composer Tigran Hamasyan's five-song EP For Gyumri was named in tribute to his hometown of Gyumri, Armenia. \"I believe that our childhood experience shapes who we…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tigranhamasyan.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:53:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "for-gyumri-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "for-gyumri-ep-2778833968",
+      "title": "Aragatz",
+      "artist": "Tigran Hamasyan",
+      "albumTitle": "For Gyumri EP",
+      "albumKey": "for-gyumri-ep",
+      "year": 2018,
+      "trackNumber": 1,
+      "duration": "4:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tigranhamasyan.bandcamp.com/track/aragatz",
+      "bandcampEmbedTrackId": "2778833968",
+      "sourcePage": "https://tigranhamasyan.bandcamp.com/album/for-gyumri-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "for-gyumri-ep-3980095483",
+      "title": "Rays of Light",
+      "artist": "Tigran Hamasyan",
+      "albumTitle": "For Gyumri EP",
+      "albumKey": "for-gyumri-ep",
+      "year": 2018,
+      "trackNumber": 2,
+      "duration": "3:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tigranhamasyan.bandcamp.com/track/rays-of-light",
+      "bandcampEmbedTrackId": "3980095483",
+      "sourcePage": "https://tigranhamasyan.bandcamp.com/album/for-gyumri-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "for-gyumri-ep-3896667627",
+      "title": "The American",
+      "artist": "Tigran Hamasyan",
+      "albumTitle": "For Gyumri EP",
+      "albumKey": "for-gyumri-ep",
+      "year": 2018,
+      "trackNumber": 3,
+      "duration": "6:33",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tigranhamasyan.bandcamp.com/track/the-american",
+      "bandcampEmbedTrackId": "3896667627",
+      "sourcePage": "https://tigranhamasyan.bandcamp.com/album/for-gyumri-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "for-gyumri-ep-751080717",
+      "title": "Self - Potrait",
+      "artist": "Tigran Hamasyan",
+      "albumTitle": "For Gyumri EP",
+      "albumKey": "for-gyumri-ep",
+      "year": 2018,
+      "trackNumber": 4,
+      "duration": "2:47",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tigranhamasyan.bandcamp.com/track/self-potrait",
+      "bandcampEmbedTrackId": "751080717",
+      "sourcePage": "https://tigranhamasyan.bandcamp.com/album/for-gyumri-ep",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "for-gyumri-ep-1403951952",
+      "title": "Revolving - Prayer",
+      "artist": "Tigran Hamasyan",
+      "albumTitle": "For Gyumri EP",
+      "albumKey": "for-gyumri-ep",
+      "year": 2018,
+      "trackNumber": 5,
+      "duration": "12:03",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tigranhamasyan.bandcamp.com/track/revolving-prayer",
+      "bandcampEmbedTrackId": "1403951952",
+      "sourcePage": "https://tigranhamasyan.bandcamp.com/album/for-gyumri-ep",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tigranhamasyan.bandcamp.com/album/for-gyumri-ep",
+    "discoveredAt": "2026-09-06T04:49:12.983883+00:00",
+    "importedAt": "2026-09-06T04:53:02.042557+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tigranhamasyan.bandcamp.com",
+    "bandcampBandId": "1314711233",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:53:02.042557+00:00"
+  }
+}

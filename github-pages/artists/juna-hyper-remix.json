@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "juna-hyper-remix",
+  "artist": "Juna",
+  "bandcampUrl": "https://junaraver.bandcamp.com/album/hyper-remix",
+  "releaseTitle": "Hyper (Remix)",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "drum & bass",
+    "electronic",
+    "breakbeat hardcore",
+    "jungle",
+    "rave",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Juna — breakbeat / drum & bass / breakbeat hardcore music from UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://junaraver.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:55:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hyper-remix",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hyper-remix-1929369438",
+      "title": "Hyper (Remix)",
+      "artist": "Juna",
+      "albumTitle": "Hyper (Remix)",
+      "albumKey": "hyper-remix",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://junaraver.bandcamp.com/track/hyper-remix-2",
+      "bandcampEmbedTrackId": "1929369438",
+      "sourcePage": "https://junaraver.bandcamp.com/album/hyper-remix",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://junaraver.bandcamp.com/album/hyper-remix",
+    "discoveredAt": "2026-09-06T04:49:12.986889+00:00",
+    "importedAt": "2026-09-06T04:55:46.181894+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "junaraver.bandcamp.com",
+    "bandcampBandId": "4016611708",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:55:46.181894+00:00"
+  }
+}

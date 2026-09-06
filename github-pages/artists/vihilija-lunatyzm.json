@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "vihilija-lunatyzm",
+  "artist": "Vihilija",
+  "bandcampUrl": "https://vihilija.bandcamp.com/album/lunatyzm",
+  "releaseTitle": "Lunatyzm",
+  "releaseDate": "2026-07-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "black metal",
+    "blackened death metal",
+    "blackgaze",
+    "metal",
+    "post black metal",
+    "belarusian",
+    "post-punk",
+    "Minsk"
+  ],
+  "primaryLocation": "Minsk, Belarus",
+  "bioShort": "“Lunatyzm” is a special standalone single by the Minsk-based post-black metal / blackgaze band Vihilija, released as an atmospheric prologue to our upcoming conceptual album…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vihilija.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:56:20Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lunatyzm",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lunatyzm-3140298050",
+      "title": "Lunatyzm",
+      "artist": "Vihilija",
+      "albumTitle": "Lunatyzm",
+      "albumKey": "lunatyzm",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vihilija.bandcamp.com/track/lunatyzm",
+      "bandcampEmbedTrackId": "3140298050",
+      "sourcePage": "https://vihilija.bandcamp.com/album/lunatyzm",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lunatyzm-3119637283",
+      "title": "Lunatyzm (Instrumental)",
+      "artist": "Vihilija",
+      "albumTitle": "Lunatyzm",
+      "albumKey": "lunatyzm",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vihilija.bandcamp.com/track/lunatyzm-instrumental",
+      "bandcampEmbedTrackId": "3119637283",
+      "sourcePage": "https://vihilija.bandcamp.com/album/lunatyzm",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://vihilija.bandcamp.com/album/lunatyzm",
+    "discoveredAt": "2026-09-06T04:49:12.986889+00:00",
+    "importedAt": "2026-09-06T04:56:20.951774+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "vihilija.bandcamp.com",
+    "bandcampBandId": "2053349597",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:56:20.951774+00:00"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "izvoria-constant-ep",
+  "artist": "Izvoria",
+  "bandcampUrl": "https://izvoria.bandcamp.com/album/constant-ep",
+  "releaseTitle": "Constant EP",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "electronic",
+    "dark electronic music",
+    "dreamy electronic",
+    "ethereal electronica",
+    "genre-fluid",
+    "İstanbul"
+  ],
+  "primaryLocation": "İstanbul, Türkiye",
+  "bioShort": "Izvoria — ethereal / electronic / dark electronic music music from İstanbul, Türkiye.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://izvoria.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:57:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "constant-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "constant-ep-905134644",
+      "title": "Constant",
+      "artist": "Izvoria",
+      "albumTitle": "Constant EP",
+      "albumKey": "constant-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://izvoria.bandcamp.com/track/constant",
+      "bandcampEmbedTrackId": "905134644",
+      "sourcePage": "https://izvoria.bandcamp.com/album/constant-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "constant-ep-2540446578",
+      "title": "Constant Version B",
+      "artist": "Izvoria",
+      "albumTitle": "Constant EP",
+      "albumKey": "constant-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:05",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://izvoria.bandcamp.com/track/constant-version-b",
+      "bandcampEmbedTrackId": "2540446578",
+      "sourcePage": "https://izvoria.bandcamp.com/album/constant-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "constant-ep-528560632",
+      "title": "Weldroid, Izvoria - Constant (Weldroid Remix)",
+      "artist": "Izvoria",
+      "albumTitle": "Constant EP",
+      "albumKey": "constant-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://izvoria.bandcamp.com/track/constant-weldroid-remix",
+      "bandcampEmbedTrackId": "528560632",
+      "sourcePage": "https://izvoria.bandcamp.com/album/constant-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://izvoria.bandcamp.com/album/constant-ep",
+    "discoveredAt": "2026-09-06T04:49:12.988888+00:00",
+    "importedAt": "2026-09-06T04:57:43.600247+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "izvoria.bandcamp.com",
+    "bandcampBandId": "2030001343",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:57:43.600247+00:00"
+  }
+}

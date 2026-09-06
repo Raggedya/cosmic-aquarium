@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "slug": "kassel-jaeger-fernweh",
+  "artist": "Kassel Jaeger",
+  "bandcampUrl": "https://kasseljaeger.bandcamp.com/album/fernweh-2",
+  "releaseTitle": "Fernweh",
+  "releaseDate": "2025-07-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "musique-concrete",
+    "experimental",
+    "francois bonnet",
+    "grm",
+    "giuseppe ielasi",
+    "jim o' rourke",
+    "kassel jaeger",
+    "massimo toniutti",
+    "maurizio bianchi",
+    "musique concrète",
+    "olivia block",
+    "Paris"
+  ],
+  "primaryLocation": "Paris, France",
+  "bioShort": "Black Truffle is pleased to announce a new edition of Kassel Jaeger’s Fernweh, returning François J. Bonnet’s electroacoustic project to the label five years after the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kasseljaeger.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:09:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "fernweh",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fernweh-4142286422",
+      "title": "Fernweh I",
+      "artist": "Kassel Jaeger",
+      "albumTitle": "Fernweh",
+      "albumKey": "fernweh",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "18:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kasseljaeger.bandcamp.com/track/fernweh-i",
+      "bandcampEmbedTrackId": "4142286422",
+      "sourcePage": "https://kasseljaeger.bandcamp.com/album/fernweh-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "fernweh-840990662",
+      "title": "Fernweh II",
+      "artist": "Kassel Jaeger",
+      "albumTitle": "Fernweh",
+      "albumKey": "fernweh",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "18:26",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kasseljaeger.bandcamp.com/track/fernweh-ii",
+      "bandcampEmbedTrackId": "840990662",
+      "sourcePage": "https://kasseljaeger.bandcamp.com/album/fernweh-2",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kasseljaeger.bandcamp.com/album/fernweh-2",
+    "discoveredAt": "2026-09-06T04:49:13.000144+00:00",
+    "importedAt": "2026-09-06T05:09:34.253436+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kasseljaeger.bandcamp.com",
+    "bandcampBandId": "1678891709",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:09:34.253436+00:00"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "mirror-zone-cycle0-7-eli-hff-djx",
+  "artist": "MIRROR ZONE",
+  "bandcampUrl": "https://mirrorzone.bandcamp.com/album/cycle07-eli-h-ff-djx",
+  "releaseTitle": "cycle0.7 - Eli Høff & Djx",
+  "releaseDate": "2026-08-19 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "drum & bass",
+    "electronic",
+    "experimental",
+    "techno",
+    "ambient",
+    "trance",
+    "Delft"
+  ],
+  "primaryLocation": "Delft, Netherlands",
+  "bioShort": "Eli Høff joins the Cycle Bender Series with two high-velocity techno transmissions that plunge deep into black hole territory. Built around immersive atmospheres, intricate…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mirrorzone.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:03:51Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "cycle0-7-eli-hff-djx",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cycle0-7-eli-hff-djx-349761372",
+      "title": "Eli Høff - Oblation",
+      "artist": "MIRROR ZONE",
+      "albumTitle": "cycle0.7 - Eli Høff & Djx",
+      "albumKey": "cycle0-7-eli-hff-djx",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mirrorzone.bandcamp.com/track/eli-h-ff-oblation",
+      "bandcampEmbedTrackId": "349761372",
+      "sourcePage": "https://mirrorzone.bandcamp.com/album/cycle07-eli-h-ff-djx",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "cycle0-7-eli-hff-djx-3480085086",
+      "title": "Eli Høff - Obseguy",
+      "artist": "MIRROR ZONE",
+      "albumTitle": "cycle0.7 - Eli Høff & Djx",
+      "albumKey": "cycle0-7-eli-hff-djx",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:24",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mirrorzone.bandcamp.com/track/eli-h-ff-obseguy",
+      "bandcampEmbedTrackId": "3480085086",
+      "sourcePage": "https://mirrorzone.bandcamp.com/album/cycle07-eli-h-ff-djx",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "cycle0-7-eli-hff-djx-1105634902",
+      "title": "Djx - Camphori",
+      "artist": "MIRROR ZONE",
+      "albumTitle": "cycle0.7 - Eli Høff & Djx",
+      "albumKey": "cycle0-7-eli-hff-djx",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:12",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mirrorzone.bandcamp.com/track/djx-camphori",
+      "bandcampEmbedTrackId": "1105634902",
+      "sourcePage": "https://mirrorzone.bandcamp.com/album/cycle07-eli-h-ff-djx",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "cycle0-7-eli-hff-djx-2524582316",
+      "title": "Djx - Sigilia",
+      "artist": "MIRROR ZONE",
+      "albumTitle": "cycle0.7 - Eli Høff & Djx",
+      "albumKey": "cycle0-7-eli-hff-djx",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:39",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mirrorzone.bandcamp.com/track/djx-sigilia",
+      "bandcampEmbedTrackId": "2524582316",
+      "sourcePage": "https://mirrorzone.bandcamp.com/album/cycle07-eli-h-ff-djx",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mirrorzone.bandcamp.com/album/cycle07-eli-h-ff-djx",
+    "discoveredAt": "2026-09-06T04:49:12.993898+00:00",
+    "importedAt": "2026-09-06T05:03:51.928455+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mirrorzone.bandcamp.com",
+    "bandcampBandId": "1941654300",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:03:51.928455+00:00"
+  }
+}

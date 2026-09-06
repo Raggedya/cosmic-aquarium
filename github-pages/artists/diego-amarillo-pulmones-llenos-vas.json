@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "diego-amarillo-pulmones-llenos-vas",
+  "artist": "diego amarillo",
+  "bandcampUrl": "https://diegoamarillo.bandcamp.com/album/pulmones-llenos-vas",
+  "releaseTitle": "pulmones llenos / vas",
+  "releaseDate": "2026-05-22 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "alternative",
+    "ambient pop",
+    "collage rock",
+    "neo-psychedelia",
+    "slacker rock",
+    "Nuevo Chimbote"
+  ],
+  "primaryLocation": "Ancash, Peru",
+  "bioShort": "Tres canciones que son, en realidad, el mismo escape. \"Pulmones Llenos / Vas\" captura ese instante exacto en el que todo parece normal pero la cabeza ya está en otra…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://diegoamarillo.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:50:23Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pulmones-llenos-vas",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pulmones-llenos-vas-2306221022",
+      "title": "pulmones llenos",
+      "artist": "diego amarillo",
+      "albumTitle": "pulmones llenos / vas",
+      "albumKey": "pulmones-llenos-vas",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:33",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://diegoamarillo.bandcamp.com/track/pulmones-llenos",
+      "bandcampEmbedTrackId": "2306221022",
+      "sourcePage": "https://diegoamarillo.bandcamp.com/album/pulmones-llenos-vas",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "pulmones-llenos-vas-3950887839",
+      "title": "vas #1",
+      "artist": "diego amarillo",
+      "albumTitle": "pulmones llenos / vas",
+      "albumKey": "pulmones-llenos-vas",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:18",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://diegoamarillo.bandcamp.com/track/vas-1",
+      "bandcampEmbedTrackId": "3950887839",
+      "sourcePage": "https://diegoamarillo.bandcamp.com/album/pulmones-llenos-vas",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "pulmones-llenos-vas-942066985",
+      "title": "mar de amor",
+      "artist": "diego amarillo",
+      "albumTitle": "pulmones llenos / vas",
+      "albumKey": "pulmones-llenos-vas",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:42",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://diegoamarillo.bandcamp.com/track/mar-de-amor",
+      "bandcampEmbedTrackId": "942066985",
+      "sourcePage": "https://diegoamarillo.bandcamp.com/album/pulmones-llenos-vas",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "pulmones-llenos-vas-2072871156",
+      "title": "germenes (demo)",
+      "artist": "diego amarillo",
+      "albumTitle": "pulmones llenos / vas",
+      "albumKey": "pulmones-llenos-vas",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:17",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://diegoamarillo.bandcamp.com/track/germenes-demo",
+      "bandcampEmbedTrackId": "2072871156",
+      "sourcePage": "https://diegoamarillo.bandcamp.com/album/pulmones-llenos-vas",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://diegoamarillo.bandcamp.com/album/pulmones-llenos-vas",
+    "discoveredAt": "2026-09-06T04:47:19.792163+00:00",
+    "importedAt": "2026-09-06T04:50:23.717663+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "diegoamarillo.bandcamp.com",
+    "bandcampBandId": "3690184452",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:50:23.717663+00:00"
+  }
+}

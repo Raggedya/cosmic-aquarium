@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "deep-shadows-ethereal",
+  "artist": "deep shadows",
+  "bandcampUrl": "https://deepshadows1.bandcamp.com/album/ethereal",
+  "releaseTitle": "ethereal",
+  "releaseDate": "2026-05-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "alternative",
+    "ambient music",
+    "ambient pop",
+    "dream pop",
+    "dreamwave",
+    "Tijuana"
+  ],
+  "primaryLocation": "Tijuana, Mexico",
+  "bioShort": "deep shadows — ambient-pop / alternative / ambient music music from Tijuana, Mexico.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://deepshadows1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:04:32Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ethereal",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ethereal-121953391",
+      "title": "ethereal",
+      "artist": "deep shadows",
+      "albumTitle": "ethereal",
+      "albumKey": "ethereal",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://deepshadows1.bandcamp.com/track/ethereal",
+      "bandcampEmbedTrackId": "121953391",
+      "sourcePage": "https://deepshadows1.bandcamp.com/album/ethereal",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://deepshadows1.bandcamp.com/album/ethereal",
+    "discoveredAt": "2026-09-06T04:49:12.995139+00:00",
+    "importedAt": "2026-09-06T05:04:32.400230+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "deepshadows1.bandcamp.com",
+    "bandcampBandId": "4214222246",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:04:32.400230+00:00"
+  }
+}

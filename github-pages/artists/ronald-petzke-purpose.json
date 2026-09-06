@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "ronald-petzke-purpose",
+  "artist": "Ronald Petzke",
+  "bandcampUrl": "https://ronaldpetzke.bandcamp.com/album/purpose",
+  "releaseTitle": "purpose",
+  "releaseDate": "2026-08-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "ambient",
+    "ambient-drone",
+    "bass guitar",
+    "drone",
+    "post-rock",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "Ronald Petzke — slowcore / ambient / ambient-drone music from Chicago, Illinois.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ronaldpetzke.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:57:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "purpose",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "purpose-2142408817",
+      "title": "of",
+      "artist": "Ronald Petzke",
+      "albumTitle": "purpose",
+      "albumKey": "purpose",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "20:29",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ronaldpetzke.bandcamp.com/track/of",
+      "bandcampEmbedTrackId": "2142408817",
+      "sourcePage": "https://ronaldpetzke.bandcamp.com/album/purpose",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ronaldpetzke.bandcamp.com/album/purpose",
+    "discoveredAt": "2026-09-06T04:49:12.987889+00:00",
+    "importedAt": "2026-09-06T04:57:02.323674+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ronaldpetzke.bandcamp.com",
+    "bandcampBandId": "1972534100",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:57:02.323674+00:00"
+  }
+}

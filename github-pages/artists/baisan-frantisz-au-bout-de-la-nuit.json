@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "baisan-frantisz-au-bout-de-la-nuit",
+  "artist": "Baisan & Frantisz",
+  "bandcampUrl": "https://baisanfrantisz.bandcamp.com/album/au-bout-de-la-nuit",
+  "releaseTitle": "Au bout de la nuit",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "darkwave",
+    "edm",
+    "electronic",
+    "experimental",
+    "french house",
+    "synthpop"
+  ],
+  "primaryLocation": null,
+  "bioShort": "STREAMINGS - https://push.fm/fl/jwgba7bm Au bout de la nuit чорнае мора балтыйскае мора з рота ў рот цячэ сліной ты і я міравы акіян ты і я кіпарысавы рай чорнае мора…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://baisanfrantisz.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:05:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "au-bout-de-la-nuit",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "au-bout-de-la-nuit-158502968",
+      "title": "Au bout de la nuit",
+      "artist": "Baisan & Frantisz",
+      "albumTitle": "Au bout de la nuit",
+      "albumKey": "au-bout-de-la-nuit",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baisanfrantisz.bandcamp.com/track/au-bout-de-la-nuit-2",
+      "bandcampEmbedTrackId": "158502968",
+      "sourcePage": "https://baisanfrantisz.bandcamp.com/album/au-bout-de-la-nuit",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://baisanfrantisz.bandcamp.com/album/au-bout-de-la-nuit",
+    "discoveredAt": "2026-09-06T04:49:12.996144+00:00",
+    "importedAt": "2026-09-06T05:05:49.772235+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "baisanfrantisz.bandcamp.com",
+    "bandcampBandId": "186389095",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:05:49.772235+00:00"
+  }
+}

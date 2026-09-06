@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "seasurfer-the-noise-is-ours",
+  "artist": "SEASURFER",
+  "bandcampUrl": "https://seasurfer.bandcamp.com/album/the-noise-is-ours",
+  "releaseTitle": "The Noise is ours",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "alternative",
+    "dream pop shoegaze",
+    "dreampunk",
+    "post-punk",
+    "shoegaze",
+    "Hamburg"
+  ],
+  "primaryLocation": "Hamburg, Germany",
+  "bioShort": "Following the release of our post-punk EP “Angels” in June, we are walkin`on with a next one, released in time to our live shows at two Shoegaze festivals in Hamburg and…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://seasurfer.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:09:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-noise-is-ours",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-noise-is-ours-1318907941",
+      "title": "Flurry Glory",
+      "artist": "SEASURFER",
+      "albumTitle": "The Noise is ours",
+      "albumKey": "the-noise-is-ours",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://seasurfer.bandcamp.com/track/flurry-glory",
+      "bandcampEmbedTrackId": "1318907941",
+      "sourcePage": "https://seasurfer.bandcamp.com/album/the-noise-is-ours",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-noise-is-ours-1605987813",
+      "title": "Into the noise",
+      "artist": "SEASURFER",
+      "albumTitle": "The Noise is ours",
+      "albumKey": "the-noise-is-ours",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://seasurfer.bandcamp.com/track/into-the-noise",
+      "bandcampEmbedTrackId": "1605987813",
+      "sourcePage": "https://seasurfer.bandcamp.com/album/the-noise-is-ours",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-noise-is-ours-2440619018",
+      "title": "Ring my bells",
+      "artist": "SEASURFER",
+      "albumTitle": "The Noise is ours",
+      "albumKey": "the-noise-is-ours",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:09",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://seasurfer.bandcamp.com/track/ring-my-bells",
+      "bandcampEmbedTrackId": "2440619018",
+      "sourcePage": "https://seasurfer.bandcamp.com/album/the-noise-is-ours",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-noise-is-ours-197838392",
+      "title": "Passion",
+      "artist": "SEASURFER",
+      "albumTitle": "The Noise is ours",
+      "albumKey": "the-noise-is-ours",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:15",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://seasurfer.bandcamp.com/track/passion",
+      "bandcampEmbedTrackId": "197838392",
+      "sourcePage": "https://seasurfer.bandcamp.com/album/the-noise-is-ours",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://seasurfer.bandcamp.com/album/the-noise-is-ours",
+    "discoveredAt": "2026-09-06T04:49:13.000144+00:00",
+    "importedAt": "2026-09-06T05:09:28.643911+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "seasurfer.bandcamp.com",
+    "bandcampBandId": "3356269879",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:09:28.643911+00:00"
+  }
+}

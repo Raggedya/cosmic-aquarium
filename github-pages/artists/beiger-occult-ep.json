@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "beiger-occult-ep",
+  "artist": "Beiger",
+  "bandcampUrl": "https://beiger.bandcamp.com/album/occult-ep",
+  "releaseTitle": "Occult Ep",
+  "releaseDate": "2023-07-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "minimal",
+    "rominimal",
+    "house music",
+    "techno",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "Released on The Lab Records Bucharest, Romania 2023",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://beiger.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:51:54Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "occult-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "occult-ep-1231714176",
+      "title": "OC",
+      "artist": "Beiger",
+      "albumTitle": "Occult Ep",
+      "albumKey": "occult-ep",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "7:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beiger.bandcamp.com/track/oc",
+      "bandcampEmbedTrackId": "1231714176",
+      "sourcePage": "https://beiger.bandcamp.com/album/occult-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "occult-ep-604654351",
+      "title": "CU",
+      "artist": "Beiger",
+      "albumTitle": "Occult Ep",
+      "albumKey": "occult-ep",
+      "year": 2023,
+      "trackNumber": 2,
+      "duration": "7:27",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beiger.bandcamp.com/track/cu",
+      "bandcampEmbedTrackId": "604654351",
+      "sourcePage": "https://beiger.bandcamp.com/album/occult-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "occult-ep-2178045528",
+      "title": "LT",
+      "artist": "Beiger",
+      "albumTitle": "Occult Ep",
+      "albumKey": "occult-ep",
+      "year": 2023,
+      "trackNumber": 3,
+      "duration": "8:05",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beiger.bandcamp.com/track/lt",
+      "bandcampEmbedTrackId": "2178045528",
+      "sourcePage": "https://beiger.bandcamp.com/album/occult-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://beiger.bandcamp.com/album/occult-ep",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:51:54.814077+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "beiger.bandcamp.com",
+    "bandcampBandId": "1103438912",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:51:54.814077+00:00"
+  }
+}

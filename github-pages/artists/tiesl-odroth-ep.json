@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "tiesl-odroth-ep",
+  "artist": "Tiesl",
+  "bandcampUrl": "https://tiesl.bandcamp.com/album/odroth-ep",
+  "releaseTitle": "Odroth EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "minimal techno",
+    "romanian techno",
+    "ambient",
+    "dark ambient",
+    "Manchester"
+  ],
+  "primaryLocation": "Manchester, UK",
+  "bioShort": "Free release EP",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tiesl.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:05:29Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "odroth-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "odroth-ep-2074759565",
+      "title": "Odroth",
+      "artist": "Tiesl",
+      "albumTitle": "Odroth EP",
+      "albumKey": "odroth-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tiesl.bandcamp.com/track/odroth",
+      "bandcampEmbedTrackId": "2074759565",
+      "sourcePage": "https://tiesl.bandcamp.com/album/odroth-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "odroth-ep-2863072501",
+      "title": "Uskar",
+      "artist": "Tiesl",
+      "albumTitle": "Odroth EP",
+      "albumKey": "odroth-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "11:03",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tiesl.bandcamp.com/track/uskar",
+      "bandcampEmbedTrackId": "2863072501",
+      "sourcePage": "https://tiesl.bandcamp.com/album/odroth-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "odroth-ep-466112508",
+      "title": "Veyra",
+      "artist": "Tiesl",
+      "albumTitle": "Odroth EP",
+      "albumKey": "odroth-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:17",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tiesl.bandcamp.com/track/veyra",
+      "bandcampEmbedTrackId": "466112508",
+      "sourcePage": "https://tiesl.bandcamp.com/album/odroth-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tiesl.bandcamp.com/album/odroth-ep",
+    "discoveredAt": "2026-09-06T04:49:12.996144+00:00",
+    "importedAt": "2026-09-06T05:05:29.913008+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tiesl.bandcamp.com",
+    "bandcampBandId": "2070077643",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:05:29.913008+00:00"
+  }
+}

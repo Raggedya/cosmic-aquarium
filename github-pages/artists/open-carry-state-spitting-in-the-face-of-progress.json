@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "open-carry-state-spitting-in-the-face-of-progress",
+  "artist": "open carry state",
+  "bandcampUrl": "https://opencarrystate.bandcamp.com/album/spitting-in-the-face-of-progress-2",
+  "releaseTitle": "spitting in the face of progress",
+  "releaseDate": "2026-05-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "punk",
+    "emo",
+    "emocore",
+    "emoviolence",
+    "mathcore",
+    "noise rock",
+    "screamo",
+    "skramz",
+    "Atlanta"
+  ],
+  "primaryLocation": "Atlanta, Georgia",
+  "bioShort": "open carry state — post-hardcore / punk / emo music from Atlanta, Georgia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://opencarrystate.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:56:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "spitting-in-the-face-of-progress",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "spitting-in-the-face-of-progress-1910340962",
+      "title": "chasm",
+      "artist": "open carry state",
+      "albumTitle": "spitting in the face of progress",
+      "albumKey": "spitting-in-the-face-of-progress",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:37",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://opencarrystate.bandcamp.com/track/chasm-2",
+      "bandcampEmbedTrackId": "1910340962",
+      "sourcePage": "https://opencarrystate.bandcamp.com/album/spitting-in-the-face-of-progress-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "spitting-in-the-face-of-progress-2716683797",
+      "title": "my mistake",
+      "artist": "open carry state",
+      "albumTitle": "spitting in the face of progress",
+      "albumKey": "spitting-in-the-face-of-progress",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://opencarrystate.bandcamp.com/track/my-mistake-2",
+      "bandcampEmbedTrackId": "2716683797",
+      "sourcePage": "https://opencarrystate.bandcamp.com/album/spitting-in-the-face-of-progress-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "spitting-in-the-face-of-progress-3126980427",
+      "title": "humiliation ritual",
+      "artist": "open carry state",
+      "albumTitle": "spitting in the face of progress",
+      "albumKey": "spitting-in-the-face-of-progress",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:09",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://opencarrystate.bandcamp.com/track/humiliation-ritual",
+      "bandcampEmbedTrackId": "3126980427",
+      "sourcePage": "https://opencarrystate.bandcamp.com/album/spitting-in-the-face-of-progress-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "spitting-in-the-face-of-progress-2679003466",
+      "title": "building a nest out of garbage",
+      "artist": "open carry state",
+      "albumTitle": "spitting in the face of progress",
+      "albumKey": "spitting-in-the-face-of-progress",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:35",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://opencarrystate.bandcamp.com/track/building-a-nest-out-of-garbage",
+      "bandcampEmbedTrackId": "2679003466",
+      "sourcePage": "https://opencarrystate.bandcamp.com/album/spitting-in-the-face-of-progress-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://opencarrystate.bandcamp.com/album/spitting-in-the-face-of-progress-2",
+    "discoveredAt": "2026-09-06T04:49:12.987889+00:00",
+    "importedAt": "2026-09-06T04:56:40.583658+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "opencarrystate.bandcamp.com",
+    "bandcampBandId": "1258436675",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:56:40.583658+00:00"
+  }
+}

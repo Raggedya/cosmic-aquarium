@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "coffret-de-bijoux-qunaiqu-nejautse",
+  "artist": "coffret de bijoux",
+  "bandcampUrl": "https://coffretdebijoux.bandcamp.com/album/qunaiq-n-jauts",
+  "releaseTitle": "qunaiqû nèjautsè",
+  "releaseDate": "2025-03-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "atmospheric black metal",
+    "metal",
+    "bitpop",
+    "black metal",
+    "pop",
+    "Québec City"
+  ],
+  "primaryLocation": "Québec City, Québec",
+  "bioShort": "full length",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://coffretdebijoux.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:08:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "qunaiqu-nejautse",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "qunaiqu-nejautse-1535775841",
+      "title": "ssaytt nanst jait souq ssa jattjays tait qai vûtt qiqjaysjouva qunaiqû, ssètt tais souq viqsès naytt sût viqsat jè vaysjautt",
+      "artist": "coffret de bijoux",
+      "albumTitle": "qunaiqû nèjautsè",
+      "albumKey": "qunaiqu-nejautse",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "12:18",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coffretdebijoux.bandcamp.com/track/ssaytt-nanst-jait-souq-ssa-jattjays-tait-qai-v-tt-qiqjaysjouva-qunaiq-ss-tt-tais-souq-viqs-s-naytt-s-t-viqsat-j-vaysjautt",
+      "bandcampEmbedTrackId": "1535775841",
+      "sourcePage": "https://coffretdebijoux.bandcamp.com/album/qunaiq-n-jauts",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "qunaiqu-nejautse-854874295",
+      "title": "vi naittjaissoutvèq touqou",
+      "artist": "coffret de bijoux",
+      "albumTitle": "qunaiqû nèjautsè",
+      "albumKey": "qunaiqu-nejautse",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "12:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coffretdebijoux.bandcamp.com/track/vi-naittjaissoutv-q-touqou",
+      "bandcampEmbedTrackId": "854874295",
+      "sourcePage": "https://coffretdebijoux.bandcamp.com/album/qunaiq-n-jauts",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "qunaiqu-nejautse-1146884970",
+      "title": "sèqvaiquqnûsoutssayq sûnûq qayssi",
+      "artist": "coffret de bijoux",
+      "albumTitle": "qunaiqû nèjautsè",
+      "albumKey": "qunaiqu-nejautse",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "12:12",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coffretdebijoux.bandcamp.com/track/s-qvaiquqn-soutssayq-s-n-q-qayssi",
+      "bandcampEmbedTrackId": "1146884970",
+      "sourcePage": "https://coffretdebijoux.bandcamp.com/album/qunaiq-n-jauts",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://coffretdebijoux.bandcamp.com/album/qunaiq-n-jauts",
+    "discoveredAt": "2026-09-06T04:49:13.000144+00:00",
+    "importedAt": "2026-09-06T05:08:55.550736+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "coffretdebijoux.bandcamp.com",
+    "bandcampBandId": "3769087773",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:08:55.550736+00:00"
+  }
+}

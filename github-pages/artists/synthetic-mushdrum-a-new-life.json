@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "synthetic-mushdrum-a-new-life",
+  "artist": "Synthetic Mushdrum",
+  "bandcampUrl": "https://syntheticmushdrum.bandcamp.com/album/a-new-life",
+  "releaseTitle": "A New Life",
+  "releaseDate": "2026-07-20 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "alternative",
+    "darkwave",
+    "electro wave",
+    "minimal synth",
+    "Italy"
+  ],
+  "primaryLocation": "Italy",
+  "bioShort": "Synthetic Mushdrum — coldwave / alternative / darkwave music from Italy.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://syntheticmushdrum.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:52:41Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-new-life",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-new-life-974068872",
+      "title": "A New Life",
+      "artist": "Synthetic Mushdrum",
+      "albumTitle": "A New Life",
+      "albumKey": "a-new-life",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:37",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://syntheticmushdrum.bandcamp.com/track/a-new-life",
+      "bandcampEmbedTrackId": "974068872",
+      "sourcePage": "https://syntheticmushdrum.bandcamp.com/album/a-new-life",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://syntheticmushdrum.bandcamp.com/album/a-new-life",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:52:41.814164+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "syntheticmushdrum.bandcamp.com",
+    "bandcampBandId": "1331693682",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:52:41.814164+00:00"
+  }
+}

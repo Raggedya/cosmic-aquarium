@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "slug": "nekra-is-it-really-living",
+  "artist": "NEKRA",
+  "bandcampUrl": "https://nekra.bandcamp.com/album/is-it-really-living",
+  "releaseTitle": "Is It Really Living?",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "nwobhc",
+    "punk",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Is It Really Living? EP out on vinyl via La Vida Es Un Mus on August 2026 https://lavidaesunmus.bandcamp.com/album/is-it-really-living The international pit sisters pull up to…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nekra.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:59:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "is-it-really-living",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "is-it-really-living-2929270503",
+      "title": "Intro/Bad Bitch Stomp",
+      "artist": "NEKRA",
+      "albumTitle": "Is It Really Living?",
+      "albumKey": "is-it-really-living",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nekra.bandcamp.com/track/intro-bad-bitch-stomp",
+      "bandcampEmbedTrackId": "2929270503",
+      "sourcePage": "https://nekra.bandcamp.com/album/is-it-really-living",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "is-it-really-living-4056771332",
+      "title": "Venas",
+      "artist": "NEKRA",
+      "albumTitle": "Is It Really Living?",
+      "albumKey": "is-it-really-living",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nekra.bandcamp.com/track/venas",
+      "bandcampEmbedTrackId": "4056771332",
+      "sourcePage": "https://nekra.bandcamp.com/album/is-it-really-living",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "is-it-really-living-3050369346",
+      "title": "Futuro Ideal",
+      "artist": "NEKRA",
+      "albumTitle": "Is It Really Living?",
+      "albumKey": "is-it-really-living",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:51",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nekra.bandcamp.com/track/futuro-ideal",
+      "bandcampEmbedTrackId": "3050369346",
+      "sourcePage": "https://nekra.bandcamp.com/album/is-it-really-living",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "is-it-really-living-2788014435",
+      "title": "All We Got Is Us",
+      "artist": "NEKRA",
+      "albumTitle": "Is It Really Living?",
+      "albumKey": "is-it-really-living",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:35",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nekra.bandcamp.com/track/all-we-got-is-us",
+      "bandcampEmbedTrackId": "2788014435",
+      "sourcePage": "https://nekra.bandcamp.com/album/is-it-really-living",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "is-it-really-living-4265393684",
+      "title": "Risk Factor",
+      "artist": "NEKRA",
+      "albumTitle": "Is It Really Living?",
+      "albumKey": "is-it-really-living",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "2:41",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nekra.bandcamp.com/track/risk-factor",
+      "bandcampEmbedTrackId": "4265393684",
+      "sourcePage": "https://nekra.bandcamp.com/album/is-it-really-living",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nekra.bandcamp.com/album/is-it-really-living",
+    "discoveredAt": "2026-09-06T04:49:12.989888+00:00",
+    "importedAt": "2026-09-06T04:59:18.355995+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nekra.bandcamp.com",
+    "bandcampBandId": "3320234367",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:59:18.355995+00:00"
+  }
+}

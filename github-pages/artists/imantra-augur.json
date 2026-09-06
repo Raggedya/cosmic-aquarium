@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "imantra-augur",
+  "artist": "IMANTRA",
+  "bandcampUrl": "https://imantra.bandcamp.com/album/augur",
+  "releaseTitle": "AUGUR",
+  "releaseDate": "2026-07-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "stoner metal",
+    "stoner rock",
+    "Temuco"
+  ],
+  "primaryLocation": "Temuco, Chile",
+  "bioShort": "IMANTRA — stoner-metal / metal / stoner metal music from Temuco, Chile.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://imantra.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:05:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "augur",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "augur-2236156527",
+      "title": "IMANTRA",
+      "artist": "IMANTRA",
+      "albumTitle": "AUGUR",
+      "albumKey": "augur",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://imantra.bandcamp.com/track/imantra",
+      "bandcampEmbedTrackId": "2236156527",
+      "sourcePage": "https://imantra.bandcamp.com/album/augur",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "augur-3085311418",
+      "title": "SAHARA",
+      "artist": "IMANTRA",
+      "albumTitle": "AUGUR",
+      "albumKey": "augur",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:21",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://imantra.bandcamp.com/track/sahara",
+      "bandcampEmbedTrackId": "3085311418",
+      "sourcePage": "https://imantra.bandcamp.com/album/augur",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "augur-3452310850",
+      "title": "MESOPOTAMIA",
+      "artist": "IMANTRA",
+      "albumTitle": "AUGUR",
+      "albumKey": "augur",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:59",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://imantra.bandcamp.com/track/mesopotamia",
+      "bandcampEmbedTrackId": "3452310850",
+      "sourcePage": "https://imantra.bandcamp.com/album/augur",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "augur-704889754",
+      "title": "FARADAY",
+      "artist": "IMANTRA",
+      "albumTitle": "AUGUR",
+      "albumKey": "augur",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:12",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://imantra.bandcamp.com/track/faraday",
+      "bandcampEmbedTrackId": "704889754",
+      "sourcePage": "https://imantra.bandcamp.com/album/augur",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://imantra.bandcamp.com/album/augur",
+    "discoveredAt": "2026-09-06T04:49:12.996144+00:00",
+    "importedAt": "2026-09-06T05:05:09.557941+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "imantra.bandcamp.com",
+    "bandcampBandId": "732689118",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:05:09.557941+00:00"
+  }
+}

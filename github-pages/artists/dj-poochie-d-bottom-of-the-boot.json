@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "dj-poochie-d-bottom-of-the-boot",
+  "artist": "DJ Poochie D.",
+  "bandcampUrl": "https://djpoochied.bandcamp.com/album/bottom-of-the-boot",
+  "releaseTitle": "Bottom Of The Boot",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "acid",
+    "booty bass",
+    "breaks",
+    "electro",
+    "electronic",
+    "miami bass",
+    "Louisiana"
+  ],
+  "primaryLocation": "Louisiana",
+  "bioShort": "DJ Poochie D. — breakbeat / acid / booty bass music from Louisiana.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://djpoochied.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:02:36Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bottom-of-the-boot",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bottom-of-the-boot-1574997757",
+      "title": "Bottom Of The Boot ( Male Vocals)",
+      "artist": "DJ Poochie D.",
+      "albumTitle": "Bottom Of The Boot",
+      "albumKey": "bottom-of-the-boot",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:45",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://djpoochied.bandcamp.com/track/bottom-of-the-boot-male-vocals",
+      "bandcampEmbedTrackId": "1574997757",
+      "sourcePage": "https://djpoochied.bandcamp.com/album/bottom-of-the-boot",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bottom-of-the-boot-2669232221",
+      "title": "Bottom Of The Boot ( Female Vocals)",
+      "artist": "DJ Poochie D.",
+      "albumTitle": "Bottom Of The Boot",
+      "albumKey": "bottom-of-the-boot",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://djpoochied.bandcamp.com/track/bottom-of-the-boot-female-vocals",
+      "bandcampEmbedTrackId": "2669232221",
+      "sourcePage": "https://djpoochied.bandcamp.com/album/bottom-of-the-boot",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://djpoochied.bandcamp.com/album/bottom-of-the-boot",
+    "discoveredAt": "2026-09-06T04:49:12.992391+00:00",
+    "importedAt": "2026-09-06T05:02:36.852133+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "djpoochied.bandcamp.com",
+    "bandcampBandId": "3786057794",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:02:36.852133+00:00"
+  }
+}

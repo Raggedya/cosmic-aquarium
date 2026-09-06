@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "darkest-of-winter-the-lake",
+  "artist": "Darkest of Winter",
+  "bandcampUrl": "https://darkestofwinter.bandcamp.com/album/the-lake",
+  "releaseTitle": "The Lake",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "rock",
+    "ambient",
+    "post-djent",
+    "post-rock",
+    "Baltimore"
+  ],
+  "primaryLocation": "Baltimore, Maryland",
+  "bioShort": "Darkest of Winter — post-metal / rock / ambient music from Baltimore, Maryland.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://darkestofwinter.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:52:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-lake",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-lake-388172115",
+      "title": "The Lake",
+      "artist": "Darkest of Winter",
+      "albumTitle": "The Lake",
+      "albumKey": "the-lake",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://darkestofwinter.bandcamp.com/track/the-lake",
+      "bandcampEmbedTrackId": "388172115",
+      "sourcePage": "https://darkestofwinter.bandcamp.com/album/the-lake",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://darkestofwinter.bandcamp.com/album/the-lake",
+    "discoveredAt": "2026-09-06T04:49:12.982380+00:00",
+    "importedAt": "2026-09-06T04:52:49.172922+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "darkestofwinter.bandcamp.com",
+    "bandcampBandId": "1516250317",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:52:49.172922+00:00"
+  }
+}

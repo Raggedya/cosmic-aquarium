@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-end-of-melancholy-halo",
+  "artist": "The End of Melancholy",
+  "bandcampUrl": "https://theendofmelancholy.bandcamp.com/album/halo",
+  "releaseTitle": "Halo",
+  "releaseDate": "2026-08-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "alternative metal",
+    "female fronted metal",
+    "gothic metal",
+    "melodic metal",
+    "metal",
+    "Georgia"
+  ],
+  "primaryLocation": "Georgia",
+  "bioShort": "Brand new single",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://theendofmelancholy.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:54:54Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "halo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "halo-1977551171",
+      "title": "Halo",
+      "artist": "The End of Melancholy",
+      "albumTitle": "Halo",
+      "albumKey": "halo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://theendofmelancholy.bandcamp.com/track/halo",
+      "bandcampEmbedTrackId": "1977551171",
+      "sourcePage": "https://theendofmelancholy.bandcamp.com/album/halo",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://theendofmelancholy.bandcamp.com/album/halo",
+    "discoveredAt": "2026-09-06T04:49:12.985888+00:00",
+    "importedAt": "2026-09-06T04:54:54.287699+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "theendofmelancholy.bandcamp.com",
+    "bandcampBandId": "2494844241",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:54:54.287699+00:00"
+  }
+}

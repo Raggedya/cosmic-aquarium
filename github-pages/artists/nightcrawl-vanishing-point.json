@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "nightcrawl-vanishing-point",
+  "artist": "NightCrawl",
+  "bandcampUrl": "https://nightcrawlmusic.bandcamp.com/album/vanishing-point",
+  "releaseTitle": "Vanishing Point",
+  "releaseDate": "2026-03-06 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "rock",
+    "dark post-punk",
+    "dark synthpop",
+    "post-punk",
+    "Dublin"
+  ],
+  "primaryLocation": "Dublin, Ireland",
+  "bioShort": "NightCrawl — darkwave / rock / dark post-punk music from Dublin, Ireland.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://nightcrawlmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:04:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "vanishing-point",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "vanishing-point-1328047432",
+      "title": "Vanishing Point",
+      "artist": "NightCrawl",
+      "albumTitle": "Vanishing Point",
+      "albumKey": "vanishing-point",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:52",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nightcrawlmusic.bandcamp.com/track/vanishing-point",
+      "bandcampEmbedTrackId": "1328047432",
+      "sourcePage": "https://nightcrawlmusic.bandcamp.com/album/vanishing-point",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "vanishing-point-3609209915",
+      "title": "107 Degrees",
+      "artist": "NightCrawl",
+      "albumTitle": "Vanishing Point",
+      "albumKey": "vanishing-point",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nightcrawlmusic.bandcamp.com/track/107-degrees",
+      "bandcampEmbedTrackId": "3609209915",
+      "sourcePage": "https://nightcrawlmusic.bandcamp.com/album/vanishing-point",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "vanishing-point-2598413085",
+      "title": "Outer Zone",
+      "artist": "NightCrawl",
+      "albumTitle": "Vanishing Point",
+      "albumKey": "vanishing-point",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:54",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nightcrawlmusic.bandcamp.com/track/outer-zone",
+      "bandcampEmbedTrackId": "2598413085",
+      "sourcePage": "https://nightcrawlmusic.bandcamp.com/album/vanishing-point",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "vanishing-point-2666672158",
+      "title": "The Blood",
+      "artist": "NightCrawl",
+      "albumTitle": "Vanishing Point",
+      "albumKey": "vanishing-point",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:46",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nightcrawlmusic.bandcamp.com/track/the-blood",
+      "bandcampEmbedTrackId": "2666672158",
+      "sourcePage": "https://nightcrawlmusic.bandcamp.com/album/vanishing-point",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "vanishing-point-2627494586",
+      "title": "Edge of the beyond",
+      "artist": "NightCrawl",
+      "albumTitle": "Vanishing Point",
+      "albumKey": "vanishing-point",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "2:36",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://nightcrawlmusic.bandcamp.com/track/edge-of-the-beyond",
+      "bandcampEmbedTrackId": "2627494586",
+      "sourcePage": "https://nightcrawlmusic.bandcamp.com/album/vanishing-point",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://nightcrawlmusic.bandcamp.com/album/vanishing-point",
+    "discoveredAt": "2026-09-06T04:49:12.996144+00:00",
+    "importedAt": "2026-09-06T05:04:52.510979+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "nightcrawlmusic.bandcamp.com",
+    "bandcampBandId": "1866719493",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:04:52.510979+00:00"
+  }
+}

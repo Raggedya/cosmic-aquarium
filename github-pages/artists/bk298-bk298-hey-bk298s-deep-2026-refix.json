@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "slug": "bk298-bk298-hey-bk298s-deep-2026-refix",
+  "artist": "BK298",
+  "bandcampUrl": "https://bk298.bandcamp.com/album/bk298-hey-bk298-s-deep-2026-refix",
+  "releaseTitle": "BK298 - Hey (BK298’s Deep 2026 Refix)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "speed garage",
+    "uk garage",
+    "Birmingham"
+  ],
+  "primaryLocation": "Birmingham, UK",
+  "bioShort": "BK298 — house / speed garage / uk garage music from Birmingham, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bk298.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:03:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bk298-hey-bk298s-deep-2026-refix",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bk298-hey-bk298s-deep-2026-refix-3796035198",
+      "title": "Hey (BK298’s Deep 2026 Refix) clip",
+      "artist": "BK298",
+      "albumTitle": "BK298 - Hey (BK298’s Deep 2026 Refix)",
+      "albumKey": "bk298-hey-bk298s-deep-2026-refix",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bk298.bandcamp.com/track/hey-bk298-s-deep-2026-refix-clip",
+      "bandcampEmbedTrackId": "3796035198",
+      "sourcePage": "https://bk298.bandcamp.com/album/bk298-hey-bk298-s-deep-2026-refix",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bk298.bandcamp.com/album/bk298-hey-bk298-s-deep-2026-refix",
+    "discoveredAt": "2026-09-06T04:49:12.993396+00:00",
+    "importedAt": "2026-09-06T05:03:17.710969+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bk298.bandcamp.com",
+    "bandcampBandId": "2199919937",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:03:17.710969+00:00"
+  }
+}

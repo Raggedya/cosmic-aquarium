@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "slug": "adam-harmless-july",
+  "artist": "adam harmless",
+  "bandcampUrl": "https://adamharmless.bandcamp.com/album/july-2",
+  "releaseTitle": "July",
+  "releaseDate": "2026-07-12 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "experimental",
+    "noise",
+    "Gadsden"
+  ],
+  "primaryLocation": "Gadsden, Alabama",
+  "bioShort": "I felt like recording a 4-song EP this week, so I did.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://adamharmless.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:01:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "july",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "july-2931755948",
+      "title": "Sunrise at Sunset",
+      "artist": "adam harmless",
+      "albumTitle": "July",
+      "albumKey": "july",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://adamharmless.bandcamp.com/track/sunrise-at-sunset-2",
+      "bandcampEmbedTrackId": "2931755948",
+      "sourcePage": "https://adamharmless.bandcamp.com/album/july-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "july-3247128065",
+      "title": "The Dance",
+      "artist": "adam harmless",
+      "albumTitle": "July",
+      "albumKey": "july",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:13",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://adamharmless.bandcamp.com/track/the-dance-2",
+      "bandcampEmbedTrackId": "3247128065",
+      "sourcePage": "https://adamharmless.bandcamp.com/album/july-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "july-803768066",
+      "title": "Batteries Fade",
+      "artist": "adam harmless",
+      "albumTitle": "July",
+      "albumKey": "july",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://adamharmless.bandcamp.com/track/batteries-fade-2",
+      "bandcampEmbedTrackId": "803768066",
+      "sourcePage": "https://adamharmless.bandcamp.com/album/july-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "july-77446736",
+      "title": "Focus",
+      "artist": "adam harmless",
+      "albumTitle": "July",
+      "albumKey": "july",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:18",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://adamharmless.bandcamp.com/track/focus-2",
+      "bandcampEmbedTrackId": "77446736",
+      "sourcePage": "https://adamharmless.bandcamp.com/album/july-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://adamharmless.bandcamp.com/album/july-2",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:01:31.916181+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "adamharmless.bandcamp.com",
+    "bandcampBandId": "4138438727",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:01:31.916181+00:00"
+  }
+}

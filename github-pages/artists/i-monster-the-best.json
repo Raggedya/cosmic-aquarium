@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "i-monster-the-best",
+  "artist": "I Monster",
+  "bandcampUrl": "https://imonster.bandcamp.com/album/the-best",
+  "releaseTitle": "The Best",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "psychedelic",
+    "alternative",
+    "electronic",
+    "experimental",
+    "pop",
+    "progressive",
+    "Sheffield"
+  ],
+  "primaryLocation": "Sheffield, UK",
+  "bioShort": "The bonus three track 7\" vinyl single that was available with the original vinyl edition of 'A Dense Swarm Of Ancient Stars'. Our version of the perennial banger 'The Best'…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://imonster.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:08:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-best",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-best-3014203042",
+      "title": "The Best",
+      "artist": "I Monster",
+      "albumTitle": "The Best",
+      "albumKey": "the-best",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://imonster.bandcamp.com/track/the-best-2",
+      "bandcampEmbedTrackId": "3014203042",
+      "sourcePage": "https://imonster.bandcamp.com/album/the-best",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-best-450781709",
+      "title": "You Won't Get Home",
+      "artist": "I Monster",
+      "albumTitle": "The Best",
+      "albumKey": "the-best",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:18",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://imonster.bandcamp.com/track/you-wont-get-home",
+      "bandcampEmbedTrackId": "450781709",
+      "sourcePage": "https://imonster.bandcamp.com/album/the-best",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-best-3705179482",
+      "title": "Only A Show",
+      "artist": "I Monster",
+      "albumTitle": "The Best",
+      "albumKey": "the-best",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:29",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://imonster.bandcamp.com/track/only-a-show",
+      "bandcampEmbedTrackId": "3705179482",
+      "sourcePage": "https://imonster.bandcamp.com/album/the-best",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://imonster.bandcamp.com/album/the-best",
+    "discoveredAt": "2026-09-06T04:49:12.999143+00:00",
+    "importedAt": "2026-09-06T05:08:28.995780+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "imonster.bandcamp.com",
+    "bandcampBandId": "2498999520",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:08:28.995780+00:00"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "slug": "mogwai-party-in-the-dark",
+  "artist": "Mogwai",
+  "bandcampUrl": "https://mogwai.bandcamp.com/album/party-in-the-dark",
+  "releaseTitle": "Party In The Dark",
+  "releaseDate": "2017-08-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "psychedelic",
+    "glasgow",
+    "rock",
+    "alternative",
+    "electronic",
+    "indie",
+    "instrumental",
+    "instrumental rock",
+    "minimal",
+    "post-rock",
+    "progressive",
+    "soundtrack",
+    "soundtracks",
+    "United Kingdom"
+  ],
+  "primaryLocation": "Scotland, UK",
+  "bioShort": "As the standout single from their transportive new album, Every Country’s Sun, “Party In The Dark” is Mogwai’s most fully realized art-pop sing-along of their storied history –…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mogwai.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T05:02:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "party-in-the-dark",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "party-in-the-dark-4239670200",
+      "title": "Party In The Dark",
+      "artist": "Mogwai",
+      "albumTitle": "Party In The Dark",
+      "albumKey": "party-in-the-dark",
+      "year": 2017,
+      "trackNumber": 1,
+      "duration": "4:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mogwai.bandcamp.com/track/party-in-the-dark-2",
+      "bandcampEmbedTrackId": "4239670200",
+      "sourcePage": "https://mogwai.bandcamp.com/album/party-in-the-dark",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "party-in-the-dark-3054649980",
+      "title": "Eternal Panther",
+      "artist": "Mogwai",
+      "albumTitle": "Party In The Dark",
+      "albumKey": "party-in-the-dark",
+      "year": 2017,
+      "trackNumber": 2,
+      "duration": "2:43",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mogwai.bandcamp.com/track/eternal-panther",
+      "bandcampEmbedTrackId": "3054649980",
+      "sourcePage": "https://mogwai.bandcamp.com/album/party-in-the-dark",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mogwai.bandcamp.com/album/party-in-the-dark",
+    "discoveredAt": "2026-09-06T04:49:12.992391+00:00",
+    "importedAt": "2026-09-06T05:02:26.959156+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mogwai.bandcamp.com",
+    "bandcampBandId": "3698602197",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:02:26.959156+00:00"
+  }
+}

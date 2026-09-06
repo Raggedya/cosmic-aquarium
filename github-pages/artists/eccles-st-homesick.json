@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "slug": "eccles-st-homesick",
+  "artist": "eccles st.",
+  "bandcampUrl": "https://eccles-st.bandcamp.com/album/homesick",
+  "releaseTitle": "homesick.",
+  "releaseDate": "2026-08-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "rock",
+    "bedroom-pop",
+    "indie-rock",
+    "slacker-rock",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "eccles st. — slowcore / rock / bedroom-pop music from Los Angeles, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://eccles-st.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T05:00:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "homesick",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "homesick-511210164",
+      "title": "take your time",
+      "artist": "eccles st.",
+      "albumTitle": "homesick.",
+      "albumKey": "homesick",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eccles-st.bandcamp.com/track/take-your-time",
+      "bandcampEmbedTrackId": "511210164",
+      "sourcePage": "https://eccles-st.bandcamp.com/album/homesick",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "homesick-3373543474",
+      "title": "fade in, fade out",
+      "artist": "eccles st.",
+      "albumTitle": "homesick.",
+      "albumKey": "homesick",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eccles-st.bandcamp.com/track/fade-in-fade-out",
+      "bandcampEmbedTrackId": "3373543474",
+      "sourcePage": "https://eccles-st.bandcamp.com/album/homesick",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "homesick-2991603236",
+      "title": "i'll never be home again",
+      "artist": "eccles st.",
+      "albumTitle": "homesick.",
+      "albumKey": "homesick",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:47",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eccles-st.bandcamp.com/track/ill-never-be-home-again",
+      "bandcampEmbedTrackId": "2991603236",
+      "sourcePage": "https://eccles-st.bandcamp.com/album/homesick",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://eccles-st.bandcamp.com/album/homesick",
+    "discoveredAt": "2026-09-06T04:49:12.990887+00:00",
+    "importedAt": "2026-09-06T05:00:13.985929+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "eccles-st.bandcamp.com",
+    "bandcampBandId": "414069113",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T05:00:13.985929+00:00"
+  }
+}

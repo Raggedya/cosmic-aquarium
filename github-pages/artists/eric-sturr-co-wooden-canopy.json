@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "eric-sturr-co-wooden-canopy",
+  "artist": "eric sturr & co.",
+  "bandcampUrl": "https://ericsturr.bandcamp.com/album/wooden-canopy",
+  "releaseTitle": "Wooden Canopy",
+  "releaseDate": "2026-06-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-05",
+  "status": "published",
+  "metadataTags": [
+    "piano",
+    "adirondacks",
+    "ambient",
+    "soundtrack",
+    "instrumental",
+    "orchestral",
+    "post-rock",
+    "trolls",
+    "New Jersey"
+  ],
+  "primaryLocation": "New Jersey",
+  "bioShort": "“Wooden Canopy” begins with an introduction to the big lumbering friendly troll known as Ibbi Pip. Slowly but steadily she toils in her perpetual loop around the forest hanging…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ericsturr.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:50:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "wooden-canopy",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "wooden-canopy-3738998545",
+      "title": "Footsteps",
+      "artist": "eric sturr & co.",
+      "albumTitle": "Wooden Canopy",
+      "albumKey": "wooden-canopy",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericsturr.bandcamp.com/track/footsteps",
+      "bandcampEmbedTrackId": "3738998545",
+      "sourcePage": "https://ericsturr.bandcamp.com/album/wooden-canopy",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "wooden-canopy-3209910909",
+      "title": "The Birdhouse Troll",
+      "artist": "eric sturr & co.",
+      "albumTitle": "Wooden Canopy",
+      "albumKey": "wooden-canopy",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericsturr.bandcamp.com/track/the-birdhouse-troll",
+      "bandcampEmbedTrackId": "3209910909",
+      "sourcePage": "https://ericsturr.bandcamp.com/album/wooden-canopy",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "wooden-canopy-1785112674",
+      "title": "Forest",
+      "artist": "eric sturr & co.",
+      "albumTitle": "Wooden Canopy",
+      "albumKey": "wooden-canopy",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:51",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericsturr.bandcamp.com/track/forest",
+      "bandcampEmbedTrackId": "1785112674",
+      "sourcePage": "https://ericsturr.bandcamp.com/album/wooden-canopy",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "wooden-canopy-1117672853",
+      "title": "The Work Begins",
+      "artist": "eric sturr & co.",
+      "albumTitle": "Wooden Canopy",
+      "albumKey": "wooden-canopy",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:08",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericsturr.bandcamp.com/track/the-work-begins",
+      "bandcampEmbedTrackId": "1117672853",
+      "sourcePage": "https://ericsturr.bandcamp.com/album/wooden-canopy",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ericsturr.bandcamp.com/album/wooden-canopy",
+    "discoveredAt": "2026-09-06T04:47:57.235138+00:00",
+    "importedAt": "2026-09-06T04:50:34.478345+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-05"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ericsturr.bandcamp.com",
+    "bandcampBandId": "2787734362",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:50:34.478345+00:00"
+  }
+}
