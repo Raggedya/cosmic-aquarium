@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "fish-in-a-birdcage-fish-in-a-birdcage-ep",
+  "artist": "Fish in a Birdcage",
+  "bandcampUrl": "https://fishinabirdcage.bandcamp.com/album/fish-in-a-birdcage-ep",
+  "releaseTitle": "Fish In A Birdcage EP",
+  "releaseDate": "2014-11-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "acoustic",
+    "folk",
+    "cello",
+    "cello-rock",
+    "indie rock",
+    "spoken word poetry",
+    "Victoria"
+  ],
+  "primaryLocation": "Victoria, British Columbia",
+  "bioShort": "Fish in a Birdcage — acoustic / folk / cello music from Victoria, British Columbia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://fishinabirdcage.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:57:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "fish-in-a-birdcage-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fish-in-a-birdcage-ep-2320681212",
+      "title": "Rule #1 - Moonlight",
+      "artist": "Fish in a Birdcage",
+      "albumTitle": "Fish In A Birdcage EP",
+      "albumKey": "fish-in-a-birdcage-ep",
+      "year": 2014,
+      "trackNumber": 1,
+      "duration": "3:27",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fishinabirdcage.bandcamp.com/track/rule-1-moonlight",
+      "bandcampEmbedTrackId": "2320681212",
+      "sourcePage": "https://fishinabirdcage.bandcamp.com/album/fish-in-a-birdcage-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "fish-in-a-birdcage-ep-4085079515",
+      "title": "Rule #2 - Magic",
+      "artist": "Fish in a Birdcage",
+      "albumTitle": "Fish In A Birdcage EP",
+      "albumKey": "fish-in-a-birdcage-ep",
+      "year": 2014,
+      "trackNumber": 2,
+      "duration": "2:59",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fishinabirdcage.bandcamp.com/track/rule-2-magic",
+      "bandcampEmbedTrackId": "4085079515",
+      "sourcePage": "https://fishinabirdcage.bandcamp.com/album/fish-in-a-birdcage-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "fish-in-a-birdcage-ep-3952658312",
+      "title": "Rule #3 - Paperwork",
+      "artist": "Fish in a Birdcage",
+      "albumTitle": "Fish In A Birdcage EP",
+      "albumKey": "fish-in-a-birdcage-ep",
+      "year": 2014,
+      "trackNumber": 3,
+      "duration": "5:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fishinabirdcage.bandcamp.com/track/rule-3-paperwork",
+      "bandcampEmbedTrackId": "3952658312",
+      "sourcePage": "https://fishinabirdcage.bandcamp.com/album/fish-in-a-birdcage-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "fish-in-a-birdcage-ep-2239253781",
+      "title": "Rule #4 - Fish In A Birdcage",
+      "artist": "Fish in a Birdcage",
+      "albumTitle": "Fish In A Birdcage EP",
+      "albumKey": "fish-in-a-birdcage-ep",
+      "year": 2014,
+      "trackNumber": 4,
+      "duration": "3:01",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fishinabirdcage.bandcamp.com/track/rule-4-fish-in-a-birdcage",
+      "bandcampEmbedTrackId": "2239253781",
+      "sourcePage": "https://fishinabirdcage.bandcamp.com/album/fish-in-a-birdcage-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://fishinabirdcage.bandcamp.com/album/fish-in-a-birdcage-ep",
+    "discoveredAt": "2026-09-06T03:54:28.013016+00:00",
+    "importedAt": "2026-09-06T03:57:34.465772+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "fishinabirdcage.bandcamp.com",
+    "bandcampBandId": "3689391268",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:57:34.465772+00:00"
+  }
+}

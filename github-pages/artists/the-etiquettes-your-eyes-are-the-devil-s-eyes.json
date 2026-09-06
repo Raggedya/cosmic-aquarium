@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-etiquettes-your-eyes-are-the-devil-s-eyes",
+  "artist": "The Etiquettes",
+  "bandcampUrl": "https://theetiquettes.bandcamp.com/album/your-eyes-are-the-devils-eyes",
+  "releaseTitle": "Your Eyes Are The Devil's Eyes",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "garage",
+    "indie",
+    "punk",
+    "rock",
+    "blues rock",
+    "Denver"
+  ],
+  "primaryLocation": "Denver, Colorado",
+  "bioShort": "The Etiquettes — grunge / alternative / garage music from Denver, Colorado.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://theetiquettes.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:07:30Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "your-eyes-are-the-devil-s-eyes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "your-eyes-are-the-devil-s-eyes-2052958683",
+      "title": "Your Eyes Are The Devil's Eyes",
+      "artist": "The Etiquettes",
+      "albumTitle": "Your Eyes Are The Devil's Eyes",
+      "albumKey": "your-eyes-are-the-devil-s-eyes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://theetiquettes.bandcamp.com/track/your-eyes-are-the-devils-eyes",
+      "bandcampEmbedTrackId": "2052958683",
+      "sourcePage": "https://theetiquettes.bandcamp.com/album/your-eyes-are-the-devils-eyes",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://theetiquettes.bandcamp.com/album/your-eyes-are-the-devils-eyes",
+    "discoveredAt": "2026-09-06T03:55:20.790103+00:00",
+    "importedAt": "2026-09-06T04:07:30.179527+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "theetiquettes.bandcamp.com",
+    "bandcampBandId": "2503141804",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:07:30.179527+00:00"
+  }
+}

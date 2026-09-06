@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "bojvck-chrome",
+  "artist": "bojvck",
+  "bandcampUrl": "https://bojvck.bandcamp.com/album/chrome",
+  "releaseTitle": "CHROME**",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "ghetto tech",
+    "ghettotech",
+    "hip-hop/rap",
+    "electro",
+    "ghetto house",
+    "ghettohouse",
+    "South Korea"
+  ],
+  "primaryLocation": "Seoul, South Korea",
+  "bioShort": "[CHROME**] by bojvck @bojvck2002 01. GhettoHiphopBreakbeatTheBlockParty2002 02. Break/Funky! (Everybody Said) 03. “B” Up 04. 4 Your Mind, 4 Your Body All PRODUCED BY BOJVCK…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bojvck.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:14:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "chrome",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "chrome-89682098",
+      "title": "GhettoHiphopBreakbeatTheBlockParty2002",
+      "artist": "bojvck",
+      "albumTitle": "CHROME**",
+      "albumKey": "chrome",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bojvck.bandcamp.com/track/ghettohiphopbreakbeattheblockparty2002",
+      "bandcampEmbedTrackId": "89682098",
+      "sourcePage": "https://bojvck.bandcamp.com/album/chrome",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "chrome-1097501672",
+      "title": "Break/Funky! (Everybody Said)",
+      "artist": "bojvck",
+      "albumTitle": "CHROME**",
+      "albumKey": "chrome",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:11",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bojvck.bandcamp.com/track/break-funky-everybody-said",
+      "bandcampEmbedTrackId": "1097501672",
+      "sourcePage": "https://bojvck.bandcamp.com/album/chrome",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "chrome-3582905865",
+      "title": "\"B\" Up",
+      "artist": "bojvck",
+      "albumTitle": "CHROME**",
+      "albumKey": "chrome",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:13",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bojvck.bandcamp.com/track/b-up",
+      "bandcampEmbedTrackId": "3582905865",
+      "sourcePage": "https://bojvck.bandcamp.com/album/chrome",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "chrome-2654841133",
+      "title": "4 Your Mind, 4 Your Body",
+      "artist": "bojvck",
+      "albumTitle": "CHROME**",
+      "albumKey": "chrome",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:05",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bojvck.bandcamp.com/track/4-your-mind-4-your-body",
+      "bandcampEmbedTrackId": "2654841133",
+      "sourcePage": "https://bojvck.bandcamp.com/album/chrome",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bojvck.bandcamp.com/album/chrome",
+    "discoveredAt": "2026-09-06T03:55:20.801197+00:00",
+    "importedAt": "2026-09-06T04:14:22.181555+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bojvck.bandcamp.com",
+    "bandcampBandId": "822307405",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:14:22.181555+00:00"
+  }
+}

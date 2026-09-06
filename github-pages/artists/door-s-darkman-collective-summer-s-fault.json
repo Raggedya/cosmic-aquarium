@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "door-s-darkman-collective-summer-s-fault",
+  "artist": "Door's Darkman Collective",
+  "bandcampUrl": "https://doorsdarkmancollective.bandcamp.com/album/summers-fault",
+  "releaseTitle": "Summer's Fault",
+  "releaseDate": "2026-08-13 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "black metal",
+    "rock",
+    "cinematic",
+    "drone ambient",
+    "post-rock",
+    "shoegaze",
+    "soundscape",
+    "Istanbul"
+  ],
+  "primaryLocation": "Istanbul, Türkiye",
+  "bioShort": "all sounds made and composed by eren",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://doorsdarkmancollective.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:03:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "summer-s-fault",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "summer-s-fault-115917846",
+      "title": "a brief remembrance of the dark brown mountains i saw in your eyes. so long / long live..",
+      "artist": "Door's Darkman Collective",
+      "albumTitle": "Summer's Fault",
+      "albumKey": "summer-s-fault",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "13:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://doorsdarkmancollective.bandcamp.com/track/a-brief-remembrance-of-the-dark-brown-mountains-i-saw-in-your-eyes-so-long-long-live",
+      "bandcampEmbedTrackId": "115917846",
+      "sourcePage": "https://doorsdarkmancollective.bandcamp.com/album/summers-fault",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "summer-s-fault-630647000",
+      "title": "buried with nuance",
+      "artist": "Door's Darkman Collective",
+      "albumTitle": "Summer's Fault",
+      "albumKey": "summer-s-fault",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://doorsdarkmancollective.bandcamp.com/track/buried-with-nuance",
+      "bandcampEmbedTrackId": "630647000",
+      "sourcePage": "https://doorsdarkmancollective.bandcamp.com/album/summers-fault",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://doorsdarkmancollective.bandcamp.com/album/summers-fault",
+    "discoveredAt": "2026-09-06T03:55:20.782008+00:00",
+    "importedAt": "2026-09-06T04:03:50.903988+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "doorsdarkmancollective.bandcamp.com",
+    "bandcampBandId": "1861887603",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:03:50.903988+00:00"
+  }
+}

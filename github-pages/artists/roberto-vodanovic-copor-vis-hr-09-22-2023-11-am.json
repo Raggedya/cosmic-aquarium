@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "roberto-vodanovic-copor-vis-hr-09-22-2023-11-am",
+  "artist": "Roberto Vodanović Čopor",
+  "bandcampUrl": "https://robertovodanoviccopor.bandcamp.com/album/vis-hr-09-22-2023-11-am",
+  "releaseTitle": "Vis (HR), 09/22/2023, 11 am",
+  "releaseDate": "2023-11-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "experimental",
+    "ambient",
+    "drone",
+    "field recordings",
+    "soundscape",
+    "Croatia"
+  ],
+  "primaryLocation": "Croatia",
+  "bioShort": "Cloudy and windy morning. it also rained a little. you can hear birds, seagulls, cats, people in the distance. the port is close so you can hear the masts in the wind. at the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "heavy",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://robertovodanoviccopor.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:02:56Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "vis-hr-09-22-2023-11-am",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "vis-hr-09-22-2023-11-am-2587307980",
+      "title": "Vis (HR), 09/22/2023, 11 am",
+      "artist": "Roberto Vodanović Čopor",
+      "albumTitle": "Vis (HR), 09/22/2023, 11 am",
+      "albumKey": "vis-hr-09-22-2023-11-am",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "11:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://robertovodanoviccopor.bandcamp.com/track/vis-hr-09-22-2023-11-am",
+      "bandcampEmbedTrackId": "2587307980",
+      "sourcePage": "https://robertovodanoviccopor.bandcamp.com/album/vis-hr-09-22-2023-11-am",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://robertovodanoviccopor.bandcamp.com/album/vis-hr-09-22-2023-11-am",
+    "discoveredAt": "2026-09-06T03:54:57.899834+00:00",
+    "importedAt": "2026-09-06T04:02:56.344255+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "robertovodanoviccopor.bandcamp.com",
+    "bandcampBandId": "721602669",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:02:56.344255+00:00"
+  }
+}

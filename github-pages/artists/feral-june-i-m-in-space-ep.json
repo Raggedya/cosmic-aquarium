@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "slug": "feral-june-i-m-in-space-ep",
+  "artist": "feral june",
+  "bandcampUrl": "https://feraljune.bandcamp.com/album/im-in-space-ep",
+  "releaseTitle": "I'm in space [EP]",
+  "releaseDate": "2026-08-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "rock",
+    "space rock revival",
+    "ambient rock",
+    "bedroom recordings",
+    "bedroom rock",
+    "drone",
+    "lofi rock",
+    "noise ambient",
+    "noisegaze",
+    "shoegaze",
+    "slacker rock",
+    "slowgaze",
+    "space ambient",
+    "space rock",
+    "spacegaze",
+    "Durban"
+  ],
+  "primaryLocation": "Durban, South Africa",
+  "bioShort": "This will be a debut EP, just wanted to release some concept songs [2 songs btw😭] I will try to go for a more fuzzy approach in a later album release",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://feraljune.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:06:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-m-in-space-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-m-in-space-ep-3705966332",
+      "title": "my little orbit",
+      "artist": "feral june",
+      "albumTitle": "I'm in space [EP]",
+      "albumKey": "i-m-in-space-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://feraljune.bandcamp.com/track/my-little-orbit",
+      "bandcampEmbedTrackId": "3705966332",
+      "sourcePage": "https://feraljune.bandcamp.com/album/im-in-space-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "i-m-in-space-ep-1402397142",
+      "title": "im in space!!!",
+      "artist": "feral june",
+      "albumTitle": "I'm in space [EP]",
+      "albumKey": "i-m-in-space-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://feraljune.bandcamp.com/track/im-in-space",
+      "bandcampEmbedTrackId": "1402397142",
+      "sourcePage": "https://feraljune.bandcamp.com/album/im-in-space-ep",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://feraljune.bandcamp.com/album/im-in-space-ep",
+    "discoveredAt": "2026-09-06T03:55:20.788093+00:00",
+    "importedAt": "2026-09-06T04:06:38.456765+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "feraljune.bandcamp.com",
+    "bandcampBandId": "2060669209",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:06:38.456765+00:00"
+  }
+}

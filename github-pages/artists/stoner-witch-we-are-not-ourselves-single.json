@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "stoner-witch-we-are-not-ourselves-single",
+  "artist": "Stoner Witch",
+  "bandcampUrl": "https://stonerwitchtx.bandcamp.com/album/we-are-not-ourselves-single",
+  "releaseTitle": "We Are Not Ourselves (single}",
+  "releaseDate": "2026-07-22 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "hardcore punk",
+    "stoner doom",
+    "stoner metal",
+    "stoner rock",
+    "San Antonio"
+  ],
+  "primaryLocation": "San Antonio, Texas",
+  "bioShort": "Stoner Witch — stoner-metal / metal / hardcore punk music from San Antonio, Texas.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://stonerwitchtx.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:13:20Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "we-are-not-ourselves-single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "we-are-not-ourselves-single-1018633674",
+      "title": "We Are Not Ourselves",
+      "artist": "Stoner Witch",
+      "albumTitle": "We Are Not Ourselves (single}",
+      "albumKey": "we-are-not-ourselves-single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stonerwitchtx.bandcamp.com/track/we-are-not-ourselves",
+      "bandcampEmbedTrackId": "1018633674",
+      "sourcePage": "https://stonerwitchtx.bandcamp.com/album/we-are-not-ourselves-single",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "we-are-not-ourselves-single-653914762",
+      "title": "A Hell I Know",
+      "artist": "Stoner Witch",
+      "albumTitle": "We Are Not Ourselves (single}",
+      "albumKey": "we-are-not-ourselves-single",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:42",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://stonerwitchtx.bandcamp.com/track/a-hell-i-know",
+      "bandcampEmbedTrackId": "653914762",
+      "sourcePage": "https://stonerwitchtx.bandcamp.com/album/we-are-not-ourselves-single",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://stonerwitchtx.bandcamp.com/album/we-are-not-ourselves-single",
+    "discoveredAt": "2026-09-06T03:55:20.800198+00:00",
+    "importedAt": "2026-09-06T04:13:20.650512+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "stonerwitchtx.bandcamp.com",
+    "bandcampBandId": "1364810789",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:13:20.650512+00:00"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "adam-soper-safety",
+  "artist": "Adam Soper",
+  "bandcampUrl": "https://adamsoper.bandcamp.com/album/safety",
+  "releaseTitle": "Safety",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "experimental",
+    "dark ambient",
+    "improvisation",
+    "noise",
+    "weird folk",
+    "Newcastle Upon Tyne"
+  ],
+  "primaryLocation": "Newcastle Upon Tyne, UK",
+  "bioShort": "Adam Soper — post-metal / experimental / dark ambient music from Newcastle Upon Tyne, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://adamsoper.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:59:20Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "safety",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "safety-3597024455",
+      "title": "Safety",
+      "artist": "Adam Soper",
+      "albumTitle": "Safety",
+      "albumKey": "safety",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "18:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://adamsoper.bandcamp.com/track/safety",
+      "bandcampEmbedTrackId": "3597024455",
+      "sourcePage": "https://adamsoper.bandcamp.com/album/safety",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://adamsoper.bandcamp.com/album/safety",
+    "discoveredAt": "2026-09-06T03:54:28.021045+00:00",
+    "importedAt": "2026-09-06T03:59:20.949747+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "adamsoper.bandcamp.com",
+    "bandcampBandId": "2998946702",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:59:20.949747+00:00"
+  }
+}

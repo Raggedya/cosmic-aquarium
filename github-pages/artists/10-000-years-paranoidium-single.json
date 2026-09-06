@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "10-000-years-paranoidium-single",
+  "artist": "10,000 Years",
+  "bandcampUrl": "https://10000years.bandcamp.com/album/paranoidium-single",
+  "releaseTitle": "Paranoidium - Single",
+  "releaseDate": "2026-07-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "doom metal",
+    "sludge metal",
+    "stoner metal",
+    "stoner rock",
+    "Västerås"
+  ],
+  "primaryLocation": "Västerås, Sweden",
+  "bioShort": "The third and final single from the upcoming new album \"Esox Lucifer\"!",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://10000years.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:09:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "paranoidium-single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "paranoidium-single-1757284805",
+      "title": "Paranoidium",
+      "artist": "10,000 Years",
+      "albumTitle": "Paranoidium - Single",
+      "albumKey": "paranoidium-single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://10000years.bandcamp.com/track/paranoidium-4",
+      "bandcampEmbedTrackId": "1757284805",
+      "sourcePage": "https://10000years.bandcamp.com/album/paranoidium-single",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://10000years.bandcamp.com/album/paranoidium-single",
+    "discoveredAt": "2026-09-06T03:55:20.791991+00:00",
+    "importedAt": "2026-09-06T04:09:12.309504+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "10000years.bandcamp.com",
+    "bandcampBandId": "2552629924",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:09:12.309504+00:00"
+  }
+}

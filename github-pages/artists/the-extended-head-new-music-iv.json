@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-extended-head-new-music-iv",
+  "artist": "The EXTENDED HEAD",
+  "bandcampUrl": "https://theextendedhead.bandcamp.com/album/new-music-iv",
+  "releaseTitle": "NEW MUSIC IV",
+  "releaseDate": "2026-08-23 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "lofi",
+    "new wave",
+    "no wave",
+    "shoegazer",
+    "Sweden"
+  ],
+  "primaryLocation": "Sweden",
+  "bioShort": "The EXTENDED HEAD — grunge / alternative / lofi music from Sweden.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://theextendedhead.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:04:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "new-music-iv",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "new-music-iv-1099551804",
+      "title": "Unconsciousness is a Bless",
+      "artist": "The EXTENDED HEAD",
+      "albumTitle": "NEW MUSIC IV",
+      "albumKey": "new-music-iv",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://theextendedhead.bandcamp.com/track/unconsciousness-is-a-bless",
+      "bandcampEmbedTrackId": "1099551804",
+      "sourcePage": "https://theextendedhead.bandcamp.com/album/new-music-iv",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "new-music-iv-662425232",
+      "title": "Kiss Me (Be-Bop-a-Lula)",
+      "artist": "The EXTENDED HEAD",
+      "albumTitle": "NEW MUSIC IV",
+      "albumKey": "new-music-iv",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://theextendedhead.bandcamp.com/track/kiss-me-be-bop-a-lula",
+      "bandcampEmbedTrackId": "662425232",
+      "sourcePage": "https://theextendedhead.bandcamp.com/album/new-music-iv",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "new-music-iv-9248836",
+      "title": "He's your Highway",
+      "artist": "The EXTENDED HEAD",
+      "albumTitle": "NEW MUSIC IV",
+      "albumKey": "new-music-iv",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:37",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://theextendedhead.bandcamp.com/track/hes-your-highway",
+      "bandcampEmbedTrackId": "9248836",
+      "sourcePage": "https://theextendedhead.bandcamp.com/album/new-music-iv",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://theextendedhead.bandcamp.com/album/new-music-iv",
+    "discoveredAt": "2026-09-06T03:55:20.785008+00:00",
+    "importedAt": "2026-09-06T04:04:53.636648+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "theextendedhead.bandcamp.com",
+    "bandcampBandId": "3944523124",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:04:53.636648+00:00"
+  }
+}

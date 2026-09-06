@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "rosine-some-things-you-never-get-used-to",
+  "artist": "Rosine",
+  "bandcampUrl": "https://rosine.bandcamp.com/album/some-things-you-never-get-used-to",
+  "releaseTitle": "Some Things You Never Get Used To",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "american primitive",
+    "basses",
+    "chamber music",
+    "folk",
+    "postrock",
+    "sax quartet",
+    "string quartet",
+    "untutored",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Every record I make starts out with some grand plan and that gets filtered through my own strengths and weaknesses as well as the realities of budget and schedule. My 2017…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rosine.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:06:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "some-things-you-never-get-used-to",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "some-things-you-never-get-used-to-1263808040",
+      "title": "Some Things You Never Get Used To",
+      "artist": "Rosine",
+      "albumTitle": "Some Things You Never Get Used To",
+      "albumKey": "some-things-you-never-get-used-to",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "37:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rosine.bandcamp.com/track/some-things-you-never-get-used-to",
+      "bandcampEmbedTrackId": "1263808040",
+      "sourcePage": "https://rosine.bandcamp.com/album/some-things-you-never-get-used-to",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://rosine.bandcamp.com/album/some-things-you-never-get-used-to",
+    "discoveredAt": "2026-09-06T03:55:20.788093+00:00",
+    "importedAt": "2026-09-06T04:06:19.332528+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "rosine.bandcamp.com",
+    "bandcampBandId": "1968284078",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:06:19.332528+00:00"
+  }
+}

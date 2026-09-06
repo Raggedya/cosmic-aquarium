@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "revivis-chatsworth-days",
+  "artist": "Revivis",
+  "bandcampUrl": "https://revivis.bandcamp.com/album/chatsworth-days",
+  "releaseTitle": "Chatsworth Days",
+  "releaseDate": "2026-03-12 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "deep house",
+    "electronic",
+    "progressive house",
+    "tech house",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "Revivis — house / deep house / progressive house music from Berlin, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://revivis.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:06:44Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "chatsworth-days",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "chatsworth-days-4278277523",
+      "title": "Catharsis",
+      "artist": "Revivis",
+      "albumTitle": "Chatsworth Days",
+      "albumKey": "chatsworth-days",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://revivis.bandcamp.com/track/catharsis",
+      "bandcampEmbedTrackId": "4278277523",
+      "sourcePage": "https://revivis.bandcamp.com/album/chatsworth-days",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "chatsworth-days-1219780291",
+      "title": "Same Mistakes",
+      "artist": "Revivis",
+      "albumTitle": "Chatsworth Days",
+      "albumKey": "chatsworth-days",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:35",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://revivis.bandcamp.com/track/same-mistakes",
+      "bandcampEmbedTrackId": "1219780291",
+      "sourcePage": "https://revivis.bandcamp.com/album/chatsworth-days",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "chatsworth-days-888037631",
+      "title": "La Musika",
+      "artist": "Revivis",
+      "albumTitle": "Chatsworth Days",
+      "albumKey": "chatsworth-days",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:44",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://revivis.bandcamp.com/track/la-musika",
+      "bandcampEmbedTrackId": "888037631",
+      "sourcePage": "https://revivis.bandcamp.com/album/chatsworth-days",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "chatsworth-days-1910210087",
+      "title": "Chatsworth Days",
+      "artist": "Revivis",
+      "albumTitle": "Chatsworth Days",
+      "albumKey": "chatsworth-days",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:14",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://revivis.bandcamp.com/track/chatsworth-days",
+      "bandcampEmbedTrackId": "1910210087",
+      "sourcePage": "https://revivis.bandcamp.com/album/chatsworth-days",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://revivis.bandcamp.com/album/chatsworth-days",
+    "discoveredAt": "2026-09-06T03:55:20.788093+00:00",
+    "importedAt": "2026-09-06T04:06:44.125245+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "revivis.bandcamp.com",
+    "bandcampBandId": "812494591",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:06:44.125245+00:00"
+  }
+}

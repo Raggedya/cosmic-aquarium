@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "yly-being-in-it",
+  "artist": "YLY.",
+  "bandcampUrl": "https://ylylovesyou.bandcamp.com/album/being-in-it",
+  "releaseTitle": "Being In It.",
+  "releaseDate": "2026-08-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "experimental",
+    "metal",
+    "experimental rock",
+    "indie rock",
+    "post-rock",
+    "progressive metal",
+    "Germany"
+  ],
+  "primaryLocation": "Germany",
+  "bioShort": "YLY. — post-metal / experimental / metal music from Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ylylovesyou.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:09:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "being-in-it",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "being-in-it-1026338869",
+      "title": "Finding Space",
+      "artist": "YLY.",
+      "albumTitle": "Being In It.",
+      "albumKey": "being-in-it",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ylylovesyou.bandcamp.com/track/finding-space",
+      "bandcampEmbedTrackId": "1026338869",
+      "sourcePage": "https://ylylovesyou.bandcamp.com/album/being-in-it",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "being-in-it-4266358722",
+      "title": "Safety",
+      "artist": "YLY.",
+      "albumTitle": "Being In It.",
+      "albumKey": "being-in-it",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:47",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ylylovesyou.bandcamp.com/track/safety",
+      "bandcampEmbedTrackId": "4266358722",
+      "sourcePage": "https://ylylovesyou.bandcamp.com/album/being-in-it",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "being-in-it-3522890589",
+      "title": "Being In It",
+      "artist": "YLY.",
+      "albumTitle": "Being In It.",
+      "albumKey": "being-in-it",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:16",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ylylovesyou.bandcamp.com/track/being-in-it",
+      "bandcampEmbedTrackId": "3522890589",
+      "sourcePage": "https://ylylovesyou.bandcamp.com/album/being-in-it",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "being-in-it-2814170170",
+      "title": "You Can Keep Waking Up But You Will Never Be Awake",
+      "artist": "YLY.",
+      "albumTitle": "Being In It.",
+      "albumKey": "being-in-it",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:45",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ylylovesyou.bandcamp.com/track/you-can-keep-waking-up-but-you-will-never-be-awake",
+      "bandcampEmbedTrackId": "2814170170",
+      "sourcePage": "https://ylylovesyou.bandcamp.com/album/being-in-it",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ylylovesyou.bandcamp.com/album/being-in-it",
+    "discoveredAt": "2026-09-06T03:55:20.794022+00:00",
+    "importedAt": "2026-09-06T04:09:50.788581+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ylylovesyou.bandcamp.com",
+    "bandcampBandId": "4288747270",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:09:50.788581+00:00"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "marco-shuttle-msp03",
+  "artist": "Marco Shuttle",
+  "bandcampUrl": "https://marcoshuttle.bandcamp.com/album/msp03",
+  "releaseTitle": "MSP03",
+  "releaseDate": "2026-09-29 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "techno",
+    "electronic",
+    "progressive house",
+    "experimental",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "Third time's the charm! MSP03 incoming... Another floor friendly 4/4 2 tracker winking at the early 90's Italian progressive house golden era. Groovy bass-lines, tribal…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://marcoshuttle.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:10:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "msp03",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "msp03-2126004551",
+      "title": "Meteora",
+      "artist": "Marco Shuttle",
+      "albumTitle": "MSP03",
+      "albumKey": "msp03",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://marcoshuttle.bandcamp.com/album/msp03",
+      "bandcampEmbedTrackId": "2126004551",
+      "sourcePage": "https://marcoshuttle.bandcamp.com/album/msp03",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "msp03-243535983",
+      "title": "Rhythm Plus",
+      "artist": "Marco Shuttle",
+      "albumTitle": "MSP03",
+      "albumKey": "msp03",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://marcoshuttle.bandcamp.com/track/rhythm-plus",
+      "bandcampEmbedTrackId": "243535983",
+      "sourcePage": "https://marcoshuttle.bandcamp.com/album/msp03",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://marcoshuttle.bandcamp.com/album/msp03",
+    "discoveredAt": "2026-09-06T03:55:20.795009+00:00",
+    "importedAt": "2026-09-06T04:10:46.716756+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "marcoshuttle.bandcamp.com",
+    "bandcampBandId": "2729375905",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:10:46.716756+00:00"
+  }
+}

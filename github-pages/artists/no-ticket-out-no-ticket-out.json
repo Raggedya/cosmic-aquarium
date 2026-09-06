@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "no-ticket-out-no-ticket-out",
+  "artist": "No Ticket Out",
+  "bandcampUrl": "https://noticketout.bandcamp.com/album/no-ticket-out",
+  "releaseTitle": "No Ticket Out",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "folk",
+    "punk",
+    "blues rock",
+    "country",
+    "diy punk",
+    "gothic",
+    "gothic country",
+    "metal",
+    "Denver"
+  ],
+  "primaryLocation": "Denver, Colorado",
+  "bioShort": "It's experimental",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://noticketout.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:08:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "no-ticket-out",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "no-ticket-out-331583741",
+      "title": "That's a Capitalism",
+      "artist": "No Ticket Out",
+      "albumTitle": "No Ticket Out",
+      "albumKey": "no-ticket-out",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://noticketout.bandcamp.com/track/thats-a-capitalism",
+      "bandcampEmbedTrackId": "331583741",
+      "sourcePage": "https://noticketout.bandcamp.com/album/no-ticket-out",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://noticketout.bandcamp.com/album/no-ticket-out",
+    "discoveredAt": "2026-09-06T03:55:20.791991+00:00",
+    "importedAt": "2026-09-06T04:08:55.285218+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "noticketout.bandcamp.com",
+    "bandcampBandId": "2780672279",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:08:55.285218+00:00"
+  }
+}

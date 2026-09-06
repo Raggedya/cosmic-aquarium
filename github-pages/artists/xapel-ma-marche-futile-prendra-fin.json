@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "xapel-ma-marche-futile-prendra-fin",
+  "artist": "XAPEL",
+  "bandcampUrl": "https://xapel.bandcamp.com/album/ma-marche-futile-prendra-fin",
+  "releaseTitle": "Ma marche futile prendra fin...",
+  "releaseDate": "2026-08-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "atmospheric black metal",
+    "black metal",
+    "depressive black metal",
+    "metal",
+    "dungeon synth",
+    "Rodez"
+  ],
+  "primaryLocation": "Rodez, France",
+  "bioShort": "XAPEL — post-metal / atmospheric black metal / black metal music from Rodez, France.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://xapel.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:16:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ma-marche-futile-prendra-fin",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ma-marche-futile-prendra-fin-3511967395",
+      "title": "Ma marche futile prendra fin...",
+      "artist": "XAPEL",
+      "albumTitle": "Ma marche futile prendra fin...",
+      "albumKey": "ma-marche-futile-prendra-fin",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xapel.bandcamp.com/track/ma-marche-futile-prendra-fin",
+      "bandcampEmbedTrackId": "3511967395",
+      "sourcePage": "https://xapel.bandcamp.com/album/ma-marche-futile-prendra-fin",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ma-marche-futile-prendra-fin-3217308230",
+      "title": "...sur cette terre de chair et de sève.",
+      "artist": "XAPEL",
+      "albumTitle": "Ma marche futile prendra fin...",
+      "albumKey": "ma-marche-futile-prendra-fin",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://xapel.bandcamp.com/track/sur-cette-terre-de-chair-et-de-s-ve",
+      "bandcampEmbedTrackId": "3217308230",
+      "sourcePage": "https://xapel.bandcamp.com/album/ma-marche-futile-prendra-fin",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://xapel.bandcamp.com/album/ma-marche-futile-prendra-fin",
+    "discoveredAt": "2026-09-06T03:55:20.803196+00:00",
+    "importedAt": "2026-09-06T04:16:18.332141+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "xapel.bandcamp.com",
+    "bandcampBandId": "394762318",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:16:18.332141+00:00"
+  }
+}

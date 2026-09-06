@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "fluisteraars-jacht-der-mysterien",
+  "artist": "FLUISTERAARS",
+  "bandcampUrl": "https://fluisteraars.bandcamp.com/album/jacht-der-mysteri-n",
+  "releaseTitle": "Jacht der Mysteriën",
+  "releaseDate": "2026-09-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "metal",
+    "atmospheric black metal",
+    "black metal",
+    "dutch black metal",
+    "gelderland",
+    "atmospheric metal",
+    "Netherlands"
+  ],
+  "primaryLocation": "GE, Netherlands",
+  "bioShort": "FLUISTERAARS return with their sixth full-length, Jacht der Mysteriën — three towering epics centered around the pursuit of the unknown. Drawing from local legends, mysterious…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://fluisteraars.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:00:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "jacht-der-mysterien",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "jacht-der-mysterien-1814312006",
+      "title": "Grondeloos Donkere Bossen",
+      "artist": "FLUISTERAARS",
+      "albumTitle": "Jacht der Mysteriën",
+      "albumKey": "jacht-der-mysterien",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fluisteraars.bandcamp.com/album/jacht-der-mysteri-n",
+      "bandcampEmbedTrackId": "1814312006",
+      "sourcePage": "https://fluisteraars.bandcamp.com/album/jacht-der-mysteri-n",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "jacht-der-mysterien-1424696509",
+      "title": "Condities der Afstraffing",
+      "artist": "FLUISTERAARS",
+      "albumTitle": "Jacht der Mysteriën",
+      "albumKey": "jacht-der-mysterien",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:31",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fluisteraars.bandcamp.com/track/condities-der-afstraffing",
+      "bandcampEmbedTrackId": "1424696509",
+      "sourcePage": "https://fluisteraars.bandcamp.com/album/jacht-der-mysteri-n",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "jacht-der-mysterien-2897339742",
+      "title": "Zwarte Zomermaan",
+      "artist": "FLUISTERAARS",
+      "albumTitle": "Jacht der Mysteriën",
+      "albumKey": "jacht-der-mysterien",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://fluisteraars.bandcamp.com/album/jacht-der-mysteri-n",
+      "bandcampEmbedTrackId": "2897339742",
+      "sourcePage": "https://fluisteraars.bandcamp.com/album/jacht-der-mysteri-n",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://fluisteraars.bandcamp.com/album/jacht-der-mysteri-n",
+    "discoveredAt": "2026-09-06T03:54:28.025237+00:00",
+    "importedAt": "2026-09-06T04:00:57.438793+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "fluisteraars.bandcamp.com",
+    "bandcampBandId": "2975148100",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:00:57.438793+00:00"
+  }
+}

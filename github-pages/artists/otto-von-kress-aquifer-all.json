@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "otto-von-kress-aquifer-all",
+  "artist": "OttO von Kress",
+  "bandcampUrl": "https://ottovonkress.bandcamp.com/album/aquifer-all",
+  "releaseTitle": "Aquifer All",
+  "releaseDate": "2026-08-23 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "electronic",
+    "free improvisation",
+    "free jazz",
+    "jazz",
+    "jazz piano",
+    "solo piano",
+    "ambient electronic",
+    "Gainesville"
+  ],
+  "primaryLocation": "Gainesville, Florida",
+  "bioShort": "Piano/Tape Flute(CP88) pleads for conservation while the Cymbal/Bass(1010 Lemondrop) obliviously drains down the water(Make Noise 0-Coast) in the aquifer.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ottovonkress.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:01:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "aquifer-all",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "aquifer-all-1817852961",
+      "title": "Don’t Drain the Swamp",
+      "artist": "OttO von Kress",
+      "albumTitle": "Aquifer All",
+      "albumKey": "aquifer-all",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ottovonkress.bandcamp.com/track/don-t-drain-the-swamp",
+      "bandcampEmbedTrackId": "1817852961",
+      "sourcePage": "https://ottovonkress.bandcamp.com/album/aquifer-all",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "aquifer-all-4007911247",
+      "title": "Aquifer All",
+      "artist": "OttO von Kress",
+      "albumTitle": "Aquifer All",
+      "albumKey": "aquifer-all",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:14",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ottovonkress.bandcamp.com/track/aquifer-all",
+      "bandcampEmbedTrackId": "4007911247",
+      "sourcePage": "https://ottovonkress.bandcamp.com/album/aquifer-all",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ottovonkress.bandcamp.com/album/aquifer-all",
+    "discoveredAt": "2026-09-06T03:54:28.026742+00:00",
+    "importedAt": "2026-09-06T04:01:28.574550+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ottovonkress.bandcamp.com",
+    "bandcampBandId": "2711327251",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:01:28.574550+00:00"
+  }
+}

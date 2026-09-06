@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "snooper-live-at-united-record-pressing",
+  "artist": "Snooper",
+  "bandcampUrl": "https://snooper7.bandcamp.com/album/live-at-united-record-pressing",
+  "releaseTitle": "LIVE AT UNITED RECORD PRESSING",
+  "releaseDate": "2026-06-17 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "bonnaroo",
+    "chats",
+    "garage rock",
+    "osees",
+    "punk",
+    "snooper",
+    "Nashville"
+  ],
+  "primaryLocation": "Nashville, Tennessee",
+  "bioShort": "LIVE FROM UNITED RECORD PRESSING PARKING LOT 2 TRACKS RECORDED DIRECT TO TAPE UNTIL IT RAN OUT THANKS TO JACK TELLMANN FOR RECORDING AND RUNNING SOUND 10 SONGS IN 20 MIN :)",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://snooper7.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:06:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "live-at-united-record-pressing",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "live-at-united-record-pressing-1463745263",
+      "title": "LIVE AT URP 6/12/26",
+      "artist": "Snooper",
+      "albumTitle": "LIVE AT UNITED RECORD PRESSING",
+      "albumKey": "live-at-united-record-pressing",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "20:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://snooper7.bandcamp.com/track/live-at-urp-6-12-26",
+      "bandcampEmbedTrackId": "1463745263",
+      "sourcePage": "https://snooper7.bandcamp.com/album/live-at-united-record-pressing",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://snooper7.bandcamp.com/album/live-at-united-record-pressing",
+    "discoveredAt": "2026-09-06T03:55:20.789099+00:00",
+    "importedAt": "2026-09-06T04:06:49.414023+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "snooper7.bandcamp.com",
+    "bandcampBandId": "4153293015",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:06:49.414023+00:00"
+  }
+}

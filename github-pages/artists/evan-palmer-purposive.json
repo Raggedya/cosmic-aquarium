@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "evan-palmer-purposive",
+  "artist": "Evan Palmer",
+  "bandcampUrl": "https://evanpalmer.bandcamp.com/album/purposive",
+  "releaseTitle": "Purposive",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "avant-garde",
+    "experimental",
+    "jazz",
+    "avant garde jazz",
+    "double bass",
+    "double bass solo",
+    "free jazz",
+    "improvised music",
+    "noise",
+    "solo bass",
+    "Brooklyn"
+  ],
+  "primaryLocation": "Brooklyn, New York",
+  "bioShort": "Evan Palmer’s debut recording of solo double bass, Purposive, exhibits the vast sound possibilities of the instrument through four intense and daring improvisations.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://evanpalmer.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:01:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "purposive",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "purposive-889865406",
+      "title": "Massachusetts",
+      "artist": "Evan Palmer",
+      "albumTitle": "Purposive",
+      "albumKey": "purposive",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evanpalmer.bandcamp.com/track/massachusetts",
+      "bandcampEmbedTrackId": "889865406",
+      "sourcePage": "https://evanpalmer.bandcamp.com/album/purposive",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "purposive-903966116",
+      "title": "Shadows Without Bodies",
+      "artist": "Evan Palmer",
+      "albumTitle": "Purposive",
+      "albumKey": "purposive",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "16:17",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evanpalmer.bandcamp.com/track/shadows-without-bodies",
+      "bandcampEmbedTrackId": "903966116",
+      "sourcePage": "https://evanpalmer.bandcamp.com/album/purposive",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "purposive-884917666",
+      "title": "Agony",
+      "artist": "Evan Palmer",
+      "albumTitle": "Purposive",
+      "albumKey": "purposive",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "15:45",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evanpalmer.bandcamp.com/track/agony",
+      "bandcampEmbedTrackId": "884917666",
+      "sourcePage": "https://evanpalmer.bandcamp.com/album/purposive",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "purposive-1417386759",
+      "title": "Lenin",
+      "artist": "Evan Palmer",
+      "albumTitle": "Purposive",
+      "albumKey": "purposive",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "8:41",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://evanpalmer.bandcamp.com/track/lenin",
+      "bandcampEmbedTrackId": "1417386759",
+      "sourcePage": "https://evanpalmer.bandcamp.com/album/purposive",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://evanpalmer.bandcamp.com/album/purposive",
+    "discoveredAt": "2026-09-06T03:54:28.026742+00:00",
+    "importedAt": "2026-09-06T04:01:26.512705+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "evanpalmer.bandcamp.com",
+    "bandcampBandId": "1145186733",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:01:26.512705+00:00"
+  }
+}

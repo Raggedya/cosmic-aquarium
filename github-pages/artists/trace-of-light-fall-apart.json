@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "trace-of-light-fall-apart",
+  "artist": "Trace of Light",
+  "bandcampUrl": "https://traceoflight.bandcamp.com/album/fall-apart",
+  "releaseTitle": "Fall Apart",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "electronic",
+    "darkwave",
+    "goth",
+    "post-punk",
+    "Portland"
+  ],
+  "primaryLocation": "Portland, Oregon",
+  "bioShort": "Written and recorded at The Oasis Mastered by Alan Brucke Artwork by Negative Meditation & Isolation Club Griffin Campbell - Vocals/Synth/Programming/Guitar",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://traceoflight.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:59:11Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "fall-apart",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fall-apart-2407043655",
+      "title": "Fall Apart",
+      "artist": "Trace of Light",
+      "albumTitle": "Fall Apart",
+      "albumKey": "fall-apart",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:18",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://traceoflight.bandcamp.com/track/fall-apart",
+      "bandcampEmbedTrackId": "2407043655",
+      "sourcePage": "https://traceoflight.bandcamp.com/album/fall-apart",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "fall-apart-3572114310",
+      "title": "Fall Apart (Demo)",
+      "artist": "Trace of Light",
+      "albumTitle": "Fall Apart",
+      "albumKey": "fall-apart",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:16",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://traceoflight.bandcamp.com/track/fall-apart-demo-2",
+      "bandcampEmbedTrackId": "3572114310",
+      "sourcePage": "https://traceoflight.bandcamp.com/album/fall-apart",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://traceoflight.bandcamp.com/album/fall-apart",
+    "discoveredAt": "2026-09-06T03:54:28.020054+00:00",
+    "importedAt": "2026-09-06T03:59:11.057342+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "traceoflight.bandcamp.com",
+    "bandcampBandId": "4051674395",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:59:11.057342+00:00"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "slug": "petrovich-pres-de-moi",
+  "artist": "Petrovich",
+  "bandcampUrl": "https://petrovich07.bandcamp.com/album/pr-s-de-moi",
+  "releaseTitle": "Près de Moi",
+  "releaseDate": "2026-06-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "ambient",
+    "près de moi",
+    "ambient pop",
+    "atmospheric",
+    "cinematic",
+    "emotional",
+    "emotional music",
+    "french vocal",
+    "healing",
+    "healing music",
+    "indie artist",
+    "instrumental",
+    "meditation",
+    "romantic",
+    "Ukraine"
+  ],
+  "primaryLocation": "Ukraine",
+  "bioShort": "\"Près de Moi\" (Close to Me) is an emotional French vocal ambient track by Petrovich. Born from the feeling of finding home in someone's presence, this song blends cinematic…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://petrovich07.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:07:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pres-de-moi",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pres-de-moi-4097642232",
+      "title": "petrovich - Près de Moi",
+      "artist": "Petrovich",
+      "albumTitle": "Près de Moi",
+      "albumKey": "pres-de-moi",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://petrovich07.bandcamp.com/track/pr-s-de-moi",
+      "bandcampEmbedTrackId": "4097642232",
+      "sourcePage": "https://petrovich07.bandcamp.com/album/pr-s-de-moi",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://petrovich07.bandcamp.com/album/pr-s-de-moi",
+    "discoveredAt": "2026-09-06T03:55:20.790103+00:00",
+    "importedAt": "2026-09-06T04:07:59.390721+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "petrovich07.bandcamp.com",
+    "bandcampBandId": "219301798",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:07:59.390721+00:00"
+  }
+}

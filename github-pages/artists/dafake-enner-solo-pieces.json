@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "slug": "dafake-enner-solo-pieces",
+  "artist": "DAFAKE",
+  "bandcampUrl": "https://dafake.bandcamp.com/album/enner-solo-pieces",
+  "releaseTitle": "Enner solo pieces",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "sound-art",
+    "experimental",
+    "ambient",
+    "avant-garde",
+    "drone",
+    "electroacoustic",
+    "harsh noise",
+    "improvisation",
+    "minimalism",
+    "noise",
+    "noise-art",
+    "sound art",
+    "Paris"
+  ],
+  "primaryLocation": "Paris, France",
+  "bioShort": "Three Harsh noise improvised pieces only using the Soma Laboratory Enner with various conductive found objects. (no external fx or post-processing.) No edits, no overdubs…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dafake.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:57:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "enner-solo-pieces",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "enner-solo-pieces-2509787879",
+      "title": "Part 1",
+      "artist": "DAFAKE",
+      "albumTitle": "Enner solo pieces",
+      "albumKey": "enner-solo-pieces",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "17:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dafake.bandcamp.com/track/part-1",
+      "bandcampEmbedTrackId": "2509787879",
+      "sourcePage": "https://dafake.bandcamp.com/album/enner-solo-pieces",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "enner-solo-pieces-60414523",
+      "title": "Part 2",
+      "artist": "DAFAKE",
+      "albumTitle": "Enner solo pieces",
+      "albumKey": "enner-solo-pieces",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "14:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dafake.bandcamp.com/track/part-2",
+      "bandcampEmbedTrackId": "60414523",
+      "sourcePage": "https://dafake.bandcamp.com/album/enner-solo-pieces",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "enner-solo-pieces-4254605783",
+      "title": "Part 3",
+      "artist": "DAFAKE",
+      "albumTitle": "Enner solo pieces",
+      "albumKey": "enner-solo-pieces",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "14:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dafake.bandcamp.com/track/part-3",
+      "bandcampEmbedTrackId": "4254605783",
+      "sourcePage": "https://dafake.bandcamp.com/album/enner-solo-pieces",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://dafake.bandcamp.com/album/enner-solo-pieces",
+    "discoveredAt": "2026-09-06T03:54:28.014016+00:00",
+    "importedAt": "2026-09-06T03:57:47.059323+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "dafake.bandcamp.com",
+    "bandcampBandId": "59681309",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:57:47.059323+00:00"
+  }
+}

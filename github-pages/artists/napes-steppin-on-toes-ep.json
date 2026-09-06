@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "slug": "napes-steppin-on-toes-ep",
+  "artist": "Napes",
+  "bandcampUrl": "https://napesuk.bandcamp.com/album/steppin-on-toes-ep",
+  "releaseTitle": "Steppin On Toes EP",
+  "releaseDate": "2026-09-17 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "jungle dnb",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Napes — jungle dnb / London music from London, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://napesuk.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:02:15Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "steppin-on-toes-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "steppin-on-toes-ep-3569094996",
+      "title": "Napes & Visages ft. Scratchy - Steppin On Toes",
+      "artist": "Napes",
+      "albumTitle": "Steppin On Toes EP",
+      "albumKey": "steppin-on-toes-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://napesuk.bandcamp.com/track/napes-visages-ft-scratchy-steppin-on-toes",
+      "bandcampEmbedTrackId": "3569094996",
+      "sourcePage": "https://napesuk.bandcamp.com/album/steppin-on-toes-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "steppin-on-toes-ep-3875878828",
+      "title": "Napes - Nine Mil",
+      "artist": "Napes",
+      "albumTitle": "Steppin On Toes EP",
+      "albumKey": "steppin-on-toes-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://napesuk.bandcamp.com/album/steppin-on-toes-ep",
+      "bandcampEmbedTrackId": "3875878828",
+      "sourcePage": "https://napesuk.bandcamp.com/album/steppin-on-toes-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "steppin-on-toes-ep-3893402875",
+      "title": "Napes & Alix Perez - Shimaki",
+      "artist": "Napes",
+      "albumTitle": "Steppin On Toes EP",
+      "albumKey": "steppin-on-toes-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://napesuk.bandcamp.com/album/steppin-on-toes-ep",
+      "bandcampEmbedTrackId": "3893402875",
+      "sourcePage": "https://napesuk.bandcamp.com/album/steppin-on-toes-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "steppin-on-toes-ep-2043222083",
+      "title": "Napes - Ground Speed",
+      "artist": "Napes",
+      "albumTitle": "Steppin On Toes EP",
+      "albumKey": "steppin-on-toes-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://napesuk.bandcamp.com/album/steppin-on-toes-ep",
+      "bandcampEmbedTrackId": "2043222083",
+      "sourcePage": "https://napesuk.bandcamp.com/album/steppin-on-toes-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://napesuk.bandcamp.com/album/steppin-on-toes-ep",
+    "discoveredAt": "2026-09-06T03:54:28.029266+00:00",
+    "importedAt": "2026-09-06T04:02:15.167920+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "napesuk.bandcamp.com",
+    "bandcampBandId": "3132487894",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:02:15.167920+00:00"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "teen-smoking-planet-series-saturn",
+  "artist": "TEEN SMOKING",
+  "bandcampUrl": "https://teensmoking.bandcamp.com/album/planet-series-saturn",
+  "releaseTitle": "Planet Series: Saturn",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "idm",
+    "ambient",
+    "musique concrete",
+    "post-industrial",
+    "techno",
+    "Jacksonville"
+  ],
+  "primaryLocation": "Jacksonville, Florida",
+  "bioShort": "Among the ancient astronomers and philosophers, Saturn held the outermost throne of the visible heavens. It was the final sphere the eye could reach, the boundary between the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://teensmoking.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:16:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "planet-series-saturn",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "planet-series-saturn-667183518",
+      "title": "Hexagon Vortex",
+      "artist": "TEEN SMOKING",
+      "albumTitle": "Planet Series: Saturn",
+      "albumKey": "planet-series-saturn",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "27:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://teensmoking.bandcamp.com/track/hexagon-vortex",
+      "bandcampEmbedTrackId": "667183518",
+      "sourcePage": "https://teensmoking.bandcamp.com/album/planet-series-saturn",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "planet-series-saturn-205127369",
+      "title": "Small Saturnine Silence",
+      "artist": "TEEN SMOKING",
+      "albumTitle": "Planet Series: Saturn",
+      "albumKey": "planet-series-saturn",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "22:20",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://teensmoking.bandcamp.com/track/small-saturnine-silence",
+      "bandcampEmbedTrackId": "205127369",
+      "sourcePage": "https://teensmoking.bandcamp.com/album/planet-series-saturn",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://teensmoking.bandcamp.com/album/planet-series-saturn",
+    "discoveredAt": "2026-09-06T03:55:20.803196+00:00",
+    "importedAt": "2026-09-06T04:16:40.266092+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "teensmoking.bandcamp.com",
+    "bandcampBandId": "4140241722",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:16:40.266092+00:00"
+  }
+}

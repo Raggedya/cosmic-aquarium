@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "slug": "blood-twin-i-feel-happy-1-track-single",
+  "artist": "blood.twin",
+  "bandcampUrl": "https://bloodtwin.bandcamp.com/album/i-feel-happy-1-track-single",
+  "releaseTitle": "I Feel Happy [1 Track : Single]",
+  "releaseDate": "2026-08-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "alternative",
+    "electronic",
+    "goth rock",
+    "dark electro",
+    "darkwave",
+    "deathrock",
+    "ebm",
+    "goth",
+    "gothic",
+    "gothic rock",
+    "industrial",
+    "post-punk",
+    "trad goth",
+    "tradgoth",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "\"It's rad!...Love that song!\" — DJ Dave Bats, Release The Bats \"Absolutely fantastic!\" — DJ Pico, Grey Matters, Radio Schwarze Welle \"Love this. An instant classic.\" — DJ Bad…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bloodtwin.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:05:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-feel-happy-1-track-single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-feel-happy-1-track-single-3013367962",
+      "title": "I Feel Happy",
+      "artist": "blood.twin",
+      "albumTitle": "I Feel Happy [1 Track : Single]",
+      "albumKey": "i-feel-happy-1-track-single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bloodtwin.bandcamp.com/track/i-feel-happy",
+      "bandcampEmbedTrackId": "3013367962",
+      "sourcePage": "https://bloodtwin.bandcamp.com/album/i-feel-happy-1-track-single",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bloodtwin.bandcamp.com/album/i-feel-happy-1-track-single",
+    "discoveredAt": "2026-09-06T03:55:20.786582+00:00",
+    "importedAt": "2026-09-06T04:05:46.651368+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bloodtwin.bandcamp.com",
+    "bandcampBandId": "2017015316",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:05:46.651368+00:00"
+  }
+}

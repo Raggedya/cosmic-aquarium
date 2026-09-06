@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "sisterhood-of-sleep-bonsoir-hiver",
+  "artist": "Sisterhood of Sleep",
+  "bandcampUrl": "https://sisterhoodofsleep.bandcamp.com/album/bonsoir-hiver",
+  "releaseTitle": "Bonsoir Hiver",
+  "releaseDate": "2025-12-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "ambient",
+    "dark ambient",
+    "darkwave",
+    "dungeon synth",
+    "ethereal wave",
+    "solstice",
+    "Troy"
+  ],
+  "primaryLocation": "Troy, New York",
+  "bioShort": "Greeting Winter on the Solstice as it comes in cold yet brings the light. First single from the upcoming full-length album.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sisterhoodofsleep.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:09:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bonsoir-hiver",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bonsoir-hiver-2435862276",
+      "title": "Bonsoir Hiver",
+      "artist": "Sisterhood of Sleep",
+      "albumTitle": "Bonsoir Hiver",
+      "albumKey": "bonsoir-hiver",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "7:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sisterhoodofsleep.bandcamp.com/track/bonsoir-hiver",
+      "bandcampEmbedTrackId": "2435862276",
+      "sourcePage": "https://sisterhoodofsleep.bandcamp.com/album/bonsoir-hiver",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sisterhoodofsleep.bandcamp.com/album/bonsoir-hiver",
+    "discoveredAt": "2026-09-06T03:55:20.794022+00:00",
+    "importedAt": "2026-09-06T04:09:53.064253+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sisterhoodofsleep.bandcamp.com",
+    "bandcampBandId": "3890706588",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:09:53.064253+00:00"
+  }
+}

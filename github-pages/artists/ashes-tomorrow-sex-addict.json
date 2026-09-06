@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "ashes-tomorrow-sex-addict",
+  "artist": "Ashes Tomorrow",
+  "bandcampUrl": "https://ashestomorrow.bandcamp.com/album/sex-addict",
+  "releaseTitle": "Sex Addict",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "electronic",
+    "dark electro",
+    "dark-synthpop",
+    "ebm",
+    "synthpop",
+    "Las Vegas"
+  ],
+  "primaryLocation": "Las Vegas, Nevada",
+  "bioShort": "Ashes Tomorrow — darkwave / electronic / dark electro music from Las Vegas, Nevada.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ashestomorrow.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:12:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sex-addict",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sex-addict-2601828281",
+      "title": "Sex Addict",
+      "artist": "Ashes Tomorrow",
+      "albumTitle": "Sex Addict",
+      "albumKey": "sex-addict",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ashestomorrow.bandcamp.com/track/sex-addict",
+      "bandcampEmbedTrackId": "2601828281",
+      "sourcePage": "https://ashestomorrow.bandcamp.com/album/sex-addict",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sex-addict-4210689513",
+      "title": "March of the Dead (Instrumental)",
+      "artist": "Ashes Tomorrow",
+      "albumTitle": "Sex Addict",
+      "albumKey": "sex-addict",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:01",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ashestomorrow.bandcamp.com/track/march-of-the-dead-instrumental",
+      "bandcampEmbedTrackId": "4210689513",
+      "sourcePage": "https://ashestomorrow.bandcamp.com/album/sex-addict",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ashestomorrow.bandcamp.com/album/sex-addict",
+    "discoveredAt": "2026-09-06T03:55:20.799193+00:00",
+    "importedAt": "2026-09-06T04:12:21.196268+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ashestomorrow.bandcamp.com",
+    "bandcampBandId": "4271163108",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:12:21.196268+00:00"
+  }
+}

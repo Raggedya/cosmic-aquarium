@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "black-sun-void-funeral-sun",
+  "artist": "Black sun Void",
+  "bandcampUrl": "https://blacksunvoid.bandcamp.com/album/funeral-sun",
+  "releaseTitle": "Funeral Sun",
+  "releaseDate": "2026-08-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "ambient",
+    "drone",
+    "dark ambient",
+    "doom",
+    "doom metal",
+    "stoner",
+    "São Paulo"
+  ],
+  "primaryLocation": "São Paulo, Brazil",
+  "bioShort": "Black sun Void — sludge / ambient / drone music from São Paulo, Brazil.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://blacksunvoid.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:05:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "funeral-sun",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "funeral-sun-720570719",
+      "title": "Funeral Sun",
+      "artist": "Black sun Void",
+      "albumTitle": "Funeral Sun",
+      "albumKey": "funeral-sun",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "11:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://blacksunvoid.bandcamp.com/track/funeral-sun",
+      "bandcampEmbedTrackId": "720570719",
+      "sourcePage": "https://blacksunvoid.bandcamp.com/album/funeral-sun",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "funeral-sun-3133245706",
+      "title": "Cosmic Flesh",
+      "artist": "Black sun Void",
+      "albumTitle": "Funeral Sun",
+      "albumKey": "funeral-sun",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "9:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://blacksunvoid.bandcamp.com/track/cosmic-flesh",
+      "bandcampEmbedTrackId": "3133245706",
+      "sourcePage": "https://blacksunvoid.bandcamp.com/album/funeral-sun",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "funeral-sun-2067376040",
+      "title": "Empyrean Corpse",
+      "artist": "Black sun Void",
+      "albumTitle": "Funeral Sun",
+      "albumKey": "funeral-sun",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://blacksunvoid.bandcamp.com/track/empyrean-corpse",
+      "bandcampEmbedTrackId": "2067376040",
+      "sourcePage": "https://blacksunvoid.bandcamp.com/album/funeral-sun",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "funeral-sun-2091184233",
+      "title": "Liminal Infestation",
+      "artist": "Black sun Void",
+      "albumTitle": "Funeral Sun",
+      "albumKey": "funeral-sun",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "10:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://blacksunvoid.bandcamp.com/track/liminal-infestation",
+      "bandcampEmbedTrackId": "2091184233",
+      "sourcePage": "https://blacksunvoid.bandcamp.com/album/funeral-sun",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://blacksunvoid.bandcamp.com/album/funeral-sun",
+    "discoveredAt": "2026-09-06T03:55:20.785008+00:00",
+    "importedAt": "2026-09-06T04:05:09.238739+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "blacksunvoid.bandcamp.com",
+    "bandcampBandId": "3263662442",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:05:09.238739+00:00"
+  }
+}

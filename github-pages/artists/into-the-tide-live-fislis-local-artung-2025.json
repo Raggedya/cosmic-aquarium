@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "into-the-tide-live-fislis-local-artung-2025",
+  "artist": "[Into The Tide]",
+  "bandcampUrl": "https://intothetide.bandcamp.com/album/live-fislis-local-artung-2025",
+  "releaseTitle": "LIVE @ FISLIS / LOCAL ARTUNG (2025)",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "post-hardcore",
+    "post-rock",
+    "Sélestat"
+  ],
+  "primaryLocation": "Sélestat, France",
+  "bioShort": "We upload a new mix of 5 of our 6 songs recorded live during our show @ Local Artung / Fislis in June 2025. Thanks to Yann for the original recordings.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://intothetide.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:56:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "live-fislis-local-artung-2025",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "live-fislis-local-artung-2025-501864440",
+      "title": "Ceux qu'il me reste",
+      "artist": "[Into The Tide]",
+      "albumTitle": "LIVE @ FISLIS / LOCAL ARTUNG (2025)",
+      "albumKey": "live-fislis-local-artung-2025",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://intothetide.bandcamp.com/track/ceux-quil-me-reste-2",
+      "bandcampEmbedTrackId": "501864440",
+      "sourcePage": "https://intothetide.bandcamp.com/album/live-fislis-local-artung-2025",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "live-fislis-local-artung-2025-3107541704",
+      "title": "Tout ira mieux + IX",
+      "artist": "[Into The Tide]",
+      "albumTitle": "LIVE @ FISLIS / LOCAL ARTUNG (2025)",
+      "albumKey": "live-fislis-local-artung-2025",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:56",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://intothetide.bandcamp.com/track/tout-ira-mieux-ix",
+      "bandcampEmbedTrackId": "3107541704",
+      "sourcePage": "https://intothetide.bandcamp.com/album/live-fislis-local-artung-2025",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "live-fislis-local-artung-2025-606702497",
+      "title": "Invisible",
+      "artist": "[Into The Tide]",
+      "albumTitle": "LIVE @ FISLIS / LOCAL ARTUNG (2025)",
+      "albumKey": "live-fislis-local-artung-2025",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:29",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://intothetide.bandcamp.com/track/invisible-2",
+      "bandcampEmbedTrackId": "606702497",
+      "sourcePage": "https://intothetide.bandcamp.com/album/live-fislis-local-artung-2025",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "live-fislis-local-artung-2025-3100512780",
+      "title": "Gravé en moi",
+      "artist": "[Into The Tide]",
+      "albumTitle": "LIVE @ FISLIS / LOCAL ARTUNG (2025)",
+      "albumKey": "live-fislis-local-artung-2025",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:43",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://intothetide.bandcamp.com/track/grav-en-moi-2",
+      "bandcampEmbedTrackId": "3100512780",
+      "sourcePage": "https://intothetide.bandcamp.com/album/live-fislis-local-artung-2025",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://intothetide.bandcamp.com/album/live-fislis-local-artung-2025",
+    "discoveredAt": "2026-09-06T03:54:28.008287+00:00",
+    "importedAt": "2026-09-06T03:56:07.844853+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "intothetide.bandcamp.com",
+    "bandcampBandId": "2959629205",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:56:07.844853+00:00"
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "texas-is-the-reason-texas-is-the-reason-remastered-edition",
+  "artist": "Texas Is The Reason",
+  "bandcampUrl": "https://texasisthereason.bandcamp.com/album/texas-is-the-reason-remastered-edition",
+  "releaseTitle": "Texas Is The Reason (Remastered Edition)",
+  "releaseDate": "1995-01-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "alternative",
+    "indie rock",
+    "revelation records",
+    "texas is the reason",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Revelation:47",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://texasisthereason.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:13:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "texas-is-the-reason-remastered-edition",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "texas-is-the-reason-remastered-edition-1756740105",
+      "title": "If It's Here When We Get Back It's Ours",
+      "artist": "Texas Is The Reason",
+      "albumTitle": "Texas Is The Reason (Remastered Edition)",
+      "albumKey": "texas-is-the-reason-remastered-edition",
+      "year": 1995,
+      "trackNumber": 1,
+      "duration": "2:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://texasisthereason.bandcamp.com/track/if-its-here-when-we-get-back-its-ours",
+      "bandcampEmbedTrackId": "1756740105",
+      "sourcePage": "https://texasisthereason.bandcamp.com/album/texas-is-the-reason-remastered-edition",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "texas-is-the-reason-remastered-edition-1016235081",
+      "title": "Dressing Cold",
+      "artist": "Texas Is The Reason",
+      "albumTitle": "Texas Is The Reason (Remastered Edition)",
+      "albumKey": "texas-is-the-reason-remastered-edition",
+      "year": 1995,
+      "trackNumber": 2,
+      "duration": "2:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://texasisthereason.bandcamp.com/track/dressing-cold",
+      "bandcampEmbedTrackId": "1016235081",
+      "sourcePage": "https://texasisthereason.bandcamp.com/album/texas-is-the-reason-remastered-edition",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "texas-is-the-reason-remastered-edition-1874040304",
+      "title": "Antique",
+      "artist": "Texas Is The Reason",
+      "albumTitle": "Texas Is The Reason (Remastered Edition)",
+      "albumKey": "texas-is-the-reason-remastered-edition",
+      "year": 1995,
+      "trackNumber": 3,
+      "duration": "5:04",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://texasisthereason.bandcamp.com/track/antique",
+      "bandcampEmbedTrackId": "1874040304",
+      "sourcePage": "https://texasisthereason.bandcamp.com/album/texas-is-the-reason-remastered-edition",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://texasisthereason.bandcamp.com/album/texas-is-the-reason-remastered-edition",
+    "discoveredAt": "2026-09-06T03:55:20.800198+00:00",
+    "importedAt": "2026-09-06T04:13:50.587007+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "texasisthereason.bandcamp.com",
+    "bandcampBandId": "2752140508",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:13:50.587007+00:00"
+  }
+}

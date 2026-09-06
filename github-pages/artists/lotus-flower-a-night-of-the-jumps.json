@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "lotus-flower-a-night-of-the-jumps",
+  "artist": "Lotus Flower",
+  "bandcampUrl": "https://lotusflower1111.bandcamp.com/album/a-night-of-the-jumps",
+  "releaseTitle": "A Night of the Jumps",
+  "releaseDate": "2026-08-16 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "art rock",
+    "experimental",
+    "indie",
+    "singer-songwriter",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "Lotus Flower — slowcore / alternative / art rock music from Berlin, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lotusflower1111.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:04:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-night-of-the-jumps",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-night-of-the-jumps-2370275893",
+      "title": "Ceremony",
+      "artist": "Lotus Flower",
+      "albumTitle": "A Night of the Jumps",
+      "albumKey": "a-night-of-the-jumps",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:40",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lotusflower1111.bandcamp.com/track/ceremony",
+      "bandcampEmbedTrackId": "2370275893",
+      "sourcePage": "https://lotusflower1111.bandcamp.com/album/a-night-of-the-jumps",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-night-of-the-jumps-1186937405",
+      "title": "A Small Town Cries",
+      "artist": "Lotus Flower",
+      "albumTitle": "A Night of the Jumps",
+      "albumKey": "a-night-of-the-jumps",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:50",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lotusflower1111.bandcamp.com/track/a-small-town-cries",
+      "bandcampEmbedTrackId": "1186937405",
+      "sourcePage": "https://lotusflower1111.bandcamp.com/album/a-night-of-the-jumps",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "a-night-of-the-jumps-1666534996",
+      "title": "Faster Than A Knife",
+      "artist": "Lotus Flower",
+      "albumTitle": "A Night of the Jumps",
+      "albumKey": "a-night-of-the-jumps",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lotusflower1111.bandcamp.com/track/faster-than-a-knife",
+      "bandcampEmbedTrackId": "1666534996",
+      "sourcePage": "https://lotusflower1111.bandcamp.com/album/a-night-of-the-jumps",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lotusflower1111.bandcamp.com/album/a-night-of-the-jumps",
+    "discoveredAt": "2026-09-06T03:55:20.783173+00:00",
+    "importedAt": "2026-09-06T04:04:00.305760+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lotusflower1111.bandcamp.com",
+    "bandcampBandId": "65396940",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:04:00.305760+00:00"
+  }
+}

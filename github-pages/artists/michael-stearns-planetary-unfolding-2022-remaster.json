@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "michael-stearns-planetary-unfolding-2022-remaster",
+  "artist": "Michael Stearns",
+  "bandcampUrl": "https://michaelstearns.bandcamp.com/album/planetary-unfolding-2022-remaster",
+  "releaseTitle": "Planetary Unfolding 2022 Remaster",
+  "releaseDate": "2022-04-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "ambient",
+    "cinematic",
+    "electronic music",
+    "soundscapes",
+    "Santa Fe"
+  ],
+  "primaryLocation": "Santa Fe, New Mexico",
+  "bioShort": "Re-mastered by Bob Ohlsson in Nashville Side A Movements 1. \"In the Beginning...\" 2. \"Toto, I've a feeling we're not in Kansas anymore...\" 3. \"Wherever two or more are…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://michaelstearns.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:56:35Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "planetary-unfolding-2022-remaster",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "planetary-unfolding-2022-remaster-2314288410",
+      "title": "Planetary Unfolding Side A",
+      "artist": "Michael Stearns",
+      "albumTitle": "Planetary Unfolding 2022 Remaster",
+      "albumKey": "planetary-unfolding-2022-remaster",
+      "year": 2022,
+      "trackNumber": 1,
+      "duration": "23:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://michaelstearns.bandcamp.com/track/planetary-unfolding-side-a",
+      "bandcampEmbedTrackId": "2314288410",
+      "sourcePage": "https://michaelstearns.bandcamp.com/album/planetary-unfolding-2022-remaster",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "planetary-unfolding-2022-remaster-160917852",
+      "title": "Planetary Unfolding Side B",
+      "artist": "Michael Stearns",
+      "albumTitle": "Planetary Unfolding 2022 Remaster",
+      "albumKey": "planetary-unfolding-2022-remaster",
+      "year": 2022,
+      "trackNumber": 2,
+      "duration": "22:02",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://michaelstearns.bandcamp.com/track/planetary-unfolding-side-b",
+      "bandcampEmbedTrackId": "160917852",
+      "sourcePage": "https://michaelstearns.bandcamp.com/album/planetary-unfolding-2022-remaster",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "planetary-unfolding-2022-remaster-1788662595",
+      "title": "In The Beginning, excerpt from Planetary Unfolding",
+      "artist": "Michael Stearns",
+      "albumTitle": "Planetary Unfolding 2022 Remaster",
+      "albumKey": "planetary-unfolding-2022-remaster",
+      "year": 2022,
+      "trackNumber": 3,
+      "duration": "8:06",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://michaelstearns.bandcamp.com/track/in-the-beginning-excerpt-from-planetary-unfolding",
+      "bandcampEmbedTrackId": "1788662595",
+      "sourcePage": "https://michaelstearns.bandcamp.com/album/planetary-unfolding-2022-remaster",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "planetary-unfolding-2022-remaster-601331029",
+      "title": "As the Earth Kissed the Moon, excerpt from Planetary Unfolding",
+      "artist": "Michael Stearns",
+      "albumTitle": "Planetary Unfolding 2022 Remaster",
+      "albumKey": "planetary-unfolding-2022-remaster",
+      "year": 2022,
+      "trackNumber": 4,
+      "duration": "6:09",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://michaelstearns.bandcamp.com/track/as-the-earth-kissed-the-moon-excerpt-from-planetary-unfolding",
+      "bandcampEmbedTrackId": "601331029",
+      "sourcePage": "https://michaelstearns.bandcamp.com/album/planetary-unfolding-2022-remaster",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://michaelstearns.bandcamp.com/album/planetary-unfolding-2022-remaster",
+    "discoveredAt": "2026-09-06T03:54:28.010818+00:00",
+    "importedAt": "2026-09-06T03:56:35.613047+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "michaelstearns.bandcamp.com",
+    "bandcampBandId": "2379056088",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:56:35.613047+00:00"
+  }
+}

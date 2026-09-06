@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "april-s-fish-all-men",
+  "artist": "april's fish",
+  "bandcampUrl": "https://aprilsfish.bandcamp.com/album/all-men",
+  "releaseTitle": "all men",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "rock",
+    "dream pop",
+    "emo",
+    "post-rock",
+    "shoegaze",
+    "trip hop",
+    "Nancy"
+  ],
+  "primaryLocation": "Nancy, France",
+  "bioShort": "written and composed by april's fish music video directed by blanche varda / lil uzion mike junker - guitar pheaktra phat - bass, vocals leo deubel - drums produced, arranged…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://aprilsfish.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:03:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "all-men",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "all-men-4260496923",
+      "title": "all men",
+      "artist": "april's fish",
+      "albumTitle": "all men",
+      "albumKey": "all-men",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:44",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aprilsfish.bandcamp.com/track/all-men-2",
+      "bandcampEmbedTrackId": "4260496923",
+      "sourcePage": "https://aprilsfish.bandcamp.com/album/all-men",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://aprilsfish.bandcamp.com/album/all-men",
+    "discoveredAt": "2026-09-06T03:55:20.782008+00:00",
+    "importedAt": "2026-09-06T04:03:55.567392+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "aprilsfish.bandcamp.com",
+    "bandcampBandId": "2458292878",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:03:55.567392+00:00"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "lemonpig-big-mood",
+  "artist": "LEMONPiG",
+  "bandcampUrl": "https://lemonpig.bandcamp.com/album/big-mood",
+  "releaseTitle": "Big Mood",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "hard rock",
+    "pop rock",
+    "rock",
+    "alternative rock",
+    "heavy rock",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "LEMONPiG's debut single - it's not bad!",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lemonpig.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:01:55Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "big-mood",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "big-mood-3870908584",
+      "title": "Big Mood",
+      "artist": "LEMONPiG",
+      "albumTitle": "Big Mood",
+      "albumKey": "big-mood",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:06",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lemonpig.bandcamp.com/track/big-mood",
+      "bandcampEmbedTrackId": "3870908584",
+      "sourcePage": "https://lemonpig.bandcamp.com/album/big-mood",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "big-mood-4065033426",
+      "title": "Big Mood (Radio Edit)",
+      "artist": "LEMONPiG",
+      "albumTitle": "Big Mood",
+      "albumKey": "big-mood",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:36",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lemonpig.bandcamp.com/track/big-mood-radio-edit",
+      "bandcampEmbedTrackId": "4065033426",
+      "sourcePage": "https://lemonpig.bandcamp.com/album/big-mood",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lemonpig.bandcamp.com/album/big-mood",
+    "discoveredAt": "2026-09-06T03:54:28.028261+00:00",
+    "importedAt": "2026-09-06T04:01:55.404981+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lemonpig.bandcamp.com",
+    "bandcampBandId": "2484812849",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:01:55.404981+00:00"
+  }
+}

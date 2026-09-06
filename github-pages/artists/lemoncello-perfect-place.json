@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "lemoncello-perfect-place",
+  "artist": "Lemoncello",
+  "bandcampUrl": "https://lemoncello.bandcamp.com/album/perfect-place",
+  "releaseTitle": "Perfect Place",
+  "releaseDate": "2026-05-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "alternative",
+    "dream-folk",
+    "folk",
+    "indie-pop",
+    "irish folk",
+    "Dublin"
+  ],
+  "primaryLocation": "Dublin, Ireland",
+  "bioShort": "Lemoncello — dream-pop / alternative / dream-folk music from Dublin, Ireland.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "electronic",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lemoncello.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:14:06Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "perfect-place",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "perfect-place-552385865",
+      "title": "Meet Me Half Way",
+      "artist": "Lemoncello",
+      "albumTitle": "Perfect Place",
+      "albumKey": "perfect-place",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:03",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lemoncello.bandcamp.com/track/meet-me-half-way",
+      "bandcampEmbedTrackId": "552385865",
+      "sourcePage": "https://lemoncello.bandcamp.com/album/perfect-place",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lemoncello.bandcamp.com/album/perfect-place",
+    "discoveredAt": "2026-09-06T03:55:20.800198+00:00",
+    "importedAt": "2026-09-06T04:14:06.821494+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lemoncello.bandcamp.com",
+    "bandcampBandId": "806974059",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:14:06.821494+00:00"
+  }
+}

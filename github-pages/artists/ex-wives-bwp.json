@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "slug": "ex-wives-bwp",
+  "artist": "Ex Wives",
+  "bandcampUrl": "https://exwives.bandcamp.com/album/bwp",
+  "releaseTitle": "BWP",
+  "releaseDate": "2026-09-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "glasgow",
+    "rock",
+    "scotland",
+    "travis bean",
+    "alternative rock",
+    "aluminum",
+    "aluminum guitar",
+    "avant-garde",
+    "noise",
+    "noise rock",
+    "Glasgow"
+  ],
+  "primaryLocation": "Glasgow, UK",
+  "bioShort": "Ex Wives — noise-rock / glasgow / rock music from Glasgow, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://exwives.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:58:23Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bwp",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bwp-2290917471",
+      "title": "BWP",
+      "artist": "Ex Wives",
+      "albumTitle": "BWP",
+      "albumKey": "bwp",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://exwives.bandcamp.com/track/bwp",
+      "bandcampEmbedTrackId": "2290917471",
+      "sourcePage": "https://exwives.bandcamp.com/album/bwp",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bwp-1739125414",
+      "title": "VL",
+      "artist": "Ex Wives",
+      "albumTitle": "BWP",
+      "albumKey": "bwp",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:24",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://exwives.bandcamp.com/track/vl",
+      "bandcampEmbedTrackId": "1739125414",
+      "sourcePage": "https://exwives.bandcamp.com/album/bwp",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "bwp-2800475909",
+      "title": "DRACHMA",
+      "artist": "Ex Wives",
+      "albumTitle": "BWP",
+      "albumKey": "bwp",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:51",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://exwives.bandcamp.com/track/drachma",
+      "bandcampEmbedTrackId": "2800475909",
+      "sourcePage": "https://exwives.bandcamp.com/album/bwp",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://exwives.bandcamp.com/album/bwp",
+    "discoveredAt": "2026-09-06T03:54:28.016529+00:00",
+    "importedAt": "2026-09-06T03:58:23.985550+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "exwives.bandcamp.com",
+    "bandcampBandId": "2125531040",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:58:23.985550+00:00"
+  }
+}

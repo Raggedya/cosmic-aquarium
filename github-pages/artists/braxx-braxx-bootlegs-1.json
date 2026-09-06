@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "slug": "braxx-braxx-bootlegs-1",
+  "artist": "Braxx",
+  "bandcampUrl": "https://braxxmusic.bandcamp.com/album/braxx-bootlegs-1",
+  "releaseTitle": "Braxx Bootlegs #1",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "electronic",
+    "rock",
+    "rock & roll",
+    "alternative rock",
+    "deep dubstep",
+    "downtempo",
+    "dubstep",
+    "emo",
+    "grunge rock alternative",
+    "halftime",
+    "hybrid trap",
+    "midwest emo",
+    "Denver"
+  ],
+  "primaryLocation": "Denver, Colorado",
+  "bioShort": "Braxx Bootlegs: 1. RHCP - Don't Forget Me (Braxx Bootleg) 2. The White Stripes - Dead Leaves & the Dirty Ground (Braxx Bootleg) 3. Title Fight - Safe in your Skin (Braxx Bootleg)",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://braxxmusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:59:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "braxx-bootlegs-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "braxx-bootlegs-1-1036971364",
+      "title": "RHCP - Don't Forget Me (Braxx Bootleg)",
+      "artist": "Braxx",
+      "albumTitle": "Braxx Bootlegs #1",
+      "albumKey": "braxx-bootlegs-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://braxxmusic.bandcamp.com/track/rhcp-dont-forget-me-braxx-bootleg",
+      "bandcampEmbedTrackId": "1036971364",
+      "sourcePage": "https://braxxmusic.bandcamp.com/album/braxx-bootlegs-1",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "braxx-bootlegs-1-3556319087",
+      "title": "The White Stripes - Dead Leaves and the Dirty Ground (Braxx Bootleg)",
+      "artist": "Braxx",
+      "albumTitle": "Braxx Bootlegs #1",
+      "albumKey": "braxx-bootlegs-1",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:13",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://braxxmusic.bandcamp.com/track/the-white-stripes-dead-leaves-and-the-dirty-ground-braxx-bootleg",
+      "bandcampEmbedTrackId": "3556319087",
+      "sourcePage": "https://braxxmusic.bandcamp.com/album/braxx-bootlegs-1",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "braxx-bootlegs-1-1359241271",
+      "title": "Title Fight - Safe In Your Skin (Braxx Bootleg)",
+      "artist": "Braxx",
+      "albumTitle": "Braxx Bootlegs #1",
+      "albumKey": "braxx-bootlegs-1",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:26",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://braxxmusic.bandcamp.com/track/title-fight-safe-in-your-skin-braxx-bootleg",
+      "bandcampEmbedTrackId": "1359241271",
+      "sourcePage": "https://braxxmusic.bandcamp.com/album/braxx-bootlegs-1",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://braxxmusic.bandcamp.com/album/braxx-bootlegs-1",
+    "discoveredAt": "2026-09-06T03:54:28.020054+00:00",
+    "importedAt": "2026-09-06T03:59:08.744734+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "braxxmusic.bandcamp.com",
+    "bandcampBandId": "1929234015",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:59:08.745608+00:00"
+  }
+}

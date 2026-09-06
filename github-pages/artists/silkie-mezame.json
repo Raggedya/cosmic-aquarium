@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "silkie-mezame",
+  "artist": "Silkie",
+  "bandcampUrl": "https://silkie.bandcamp.com/album/mezame",
+  "releaseTitle": "Mezame",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "silkie",
+    "deepmedi",
+    "dubstep",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "\"Filaments came from getting a lot of different influences and them feeding into each other, like the filaments in your body. It just kinda came to me.\" Silkie 2026 Filaments…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://silkie.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:15:41Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "mezame",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "mezame-1068496004",
+      "title": "Mezame",
+      "artist": "Silkie",
+      "albumTitle": "Mezame",
+      "albumKey": "mezame",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:30",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://silkie.bandcamp.com/track/mezame",
+      "bandcampEmbedTrackId": "1068496004",
+      "sourcePage": "https://silkie.bandcamp.com/album/mezame",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "mezame-684199606",
+      "title": "Sultry",
+      "artist": "Silkie",
+      "albumTitle": "Mezame",
+      "albumKey": "mezame",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://silkie.bandcamp.com/track/sultry",
+      "bandcampEmbedTrackId": "684199606",
+      "sourcePage": "https://silkie.bandcamp.com/album/mezame",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://silkie.bandcamp.com/album/mezame",
+    "discoveredAt": "2026-09-06T03:55:20.802197+00:00",
+    "importedAt": "2026-09-06T04:15:41.448782+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "silkie.bandcamp.com",
+    "bandcampBandId": "610834594",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:15:41.448782+00:00"
+  }
+}

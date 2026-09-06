@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "slug": "soapbox-inertia-embrace-your-delusion",
+  "artist": "Soapbox Inertia",
+  "bandcampUrl": "https://soapboxinertia.bandcamp.com/album/embrace-your-delusion",
+  "releaseTitle": "Embrace Your Delusion",
+  "releaseDate": "2026-10-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "metal",
+    "punk",
+    "Seattle"
+  ],
+  "primaryLocation": "Seattle, Washington",
+  "bioShort": "Soapbox Inertia — grunge / alternative / metal music from Seattle, Washington.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://soapboxinertia.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:15:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "embrace-your-delusion",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "embrace-your-delusion-210661089",
+      "title": "Nostalgia",
+      "artist": "Soapbox Inertia",
+      "albumTitle": "Embrace Your Delusion",
+      "albumKey": "embrace-your-delusion",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://soapboxinertia.bandcamp.com/track/nostalgia",
+      "bandcampEmbedTrackId": "210661089",
+      "sourcePage": "https://soapboxinertia.bandcamp.com/album/embrace-your-delusion",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://soapboxinertia.bandcamp.com/album/embrace-your-delusion",
+    "discoveredAt": "2026-09-06T03:55:20.802197+00:00",
+    "importedAt": "2026-09-06T04:15:59.550088+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "soapboxinertia.bandcamp.com",
+    "bandcampBandId": "3354428526",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:15:59.550088+00:00"
+  }
+}

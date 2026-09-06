@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "light-conductor-sequence-three",
+  "artist": "Light Conductor",
+  "bandcampUrl": "https://lightconductor.bandcamp.com/album/sequence-three",
+  "releaseTitle": "Sequence Three",
+  "releaseDate": "2026-09-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "psychedelic",
+    "electronic",
+    "ambient",
+    "modular synth",
+    "Montreal"
+  ],
+  "primaryLocation": "Montreal, Québec",
+  "bioShort": "The Montréal psych-ambient synth-droners return with Sequence Three, their first album in five years and the final instalment in the group’s opening trilogy of records that…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lightconductor.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:10:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sequence-three",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sequence-three-311694479",
+      "title": "She Glitters The Dust",
+      "artist": "Light Conductor",
+      "albumTitle": "Sequence Three",
+      "albumKey": "sequence-three",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lightconductor.bandcamp.com/album/sequence-three",
+      "bandcampEmbedTrackId": "311694479",
+      "sourcePage": "https://lightconductor.bandcamp.com/album/sequence-three",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sequence-three-1929535578",
+      "title": "Omenize",
+      "artist": "Light Conductor",
+      "albumTitle": "Sequence Three",
+      "albumKey": "sequence-three",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lightconductor.bandcamp.com/track/omenize",
+      "bandcampEmbedTrackId": "1929535578",
+      "sourcePage": "https://lightconductor.bandcamp.com/album/sequence-three",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "sequence-three-1494351732",
+      "title": "Ghost City Radio",
+      "artist": "Light Conductor",
+      "albumTitle": "Sequence Three",
+      "albumKey": "sequence-three",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:50",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lightconductor.bandcamp.com/track/ghost-city-radio",
+      "bandcampEmbedTrackId": "1494351732",
+      "sourcePage": "https://lightconductor.bandcamp.com/album/sequence-three",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "sequence-three-3794520715",
+      "title": "High In the Orange Air",
+      "artist": "Light Conductor",
+      "albumTitle": "Sequence Three",
+      "albumKey": "sequence-three",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lightconductor.bandcamp.com/album/sequence-three",
+      "bandcampEmbedTrackId": "3794520715",
+      "sourcePage": "https://lightconductor.bandcamp.com/album/sequence-three",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "sequence-three-4077812987",
+      "title": "Supercontinent",
+      "artist": "Light Conductor",
+      "albumTitle": "Sequence Three",
+      "albumKey": "sequence-three",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "0:00",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lightconductor.bandcamp.com/album/sequence-three",
+      "bandcampEmbedTrackId": "4077812987",
+      "sourcePage": "https://lightconductor.bandcamp.com/album/sequence-three",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lightconductor.bandcamp.com/album/sequence-three",
+    "discoveredAt": "2026-09-06T03:55:20.795009+00:00",
+    "importedAt": "2026-09-06T04:10:42.096966+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lightconductor.bandcamp.com",
+    "bandcampBandId": "2860765743",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:10:42.096966+00:00"
+  }
+}

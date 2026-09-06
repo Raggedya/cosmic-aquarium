@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "clouzer-tessa-rose-jackson-paris-minuit-clouzer-remix",
+  "artist": "Clouzer",
+  "bandcampUrl": "https://clouzer.bandcamp.com/album/tessa-rose-jackson-paris-minuit-clouzer-remix",
+  "releaseTitle": "Tessa Rose Jackson - Paris Minuit (Clouzer Remix)",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "ambient",
+    "dark disco",
+    "dream pop",
+    "ebm",
+    "electro",
+    "leftfield",
+    "lo-fi",
+    "synthypop",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "The journey began with Berlin radio playing in the background. What started as admiration gradually evolved into a deeply personal reinterpretation - one that preserves the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://clouzer.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:04:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tessa-rose-jackson-paris-minuit-clouzer-remix",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tessa-rose-jackson-paris-minuit-clouzer-remix-2835140490",
+      "title": "Tessa Rose Jackson - Paris Minuit (Clouzer Remix)",
+      "artist": "Clouzer",
+      "albumTitle": "Tessa Rose Jackson - Paris Minuit (Clouzer Remix)",
+      "albumKey": "tessa-rose-jackson-paris-minuit-clouzer-remix",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://clouzer.bandcamp.com/track/tessa-rose-jackson-paris-minuit-clouzer-remix",
+      "bandcampEmbedTrackId": "2835140490",
+      "sourcePage": "https://clouzer.bandcamp.com/album/tessa-rose-jackson-paris-minuit-clouzer-remix",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://clouzer.bandcamp.com/album/tessa-rose-jackson-paris-minuit-clouzer-remix",
+    "discoveredAt": "2026-09-06T03:55:20.784009+00:00",
+    "importedAt": "2026-09-06T04:04:08.050627+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "clouzer.bandcamp.com",
+    "bandcampBandId": "3660369865",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:04:08.050627+00:00"
+  }
+}

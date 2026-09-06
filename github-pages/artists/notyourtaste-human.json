@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "slug": "notyourtaste-human",
+  "artist": "notyourtaste",
+  "bandcampUrl": "https://notyourtaste.bandcamp.com/album/human",
+  "releaseTitle": "human",
+  "releaseDate": "2026-08-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "Indonesia"
+  ],
+  "primaryLocation": "Indonesia",
+  "bioShort": "notyourtaste — slowcore / alternative / Indonesia music from Indonesia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://notyourtaste.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:07:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "human",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "human-3186709495",
+      "title": "one instant noodle before i hang myself",
+      "artist": "notyourtaste",
+      "albumTitle": "human",
+      "albumKey": "human",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:20",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://notyourtaste.bandcamp.com/track/one-instant-noodle-before-i-hang-myself",
+      "bandcampEmbedTrackId": "3186709495",
+      "sourcePage": "https://notyourtaste.bandcamp.com/album/human",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "human-112937171",
+      "title": "be human",
+      "artist": "notyourtaste",
+      "albumTitle": "human",
+      "albumKey": "human",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:19",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://notyourtaste.bandcamp.com/track/be-human",
+      "bandcampEmbedTrackId": "112937171",
+      "sourcePage": "https://notyourtaste.bandcamp.com/album/human",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://notyourtaste.bandcamp.com/album/human",
+    "discoveredAt": "2026-09-06T03:55:20.790103+00:00",
+    "importedAt": "2026-09-06T04:07:57.150529+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "notyourtaste.bandcamp.com",
+    "bandcampBandId": "2653227118",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:07:57.150529+00:00"
+  }
+}

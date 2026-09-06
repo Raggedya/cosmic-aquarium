@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "slug": "luckystrike-silhouette",
+  "artist": "luckystrike",
+  "bandcampUrl": "https://luckyluckystrike.bandcamp.com/album/silhouette",
+  "releaseTitle": "Silhouette",
+  "releaseDate": "2026-06-12 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "ambient",
+    "ambient pop",
+    "California"
+  ],
+  "primaryLocation": "California",
+  "bioShort": "Recorded + Produced between 324 Studio, Scenic Route+Company Studio, Bay Area, Kansas, New York, Los Angeles. 2022-2026.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://luckyluckystrike.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:02:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "silhouette",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "silhouette-2595832035",
+      "title": "Forever",
+      "artist": "luckystrike",
+      "albumTitle": "Silhouette",
+      "albumKey": "silhouette",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://luckyluckystrike.bandcamp.com/track/forever",
+      "bandcampEmbedTrackId": "2595832035",
+      "sourcePage": "https://luckyluckystrike.bandcamp.com/album/silhouette",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "silhouette-2783115416",
+      "title": "Relief",
+      "artist": "luckystrike",
+      "albumTitle": "Silhouette",
+      "albumKey": "silhouette",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://luckyluckystrike.bandcamp.com/track/relief",
+      "bandcampEmbedTrackId": "2783115416",
+      "sourcePage": "https://luckyluckystrike.bandcamp.com/album/silhouette",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "silhouette-3544308162",
+      "title": "Feather",
+      "artist": "luckystrike",
+      "albumTitle": "Silhouette",
+      "albumKey": "silhouette",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:24",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://luckyluckystrike.bandcamp.com/track/feather",
+      "bandcampEmbedTrackId": "3544308162",
+      "sourcePage": "https://luckyluckystrike.bandcamp.com/album/silhouette",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "silhouette-929053350",
+      "title": "Frostbit (ft. Jadai)",
+      "artist": "luckystrike",
+      "albumTitle": "Silhouette",
+      "albumKey": "silhouette",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://luckyluckystrike.bandcamp.com/track/frostbit-ft-jadai",
+      "bandcampEmbedTrackId": "929053350",
+      "sourcePage": "https://luckyluckystrike.bandcamp.com/album/silhouette",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "silhouette-2250173658",
+      "title": "Persona",
+      "artist": "luckystrike",
+      "albumTitle": "Silhouette",
+      "albumKey": "silhouette",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "3:47",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://luckyluckystrike.bandcamp.com/track/persona",
+      "bandcampEmbedTrackId": "2250173658",
+      "sourcePage": "https://luckyluckystrike.bandcamp.com/album/silhouette",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://luckyluckystrike.bandcamp.com/album/silhouette",
+    "discoveredAt": "2026-09-06T03:54:43.014782+00:00",
+    "importedAt": "2026-09-06T04:02:45.877038+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "luckyluckystrike.bandcamp.com",
+    "bandcampBandId": "1317704415",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:02:45.877038+00:00"
+  }
+}

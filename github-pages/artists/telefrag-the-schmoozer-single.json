@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "slug": "telefrag-the-schmoozer-single",
+  "artist": "Telefrag",
+  "bandcampUrl": "https://telefrag.bandcamp.com/album/the-schmoozer-single",
+  "releaseTitle": "The Schmoozer (single)",
+  "releaseDate": "2026-07-13 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "electronic",
+    "idm",
+    "techno",
+    "North Carolina"
+  ],
+  "primaryLocation": "North Carolina",
+  "bioShort": "Even though it sounds slower, SoTS has a faster BPM.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://telefrag.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:12:34Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-schmoozer-single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-schmoozer-single-152432447",
+      "title": "The Schmoozer",
+      "artist": "Telefrag",
+      "albumTitle": "The Schmoozer (single)",
+      "albumKey": "the-schmoozer-single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://telefrag.bandcamp.com/track/the-schmoozer",
+      "bandcampEmbedTrackId": "152432447",
+      "sourcePage": "https://telefrag.bandcamp.com/album/the-schmoozer-single",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-schmoozer-single-3095115720",
+      "title": "Son of The Schmoozer",
+      "artist": "Telefrag",
+      "albumTitle": "The Schmoozer (single)",
+      "albumKey": "the-schmoozer-single",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:53",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://telefrag.bandcamp.com/track/son-of-the-schmoozer",
+      "bandcampEmbedTrackId": "3095115720",
+      "sourcePage": "https://telefrag.bandcamp.com/album/the-schmoozer-single",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-schmoozer-single-1018346129",
+      "title": "Old DXTreme teaser",
+      "artist": "Telefrag",
+      "albumTitle": "The Schmoozer (single)",
+      "albumKey": "the-schmoozer-single",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:39",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://telefrag.bandcamp.com/track/old-dxtreme-teaser",
+      "bandcampEmbedTrackId": "1018346129",
+      "sourcePage": "https://telefrag.bandcamp.com/album/the-schmoozer-single",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://telefrag.bandcamp.com/album/the-schmoozer-single",
+    "discoveredAt": "2026-09-06T03:55:20.799193+00:00",
+    "importedAt": "2026-09-06T04:12:34.461953+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "telefrag.bandcamp.com",
+    "bandcampBandId": "1085471083",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:12:34.461953+00:00"
+  }
+}

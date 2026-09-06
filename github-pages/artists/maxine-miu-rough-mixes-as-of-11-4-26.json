@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "maxine-miu-rough-mixes-as-of-11-4-26",
+  "artist": "Maxine Miu",
+  "bandcampUrl": "https://maxinemiu.bandcamp.com/album/rough-mixes-as-of-11-4-26",
+  "releaseTitle": "Rough Mixes as of 11/4/26",
+  "releaseDate": "2026-04-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "dance",
+    "electronic",
+    "electronica",
+    "ambient pop",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Maxine Miu — ambient-pop / dance / electronic music from London, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://maxinemiu.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:03:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rough-mixes-as-of-11-4-26",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rough-mixes-as-of-11-4-26-3897386482",
+      "title": "Aftertaste (Rough Mix with Outro)",
+      "artist": "Maxine Miu",
+      "albumTitle": "Rough Mixes as of 11/4/26",
+      "albumKey": "rough-mixes-as-of-11-4-26",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://maxinemiu.bandcamp.com/track/aftertaste-rough-mix-with-outro",
+      "bandcampEmbedTrackId": "3897386482",
+      "sourcePage": "https://maxinemiu.bandcamp.com/album/rough-mixes-as-of-11-4-26",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "rough-mixes-as-of-11-4-26-391427322",
+      "title": "Instructions to Become a Beautiful Lotus Flower (Rough Mix)",
+      "artist": "Maxine Miu",
+      "albumTitle": "Rough Mixes as of 11/4/26",
+      "albumKey": "rough-mixes-as-of-11-4-26",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:04",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://maxinemiu.bandcamp.com/track/instructions-to-become-a-beautiful-lotus-flower-rough-mix",
+      "bandcampEmbedTrackId": "391427322",
+      "sourcePage": "https://maxinemiu.bandcamp.com/album/rough-mixes-as-of-11-4-26",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://maxinemiu.bandcamp.com/album/rough-mixes-as-of-11-4-26",
+    "discoveredAt": "2026-09-06T03:55:20.781020+00:00",
+    "importedAt": "2026-09-06T04:03:18.907069+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "maxinemiu.bandcamp.com",
+    "bandcampBandId": "880012174",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:03:18.907069+00:00"
+  }
+}

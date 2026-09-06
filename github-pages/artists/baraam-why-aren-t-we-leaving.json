@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "baraam-why-aren-t-we-leaving",
+  "artist": "Baraam",
+  "bandcampUrl": "https://baraam.bandcamp.com/album/why-arent-we-leaving",
+  "releaseTitle": "Why Aren't We Leaving?",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "goth rock",
+    "punk",
+    "rock",
+    "post-punk",
+    "synthwave",
+    "Portland"
+  ],
+  "primaryLocation": "Portland, Oregon",
+  "bioShort": "Baraam — darkwave / goth rock / punk music from Portland, Oregon.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://baraam.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:11:39Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "why-aren-t-we-leaving",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "why-aren-t-we-leaving-2419891678",
+      "title": "Why Aren't We Leaving?",
+      "artist": "Baraam",
+      "albumTitle": "Why Aren't We Leaving?",
+      "albumKey": "why-aren-t-we-leaving",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baraam.bandcamp.com/track/why-arent-we-leaving",
+      "bandcampEmbedTrackId": "2419891678",
+      "sourcePage": "https://baraam.bandcamp.com/album/why-arent-we-leaving",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "why-aren-t-we-leaving-3822880773",
+      "title": "Thirst",
+      "artist": "Baraam",
+      "albumTitle": "Why Aren't We Leaving?",
+      "albumKey": "why-aren-t-we-leaving",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:21",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baraam.bandcamp.com/track/thirst",
+      "bandcampEmbedTrackId": "3822880773",
+      "sourcePage": "https://baraam.bandcamp.com/album/why-arent-we-leaving",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "why-aren-t-we-leaving-1513110021",
+      "title": "You'll Never Leave Me",
+      "artist": "Baraam",
+      "albumTitle": "Why Aren't We Leaving?",
+      "albumKey": "why-aren-t-we-leaving",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:48",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baraam.bandcamp.com/track/youll-never-leave-me",
+      "bandcampEmbedTrackId": "1513110021",
+      "sourcePage": "https://baraam.bandcamp.com/album/why-arent-we-leaving",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "why-aren-t-we-leaving-3153034437",
+      "title": "Two Suns",
+      "artist": "Baraam",
+      "albumTitle": "Why Aren't We Leaving?",
+      "albumKey": "why-aren-t-we-leaving",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:54",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baraam.bandcamp.com/track/two-suns",
+      "bandcampEmbedTrackId": "3153034437",
+      "sourcePage": "https://baraam.bandcamp.com/album/why-arent-we-leaving",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://baraam.bandcamp.com/album/why-arent-we-leaving",
+    "discoveredAt": "2026-09-06T03:55:20.795009+00:00",
+    "importedAt": "2026-09-06T04:11:39.692182+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "baraam.bandcamp.com",
+    "bandcampBandId": "278359346",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:11:39.692182+00:00"
+  }
+}

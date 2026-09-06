@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "wax-no-11110",
+  "artist": "WAX",
+  "bandcampUrl": "https://wax10001.bandcamp.com/album/no-11110",
+  "releaseTitle": "No. 11110",
+  "releaseDate": "2026-04-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "dub",
+    "techno",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "WAX — house / dub / techno music from Berlin, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://wax10001.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:05:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "no-11110",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "no-11110-2618557320",
+      "title": "11110A",
+      "artist": "WAX",
+      "albumTitle": "No. 11110",
+      "albumKey": "no-11110",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wax10001.bandcamp.com/track/11110a",
+      "bandcampEmbedTrackId": "2618557320",
+      "sourcePage": "https://wax10001.bandcamp.com/album/no-11110",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "no-11110-1732667200",
+      "title": "11110B",
+      "artist": "WAX",
+      "albumTitle": "No. 11110",
+      "albumKey": "no-11110",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:22",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wax10001.bandcamp.com/track/11110b",
+      "bandcampEmbedTrackId": "1732667200",
+      "sourcePage": "https://wax10001.bandcamp.com/album/no-11110",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://wax10001.bandcamp.com/album/no-11110",
+    "discoveredAt": "2026-09-06T03:55:20.785512+00:00",
+    "importedAt": "2026-09-06T04:05:21.773266+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "wax10001.bandcamp.com",
+    "bandcampBandId": "3861171836",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:05:21.773266+00:00"
+  }
+}

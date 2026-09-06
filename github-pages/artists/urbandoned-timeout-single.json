@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "urbandoned-timeout-single",
+  "artist": "urbandoned.",
+  "bandcampUrl": "https://urbandoned.bandcamp.com/album/timeout-single",
+  "releaseTitle": "Timeout [Single]",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "alternative",
+    "punk",
+    "darkwave",
+    "gothic",
+    "post-punk",
+    "Germany"
+  ],
+  "primaryLocation": "Germany",
+  "bioShort": "urbandoned. — coldwave / alternative / punk music from Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://urbandoned.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:58:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "timeout-single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "timeout-single-2843725832",
+      "title": "Timeout",
+      "artist": "urbandoned.",
+      "albumTitle": "Timeout [Single]",
+      "albumKey": "timeout-single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://urbandoned.bandcamp.com/track/timeout",
+      "bandcampEmbedTrackId": "2843725832",
+      "sourcePage": "https://urbandoned.bandcamp.com/album/timeout-single",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://urbandoned.bandcamp.com/album/timeout-single",
+    "discoveredAt": "2026-09-06T03:54:28.018034+00:00",
+    "importedAt": "2026-09-06T03:58:33.460129+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "urbandoned.bandcamp.com",
+    "bandcampBandId": "2018176650",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:58:33.460129+00:00"
+  }
+}

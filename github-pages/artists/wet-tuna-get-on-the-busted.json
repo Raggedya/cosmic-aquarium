@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "wet-tuna-get-on-the-busted",
+  "artist": "WET TUNA",
+  "bandcampUrl": "https://wettuna.bandcamp.com/album/get-on-the-busted",
+  "releaseTitle": "GET ON THE BUSTED",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "freefolk",
+    "jam",
+    "mv&ee",
+    "psychedelic",
+    "tower recordings",
+    "Vermont"
+  ],
+  "primaryLocation": "Vermont",
+  "bioShort": "mv/ee/bliss/coot aural history live somewhere",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://wettuna.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:07:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "get-on-the-busted",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "get-on-the-busted-995152705",
+      "title": "BAUDELAIRE",
+      "artist": "WET TUNA",
+      "albumTitle": "GET ON THE BUSTED",
+      "albumKey": "get-on-the-busted",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "13:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wettuna.bandcamp.com/track/baudelaire-5",
+      "bandcampEmbedTrackId": "995152705",
+      "sourcePage": "https://wettuna.bandcamp.com/album/get-on-the-busted",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "get-on-the-busted-1650601541",
+      "title": "LOVE IS A UNIVERSAL THING >",
+      "artist": "WET TUNA",
+      "albumTitle": "GET ON THE BUSTED",
+      "albumKey": "get-on-the-busted",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "32:50",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wettuna.bandcamp.com/track/love-is-a-universal-thing-6",
+      "bandcampEmbedTrackId": "1650601541",
+      "sourcePage": "https://wettuna.bandcamp.com/album/get-on-the-busted",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "get-on-the-busted-3628759496",
+      "title": "RAW LOVE GOOP >",
+      "artist": "WET TUNA",
+      "albumTitle": "GET ON THE BUSTED",
+      "albumKey": "get-on-the-busted",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wettuna.bandcamp.com/track/raw-love-goop",
+      "bandcampEmbedTrackId": "3628759496",
+      "sourcePage": "https://wettuna.bandcamp.com/album/get-on-the-busted",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "get-on-the-busted-2087446129",
+      "title": "RAW FOOD",
+      "artist": "WET TUNA",
+      "albumTitle": "GET ON THE BUSTED",
+      "albumKey": "get-on-the-busted",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "11:27",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://wettuna.bandcamp.com/track/raw-food-6",
+      "bandcampEmbedTrackId": "2087446129",
+      "sourcePage": "https://wettuna.bandcamp.com/album/get-on-the-busted",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://wettuna.bandcamp.com/album/get-on-the-busted",
+    "discoveredAt": "2026-09-06T03:55:20.789099+00:00",
+    "importedAt": "2026-09-06T04:07:00.206882+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "wettuna.bandcamp.com",
+    "bandcampBandId": "3502641881",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:07:00.206882+00:00"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "them-are-us-too-part-time-punks-session",
+  "artist": "Them Are Us Too",
+  "bandcampUrl": "https://themareustoo.bandcamp.com/album/part-time-punks-session",
+  "releaseTitle": "Part Time Punks Session",
+  "releaseDate": "2015-11-13 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "alternative",
+    "dreampop",
+    "gothic",
+    "shoegaze",
+    "United States"
+  ],
+  "primaryLocation": null,
+  "bioShort": "DAIS081, 2015",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://themareustoo.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:00:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "part-time-punks-session",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "part-time-punks-session-3336010996",
+      "title": "Us Now",
+      "artist": "Them Are Us Too",
+      "albumTitle": "Part Time Punks Session",
+      "albumKey": "part-time-punks-session",
+      "year": 2015,
+      "trackNumber": 1,
+      "duration": "7:14",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://themareustoo.bandcamp.com/track/us-now-3",
+      "bandcampEmbedTrackId": "3336010996",
+      "sourcePage": "https://themareustoo.bandcamp.com/album/part-time-punks-session",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "part-time-punks-session-98709210",
+      "title": "Eudaemonia",
+      "artist": "Them Are Us Too",
+      "albumTitle": "Part Time Punks Session",
+      "albumKey": "part-time-punks-session",
+      "year": 2015,
+      "trackNumber": 2,
+      "duration": "4:23",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://themareustoo.bandcamp.com/track/eudaemonia-2",
+      "bandcampEmbedTrackId": "98709210",
+      "sourcePage": "https://themareustoo.bandcamp.com/album/part-time-punks-session",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "part-time-punks-session-1144703160",
+      "title": "Creepy Love, 694 Mi",
+      "artist": "Them Are Us Too",
+      "albumTitle": "Part Time Punks Session",
+      "albumKey": "part-time-punks-session",
+      "year": 2015,
+      "trackNumber": 3,
+      "duration": "11:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://themareustoo.bandcamp.com/track/creepy-love-694-mi",
+      "bandcampEmbedTrackId": "1144703160",
+      "sourcePage": "https://themareustoo.bandcamp.com/album/part-time-punks-session",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "part-time-punks-session-475204317",
+      "title": "Could Deepen",
+      "artist": "Them Are Us Too",
+      "albumTitle": "Part Time Punks Session",
+      "albumKey": "part-time-punks-session",
+      "year": 2015,
+      "trackNumber": 4,
+      "duration": "10:28",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://themareustoo.bandcamp.com/track/could-deepen",
+      "bandcampEmbedTrackId": "475204317",
+      "sourcePage": "https://themareustoo.bandcamp.com/album/part-time-punks-session",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://themareustoo.bandcamp.com/album/part-time-punks-session",
+    "discoveredAt": "2026-09-06T03:54:28.023224+00:00",
+    "importedAt": "2026-09-06T04:00:43.589571+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "themareustoo.bandcamp.com",
+    "bandcampBandId": "3680135668",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:00:43.589571+00:00"
+  }
+}

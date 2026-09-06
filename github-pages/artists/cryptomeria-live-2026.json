@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "cryptomeria-live-2026",
+  "artist": "Cryptomeria",
+  "bandcampUrl": "https://cryptomeriamusic.bandcamp.com/album/live-2026",
+  "releaseTitle": "Live 2026",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "ambient",
+    "live electronics",
+    "modular synth",
+    "Seattle"
+  ],
+  "primaryLocation": "Seattle, Washington",
+  "bioShort": "Honestly these are rehearsal takes, but they capture the spirit of the actual performances. Le Voyeur, Olympia WA. July 25 2026 (Elektron) Volunteer Park, Seattle WA. Aug 1…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://cryptomeriamusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:05:23Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "live-2026",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "live-2026-4276815843",
+      "title": "Le Voyeur",
+      "artist": "Cryptomeria",
+      "albumTitle": "Live 2026",
+      "albumKey": "live-2026",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "33:29",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cryptomeriamusic.bandcamp.com/track/le-voyeur",
+      "bandcampEmbedTrackId": "4276815843",
+      "sourcePage": "https://cryptomeriamusic.bandcamp.com/album/live-2026",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "live-2026-120821440",
+      "title": "Modular on the Spot - Volunteer Park",
+      "artist": "Cryptomeria",
+      "albumTitle": "Live 2026",
+      "albumKey": "live-2026",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "20:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://cryptomeriamusic.bandcamp.com/track/modular-on-the-spot-volunteer-park",
+      "bandcampEmbedTrackId": "120821440",
+      "sourcePage": "https://cryptomeriamusic.bandcamp.com/album/live-2026",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://cryptomeriamusic.bandcamp.com/album/live-2026",
+    "discoveredAt": "2026-09-06T03:55:20.785512+00:00",
+    "importedAt": "2026-09-06T04:05:23.798209+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "cryptomeriamusic.bandcamp.com",
+    "bandcampBandId": "3916102611",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:05:23.798209+00:00"
+  }
+}

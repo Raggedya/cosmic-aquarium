@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "codename-synaptic-pressure",
+  "artist": "codename",
+  "bandcampUrl": "https://codenamecodename.bandcamp.com/album/synaptic-pressure",
+  "releaseTitle": "Synaptic Pressure",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "electronic",
+    "footwork jungle",
+    "footwork",
+    "jungle",
+    "jungle tekno",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "codename — hardcore / electronic / footwork jungle music from UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://codenamecodename.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:06:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "synaptic-pressure",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "synaptic-pressure-2269588728",
+      "title": "Shakedown",
+      "artist": "codename",
+      "albumTitle": "Synaptic Pressure",
+      "albumKey": "synaptic-pressure",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://codenamecodename.bandcamp.com/track/shakedown",
+      "bandcampEmbedTrackId": "2269588728",
+      "sourcePage": "https://codenamecodename.bandcamp.com/album/synaptic-pressure",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "synaptic-pressure-734353195",
+      "title": "Cash Bandicoot",
+      "artist": "codename",
+      "albumTitle": "Synaptic Pressure",
+      "albumKey": "synaptic-pressure",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:55",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://codenamecodename.bandcamp.com/track/cash-bandicoot",
+      "bandcampEmbedTrackId": "734353195",
+      "sourcePage": "https://codenamecodename.bandcamp.com/album/synaptic-pressure",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "synaptic-pressure-1272380434",
+      "title": "Codename, Burna - Hot Steppa Ft. E133",
+      "artist": "codename",
+      "albumTitle": "Synaptic Pressure",
+      "albumKey": "synaptic-pressure",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://codenamecodename.bandcamp.com/track/hot-steppa-ft-e133",
+      "bandcampEmbedTrackId": "1272380434",
+      "sourcePage": "https://codenamecodename.bandcamp.com/album/synaptic-pressure",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "synaptic-pressure-1631817350",
+      "title": "codename, Burna - Matching Orders",
+      "artist": "codename",
+      "albumTitle": "Synaptic Pressure",
+      "albumKey": "synaptic-pressure",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:03",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://codenamecodename.bandcamp.com/track/matching-orders",
+      "bandcampEmbedTrackId": "1631817350",
+      "sourcePage": "https://codenamecodename.bandcamp.com/album/synaptic-pressure",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://codenamecodename.bandcamp.com/album/synaptic-pressure",
+    "discoveredAt": "2026-09-06T03:55:20.788093+00:00",
+    "importedAt": "2026-09-06T04:06:26.682444+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "codenamecodename.bandcamp.com",
+    "bandcampBandId": "1125787970",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:06:26.682444+00:00"
+  }
+}

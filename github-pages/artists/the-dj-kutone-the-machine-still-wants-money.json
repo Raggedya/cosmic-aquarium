@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-dj-kutone-the-machine-still-wants-money",
+  "artist": "the Dj Kutone",
+  "bandcampUrl": "https://thedjkutone.bandcamp.com/album/the-machine-still-wants-money",
+  "releaseTitle": "the Machine Still Wants Money",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "experimental",
+    "hip hop",
+    "idm",
+    "techno",
+    "experimental electronic",
+    "experimental hip-hop",
+    "industrial hip hop",
+    "Oregon House"
+  ],
+  "primaryLocation": "Oregon House, California",
+  "bioShort": "**THE MACHINE STILL WANTS MONEY** You canceled the subscription. You said no. The system heard you. Then it tried again. And again. And again. *The Machine Still Wants Money*…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thedjkutone.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:08:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-machine-still-wants-money",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-machine-still-wants-money-2095440567",
+      "title": "the Machine Still Wants Money",
+      "artist": "the Dj Kutone",
+      "albumTitle": "the Machine Still Wants Money",
+      "albumKey": "the-machine-still-wants-money",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thedjkutone.bandcamp.com/track/the-machine-still-wants-money",
+      "bandcampEmbedTrackId": "2095440567",
+      "sourcePage": "https://thedjkutone.bandcamp.com/album/the-machine-still-wants-money",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-machine-still-wants-money-3918832875",
+      "title": "the Machine Still Wants Money (Instrumental)",
+      "artist": "the Dj Kutone",
+      "albumTitle": "the Machine Still Wants Money",
+      "albumKey": "the-machine-still-wants-money",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:36",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thedjkutone.bandcamp.com/track/the-machine-still-wants-money-instrumental",
+      "bandcampEmbedTrackId": "3918832875",
+      "sourcePage": "https://thedjkutone.bandcamp.com/album/the-machine-still-wants-money",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thedjkutone.bandcamp.com/album/the-machine-still-wants-money",
+    "discoveredAt": "2026-09-06T03:55:20.791991+00:00",
+    "importedAt": "2026-09-06T04:08:49.786576+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thedjkutone.bandcamp.com",
+    "bandcampBandId": "1145546009",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:08:49.786576+00:00"
+  }
+}

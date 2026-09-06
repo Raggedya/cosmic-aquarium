@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "main-era-iv-of-wands",
+  "artist": "Main Era",
+  "bandcampUrl": "https://mainera.bandcamp.com/album/iv-of-wands",
+  "releaseTitle": "IV of Wands",
+  "releaseDate": "2026-01-23 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "indie pop rock",
+    "rock",
+    "indie rock",
+    "noise rock",
+    "noise-rock",
+    "post-rock",
+    "sludge metal",
+    "Boston"
+  ],
+  "primaryLocation": "Boston, Massachusetts",
+  "bioShort": "All tracks recorded by us at our house and rehearsal space in Allston, MA between December 2024-July 2025 Gigi Greaves - Guitar on tracks 1,2,4, Jigsaw on track 3, Chord Organ…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mainera.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:59:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "iv-of-wands",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "iv-of-wands-2149118692",
+      "title": "Erasure",
+      "artist": "Main Era",
+      "albumTitle": "IV of Wands",
+      "albumKey": "iv-of-wands",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:59",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mainera.bandcamp.com/track/erasure",
+      "bandcampEmbedTrackId": "2149118692",
+      "sourcePage": "https://mainera.bandcamp.com/album/iv-of-wands",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "iv-of-wands-457977677",
+      "title": "You Must Be Patient",
+      "artist": "Main Era",
+      "albumTitle": "IV of Wands",
+      "albumKey": "iv-of-wands",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "9:03",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mainera.bandcamp.com/track/you-must-be-patient",
+      "bandcampEmbedTrackId": "457977677",
+      "sourcePage": "https://mainera.bandcamp.com/album/iv-of-wands",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "iv-of-wands-1128924023",
+      "title": "To Love Again",
+      "artist": "Main Era",
+      "albumTitle": "IV of Wands",
+      "albumKey": "iv-of-wands",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:59",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mainera.bandcamp.com/track/to-love-again",
+      "bandcampEmbedTrackId": "1128924023",
+      "sourcePage": "https://mainera.bandcamp.com/album/iv-of-wands",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "iv-of-wands-1941485755",
+      "title": "Double Dragon",
+      "artist": "Main Era",
+      "albumTitle": "IV of Wands",
+      "albumKey": "iv-of-wands",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "10:25",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mainera.bandcamp.com/track/double-dragon-2",
+      "bandcampEmbedTrackId": "1941485755",
+      "sourcePage": "https://mainera.bandcamp.com/album/iv-of-wands",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mainera.bandcamp.com/album/iv-of-wands",
+    "discoveredAt": "2026-09-06T03:54:28.021045+00:00",
+    "importedAt": "2026-09-06T03:59:47.876301+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mainera.bandcamp.com",
+    "bandcampBandId": "404225758",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:59:47.876301+00:00"
+  }
+}

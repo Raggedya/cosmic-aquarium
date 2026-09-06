@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "bernisaun-my-broken-octaves",
+  "artist": "bernisaun",
+  "bandcampUrl": "https://bernisaun.bandcamp.com/album/my-broken-octaves",
+  "releaseTitle": "My Broken Octaves",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "piano",
+    "experimental",
+    "ambient",
+    "atmospheric",
+    "avant-garde",
+    "avantgarde",
+    "drone",
+    "meditation",
+    "noise",
+    "soundscape",
+    "Tehran"
+  ],
+  "primaryLocation": "Tehran, Iran",
+  "bioShort": "My Broken Octaves is an intimate document of human fragility, designed and performed entirely LIVE/RAW in the moment using analog synths, digital synthesis, Eurorack modular…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bernisaun.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:02:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "my-broken-octaves",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "my-broken-octaves-3664331800",
+      "title": "Low High Low",
+      "artist": "bernisaun",
+      "albumTitle": "My Broken Octaves",
+      "albumKey": "my-broken-octaves",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bernisaun.bandcamp.com/track/low-high-low",
+      "bandcampEmbedTrackId": "3664331800",
+      "sourcePage": "https://bernisaun.bandcamp.com/album/my-broken-octaves",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "my-broken-octaves-748854100",
+      "title": "Steps",
+      "artist": "bernisaun",
+      "albumTitle": "My Broken Octaves",
+      "albumKey": "my-broken-octaves",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:15",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bernisaun.bandcamp.com/track/steps",
+      "bandcampEmbedTrackId": "748854100",
+      "sourcePage": "https://bernisaun.bandcamp.com/album/my-broken-octaves",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "my-broken-octaves-2718518912",
+      "title": "Unfamiliar",
+      "artist": "bernisaun",
+      "albumTitle": "My Broken Octaves",
+      "albumKey": "my-broken-octaves",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bernisaun.bandcamp.com/track/unfamiliar",
+      "bandcampEmbedTrackId": "2718518912",
+      "sourcePage": "https://bernisaun.bandcamp.com/album/my-broken-octaves",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "my-broken-octaves-3494441434",
+      "title": "X Twisted Grief",
+      "artist": "bernisaun",
+      "albumTitle": "My Broken Octaves",
+      "albumKey": "my-broken-octaves",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:32",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bernisaun.bandcamp.com/track/x-twisted-grief",
+      "bandcampEmbedTrackId": "3494441434",
+      "sourcePage": "https://bernisaun.bandcamp.com/album/my-broken-octaves",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bernisaun.bandcamp.com/album/my-broken-octaves",
+    "discoveredAt": "2026-09-06T03:54:28.030479+00:00",
+    "importedAt": "2026-09-06T04:02:27.993164+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bernisaun.bandcamp.com",
+    "bandcampBandId": "4144862457",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:02:27.993164+00:00"
+  }
+}

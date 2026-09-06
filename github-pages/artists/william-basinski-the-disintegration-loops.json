@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "william-basinski-the-disintegration-loops",
+  "artist": "William Basinski",
+  "bandcampUrl": "https://williambasinski.bandcamp.com/album/the-disintegration-loops",
+  "releaseTitle": "The Disintegration Loops",
+  "releaseDate": "2014-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "avant-garde",
+    "experimental",
+    "new york",
+    "william basinski",
+    "ambient",
+    "classical",
+    "electronic",
+    "instrumental",
+    "neoclassical",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "For those who missed out on the now-legendary, highly sought-after (and highly sold-out) box sets, we are now offering the four volumes of The Disintegration Loops suite as…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://williambasinski.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:11:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-disintegration-loops",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-disintegration-loops-3723501541",
+      "title": "DLP 1.1",
+      "artist": "William Basinski",
+      "albumTitle": "The Disintegration Loops",
+      "albumKey": "the-disintegration-loops",
+      "year": 2014,
+      "trackNumber": 1,
+      "duration": "63:35",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://williambasinski.bandcamp.com/track/dlp-11",
+      "bandcampEmbedTrackId": "3723501541",
+      "sourcePage": "https://williambasinski.bandcamp.com/album/the-disintegration-loops",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-disintegration-loops-3866951702",
+      "title": "DLP 2.1",
+      "artist": "William Basinski",
+      "albumTitle": "The Disintegration Loops",
+      "albumKey": "the-disintegration-loops",
+      "year": 2014,
+      "trackNumber": 2,
+      "duration": "10:50",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://williambasinski.bandcamp.com/track/dlp-21",
+      "bandcampEmbedTrackId": "3866951702",
+      "sourcePage": "https://williambasinski.bandcamp.com/album/the-disintegration-loops",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://williambasinski.bandcamp.com/album/the-disintegration-loops",
+    "discoveredAt": "2026-09-06T03:55:20.795009+00:00",
+    "importedAt": "2026-09-06T04:11:47.050725+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "williambasinski.bandcamp.com",
+    "bandcampBandId": "923818775",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:11:47.050725+00:00"
+  }
+}

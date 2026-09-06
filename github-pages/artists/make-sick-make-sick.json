@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "make-sick-make-sick",
+  "artist": "Make Sick",
+  "bandcampUrl": "https://makesick.bandcamp.com/album/make-sick",
+  "releaseTitle": "Make Sick",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "punk",
+    "alternative",
+    "berserkcore",
+    "hardcore",
+    "mathcore",
+    "metalcore",
+    "noise rock",
+    "nu metal",
+    "sasscore",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "Make Sick — post-hardcore / punk / alternative music from Los Angeles, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://makesick.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:12:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "make-sick",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "make-sick-2032814730",
+      "title": "Make Sick",
+      "artist": "Make Sick",
+      "albumTitle": "Make Sick",
+      "albumKey": "make-sick",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://makesick.bandcamp.com/track/make-sick",
+      "bandcampEmbedTrackId": "2032814730",
+      "sourcePage": "https://makesick.bandcamp.com/album/make-sick",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "make-sick-2298130917",
+      "title": "Casca",
+      "artist": "Make Sick",
+      "albumTitle": "Make Sick",
+      "albumKey": "make-sick",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:56",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://makesick.bandcamp.com/track/casca-2",
+      "bandcampEmbedTrackId": "2298130917",
+      "sourcePage": "https://makesick.bandcamp.com/album/make-sick",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "make-sick-2238945176",
+      "title": "Gas",
+      "artist": "Make Sick",
+      "albumTitle": "Make Sick",
+      "albumKey": "make-sick",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:36",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://makesick.bandcamp.com/track/gas-2",
+      "bandcampEmbedTrackId": "2238945176",
+      "sourcePage": "https://makesick.bandcamp.com/album/make-sick",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "make-sick-3421455656",
+      "title": "Tommy Pickles",
+      "artist": "Make Sick",
+      "albumTitle": "Make Sick",
+      "albumKey": "make-sick",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:31",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://makesick.bandcamp.com/track/tommy-pickles-2",
+      "bandcampEmbedTrackId": "3421455656",
+      "sourcePage": "https://makesick.bandcamp.com/album/make-sick",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://makesick.bandcamp.com/album/make-sick",
+    "discoveredAt": "2026-09-06T03:55:20.799193+00:00",
+    "importedAt": "2026-09-06T04:12:19.000408+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "makesick.bandcamp.com",
+    "bandcampBandId": "2125995117",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:12:19.000408+00:00"
+  }
+}

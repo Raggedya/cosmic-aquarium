@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "archers-road-durruti-is-dead-and-gone",
+  "artist": "Archers Road",
+  "bandcampUrl": "https://archersroad.bandcamp.com/album/durruti-is-dead-and-gone",
+  "releaseTitle": "durruti is dead and gone",
+  "releaseDate": "2026-08-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "altenative rock",
+    "dream pop",
+    "folk rock",
+    "indie",
+    "postpunk",
+    "shoegaze",
+    "Spain"
+  ],
+  "primaryLocation": "AN, Spain",
+  "bioShort": "Archers Road — slowcore / alternative / altenative rock music from AN, Spain.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://archersroad.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:06:01Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "durruti-is-dead-and-gone",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "durruti-is-dead-and-gone-3281702389",
+      "title": "durruti is dead and gone",
+      "artist": "Archers Road",
+      "albumTitle": "durruti is dead and gone",
+      "albumKey": "durruti-is-dead-and-gone",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://archersroad.bandcamp.com/track/durruti-is-dead-and-gone",
+      "bandcampEmbedTrackId": "3281702389",
+      "sourcePage": "https://archersroad.bandcamp.com/album/durruti-is-dead-and-gone",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://archersroad.bandcamp.com/album/durruti-is-dead-and-gone",
+    "discoveredAt": "2026-09-06T03:55:20.786582+00:00",
+    "importedAt": "2026-09-06T04:06:01.232578+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "archersroad.bandcamp.com",
+    "bandcampBandId": "440136926",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:06:01.232578+00:00"
+  }
+}

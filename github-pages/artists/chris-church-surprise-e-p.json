@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "chris-church-surprise-e-p",
+  "artist": "Chris Church",
+  "bandcampUrl": "https://chrischurch1.bandcamp.com/album/surprise-e-p",
+  "releaseTitle": "Surprise (E.P.)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "rock",
+    "folk rock",
+    "hard rock",
+    "power pop",
+    "Lenoir"
+  ],
+  "primaryLocation": "Lenoir, North Carolina",
+  "bioShort": "5 song E.P. All songs by Chris Church Recorded/mixed in Chris' basement (Summer 2026) Buy CD, get SURPRISE gifts free.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://chrischurch1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:11:44Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "surprise-e-p",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "surprise-e-p-762143756",
+      "title": "Surprise",
+      "artist": "Chris Church",
+      "albumTitle": "Surprise (E.P.)",
+      "albumKey": "surprise-e-p",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chrischurch1.bandcamp.com/track/surprise",
+      "bandcampEmbedTrackId": "762143756",
+      "sourcePage": "https://chrischurch1.bandcamp.com/album/surprise-e-p",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "surprise-e-p-3855654839",
+      "title": "This Is Some Bullshit, Harry",
+      "artist": "Chris Church",
+      "albumTitle": "Surprise (E.P.)",
+      "albumKey": "surprise-e-p",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chrischurch1.bandcamp.com/track/this-is-some-bullshit-harry",
+      "bandcampEmbedTrackId": "3855654839",
+      "sourcePage": "https://chrischurch1.bandcamp.com/album/surprise-e-p",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "surprise-e-p-2184500387",
+      "title": "New Way Down",
+      "artist": "Chris Church",
+      "albumTitle": "Surprise (E.P.)",
+      "albumKey": "surprise-e-p",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chrischurch1.bandcamp.com/track/new-way-down",
+      "bandcampEmbedTrackId": "2184500387",
+      "sourcePage": "https://chrischurch1.bandcamp.com/album/surprise-e-p",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "surprise-e-p-767242480",
+      "title": "Yes, This Is The Blues",
+      "artist": "Chris Church",
+      "albumTitle": "Surprise (E.P.)",
+      "albumKey": "surprise-e-p",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:01",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chrischurch1.bandcamp.com/track/yes-this-is-the-blues",
+      "bandcampEmbedTrackId": "767242480",
+      "sourcePage": "https://chrischurch1.bandcamp.com/album/surprise-e-p",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "surprise-e-p-1776914164",
+      "title": "Absolutely Nothing",
+      "artist": "Chris Church",
+      "albumTitle": "Surprise (E.P.)",
+      "albumKey": "surprise-e-p",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:03",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chrischurch1.bandcamp.com/track/absolutely-nothing",
+      "bandcampEmbedTrackId": "1776914164",
+      "sourcePage": "https://chrischurch1.bandcamp.com/album/surprise-e-p",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://chrischurch1.bandcamp.com/album/surprise-e-p",
+    "discoveredAt": "2026-09-06T03:55:20.795009+00:00",
+    "importedAt": "2026-09-06T04:11:44.723403+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "chrischurch1.bandcamp.com",
+    "bandcampBandId": "98236577",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:11:44.723403+00:00"
+  }
+}

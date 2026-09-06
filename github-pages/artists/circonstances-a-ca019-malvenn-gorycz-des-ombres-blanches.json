@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "circonstances-a-ca019-malvenn-gorycz-des-ombres-blanches",
+  "artist": "Circonstances A.",
+  "bandcampUrl": "https://circonstancesaggravantes.bandcamp.com/album/ca019-malvenn-gorycz-des-ombres-blanches",
+  "releaseTitle": "CA019_MALVENN GORYCZ_Des Ombres Blanches",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "cold electro",
+    "electro",
+    "electro punk",
+    "new wave",
+    "post-punk",
+    "Saarbrücken"
+  ],
+  "primaryLocation": "Saarbrücken, Germany",
+  "bioShort": "FRANCAIS : Malvenn Gorycz marque la rencontre au sommet de deux figures de l’underground : Mode in Gliany et Ame de boue. En 4 titres, cet E.P. versatile navigue avec brio…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://circonstancesaggravantes.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:01:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ca019-malvenn-gorycz-des-ombres-blanches",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ca019-malvenn-gorycz-des-ombres-blanches-803386811",
+      "title": "MALVENN GORYCZ-Nous les vivants",
+      "artist": "Circonstances A.",
+      "albumTitle": "CA019_MALVENN GORYCZ_Des Ombres Blanches",
+      "albumKey": "ca019-malvenn-gorycz-des-ombres-blanches",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://circonstancesaggravantes.bandcamp.com/track/malvenn-gorycz-nous-les-vivants-2",
+      "bandcampEmbedTrackId": "803386811",
+      "sourcePage": "https://circonstancesaggravantes.bandcamp.com/album/ca019-malvenn-gorycz-des-ombres-blanches",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://circonstancesaggravantes.bandcamp.com/album/ca019-malvenn-gorycz-des-ombres-blanches",
+    "discoveredAt": "2026-09-06T03:54:28.028261+00:00",
+    "importedAt": "2026-09-06T04:01:50.725909+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "circonstancesaggravantes.bandcamp.com",
+    "bandcampBandId": "2382360554",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:01:50.725909+00:00"
+  }
+}

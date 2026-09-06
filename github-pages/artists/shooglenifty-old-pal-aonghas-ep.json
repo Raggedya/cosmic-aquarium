@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "slug": "shooglenifty-old-pal-aonghas-ep",
+  "artist": "Shooglenifty",
+  "bandcampUrl": "https://shooglenifty.bandcamp.com/album/old-pal-aonghas-ep",
+  "releaseTitle": "Old Pal Aonghas EP.",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "folk",
+    "acid croft",
+    "dance music",
+    "gaelic song",
+    "scottish",
+    "scottish music",
+    "scottish traditional music",
+    "world music",
+    "ambient",
+    "dub",
+    "scottish folk",
+    "singer-songwriter",
+    "Edinburgh"
+  ],
+  "primaryLocation": "Edinburgh, UK",
+  "bioShort": "The Fiddle melody Old Pal Aonghas was written by Eilidh Shaw as an affectionate tribute to her teacher ,mentor and old friend Aonghas Grant. Kaela responded to the melody with…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://shooglenifty.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:01:11Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "old-pal-aonghas-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "old-pal-aonghas-ep-3484864002",
+      "title": "Old Pal Aonghas",
+      "artist": "Shooglenifty",
+      "albumTitle": "Old Pal Aonghas EP.",
+      "albumKey": "old-pal-aonghas-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shooglenifty.bandcamp.com/track/old-pal-aonghas-3",
+      "bandcampEmbedTrackId": "3484864002",
+      "sourcePage": "https://shooglenifty.bandcamp.com/album/old-pal-aonghas-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "old-pal-aonghas-ep-1889241772",
+      "title": "Up The Mcfud ( Radio Edit)",
+      "artist": "Shooglenifty",
+      "albumTitle": "Old Pal Aonghas EP.",
+      "albumKey": "old-pal-aonghas-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shooglenifty.bandcamp.com/track/up-the-mcfud-radio-edit",
+      "bandcampEmbedTrackId": "1889241772",
+      "sourcePage": "https://shooglenifty.bandcamp.com/album/old-pal-aonghas-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "old-pal-aonghas-ep-1411960493",
+      "title": "Old Pal Aonghas ( Sunrise Tripout Mix)",
+      "artist": "Shooglenifty",
+      "albumTitle": "Old Pal Aonghas EP.",
+      "albumKey": "old-pal-aonghas-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:22",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shooglenifty.bandcamp.com/track/old-pal-aonghas-sunrise-tripout-mix",
+      "bandcampEmbedTrackId": "1411960493",
+      "sourcePage": "https://shooglenifty.bandcamp.com/album/old-pal-aonghas-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://shooglenifty.bandcamp.com/album/old-pal-aonghas-ep",
+    "discoveredAt": "2026-09-06T03:54:28.026742+00:00",
+    "importedAt": "2026-09-06T04:01:11.875387+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "shooglenifty.bandcamp.com",
+    "bandcampBandId": "707566243",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:01:11.875387+00:00"
+  }
+}

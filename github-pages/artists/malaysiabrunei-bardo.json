@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "malaysiabrunei-bardo",
+  "artist": "Malaysiabrunei",
+  "bandcampUrl": "https://malaysiabrunei.bandcamp.com/album/bardo",
+  "releaseTitle": "Bardo",
+  "releaseDate": "2026-07-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "doom metal",
+    "psychedelic rock",
+    "sludge metal",
+    "stoner metal",
+    "Austin"
+  ],
+  "primaryLocation": "Austin, Texas",
+  "bioShort": "Malaysiabrunei — stoner-metal / metal / doom metal music from Austin, Texas.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://malaysiabrunei.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:15:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bardo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bardo-703066531",
+      "title": "Bardo",
+      "artist": "Malaysiabrunei",
+      "albumTitle": "Bardo",
+      "albumKey": "bardo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://malaysiabrunei.bandcamp.com/track/bardo",
+      "bandcampEmbedTrackId": "703066531",
+      "sourcePage": "https://malaysiabrunei.bandcamp.com/album/bardo",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://malaysiabrunei.bandcamp.com/album/bardo",
+    "discoveredAt": "2026-09-06T03:55:20.802197+00:00",
+    "importedAt": "2026-09-06T04:15:33.210878+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "malaysiabrunei.bandcamp.com",
+    "bandcampBandId": "565763838",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:15:33.210878+00:00"
+  }
+}

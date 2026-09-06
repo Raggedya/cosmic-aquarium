@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "hans-roels-boards",
+  "artist": "Hans Roels",
+  "bandcampUrl": "https://hansroels.bandcamp.com/album/boards",
+  "releaseTitle": "Boards",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "experimental",
+    "contemporary classical",
+    "ecology",
+    "electronic music",
+    "field recordings",
+    "improvised music",
+    "pure data",
+    "sound art",
+    "synthesizer",
+    "Ghent"
+  ],
+  "primaryLocation": "Ghent, Belgium",
+  "bioShort": "This mini-album presents keyboard works for self-built synthesizers. The practice of performing live, on the piano keyboard and controlling a synth is central to these two…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hansroels.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:11:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "boards",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "boards-3601388296",
+      "title": "Spiratum (Toetsingen)",
+      "artist": "Hans Roels",
+      "albumTitle": "Boards",
+      "albumKey": "boards",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hansroels.bandcamp.com/track/spiratum-toetsingen",
+      "bandcampEmbedTrackId": "3601388296",
+      "sourcePage": "https://hansroels.bandcamp.com/album/boards",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "boards-1129083127",
+      "title": "Fricatum (Toetsingen)",
+      "artist": "Hans Roels",
+      "albumTitle": "Boards",
+      "albumKey": "boards",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hansroels.bandcamp.com/track/fricatum-toetsingen",
+      "bandcampEmbedTrackId": "1129083127",
+      "sourcePage": "https://hansroels.bandcamp.com/album/boards",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "boards-1307757377",
+      "title": "Pendulum (Toetsingen)",
+      "artist": "Hans Roels",
+      "albumTitle": "Boards",
+      "albumKey": "boards",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:40",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hansroels.bandcamp.com/track/pendulum-toetsingen",
+      "bandcampEmbedTrackId": "1307757377",
+      "sourcePage": "https://hansroels.bandcamp.com/album/boards",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "boards-1213968738",
+      "title": "Temperate Music",
+      "artist": "Hans Roels",
+      "albumTitle": "Boards",
+      "albumKey": "boards",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:18",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hansroels.bandcamp.com/track/temperate-music",
+      "bandcampEmbedTrackId": "1213968738",
+      "sourcePage": "https://hansroels.bandcamp.com/album/boards",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hansroels.bandcamp.com/album/boards",
+    "discoveredAt": "2026-09-06T03:55:20.795009+00:00",
+    "importedAt": "2026-09-06T04:11:00.261107+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hansroels.bandcamp.com",
+    "bandcampBandId": "323604787",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:11:00.261107+00:00"
+  }
+}

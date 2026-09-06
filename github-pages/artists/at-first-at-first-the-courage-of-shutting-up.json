@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "at-first-at-first-the-courage-of-shutting-up",
+  "artist": "at first, at first",
+  "bandcampUrl": "https://atfirstatfirst.bandcamp.com/album/the-courage-of-shutting-up",
+  "releaseTitle": "The Courage of Shutting Up",
+  "releaseDate": "2025-03-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "rock",
+    "emo",
+    "screamo",
+    "San Antonio"
+  ],
+  "primaryLocation": "San Antonio, Texas",
+  "bioShort": "at first, at first — post-hardcore / rock / emo music from San Antonio, Texas.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://atfirstatfirst.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:56:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-courage-of-shutting-up",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-courage-of-shutting-up-56742202",
+      "title": "Her Husband, the Rake",
+      "artist": "at first, at first",
+      "albumTitle": "The Courage of Shutting Up",
+      "albumKey": "the-courage-of-shutting-up",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "2:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atfirstatfirst.bandcamp.com/track/her-husband-the-rake",
+      "bandcampEmbedTrackId": "56742202",
+      "sourcePage": "https://atfirstatfirst.bandcamp.com/album/the-courage-of-shutting-up",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-courage-of-shutting-up-3793835322",
+      "title": "It's About Vampires",
+      "artist": "at first, at first",
+      "albumTitle": "The Courage of Shutting Up",
+      "albumKey": "the-courage-of-shutting-up",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "2:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atfirstatfirst.bandcamp.com/track/its-about-vampires",
+      "bandcampEmbedTrackId": "3793835322",
+      "sourcePage": "https://atfirstatfirst.bandcamp.com/album/the-courage-of-shutting-up",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-courage-of-shutting-up-321005541",
+      "title": "Slept, Woke Up, Slept, Woke Up, Miserable Life",
+      "artist": "at first, at first",
+      "albumTitle": "The Courage of Shutting Up",
+      "albumKey": "the-courage-of-shutting-up",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "2:46",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atfirstatfirst.bandcamp.com/track/slept-woke-up-slept-woke-up-miserable-life",
+      "bandcampEmbedTrackId": "321005541",
+      "sourcePage": "https://atfirstatfirst.bandcamp.com/album/the-courage-of-shutting-up",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-courage-of-shutting-up-2677001055",
+      "title": "I'll Never Forget Where I Was This Day",
+      "artist": "at first, at first",
+      "albumTitle": "The Courage of Shutting Up",
+      "albumKey": "the-courage-of-shutting-up",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "2:42",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atfirstatfirst.bandcamp.com/track/ill-never-forget-where-i-was-this-day",
+      "bandcampEmbedTrackId": "2677001055",
+      "sourcePage": "https://atfirstatfirst.bandcamp.com/album/the-courage-of-shutting-up",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "the-courage-of-shutting-up-1238900199",
+      "title": "In Spite of Artillery",
+      "artist": "at first, at first",
+      "albumTitle": "The Courage of Shutting Up",
+      "albumKey": "the-courage-of-shutting-up",
+      "year": 2025,
+      "trackNumber": 5,
+      "duration": "6:33",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://atfirstatfirst.bandcamp.com/track/in-spite-of-artillery",
+      "bandcampEmbedTrackId": "1238900199",
+      "sourcePage": "https://atfirstatfirst.bandcamp.com/album/the-courage-of-shutting-up",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://atfirstatfirst.bandcamp.com/album/the-courage-of-shutting-up",
+    "discoveredAt": "2026-09-06T03:54:28.010818+00:00",
+    "importedAt": "2026-09-06T03:56:52.295185+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "atfirstatfirst.bandcamp.com",
+    "bandcampBandId": "2125070919",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:56:52.295185+00:00"
+  }
+}

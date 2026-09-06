@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "lilz-classics-to-none-but-i",
+  "artist": "Lilz",
+  "bandcampUrl": "https://lilztheliller.bandcamp.com/album/classics-to-none-but-i",
+  "releaseTitle": "classics to none but I",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "acoustic",
+    "alternative",
+    "punk",
+    "folk punk",
+    "Everett"
+  ],
+  "primaryLocation": "Everett, Washington",
+  "bioShort": "this is just all the demos/songs ive had enough energy to finish in 3 years. the start of something truly fire",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lilztheliller.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:57:37Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "classics-to-none-but-i",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "classics-to-none-but-i-1361116450",
+      "title": "john lennon",
+      "artist": "Lilz",
+      "albumTitle": "classics to none but I",
+      "albumKey": "classics-to-none-but-i",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:24",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lilztheliller.bandcamp.com/track/john-lennon",
+      "bandcampEmbedTrackId": "1361116450",
+      "sourcePage": "https://lilztheliller.bandcamp.com/album/classics-to-none-but-i",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "classics-to-none-but-i-3628031013",
+      "title": "isolation",
+      "artist": "Lilz",
+      "albumTitle": "classics to none but I",
+      "albumKey": "classics-to-none-but-i",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:12",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lilztheliller.bandcamp.com/track/isolation",
+      "bandcampEmbedTrackId": "3628031013",
+      "sourcePage": "https://lilztheliller.bandcamp.com/album/classics-to-none-but-i",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "classics-to-none-but-i-336851234",
+      "title": "untitled collage",
+      "artist": "Lilz",
+      "albumTitle": "classics to none but I",
+      "albumKey": "classics-to-none-but-i",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lilztheliller.bandcamp.com/track/untitled-collage",
+      "bandcampEmbedTrackId": "336851234",
+      "sourcePage": "https://lilztheliller.bandcamp.com/album/classics-to-none-but-i",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "classics-to-none-but-i-1410640451",
+      "title": "summer morning",
+      "artist": "Lilz",
+      "albumTitle": "classics to none but I",
+      "albumKey": "classics-to-none-but-i",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:55",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lilztheliller.bandcamp.com/track/summer-morning",
+      "bandcampEmbedTrackId": "1410640451",
+      "sourcePage": "https://lilztheliller.bandcamp.com/album/classics-to-none-but-i",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "classics-to-none-but-i-4290580002",
+      "title": "the midnight song",
+      "artist": "Lilz",
+      "albumTitle": "classics to none but I",
+      "albumKey": "classics-to-none-but-i",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:31",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lilztheliller.bandcamp.com/track/the-midnight-song",
+      "bandcampEmbedTrackId": "4290580002",
+      "sourcePage": "https://lilztheliller.bandcamp.com/album/classics-to-none-but-i",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lilztheliller.bandcamp.com/album/classics-to-none-but-i",
+    "discoveredAt": "2026-09-06T03:54:28.014016+00:00",
+    "importedAt": "2026-09-06T03:57:37.674279+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lilztheliller.bandcamp.com",
+    "bandcampBandId": "1757837166",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:57:37.674279+00:00"
+  }
+}

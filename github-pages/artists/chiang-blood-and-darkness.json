@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "chiang-blood-and-darkness",
+  "artist": "Chiang",
+  "bandcampUrl": "https://chiang.bandcamp.com/album/blood-and-darkness",
+  "releaseTitle": "Blood and Darkness",
+  "releaseDate": "2026-09-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative rock",
+    "indy",
+    "metal",
+    "punk",
+    "rock",
+    "alt rock",
+    "indy rock",
+    "Bradford"
+  ],
+  "primaryLocation": "Bradford, UK",
+  "bioShort": "Our third E.P. Recorded live with Eric Hayes in six hours at our rehearsal space on Richmond Road in Bradford. We like it raw and wriggling!.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://chiang.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:55:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "blood-and-darkness",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "blood-and-darkness-4121723392",
+      "title": "Echo",
+      "artist": "Chiang",
+      "albumTitle": "Blood and Darkness",
+      "albumKey": "blood-and-darkness",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chiang.bandcamp.com/track/echo",
+      "bandcampEmbedTrackId": "4121723392",
+      "sourcePage": "https://chiang.bandcamp.com/album/blood-and-darkness",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "blood-and-darkness-413618927",
+      "title": "Good",
+      "artist": "Chiang",
+      "albumTitle": "Blood and Darkness",
+      "albumKey": "blood-and-darkness",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chiang.bandcamp.com/track/good",
+      "bandcampEmbedTrackId": "413618927",
+      "sourcePage": "https://chiang.bandcamp.com/album/blood-and-darkness",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "blood-and-darkness-89076852",
+      "title": "Lie",
+      "artist": "Chiang",
+      "albumTitle": "Blood and Darkness",
+      "albumKey": "blood-and-darkness",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:30",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chiang.bandcamp.com/track/lie",
+      "bandcampEmbedTrackId": "89076852",
+      "sourcePage": "https://chiang.bandcamp.com/album/blood-and-darkness",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "blood-and-darkness-1248360801",
+      "title": "Wiser",
+      "artist": "Chiang",
+      "albumTitle": "Blood and Darkness",
+      "albumKey": "blood-and-darkness",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:35",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chiang.bandcamp.com/track/wiser",
+      "bandcampEmbedTrackId": "1248360801",
+      "sourcePage": "https://chiang.bandcamp.com/album/blood-and-darkness",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://chiang.bandcamp.com/album/blood-and-darkness",
+    "discoveredAt": "2026-09-06T03:53:56.070699+00:00",
+    "importedAt": "2026-09-06T03:55:53.842406+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "chiang.bandcamp.com",
+    "bandcampBandId": "3981028553",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:55:53.842406+00:00"
+  }
+}

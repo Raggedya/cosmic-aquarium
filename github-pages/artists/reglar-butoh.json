@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "reglar-butoh",
+  "artist": "Reglar",
+  "bandcampUrl": "https://reglar.bandcamp.com/album/butoh",
+  "releaseTitle": "Butoh",
+  "releaseDate": "2026-08-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "alternative",
+    "blues",
+    "punk",
+    "experimental",
+    "free jazz",
+    "fusion rock",
+    "Immenstadt"
+  ],
+  "primaryLocation": "Immenstadt, Germany",
+  "bioShort": "recorded 19-08-2026",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "dark",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://reglar.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:57:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "butoh",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "butoh-1443051700",
+      "title": "Butoh",
+      "artist": "Reglar",
+      "albumTitle": "Butoh",
+      "albumKey": "butoh",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "24:29",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://reglar.bandcamp.com/track/butoh",
+      "bandcampEmbedTrackId": "1443051700",
+      "sourcePage": "https://reglar.bandcamp.com/album/butoh",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://reglar.bandcamp.com/album/butoh",
+    "discoveredAt": "2026-09-06T03:54:28.014016+00:00",
+    "importedAt": "2026-09-06T03:57:49.534496+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "reglar.bandcamp.com",
+    "bandcampBandId": "1466074500",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:57:49.534496+00:00"
+  }
+}

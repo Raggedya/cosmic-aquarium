@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "oscar-woolley-sketches-for-per-pack",
+  "artist": "Oscar Woolley",
+  "bandcampUrl": "https://oscarw.bandcamp.com/album/sketches-for-per-pack",
+  "releaseTitle": "\"Sketches for 'Per Pack'\"",
+  "releaseDate": "2026-06-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "experimental",
+    "ambient",
+    "ambient pop",
+    "avant-folk",
+    "sound collage",
+    "Brighton And Hove"
+  ],
+  "primaryLocation": "Brighton And Hove, UK",
+  "bioShort": "Oscar Woolley — ambient-pop / experimental / ambient music from Brighton And Hove, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://oscarw.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:08:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sketches-for-per-pack",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sketches-for-per-pack-534412955",
+      "title": "Side A",
+      "artist": "Oscar Woolley",
+      "albumTitle": "\"Sketches for 'Per Pack'\"",
+      "albumKey": "sketches-for-per-pack",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "23:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oscarw.bandcamp.com/track/side-a",
+      "bandcampEmbedTrackId": "534412955",
+      "sourcePage": "https://oscarw.bandcamp.com/album/sketches-for-per-pack",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sketches-for-per-pack-732317507",
+      "title": "Side B",
+      "artist": "Oscar Woolley",
+      "albumTitle": "\"Sketches for 'Per Pack'\"",
+      "albumKey": "sketches-for-per-pack",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "25:24",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oscarw.bandcamp.com/track/side-b",
+      "bandcampEmbedTrackId": "732317507",
+      "sourcePage": "https://oscarw.bandcamp.com/album/sketches-for-per-pack",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://oscarw.bandcamp.com/album/sketches-for-per-pack",
+    "discoveredAt": "2026-09-06T03:55:20.791991+00:00",
+    "importedAt": "2026-09-06T04:08:42.489335+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "oscarw.bandcamp.com",
+    "bandcampBandId": "1650443694",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:08:42.489335+00:00"
+  }
+}

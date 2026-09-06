@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "coil-time-machines",
+  "artist": "Coil",
+  "bandcampUrl": "https://coilofficial.bandcamp.com/album/time-machines",
+  "releaseTitle": "Time Machines",
+  "releaseDate": "2017-09-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "avant-garde",
+    "experimental",
+    "ambient",
+    "industrial",
+    "noise",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "NEW PURPLE EDITIONS SHIPPING END OF DECEMBER/EARLY JAN Official remastered edition of COIL's 1998 drone/ambient masterpiece. “4 Tones to facilitate travel through time.” So…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://coilofficial.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:03:39Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "time-machines",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "time-machines-1699091853",
+      "title": "7-Methoxy-β-Carboline- (Telepathine)",
+      "artist": "Coil",
+      "albumTitle": "Time Machines",
+      "albumKey": "time-machines",
+      "year": 2017,
+      "trackNumber": 1,
+      "duration": "23:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coilofficial.bandcamp.com/track/7-methoxy-carboline-telepathine",
+      "bandcampEmbedTrackId": "1699091853",
+      "sourcePage": "https://coilofficial.bandcamp.com/album/time-machines",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "time-machines-2499316286",
+      "title": "2,5-Dimethoxy-4-Ethyl-Amphetamine- (DOET-Hecate)",
+      "artist": "Coil",
+      "albumTitle": "Time Machines",
+      "albumKey": "time-machines",
+      "year": 2017,
+      "trackNumber": 2,
+      "duration": "13:20",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coilofficial.bandcamp.com/track/25-dimethoxy-4-ethyl-amphetamine-doet-hecate",
+      "bandcampEmbedTrackId": "2499316286",
+      "sourcePage": "https://coilofficial.bandcamp.com/album/time-machines",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "time-machines-3446922829",
+      "title": "5-Methoxy-N,N-Dimethyl- (5-MeO-DMT)",
+      "artist": "Coil",
+      "albumTitle": "Time Machines",
+      "albumKey": "time-machines",
+      "year": 2017,
+      "trackNumber": 3,
+      "duration": "10:02",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coilofficial.bandcamp.com/track/5-methoxy-n-n-dimethyl-5-meo-dmt",
+      "bandcampEmbedTrackId": "3446922829",
+      "sourcePage": "https://coilofficial.bandcamp.com/album/time-machines",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "time-machines-3678125751",
+      "title": "4-Indolol,3-[2-(Dimethylamino)Ethyl],Phosphate Ester- (Psilocybin)",
+      "artist": "Coil",
+      "albumTitle": "Time Machines",
+      "albumKey": "time-machines",
+      "year": 2017,
+      "trackNumber": 4,
+      "duration": "26:46",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coilofficial.bandcamp.com/track/4-indolol-3-2-dimethylamino-ethyl-phosphate-ester-psilocybin",
+      "bandcampEmbedTrackId": "3678125751",
+      "sourcePage": "https://coilofficial.bandcamp.com/album/time-machines",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://coilofficial.bandcamp.com/album/time-machines",
+    "discoveredAt": "2026-09-06T03:55:20.781020+00:00",
+    "importedAt": "2026-09-06T04:03:39.452977+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "coilofficial.bandcamp.com",
+    "bandcampBandId": "3350774821",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:03:39.452977+00:00"
+  }
+}

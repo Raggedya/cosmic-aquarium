@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "slug": "claire-rousay-everything-perfect-is-already-here",
+  "artist": "claire rousay",
+  "bandcampUrl": "https://clairerousay.bandcamp.com/album/everything-perfect-is-already-here",
+  "releaseTitle": "everything perfect is already here",
+  "releaseDate": "2022-04-22 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "musique-concrete",
+    "experimental",
+    "san antonio",
+    "ambient",
+    "electronic",
+    "musique concrete",
+    "pop",
+    "sound art",
+    "sound collage",
+    "sound-collage",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "When words trail off at the beginning of claire rousay’s “everything perfect is already here,” ornate instrumentation is waiting to fill a void left by the breakdown of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "dreamy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://clairerousay.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:57:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "everything-perfect-is-already-here",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "everything-perfect-is-already-here-1644770933",
+      "title": "it feels foolish to care",
+      "artist": "claire rousay",
+      "albumTitle": "everything perfect is already here",
+      "albumKey": "everything-perfect-is-already-here",
+      "year": 2022,
+      "trackNumber": 1,
+      "duration": "15:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://clairerousay.bandcamp.com/track/it-feels-foolish-to-care",
+      "bandcampEmbedTrackId": "1644770933",
+      "sourcePage": "https://clairerousay.bandcamp.com/album/everything-perfect-is-already-here",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "everything-perfect-is-already-here-561567201",
+      "title": "everything perfect is already here",
+      "artist": "claire rousay",
+      "albumTitle": "everything perfect is already here",
+      "albumKey": "everything-perfect-is-already-here",
+      "year": 2022,
+      "trackNumber": 2,
+      "duration": "15:11",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://clairerousay.bandcamp.com/track/everything-perfect-is-already-here",
+      "bandcampEmbedTrackId": "561567201",
+      "sourcePage": "https://clairerousay.bandcamp.com/album/everything-perfect-is-already-here",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://clairerousay.bandcamp.com/album/everything-perfect-is-already-here",
+    "discoveredAt": "2026-09-06T03:54:28.011818+00:00",
+    "importedAt": "2026-09-06T03:57:02.122601+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "clairerousay.bandcamp.com",
+    "bandcampBandId": "310288431",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:57:02.122601+00:00"
+  }
+}

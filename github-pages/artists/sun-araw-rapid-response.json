@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "slug": "sun-araw-rapid-response",
+  "artist": "SUN ARAW",
+  "bandcampUrl": "https://sunaraw.bandcamp.com/album/rapid-response",
+  "releaseTitle": "Rapid Response",
+  "releaseDate": "2026-10-23 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "psychedelic",
+    "devotional",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "THIS NEW 12” EP FROM SUN ARAW CONTAINS THREE LONG-FORM COMPOSITIONS THAT PEER THROUGH A GLIMMERING APERTURE INTO DIAPHANOUS REALMS OF TEXTURAL EXPERIENCE: “WHAT ARE THE PROS…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sunaraw.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:05:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rapid-response",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rapid-response-3145970050",
+      "title": "Proper",
+      "artist": "SUN ARAW",
+      "albumTitle": "Rapid Response",
+      "albumKey": "rapid-response",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "9:25",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sunaraw.bandcamp.com/track/proper",
+      "bandcampEmbedTrackId": "3145970050",
+      "sourcePage": "https://sunaraw.bandcamp.com/album/rapid-response",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "rapid-response-2943282398",
+      "title": "So Far",
+      "artist": "SUN ARAW",
+      "albumTitle": "Rapid Response",
+      "albumKey": "rapid-response",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sunaraw.bandcamp.com/album/rapid-response",
+      "bandcampEmbedTrackId": "2943282398",
+      "sourcePage": "https://sunaraw.bandcamp.com/album/rapid-response",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "rapid-response-1965423007",
+      "title": "Clear Tint Ether",
+      "artist": "SUN ARAW",
+      "albumTitle": "Rapid Response",
+      "albumKey": "rapid-response",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sunaraw.bandcamp.com/album/rapid-response",
+      "bandcampEmbedTrackId": "1965423007",
+      "sourcePage": "https://sunaraw.bandcamp.com/album/rapid-response",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sunaraw.bandcamp.com/album/rapid-response",
+    "discoveredAt": "2026-09-06T03:55:20.786582+00:00",
+    "importedAt": "2026-09-06T04:05:59.175051+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sunaraw.bandcamp.com",
+    "bandcampBandId": "1262807287",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:05:59.175051+00:00"
+  }
+}

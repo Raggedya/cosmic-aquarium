@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "slug": "ponoka-fire-in-the-mountains-live-ep",
+  "artist": "Pōnōkǎ",
+  "bandcampUrl": "https://ponoka1.bandcamp.com/album/fire-in-the-mountains-live-ep",
+  "releaseTitle": "Fire in the Mountains Live EP",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "doom",
+    "metal",
+    "drone",
+    "Browning"
+  ],
+  "primaryLocation": "Browning, montana",
+  "bioShort": "Pōnōkǎ — doom / metal / drone music from Browning, montana.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ponoka1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:58:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "fire-in-the-mountains-live-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fire-in-the-mountains-live-ep-2405937800",
+      "title": "Call to the Merciful Young Warriors/The Lament of Duck Joe",
+      "artist": "Pōnōkǎ",
+      "albumTitle": "Fire in the Mountains Live EP",
+      "albumKey": "fire-in-the-mountains-live-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "20:14",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ponoka1.bandcamp.com/track/call-to-the-merciful-young-warriors-the-lament-of-duck-joe",
+      "bandcampEmbedTrackId": "2405937800",
+      "sourcePage": "https://ponoka1.bandcamp.com/album/fire-in-the-mountains-live-ep",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ponoka1.bandcamp.com/album/fire-in-the-mountains-live-ep",
+    "discoveredAt": "2026-09-06T03:54:28.018034+00:00",
+    "importedAt": "2026-09-06T03:58:38.196099+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ponoka1.bandcamp.com",
+    "bandcampBandId": "2631856269",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:58:38.196099+00:00"
+  }
+}

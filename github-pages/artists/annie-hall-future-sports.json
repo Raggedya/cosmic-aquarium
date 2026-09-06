@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "annie-hall-future-sports",
+  "artist": "Annie Hall",
+  "bandcampUrl": "https://musicanniehall.bandcamp.com/album/future-sports",
+  "releaseTitle": "Future Sports",
+  "releaseDate": "2026-07-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "electronic",
+    "braindance",
+    "breaks",
+    "electro"
+  ],
+  "primaryLocation": null,
+  "bioShort": "EP, SC 027",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://musicanniehall.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:02:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "future-sports",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "future-sports-1746729612",
+      "title": "Future Sports",
+      "artist": "Annie Hall",
+      "albumTitle": "Future Sports",
+      "albumKey": "future-sports",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://musicanniehall.bandcamp.com/track/future-sports",
+      "bandcampEmbedTrackId": "1746729612",
+      "sourcePage": "https://musicanniehall.bandcamp.com/album/future-sports",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "future-sports-824926246",
+      "title": "Gravity Hack",
+      "artist": "Annie Hall",
+      "albumTitle": "Future Sports",
+      "albumKey": "future-sports",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:21",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://musicanniehall.bandcamp.com/track/gravity-hack",
+      "bandcampEmbedTrackId": "824926246",
+      "sourcePage": "https://musicanniehall.bandcamp.com/album/future-sports",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "future-sports-2457837008",
+      "title": "Neon Velocity",
+      "artist": "Annie Hall",
+      "albumTitle": "Future Sports",
+      "albumKey": "future-sports",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:02",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://musicanniehall.bandcamp.com/track/neon-velocity-2",
+      "bandcampEmbedTrackId": "2457837008",
+      "sourcePage": "https://musicanniehall.bandcamp.com/album/future-sports",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "future-sports-4211866340",
+      "title": "Cyber Arena",
+      "artist": "Annie Hall",
+      "albumTitle": "Future Sports",
+      "albumKey": "future-sports",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:26",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://musicanniehall.bandcamp.com/track/cyber-arena",
+      "bandcampEmbedTrackId": "4211866340",
+      "sourcePage": "https://musicanniehall.bandcamp.com/album/future-sports",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://musicanniehall.bandcamp.com/album/future-sports",
+    "discoveredAt": "2026-09-06T03:54:28.029266+00:00",
+    "importedAt": "2026-09-06T04:02:18.039680+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "musicanniehall.bandcamp.com",
+    "bandcampBandId": "3792359369",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:02:18.039680+00:00"
+  }
+}

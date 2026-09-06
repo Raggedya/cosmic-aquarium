@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "anode-tomorrow-is-already-a-long-time-ago",
+  "artist": "Anode",
+  "bandcampUrl": "https://anode1.bandcamp.com/album/tomorrow-is-already-a-long-time-ago",
+  "releaseTitle": "Tomorrow is already a long time ago...",
+  "releaseDate": "2026-08-19 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "musique-concrete",
+    "electronic",
+    "dark ambient",
+    "musique concrete",
+    "phonography",
+    "soundscapes",
+    "tape music",
+    "Seattle"
+  ],
+  "primaryLocation": "Seattle, Washington",
+  "bioShort": "It takes a couple weeks before I can comprehend what's going on in my pieces, so I'll post something as soon as I begin to understand it.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "loud",
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://anode1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:15:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tomorrow-is-already-a-long-time-ago",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tomorrow-is-already-a-long-time-ago-1863454716",
+      "title": "Deep Under Ground",
+      "artist": "Anode",
+      "albumTitle": "Tomorrow is already a long time ago...",
+      "albumKey": "tomorrow-is-already-a-long-time-ago",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "79:28",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anode1.bandcamp.com/track/deep-under-ground",
+      "bandcampEmbedTrackId": "1863454716",
+      "sourcePage": "https://anode1.bandcamp.com/album/tomorrow-is-already-a-long-time-ago",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://anode1.bandcamp.com/album/tomorrow-is-already-a-long-time-ago",
+    "discoveredAt": "2026-09-06T03:55:20.802197+00:00",
+    "importedAt": "2026-09-06T04:15:28.334464+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "anode1.bandcamp.com",
+    "bandcampBandId": "2305945004",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:15:28.334464+00:00"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "verdepari-ep-2026",
+  "artist": "Verdepari",
+  "bandcampUrl": "https://verdepari.bandcamp.com/album/ep-2026",
+  "releaseTitle": "EP \"Не победить никогда\" (2026)",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "rock",
+    "noise rock",
+    "post-hardcore",
+    "Russia"
+  ],
+  "primaryLocation": "Russia",
+  "bioShort": "Verdepari — post-metal / rock / noise rock music from Russia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://verdepari.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:01:01Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ep-2026",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ep-2026-845879349",
+      "title": "Чему ты рад",
+      "artist": "Verdepari",
+      "albumTitle": "EP \"Не победить никогда\" (2026)",
+      "albumKey": "ep-2026",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://verdepari.bandcamp.com/track/--4",
+      "bandcampEmbedTrackId": "845879349",
+      "sourcePage": "https://verdepari.bandcamp.com/album/ep-2026",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ep-2026-550023627",
+      "title": "Не победить/Никогда",
+      "artist": "Verdepari",
+      "albumTitle": "EP \"Не победить никогда\" (2026)",
+      "albumKey": "ep-2026",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:47",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://verdepari.bandcamp.com/track/--5",
+      "bandcampEmbedTrackId": "550023627",
+      "sourcePage": "https://verdepari.bandcamp.com/album/ep-2026",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ep-2026-2250523032",
+      "title": "После себя",
+      "artist": "Verdepari",
+      "albumTitle": "EP \"Не победить никогда\" (2026)",
+      "albumKey": "ep-2026",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:42",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://verdepari.bandcamp.com/track/--6",
+      "bandcampEmbedTrackId": "2250523032",
+      "sourcePage": "https://verdepari.bandcamp.com/album/ep-2026",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ep-2026-1761523055",
+      "title": "Монолит",
+      "artist": "Verdepari",
+      "albumTitle": "EP \"Не победить никогда\" (2026)",
+      "albumKey": "ep-2026",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:32",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://verdepari.bandcamp.com/track/--7",
+      "bandcampEmbedTrackId": "1761523055",
+      "sourcePage": "https://verdepari.bandcamp.com/album/ep-2026",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://verdepari.bandcamp.com/album/ep-2026",
+    "discoveredAt": "2026-09-06T03:54:28.025237+00:00",
+    "importedAt": "2026-09-06T04:01:01.699388+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "verdepari.bandcamp.com",
+    "bandcampBandId": "3361354717",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:01:01.699388+00:00"
+  }
+}

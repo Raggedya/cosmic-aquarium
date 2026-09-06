@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "amongst-the-angels-hymns-from-death-s-bedside",
+  "artist": "Amongst the Angels",
+  "bandcampUrl": "https://amongsttheangels.bandcamp.com/album/hymns-from-deaths-bedside",
+  "releaseTitle": "Hymns From Death's Bedside",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "ambient",
+    "drone",
+    "field recordings",
+    "indeterminacy",
+    "musique concrète",
+    "United States"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Official soundtrack for the film of the same name. Hymns From Death's Bedside is \"an experimental exploration of closed-eye visualizations, static digital noise, and ambient…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "electronic",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://amongsttheangels.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:15:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hymns-from-death-s-bedside",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hymns-from-death-s-bedside-2629207202",
+      "title": "Dark Retreat",
+      "artist": "Amongst the Angels",
+      "albumTitle": "Hymns From Death's Bedside",
+      "albumKey": "hymns-from-death-s-bedside",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "24:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amongsttheangels.bandcamp.com/track/dark-retreat",
+      "bandcampEmbedTrackId": "2629207202",
+      "sourcePage": "https://amongsttheangels.bandcamp.com/album/hymns-from-deaths-bedside",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hymns-from-death-s-bedside-287548866",
+      "title": "Form Constant",
+      "artist": "Amongst the Angels",
+      "albumTitle": "Hymns From Death's Bedside",
+      "albumKey": "hymns-from-death-s-bedside",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "26:23",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amongsttheangels.bandcamp.com/track/form-constant",
+      "bandcampEmbedTrackId": "287548866",
+      "sourcePage": "https://amongsttheangels.bandcamp.com/album/hymns-from-deaths-bedside",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "hymns-from-death-s-bedside-1088667871",
+      "title": "Prisoner's Cinema",
+      "artist": "Amongst the Angels",
+      "albumTitle": "Hymns From Death's Bedside",
+      "albumKey": "hymns-from-death-s-bedside",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "28:31",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://amongsttheangels.bandcamp.com/track/prisoners-cinema",
+      "bandcampEmbedTrackId": "1088667871",
+      "sourcePage": "https://amongsttheangels.bandcamp.com/album/hymns-from-deaths-bedside",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://amongsttheangels.bandcamp.com/album/hymns-from-deaths-bedside",
+    "discoveredAt": "2026-09-06T03:55:20.802197+00:00",
+    "importedAt": "2026-09-06T04:15:49.567822+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "amongsttheangels.bandcamp.com",
+    "bandcampBandId": "977092748",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:15:49.567822+00:00"
+  }
+}

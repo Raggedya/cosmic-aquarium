@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "slug": "yl-hooi-running-around-83",
+  "artist": "YL Hooi",
+  "bandcampUrl": "https://ylhooi.bandcamp.com/album/running-around-83",
+  "releaseTitle": "Running Around (83)",
+  "releaseDate": "2026-10-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "Australia"
+  ],
+  "primaryLocation": "Australia",
+  "bioShort": "YL Hooi returns with ‘Running Around (83)’, the project's first release since 2019's Untitled. Valya Ying-Li Hooi and Tarquin Manek finally commit a long road-tested live…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ylhooi.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:04:05Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "running-around-83",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "running-around-83-438652653",
+      "title": "Running Around (83)",
+      "artist": "YL Hooi",
+      "albumTitle": "Running Around (83)",
+      "albumKey": "running-around-83",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:14",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ylhooi.bandcamp.com/track/running-around-83",
+      "bandcampEmbedTrackId": "438652653",
+      "sourcePage": "https://ylhooi.bandcamp.com/album/running-around-83",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "running-around-83-2443710961",
+      "title": "Running Around (83) (Mad Professor Dub)",
+      "artist": "YL Hooi",
+      "albumTitle": "Running Around (83)",
+      "albumKey": "running-around-83",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ylhooi.bandcamp.com/album/running-around-83",
+      "bandcampEmbedTrackId": "2443710961",
+      "sourcePage": "https://ylhooi.bandcamp.com/album/running-around-83",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "running-around-83-2586928818",
+      "title": "Running Around (83) (Ulla Version)",
+      "artist": "YL Hooi",
+      "albumTitle": "Running Around (83)",
+      "albumKey": "running-around-83",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ylhooi.bandcamp.com/album/running-around-83",
+      "bandcampEmbedTrackId": "2586928818",
+      "sourcePage": "https://ylhooi.bandcamp.com/album/running-around-83",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "running-around-83-4130209377",
+      "title": "Running Around (83) (John T. Gast Remix)",
+      "artist": "YL Hooi",
+      "albumTitle": "Running Around (83)",
+      "albumKey": "running-around-83",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ylhooi.bandcamp.com/album/running-around-83",
+      "bandcampEmbedTrackId": "4130209377",
+      "sourcePage": "https://ylhooi.bandcamp.com/album/running-around-83",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ylhooi.bandcamp.com/album/running-around-83",
+    "discoveredAt": "2026-09-06T03:55:20.784009+00:00",
+    "importedAt": "2026-09-06T04:04:05.182878+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ylhooi.bandcamp.com",
+    "bandcampBandId": "2674161569",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:04:05.182878+00:00"
+  }
+}

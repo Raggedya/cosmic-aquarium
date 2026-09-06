@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "palms-trax-keys-to-a-printed-garden",
+  "artist": "Palms Trax",
+  "bandcampUrl": "https://palmstrax.bandcamp.com/album/keys-to-a-printed-garden-2",
+  "releaseTitle": "Keys To A Printed Garden",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "deep house",
+    "electronic",
+    "house",
+    "disco",
+    "italo",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "Palms Trax joins fabric Originals with his two-track EP, 'Keys To A Printed Garden'. The lead single, 'Soft Trance, Hard Gossip', is a journey through bold basslines…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://palmstrax.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:10:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "keys-to-a-printed-garden",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "keys-to-a-printed-garden-1237681005",
+      "title": "Soft Trance, Hard Gossip",
+      "artist": "Palms Trax",
+      "albumTitle": "Keys To A Printed Garden",
+      "albumKey": "keys-to-a-printed-garden",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:26",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://palmstrax.bandcamp.com/track/soft-trance-hard-gossip-2",
+      "bandcampEmbedTrackId": "1237681005",
+      "sourcePage": "https://palmstrax.bandcamp.com/album/keys-to-a-printed-garden-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "keys-to-a-printed-garden-77894904",
+      "title": "Keys to a Printed Garden",
+      "artist": "Palms Trax",
+      "albumTitle": "Keys To A Printed Garden",
+      "albumKey": "keys-to-a-printed-garden",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:19",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://palmstrax.bandcamp.com/track/keys-to-a-printed-garden-2",
+      "bandcampEmbedTrackId": "77894904",
+      "sourcePage": "https://palmstrax.bandcamp.com/album/keys-to-a-printed-garden-2",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://palmstrax.bandcamp.com/album/keys-to-a-printed-garden-2",
+    "discoveredAt": "2026-09-06T03:55:20.795009+00:00",
+    "importedAt": "2026-09-06T04:10:49.202628+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "palmstrax.bandcamp.com",
+    "bandcampBandId": "3297411187",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:10:49.202628+00:00"
+  }
+}

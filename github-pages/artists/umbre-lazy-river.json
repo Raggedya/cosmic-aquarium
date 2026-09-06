@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "slug": "umbre-lazy-river",
+  "artist": "umbre",
+  "bandcampUrl": "https://umbre-music.bandcamp.com/album/lazy-river",
+  "releaseTitle": "lazy river",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "ambient",
+    "electronic",
+    "botanica",
+    "drone ambient",
+    "field recordings",
+    "new age",
+    "noise",
+    "United States"
+  ],
+  "primaryLocation": null,
+  "bioShort": "umbre — field-recordings / ambient / botanica music in Cosmic Aquaria.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://umbre-music.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:10:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lazy-river",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lazy-river-238571395",
+      "title": "molt",
+      "artist": "umbre",
+      "albumTitle": "lazy river",
+      "albumKey": "lazy-river",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://umbre-music.bandcamp.com/track/molt",
+      "bandcampEmbedTrackId": "238571395",
+      "sourcePage": "https://umbre-music.bandcamp.com/album/lazy-river",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lazy-river-2402705145",
+      "title": "mist",
+      "artist": "umbre",
+      "albumTitle": "lazy river",
+      "albumKey": "lazy-river",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://umbre-music.bandcamp.com/track/mist",
+      "bandcampEmbedTrackId": "2402705145",
+      "sourcePage": "https://umbre-music.bandcamp.com/album/lazy-river",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "lazy-river-2132009515",
+      "title": "moat",
+      "artist": "umbre",
+      "albumTitle": "lazy river",
+      "albumKey": "lazy-river",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:49",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://umbre-music.bandcamp.com/track/moat",
+      "bandcampEmbedTrackId": "2132009515",
+      "sourcePage": "https://umbre-music.bandcamp.com/album/lazy-river",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://umbre-music.bandcamp.com/album/lazy-river",
+    "discoveredAt": "2026-09-06T03:55:20.794022+00:00",
+    "importedAt": "2026-09-06T04:10:09.497942+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "umbre-music.bandcamp.com",
+    "bandcampBandId": "690542911",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:10:09.497942+00:00"
+  }
+}

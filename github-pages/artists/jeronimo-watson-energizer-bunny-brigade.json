@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "jeronimo-watson-energizer-bunny-brigade",
+  "artist": "Jeronimo Watson",
+  "bandcampUrl": "https://jeronimowatson.bandcamp.com/album/energizer-bunny-brigade",
+  "releaseTitle": "Energizer Bunny Brigade",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "deep tech",
+    "electronic",
+    "experimental",
+    "house",
+    "minimal house.",
+    "minimal techno",
+    "techno",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "Jeronimo Watson — minimal / deep tech / electronic music from Los Angeles, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jeronimowatson.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:56:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "energizer-bunny-brigade",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "energizer-bunny-brigade-1831925720",
+      "title": "Energizer Bunny Brigade",
+      "artist": "Jeronimo Watson",
+      "albumTitle": "Energizer Bunny Brigade",
+      "albumKey": "energizer-bunny-brigade",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jeronimowatson.bandcamp.com/track/energizer-bunny-brigade",
+      "bandcampEmbedTrackId": "1831925720",
+      "sourcePage": "https://jeronimowatson.bandcamp.com/album/energizer-bunny-brigade",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "energizer-bunny-brigade-2224218432",
+      "title": "Shoulder Roll",
+      "artist": "Jeronimo Watson",
+      "albumTitle": "Energizer Bunny Brigade",
+      "albumKey": "energizer-bunny-brigade",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jeronimowatson.bandcamp.com/track/shoulder-roll",
+      "bandcampEmbedTrackId": "2224218432",
+      "sourcePage": "https://jeronimowatson.bandcamp.com/album/energizer-bunny-brigade",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "energizer-bunny-brigade-3680621770",
+      "title": "Lickety Split",
+      "artist": "Jeronimo Watson",
+      "albumTitle": "Energizer Bunny Brigade",
+      "albumKey": "energizer-bunny-brigade",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jeronimowatson.bandcamp.com/track/lickety-split",
+      "bandcampEmbedTrackId": "3680621770",
+      "sourcePage": "https://jeronimowatson.bandcamp.com/album/energizer-bunny-brigade",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jeronimowatson.bandcamp.com/album/energizer-bunny-brigade",
+    "discoveredAt": "2026-09-06T03:54:28.008812+00:00",
+    "importedAt": "2026-09-06T03:56:16.230579+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jeronimowatson.bandcamp.com",
+    "bandcampBandId": "752864153",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:56:16.230579+00:00"
+  }
+}

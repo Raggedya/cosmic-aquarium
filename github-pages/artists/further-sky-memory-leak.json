@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "further-sky-memory-leak",
+  "artist": "Further Sky",
+  "bandcampUrl": "https://furtherskymusic.bandcamp.com/album/memory-leak",
+  "releaseTitle": "memory leak",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "alternative rock",
+    "grungegaze",
+    "indie rock",
+    "shoegaze",
+    "Hartford"
+  ],
+  "primaryLocation": "Hartford, Connecticut",
+  "bioShort": "Further Sky — grunge / alternative / alternative rock music from Hartford, Connecticut.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://furtherskymusic.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:10:11Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "memory-leak",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "memory-leak-1219968250",
+      "title": "for_what?",
+      "artist": "Further Sky",
+      "albumTitle": "memory leak",
+      "albumKey": "memory-leak",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://furtherskymusic.bandcamp.com/track/for-what",
+      "bandcampEmbedTrackId": "1219968250",
+      "sourcePage": "https://furtherskymusic.bandcamp.com/album/memory-leak",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "memory-leak-109313066",
+      "title": "segfault//",
+      "artist": "Further Sky",
+      "albumTitle": "memory leak",
+      "albumKey": "memory-leak",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://furtherskymusic.bandcamp.com/track/segfault",
+      "bandcampEmbedTrackId": "109313066",
+      "sourcePage": "https://furtherskymusic.bandcamp.com/album/memory-leak",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "memory-leak-3823330666",
+      "title": "tidal.wav",
+      "artist": "Further Sky",
+      "albumTitle": "memory leak",
+      "albumKey": "memory-leak",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:56",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://furtherskymusic.bandcamp.com/track/tidal-wav",
+      "bandcampEmbedTrackId": "3823330666",
+      "sourcePage": "https://furtherskymusic.bandcamp.com/album/memory-leak",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://furtherskymusic.bandcamp.com/album/memory-leak",
+    "discoveredAt": "2026-09-06T03:55:20.794022+00:00",
+    "importedAt": "2026-09-06T04:10:11.886023+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "furtherskymusic.bandcamp.com",
+    "bandcampBandId": "1709505778",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:10:11.886023+00:00"
+  }
+}

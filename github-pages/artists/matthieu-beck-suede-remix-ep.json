@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "matthieu-beck-suede-remix-ep",
+  "artist": "Matthieu Beck",
+  "bandcampUrl": "https://matthieubeck00.bandcamp.com/album/suede-remix-ep",
+  "releaseTitle": "Suede Remix EP",
+  "releaseDate": "2026-07-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "piano",
+    "electronic",
+    "paris",
+    "balearic",
+    "downtempo",
+    "dub",
+    "dubplate",
+    "remix",
+    "synth",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Matthieu Beck — piano / electronic / paris music from London, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://matthieubeck00.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:00:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "suede-remix-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "suede-remix-ep-848128122",
+      "title": "Suede (Kay Suzuki Remix)",
+      "artist": "Matthieu Beck",
+      "albumTitle": "Suede Remix EP",
+      "albumKey": "suede-remix-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://matthieubeck00.bandcamp.com/track/suede-kay-suzuki-remix",
+      "bandcampEmbedTrackId": "848128122",
+      "sourcePage": "https://matthieubeck00.bandcamp.com/album/suede-remix-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "suede-remix-ep-519715950",
+      "title": "Suede (Froid Dub Remix)",
+      "artist": "Matthieu Beck",
+      "albumTitle": "Suede Remix EP",
+      "albumKey": "suede-remix-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:43",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://matthieubeck00.bandcamp.com/track/suede-froid-dub-remix",
+      "bandcampEmbedTrackId": "519715950",
+      "sourcePage": "https://matthieubeck00.bandcamp.com/album/suede-remix-ep",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://matthieubeck00.bandcamp.com/album/suede-remix-ep",
+    "discoveredAt": "2026-09-06T03:54:28.022045+00:00",
+    "importedAt": "2026-09-06T04:00:18.155429+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "matthieubeck00.bandcamp.com",
+    "bandcampBandId": "238745677",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:00:18.155429+00:00"
+  }
+}

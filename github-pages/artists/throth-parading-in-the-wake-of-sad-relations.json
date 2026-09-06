@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "throth-parading-in-the-wake-of-sad-relations",
+  "artist": "THROTH",
+  "bandcampUrl": "https://throth.bandcamp.com/album/parading-in-the-wake-of-sad-relations",
+  "releaseTitle": "Parading in the wake of sad relations",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "metal",
+    "doomgaze",
+    "sludgegaze",
+    "Bristol"
+  ],
+  "primaryLocation": "Bristol, UK",
+  "bioShort": "THROTH — slowcore / metal / doomgaze music from Bristol, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://throth.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:14:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "parading-in-the-wake-of-sad-relations",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "parading-in-the-wake-of-sad-relations-838565989",
+      "title": "WOODY",
+      "artist": "THROTH",
+      "albumTitle": "Parading in the wake of sad relations",
+      "albumKey": "parading-in-the-wake-of-sad-relations",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:20",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://throth.bandcamp.com/track/woody",
+      "bandcampEmbedTrackId": "838565989",
+      "sourcePage": "https://throth.bandcamp.com/album/parading-in-the-wake-of-sad-relations",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "parading-in-the-wake-of-sad-relations-3918604505",
+      "title": "WITH ME",
+      "artist": "THROTH",
+      "albumTitle": "Parading in the wake of sad relations",
+      "albumKey": "parading-in-the-wake-of-sad-relations",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://throth.bandcamp.com/track/with-me",
+      "bandcampEmbedTrackId": "3918604505",
+      "sourcePage": "https://throth.bandcamp.com/album/parading-in-the-wake-of-sad-relations",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "parading-in-the-wake-of-sad-relations-3441823087",
+      "title": "ABANDON",
+      "artist": "THROTH",
+      "albumTitle": "Parading in the wake of sad relations",
+      "albumKey": "parading-in-the-wake-of-sad-relations",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:51",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://throth.bandcamp.com/track/abandon",
+      "bandcampEmbedTrackId": "3441823087",
+      "sourcePage": "https://throth.bandcamp.com/album/parading-in-the-wake-of-sad-relations",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "parading-in-the-wake-of-sad-relations-3523869097",
+      "title": "HAPPINESS",
+      "artist": "THROTH",
+      "albumTitle": "Parading in the wake of sad relations",
+      "albumKey": "parading-in-the-wake-of-sad-relations",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:27",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://throth.bandcamp.com/track/happiness",
+      "bandcampEmbedTrackId": "3523869097",
+      "sourcePage": "https://throth.bandcamp.com/album/parading-in-the-wake-of-sad-relations",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://throth.bandcamp.com/album/parading-in-the-wake-of-sad-relations",
+    "discoveredAt": "2026-09-06T03:55:20.800198+00:00",
+    "importedAt": "2026-09-06T04:14:16.659964+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "throth.bandcamp.com",
+    "bandcampBandId": "3380861186",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:14:16.659964+00:00"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "slug": "schema-miasto-nierzeczywiste",
+  "artist": "Schema",
+  "bandcampUrl": "https://schemamuzykakresu.bandcamp.com/album/miasto-nierzeczywiste",
+  "releaseTitle": "Miasto nierzeczywiste",
+  "releaseDate": "2016-02-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "doom",
+    "metal",
+    "doom metal",
+    "Warsaw"
+  ],
+  "primaryLocation": "Warsaw, Poland",
+  "bioShort": "Schema zaczyna się tam, gdzie nastaje kres: zmierzch gęstnieje w mrok, jawa dziwaczeje w sen, pamięć rozmywa się w niejasne obrazy, a miejsca niegdyś znajome tchną obcością. W…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://schemamuzykakresu.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T03:57:06Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "miasto-nierzeczywiste",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "miasto-nierzeczywiste-3369852757",
+      "title": "Wrota",
+      "artist": "Schema",
+      "albumTitle": "Miasto nierzeczywiste",
+      "albumKey": "miasto-nierzeczywiste",
+      "year": 2016,
+      "trackNumber": 1,
+      "duration": "2:20",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://schemamuzykakresu.bandcamp.com/track/wrota",
+      "bandcampEmbedTrackId": "3369852757",
+      "sourcePage": "https://schemamuzykakresu.bandcamp.com/album/miasto-nierzeczywiste",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "miasto-nierzeczywiste-3377706792",
+      "title": "Industria",
+      "artist": "Schema",
+      "albumTitle": "Miasto nierzeczywiste",
+      "albumKey": "miasto-nierzeczywiste",
+      "year": 2016,
+      "trackNumber": 2,
+      "duration": "6:51",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://schemamuzykakresu.bandcamp.com/track/industria",
+      "bandcampEmbedTrackId": "3377706792",
+      "sourcePage": "https://schemamuzykakresu.bandcamp.com/album/miasto-nierzeczywiste",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "miasto-nierzeczywiste-1122857517",
+      "title": "Bezsenność",
+      "artist": "Schema",
+      "albumTitle": "Miasto nierzeczywiste",
+      "albumKey": "miasto-nierzeczywiste",
+      "year": 2016,
+      "trackNumber": 3,
+      "duration": "5:50",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://schemamuzykakresu.bandcamp.com/track/bezsenno",
+      "bandcampEmbedTrackId": "1122857517",
+      "sourcePage": "https://schemamuzykakresu.bandcamp.com/album/miasto-nierzeczywiste",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "miasto-nierzeczywiste-2856388560",
+      "title": "Betonowce",
+      "artist": "Schema",
+      "albumTitle": "Miasto nierzeczywiste",
+      "albumKey": "miasto-nierzeczywiste",
+      "year": 2016,
+      "trackNumber": 4,
+      "duration": "9:11",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://schemamuzykakresu.bandcamp.com/track/betonowce",
+      "bandcampEmbedTrackId": "2856388560",
+      "sourcePage": "https://schemamuzykakresu.bandcamp.com/album/miasto-nierzeczywiste",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://schemamuzykakresu.bandcamp.com/album/miasto-nierzeczywiste",
+    "discoveredAt": "2026-09-06T03:54:28.011818+00:00",
+    "importedAt": "2026-09-06T03:57:06.970639+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "schemamuzykakresu.bandcamp.com",
+    "bandcampBandId": "2812128315",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:57:06.970639+00:00"
+  }
+}

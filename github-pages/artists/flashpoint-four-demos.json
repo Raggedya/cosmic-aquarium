@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "flashpoint-four-demos",
+  "artist": "Flashpoint",
+  "bandcampUrl": "https://flashpoints.bandcamp.com/album/four-demos",
+  "releaseTitle": "Four Demos",
+  "releaseDate": "2026-08-16 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "rock",
+    "doomgaze",
+    "dream pop",
+    "shoegaze",
+    "space rock",
+    "Omaha"
+  ],
+  "primaryLocation": "Omaha, Nebraska",
+  "bioShort": "Four instrumental demos.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://flashpoints.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:01:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "four-demos",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "four-demos-3801130840",
+      "title": "Soap Opera",
+      "artist": "Flashpoint",
+      "albumTitle": "Four Demos",
+      "albumKey": "four-demos",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flashpoints.bandcamp.com/track/soap-opera",
+      "bandcampEmbedTrackId": "3801130840",
+      "sourcePage": "https://flashpoints.bandcamp.com/album/four-demos",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "four-demos-1656396775",
+      "title": "Block World Heaven",
+      "artist": "Flashpoint",
+      "albumTitle": "Four Demos",
+      "albumKey": "four-demos",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flashpoints.bandcamp.com/track/block-world-heaven",
+      "bandcampEmbedTrackId": "1656396775",
+      "sourcePage": "https://flashpoints.bandcamp.com/album/four-demos",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "four-demos-2665913410",
+      "title": "Tape",
+      "artist": "Flashpoint",
+      "albumTitle": "Four Demos",
+      "albumKey": "four-demos",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:46",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flashpoints.bandcamp.com/track/tape",
+      "bandcampEmbedTrackId": "2665913410",
+      "sourcePage": "https://flashpoints.bandcamp.com/album/four-demos",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "four-demos-812840354",
+      "title": "The Great Beyond",
+      "artist": "Flashpoint",
+      "albumTitle": "Four Demos",
+      "albumKey": "four-demos",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:46",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flashpoints.bandcamp.com/track/the-great-beyond",
+      "bandcampEmbedTrackId": "812840354",
+      "sourcePage": "https://flashpoints.bandcamp.com/album/four-demos",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://flashpoints.bandcamp.com/album/four-demos",
+    "discoveredAt": "2026-09-06T03:54:28.025237+00:00",
+    "importedAt": "2026-09-06T04:01:09.186434+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "flashpoints.bandcamp.com",
+    "bandcampBandId": "2544563190",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:01:09.186434+00:00"
+  }
+}

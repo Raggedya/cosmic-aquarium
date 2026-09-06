@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "happygroupppp-4p",
+  "artist": "happygroupppp",
+  "bandcampUrl": "https://happygroupppp.bandcamp.com/album/4p",
+  "releaseTitle": "4P",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "acoustic",
+    "americana",
+    "electronic",
+    "experimental",
+    "ambient",
+    "Buffalo"
+  ],
+  "primaryLocation": "Buffalo, New York",
+  "bioShort": "for release on cassette: Side A: 4P1, 4P2 Side B: reverse 11 minutes 2 movements of improvised music recorded live, intent on capturing the character of the space a synthesis…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://happygroupppp.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:10:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "4p",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "4p-1560629256",
+      "title": "4P1",
+      "artist": "happygroupppp",
+      "albumTitle": "4P",
+      "albumKey": "4p",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://happygroupppp.bandcamp.com/track/4p1",
+      "bandcampEmbedTrackId": "1560629256",
+      "sourcePage": "https://happygroupppp.bandcamp.com/album/4p",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "4p-3290211378",
+      "title": "4P2",
+      "artist": "happygroupppp",
+      "albumTitle": "4P",
+      "albumKey": "4p",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:48",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://happygroupppp.bandcamp.com/track/4p2",
+      "bandcampEmbedTrackId": "3290211378",
+      "sourcePage": "https://happygroupppp.bandcamp.com/album/4p",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "4p-857311517",
+      "title": "4P2 REV",
+      "artist": "happygroupppp",
+      "albumTitle": "4P",
+      "albumKey": "4p",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:47",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://happygroupppp.bandcamp.com/track/4p2-rev",
+      "bandcampEmbedTrackId": "857311517",
+      "sourcePage": "https://happygroupppp.bandcamp.com/album/4p",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "4p-1519602974",
+      "title": "4P1 REV",
+      "artist": "happygroupppp",
+      "albumTitle": "4P",
+      "albumKey": "4p",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:37",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://happygroupppp.bandcamp.com/track/4p1-rev",
+      "bandcampEmbedTrackId": "1519602974",
+      "sourcePage": "https://happygroupppp.bandcamp.com/album/4p",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://happygroupppp.bandcamp.com/album/4p",
+    "discoveredAt": "2026-09-06T03:55:20.794022+00:00",
+    "importedAt": "2026-09-06T04:10:00.151081+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "happygroupppp.bandcamp.com",
+    "bandcampBandId": "3994319295",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:10:00.151081+00:00"
+  }
+}

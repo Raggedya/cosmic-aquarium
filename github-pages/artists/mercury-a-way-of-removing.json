@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "slug": "mercury-a-way-of-removing",
+  "artist": "MERCURY",
+  "bandcampUrl": "https://weremercury.bandcamp.com/album/a-way-of-removing",
+  "releaseTitle": "A Way of Removing",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "rock",
+    "alt rock",
+    "post-hardcore",
+    "shoegaze",
+    "Stoke On Trent"
+  ],
+  "primaryLocation": "Stoke On Trent, UK",
+  "bioShort": "produced by sam bloor at lower lane studios. artwork by olly whitham.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://weremercury.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:04:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-way-of-removing",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-way-of-removing-2350802384",
+      "title": "A Way of Removing",
+      "artist": "MERCURY",
+      "albumTitle": "A Way of Removing",
+      "albumKey": "a-way-of-removing",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://weremercury.bandcamp.com/track/a-way-of-removing-2",
+      "bandcampEmbedTrackId": "2350802384",
+      "sourcePage": "https://weremercury.bandcamp.com/album/a-way-of-removing",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-way-of-removing-831465559",
+      "title": "Precursor 2",
+      "artist": "MERCURY",
+      "albumTitle": "A Way of Removing",
+      "albumKey": "a-way-of-removing",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:14",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://weremercury.bandcamp.com/track/precursor-2",
+      "bandcampEmbedTrackId": "831465559",
+      "sourcePage": "https://weremercury.bandcamp.com/album/a-way-of-removing",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "a-way-of-removing-2950103544",
+      "title": "Why This Hurts Me",
+      "artist": "MERCURY",
+      "albumTitle": "A Way of Removing",
+      "albumKey": "a-way-of-removing",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:02",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://weremercury.bandcamp.com/track/why-this-hurts-me-2",
+      "bandcampEmbedTrackId": "2950103544",
+      "sourcePage": "https://weremercury.bandcamp.com/album/a-way-of-removing",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://weremercury.bandcamp.com/album/a-way-of-removing",
+    "discoveredAt": "2026-09-06T03:55:20.784009+00:00",
+    "importedAt": "2026-09-06T04:04:22.550155+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "weremercury.bandcamp.com",
+    "bandcampBandId": "1380400812",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:04:22.550155+00:00"
+  }
+}

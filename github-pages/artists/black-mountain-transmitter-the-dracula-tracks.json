@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "black-mountain-transmitter-the-dracula-tracks",
+  "artist": "Black Mountain Transmitter",
+  "bandcampUrl": "https://blackmountaintransmitter.bandcamp.com/album/the-dracula-tracks",
+  "releaseTitle": "The Dracula Tracks",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "dracula",
+    "experimental",
+    "dark ambient",
+    "horror",
+    "horrorsynth",
+    "library of the occult",
+    "radiophonic",
+    "soundtrack"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Originally released as part 10 of the Library of the Occult monthly series of limited 7\" lathe cut singles. Haunting sounds to accompany the reading of Bram Stoker's 1897…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://blackmountaintransmitter.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:08:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-dracula-tracks",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-dracula-tracks-1694063815",
+      "title": "Denn die Todten reiten schnell",
+      "artist": "Black Mountain Transmitter",
+      "albumTitle": "The Dracula Tracks",
+      "albumKey": "the-dracula-tracks",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:50",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://blackmountaintransmitter.bandcamp.com/track/denn-die-todten-reiten-schnell",
+      "bandcampEmbedTrackId": "1694063815",
+      "sourcePage": "https://blackmountaintransmitter.bandcamp.com/album/the-dracula-tracks",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-dracula-tracks-1977442620",
+      "title": "Zoophagous Maniac (Spiders and Flies)",
+      "artist": "Black Mountain Transmitter",
+      "albumTitle": "The Dracula Tracks",
+      "albumKey": "the-dracula-tracks",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:20",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://blackmountaintransmitter.bandcamp.com/track/zoophagous-maniac-spiders-and-flies",
+      "bandcampEmbedTrackId": "1977442620",
+      "sourcePage": "https://blackmountaintransmitter.bandcamp.com/album/the-dracula-tracks",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://blackmountaintransmitter.bandcamp.com/album/the-dracula-tracks",
+    "discoveredAt": "2026-09-06T03:55:20.791104+00:00",
+    "importedAt": "2026-09-06T04:08:16.443728+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "blackmountaintransmitter.bandcamp.com",
+    "bandcampBandId": "3497794195",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:08:16.443728+00:00"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "away-with-words-what-to-think-about-again",
+  "artist": "away with words",
+  "bandcampUrl": "https://awaywithwords4ever.bandcamp.com/album/what-to-think-about-again",
+  "releaseTitle": "What To Think About Again",
+  "releaseDate": "2024-09-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "rock",
+    "emo",
+    "math rock",
+    "metalcore",
+    "Florida"
+  ],
+  "primaryLocation": "Florida",
+  "bioShort": "away with words — post-hardcore / rock / emo music from Florida.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://awaywithwords4ever.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:08:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "what-to-think-about-again",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "what-to-think-about-again-3686581577",
+      "title": "What To Think About Again",
+      "artist": "away with words",
+      "albumTitle": "What To Think About Again",
+      "albumKey": "what-to-think-about-again",
+      "year": 2024,
+      "trackNumber": 1,
+      "duration": "0:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://awaywithwords4ever.bandcamp.com/track/what-to-think-about-again",
+      "bandcampEmbedTrackId": "3686581577",
+      "sourcePage": "https://awaywithwords4ever.bandcamp.com/album/what-to-think-about-again",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "what-to-think-about-again-4260568364",
+      "title": "Grave Robbery",
+      "artist": "away with words",
+      "albumTitle": "What To Think About Again",
+      "albumKey": "what-to-think-about-again",
+      "year": 2024,
+      "trackNumber": 2,
+      "duration": "4:38",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://awaywithwords4ever.bandcamp.com/track/grave-robbery",
+      "bandcampEmbedTrackId": "4260568364",
+      "sourcePage": "https://awaywithwords4ever.bandcamp.com/album/what-to-think-about-again",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "what-to-think-about-again-2582007345",
+      "title": "Bleach",
+      "artist": "away with words",
+      "albumTitle": "What To Think About Again",
+      "albumKey": "what-to-think-about-again",
+      "year": 2024,
+      "trackNumber": 3,
+      "duration": "3:23",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://awaywithwords4ever.bandcamp.com/track/bleach",
+      "bandcampEmbedTrackId": "2582007345",
+      "sourcePage": "https://awaywithwords4ever.bandcamp.com/album/what-to-think-about-again",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "what-to-think-about-again-1784286954",
+      "title": "Heaven Sent",
+      "artist": "away with words",
+      "albumTitle": "What To Think About Again",
+      "albumKey": "what-to-think-about-again",
+      "year": 2024,
+      "trackNumber": 4,
+      "duration": "3:03",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://awaywithwords4ever.bandcamp.com/track/heaven-sent",
+      "bandcampEmbedTrackId": "1784286954",
+      "sourcePage": "https://awaywithwords4ever.bandcamp.com/album/what-to-think-about-again",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://awaywithwords4ever.bandcamp.com/album/what-to-think-about-again",
+    "discoveredAt": "2026-09-06T03:55:20.791104+00:00",
+    "importedAt": "2026-09-06T04:08:09.523033+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "awaywithwords4ever.bandcamp.com",
+    "bandcampBandId": "551098138",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:08:09.523033+00:00"
+  }
+}

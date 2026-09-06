@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "mez-o-low-breakfast-is-severed",
+  "artist": "Mez-O-Low",
+  "bandcampUrl": "https://mez-o-low.bandcamp.com/album/breakfast-is-severed",
+  "releaseTitle": "Breakfast is Severed",
+  "releaseDate": "2026-08-16 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "heavy",
+    "metal",
+    "doom metal",
+    "melodic",
+    "riffs",
+    "Nottingham"
+  ],
+  "primaryLocation": "Nottingham, UK",
+  "bioShort": "Mez-O-Low — post-metal / metal / doom metal music from Nottingham, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mez-o-low.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T03:55:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "breakfast-is-severed",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "breakfast-is-severed-2708922698",
+      "title": "Eorthe",
+      "artist": "Mez-O-Low",
+      "albumTitle": "Breakfast is Severed",
+      "albumKey": "breakfast-is-severed",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:35",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mez-o-low.bandcamp.com/track/eorthe",
+      "bandcampEmbedTrackId": "2708922698",
+      "sourcePage": "https://mez-o-low.bandcamp.com/album/breakfast-is-severed",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "breakfast-is-severed-1870943194",
+      "title": "Portion Bias",
+      "artist": "Mez-O-Low",
+      "albumTitle": "Breakfast is Severed",
+      "albumKey": "breakfast-is-severed",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:37",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mez-o-low.bandcamp.com/track/portion-bias",
+      "bandcampEmbedTrackId": "1870943194",
+      "sourcePage": "https://mez-o-low.bandcamp.com/album/breakfast-is-severed",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mez-o-low.bandcamp.com/album/breakfast-is-severed",
+    "discoveredAt": "2026-09-06T03:52:58.468865+00:00",
+    "importedAt": "2026-09-06T03:55:27.995157+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mez-o-low.bandcamp.com",
+    "bandcampBandId": "1623237470",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T03:55:27.995157+00:00"
+  }
+}

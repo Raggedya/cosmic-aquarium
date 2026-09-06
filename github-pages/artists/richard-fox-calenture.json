@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "slug": "richard-fox-calenture",
+  "artist": "Richard Fox",
+  "bandcampUrl": "https://richardfox.bandcamp.com/album/calenture",
+  "releaseTitle": "calenture",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "sound-art",
+    "ambient",
+    "organic-electronic",
+    "headphone-music",
+    "soundfield",
+    "soundpoems",
+    "Salt Lake City"
+  ],
+  "primaryLocation": "Salt Lake City, Utah",
+  "bioShort": "Produced & assembled by Richard Renard",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://richardfox.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:03:41Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "calenture",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "calenture-3858127278",
+      "title": "the sirens",
+      "artist": "Richard Fox",
+      "albumTitle": "calenture",
+      "albumKey": "calenture",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "17:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://richardfox.bandcamp.com/track/the-sirens",
+      "bandcampEmbedTrackId": "3858127278",
+      "sourcePage": "https://richardfox.bandcamp.com/album/calenture",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "calenture-1715581458",
+      "title": "calenture",
+      "artist": "Richard Fox",
+      "albumTitle": "calenture",
+      "albumKey": "calenture",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "17:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://richardfox.bandcamp.com/track/calenture",
+      "bandcampEmbedTrackId": "1715581458",
+      "sourcePage": "https://richardfox.bandcamp.com/album/calenture",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://richardfox.bandcamp.com/album/calenture",
+    "discoveredAt": "2026-09-06T03:55:20.781020+00:00",
+    "importedAt": "2026-09-06T04:03:41.583358+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "richardfox.bandcamp.com",
+    "bandcampBandId": "658393528",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:03:41.583358+00:00"
+  }
+}

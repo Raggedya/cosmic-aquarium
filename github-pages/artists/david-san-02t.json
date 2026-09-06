@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "david-san-02t",
+  "artist": "David San",
+  "bandcampUrl": "https://davidsan.bandcamp.com/album/02t",
+  "releaseTitle": "02T",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "deep house",
+    "deep tech",
+    "electronic",
+    "funky house",
+    "hip house",
+    "house",
+    "minimal deep tech",
+    "minimal house",
+    "tech house",
+    "Yumbo"
+  ],
+  "primaryLocation": "Yumbo, Colombia",
+  "bioShort": "David San — minimal / deep house / deep tech music from Yumbo, Colombia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://davidsan.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:10:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "02t",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "02t-3546870415",
+      "title": "02T",
+      "artist": "David San",
+      "albumTitle": "02T",
+      "albumKey": "02t",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://davidsan.bandcamp.com/track/02t",
+      "bandcampEmbedTrackId": "3546870415",
+      "sourcePage": "https://davidsan.bandcamp.com/album/02t",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://davidsan.bandcamp.com/album/02t",
+    "discoveredAt": "2026-09-06T03:55:20.794022+00:00",
+    "importedAt": "2026-09-06T04:10:07.127079+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "davidsan.bandcamp.com",
+    "bandcampBandId": "2534897063",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:10:07.127079+00:00"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "synthese-i-didnt-know-feat-part-time",
+  "artist": "SYNTHESE",
+  "bandcampUrl": "https://syntheseband.bandcamp.com/album/i-didn-t-know-feat-part-time",
+  "releaseTitle": "I Didn’t Know feat. Part Time",
+  "releaseDate": "2026-07-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "electronic",
+    "pop",
+    "dark electro",
+    "synthpop",
+    "Russia"
+  ],
+  "primaryLocation": "Russia",
+  "bioShort": "When two completely different universes meet.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://syntheseband.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:12:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-didnt-know-feat-part-time",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-didnt-know-feat-part-time-2508150633",
+      "title": "I Didn’t Know feat. Part Time",
+      "artist": "SYNTHESE",
+      "albumTitle": "I Didn’t Know feat. Part Time",
+      "albumKey": "i-didnt-know-feat-part-time",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://syntheseband.bandcamp.com/track/i-didn-t-know-feat-part-time-3",
+      "bandcampEmbedTrackId": "2508150633",
+      "sourcePage": "https://syntheseband.bandcamp.com/album/i-didn-t-know-feat-part-time",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "i-didnt-know-feat-part-time-3562449056",
+      "title": "I Didn’t Know feat. Part Time (Davida's mix)",
+      "artist": "SYNTHESE",
+      "albumTitle": "I Didn’t Know feat. Part Time",
+      "albumKey": "i-didnt-know-feat-part-time",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://syntheseband.bandcamp.com/track/i-didn-t-know-feat-part-time-davidas-mix",
+      "bandcampEmbedTrackId": "3562449056",
+      "sourcePage": "https://syntheseband.bandcamp.com/album/i-didn-t-know-feat-part-time",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://syntheseband.bandcamp.com/album/i-didn-t-know-feat-part-time",
+    "discoveredAt": "2026-09-06T03:55:20.799193+00:00",
+    "importedAt": "2026-09-06T04:12:24.073723+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "syntheseband.bandcamp.com",
+    "bandcampBandId": "749836305",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:12:24.073723+00:00"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "focus-fields-dense-arcade",
+  "artist": "Focus Fields",
+  "bandcampUrl": "https://focusfields.bandcamp.com/album/dense-arcade",
+  "releaseTitle": "Dense Arcade",
+  "releaseDate": "2026-01-09 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "ambient",
+    "drone ambient",
+    "focus music",
+    "longform",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "This release continues the Focus Fields project, a system of long-form sound environments designed to support concentration, stillness, and extended work. The pieces collected…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://focusfields.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:15:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dense-arcade",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dense-arcade-2484303000",
+      "title": "Dense Arcade",
+      "artist": "Focus Fields",
+      "albumTitle": "Dense Arcade",
+      "albumKey": "dense-arcade",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "11:51",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://focusfields.bandcamp.com/track/dense-arcade",
+      "bandcampEmbedTrackId": "2484303000",
+      "sourcePage": "https://focusfields.bandcamp.com/album/dense-arcade",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dense-arcade-155162863",
+      "title": "Static Room",
+      "artist": "Focus Fields",
+      "albumTitle": "Dense Arcade",
+      "albumKey": "dense-arcade",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "9:55",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://focusfields.bandcamp.com/track/static-room",
+      "bandcampEmbedTrackId": "155162863",
+      "sourcePage": "https://focusfields.bandcamp.com/album/dense-arcade",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "dense-arcade-1171723864",
+      "title": "Ash Stairwell",
+      "artist": "Focus Fields",
+      "albumTitle": "Dense Arcade",
+      "albumKey": "dense-arcade",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "11:50",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://focusfields.bandcamp.com/track/ash-stairwell",
+      "bandcampEmbedTrackId": "1171723864",
+      "sourcePage": "https://focusfields.bandcamp.com/album/dense-arcade",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "dense-arcade-4201694282",
+      "title": "Carbon Annex",
+      "artist": "Focus Fields",
+      "albumTitle": "Dense Arcade",
+      "albumKey": "dense-arcade",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "9:14",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://focusfields.bandcamp.com/track/carbon-annex",
+      "bandcampEmbedTrackId": "4201694282",
+      "sourcePage": "https://focusfields.bandcamp.com/album/dense-arcade",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "dense-arcade-3731463661",
+      "title": "Silent Wing",
+      "artist": "Focus Fields",
+      "albumTitle": "Dense Arcade",
+      "albumKey": "dense-arcade",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "10:36",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://focusfields.bandcamp.com/track/silent-wing",
+      "bandcampEmbedTrackId": "3731463661",
+      "sourcePage": "https://focusfields.bandcamp.com/album/dense-arcade",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://focusfields.bandcamp.com/album/dense-arcade",
+    "discoveredAt": "2026-09-06T03:55:20.801197+00:00",
+    "importedAt": "2026-09-06T04:15:07.278915+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "focusfields.bandcamp.com",
+    "bandcampBandId": "1875675345",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:15:07.278915+00:00"
+  }
+}

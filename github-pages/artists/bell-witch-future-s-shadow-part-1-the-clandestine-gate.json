@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "bell-witch-future-s-shadow-part-1-the-clandestine-gate",
+  "artist": "BELL WITCH",
+  "bandcampUrl": "https://bellwitch.bandcamp.com/album/futures-shadow-part-1-the-clandestine-gate",
+  "releaseTitle": "Future's Shadow Part 1: The Clandestine Gate",
+  "releaseDate": "2023-04-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "doom",
+    "epic",
+    "funeral doom",
+    "metal",
+    "death doom",
+    "Seattle"
+  ],
+  "primaryLocation": "Seattle, Washington",
+  "bioShort": "Nothing's bigger than life. All vastnesses -- expanding space, infinite time -- crouch inside of consciousness. On a historical scale, to say nothing of a cosmic one, the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bellwitch.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:13:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "future-s-shadow-part-1-the-clandestine-gate",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "future-s-shadow-part-1-the-clandestine-gate-3183962452",
+      "title": "The Clandestine Gate",
+      "artist": "BELL WITCH",
+      "albumTitle": "Future's Shadow Part 1: The Clandestine Gate",
+      "albumKey": "future-s-shadow-part-1-the-clandestine-gate",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "83:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bellwitch.bandcamp.com/track/the-clandestine-gate",
+      "bandcampEmbedTrackId": "3183962452",
+      "sourcePage": "https://bellwitch.bandcamp.com/album/futures-shadow-part-1-the-clandestine-gate",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bellwitch.bandcamp.com/album/futures-shadow-part-1-the-clandestine-gate",
+    "discoveredAt": "2026-09-06T03:55:20.800198+00:00",
+    "importedAt": "2026-09-06T04:13:18.349189+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bellwitch.bandcamp.com",
+    "bandcampBandId": "373231413",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:13:18.349189+00:00"
+  }
+}

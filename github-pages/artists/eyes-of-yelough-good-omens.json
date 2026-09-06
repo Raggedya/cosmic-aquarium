@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "slug": "eyes-of-yelough-good-omens",
+  "artist": "Eyes Of Yelöugh",
+  "bandcampUrl": "https://eyesofyelough.bandcamp.com/album/good-omens",
+  "releaseTitle": "Good Omens",
+  "releaseDate": "2026-08-13 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "Tomsk"
+  ],
+  "primaryLocation": "Tomsk, Russia",
+  "bioShort": "All music by Eyes Of Yelough Sound engineering - Vagiz Bikulov, Ground Lift Studio Mixing and mastering - Alexey Uvarov Artwork: forkonatable",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://eyesofyelough.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:02:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "good-omens",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "good-omens-3110886548",
+      "title": "Ex Cathedra",
+      "artist": "Eyes Of Yelöugh",
+      "albumTitle": "Good Omens",
+      "albumKey": "good-omens",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:40",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eyesofyelough.bandcamp.com/track/ex-cathedra",
+      "bandcampEmbedTrackId": "3110886548",
+      "sourcePage": "https://eyesofyelough.bandcamp.com/album/good-omens",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "good-omens-2383061695",
+      "title": "More You Give, Less You Get",
+      "artist": "Eyes Of Yelöugh",
+      "albumTitle": "Good Omens",
+      "albumKey": "good-omens",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eyesofyelough.bandcamp.com/track/more-you-give-less-you-get",
+      "bandcampEmbedTrackId": "2383061695",
+      "sourcePage": "https://eyesofyelough.bandcamp.com/album/good-omens",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "good-omens-4061730556",
+      "title": "Those Who Steal Icons",
+      "artist": "Eyes Of Yelöugh",
+      "albumTitle": "Good Omens",
+      "albumKey": "good-omens",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eyesofyelough.bandcamp.com/track/those-who-steal-icons",
+      "bandcampEmbedTrackId": "4061730556",
+      "sourcePage": "https://eyesofyelough.bandcamp.com/album/good-omens",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "good-omens-1158334657",
+      "title": "River",
+      "artist": "Eyes Of Yelöugh",
+      "albumTitle": "Good Omens",
+      "albumKey": "good-omens",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "9:44",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eyesofyelough.bandcamp.com/track/river",
+      "bandcampEmbedTrackId": "1158334657",
+      "sourcePage": "https://eyesofyelough.bandcamp.com/album/good-omens",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://eyesofyelough.bandcamp.com/album/good-omens",
+    "discoveredAt": "2026-09-06T03:54:28.029266+00:00",
+    "importedAt": "2026-09-06T04:02:07.681510+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "eyesofyelough.bandcamp.com",
+    "bandcampBandId": "904605009",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:02:07.681510+00:00"
+  }
+}

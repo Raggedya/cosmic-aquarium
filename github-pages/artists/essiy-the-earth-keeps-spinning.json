@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "essiy-the-earth-keeps-spinning",
+  "artist": "\" ESSÏY \"",
+  "bandcampUrl": "https://essiy.bandcamp.com/album/the-earth-keeps-spinning",
+  "releaseTitle": "The Earth Keeps Spinning",
+  "releaseDate": "2026-06-29 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "electronic",
+    "ambient",
+    "ambient pop",
+    "dance",
+    "noise",
+    "pop",
+    "California"
+  ],
+  "primaryLocation": "California",
+  "bioShort": "\" ESSÏY \" — ambient-pop / electronic / ambient music from California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://essiy.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T04:00:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-earth-keeps-spinning",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-earth-keeps-spinning-2351473592",
+      "title": "Magic",
+      "artist": "\" ESSÏY \"",
+      "albumTitle": "The Earth Keeps Spinning",
+      "albumKey": "the-earth-keeps-spinning",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://essiy.bandcamp.com/track/magic",
+      "bandcampEmbedTrackId": "2351473592",
+      "sourcePage": "https://essiy.bandcamp.com/album/the-earth-keeps-spinning",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-earth-keeps-spinning-402768633",
+      "title": "Carousel",
+      "artist": "\" ESSÏY \"",
+      "albumTitle": "The Earth Keeps Spinning",
+      "albumKey": "the-earth-keeps-spinning",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://essiy.bandcamp.com/track/carousel",
+      "bandcampEmbedTrackId": "402768633",
+      "sourcePage": "https://essiy.bandcamp.com/album/the-earth-keeps-spinning",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-earth-keeps-spinning-1230101577",
+      "title": "The Earth Keeps Spinning",
+      "artist": "\" ESSÏY \"",
+      "albumTitle": "The Earth Keeps Spinning",
+      "albumKey": "the-earth-keeps-spinning",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "1:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://essiy.bandcamp.com/track/the-earth-keeps-spinning",
+      "bandcampEmbedTrackId": "1230101577",
+      "sourcePage": "https://essiy.bandcamp.com/album/the-earth-keeps-spinning",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://essiy.bandcamp.com/album/the-earth-keeps-spinning",
+    "discoveredAt": "2026-09-06T03:54:28.022045+00:00",
+    "importedAt": "2026-09-06T04:00:10.663602+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "essiy.bandcamp.com",
+    "bandcampBandId": "2334937668",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:00:10.663602+00:00"
+  }
+}

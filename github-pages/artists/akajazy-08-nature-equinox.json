@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "slug": "akajazy-08-nature-equinox",
+  "artist": "akaJazy",
+  "bandcampUrl": "https://akajazy.bandcamp.com/album/08-nature-equinox",
+  "releaseTitle": "08; Nature Equinox",
+  "releaseDate": "2026-08-29 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "musique-concrete",
+    "electronic",
+    "ambient",
+    "ambient plugg",
+    "experimental",
+    "field recordings",
+    "glitch",
+    "instrumental hip-hop",
+    "microsound",
+    "musique concrete",
+    "nature plugg",
+    "new age",
+    "plugg",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Leaf Sounds #tautog Moonphases 08 MPS08 1. This Summer Heat is Too Much 0:00 2. Raining Finally 1:40 3. I Love Staring at Trees 3:20 4. Never Let Go 4:28 5. Myself…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://akajazy.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:16:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "08-nature-equinox",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "08-nature-equinox-863576748",
+      "title": "08; Nature Equinox",
+      "artist": "akaJazy",
+      "albumTitle": "08; Nature Equinox",
+      "albumKey": "08-nature-equinox",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "9:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://akajazy.bandcamp.com/track/08-nature-equinox",
+      "bandcampEmbedTrackId": "863576748",
+      "sourcePage": "https://akajazy.bandcamp.com/album/08-nature-equinox",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://akajazy.bandcamp.com/album/08-nature-equinox",
+    "discoveredAt": "2026-09-06T03:55:20.802197+00:00",
+    "importedAt": "2026-09-06T04:16:10.762442+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "akajazy.bandcamp.com",
+    "bandcampBandId": "299708260",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:16:10.762442+00:00"
+  }
+}

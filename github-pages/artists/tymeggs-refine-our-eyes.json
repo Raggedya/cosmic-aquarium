@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "tymeggs-refine-our-eyes",
+  "artist": "Tymeggs",
+  "bandcampUrl": "https://tymeggs.bandcamp.com/album/refine-our-eyes",
+  "releaseTitle": "Refine Our Eyes",
+  "releaseDate": "2026-07-22 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-04",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "rock",
+    "the problem solverz",
+    "lost media",
+    "psychedelic rock",
+    "Opole"
+  ],
+  "primaryLocation": "Opole, Poland",
+  "bioShort": "A psych-rock(?) song based on Ben Jones' script for his lost \"Alfe\" pilot episode. Specifically, the scene where Horace is singing while eating tater-tots.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tymeggs.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T04:05:49Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "refine-our-eyes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "refine-our-eyes-111545500",
+      "title": "Refine Our Eyes",
+      "artist": "Tymeggs",
+      "albumTitle": "Refine Our Eyes",
+      "albumKey": "refine-our-eyes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:10",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tymeggs.bandcamp.com/track/refine-our-eyes",
+      "bandcampEmbedTrackId": "111545500",
+      "sourcePage": "https://tymeggs.bandcamp.com/album/refine-our-eyes",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tymeggs.bandcamp.com/album/refine-our-eyes",
+    "discoveredAt": "2026-09-06T03:55:20.786582+00:00",
+    "importedAt": "2026-09-06T04:05:49.040193+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-04"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tymeggs.bandcamp.com",
+    "bandcampBandId": "455916340",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T04:05:49.040193+00:00"
+  }
+}
