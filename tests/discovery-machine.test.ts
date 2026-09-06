@@ -62,13 +62,14 @@ test('reels use real catalogue names and stop separately with physical lock-in',
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(runtime,/artistName\(entry\)/);
   assert.equal((template.match(/class="reel-strip"/g)||[]).length,3);
-  assert.equal((template.match(/<div class="reel-strip"><span><\/span><strong>[^<]+<\/strong><span><\/span><span><\/span><\/div>/g)||[]).length,3);
-  assert.match(runtime,/\[before,current,after,farAfter\]\.forEach/);
+  assert.equal((template.match(/<div class="reel-strip"><span><\/span><strong>[^<]+<\/strong><span><\/span><\/div>/g)||[]).length,3);
+  assert.match(runtime,/\[before,current,after\]\.forEach/);
   assert.match(runtime,/classList\.toggle\('is-very-long',text\.length>22\)/);
   assert.match(runtime,/\[1550,2200,2950\]/);
   assert.match(runtime,/reelThunk\(index\)/);
   assert.match(css,/aggits-reel-v2\.webp/);
-  assert.match(css,/grid-template-rows:repeat\(4,1fr\)/);
+  assert.match(css,/grid-template-rows:repeat\(3,1fr\)/);
+  assert.match(css,/\.payline\{[^}]*top:50%/);
   assert.match(css,/@keyframes reelLock/);
   assert.match(css,/\.reel\.is-spinning/);
 });
@@ -81,7 +82,16 @@ test('the AGGITS marquee uses the reference-matched riveted metal artwork while 
 });
 
 test('the formal state machine covers the complete mechanical and playback sequence',()=>{
-  for(const required of ['BOOT','IDLE','LEVER_PULL','SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP','EVALUATE','LOSS','NEAR_MISS','WIN','WIN_CELEBRATION','LOADING_TRACK','PLAYING','PLAY_ERROR'])assert.ok(MACHINE_STATES.includes(required));
+  for(const required of ['BOOT','IDLE','LEVER_PULL','SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP','EVALUATE','LOSS','NEAR_MISS','WIN','WIN_CELEBRATION','LOADING_TRACK','AUTOPLAY_ATTEMPT','AWAITING_PLAY','PLAYING','PLAY_ERROR'])assert.ok(MACHINE_STATES.includes(required));
+});
+
+test('the twin meters and centre inscription share a recessed cabinet instrument cavity',async()=>{
+  const css=await read('app/discovery-machine.css');
+  assert.match(css,/\.meter-bank\{[^}]*box-shadow:inset/);
+  assert.match(css,/\.meter-bank::before/);
+  assert.match(css,/\.meter-bank::after/);
+  assert.match(css,/\.meter-inscription\{[^}]*background:linear-gradient/);
+  assert.doesNotMatch(css,/\.vu-meter\{[^}]*drop-shadow/);
 });
 
 test('the red central control is BUY MUSIC and never spins the reels',async()=>{
@@ -106,6 +116,19 @@ test('official Bandcamp playback, real purchase links and track fallback validat
   assert.match(runtime,/bandcamp\.com\/EmbeddedPlayer\/track=/);
   assert.match(runtime,/validBandcampUrl\(track\.bandcampUrl\)\|\|validBandcampUrl\(manifest\.bandcampUrl\)/);
   assert.match(runtime,/if\(!validBandcampUrl\(manifest\.bandcampUrl\)\|\|!pickPlayableTrack\(manifest\)\)/);
+});
+
+test('winner playback is requested automatically and degrades to an integrated tap-to-play control',async()=>{
+  const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+  assert.match(template,/data-action="play-winner"/);
+  assert.match(template,/Official Bandcamp playback controls/);
+  assert.match(runtime,/autoplay=true/);
+  assert.match(runtime,/schedulePlaybackFallback/);
+  assert.match(runtime,/setState\('AUTOPLAY_ATTEMPT'/);
+  assert.match(runtime,/setState\('AWAITING_PLAY'/);
+  assert.match(runtime,/winnerPlayButton\.addEventListener\('click',requestWinnerPlayback\)/);
+  assert.match(runtime,/function animateLeverAndSpin\(\)\{if\(locked\)return;ensureAudio\(\)/);
+  assert.match(css,/data-machine-state="AWAITING_PLAY"/);
 });
 
 test('the live source of truth is exactly 500 Melbourne artists and 3,744 playable tracks',async()=>{
