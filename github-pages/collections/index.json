@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-06T05:30:14.554Z",
+  "generatedAt": "2026-09-06T05:12:58.896Z",
   "collections": [
     {
       "id": "location:portland-oregon",
@@ -8,7 +8,7 @@
       "name": "Portland, Oregon",
       "type": "location",
       "status": "published",
-      "memberCount": 3,
+      "memberCount": 0,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/portland-oregon/",
       "location": {
         "city": "Portland",
@@ -33,10 +33,10 @@
       "name": "HEAVY",
       "type": "genre",
       "status": "published",
-      "memberCount": 805,
+      "memberCount": 7,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-heavy/",
       "location": null,
-      "updatedAt": "2026-09-06T05:30:14.396Z"
+      "updatedAt": "2026-09-06T05:12:58.834Z"
     },
     {
       "id": "style:dreamy",
@@ -44,10 +44,10 @@
       "name": "DREAMY",
       "type": "genre",
       "status": "published",
-      "memberCount": 528,
+      "memberCount": 2,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-dreamy/",
       "location": null,
-      "updatedAt": "2026-09-06T05:30:14.412Z"
+      "updatedAt": "2026-09-06T05:12:58.840Z"
     },
     {
       "id": "style:quiet",
@@ -55,10 +55,10 @@
       "name": "QUIET",
       "type": "genre",
       "status": "published",
-      "memberCount": 564,
+      "memberCount": 9,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-quiet/",
       "location": null,
-      "updatedAt": "2026-09-06T05:30:14.424Z"
+      "updatedAt": "2026-09-06T05:12:58.845Z"
     },
     {
       "id": "style:electronic",
@@ -66,10 +66,10 @@
       "name": "ELECTRONIC",
       "type": "genre",
       "status": "published",
-      "memberCount": 412,
+      "memberCount": 13,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-electronic/",
       "location": null,
-      "updatedAt": "2026-09-06T05:30:14.435Z"
+      "updatedAt": "2026-09-06T05:12:58.853Z"
     },
     {
       "id": "style:dark",
@@ -77,10 +77,10 @@
       "name": "DARK",
       "type": "genre",
       "status": "published",
-      "memberCount": 481,
+      "memberCount": 4,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-dark/",
       "location": null,
-      "updatedAt": "2026-09-06T05:30:14.443Z"
+      "updatedAt": "2026-09-06T05:12:58.859Z"
     },
     {
       "id": "style:loud",
@@ -88,10 +88,10 @@
       "name": "LOUD",
       "type": "genre",
       "status": "published",
-      "memberCount": 963,
+      "memberCount": 15,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-loud/",
       "location": null,
-      "updatedAt": "2026-09-06T05:30:14.452Z"
+      "updatedAt": "2026-09-06T05:12:58.870Z"
     },
     {
       "id": "style:strange",
@@ -99,10 +99,10 @@
       "name": "STRANGE",
       "type": "genre",
       "status": "published",
-      "memberCount": 389,
+      "memberCount": 4,
       "url": "https://raggedya.github.io/cosmic-aquarium/collections/style-strange/",
       "location": null,
-      "updatedAt": "2026-09-06T05:30:14.467Z"
+      "updatedAt": "2026-09-06T05:12:58.880Z"
     }
   ]
 }

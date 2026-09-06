@@ -178,17 +178,16 @@ function usefulTags(values = [], waters = []) {
 
 export function buildTickerMessages(manifest, registryEntry = {}, artistEntry = {}, universeStats = {}, options = {}) {
   const messages = [];
-  const universe=String(options.universe || universeStats.universe || '').trim().toLowerCase();
   const artist=tickerText(manifest.artist || registryEntry.artist || artistEntry.name,90);
   const suburb=tickerText(registryEntry.suburb || artistEntry.suburb,70);
-  const fallbackLocation=universe==='melbourne'?'MELBOURNE, AUSTRALIA':'';
-  const location=tickerText(suburb&&universe==='melbourne'?`${suburb} • MELBOURNE`:(artistEntry.primaryLocation || registryEntry.primaryLocation || manifest.primaryLocation || fallbackLocation),90);
+  const location=tickerText(suburb?`${suburb} • MELBOURNE`:(artistEntry.primaryLocation || registryEntry.primaryLocation || manifest.primaryLocation || 'MELBOURNE, AUSTRALIA'),90);
   const release=tickerText(manifest.releaseTitle || registryEntry.release,110);
   const track=tickerText(manifest.selectedTrackTitle,110);
   const waters=(registryEntry.waters || manifest.waters || []).map(value=>tickerText(value,32)).filter(Boolean);
   const tags=usefulTags(manifest.metadataTags || registryEntry.metadataTags || [],waters);
   const bio=tickerText(registryEntry.bioShort || artistEntry.bioShort || manifest.bioShort,180);
   const labels=(manifest.labels || artistEntry.labels || []).map(value=>tickerText(value,70)).filter(Boolean);
+  const universe=String(options.universe || universeStats.universe || '').trim().toLowerCase();
   const cultureSegments=getMelbourneCultureSegments(universe,options.cultureStartIndex,options.cultureSegmentCount ?? 2);
 
   if(artist) messages.push(location?`${artist}  •  ${location}`:artist);
@@ -210,15 +209,13 @@ export function buildTickerMessages(manifest, registryEntry = {}, artistEntry = 
   const releases=Number(universeStats.publishedReleaseCount || universeStats.releases || 0);
   const songs=Number(universeStats.playableTrackCount || universeStats.playableTracks || 0);
   const suburbs=Number(universeStats.suburbs || 0);
-  if(artists>0&&releases>0&&songs>0) messages.push(universe==='melbourne'
-    ? [`${artists.toLocaleString('en-AU')} MELBOURNE ARTISTS`,`${songs.toLocaleString('en-AU')} PLAYABLE TRACKS FROM MELBOURNE`,suburbs>0?`${suburbs.toLocaleString('en-AU')} MELBOURNE SUBURBS REPRESENTED`:null].filter(Boolean).join('  •  ')
-    : `${artists.toLocaleString('en-AU')} INDEPENDENT ARTISTS  •  ${songs.toLocaleString('en-AU')} PLAYABLE TRACKS`);
+  if(artists>0&&releases>0&&songs>0) messages.push([`${artists.toLocaleString('en-AU')} MELBOURNE ARTISTS`,`${songs.toLocaleString('en-AU')} PLAYABLE TRACKS FROM MELBOURNE`,suburbs>0?`${suburbs.toLocaleString('en-AU')} MELBOURNE SUBURBS REPRESENTED`:null].filter(Boolean).join('  •  '));
   if(artist) messages.push(['CURRENT ARTIST',artist,location].filter(Boolean).join('  •  '));
   if(cultureSegments[1]) messages.push(cultureSegments[1]);
-  if(Number(universeStats.newToday)>0) messages.push(`${Number(universeStats.newToday).toLocaleString('en-AU')} NEW ${universe==='melbourne'?'MELBOURNE ':''}ARTISTS ADDED TODAY`);
-  else if(Number(universeStats.newThisWeek)>0) messages.push(`${Number(universeStats.newThisWeek).toLocaleString('en-AU')} NEW ${universe==='melbourne'?'MELBOURNE ':''}ARTISTS ADDED THIS WEEK`);
+  if(Number(universeStats.newToday)>0) messages.push(`${Number(universeStats.newToday).toLocaleString('en-AU')} NEW MELBOURNE ARTISTS ADDED TODAY`);
+  else if(Number(universeStats.newThisWeek)>0) messages.push(`${Number(universeStats.newThisWeek).toLocaleString('en-AU')} NEW MELBOURNE ARTISTS ADDED THIS WEEK`);
   messages.push('SUPPORT INDEPENDENT ARTISTS  •  BUY MUSIC DIRECT FROM THE ARTIST');
-  messages.push(universe==='melbourne'?'MELBOURNE MUSIC LIVES HERE  •  BANDCAMP':'INDEPENDENT MUSIC LIVES HERE  •  BANDCAMP');
+  messages.push('MELBOURNE MUSIC LIVES HERE  •  BANDCAMP');
   const cultureSet=new Set(cultureSegments);
   return [...new Set(messages.map(value=>tickerText(value,cultureSet.has(value)?600:220)).filter(value=>value&&!/\b(?:UNDEFINED|NULL|N\/A)\b/.test(value)))];
 }
