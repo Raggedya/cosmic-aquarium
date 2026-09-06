@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-goatboy-there-is-no-tomorrow",
+  "artist": "The Goatboy",
+  "bandcampUrl": "https://thegoatboy1.bandcamp.com/album/there-is-no-tomorrow-2",
+  "releaseTitle": "There is No Tomorrow",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "alt rock",
+    "Perth"
+  ],
+  "primaryLocation": "Perth, UK",
+  "bioShort": "The Goatboy — grunge / alternative / alt rock music from Perth, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thegoatboy1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:44:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "there-is-no-tomorrow",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "there-is-no-tomorrow-247596594",
+      "title": "Papa",
+      "artist": "The Goatboy",
+      "albumTitle": "There is No Tomorrow",
+      "albumKey": "there-is-no-tomorrow",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thegoatboy1.bandcamp.com/track/papa",
+      "bandcampEmbedTrackId": "247596594",
+      "sourcePage": "https://thegoatboy1.bandcamp.com/album/there-is-no-tomorrow-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "there-is-no-tomorrow-2710879783",
+      "title": "Kirimashum",
+      "artist": "The Goatboy",
+      "albumTitle": "There is No Tomorrow",
+      "albumKey": "there-is-no-tomorrow",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thegoatboy1.bandcamp.com/track/kirimashum",
+      "bandcampEmbedTrackId": "2710879783",
+      "sourcePage": "https://thegoatboy1.bandcamp.com/album/there-is-no-tomorrow-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "there-is-no-tomorrow-3049289197",
+      "title": "Ivan",
+      "artist": "The Goatboy",
+      "albumTitle": "There is No Tomorrow",
+      "albumKey": "there-is-no-tomorrow",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:59",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thegoatboy1.bandcamp.com/track/ivan-2",
+      "bandcampEmbedTrackId": "3049289197",
+      "sourcePage": "https://thegoatboy1.bandcamp.com/album/there-is-no-tomorrow-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "there-is-no-tomorrow-944644541",
+      "title": "Serenity",
+      "artist": "The Goatboy",
+      "albumTitle": "There is No Tomorrow",
+      "albumKey": "there-is-no-tomorrow",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:01",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thegoatboy1.bandcamp.com/track/serenity",
+      "bandcampEmbedTrackId": "944644541",
+      "sourcePage": "https://thegoatboy1.bandcamp.com/album/there-is-no-tomorrow-2",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "there-is-no-tomorrow-546931080",
+      "title": "Juliette",
+      "artist": "The Goatboy",
+      "albumTitle": "There is No Tomorrow",
+      "albumKey": "there-is-no-tomorrow",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "2:54",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thegoatboy1.bandcamp.com/track/juliette",
+      "bandcampEmbedTrackId": "546931080",
+      "sourcePage": "https://thegoatboy1.bandcamp.com/album/there-is-no-tomorrow-2",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thegoatboy1.bandcamp.com/album/there-is-no-tomorrow-2",
+    "discoveredAt": "2026-09-06T00:40:15.001373+00:00",
+    "importedAt": "2026-09-06T00:44:13.486235+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thegoatboy1.bandcamp.com",
+    "bandcampBandId": "2434007254",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:13.486258+00:00"
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "luis-trindade-the-leavers-dance",
+  "artist": "Luís Trindade",
+  "bandcampUrl": "https://luistrindade.bandcamp.com/album/the-leavers-dance",
+  "releaseTitle": "The Leavers Dance",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "folk",
+    "acoustic",
+    "indie",
+    "sadcore",
+    "Viseu"
+  ],
+  "primaryLocation": "Viseu, Portugal",
+  "bioShort": "Luís Trindade — slowcore / folk / acoustic music from Viseu, Portugal.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://luistrindade.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:44:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-leavers-dance",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-leavers-dance-1333243450",
+      "title": "luis trindade - For C whenever I may find her",
+      "artist": "Luís Trindade",
+      "albumTitle": "The Leavers Dance",
+      "albumKey": "the-leavers-dance",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://luistrindade.bandcamp.com/track/for-c-whenever-i-may-find-her",
+      "bandcampEmbedTrackId": "1333243450",
+      "sourcePage": "https://luistrindade.bandcamp.com/album/the-leavers-dance",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "the-leavers-dance-319120987",
+      "title": "The Last Waltz",
+      "artist": "Luís Trindade",
+      "albumTitle": "The Leavers Dance",
+      "albumKey": "the-leavers-dance",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:07",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://luistrindade.bandcamp.com/track/the-last-waltz",
+      "bandcampEmbedTrackId": "319120987",
+      "sourcePage": "https://luistrindade.bandcamp.com/album/the-leavers-dance",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "the-leavers-dance-3980325044",
+      "title": "Scars",
+      "artist": "Luís Trindade",
+      "albumTitle": "The Leavers Dance",
+      "albumKey": "the-leavers-dance",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:34",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://luistrindade.bandcamp.com/track/scars",
+      "bandcampEmbedTrackId": "3980325044",
+      "sourcePage": "https://luistrindade.bandcamp.com/album/the-leavers-dance",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "the-leavers-dance-2831562916",
+      "title": "Spider",
+      "artist": "Luís Trindade",
+      "albumTitle": "The Leavers Dance",
+      "albumKey": "the-leavers-dance",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:16",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://luistrindade.bandcamp.com/track/spider",
+      "bandcampEmbedTrackId": "2831562916",
+      "sourcePage": "https://luistrindade.bandcamp.com/album/the-leavers-dance",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://luistrindade.bandcamp.com/album/the-leavers-dance",
+    "discoveredAt": "2026-09-06T00:40:15.001937+00:00",
+    "importedAt": "2026-09-06T00:44:24.567992+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "luistrindade.bandcamp.com",
+    "bandcampBandId": "2383820946",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:24.568014+00:00"
+  }
+}

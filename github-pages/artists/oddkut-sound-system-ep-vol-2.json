@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "oddkut-sound-system-ep-vol-2",
+  "artist": "Oddkut",
+  "bandcampUrl": "https://oddkut.bandcamp.com/album/sound-system-ep-vol-2",
+  "releaseTitle": "Sound System EP VOL.2",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "140",
+    "drum & bass",
+    "electronic",
+    "bass music",
+    "beats",
+    "dance",
+    "deep dubstep",
+    "dub",
+    "dubstep",
+    "dubwise",
+    "sound system",
+    "steppers"
+  ],
+  "primaryLocation": null,
+  "bioShort": "VOL.2 is my experiment with sound system music, its genre variations, and unique sound. A tribute to the culture and the vibrations we love. The sound system becomes a monument…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://oddkut.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:42:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sound-system-ep-vol-2",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sound-system-ep-vol-2-2326651875",
+      "title": "After Midnight",
+      "artist": "Oddkut",
+      "albumTitle": "Sound System EP VOL.2",
+      "albumKey": "sound-system-ep-vol-2",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oddkut.bandcamp.com/track/after-midnight",
+      "bandcampEmbedTrackId": "2326651875",
+      "sourcePage": "https://oddkut.bandcamp.com/album/sound-system-ep-vol-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sound-system-ep-vol-2-3462893638",
+      "title": "Static Pressure",
+      "artist": "Oddkut",
+      "albumTitle": "Sound System EP VOL.2",
+      "albumKey": "sound-system-ep-vol-2",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:51",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oddkut.bandcamp.com/track/static-pressure",
+      "bandcampEmbedTrackId": "3462893638",
+      "sourcePage": "https://oddkut.bandcamp.com/album/sound-system-ep-vol-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "sound-system-ep-vol-2-1154637691",
+      "title": "The Monument",
+      "artist": "Oddkut",
+      "albumTitle": "Sound System EP VOL.2",
+      "albumKey": "sound-system-ep-vol-2",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:32",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oddkut.bandcamp.com/track/the-monument",
+      "bandcampEmbedTrackId": "1154637691",
+      "sourcePage": "https://oddkut.bandcamp.com/album/sound-system-ep-vol-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "sound-system-ep-vol-2-1725592429",
+      "title": "Ascent",
+      "artist": "Oddkut",
+      "albumTitle": "Sound System EP VOL.2",
+      "albumKey": "sound-system-ep-vol-2",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:17",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oddkut.bandcamp.com/track/ascent",
+      "bandcampEmbedTrackId": "1725592429",
+      "sourcePage": "https://oddkut.bandcamp.com/album/sound-system-ep-vol-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://oddkut.bandcamp.com/album/sound-system-ep-vol-2",
+    "discoveredAt": "2026-09-06T00:40:14.996249+00:00",
+    "importedAt": "2026-09-06T00:42:02.127115+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "oddkut.bandcamp.com",
+    "bandcampBandId": "468909433",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:42:02.127138+00:00"
+  }
+}

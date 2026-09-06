@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "slug": "shawn-edward-hansen-station-to-station-4-sound-installation-red",
+  "artist": "Shawn Edward Hansen",
+  "bandcampUrl": "https://shawnedwardhansen.bandcamp.com/album/station-to-station-4-sound-installation-red",
+  "releaseTitle": "Station To Station 4 - Sound Installation, Red",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "sound-art",
+    "analog synths",
+    "brooklyn ny",
+    "experimental",
+    "laurel sparks",
+    "conceptual",
+    "improvised",
+    "kansas city",
+    "organ",
+    "sound art",
+    "sound installation",
+    "Kansas City"
+  ],
+  "primaryLocation": "Kansas City, Missouri",
+  "bioShort": "This album represents Shawn Hansen's fourth of six sound installations composed and performed for the collaborative exhibition, STATION TO STATION, at the Brooklyn gallery…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://shawnedwardhansen.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:41:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "station-to-station-4-sound-installation-red",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "station-to-station-4-sound-installation-red-1260994759",
+      "title": "Station To Station Red",
+      "artist": "Shawn Edward Hansen",
+      "albumTitle": "Station To Station 4 - Sound Installation, Red",
+      "albumKey": "station-to-station-4-sound-installation-red",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "43:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shawnedwardhansen.bandcamp.com/track/station-to-station-red",
+      "bandcampEmbedTrackId": "1260994759",
+      "sourcePage": "https://shawnedwardhansen.bandcamp.com/album/station-to-station-4-sound-installation-red",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://shawnedwardhansen.bandcamp.com/album/station-to-station-4-sound-installation-red",
+    "discoveredAt": "2026-09-06T00:40:12.861816+00:00",
+    "importedAt": "2026-09-06T00:41:08.016176+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "shawnedwardhansen.bandcamp.com",
+    "bandcampBandId": "2233543519",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:08.016197+00:00"
+  }
+}

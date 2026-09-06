@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "velesian-choir-020-q",
+  "artist": "Velesian Choir",
+  "bandcampUrl": "https://velesian-choir.bandcamp.com/album/020-q",
+  "releaseTitle": "020. q",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "czechia",
+    "electronic",
+    "experimental",
+    "reverb",
+    "Prague"
+  ],
+  "primaryLocation": "Prague, Czechia",
+  "bioShort": "q",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://velesian-choir.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:50:52Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "020-q",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "020-q-2739385182",
+      "title": "q",
+      "artist": "Velesian Choir",
+      "albumTitle": "020. q",
+      "albumKey": "020-q",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:21",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://velesian-choir.bandcamp.com/track/q",
+      "bandcampEmbedTrackId": "2739385182",
+      "sourcePage": "https://velesian-choir.bandcamp.com/album/020-q",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://velesian-choir.bandcamp.com/album/020-q",
+    "discoveredAt": "2026-09-06T00:40:44.747999+00:00",
+    "importedAt": "2026-09-06T00:50:52.211713+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "velesian-choir.bandcamp.com",
+    "bandcampBandId": "92280085",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:52.211736+00:00"
+  }
+}

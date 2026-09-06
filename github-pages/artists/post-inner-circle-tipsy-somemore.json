@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "post-inner-circle-tipsy-somemore",
+  "artist": "Post Inner Circle",
+  "bandcampUrl": "https://postinnercircle.bandcamp.com/album/tipsy-somemore",
+  "releaseTitle": "tipsy / somemore",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "dream pop",
+    "post-rock",
+    "shoegaze",
+    "South Korea"
+  ],
+  "primaryLocation": "Seoul, South Korea",
+  "bioShort": "Post Inner Circle — slowcore / alternative / dream pop music from Seoul, South Korea.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://postinnercircle.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:48:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "tipsy-somemore",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "tipsy-somemore-2706651745",
+      "title": "tipsy",
+      "artist": "Post Inner Circle",
+      "albumTitle": "tipsy / somemore",
+      "albumKey": "tipsy-somemore",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://postinnercircle.bandcamp.com/track/tipsy",
+      "bandcampEmbedTrackId": "2706651745",
+      "sourcePage": "https://postinnercircle.bandcamp.com/album/tipsy-somemore",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "tipsy-somemore-871501549",
+      "title": "somemore",
+      "artist": "Post Inner Circle",
+      "albumTitle": "tipsy / somemore",
+      "albumKey": "tipsy-somemore",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://postinnercircle.bandcamp.com/track/somemore",
+      "bandcampEmbedTrackId": "871501549",
+      "sourcePage": "https://postinnercircle.bandcamp.com/album/tipsy-somemore",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://postinnercircle.bandcamp.com/album/tipsy-somemore",
+    "discoveredAt": "2026-09-06T00:40:15.011634+00:00",
+    "importedAt": "2026-09-06T00:48:13.763019+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "postinnercircle.bandcamp.com",
+    "bandcampBandId": "3489545857",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:13.763041+00:00"
+  }
+}

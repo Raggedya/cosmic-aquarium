@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "slug": "clo-e-clo-e-live",
+  "artist": "clo:e",
+  "bandcampUrl": "https://clo-e.bandcamp.com/album/clo-e-live",
+  "releaseTitle": "clo:e LIVE",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "shoegaze",
+    "Bremen"
+  ],
+  "primaryLocation": "Bremen, Germany",
+  "bioShort": "clo:e — grunge / alternative / shoegaze music from Bremen, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://clo-e.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:51:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "clo-e-live",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "clo-e-live-364855984",
+      "title": "Bones",
+      "artist": "clo:e",
+      "albumTitle": "clo:e LIVE",
+      "albumKey": "clo-e-live",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:01",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://clo-e.bandcamp.com/track/bones",
+      "bandcampEmbedTrackId": "364855984",
+      "sourcePage": "https://clo-e.bandcamp.com/album/clo-e-live",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "clo-e-live-2816094008",
+      "title": "Over&Over",
+      "artist": "clo:e",
+      "albumTitle": "clo:e LIVE",
+      "albumKey": "clo-e-live",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://clo-e.bandcamp.com/track/over-over",
+      "bandcampEmbedTrackId": "2816094008",
+      "sourcePage": "https://clo-e.bandcamp.com/album/clo-e-live",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "clo-e-live-2626765274",
+      "title": "Red, Red (originally by WELP!)",
+      "artist": "clo:e",
+      "albumTitle": "clo:e LIVE",
+      "albumKey": "clo-e-live",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:09",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://clo-e.bandcamp.com/track/red-red-originally-by-welp",
+      "bandcampEmbedTrackId": "2626765274",
+      "sourcePage": "https://clo-e.bandcamp.com/album/clo-e-live",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "clo-e-live-673655692",
+      "title": "Pillowcase",
+      "artist": "clo:e",
+      "albumTitle": "clo:e LIVE",
+      "albumKey": "clo-e-live",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:13",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://clo-e.bandcamp.com/track/pillowcase",
+      "bandcampEmbedTrackId": "673655692",
+      "sourcePage": "https://clo-e.bandcamp.com/album/clo-e-live",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "clo-e-live-3066176591",
+      "title": "Need",
+      "artist": "clo:e",
+      "albumTitle": "clo:e LIVE",
+      "albumKey": "clo-e-live",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "2:46",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://clo-e.bandcamp.com/track/need",
+      "bandcampEmbedTrackId": "3066176591",
+      "sourcePage": "https://clo-e.bandcamp.com/album/clo-e-live",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://clo-e.bandcamp.com/album/clo-e-live",
+    "discoveredAt": "2026-09-06T00:40:44.749248+00:00",
+    "importedAt": "2026-09-06T00:51:24.710449+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "clo-e.bandcamp.com",
+    "bandcampBandId": "2621129546",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:51:24.710471+00:00"
+  }
+}

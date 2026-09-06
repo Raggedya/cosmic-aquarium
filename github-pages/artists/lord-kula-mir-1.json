@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "lord-kula-mir-1",
+  "artist": "Lord Kula",
+  "bandcampUrl": "https://lordkula.bandcamp.com/album/mir-1",
+  "releaseTitle": "Mir-1",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "ambient",
+    "ambient noise wall",
+    "demoscene",
+    "fasttracker2",
+    "glitch",
+    "harsh noise wall",
+    "maritime folk",
+    "Poland"
+  ],
+  "primaryLocation": "Silesian Voivodeship, Poland",
+  "bioShort": "Mir was a class of two self-propelled deep-submergence vehicles designed in USSR. They were used e.g. to explore Lake Baikal. This album is an oceanographic / nautical ambient…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lordkula.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:48:47Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "mir-1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "mir-1-2136366554",
+      "title": "Mir-1",
+      "artist": "Lord Kula",
+      "albumTitle": "Mir-1",
+      "albumKey": "mir-1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lordkula.bandcamp.com/track/mir-1",
+      "bandcampEmbedTrackId": "2136366554",
+      "sourcePage": "https://lordkula.bandcamp.com/album/mir-1",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lordkula.bandcamp.com/album/mir-1",
+    "discoveredAt": "2026-09-06T00:40:15.013021+00:00",
+    "importedAt": "2026-09-06T00:48:47.115901+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lordkula.bandcamp.com",
+    "bandcampBandId": "121312955",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:47.115924+00:00"
+  }
+}

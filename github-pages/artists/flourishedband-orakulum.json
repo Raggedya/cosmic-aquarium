@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "flourishedband-orakulum",
+  "artist": "Flourishedband",
+  "bandcampUrl": "https://flourishedband.bandcamp.com/album/orakulum",
+  "releaseTitle": "Orakulum",
+  "releaseDate": "2026-05-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "grunge metal",
+    "sludge rock",
+    "drone ambient",
+    "drone metal",
+    "grunge rock alternative",
+    "noise",
+    "noise ambient",
+    "punk rock",
+    "Itajubá"
+  ],
+  "primaryLocation": "Itajubá, Brazil",
+  "bioShort": "Single de DroneMetal inspirado em EARTH -Sunn O))) - Boris - Joe Preston. Com parceria dos membros da banda de No Wave Macrofagos",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://flourishedband.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:48:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "orakulum",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "orakulum-2739458283",
+      "title": "Funerældrone",
+      "artist": "Flourishedband",
+      "albumTitle": "Orakulum",
+      "albumKey": "orakulum",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flourishedband.bandcamp.com/track/funer-ldrone",
+      "bandcampEmbedTrackId": "2739458283",
+      "sourcePage": "https://flourishedband.bandcamp.com/album/orakulum",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "orakulum-1469016300",
+      "title": "Funerælmarch",
+      "artist": "Flourishedband",
+      "albumTitle": "Orakulum",
+      "albumKey": "orakulum",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flourishedband.bandcamp.com/track/funer-lmarch",
+      "bandcampEmbedTrackId": "1469016300",
+      "sourcePage": "https://flourishedband.bandcamp.com/album/orakulum",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://flourishedband.bandcamp.com/album/orakulum",
+    "discoveredAt": "2026-09-06T00:40:15.012998+00:00",
+    "importedAt": "2026-09-06T00:48:46.004082+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "flourishedband.bandcamp.com",
+    "bandcampBandId": "424468330",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:46.004103+00:00"
+  }
+}

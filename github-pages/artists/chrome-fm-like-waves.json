@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "chrome-fm-like-waves",
+  "artist": "chrome.fm",
+  "bandcampUrl": "https://chromefm.bandcamp.com/album/like-waves",
+  "releaseTitle": "like waves",
+  "releaseDate": "2026-07-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "metal",
+    "metalcore",
+    "alt rock",
+    "numetal",
+    "shoegaze",
+    "Newcastle"
+  ],
+  "primaryLocation": "Newcastle, Australia",
+  "bioShort": "chrome.fm — grunge / metal / metalcore music from Newcastle, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://chromefm.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:41:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "like-waves",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "like-waves-2994926631",
+      "title": "like waves",
+      "artist": "chrome.fm",
+      "albumTitle": "like waves",
+      "albumKey": "like-waves",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:18",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chromefm.bandcamp.com/track/like-waves",
+      "bandcampEmbedTrackId": "2994926631",
+      "sourcePage": "https://chromefm.bandcamp.com/album/like-waves",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "like-waves-2265160489",
+      "title": "like waves (instrumental)",
+      "artist": "chrome.fm",
+      "albumTitle": "like waves",
+      "albumKey": "like-waves",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:18",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chromefm.bandcamp.com/track/like-waves-instrumental",
+      "bandcampEmbedTrackId": "2265160489",
+      "sourcePage": "https://chromefm.bandcamp.com/album/like-waves",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://chromefm.bandcamp.com/album/like-waves",
+    "discoveredAt": "2026-09-06T00:40:14.994466+00:00",
+    "importedAt": "2026-09-06T00:41:25.890225+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "chromefm.bandcamp.com",
+    "bandcampBandId": "1246941698",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:25.890247+00:00"
+  }
+}

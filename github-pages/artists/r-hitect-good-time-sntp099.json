@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "r-hitect-good-time-sntp099",
+  "artist": "r.hitect",
+  "bandcampUrl": "https://rhitect.bandcamp.com/album/good-time-sntp099",
+  "releaseTitle": "Good Time [SNTP099]",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "romanian",
+    "microhouse",
+    "techno",
+    "Timișoara"
+  ],
+  "primaryLocation": "Timișoara, Romania",
+  "bioShort": "r.hitect — minimal / electronic / romanian music from Timișoara, Romania.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rhitect.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:49:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "good-time-sntp099",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "good-time-sntp099-2279804263",
+      "title": "Good Time (Original Mix)",
+      "artist": "r.hitect",
+      "albumTitle": "Good Time [SNTP099]",
+      "albumKey": "good-time-sntp099",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rhitect.bandcamp.com/track/good-time-original-mix",
+      "bandcampEmbedTrackId": "2279804263",
+      "sourcePage": "https://rhitect.bandcamp.com/album/good-time-sntp099",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "good-time-sntp099-2121220448",
+      "title": "Rotonda (Original Mix)",
+      "artist": "r.hitect",
+      "albumTitle": "Good Time [SNTP099]",
+      "albumKey": "good-time-sntp099",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:03",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rhitect.bandcamp.com/track/rotonda-original-mix",
+      "bandcampEmbedTrackId": "2121220448",
+      "sourcePage": "https://rhitect.bandcamp.com/album/good-time-sntp099",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://rhitect.bandcamp.com/album/good-time-sntp099",
+    "discoveredAt": "2026-09-06T00:40:15.015784+00:00",
+    "importedAt": "2026-09-06T00:49:50.999754+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "rhitect.bandcamp.com",
+    "bandcampBandId": "2351155036",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:50.999778+00:00"
+  }
+}

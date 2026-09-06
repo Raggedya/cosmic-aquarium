@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "sneak-past-demons-sneak-past-demos",
+  "artist": "Sneak Past Demons",
+  "bandcampUrl": "https://sneakpastdemons.bandcamp.com/album/sneak-past-demos",
+  "releaseTitle": "Sneak Past Demos",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "pop",
+    "bedroom pop",
+    "fuzz pop",
+    "garage rock",
+    "indie pop",
+    "jangle",
+    "jangle pop",
+    "low-fi",
+    "psychedelic pop",
+    "Portrane"
+  ],
+  "primaryLocation": "Portrane, Ireland",
+  "bioShort": "One very new song, one very old one. DIY recordings from Portrane 2007 and Garristown September 2026",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sneakpastdemons.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:45:03Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sneak-past-demos",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sneak-past-demos-4114998672",
+      "title": "Greedy Guts",
+      "artist": "Sneak Past Demons",
+      "albumTitle": "Sneak Past Demos",
+      "albumKey": "sneak-past-demos",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sneakpastdemons.bandcamp.com/track/greedy-guts",
+      "bandcampEmbedTrackId": "4114998672",
+      "sourcePage": "https://sneakpastdemons.bandcamp.com/album/sneak-past-demos",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sneak-past-demos-1622633429",
+      "title": "Sunday School",
+      "artist": "Sneak Past Demons",
+      "albumTitle": "Sneak Past Demos",
+      "albumKey": "sneak-past-demos",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sneakpastdemons.bandcamp.com/track/sunday-school",
+      "bandcampEmbedTrackId": "1622633429",
+      "sourcePage": "https://sneakpastdemons.bandcamp.com/album/sneak-past-demos",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sneakpastdemons.bandcamp.com/album/sneak-past-demos",
+    "discoveredAt": "2026-09-06T00:40:15.003307+00:00",
+    "importedAt": "2026-09-06T00:45:03.424150+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sneakpastdemons.bandcamp.com",
+    "bandcampBandId": "843656710",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:45:03.424173+00:00"
+  }
+}

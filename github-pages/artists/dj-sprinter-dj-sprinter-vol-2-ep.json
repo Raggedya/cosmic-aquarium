@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "dj-sprinter-dj-sprinter-vol-2-ep",
+  "artist": "DJ Sprinter",
+  "bandcampUrl": "https://djsprinter.bandcamp.com/album/dj-sprinter-vol-2-ep",
+  "releaseTitle": "DJ Sprinter Vol.2 (EP)",
+  "releaseDate": "2025-11-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "techno",
+    "electronic",
+    "uk bass",
+    "bass",
+    "breakbeats",
+    "breaks",
+    "dubstep",
+    "electro",
+    "garage",
+    "grime",
+    "jungle",
+    "rave",
+    "Oslo"
+  ],
+  "primaryLocation": "Oslo, Norway",
+  "bioShort": "4 new tracks for the club <3 Art by Jay Vaz",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://djsprinter.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:43:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "dj-sprinter-vol-2-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "dj-sprinter-vol-2-ep-3654880913",
+      "title": "Huhh",
+      "artist": "DJ Sprinter",
+      "albumTitle": "DJ Sprinter Vol.2 (EP)",
+      "albumKey": "dj-sprinter-vol-2-ep",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "3:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://djsprinter.bandcamp.com/track/huhh",
+      "bandcampEmbedTrackId": "3654880913",
+      "sourcePage": "https://djsprinter.bandcamp.com/album/dj-sprinter-vol-2-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "dj-sprinter-vol-2-ep-3785382653",
+      "title": "Like This",
+      "artist": "DJ Sprinter",
+      "albumTitle": "DJ Sprinter Vol.2 (EP)",
+      "albumKey": "dj-sprinter-vol-2-ep",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "4:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://djsprinter.bandcamp.com/track/like-this",
+      "bandcampEmbedTrackId": "3785382653",
+      "sourcePage": "https://djsprinter.bandcamp.com/album/dj-sprinter-vol-2-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "dj-sprinter-vol-2-ep-3326119168",
+      "title": "Cube 11",
+      "artist": "DJ Sprinter",
+      "albumTitle": "DJ Sprinter Vol.2 (EP)",
+      "albumKey": "dj-sprinter-vol-2-ep",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "4:15",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://djsprinter.bandcamp.com/track/cube-11",
+      "bandcampEmbedTrackId": "3326119168",
+      "sourcePage": "https://djsprinter.bandcamp.com/album/dj-sprinter-vol-2-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "dj-sprinter-vol-2-ep-2589933538",
+      "title": "Slowburn",
+      "artist": "DJ Sprinter",
+      "albumTitle": "DJ Sprinter Vol.2 (EP)",
+      "albumKey": "dj-sprinter-vol-2-ep",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "3:19",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://djsprinter.bandcamp.com/track/slowburn",
+      "bandcampEmbedTrackId": "2589933538",
+      "sourcePage": "https://djsprinter.bandcamp.com/album/dj-sprinter-vol-2-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://djsprinter.bandcamp.com/album/dj-sprinter-vol-2-ep",
+    "discoveredAt": "2026-09-06T00:40:14.999142+00:00",
+    "importedAt": "2026-09-06T00:43:22.484306+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "djsprinter.bandcamp.com",
+    "bandcampBandId": "4009048036",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:22.484330+00:00"
+  }
+}

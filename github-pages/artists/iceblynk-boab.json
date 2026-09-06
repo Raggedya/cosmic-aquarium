@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "iceblynk-boab",
+  "artist": "Iceblynk",
+  "bandcampUrl": "https://iceblynk.bandcamp.com/album/boab",
+  "releaseTitle": "BOAB",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "shoegaze",
+    "alternative",
+    "blissrock",
+    "disco",
+    "dreampop",
+    "indiepop",
+    "remixes",
+    "Queens"
+  ],
+  "primaryLocation": "Queens, New York",
+  "bioShort": "Boab is the latest EP by New York's Iceblynk. The EP features 4 tracks, two unreleased songs and two remixes. Rememory has been a dreampop mainstay in Iceblynk's live…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://iceblynk.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:50:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "boab",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "boab-3315664216",
+      "title": "Rememory",
+      "artist": "Iceblynk",
+      "albumTitle": "BOAB",
+      "albumKey": "boab",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:17",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iceblynk.bandcamp.com/track/rememory",
+      "bandcampEmbedTrackId": "3315664216",
+      "sourcePage": "https://iceblynk.bandcamp.com/album/boab",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "boab-3269282022",
+      "title": "Never Ready",
+      "artist": "Iceblynk",
+      "albumTitle": "BOAB",
+      "albumKey": "boab",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iceblynk.bandcamp.com/track/never-ready",
+      "bandcampEmbedTrackId": "3269282022",
+      "sourcePage": "https://iceblynk.bandcamp.com/album/boab",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "boab-263623060",
+      "title": "Rememory (Total Recall Mix)",
+      "artist": "Iceblynk",
+      "albumTitle": "BOAB",
+      "albumKey": "boab",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:07",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iceblynk.bandcamp.com/track/rememory-total-recall-mix",
+      "bandcampEmbedTrackId": "263623060",
+      "sourcePage": "https://iceblynk.bandcamp.com/album/boab",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "boab-1883619271",
+      "title": "Enter the Sky (Lulu Lewis Disco Mix)",
+      "artist": "Iceblynk",
+      "albumTitle": "BOAB",
+      "albumKey": "boab",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:28",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://iceblynk.bandcamp.com/track/enter-the-sky-lulu-lewis-disco-mix",
+      "bandcampEmbedTrackId": "1883619271",
+      "sourcePage": "https://iceblynk.bandcamp.com/album/boab",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://iceblynk.bandcamp.com/album/boab",
+    "discoveredAt": "2026-09-06T00:40:20.051041+00:00",
+    "importedAt": "2026-09-06T00:50:10.199871+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "iceblynk.bandcamp.com",
+    "bandcampBandId": "3572463527",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:10.199894+00:00"
+  }
+}

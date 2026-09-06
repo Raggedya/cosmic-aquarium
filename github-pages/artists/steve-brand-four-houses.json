@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "steve-brand-four-houses",
+  "artist": "Steve Brand",
+  "bandcampUrl": "https://steve-brand.bandcamp.com/album/four-houses",
+  "releaseTitle": "four houses",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "ambient",
+    "atmospheric",
+    "drone",
+    "field recordings",
+    "soundscapes",
+    "United States"
+  ],
+  "primaryLocation": null,
+  "bioShort": "52 minutes total",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://steve-brand.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:43:03Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "four-houses",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "four-houses-3177106533",
+      "title": "house of trees and wind",
+      "artist": "Steve Brand",
+      "albumTitle": "four houses",
+      "albumKey": "four-houses",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "12:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steve-brand.bandcamp.com/track/house-of-trees-and-wind",
+      "bandcampEmbedTrackId": "3177106533",
+      "sourcePage": "https://steve-brand.bandcamp.com/album/four-houses",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "four-houses-356382490",
+      "title": "house of birds and chimes",
+      "artist": "Steve Brand",
+      "albumTitle": "four houses",
+      "albumKey": "four-houses",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "13:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steve-brand.bandcamp.com/track/house-of-birds-and-chimes",
+      "bandcampEmbedTrackId": "356382490",
+      "sourcePage": "https://steve-brand.bandcamp.com/album/four-houses",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "four-houses-1518470947",
+      "title": "house of night and shadows",
+      "artist": "Steve Brand",
+      "albumTitle": "four houses",
+      "albumKey": "four-houses",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "10:40",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steve-brand.bandcamp.com/track/house-of-night-and-shadows",
+      "bandcampEmbedTrackId": "1518470947",
+      "sourcePage": "https://steve-brand.bandcamp.com/album/four-houses",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "four-houses-2577295509",
+      "title": "house of thorns and regret",
+      "artist": "Steve Brand",
+      "albumTitle": "four houses",
+      "albumKey": "four-houses",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "15:04",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://steve-brand.bandcamp.com/track/house-of-thorns-and-regret",
+      "bandcampEmbedTrackId": "2577295509",
+      "sourcePage": "https://steve-brand.bandcamp.com/album/four-houses",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://steve-brand.bandcamp.com/album/four-houses",
+    "discoveredAt": "2026-09-06T00:40:14.998420+00:00",
+    "importedAt": "2026-09-06T00:43:03.513031+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "steve-brand.bandcamp.com",
+    "bandcampBandId": "4160566944",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:03.513054+00:00"
+  }
+}

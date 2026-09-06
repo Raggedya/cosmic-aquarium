@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "ndsr-na-druhe-strane-reky-rana-cesta-k-ruinam",
+  "artist": "NDSŘ (Na Druhé Straně Řeky)",
+  "bandcampUrl": "https://ndsr.bandcamp.com/album/rana-cesta-k-ruin-m",
+  "releaseTitle": "Rana - Cesta k ruinám",
+  "releaseDate": "2026-04-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "ndsř",
+    "na druhé straně řeky",
+    "praha",
+    "punk",
+    "diy music",
+    "emocrust",
+    "neocrust",
+    "Prague"
+  ],
+  "primaryLocation": "Prague, Czechia",
+  "bioShort": "Cesta k ruinám pulls you into the darkness below the surface. Rana really know how to create an unpleasantly sharp sound. This release is crushing, intense and dark, but at the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ndsr.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:44:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "rana-cesta-k-ruinam",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "rana-cesta-k-ruinam-2485244099",
+      "title": "Ego",
+      "artist": "NDSŘ (Na Druhé Straně Řeky)",
+      "albumTitle": "Rana - Cesta k ruinám",
+      "albumKey": "rana-cesta-k-ruinam",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ndsr.bandcamp.com/track/ego",
+      "bandcampEmbedTrackId": "2485244099",
+      "sourcePage": "https://ndsr.bandcamp.com/album/rana-cesta-k-ruin-m",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "rana-cesta-k-ruinam-244420290",
+      "title": "Spád",
+      "artist": "NDSŘ (Na Druhé Straně Řeky)",
+      "albumTitle": "Rana - Cesta k ruinám",
+      "albumKey": "rana-cesta-k-ruinam",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ndsr.bandcamp.com/track/sp-d",
+      "bandcampEmbedTrackId": "244420290",
+      "sourcePage": "https://ndsr.bandcamp.com/album/rana-cesta-k-ruin-m",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "rana-cesta-k-ruinam-901440225",
+      "title": "Únik",
+      "artist": "NDSŘ (Na Druhé Straně Řeky)",
+      "albumTitle": "Rana - Cesta k ruinám",
+      "albumKey": "rana-cesta-k-ruinam",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:38",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ndsr.bandcamp.com/track/nik",
+      "bandcampEmbedTrackId": "901440225",
+      "sourcePage": "https://ndsr.bandcamp.com/album/rana-cesta-k-ruin-m",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "rana-cesta-k-ruinam-3045747841",
+      "title": "Sen",
+      "artist": "NDSŘ (Na Druhé Straně Řeky)",
+      "albumTitle": "Rana - Cesta k ruinám",
+      "albumKey": "rana-cesta-k-ruinam",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "6:54",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ndsr.bandcamp.com/track/sen",
+      "bandcampEmbedTrackId": "3045747841",
+      "sourcePage": "https://ndsr.bandcamp.com/album/rana-cesta-k-ruin-m",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ndsr.bandcamp.com/album/rana-cesta-k-ruin-m",
+    "discoveredAt": "2026-09-06T00:40:15.001816+00:00",
+    "importedAt": "2026-09-06T00:44:19.711162+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ndsr.bandcamp.com",
+    "bandcampBandId": "2453506650",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:19.711183+00:00"
+  }
+}

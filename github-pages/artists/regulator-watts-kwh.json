@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "slug": "regulator-watts-kwh",
+  "artist": "Regulator Watts",
+  "bandcampUrl": "https://regulatorwatts.bandcamp.com/album/kwh",
+  "releaseTitle": "kWh",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "punk",
+    "rock",
+    "Washington"
+  ],
+  "primaryLocation": "Washington, D.C.",
+  "bioShort": "Regulator Watts returns with kWh (kilowatt-hours), the band's first new music in nearly 30 years. Produced by Kurt Ballou (Converge), this 5-song EP is a masterclass in…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://regulatorwatts.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:50:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "kwh",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "kwh-2249565726",
+      "title": "It's Gonna Happen",
+      "artist": "Regulator Watts",
+      "albumTitle": "kWh",
+      "albumKey": "kwh",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://regulatorwatts.bandcamp.com/track/its-gonna-happen",
+      "bandcampEmbedTrackId": "2249565726",
+      "sourcePage": "https://regulatorwatts.bandcamp.com/album/kwh",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "kwh-2675193482",
+      "title": "Scotch Blue",
+      "artist": "Regulator Watts",
+      "albumTitle": "kWh",
+      "albumKey": "kwh",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:18",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://regulatorwatts.bandcamp.com/track/scotch-blue",
+      "bandcampEmbedTrackId": "2675193482",
+      "sourcePage": "https://regulatorwatts.bandcamp.com/album/kwh",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "kwh-3963376605",
+      "title": "kilowatt-hours",
+      "artist": "Regulator Watts",
+      "albumTitle": "kWh",
+      "albumKey": "kwh",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:42",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://regulatorwatts.bandcamp.com/track/kilowatt-hours",
+      "bandcampEmbedTrackId": "3963376605",
+      "sourcePage": "https://regulatorwatts.bandcamp.com/album/kwh",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "kwh-36017647",
+      "title": "Lefty's Deceiver",
+      "artist": "Regulator Watts",
+      "albumTitle": "kWh",
+      "albumKey": "kwh",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:30",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://regulatorwatts.bandcamp.com/track/leftys-deceiver",
+      "bandcampEmbedTrackId": "36017647",
+      "sourcePage": "https://regulatorwatts.bandcamp.com/album/kwh",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "kwh-1764667983",
+      "title": "Ode To Dorothy",
+      "artist": "Regulator Watts",
+      "albumTitle": "kWh",
+      "albumKey": "kwh",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "4:42",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://regulatorwatts.bandcamp.com/track/ode-to-dorothy",
+      "bandcampEmbedTrackId": "1764667983",
+      "sourcePage": "https://regulatorwatts.bandcamp.com/album/kwh",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://regulatorwatts.bandcamp.com/album/kwh",
+    "discoveredAt": "2026-09-06T00:40:34.841257+00:00",
+    "importedAt": "2026-09-06T00:50:25.448041+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "regulatorwatts.bandcamp.com",
+    "bandcampBandId": "1375630588",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:25.448067+00:00"
+  }
+}

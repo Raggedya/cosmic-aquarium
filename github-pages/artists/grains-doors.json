@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "grains-doors",
+  "artist": "Grains",
+  "bandcampUrl": "https://grains1.bandcamp.com/album/doors",
+  "releaseTitle": "Doors",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "electronic",
+    "ambient pop",
+    "lo-fi",
+    "spoken word",
+    "understatements",
+    "United Kingdom"
+  ],
+  "primaryLocation": "England, UK",
+  "bioShort": "The first bit of music I have made for a long time (because...circumstances). One vocal version and one instrumental version of the same track. Good to know the keyboard still…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://grains1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:41:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "doors",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "doors-381945701",
+      "title": "As the sticking place",
+      "artist": "Grains",
+      "albumTitle": "Doors",
+      "albumKey": "doors",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://grains1.bandcamp.com/track/as-the-sticking-place",
+      "bandcampEmbedTrackId": "381945701",
+      "sourcePage": "https://grains1.bandcamp.com/album/doors",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "doors-248315691",
+      "title": "Only face",
+      "artist": "Grains",
+      "albumTitle": "Doors",
+      "albumKey": "doors",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://grains1.bandcamp.com/track/only-face",
+      "bandcampEmbedTrackId": "248315691",
+      "sourcePage": "https://grains1.bandcamp.com/album/doors",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://grains1.bandcamp.com/album/doors",
+    "discoveredAt": "2026-09-06T00:40:14.996178+00:00",
+    "importedAt": "2026-09-06T00:41:59.745315+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "grains1.bandcamp.com",
+    "bandcampBandId": "1423980603",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:59.745336+00:00"
+  }
+}

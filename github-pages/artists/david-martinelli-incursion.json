@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "slug": "david-martinelli-incursion",
+  "artist": "David Martinelli",
+  "bandcampUrl": "https://davidmartinelli.bandcamp.com/album/incursion",
+  "releaseTitle": "Incursion",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "experimental",
+    "electronic",
+    "industrial",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "22. Incursion 2026 “Wasteland” – Everyone is always talking about trying to survive in a post-apocalyptic wasteland. This song is dedicated to those living in a pre-apocalyptic…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://davidmartinelli.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:51:25Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "incursion",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "incursion-1201000345",
+      "title": "Wasteland",
+      "artist": "David Martinelli",
+      "albumTitle": "Incursion",
+      "albumKey": "incursion",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:52",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://davidmartinelli.bandcamp.com/track/wasteland",
+      "bandcampEmbedTrackId": "1201000345",
+      "sourcePage": "https://davidmartinelli.bandcamp.com/album/incursion",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "incursion-419966477",
+      "title": "Schism",
+      "artist": "David Martinelli",
+      "albumTitle": "Incursion",
+      "albumKey": "incursion",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "21:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://davidmartinelli.bandcamp.com/track/schism",
+      "bandcampEmbedTrackId": "419966477",
+      "sourcePage": "https://davidmartinelli.bandcamp.com/album/incursion",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "incursion-1459879612",
+      "title": "Incursion",
+      "artist": "David Martinelli",
+      "albumTitle": "Incursion",
+      "albumKey": "incursion",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "10:20",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://davidmartinelli.bandcamp.com/track/incursion",
+      "bandcampEmbedTrackId": "1459879612",
+      "sourcePage": "https://davidmartinelli.bandcamp.com/album/incursion",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "incursion-3839267927",
+      "title": "Rupture",
+      "artist": "David Martinelli",
+      "albumTitle": "Incursion",
+      "albumKey": "incursion",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "22:56",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://davidmartinelli.bandcamp.com/track/rupture",
+      "bandcampEmbedTrackId": "3839267927",
+      "sourcePage": "https://davidmartinelli.bandcamp.com/album/incursion",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "incursion-2017379883",
+      "title": "At the Summit",
+      "artist": "David Martinelli",
+      "albumTitle": "Incursion",
+      "albumKey": "incursion",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "7:18",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://davidmartinelli.bandcamp.com/track/at-the-summit",
+      "bandcampEmbedTrackId": "2017379883",
+      "sourcePage": "https://davidmartinelli.bandcamp.com/album/incursion",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://davidmartinelli.bandcamp.com/album/incursion",
+    "discoveredAt": "2026-09-06T00:40:44.749271+00:00",
+    "importedAt": "2026-09-06T00:51:25.852757+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "davidmartinelli.bandcamp.com",
+    "bandcampBandId": "2131392579",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:51:25.852778+00:00"
+  }
+}

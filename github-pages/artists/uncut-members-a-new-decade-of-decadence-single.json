@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "slug": "uncut-members-a-new-decade-of-decadence-single",
+  "artist": "Uncut Members",
+  "bandcampUrl": "https://uncutmembers.bandcamp.com/album/a-new-decade-of-decadence-single",
+  "releaseTitle": "A New Decade of Decadence (Single)",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "1980s",
+    "1990s",
+    "generations",
+    "punk",
+    "generation",
+    "generation x",
+    "girl group",
+    "lesbian",
+    "lesbian music",
+    "lesbians",
+    "social commentary",
+    "society",
+    "San Francisco"
+  ],
+  "primaryLocation": "San Francisco, California",
+  "bioShort": "Uncut Members — grunge / 1980s / 1990s music from San Francisco, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://uncutmembers.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:49:06Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-new-decade-of-decadence-single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-new-decade-of-decadence-single-3899851640",
+      "title": "A New Decade of Decadence",
+      "artist": "Uncut Members",
+      "albumTitle": "A New Decade of Decadence (Single)",
+      "albumKey": "a-new-decade-of-decadence-single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:54",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://uncutmembers.bandcamp.com/track/a-new-decade-of-decadence-2",
+      "bandcampEmbedTrackId": "3899851640",
+      "sourcePage": "https://uncutmembers.bandcamp.com/album/a-new-decade-of-decadence-single",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-new-decade-of-decadence-single-667600018",
+      "title": "The Ground Rumbles",
+      "artist": "Uncut Members",
+      "albumTitle": "A New Decade of Decadence (Single)",
+      "albumKey": "a-new-decade-of-decadence-single",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "9:35",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://uncutmembers.bandcamp.com/track/the-ground-rumbles-2",
+      "bandcampEmbedTrackId": "667600018",
+      "sourcePage": "https://uncutmembers.bandcamp.com/album/a-new-decade-of-decadence-single",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://uncutmembers.bandcamp.com/album/a-new-decade-of-decadence-single",
+    "discoveredAt": "2026-09-06T00:40:15.013945+00:00",
+    "importedAt": "2026-09-06T00:49:06.679477+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "uncutmembers.bandcamp.com",
+    "bandcampBandId": "1538000678",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:06.679512+00:00"
+  }
+}

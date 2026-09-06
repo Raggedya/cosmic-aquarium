@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "slug": "caesar-ep023",
+  "artist": "Caesar",
+  "bandcampUrl": "https://caesar.bandcamp.com/album/ep023",
+  "releaseTitle": "EP023",
+  "releaseDate": "2026-09-01 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "electronic",
+    "minimal dub tech",
+    "minimal dub house",
+    "minimal house",
+    "tech house",
+    "dub tech house",
+    "microhouse",
+    "minimal techno",
+    "rominimal",
+    "Romania"
+  ],
+  "primaryLocation": "Romania",
+  "bioShort": "Caesar — minimal / electronic / minimal dub tech music from Romania.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://caesar.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:42:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ep023",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ep023-2118305417",
+      "title": "Acrobat",
+      "artist": "Caesar",
+      "albumTitle": "EP023",
+      "albumKey": "ep023",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caesar.bandcamp.com/track/acrobat",
+      "bandcampEmbedTrackId": "2118305417",
+      "sourcePage": "https://caesar.bandcamp.com/album/ep023",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ep023-2243934957",
+      "title": "Cinstit",
+      "artist": "Caesar",
+      "albumTitle": "EP023",
+      "albumKey": "ep023",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:40",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caesar.bandcamp.com/track/cinstit",
+      "bandcampEmbedTrackId": "2243934957",
+      "sourcePage": "https://caesar.bandcamp.com/album/ep023",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ep023-3403972653",
+      "title": "Draft",
+      "artist": "Caesar",
+      "albumTitle": "EP023",
+      "albumKey": "ep023",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:41",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caesar.bandcamp.com/track/draft",
+      "bandcampEmbedTrackId": "3403972653",
+      "sourcePage": "https://caesar.bandcamp.com/album/ep023",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://caesar.bandcamp.com/album/ep023",
+    "discoveredAt": "2026-09-06T00:40:14.997446+00:00",
+    "importedAt": "2026-09-06T00:42:33.470637+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "caesar.bandcamp.com",
+    "bandcampBandId": "3956298293",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:42:33.470660+00:00"
+  }
+}

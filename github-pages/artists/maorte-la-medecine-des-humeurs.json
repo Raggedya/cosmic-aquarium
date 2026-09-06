@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "slug": "maorte-la-medecine-des-humeurs",
+  "artist": "Maorte",
+  "bandcampUrl": "https://maorte.bandcamp.com/album/la-m-decine-des-humeurs",
+  "releaseTitle": "La.médecine.des.humeurs",
+  "releaseDate": "2026-09-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "metal",
+    "atmospheric black metal",
+    "black metal",
+    "folk",
+    "Montreal"
+  ],
+  "primaryLocation": "Montreal, Québec",
+  "bioShort": "Maorte — black-metal / metal / atmospheric black metal music from Montreal, Québec.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://maorte.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:44:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "la-medecine-des-humeurs",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "la-medecine-des-humeurs-4180266353",
+      "title": "I Aire de sangre",
+      "artist": "Maorte",
+      "albumTitle": "La.médecine.des.humeurs",
+      "albumKey": "la-medecine-des-humeurs",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://maorte.bandcamp.com/track/i-aire-de-sangre",
+      "bandcampEmbedTrackId": "4180266353",
+      "sourcePage": "https://maorte.bandcamp.com/album/la-m-decine-des-humeurs",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "la-medecine-des-humeurs-4149744613",
+      "title": "II Bile noire",
+      "artist": "Maorte",
+      "albumTitle": "La.médecine.des.humeurs",
+      "albumKey": "la-medecine-des-humeurs",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://maorte.bandcamp.com/track/ii-bile-noire",
+      "bandcampEmbedTrackId": "4149744613",
+      "sourcePage": "https://maorte.bandcamp.com/album/la-m-decine-des-humeurs",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://maorte.bandcamp.com/album/la-m-decine-des-humeurs",
+    "discoveredAt": "2026-09-06T00:40:15.002535+00:00",
+    "importedAt": "2026-09-06T00:44:42.778908+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "maorte.bandcamp.com",
+    "bandcampBandId": "3856985987",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:42.778929+00:00"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "slug": "gabriel-flag-murder-class",
+  "artist": "Gabriel Flag",
+  "bandcampUrl": "https://gabrielflag.bandcamp.com/album/murder-class",
+  "releaseTitle": "Murder Class",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative rock",
+    "doom metal",
+    "indie rock",
+    "pop rock",
+    "rock",
+    "stoner rock",
+    "altrock",
+    "hard rock",
+    "progressive rock",
+    "punk",
+    "punk rock",
+    "rock gaucho",
+    "rock nacional",
+    "Porto Alegre"
+  ],
+  "primaryLocation": "Porto Alegre, Brazil",
+  "bioShort": "Recorded in Porto Alegre, Brazil, in 2014, these three songs are part of Gabriel Flag's early recordings, featuring musicians from the Southern Brazilian rock scene, including…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://gabrielflag.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:47:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "murder-class",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "murder-class-3556042829",
+      "title": "Murder Class",
+      "artist": "Gabriel Flag",
+      "albumTitle": "Murder Class",
+      "albumKey": "murder-class",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gabrielflag.bandcamp.com/track/murder-class",
+      "bandcampEmbedTrackId": "3556042829",
+      "sourcePage": "https://gabrielflag.bandcamp.com/album/murder-class",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "murder-class-3828523781",
+      "title": "Vagabundos Iluminados",
+      "artist": "Gabriel Flag",
+      "albumTitle": "Murder Class",
+      "albumKey": "murder-class",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gabrielflag.bandcamp.com/track/vagabundos-iluminados",
+      "bandcampEmbedTrackId": "3828523781",
+      "sourcePage": "https://gabrielflag.bandcamp.com/album/murder-class",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "murder-class-1376527452",
+      "title": "Poète Maudit",
+      "artist": "Gabriel Flag",
+      "albumTitle": "Murder Class",
+      "albumKey": "murder-class",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://gabrielflag.bandcamp.com/track/po-te-maudit",
+      "bandcampEmbedTrackId": "1376527452",
+      "sourcePage": "https://gabrielflag.bandcamp.com/album/murder-class",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://gabrielflag.bandcamp.com/album/murder-class",
+    "discoveredAt": "2026-09-06T00:40:15.010115+00:00",
+    "importedAt": "2026-09-06T00:47:42.572223+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "gabrielflag.bandcamp.com",
+    "bandcampBandId": "1277765261",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:47:42.572245+00:00"
+  }
+}

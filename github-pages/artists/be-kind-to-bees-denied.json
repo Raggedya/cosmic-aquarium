@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "be-kind-to-bees-denied",
+  "artist": "be kind to bees",
+  "bandcampUrl": "https://bekindtobees1.bandcamp.com/album/denied",
+  "releaseTitle": "denied",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "ambient",
+    "bedroom recordings",
+    "gloomcore",
+    "indie",
+    "liminal",
+    "lofi",
+    "noise ambient",
+    "slacker rock",
+    "Austria"
+  ],
+  "primaryLocation": "Austria",
+  "bioShort": "ambient - liminal - gloomcore - experimental - noise a compilation of tracks in progress",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bekindtobees1.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:47:32Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "denied",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "denied-1832599884",
+      "title": "all that i ever felt",
+      "artist": "be kind to bees",
+      "albumTitle": "denied",
+      "albumKey": "denied",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:57",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bekindtobees1.bandcamp.com/track/all-that-i-ever-felt",
+      "bandcampEmbedTrackId": "1832599884",
+      "sourcePage": "https://bekindtobees1.bandcamp.com/album/denied",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "denied-3207098204",
+      "title": "detuned love",
+      "artist": "be kind to bees",
+      "albumTitle": "denied",
+      "albumKey": "denied",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bekindtobees1.bandcamp.com/track/detuned-love",
+      "bandcampEmbedTrackId": "3207098204",
+      "sourcePage": "https://bekindtobees1.bandcamp.com/album/denied",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bekindtobees1.bandcamp.com/album/denied",
+    "discoveredAt": "2026-09-06T00:40:15.009708+00:00",
+    "importedAt": "2026-09-06T00:47:32.240836+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bekindtobees1.bandcamp.com",
+    "bandcampBandId": "2425202168",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:47:32.240857+00:00"
+  }
+}

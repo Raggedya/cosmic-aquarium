@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "kule-when-they-see-me-i-wanna-be-down",
+  "artist": "Kule",
+  "bandcampUrl": "https://kule1.bandcamp.com/album/when-they-see-me-i-wanna-be-down",
+  "releaseTitle": "when they see me / i wanna be down",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "house",
+    "hardgroove",
+    "techno",
+    "Dublin"
+  ],
+  "primaryLocation": "Dublin, Ireland",
+  "bioShort": "photo by Conor Blaides @c_bldz",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kule1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:48:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "when-they-see-me-i-wanna-be-down",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "when-they-see-me-i-wanna-be-down-938995714",
+      "title": "when they see me",
+      "artist": "Kule",
+      "albumTitle": "when they see me / i wanna be down",
+      "albumKey": "when-they-see-me-i-wanna-be-down",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:41",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kule1.bandcamp.com/track/when-they-see-me",
+      "bandcampEmbedTrackId": "938995714",
+      "sourcePage": "https://kule1.bandcamp.com/album/when-they-see-me-i-wanna-be-down",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "when-they-see-me-i-wanna-be-down-3009764762",
+      "title": "i wanna be down",
+      "artist": "Kule",
+      "albumTitle": "when they see me / i wanna be down",
+      "albumKey": "when-they-see-me-i-wanna-be-down",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:18",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kule1.bandcamp.com/track/i-wanna-be-down-2",
+      "bandcampEmbedTrackId": "3009764762",
+      "sourcePage": "https://kule1.bandcamp.com/album/when-they-see-me-i-wanna-be-down",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kule1.bandcamp.com/album/when-they-see-me-i-wanna-be-down",
+    "discoveredAt": "2026-09-06T00:40:15.012759+00:00",
+    "importedAt": "2026-09-06T00:48:38.599239+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kule1.bandcamp.com",
+    "bandcampBandId": "2785922754",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:38.599260+00:00"
+  }
+}

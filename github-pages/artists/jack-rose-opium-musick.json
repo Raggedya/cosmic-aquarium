@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "jack-rose-opium-musick",
+  "artist": "Jack Rose",
+  "bandcampUrl": "https://jackrose.bandcamp.com/album/opium-musick",
+  "releaseTitle": "Opium Musick",
+  "releaseDate": "2016-08-26 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "acoustic",
+    "blues",
+    "jass",
+    "raga",
+    "ragtime",
+    "Philadelphia"
+  ],
+  "primaryLocation": "Philadelphia, Pennsylvania",
+  "bioShort": "Recorded and originally released in 2003, Opium Musick is an eclectic collection with pieces for 12 string (the percussive and dark \"Black Pearls”), 6 string, and lap guitar…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jackrose.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:49:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "opium-musick",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "opium-musick-1517014664",
+      "title": "Yaman Blues",
+      "artist": "Jack Rose",
+      "albumTitle": "Opium Musick",
+      "albumKey": "opium-musick",
+      "year": 2016,
+      "trackNumber": 1,
+      "duration": "10:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jackrose.bandcamp.com/track/yaman-blues",
+      "bandcampEmbedTrackId": "1517014664",
+      "sourcePage": "https://jackrose.bandcamp.com/album/opium-musick",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "opium-musick-1650172123",
+      "title": "Linden Avenue Stomp",
+      "artist": "Jack Rose",
+      "albumTitle": "Opium Musick",
+      "albumKey": "opium-musick",
+      "year": 2016,
+      "trackNumber": 2,
+      "duration": "3:49",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jackrose.bandcamp.com/track/linden-avenue-stomp",
+      "bandcampEmbedTrackId": "1650172123",
+      "sourcePage": "https://jackrose.bandcamp.com/album/opium-musick",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "opium-musick-2371222325",
+      "title": "Mountaintop Lamento",
+      "artist": "Jack Rose",
+      "albumTitle": "Opium Musick",
+      "albumKey": "opium-musick",
+      "year": 2016,
+      "trackNumber": 3,
+      "duration": "11:24",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jackrose.bandcamp.com/track/mountaintop-lamento",
+      "bandcampEmbedTrackId": "2371222325",
+      "sourcePage": "https://jackrose.bandcamp.com/album/opium-musick",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "opium-musick-225764838",
+      "title": "Black Pearls",
+      "artist": "Jack Rose",
+      "albumTitle": "Opium Musick",
+      "albumKey": "opium-musick",
+      "year": 2016,
+      "trackNumber": 4,
+      "duration": "9:16",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jackrose.bandcamp.com/track/black-pearls",
+      "bandcampEmbedTrackId": "225764838",
+      "sourcePage": "https://jackrose.bandcamp.com/album/opium-musick",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jackrose.bandcamp.com/album/opium-musick",
+    "discoveredAt": "2026-09-06T00:40:15.015712+00:00",
+    "importedAt": "2026-09-06T00:49:48.323277+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jackrose.bandcamp.com",
+    "bandcampBandId": "2731283622",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:48.323301+00:00"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "peejay-freestyle-breaks",
+  "artist": "Peejay",
+  "bandcampUrl": "https://jonayakapeejay.bandcamp.com/album/freestyle-breaks",
+  "releaseTitle": "Freestyle Breaks",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "acid.",
+    "electronic",
+    "breaks",
+    "electronica",
+    "freestyle",
+    "hardcore",
+    "oldskool",
+    "techno",
+    "Spain"
+  ],
+  "primaryLocation": "CN, Spain",
+  "bioShort": "Oldskool Freestyle Breaks sound",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jonayakapeejay.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:45:43Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "freestyle-breaks",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "freestyle-breaks-3590730843",
+      "title": "The Past Is Still Alive",
+      "artist": "Peejay",
+      "albumTitle": "Freestyle Breaks",
+      "albumKey": "freestyle-breaks",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:20",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jonayakapeejay.bandcamp.com/track/the-past-is-still-alive",
+      "bandcampEmbedTrackId": "3590730843",
+      "sourcePage": "https://jonayakapeejay.bandcamp.com/album/freestyle-breaks",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jonayakapeejay.bandcamp.com/album/freestyle-breaks",
+    "discoveredAt": "2026-09-06T00:40:15.005066+00:00",
+    "importedAt": "2026-09-06T00:45:43.973795+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jonayakapeejay.bandcamp.com",
+    "bandcampBandId": "2683500074",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:45:43.973817+00:00"
+  }
+}

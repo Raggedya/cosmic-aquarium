@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "latter-what-lives-inside-of-me",
+  "artist": "Latter",
+  "bandcampUrl": "https://latterband.bandcamp.com/album/what-lives-inside-of-me",
+  "releaseTitle": "What Lives Inside of Me",
+  "releaseDate": "2025-07-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "punk",
+    "hardcore",
+    "hardcore punk rock",
+    "noise rock",
+    "screamo",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "Latter — noise-rock / punk / hardcore music from Chicago, Illinois.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://latterband.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:43:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "what-lives-inside-of-me",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "what-lives-inside-of-me-635479720",
+      "title": "Bloodline",
+      "artist": "Latter",
+      "albumTitle": "What Lives Inside of Me",
+      "albumKey": "what-lives-inside-of-me",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "2:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://latterband.bandcamp.com/track/bloodline",
+      "bandcampEmbedTrackId": "635479720",
+      "sourcePage": "https://latterband.bandcamp.com/album/what-lives-inside-of-me",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "what-lives-inside-of-me-4249873784",
+      "title": "Expiration Date",
+      "artist": "Latter",
+      "albumTitle": "What Lives Inside of Me",
+      "albumKey": "what-lives-inside-of-me",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "2:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://latterband.bandcamp.com/track/expiration-date",
+      "bandcampEmbedTrackId": "4249873784",
+      "sourcePage": "https://latterband.bandcamp.com/album/what-lives-inside-of-me",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "what-lives-inside-of-me-1999259221",
+      "title": "Left to Waste",
+      "artist": "Latter",
+      "albumTitle": "What Lives Inside of Me",
+      "albumKey": "what-lives-inside-of-me",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "3:26",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://latterband.bandcamp.com/track/left-to-waste",
+      "bandcampEmbedTrackId": "1999259221",
+      "sourcePage": "https://latterband.bandcamp.com/album/what-lives-inside-of-me",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "what-lives-inside-of-me-4049322002",
+      "title": "Hope You Love Her",
+      "artist": "Latter",
+      "albumTitle": "What Lives Inside of Me",
+      "albumKey": "what-lives-inside-of-me",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "3:44",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://latterband.bandcamp.com/track/hope-you-love-her",
+      "bandcampEmbedTrackId": "4049322002",
+      "sourcePage": "https://latterband.bandcamp.com/album/what-lives-inside-of-me",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://latterband.bandcamp.com/album/what-lives-inside-of-me",
+    "discoveredAt": "2026-09-06T00:40:14.998464+00:00",
+    "importedAt": "2026-09-06T00:43:04.731889+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "latterband.bandcamp.com",
+    "bandcampBandId": "1584101637",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:04.731911+00:00"
+  }
+}

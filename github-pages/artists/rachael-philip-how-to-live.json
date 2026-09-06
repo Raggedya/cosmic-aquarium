@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "slug": "rachael-philip-how-to-live",
+  "artist": "Rachael Philip",
+  "bandcampUrl": "https://rachaelphilipmusic.bandcamp.com/album/how-to-live",
+  "releaseTitle": "How to Live",
+  "releaseDate": "2026-11-06 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "classical",
+    "experimental",
+    "millennial",
+    "ambient",
+    "field recordings",
+    "instrumental",
+    "modern classical",
+    "neo-classical",
+    "neoclassical",
+    "nostalgic",
+    "post rock instrumental",
+    "post-rock",
+    "Manchester"
+  ],
+  "primaryLocation": "Manchester, UK",
+  "bioShort": "Channelling a sense of millennial nostalgia in seemingly dichotomous and exponentially changing modern times, 'How to Live' is a reflective blend of post-rock, neo-classical…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet",
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rachaelphilipmusic.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:45:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "how-to-live",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "how-to-live-3050597121",
+      "title": "Ornamental Life",
+      "artist": "Rachael Philip",
+      "albumTitle": "How to Live",
+      "albumKey": "how-to-live",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rachaelphilipmusic.bandcamp.com/track/ornamental-life",
+      "bandcampEmbedTrackId": "3050597121",
+      "sourcePage": "https://rachaelphilipmusic.bandcamp.com/album/how-to-live",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "how-to-live-3993044990",
+      "title": "Earth Fall",
+      "artist": "Rachael Philip",
+      "albumTitle": "How to Live",
+      "albumKey": "how-to-live",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rachaelphilipmusic.bandcamp.com/album/how-to-live",
+      "bandcampEmbedTrackId": "3993044990",
+      "sourcePage": "https://rachaelphilipmusic.bandcamp.com/album/how-to-live",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "how-to-live-3032083393",
+      "title": "Through Generations",
+      "artist": "Rachael Philip",
+      "albumTitle": "How to Live",
+      "albumKey": "how-to-live",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rachaelphilipmusic.bandcamp.com/album/how-to-live",
+      "bandcampEmbedTrackId": "3032083393",
+      "sourcePage": "https://rachaelphilipmusic.bandcamp.com/album/how-to-live",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://rachaelphilipmusic.bandcamp.com/album/how-to-live",
+    "discoveredAt": "2026-09-06T00:40:15.005210+00:00",
+    "importedAt": "2026-09-06T00:45:48.756577+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "rachaelphilipmusic.bandcamp.com",
+    "bandcampBandId": "665970721",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:45:48.756600+00:00"
+  }
+}

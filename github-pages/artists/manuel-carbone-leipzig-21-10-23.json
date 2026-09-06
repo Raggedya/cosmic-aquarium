@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "manuel-carbone-leipzig-21-10-23",
+  "artist": "Manuel Carbone",
+  "bandcampUrl": "https://manuelcarbone.bandcamp.com/album/leipzig-21-10-23",
+  "releaseTitle": "Leipzig 21/10/23",
+  "releaseDate": "2023-11-06 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "ambient",
+    "electronic",
+    "experimental",
+    "field recordings",
+    "live",
+    "musique concrete",
+    "tape music",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "Manuel Carbone — field-recordings / ambient / electronic music from Berlin, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet",
+    "dark",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://manuelcarbone.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:49:00Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "leipzig-21-10-23",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "leipzig-21-10-23-4257111329",
+      "title": "Leipzig 21/10/23",
+      "artist": "Manuel Carbone",
+      "albumTitle": "Leipzig 21/10/23",
+      "albumKey": "leipzig-21-10-23",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "25:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://manuelcarbone.bandcamp.com/track/leipzig-21-10-23",
+      "bandcampEmbedTrackId": "4257111329",
+      "sourcePage": "https://manuelcarbone.bandcamp.com/album/leipzig-21-10-23",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://manuelcarbone.bandcamp.com/album/leipzig-21-10-23",
+    "discoveredAt": "2026-09-06T00:40:15.013829+00:00",
+    "importedAt": "2026-09-06T00:49:00.838917+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "manuelcarbone.bandcamp.com",
+    "bandcampBandId": "2877633782",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:00.838941+00:00"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "slug": "shiving-inappropriate-laughter",
+  "artist": "Shiving",
+  "bandcampUrl": "https://shiving.bandcamp.com/album/inappropriate-laughter",
+  "releaseTitle": "Inappropriate Laughter",
+  "releaseDate": "2026-08-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "arizona",
+    "metal",
+    "self produced",
+    "shiving",
+    "drone",
+    "lofi",
+    "post metal",
+    "psych",
+    "self released",
+    "stoner rock",
+    "Vermont"
+  ],
+  "primaryLocation": "Vermont",
+  "bioShort": "The tracks on \"Inappropriate Laughter\" were hacked from five spontaneous jams recorded live, Saturday, August 23, 2025, in a house painted green. -- 1 guitar 1 amp 1 suitcase…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://shiving.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:43:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "inappropriate-laughter",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "inappropriate-laughter-3657911031",
+      "title": "Datura",
+      "artist": "Shiving",
+      "albumTitle": "Inappropriate Laughter",
+      "albumKey": "inappropriate-laughter",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "12:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shiving.bandcamp.com/track/datura",
+      "bandcampEmbedTrackId": "3657911031",
+      "sourcePage": "https://shiving.bandcamp.com/album/inappropriate-laughter",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "inappropriate-laughter-2506304264",
+      "title": "Older Coaster",
+      "artist": "Shiving",
+      "albumTitle": "Inappropriate Laughter",
+      "albumKey": "inappropriate-laughter",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "10:33",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shiving.bandcamp.com/track/older-coaster",
+      "bandcampEmbedTrackId": "2506304264",
+      "sourcePage": "https://shiving.bandcamp.com/album/inappropriate-laughter",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "inappropriate-laughter-2079857848",
+      "title": "Ox",
+      "artist": "Shiving",
+      "albumTitle": "Inappropriate Laughter",
+      "albumKey": "inappropriate-laughter",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "8:03",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shiving.bandcamp.com/track/ox",
+      "bandcampEmbedTrackId": "2079857848",
+      "sourcePage": "https://shiving.bandcamp.com/album/inappropriate-laughter",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "inappropriate-laughter-571262759",
+      "title": "The Concept Of Wind",
+      "artist": "Shiving",
+      "albumTitle": "Inappropriate Laughter",
+      "albumKey": "inappropriate-laughter",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "11:17",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://shiving.bandcamp.com/track/the-concept-of-wind",
+      "bandcampEmbedTrackId": "571262759",
+      "sourcePage": "https://shiving.bandcamp.com/album/inappropriate-laughter",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://shiving.bandcamp.com/album/inappropriate-laughter",
+    "discoveredAt": "2026-09-06T00:40:14.998955+00:00",
+    "importedAt": "2026-09-06T00:43:17.729818+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "shiving.bandcamp.com",
+    "bandcampBandId": "3899359938",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:17.729840+00:00"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "sun-cult-hope-anchor-live",
+  "artist": "Sun Cult",
+  "bandcampUrl": "https://suncultmusic.bandcamp.com/album/hope-anchor-live",
+  "releaseTitle": "Hope & Anchor (LIVE)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "rock",
+    "alt rock",
+    "alternative rock",
+    "proto metal",
+    "stoner rock",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "Sun Cult — grunge / rock / alt rock music from London, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://suncultmusic.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:41:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hope-anchor-live",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hope-anchor-live-2701471784",
+      "title": "Snapshot (LIVE)",
+      "artist": "Sun Cult",
+      "albumTitle": "Hope & Anchor (LIVE)",
+      "albumKey": "hope-anchor-live",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:30",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suncultmusic.bandcamp.com/track/snapshot-live-2",
+      "bandcampEmbedTrackId": "2701471784",
+      "sourcePage": "https://suncultmusic.bandcamp.com/album/hope-anchor-live",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hope-anchor-live-698691070",
+      "title": "Whats Become of you (LIVE)",
+      "artist": "Sun Cult",
+      "albumTitle": "Hope & Anchor (LIVE)",
+      "albumKey": "hope-anchor-live",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:51",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suncultmusic.bandcamp.com/track/whats-become-of-you-live",
+      "bandcampEmbedTrackId": "698691070",
+      "sourcePage": "https://suncultmusic.bandcamp.com/album/hope-anchor-live",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "hope-anchor-live-1103915546",
+      "title": "No Apology (LIVE)",
+      "artist": "Sun Cult",
+      "albumTitle": "Hope & Anchor (LIVE)",
+      "albumKey": "hope-anchor-live",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:25",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suncultmusic.bandcamp.com/track/no-apology-live-2",
+      "bandcampEmbedTrackId": "1103915546",
+      "sourcePage": "https://suncultmusic.bandcamp.com/album/hope-anchor-live",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "hope-anchor-live-1392883756",
+      "title": "The Sickening (LIVE)",
+      "artist": "Sun Cult",
+      "albumTitle": "Hope & Anchor (LIVE)",
+      "albumKey": "hope-anchor-live",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:52",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://suncultmusic.bandcamp.com/track/the-sickening-live",
+      "bandcampEmbedTrackId": "1392883756",
+      "sourcePage": "https://suncultmusic.bandcamp.com/album/hope-anchor-live",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://suncultmusic.bandcamp.com/album/hope-anchor-live",
+    "discoveredAt": "2026-09-06T00:40:05.728635+00:00",
+    "importedAt": "2026-09-06T00:41:04.509204+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "suncultmusic.bandcamp.com",
+    "bandcampBandId": "1629545287",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:04.509227+00:00"
+  }
+}

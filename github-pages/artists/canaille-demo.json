@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "slug": "canaille-demo",
+  "artist": "Canaille",
+  "bandcampUrl": "https://canaille-oakland.bandcamp.com/album/demo",
+  "releaseTitle": "demo",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "crust",
+    "Oakland"
+  ],
+  "primaryLocation": "Oakland, California",
+  "bioShort": "Canaille — post-metal / metal / crust music from Oakland, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://canaille-oakland.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:46:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "demo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "demo-4209916230",
+      "title": "Dishabituation",
+      "artist": "Canaille",
+      "albumTitle": "demo",
+      "albumKey": "demo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:44",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://canaille-oakland.bandcamp.com/track/dishabituation",
+      "bandcampEmbedTrackId": "4209916230",
+      "sourcePage": "https://canaille-oakland.bandcamp.com/album/demo",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "demo-3444934081",
+      "title": "Many Lands",
+      "artist": "Canaille",
+      "albumTitle": "demo",
+      "albumKey": "demo",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:09",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://canaille-oakland.bandcamp.com/track/many-lands",
+      "bandcampEmbedTrackId": "3444934081",
+      "sourcePage": "https://canaille-oakland.bandcamp.com/album/demo",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "demo-1266031221",
+      "title": "Numinous",
+      "artist": "Canaille",
+      "albumTitle": "demo",
+      "albumKey": "demo",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://canaille-oakland.bandcamp.com/track/numinous",
+      "bandcampEmbedTrackId": "1266031221",
+      "sourcePage": "https://canaille-oakland.bandcamp.com/album/demo",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://canaille-oakland.bandcamp.com/album/demo",
+    "discoveredAt": "2026-09-06T00:40:15.007689+00:00",
+    "importedAt": "2026-09-06T00:46:46.820112+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "canaille-oakland.bandcamp.com",
+    "bandcampBandId": "2745313084",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:46:46.820133+00:00"
+  }
+}

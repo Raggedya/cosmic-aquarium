@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "twin-drugs-oscar-winner-ep",
+  "artist": "Twin Drugs",
+  "bandcampUrl": "https://twindrugs.bandcamp.com/album/oscar-winner-ep",
+  "releaseTitle": "Oscar Winner EP",
+  "releaseDate": "2026-08-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "noise-rock",
+    "rock",
+    "fuzz",
+    "indie",
+    "punk",
+    "shoegaze",
+    "Richmond"
+  ],
+  "primaryLocation": "Richmond, Virginia",
+  "bioShort": "Twin Drugs — noise-rock / rock / fuzz music from Richmond, Virginia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://twindrugs.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:41:44Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "oscar-winner-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "oscar-winner-ep-4235289564",
+      "title": "Convenient Spell",
+      "artist": "Twin Drugs",
+      "albumTitle": "Oscar Winner EP",
+      "albumKey": "oscar-winner-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:20",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://twindrugs.bandcamp.com/track/convenient-spell-2",
+      "bandcampEmbedTrackId": "4235289564",
+      "sourcePage": "https://twindrugs.bandcamp.com/album/oscar-winner-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "oscar-winner-ep-1245209010",
+      "title": "Moment 8",
+      "artist": "Twin Drugs",
+      "albumTitle": "Oscar Winner EP",
+      "albumKey": "oscar-winner-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:43",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://twindrugs.bandcamp.com/track/moment-8",
+      "bandcampEmbedTrackId": "1245209010",
+      "sourcePage": "https://twindrugs.bandcamp.com/album/oscar-winner-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "oscar-winner-ep-1685518560",
+      "title": "Oscar Winner",
+      "artist": "Twin Drugs",
+      "albumTitle": "Oscar Winner EP",
+      "albumKey": "oscar-winner-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:11",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://twindrugs.bandcamp.com/track/oscar-winner",
+      "bandcampEmbedTrackId": "1685518560",
+      "sourcePage": "https://twindrugs.bandcamp.com/album/oscar-winner-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://twindrugs.bandcamp.com/album/oscar-winner-ep",
+    "discoveredAt": "2026-09-06T00:40:14.995503+00:00",
+    "importedAt": "2026-09-06T00:41:44.898236+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "twindrugs.bandcamp.com",
+    "bandcampBandId": "3228419135",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:44.898258+00:00"
+  }
+}

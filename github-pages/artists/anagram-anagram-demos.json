@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "slug": "anagram-anagram-demos",
+  "artist": "anagram",
+  "bandcampUrl": "https://anagram33.bandcamp.com/album/anagram-demos",
+  "releaseTitle": "anagram demos",
+  "releaseDate": "2026-08-29 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "outsider",
+    "alternative",
+    "folk",
+    "punk",
+    "grunge",
+    "indie",
+    "Washington"
+  ],
+  "primaryLocation": "Washington",
+  "bioShort": "ROUGH demos of songs In the works, guidelines for the end of the line song.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://anagram33.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:41:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "anagram-demos",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "anagram-demos-2976119299",
+      "title": "Podunk (tk 1)",
+      "artist": "anagram",
+      "albumTitle": "anagram demos",
+      "albumKey": "anagram-demos",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anagram33.bandcamp.com/track/podunk-tk-1",
+      "bandcampEmbedTrackId": "2976119299",
+      "sourcePage": "https://anagram33.bandcamp.com/album/anagram-demos",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "anagram-demos-274367907",
+      "title": "Podunk (tk 11)",
+      "artist": "anagram",
+      "albumTitle": "anagram demos",
+      "albumKey": "anagram-demos",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:32",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anagram33.bandcamp.com/track/podunk-tk-11",
+      "bandcampEmbedTrackId": "274367907",
+      "sourcePage": "https://anagram33.bandcamp.com/album/anagram-demos",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "anagram-demos-2895970119",
+      "title": "Lync demo",
+      "artist": "anagram",
+      "albumTitle": "anagram demos",
+      "albumKey": "anagram-demos",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:58",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://anagram33.bandcamp.com/track/lync-demo",
+      "bandcampEmbedTrackId": "2895970119",
+      "sourcePage": "https://anagram33.bandcamp.com/album/anagram-demos",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://anagram33.bandcamp.com/album/anagram-demos",
+    "discoveredAt": "2026-09-06T00:40:14.993587+00:00",
+    "importedAt": "2026-09-06T00:41:09.209687+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "anagram33.bandcamp.com",
+    "bandcampBandId": "2064825662",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:09.209709+00:00"
+  }
+}

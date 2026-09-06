@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "salt-queen-are-u-ok",
+  "artist": "Salt Queen",
+  "bandcampUrl": "https://saltqueen.bandcamp.com/album/are-u-ok",
+  "releaseTitle": "ARE U OK",
+  "releaseDate": "2026-03-13 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "acid",
+    "italo",
+    "techno",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Salt Queen’s debut ARE U OK is an acid-laced, deadpan spoken word track with an opening line that snaps any room to attention. A disorienting club encounter unfolds over…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://saltqueen.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:44:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "are-u-ok",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "are-u-ok-842560360",
+      "title": "ARE U OK",
+      "artist": "Salt Queen",
+      "albumTitle": "ARE U OK",
+      "albumKey": "are-u-ok",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:52",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://saltqueen.bandcamp.com/track/are-u-ok-2",
+      "bandcampEmbedTrackId": "842560360",
+      "sourcePage": "https://saltqueen.bandcamp.com/album/are-u-ok",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "are-u-ok-4211276143",
+      "title": "ARE U OK (Freak Nasty Club Mix)",
+      "artist": "Salt Queen",
+      "albumTitle": "ARE U OK",
+      "albumKey": "are-u-ok",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:23",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://saltqueen.bandcamp.com/track/are-u-ok-freak-nasty-club-mix-2",
+      "bandcampEmbedTrackId": "4211276143",
+      "sourcePage": "https://saltqueen.bandcamp.com/album/are-u-ok",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://saltqueen.bandcamp.com/album/are-u-ok",
+    "discoveredAt": "2026-09-06T00:40:15.001102+00:00",
+    "importedAt": "2026-09-06T00:44:04.443748+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "saltqueen.bandcamp.com",
+    "bandcampBandId": "1776939291",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:04.443770+00:00"
+  }
+}

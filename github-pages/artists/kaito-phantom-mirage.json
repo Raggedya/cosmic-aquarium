@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "slug": "kaito-phantom-mirage",
+  "artist": "Kaito",
+  "bandcampUrl": "https://kaitoinfine.bandcamp.com/album/phantom-mirage",
+  "releaseTitle": "Phantom Mirage",
+  "releaseDate": "2025-05-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "ambient",
+    "atmospheric",
+    "cinematic",
+    "drone",
+    "electronic",
+    "electronica",
+    "experimental",
+    "meditative",
+    "environmental music",
+    "meditation",
+    "soundscape",
+    "Japan"
+  ],
+  "primaryLocation": "Japan",
+  "bioShort": "Japanese electronic maestro Kaito returns with Phantom Mirage, a stunning three-track EP that blurs the lines between ambient introspection, cinematic electronica, and deep…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kaitoinfine.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:46:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "phantom-mirage",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "phantom-mirage-53778443",
+      "title": "Phantom",
+      "artist": "Kaito",
+      "albumTitle": "Phantom Mirage",
+      "albumKey": "phantom-mirage",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "5:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kaitoinfine.bandcamp.com/track/phantom",
+      "bandcampEmbedTrackId": "53778443",
+      "sourcePage": "https://kaitoinfine.bandcamp.com/album/phantom-mirage",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "phantom-mirage-1332490321",
+      "title": "When the Past Dissolves into Light",
+      "artist": "Kaito",
+      "albumTitle": "Phantom Mirage",
+      "albumKey": "phantom-mirage",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "6:24",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kaitoinfine.bandcamp.com/track/when-the-past-dissolves-into-light",
+      "bandcampEmbedTrackId": "1332490321",
+      "sourcePage": "https://kaitoinfine.bandcamp.com/album/phantom-mirage",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "phantom-mirage-3704595587",
+      "title": "Mirage",
+      "artist": "Kaito",
+      "albumTitle": "Phantom Mirage",
+      "albumKey": "phantom-mirage",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "5:32",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kaitoinfine.bandcamp.com/track/mirage",
+      "bandcampEmbedTrackId": "3704595587",
+      "sourcePage": "https://kaitoinfine.bandcamp.com/album/phantom-mirage",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kaitoinfine.bandcamp.com/album/phantom-mirage",
+    "discoveredAt": "2026-09-06T00:40:15.006800+00:00",
+    "importedAt": "2026-09-06T00:46:27.406766+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kaitoinfine.bandcamp.com",
+    "bandcampBandId": "1252378374",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:46:27.406788+00:00"
+  }
+}

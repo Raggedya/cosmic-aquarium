@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "slug": "bongripper-live-in-leipzig",
+  "artist": "Bongripper",
+  "bandcampUrl": "https://bongripper.bandcamp.com/album/live-in-leipzig",
+  "releaseTitle": "Live in Leipzig",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "metal",
+    "doom metal",
+    "instrumental",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "Recorded Oct 16th 2025 at Naumanns Tanzlokal Engineered by Maximillian Geisenhainer Mixed and Mastered by Dennis Pleckham at Comatose Studio Artwork by Dan O'Connor",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bongripper.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:47:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "live-in-leipzig",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "live-in-leipzig-1061654922",
+      "title": "Worship ( Live in Leipzig )",
+      "artist": "Bongripper",
+      "albumTitle": "Live in Leipzig",
+      "albumKey": "live-in-leipzig",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "21:29",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bongripper.bandcamp.com/track/worship-live-in-leipzig",
+      "bandcampEmbedTrackId": "1061654922",
+      "sourcePage": "https://bongripper.bandcamp.com/album/live-in-leipzig",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "live-in-leipzig-4048796999",
+      "title": "Reefer Sutherland ( Live in Leipzig )",
+      "artist": "Bongripper",
+      "albumTitle": "Live in Leipzig",
+      "albumKey": "live-in-leipzig",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "18:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bongripper.bandcamp.com/track/reefer-sutherland-live-in-leipzig",
+      "bandcampEmbedTrackId": "4048796999",
+      "sourcePage": "https://bongripper.bandcamp.com/album/live-in-leipzig",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "live-in-leipzig-3027993135",
+      "title": "Nothing ( Live in Leipzig )",
+      "artist": "Bongripper",
+      "albumTitle": "Live in Leipzig",
+      "albumKey": "live-in-leipzig",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "18:04",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bongripper.bandcamp.com/track/nothing-live-in-leipzig",
+      "bandcampEmbedTrackId": "3027993135",
+      "sourcePage": "https://bongripper.bandcamp.com/album/live-in-leipzig",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bongripper.bandcamp.com/album/live-in-leipzig",
+    "discoveredAt": "2026-09-06T00:40:15.010414+00:00",
+    "importedAt": "2026-09-06T00:47:45.491533+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bongripper.bandcamp.com",
+    "bandcampBandId": "2200605670",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:47:45.491555+00:00"
+  }
+}

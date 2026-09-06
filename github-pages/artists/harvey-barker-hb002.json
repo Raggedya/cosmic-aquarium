@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "harvey-barker-hb002",
+  "artist": "Harvey Barker",
+  "bandcampUrl": "https://harveybarker.bandcamp.com/album/hb002",
+  "releaseTitle": "HB002",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "140",
+    "2step",
+    "electronic",
+    "breakbeat",
+    "drill",
+    "edit",
+    "garage",
+    "house",
+    "techno",
+    "Manchester"
+  ],
+  "primaryLocation": "Manchester, UK",
+  "bioShort": "Harvey Barker — electro / 140 / 2step music from Manchester, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://harveybarker.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:41:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hb002",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hb002-3540736615",
+      "title": "Lock Arff",
+      "artist": "Harvey Barker",
+      "albumTitle": "HB002",
+      "albumKey": "hb002",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:07",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://harveybarker.bandcamp.com/track/lock-arff",
+      "bandcampEmbedTrackId": "3540736615",
+      "sourcePage": "https://harveybarker.bandcamp.com/album/hb002",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://harveybarker.bandcamp.com/album/hb002",
+    "discoveredAt": "2026-09-06T00:40:14.994137+00:00",
+    "importedAt": "2026-09-06T00:41:17.251549+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "harveybarker.bandcamp.com",
+    "bandcampBandId": "3062881022",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:17.251572+00:00"
+  }
+}

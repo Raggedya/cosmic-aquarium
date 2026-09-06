@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "perturbations-higher-order-terms",
+  "artist": "Perturbations",
+  "bandcampUrl": "https://perturbations.bandcamp.com/album/higher-order-terms",
+  "releaseTitle": "Higher-Order Terms",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "free-jazz",
+    "electronic",
+    "experimental",
+    "free improvisation",
+    "free jazz",
+    "Boston"
+  ],
+  "primaryLocation": "Boston, Massachusetts",
+  "bioShort": "Evil Clown 9472 LIVESTREAMED to YouTube Evil Clown Headquarters - Waltham MA 31 August 2026",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://perturbations.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:43:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "higher-order-terms",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "higher-order-terms-2835757341",
+      "title": "Higher-Order Terms",
+      "artist": "Perturbations",
+      "albumTitle": "Higher-Order Terms",
+      "albumKey": "higher-order-terms",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "70:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://perturbations.bandcamp.com/track/higher-order-terms",
+      "bandcampEmbedTrackId": "2835757341",
+      "sourcePage": "https://perturbations.bandcamp.com/album/higher-order-terms",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "higher-order-terms-234427046",
+      "title": "A Power Greater Than One",
+      "artist": "Perturbations",
+      "albumTitle": "Higher-Order Terms",
+      "albumKey": "higher-order-terms",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:35",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://perturbations.bandcamp.com/track/a-power-greater-than-one",
+      "bandcampEmbedTrackId": "234427046",
+      "sourcePage": "https://perturbations.bandcamp.com/album/higher-order-terms",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://perturbations.bandcamp.com/album/higher-order-terms",
+    "discoveredAt": "2026-09-06T00:40:14.998805+00:00",
+    "importedAt": "2026-09-06T00:43:12.991528+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "perturbations.bandcamp.com",
+    "bandcampBandId": "3623248209",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:12.991551+00:00"
+  }
+}

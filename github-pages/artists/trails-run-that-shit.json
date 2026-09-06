@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "trails-run-that-shit",
+  "artist": "Trails",
+  "bandcampUrl": "https://trailsdj.bandcamp.com/album/run-that-shit",
+  "releaseTitle": "Run That Shit",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "ambient",
+    "dub",
+    "techno",
+    "Sheffield"
+  ],
+  "primaryLocation": "Sheffield, UK",
+  "bioShort": "Trails — breakbeat / ambient / dub music from Sheffield, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://trailsdj.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:49:46Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "run-that-shit",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "run-that-shit-2672349605",
+      "title": "Run That Shit",
+      "artist": "Trails",
+      "albumTitle": "Run That Shit",
+      "albumKey": "run-that-shit",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://trailsdj.bandcamp.com/track/run-that-shit",
+      "bandcampEmbedTrackId": "2672349605",
+      "sourcePage": "https://trailsdj.bandcamp.com/album/run-that-shit",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://trailsdj.bandcamp.com/album/run-that-shit",
+    "discoveredAt": "2026-09-06T00:40:15.015680+00:00",
+    "importedAt": "2026-09-06T00:49:46.548436+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "trailsdj.bandcamp.com",
+    "bandcampBandId": "23175003",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:46.548461+00:00"
+  }
+}

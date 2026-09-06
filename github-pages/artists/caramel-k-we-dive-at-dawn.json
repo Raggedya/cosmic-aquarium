@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "slug": "caramel-k-we-dive-at-dawn",
+  "artist": "Caramel K",
+  "bandcampUrl": "https://caramelk.bandcamp.com/album/we-dive-at-dawn",
+  "releaseTitle": "We Dive At Dawn",
+  "releaseDate": "2026-08-26 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "alternative",
+    "dance",
+    "electronica",
+    "glasgow music",
+    "scottish music",
+    "darkwave",
+    "electronic",
+    "electropop",
+    "new wave",
+    "post-punk",
+    "shoegaze",
+    "synthpop",
+    "Glasgow"
+  ],
+  "primaryLocation": "Glasgow, UK",
+  "bioShort": "Caramel K — coldwave / alternative / dance music from Glasgow, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://caramelk.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:51:02Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "we-dive-at-dawn",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "we-dive-at-dawn-1928126363",
+      "title": "We Dive At Dawn",
+      "artist": "Caramel K",
+      "albumTitle": "We Dive At Dawn",
+      "albumKey": "we-dive-at-dawn",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caramelk.bandcamp.com/track/we-dive-at-dawn",
+      "bandcampEmbedTrackId": "1928126363",
+      "sourcePage": "https://caramelk.bandcamp.com/album/we-dive-at-dawn",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "we-dive-at-dawn-1515873115",
+      "title": "A Dream, Pt. 3",
+      "artist": "Caramel K",
+      "albumTitle": "We Dive At Dawn",
+      "albumKey": "we-dive-at-dawn",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://caramelk.bandcamp.com/track/a-dream-pt-3",
+      "bandcampEmbedTrackId": "1515873115",
+      "sourcePage": "https://caramelk.bandcamp.com/album/we-dive-at-dawn",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://caramelk.bandcamp.com/album/we-dive-at-dawn",
+    "discoveredAt": "2026-09-06T00:40:44.748338+00:00",
+    "importedAt": "2026-09-06T00:51:02.485356+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "caramelk.bandcamp.com",
+    "bandcampBandId": "1809901911",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:51:02.485378+00:00"
+  }
+}

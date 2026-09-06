@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "slug": "carmilla-of-lesbos-003-tenho-em-mim-todos-os-sonhos-do-mundo",
+  "artist": "carmilla of lesbos",
+  "bandcampUrl": "https://carmillaoflesbos.bandcamp.com/album/003-tenho-em-mim-todos-os-sonhos-do-mundo",
+  "releaseTitle": "#003: tenho em mim todos os sonhos do mundo",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "experimental",
+    "electroacoustic",
+    "experimental ambient",
+    "haunting",
+    "sample based",
+    "soundscape",
+    "Brazil"
+  ],
+  "primaryLocation": "Brazil",
+  "bioShort": "an ep",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://carmillaoflesbos.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:45:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "003-tenho-em-mim-todos-os-sonhos-do-mundo",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "003-tenho-em-mim-todos-os-sonhos-do-mundo-2687506742",
+      "title": "tenho em mim todos os sonhos do mundo",
+      "artist": "carmilla of lesbos",
+      "albumTitle": "#003: tenho em mim todos os sonhos do mundo",
+      "albumKey": "003-tenho-em-mim-todos-os-sonhos-do-mundo",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "10:43",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://carmillaoflesbos.bandcamp.com/track/tenho-em-mim-todos-os-sonhos-do-mundo",
+      "bandcampEmbedTrackId": "2687506742",
+      "sourcePage": "https://carmillaoflesbos.bandcamp.com/album/003-tenho-em-mim-todos-os-sonhos-do-mundo",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://carmillaoflesbos.bandcamp.com/album/003-tenho-em-mim-todos-os-sonhos-do-mundo",
+    "discoveredAt": "2026-09-06T00:40:15.005329+00:00",
+    "importedAt": "2026-09-06T00:45:53.577261+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "carmillaoflesbos.bandcamp.com",
+    "bandcampBandId": "957279827",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:45:53.577282+00:00"
+  }
+}

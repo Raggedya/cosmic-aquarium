@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "eric-buechel-no-wind-wave",
+  "artist": "Eric Buechel",
+  "bandcampUrl": "https://ericbuechel.bandcamp.com/album/no-wind-wave",
+  "releaseTitle": "No Wind Wave",
+  "releaseDate": "2026-08-24 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "sound-art",
+    "ambient",
+    "electronic",
+    "experimental",
+    "field recording",
+    "shakuhachi",
+    "flute",
+    "new age",
+    "new age music",
+    "sound art",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "Track List: Tiny Gods- Shakuhachi 1.8 with field recordings of bats, insects, and traffic near an underpass in Los Angeles, waves on Washington’s Olympic Peninsula, and frogs…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ericbuechel.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:45:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "no-wind-wave",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "no-wind-wave-1801345637",
+      "title": "Tiny Gods",
+      "artist": "Eric Buechel",
+      "albumTitle": "No Wind Wave",
+      "albumKey": "no-wind-wave",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "11:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericbuechel.bandcamp.com/track/tiny-gods",
+      "bandcampEmbedTrackId": "1801345637",
+      "sourcePage": "https://ericbuechel.bandcamp.com/album/no-wind-wave",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "no-wind-wave-340996742",
+      "title": "The Mosquito King",
+      "artist": "Eric Buechel",
+      "albumTitle": "No Wind Wave",
+      "albumKey": "no-wind-wave",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "9:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericbuechel.bandcamp.com/track/the-mosquito-king",
+      "bandcampEmbedTrackId": "340996742",
+      "sourcePage": "https://ericbuechel.bandcamp.com/album/no-wind-wave",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "no-wind-wave-560626485",
+      "title": "Sacred Datura",
+      "artist": "Eric Buechel",
+      "albumTitle": "No Wind Wave",
+      "albumKey": "no-wind-wave",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "14:50",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericbuechel.bandcamp.com/track/sacred-datura",
+      "bandcampEmbedTrackId": "560626485",
+      "sourcePage": "https://ericbuechel.bandcamp.com/album/no-wind-wave",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "no-wind-wave-635844511",
+      "title": "Kohlrabi in the Dew",
+      "artist": "Eric Buechel",
+      "albumTitle": "No Wind Wave",
+      "albumKey": "no-wind-wave",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:16",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ericbuechel.bandcamp.com/track/kohlrabi-in-the-dew",
+      "bandcampEmbedTrackId": "635844511",
+      "sourcePage": "https://ericbuechel.bandcamp.com/album/no-wind-wave",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ericbuechel.bandcamp.com/album/no-wind-wave",
+    "discoveredAt": "2026-09-06T00:40:15.005527+00:00",
+    "importedAt": "2026-09-06T00:45:59.976452+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ericbuechel.bandcamp.com",
+    "bandcampBandId": "605628664",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:45:59.976474+00:00"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "revengeday-ikenie-akogare-single",
+  "artist": "Revengeday",
+  "bandcampUrl": "https://revengeday.bandcamp.com/album/ikenie-akogare-single",
+  "releaseTitle": "Ikenie / Akogare (Single)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "techno",
+    "cyberpunk",
+    "drum and bass",
+    "electronic",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "We are prisoners of an endless loop, running tirelessly, chasing the ghost of who we are truly meant to become. But the finish line is poisoned. The path is cluttered with the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://revengeday.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:48:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ikenie-akogare-single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ikenie-akogare-single-181950865",
+      "title": "Ikenie [生贄.bin]",
+      "artist": "Revengeday",
+      "albumTitle": "Ikenie / Akogare (Single)",
+      "albumKey": "ikenie-akogare-single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://revengeday.bandcamp.com/track/ikenie-bin",
+      "bandcampEmbedTrackId": "181950865",
+      "sourcePage": "https://revengeday.bandcamp.com/album/ikenie-akogare-single",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ikenie-akogare-single-1923862386",
+      "title": "Akogare [憧れ.dat]",
+      "artist": "Revengeday",
+      "albumTitle": "Ikenie / Akogare (Single)",
+      "albumKey": "ikenie-akogare-single",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:08",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://revengeday.bandcamp.com/track/akogare-dat",
+      "bandcampEmbedTrackId": "1923862386",
+      "sourcePage": "https://revengeday.bandcamp.com/album/ikenie-akogare-single",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://revengeday.bandcamp.com/album/ikenie-akogare-single",
+    "discoveredAt": "2026-09-06T00:40:15.011704+00:00",
+    "importedAt": "2026-09-06T00:48:16.152121+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "revengeday.bandcamp.com",
+    "bandcampBandId": "663014266",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:16.152144+00:00"
+  }
+}

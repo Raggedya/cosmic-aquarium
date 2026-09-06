@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-wild-jumps-killing-spree",
+  "artist": "The Wild Jumps",
+  "bandcampUrl": "https://thewildjumps.bandcamp.com/album/killing-spree",
+  "releaseTitle": "Killing Spree",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "garage rock",
+    "high energy",
+    "pdx",
+    "punk",
+    "Portland"
+  ],
+  "primaryLocation": "Portland, Oregon",
+  "bioShort": "The Wild Jumps — garage-rock / garage rock / high energy music from Portland, Oregon.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thewildjumps.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:49:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "killing-spree",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "killing-spree-501349897",
+      "title": "Tough Scene",
+      "artist": "The Wild Jumps",
+      "albumTitle": "Killing Spree",
+      "albumKey": "killing-spree",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:16",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thewildjumps.bandcamp.com/track/tough-scene-3",
+      "bandcampEmbedTrackId": "501349897",
+      "sourcePage": "https://thewildjumps.bandcamp.com/album/killing-spree",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "killing-spree-223660134",
+      "title": "Pop Sugar",
+      "artist": "The Wild Jumps",
+      "albumTitle": "Killing Spree",
+      "albumKey": "killing-spree",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:15",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thewildjumps.bandcamp.com/track/pop-sugar-2",
+      "bandcampEmbedTrackId": "223660134",
+      "sourcePage": "https://thewildjumps.bandcamp.com/album/killing-spree",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "killing-spree-3121832056",
+      "title": "Where Will I Go",
+      "artist": "The Wild Jumps",
+      "albumTitle": "Killing Spree",
+      "albumKey": "killing-spree",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:53",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thewildjumps.bandcamp.com/track/where-will-i-go",
+      "bandcampEmbedTrackId": "3121832056",
+      "sourcePage": "https://thewildjumps.bandcamp.com/album/killing-spree",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "killing-spree-133202218",
+      "title": "Killing Spree",
+      "artist": "The Wild Jumps",
+      "albumTitle": "Killing Spree",
+      "albumKey": "killing-spree",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:23",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thewildjumps.bandcamp.com/track/killing-spree",
+      "bandcampEmbedTrackId": "133202218",
+      "sourcePage": "https://thewildjumps.bandcamp.com/album/killing-spree",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "killing-spree-1060118870",
+      "title": "Good Enough For Punk",
+      "artist": "The Wild Jumps",
+      "albumTitle": "Killing Spree",
+      "albumKey": "killing-spree",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "5:48",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thewildjumps.bandcamp.com/track/good-enough-for-punk-3",
+      "bandcampEmbedTrackId": "1060118870",
+      "sourcePage": "https://thewildjumps.bandcamp.com/album/killing-spree",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thewildjumps.bandcamp.com/album/killing-spree",
+    "discoveredAt": "2026-09-06T00:40:15.014914+00:00",
+    "importedAt": "2026-09-06T00:49:31.097453+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thewildjumps.bandcamp.com",
+    "bandcampBandId": "1370451204",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:31.097477+00:00"
+  }
+}

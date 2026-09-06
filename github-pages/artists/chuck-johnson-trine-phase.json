@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "slug": "chuck-johnson-trine-phase",
+  "artist": "Chuck Johnson",
+  "bandcampUrl": "https://chuckjohnson.bandcamp.com/album/trine-phase",
+  "releaseTitle": "Trine Phase",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient",
+    "experimental",
+    "minimalist",
+    "Oakland"
+  ],
+  "primaryLocation": "Oakland, California",
+  "bioShort": "Recorded live at the First Presbyterian Church in Oakland, June 11 2026. All proceeds to benefit Jerusalem Coffee House in Oakland. More information at…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://chuckjohnson.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:41:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "trine-phase",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "trine-phase-4224944393",
+      "title": "Trine Phase",
+      "artist": "Chuck Johnson",
+      "albumTitle": "Trine Phase",
+      "albumKey": "trine-phase",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "34:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chuckjohnson.bandcamp.com/track/trine-phase",
+      "bandcampEmbedTrackId": "4224944393",
+      "sourcePage": "https://chuckjohnson.bandcamp.com/album/trine-phase",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://chuckjohnson.bandcamp.com/album/trine-phase",
+    "discoveredAt": "2026-09-06T00:40:14.994189+00:00",
+    "importedAt": "2026-09-06T00:41:19.405939+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "chuckjohnson.bandcamp.com",
+    "bandcampBandId": "544849405",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:19.405960+00:00"
+  }
+}

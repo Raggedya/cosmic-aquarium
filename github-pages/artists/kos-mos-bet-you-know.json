@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "kos-mos-bet-you-know",
+  "artist": "Kos-mos",
+  "bandcampUrl": "https://kos-mos.bandcamp.com/album/bet-you-know",
+  "releaseTitle": "Bet You Know",
+  "releaseDate": "2025-10-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "electronic",
+    "ambient pop",
+    "downtempo",
+    "dub pop",
+    "electronica",
+    "experimental pop",
+    "Japan"
+  ],
+  "primaryLocation": "Tokyo, Japan",
+  "bioShort": "The second EP opens with ‘Bet You Know’ (Track 1), an electro-rock track driven by percussive guitar and a brisk four-on-the-floor rhythm, capturing both conflict and release…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://kos-mos.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:43:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bet-you-know",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bet-you-know-49304118",
+      "title": "Bet You Know",
+      "artist": "Kos-mos",
+      "albumTitle": "Bet You Know",
+      "albumKey": "bet-you-know",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "5:02",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kos-mos.bandcamp.com/track/bet-you-know-2",
+      "bandcampEmbedTrackId": "49304118",
+      "sourcePage": "https://kos-mos.bandcamp.com/album/bet-you-know",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bet-you-know-1099601908",
+      "title": "Don't Lose It Now",
+      "artist": "Kos-mos",
+      "albumTitle": "Bet You Know",
+      "albumKey": "bet-you-know",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "4:25",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kos-mos.bandcamp.com/track/dont-lose-it-now-2",
+      "bandcampEmbedTrackId": "1099601908",
+      "sourcePage": "https://kos-mos.bandcamp.com/album/bet-you-know",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "bet-you-know-2679584227",
+      "title": "BATON",
+      "artist": "Kos-mos",
+      "albumTitle": "Bet You Know",
+      "albumKey": "bet-you-know",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "6:17",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kos-mos.bandcamp.com/track/baton-2",
+      "bandcampEmbedTrackId": "2679584227",
+      "sourcePage": "https://kos-mos.bandcamp.com/album/bet-you-know",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "bet-you-know-4082190211",
+      "title": "Kos mos",
+      "artist": "Kos-mos",
+      "albumTitle": "Bet You Know",
+      "albumKey": "bet-you-know",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "5:30",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://kos-mos.bandcamp.com/track/kos-mos-2",
+      "bandcampEmbedTrackId": "4082190211",
+      "sourcePage": "https://kos-mos.bandcamp.com/album/bet-you-know",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://kos-mos.bandcamp.com/album/bet-you-know",
+    "discoveredAt": "2026-09-06T00:40:14.999095+00:00",
+    "importedAt": "2026-09-06T00:43:21.273444+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "kos-mos.bandcamp.com",
+    "bandcampBandId": "3947068604",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:21.273467+00:00"
+  }
+}

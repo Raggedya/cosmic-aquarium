@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "svartheim-battle-rage",
+  "artist": "Svartheim",
+  "bandcampUrl": "https://svartheimofficial.bandcamp.com/album/battle-rage",
+  "releaseTitle": "Battle Rage",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "black-metal",
+    "atmospheric black metal",
+    "black metal",
+    "death metal",
+    "metal",
+    "folk metal",
+    "pagan metal",
+    "Tours"
+  ],
+  "primaryLocation": "Tours, France",
+  "bioShort": "⚔️ SVARTHEIM — BATTLE RAGE ⚔️ Svartheim débarque avec « Battle Rage », un double titre où la fureur, la puissance et les ténèbres se rencontrent. 🔥 SEIDR Une plongée dans une…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://svartheimofficial.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:43:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "battle-rage",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "battle-rage-4181230066",
+      "title": "Seidr",
+      "artist": "Svartheim",
+      "albumTitle": "Battle Rage",
+      "albumKey": "battle-rage",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://svartheimofficial.bandcamp.com/track/seidr",
+      "bandcampEmbedTrackId": "4181230066",
+      "sourcePage": "https://svartheimofficial.bandcamp.com/album/battle-rage",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "battle-rage-4293119715",
+      "title": "Battle Rage",
+      "artist": "Svartheim",
+      "albumTitle": "Battle Rage",
+      "albumKey": "battle-rage",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:31",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://svartheimofficial.bandcamp.com/track/battle-rage",
+      "bandcampEmbedTrackId": "4293119715",
+      "sourcePage": "https://svartheimofficial.bandcamp.com/album/battle-rage",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://svartheimofficial.bandcamp.com/album/battle-rage",
+    "discoveredAt": "2026-09-06T00:40:15.000619+00:00",
+    "importedAt": "2026-09-06T00:43:50.988473+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "svartheimofficial.bandcamp.com",
+    "bandcampBandId": "610624302",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:50.988508+00:00"
+  }
+}

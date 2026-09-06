@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "bae-blade-introducing-baeddies",
+  "artist": "Bae Blade",
+  "bandcampUrl": "https://baeblade.bandcamp.com/album/introducing-baeddies",
+  "releaseTitle": "INTRODUCING BAEDDIES",
+  "releaseDate": "2026-09-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electro",
+    "electronic",
+    "ghettotech",
+    "hard dance music",
+    "house",
+    "techno",
+    "Germany"
+  ],
+  "primaryLocation": "Germany",
+  "bioShort": "Underground darling gone global Bae Blade now launches her own label B. A. E. – Build Around Energy with a typical explosion of edgy brilliance, via her new ‘INTRODUCING…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://baeblade.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:51:15Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "introducing-baeddies",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "introducing-baeddies-3413767002",
+      "title": "Bae Blade - Hey Mami",
+      "artist": "Bae Blade",
+      "albumTitle": "INTRODUCING BAEDDIES",
+      "albumKey": "introducing-baeddies",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:05",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baeblade.bandcamp.com/track/bae-blade-hey-mami",
+      "bandcampEmbedTrackId": "3413767002",
+      "sourcePage": "https://baeblade.bandcamp.com/album/introducing-baeddies",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "introducing-baeddies-760841082",
+      "title": "Bae Blade - WKAT?",
+      "artist": "Bae Blade",
+      "albumTitle": "INTRODUCING BAEDDIES",
+      "albumKey": "introducing-baeddies",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:43",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baeblade.bandcamp.com/track/bae-blade-wkat",
+      "bandcampEmbedTrackId": "760841082",
+      "sourcePage": "https://baeblade.bandcamp.com/album/introducing-baeddies",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "introducing-baeddies-864394839",
+      "title": "Bae Blade - Hey Mami (Laure Croft Remix)",
+      "artist": "Bae Blade",
+      "albumTitle": "INTRODUCING BAEDDIES",
+      "albumKey": "introducing-baeddies",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://baeblade.bandcamp.com/track/bae-blade-hey-mami-laure-croft-remix",
+      "bandcampEmbedTrackId": "864394839",
+      "sourcePage": "https://baeblade.bandcamp.com/album/introducing-baeddies",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://baeblade.bandcamp.com/album/introducing-baeddies",
+    "discoveredAt": "2026-09-06T00:40:44.748980+00:00",
+    "importedAt": "2026-09-06T00:51:15.575267+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "baeblade.bandcamp.com",
+    "bandcampBandId": "462165354",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:51:15.575288+00:00"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "vioflesh-call-me",
+  "artist": "Vioflesh",
+  "bandcampUrl": "https://vioflesh.bandcamp.com/album/call-me",
+  "releaseTitle": "Call me",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "electronic",
+    "coldwave",
+    "electronic music",
+    "synthwave",
+    "techno",
+    "Santiago"
+  ],
+  "primaryLocation": "Santiago, Chile",
+  "bioShort": "One word can bring a ghost back to life! With “Call Me”, VIOFLESH unveils a deeply emotional coldwave track about longing, silence, and the fragile hope of being remembered…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://vioflesh.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:50:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "call-me",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "call-me-4244336603",
+      "title": "Call me",
+      "artist": "Vioflesh",
+      "albumTitle": "Call me",
+      "albumKey": "call-me",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:43",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://vioflesh.bandcamp.com/track/call-me-2",
+      "bandcampEmbedTrackId": "4244336603",
+      "sourcePage": "https://vioflesh.bandcamp.com/album/call-me",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://vioflesh.bandcamp.com/album/call-me",
+    "discoveredAt": "2026-09-06T00:40:36.982741+00:00",
+    "importedAt": "2026-09-06T00:50:27.734457+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "vioflesh.bandcamp.com",
+    "bandcampBandId": "651374017",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:27.734495+00:00"
+  }
+}

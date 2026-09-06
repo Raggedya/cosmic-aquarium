@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "slug": "izar-i-told-the-stars-about-you",
+  "artist": "Izar",
+  "bandcampUrl": "https://imizar.bandcamp.com/album/i-told-the-stars-about-you",
+  "releaseTitle": "i told the stars about you",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "piano",
+    "alternative",
+    "breakcore",
+    "synthwave"
+  ],
+  "primaryLocation": null,
+  "bioShort": "Izar — piano / alternative / breakcore music in Cosmic Aquaria.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://imizar.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:43:27Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-told-the-stars-about-you",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-told-the-stars-about-you-3088500146",
+      "title": "i told the stars about you",
+      "artist": "Izar",
+      "albumTitle": "i told the stars about you",
+      "albumKey": "i-told-the-stars-about-you",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:14",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://imizar.bandcamp.com/track/i-told-the-stars-about-you",
+      "bandcampEmbedTrackId": "3088500146",
+      "sourcePage": "https://imizar.bandcamp.com/album/i-told-the-stars-about-you",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "i-told-the-stars-about-you-3461575089",
+      "title": "i told the stars about you(Slowed)",
+      "artist": "Izar",
+      "albumTitle": "i told the stars about you",
+      "albumKey": "i-told-the-stars-about-you",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:42",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://imizar.bandcamp.com/track/i-told-the-stars-about-you-slowed",
+      "bandcampEmbedTrackId": "3461575089",
+      "sourcePage": "https://imizar.bandcamp.com/album/i-told-the-stars-about-you",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://imizar.bandcamp.com/album/i-told-the-stars-about-you",
+    "discoveredAt": "2026-09-06T00:40:14.999315+00:00",
+    "importedAt": "2026-09-06T00:43:27.352861+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "imizar.bandcamp.com",
+    "bandcampBandId": "3232122953",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:27.352882+00:00"
+  }
+}

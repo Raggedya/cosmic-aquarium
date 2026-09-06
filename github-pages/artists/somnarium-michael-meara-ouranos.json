@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "somnarium-michael-meara-ouranos",
+  "artist": "Somnarium (Michael Meara)",
+  "bandcampUrl": "https://somnarium.bandcamp.com/album/ouranos",
+  "releaseTitle": "Ouranos",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "ambient",
+    "dark ambient",
+    "drone",
+    "minimal",
+    "modern classical",
+    "space music",
+    "Melbourne"
+  ],
+  "primaryLocation": "Melbourne, Australia",
+  "bioShort": "Somnarium (Michael Meara) — dark-ambient / ambient / dark ambient music from Melbourne, Australia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://somnarium.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:43:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ouranos",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ouranos-1234786164",
+      "title": "Titania",
+      "artist": "Somnarium (Michael Meara)",
+      "albumTitle": "Ouranos",
+      "albumKey": "ouranos",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "9:31",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://somnarium.bandcamp.com/track/titania",
+      "bandcampEmbedTrackId": "1234786164",
+      "sourcePage": "https://somnarium.bandcamp.com/album/ouranos",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ouranos-2520911059",
+      "title": "Oberon",
+      "artist": "Somnarium (Michael Meara)",
+      "albumTitle": "Ouranos",
+      "albumKey": "ouranos",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "7:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://somnarium.bandcamp.com/track/oberon",
+      "bandcampEmbedTrackId": "2520911059",
+      "sourcePage": "https://somnarium.bandcamp.com/album/ouranos",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ouranos-3938900475",
+      "title": "Umbriel",
+      "artist": "Somnarium (Michael Meara)",
+      "albumTitle": "Ouranos",
+      "albumKey": "ouranos",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:37",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://somnarium.bandcamp.com/track/umbriel",
+      "bandcampEmbedTrackId": "3938900475",
+      "sourcePage": "https://somnarium.bandcamp.com/album/ouranos",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "ouranos-1156411829",
+      "title": "Miranda",
+      "artist": "Somnarium (Michael Meara)",
+      "albumTitle": "Ouranos",
+      "albumKey": "ouranos",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "21:41",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://somnarium.bandcamp.com/track/miranda",
+      "bandcampEmbedTrackId": "1156411829",
+      "sourcePage": "https://somnarium.bandcamp.com/album/ouranos",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://somnarium.bandcamp.com/album/ouranos",
+    "discoveredAt": "2026-09-06T00:40:14.998634+00:00",
+    "importedAt": "2026-09-06T00:43:10.579548+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "somnarium.bandcamp.com",
+    "bandcampBandId": "3527598507",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:10.579573+00:00"
+  }
+}

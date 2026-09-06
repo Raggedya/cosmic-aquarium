@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "rubber-puppets-datura-plant",
+  "artist": "Rubber Puppets",
+  "bandcampUrl": "https://rubberpuppets.bandcamp.com/album/datura-plant",
+  "releaseTitle": "Datura/Plant",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "alternative",
+    "metal",
+    "phsycedelic",
+    "rock",
+    "desert rock",
+    "sludge metal",
+    "stoner metal",
+    "stoner rock",
+    "Denver"
+  ],
+  "primaryLocation": "Denver, Colorado",
+  "bioShort": "Rubber Puppets — stoner-metal / alternative / metal music from Denver, Colorado.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://rubberpuppets.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:48:33Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "datura-plant",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "datura-plant-2235896940",
+      "title": "Datura",
+      "artist": "Rubber Puppets",
+      "albumTitle": "Datura/Plant",
+      "albumKey": "datura-plant",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:38",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rubberpuppets.bandcamp.com/track/datura",
+      "bandcampEmbedTrackId": "2235896940",
+      "sourcePage": "https://rubberpuppets.bandcamp.com/album/datura-plant",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "datura-plant-1616701314",
+      "title": "Plant",
+      "artist": "Rubber Puppets",
+      "albumTitle": "Datura/Plant",
+      "albumKey": "datura-plant",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:07",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://rubberpuppets.bandcamp.com/track/plant",
+      "bandcampEmbedTrackId": "1616701314",
+      "sourcePage": "https://rubberpuppets.bandcamp.com/album/datura-plant",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://rubberpuppets.bandcamp.com/album/datura-plant",
+    "discoveredAt": "2026-09-06T00:40:15.012464+00:00",
+    "importedAt": "2026-09-06T00:48:33.226341+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "rubberpuppets.bandcamp.com",
+    "bandcampBandId": "1467101460",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:33.226363+00:00"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "siie-sabotage-remixes",
+  "artist": "SIIE",
+  "bandcampUrl": "https://siie.bandcamp.com/album/sabotage-remixes",
+  "releaseTitle": "Sabotage Remixes",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "darkwave",
+    "electronic",
+    "ebm",
+    "techno",
+    "Hamburg"
+  ],
+  "primaryLocation": "Hamburg, Germany",
+  "bioShort": "SIIE — darkwave / electronic / ebm music from Hamburg, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://siie.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:45:05Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "sabotage-remixes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "sabotage-remixes-784676545",
+      "title": "Sabotage (Satellite Edit)",
+      "artist": "SIIE",
+      "albumTitle": "Sabotage Remixes",
+      "albumKey": "sabotage-remixes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:27",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://siie.bandcamp.com/track/sabotage-satellite-edit",
+      "bandcampEmbedTrackId": "784676545",
+      "sourcePage": "https://siie.bandcamp.com/album/sabotage-remixes",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "sabotage-remixes-3165343927",
+      "title": "Sabotage (Madd Rod Remix)",
+      "artist": "SIIE",
+      "albumTitle": "Sabotage Remixes",
+      "albumKey": "sabotage-remixes",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:58",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://siie.bandcamp.com/track/sabotage-madd-rod-remix",
+      "bandcampEmbedTrackId": "3165343927",
+      "sourcePage": "https://siie.bandcamp.com/album/sabotage-remixes",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://siie.bandcamp.com/album/sabotage-remixes",
+    "discoveredAt": "2026-09-06T00:40:15.003398+00:00",
+    "importedAt": "2026-09-06T00:45:05.997854+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "siie.bandcamp.com",
+    "bandcampBandId": "4144959572",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:45:05.997877+00:00"
+  }
+}

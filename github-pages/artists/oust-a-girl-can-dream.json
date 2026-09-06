@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "slug": "oust-a-girl-can-dream",
+  "artist": "OUST",
+  "bandcampUrl": "https://oustpunx.bandcamp.com/album/a-girl-can-dream",
+  "releaseTitle": "A Girl Can Dream",
+  "releaseDate": "2026-07-15 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "punk",
+    "d-beat",
+    "hardcore punk",
+    "Amsterdam"
+  ],
+  "primaryLocation": "Amsterdam, Netherlands",
+  "bioShort": "These three songs are raving rants of utter frustration, an expression of rage and bewilderment. Fuming, furious - and very very annoyed. We are so tired of this shit. In utter…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://oustpunx.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:44:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-girl-can-dream",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-girl-can-dream-1844277492",
+      "title": "Idiots",
+      "artist": "OUST",
+      "albumTitle": "A Girl Can Dream",
+      "albumKey": "a-girl-can-dream",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oustpunx.bandcamp.com/track/idiots",
+      "bandcampEmbedTrackId": "1844277492",
+      "sourcePage": "https://oustpunx.bandcamp.com/album/a-girl-can-dream",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "a-girl-can-dream-2697972995",
+      "title": "Shoot a CEO",
+      "artist": "OUST",
+      "albumTitle": "A Girl Can Dream",
+      "albumKey": "a-girl-can-dream",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "2:56",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oustpunx.bandcamp.com/track/shoot-a-ceo",
+      "bandcampEmbedTrackId": "2697972995",
+      "sourcePage": "https://oustpunx.bandcamp.com/album/a-girl-can-dream",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "a-girl-can-dream-2760785779",
+      "title": "There is only hope in action",
+      "artist": "OUST",
+      "albumTitle": "A Girl Can Dream",
+      "albumKey": "a-girl-can-dream",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:07",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://oustpunx.bandcamp.com/track/there-is-only-hope-in-action",
+      "bandcampEmbedTrackId": "2760785779",
+      "sourcePage": "https://oustpunx.bandcamp.com/album/a-girl-can-dream",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://oustpunx.bandcamp.com/album/a-girl-can-dream",
+    "discoveredAt": "2026-09-06T00:40:15.002772+00:00",
+    "importedAt": "2026-09-06T00:44:50.904208+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "oustpunx.bandcamp.com",
+    "bandcampBandId": "3925798427",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:50.904231+00:00"
+  }
+}

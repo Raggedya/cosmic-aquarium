@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-soundbeams-no-lo-se-a-spanish-affair",
+  "artist": "The Soundbeams",
+  "bandcampUrl": "https://thesoundbeams.bandcamp.com/album/no-lo-s-a-spanish-affair",
+  "releaseTitle": "No Lo Sé (A Spanish affair)",
+  "releaseDate": "2026-07-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "balearic beat",
+    "electronic",
+    "electronic guitar",
+    "spanish electro",
+    "ambient pop",
+    "chillwave",
+    "electronic pop",
+    "midi-guitar",
+    "progressive electronic",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "No guitars, Spanish or otherwise, were used in the making of these tunes ;o)",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thesoundbeams.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:49:24Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "no-lo-se-a-spanish-affair",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "no-lo-se-a-spanish-affair-3545683159",
+      "title": "No Guitar!",
+      "artist": "The Soundbeams",
+      "albumTitle": "No Lo Sé (A Spanish affair)",
+      "albumKey": "no-lo-se-a-spanish-affair",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:26",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thesoundbeams.bandcamp.com/track/no-guitar",
+      "bandcampEmbedTrackId": "3545683159",
+      "sourcePage": "https://thesoundbeams.bandcamp.com/album/no-lo-s-a-spanish-affair",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "no-lo-se-a-spanish-affair-4252541722",
+      "title": "No Lo Se (A Spanish affair)",
+      "artist": "The Soundbeams",
+      "albumTitle": "No Lo Sé (A Spanish affair)",
+      "albumKey": "no-lo-se-a-spanish-affair",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:11",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thesoundbeams.bandcamp.com/track/no-lo-se-a-spanish-affair",
+      "bandcampEmbedTrackId": "4252541722",
+      "sourcePage": "https://thesoundbeams.bandcamp.com/album/no-lo-s-a-spanish-affair",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thesoundbeams.bandcamp.com/album/no-lo-s-a-spanish-affair",
+    "discoveredAt": "2026-09-06T00:40:15.014562+00:00",
+    "importedAt": "2026-09-06T00:49:24.332732+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thesoundbeams.bandcamp.com",
+    "bandcampBandId": "2773074162",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:24.332754+00:00"
+  }
+}

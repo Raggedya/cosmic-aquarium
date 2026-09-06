@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "slug": "glbdom-saint-paul-miracle-ep-dancedealer05",
+  "artist": "𝐆𝐋𝐁𝐃𝐎𝐌",
+  "bandcampUrl": "https://glbdomrec.bandcamp.com/album/saint-paul-miracle-ep-dancedealer05",
+  "releaseTitle": "Saint Paul - Miracle EP [DANCEDEALER05]",
+  "releaseDate": "2026-09-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "deep house",
+    "electronic",
+    "garage house",
+    "house",
+    "uk garage"
+  ],
+  "primaryLocation": null,
+  "bioShort": "French producer Saint Paul returns to GLBDOM with Miracle, a two-track EP that taps into the golden era of the 90s. Blending modern house energy with the addictive swing of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://glbdomrec.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:50:48Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "saint-paul-miracle-ep-dancedealer05",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "saint-paul-miracle-ep-dancedealer05-4268479740",
+      "title": "Miracle",
+      "artist": "𝐆𝐋𝐁𝐃𝐎𝐌",
+      "albumTitle": "Saint Paul - Miracle EP [DANCEDEALER05]",
+      "albumKey": "saint-paul-miracle-ep-dancedealer05",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glbdomrec.bandcamp.com/track/miracle",
+      "bandcampEmbedTrackId": "4268479740",
+      "sourcePage": "https://glbdomrec.bandcamp.com/album/saint-paul-miracle-ep-dancedealer05",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "saint-paul-miracle-ep-dancedealer05-3594194277",
+      "title": "Trippin'",
+      "artist": "𝐆𝐋𝐁𝐃𝐎𝐌",
+      "albumTitle": "Saint Paul - Miracle EP [DANCEDEALER05]",
+      "albumKey": "saint-paul-miracle-ep-dancedealer05",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://glbdomrec.bandcamp.com/album/saint-paul-miracle-ep-dancedealer05",
+      "bandcampEmbedTrackId": "3594194277",
+      "sourcePage": "https://glbdomrec.bandcamp.com/album/saint-paul-miracle-ep-dancedealer05",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://glbdomrec.bandcamp.com/album/saint-paul-miracle-ep-dancedealer05",
+    "discoveredAt": "2026-09-06T00:40:44.747857+00:00",
+    "importedAt": "2026-09-06T00:50:48.671608+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "glbdomrec.bandcamp.com",
+    "bandcampBandId": "576445081",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:48.671630+00:00"
+  }
+}

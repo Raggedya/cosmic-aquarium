@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "slug": "my-bloody-birthday-mb1",
+  "artist": "my bloody birthday",
+  "bandcampUrl": "https://mybloodybirthday.bandcamp.com/album/mb1",
+  "releaseTitle": "MB1",
+  "releaseDate": "2026-08-30 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "alternative",
+    "slacker rock",
+    "Isle of Man"
+  ],
+  "primaryLocation": "Isle of Man",
+  "bioShort": "my bloody birthday — slowcore / alternative / slacker rock music from Isle of Man.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mybloodybirthday.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:49:41Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "mb1",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "mb1-832566567",
+      "title": "intro",
+      "artist": "my bloody birthday",
+      "albumTitle": "MB1",
+      "albumKey": "mb1",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:32",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mybloodybirthday.bandcamp.com/track/intro",
+      "bandcampEmbedTrackId": "832566567",
+      "sourcePage": "https://mybloodybirthday.bandcamp.com/album/mb1",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "mb1-4237444830",
+      "title": "darkautumnnights1",
+      "artist": "my bloody birthday",
+      "albumTitle": "MB1",
+      "albumKey": "mb1",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mybloodybirthday.bandcamp.com/track/darkautumnnights1",
+      "bandcampEmbedTrackId": "4237444830",
+      "sourcePage": "https://mybloodybirthday.bandcamp.com/album/mb1",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "mb1-3282104829",
+      "title": "pills",
+      "artist": "my bloody birthday",
+      "albumTitle": "MB1",
+      "albumKey": "mb1",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:33",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mybloodybirthday.bandcamp.com/track/pills",
+      "bandcampEmbedTrackId": "3282104829",
+      "sourcePage": "https://mybloodybirthday.bandcamp.com/album/mb1",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "mb1-2846746914",
+      "title": "itsgonnabeokay",
+      "artist": "my bloody birthday",
+      "albumTitle": "MB1",
+      "albumKey": "mb1",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "1:13",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mybloodybirthday.bandcamp.com/track/itsgonnabeokay",
+      "bandcampEmbedTrackId": "2846746914",
+      "sourcePage": "https://mybloodybirthday.bandcamp.com/album/mb1",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mybloodybirthday.bandcamp.com/album/mb1",
+    "discoveredAt": "2026-09-06T00:40:15.015529+00:00",
+    "importedAt": "2026-09-06T00:49:41.698873+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mybloodybirthday.bandcamp.com",
+    "bandcampBandId": "3557661903",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:41.698896+00:00"
+  }
+}

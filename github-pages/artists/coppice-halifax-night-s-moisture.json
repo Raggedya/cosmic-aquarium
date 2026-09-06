@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "slug": "coppice-halifax-night-s-moisture",
+  "artist": "Coppice Halifax",
+  "bandcampUrl": "https://coppicehalifax.bandcamp.com/album/nights-moisture",
+  "releaseTitle": "Night's Moisture",
+  "releaseDate": "2014-02-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "idm",
+    "electronic",
+    "ambient",
+    "ambient dub",
+    "ambient techno",
+    "braindance",
+    "deep",
+    "deep techno",
+    "drone",
+    "dub",
+    "dub techno",
+    "minimal",
+    "minimal dub",
+    "minimal techno",
+    "techno",
+    "Cleveland"
+  ],
+  "primaryLocation": "Cleveland, Ohio",
+  "bioShort": "TENTH ANNIVERSARY COPY 2024: It's now been a decade since I completed this surrealistic monolith while sleep deprived in my Botany Bay loft studio in the subtropics of…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://coppicehalifax.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:40:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "night-s-moisture",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "night-s-moisture-284023110",
+      "title": "Night's Moisture",
+      "artist": "Coppice Halifax",
+      "albumTitle": "Night's Moisture",
+      "albumKey": "night-s-moisture",
+      "year": 2014,
+      "trackNumber": 1,
+      "duration": "338:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://coppicehalifax.bandcamp.com/track/nights-moisture",
+      "bandcampEmbedTrackId": "284023110",
+      "sourcePage": "https://coppicehalifax.bandcamp.com/album/nights-moisture",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://coppicehalifax.bandcamp.com/album/nights-moisture",
+    "discoveredAt": "2026-09-06T00:39:55.598424+00:00",
+    "importedAt": "2026-09-06T00:40:57.468314+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "coppicehalifax.bandcamp.com",
+    "bandcampBandId": "2324625353",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:40:57.468337+00:00"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "mainrecords-csms-free-tracks",
+  "artist": "mainrecords",
+  "bandcampUrl": "https://mainrecords-of.bandcamp.com/album/csms-free-tracks",
+  "releaseTitle": "CSMS - Free Tracks",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "electronic",
+    "ambient",
+    "experimental",
+    "house",
+    "techno",
+    "Offenbach"
+  ],
+  "primaryLocation": "Offenbach, Germany",
+  "bioShort": "mainrecords — electro / ambient / experimental music from Offenbach, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mainrecords-of.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:48:17Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "csms-free-tracks",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "csms-free-tracks-1037572228",
+      "title": "Retrohasic",
+      "artist": "mainrecords",
+      "albumTitle": "CSMS - Free Tracks",
+      "albumKey": "csms-free-tracks",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mainrecords-of.bandcamp.com/track/retrohasic",
+      "bandcampEmbedTrackId": "1037572228",
+      "sourcePage": "https://mainrecords-of.bandcamp.com/album/csms-free-tracks",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mainrecords-of.bandcamp.com/album/csms-free-tracks",
+    "discoveredAt": "2026-09-06T00:40:15.011772+00:00",
+    "importedAt": "2026-09-06T00:48:17.454313+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mainrecords-of.bandcamp.com",
+    "bandcampBandId": "871181867",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:17.454334+00:00"
+  }
+}

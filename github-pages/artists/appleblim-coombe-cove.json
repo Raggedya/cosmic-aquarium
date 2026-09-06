@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "appleblim-coombe-cove",
+  "artist": "Appleblim",
+  "bandcampUrl": "https://appleblim.bandcamp.com/album/coombe-cove",
+  "releaseTitle": "Coombe Cove",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "techno",
+    "electronic",
+    "ambient",
+    "bass music",
+    "dubstep",
+    "electronica",
+    "Berlin"
+  ],
+  "primaryLocation": "Berlin, Germany",
+  "bioShort": "Appleblim — techno / ambient / bass music music from Berlin, Germany.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://appleblim.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:47:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "coombe-cove",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "coombe-cove-887489149",
+      "title": "Pulsed Dub",
+      "artist": "Appleblim",
+      "albumTitle": "Coombe Cove",
+      "albumKey": "coombe-cove",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:18",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://appleblim.bandcamp.com/track/pulsed-dub",
+      "bandcampEmbedTrackId": "887489149",
+      "sourcePage": "https://appleblim.bandcamp.com/album/coombe-cove",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "coombe-cove-2841810901",
+      "title": "Coombe Cove Dub",
+      "artist": "Appleblim",
+      "albumTitle": "Coombe Cove",
+      "albumKey": "coombe-cove",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://appleblim.bandcamp.com/track/coombe-cove-dub",
+      "bandcampEmbedTrackId": "2841810901",
+      "sourcePage": "https://appleblim.bandcamp.com/album/coombe-cove",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "coombe-cove-435268583",
+      "title": "Scavengers Dub",
+      "artist": "Appleblim",
+      "albumTitle": "Coombe Cove",
+      "albumKey": "coombe-cove",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:10",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://appleblim.bandcamp.com/track/scavengers-dub",
+      "bandcampEmbedTrackId": "435268583",
+      "sourcePage": "https://appleblim.bandcamp.com/album/coombe-cove",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "coombe-cove-648748415",
+      "title": "Xenon Dub",
+      "artist": "Appleblim",
+      "albumTitle": "Coombe Cove",
+      "albumKey": "coombe-cove",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "8:58",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://appleblim.bandcamp.com/track/xenon-dub",
+      "bandcampEmbedTrackId": "648748415",
+      "sourcePage": "https://appleblim.bandcamp.com/album/coombe-cove",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://appleblim.bandcamp.com/album/coombe-cove",
+    "discoveredAt": "2026-09-06T00:40:15.010729+00:00",
+    "importedAt": "2026-09-06T00:47:53.668897+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "appleblim.bandcamp.com",
+    "bandcampBandId": "849208131",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:47:53.668919+00:00"
+  }
+}

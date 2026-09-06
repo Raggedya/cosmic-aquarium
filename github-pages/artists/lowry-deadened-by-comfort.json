@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "slug": "lowry-deadened-by-comfort",
+  "artist": "Lowry",
+  "bandcampUrl": "https://lowrynoise.bandcamp.com/album/deadened-by-comfort",
+  "releaseTitle": "Deadened By Comfort",
+  "releaseDate": "2026-08-26 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "experimental",
+    "ambient",
+    "avant-garde",
+    "guitar",
+    "guitar noise",
+    "noise",
+    "post-hardcore",
+    "postmetal",
+    "Richmond"
+  ],
+  "primaryLocation": "Richmond, Virginia",
+  "bioShort": "Lowry — post-metal / experimental / ambient music from Richmond, Virginia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lowrynoise.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:50:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "deadened-by-comfort",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "deadened-by-comfort-1172948667",
+      "title": "Deadened By Comfort",
+      "artist": "Lowry",
+      "albumTitle": "Deadened By Comfort",
+      "albumKey": "deadened-by-comfort",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:58",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lowrynoise.bandcamp.com/track/deadened-by-comfort",
+      "bandcampEmbedTrackId": "1172948667",
+      "sourcePage": "https://lowrynoise.bandcamp.com/album/deadened-by-comfort",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lowrynoise.bandcamp.com/album/deadened-by-comfort",
+    "discoveredAt": "2026-09-06T00:40:19.286657+00:00",
+    "importedAt": "2026-09-06T00:50:09.048151+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lowrynoise.bandcamp.com",
+    "bandcampBandId": "174021085",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:09.048175+00:00"
+  }
+}

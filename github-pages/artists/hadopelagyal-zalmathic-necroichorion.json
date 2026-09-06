@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "hadopelagyal-zalmathic-necroichorion",
+  "artist": "HADOPELAGYAL",
+  "bandcampUrl": "https://hadopelagyal.bandcamp.com/album/zalmathic-necroichorion",
+  "releaseTitle": "Zalmathic Necroichorion",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "metal",
+    "black metal",
+    "death metal",
+    "raw black metal",
+    "Germany"
+  ],
+  "primaryLocation": "Germany",
+  "bioShort": "4-track EP",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://hadopelagyal.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:50:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "zalmathic-necroichorion",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "zalmathic-necroichorion-4099485677",
+      "title": "Heptaporous Deathchant",
+      "artist": "HADOPELAGYAL",
+      "albumTitle": "Zalmathic Necroichorion",
+      "albumKey": "zalmathic-necroichorion",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hadopelagyal.bandcamp.com/track/heptaporous-deathchant",
+      "bandcampEmbedTrackId": "4099485677",
+      "sourcePage": "https://hadopelagyal.bandcamp.com/album/zalmathic-necroichorion",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "zalmathic-necroichorion-523875921",
+      "title": "Dakryopneumatic Canticles",
+      "artist": "HADOPELAGYAL",
+      "albumTitle": "Zalmathic Necroichorion",
+      "albumKey": "zalmathic-necroichorion",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:34",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hadopelagyal.bandcamp.com/track/dakryopneumatic-canticles",
+      "bandcampEmbedTrackId": "523875921",
+      "sourcePage": "https://hadopelagyal.bandcamp.com/album/zalmathic-necroichorion",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "zalmathic-necroichorion-3032440716",
+      "title": "Tombwake Liturgeia",
+      "artist": "HADOPELAGYAL",
+      "albumTitle": "Zalmathic Necroichorion",
+      "albumKey": "zalmathic-necroichorion",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hadopelagyal.bandcamp.com/track/tombwake-liturgeia",
+      "bandcampEmbedTrackId": "3032440716",
+      "sourcePage": "https://hadopelagyal.bandcamp.com/album/zalmathic-necroichorion",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "zalmathic-necroichorion-3380268975",
+      "title": "Dreadveil Ereboklast",
+      "artist": "HADOPELAGYAL",
+      "albumTitle": "Zalmathic Necroichorion",
+      "albumKey": "zalmathic-necroichorion",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:48",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://hadopelagyal.bandcamp.com/track/dreadveil-ereboklast",
+      "bandcampEmbedTrackId": "3380268975",
+      "sourcePage": "https://hadopelagyal.bandcamp.com/album/zalmathic-necroichorion",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://hadopelagyal.bandcamp.com/album/zalmathic-necroichorion",
+    "discoveredAt": "2026-09-06T00:40:15.728980+00:00",
+    "importedAt": "2026-09-06T00:50:04.992783+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "hadopelagyal.bandcamp.com",
+    "bandcampBandId": "2161079655",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:04.992806+00:00"
+  }
+}

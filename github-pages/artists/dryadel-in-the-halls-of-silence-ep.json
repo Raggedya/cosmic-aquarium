@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "dryadel-in-the-halls-of-silence-ep",
+  "artist": "Dryadel",
+  "bandcampUrl": "https://dryadel.bandcamp.com/album/in-the-halls-of-silence-ep",
+  "releaseTitle": "В чертогах тишины (In the Halls of Silence) (EP)",
+  "releaseDate": "2026-08-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "ambient",
+    "folk",
+    "acoustic folk",
+    "dark ambient",
+    "dark folk",
+    "dungeon synth",
+    "neofolk",
+    "Krasnodar"
+  ],
+  "primaryLocation": "Krasnodar, Russia",
+  "bioShort": "Know that those Halls lie buried deeper than the roots of the world, in a darkness that has never known light. The silence there is unsteady and viscous, like tar — it shrouds…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dryadel.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:44:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "in-the-halls-of-silence-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "in-the-halls-of-silence-ep-2720687470",
+      "title": "Шёпот колдовских ветров (Whisper of Enchanted Winds)",
+      "artist": "Dryadel",
+      "albumTitle": "В чертогах тишины (In the Halls of Silence) (EP)",
+      "albumKey": "in-the-halls-of-silence-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dryadel.bandcamp.com/track/whisper-of-enchanted-winds",
+      "bandcampEmbedTrackId": "2720687470",
+      "sourcePage": "https://dryadel.bandcamp.com/album/in-the-halls-of-silence-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "in-the-halls-of-silence-ep-2860401020",
+      "title": "Ледяные костры (Frostfires)",
+      "artist": "Dryadel",
+      "albumTitle": "В чертогах тишины (In the Halls of Silence) (EP)",
+      "albumKey": "in-the-halls-of-silence-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "8:43",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dryadel.bandcamp.com/track/frostfires",
+      "bandcampEmbedTrackId": "2860401020",
+      "sourcePage": "https://dryadel.bandcamp.com/album/in-the-halls-of-silence-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "in-the-halls-of-silence-ep-4064451902",
+      "title": "В чертогах тишины (In the Halls of Silence)",
+      "artist": "Dryadel",
+      "albumTitle": "В чертогах тишины (In the Halls of Silence) (EP)",
+      "albumKey": "in-the-halls-of-silence-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:11",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dryadel.bandcamp.com/track/in-the-halls-of-silence",
+      "bandcampEmbedTrackId": "4064451902",
+      "sourcePage": "https://dryadel.bandcamp.com/album/in-the-halls-of-silence-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://dryadel.bandcamp.com/album/in-the-halls-of-silence-ep",
+    "discoveredAt": "2026-09-06T00:40:15.002891+00:00",
+    "importedAt": "2026-09-06T00:44:53.842122+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "dryadel.bandcamp.com",
+    "bandcampBandId": "2288686254",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:53.842144+00:00"
+  }
+}

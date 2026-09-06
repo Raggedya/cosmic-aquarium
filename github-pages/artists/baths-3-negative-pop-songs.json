@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "slug": "baths-3-negative-pop-songs",
+  "artist": "Baths",
+  "bandcampUrl": "https://bathsmusic.bandcamp.com/album/3-negative-pop-songs",
+  "releaseTitle": "3 Negative Pop(?) Songs",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "experimental",
+    "electronic",
+    "electronic pop",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "13:54 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Yumyucker (Official Video): https://youtu.be/1E-I0-SdWO0 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "strange"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bathsmusic.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:46:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "3-negative-pop-songs",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "3-negative-pop-songs-869825145",
+      "title": "Wrecker",
+      "artist": "Baths",
+      "albumTitle": "3 Negative Pop(?) Songs",
+      "albumKey": "3-negative-pop-songs",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:42",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bathsmusic.bandcamp.com/track/wrecker",
+      "bandcampEmbedTrackId": "869825145",
+      "sourcePage": "https://bathsmusic.bandcamp.com/album/3-negative-pop-songs",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "3-negative-pop-songs-3899826820",
+      "title": "Yumyucker",
+      "artist": "Baths",
+      "albumTitle": "3 Negative Pop(?) Songs",
+      "albumKey": "3-negative-pop-songs",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bathsmusic.bandcamp.com/track/yumyucker",
+      "bandcampEmbedTrackId": "3899826820",
+      "sourcePage": "https://bathsmusic.bandcamp.com/album/3-negative-pop-songs",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "3-negative-pop-songs-3758431150",
+      "title": "The Fawn",
+      "artist": "Baths",
+      "albumTitle": "3 Negative Pop(?) Songs",
+      "albumKey": "3-negative-pop-songs",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:41",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bathsmusic.bandcamp.com/track/the-fawn",
+      "bandcampEmbedTrackId": "3758431150",
+      "sourcePage": "https://bathsmusic.bandcamp.com/album/3-negative-pop-songs",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bathsmusic.bandcamp.com/album/3-negative-pop-songs",
+    "discoveredAt": "2026-09-06T00:40:15.007443+00:00",
+    "importedAt": "2026-09-06T00:46:40.259801+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bathsmusic.bandcamp.com",
+    "bandcampBandId": "2477116352",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:46:40.259824+00:00"
+  }
+}

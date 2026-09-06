@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "enrico-dragoni-pure-sleek-play-under-pressure-pctl002",
+  "artist": "Enrico Dragoni",
+  "bandcampUrl": "https://dragoni.bandcamp.com/album/pure-sleek-play-under-pressure-pctl002",
+  "releaseTitle": "Pure Sleek - Play Under Pressure (PCTL002)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "2-step",
+    "2step",
+    "4x4",
+    "4x4 garage",
+    "electronic",
+    "ukg",
+    "garage",
+    "speed garage",
+    "uk garage",
+    "ukgarage",
+    "Brussels"
+  ],
+  "primaryLocation": "Brussels, Belgium",
+  "bioShort": "Enrico Dragoni — house / 2-step / 2step music from Brussels, Belgium.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dragoni.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:43:23Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "pure-sleek-play-under-pressure-pctl002",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "pure-sleek-play-under-pressure-pctl002-1833840536",
+      "title": "Pure Sleek - Einstein",
+      "artist": "Enrico Dragoni",
+      "albumTitle": "Pure Sleek - Play Under Pressure (PCTL002)",
+      "albumKey": "pure-sleek-play-under-pressure-pctl002",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dragoni.bandcamp.com/track/pure-sleek-einstein",
+      "bandcampEmbedTrackId": "1833840536",
+      "sourcePage": "https://dragoni.bandcamp.com/album/pure-sleek-play-under-pressure-pctl002",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "pure-sleek-play-under-pressure-pctl002-4121244531",
+      "title": "Pure Sleek - Move Yo Feet",
+      "artist": "Enrico Dragoni",
+      "albumTitle": "Pure Sleek - Play Under Pressure (PCTL002)",
+      "albumKey": "pure-sleek-play-under-pressure-pctl002",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:29",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dragoni.bandcamp.com/track/pure-sleek-move-yo-feet",
+      "bandcampEmbedTrackId": "4121244531",
+      "sourcePage": "https://dragoni.bandcamp.com/album/pure-sleek-play-under-pressure-pctl002",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "pure-sleek-play-under-pressure-pctl002-1624033714",
+      "title": "Pure Sleek - Special",
+      "artist": "Enrico Dragoni",
+      "albumTitle": "Pure Sleek - Play Under Pressure (PCTL002)",
+      "albumKey": "pure-sleek-play-under-pressure-pctl002",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:01",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dragoni.bandcamp.com/track/pure-sleek-special",
+      "bandcampEmbedTrackId": "1624033714",
+      "sourcePage": "https://dragoni.bandcamp.com/album/pure-sleek-play-under-pressure-pctl002",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "pure-sleek-play-under-pressure-pctl002-3030761702",
+      "title": "Pure Sleek - Need To Go",
+      "artist": "Enrico Dragoni",
+      "albumTitle": "Pure Sleek - Play Under Pressure (PCTL002)",
+      "albumKey": "pure-sleek-play-under-pressure-pctl002",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:24",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dragoni.bandcamp.com/track/pure-sleek-need-to-go",
+      "bandcampEmbedTrackId": "3030761702",
+      "sourcePage": "https://dragoni.bandcamp.com/album/pure-sleek-play-under-pressure-pctl002",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://dragoni.bandcamp.com/album/pure-sleek-play-under-pressure-pctl002",
+    "discoveredAt": "2026-09-06T00:40:14.999189+00:00",
+    "importedAt": "2026-09-06T00:43:23.637464+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "dragoni.bandcamp.com",
+    "bandcampBandId": "2579442959",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:23.637499+00:00"
+  }
+}

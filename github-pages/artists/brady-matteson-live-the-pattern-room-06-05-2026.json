@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "brady-matteson-live-the-pattern-room-06-05-2026",
+  "artist": "Brady Matteson",
+  "bandcampUrl": "https://bradymatteson.bandcamp.com/album/live-the-pattern-room-06-05-2026",
+  "releaseTitle": "LIVE - THE PATTERN ROOM 06_05_2026",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "minimal",
+    "ambient",
+    "ambient electronic",
+    "dark ambient",
+    "experimental",
+    "synth",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "My performance from Minneapolis during the AMBIENCE ACROSS AMERICA Spring 2025 leg. More recordings from these performances will surface in the near future. Special thank you…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bradymatteson.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:50:19Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "live-the-pattern-room-06-05-2026",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "live-the-pattern-room-06-05-2026-3034657565",
+      "title": "LIVE - THE PATTERN ROOM 06_05_2026",
+      "artist": "Brady Matteson",
+      "albumTitle": "LIVE - THE PATTERN ROOM 06_05_2026",
+      "albumKey": "live-the-pattern-room-06-05-2026",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "32:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bradymatteson.bandcamp.com/track/live-the-pattern-room-06-05-2026",
+      "bandcampEmbedTrackId": "3034657565",
+      "sourcePage": "https://bradymatteson.bandcamp.com/album/live-the-pattern-room-06-05-2026",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bradymatteson.bandcamp.com/album/live-the-pattern-room-06-05-2026",
+    "discoveredAt": "2026-09-06T00:40:31.348338+00:00",
+    "importedAt": "2026-09-06T00:50:19.902270+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bradymatteson.bandcamp.com",
+    "bandcampBandId": "3847061046",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:19.902292+00:00"
+  }
+}

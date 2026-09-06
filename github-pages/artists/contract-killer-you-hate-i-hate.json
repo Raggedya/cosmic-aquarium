@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "contract-killer-you-hate-i-hate",
+  "artist": "CONTRACT KILLER",
+  "bandcampUrl": "https://contractkiller-ms.bandcamp.com/album/you-hate-i-hate",
+  "releaseTitle": "You Hate I Hate",
+  "releaseDate": "2026-09-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "grind",
+    "metal",
+    "death",
+    "pv",
+    "California"
+  ],
+  "primaryLocation": "California",
+  "bioShort": "CONTRACT KILLER — hardcore / grind / metal music from California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://contractkiller-ms.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:49:38Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "you-hate-i-hate",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "you-hate-i-hate-2429471397",
+      "title": "Corrupt",
+      "artist": "CONTRACT KILLER",
+      "albumTitle": "You Hate I Hate",
+      "albumKey": "you-hate-i-hate",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://contractkiller-ms.bandcamp.com/album/you-hate-i-hate",
+      "bandcampEmbedTrackId": "2429471397",
+      "sourcePage": "https://contractkiller-ms.bandcamp.com/album/you-hate-i-hate",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "you-hate-i-hate-2704243120",
+      "title": "You Hate I Hate",
+      "artist": "CONTRACT KILLER",
+      "albumTitle": "You Hate I Hate",
+      "albumKey": "you-hate-i-hate",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://contractkiller-ms.bandcamp.com/album/you-hate-i-hate",
+      "bandcampEmbedTrackId": "2704243120",
+      "sourcePage": "https://contractkiller-ms.bandcamp.com/album/you-hate-i-hate",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "you-hate-i-hate-808871589",
+      "title": "KSKY",
+      "artist": "CONTRACT KILLER",
+      "albumTitle": "You Hate I Hate",
+      "albumKey": "you-hate-i-hate",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "0:00",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://contractkiller-ms.bandcamp.com/album/you-hate-i-hate",
+      "bandcampEmbedTrackId": "808871589",
+      "sourcePage": "https://contractkiller-ms.bandcamp.com/album/you-hate-i-hate",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "you-hate-i-hate-190462693",
+      "title": "The Unending Break",
+      "artist": "CONTRACT KILLER",
+      "albumTitle": "You Hate I Hate",
+      "albumKey": "you-hate-i-hate",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "2:01",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://contractkiller-ms.bandcamp.com/track/the-unending-break",
+      "bandcampEmbedTrackId": "190462693",
+      "sourcePage": "https://contractkiller-ms.bandcamp.com/album/you-hate-i-hate",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://contractkiller-ms.bandcamp.com/album/you-hate-i-hate",
+    "discoveredAt": "2026-09-06T00:40:15.015356+00:00",
+    "importedAt": "2026-09-06T00:49:38.018316+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "contractkiller-ms.bandcamp.com",
+    "bandcampBandId": "2520153836",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:38.018341+00:00"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "dimscua-grief-silence-ep",
+  "artist": "Dimscûa",
+  "bandcampUrl": "https://dimscua.bandcamp.com/album/grief-silence-ep",
+  "releaseTitle": "Grief & Silence - EP",
+  "releaseDate": "2026-11-02 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "atmospheric sludge metal",
+    "blackened doom",
+    "doom metal",
+    "post-rock",
+    "United Kingdom"
+  ],
+  "primaryLocation": "England, UK",
+  "bioShort": "Dimscûa — post-metal / metal / atmospheric sludge metal music from England, UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://dimscua.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:40:50Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "grief-silence-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "grief-silence-ep-850339401",
+      "title": "Track 1",
+      "artist": "Dimscûa",
+      "albumTitle": "Grief & Silence - EP",
+      "albumKey": "grief-silence-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dimscua.bandcamp.com/album/grief-silence-ep",
+      "bandcampEmbedTrackId": "850339401",
+      "sourcePage": "https://dimscua.bandcamp.com/album/grief-silence-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "grief-silence-ep-1232832959",
+      "title": "Track 2 - Interlude",
+      "artist": "Dimscûa",
+      "albumTitle": "Grief & Silence - EP",
+      "albumKey": "grief-silence-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dimscua.bandcamp.com/album/grief-silence-ep",
+      "bandcampEmbedTrackId": "1232832959",
+      "sourcePage": "https://dimscua.bandcamp.com/album/grief-silence-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "grief-silence-ep-870349965",
+      "title": "Sangre",
+      "artist": "Dimscûa",
+      "albumTitle": "Grief & Silence - EP",
+      "albumKey": "grief-silence-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:14",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://dimscua.bandcamp.com/track/sangre",
+      "bandcampEmbedTrackId": "870349965",
+      "sourcePage": "https://dimscua.bandcamp.com/album/grief-silence-ep",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://dimscua.bandcamp.com/album/grief-silence-ep",
+    "discoveredAt": "2026-09-06T00:39:49.088655+00:00",
+    "importedAt": "2026-09-06T00:40:50.895118+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "dimscua.bandcamp.com",
+    "bandcampBandId": "1061830207",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:40:50.895140+00:00"
+  }
+}

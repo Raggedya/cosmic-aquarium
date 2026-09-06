@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "firtyzin-digital-disk-ep",
+  "artist": "Firtyzin",
+  "bandcampUrl": "https://firtyzin.bandcamp.com/album/digital-disk-ep",
+  "releaseTitle": "Digital Disk EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "electronic",
+    "house",
+    "minimal",
+    "nu disco",
+    "tech house",
+    "Posadas"
+  ],
+  "primaryLocation": "Posadas, Argentina",
+  "bioShort": "Firtyzin — breakbeat / house / minimal music from Posadas, Argentina.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://firtyzin.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:41:18Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "digital-disk-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "digital-disk-ep-3772959561",
+      "title": "Old or modern (Original Mix)",
+      "artist": "Firtyzin",
+      "albumTitle": "Digital Disk EP",
+      "albumKey": "digital-disk-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "7:08",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://firtyzin.bandcamp.com/track/old-or-modern-original-mix",
+      "bandcampEmbedTrackId": "3772959561",
+      "sourcePage": "https://firtyzin.bandcamp.com/album/digital-disk-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "digital-disk-ep-1050939631",
+      "title": "Digital Disk (Original Mix)",
+      "artist": "Firtyzin",
+      "albumTitle": "Digital Disk EP",
+      "albumKey": "digital-disk-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:46",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://firtyzin.bandcamp.com/track/digital-disk-original-mix",
+      "bandcampEmbedTrackId": "1050939631",
+      "sourcePage": "https://firtyzin.bandcamp.com/album/digital-disk-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "digital-disk-ep-2690638484",
+      "title": "Bring it (Original Mix)",
+      "artist": "Firtyzin",
+      "albumTitle": "Digital Disk EP",
+      "albumKey": "digital-disk-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:40",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://firtyzin.bandcamp.com/track/bring-it-original-mix",
+      "bandcampEmbedTrackId": "2690638484",
+      "sourcePage": "https://firtyzin.bandcamp.com/album/digital-disk-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "digital-disk-ep-2465878829",
+      "title": "Soft w/ SNZ (Original Mix)",
+      "artist": "Firtyzin",
+      "albumTitle": "Digital Disk EP",
+      "albumKey": "digital-disk-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:42",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://firtyzin.bandcamp.com/track/soft-w-snz-original-mix",
+      "bandcampEmbedTrackId": "2465878829",
+      "sourcePage": "https://firtyzin.bandcamp.com/album/digital-disk-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://firtyzin.bandcamp.com/album/digital-disk-ep",
+    "discoveredAt": "2026-09-06T00:40:14.994163+00:00",
+    "importedAt": "2026-09-06T00:41:18.315946+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "firtyzin.bandcamp.com",
+    "bandcampBandId": "2307128831",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:18.315967+00:00"
+  }
+}

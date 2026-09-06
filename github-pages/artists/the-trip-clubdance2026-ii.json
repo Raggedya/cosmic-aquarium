@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-trip-clubdance2026-ii",
+  "artist": "The Trip",
+  "bandcampUrl": "https://thetriplondon.bandcamp.com/album/clubdance2026-ii",
+  "releaseTitle": "Clubdance2026 II",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "tech house",
+    "uk garage",
+    "electronic music",
+    "techno",
+    "techno house",
+    "London"
+  ],
+  "primaryLocation": "London, UK",
+  "bioShort": "CLIPS: https://soundcloud.com/tessellatelondon/tess027/s-w4ulU5LBByJ",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thetriplondon.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:42:03Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "clubdance2026-ii",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "clubdance2026-ii-2015265324",
+      "title": "Vibration",
+      "artist": "The Trip",
+      "albumTitle": "Clubdance2026 II",
+      "albumKey": "clubdance2026-ii",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thetriplondon.bandcamp.com/track/vibration",
+      "bandcampEmbedTrackId": "2015265324",
+      "sourcePage": "https://thetriplondon.bandcamp.com/album/clubdance2026-ii",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "clubdance2026-ii-2000900833",
+      "title": "Party People In The House",
+      "artist": "The Trip",
+      "albumTitle": "Clubdance2026 II",
+      "albumKey": "clubdance2026-ii",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:36",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thetriplondon.bandcamp.com/track/party-people-in-the-house",
+      "bandcampEmbedTrackId": "2000900833",
+      "sourcePage": "https://thetriplondon.bandcamp.com/album/clubdance2026-ii",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "clubdance2026-ii-3197585726",
+      "title": "Mind Games",
+      "artist": "The Trip",
+      "albumTitle": "Clubdance2026 II",
+      "albumKey": "clubdance2026-ii",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:35",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thetriplondon.bandcamp.com/track/mind-games",
+      "bandcampEmbedTrackId": "3197585726",
+      "sourcePage": "https://thetriplondon.bandcamp.com/album/clubdance2026-ii",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "clubdance2026-ii-679028806",
+      "title": "La Musica",
+      "artist": "The Trip",
+      "albumTitle": "Clubdance2026 II",
+      "albumKey": "clubdance2026-ii",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:28",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thetriplondon.bandcamp.com/track/la-musica",
+      "bandcampEmbedTrackId": "679028806",
+      "sourcePage": "https://thetriplondon.bandcamp.com/album/clubdance2026-ii",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thetriplondon.bandcamp.com/album/clubdance2026-ii",
+    "discoveredAt": "2026-09-06T00:40:14.996272+00:00",
+    "importedAt": "2026-09-06T00:42:03.388596+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thetriplondon.bandcamp.com",
+    "bandcampBandId": "3172947357",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:42:03.388617+00:00"
+  }
+}

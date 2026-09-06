@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "ephat-mujuru-the-spirit-of-the-people-mbavaira",
+  "artist": "Ephat Mujuru & the Spirit of the People",
+  "bandcampUrl": "https://ephatmujuru.bandcamp.com/album/mbavaira",
+  "releaseTitle": "Mbavaira",
+  "releaseDate": "2021-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "acoustic",
+    "mbira",
+    "percussion",
+    "shona",
+    "traditional",
+    "zimbabwe",
+    "Harare"
+  ],
+  "primaryLocation": "Harare, Zimbabwe",
+  "bioShort": "Mbavaira (1983) “When the mbira is played, it brings the two worlds together, the world of our ancestors and the world of today.” Ephat Mujuru (1950-2001) Ephat Mujuru…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ephatmujuru.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:43:26Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "mbavaira",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "mbavaira-390476351",
+      "title": "Mbavaira",
+      "artist": "Ephat Mujuru & the Spirit of the People",
+      "albumTitle": "Mbavaira",
+      "albumKey": "mbavaira",
+      "year": 2021,
+      "trackNumber": 1,
+      "duration": "5:53",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ephatmujuru.bandcamp.com/track/mbavaira",
+      "bandcampEmbedTrackId": "390476351",
+      "sourcePage": "https://ephatmujuru.bandcamp.com/album/mbavaira",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "mbavaira-1113142506",
+      "title": "Kuenda Mbire",
+      "artist": "Ephat Mujuru & the Spirit of the People",
+      "albumTitle": "Mbavaira",
+      "albumKey": "mbavaira",
+      "year": 2021,
+      "trackNumber": 2,
+      "duration": "5:47",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ephatmujuru.bandcamp.com/track/kuenda-mbire",
+      "bandcampEmbedTrackId": "1113142506",
+      "sourcePage": "https://ephatmujuru.bandcamp.com/album/mbavaira",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "mbavaira-3445966858",
+      "title": "Mudande",
+      "artist": "Ephat Mujuru & the Spirit of the People",
+      "albumTitle": "Mbavaira",
+      "albumKey": "mbavaira",
+      "year": 2021,
+      "trackNumber": 3,
+      "duration": "5:58",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ephatmujuru.bandcamp.com/track/mudande",
+      "bandcampEmbedTrackId": "3445966858",
+      "sourcePage": "https://ephatmujuru.bandcamp.com/album/mbavaira",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "mbavaira-3408912223",
+      "title": "Nyama Musango",
+      "artist": "Ephat Mujuru & the Spirit of the People",
+      "albumTitle": "Mbavaira",
+      "albumKey": "mbavaira",
+      "year": 2021,
+      "trackNumber": 4,
+      "duration": "5:19",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ephatmujuru.bandcamp.com/track/nyama-musango",
+      "bandcampEmbedTrackId": "3408912223",
+      "sourcePage": "https://ephatmujuru.bandcamp.com/album/mbavaira",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ephatmujuru.bandcamp.com/album/mbavaira",
+    "discoveredAt": "2026-09-06T00:40:14.999268+00:00",
+    "importedAt": "2026-09-06T00:43:26.036068+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ephatmujuru.bandcamp.com",
+    "bandcampBandId": "3789946825",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:26.036091+00:00"
+  }
+}

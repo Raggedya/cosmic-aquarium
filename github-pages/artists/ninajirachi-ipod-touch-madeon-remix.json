@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "ninajirachi-ipod-touch-madeon-remix",
+  "artist": "Ninajirachi",
+  "bandcampUrl": "https://ninajirachi.bandcamp.com/album/ipod-touch-madeon-remix",
+  "releaseTitle": "iPod Touch (Madeon Remix)",
+  "releaseDate": "2026-08-26 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "electronic",
+    "beats",
+    "dance",
+    "electro",
+    "electronica",
+    "pop",
+    "Sydney"
+  ],
+  "primaryLocation": "Sydney, Australia",
+  "bioShort": "╔══╗ ║██║ ║(O)║♫ ♪ ♫ ♪ ╚══╝ ▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █ (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥) (╥﹏╥)…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://ninajirachi.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:43:39Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ipod-touch-madeon-remix",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ipod-touch-madeon-remix-3297617169",
+      "title": "iPod Touch (Madeon Remix)",
+      "artist": "Ninajirachi",
+      "albumTitle": "iPod Touch (Madeon Remix)",
+      "albumKey": "ipod-touch-madeon-remix",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:34",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://ninajirachi.bandcamp.com/track/ipod-touch-madeon-remix",
+      "bandcampEmbedTrackId": "3297617169",
+      "sourcePage": "https://ninajirachi.bandcamp.com/album/ipod-touch-madeon-remix",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://ninajirachi.bandcamp.com/album/ipod-touch-madeon-remix",
+    "discoveredAt": "2026-09-06T00:40:15.000070+00:00",
+    "importedAt": "2026-09-06T00:43:39.078473+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "ninajirachi.bandcamp.com",
+    "bandcampBandId": "2313244114",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:39.078509+00:00"
+  }
+}

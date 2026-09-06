@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "slug": "enigmatic-goth-new-orleans-crimson-bayou",
+  "artist": "Enigmatic Goth",
+  "bandcampUrl": "https://enigmaticgoth.bandcamp.com/album/new-orleans-crimson-bayou",
+  "releaseTitle": "New Orleans Crimson Bayou",
+  "releaseDate": "2026-06-10 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "electronic",
+    "dark americana",
+    "darkwave",
+    "enigmatic goth",
+    "goth",
+    "goth cities",
+    "jazz noir",
+    "new orleans",
+    "post-punk",
+    "southern gothic",
+    "swamp blues",
+    "voodoo",
+    "São Paulo"
+  ],
+  "primaryLocation": "São Paulo, Brazil",
+  "bioShort": "The fifth station in the 'Goth Cities' series. 'New Orleans Crimson Bayou' marks a drastic shift into the murky depths of Southern Gothic and Swamp Blues. Moving away from…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://enigmaticgoth.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:45:28Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "new-orleans-crimson-bayou",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "new-orleans-crimson-bayou-363282365",
+      "title": "New Orleans Crimson Bayou",
+      "artist": "Enigmatic Goth",
+      "albumTitle": "New Orleans Crimson Bayou",
+      "albumKey": "new-orleans-crimson-bayou",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:09",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://enigmaticgoth.bandcamp.com/track/new-orleans-crimson-bayou",
+      "bandcampEmbedTrackId": "363282365",
+      "sourcePage": "https://enigmaticgoth.bandcamp.com/album/new-orleans-crimson-bayou",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://enigmaticgoth.bandcamp.com/album/new-orleans-crimson-bayou",
+    "discoveredAt": "2026-09-06T00:40:15.004513+00:00",
+    "importedAt": "2026-09-06T00:45:28.767457+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "enigmaticgoth.bandcamp.com",
+    "bandcampBandId": "471099662",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:45:28.767479+00:00"
+  }
+}

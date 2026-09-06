@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "slug": "mortuary-cave-darkness-echoes",
+  "artist": "Mortuary Cave",
+  "bandcampUrl": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+  "releaseTitle": "Darkness Echoes",
+  "releaseDate": "2026-09-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "sludge",
+    "metal",
+    "rock",
+    "crust punk",
+    "death doom",
+    "Canada"
+  ],
+  "primaryLocation": "British Columbia",
+  "bioShort": "All songs written and performed by: Mortuary Cave Dave Hardy- Guitar/Vocals Shane Carmichael- Bass/vocals Kay Smith- Drums/Vocals Recorded and mixed by: Jesse Gander, Rain City…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mortuarycave.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:51:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "darkness-echoes",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "darkness-echoes-2234885690",
+      "title": "Hell's Judgement (intro)",
+      "artist": "Mortuary Cave",
+      "albumTitle": "Darkness Echoes",
+      "albumKey": "darkness-echoes",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+      "bandcampEmbedTrackId": "2234885690",
+      "sourcePage": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "darkness-echoes-2344843965",
+      "title": "Endless Ride",
+      "artist": "Mortuary Cave",
+      "albumTitle": "Darkness Echoes",
+      "albumKey": "darkness-echoes",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "0:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+      "bandcampEmbedTrackId": "2344843965",
+      "sourcePage": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "darkness-echoes-959044118",
+      "title": "Death Dealer Commandments",
+      "artist": "Mortuary Cave",
+      "albumTitle": "Darkness Echoes",
+      "albumKey": "darkness-echoes",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:52",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mortuarycave.bandcamp.com/track/death-dealer-commandments",
+      "bandcampEmbedTrackId": "959044118",
+      "sourcePage": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "darkness-echoes-1295675216",
+      "title": "Ritual Instinct",
+      "artist": "Mortuary Cave",
+      "albumTitle": "Darkness Echoes",
+      "albumKey": "darkness-echoes",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "0:00",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+      "bandcampEmbedTrackId": "1295675216",
+      "sourcePage": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+      "accent": "#ffb66d"
+    },
+    {
+      "id": "darkness-echoes-3065855910",
+      "title": "Brain Melter",
+      "artist": "Mortuary Cave",
+      "albumTitle": "Darkness Echoes",
+      "albumKey": "darkness-echoes",
+      "year": 2026,
+      "trackNumber": 5,
+      "duration": "0:00",
+      "x": 0.60625,
+      "y": 0.736111,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+      "bandcampEmbedTrackId": "3065855910",
+      "sourcePage": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+      "accent": "#8fd9c7"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mortuarycave.bandcamp.com/album/darkness-echoes",
+    "discoveredAt": "2026-09-06T00:40:44.748607+00:00",
+    "importedAt": "2026-09-06T00:51:07.955077+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mortuarycave.bandcamp.com",
+    "bandcampBandId": "2213402258",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:51:07.955099+00:00"
+  }
+}

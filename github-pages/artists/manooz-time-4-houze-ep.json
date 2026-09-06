@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "manooz-time-4-houze-ep",
+  "artist": "ManooZ",
+  "bandcampUrl": "https://manooz82.bandcamp.com/album/time-4-houze-ep",
+  "releaseTitle": "Time 4 Houze! EP",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "electronic",
+    "chicago",
+    "chicago house",
+    "deep house",
+    "house",
+    "Mannheim"
+  ],
+  "primaryLocation": "Mannheim, Germany",
+  "bioShort": "Blasting out of a rogue transmission from Mannheim, Germany, ManooZ's 7\" debut was a system shocker, pulling pages from the sacred texts of Chicago House music for the…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://manooz82.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:46:08Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "time-4-houze-ep",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "time-4-houze-ep-3176011306",
+      "title": "Nitelife feat. Robert Owens",
+      "artist": "ManooZ",
+      "albumTitle": "Time 4 Houze! EP",
+      "albumKey": "time-4-houze-ep",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:43",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://manooz82.bandcamp.com/track/nitelife-feat-robert-owens",
+      "bandcampEmbedTrackId": "3176011306",
+      "sourcePage": "https://manooz82.bandcamp.com/album/time-4-houze-ep",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "time-4-houze-ep-1743532867",
+      "title": "Virgo 505",
+      "artist": "ManooZ",
+      "albumTitle": "Time 4 Houze! EP",
+      "albumKey": "time-4-houze-ep",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:26",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://manooz82.bandcamp.com/track/virgo-505",
+      "bandcampEmbedTrackId": "1743532867",
+      "sourcePage": "https://manooz82.bandcamp.com/album/time-4-houze-ep",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "time-4-houze-ep-1513160288",
+      "title": "Jack The Bass",
+      "artist": "ManooZ",
+      "albumTitle": "Time 4 Houze! EP",
+      "albumKey": "time-4-houze-ep",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "6:18",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://manooz82.bandcamp.com/track/jack-the-bass-2",
+      "bandcampEmbedTrackId": "1513160288",
+      "sourcePage": "https://manooz82.bandcamp.com/album/time-4-houze-ep",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "time-4-houze-ep-3218955734",
+      "title": "Time 4 Houze!",
+      "artist": "ManooZ",
+      "albumTitle": "Time 4 Houze! EP",
+      "albumKey": "time-4-houze-ep",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:24",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://manooz82.bandcamp.com/track/time-4-houze-2",
+      "bandcampEmbedTrackId": "3218955734",
+      "sourcePage": "https://manooz82.bandcamp.com/album/time-4-houze-ep",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://manooz82.bandcamp.com/album/time-4-houze-ep",
+    "discoveredAt": "2026-09-06T00:40:15.006030+00:00",
+    "importedAt": "2026-09-06T00:46:08.089154+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "manooz82.bandcamp.com",
+    "bandcampBandId": "3414980416",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:46:08.089177+00:00"
+  }
+}

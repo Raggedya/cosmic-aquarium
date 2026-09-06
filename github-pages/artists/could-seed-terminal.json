@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "could-seed-terminal",
+  "artist": "Could Seed",
+  "bandcampUrl": "https://couldseed.bandcamp.com/album/terminal",
+  "releaseTitle": "Terminal",
+  "releaseDate": "2026-08-26 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "progressive rock",
+    "rock",
+    "post-hardcore",
+    "post-rock",
+    "Le Mans"
+  ],
+  "primaryLocation": "Le Mans, France",
+  "bioShort": "Could Seed — post-metal / progressive rock / rock music from Le Mans, France.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://couldseed.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:51:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "terminal",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "terminal-4175784704",
+      "title": "Druids",
+      "artist": "Could Seed",
+      "albumTitle": "Terminal",
+      "albumKey": "terminal",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:37",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://couldseed.bandcamp.com/track/druids",
+      "bandcampEmbedTrackId": "4175784704",
+      "sourcePage": "https://couldseed.bandcamp.com/album/terminal",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://couldseed.bandcamp.com/album/terminal",
+    "discoveredAt": "2026-09-06T00:40:44.748687+00:00",
+    "importedAt": "2026-09-06T00:51:10.204527+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "couldseed.bandcamp.com",
+    "bandcampBandId": "1185255828",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:51:10.204553+00:00"
+  }
+}

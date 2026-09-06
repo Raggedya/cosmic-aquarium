@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-mosquito-ants-hibernation",
+  "artist": "The Mosquito Ants",
+  "bandcampUrl": "https://mosquitoants.bandcamp.com/album/hibernation",
+  "releaseTitle": "Hibernation",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "grunge",
+    "alternative",
+    "rock",
+    "bedroompunk",
+    "Indianapolis"
+  ],
+  "primaryLocation": "Indianapolis, Indiana",
+  "bioShort": "The Mosquito Ants — grunge / alternative / rock music from Indianapolis, Indiana.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://mosquitoants.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:46:14Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hibernation",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hibernation-4294562924",
+      "title": "Riff, Lyrics, Mess up. (Demo. Alt Mix)",
+      "artist": "The Mosquito Ants",
+      "albumTitle": "Hibernation",
+      "albumKey": "hibernation",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:20",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mosquitoants.bandcamp.com/track/riff-lyrics-mess-up-demo-alt-mix",
+      "bandcampEmbedTrackId": "4294562924",
+      "sourcePage": "https://mosquitoants.bandcamp.com/album/hibernation",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hibernation-3826315741",
+      "title": "RAT (Demo)",
+      "artist": "The Mosquito Ants",
+      "albumTitle": "Hibernation",
+      "albumKey": "hibernation",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "1:02",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://mosquitoants.bandcamp.com/track/rat-demo",
+      "bandcampEmbedTrackId": "3826315741",
+      "sourcePage": "https://mosquitoants.bandcamp.com/album/hibernation",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://mosquitoants.bandcamp.com/album/hibernation",
+    "discoveredAt": "2026-09-06T00:40:15.006314+00:00",
+    "importedAt": "2026-09-06T00:46:14.475317+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "mosquitoants.bandcamp.com",
+    "bandcampBandId": "4058812330",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:46:14.475342+00:00"
+  }
+}

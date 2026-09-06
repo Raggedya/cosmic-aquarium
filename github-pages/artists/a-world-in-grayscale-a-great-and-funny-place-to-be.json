@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "a-world-in-grayscale-a-great-and-funny-place-to-be",
+  "artist": "A World In Grayscale",
+  "bandcampUrl": "https://aworldingrayscale.bandcamp.com/album/a-great-and-funny-place-to-be",
+  "releaseTitle": "A Great and Funny Place to Be",
+  "releaseDate": "2026-09-18 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "atmospheric black metal",
+    "rock",
+    "ambient americana",
+    "drone",
+    "harsh noise",
+    "post-rock",
+    "rabm",
+    "Philadelphia"
+  ],
+  "primaryLocation": "Philadelphia, Pennsylvania",
+  "bioShort": "The Dust Bowl was one of the darkest times in American history. Severe drought and agricultural disaster led to unlivable conditions such as poverty and malnutrition, causing…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://aworldingrayscale.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:42:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-great-and-funny-place-to-be",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-great-and-funny-place-to-be-3160348118",
+      "title": "A Great and Funny Place to Be",
+      "artist": "A World In Grayscale",
+      "albumTitle": "A Great and Funny Place to Be",
+      "albumKey": "a-great-and-funny-place-to-be",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "0:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://aworldingrayscale.bandcamp.com/album/a-great-and-funny-place-to-be",
+      "bandcampEmbedTrackId": "3160348118",
+      "sourcePage": "https://aworldingrayscale.bandcamp.com/album/a-great-and-funny-place-to-be",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://aworldingrayscale.bandcamp.com/album/a-great-and-funny-place-to-be",
+    "discoveredAt": "2026-09-06T00:40:14.997057+00:00",
+    "importedAt": "2026-09-06T00:42:22.176142+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "aworldingrayscale.bandcamp.com",
+    "bandcampBandId": "1999635753",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:42:22.176166+00:00"
+  }
+}

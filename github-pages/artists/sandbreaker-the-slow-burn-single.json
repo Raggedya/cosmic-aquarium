@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "sandbreaker-the-slow-burn-single",
+  "artist": "SANDBREAKER",
+  "bandcampUrl": "https://sandbreaker.bandcamp.com/album/the-slow-burn-single",
+  "releaseTitle": "The Slow Burn (Single)",
+  "releaseDate": "2026-08-22 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "death metal",
+    "doom metal",
+    "funeral doom",
+    "sludge metal",
+    "stoner metal",
+    "Rybnik"
+  ],
+  "primaryLocation": "Rybnik, Poland",
+  "bioShort": "This track was recorded in February 2026 at Lighthouse Audio, with Arkadiusz Dzierżawa behind the production. Mixing was completed in April 2026. Officially released as a…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sandbreaker.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:47:29Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "the-slow-burn-single",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "the-slow-burn-single-1038381274",
+      "title": "The Slow Burn",
+      "artist": "SANDBREAKER",
+      "albumTitle": "The Slow Burn (Single)",
+      "albumKey": "the-slow-burn-single",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:13",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sandbreaker.bandcamp.com/track/the-slow-burn",
+      "bandcampEmbedTrackId": "1038381274",
+      "sourcePage": "https://sandbreaker.bandcamp.com/album/the-slow-burn-single",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sandbreaker.bandcamp.com/album/the-slow-burn-single",
+    "discoveredAt": "2026-09-06T00:40:15.009567+00:00",
+    "importedAt": "2026-09-06T00:47:29.886120+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sandbreaker.bandcamp.com",
+    "bandcampBandId": "2484973930",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:47:29.886141+00:00"
+  }
+}

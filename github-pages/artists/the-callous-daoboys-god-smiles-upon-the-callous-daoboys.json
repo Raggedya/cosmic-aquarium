@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-callous-daoboys-god-smiles-upon-the-callous-daoboys",
+  "artist": "The Callous Daoboys",
+  "bandcampUrl": "https://thecallousdaoboys.bandcamp.com/album/god-smiles-upon-the-callous-daoboys",
+  "releaseTitle": "God Smiles Upon The Callous Daoboys",
+  "releaseDate": "2023-10-20 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "metal",
+    "metalcore",
+    "partyviolence",
+    "mathcore",
+    "post-metal",
+    "spazz rock",
+    "Atlanta"
+  ],
+  "primaryLocation": "Atlanta, Georgia",
+  "bioShort": "God Smiles Upon The Callous Daoboys is the newest offering from the Atlanta, GA-based six-piece. The new tracks bring forth a seismic shift in sound, direction, and tone. Being…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thecallousdaoboys.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:44:12Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "god-smiles-upon-the-callous-daoboys",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "god-smiles-upon-the-callous-daoboys-2910861334",
+      "title": "Pushing The Pink Envelope",
+      "artist": "The Callous Daoboys",
+      "albumTitle": "God Smiles Upon The Callous Daoboys",
+      "albumKey": "god-smiles-upon-the-callous-daoboys",
+      "year": 2023,
+      "trackNumber": 1,
+      "duration": "4:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thecallousdaoboys.bandcamp.com/track/pushing-the-pink-envelope",
+      "bandcampEmbedTrackId": "2910861334",
+      "sourcePage": "https://thecallousdaoboys.bandcamp.com/album/god-smiles-upon-the-callous-daoboys",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "god-smiles-upon-the-callous-daoboys-4117368232",
+      "title": "Waco Jesus",
+      "artist": "The Callous Daoboys",
+      "albumTitle": "God Smiles Upon The Callous Daoboys",
+      "albumKey": "god-smiles-upon-the-callous-daoboys",
+      "year": 2023,
+      "trackNumber": 2,
+      "duration": "3:41",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thecallousdaoboys.bandcamp.com/track/waco-jesus",
+      "bandcampEmbedTrackId": "4117368232",
+      "sourcePage": "https://thecallousdaoboys.bandcamp.com/album/god-smiles-upon-the-callous-daoboys",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "god-smiles-upon-the-callous-daoboys-3175049719",
+      "title": "Designer Shroud of Turin (Feat. pulses.)",
+      "artist": "The Callous Daoboys",
+      "albumTitle": "God Smiles Upon The Callous Daoboys",
+      "albumKey": "god-smiles-upon-the-callous-daoboys",
+      "year": 2023,
+      "trackNumber": 3,
+      "duration": "5:26",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thecallousdaoboys.bandcamp.com/track/designer-shroud-of-turin-feat-pulses",
+      "bandcampEmbedTrackId": "3175049719",
+      "sourcePage": "https://thecallousdaoboys.bandcamp.com/album/god-smiles-upon-the-callous-daoboys",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thecallousdaoboys.bandcamp.com/album/god-smiles-upon-the-callous-daoboys",
+    "discoveredAt": "2026-09-06T00:40:15.001351+00:00",
+    "importedAt": "2026-09-06T00:44:12.346210+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thecallousdaoboys.bandcamp.com",
+    "bandcampBandId": "363018973",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:12.346234+00:00"
+  }
+}

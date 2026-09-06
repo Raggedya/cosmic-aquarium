@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "slug": "eliotsiuyin-aiiir",
+  "artist": "EliotSiuyin",
+  "bandcampUrl": "https://eliotsiuyin.bandcamp.com/album/aiiir",
+  "releaseTitle": "aiiir",
+  "releaseDate": "2025-05-16 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "ambient-pop",
+    "electronic",
+    "ambient",
+    "electronic music",
+    "Johor Bahru"
+  ],
+  "primaryLocation": "Johor Bahru, Malaysia",
+  "bioShort": "EliotSiuyin — ambient-pop / electronic / ambient music from Johor Bahru, Malaysia.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://eliotsiuyin.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:49:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "aiiir",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "aiiir-776144129",
+      "title": "aiiir",
+      "artist": "EliotSiuyin",
+      "albumTitle": "aiiir",
+      "albumKey": "aiiir",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "5:15",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eliotsiuyin.bandcamp.com/track/aiiir-3",
+      "bandcampEmbedTrackId": "776144129",
+      "sourcePage": "https://eliotsiuyin.bandcamp.com/album/aiiir",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "aiiir-2482462068",
+      "title": "aiiir drumless",
+      "artist": "EliotSiuyin",
+      "albumTitle": "aiiir",
+      "albumKey": "aiiir",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "5:15",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eliotsiuyin.bandcamp.com/track/aiiir-drumless",
+      "bandcampEmbedTrackId": "2482462068",
+      "sourcePage": "https://eliotsiuyin.bandcamp.com/album/aiiir",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "aiiir-2055564333",
+      "title": "aiiir reverse",
+      "artist": "EliotSiuyin",
+      "albumTitle": "aiiir",
+      "albumKey": "aiiir",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "5:16",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eliotsiuyin.bandcamp.com/track/aiiir-reverse",
+      "bandcampEmbedTrackId": "2055564333",
+      "sourcePage": "https://eliotsiuyin.bandcamp.com/album/aiiir",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://eliotsiuyin.bandcamp.com/album/aiiir",
+    "discoveredAt": "2026-09-06T00:40:15.015554+00:00",
+    "importedAt": "2026-09-06T00:49:42.893172+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "eliotsiuyin.bandcamp.com",
+    "bandcampBandId": "1332959115",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:49:42.893195+00:00"
+  }
+}

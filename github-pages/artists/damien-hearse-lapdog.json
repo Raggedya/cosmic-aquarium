@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "damien-hearse-lapdog",
+  "artist": "Damien Hearse",
+  "bandcampUrl": "https://damienhearse.bandcamp.com/album/lapdog",
+  "releaseTitle": "LAPDOG",
+  "releaseDate": "2026-08-28 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "goth",
+    "electronic",
+    "dance",
+    "darkwave",
+    "ebm",
+    "ebm techno",
+    "post-punk",
+    "punk",
+    "United States"
+  ],
+  "primaryLocation": null,
+  "bioShort": "from the upcoming album 'limerent'",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://damienhearse.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:50:59Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lapdog",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lapdog-3245697420",
+      "title": "LAPDOG",
+      "artist": "Damien Hearse",
+      "albumTitle": "LAPDOG",
+      "albumKey": "lapdog",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://damienhearse.bandcamp.com/track/lapdog-2",
+      "bandcampEmbedTrackId": "3245697420",
+      "sourcePage": "https://damienhearse.bandcamp.com/album/lapdog",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://damienhearse.bandcamp.com/album/lapdog",
+    "discoveredAt": "2026-09-06T00:40:44.748252+00:00",
+    "importedAt": "2026-09-06T00:50:59.889494+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "damienhearse.bandcamp.com",
+    "bandcampBandId": "2566608574",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:59.889517+00:00"
+  }
+}

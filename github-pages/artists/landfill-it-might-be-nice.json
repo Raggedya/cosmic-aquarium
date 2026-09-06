@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "slug": "landfill-it-might-be-nice",
+  "artist": "landfill",
+  "bandcampUrl": "https://landfilllennon.bandcamp.com/album/it-might-be-nice",
+  "releaseTitle": "it might be nice",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "slowcore",
+    "electronic",
+    "art pop",
+    "downtempo",
+    "post-punk",
+    "triphop",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "landfill — slowcore / electronic / art pop music from UK.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://landfilllennon.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:44:03Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "it-might-be-nice",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "it-might-be-nice-3621622857",
+      "title": "final?",
+      "artist": "landfill",
+      "albumTitle": "it might be nice",
+      "albumKey": "it-might-be-nice",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:12",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://landfilllennon.bandcamp.com/track/final",
+      "bandcampEmbedTrackId": "3621622857",
+      "sourcePage": "https://landfilllennon.bandcamp.com/album/it-might-be-nice",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://landfilllennon.bandcamp.com/album/it-might-be-nice",
+    "discoveredAt": "2026-09-06T00:40:15.000988+00:00",
+    "importedAt": "2026-09-06T00:44:03.143131+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "landfilllennon.bandcamp.com",
+    "bandcampBandId": "2242303886",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:03.143153+00:00"
+  }
+}

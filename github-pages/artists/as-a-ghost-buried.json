@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "as-a-ghost-buried",
+  "artist": "As A Ghost",
+  "bandcampUrl": "https://asaghost312.bandcamp.com/album/buried",
+  "releaseTitle": "Buried",
+  "releaseDate": "2026-08-20 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "deathgaze",
+    "hardcore",
+    "metallic hardcore",
+    "shoegaze",
+    "stoner metal",
+    "Chicago"
+  ],
+  "primaryLocation": "Chicago, Illinois",
+  "bioShort": "All proceeds from your purchase will go to Onward Neighborhood House in Chicago. Thank you!",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://asaghost312.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:48:51Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "buried",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "buried-2553138057",
+      "title": "Eat Shit",
+      "artist": "As A Ghost",
+      "albumTitle": "Buried",
+      "albumKey": "buried",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:22",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://asaghost312.bandcamp.com/track/eat-shit",
+      "bandcampEmbedTrackId": "2553138057",
+      "sourcePage": "https://asaghost312.bandcamp.com/album/buried",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "buried-2214915239",
+      "title": "As A Ghost",
+      "artist": "As A Ghost",
+      "albumTitle": "Buried",
+      "albumKey": "buried",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:52",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://asaghost312.bandcamp.com/track/as-a-ghost",
+      "bandcampEmbedTrackId": "2214915239",
+      "sourcePage": "https://asaghost312.bandcamp.com/album/buried",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "buried-3374862130",
+      "title": "Chamber",
+      "artist": "As A Ghost",
+      "albumTitle": "Buried",
+      "albumKey": "buried",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:41",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://asaghost312.bandcamp.com/track/chamber",
+      "bandcampEmbedTrackId": "3374862130",
+      "sourcePage": "https://asaghost312.bandcamp.com/album/buried",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "buried-4010710933",
+      "title": "MacReady's Folly",
+      "artist": "As A Ghost",
+      "albumTitle": "Buried",
+      "albumKey": "buried",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:54",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://asaghost312.bandcamp.com/track/macreadys-folly",
+      "bandcampEmbedTrackId": "4010710933",
+      "sourcePage": "https://asaghost312.bandcamp.com/album/buried",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://asaghost312.bandcamp.com/album/buried",
+    "discoveredAt": "2026-09-06T00:40:15.013376+00:00",
+    "importedAt": "2026-09-06T00:48:51.413424+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "asaghost312.bandcamp.com",
+    "bandcampBandId": "1047970091",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:51.413448+00:00"
+  }
+}

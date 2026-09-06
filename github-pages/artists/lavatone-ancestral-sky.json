@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "slug": "lavatone-ancestral-sky",
+  "artist": "Lavatone",
+  "bandcampUrl": "https://lavatone.bandcamp.com/album/ancestral-sky",
+  "releaseTitle": "Ancestral Sky",
+  "releaseDate": "2026-09-03 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "dark-ambient",
+    "experimental",
+    "industrialnoise",
+    "amarillo",
+    "dark ambient",
+    "darkambientmusic",
+    "darkambientnoise",
+    "drone ambient",
+    "industrial ambient",
+    "industrial drone",
+    "Amarillo"
+  ],
+  "primaryLocation": "Amarillo, Texas",
+  "bioShort": "2 Lavatone improv rehearsals recorded live to cassette tape in August of 2026 and 1 new studio track recorded in May 2026.",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark",
+    "quiet"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://lavatone.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:50:30Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "ancestral-sky",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "ancestral-sky-2671132092",
+      "title": "Ancestral Sky I",
+      "artist": "Lavatone",
+      "albumTitle": "Ancestral Sky",
+      "albumKey": "ancestral-sky",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "15:56",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lavatone.bandcamp.com/track/ancestral-sky-i-2",
+      "bandcampEmbedTrackId": "2671132092",
+      "sourcePage": "https://lavatone.bandcamp.com/album/ancestral-sky",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "ancestral-sky-3191384815",
+      "title": "Ancestral Sky II",
+      "artist": "Lavatone",
+      "albumTitle": "Ancestral Sky",
+      "albumKey": "ancestral-sky",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "25:45",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lavatone.bandcamp.com/track/ancestral-sky-ii-2",
+      "bandcampEmbedTrackId": "3191384815",
+      "sourcePage": "https://lavatone.bandcamp.com/album/ancestral-sky",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "ancestral-sky-2219601312",
+      "title": "Temple Of The Star Gods",
+      "artist": "Lavatone",
+      "albumTitle": "Ancestral Sky",
+      "albumKey": "ancestral-sky",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "7:15",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://lavatone.bandcamp.com/track/temple-of-the-star-gods",
+      "bandcampEmbedTrackId": "2219601312",
+      "sourcePage": "https://lavatone.bandcamp.com/album/ancestral-sky",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://lavatone.bandcamp.com/album/ancestral-sky",
+    "discoveredAt": "2026-09-06T00:40:38.401759+00:00",
+    "importedAt": "2026-09-06T00:50:30.120966+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "lavatone.bandcamp.com",
+    "bandcampBandId": "3436689717",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:30.120989+00:00"
+  }
+}

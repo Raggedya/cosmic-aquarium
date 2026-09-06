@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "slug": "bakey-from-the-vaults-volume-2",
+  "artist": "BAKEY",
+  "bandcampUrl": "https://bakeymusic.bandcamp.com/album/from-the-vaults-volume-2",
+  "releaseTitle": "From the Vaults (Volume 2)",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "breakbeat",
+    "2-step",
+    "drum & bass",
+    "electronic",
+    "uk garage",
+    "bass",
+    "breaks",
+    "dnb",
+    "dubstep",
+    "jungle",
+    "Bristol"
+  ],
+  "primaryLocation": "Bristol, UK",
+  "bioShort": "The second set of special bootlegs that have been a big part of my gigs over the last 3/4 years. These versions were all that was left from lost projects. Rough and ready for…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bakeymusic.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:44:06Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "from-the-vaults-volume-2",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "from-the-vaults-volume-2-1155055447",
+      "title": "ROLLING DUB",
+      "artist": "BAKEY",
+      "albumTitle": "From the Vaults (Volume 2)",
+      "albumKey": "from-the-vaults-volume-2",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:49",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bakeymusic.bandcamp.com/track/rolling-dub-2",
+      "bandcampEmbedTrackId": "1155055447",
+      "sourcePage": "https://bakeymusic.bandcamp.com/album/from-the-vaults-volume-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "from-the-vaults-volume-2-745668534",
+      "title": "CAN'T STOP DUB",
+      "artist": "BAKEY",
+      "albumTitle": "From the Vaults (Volume 2)",
+      "albumKey": "from-the-vaults-volume-2",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:26",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bakeymusic.bandcamp.com/track/cant-stop-dub-2",
+      "bandcampEmbedTrackId": "745668534",
+      "sourcePage": "https://bakeymusic.bandcamp.com/album/from-the-vaults-volume-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "from-the-vaults-volume-2-964229413",
+      "title": "VOGUE DUB",
+      "artist": "BAKEY",
+      "albumTitle": "From the Vaults (Volume 2)",
+      "albumKey": "from-the-vaults-volume-2",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:45",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bakeymusic.bandcamp.com/track/vogue-dub",
+      "bandcampEmbedTrackId": "964229413",
+      "sourcePage": "https://bakeymusic.bandcamp.com/album/from-the-vaults-volume-2",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bakeymusic.bandcamp.com/album/from-the-vaults-volume-2",
+    "discoveredAt": "2026-09-06T00:40:15.001147+00:00",
+    "importedAt": "2026-09-06T00:44:06.905459+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bakeymusic.bandcamp.com",
+    "bandcampBandId": "3814594359",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:44:06.905495+00:00"
+  }
+}

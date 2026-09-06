@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "slug": "festoons-vogelkop",
+  "artist": "FESTOONS",
+  "bandcampUrl": "https://festoons.bandcamp.com/album/vogelkop-2",
+  "releaseTitle": "VOGELKOP",
+  "releaseDate": "2026-09-11 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-metal",
+    "metal",
+    "rock",
+    "post metal instrumental",
+    "post rock instrumental",
+    "post-rock",
+    "shoegaze",
+    "Brighton And Hove"
+  ],
+  "primaryLocation": "Brighton And Hove, UK",
+  "bioShort": "FESTOONS - VOGELKOP EP",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://festoons.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:50:42Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "vogelkop",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "vogelkop-4159611423",
+      "title": "ZODIAC",
+      "artist": "FESTOONS",
+      "albumTitle": "VOGELKOP",
+      "albumKey": "vogelkop",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:45",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://festoons.bandcamp.com/track/zodiac",
+      "bandcampEmbedTrackId": "4159611423",
+      "sourcePage": "https://festoons.bandcamp.com/album/vogelkop-2",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "vogelkop-419745432",
+      "title": "PANOPTICON",
+      "artist": "FESTOONS",
+      "albumTitle": "VOGELKOP",
+      "albumKey": "vogelkop",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "6:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://festoons.bandcamp.com/track/panopticon",
+      "bandcampEmbedTrackId": "419745432",
+      "sourcePage": "https://festoons.bandcamp.com/album/vogelkop-2",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "vogelkop-27722183",
+      "title": "END CREDITS",
+      "artist": "FESTOONS",
+      "albumTitle": "VOGELKOP",
+      "albumKey": "vogelkop",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:20",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://festoons.bandcamp.com/track/end-credits",
+      "bandcampEmbedTrackId": "27722183",
+      "sourcePage": "https://festoons.bandcamp.com/album/vogelkop-2",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "vogelkop-119087970",
+      "title": "SCAMP",
+      "artist": "FESTOONS",
+      "albumTitle": "VOGELKOP",
+      "albumKey": "vogelkop",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "7:36",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://festoons.bandcamp.com/track/scamp",
+      "bandcampEmbedTrackId": "119087970",
+      "sourcePage": "https://festoons.bandcamp.com/album/vogelkop-2",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://festoons.bandcamp.com/album/vogelkop-2",
+    "discoveredAt": "2026-09-06T00:40:44.747454+00:00",
+    "importedAt": "2026-09-06T00:50:42.154356+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "festoons.bandcamp.com",
+    "bandcampBandId": "884385814",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:50:42.154378+00:00"
+  }
+}

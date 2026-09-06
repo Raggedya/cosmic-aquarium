@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "slug": "blue-snaggletooth-cult-of-the-spider-god",
+  "artist": "Blue Snaggletooth",
+  "bandcampUrl": "https://bluesnaggletooth.bandcamp.com/album/cult-of-the-spider-god",
+  "releaseTitle": "Cult of the Spider God",
+  "releaseDate": "2026-08-27 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "ann arbor",
+    "hard rock",
+    "rock",
+    "stoner doom space rock",
+    "blues rock",
+    "heavy metal",
+    "stoner metal",
+    "stoner rock",
+    "Ann Arbor"
+  ],
+  "primaryLocation": "Ann Arbor, Michigan",
+  "bioShort": "Blue Snaggletooth — stoner-metal / ann arbor / hard rock music from Ann Arbor, Michigan.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://bluesnaggletooth.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:41:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "cult-of-the-spider-god",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "cult-of-the-spider-god-2697326919",
+      "title": "Cult of the Spider God",
+      "artist": "Blue Snaggletooth",
+      "albumTitle": "Cult of the Spider God",
+      "albumKey": "cult-of-the-spider-god",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "8:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bluesnaggletooth.bandcamp.com/track/cult-of-the-spider-god",
+      "bandcampEmbedTrackId": "2697326919",
+      "sourcePage": "https://bluesnaggletooth.bandcamp.com/album/cult-of-the-spider-god",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "cult-of-the-spider-god-972099039",
+      "title": "Prince Kajuku",
+      "artist": "Blue Snaggletooth",
+      "albumTitle": "Cult of the Spider God",
+      "albumKey": "cult-of-the-spider-god",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:02",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://bluesnaggletooth.bandcamp.com/track/prince-kajuku",
+      "bandcampEmbedTrackId": "972099039",
+      "sourcePage": "https://bluesnaggletooth.bandcamp.com/album/cult-of-the-spider-god",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://bluesnaggletooth.bandcamp.com/album/cult-of-the-spider-god",
+    "discoveredAt": "2026-09-06T00:40:14.993788+00:00",
+    "importedAt": "2026-09-06T00:41:13.453149+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "bluesnaggletooth.bandcamp.com",
+    "bandcampBandId": "1654905512",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:13.453172+00:00"
+  }
+}

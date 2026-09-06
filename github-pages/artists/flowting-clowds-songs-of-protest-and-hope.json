@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "slug": "flowting-clowds-songs-of-protest-and-hope",
+  "artist": "FLOWTING CLOWDS",
+  "bandcampUrl": "https://flowtingclowds.bandcamp.com/album/songs-of-protest-and-hope",
+  "releaseTitle": "Songs of Protest and Hope",
+  "releaseDate": "2026-09-07 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "post-hardcore",
+    "experimental",
+    "june of 44",
+    "rock",
+    "electronic",
+    "guitar",
+    "independent",
+    "indie folk",
+    "lungfish",
+    "rodan",
+    "shipping news",
+    "the sonora pine",
+    "New Haven"
+  ],
+  "primaryLocation": "New Haven, Connecticut",
+  "bioShort": "FLOWTING CLOWDS — post-hardcore / experimental / june of 44 music from New Haven, Connecticut.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud",
+    "heavy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://flowtingclowds.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:46:13Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "songs-of-protest-and-hope",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "songs-of-protest-and-hope-1358129682",
+      "title": "Still",
+      "artist": "FLOWTING CLOWDS",
+      "albumTitle": "Songs of Protest and Hope",
+      "albumKey": "songs-of-protest-and-hope",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "2:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flowtingclowds.bandcamp.com/track/still",
+      "bandcampEmbedTrackId": "1358129682",
+      "sourcePage": "https://flowtingclowds.bandcamp.com/album/songs-of-protest-and-hope",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "songs-of-protest-and-hope-3939506256",
+      "title": "Future Echoes",
+      "artist": "FLOWTING CLOWDS",
+      "albumTitle": "Songs of Protest and Hope",
+      "albumKey": "songs-of-protest-and-hope",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:54",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://flowtingclowds.bandcamp.com/track/future-echoes",
+      "bandcampEmbedTrackId": "3939506256",
+      "sourcePage": "https://flowtingclowds.bandcamp.com/album/songs-of-protest-and-hope",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://flowtingclowds.bandcamp.com/album/songs-of-protest-and-hope",
+    "discoveredAt": "2026-09-06T00:40:15.006291+00:00",
+    "importedAt": "2026-09-06T00:46:13.388879+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "flowtingclowds.bandcamp.com",
+    "bandcampBandId": "3539612146",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:46:13.388903+00:00"
+  }
+}

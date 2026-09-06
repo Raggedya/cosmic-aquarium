@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "lego-edit-lgf-special-004-dancefloor-funk-3",
+  "artist": "Lego Edit",
+  "bandcampUrl": "https://diegolellilegoedit.bandcamp.com/album/lgf-special-004-dancefloor-funk-3",
+  "releaseTitle": "LGF Special 004 Dancefloor Funk 3",
+  "releaseDate": "2026-11-29 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "funk",
+    "afro funk",
+    "disco",
+    "edits",
+    "re edits",
+    "Italy"
+  ],
+  "primaryLocation": "Italy",
+  "bioShort": "Lego Edit — house / funk / afro funk music from Italy.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://diegolellilegoedit.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:46:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "lgf-special-004-dancefloor-funk-3",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "lgf-special-004-dancefloor-funk-3-2601205822",
+      "title": "Kela Futi - Yeah Rhythm (Lego Jazz 7\")",
+      "artist": "Lego Edit",
+      "albumTitle": "LGF Special 004 Dancefloor Funk 3",
+      "albumKey": "lgf-special-004-dancefloor-funk-3",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:23",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://diegolellilegoedit.bandcamp.com/track/kela-futi-yeah-rhythm-lego-jazz-7",
+      "bandcampEmbedTrackId": "2601205822",
+      "sourcePage": "https://diegolellilegoedit.bandcamp.com/album/lgf-special-004-dancefloor-funk-3",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "lgf-special-004-dancefloor-funk-3-268567180",
+      "title": "JB - Sex Machine (Robby Bergmann RMX)",
+      "artist": "Lego Edit",
+      "albumTitle": "LGF Special 004 Dancefloor Funk 3",
+      "albumKey": "lgf-special-004-dancefloor-funk-3",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:10",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://diegolellilegoedit.bandcamp.com/track/jb-sex-machine-robby-bergmann-rmx",
+      "bandcampEmbedTrackId": "268567180",
+      "sourcePage": "https://diegolellilegoedit.bandcamp.com/album/lgf-special-004-dancefloor-funk-3",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "lgf-special-004-dancefloor-funk-3-3874226072",
+      "title": "JB - Jungle Groove (Lego re-edit)",
+      "artist": "Lego Edit",
+      "albumTitle": "LGF Special 004 Dancefloor Funk 3",
+      "albumKey": "lgf-special-004-dancefloor-funk-3",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:23",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://diegolellilegoedit.bandcamp.com/track/jb-jungle-groove-lego-re-edit",
+      "bandcampEmbedTrackId": "3874226072",
+      "sourcePage": "https://diegolellilegoedit.bandcamp.com/album/lgf-special-004-dancefloor-funk-3",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "lgf-special-004-dancefloor-funk-3-3830997151",
+      "title": "Hansi - Party Is A Groovy Thing",
+      "artist": "Lego Edit",
+      "albumTitle": "LGF Special 004 Dancefloor Funk 3",
+      "albumKey": "lgf-special-004-dancefloor-funk-3",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "3:51",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://diegolellilegoedit.bandcamp.com/track/hansi-party-is-a-groovy-thing",
+      "bandcampEmbedTrackId": "3830997151",
+      "sourcePage": "https://diegolellilegoedit.bandcamp.com/album/lgf-special-004-dancefloor-funk-3",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://diegolellilegoedit.bandcamp.com/album/lgf-special-004-dancefloor-funk-3",
+    "discoveredAt": "2026-09-06T00:40:15.007921+00:00",
+    "importedAt": "2026-09-06T00:46:53.466324+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "diegolellilegoedit.bandcamp.com",
+    "bandcampBandId": "632514841",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:46:53.466346+00:00"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "tomorrows-letters-up-against-the-wall",
+  "artist": "Tomorrows Letters",
+  "bandcampUrl": "https://tomorrowsletters.bandcamp.com/album/up-against-the-wall",
+  "releaseTitle": "Up Against The Wall",
+  "releaseDate": "2026-08-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "coldwave",
+    "80s music",
+    "electronic",
+    "new wave",
+    "post-punk",
+    "synthpop",
+    "Minsk"
+  ],
+  "primaryLocation": "Minsk, Belarus",
+  "bioShort": "Tomorrows Letters — coldwave / 80s music / electronic music from Minsk, Belarus.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://tomorrowsletters.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:43:31Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "up-against-the-wall",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "up-against-the-wall-2922309968",
+      "title": "Up Against The Wall",
+      "artist": "Tomorrows Letters",
+      "albumTitle": "Up Against The Wall",
+      "albumKey": "up-against-the-wall",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:46",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tomorrowsletters.bandcamp.com/track/up-against-the-wall",
+      "bandcampEmbedTrackId": "2922309968",
+      "sourcePage": "https://tomorrowsletters.bandcamp.com/album/up-against-the-wall",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "up-against-the-wall-2914358570",
+      "title": "Up Against The Wall (Extended Version)",
+      "artist": "Tomorrows Letters",
+      "albumTitle": "Up Against The Wall",
+      "albumKey": "up-against-the-wall",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:26",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://tomorrowsletters.bandcamp.com/track/up-against-the-wall-extended-version",
+      "bandcampEmbedTrackId": "2914358570",
+      "sourcePage": "https://tomorrowsletters.bandcamp.com/album/up-against-the-wall",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://tomorrowsletters.bandcamp.com/album/up-against-the-wall",
+    "discoveredAt": "2026-09-06T00:40:14.999617+00:00",
+    "importedAt": "2026-09-06T00:43:31.368730+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "tomorrowsletters.bandcamp.com",
+    "bandcampBandId": "2298818342",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:31.368752+00:00"
+  }
+}

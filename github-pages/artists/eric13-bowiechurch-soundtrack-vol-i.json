@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "slug": "eric13-bowiechurch-soundtrack-vol-i",
+  "artist": "ERIC13",
+  "bandcampUrl": "https://eric13.bandcamp.com/album/bowiechurch-soundtrack-vol-i",
+  "releaseTitle": "BOWIECHURCH Soundtrack Vol. I",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "goth",
+    "rock",
+    "acoustic",
+    "alternative rock",
+    "classic rock",
+    "crooner",
+    "glam rock",
+    "theater music",
+    "theatrical rock",
+    "Philadelphia"
+  ],
+  "primaryLocation": "Philadelphia, Pennsylvania",
+  "bioShort": "This is the first in a series of new BOWIECHURCH releases, ⚡️ The next iteration will be new, original songs from the show, as performed in Philadelphia, Germany and Mexico…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://eric13.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:42:40Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bowiechurch-soundtrack-vol-i",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bowiechurch-soundtrack-vol-i-1164084599",
+      "title": "LAZARUS",
+      "artist": "ERIC13",
+      "albumTitle": "BOWIECHURCH Soundtrack Vol. I",
+      "albumKey": "bowiechurch-soundtrack-vol-i",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "4:11",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eric13.bandcamp.com/track/lazarus",
+      "bandcampEmbedTrackId": "1164084599",
+      "sourcePage": "https://eric13.bandcamp.com/album/bowiechurch-soundtrack-vol-i",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bowiechurch-soundtrack-vol-i-2920934304",
+      "title": "JOE THE LION",
+      "artist": "ERIC13",
+      "albumTitle": "BOWIECHURCH Soundtrack Vol. I",
+      "albumKey": "bowiechurch-soundtrack-vol-i",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:00",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eric13.bandcamp.com/track/joe-the-lion",
+      "bandcampEmbedTrackId": "2920934304",
+      "sourcePage": "https://eric13.bandcamp.com/album/bowiechurch-soundtrack-vol-i",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "bowiechurch-soundtrack-vol-i-3527834307",
+      "title": "STARMAN",
+      "artist": "ERIC13",
+      "albumTitle": "BOWIECHURCH Soundtrack Vol. I",
+      "albumKey": "bowiechurch-soundtrack-vol-i",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "4:08",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://eric13.bandcamp.com/track/starman",
+      "bandcampEmbedTrackId": "3527834307",
+      "sourcePage": "https://eric13.bandcamp.com/album/bowiechurch-soundtrack-vol-i",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://eric13.bandcamp.com/album/bowiechurch-soundtrack-vol-i",
+    "discoveredAt": "2026-09-06T00:40:14.997655+00:00",
+    "importedAt": "2026-09-06T00:42:40.761575+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "eric13.bandcamp.com",
+    "bandcampBandId": "2846304798",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:42:40.761597+00:00"
+  }
+}

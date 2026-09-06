@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "robag-wruhme-fumaxohn",
+  "artist": "Robag Wruhme",
+  "bandcampUrl": "https://robagwruhme.bandcamp.com/album/fumaxohn",
+  "releaseTitle": "FUMAXOHN",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "electronic",
+    "deep-house",
+    "downbeat",
+    "electronica",
+    "tech-house",
+    "Germany"
+  ],
+  "primaryLocation": "Germany",
+  "bioShort": "Robag Wruhme is the solo alias of Gabor Schablitzki, a quietly singular voice in minimal and house music since the early 2000s. His sound is built on precision without ever…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://robagwruhme.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:42:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "fumaxohn",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "fumaxohn-478629307",
+      "title": "Olahni",
+      "artist": "Robag Wruhme",
+      "albumTitle": "FUMAXOHN",
+      "albumKey": "fumaxohn",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:36",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://robagwruhme.bandcamp.com/track/olahni",
+      "bandcampEmbedTrackId": "478629307",
+      "sourcePage": "https://robagwruhme.bandcamp.com/album/fumaxohn",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "fumaxohn-3224297102",
+      "title": "Ifthah",
+      "artist": "Robag Wruhme",
+      "albumTitle": "FUMAXOHN",
+      "albumKey": "fumaxohn",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:28",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://robagwruhme.bandcamp.com/track/ifthah",
+      "bandcampEmbedTrackId": "3224297102",
+      "sourcePage": "https://robagwruhme.bandcamp.com/album/fumaxohn",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "fumaxohn-114971402",
+      "title": "Fumaxohn",
+      "artist": "Robag Wruhme",
+      "albumTitle": "FUMAXOHN",
+      "albumKey": "fumaxohn",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:22",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://robagwruhme.bandcamp.com/track/fumaxohn",
+      "bandcampEmbedTrackId": "114971402",
+      "sourcePage": "https://robagwruhme.bandcamp.com/album/fumaxohn",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "fumaxohn-1308612563",
+      "title": "Pentho",
+      "artist": "Robag Wruhme",
+      "albumTitle": "FUMAXOHN",
+      "albumKey": "fumaxohn",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:45",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://robagwruhme.bandcamp.com/track/pentho",
+      "bandcampEmbedTrackId": "1308612563",
+      "sourcePage": "https://robagwruhme.bandcamp.com/album/fumaxohn",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://robagwruhme.bandcamp.com/album/fumaxohn",
+    "discoveredAt": "2026-09-06T00:40:14.998253+00:00",
+    "importedAt": "2026-09-06T00:42:57.827110+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "robagwruhme.bandcamp.com",
+    "bandcampBandId": "319635235",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:42:57.827133+00:00"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "slug": "beatrice-blinded-stars-for-our-ceiling",
+  "artist": "beatrice blinded",
+  "bandcampUrl": "https://beatriceblinded.bandcamp.com/album/stars-for-our-ceiling",
+  "releaseTitle": "stars for our ceiling",
+  "releaseDate": "2025-09-12 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "ethereal",
+    "rock",
+    "dream pop",
+    "noise pop",
+    "shoegaze",
+    "slowcore",
+    "Ithaca"
+  ],
+  "primaryLocation": "Ithaca, New York",
+  "bioShort": "Existing outside of definition in an indefinable time, beatrice blinded was an independent band in Ithaca, New York for a few years in the early '90s. Sequestered to a degree…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "dreamy"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://beatriceblinded.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:41:57Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "stars-for-our-ceiling",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "stars-for-our-ceiling-506261466",
+      "title": "Disappear",
+      "artist": "beatrice blinded",
+      "albumTitle": "stars for our ceiling",
+      "albumKey": "stars-for-our-ceiling",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "3:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beatriceblinded.bandcamp.com/track/disappear",
+      "bandcampEmbedTrackId": "506261466",
+      "sourcePage": "https://beatriceblinded.bandcamp.com/album/stars-for-our-ceiling",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "stars-for-our-ceiling-715147410",
+      "title": "Doubt",
+      "artist": "beatrice blinded",
+      "albumTitle": "stars for our ceiling",
+      "albumKey": "stars-for-our-ceiling",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "3:42",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beatriceblinded.bandcamp.com/track/doubt",
+      "bandcampEmbedTrackId": "715147410",
+      "sourcePage": "https://beatriceblinded.bandcamp.com/album/stars-for-our-ceiling",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "stars-for-our-ceiling-3074733834",
+      "title": "Further",
+      "artist": "beatrice blinded",
+      "albumTitle": "stars for our ceiling",
+      "albumKey": "stars-for-our-ceiling",
+      "year": 2025,
+      "trackNumber": 3,
+      "duration": "3:15",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beatriceblinded.bandcamp.com/track/further",
+      "bandcampEmbedTrackId": "3074733834",
+      "sourcePage": "https://beatriceblinded.bandcamp.com/album/stars-for-our-ceiling",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "stars-for-our-ceiling-4018747981",
+      "title": "Two Days Wide",
+      "artist": "beatrice blinded",
+      "albumTitle": "stars for our ceiling",
+      "albumKey": "stars-for-our-ceiling",
+      "year": 2025,
+      "trackNumber": 4,
+      "duration": "4:22",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://beatriceblinded.bandcamp.com/track/two-days-wide",
+      "bandcampEmbedTrackId": "4018747981",
+      "sourcePage": "https://beatriceblinded.bandcamp.com/album/stars-for-our-ceiling",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://beatriceblinded.bandcamp.com/album/stars-for-our-ceiling",
+    "discoveredAt": "2026-09-06T00:40:14.996103+00:00",
+    "importedAt": "2026-09-06T00:41:57.404232+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "beatriceblinded.bandcamp.com",
+    "bandcampBandId": "4049910142",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:41:57.404253+00:00"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "slug": "jimmy-cicero-i-will-always-love-you-on-your-side",
+  "artist": "Jimmy Cicero",
+  "bandcampUrl": "https://jimmycicero777.bandcamp.com/album/i-will-always-love-you-on-your-side",
+  "releaseTitle": "\"I Will Always Love You\" / \"On Your Side\"",
+  "releaseDate": "2026-08-14 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "dream-pop",
+    "rock",
+    "dream pop",
+    "experimental",
+    "hypnagogic pop",
+    "indie rock",
+    "lof-fi",
+    "lofi",
+    "Los Angeles"
+  ],
+  "primaryLocation": "Los Angeles, California",
+  "bioShort": "Jimmy Cicero — dream-pop / rock / dream pop music from Los Angeles, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "dreamy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://jimmycicero777.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:40:53Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "i-will-always-love-you-on-your-side",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "i-will-always-love-you-on-your-side-4116711690",
+      "title": "I Will Always Love You",
+      "artist": "Jimmy Cicero",
+      "albumTitle": "\"I Will Always Love You\" / \"On Your Side\"",
+      "albumKey": "i-will-always-love-you-on-your-side",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jimmycicero777.bandcamp.com/track/i-will-always-love-you",
+      "bandcampEmbedTrackId": "4116711690",
+      "sourcePage": "https://jimmycicero777.bandcamp.com/album/i-will-always-love-you-on-your-side",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "i-will-always-love-you-on-your-side-973838552",
+      "title": "On Your Side",
+      "artist": "Jimmy Cicero",
+      "albumTitle": "\"I Will Always Love You\" / \"On Your Side\"",
+      "albumKey": "i-will-always-love-you-on-your-side",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:23",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://jimmycicero777.bandcamp.com/track/on-your-side",
+      "bandcampEmbedTrackId": "973838552",
+      "sourcePage": "https://jimmycicero777.bandcamp.com/album/i-will-always-love-you-on-your-side",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://jimmycicero777.bandcamp.com/album/i-will-always-love-you-on-your-side",
+    "discoveredAt": "2026-09-06T00:39:50.507713+00:00",
+    "importedAt": "2026-09-06T00:40:53.927250+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "jimmycicero777.bandcamp.com",
+    "bandcampBandId": "1567766918",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:40:53.927272+00:00"
+  }
+}

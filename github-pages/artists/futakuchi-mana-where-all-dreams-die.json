@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "slug": "futakuchi-mana-where-all-dreams-die",
+  "artist": "二口魔菜 Futakuchi Mana",
+  "bandcampUrl": "https://futakuchimana.bandcamp.com/album/where-all-dreams-die",
+  "releaseTitle": "Where All Dreams Die",
+  "releaseDate": "2026-08-08 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "hardcore",
+    "experimental",
+    "metal",
+    "spoken word",
+    "hardcore punk",
+    "jpop",
+    "jrock",
+    "powerviolence",
+    "Japan"
+  ],
+  "primaryLocation": "Japan",
+  "bioShort": "IF YOU BUY THIS ALBUM, IT INCLUDES: Where All Dreams Die OG track Instrumental track Guitar Tabs (GP5 file) Illustration Wallpapers (png) Thank you for supporting indie artists…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://futakuchimana.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:48:07Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "where-all-dreams-die",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "where-all-dreams-die-2399074595",
+      "title": "Where All Dreams Die",
+      "artist": "二口魔菜 Futakuchi Mana",
+      "albumTitle": "Where All Dreams Die",
+      "albumKey": "where-all-dreams-die",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:19",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://futakuchimana.bandcamp.com/track/where-all-dreams-die",
+      "bandcampEmbedTrackId": "2399074595",
+      "sourcePage": "https://futakuchimana.bandcamp.com/album/where-all-dreams-die",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://futakuchimana.bandcamp.com/album/where-all-dreams-die",
+    "discoveredAt": "2026-09-06T00:40:15.011462+00:00",
+    "importedAt": "2026-09-06T00:48:07.464299+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "futakuchimana.bandcamp.com",
+    "bandcampBandId": "1706996537",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:07.464321+00:00"
+  }
+}

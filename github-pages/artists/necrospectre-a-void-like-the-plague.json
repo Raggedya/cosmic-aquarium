@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "slug": "necrospectre-a-void-like-the-plague",
+  "artist": "Necrospectre",
+  "bandcampUrl": "https://necrospectre.bandcamp.com/album/a-void-like-the-plague",
+  "releaseTitle": "A Void Like The Plague",
+  "releaseDate": "2026-08-25 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "black metal",
+    "diy",
+    "death metal",
+    "metal",
+    "punk",
+    "stoner metal",
+    "Las Vegas"
+  ],
+  "primaryLocation": "Las Vegas, Nevada",
+  "bioShort": "Composed and written by skulk Recorded mixed mastered and produced by Dylan Dyce of Switchblade Records",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://necrospectre.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:43:16Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "a-void-like-the-plague",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "a-void-like-the-plague-2666017443",
+      "title": "A Void Like The Plague",
+      "artist": "Necrospectre",
+      "albumTitle": "A Void Like The Plague",
+      "albumKey": "a-void-like-the-plague",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "6:55",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://necrospectre.bandcamp.com/track/a-void-like-the-plague",
+      "bandcampEmbedTrackId": "2666017443",
+      "sourcePage": "https://necrospectre.bandcamp.com/album/a-void-like-the-plague",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://necrospectre.bandcamp.com/album/a-void-like-the-plague",
+    "discoveredAt": "2026-09-06T00:40:14.998932+00:00",
+    "importedAt": "2026-09-06T00:43:16.528473+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "necrospectre.bandcamp.com",
+    "bandcampBandId": "3526344582",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:16.528510+00:00"
+  }
+}

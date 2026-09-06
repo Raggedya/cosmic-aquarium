@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "slug": "sacred-void-valley-of-vipers",
+  "artist": "Sacred Void",
+  "bandcampUrl": "https://sacredvoid1.bandcamp.com/album/valley-of-vipers",
+  "releaseTitle": "Valley of Vipers",
+  "releaseDate": "2026-08-22 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "stoner-metal",
+    "metal",
+    "progressive metal",
+    "stoner metal",
+    "San Jose"
+  ],
+  "primaryLocation": "San Jose, California",
+  "bioShort": "Sacred Void — stoner-metal / metal / progressive metal music from San Jose, California.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "heavy",
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://sacredvoid1.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:46:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "valley-of-vipers",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "valley-of-vipers-3962506322",
+      "title": "Sacral Coil",
+      "artist": "Sacred Void",
+      "albumTitle": "Valley of Vipers",
+      "albumKey": "valley-of-vipers",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:29",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://sacredvoid1.bandcamp.com/track/sacral-coil",
+      "bandcampEmbedTrackId": "3962506322",
+      "sourcePage": "https://sacredvoid1.bandcamp.com/album/valley-of-vipers",
+      "accent": "#c3b4f4"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://sacredvoid1.bandcamp.com/album/valley-of-vipers",
+    "discoveredAt": "2026-09-06T00:40:15.006706+00:00",
+    "importedAt": "2026-09-06T00:46:22.739746+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "sacredvoid1.bandcamp.com",
+    "bandcampBandId": "3410188510",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:46:22.739768+00:00"
+  }
+}

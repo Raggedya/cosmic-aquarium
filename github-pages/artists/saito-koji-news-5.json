@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "slug": "saito-koji-news-5",
+  "artist": "Saito Koji",
+  "bandcampUrl": "https://saitokoji.bandcamp.com/album/news-5",
+  "releaseTitle": "News 5",
+  "releaseDate": "2026-08-19 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "field-recordings",
+    "ambient",
+    "experimental",
+    "drone",
+    "field recordings",
+    "improvisation",
+    "minimal",
+    "Japan"
+  ],
+  "primaryLocation": "Japan",
+  "bioShort": "Saito Koji — field-recordings / ambient / experimental music from Japan.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "quiet",
+    "strange",
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://saitokoji.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:46:10Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "news-5",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "news-5-977524031",
+      "title": "20260831_2",
+      "artist": "Saito Koji",
+      "albumTitle": "News 5",
+      "albumKey": "news-5",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "3:19",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://saitokoji.bandcamp.com/track/20260831-2",
+      "bandcampEmbedTrackId": "977524031",
+      "sourcePage": "https://saitokoji.bandcamp.com/album/news-5",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "news-5-2952035091",
+      "title": "20260901",
+      "artist": "Saito Koji",
+      "albumTitle": "News 5",
+      "albumKey": "news-5",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "3:12",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://saitokoji.bandcamp.com/track/20260901",
+      "bandcampEmbedTrackId": "2952035091",
+      "sourcePage": "https://saitokoji.bandcamp.com/album/news-5",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "news-5-2099618964",
+      "title": "20260901_2",
+      "artist": "Saito Koji",
+      "albumTitle": "News 5",
+      "albumKey": "news-5",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "3:16",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://saitokoji.bandcamp.com/track/20260901-2",
+      "bandcampEmbedTrackId": "2099618964",
+      "sourcePage": "https://saitokoji.bandcamp.com/album/news-5",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "news-5-1077123236",
+      "title": "20260831_2 20260901 mix",
+      "artist": "Saito Koji",
+      "albumTitle": "News 5",
+      "albumKey": "news-5",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:20",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://saitokoji.bandcamp.com/track/20260831-2-20260901-mix",
+      "bandcampEmbedTrackId": "1077123236",
+      "sourcePage": "https://saitokoji.bandcamp.com/album/news-5",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://saitokoji.bandcamp.com/album/news-5",
+    "discoveredAt": "2026-09-06T00:40:15.006199+00:00",
+    "importedAt": "2026-09-06T00:46:10.823095+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "saitokoji.bandcamp.com",
+    "bandcampBandId": "49546658",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:46:10.823117+00:00"
+  }
+}

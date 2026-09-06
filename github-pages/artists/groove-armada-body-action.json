@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "slug": "groove-armada-body-action",
+  "artist": "Groove Armada",
+  "bandcampUrl": "https://groovearmada.bandcamp.com/album/body-action",
+  "releaseTitle": "Body Action",
+  "releaseDate": "2026-08-21 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "house",
+    "808",
+    "electronic",
+    "house music",
+    "house techno",
+    "ibiza",
+    "jacking house",
+    "United Kingdom"
+  ],
+  "primaryLocation": "UK",
+  "bioShort": "I’ll be straight up, this press release got long! but f**k it, it’s about the connection you make with music and this time it is a long story. Plus there’s at least two serious…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://groovearmada.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:45:22Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "body-action",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "body-action-1605080626",
+      "title": "Body Action",
+      "artist": "Groove Armada",
+      "albumTitle": "Body Action",
+      "albumKey": "body-action",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:31",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://groovearmada.bandcamp.com/track/body-action",
+      "bandcampEmbedTrackId": "1605080626",
+      "sourcePage": "https://groovearmada.bandcamp.com/album/body-action",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "body-action-1295223259",
+      "title": "Gangsta Girl",
+      "artist": "Groove Armada",
+      "albumTitle": "Body Action",
+      "albumKey": "body-action",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:12",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://groovearmada.bandcamp.com/track/gangsta-girl",
+      "bandcampEmbedTrackId": "1295223259",
+      "sourcePage": "https://groovearmada.bandcamp.com/album/body-action",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "body-action-1146928997",
+      "title": "U Found Love (ft Give Love)",
+      "artist": "Groove Armada",
+      "albumTitle": "Body Action",
+      "albumKey": "body-action",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:40",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://groovearmada.bandcamp.com/track/u-found-love-ft-give-love",
+      "bandcampEmbedTrackId": "1146928997",
+      "sourcePage": "https://groovearmada.bandcamp.com/album/body-action",
+      "accent": "#ff6f8f"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://groovearmada.bandcamp.com/album/body-action",
+    "discoveredAt": "2026-09-06T00:40:15.004048+00:00",
+    "importedAt": "2026-09-06T00:45:22.125828+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "groovearmada.bandcamp.com",
+    "bandcampBandId": "3344445592",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:45:22.125850+00:00"
+  }
+}

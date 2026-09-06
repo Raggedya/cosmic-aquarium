@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "slug": "cheree-godoy-bensalem",
+  "artist": "Cheree Godoy",
+  "bandcampUrl": "https://chereegodoy.bandcamp.com/album/bensalem",
+  "releaseTitle": "Bensalem",
+  "releaseDate": "2026-09-05 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "noise",
+    "experimental",
+    "rock",
+    "darkwave",
+    "wall of sound",
+    "Seville"
+  ],
+  "primaryLocation": "Seville, Spain",
+  "bioShort": "Cheree Godoy — noise / experimental / rock music from Seville, Spain.",
+  "bioSource": "metadata-derived",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://chereegodoy.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:43:09Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "bensalem",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "bensalem-1942258825",
+      "title": "I (INTRO)",
+      "artist": "Cheree Godoy",
+      "albumTitle": "Bensalem",
+      "albumKey": "bensalem",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "1:04",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chereegodoy.bandcamp.com/track/i-intro",
+      "bandcampEmbedTrackId": "1942258825",
+      "sourcePage": "https://chereegodoy.bandcamp.com/album/bensalem",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "bensalem-2225144379",
+      "title": "II",
+      "artist": "Cheree Godoy",
+      "albumTitle": "Bensalem",
+      "albumKey": "bensalem",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "4:30",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chereegodoy.bandcamp.com/track/ii",
+      "bandcampEmbedTrackId": "2225144379",
+      "sourcePage": "https://chereegodoy.bandcamp.com/album/bensalem",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "bensalem-4031071776",
+      "title": "III",
+      "artist": "Cheree Godoy",
+      "albumTitle": "Bensalem",
+      "albumKey": "bensalem",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "2:55",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chereegodoy.bandcamp.com/track/iii",
+      "bandcampEmbedTrackId": "4031071776",
+      "sourcePage": "https://chereegodoy.bandcamp.com/album/bensalem",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "bensalem-584113721",
+      "title": "IV",
+      "artist": "Cheree Godoy",
+      "albumTitle": "Bensalem",
+      "albumKey": "bensalem",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "5:35",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://chereegodoy.bandcamp.com/track/iv",
+      "bandcampEmbedTrackId": "584113721",
+      "sourcePage": "https://chereegodoy.bandcamp.com/album/bensalem",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://chereegodoy.bandcamp.com/album/bensalem",
+    "discoveredAt": "2026-09-06T00:40:14.998569+00:00",
+    "importedAt": "2026-09-06T00:43:09.297873+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "chereegodoy.bandcamp.com",
+    "bandcampBandId": "705706393",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:43:09.297896+00:00"
+  }
+}

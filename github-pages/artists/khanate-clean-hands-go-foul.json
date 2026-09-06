@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "slug": "khanate-clean-hands-go-foul",
+  "artist": "Khanate",
+  "bandcampUrl": "https://khanate.bandcamp.com/album/clean-hands-go-foul",
+  "releaseTitle": "Clean Hands Go Foul",
+  "releaseDate": "2009-05-26 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "doom",
+    "metal",
+    "dark",
+    "doom metal",
+    "drone",
+    "drone metal",
+    "experimental metal",
+    "sacred bones",
+    "sunn o)))",
+    "New York"
+  ],
+  "primaryLocation": "New York, New York",
+  "bioShort": "Alan Dubin (Vocals) Stephen O’Malley (Guitar) James Plotkin (Bass) Tim Wyskida (Drums) Music composed by Khanate Lyrics by Alan Dubin Produced by James Plotkin Music recorded…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "heavy",
+    "dark"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://khanate.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:42:45Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "clean-hands-go-foul",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "clean-hands-go-foul-1539772686",
+      "title": "Wings From Spine",
+      "artist": "Khanate",
+      "albumTitle": "Clean Hands Go Foul",
+      "albumKey": "clean-hands-go-foul",
+      "year": 2009,
+      "trackNumber": 1,
+      "duration": "6:48",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://khanate.bandcamp.com/track/wings-from-spine-2",
+      "bandcampEmbedTrackId": "1539772686",
+      "sourcePage": "https://khanate.bandcamp.com/album/clean-hands-go-foul",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "clean-hands-go-foul-3335354808",
+      "title": "In That Corner",
+      "artist": "Khanate",
+      "albumTitle": "Clean Hands Go Foul",
+      "albumKey": "clean-hands-go-foul",
+      "year": 2009,
+      "trackNumber": 2,
+      "duration": "9:19",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://khanate.bandcamp.com/track/in-that-corner-2",
+      "bandcampEmbedTrackId": "3335354808",
+      "sourcePage": "https://khanate.bandcamp.com/album/clean-hands-go-foul",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "clean-hands-go-foul-1529065354",
+      "title": "Clean My Heart",
+      "artist": "Khanate",
+      "albumTitle": "Clean Hands Go Foul",
+      "albumKey": "clean-hands-go-foul",
+      "year": 2009,
+      "trackNumber": 3,
+      "duration": "11:10",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://khanate.bandcamp.com/track/clean-my-heart-2",
+      "bandcampEmbedTrackId": "1529065354",
+      "sourcePage": "https://khanate.bandcamp.com/album/clean-hands-go-foul",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "clean-hands-go-foul-3718626327",
+      "title": "Every God Damn Thing",
+      "artist": "Khanate",
+      "albumTitle": "Clean Hands Go Foul",
+      "albumKey": "clean-hands-go-foul",
+      "year": 2009,
+      "trackNumber": 4,
+      "duration": "32:52",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://khanate.bandcamp.com/track/every-god-damn-thing-2",
+      "bandcampEmbedTrackId": "3718626327",
+      "sourcePage": "https://khanate.bandcamp.com/album/clean-hands-go-foul",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://khanate.bandcamp.com/album/clean-hands-go-foul",
+    "discoveredAt": "2026-09-06T00:40:14.997920+00:00",
+    "importedAt": "2026-09-06T00:42:45.060614+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "khanate.bandcamp.com",
+    "bandcampBandId": "3614408795",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:42:45.060636+00:00"
+  }
+}

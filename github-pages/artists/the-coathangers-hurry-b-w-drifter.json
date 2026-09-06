@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "slug": "the-coathangers-hurry-b-w-drifter",
+  "artist": "The Coathangers",
+  "bandcampUrl": "https://thecoathangers.bandcamp.com/album/hurry-b-w-drifter",
+  "releaseTitle": "\"Hurry\" b/w \"Drifter\"",
+  "releaseDate": "2025-10-31 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "garage-rock",
+    "atlanta",
+    "rock",
+    "female vocalist",
+    "garage rock",
+    "suicide squeeze",
+    "Atlanta"
+  ],
+  "primaryLocation": "Atlanta, Georgia",
+  "bioShort": "Unearthed from the margins of Nosebleed Weekend, these two tracks offer a raw, revealing glimpse into The Coathangers’ creative process, capturing a band mid-stride, sorting…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "loud"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://thecoathangers.bandcamp.com/",
+  "visualStyle": "violet",
+  "generatedAt": "2026-09-06T00:48:21Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hurry-b-w-drifter",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hurry-b-w-drifter-2167641632",
+      "title": "Hurry - Demo",
+      "artist": "The Coathangers",
+      "albumTitle": "\"Hurry\" b/w \"Drifter\"",
+      "albumKey": "hurry-b-w-drifter",
+      "year": 2025,
+      "trackNumber": 1,
+      "duration": "2:47",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thecoathangers.bandcamp.com/track/hurry-demo",
+      "bandcampEmbedTrackId": "2167641632",
+      "sourcePage": "https://thecoathangers.bandcamp.com/album/hurry-b-w-drifter",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hurry-b-w-drifter-3443174430",
+      "title": "Drifter - Demo",
+      "artist": "The Coathangers",
+      "albumTitle": "\"Hurry\" b/w \"Drifter\"",
+      "albumKey": "hurry-b-w-drifter",
+      "year": 2025,
+      "trackNumber": 2,
+      "duration": "2:39",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://thecoathangers.bandcamp.com/track/drifter-demo",
+      "bandcampEmbedTrackId": "3443174430",
+      "sourcePage": "https://thecoathangers.bandcamp.com/album/hurry-b-w-drifter",
+      "accent": "#88d7ff"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://thecoathangers.bandcamp.com/album/hurry-b-w-drifter",
+    "discoveredAt": "2026-09-06T00:40:15.011997+00:00",
+    "importedAt": "2026-09-06T00:48:21.640303+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "thecoathangers.bandcamp.com",
+    "bandcampBandId": "1997120723",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:48:21.640326+00:00"
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "slug": "acid-boner-hotwired-303",
+  "artist": "Acid Boner",
+  "bandcampUrl": "https://acidboner.bandcamp.com/album/hotwired-303",
+  "releaseTitle": "Hotwired 303",
+  "releaseDate": "2026-09-04 00:00:00 UTC",
+  "dailyBatchId": "bulk-5000-batch-02",
+  "status": "published",
+  "metadataTags": [
+    "electro",
+    "303",
+    "909",
+    "electronic",
+    "acid",
+    "beats",
+    "elektro",
+    "house",
+    "rave",
+    "shake",
+    "techno",
+    "Dundee"
+  ],
+  "primaryLocation": "Dundee, UK",
+  "bioShort": "Hot and hardwired out of Scotland, courtesy of Locator debutant Acid Boner. A long-running club-night instigator, all-vinyl operator, hardware proselytizer, and Luke Vibert…",
+  "bioSource": "bandcamp-description",
+  "waters": [
+    "electronic"
+  ],
+  "commerceAvailable": true,
+  "commerceUrl": "https://acidboner.bandcamp.com/",
+  "visualStyle": "cosmic",
+  "generatedAt": "2026-09-06T00:42:04Z",
+  "importStatus": "public-page-manifest",
+  "albums": [
+    {
+      "key": "hotwired-303",
+      "color": "#c3b4f4"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "hotwired-303-2380124544",
+      "title": "Kiss The Tip",
+      "artist": "Acid Boner",
+      "albumTitle": "Hotwired 303",
+      "albumKey": "hotwired-303",
+      "year": 2026,
+      "trackNumber": 1,
+      "duration": "5:00",
+      "x": 0.5,
+      "y": 0.358333,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://acidboner.bandcamp.com/track/kiss-the-tip",
+      "bandcampEmbedTrackId": "2380124544",
+      "sourcePage": "https://acidboner.bandcamp.com/album/hotwired-303",
+      "accent": "#c3b4f4"
+    },
+    {
+      "id": "hotwired-303-1724337320",
+      "title": "Children Of The Night",
+      "artist": "Acid Boner",
+      "albumTitle": "Hotwired 303",
+      "albumKey": "hotwired-303",
+      "year": 2026,
+      "trackNumber": 2,
+      "duration": "5:03",
+      "x": 0.2875,
+      "y": 0.641667,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://acidboner.bandcamp.com/track/children-of-the-night",
+      "bandcampEmbedTrackId": "1724337320",
+      "sourcePage": "https://acidboner.bandcamp.com/album/hotwired-303",
+      "accent": "#88d7ff"
+    },
+    {
+      "id": "hotwired-303-1035295712",
+      "title": "Polymer Rework (Live Only)",
+      "artist": "Acid Boner",
+      "albumTitle": "Hotwired 303",
+      "albumKey": "hotwired-303",
+      "year": 2026,
+      "trackNumber": 3,
+      "duration": "5:22",
+      "x": 0.7125,
+      "y": 0.169444,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://acidboner.bandcamp.com/track/polymer-rework-live-only",
+      "bandcampEmbedTrackId": "1035295712",
+      "sourcePage": "https://acidboner.bandcamp.com/album/hotwired-303",
+      "accent": "#ff6f8f"
+    },
+    {
+      "id": "hotwired-303-219167010",
+      "title": "Got A Jaw",
+      "artist": "Acid Boner",
+      "albumTitle": "Hotwired 303",
+      "albumKey": "hotwired-303",
+      "year": 2026,
+      "trackNumber": 4,
+      "duration": "4:21",
+      "x": 0.18125,
+      "y": 0.452778,
+      "zone": "Uncharted song field",
+      "note": "Public Bandcamp track",
+      "bandcampUrl": "https://acidboner.bandcamp.com/track/got-a-jaw",
+      "bandcampEmbedTrackId": "219167010",
+      "sourcePage": "https://acidboner.bandcamp.com/album/hotwired-303",
+      "accent": "#ffb66d"
+    }
+  ],
+  "provenance": {
+    "sourceType": "bandcamp-discover",
+    "sourceUrl": "https://bandcamp.com/api/discover/1/discover_web",
+    "discoveredUrl": "https://acidboner.bandcamp.com/album/hotwired-303",
+    "discoveredAt": "2026-09-06T00:40:14.996295+00:00",
+    "importedAt": "2026-09-06T00:42:04.525970+00:00",
+    "importerVersion": "bulk-1.0",
+    "batchId": "bulk-5000-batch-02"
+  },
+  "canonicalIdentity": {
+    "bandcampHost": "acidboner.bandcamp.com",
+    "bandcampBandId": "2701689681",
+    "source": "bandcamp-public-artist-index",
+    "verifiedAsLabel": false,
+    "verifiedAt": "2026-09-06T00:42:04.525993+00:00"
+  }
+}
