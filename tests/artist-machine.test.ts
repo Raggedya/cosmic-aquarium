@@ -62,6 +62,7 @@ test('Artist Mode retains one mechanical stop and the shared four-second winner 
   assert.match(css,/data-machine-mode="artist"[^}]*\.reel-bank/);
   assert.match(css,/data-machine-mode="artist"[^}]*\.reel-strip>\*/);
   assert.match(css,/grid-template-rows:repeat\(3,1fr\)/);
+  assert.match(css,/data-machine-mode="artist"[^}]*\.winner-splash-copy\{left:13%;right:13%\}/);
 });
 
 test('the artist ticker is factual and excludes the Melbourne culture bank',async()=>{

@@ -84,7 +84,7 @@ button,a{-webkit-tap-highlight-color:transparent}
 .winner-splash-copy em{display:block;max-width:92%;margin-top:.45em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#5d2d11;font-family:Georgia,"Times New Roman",serif;font-size:clamp(6px,1.55vw,9px);font-style:normal;font-weight:700;letter-spacing:.08em;line-height:1;text-transform:uppercase}
 .winner-splash-artwork{position:absolute;left:9.5%;top:14%;width:22%;height:72%;z-index:0;overflow:hidden;border:1px solid rgba(221,166,91,.72);border-radius:7%;background:#160704;box-shadow:inset 0 0 0 2px #080201,0 3px 7px #000}
 .winner-splash-artwork img{width:100%;height:100%;object-fit:cover}
-.music-machine[data-machine-mode="artist"] .winner-splash-copy{left:31%;right:11%}
+.music-machine[data-machine-mode="artist"] .winner-splash-copy{left:13%;right:13%}
 body.artist-machine-page{overflow-y:auto;background:#050302!important}
 .music-machine[data-machine-mode="artist"]{height:auto;min-height:100dvh;overflow:visible;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
 .music-machine[data-machine-mode="artist"]>.cabinet{flex:none}
