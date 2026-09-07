@@ -76,6 +76,7 @@ let buyRevealTimer=0;
 let bandcampEngaged=false;
 let cultureTickerActive=false;
 let primaryAction='dormant';
+let tickerRenderToken=0;
 
 function readStorage(key){try{return localStorage.getItem(key)}catch{return null}}
 function writeStorage(key,value){try{localStorage.setItem(key,String(value))}catch{}}
@@ -120,20 +121,26 @@ function setReelRows(index,entry,neighbours=true){
   [before,current,after].forEach((label,row)=>setReelLabel(strip.children[row],label));
 }
 
-function tickerDuration(text){return Math.max(8,Math.min(28,text.length/7.5))}
-function showTicker(text){
-  clearTimeout(tickerTimer);
+function showTicker(text,{hold=7200,onComplete=null}={}){
+  clearTimeout(tickerTimer);const renderToken=++tickerRenderToken;
   ticker.textContent=String(text||'LET’S PLAY').toUpperCase();
   ticker.classList.remove('is-scrolling');
-  ticker.style.removeProperty('--ticker-duration');
+  ticker.style.removeProperty('--ticker-duration');ticker.style.removeProperty('--ticker-start');ticker.style.removeProperty('--ticker-end');ticker.style.removeProperty('--ticker-reduced-duration');
   requestAnimationFrame(()=>{
-    const overflow=ticker.scrollWidth>ticker.parentElement.clientWidth*.92;
-    if(overflow&&!reducedMotion.matches){ticker.style.setProperty('--ticker-duration',`${tickerDuration(ticker.textContent)}s`);ticker.classList.add('is-scrolling')}
+    if(renderToken!==tickerRenderToken)return;
+    const viewport=ticker.parentElement.clientWidth,textWidth=ticker.scrollWidth,overflow=textWidth>viewport*.92;
+    if(overflow){
+      const start=viewport/2+textWidth/2+12,end=-(viewport/2+textWidth/2+12),distance=start-end;
+      const duration=Math.max(9,distance/(reducedMotion.matches?28:46));
+      ticker.style.setProperty('--ticker-start',`${start.toFixed(1)}px`);ticker.style.setProperty('--ticker-end',`${end.toFixed(1)}px`);ticker.style.setProperty('--ticker-duration',`${duration.toFixed(2)}s`);ticker.style.setProperty('--ticker-reduced-duration',`${duration.toFixed(2)}s`);
+      if(onComplete)ticker.addEventListener('animationend',()=>{if(renderToken===tickerRenderToken)tickerTimer=setTimeout(onComplete,650)},{once:true});
+      ticker.classList.add('is-scrolling');
+    }else if(onComplete)tickerTimer=setTimeout(onComplete,hold);
   });
 }
 function startTickerRotation(items,delay=7200){
   clearTimeout(tickerTimer);tickerItems=[...new Set(items.filter(Boolean))];tickerIndex=0;
-  const next=()=>{if(!tickerItems.length)return;showTicker(tickerItems[tickerIndex++%tickerItems.length]);tickerTimer=setTimeout(next,delay)};
+  const next=()=>{if(!tickerItems.length)return;showTicker(tickerItems[tickerIndex++%tickerItems.length],{hold:delay,onComplete:next})};
   next();
 }
 
@@ -148,7 +155,7 @@ function cultureTickerMessages(){
 function startCultureTicker(){
   if(cultureTickerActive)return;
   cultureTickerActive=true;
-  startTickerRotation(cultureTickerMessages(),31000);
+  startTickerRotation(cultureTickerMessages(),8000);
 }
 
 function setPrimaryMode(mode){
@@ -313,8 +320,10 @@ function spinReel(index,finalEntry,stopAfter){
   return new Promise(resolve=>{
     const tick=now=>{
       const elapsed=now-started,progress=Math.min(1,elapsed/stopAfter);
-      const cadence=46+Math.pow(progress,4)*150;
-      if(now-lastSwap>cadence){current=randomEntry();setReelRows(index,current);lastSwap=now;strip.style.transform=`translateY(${Math.sin(now/36)*5}px)`}
+      const cadence=progress<.18?124-(progress/.18)*80:progress<.7?44+index*2:44+Math.pow((progress-.7)/.3,2)*190;
+      const rowHeight=Math.max(16,reel.clientHeight/3),phase=((now-lastSwap)/cadence)%1;
+      strip.style.transform=`translate3d(0,${((phase-.5)*rowHeight).toFixed(2)}px,0)`;
+      if(now-lastSwap>cadence){current=randomEntry();setReelRows(index,current);lastSwap=now}
       if(elapsed>=stopAfter){strip.style.transform='';setReelRows(index,finalEntry);reel.classList.remove('is-spinning');reel.classList.add('is-locking');setTimeout(()=>reel.classList.remove('is-locking'),260);reelThunk(index);resolve();return}
       requestAnimationFrame(tick);
     };requestAnimationFrame(tick);
@@ -333,7 +342,7 @@ function schedulePlaybackFallback(delay=1800){
     if(!currentTrack||bandcampEngaged)return;
     cultureTickerActive=false;
     setState('AWAITING_PLAY',`Autoplay may be unavailable. Play ${currentTrack.title} by ${currentManifest.artist}.`);
-    showTicker(`SILENT? TAP THE BANDCAMP PLAYER • ${currentTrack.title} • ${currentManifest.artist}`);
+    showTicker(`IF SILENT, PRESS PLAY BELOW • ${currentTrack.title} • ${currentManifest.artist}`);
   },delay);
 }
 
@@ -359,8 +368,8 @@ async function loadWinningTrack(entry,{fromDeepLink=false}={}){
 
 function beginWinningPlayback(){
   if(primaryAction!=='play'||!currentTrack||!currentEmbedUrl)return;
-  ensureAudio();primaryAction='starting';buyLink.disabled=true;buyLink.setAttribute('aria-busy','true');frame.src=currentEmbedUrl;stopButton.disabled=false;
-  setState('AUTOPLAY_ATTEMPT',`Bandcamp playback requested for ${currentTrack.title} by ${currentManifest.artist}.`);setMeterMode('playing',currentTrack.id);startCultureTicker();schedulePlaybackFallback();
+  ensureAudio();navigator.vibrate?.(7);primaryAction='starting';buyLink.disabled=true;buyLink.setAttribute('aria-busy','true');frame.src=currentEmbedUrl;stopButton.disabled=false;
+  setState('AUTOPLAY_ATTEMPT',`Bandcamp playback requested for ${currentTrack.title} by ${currentManifest.artist}.`);setMeterMode('idle',currentTrack.id);showTicker(`STARTING ${currentTrack.title} • ${currentManifest.artist}`);schedulePlaybackFallback(2200);
   clearTimeout(buyRevealTimer);buyRevealTimer=setTimeout(()=>{if(!currentTrack)return;setPrimaryMode('buy')},6000);
   recordEvent('play_click',{artist:currentManifest.artist,track:currentTrack.title,source:'winner_button'});
 }
@@ -418,12 +427,14 @@ async function loadData(){
   locked=false;setState('IDLE','Pull the lever to discover Melbourne music.');startTickerRotation(idleMessages());recordEvent('doorway_open',{catalogueSize:catalogue.length,universe:'melbourne'});
 }
 
-buildMeters();startMeters();ensureMachineSamples();soundButton.textContent=soundOff?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!soundOff));
+buildMeters();startMeters();soundButton.textContent=soundOff?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!soundOff));
+const warmMachineAudio=()=>ensureMachineSamples();
+if('requestIdleCallback'in window)requestIdleCallback(warmMachineAudio,{timeout:1500});else setTimeout(warmMachineAudio,700);
 lever.addEventListener('pointerdown',onLeverDown);lever.addEventListener('pointermove',onLeverMove);lever.addEventListener('pointerup',onLeverUp);lever.addEventListener('pointercancel',onLeverUp);
 lever.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();animateLeverAndSpin()}});
 shareButton.addEventListener('click',()=>void shareCurrent());buyLink.addEventListener('click',activatePrimary);stopButton.addEventListener('click',stopCurrent);homeButton.addEventListener('click',resetMachine);soundButton.addEventListener('click',toggleSound);
-function markBandcampPlayback(){if(!currentTrack)return;bandcampEngaged=true;clearTimeout(autoplayFallbackTimer);setState('PLAYING',`Playing ${currentTrack.title} by ${currentManifest.artist} through Bandcamp.`);setMeterMode('playing',currentTrack.id);startCultureTicker();recordEvent('bandcamp_click',{artist:currentManifest.artist,track:currentTrack.title})}
-frame.addEventListener('load',()=>{if(state==='AUTOPLAY_ATTEMPT')markBandcampPlayback()});frame.addEventListener('focus',markBandcampPlayback);addEventListener('blur',()=>setTimeout(()=>{if(document.activeElement===frame)markBandcampPlayback()},0));addEventListener('popstate',()=>location.reload());
+function markBandcampPlayback(){if(!currentTrack||bandcampEngaged)return;bandcampEngaged=true;clearTimeout(autoplayFallbackTimer);setState('PLAYING',`Playing ${currentTrack.title} by ${currentManifest.artist} through Bandcamp.`);setMeterMode('playing',currentTrack.id);startCultureTicker();recordEvent('bandcamp_click',{artist:currentManifest.artist,track:currentTrack.title})}
+frame.addEventListener('load',()=>{if(state==='AUTOPLAY_ATTEMPT')setState('AWAITING_PLAY',`Bandcamp is ready for ${currentTrack?.title||'the winning song'}.`)});frame.addEventListener('focus',markBandcampPlayback);addEventListener('blur',()=>setTimeout(()=>{if(document.activeElement===frame)markBandcampPlayback()},0));addEventListener('popstate',()=>location.reload());
 document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(meterFrame);stopMotor()}else startMeters()});
 loadData().catch(error=>{setState('PLAY_ERROR','The Melbourne library could not be opened.');showTicker('MACHINE RESTING — PLEASE REFRESH');console.error(error)});
 

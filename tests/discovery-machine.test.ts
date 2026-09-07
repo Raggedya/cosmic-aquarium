@@ -132,7 +132,10 @@ test('a winner becomes a green PLAY control, requests Bandcamp on press, then be
   assert.match(runtime,/schedulePlaybackFallback/);
   assert.match(runtime,/setState\('AUTOPLAY_ATTEMPT'/);
   assert.match(runtime,/setState\('AWAITING_PLAY'/);
-  assert.match(runtime,/SILENT\? TAP THE BANDCAMP PLAYER/);
+  assert.match(runtime,/IF SILENT, PRESS PLAY BELOW/);
+  assert.match(runtime,/frame\.addEventListener\('load',\(\)=>\{if\(state==='AUTOPLAY_ATTEMPT'\)setState\('AWAITING_PLAY'/);
+  assert.doesNotMatch(runtime,/frame\.addEventListener\('load',\(\)=>\{[^}]*markBandcampPlayback/);
+  assert.match(runtime,/frame\.addEventListener\('focus',markBandcampPlayback\)/);
   assert.match(runtime,/function animateLeverAndSpin\(\)\{if\(locked\)return;ensureAudio\(\)/);
   assert.match(css,/\.buy-button\[data-primary-mode="play"\]\{background:radial-gradient\([^}]*#55e96a/);
   assert.match(css,/\.play-symbol path\{[^}]*fill:#fff5cf/);
@@ -181,7 +184,7 @@ test('idle ticker says only LET’S PLAY and playback rotates only the supplied 
   const [template,runtime,culture]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/ticker/melbourne-culture.js')]);
   assert.match(template,/class="ticker-copy">LET’S PLAY</);
   assert.match(runtime,/function idleMessages\(\)\{return\['LET’S PLAY'\]\}/);
-  assert.match(runtime,/startTickerRotation\(cultureTickerMessages\(\),31000\)/);
+  assert.match(runtime,/startTickerRotation\(cultureTickerMessages\(\),8000\)/);
   assert.doesNotMatch(runtime,/buildTickerMessages/);
   assert.match(culture,/MELBOURNE MUSIC ISN'T ONE SCENE/);
   assert.match(culture,/TRIPLE R 102\.7/);
@@ -198,7 +201,7 @@ test('analogue meters use damped ballistics and distinguish idle, spin, celebrat
 
 test('licensed physical mechanism recordings, synchronized sampled stops, haptics and a quiet loss replace electronic reel tones and glass crashes',async()=>{
   const [template,runtime,license]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/audio/machine/LICENSE.md')]);
-  assert.match(template,/reel-actual-slotmachine-freesound-261346\.mp3/);
+  assert.doesNotMatch(template,/<link rel="preload" as="audio"/);
   assert.match(runtime,/reelMotorUrl=.*reel-actual-slotmachine-freesound-261346\.mp3/);
   assert.match(runtime,/reelRatchetUrl=.*reel-ratchet-mixkit-2641\.mp3/);
   assert.match(runtime,/reel-stop-(?:lock|gear)-mixkit-/);
@@ -232,7 +235,24 @@ test('mobile full-screen, one-handed lever, reduced motion and touch targets are
 test('ticker copy is vertically centred without changing the approved panel treatment',async()=>{
   const css=await read('app/discovery-machine.css');
   assert.match(css,/\.ticker-window\{[^}]*height:100%[^}]*display:flex[^}]*align-items:center[^}]*justify-content:center/);
+  assert.match(css,/--ticker-optical-y:2px/);
+  assert.match(css,/padding-top:var\(--ticker-optical-y\)/);
   assert.match(css,/\.ticker-copy\{[^}]*line-height:1/);
+});
+
+test('ticker motion uses measured travel, constant pixels per second and completion-driven sequencing',async()=>{
+  const runtime=await read('github-pages/assets/discovery-machine.js');
+  assert.match(runtime,/textWidth=ticker\.scrollWidth/);
+  assert.match(runtime,/distance\/\(reducedMotion\.matches\?28:46\)/);
+  assert.match(runtime,/addEventListener\('animationend'/);
+  assert.doesNotMatch(runtime,/Math\.min\(28,text\.length/);
+});
+
+test('Bandcamp is presented as a recessed source, not a dominant cabinet logo',async()=>{
+  const [template,css]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css')]);
+  assert.match(template,/MELBOURNE SONGS<br>ON BANDCAMP/);
+  assert.match(css,/\.bandcamp-slot\{[^}]*box-shadow:inset/);
+  assert.doesNotMatch(template,/class="[^\"]*bandcamp-logo/);
 });
 
 test('share deep links remain canonical and carry Melbourne universe state',()=>{
