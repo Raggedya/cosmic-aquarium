@@ -4,6 +4,7 @@ const EVENT_TYPES = new Set([
   'buy_click','explore_click','aquarium_transition','email_link_click','email_open',
   'aquarium_created','aquarium_published','aquarium_unpublished',
   'doorway_open','drift_anywhere_selected','water_selected','random_destination_selected','doorway_to_aquarium_transition',
+  'artist_machine_loaded','reel_spin','track_revealed','winner_revealed','artist_machine_request_opened','artist_machine_request_submitted',
 ]);
 const WATERS = new Set(['heavy','dreamy','electronic','quiet','loud','dark','strange']);
 
@@ -42,6 +43,65 @@ function clean(value, max = 160) {
 
 async function readBody(request) {
   try { return await request.json(); } catch { return null; }
+}
+
+function validEmail(value) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(value || ''));
+}
+
+function validBandcampDestination(value) {
+  try {
+    const url = new URL(String(value || ''));
+    const host = url.hostname.toLowerCase().replace(/^www\./,'');
+    return url.protocol === 'https:' && (host === 'bandcamp.com' || host.endsWith('.bandcamp.com')) && !url.username && !url.password ? url.href : null;
+  } catch { return null; }
+}
+
+function artistRequestOriginAllowed(request, env) {
+  const origin=request.headers.get('origin');
+  if(!origin)return true;
+  const configured=String(env.ARTIST_MACHINE_ALLOWED_ORIGINS||'').split(',').map(value=>value.trim()).filter(Boolean);
+  const defaults=['https://raggedya.github.io'];
+  return [...defaults,...configured].some(value=>origin===value||origin.endsWith('.raggedya.chatgpt.site'));
+}
+
+async function requestFingerprint(request) {
+  const address=request.headers.get('cf-connecting-ip')||request.headers.get('x-forwarded-for')?.split(',')[0]?.trim()||'unknown';
+  const bytes=new TextEncoder().encode(address);
+  const digest=await crypto.subtle.digest('SHA-256',bytes);
+  return [...new Uint8Array(digest)].map(value=>value.toString(16).padStart(2,'0')).join('');
+}
+
+async function artistMachineRequest(request, env) {
+  if(!artistRequestOriginAllowed(request,env))return json({ok:false,error:'origin_not_allowed'},403,CORS);
+  const body=await readBody(request);
+  if(body?.website)return json({ok:true},202,CORS);
+  const artistName=clean(body?.artistName,120);
+  const bandcampUrl=validBandcampDestination(body?.bandcampUrl);
+  const email=clean(body?.email,320)?.toLowerCase();
+  const city=clean(body?.city,120);
+  const message=clean(body?.message,1200)||'';
+  const sourceUrl=clean(body?.sourceUrl,600)||'';
+  if(!artistName||!bandcampUrl||!email||!validEmail(email)||!city)return json({ok:false,error:'invalid_request'},400,CORS);
+  const ipHash=await requestFingerprint(request);
+  const [recentIp,recentEmail]=await Promise.all([
+    env.DB.prepare("SELECT COUNT(*) AS total FROM artist_machine_request WHERE ip_hash=? AND strftime('%s',created_at)>=strftime('%s','now','-1 hour')").bind(ipHash).first(),
+    env.DB.prepare("SELECT COUNT(*) AS total FROM artist_machine_request WHERE email=? AND strftime('%s',created_at)>=strftime('%s','now','-1 day')").bind(email).first(),
+  ]);
+  if(Number(recentIp?.total||0)>=3||Number(recentEmail?.total||0)>=5)return json({ok:false,error:'rate_limited'},429,{...CORS,'retry-after':'3600'});
+  const recipient=env.ARTIST_MACHINE_REQUEST_EMAIL||env.OWNER_EMAIL;
+  const sender=env.ARTIST_MACHINE_REQUEST_FROM_EMAIL||env.REPORT_FROM_EMAIL;
+  if(!env.RESEND_API_KEY||!recipient||!sender)return json({ok:false,error:'request_service_unavailable'},503,CORS);
+  const id=crypto.randomUUID(),createdAt=new Date().toISOString();
+  await env.DB.prepare(`INSERT INTO artist_machine_request
+    (id,artist_name,bandcamp_url,email,city_location,message,source_url,ip_hash,status,created_at)
+    VALUES (?,?,?,?,?,?,?,?,?,?)`).bind(id,artistName,bandcampUrl,email,city,message,sourceUrl,ipHash,'pending',createdAt).run();
+  const lines=[`Band / Artist Name: ${artistName}`,`Bandcamp URL: ${bandcampUrl}`,`Email: ${email}`,`City / Location: ${city}`,`Message: ${message||'—'}`,`Source Artist Machine: ${sourceUrl||'—'}`,`Timestamp: ${createdAt}`];
+  const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{authorization:`Bearer ${env.RESEND_API_KEY}`,'content-type':'application/json','idempotency-key':`artist-machine-request-${id}`},body:JSON.stringify({from:sender,to:[recipient],reply_to:email,subject:`Artist Music Machine Request — ${artistName}`,text:lines.join('\n'),html:`<h1>Artist Music Machine Request</h1><dl><dt>Band / Artist Name</dt><dd>${escapeHtml(artistName)}</dd><dt>Bandcamp URL</dt><dd><a href="${escapeHtml(bandcampUrl)}">${escapeHtml(bandcampUrl)}</a></dd><dt>Email</dt><dd>${escapeHtml(email)}</dd><dt>City / Location</dt><dd>${escapeHtml(city)}</dd><dt>Message</dt><dd>${escapeHtml(message||'—')}</dd><dt>Source Artist Machine</dt><dd>${escapeHtml(sourceUrl||'—')}</dd><dt>Timestamp</dt><dd>${escapeHtml(createdAt)}</dd></dl>`})});
+  const result=await response.json().catch(()=>({}));
+  await env.DB.prepare('UPDATE artist_machine_request SET status=?,provider_id=?,failure_reason=?,sent_at=? WHERE id=?').bind(response.ok?'sent':'failed',clean(result.id,160),response.ok?null:JSON.stringify(result).slice(0,800),response.ok?new Date().toISOString():null,id).run();
+  if(!response.ok)return json({ok:false,error:'delivery_failed'},502,CORS);
+  return json({ok:true,id},202,CORS);
 }
 
 function syncAuthorized(request, env) {
@@ -381,13 +441,14 @@ function adminPage() {
   </script></body></html>`,{headers:{'content-type':'text/html; charset=utf-8'}});
 }
 
-export default {
+const worker = {
   async fetch(request, env) {
     const url = new URL(request.url);
     try {
       if (request.method === 'OPTIONS') return new Response(null,{status:204,headers:CORS});
       if (url.pathname === '/api/health') return json({ok:true,service:'cosmic-aquaria'} ,200,CORS);
       if (url.pathname === '/api/events' && request.method === 'POST') return recordEvent(request,env);
+      if (url.pathname === '/api/artist-machine-requests' && request.method === 'POST') return artistMachineRequest(request,env);
       if (url.pathname === '/api/email/open.gif' && request.method === 'GET') return recordEmailOpen(url,env);
       if (url.pathname === '/api/aquariums/random' && request.method === 'GET') return randomAquarium(url,env);
       const collectionRandomMatch = url.pathname.match(/^\/api\/collections\/([^/]+)\/random$/);
@@ -424,3 +485,5 @@ export default {
     context.waitUntil(sendActivityReport(env,controller.scheduledTime));
   },
 };
+
+export default worker;

@@ -260,3 +260,44 @@ export function isThreeArtistMatch(entries) {
 export function playableMelbourneEntries(catalogue) {
   return (Array.isArray(catalogue)?catalogue:[]).filter(entry=>entry?.status==='published'&&entry?.slug&&validBandcampUrl(entry.bandcampUrl)&&Array.isArray(entry.universeMembership)&&entry.universeMembership.includes('melbourne')&&Number(entry.trackCount)>0);
 }
+
+export function artistMachineSlug(value) {
+  return String(value || '')
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g,'')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g,'-')
+    .replace(/^-+|-+$/g,'')
+    .slice(0,72);
+}
+
+export function playableArtistTracks(manifest) {
+  const seen=new Set();
+  const output=[];
+  for(const track of Array.isArray(manifest?.tracks)?manifest.tracks:[]){
+    const embedId=String(track?.bandcampEmbedTrackId||'');
+    const bandcampUrl=validBandcampUrl(track?.bandcampUrl);
+    if(!/^\d+$/.test(embedId)||!bandcampUrl)continue;
+    const key=embedId;
+    if(seen.has(key))continue;
+    seen.add(key);
+    output.push({...track,bandcampUrl});
+  }
+  return output;
+}
+
+export function createShuffleBag(items, previousId = '', cryptoApi = globalThis.crypto) {
+  const bag=[...(Array.isArray(items)?items:[])];
+  for(let index=bag.length-1;index>0;index--){
+    const swapIndex=secureRandomIndex(index+1,cryptoApi);
+    [bag[index],bag[swapIndex]]=[bag[swapIndex],bag[index]];
+  }
+  if(bag.length>1&&previousId){
+    const identity=item=>String(item?.id||item?.bandcampEmbedTrackId||'');
+    if(identity(bag[0])===String(previousId)){
+      const swapIndex=bag.findIndex((item,index)=>index>0&&identity(item)!==String(previousId));
+      if(swapIndex>0)[bag[0],bag[swapIndex]]=[bag[swapIndex],bag[0]];
+    }
+  }
+  return bag;
+}

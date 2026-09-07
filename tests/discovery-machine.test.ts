@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import {
-  buildShareUrl, buildTickerMessages, validBandcampUrl, pickPlayableTrack,
+  buildShareUrl, validBandcampUrl, pickPlayableTrack,
   selectGuaranteedWinner, isThreeArtistMatch, artistIdentity,
   playableMelbourneEntries, MACHINE_STATES,
 } from '../github-pages/assets/discovery-machine-core.js';
@@ -62,7 +62,7 @@ test('only three identical canonical artist identities form a match',()=>{
 
 test('loss, near-miss and probability branches are absent from the normal spin path',async()=>{
   const runtime=await read('github-pages/assets/discovery-machine.js');
-  assert.match(runtime,/const outcome=\{kind:'winner',winner,entries:\[winner,winner,winner\]\}/);
+  assert.match(runtime,/entries:\[winner,winner,winner\]/);
   assert.doesNotMatch(runtime,/decideMachineResult|machineMatchProbability|losses-since-match|NEAR_MISS|setState\('LOSS'/);
   assert.doesNotMatch(runtime,/NO MATCH|TWO .*PULL AGAIN/);
 });
@@ -171,7 +171,7 @@ test('a matching artist raises the physical winner nameplate with the short warm
   assert.match(template,/class="winner-splash"/);
   assert.match(template,/winner-splash-frame\.png/);
   assert.match(template,/data-winner-name/);
-  assert.match(runtime,/presentWinner\(artistName\(winner\)\)/);
+  assert.match(runtime,/presentWinner\(isArtistMode\?prepared\.track\.title:artistName\(winner\)/);
   assert.match(runtime,/winner-tonal-bloom-mixkit-3109\.mp3/);
   assert.match(runtime,/winnerAudioTimer=setTimeout\([\s\S]*?,1450\)/);
   assert.match(css,/@keyframes winnerSplashRise/);
@@ -186,7 +186,7 @@ test('the winner receives four readable seconds in the splash before the player 
   assert.match(runtime,/const WINNER_SPLASH_DURATION_MS=4000/);
   assert.match(runtime,/const WINNER_SPLASH_TRANSITION_MS=260/);
   assert.match(runtime,/function holdWinnerSplash\(\)/);
-  assert.match(runtime,/const revealCompleted=await holdWinnerSplash\(\);if\(!revealCompleted\)return;await loadWinningTrack\(winner,\{prepared\}\)/);
+  assert.match(runtime,/const revealCompleted=await holdWinnerSplash\(\);if\(!revealCompleted\)return;await loadWinningTrack\(prepared\.entry,\{prepared\}\)/);
   assert.match(runtime,/function stopPlayback\(\)\{[\s\S]*?clearWinnerSplashTimer\(\)/);
   assert.match(css,/var\(--winner-splash-total,4\.52s\)/);
   assert.match(css,/5\.75%\{opacity:1[\s\S]*?94\.25%\{opacity:1/);
@@ -223,7 +223,7 @@ test('machine statistics are generated instead of hard-coded from the reference 
 test('the cream identity sign transforms into a factual continuous right-to-left Melbourne ticker after a win',async()=>{
   const [template,runtime,css,culture]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css'),read('github-pages/assets/ticker/melbourne-culture.js')]);
   assert.match(template,/class="ticker-copy">LET’S PLAY</);
-  assert.match(runtime,/function idleMessages\(\)\{return\['LET’S PLAY'\]\}/);
+  assert.match(runtime,/function idleMessages\(\)\{return\[isArtistMode\?'PULL FOR A SONG':'LET’S PLAY'\]\}/);
   assert.match(template,/data-title-mode="identity"/);
   assert.match(template,/data-artist-information/);
   assert.match(template,/data-artist-information-copy/);

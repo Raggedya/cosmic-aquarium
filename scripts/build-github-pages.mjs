@@ -7,6 +7,7 @@ const root = path.resolve(import.meta.dirname,'..');
 const pages = path.join(root,'github-pages');
 const template = await fs.readFile(path.join(root,'templates','artist-index.html'),'utf8');
 const universeTemplate = await fs.readFile(path.join(root,'templates','universe-index.html'),'utf8');
+const artistMachineTemplate = await fs.readFile(path.join(root,'templates','artist-machine.html'),'utf8');
 const collectionTemplate = await fs.readFile(path.join(root,'templates','collection-index.html'),'utf8');
 const css = await fs.readFile(path.join(root,'app','cosmic-aquarium.css'),'utf8');
 const doorwayCss = await fs.readFile(path.join(root,'app','doorway.css'),'utf8');
@@ -39,6 +40,7 @@ const machineAudioNames = [
   'reel-stop-gear-mixkit-2858.mp3',
   'reel-stop-lock-mixkit-2857.mp3',
   'winner-fanfare-mixkit-226.mp3',
+  'winner-tonal-bloom-mixkit-3109.mp3',
   'LICENSE.md',
 ];
 const machineAudioAssets = await Promise.all(machineAudioNames.map((name) => fs.readFile(path.join(root,'public','audio','machine',name))));
@@ -201,6 +203,30 @@ const allCanonicalArtists=[...canonicalCandidates.entries()].map(([id,entry])=>{
 const eligibleArtistIds=new Set(Object.entries(melbourneMembership.artists).filter(([,item])=>item?.eligible===true).map(([id])=>id));
 const canonicalArtists=allCanonicalArtists.filter(artist=>artist.status==='published'&&eligibleArtistIds.has(artist.id));
 const melbourneAquariumRegistry=aquariumRegistry.filter(entry=>entry.status==='published'&&eligibleArtistIds.has(entry.canonicalArtistId));
+const artistMachineSlugs=new Set();
+const artistMachineConfigs=[];
+const explicitArtistMachineDirectory=path.join(root,'automation','artist-machines');
+await fs.mkdir(explicitArtistMachineDirectory,{recursive:true});
+await fs.mkdir(path.join(pages,'artist-machine-catalogues'),{recursive:true});
+for(const filename of (await fs.readdir(explicitArtistMachineDirectory)).filter(name=>name.endsWith('.json')).sort()){
+  try{
+    const source=JSON.parse(await fs.readFile(path.join(explicitArtistMachineDirectory,filename),'utf8'));
+    const artistSlug=machineSlug(source.artistSlug||source.artistName);
+    const songs=(source.songs||[]).filter(track=>/^\d+$/.test(String(track?.bandcampEmbedTrackId||''))&&isBandcampUrl(track?.bandcampUrl));
+    if(source.machineMode!=='artist'||!artistSlug||!source.artistName||!isBandcampUrl(source.bandcampArtistUrl)||!songs.length)throw new Error('invalid_artist_machine_config');
+    const catalogue={schemaVersion:1,slug:`artist-machine-${artistSlug}`,artist:source.artistName,releaseTitle:'Bandcamp catalogue',bandcampUrl:source.bandcampArtistUrl,commerceAvailable:true,commerceUrl:source.bandcampArtistUrl,bioShort:source.bio||null,heroArtwork:source.heroArtwork||null,tracks:songs};
+    await fs.writeFile(path.join(pages,'artist-machine-catalogues',`${artistSlug}.json`),JSON.stringify(catalogue,null,2)+'\n');
+    const sourceMetadata={...source};delete sourceMetadata.songs;
+    const config={...sourceMetadata,artistSlug,cataloguePath:`/artist-machine-catalogues/${artistSlug}.json`,songCount:songs.length,status:'published'};
+    const prior=artistMachineConfigs.findIndex(item=>item.artistSlug===artistSlug);
+    if(prior>=0)artistMachineConfigs.splice(prior,1,config);else artistMachineConfigs.push(config);
+    artistMachineSlugs.add(artistSlug);
+  }catch(error){console.warn('Skipped invalid Artist Music Machine config: '+filename,error)}
+}
+artistMachineConfigs.sort((a,b)=>a.artistName.localeCompare(b.artistName));
+await fs.mkdir(path.join(pages,'artist'),{recursive:true});
+await fs.writeFile(path.join(pages,'artist-machines.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:artistMachineConfigs},null,2)+'\n');
+await fs.writeFile(path.join(pages,'artist','index.html'),renderArtistMachine());
 const playableTrackIds=new Set();
 for(const artistId of eligibleArtistIds)for(const trackId of playableTrackIdsByArtist.get(artistId)||[])playableTrackIds.add(trackId);
 await fs.writeFile(path.join(pages,'artists-index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:canonicalArtists},null,2)+'\n');
@@ -283,7 +309,7 @@ const universeStats={
 };
 await fs.writeFile(path.join(pages,'universe-stats.json'),JSON.stringify(universeStats,null,2)+'\n');
 await fs.writeFile(path.join(pages,'index.html'),renderLanding());
-console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s) and '+collectionRegistry.length+' collection(s).');
+console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s), '+artistMachineConfigs.length+' Artist Music Machine configuration(s), and '+collectionRegistry.length+' collection(s).');
 
 async function writeArtist(slug,artist){
   const directory=path.join(pages,slug);
@@ -295,6 +321,9 @@ function render(slug,artist){
 }
 function renderLanding(){
   return universeTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
+}
+function renderArtistMachine(){
+  return artistMachineTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
 }
 function renderCollection(collection){
   return collectionTemplate.replaceAll('{{SLUG}}',escapeAttribute(collection.slug)).replaceAll('{{NAME}}',escapeHtml(String(collection.name).toUpperCase())).replaceAll('{{INSTRUCTION}}',escapeHtml(collection.instruction||'TOUCH AN ARTIST')).replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
@@ -317,3 +346,4 @@ function canonicalPreference(candidate,current){
 }
 function escapeHtml(value){return String(value).replace(/[&<>]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[char]));}
 function escapeAttribute(value){return escapeHtml(value).replaceAll('"','&quot;');}
+function machineSlug(value){return String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,72)}
