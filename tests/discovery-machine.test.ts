@@ -94,13 +94,15 @@ test('the twin meters and centre inscription share a recessed cabinet instrument
   assert.doesNotMatch(css,/\.vu-meter\{[^}]*drop-shadow/);
 });
 
-test('the central control is never a spin control and switches from PLAY to BUY MUSIC',async()=>{
+test('the central control is never a spin control and switches from a green play symbol to BUY MUSIC',async()=>{
   const [template,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
   assert.match(template,/class="buy-button" data-action="buy"/);
   assert.match(template,/BUY<br>MUSIC/);
   assert.match(runtime,/buyLink\.addEventListener\('click',activatePrimary\)/);
   assert.match(runtime,/if\(primaryAction==='play'\)\{beginWinningPlayback\(\);return\}/);
   assert.match(runtime,/if\(primaryAction==='buy'&&currentPurchaseUrl\)/);
+  assert.match(runtime,/class="play-symbol"/);
+  assert.doesNotMatch(runtime,/innerHTML='<span>PLAY<\/span>'/);
   assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',[\s\S]{0,80}runSpin/);
 });
 
@@ -122,7 +124,6 @@ test('official Bandcamp playback, real purchase links and track fallback validat
 
 test('a winner becomes a green PLAY control, requests Bandcamp on press, then becomes BUY after six seconds',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
-  assert.match(template,/class="bandcamp-play-cue"/);
   assert.match(template,/Official Bandcamp playback controls/);
   assert.match(runtime,/autoplay=true/);
   assert.match(runtime,/setState\('READY_TO_PLAY'/);
@@ -131,11 +132,21 @@ test('a winner becomes a green PLAY control, requests Bandcamp on press, then be
   assert.match(runtime,/schedulePlaybackFallback/);
   assert.match(runtime,/setState\('AUTOPLAY_ATTEMPT'/);
   assert.match(runtime,/setState\('AWAITING_PLAY'/);
-  assert.match(runtime,/SILENT\? TAP THE PLAY BUTTON/);
+  assert.match(runtime,/SILENT\? TAP THE BANDCAMP PLAYER/);
   assert.match(runtime,/function animateLeverAndSpin\(\)\{if\(locked\)return;ensureAudio\(\)/);
-  assert.match(css,/data-machine-state="AWAITING_PLAY"/);
-  assert.match(css,/\.bandcamp-play-cue\{[^}]*pointer-events:none/);
   assert.match(css,/\.buy-button\[data-primary-mode="play"\]\{background:radial-gradient\([^}]*#55e96a/);
+  assert.match(css,/\.play-symbol path\{[^}]*fill:#fff5cf/);
+});
+
+test('a matching artist raises the physical winner nameplate for the sampled ta-da celebration',async()=>{
+  const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+  assert.match(template,/class="winner-splash"/);
+  assert.match(template,/winner-splash-frame\.png/);
+  assert.match(template,/data-winner-name/);
+  assert.match(runtime,/presentWinner\(artistName\(winner\)\)/);
+  assert.match(runtime,/winner-fanfare-mixkit-226\.mp3/);
+  assert.match(css,/@keyframes winnerSplashRise/);
+  assert.match(css,/data-machine-state="WIN_CELEBRATION"[^}]*\.winner-splash/);
 });
 
 test('the live source of truth is exactly 500 Melbourne artists and 3,744 playable tracks',async()=>{
@@ -185,17 +196,23 @@ test('analogue meters use damped ballistics and distinguish idle, spin, celebrat
   assert.match(runtime,/procedural-transport-coupled/);
 });
 
-test('licensed reel-wheel audio, synchronized stop clicks, haptics and a quiet loss replace glass crashes',async()=>{
+test('licensed physical mechanism recordings, synchronized sampled stops, haptics and a quiet loss replace electronic reel tones and glass crashes',async()=>{
   const [template,runtime,license]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/audio/machine/LICENSE.md')]);
-  assert.match(template,/reel-wheel-mixkit-1932\.mp3/);
-  assert.match(runtime,/reelSoundUrl=.*reel-wheel-mixkit-1932\.mp3/);
+  assert.match(template,/reel-actual-slotmachine-freesound-261346\.mp3/);
+  assert.match(runtime,/reelMotorUrl=.*reel-actual-slotmachine-freesound-261346\.mp3/);
+  assert.match(runtime,/reelRatchetUrl=.*reel-ratchet-mixkit-2641\.mp3/);
+  assert.match(runtime,/reel-stop-(?:lock|gear)-mixkit-/);
   assert.match(runtime,/function leverClack/);
   assert.match(runtime,/function reelThunk/);
   assert.match(runtime,/function startMotor/);
   assert.match(runtime,/function celebrationSound/);
   assert.match(runtime,/navigator\.vibrate/);
   assert.doesNotMatch(runtime,/glass-impact|function impact/);
-  assert.match(license,/Mixkit item 1932/);
+  assert.match(license,/1989 fruit machine/);
+  assert.match(license,/markkuyp/);
+  assert.match(license,/Gear metallic lock sound/);
+  assert.match(license,/Medieval show fanfare announcement/);
+  assert.doesNotMatch(runtime,/createOscillator|type:'square'|type:'sawtooth'/);
   assert.doesNotMatch(runtime,/confetti|laser|coin|payout|credits/i);
 });
 
@@ -212,17 +229,25 @@ test('mobile full-screen, one-handed lever, reduced motion and touch targets are
   assert.match(css,/@media \(prefers-reduced-motion:reduce\)/);
 });
 
+test('ticker copy is vertically centred without changing the approved panel treatment',async()=>{
+  const css=await read('app/discovery-machine.css');
+  assert.match(css,/\.ticker-window\{[^}]*height:100%[^}]*display:flex[^}]*align-items:center[^}]*justify-content:center/);
+  assert.match(css,/\.ticker-copy\{[^}]*line-height:1/);
+});
+
 test('share deep links remain canonical and carry Melbourne universe state',()=>{
   assert.equal(buildShareUrl('https://raggedya.github.io','/cosmic-aquarium','porchlight',['anything']),'https://raggedya.github.io/cosmic-aquarium/?release=porchlight&categories=anything');
 });
 
-test('the public build packages the cabinet, lever, marquee, physical reels and reel sound',async()=>{
+test('the public build packages the cabinet, lever, marquee, winner splash and mechanical sound set',async()=>{
   const build=await read('scripts/build-github-pages.mjs');
   assert.match(build,/aggits-cabinet\.webp/);
   assert.match(build,/aggits-lever\.webp/);
   assert.match(build,/aggits-marquee-v2\.webp/);
   assert.match(build,/aggits-reel-v2\.webp/);
+  assert.match(build,/winner-splash-frame\.png/);
   assert.match(build,/musicMachineAssets\.forEach/);
-  assert.match(build,/reel-wheel-mixkit-1932\.mp3/);
+  assert.match(build,/reel-actual-slotmachine-freesound-261346\.mp3/);
+  assert.match(build,/winner-fanfare-mixkit-226\.mp3/);
   assert.match(build,/machineAudioAssets\.forEach/);
 });

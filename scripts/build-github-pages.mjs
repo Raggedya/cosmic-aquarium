@@ -31,9 +31,16 @@ const discoveryFidelityAssetNames = [
   'player-ticker-shell.webp','player-main-frame.webp','player-share.webp','player-share-blank.webp','player-buy.webp','player-next.webp','player-next-blank.webp','player-footer.webp',
 ];
 const discoveryFidelityAssets = await Promise.all(discoveryFidelityAssetNames.map((name) => fs.readFile(path.join(root,'public','discovery-fidelity',name))));
-const musicMachineAssetNames = ['aggits-cabinet.webp','aggits-lever.webp','aggits-marquee-v2.webp','aggits-reel-v2.webp'];
+const musicMachineAssetNames = ['aggits-cabinet.webp','aggits-lever.webp','aggits-marquee-v2.webp','aggits-reel-v2.webp','winner-splash-frame.png'];
 const musicMachineAssets = await Promise.all(musicMachineAssetNames.map((name) => fs.readFile(path.join(root,'public','music-machine',name))));
-const machineAudioNames = ['reel-wheel-mixkit-1932.mp3','LICENSE.md'];
+const machineAudioNames = [
+  'reel-actual-slotmachine-freesound-261346.mp3',
+  'reel-ratchet-mixkit-2641.mp3',
+  'reel-stop-gear-mixkit-2858.mp3',
+  'reel-stop-lock-mixkit-2857.mp3',
+  'winner-fanfare-mixkit-226.mp3',
+  'LICENSE.md',
+];
 const machineAudioAssets = await Promise.all(machineAudioNames.map((name) => fs.readFile(path.join(root,'public','audio','machine',name))));
 const glassAudioSourceNames = [
   'glass-plate-crunching.mp3','glass-plate-crunching.ogg',

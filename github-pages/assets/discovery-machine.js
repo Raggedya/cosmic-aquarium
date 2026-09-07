@@ -20,6 +20,7 @@ const statusNode=document.querySelector('.machine-status');
 const needles=[...document.querySelectorAll('[data-meter-needle]')];
 const needleShadows=[...document.querySelectorAll('[data-meter-shadow]')];
 const scales=[...document.querySelectorAll('[data-meter-scale]')];
+const winnerName=document.querySelector('[data-winner-name]');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const workerBase='https://cosmic-aquaria.andrewharris501.workers.dev';
 const stateSet=new Set(MACHINE_STATES);
@@ -28,7 +29,14 @@ const lossKey='aggits:losses-since-match';
 const sessionKey='aggits:analytics-session';
 const soundKey='aggits:sound-off';
 const cultureKey='aggits:melbourne-culture-index';
-const reelSoundUrl=`${base}/assets/audio/machine/reel-wheel-mixkit-1932.mp3`;
+const reelMotorUrl=`${base}/assets/audio/machine/reel-actual-slotmachine-freesound-261346.mp3`;
+const reelRatchetUrl=`${base}/assets/audio/machine/reel-ratchet-mixkit-2641.mp3`;
+const reelStopUrls=[
+  `${base}/assets/audio/machine/reel-stop-lock-mixkit-2857.mp3`,
+  `${base}/assets/audio/machine/reel-stop-gear-mixkit-2858.mp3`,
+  `${base}/assets/audio/machine/reel-stop-lock-mixkit-2857.mp3`,
+];
+const winnerFanfareUrl=`${base}/assets/audio/machine/winner-fanfare-mixkit-226.mp3`;
 
 let catalogue=[];
 let artistsById=new Map();
@@ -46,6 +54,10 @@ let tickerTimer=0;
 let audioContext=null;
 let motorNodes=[];
 let reelSpinAudio=null;
+let reelRatchetAudio=null;
+let reelStopAudio=[];
+let winnerAudio=null;
+let winnerAudioTimer=0;
 let motorFadeTimer=0;
 let soundOff=readStorage(soundKey)==='true';
 let leverStartY=0;
@@ -144,7 +156,7 @@ function setPrimaryMode(mode){
   buyLink.dataset.primaryMode=mode;
   buyLink.removeAttribute('aria-busy');
   if(mode==='play'){
-    buyLink.innerHTML='<span>PLAY</span>';
+    buyLink.innerHTML='<svg class="play-symbol" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M20 12.5 52 32 20 51.5Z"/></svg>';
     buyLink.disabled=false;
     buyLink.setAttribute('aria-disabled','false');
     buyLink.setAttribute('aria-label',`Play ${currentTrack?.title||'the winning song'} by ${currentManifest?.artist||'the winning artist'}`);
@@ -155,6 +167,13 @@ function setPrimaryMode(mode){
   buyLink.disabled=!active;
   buyLink.setAttribute('aria-disabled',String(!active));
   buyLink.setAttribute('aria-label',active?`Buy ${currentTrack?.title||'this music'} by ${currentManifest?.artist||'this artist'} on Bandcamp`:'Buy music becomes available after a winning song is selected');
+}
+
+function presentWinner(value){
+  const text=String(value||'MELBOURNE MUSIC').replace(/\s+/g,' ').trim().toUpperCase();
+  winnerName.textContent=text;
+  winnerName.classList.toggle('is-long',text.length>18);
+  winnerName.classList.toggle('is-very-long',text.length>28);
 }
 
 function updateStats(){
@@ -226,37 +245,45 @@ function ensureAudio(){
   if(audioContext.state==='suspended')void audioContext.resume();
   return audioContext;
 }
-function tone(frequency,duration=.12,{gain=.09,type='triangle',delay=0}={}){
-  const ctx=ensureAudio();if(!ctx)return;
-  const start=ctx.currentTime+delay,osc=ctx.createOscillator(),amp=ctx.createGain();osc.type=type;osc.frequency.setValueAtTime(frequency,start);amp.gain.setValueAtTime(.0001,start);amp.gain.exponentialRampToValueAtTime(gain,start+.012);amp.gain.exponentialRampToValueAtTime(.0001,start+duration);osc.connect(amp).connect(ctx.destination);osc.start(start);osc.stop(start+duration+.02);
+function machineAudio(url){const audio=new Audio(url);audio.preload='auto';return audio}
+function playSample(audio,{volume=.55,rate=1}={}){
+  if(soundOff||!audio)return;
+  try{audio.pause();audio.currentTime=0;audio.volume=volume;audio.playbackRate=rate;void audio.play().catch(()=>{})}catch{}
 }
-function noiseClick(duration=.045,gain=.065,delay=0){
-  const ctx=ensureAudio();if(!ctx)return;
-  const length=Math.max(1,Math.floor(ctx.sampleRate*duration));
-  const buffer=ctx.createBuffer(1,length,ctx.sampleRate),data=buffer.getChannelData(0);
-  for(let index=0;index<length;index++)data[index]=(Math.random()*2-1)*Math.pow(1-index/length,4);
-  const source=ctx.createBufferSource(),filter=ctx.createBiquadFilter(),amp=ctx.createGain(),start=ctx.currentTime+delay;
-  filter.type='bandpass';filter.frequency.value=1450;filter.Q.value=.72;amp.gain.setValueAtTime(gain,start);amp.gain.exponentialRampToValueAtTime(.0001,start+duration);
-  source.buffer=buffer;source.connect(filter).connect(amp).connect(ctx.destination);source.start(start);
+function ensureMachineSamples(){
+  reelSpinAudio??=machineAudio(reelMotorUrl);
+  reelRatchetAudio??=machineAudio(reelRatchetUrl);
+  if(!reelStopAudio.length)reelStopAudio=reelStopUrls.map(machineAudio);
+  winnerAudio??=machineAudio(winnerFanfareUrl);
 }
-function leverClack(){noiseClick(.055,.075);tone(92,.11,{gain:.085,type:'triangle'});tone(720,.038,{gain:.038,type:'square',delay:.018});navigator.vibrate?.([14,28,8])}
-function reelThunk(index){noiseClick(.04,.062);tone(68+index*6,.13,{gain:.09,type:'triangle'});tone(610+index*55,.032,{gain:.032,type:'square',delay:.012});navigator.vibrate?.(10+index*2)}
+function leverClack(){ensureMachineSamples();playSample(reelStopAudio[0],{volume:.58,rate:.9});navigator.vibrate?.([14,28,8])}
+function reelThunk(index){
+  ensureMachineSamples();
+  const rates=[1.04,.98,.9];playSample(reelStopAudio[index],{volume:.72+index*.06,rate:rates[index]});
+  if(reelSpinAudio&&!reelSpinAudio.paused)reelSpinAudio.volume=Math.max(.08,.34-(index+1)*.085);
+  navigator.vibrate?.(12+index*3);
+}
 function startMotor(){
   if(soundOff)return;
   stopMotor(true);
-  reelSpinAudio??=new Audio(reelSoundUrl);
-  reelSpinAudio.preload='auto';reelSpinAudio.currentTime=0;reelSpinAudio.volume=.46;reelSpinAudio.playbackRate=1.35;
-  void reelSpinAudio.play().catch(()=>{tone(46,.45,{gain:.035,type:'sawtooth'});tone(71,.42,{gain:.024,type:'triangle',delay:.03})});
+  ensureMachineSamples();
+  playSample(reelRatchetAudio,{volume:.66,rate:.96});
+  reelSpinAudio.loop=false;reelSpinAudio.currentTime=.15;reelSpinAudio.volume=.42;reelSpinAudio.playbackRate=1;
+  void reelSpinAudio.play().catch(()=>{});
 }
 function stopMotor(immediate=false){
   clearInterval(motorFadeTimer);motorFadeTimer=0;
   if(reelSpinAudio&&!reelSpinAudio.paused){
-    if(immediate){reelSpinAudio.pause();reelSpinAudio.currentTime=0;reelSpinAudio.volume=.46}
-    else{let step=0,startVolume=reelSpinAudio.volume;motorFadeTimer=setInterval(()=>{step++;reelSpinAudio.volume=Math.max(.001,startVolume*(1-step/5));if(step>=5){clearInterval(motorFadeTimer);motorFadeTimer=0;reelSpinAudio.pause();reelSpinAudio.currentTime=0;reelSpinAudio.volume=.46}},28)}
+    if(immediate){reelSpinAudio.pause();reelSpinAudio.currentTime=0;reelSpinAudio.volume=.34}
+    else{let step=0,startVolume=reelSpinAudio.volume;motorFadeTimer=setInterval(()=>{step++;reelSpinAudio.volume=Math.max(.001,startVolume*(1-step/6));if(step>=6){clearInterval(motorFadeTimer);motorFadeTimer=0;reelSpinAudio.pause();reelSpinAudio.currentTime=0;reelSpinAudio.volume=.34}},30)}
   }
   if(motorNodes.length){const ctx=audioContext,gain=motorNodes[2];try{gain.gain.exponentialRampToValueAtTime(.0001,ctx.currentTime+.12);motorNodes.slice(0,2).forEach(node=>node.stop(ctx.currentTime+.14))}catch{}motorNodes=[]}
 }
-function celebrationSound(){tone(392,.28,{gain:.08});tone(523,.35,{gain:.085,delay:.12});tone(659,.42,{gain:.09,delay:.26});noiseClick(.05,.045,.02);navigator.vibrate?.([22,45,18,45,25])}
+function celebrationSound(){
+  ensureMachineSamples();clearTimeout(winnerAudioTimer);playSample(winnerAudio,{volume:.58,rate:1});
+  winnerAudioTimer=setTimeout(()=>{winnerAudio?.pause();if(winnerAudio)winnerAudio.currentTime=0},2100);
+  navigator.vibrate?.([22,45,18,45,25]);
+}
 
 async function fetchManifest(entry){
   const response=await fetch(`${base}/artists/${encodeURIComponent(entry.slug)}.json`,{cache:'no-store'});
@@ -296,6 +323,7 @@ function spinReel(index,finalEntry,stopAfter){
 
 function stopPlayback(){
   clearTimeout(autoplayFallbackTimer);clearTimeout(buyRevealTimer);autoplayFallbackTimer=0;buyRevealTimer=0;
+  clearTimeout(winnerAudioTimer);winnerAudioTimer=0;winnerAudio?.pause();
   bandcampEngaged=false;cultureTickerActive=false;frame.src='about:blank';currentTrack=null;currentEmbedUrl='';currentPurchaseUrl='';stopButton.disabled=true;stopButton.textContent='STOP';setPrimaryMode('dormant');setMeterMode('idle');
 }
 
@@ -305,7 +333,7 @@ function schedulePlaybackFallback(delay=1800){
     if(!currentTrack||bandcampEngaged)return;
     cultureTickerActive=false;
     setState('AWAITING_PLAY',`Autoplay may be unavailable. Play ${currentTrack.title} by ${currentManifest.artist}.`);
-    showTicker(`SILENT? TAP THE PLAY BUTTON • ${currentTrack.title} • ${currentManifest.artist}`);
+    showTicker(`SILENT? TAP THE BANDCAMP PLAYER • ${currentTrack.title} • ${currentManifest.artist}`);
   },delay);
 }
 
@@ -355,7 +383,7 @@ async function runSpin(){
   const promises=outcome.entries.map((entry,index)=>spinReel(index,entry,stopTimes[index]).then(()=>setState(`REEL_${index+1}_STOP`,`Reel ${index+1} stopped on ${artistName(entry)}.`)));
   await Promise.all(promises);stopMotor();setState('EVALUATE');await wait(reducedMotion.matches?100:380);
   if(isThreeArtistMatch(outcome.entries)){
-    const winner=outcome.entries[0];setState('WIN',`Three matching reels: ${artistName(winner)}.`);showTicker(`★★★ ${artistName(winner)} ★★★`);setMeterMode('celebrate');celebrationSound();setState('WIN_CELEBRATION');recordEvent('machine_match',{artist:artistName(winner)});await wait(reducedMotion.matches?400:2200);await loadWinningTrack(winner);locked=false;return;
+    const winner=outcome.entries[0];presentWinner(artistName(winner));setState('WIN',`Three matching reels: ${artistName(winner)}.`);showTicker(`★★★ ${artistName(winner)} ★★★`);setMeterMode('celebrate');celebrationSound();setState('WIN_CELEBRATION');recordEvent('machine_match',{artist:artistName(winner)});await wait(reducedMotion.matches?900:2200);await loadWinningTrack(winner);locked=false;return;
   }
   if(outcome.kind==='near'){
     const counts=new Map();outcome.entries.forEach(entry=>counts.set(artistIdentity(entry),(counts.get(artistIdentity(entry))||0)+1));const repeated=outcome.entries.find(entry=>counts.get(artistIdentity(entry))===2);
@@ -375,7 +403,7 @@ async function shareCurrent(){if(!currentEntry||!currentManifest||!currentTrack)
 function resetMachine(){stopPlayback();currentEntry=currentManifest=null;shareButton.disabled=true;locked=false;reels.forEach((_,index)=>setReelRows(index,randomEntry()));setState('IDLE','Pull the lever to discover Melbourne music.');startTickerRotation(idleMessages());history.replaceState({view:'machine'},'',`${base.replace(/\/$/,'')}/`)}
 function idleMessages(){return['LET’S PLAY']}
 
-function toggleSound(){soundOff=!soundOff;writeStorage(soundKey,soundOff);soundButton.textContent=soundOff?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!soundOff));if(soundOff){stopMotor();audioContext?.suspend()}else ensureAudio()}
+function toggleSound(){soundOff=!soundOff;writeStorage(soundKey,soundOff);soundButton.textContent=soundOff?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!soundOff));if(soundOff){stopMotor();winnerAudio?.pause();reelStopAudio.forEach(audio=>audio.pause());reelRatchetAudio?.pause();audioContext?.suspend()}else{ensureAudio();ensureMachineSamples()}}
 function stopCurrent(){if(!currentTrack)return;stopPlayback();showTicker('MUSIC STOPPED — PULL AGAIN');setState('IDLE','Playback stopped. Pull again.');locked=false}
 
 async function loadData(){
@@ -390,7 +418,7 @@ async function loadData(){
   locked=false;setState('IDLE','Pull the lever to discover Melbourne music.');startTickerRotation(idleMessages());recordEvent('doorway_open',{catalogueSize:catalogue.length,universe:'melbourne'});
 }
 
-buildMeters();startMeters();soundButton.textContent=soundOff?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!soundOff));
+buildMeters();startMeters();ensureMachineSamples();soundButton.textContent=soundOff?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!soundOff));
 lever.addEventListener('pointerdown',onLeverDown);lever.addEventListener('pointermove',onLeverMove);lever.addEventListener('pointerup',onLeverUp);lever.addEventListener('pointercancel',onLeverUp);
 lever.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();animateLeverAndSpin()}});
 shareButton.addEventListener('click',()=>void shareCurrent());buyLink.addEventListener('click',activatePrimary);stopButton.addEventListener('click',stopCurrent);homeButton.addEventListener('click',resetMachine);soundButton.addEventListener('click',toggleSound);
