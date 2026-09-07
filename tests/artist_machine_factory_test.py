@@ -57,6 +57,26 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             item.stop()
         self.temporary.cleanup()
 
+    def test_configure_workspace_retargets_all_factory_paths(self) -> None:
+        original = factory.ROOT
+        try:
+            root = self.root / "managed-workspace"
+            contract = root / "automation" / "artist-machine-factory" / "skin-contract.json"
+            contract.parent.mkdir(parents=True)
+            contract.write_text(json.dumps({
+                "canvas": {"aspectRatio": 747 / 1280, "maximumBytes": 5_000_000},
+                "protectedZones": [],
+                "rules": [],
+            }), encoding="utf-8")
+            factory.configure_workspace(root)
+            expected = root.resolve()
+            self.assertEqual(factory.ROOT, expected)
+            self.assertEqual(factory.CANDIDATES, expected / "automation" / "artist-machine-factory" / "candidates")
+            self.assertEqual(factory.PUBLISHED, expected / "automation" / "artist-machines")
+            self.assertEqual(factory.PUBLIC_SKINS, expected / "public" / "music-machine")
+        finally:
+            factory.configure_workspace(original)
+
     def make_image(self, name: str, size: tuple[int, int] = (747, 1280)) -> Path:
         path = self.root / name
         Image.new("RGB", size, "#4b1919").save(path, quality=80)

@@ -32,6 +32,26 @@ class FactoryError(ValueError):
     pass
 
 
+def configure_workspace(workspace: Path) -> Path:
+    """Point the reusable factory engine at an explicit project checkout.
+
+    The command-line factory continues to default to this repository.  The
+    Windows dashboard uses an isolated managed checkout so private reference
+    images and candidate reports never enter the public working tree.
+    """
+    global ROOT, FACTORY, CANDIDATES, PUBLISHED, PUBLIC_SKINS, SKIN_CONTRACT
+    resolved = Path(workspace).expanduser().resolve()
+    if not (resolved / "automation" / "artist-machine-factory" / "skin-contract.json").is_file():
+        raise FactoryError("The selected Factory workspace is missing the locked machine contract")
+    ROOT = resolved
+    FACTORY = ROOT / "automation" / "artist-machine-factory"
+    CANDIDATES = FACTORY / "candidates"
+    PUBLISHED = ROOT / "automation" / "artist-machines"
+    PUBLIC_SKINS = ROOT / "public" / "music-machine"
+    SKIN_CONTRACT = FACTORY / "skin-contract.json"
+    return ROOT
+
+
 def clean_text(value: Any, maximum: int, field: str, required: bool = False) -> str:
     text = " ".join(str(value or "").split()).strip()
     if required and not text:
