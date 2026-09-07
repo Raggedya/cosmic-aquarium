@@ -69,7 +69,12 @@
       </section>
       <section class="ticker-panel" aria-label="Machine messages and Bandcamp playback">
         <div class="ticker-window"><span class="ticker-copy">LET’S PLAY</span></div>
-        <div class="bandcamp-slot" aria-label="Official Bandcamp playback"><iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe></div>
+        <div class="bandcamp-slot" aria-label="Official Bandcamp playback">
+          <div class="bandcamp-player-shell">
+            <iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
+            <span class="bandcamp-wordmark" aria-hidden="true">bandcamp</span>
+          </div>
+        </div>
       </section>
       <section class="machine-controls" aria-label="Current music controls">
         <button type="button" class="secondary-button" data-action="share" disabled>SHARE</button>

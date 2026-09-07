@@ -96,7 +96,7 @@ test('the twin meters and centre inscription share a recessed cabinet instrument
   assert.doesNotMatch(css,/\.vu-meter\{[^}]*drop-shadow/);
 });
 
-test('the central green control is permanently BUY MUSIC and never controls playback or spin',async()=>{
+test('the central burgundy control is permanently BUY MUSIC and never controls playback or spin',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/class="buy-button" data-action="buy"/);
   assert.match(template,/BUY<br>MUSIC/);
@@ -104,7 +104,8 @@ test('the central green control is permanently BUY MUSIC and never controls play
   assert.match(runtime,/if\(primaryAction==='buy'&&currentPurchaseUrl\)/);
   assert.doesNotMatch(runtime,/beginWinningPlayback|primaryAction==='play'|class="play-symbol"/);
   assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',\(\)=>void runSpin/);
-  assert.match(css,/\.buy-button\{[^}]*#55e96a/);
+  assert.match(css,/\.buy-button\{[^}]*#8d2c37[^}]*#641522[^}]*#3b0914/);
+  assert.match(css,/\.buy-button\[data-primary-mode="dormant"\]\{[^}]*filter:brightness\(\.58\) saturate\(\.82\)/);
 });
 
 test('the primary control and SHARE remain dormant until a real winning track is resolved',async()=>{
@@ -132,7 +133,9 @@ test('a winner places the real Bandcamp player in the long bar and enables BUY M
   assert.match(runtime,/setPrimaryMode\('buy'\)/);
   assert.match(runtime,/frame\.addEventListener\('focus',markBandcampPlayback\)/);
   assert.match(runtime,/function animateLeverAndSpin\(\)\{if\(locked\)return;ensureAudio\(\)/);
-  assert.match(css,/\.bandcamp-slot\{position:absolute;inset:3px 3\.5%/);
+  assert.match(css,/\.bandcamp-slot\{position:absolute;inset:2px 3\.5%/);
+  assert.match(template,/class="bandcamp-wordmark"[^>]*>bandcamp<\/span>/);
+  assert.match(runtime,/bgcol=1b0808\/linkcol=e8c680/);
   assert.match(css,/data-machine-state="READY_TO_PLAY"[^}]*\.bandcamp-slot/);
   assert.doesNotMatch(template,/data-action="pause"|>STOP</);
 });
@@ -188,7 +191,10 @@ test('the cream identity sign transforms into a factual, optically centred artis
   assert.match(runtime,/showArtistInformation\(entry,manifest,track\)/);
   assert.match(runtime,/showMachineIdentity\(\)/);
   assert.match(css,/@keyframes artistInformationPan/);
-  assert.match(css,/transform:translate3d\(0,1px,0\)/);
+  assert.match(css,/font-size:clamp\(14px,4\.25vw,23px\)/);
+  assert.match(css,/transform:translate3d\(0,2px,0\)/);
+  assert.match(css,/@keyframes artistInformationPan\{from\{transform:translate3d\(calc\(-1 \* var\(--artist-travel,0px\)\),2px,0\)\}to\{transform:translate3d\(var\(--artist-travel,0px\),2px,0\)\}\}/);
+  assert.match(runtime,/Math\.max\(4\.2,\(travel\*2\)\/42\)/);
 });
 
 test('analogue meters use damped ballistics and distinguish idle, spin, celebration and playback',async()=>{
@@ -248,11 +254,13 @@ test('ticker motion uses measured travel, constant pixels per second and complet
   assert.doesNotMatch(runtime,/Math\.min\(28,text\.length/);
 });
 
-test('Bandcamp is presented as a recessed source, not a dominant cabinet logo',async()=>{
+test('Bandcamp is presented as a recessed branded source, not a dominant cabinet logo',async()=>{
   const [template,css]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css')]);
   assert.match(template,/MELBOURNE SONGS<br>ON BANDCAMP/);
   assert.match(css,/\.bandcamp-slot\{[^}]*box-shadow:inset/);
-  assert.doesNotMatch(template,/class="[^\"]*bandcamp-logo/);
+  assert.match(template,/class="bandcamp-wordmark"[^>]*>bandcamp<\/span>/);
+  assert.match(css,/\.bandcamp-player-shell\{[^}]*box-shadow:inset/);
+  assert.match(css,/\.bandcamp-slot iframe\{[^}]*filter:sepia\(\.78\) saturate\(1\.7\) hue-rotate\(326deg\)/);
 });
 
 test('share deep links remain canonical and carry Melbourne universe state',()=>{

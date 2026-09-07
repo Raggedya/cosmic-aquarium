@@ -178,8 +178,8 @@ function showArtistInformation(entry,manifest,track){
   const token=++titleRenderToken;artistInformation.textContent=artistInformationText(entry,manifest,track);artistInformation.classList.remove('is-panning');machineTitle.dataset.titleMode='artist';machineTitle.setAttribute('aria-label',`Winner information for ${manifest?.artist||entry?.artist||'the selected artist'}`);machineTitleIdentity.setAttribute('aria-hidden','true');artistInformationPanel.setAttribute('aria-hidden','false');
   requestAnimationFrame(()=>requestAnimationFrame(()=>{
     if(token!==titleRenderToken)return;
-    const viewport=artistInformation.parentElement.clientWidth,textWidth=artistInformation.scrollWidth,travel=Math.max(0,textWidth-viewport+10);
-    if(travel>3&&!reducedMotion.matches){artistInformation.style.setProperty('--artist-travel',`${travel.toFixed(1)}px`);artistInformation.style.setProperty('--artist-duration',`${Math.max(10,travel/17+5).toFixed(2)}s`);artistInformation.classList.add('is-panning')}
+    const viewport=artistInformation.parentElement.clientWidth,textWidth=artistInformation.scrollWidth,travel=Math.max(0,(textWidth-viewport)/2+8);
+    if(travel>3&&!reducedMotion.matches){artistInformation.style.setProperty('--artist-travel',`${travel.toFixed(1)}px`);artistInformation.style.setProperty('--artist-duration',`${Math.max(4.2,(travel*2)/42).toFixed(2)}s`);artistInformation.classList.add('is-panning')}
   }));
 }
 
@@ -359,7 +359,7 @@ async function loadWinningTrack(entry,{fromDeepLink=false}={}){
     currentEntry=entry;currentManifest=manifest;currentTrack=track;setMeterMode('idle',track.id||track.bandcampEmbedTrackId);
     const embedId=encodeURIComponent(track.bandcampEmbedTrackId);
     frame.title=`Official Bandcamp playback controls for ${track.title} by ${manifest.artist}`;
-    currentEmbedUrl=`https://bandcamp.com/EmbeddedPlayer/track=${embedId}/size=small/bgcol=120904/linkcol=f2b654/tracklist=false/artwork=none/transparent=true/autoplay=false/`;
+    currentEmbedUrl=`https://bandcamp.com/EmbeddedPlayer/track=${embedId}/size=small/bgcol=1b0808/linkcol=e8c680/tracklist=false/artwork=none/transparent=false/autoplay=false/`;
     currentPurchaseUrl=validBandcampUrl(track.bandcampUrl)||validBandcampUrl(manifest.bandcampUrl);
     bandcampEngaged=false;showTicker(`PREPARING ${track.title} ON BANDCAMP...`);await loadBandcampFrame(currentEmbedUrl);if(token!==selectionToken||currentEntry!==entry)return;
     shareButton.disabled=false;spinAgainButton.disabled=false;setPrimaryMode('buy');showArtistInformation(entry,manifest,track);showTicker(`LISTEN TO ${track.title} ON BANDCAMP`);

@@ -25,7 +25,7 @@ test('every edition makes an explicit, safe commerce decision', async () => {
   }
 });
 
-test('the Melbourne Music Machine separates SHARE, green BUY MUSIC, SPIN AGAIN and Bandcamp listening', async () => {
+test('the Melbourne Music Machine separates SHARE, burgundy BUY MUSIC, SPIN AGAIN and Bandcamp listening', async () => {
   const runtime = await readFile(path.resolve('github-pages', 'assets', 'discovery-machine.js'), 'utf8');
   const template = await readFile(path.resolve('templates', 'universe-index.html'), 'utf8');
   assert.match(template, /data-action="share" disabled>SHARE<\/button>/);
