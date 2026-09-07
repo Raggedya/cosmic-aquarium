@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "artist": {
+    "name": "Example Artist",
+    "slug": "example-artist",
+    "bandcampUrl": "https://example-artist.bandcamp.com/",
+    "city": "Melbourne"
+  },
+  "editorial": {
+    "bio": "Approved artist biography supplied by the artist or operator.",
+    "tickerCopy": [
+      "Approved catalogue or recording note.",
+      "Approved band history or context."
+    ]
+  },
+  "artwork": {
+    "referenceImage": "C:/path/to/reference-image.jpg",
+    "cabinetSkin": "C:/path/to/approved-cabinet-skin.jpg",
+    "skinVariant": "example-artist-custom",
+    "notes": "Colour, tone and visual references for the skin approval pass."
+  },
+  "request": {
+    "requestedBy": "Internal operator",
+    "deliveryEmail": "operator@example.com",
+    "notes": "Optional production notes."
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aggits.example/schemas/artist-machine-intake-v1.json",
+  "title": "AGGITS Artist Machine Factory intake",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "artist", "editorial", "artwork"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "artist": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "bandcampUrl"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1, "maxLength": 100 },
+        "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 72 },
+        "bandcampUrl": { "type": "string", "format": "uri" },
+        "city": { "type": "string", "maxLength": 100 }
+      }
+    },
+    "editorial": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "bio": { "type": "string", "maxLength": 4000 },
+        "tickerCopy": {
+          "type": "array",
+          "maxItems": 24,
+          "items": { "type": "string", "minLength": 1, "maxLength": 500 }
+        }
+      }
+    },
+    "artwork": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["referenceImage"],
+      "properties": {
+        "referenceImage": { "type": "string", "minLength": 1 },
+        "cabinetSkin": { "type": "string", "minLength": 1 },
+        "skinVariant": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 72 },
+        "notes": { "type": "string", "maxLength": 2000 }
+      }
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requestedBy": { "type": "string", "maxLength": 100 },
+        "deliveryEmail": { "type": "string", "format": "email" },
+        "notes": { "type": "string", "maxLength": 2000 }
+      }
+    }
+  }
+}

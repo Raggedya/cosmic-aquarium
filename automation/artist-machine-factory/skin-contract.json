@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "artist-machine-v1",
+  "canvas": {
+    "width": 747,
+    "height": 1280,
+    "aspectRatio": 0.58359375,
+    "acceptedFormats": ["jpg", "jpeg", "png", "webp"],
+    "maximumBytes": 5000000
+  },
+  "protectedZones": [
+    { "name": "machine-title", "x": 0.18, "y": 0.195, "width": 0.64, "height": 0.075 },
+    { "name": "meter-bank", "x": 0.17, "y": 0.278, "width": 0.66, "height": 0.115 },
+    { "name": "reel-and-payline", "x": 0.16, "y": 0.37, "width": 0.68, "height": 0.235 },
+    { "name": "player-aperture", "x": 0.16, "y": 0.608, "width": 0.68, "height": 0.072 },
+    { "name": "four-button-console", "x": 0.14, "y": 0.688, "width": 0.72, "height": 0.105 },
+    { "name": "lever-travel", "x": 0.84, "y": 0.28, "width": 0.14, "height": 0.32 }
+  ],
+  "rules": [
+    "Do not move, resize, redraw or label interactive controls.",
+    "Keep all protected zones visually quiet enough for the shared live overlays.",
+    "Preserve the cabinet silhouette and the 747 by 1280 geometry.",
+    "Change only colour, texture, illustration, ornament and artist-specific surface character.",
+    "Do not bake song titles, counters or changing interface text into the skin."
+  ]
+}

@@ -73,7 +73,8 @@ test('artist-specific cabinet artwork is applied from validated configuration wi
   assert.match(runtime,/function applyArtistSkin\(config\)/);
   assert.match(runtime,/machine\.dataset\.artistSkin=variant/);
   assert.match(runtime,/cabinetSkin\.src=`\$\{base\}\$\{artwork\}`/);
-  assert.match(build,/workfriend-cabinet\.jpg/);
+  assert.match(build,/readdir\(path\.join\(root,'public','music-machine'\)\)/);
+  assert.ok((await read('automation/artist-machines/workfriend.json')).includes('workfriend-cabinet.jpg'));
 });
 
 test('the artist ticker is factual and excludes the Melbourne culture bank',async()=>{

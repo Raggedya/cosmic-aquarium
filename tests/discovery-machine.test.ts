@@ -330,11 +330,10 @@ test('share deep links remain canonical and carry Melbourne universe state',()=>
 
 test('the public build packages the cabinet, lever, marquee, winner splash and mechanical sound set',async()=>{
   const build=await read('scripts/build-github-pages.mjs');
-  assert.match(build,/aggits-cabinet\.webp/);
-  assert.match(build,/aggits-lever\.webp/);
-  assert.match(build,/aggits-marquee-v2\.webp/);
-  assert.match(build,/aggits-reel-v2\.webp/);
-  assert.match(build,/winner-splash-frame\.png/);
+  for(const asset of ['aggits-cabinet.webp','aggits-lever.webp','aggits-marquee-v2.webp','aggits-reel-v2.webp','winner-splash-frame.png']){
+    assert.ok((await read(`public/music-machine/${asset}`)).length>0,`${asset} must exist`);
+  }
+  assert.match(build,/readdir\(path\.join\(root,'public','music-machine'\)\)/);
   assert.match(build,/musicMachineAssets\.forEach/);
   assert.match(build,/reel-actual-slotmachine-freesound-261346\.mp3/);
   assert.match(build,/winner-fanfare-mixkit-226\.mp3/);

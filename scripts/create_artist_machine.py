@@ -43,11 +43,16 @@ def discover_complete_catalogue(root_url: str, artist: str) -> tuple[list[dict[s
     candidates: list[dict[str, Any]] = []
     release_artwork: dict[str, str] = {}
     bios: list[str] = []
+    failed_release_pages: list[str] = []
     for index, release_path in enumerate(release_paths):
         if index:
             time.sleep(0.35)
         page_url = urllib.parse.urljoin(final_root, release_path)
-        parser, final_url = fetch_page(page_url)
+        try:
+            parser, final_url = fetch_page(page_url)
+        except Exception:
+            failed_release_pages.append(page_url)
+            continue
         artwork = str(parser.og.get("og:image") or "").strip()
         for payload in parser.tralbum:
             bio = concise_bio((payload.get("current") or {}).get("about"), artist)
@@ -59,11 +64,23 @@ def discover_complete_catalogue(root_url: str, artist: str) -> tuple[list[dict[s
                     track["artworkUrl"] = artwork
                 candidates.append(track)
                 release_artwork[str(track.get("albumTitle") or "")] = artwork
+    if failed_release_pages:
+        raise ValueError(
+            "The complete Bandcamp catalogue could not be verified. Retry before approval. "
+            f"Unavailable release page(s): {', '.join(failed_release_pages[:5])}"
+        )
     unique: list[dict[str, Any]] = []
     seen: set[str] = set()
+    excluded_duplicate = 0
+    excluded_missing_embed_id = 0
     for track in candidates:
-        key = track_key(track)
-        if key in seen or not str(track.get("bandcampEmbedTrackId") or "").isdigit():
+        track_id = str(track.get("bandcampEmbedTrackId") or "")
+        if not track_id.isdigit():
+            excluded_missing_embed_id += 1
+            continue
+        key = f"bandcamp-track:{track_id}"
+        if key in seen:
+            excluded_duplicate += 1
             continue
         seen.add(key)
         unique.append(track)
@@ -75,6 +92,15 @@ def discover_complete_catalogue(root_url: str, artist: str) -> tuple[list[dict[s
         "heroArtwork": next((value for value in release_artwork.values() if value), None),
         "commerceAvailable": page_offers_commerce(profile) or page_offers_commerce(music),
         "source": final_root,
+        "catalogueAudit": {
+            "releasePageCount": len(release_paths),
+            "candidateTrackCount": len(candidates),
+            "playableTrackCount": len(unique),
+            "excluded": {
+                "duplicateTrackId": excluded_duplicate,
+                "missingEmbedTrackId": excluded_missing_embed_id,
+            },
+        },
     }
     return unique, metadata
 
