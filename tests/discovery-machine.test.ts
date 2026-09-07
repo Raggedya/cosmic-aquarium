@@ -18,20 +18,22 @@ test('the public experience is one physical machine, not the retired selector/pl
   assert.match(template,/MELBOURNE MUSIC MACHINE/);
 });
 
-test('the lever is the only discovery trigger and supports drag plus keyboard fallback',async()=>{
+test('the lever remains tactile while SPIN AGAIN shares the same canonical spin path',async()=>{
   const [template,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
   assert.equal((template.match(/class="lever"/g)||[]).length,1);
-  assert.doesNotMatch(template,/data-action="spin"|class="(?:buy-button|secondary-button)"[^>]*>\s*SPIN/);
+  assert.match(template,/data-action="spin-again"[^>]*disabled><span>SPIN<br>AGAIN<\/span>/);
   assert.match(runtime,/lever\.addEventListener\('pointerdown',onLeverDown\)/);
   assert.match(runtime,/lever\.addEventListener\('pointermove',onLeverMove\)/);
   assert.match(runtime,/leverProgress>=\.72/);
   assert.match(runtime,/\['Enter',' '\]/);
+  assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void runSpin\('spin_again'\)\)/);
+  assert.match(runtime,/async function runSpin\(source='lever'\)/);
 });
 
 test('a partial pull returns without a spin and a full pull is guarded against double triggering',async()=>{
   const runtime=await read('github-pages/assets/discovery-machine.js');
   assert.match(runtime,/if\(locked\|\|!catalogue\.length\)return/);
-  assert.match(runtime,/if\(leverTriggered\)\{void runSpin\(\);resetLever\(true\)\}/);
+  assert.match(runtime,/if\(leverTriggered\)\{void runSpin\('lever'\);resetLever\(true\)\}/);
   assert.match(runtime,/The lever returned without starting the reels/);
 });
 
@@ -94,23 +96,22 @@ test('the twin meters and centre inscription share a recessed cabinet instrument
   assert.doesNotMatch(css,/\.vu-meter\{[^}]*drop-shadow/);
 });
 
-test('the central control is never a spin control and switches from a green play symbol to BUY MUSIC',async()=>{
-  const [template,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
+test('the central green control is permanently BUY MUSIC and never controls playback or spin',async()=>{
+  const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/class="buy-button" data-action="buy"/);
   assert.match(template,/BUY<br>MUSIC/);
   assert.match(runtime,/buyLink\.addEventListener\('click',activatePrimary\)/);
-  assert.match(runtime,/if\(primaryAction==='play'\)\{beginWinningPlayback\(\);return\}/);
   assert.match(runtime,/if\(primaryAction==='buy'&&currentPurchaseUrl\)/);
-  assert.match(runtime,/class="play-symbol"/);
-  assert.doesNotMatch(runtime,/innerHTML='<span>PLAY<\/span>'/);
-  assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',[\s\S]{0,80}runSpin/);
+  assert.doesNotMatch(runtime,/beginWinningPlayback|primaryAction==='play'|class="play-symbol"/);
+  assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',\(\)=>void runSpin/);
+  assert.match(css,/\.buy-button\{[^}]*#55e96a/);
 });
 
 test('the primary control and SHARE remain dormant until a real winning track is resolved',async()=>{
   const [template,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
   assert.match(template,/data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled/);
   assert.match(template,/data-action="share" disabled/);
-  assert.match(runtime,/setPrimaryMode\('play'\)/);
+  assert.match(runtime,/setPrimaryMode\('buy'\)/);
   assert.match(runtime,/shareButton\.disabled=false/);
 });
 
@@ -122,32 +123,28 @@ test('official Bandcamp playback, real purchase links and track fallback validat
   assert.match(runtime,/if\(!validBandcampUrl\(manifest\.bandcampUrl\)\|\|!pickPlayableTrack\(manifest\)\)/);
 });
 
-test('a winner becomes a green PLAY control, requests Bandcamp on press, then becomes BUY after six seconds',async()=>{
+test('a winner places the real Bandcamp player in the long bar and enables BUY MUSIC immediately',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/Official Bandcamp playback controls/);
-  assert.match(runtime,/autoplay=true/);
+  assert.match(runtime,/autoplay=false/);
   assert.match(runtime,/setState\('READY_TO_PLAY'/);
-  assert.match(runtime,/function beginWinningPlayback/);
-  assert.match(runtime,/buyRevealTimer=setTimeout\(\(\)=>\{if\(!currentTrack\)return;setPrimaryMode\('buy'\)\},6000\)/);
-  assert.match(runtime,/schedulePlaybackFallback/);
-  assert.match(runtime,/setState\('AUTOPLAY_ATTEMPT'/);
-  assert.match(runtime,/setState\('AWAITING_PLAY'/);
-  assert.match(runtime,/IF SILENT, PRESS PLAY BELOW/);
-  assert.match(runtime,/frame\.addEventListener\('load',\(\)=>\{if\(state==='AUTOPLAY_ATTEMPT'\)setState\('AWAITING_PLAY'/);
-  assert.doesNotMatch(runtime,/frame\.addEventListener\('load',\(\)=>\{[^}]*markBandcampPlayback/);
+  assert.match(runtime,/await loadBandcampFrame\(currentEmbedUrl\)/);
+  assert.match(runtime,/setPrimaryMode\('buy'\)/);
   assert.match(runtime,/frame\.addEventListener\('focus',markBandcampPlayback\)/);
   assert.match(runtime,/function animateLeverAndSpin\(\)\{if\(locked\)return;ensureAudio\(\)/);
-  assert.match(css,/\.buy-button\[data-primary-mode="play"\]\{background:radial-gradient\([^}]*#55e96a/);
-  assert.match(css,/\.play-symbol path\{[^}]*fill:#fff5cf/);
+  assert.match(css,/\.bandcamp-slot\{position:absolute;inset:3px 3\.5%/);
+  assert.match(css,/data-machine-state="READY_TO_PLAY"[^}]*\.bandcamp-slot/);
+  assert.doesNotMatch(template,/data-action="pause"|>STOP</);
 });
 
-test('a matching artist raises the physical winner nameplate for the sampled ta-da celebration',async()=>{
+test('a matching artist raises the physical winner nameplate with the short warm tonal bloom',async()=>{
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/class="winner-splash"/);
   assert.match(template,/winner-splash-frame\.png/);
   assert.match(template,/data-winner-name/);
   assert.match(runtime,/presentWinner\(artistName\(winner\)\)/);
-  assert.match(runtime,/winner-fanfare-mixkit-226\.mp3/);
+  assert.match(runtime,/winner-tonal-bloom-mixkit-3109\.mp3/);
+  assert.match(runtime,/winnerAudioTimer=setTimeout\([\s\S]*?,1450\)/);
   assert.match(css,/@keyframes winnerSplashRise/);
   assert.match(css,/data-machine-state="WIN_CELEBRATION"[^}]*\.winner-splash/);
 });
@@ -180,15 +177,18 @@ test('machine statistics are generated instead of hard-coded from the reference 
   assert.match(runtime,/stats\.playableTrackCount\|\|stats\.playableTracks/);
 });
 
-test('idle ticker says only LET’S PLAY and playback rotates only the supplied Melbourne culture sequence',async()=>{
-  const [template,runtime,culture]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/ticker/melbourne-culture.js')]);
+test('the cream identity sign transforms into a factual, optically centred artist ticker after a win',async()=>{
+  const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/class="ticker-copy">LET’S PLAY</);
   assert.match(runtime,/function idleMessages\(\)\{return\['LET’S PLAY'\]\}/);
-  assert.match(runtime,/startTickerRotation\(cultureTickerMessages\(\),8000\)/);
-  assert.doesNotMatch(runtime,/buildTickerMessages/);
-  assert.match(culture,/MELBOURNE MUSIC ISN'T ONE SCENE/);
-  assert.match(culture,/TRIPLE R 102\.7/);
-  assert.match(culture,/PBS 106\.7/);
+  assert.match(template,/data-title-mode="identity"/);
+  assert.match(template,/data-artist-information/);
+  assert.match(runtime,/function artistInformationText/);
+  assert.match(runtime,/entry\?\.bioShort/);
+  assert.match(runtime,/showArtistInformation\(entry,manifest,track\)/);
+  assert.match(runtime,/showMachineIdentity\(\)/);
+  assert.match(css,/@keyframes artistInformationPan/);
+  assert.match(css,/transform:translate3d\(0,1px,0\)/);
 });
 
 test('analogue meters use damped ballistics and distinguish idle, spin, celebration and playback',async()=>{
@@ -214,7 +214,7 @@ test('licensed physical mechanism recordings, synchronized sampled stops, haptic
   assert.match(license,/1989 fruit machine/);
   assert.match(license,/markkuyp/);
   assert.match(license,/Gear metallic lock sound/);
-  assert.match(license,/Medieval show fanfare announcement/);
+  assert.match(license,/Relaxing bell chime/);
   assert.doesNotMatch(runtime,/createOscillator|type:'square'|type:'sawtooth'/);
   assert.doesNotMatch(runtime,/confetti|laser|coin|payout|credits/i);
 });

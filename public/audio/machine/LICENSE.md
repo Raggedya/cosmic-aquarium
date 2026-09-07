@@ -17,9 +17,9 @@ theatrical recordings:
 - “Gear fast lock tap” (item 2857)
   - Source: https://mixkit.co/free-sound-effects/click/
   - File: `reel-stop-lock-mixkit-2857.mp3`
-- “Medieval show fanfare announcement” (item 226)
-  - Source: https://mixkit.co/free-sound-effects/win/
-  - File: `winner-fanfare-mixkit-226.mp3`
+- “Relaxing bell chime” (item 3109)
+  - Source: https://mixkit.co/free-sound-effects/chimes/
+  - File: `winner-tonal-bloom-mixkit-3109.mp3`
 
 Retrieved: 2026-09-07
 

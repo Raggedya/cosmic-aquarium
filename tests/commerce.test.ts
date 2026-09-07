@@ -25,19 +25,20 @@ test('every edition makes an explicit, safe commerce decision', async () => {
   }
 });
 
-test('the Melbourne Music Machine keeps SHARE secondary and makes the central red control BUY MUSIC only', async () => {
+test('the Melbourne Music Machine separates SHARE, green BUY MUSIC, SPIN AGAIN and Bandcamp listening', async () => {
   const runtime = await readFile(path.resolve('github-pages', 'assets', 'discovery-machine.js'), 'utf8');
   const template = await readFile(path.resolve('templates', 'universe-index.html'), 'utf8');
   assert.match(template, /data-action="share" disabled>SHARE<\/button>/);
   assert.match(template, /BUY<br>MUSIC/);
-  assert.match(template, /data-action="pause" disabled>STOP<\/button>/);
+  assert.match(template, /data-action="spin-again" disabled><span>SPIN<br>AGAIN<\/span><\/button>/);
   assert.doesNotMatch(template, /data-action="next"|SHARE<br>JUKEBOX|NEXT<br>JUKEBOX/);
   assert.ok(template.indexOf('data-action="share"') < template.indexOf('data-action="buy"'));
-  assert.ok(template.indexOf('data-action="buy"') < template.indexOf('data-action="pause"'));
+  assert.ok(template.indexOf('data-action="buy"') < template.indexOf('data-action="spin-again"'));
   assert.match(runtime, /navigator\.share/);
   assert.match(runtime, /validBandcampUrl\(track\.bandcampUrl\)\|\|validBandcampUrl\(manifest\.bandcampUrl\)/);
-  assert.match(runtime, /function runSpin\(\)/);
-  assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',[\s\S]{0,80}runSpin/);
+  assert.match(runtime, /async function runSpin\(source='lever'\)/);
+  assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void runSpin\('spin_again'\)\)/);
+  assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',\(\)=>void runSpin/);
 });
 
 test('starting Bandcamp playback hides the controls but keeps the song title', async () => {

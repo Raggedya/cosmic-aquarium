@@ -20,9 +20,14 @@
     <div class="cabinet" aria-describedby="machine-instructions">
       <img class="cabinet-skin" src="{{BASE}}/assets/music-machine/aggits-cabinet.webp" alt="" width="1024" height="1536" fetchpriority="high">
       <header class="aggits-marquee"><h1 class="visually-hidden">AGGITS</h1><img src="{{BASE}}/assets/music-machine/aggits-marquee-v2.webp" alt="" width="2172" height="724"></header>
-      <section class="machine-title" aria-label="Melbourne catalogue statistics">
-        <strong>MELBOURNE MUSIC MACHINE</strong>
-        <small><span data-stat="artists">—</span> BANDS <b>•</b> <span data-stat="tracks">—</span> SONGS <b>•</b> JUST MUSIC</small>
+      <section class="machine-title" aria-label="Melbourne catalogue statistics" data-title-mode="identity">
+        <div class="machine-title-identity">
+          <strong>MELBOURNE MUSIC MACHINE</strong>
+          <small><span data-stat="artists">—</span> BANDS <b>•</b> <span data-stat="tracks">—</span> SONGS <b>•</b> JUST MUSIC</small>
+        </div>
+        <div class="artist-information" aria-hidden="true">
+          <div class="artist-information-window"><span data-artist-information></span></div>
+        </div>
       </section>
       <nav class="utility-controls" aria-label="Machine controls">
         <button type="button" data-action="home">HOME</button>
@@ -62,17 +67,19 @@
         <img src="{{BASE}}/assets/music-machine/winner-splash-frame.png" alt="" width="1968" height="799">
         <div class="winner-splash-copy"><small>NOW PRESENTING</small><strong data-winner-name>MELBOURNE MUSIC</strong></div>
       </section>
-      <section class="ticker-panel" aria-label="Machine messages"><div class="ticker-window"><span class="ticker-copy">LET’S PLAY</span></div></section>
+      <section class="ticker-panel" aria-label="Machine messages and Bandcamp playback">
+        <div class="ticker-window"><span class="ticker-copy">LET’S PLAY</span></div>
+        <div class="bandcamp-slot" aria-label="Official Bandcamp playback"><iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe></div>
+      </section>
       <section class="machine-controls" aria-label="Current music controls">
         <button type="button" class="secondary-button" data-action="share" disabled>SHARE</button>
         <button type="button" class="buy-button" data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled><span>BUY<br>MUSIC</span></button>
-        <button type="button" class="secondary-button" data-action="pause" disabled>STOP</button>
+        <button type="button" class="secondary-button spin-again-button" data-action="spin-again" disabled><span>SPIN<br>AGAIN</span></button>
       </section>
-      <section class="bandcamp-slot" aria-label="Official Bandcamp playback"><iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe></section>
       <div class="speaker-label" aria-hidden="true">MELBOURNE SONGS<br>ON BANDCAMP</div>
       <button class="lever" type="button" aria-label="Pull the lever to discover a Melbourne artist" aria-describedby="machine-instructions"><img src="{{BASE}}/assets/music-machine/aggits-lever.webp" alt="" draggable="false"><span class="lever-hint">PULL</span></button>
     </div>
-    <p id="machine-instructions" class="visually-hidden">Drag the side lever down past the resistance point, or press it, to spin three real Melbourne artist reels. Three matching artists raise the winner nameplate and reveal a green play-symbol control for a real Bandcamp song.</p>
+    <p id="machine-instructions" class="visually-hidden">Drag the side lever down past the resistance point, press it, or use Spin Again to spin three real Melbourne artist reels. Three matching artists raise the winner nameplate and reveal an official Bandcamp player, Buy Music, and Share controls.</p>
     <p class="machine-status visually-hidden" role="status" aria-live="assertive">Loading the Melbourne music machine.</p>
   </main>
 </body>
