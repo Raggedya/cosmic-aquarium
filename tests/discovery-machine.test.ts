@@ -109,11 +109,13 @@ test('the central burgundy control is permanently BUY MUSIC and never controls p
   const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(template,/class="buy-button" data-action="buy"/);
   assert.match(template,/BUY<br>MUSIC/);
+  assert.match(template,/BUY<br>MUSIC<small>-BandCamp-<\/small>/);
   assert.match(runtime,/buyLink\.addEventListener\('click',activatePrimary\)/);
   assert.match(runtime,/if\(primaryAction==='buy'&&currentPurchaseUrl\)/);
   assert.doesNotMatch(runtime,/beginWinningPlayback|primaryAction==='play'|class="play-symbol"/);
   assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',\(\)=>void runSpin/);
   assert.match(css,/\.buy-button\{[^}]*#8d2c37[^}]*#641522[^}]*#3b0914/);
+  assert.match(css,/\.buy-button small\{[^}]*font-size:\.42em/);
   assert.match(css,/\.buy-button\[data-primary-mode="dormant"\]\{[^}]*filter:brightness\(\.58\) saturate\(\.82\)/);
 });
 
@@ -142,7 +144,7 @@ test('a winner places the real Bandcamp player in the long bar and enables BUY M
   assert.match(runtime,/setPrimaryMode\('buy'\)/);
   assert.match(runtime,/frame\.addEventListener\('focus',markBandcampPlayback\)/);
   assert.match(runtime,/function animateLeverAndSpin\(\)\{if\(locked\)return;ensureAudio\(\)/);
-  assert.match(css,/\.bandcamp-slot\{position:absolute;inset:-2px 2\.5%/);
+  assert.match(css,/\.bandcamp-slot\{position:absolute;inset:-2px 1\.6%/);
   assert.match(template,/class="bandcamp-wordmark"[^>]*>bandcamp<\/span>/);
   assert.match(template,/class="vinyl-play-control">\s*<iframe/);
   assert.match(template,/data-player-track>WINNING TRACK/);
@@ -168,15 +170,15 @@ test('a matching artist raises the physical winner nameplate with the short warm
   assert.match(css,/data-machine-state="WIN_CELEBRATION"[^}]*\.winner-splash/);
 });
 
-test('the winner receives eight readable seconds in the splash before the player is revealed',async()=>{
+test('the winner receives four readable seconds in the splash before the player is revealed',async()=>{
   const [runtime,css]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
-  assert.match(runtime,/const WINNER_SPLASH_DURATION_MS=8000/);
+  assert.match(runtime,/const WINNER_SPLASH_DURATION_MS=4000/);
   assert.match(runtime,/const WINNER_SPLASH_TRANSITION_MS=260/);
   assert.match(runtime,/function holdWinnerSplash\(\)/);
   assert.match(runtime,/const revealCompleted=await holdWinnerSplash\(\);if\(!revealCompleted\)return;await loadWinningTrack\(winner,\{prepared\}\)/);
   assert.match(runtime,/function stopPlayback\(\)\{[\s\S]*?clearWinnerSplashTimer\(\)/);
-  assert.match(css,/var\(--winner-splash-total,8\.52s\)/);
-  assert.match(css,/3\.05%\{opacity:1[\s\S]*?96\.95%\{opacity:1/);
+  assert.match(css,/var\(--winner-splash-total,4\.52s\)/);
+  assert.match(css,/5\.75%\{opacity:1[\s\S]*?94\.25%\{opacity:1/);
 });
 
 test('the live source of truth is exactly 500 Melbourne artists and 3,744 playable tracks',async()=>{
@@ -207,21 +209,28 @@ test('machine statistics are generated instead of hard-coded from the reference 
   assert.match(runtime,/stats\.playableTrackCount\|\|stats\.playableTracks/);
 });
 
-test('the cream identity sign transforms into a factual, optically centred artist ticker after a win',async()=>{
-  const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+test('the cream identity sign transforms into a factual continuous left-to-right Melbourne ticker after a win',async()=>{
+  const [template,runtime,css,culture]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css'),read('github-pages/assets/ticker/melbourne-culture.js')]);
   assert.match(template,/class="ticker-copy">LET’S PLAY</);
   assert.match(runtime,/function idleMessages\(\)\{return\['LET’S PLAY'\]\}/);
   assert.match(template,/data-title-mode="identity"/);
   assert.match(template,/data-artist-information/);
+  assert.match(template,/data-artist-information-copy/);
   assert.match(runtime,/function artistInformationText/);
   assert.match(runtime,/entry\?\.bioShort/);
+  assert.match(runtime,/MELBOURNE_CULTURE_SEGMENTS/);
+  assert.match(runtime,/join\('   ◆   '\)/);
   assert.match(runtime,/showArtistInformation\(entry,manifest,track\)/);
   assert.match(runtime,/showMachineIdentity\(\)/);
-  assert.match(css,/@keyframes artistInformationPan/);
+  assert.match(css,/@keyframes artistInformationStream/);
   assert.match(css,/font-size:clamp\(14px,4\.25vw,23px\)/);
-  assert.match(css,/transform:translate3d\(0,2px,0\)/);
-  assert.match(css,/@keyframes artistInformationPan\{from\{transform:translate3d\(calc\(-1 \* var\(--artist-travel,0px\)\),2px,0\)\}to\{transform:translate3d\(var\(--artist-travel,0px\),2px,0\)\}\}/);
-  assert.match(runtime,/Math\.max\(4\.2,\(travel\*2\)\/42\)/);
+  assert.match(css,/@keyframes artistInformationStream\{from\{transform:translate3d\(-50%,2px,0\)\}to\{transform:translate3d\(0,2px,0\)\}\}/);
+  assert.match(css,/animation:artistInformationStream var\(--artist-duration,120s\) linear infinite/);
+  assert.doesNotMatch(css,/artistInformationPan|alternate/);
+  assert.match(runtime,/copyWidth\/50/);
+  assert.match(culture,/MELBOURNE MUSIC ISN’T ONE SCENE/);
+  assert.match(culture,/TRIPLE R AND PBS HAVE SPENT DECADES/);
+  assert.match(culture,/AND SOMEWHERE IN MELBOURNE TONIGHT/);
 });
 
 test('analogue meters use damped ballistics and distinguish idle, spin, celebration and playback',async()=>{
@@ -288,6 +297,16 @@ test('Bandcamp is presented as a recessed branded source, not a dominant cabinet
   assert.match(template,/class="bandcamp-wordmark"[^>]*>bandcamp<\/span>/);
   assert.match(css,/\.bandcamp-player-shell\{[^}]*box-shadow:inset/);
   assert.match(css,/\.vinyl-play-control iframe\{[^}]*filter:sepia\(\.78\) saturate\(1\.7\) hue-rotate\(326deg\)/);
+});
+
+test('the real Bandcamp deck is a vertically enlarged listening hero without fake progress',async()=>{
+  const [template,css]=await Promise.all([read('templates/universe-index.html'),read('app/discovery-machine.css')]);
+  assert.match(css,/\.ticker-panel\{[^}]*top:58\.5%[^}]*height:7\.4%/);
+  assert.match(css,/\.machine-controls\{[^}]*top:67\.3%/);
+  assert.match(css,/\.vinyl-play-control\{[^}]*width:clamp\(48px,13\.5vw,68px\)/);
+  assert.match(css,/\.bandcamp-track-information strong\{[^}]*font-size:clamp\(10\.5px,3\.2vw,17px\)/);
+  assert.match(template,/Official Bandcamp playback controls/);
+  assert.doesNotMatch(template,/0:00|4:12/);
 });
 
 test('share deep links remain canonical and carry Melbourne universe state',()=>{

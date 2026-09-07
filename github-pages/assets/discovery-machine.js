@@ -1,7 +1,7 @@
 import {
   SESSION_HISTORY_LIMIT, pushHistory, validBandcampUrl, pickPlayableTrack,
   artistIdentity, secureRandomIndex, selectGuaranteedWinner, isThreeArtistMatch,
-  playableMelbourneEntries, MACHINE_STATES,
+  playableMelbourneEntries, MACHINE_STATES, MELBOURNE_CULTURE_SEGMENTS,
 } from './discovery-machine-core.js?v=guaranteed-winner-v1';
 const machine=document.querySelector('.music-machine');
 const base=machine?.dataset.base||'';
@@ -27,13 +27,15 @@ const machineTitle=document.querySelector('.machine-title');
 const machineTitleIdentity=document.querySelector('.machine-title-identity');
 const artistInformationPanel=document.querySelector('.artist-information');
 const artistInformation=document.querySelector('[data-artist-information]');
+const artistInformationCopy=document.querySelector('[data-artist-information-copy]');
+const artistInformationTrack=document.querySelector('[data-artist-information-track]');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const workerBase='https://cosmic-aquaria.andrewharris501.workers.dev';
 const stateSet=new Set(MACHINE_STATES);
 const historyKey='aggits:melbourne-artist-history';
 const sessionKey='aggits:analytics-session';
 const soundKey='aggits:sound-off';
-const WINNER_SPLASH_DURATION_MS=8000;
+const WINNER_SPLASH_DURATION_MS=4000;
 const WINNER_SPLASH_TRANSITION_MS=260;
 const reelMotorUrl=`${base}/assets/audio/machine/reel-actual-slotmachine-freesound-261346.mp3`;
 const reelRatchetUrl=`${base}/assets/audio/machine/reel-ratchet-mixkit-2641.mp3`;
@@ -163,7 +165,7 @@ function setPrimaryMode(mode){
   primaryAction=mode;
   buyLink.dataset.primaryMode=mode;
   buyLink.removeAttribute('aria-busy');
-  buyLink.innerHTML='<span>BUY<br>MUSIC</span>';
+  buyLink.innerHTML='<span>BUY<br>MUSIC<small>-BandCamp-</small></span>';
   const active=mode==='buy';
   buyLink.disabled=!active;
   buyLink.setAttribute('aria-disabled',String(!active));
@@ -182,19 +184,20 @@ function artistInformationText(entry,manifest,track){
   const waters=entry?.waters?.length?entry.waters.map(value=>String(value).toUpperCase()).join(' • '):indexed?.waters?.map(value=>String(value).toUpperCase()).join(' • ');
   const release=manifest?.releaseTitle||entry?.release;
   const bio=entry?.bioShort;
-  return [manifest?.artist||entry?.artist,location,waters,track?.title,release,bio].map(value=>cleanText(value)).filter(Boolean).filter((value,index,list)=>list.findIndex(item=>item.toLowerCase()===value.toLowerCase())===index).join('   •   ').toUpperCase();
+  const artistDetails=[manifest?.artist||entry?.artist,track?.title,location,waters,release,bio].map(value=>cleanText(value)).filter(Boolean).filter((value,index,list)=>list.findIndex(item=>item.toLowerCase()===value.toLowerCase())===index);
+  return [...artistDetails,...MELBOURNE_CULTURE_SEGMENTS].join('   ◆   ').toUpperCase();
 }
 
 function showMachineIdentity(){
-  titleRenderToken++;machineTitle.dataset.titleMode='identity';machineTitle.setAttribute('aria-label','Melbourne catalogue statistics');machineTitleIdentity.setAttribute('aria-hidden','false');artistInformationPanel.setAttribute('aria-hidden','true');artistInformation.classList.remove('is-panning');artistInformation.style.removeProperty('--artist-travel');artistInformation.style.removeProperty('--artist-duration');artistInformation.textContent='';
+  titleRenderToken++;machineTitle.dataset.titleMode='identity';machineTitle.setAttribute('aria-label','Melbourne catalogue statistics');machineTitleIdentity.setAttribute('aria-hidden','false');artistInformationPanel.setAttribute('aria-hidden','true');artistInformationTrack.classList.remove('is-streaming');artistInformationTrack.style.removeProperty('--artist-duration');artistInformation.textContent='';artistInformationCopy.textContent='';
 }
 
 function showArtistInformation(entry,manifest,track){
-  const token=++titleRenderToken;artistInformation.textContent=artistInformationText(entry,manifest,track);artistInformation.classList.remove('is-panning');machineTitle.dataset.titleMode='artist';machineTitle.setAttribute('aria-label',`Winner information for ${manifest?.artist||entry?.artist||'the selected artist'}`);machineTitleIdentity.setAttribute('aria-hidden','true');artistInformationPanel.setAttribute('aria-hidden','false');
+  const token=++titleRenderToken,content=`${artistInformationText(entry,manifest,track)}   ◆   `;artistInformation.textContent=content;artistInformationCopy.textContent=content;artistInformationTrack.classList.remove('is-streaming');machineTitle.dataset.titleMode='artist';machineTitle.setAttribute('aria-label',`Winner information for ${manifest?.artist||entry?.artist||'the selected artist'}`);machineTitleIdentity.setAttribute('aria-hidden','true');artistInformationPanel.setAttribute('aria-hidden','false');
   requestAnimationFrame(()=>requestAnimationFrame(()=>{
     if(token!==titleRenderToken)return;
-    const viewport=artistInformation.parentElement.clientWidth,textWidth=artistInformation.scrollWidth,travel=Math.max(0,(textWidth-viewport)/2+8);
-    if(travel>3&&!reducedMotion.matches){artistInformation.style.setProperty('--artist-travel',`${travel.toFixed(1)}px`);artistInformation.style.setProperty('--artist-duration',`${Math.max(4.2,(travel*2)/42).toFixed(2)}s`);artistInformation.classList.add('is-panning')}
+    const copyWidth=artistInformation.getBoundingClientRect().width;
+    if(copyWidth>0&&!reducedMotion.matches){artistInformationTrack.style.setProperty('--artist-duration',`${Math.max(18,copyWidth/50).toFixed(2)}s`);artistInformationTrack.classList.add('is-streaming')}
   }));
 }
 

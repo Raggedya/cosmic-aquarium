@@ -26,7 +26,12 @@
           <small><span data-stat="artists">—</span> BANDS <b>•</b> <span data-stat="tracks">—</span> SONGS <b>•</b> JUST MUSIC</small>
         </div>
         <div class="artist-information" aria-hidden="true">
-          <div class="artist-information-window"><span data-artist-information></span></div>
+          <div class="artist-information-window">
+            <div class="artist-information-track" data-artist-information-track>
+              <span data-artist-information></span>
+              <span data-artist-information-copy aria-hidden="true"></span>
+            </div>
+          </div>
         </div>
       </section>
       <nav class="utility-controls" aria-label="Machine controls">
@@ -88,7 +93,7 @@
       </section>
       <section class="machine-controls" aria-label="Current music controls">
         <button type="button" class="secondary-button" data-action="share" disabled>SHARE</button>
-        <button type="button" class="buy-button" data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled><span>BUY<br>MUSIC</span></button>
+        <button type="button" class="buy-button" data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled><span>BUY<br>MUSIC<small>-BandCamp-</small></span></button>
         <button type="button" class="secondary-button spin-again-button" data-action="spin-again" disabled><span>SPIN<br>AGAIN</span></button>
       </section>
       <div class="speaker-label" aria-hidden="true">MELBOURNE SONGS<br>ON BANDCAMP</div>
