@@ -6,6 +6,7 @@ import {
 } from './discovery-machine-core.js?v=guaranteed-winner-v1';
 const machine=document.querySelector('.music-machine');
 const base=machine?.dataset.base||'';
+const cabinetSkin=document.querySelector('.cabinet-skin');
 const machineMode=machine?.dataset.machineMode==='artist'?'artist':'city';
 const isArtistMode=machineMode==='artist';
 const requestedArtistSlug=new URLSearchParams(location.search).get('artist')||'workfriend';
@@ -290,6 +291,17 @@ function updateStats(){
   document.querySelector('[data-stat="tracks"]').textContent=tracks.toLocaleString('en-AU');
 }
 
+function applyArtistSkin(config){
+  if(!isArtistMode||!cabinetSkin)return;
+  const artwork=String(config?.cabinetArtwork||'');
+  const variant=String(config?.skinVariant||'').toLowerCase();
+  if(!/^\/assets\/[a-z0-9_./-]+\.(?:avif|jpe?g|png|webp)$/.test(artwork)||!/^[a-z0-9-]+$/.test(variant))return;
+  const fallback=cabinetSkin.src;
+  cabinetSkin.addEventListener('error',()=>{cabinetSkin.src=fallback;delete machine.dataset.artistSkin},{once:true});
+  machine.dataset.artistSkin=variant;
+  cabinetSkin.src=`${base}${artwork}`;
+}
+
 const SVG='http://www.w3.org/2000/svg';
 function point(angle,radius){const r=angle*Math.PI/180;return{x:160+Math.sin(r)*radius,y:158-Math.cos(r)*radius}}
 function buildMeters(){
@@ -554,6 +566,7 @@ async function loadData(){
     const configPayload=await configResponse.json();
     artistConfig=(configPayload.artists||[]).find(item=>item.artistSlug===requestedArtistSlug)||null;
     if(!artistConfig)throw new Error('artist_machine_not_found');
+    applyArtistSkin(artistConfig);
     const manifestResponse=await fetch(`${base}${artistConfig.cataloguePath}`,{cache:'no-store'});
     if(!manifestResponse.ok)throw new Error('artist_catalogue_unavailable');
     artistManifest=await manifestResponse.json();catalogue=playableArtistTracks(artistManifest);

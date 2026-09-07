@@ -32,7 +32,7 @@ const discoveryFidelityAssetNames = [
   'player-ticker-shell.webp','player-main-frame.webp','player-share.webp','player-share-blank.webp','player-buy.webp','player-next.webp','player-next-blank.webp','player-footer.webp',
 ];
 const discoveryFidelityAssets = await Promise.all(discoveryFidelityAssetNames.map((name) => fs.readFile(path.join(root,'public','discovery-fidelity',name))));
-const musicMachineAssetNames = ['aggits-cabinet.webp','aggits-lever.webp','aggits-marquee-v2.webp','aggits-reel-v2.webp','winner-splash-frame.png'];
+const musicMachineAssetNames = ['aggits-cabinet.webp','aggits-lever.webp','aggits-marquee-v2.webp','aggits-reel-v2.webp','winner-splash-frame.png','workfriend-cabinet.jpg'];
 const musicMachineAssets = await Promise.all(musicMachineAssetNames.map((name) => fs.readFile(path.join(root,'public','music-machine',name))));
 const machineAudioNames = [
   'reel-actual-slotmachine-freesound-261346.mp3',

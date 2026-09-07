@@ -34,6 +34,8 @@ test('the Workfriend reference machine exposes every unique eligible song and a 
   assert.equal(config.machineMode,'artist');
   assert.equal(config.artistSlug,'workfriend');
   assert.equal(config.artistName,'Workfriend');
+  assert.equal(config.cabinetArtwork,'/assets/music-machine/workfriend-cabinet.jpg');
+  assert.equal(config.skinVariant,'workfriend-western');
   const songs=playableArtistTracks({tracks:config.songs});
   assert.equal(songs.length,13);
   assert.equal(new Set(songs.map(track=>track.id)).size,songs.length);
@@ -63,6 +65,15 @@ test('Artist Mode retains one mechanical stop and the shared four-second winner 
   assert.match(css,/data-machine-mode="artist"[^}]*\.reel-strip>\*/);
   assert.match(css,/grid-template-rows:repeat\(3,1fr\)/);
   assert.match(css,/data-machine-mode="artist"[^}]*\.winner-splash-copy\{left:13%;right:13%\}/);
+  assert.match(css,/data-artist-skin="workfriend-western"/);
+});
+
+test('artist-specific cabinet artwork is applied from validated configuration with a safe fallback',async()=>{
+  const [runtime,build]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('scripts/build-github-pages.mjs')]);
+  assert.match(runtime,/function applyArtistSkin\(config\)/);
+  assert.match(runtime,/machine\.dataset\.artistSkin=variant/);
+  assert.match(runtime,/cabinetSkin\.src=`\$\{base\}\$\{artwork\}`/);
+  assert.match(build,/workfriend-cabinet\.jpg/);
 });
 
 test('the artist ticker is factual and excludes the Melbourne culture bank',async()=>{

@@ -84,6 +84,17 @@ button,a{-webkit-tap-highlight-color:transparent}
 .winner-splash-artwork{position:absolute;left:9.5%;top:14%;width:22%;height:72%;z-index:0;overflow:hidden;border:1px solid rgba(221,166,91,.72);border-radius:7%;background:#160704;box-shadow:inset 0 0 0 2px #080201,0 3px 7px #000}
 .winner-splash-artwork img{width:100%;height:100%;object-fit:cover}
 .music-machine[data-machine-mode="artist"] .winner-splash-copy{left:13%;right:13%}
+.music-machine[data-artist-skin="workfriend-western"] .aggits-marquee{display:none}
+.music-machine[data-artist-skin="workfriend-western"] .cabinet::before{background:radial-gradient(ellipse at 50% 47%,transparent 52%,rgba(0,0,0,.11) 82%,rgba(0,0,0,.28) 100%)}
+.music-machine[data-artist-skin="workfriend-western"] .utility-controls button{border-color:#b73535;background:linear-gradient(#251519,#070405);box-shadow:inset 0 1px 0 #dd765e,0 2px 5px #000;color:#f3d7a2}
+.music-machine[data-artist-skin="workfriend-western"] .machine-title{border:1px solid rgba(77,28,21,.72);border-radius:3%/14%;background:linear-gradient(180deg,rgba(255,244,207,.98),rgba(224,196,145,.98));box-shadow:inset 0 1px rgba(255,255,255,.62),inset 0 -2px 4px rgba(87,39,20,.2)}
+.music-machine[data-artist-skin="workfriend-western"] .meter-bank::before{border-color:#701d1d;background:linear-gradient(180deg,#8b2924 0,#174d4c 17%,#082c2d 63%,#6a211d 100%);box-shadow:inset 0 1px 0 rgba(255,216,162,.42),inset 0 -2px 2px rgba(0,0,0,.9),0 0 0 1px #101615}
+.music-machine[data-artist-skin="workfriend-western"] .reel-bank::before{background:linear-gradient(180deg,#180506,#6a201d 7%,#071f20 15%,#030202 90%,#70221e);box-shadow:inset 0 7px 10px rgba(0,0,0,.92),inset 0 -2px 2px rgba(235,161,78,.14),0 0 0 2px #090302,0 0 0 4px rgba(19,86,84,.74)}
+.music-machine[data-artist-skin="workfriend-western"] .ticker-panel{border:1px solid rgba(170,54,48,.56);border-radius:5%/14%;background:linear-gradient(180deg,rgba(18,9,8,.96),rgba(3,4,4,.98));box-shadow:inset 0 3px 6px #000,0 0 0 2px rgba(13,67,66,.72)}
+.music-machine[data-artist-skin="workfriend-western"] .machine-controls::before{border-color:#9d302a;background:linear-gradient(180deg,#943229 0,#0e4544 12%,#062728 84%,#6c211d 100%);box-shadow:inset 0 6px 8px rgba(0,0,0,.84),inset 0 -1px rgba(255,197,112,.3),0 0 0 2px #170604,0 0 0 4px rgba(89,28,24,.85),0 4px 6px rgba(0,0,0,.72)}
+.music-machine[data-artist-skin="workfriend-western"] .secondary-button,.music-machine[data-artist-skin="workfriend-western"] .buy-button,.music-machine[data-artist-skin="workfriend-western"] .play-button{box-shadow:inset 0 3px 5px rgba(255,255,255,.5),inset 0 -5px 8px rgba(94,42,12,.28),0 0 0 3px #170704,0 0 0 5px #8b3028,0 3px 4px #000}
+.music-machine[data-artist-skin="workfriend-western"] .lever img{filter:sepia(.28) saturate(1.35) hue-rotate(322deg) drop-shadow(0 6px 5px #000)}
+.music-machine[data-artist-skin="workfriend-western"] .artist-machine-request{border-color:rgba(183,53,48,.68);background:linear-gradient(180deg,#103d3c,#0b1717 58%,#260b0a)}
 body.artist-machine-page{overflow-y:auto;background:#050302!important}
 .music-machine[data-machine-mode="artist"]{height:auto;min-height:100dvh;overflow:visible;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
 .music-machine[data-machine-mode="artist"]>.cabinet{flex:none}

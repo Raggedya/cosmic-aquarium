@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-07T08:13:47.283Z",
+  "generatedAt": "2026-09-07T09:16:04.064Z",
   "artists": [
     {
       "machineMode": "artist",
@@ -11,7 +11,9 @@
       "bio": null,
       "tickerCopy": [],
       "heroArtwork": "https://f4.bcbits.com/img/a2541538696_5.jpg",
-      "accentTheme": "amber-burgundy",
+      "accentTheme": "turquoise-burgundy",
+      "cabinetArtwork": "/assets/music-machine/workfriend-cabinet.jpg",
+      "skinVariant": "workfriend-western",
       "provenance": {
         "source": "https://workfriend1.bandcamp.com/",
         "method": "public-bandcamp-catalogue"
