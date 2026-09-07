@@ -133,11 +133,18 @@ test('a winner places the real Bandcamp player in the long bar and enables BUY M
   assert.match(runtime,/setPrimaryMode\('buy'\)/);
   assert.match(runtime,/frame\.addEventListener\('focus',markBandcampPlayback\)/);
   assert.match(runtime,/function animateLeverAndSpin\(\)\{if\(locked\)return;ensureAudio\(\)/);
-  assert.match(css,/\.bandcamp-slot\{position:absolute;inset:2px 3\.5%/);
+  assert.match(css,/\.bandcamp-slot\{position:absolute;inset:-2px 2\.5%/);
   assert.match(template,/class="bandcamp-wordmark"[^>]*>bandcamp<\/span>/);
+  assert.match(template,/class="vinyl-play-control">\s*<iframe/);
+  assert.match(template,/data-player-track>WINNING TRACK/);
+  assert.match(template,/data-player-artist>MELBOURNE ARTIST/);
+  assert.match(template,/MELBOURNE MUSIC<br>ON BANDCAMP/);
+  assert.match(css,/\.vinyl-play-control\{[^}]*repeating-radial-gradient/);
+  assert.match(css,/\.bandcamp-player-shell\{[^}]*grid-template-columns/);
   assert.match(runtime,/bgcol=1b0808\/linkcol=e8c680/);
   assert.match(css,/data-machine-state="READY_TO_PLAY"[^}]*\.bandcamp-slot/);
   assert.doesNotMatch(template,/data-action="pause"|>STOP</);
+  assert.doesNotMatch(template,/0:00|4:12/);
 });
 
 test('a matching artist raises the physical winner nameplate with the short warm tonal bloom',async()=>{
@@ -150,6 +157,17 @@ test('a matching artist raises the physical winner nameplate with the short warm
   assert.match(runtime,/winnerAudioTimer=setTimeout\([\s\S]*?,1450\)/);
   assert.match(css,/@keyframes winnerSplashRise/);
   assert.match(css,/data-machine-state="WIN_CELEBRATION"[^}]*\.winner-splash/);
+});
+
+test('the winner receives eight readable seconds in the splash before the player is revealed',async()=>{
+  const [runtime,css]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+  assert.match(runtime,/const WINNER_SPLASH_DURATION_MS=8000/);
+  assert.match(runtime,/const WINNER_SPLASH_TRANSITION_MS=260/);
+  assert.match(runtime,/function holdWinnerSplash\(\)/);
+  assert.match(runtime,/const revealCompleted=await holdWinnerSplash\(\);if\(!revealCompleted\)return;await loadWinningTrack\(winner\)/);
+  assert.match(runtime,/function stopPlayback\(\)\{[\s\S]*?clearWinnerSplashTimer\(\)/);
+  assert.match(css,/var\(--winner-splash-total,8\.52s\)/);
+  assert.match(css,/3\.05%\{opacity:1[\s\S]*?96\.95%\{opacity:1/);
 });
 
 test('the live source of truth is exactly 500 Melbourne artists and 3,744 playable tracks',async()=>{
@@ -260,7 +278,7 @@ test('Bandcamp is presented as a recessed branded source, not a dominant cabinet
   assert.match(css,/\.bandcamp-slot\{[^}]*box-shadow:inset/);
   assert.match(template,/class="bandcamp-wordmark"[^>]*>bandcamp<\/span>/);
   assert.match(css,/\.bandcamp-player-shell\{[^}]*box-shadow:inset/);
-  assert.match(css,/\.bandcamp-slot iframe\{[^}]*filter:sepia\(\.78\) saturate\(1\.7\) hue-rotate\(326deg\)/);
+  assert.match(css,/\.vinyl-play-control iframe\{[^}]*filter:sepia\(\.78\) saturate\(1\.7\) hue-rotate\(326deg\)/);
 });
 
 test('share deep links remain canonical and carry Melbourne universe state',()=>{

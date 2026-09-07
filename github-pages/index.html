@@ -11,8 +11,8 @@
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/music-machine/aggits-marquee-v2.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/music-machine/aggits-reel-v2.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/music-machine/winner-splash-frame.png">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=6f30e04b829d">
-  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=6f30e04b829d"></script>
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=c8cd3992c9d7">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=c8cd3992c9d7"></script>
   <title>AGGITS — Melbourne Music Machine</title>
 </head>
 <body>
@@ -71,8 +71,18 @@
         <div class="ticker-window"><span class="ticker-copy">LET’S PLAY</span></div>
         <div class="bandcamp-slot" aria-label="Official Bandcamp playback">
           <div class="bandcamp-player-shell">
-            <iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
-            <span class="bandcamp-wordmark" aria-hidden="true">bandcamp</span>
+            <div class="vinyl-play-control">
+              <iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
+            </div>
+            <div class="bandcamp-track-information">
+              <strong data-player-track>WINNING TRACK</strong>
+              <span data-player-artist>MELBOURNE ARTIST</span>
+              <div class="bandcamp-playback-status"><i aria-hidden="true"></i><em data-player-status>READY TO PLAY</em></div>
+            </div>
+            <div class="bandcamp-branding" aria-hidden="true">
+              <span class="bandcamp-wordmark">bandcamp</span>
+              <small>MELBOURNE MUSIC<br>ON BANDCAMP</small>
+            </div>
           </div>
         </div>
       </section>
