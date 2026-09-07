@@ -486,7 +486,7 @@ def build_preview(slug: str, output: Path | None = None) -> dict[str, Any]:
     shutil.copy2(source_pages / "artist" / "index.html", public_root / "artist" / "index.html")
     for name in ("discovery-machine.css", "discovery-machine.js", "discovery-machine-core.js"):
         shutil.copy2(source_pages / "assets" / name, public_root / "assets" / name)
-    for directory in ("music-machine", "audio"):
+    for directory in ("music-machine", "audio", "ticker"):
         source = source_pages / "assets" / directory
         if source.exists():
             shutil.copytree(source, public_root / "assets" / directory)
