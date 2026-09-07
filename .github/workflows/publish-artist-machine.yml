@@ -47,6 +47,8 @@ jobs:
           CANDIDATE_REF: ${{ inputs.candidate_ref }}
         run: |
           set -euo pipefail
+          git config user.name "AGGITS Artist Machine Factory"
+          git config user.email "artist-machine-factory@users.noreply.github.com"
           git fetch origin main
           git rebase origin/main
           git push --force-with-lease origin "HEAD:$CANDIDATE_REF"
