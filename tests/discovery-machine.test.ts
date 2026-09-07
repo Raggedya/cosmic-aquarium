@@ -119,6 +119,7 @@ test('the four-button bank uses a burgundy PLAY hero and a separate Bandcamp pur
   assert.match(css,/\.machine-controls\{[^}]*grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
   assert.match(css,/\.play-button\{[^}]*#922c3b[^}]*#6b1727[^}]*#3b0914/);
   assert.match(css,/\.buy-button\{[^}]*#fff5cf[^}]*#efd29a/);
+  assert.match(css,/\.buy-button\{[^}]*line-height:1\.12/);
   assert.match(css,/@keyframes bandcampInvitePulse/);
   assert.match(css,/\.buy-button\[data-primary-mode="buy"\]\{[^}]*animation:bandcampInvitePulse 1\.15s ease-in-out 3/);
   assert.doesNotMatch(template,/play-symbol|<svg[^>]*data-action|SPIN<br>AGAIN/);
@@ -175,6 +176,9 @@ test('a matching artist raises the physical winner nameplate with the short warm
   assert.match(runtime,/winnerAudioTimer=setTimeout\([\s\S]*?,1450\)/);
   assert.match(css,/@keyframes winnerSplashRise/);
   assert.match(css,/data-machine-state="WIN_CELEBRATION"[^}]*\.winner-splash/);
+  assert.match(css,/data-machine-state="WIN_CELEBRATION"[^}]*\.machine-controls>\.secondary-button/);
+  assert.match(css,/@keyframes winnerControlIllumination/);
+  assert.match(css,/animation:winnerControlIllumination 1\.15s/);
 });
 
 test('the winner receives four readable seconds in the splash before the player is revealed',async()=>{
