@@ -1,8 +1,8 @@
 import {
   SESSION_HISTORY_LIMIT, pushHistory, validBandcampUrl, pickPlayableTrack,
-  artistIdentity, secureRandomIndex, decideMachineResult, isThreeArtistMatch,
+  artistIdentity, secureRandomIndex, selectGuaranteedWinner, isThreeArtistMatch,
   playableMelbourneEntries, MACHINE_STATES,
-} from './discovery-machine-core.js';
+} from './discovery-machine-core.js?v=guaranteed-winner-v1';
 const machine=document.querySelector('.music-machine');
 const base=machine?.dataset.base||'';
 const reels=[...document.querySelectorAll('.reel')];
@@ -31,7 +31,6 @@ const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const workerBase='https://cosmic-aquaria.andrewharris501.workers.dev';
 const stateSet=new Set(MACHINE_STATES);
 const historyKey='aggits:melbourne-artist-history';
-const lossKey='aggits:losses-since-match';
 const sessionKey='aggits:analytics-session';
 const soundKey='aggits:sound-off';
 const WINNER_SPLASH_DURATION_MS=8000;
@@ -85,6 +84,7 @@ let titleRenderToken=0;
 let selectionToken=0;
 let winnerSplashTimer=0;
 let winnerSplashResolve=null;
+const manifestCache=new Map();
 
 machine.style.setProperty('--winner-splash-total',`${(WINNER_SPLASH_DURATION_MS+WINNER_SPLASH_TRANSITION_MS*2)/1000}s`);
 
@@ -315,26 +315,34 @@ function celebrationSound(){
 }
 
 async function fetchManifest(entry){
+  if(manifestCache.has(entry.slug))return manifestCache.get(entry.slug);
   const response=await fetch(`${base}/artists/${encodeURIComponent(entry.slug)}.json`,{cache:'no-store'});
   if(!response.ok)throw new Error(`manifest_${response.status}`);
   const manifest=await response.json();
   if(!validBandcampUrl(manifest.bandcampUrl)||!pickPlayableTrack(manifest))throw new Error('no_playable_track');
+  manifestCache.set(entry.slug,manifest);
   return manifest;
 }
 
-function chooseOutcome(){
-  const losses=Math.min(4,Number(readSession(lossKey,0))||0);
-  const result=decideMachineResult(losses,cryptoRandom(),cryptoRandom());writeSession(lossKey,result.nextLossesSinceMatch);
-  const history=new Set(readSession(historyKey,[]));
-  const fresh=catalogue.filter(entry=>!history.has(artistIdentity(entry)));
-  const source=fresh.length?fresh:catalogue;
-  const winner=source[secureRandomIndex(source.length)]||randomEntry();
-  if(result.match)return {kind:'match',entries:[winner,winner,winner]};
-  if(result.nearMiss){const odd=randomEntry(new Set([artistIdentity(winner)]));const oddIndex=secureRandomIndex(3);const entries=[winner,winner,winner];entries[oddIndex]=odd;return{kind:'near',entries}}
-  const used=new Set(),entries=[];while(entries.length<3){const item=randomEntry(used);if(!item)break;used.add(artistIdentity(item));entries.push(item)}
-  return {kind:'loss',entries};
+async function prepareWinner(entry){
+  const manifest=await fetchManifest(entry);
+  const track=pickPlayableTrack(manifest);
+  const purchaseUrl=validBandcampUrl(track?.bandcampUrl)||validBandcampUrl(manifest.bandcampUrl);
+  if(!track||!purchaseUrl)throw new Error('no_playable_track');
+  return {entry,manifest,track,purchaseUrl};
 }
-function cryptoRandom(){const value=new Uint32Array(1);crypto.getRandomValues(value);return value[0]/4294967296}
+
+async function selectPreparedWinner(){
+  const recent=readSession(historyKey,[]);
+  const rejected=[];
+  while(rejected.length<catalogue.length){
+    const outcome=selectGuaranteedWinner(catalogue,[...recent,...rejected]);
+    if(!outcome)break;
+    const entry=outcome.winner;
+    try{return await prepareWinner(entry)}catch{rejected.push(artistIdentity(entry))}
+  }
+  throw new Error('no_playable_melbourne_artist');
+}
 
 function spinReel(index,finalEntry,stopAfter){
   const reel=reels[index],strip=reel.querySelector('.reel-strip');reel.classList.add('is-spinning');
@@ -366,23 +374,23 @@ function loadBandcampFrame(url,timeout=5000){
   });
 }
 
-async function loadWinningTrack(entry,{fromDeepLink=false}={}){
+async function loadWinningTrack(entry,{fromDeepLink=false,prepared=null}={}){
   const token=++selectionToken;
   setState('LOADING_TRACK',`Loading music by ${artistName(entry)}.`);showTicker(`LOADING ${artistName(entry)}...`);
   try{
-    const manifest=await fetchManifest(entry);const track=pickPlayableTrack(manifest);if(!track)throw new Error('no_playable_track');
+    const resolved=prepared?.entry===entry?prepared:await prepareWinner(entry);const {manifest,track,purchaseUrl}=resolved;
     currentEntry=entry;currentManifest=manifest;currentTrack=track;setMeterMode('idle',track.id||track.bandcampEmbedTrackId);
     playerTrack.textContent=track.title;playerArtist.textContent=manifest.artist;playerStatus.textContent='READY TO PLAY';bandcampPlayerShell.dataset.playbackState='ready';
     const embedId=encodeURIComponent(track.bandcampEmbedTrackId);
     frame.title=`Official Bandcamp playback controls for ${track.title} by ${manifest.artist}`;
     currentEmbedUrl=`https://bandcamp.com/EmbeddedPlayer/track=${embedId}/size=small/bgcol=1b0808/linkcol=e8c680/tracklist=false/artwork=none/transparent=false/autoplay=false/`;
-    currentPurchaseUrl=validBandcampUrl(track.bandcampUrl)||validBandcampUrl(manifest.bandcampUrl);
+    currentPurchaseUrl=purchaseUrl;
     bandcampEngaged=false;showTicker(`PREPARING ${track.title} ON BANDCAMP...`);await loadBandcampFrame(currentEmbedUrl);if(token!==selectionToken||currentEntry!==entry)return;
     shareButton.disabled=false;spinAgainButton.disabled=false;setPrimaryMode('buy');showArtistInformation(entry,manifest,track);showTicker(`LISTEN TO ${track.title} ON BANDCAMP`);
     const history=pushHistory(readSession(historyKey,[]),artistIdentity(entry),SESSION_HISTORY_LIMIT);writeSession(historyKey,history);
     setState('READY_TO_PLAY',`${track.title} by ${manifest.artist} is ready in the Bandcamp player.`);
     if(!fromDeepLink)historyApi('push',entry);
-    recordEvent('track_selected',{result:'ready',artist:manifest.artist,release:manifest.releaseTitle,source:fromDeepLink?'deep_link':'lever_match'});
+    recordEvent('track_selected',{result:'ready',artist:manifest.artist,release:manifest.releaseTitle,source:fromDeepLink?'deep_link':'machine_discovery'});
   }catch(error){
     if(token!==selectionToken)return;
     setState('PLAY_ERROR','That track could not be loaded. Pull again.');showTicker('TRACK UNAVAILABLE — PULL AGAIN');setPrimaryMode('dormant');setMeterMode('idle');locked=false;spinAgainButton.disabled=false;recordEvent('track_selected',{result:'failed',reason:String(error?.message||error)});await wait(1400);setState('IDLE');
@@ -400,19 +408,15 @@ function historyApi(mode,entry){
 async function runSpin(source='lever'){
   if(locked||!catalogue.length)return;
   locked=true;spinAgainButton.disabled=true;clearTimeout(tickerTimer);stopPlayback();showMachineIdentity();
-  setState('SPIN_START','The Melbourne artist reels are starting.');showTicker('SEARCHING MELBOURNE...');setMeterMode('spin');leverClack();startMotor();recordEvent('explore_click',{source});
-  const outcome=chooseOutcome();setState('SPINNING');
+  setState('SPIN_START','The Melbourne artist reels are starting.');showTicker('SEARCHING MELBOURNE...');setMeterMode('spin');leverClack();
+  let prepared;
+  try{prepared=await selectPreparedWinner()}catch(error){setState('PLAY_ERROR','The machine could not prepare a Melbourne song.');showTicker('MACHINE RESTING — PULL AGAIN');setMeterMode('idle');locked=false;spinAgainButton.disabled=false;recordEvent('track_selected',{result:'failed',reason:String(error?.message||error)});return}
+  const winner=prepared.entry;const outcome={kind:'winner',winner,entries:[winner,winner,winner]};startMotor();recordEvent('explore_click',{source});recordEvent('artist_selected',{artist:artistName(winner),source});setState('SPINNING');
   const stopTimes=reducedMotion.matches?[520,720,920]:[1550,2200,2950];
   const promises=outcome.entries.map((entry,index)=>spinReel(index,entry,stopTimes[index]).then(()=>setState(`REEL_${index+1}_STOP`,`Reel ${index+1} stopped on ${artistName(entry)}.`)));
   await Promise.all(promises);stopMotor();setState('EVALUATE');await wait(reducedMotion.matches?100:380);
-  if(isThreeArtistMatch(outcome.entries)){
-    const winner=outcome.entries[0];presentWinner(artistName(winner));setState('WIN',`Three matching reels: ${artistName(winner)}.`);showTicker(`★★★ ${artistName(winner)} ★★★`);setMeterMode('celebrate');celebrationSound();setState('WIN_CELEBRATION');recordEvent('machine_match',{artist:artistName(winner)});const revealCompleted=await holdWinnerSplash();if(!revealCompleted)return;await loadWinningTrack(winner);locked=false;return;
-  }
-  if(outcome.kind==='near'){
-    const counts=new Map();outcome.entries.forEach(entry=>counts.set(artistIdentity(entry),(counts.get(artistIdentity(entry))||0)+1));const repeated=outcome.entries.find(entry=>counts.get(artistIdentity(entry))===2);
-    setState('NEAR_MISS','Two matching artists. Pull again.');showTicker(`TWO ${artistName(repeated).toUpperCase()}S... PULL AGAIN`);recordEvent('machine_settle',{result:'two_match'});
-  }else{setState('LOSS','No artist match. Pull again.');showTicker('NO MATCH — PULL AGAIN');recordEvent('machine_settle',{result:'no_match'})}
-  setMeterMode('idle');await wait(reducedMotion.matches?120:850);locked=false;spinAgainButton.disabled=false;
+  if(!isThreeArtistMatch(outcome.entries))throw new Error('guaranteed_winner_invariant');
+  presentWinner(artistName(winner));setState('WIN',`Three matching reels: ${artistName(winner)}.`);showTicker(`★★★ ${artistName(winner)} ★★★`);setMeterMode('celebrate');celebrationSound();setState('WIN_CELEBRATION');recordEvent('winner_revealed',{artist:artistName(winner)});const revealCompleted=await holdWinnerSplash();if(!revealCompleted)return;await loadWinningTrack(winner,{prepared});locked=false;
 }
 
 function resetLever(animated=true){leverProgress=0;lever.style.transition=animated?'transform .48s cubic-bezier(.18,.72,.23,1)':'none';lever.style.transform='translateY(0) rotate(0)';setTimeout(()=>lever.style.transition='',500)}
@@ -453,5 +457,5 @@ loadData().catch(error=>{setState('PLAY_ERROR','The Melbourne library could not 
 
 window.AggitsMachine=Object.freeze({
   spin:()=>runSpin('api'),
-  getState:()=>({state,locked,catalogueSize:catalogue.length,currentArtist:currentEntry?.artist||null,currentTrack:currentTrack?.title||null,primaryAction,meterSource:'procedural-transport-coupled',lossesSinceMatch:readSession(lossKey,0)}),
+  getState:()=>({state,locked,catalogueSize:catalogue.length,currentArtist:currentEntry?.artist||null,currentTrack:currentTrack?.title||null,primaryAction,meterSource:'procedural-transport-coupled'}),
 });

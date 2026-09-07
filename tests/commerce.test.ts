@@ -35,7 +35,7 @@ test('the Melbourne Music Machine separates SHARE, burgundy BUY MUSIC, SPIN AGAI
   assert.ok(template.indexOf('data-action="share"') < template.indexOf('data-action="buy"'));
   assert.ok(template.indexOf('data-action="buy"') < template.indexOf('data-action="spin-again"'));
   assert.match(runtime, /navigator\.share/);
-  assert.match(runtime, /validBandcampUrl\(track\.bandcampUrl\)\|\|validBandcampUrl\(manifest\.bandcampUrl\)/);
+  assert.match(runtime, /validBandcampUrl\(track\?\.bandcampUrl\)\|\|validBandcampUrl\(manifest\.bandcampUrl\)/);
   assert.match(runtime, /async function runSpin\(source='lever'\)/);
   assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void runSpin\('spin_again'\)\)/);
   assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',\(\)=>void runSpin/);

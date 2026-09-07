@@ -239,16 +239,16 @@ export function pickPlayableTrack(manifest, cryptoApi = globalThis.crypto) {
 
 export const MACHINE_STATES = Object.freeze([
   'BOOT','IDLE','LEVER_PULL','SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP',
-  'EVALUATE','LOSS','NEAR_MISS','WIN','WIN_CELEBRATION','LOADING_TRACK','READY_TO_PLAY','AUTOPLAY_ATTEMPT','AWAITING_PLAY','PLAYING','PLAY_ERROR',
+  'EVALUATE','WIN','WIN_CELEBRATION','LOADING_TRACK','READY_TO_PLAY','AUTOPLAY_ATTEMPT','AWAITING_PLAY','PLAYING','PLAY_ERROR',
 ]);
 
-export function machineMatchProbability(lossesSinceMatch = 0) {
-  return [0.18,0.27,0.39,0.62,1][Math.min(4,Math.max(0,Number(lossesSinceMatch)||0))];
-}
-
-export function decideMachineResult(lossesSinceMatch = 0, matchRoll = Math.random(), nearMissRoll = Math.random()) {
-  const match = Number(matchRoll) < machineMatchProbability(lossesSinceMatch);
-  return {match,nearMiss:!match && Number(nearMissRoll) < 0.24,nextLossesSinceMatch:match?0:Math.min(4,(Number(lossesSinceMatch)||0)+1)};
+export function selectGuaranteedWinner(catalogue, recentArtistIds = [], cryptoApi = globalThis.crypto) {
+  const eligible=playableMelbourneEntries(catalogue);
+  const recent=new Set((recentArtistIds||[]).map(value=>String(value).toLowerCase()));
+  const fresh=eligible.filter(entry=>!recent.has(artistIdentity(entry)));
+  const pool=fresh.length?fresh:eligible;
+  const winner=pool[secureRandomIndex(pool.length,cryptoApi)]||null;
+  return winner?{kind:'winner',winner,entries:[winner,winner,winner]}:null;
 }
 
 export function isThreeArtistMatch(entries) {

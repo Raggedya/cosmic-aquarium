@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 import test from 'node:test';
 import {
   buildShareUrl, buildTickerMessages, validBandcampUrl, pickPlayableTrack,
-  decideMachineResult, machineMatchProbability, isThreeArtistMatch,
+  selectGuaranteedWinner, isThreeArtistMatch, artistIdentity,
   playableMelbourneEntries, MACHINE_STATES,
 } from '../github-pages/assets/discovery-machine-core.js';
 
@@ -37,13 +37,20 @@ test('a partial pull returns without a spin and a full pull is guarded against d
   assert.match(runtime,/The lever returned without starting the reels/);
 });
 
-test('bounded random matching permits early surprises and prevents excessive dry runs',()=>{
-  assert.equal(machineMatchProbability(0),.18);
-  assert.equal(machineMatchProbability(4),1);
-  assert.equal(decideMachineResult(0,.1,.9).match,true);
-  assert.equal(decideMachineResult(0,.9,.1).nearMiss,true);
-  assert.equal(decideMachineResult(4,.999,.999).match,true);
-  assert.equal(decideMachineResult(2,.8,.8).nextLossesSinceMatch,3);
+test('thirty consecutive selections are guaranteed three-reel Melbourne winners',async()=>{
+  const catalogue=JSON.parse(await read('github-pages/aquariums.json')).aquariums;
+  const recent=[];
+  for(let spin=0;spin<30;spin++){
+    const cryptoStub={getRandomValues(array:Uint32Array){array[0]=(spin*2654435761)>>>0;return array}} as unknown as Crypto;
+    const outcome=selectGuaranteedWinner(catalogue,recent,cryptoStub);
+    assert.ok(outcome?.winner,`spin ${spin+1} must select a winner`);
+    assert.equal(outcome.kind,'winner');
+    assert.equal(isThreeArtistMatch(outcome.entries),true);
+    assert.ok(outcome.entries.every(entry=>entry.universeMembership.includes('melbourne')));
+    if(recent[0])assert.notEqual(artistIdentity(outcome.winner),recent[0],`spin ${spin+1} must avoid an immediate repeat`);
+    recent.unshift(artistIdentity(outcome.winner));
+    recent.splice(20);
+  }
 });
 
 test('only three identical canonical artist identities form a match',()=>{
@@ -53,11 +60,11 @@ test('only three identical canonical artist identities form a match',()=>{
   assert.equal(isThreeArtistMatch([porch,porch]),false);
 });
 
-test('near misses remain non-matches and ordinary settles use three artists',async()=>{
+test('loss, near-miss and probability branches are absent from the normal spin path',async()=>{
   const runtime=await read('github-pages/assets/discovery-machine.js');
-  assert.match(runtime,/entries=\[winner,winner,winner\];entries\[oddIndex\]=odd/);
-  assert.match(runtime,/while\(entries\.length<3\)/);
-  assert.match(runtime,/if\(isThreeArtistMatch\(outcome\.entries\)\)/);
+  assert.match(runtime,/const outcome=\{kind:'winner',winner,entries:\[winner,winner,winner\]\}/);
+  assert.doesNotMatch(runtime,/decideMachineResult|machineMatchProbability|losses-since-match|NEAR_MISS|setState\('LOSS'/);
+  assert.doesNotMatch(runtime,/NO MATCH|TWO .*PULL AGAIN/);
 });
 
 test('reels use real catalogue names and stop separately with physical lock-in',async()=>{
@@ -84,7 +91,9 @@ test('the AGGITS marquee uses the reference-matched riveted metal artwork while 
 });
 
 test('the formal state machine covers the complete mechanical and playback sequence',()=>{
-  for(const required of ['BOOT','IDLE','LEVER_PULL','SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP','EVALUATE','LOSS','NEAR_MISS','WIN','WIN_CELEBRATION','LOADING_TRACK','READY_TO_PLAY','AUTOPLAY_ATTEMPT','AWAITING_PLAY','PLAYING','PLAY_ERROR'])assert.ok(MACHINE_STATES.includes(required));
+  for(const required of ['BOOT','IDLE','LEVER_PULL','SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP','EVALUATE','WIN','WIN_CELEBRATION','LOADING_TRACK','READY_TO_PLAY','AUTOPLAY_ATTEMPT','AWAITING_PLAY','PLAYING','PLAY_ERROR'])assert.ok(MACHINE_STATES.includes(required));
+  assert.ok(!MACHINE_STATES.includes('LOSS'));
+  assert.ok(!MACHINE_STATES.includes('NEAR_MISS'));
 });
 
 test('the twin meters and centre inscription share a recessed cabinet instrument cavity',async()=>{
@@ -120,7 +129,7 @@ test('official Bandcamp playback, real purchase links and track fallback validat
   const [template,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
   assert.match(template,/Official Bandcamp playback controls/);
   assert.match(runtime,/bandcamp\.com\/EmbeddedPlayer\/track=/);
-  assert.match(runtime,/validBandcampUrl\(track\.bandcampUrl\)\|\|validBandcampUrl\(manifest\.bandcampUrl\)/);
+  assert.match(runtime,/validBandcampUrl\(track\?\.bandcampUrl\)\|\|validBandcampUrl\(manifest\.bandcampUrl\)/);
   assert.match(runtime,/if\(!validBandcampUrl\(manifest\.bandcampUrl\)\|\|!pickPlayableTrack\(manifest\)\)/);
 });
 
@@ -164,7 +173,7 @@ test('the winner receives eight readable seconds in the splash before the player
   assert.match(runtime,/const WINNER_SPLASH_DURATION_MS=8000/);
   assert.match(runtime,/const WINNER_SPLASH_TRANSITION_MS=260/);
   assert.match(runtime,/function holdWinnerSplash\(\)/);
-  assert.match(runtime,/const revealCompleted=await holdWinnerSplash\(\);if\(!revealCompleted\)return;await loadWinningTrack\(winner\)/);
+  assert.match(runtime,/const revealCompleted=await holdWinnerSplash\(\);if\(!revealCompleted\)return;await loadWinningTrack\(winner,\{prepared\}\)/);
   assert.match(runtime,/function stopPlayback\(\)\{[\s\S]*?clearWinnerSplashTimer\(\)/);
   assert.match(css,/var\(--winner-splash-total,8\.52s\)/);
   assert.match(css,/3\.05%\{opacity:1[\s\S]*?96\.95%\{opacity:1/);
