@@ -25,14 +25,16 @@ test('every edition makes an explicit, safe commerce decision', async () => {
   }
 });
 
-test('the Melbourne Music Machine separates SHARE, burgundy BUY MUSIC, SPIN AGAIN and Bandcamp listening', async () => {
+test('the Melbourne Music Machine separates SHARE, burgundy PLAY, Bandcamp purchase and RE-SPIN', async () => {
   const runtime = await readFile(path.resolve('github-pages', 'assets', 'discovery-machine.js'), 'utf8');
   const template = await readFile(path.resolve('templates', 'universe-index.html'), 'utf8');
   assert.match(template, /data-action="share" disabled>SHARE<\/button>/);
-  assert.match(template, /BUY<br>MUSIC/);
-  assert.match(template, /data-action="spin-again" disabled><span>SPIN<br>AGAIN<\/span><\/button>/);
+  assert.match(template, /class="play-button" data-action="play"/);
+  assert.match(template, /VISIT<br>BANDCAMP/);
+  assert.match(template, /data-action="spin-again" disabled>RE-SPIN<\/button>/);
   assert.doesNotMatch(template, /data-action="next"|SHARE<br>JUKEBOX|NEXT<br>JUKEBOX/);
   assert.ok(template.indexOf('data-action="share"') < template.indexOf('data-action="buy"'));
+  assert.ok(template.indexOf('data-action="play"') < template.indexOf('data-action="buy"'));
   assert.ok(template.indexOf('data-action="buy"') < template.indexOf('data-action="spin-again"'));
   assert.match(runtime, /navigator\.share/);
   assert.match(runtime, /validBandcampUrl\(track\?\.bandcampUrl\)\|\|validBandcampUrl\(manifest\.bandcampUrl\)/);

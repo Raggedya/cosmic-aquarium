@@ -76,30 +76,34 @@
         <div class="ticker-window"><span class="ticker-copy">LET’S PLAY</span></div>
         <div class="bandcamp-slot" aria-label="Official Bandcamp playback">
           <div class="bandcamp-player-shell">
-            <div class="vinyl-play-control">
-              <iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no"></iframe>
+            <div class="player-artwork" data-player-artwork>
+              <img data-player-artwork-image alt="" hidden>
+              <span data-player-artwork-fallback aria-hidden="true">MM</span>
             </div>
             <div class="bandcamp-track-information">
               <strong data-player-track>WINNING TRACK</strong>
               <span data-player-artist>MELBOURNE ARTIST</span>
-              <div class="bandcamp-playback-status"><i aria-hidden="true"></i><em data-player-status>READY TO PLAY</em></div>
+              <div class="bandcamp-playback-status"><i aria-hidden="true"></i><em data-player-status>READY</em><time data-player-duration>BANDCAMP</time></div>
             </div>
-            <div class="bandcamp-branding" aria-hidden="true">
-              <span class="bandcamp-wordmark">bandcamp</span>
-              <small>MELBOURNE MUSIC<br>ON BANDCAMP</small>
+            <div class="player-activity" aria-hidden="true">
+              <i></i><i></i><i></i><i></i><i></i><i></i>
             </div>
           </div>
         </div>
       </section>
       <section class="machine-controls" aria-label="Current music controls">
         <button type="button" class="secondary-button" data-action="share" disabled>SHARE</button>
-        <button type="button" class="buy-button" data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled><span>BUY<br>MUSIC<small>-BandCamp-</small></span></button>
-        <button type="button" class="secondary-button spin-again-button" data-action="spin-again" disabled><span>SPIN<br>AGAIN</span></button>
+        <div class="play-button" data-action="play" data-playback-ready="false" aria-disabled="true">
+          <span data-play-label>PLAY</span>
+          <iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1"></iframe>
+        </div>
+        <button type="button" class="buy-button" data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled><span>VISIT<br>BANDCAMP</span></button>
+        <button type="button" class="secondary-button re-spin-button" data-action="spin-again" disabled>RE-SPIN</button>
       </section>
       <div class="speaker-label" aria-hidden="true">MELBOURNE SONGS<br>ON BANDCAMP</div>
       <button class="lever" type="button" aria-label="Pull the lever to discover a Melbourne artist" aria-describedby="machine-instructions"><img src="{{BASE}}/assets/music-machine/aggits-lever.webp" alt="" draggable="false"><span class="lever-hint">PULL</span></button>
     </div>
-    <p id="machine-instructions" class="visually-hidden">Drag the side lever down past the resistance point, press it, or use Spin Again to spin three real Melbourne artist reels. Three matching artists raise the winner nameplate and reveal an official Bandcamp player, Buy Music, and Share controls.</p>
+    <p id="machine-instructions" class="visually-hidden">Drag the side lever down past the resistance point, press it, or use Re-Spin to spin three real Melbourne artist reels. Three matching artists raise the winner nameplate and reveal Play, Buy Music, and Share controls.</p>
     <p class="machine-status visually-hidden" role="status" aria-live="assertive">Loading the Melbourne music machine.</p>
   </main>
 </body>
