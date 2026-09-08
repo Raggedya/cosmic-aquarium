@@ -259,14 +259,18 @@ body.artist-machine-page{overflow-y:auto;background:#050302!important}
 .music-machine[data-machine-content="festival"] .bandcamp-player-shell{grid-template-columns:clamp(45px,12vw,66px) minmax(0,1fr) clamp(34px,9vw,50px);border-radius:0;background:transparent;box-shadow:none}
 .music-machine[data-machine-content="festival"] .bandcamp-player-shell::after{display:none}
 .music-machine[data-machine-content="festival"] .player-artwork{width:clamp(41px,10.8vw,59px)}
-.music-machine[data-machine-content="festival"] .machine-controls{left:7.2%;right:6.9%;top:64.35%;height:11.25%;grid-template-columns:1fr 1fr 1.48fr 1fr 1fr;gap:2.6%;padding:0;overflow:visible}
+.music-machine[data-machine-content="festival"] .machine-controls{left:7%;right:7%;top:64.35%;height:11.25%;grid-template-columns:repeat(2,minmax(0,1fr)) minmax(0,1.48fr) repeat(2,minmax(0,1fr));align-items:center;column-gap:2.6%;padding:0;overflow:visible}
 .music-machine[data-machine-content="festival"] .machine-controls::before{display:none}
-.music-machine[data-machine-content="festival"] .machine-controls>.secondary-button,.music-machine[data-machine-content="festival"] .machine-controls>.buy-button{height:69%;min-height:44px;align-self:center;border:0;border-radius:50%;color:#ead29f;background:transparent;box-shadow:none;font-size:clamp(6.5px,1.8vw,10px);line-height:1;text-shadow:0 1px #000;overflow:visible}
+.music-machine[data-machine-content="festival"] .machine-controls>.secondary-button,.music-machine[data-machine-content="festival"] .machine-controls>.buy-button{width:100%;height:auto;min-height:44px;aspect-ratio:1;align-self:center;justify-self:center;display:flex;align-items:center;justify-content:center;padding:10%;border:0;border-radius:50%;color:#ead29f;background:transparent;box-shadow:none;font-family:var(--font-machine);font-size:clamp(9px,2.5vw,13px);font-weight:950;line-height:.98;letter-spacing:-.015em;text-align:center;text-shadow:0 1px #000;overflow:visible}
+.music-machine[data-machine-content="festival"] .machine-controls>.buy-button>span{display:block;transform:none;line-height:.92;letter-spacing:-.02em;white-space:normal}
+.music-machine[data-machine-content="festival"] .machine-controls>.re-spin-button{font-size:clamp(9px,2.5vw,13px);line-height:.98;letter-spacing:-.015em;white-space:nowrap}
+.music-machine[data-machine-content="festival"] .machine-controls>.love-button{flex-direction:column;gap:.18em;line-height:.98}
+.music-machine[data-machine-content="festival"] .machine-controls>.love-button>span:last-child{font:inherit;line-height:.92;letter-spacing:-.015em;white-space:nowrap}
 .music-machine[data-machine-content="festival"] .machine-controls>.play-button{align-self:center;justify-self:center;width:100%;height:auto;min-height:58px;aspect-ratio:1;border:0;border-radius:50%;color:#f4deb0;background:transparent;box-shadow:none;font-size:clamp(12px,3.45vw,20px);text-shadow:0 1px #000,0 0 6px rgba(255,225,154,.3)}
 .music-machine[data-machine-content="festival"] .play-button::before{display:none}
 .music-machine[data-machine-content="festival"] .play-button iframe{width:180px;height:48px;transform:translate(-24px,-50%)}
 .music-machine[data-machine-content="festival"] .secondary-button:not(:disabled):active,.music-machine[data-machine-content="festival"] .buy-button:not(:disabled):active,.music-machine[data-machine-content="festival"] .play-button[data-playback-ready="true"]:active{box-shadow:none;filter:brightness(1.35)}
-.music-machine[data-machine-content="festival"] .love-symbol{color:#ead29f;text-shadow:0 1px #000;font-size:1.45em}
+.music-machine[data-machine-content="festival"] .love-symbol{color:#ead29f;text-shadow:0 1px #000;font:700 1.32em/.9 Georgia,serif}
 .music-machine[data-machine-content="festival"] .love-button[data-loved="true"]{color:#ffd99b;background:radial-gradient(circle,rgba(112,24,21,.78),rgba(41,5,6,.2) 65%,transparent 70%);box-shadow:none}
 .music-machine[data-machine-content="festival"] .lever{right:0;top:28.2%;width:14.6%;height:25.9%}
 .music-machine[data-machine-content="festival"] .lever img{object-fit:fill;mix-blend-mode:normal;filter:sepia(.18) saturate(.95) brightness(.88) drop-shadow(0 5px 4px #000)}
