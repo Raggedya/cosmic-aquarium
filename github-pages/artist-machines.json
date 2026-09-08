@@ -1,7 +1,37 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-07T09:16:04.064Z",
+  "generatedAt": "2026-09-08T01:18:40.567Z",
   "artists": [
+    {
+      "machineMode": "artist",
+      "artistSlug": "cash-savage-the-last-drinks",
+      "artistName": "Cash Savage and the Last Drinks",
+      "city": "Melbourne",
+      "bandcampArtistUrl": "https://cashsavage.bandcamp.com/",
+      "bio": "Cash Savage & The Last Drinks are a Melbourne rock band renowned for intense, emotionally charged performances and the commanding presence of singer, guitarist and songwriter Cash Savage. Formed in the late 2000s, the group blends post-punk, blues, folk and raw rock’n’roll into music that can move from brooding restraint to full-scale catharsis. Their albums include *Wolf*, *The Hypnotiser*, *One of Us*, *Good Citizens* and 2023’s acclaimed *So This Is Love*, a deeply personal exploration of love, loss and change. With guitars, violin, keyboards, percussion and Savage’s unmistakable voice, the band has built a formidable live reputation in Australia and Europe. A fixture of Melbourne’s independent music community, they continue to write and perform new material.",
+      "tickerCopy": [
+        "Cash Savage & The Last Drinks are a Melbourne rock band renowned for intense, emotionally charged performances and the commanding presence of singer, guitarist and songwriter Cash Savage."
+      ],
+      "heroArtwork": "https://f4.bcbits.com/img/a0839522100_5.jpg",
+      "accentTheme": "artist-custom",
+      "skinVariant": "cash-savage-the-last-drinks-custom",
+      "provenance": {
+        "source": "https://cashsavage.bandcamp.com/album/so-this-is-love",
+        "method": "artist-machine-factory-v1",
+        "engineVersion": "artist-machine-v1"
+      },
+      "cabinetArtwork": "/assets/music-machine/cash-savage-the-last-drinks-cabinet.jpg",
+      "factory": {
+        "engineVersion": "artist-machine-v1",
+        "approvedAt": "2026-09-07T12:11:31Z",
+        "approvedBy": "Andre",
+        "candidateReport": "automation/artist-machine-factory/candidates/cash-savage-the-last-drinks/report.json",
+        "skinSha256": "4e9c271ca4ab749adbc087b86e62289fffbea94ebd2a7a91f8d51efe187d4ea3"
+      },
+      "cataloguePath": "/artist-machine-catalogues/cash-savage-the-last-drinks.json",
+      "songCount": 63,
+      "status": "published"
+    },
     {
       "machineMode": "artist",
       "artistSlug": "workfriend",

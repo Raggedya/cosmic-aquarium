@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-08T01:18:40.578Z",
+  "festivals": [
+    {
+      "schemaVersion": 1,
+      "machineMode": "festival",
+      "festivalSlug": "port-fairy-folk-festival-2026",
+      "title": "Port Fairy Folk Festival 2026",
+      "festivalName": "Port Fairy Folk Festival",
+      "festivalYear": 2026,
+      "festivalUrl": "https://portfairyfolkfestival.com/",
+      "festivalSourceUrl": "https://portfairyfolkfestival.com/",
+      "festivalDates": null,
+      "festivalLocation": null,
+      "festivalTickerText": "Welcome to the Port Fairy Folk Festival - a four-day celebration of music, community, culture and curiosity, gathered by the sea on Peek Whurrong Country every Victorian Labour Day long weekend.​ Since 1977, this Festival has grown from humble beginnings into one of Australia’s most loved regional festivals, bringing together extraordinary artists, passionate audiences, families, makers, storytellers and free spirits from across the world. Here, music spills across stages, streets and halls. You might stumble into a once-in-a lifetime collaboration, a late-night song you didn’t know you needed, or a quiet moment that stays with you long after the last note fades.​",
+      "tickerCopy": [
+        "Welcome to the Port Fairy Folk Festival - a four-day celebration of music, community, culture and curiosity, gathered by the sea on Peek Whurrong Country every Victorian Labour Day long weekend.​ Since 1977, this Festival has grown from humble beginnings into one of Australia’s most loved regional festivals, bringing together extraordinary artists, passionate audiences, families, makers, storytellers and free spirits from across the world. Here, music spills across stages, streets and halls. You might stumble into a once-in-a lifetime collaboration, a late-night song you didn’t know you needed, or a quiet moment that stays with you long after the last note fades.​"
+      ],
+      "bandcampUrls": [
+        "https://amaidi.bandcamp.com/",
+        "https://theburninghell.bandcamp.com/",
+        "https://candicelorrae.bandcamp.com/",
+        "https://dettakenzie.bandcamp.com/",
+        "https://gracepetrie.bandcamp.com/",
+        "https://thehaar.bandcamp.com/",
+        "https://johnbutler.bandcamp.com/",
+        "https://joshuaburnside.bandcamp.com/",
+        "https://katerusby.bandcamp.com/",
+        "https://kutchaedwards.bandcamp.com/",
+        "https://kyarna.bandcamp.com/",
+        "https://magpiediaries.bandcamp.com/",
+        "https://themilkcartonkids.bandcamp.com/",
+        "https://minorgold.bandcamp.com/",
+        "https://ordinaryelephant.bandcamp.com/",
+        "https://thesettlement.bandcamp.com/",
+        "https://sixpencenonethericher.bandcamp.com/",
+        "https://skerryvore.bandcamp.com/",
+        "https://sueray.bandcamp.com/",
+        "https://tuckshopladies.bandcamp.com/",
+        "https://ukuleledeathsquad.bandcamp.com/",
+        "https://wemavericks.bandcamp.com/"
+      ],
+      "artists": [
+        {
+          "artistName": "Amaidí",
+          "bandcampUrl": "https://amaidi.bandcamp.com/",
+          "songCount": 9,
+          "heroArtwork": "https://f4.bcbits.com/img/a1690106056_5.jpg"
+        },
+        {
+          "artistName": "Merch from The Burning Hell",
+          "bandcampUrl": "https://theburninghell.bandcamp.com/",
+          "songCount": 156,
+          "heroArtwork": "https://f4.bcbits.com/img/a2864017324_5.jpg"
+        },
+        {
+          "artistName": "Candice Lorrae",
+          "bandcampUrl": "https://candicelorrae.bandcamp.com/",
+          "songCount": 1,
+          "heroArtwork": "https://f4.bcbits.com/img/a0329131879_5.jpg"
+        },
+        {
+          "artistName": "Detta Kenzie",
+          "bandcampUrl": "https://dettakenzie.bandcamp.com/",
+          "songCount": 2,
+          "heroArtwork": "https://f4.bcbits.com/img/a2905745091_5.jpg"
+        },
+        {
+          "artistName": "Grace Petrie",
+          "bandcampUrl": "https://gracepetrie.bandcamp.com/",
+          "songCount": 107,
+          "heroArtwork": "https://f4.bcbits.com/img/a4219818535_5.jpg"
+        },
+        {
+          "artistName": "The Haar",
+          "bandcampUrl": "https://thehaar.bandcamp.com/",
+          "songCount": 31,
+          "heroArtwork": "https://f4.bcbits.com/img/a1102809565_5.jpg"
+        },
+        {
+          "artistName": "John Butler",
+          "bandcampUrl": "https://johnbutler.bandcamp.com/",
+          "songCount": 1,
+          "heroArtwork": "https://f4.bcbits.com/img/a3462808621_5.jpg"
+        },
+        {
+          "artistName": "Kate Rusby",
+          "bandcampUrl": "https://katerusby.bandcamp.com/",
+          "songCount": 158,
+          "heroArtwork": "https://f4.bcbits.com/img/a4053159237_5.jpg"
+        },
+        {
+          "artistName": "Kutcha Edwards",
+          "bandcampUrl": "https://kutchaedwards.bandcamp.com/",
+          "songCount": 11,
+          "heroArtwork": "https://f4.bcbits.com/img/a1494871047_5.jpg"
+        },
+        {
+          "artistName": "KYARNA",
+          "bandcampUrl": "https://kyarna.bandcamp.com/",
+          "songCount": 10,
+          "heroArtwork": "https://f4.bcbits.com/img/a0425276119_5.jpg"
+        },
+        {
+          "artistName": "Magpie Diaries",
+          "bandcampUrl": "https://magpiediaries.bandcamp.com/",
+          "songCount": 26,
+          "heroArtwork": "https://f4.bcbits.com/img/a2434988102_5.jpg"
+        }
+      ],
+      "heroArtwork": "https://f4.bcbits.com/img/a1690106056_5.jpg",
+      "accentTheme": "emerald-gold",
+      "importFailures": [
+        {
+          "bandcampUrl": "https://ordinaryelephant.bandcamp.com/",
+          "reason": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "bandcampUrl": "https://thesettlement.bandcamp.com/",
+          "reason": "HTTP Error 429: Unknown Error"
+        },
+        {
+          "bandcampUrl": "https://sixpencenonethericher.bandcamp.com/",
+          "reason": "HTTP Error 429: Unknown Error"
+        },
+        {
+          "bandcampUrl": "https://skerryvore.bandcamp.com/",
+          "reason": "HTTP Error 429: Unknown Error"
+        },
+        {
+          "bandcampUrl": "https://sueray.bandcamp.com/",
+          "reason": "HTTP Error 429: Unknown Error"
+        },
+        {
+          "bandcampUrl": "https://tuckshopladies.bandcamp.com/",
+          "reason": "HTTP Error 429: Unknown Error"
+        },
+        {
+          "bandcampUrl": "https://ukuleledeathsquad.bandcamp.com/",
+          "reason": "HTTP Error 429: Unknown Error"
+        },
+        {
+          "bandcampUrl": "https://themilkcartonkids.bandcamp.com/",
+          "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://themilkcartonkids.bandcamp.com/album/lost-cause-lover-fool, https://themilkcartonkids.bandcamp.com/album/monterey, https://themilkcartonkids.bandcamp.com/album/prologue, https://themilk"
+        },
+        {
+          "bandcampUrl": "https://joshuaburnside.bandcamp.com/",
+          "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://joshuaburnside.bandcamp.com/track/taking-the-wheel, https://joshuaburnside.bandcamp.com/track/the-last-armchair, https://joshuaburnside.bandcamp.com/track/the-only-thing-i-fear, https:/"
+        },
+        {
+          "bandcampUrl": "https://wemavericks.bandcamp.com/",
+          "reason": "HTTP Error 429: Unknown Error"
+        },
+        {
+          "bandcampUrl": "https://minorgold.bandcamp.com/",
+          "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://minorgold.bandcamp.com/album/way-to-the-sun, https://minorgold.bandcamp.com/track/break-it-fake-it, https://minorgold.bandcamp.com/track/hair-hang-down, https://minorgold.bandcamp.com/t"
+        }
+      ],
+      "provenance": {
+        "method": "festival-selected-bandcamp-catalogues",
+        "source": "https://portfairyfolkfestival.com/",
+        "createdAt": "2026-09-08T01:18:33Z"
+      },
+      "cataloguePath": "/festival-machine-catalogues/port-fairy-folk-festival-2026.json",
+      "songCount": 512,
+      "artistCount": 22,
+      "status": "published"
+    }
+  ]
+}
