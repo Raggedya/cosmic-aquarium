@@ -10383,21 +10383,21 @@
       "reason": "HTTP Error 429: Unknown Error"
     },
     {
-      "bandcampUrl": "https://wemavericks.bandcamp.com/",
-      "reason": "HTTP Error 429: Unknown Error"
-    },
-    {
       "bandcampUrl": "https://joshuaburnside.bandcamp.com/",
       "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://joshuaburnside.bandcamp.com/track/taking-the-wheel, https://joshuaburnside.bandcamp.com/track/the-last-armchair, https://joshuaburnside.bandcamp.com/track/the-only-thing-i-fear, https:/"
     },
     {
+      "bandcampUrl": "https://wemavericks.bandcamp.com/",
+      "reason": "HTTP Error 429: Unknown Error"
+    },
+    {
       "bandcampUrl": "https://minorgold.bandcamp.com/",
-      "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://minorgold.bandcamp.com/album/way-to-the-sun, https://minorgold.bandcamp.com/track/break-it-fake-it, https://minorgold.bandcamp.com/track/hair-hang-down, https://minorgold.bandcamp.com/t"
+      "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://minorgold.bandcamp.com/track/break-it-fake-it, https://minorgold.bandcamp.com/track/hair-hang-down, https://minorgold.bandcamp.com/track/handstand, https://minorgold.bandcamp.com/track/"
     }
   ],
   "provenance": {
     "method": "festival-selected-bandcamp-catalogues",
     "source": "https://portfairyfolkfestival.com/",
-    "createdAt": "2026-09-08T03:15:26Z"
+    "createdAt": "2026-09-08T03:47:19Z"
   }
 }
