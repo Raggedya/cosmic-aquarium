@@ -47,19 +47,52 @@ test('Festival Mode owns the tall green floral chassis, hero reel and central ci
   assert.match(css,/#32683a/);
 });
 
-test('Festival Mode wakes automatically after one dormant second and leaves Re-Spin as a spin control',async()=>{
+test('Festival Mode waits for its entrance reveal before the existing wake and leaves Re-Spin as a spin control',async()=>{
   const [runtime,css,core]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css'),read('github-pages/assets/discovery-machine-core.js')]);
   assert.match(core,/'SLEEPING','WAKING','IDLE'/);
   assert.match(runtime,/const FESTIVAL_DORMANT_HOLD_MS=1000/);
   assert.match(runtime,/const FESTIVAL_WAKE_DURATION_MS=1800/);
+  assert.match(runtime,/const FESTIVAL_INTRO_HOLD_MS=5000/);
+  assert.match(runtime,/const FESTIVAL_INTRO_DOOR_OPEN_MS=1200/);
+  assert.match(runtime,/const FESTIVAL_INTRO_REVEAL_PAUSE_MS=1000/);
   assert.match(runtime,/function wakeFestivalMachine\(\)/);
   assert.match(runtime,/setState\('WAKING'/);
-  assert.match(runtime,/setTimeout\(\(\)=>\{festivalWakeRequested=true;if\(festivalCatalogueReady\)void wakeFestivalMachine\(\)\},FESTIVAL_DORMANT_HOLD_MS\)/);
+  assert.match(runtime,/requestFestivalWake\('festival_intro'\)/);
+  assert.match(runtime,/setTimeout\(\(\)=>requestFestivalWake\('return_visit'\),FESTIVAL_DORMANT_HOLD_MS\)/);
   assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void runSpin\('spin_again'\)\)/);
   assert.doesNotMatch(runtime,/festivalSleeping\?wakeFestivalMachine\(\):runSpin/);
   assert.doesNotMatch(css,/data-machine-state="SLEEPING"\] \.machine-controls>\.re-spin-button/);
   assert.match(css,/@keyframes festivalCabinetWake/);
   assert.match(css,/@keyframes festivalComponentWake/);
+});
+
+test('Festival entrance is dynamic, split-door, skippable, session-keyed and accessible',async()=>{
+  const [runtime,css,festival,asset]=await Promise.all([
+    read('github-pages/assets/discovery-machine.js'),
+    read('app/discovery-machine.css'),
+    read('templates/festival-machine.html'),
+    readFile(new URL('../public/music-machine/aggits-festival-intro.webp',import.meta.url)),
+  ]);
+  assert.ok(asset.byteLength>100_000);
+  assert.match(festival,/data-festival-intro data-intro-state="hold"/);
+  assert.equal((festival.match(/class="festival-intro-door /g)||[]).length,2);
+  assert.equal((festival.match(/data-festival-intro-title/g)||[]).length,2);
+  assert.equal((festival.match(/data-festival-intro-year/g)||[]).length,2);
+  assert.match(festival,/aggits-festival-intro\.webp/);
+  assert.match(festival,/festival-intro-seen:\$\{slug\}/);
+  assert.doesNotMatch(festival,/PORT FAIRY|2026/);
+  assert.match(runtime,/const festivalIntroSeenKey=`aggits:festival-intro-seen:\$\{requestedFestivalSlug\|\|'festival'\}`/);
+  assert.match(runtime,/formatMachineTitleLines\(name,3\)/);
+  assert.match(runtime,/function onFestivalIntroPointerMove/);
+  assert.match(runtime,/Math\.hypot\([^)]*\)>12/);
+  assert.match(runtime,/festivalIntroMultiTouch=true/);
+  assert.match(runtime,/setFestivalInteractionLocked\(true\)/);
+  assert.match(runtime,/setFestivalInteractionLocked\(false\)/);
+  for(const event of ['intro_shown','intro_skipped','intro_open_started','intro_open_completed','machine_wake_started'])assert.match(runtime,new RegExp(`recordEvent\\('${event}'`),event);
+  assert.match(css,/\.festival-intro\{[^}]*height:100dvh[^}]*perspective:/);
+  assert.match(css,/festival-intro-door--left\{[^}]*transform-origin:0 50%/);
+  assert.match(css,/festival-intro-door--right\{[^}]*transform-origin:100% 50%/);
+  assert.match(css,/@media \(prefers-reduced-motion:reduce\)\{\.festival-intro-door/);
 });
 
 test('the Festival ticker starts once and remains independent of spin and winner state',async()=>{
@@ -100,7 +133,7 @@ test('LOVE THIS is anonymous, session-deduplicated and uses the central analytic
   assert.match(runtime,/function recordEvent\(eventType,details=\{\}\)\{analytics\.track/);
   assert.match(runtime,/function lovedTracks\(\)\{return new Set\(readSession/);
   assert.match(runtime,/if\(loved\.has\(trackId\)\)return/);
-  for(const event of ['session_start','machine_wake','spin_started','spin_completed','track_selected','track_play_started','track_play_paused','track_love','re_spin','bandcamp_click','share_click','home_click','sound_toggle'])assert.match(runtime,new RegExp(`recordEvent\\('${event}'`),event);
+  for(const event of ['session_start','machine_wake','machine_wake_started','spin_started','spin_completed','track_selected','track_play_started','track_play_paused','track_love','re_spin','bandcamp_click','share_click','home_click','sound_toggle'])assert.match(runtime,new RegExp(`recordEvent\\('${event}'`),event);
   assert.doesNotMatch(festival,/LOVE COUNT|POPULAR|TRENDING|LEADERBOARD/);
 });
 

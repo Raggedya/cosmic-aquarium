@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#071108">
   <meta name="description" content="A festival lineup, one mechanical reel, and real Bandcamp catalogues. Pull the lever to discover a song.">
+  <script>try{const slug=new URLSearchParams(location.search).get('festival')||'';if(slug&&sessionStorage.getItem(`aggits:festival-intro-seen:${slug}`)==='true')document.documentElement.dataset.festivalIntroSeen=slug}catch{}</script>
   <link rel="manifest" href="{{BASE}}/discovery.webmanifest">
+  <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-festival-intro.webp">
   <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-festival-cabinet-v2.webp">
   <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-lever.webp">
   <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-marquee-v2.webp">
@@ -17,7 +19,28 @@
 </head>
 <body>
   <main class="music-machine" data-base="{{BASE}}" data-machine-state="SLEEPING" data-machine-mode="artist" data-machine-content="festival" aria-label="AGGITS Festival Music Machine">
-    <div class="cabinet" aria-describedby="machine-instructions">
+    <section class="festival-intro" data-festival-intro data-intro-state="hold" aria-label="Festival welcome. Tap to open the entrance.">
+      <p class="visually-hidden" data-festival-intro-accessible>Welcome to the Festival Music Machine.</p>
+      <div class="festival-intro-door festival-intro-door--left" aria-hidden="true">
+        <div class="festival-intro-face">
+          <img src="{{BASE}}/assets/music-machine/aggits-festival-intro.webp" alt="" width="953" height="1650" fetchpriority="high">
+          <div class="festival-intro-identity" data-festival-intro-identity>
+            <strong data-festival-intro-title><span>FESTIVAL</span></strong>
+            <em data-festival-intro-year></em>
+          </div>
+        </div>
+      </div>
+      <div class="festival-intro-door festival-intro-door--right" aria-hidden="true">
+        <div class="festival-intro-face">
+          <img src="{{BASE}}/assets/music-machine/aggits-festival-intro.webp" alt="" width="953" height="1650" fetchpriority="high">
+          <div class="festival-intro-identity" data-festival-intro-identity>
+            <strong data-festival-intro-title><span>FESTIVAL</span></strong>
+            <em data-festival-intro-year></em>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="cabinet" aria-describedby="machine-instructions" inert>
       <img class="cabinet-skin" src="{{BASE}}/assets/music-machine/aggits-festival-cabinet-v2.webp" alt="" width="953" height="1650" fetchpriority="high">
       <header class="aggits-marquee"><h1 class="visually-hidden">AGGITS</h1><img src="{{BASE}}/assets/music-machine/aggits-marquee-v2.webp" alt="" width="2172" height="724"><span class="aggits-tagline" aria-hidden="true">MUSIC CONNECTS US</span></header>
       <section class="machine-title" aria-label="Festival catalogue" data-title-mode="identity">
@@ -60,7 +83,7 @@
     </div>
     <p id="machine-instructions" class="visually-hidden">The Festival Music Machine wakes automatically. Once awake, the side lever and Re-Spin select a real song from the festival’s reviewed Bandcamp catalogues.</p>
     <p class="machine-status visually-hidden" role="status" aria-live="assertive">The Festival Music Machine is preparing to wake automatically.</p>
-    <section class="artist-machine-request" aria-labelledby="artist-machine-request-title">
+    <section class="artist-machine-request" aria-labelledby="artist-machine-request-title" inert>
       <strong id="artist-machine-request-title">WANT ONE FOR YOUR FESTIVAL?</strong>
       <button type="button" data-action="request-machine">GET YOUR OWN MUSIC MACHINE</button>
     </section>
