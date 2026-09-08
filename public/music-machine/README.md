@@ -2,6 +2,12 @@
 
 Both production assets were generated with the built-in OpenAI image-generation tool on 6 September 2026, using the user-supplied approved Melbourne Music Machine image as the reference. The generated sources remain in the Codex generated-image workspace; the checked-in files are responsive WebP derivatives.
 
+## `aggits-festival-cabinet.webp`
+
+Role: Festival-only 1024 × 1536 cabinet skin. The live machine retains the shared reels, meters, ticker, controls, Bandcamp transport, and configuration pipeline. Festival identity lettering is rendered separately in HTML/CSS so every title remains editable and accessible.
+
+Final built-in ImageGen prompt summary: preserve the original blank cabinet's exact straight-on geometry; refinish it with the approved reference's luminous apple/olive-green enamel arch and columns, deep black quilted inlays, antique brass trim, restrained botanical vines, leaves, and small cream-gold flowers; use one recessed lower control bank with exactly four evenly spaced, equal rounded-square apertures matching the approved SHARE / PLAY / VISIT BANDCAMP / RE-SPIN proportions; retain blank UI surfaces and lower grille space; add no baked text, lever, meters, album art, interface content, or watermark.
+
 ## `aggits-cabinet.webp`
 
 Role: photographic 1024-pixel-wide cabinet skin behind the live HTML reels, meters, ticker, controls and Bandcamp transport.

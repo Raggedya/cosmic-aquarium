@@ -288,7 +288,14 @@ function updateStats(){
     const artistTarget=document.querySelector('[data-stat="artists"]');if(artistTarget)artistTarget.textContent=artists.toLocaleString('en-AU');
     const identity=artistConfig?.title||artistConfig?.artistName||'ARTIST';
     if(machineTitleHeading)machineTitleHeading.textContent=`${identity} MUSIC MACHINE`.toUpperCase();
-    if(speakerLabel)speakerLabel.innerHTML=isFestivalMode?`${artists.toLocaleString('en-AU')} ARTISTS<br>ON BANDCAMP`:`${cleanText(identity,34).toUpperCase()}<br>ON BANDCAMP`;
+    if(speakerLabel){
+      if(isFestivalMode){
+        const festivalIdentity=cleanText(identity,96).toUpperCase();
+        speakerLabel.textContent=festivalIdentity;
+        speakerLabel.classList.toggle('is-long',festivalIdentity.length>24);
+        speakerLabel.classList.toggle('is-very-long',festivalIdentity.length>38);
+      }else speakerLabel.innerHTML=`${cleanText(identity,34).toUpperCase()}<br>ON BANDCAMP`;
+    }
     document.title=`AGGITS — ${identity} Music Machine`;
     machine.setAttribute('aria-label',`AGGITS ${identity} Music Machine`);
     return;
