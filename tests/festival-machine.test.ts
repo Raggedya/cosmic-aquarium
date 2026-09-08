@@ -107,6 +107,22 @@ test('the Festival ticker starts once and remains independent of spin and winner
   assert.doesNotMatch(festival,/festival-identity-plaque/);
 });
 
+test('the lower Festival panel is a blank-or-searching static status display, not a second ticker',async()=>{
+  const [runtime,css,festival,artist]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css'),read('templates/festival-machine.html'),read('templates/artist-machine.html')]);
+  assert.match(festival,/class="ticker-window machine-status-window"[^>]*aria-live="polite"/);
+  assert.match(festival,/class="machine-status-copy" data-machine-status-copy><\/span>/);
+  assert.doesNotMatch(festival,/class="ticker-copy"/);
+  assert.match(artist,/class="ticker-copy"/);
+  assert.match(runtime,/const FESTIVAL_SEARCH_STATUS='FINDING A FESTIVAL PERFORMER…'/);
+  assert.match(runtime,/const FESTIVAL_SEARCH_STATES=new Set\(\['SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP'\]\)/);
+  assert.match(runtime,/state=next;machine\.dataset\.machineState=next;\s*syncFestivalMachineStatus\(next\)/);
+  assert.match(runtime,/if\(isFestivalMode\)\{syncFestivalMachineStatus\(\);return\}/);
+  assert.match(runtime,/if\(isFestivalMode\)\{clearTimeout\(tickerTimer\);tickerItems=\[\];syncFestivalMachineStatus\(\);return\}/);
+  assert.doesNotMatch(runtime,/FESTIVAL_SEARCH_STATES[^;]*EVALUATE/);
+  assert.match(css,/\.machine-status-copy\{[^}]*text-align:center[^}]*transition:opacity/);
+  assert.doesNotMatch(css,/\.machine-status-copy[^}]*animation:/);
+});
+
 test('the winner splash fully owns the foreground and the celebration sound fires with its reveal',async()=>{
   const [runtime,css]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(css,/data-machine-content="festival"\]\[data-machine-state="WIN_CELEBRATION"\] \.winner-splash\{z-index:48\}/);

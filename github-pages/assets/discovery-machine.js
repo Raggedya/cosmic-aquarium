@@ -24,6 +24,7 @@ const cabinet=document.querySelector('.cabinet');
 const machineRequest=document.querySelector('.artist-machine-request');
 const reels=[...document.querySelectorAll('.reel')];
 const ticker=document.querySelector('.ticker-copy');
+const machineStatusCopy=document.querySelector('[data-machine-status-copy]');
 const lever=document.querySelector('.lever');
 const buyLink=document.querySelector('[data-action="buy"]');
 const shareButton=document.querySelector('[data-action="share"]');
@@ -77,6 +78,8 @@ const FESTIVAL_INTRO_HOLD_MS=5000;
 const FESTIVAL_INTRO_DOOR_OPEN_MS=1200;
 const FESTIVAL_INTRO_REDUCED_OPEN_MS=280;
 const FESTIVAL_INTRO_REVEAL_PAUSE_MS=1000;
+const FESTIVAL_SEARCH_STATUS='FINDING A FESTIVAL PERFORMER…';
+const FESTIVAL_SEARCH_STATES=new Set(['SPIN_START','SPINNING','REEL_1_STOP','REEL_2_STOP','REEL_3_STOP']);
 const reelMotorUrl=`${base}/assets/audio/machine/reel-actual-slotmachine-freesound-261346.mp3`;
 const reelRatchetUrl=`${base}/assets/audio/machine/reel-ratchet-mixkit-2641.mp3`;
 const reelStopUrls=[
@@ -224,8 +227,17 @@ function recordSessionStart(){if(sessionStartRecorded)return;sessionStartRecorde
 function setState(next,message=''){
   if(!stateSet.has(next))throw new Error(`Unknown machine state: ${next}`);
   state=next;machine.dataset.machineState=next;
+  syncFestivalMachineStatus(next);
   if(message)statusNode.textContent=message;
   window.dispatchEvent(new CustomEvent('aggits:state',{detail:{state:next}}));
+}
+
+function syncFestivalMachineStatus(next=state){
+  if(!isFestivalMode||!machineStatusCopy)return;
+  const active=FESTIVAL_SEARCH_STATES.has(next);
+  const text=active?FESTIVAL_SEARCH_STATUS:'';
+  if(machineStatusCopy.textContent!==text)machineStatusCopy.textContent=text;
+  machineStatusCopy.classList.toggle('is-active',active);
 }
 
 function randomEntry(excluded=new Set()){
@@ -260,6 +272,7 @@ function setReelRows(index,entry,neighbours=true){
 }
 
 function showTicker(text,{hold=7200,onComplete=null}={}){
+  if(isFestivalMode){syncFestivalMachineStatus();return}
   clearTimeout(tickerTimer);const renderToken=++tickerRenderToken;
   ticker.textContent=String(text||'LET’S PLAY').toUpperCase();
   ticker.classList.remove('is-scrolling');
@@ -277,6 +290,7 @@ function showTicker(text,{hold=7200,onComplete=null}={}){
   });
 }
 function startTickerRotation(items,delay=7200){
+  if(isFestivalMode){clearTimeout(tickerTimer);tickerItems=[];syncFestivalMachineStatus();return}
   clearTimeout(tickerTimer);tickerItems=[...new Set(items.filter(Boolean))];tickerIndex=0;
   const next=()=>{if(!tickerItems.length)return;showTicker(tickerItems[tickerIndex++%tickerItems.length],{hold:delay,onComplete:next})};
   next();
