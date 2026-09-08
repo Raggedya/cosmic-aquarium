@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
+import { formatMachineTitleLines } from '../github-pages/assets/discovery-machine-core.js';
 
 const read=(file:string)=>readFile(new URL(`../${file}`,import.meta.url),'utf8');
 
@@ -23,11 +24,11 @@ test('Festival Mode feeds the shared catalogue, spin and Bandcamp purchase pipel
   assert.match(runtime,/async function runSpin\(source='lever'\)/);
   assert.match(runtime,/validBandcampUrl\(track\.artistBandcampUrl\)/);
   assert.match(runtime,/festival_machine_catalogue_unavailable/);
-  assert.match(runtime,/const festivalIdentity=cleanText\(identity,96\)\.toUpperCase\(\)/);
-  assert.match(runtime,/speakerLabel\.classList\.toggle\('is-very-long'/);
+  assert.match(runtime,/renderFestivalIdentity\(identity\)/);
+  assert.match(runtime,/festivalIdentityPlaque\.dataset\.lines/);
 });
 
-test('Festival Mode owns the green floral cabinet treatment and metalwork identity plaque',async()=>{
+test('Festival Mode owns the green floral cabinet, wider reels and forged identity treatment',async()=>{
   const [css,asset]=await Promise.all([
     read('app/discovery-machine.css'),
     readFile(new URL('../public/music-machine/aggits-festival-cabinet.webp',import.meta.url)),
@@ -37,8 +38,32 @@ test('Festival Mode owns the green floral cabinet treatment and metalwork identi
   assert.match(css,/\.festival-identity-plaque/);
   assert.match(css,/\.machine-controls\{left:19\.2%;right:19\.2%;top:66\.55%;height:10\.8%/);
   assert.match(css,/height:76%;border-radius:9%\/11%/);
+  assert.match(css,/data-machine-content="festival"\] \.reel-bank\{left:15\.75%;right:15\.75%/);
+  assert.match(css,/\.festival-identity-line\{[^}]*white-space:nowrap/);
+  assert.match(css,/\.festival-identity-line::before\{content:attr\(data-text\)/);
+  assert.match(css,/\.festival-identity-plaque\[data-lines="3"\]/);
   assert.match(css,/#32683a/);
   assert.match(css,/-webkit-background-clip:text/);
+});
+
+test('festival titles are deterministically balanced into one to three ironwork lines',()=>{
+  const examples=[
+    'PORT FAIRY FOLK FESTIVAL 2026',
+    'MEREDITH MUSIC FESTIVAL',
+    'GOLDEN PLAINS',
+    'QUEENSCLIFF MUSIC FESTIVAL',
+    'MELBOURNE INTERNATIONAL JAZZ FESTIVAL',
+    'THE FESTIVAL OF SMALL HALLS',
+  ];
+  for(const title of examples){
+    const lines=formatMachineTitleLines(title);
+    assert.ok(lines.length>=1&&lines.length<=3,title);
+    assert.equal(lines.join(' '),title);
+    assert.deepEqual(formatMachineTitleLines(title),lines);
+  }
+  assert.equal(formatMachineTitleLines('GOLDEN PLAINS').length,1);
+  assert.equal(formatMachineTitleLines('PORT FAIRY FOLK FESTIVAL 2026').length,2);
+  assert.equal(formatMachineTitleLines('A VERY LONG INTERNATIONAL FESTIVAL OF INDEPENDENT MUSIC AND ARTS 2026').length,3);
 });
 
 test('the publisher enforces 35 URLs and keeps track data out of the festival registry',async()=>{

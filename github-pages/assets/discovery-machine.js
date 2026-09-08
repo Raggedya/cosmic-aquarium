@@ -2,8 +2,8 @@ import {
   SESSION_HISTORY_LIMIT, pushHistory, validBandcampUrl, pickPlayableTrack,
   artistIdentity, secureRandomIndex, selectGuaranteedWinner, isThreeArtistMatch,
   playableMelbourneEntries, MACHINE_STATES, MELBOURNE_CULTURE_SEGMENTS,
-  playableArtistTracks, createShuffleBag,
-} from './discovery-machine-core.js?v=guaranteed-winner-v1';
+  playableArtistTracks, createShuffleBag, formatMachineTitleLines,
+} from './discovery-machine-core.js?v=festival-ironwork-v1';
 const machine=document.querySelector('.music-machine');
 const base=machine?.dataset.base||'';
 const cabinetSkin=document.querySelector('.cabinet-skin');
@@ -43,6 +43,7 @@ const machineTitle=document.querySelector('.machine-title');
 const machineTitleIdentity=document.querySelector('.machine-title-identity');
 const machineTitleHeading=document.querySelector('[data-machine-title]');
 const speakerLabel=document.querySelector('[data-speaker-label]');
+const festivalIdentityPlaque=document.querySelector('.festival-identity-plaque');
 const artistInformationPanel=document.querySelector('.artist-information');
 const artistInformation=document.querySelector('[data-artist-information]');
 const artistInformationCopy=document.querySelector('[data-artist-information-copy]');
@@ -153,8 +154,32 @@ function reelIdentity(entry){return String(isSingleReelMode?(entry?.id||entry?.b
 function setReelLabel(node,label){
   const text=String(label||'MELBOURNE').replace(/\s+/g,' ').trim();
   node.textContent=text;
-  node.classList.toggle('is-long',text.length>13);
-  node.classList.toggle('is-very-long',text.length>22);
+  if(isFestivalMode){
+    node.classList.toggle('is-long',text.length>18);
+    node.classList.toggle('is-very-long',text.length>31);
+  }else{
+    node.classList.toggle('is-long',text.length>13);
+    node.classList.toggle('is-very-long',text.length>22);
+  }
+}
+
+function renderFestivalIdentity(value){
+  if(!speakerLabel||!festivalIdentityPlaque)return;
+  const title=cleanText(value,96).toUpperCase();
+  const lines=formatMachineTitleLines(title);
+  const fragment=document.createDocumentFragment();
+  for(const text of lines){
+    const line=document.createElement('span');
+    line.className='festival-identity-line';
+    line.dataset.text=text;
+    line.textContent=text;
+    fragment.append(line);
+  }
+  speakerLabel.replaceChildren(fragment);
+  const longest=Math.max(...lines.map(line=>line.length));
+  festivalIdentityPlaque.dataset.lines=String(lines.length);
+  festivalIdentityPlaque.classList.toggle('is-long',longest>18||lines.length>1);
+  festivalIdentityPlaque.classList.toggle('is-very-long',longest>24||lines.length===3);
 }
 
 function setReelRows(index,entry,neighbours=true){
@@ -290,10 +315,7 @@ function updateStats(){
     if(machineTitleHeading)machineTitleHeading.textContent=`${identity} MUSIC MACHINE`.toUpperCase();
     if(speakerLabel){
       if(isFestivalMode){
-        const festivalIdentity=cleanText(identity,96).toUpperCase();
-        speakerLabel.textContent=festivalIdentity;
-        speakerLabel.classList.toggle('is-long',festivalIdentity.length>24);
-        speakerLabel.classList.toggle('is-very-long',festivalIdentity.length>38);
+        renderFestivalIdentity(identity);
       }else speakerLabel.innerHTML=`${cleanText(identity,34).toUpperCase()}<br>ON BANDCAMP`;
     }
     document.title=`AGGITS — ${identity} Music Machine`;
