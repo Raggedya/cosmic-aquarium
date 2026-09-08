@@ -14,7 +14,7 @@ test('Festival Mode preserves the master cabinet and existing one-reel control s
   assert.match(festival,/data-festival-title/);
   assert.equal((festival.match(/class="reel" data-reel=/g)||[]).length,1);
   for(const action of ['share','play','buy','spin-again','love'])assert.match(festival,new RegExp(`data-action="${action}"`));
-  assert.match(festival,/data-action="spin-again" aria-label="Re-spin the festival song reel">RE-SPIN<\/button>/);
+  assert.match(festival,/data-action="spin-again" aria-label="Re-spin the festival song reel"><span class="control-stack">/);
   assert.doesNotMatch(festival,/festival-identity-plaque|speaker-label/);
   assert.match(festival,/assets\/discovery-machine\.js/);
   assert.match(artist,/data-machine-mode="artist"/);
@@ -43,9 +43,11 @@ test('Festival Mode owns the final timber instrument cabinet, wide reel and roun
   assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\) minmax\(0,1\.48fr\) repeat\(2,minmax\(0,1fr\)\)/);
   assert.match(css,/data-machine-content="festival"\] \.machine-controls\{left:7%;right:7%/);
   assert.match(css,/machine-controls>\.secondary-button,[^}]*machine-controls>\.buy-button\{[^}]*aspect-ratio:1[^}]*align-self:center[^}]*justify-self:center[^}]*font-size:clamp\(8px,2\.1vw,10\.5px\)/);
-  assert.match(css,/machine-controls>\.buy-button>span\{[^}]*transform:none[^}]*line-height:\.94/);
+  assert.match(css,/data-machine-content="festival"\] \.control-stack\{[^}]*flex-direction:column[^}]*align-items:center[^}]*justify-content:center/);
+  assert.match(css,/data-machine-content="festival"\] \.control-icon\{[^}]*fill:currentColor[^}]*stroke:currentColor/);
   assert.match(css,/machine-controls>\.re-spin-button\{[^}]*font-size:clamp\(8px,2\.1vw,10\.5px\)[^}]*letter-spacing:-\.015em/);
-  assert.match(css,/machine-controls>\.love-button\{[^}]*flex-direction:column[^}]*gap:\.24em/);
+  assert.match(css,/machine-controls>\.love-button\{[^}]*padding:12%[^}]*line-height:1/);
+  assert.match(css,/control-stack--heart\{gap:0/);
   assert.match(css,/data-machine-content="festival"\] \.reel-bank\{left:11\.7%;right:15\.4%;top:37\.15%;height:17\.15%/);
   assert.match(css,/data-machine-content="festival"\] \.reel-strip\{inset:1\.5% 14% 2\.5%/);
   assert.match(css,/machine-controls>\.play-button\{[^}]*aspect-ratio:1[^}]*border-radius:50%/);
@@ -122,6 +124,7 @@ test('the lower Festival panel is a blank-or-searching static status display, no
   assert.match(runtime,/if\(isFestivalMode\)\{clearTimeout\(tickerTimer\);tickerItems=\[\];syncFestivalMachineStatus\(\);return\}/);
   assert.doesNotMatch(runtime,/FESTIVAL_SEARCH_STATES[^;]*EVALUATE/);
   assert.match(css,/\.machine-status-copy\{[^}]*text-align:center[^}]*transition:opacity/);
+  assert.match(css,/data-machine-content="festival"\] \.machine-status-copy\{[^}]*font-size:clamp\(16px,4\.5vw,26px\)[^}]*white-space:nowrap/);
   assert.doesNotMatch(css,/\.machine-status-copy[^}]*animation:/);
 });
 
@@ -147,9 +150,11 @@ test('Festival titles fit the cabinet doors, top festival graphic and lower AGGI
   assert.doesNotMatch(festival,/PORT FAIRY|GOOD MUSIC|BRIGHTER DAYS|TREE/);
 });
 
-test('LOVE THIS is anonymous, session-deduplicated and uses the central analytics transport',async()=>{
+test('the heart-only love control is anonymous, session-deduplicated and uses the central analytics transport',async()=>{
   const [runtime,festival]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('templates/festival-machine.html')]);
-  assert.match(festival,/data-action="love" aria-pressed="false" disabled/);
+  assert.match(festival,/data-action="love" aria-pressed="false" aria-label="Love this track" disabled><span class="control-stack control-stack--heart"><span class="love-symbol" aria-hidden="true">♥<\/span><\/span><\/button>/);
+  assert.doesNotMatch(festival,/>LOVE THIS</);
+  for(const icon of ['control-icon--share','control-icon--bandcamp','control-icon--play','control-icon--respin'])assert.match(festival,new RegExp(icon));
   assert.match(runtime,/const analytics=Object\.freeze/);
   assert.match(runtime,/function recordEvent\(eventType,details=\{\}\)\{analytics\.track/);
   assert.match(runtime,/function lovedTracks\(\)\{return new Set\(readSession/);

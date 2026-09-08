@@ -303,7 +303,7 @@ function setPrimaryMode(mode){
   primaryAction=mode;
   buyLink.dataset.primaryMode=mode;
   buyLink.removeAttribute('aria-busy');
-  buyLink.innerHTML='<span>VISIT<br>BANDCAMP</span>';
+  if(!isFestivalMode)buyLink.innerHTML='<span>VISIT<br>BANDCAMP</span>';
   const active=mode==='buy';
   buyLink.disabled=!active;
   buyLink.setAttribute('aria-disabled',String(!active));
@@ -421,7 +421,7 @@ function updateLoveControl(){
   const trackId=currentTrackIdentity(),loved=Boolean(trackId&&lovedTracks().has(trackId));
   loveButton.disabled=!trackId;loveButton.dataset.loved=String(loved);loveButton.setAttribute('aria-pressed',String(loved));
   loveButton.setAttribute('aria-label',loved?'Loved in this session':'Love this track');
-  const symbol=loveButton.querySelector('.love-symbol');if(symbol)symbol.textContent=loved?'♥':'♡';
+  const symbol=loveButton.querySelector('.love-symbol');if(symbol)symbol.textContent=isFestivalMode?'♥':loved?'♥':'♡';
 }
 function loveCurrentTrack(){
   const trackId=currentTrackIdentity();if(!isFestivalMode||!loveButton||!trackId)return;
