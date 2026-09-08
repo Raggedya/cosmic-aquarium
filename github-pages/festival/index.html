@@ -11,18 +11,18 @@
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/music-machine/aggits-marquee-v2.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/music-machine/aggits-reel-v2.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/music-machine/winner-splash-frame.png">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=c91c6fdfbecd">
-  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=c91c6fdfbecd"></script>
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=b1e6b587f235">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=b1e6b587f235"></script>
   <title>AGGITS — Festival Music Machine</title>
 </head>
 <body>
-  <main class="music-machine" data-base="/cosmic-aquarium" data-machine-state="BOOT" data-machine-mode="artist" data-machine-content="festival" aria-label="AGGITS Festival Music Machine">
+  <main class="music-machine" data-base="/cosmic-aquarium" data-machine-state="SLEEPING" data-machine-mode="artist" data-machine-content="festival" aria-label="AGGITS Festival Music Machine">
     <div class="cabinet" aria-describedby="machine-instructions">
       <img class="cabinet-skin" src="/cosmic-aquarium/assets/music-machine/aggits-festival-cabinet.webp" alt="" width="1024" height="1536" fetchpriority="high">
       <header class="aggits-marquee"><h1 class="visually-hidden">AGGITS</h1><img src="/cosmic-aquarium/assets/music-machine/aggits-marquee-v2.webp" alt="" width="2172" height="724"></header>
       <section class="machine-title" aria-label="Festival catalogue" data-title-mode="identity">
         <div class="machine-title-identity">
-          <strong data-machine-title>FESTIVAL MUSIC MACHINE</strong>
+          <strong data-machine-title data-festival-title>FESTIVAL MUSIC MACHINE</strong>
           <small><span data-stat="artists">—</span> ARTISTS <b>•</b> <span data-stat="tracks">—</span> SONGS <b>•</b> BANDCAMP CATALOGUE <b>•</b> JUST MUSIC</small>
         </div>
         <div class="artist-information" aria-hidden="true">
@@ -52,13 +52,12 @@
         <button type="button" class="secondary-button" data-action="share" disabled>SHARE</button>
         <div class="play-button" data-action="play" data-playback-ready="false" aria-disabled="true"><span data-play-label>PLAY</span><iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1"></iframe></div>
         <button type="button" class="buy-button" data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled><span>VISIT<br>BANDCAMP</span></button>
-        <button type="button" class="secondary-button re-spin-button" data-action="spin-again" disabled>RE-SPIN</button>
+        <button type="button" class="secondary-button re-spin-button" data-action="spin-again" aria-label="Wake the Festival Music Machine">RE-SPIN</button>
       </section>
-      <div class="speaker-label festival-identity-plaque" aria-hidden="true"><span data-speaker-label data-festival-title>FESTIVAL MUSIC MACHINE</span></div>
       <button class="lever" type="button" aria-label="Pull the lever to discover a song" aria-describedby="machine-instructions"><img src="/cosmic-aquarium/assets/music-machine/aggits-lever.webp" alt="" draggable="false"><span class="lever-hint">PULL</span></button>
     </div>
-    <p id="machine-instructions" class="visually-hidden">Drag the side lever down past the resistance point, press it, or use Re-Spin. The single reel selects a real song from the festival’s reviewed Bandcamp catalogues.</p>
-    <p class="machine-status visually-hidden" role="status" aria-live="assertive">Loading the Festival Music Machine.</p>
+    <p id="machine-instructions" class="visually-hidden">Press the illuminated Re-Spin button to wake the machine. Once awake, the side lever and Re-Spin select a real song from the festival’s reviewed Bandcamp catalogues.</p>
+    <p class="machine-status visually-hidden" role="status" aria-live="assertive">Press Re-Spin to wake the Festival Music Machine.</p>
     <section class="artist-machine-request" aria-labelledby="artist-machine-request-title">
       <strong id="artist-machine-request-title">WANT ONE FOR YOUR FESTIVAL?</strong>
       <button type="button" data-action="request-machine">GET YOUR OWN MUSIC MACHINE</button>

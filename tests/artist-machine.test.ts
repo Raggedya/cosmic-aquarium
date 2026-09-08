@@ -23,7 +23,7 @@ test('Artist Mode and Melbourne City Mode share the same cabinet runtime and can
   assert.match(cityTemplate,/assets\/discovery-machine\.js/);
   assert.match(runtime,/const isArtistMode=machineMode==='artist'/);
   assert.match(runtime,/async function runSpin\(source='lever'\)/);
-  assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void runSpin\('spin_again'\)\)/);
+  assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void \(isFestivalMode&&festivalSleeping\?wakeFestivalMachine\(\):runSpin\('spin_again'\)\)\)/);
   assert.match(runtime,/void runSpin\('lever'\)/);
   assert.match(runtime,/stopTimes=isSingleReelMode/);
   assert.match(runtime,/entries:\[winner\]/);

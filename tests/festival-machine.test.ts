@@ -1,17 +1,19 @@
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import test from 'node:test';
-import { formatMachineTitleLines } from '../github-pages/assets/discovery-machine-core.js';
 
 const read=(file:string)=>readFile(new URL(`../${file}`,import.meta.url),'utf8');
 
 test('Festival Mode preserves the master cabinet and existing one-reel control surface',async()=>{
   const [festival,artist]=await Promise.all([read('templates/festival-machine.html'),read('templates/artist-machine.html')]);
   assert.match(festival,/data-machine-mode="artist" data-machine-content="festival"/);
+  assert.match(festival,/data-machine-state="SLEEPING"/);
   assert.match(festival,/aggits-festival-cabinet\.webp/);
   assert.match(festival,/data-festival-title/);
   assert.equal((festival.match(/class="reel" data-reel=/g)||[]).length,1);
   for(const action of ['share','play','buy','spin-again'])assert.match(festival,new RegExp(`data-action="${action}"`));
+  assert.match(festival,/data-action="spin-again" aria-label="Wake the Festival Music Machine">RE-SPIN<\/button>/);
+  assert.doesNotMatch(festival,/festival-identity-plaque|speaker-label/);
   assert.match(festival,/assets\/discovery-machine\.js/);
   assert.match(artist,/data-machine-mode="artist"/);
   assert.doesNotMatch(artist,/data-machine-content="festival"/);
@@ -24,48 +26,45 @@ test('Festival Mode feeds the shared catalogue, spin and Bandcamp purchase pipel
   assert.match(runtime,/async function runSpin\(source='lever'\)/);
   assert.match(runtime,/validBandcampUrl\(track\.artistBandcampUrl\)/);
   assert.match(runtime,/festival_machine_catalogue_unavailable/);
-  assert.match(runtime,/renderFestivalIdentity\(identity\)/);
-  assert.match(runtime,/festivalIdentityPlaque\.dataset\.lines/);
+  assert.match(runtime,/const spinPromise=runSpin\('festival_wake'\)/);
 });
 
-test('Festival Mode owns the green floral cabinet, wider reels and forged identity treatment',async()=>{
+test('Festival Mode owns the green floral cabinet and proportional internal reel treatment',async()=>{
   const [css,asset]=await Promise.all([
     read('app/discovery-machine.css'),
     readFile(new URL('../public/music-machine/aggits-festival-cabinet.webp',import.meta.url)),
   ]);
   assert.ok(asset.byteLength>100_000);
   assert.match(css,/data-machine-content="festival"/);
-  assert.match(css,/\.festival-identity-plaque/);
+  assert.doesNotMatch(css,/\.festival-identity-plaque|\.festival-identity-line/);
   assert.match(css,/\.machine-controls\{left:19\.2%;right:19\.2%;top:66\.55%;height:10\.8%/);
   assert.match(css,/height:76%;border-radius:9%\/11%/);
   assert.match(css,/data-machine-content="festival"\] \.reel-bank\{left:19\.2%;right:19\.2%/);
   assert.match(css,/data-machine-content="festival"\] \.reel\{background-size:130% 140%/);
   assert.match(css,/data-machine-content="festival"\] \.reel-strip\{inset:2\.5% 13% 3%/);
-  assert.match(css,/\.festival-identity-line\{[^}]*white-space:nowrap/);
-  assert.match(css,/\.festival-identity-line::before\{content:attr\(data-text\)/);
-  assert.match(css,/\.festival-identity-plaque\[data-lines="3"\]/);
   assert.match(css,/#32683a/);
-  assert.match(css,/-webkit-background-clip:text/);
 });
 
-test('festival titles are deterministically balanced into one to three ironwork lines',()=>{
-  const examples=[
-    'PORT FAIRY FOLK FESTIVAL 2026',
-    'MEREDITH MUSIC FESTIVAL',
-    'GOLDEN PLAINS',
-    'QUEENSCLIFF MUSIC FESTIVAL',
-    'MELBOURNE INTERNATIONAL JAZZ FESTIVAL',
-    'THE FESTIVAL OF SMALL HALLS',
-  ];
-  for(const title of examples){
-    const lines=formatMachineTitleLines(title);
-    assert.ok(lines.length>=1&&lines.length<=3,title);
-    assert.equal(lines.join(' '),title);
-    assert.deepEqual(formatMachineTitleLines(title),lines);
-  }
-  assert.equal(formatMachineTitleLines('GOLDEN PLAINS').length,1);
-  assert.equal(formatMachineTitleLines('PORT FAIRY FOLK FESTIVAL 2026').length,2);
-  assert.equal(formatMachineTitleLines('A VERY LONG INTERNATIONAL FESTIVAL OF INDEPENDENT MUSIC AND ARTS 2026').length,3);
+test('Festival Mode sleeps behind one illuminated button and wakes through the existing spin path',async()=>{
+  const [runtime,css,core]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css'),read('github-pages/assets/discovery-machine-core.js')]);
+  assert.match(core,/'SLEEPING','WAKING','IDLE'/);
+  assert.match(runtime,/const FESTIVAL_WAKE_DURATION_MS=1800/);
+  assert.match(runtime,/function wakeFestivalMachine\(\)/);
+  assert.match(runtime,/setState\('WAKING'/);
+  assert.match(runtime,/festivalSleeping\?wakeFestivalMachine\(\):runSpin\('spin_again'\)/);
+  assert.match(css,/data-machine-state="SLEEPING"\] \.machine-controls>\.re-spin-button/);
+  assert.match(css,/@keyframes festivalCabinetWake/);
+  assert.match(css,/@keyframes festivalComponentWake/);
+});
+
+test('the Festival title holds in the upper ticker for five seconds before festival copy rolls',async()=>{
+  const [runtime,css,festival]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css'),read('templates/festival-machine.html')]);
+  assert.match(runtime,/const FESTIVAL_TITLE_HOLD_MS=5000/);
+  assert.match(runtime,/function showFestivalTitleIntro\(\)/);
+  assert.match(runtime,/showInformationTicker\(festivalInformationText\(\)/);
+  assert.match(runtime,/const heading=cleanText\(isFestivalMode\?identity/);
+  assert.match(css,/data-machine-content="festival"\] \.machine-title-identity small\{display:none\}/);
+  assert.doesNotMatch(festival,/festival-identity-plaque/);
 });
 
 test('the publisher enforces 35 URLs and keeps track data out of the festival registry',async()=>{

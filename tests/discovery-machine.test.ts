@@ -26,7 +26,7 @@ test('the lever remains tactile while RE-SPIN shares the same canonical spin pat
   assert.match(runtime,/lever\.addEventListener\('pointermove',onLeverMove\)/);
   assert.match(runtime,/leverProgress>=\.72/);
   assert.match(runtime,/\['Enter',' '\]/);
-  assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void runSpin\('spin_again'\)\)/);
+  assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void \(isFestivalMode&&festivalSleeping\?wakeFestivalMachine\(\):runSpin\('spin_again'\)\)\)/);
   assert.match(runtime,/async function runSpin\(source='lever'\)/);
 });
 
