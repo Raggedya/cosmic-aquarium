@@ -38,7 +38,9 @@ test('Festival Mode owns the green floral cabinet, wider reels and forged identi
   assert.match(css,/\.festival-identity-plaque/);
   assert.match(css,/\.machine-controls\{left:19\.2%;right:19\.2%;top:66\.55%;height:10\.8%/);
   assert.match(css,/height:76%;border-radius:9%\/11%/);
-  assert.match(css,/data-machine-content="festival"\] \.reel-bank\{left:15\.75%;right:15\.75%/);
+  assert.match(css,/data-machine-content="festival"\] \.reel-bank\{left:19\.2%;right:19\.2%/);
+  assert.match(css,/data-machine-content="festival"\] \.reel\{background-size:130% 140%/);
+  assert.match(css,/data-machine-content="festival"\] \.reel-strip\{inset:2\.5% 13% 3%/);
   assert.match(css,/\.festival-identity-line\{[^}]*white-space:nowrap/);
   assert.match(css,/\.festival-identity-line::before\{content:attr\(data-text\)/);
   assert.match(css,/\.festival-identity-plaque\[data-lines="3"\]/);
