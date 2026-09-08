@@ -9,16 +9,22 @@ const template = await fs.readFile(path.join(root,'templates','artist-index.html
 const universeTemplate = await fs.readFile(path.join(root,'templates','universe-index.html'),'utf8');
 const artistMachineTemplate = await fs.readFile(path.join(root,'templates','artist-machine.html'),'utf8');
 const festivalMachineTemplate = await fs.readFile(path.join(root,'templates','festival-machine.html'),'utf8');
+const tourismMachineTemplate = await fs.readFile(path.join(root,'templates','tourism-machine.html'),'utf8');
 const collectionTemplate = await fs.readFile(path.join(root,'templates','collection-index.html'),'utf8');
 const css = await fs.readFile(path.join(root,'app','cosmic-aquarium.css'),'utf8');
 const doorwayCss = await fs.readFile(path.join(root,'app','doorway.css'),'utf8');
 const collectionCss = await fs.readFile(path.join(root,'app','collection-aquarium.css'),'utf8');
 const discoveryCss = await fs.readFile(path.join(root,'app','discovery-machine.css'),'utf8');
+const tourismCss = await fs.readFile(path.join(root,'app','tourism-machine.css'),'utf8');
 const staticScript = await fs.readFile(path.join(pages,'assets','site.js'),'utf8');
 const doorwayScript = await fs.readFile(path.join(pages,'assets','doorway.js'),'utf8');
 const collectionScript = await fs.readFile(path.join(pages,'assets','collection.js'),'utf8');
 const discoveryScript = await fs.readFile(path.join(pages,'assets','discovery-machine.js'),'utf8');
 const discoveryCore = await fs.readFile(path.join(pages,'assets','discovery-machine-core.js'),'utf8');
+const tourismScript = await fs.readFile(path.join(pages,'assets','tourism-machine.js'),'utf8');
+const tourismCore = await fs.readFile(path.join(pages,'assets','tourism-machine-core.js'),'utf8');
+const tourismData = JSON.parse(await fs.readFile(path.join(root,'data','tourism','bendigo.json'),'utf8'));
+const tourismCabinet = await fs.readFile(path.join(root,'public','tourism-machine','bendigo-tourism-cabinet-reference.jpg'));
 const doorwayAssetNames = ['cosmic-depth.webp','botanical-crown.webp','botanical-garden.webp','world-anywhere.webp','world-heavy.webp','world-dreamy.webp','world-electronic.webp','world-quiet.webp','world-loud.webp','world-dark.webp','world-strange.webp'];
 const doorwayAssets = await Promise.all(doorwayAssetNames.map((name) => fs.readFile(path.join(root,'public','doorway',name))));
 const discoveryFidelityAssetNames = [
@@ -59,6 +65,7 @@ const glassAudioAssets = await Promise.all(glassAudioSourceNames.map((name) => f
 const glassAudioImpacts = await Promise.all(glassAudioImpactNames.map((name) => fs.readFile(path.join(root,'public','audio','glass',name))));
 const minimumFlowerCount = 10;
 const maximumFlowerCount = 14;
+validateTourismData(tourismData);
 const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore);
 doorwayAssets.forEach((asset) => assetHash.update(asset));
 discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
@@ -67,6 +74,7 @@ machineAudioAssets.forEach((asset) => assetHash.update(asset));
 glassAudioAssets.forEach((asset) => assetHash.update(asset));
 glassAudioImpacts.forEach((asset) => assetHash.update(asset));
 const assetVersion = assetHash.digest('hex').slice(0,12);
+const tourismAssetVersion = createHash('sha256').update(tourismCss).update(tourismScript).update(tourismCore).update(tourismCabinet).update(JSON.stringify(tourismData)).digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#001807}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','skulls'),{recursive:true});
@@ -74,14 +82,28 @@ await fs.mkdir(path.join(pages,'assets','glass'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','doorway'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','discovery-fidelity'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','music-machine'),{recursive:true});
+await fs.mkdir(path.join(pages,'assets','tourism-machine'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','audio','glass','source'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','audio','machine'),{recursive:true});
 await fs.mkdir(path.join(pages,'artists'),{recursive:true});
 await fs.mkdir(path.join(pages,'collections'),{recursive:true});
+await fs.mkdir(path.join(pages,'tourism'),{recursive:true});
+await fs.mkdir(path.join(pages,'tourism-data'),{recursive:true});
+await fs.mkdir(path.join(root,'public','tourism'),{recursive:true});
+await fs.mkdir(path.join(root,'public','tourism-data'),{recursive:true});
+await fs.mkdir(path.join(root,'public','assets','tourism-machine'),{recursive:true});
 await fs.writeFile(path.join(pages,'assets','site.css'),reset+css);
 await fs.writeFile(path.join(pages,'assets','doorway.css'),reset+doorwayCss);
 await fs.writeFile(path.join(pages,'assets','collection.css'),reset+collectionCss);
 await fs.writeFile(path.join(pages,'assets','discovery-machine.css'),reset+discoveryCss);
+await fs.writeFile(path.join(pages,'assets','tourism-machine.css'),reset+tourismCss);
+await fs.copyFile(path.join(root,'public','tourism-machine','bendigo-tourism-cabinet-reference.jpg'),path.join(pages,'assets','tourism-machine','bendigo-tourism-cabinet-reference.jpg'));
+await fs.writeFile(path.join(pages,'tourism-data','bendigo.json'),JSON.stringify(tourismData,null,2)+'\n');
+await fs.writeFile(path.join(root,'public','assets','tourism-machine.css'),reset+tourismCss);
+await fs.copyFile(path.join(pages,'assets','tourism-machine.js'),path.join(root,'public','assets','tourism-machine.js'));
+await fs.copyFile(path.join(pages,'assets','tourism-machine-core.js'),path.join(root,'public','assets','tourism-machine-core.js'));
+await fs.copyFile(path.join(root,'public','tourism-machine','bendigo-tourism-cabinet-reference.jpg'),path.join(root,'public','assets','tourism-machine','bendigo-tourism-cabinet-reference.jpg'));
+await fs.writeFile(path.join(root,'public','tourism-data','bendigo.json'),JSON.stringify(tourismData,null,2)+'\n');
 for (const name of ['cosmos.png','poppy.png','anemone.png','rose.png','thorn.png']) {
   await fs.copyFile(path.join(root,'public','flowers',name),path.join(pages,'assets','flowers',name));
 }
@@ -334,7 +356,9 @@ const universeStats={
 };
 await fs.writeFile(path.join(pages,'universe-stats.json'),JSON.stringify(universeStats,null,2)+'\n');
 await fs.writeFile(path.join(pages,'index.html'),renderLanding());
-console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s), '+artistMachineConfigs.length+' Artist Music Machine configuration(s), '+festivalMachineConfigs.length+' Festival Music Machine configuration(s), and '+collectionRegistry.length+' collection(s).');
+await fs.writeFile(path.join(pages,'tourism','index.html'),renderTourismMachine());
+await fs.writeFile(path.join(root,'public','tourism','index.html'),renderTourismMachine(''));
+console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s), '+artistMachineConfigs.length+' Artist Music Machine configuration(s), '+festivalMachineConfigs.length+' Festival Music Machine configuration(s), '+collectionRegistry.length+' collection(s), and the Bendigo tourism machine.');
 
 async function writeArtist(slug,artist){
   const directory=path.join(pages,slug);
@@ -352,6 +376,9 @@ function renderArtistMachine(){
 }
 function renderFestivalMachine(){
   return festivalMachineTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
+}
+function renderTourismMachine(base='/cosmic-aquarium'){
+  return tourismMachineTemplate.replaceAll('{{BASE}}',base).replaceAll('{{ASSET_VERSION}}',tourismAssetVersion);
 }
 function renderCollection(collection){
   return collectionTemplate.replaceAll('{{SLUG}}',escapeAttribute(collection.slug)).replaceAll('{{NAME}}',escapeHtml(String(collection.name).toUpperCase())).replaceAll('{{INSTRUCTION}}',escapeHtml(collection.instruction||'TOUCH AN ARTIST')).replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
@@ -375,3 +402,14 @@ function canonicalPreference(candidate,current){
 function escapeHtml(value){return String(value).replace(/[&<>]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[char]));}
 function escapeAttribute(value){return escapeHtml(value).replaceAll('"','&quot;');}
 function machineSlug(value){return String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,72)}
+function validateTourismData(value){
+  const categories=new Set(['SEE','DO','EAT','DRINK','SHOP','NATURE','HISTORY','WEIRD','DAY_TRIP']);
+  const ids=new Set();
+  if(value?.schemaVersion!==1||!value?.destination?.name||!value?.destination?.machineTitle)throw new Error('Tourism data requires a valid destination and machine title.');
+  if(!Array.isArray(value.discoveries)||value.discoveries.length<1)throw new Error('Tourism data requires at least one discovery.');
+  for(const item of value.discoveries){
+    if(!item?.id||!item?.name||!categories.has(item.category)||ids.has(item.id))throw new Error(`Invalid or duplicate tourism discovery: ${item?.id||'unknown'}`);
+    for(const field of ['shortDescription','image','mapUrl','websiteUrl'])if(!item[field])throw new Error(`Tourism discovery ${item.id} is missing ${field}.`);
+    ids.add(item.id);
+  }
+}

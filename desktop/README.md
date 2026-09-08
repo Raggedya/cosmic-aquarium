@@ -1,5 +1,9 @@
 # Cosmic Aquaria Studio
 
+## Things To Do Machine
+
+The tourism product is a separate desktop application and executable target. Run it from source with `python desktop/things_to_do_machine.py`, or build `desktop-dist/ThingsToDoMachine.exe` with `powershell -ExecutionPolicy Bypass -File desktop/build-things-to-do-machine.ps1`. Its configuration is stored under `%LOCALAPPDATA%/AGGITS Things To Do Machine` and does not share the Festivals draft/settings namespace.
+
 A Windows creator and private control room for publishing and operating Cosmic Aquaria.
 
 The interface asks for only:

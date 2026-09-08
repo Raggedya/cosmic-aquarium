@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1b0d07">
+  <title>Things To Do In Bendigo</title>
+  <meta name="description" content="Pull the lever and discover something to do around Bendigo, Victoria.">
+  <link rel="stylesheet" href="{{BASE}}/assets/tourism-machine.css?v={{ASSET_VERSION}}">
+</head>
+<body>
+  <main class="tourism-stage" data-tourism-machine data-machine-state="READY" aria-label="Things To Do in Bendigo discovery machine">
+    <img class="cabinet-reference" src="{{BASE}}/assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg" alt="" draggable="false">
+
+    <button class="cabinet-hotspot home-control" type="button" data-action="home" aria-label="Reset tourism machine"></button>
+    <button class="cabinet-hotspot sound-control" type="button" data-action="sound" aria-label="Turn sound off" aria-pressed="true"><span data-sound-label>SOUND ON</span></button>
+
+    <section class="title-plaque" aria-label="Machine title and ticker">
+      <strong data-machine-title>THINGS TO DO IN BENDIGO</strong>
+      <span data-ticker aria-live="polite">PULL THE LEVER</span>
+    </section>
+
+    <section class="tourism-reel" aria-label="Tourism discovery reel">
+      <div class="reel-glow" aria-hidden="true"></div>
+      <div class="reel-rows" data-reel-rows></div>
+      <div class="selection-line" aria-hidden="true"></div>
+    </section>
+
+    <button class="cabinet-hotspot lever-control" type="button" data-action="lever" aria-label="Pull for a new idea"><span class="visually-hidden">Pull for a new idea</span></button>
+
+    <section class="result-panel" data-result-panel aria-live="polite" aria-label="Selected tourism discovery">
+      <div class="result-placeholder" data-result-placeholder>YOUR BENDIGO DISCOVERY WILL APPEAR HERE</div>
+      <img data-result-image alt="">
+      <div class="result-copy">
+        <strong data-result-name></strong>
+        <p data-result-summary></p>
+        <div class="result-meta"><span data-result-distance></span><span data-result-hours></span></div>
+      </div>
+    </section>
+
+    <nav class="tourism-actions" aria-label="Discovery actions">
+      <button type="button" data-action="share" disabled><span class="action-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle class="icon-fill" cx="7" cy="16" r="3"/><circle class="icon-fill" cx="24" cy="7" r="3"/><circle class="icon-fill" cx="24" cy="25" r="3"/><path d="m10 14 11-6m-11 10 11 6"/></svg></span><strong>SHARE<br>THIS</strong></button>
+      <button type="button" data-action="map" disabled><span class="action-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 29S7 20 7 12a9 9 0 1 1 18 0c0 8-9 17-9 17Z"/><circle cx="16" cy="12" r="3"/></svg></span><strong>VIEW<br>ON MAP</strong></button>
+      <button type="button" class="more-info" data-action="info" disabled><span class="action-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M16 14v9m0-15v1"/></svg></span><strong>MORE<br>INFO</strong></button>
+      <button type="button" data-action="another"><span class="action-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M25 11a11 11 0 1 0 1 9M25 5v7h-7"/></svg></span><strong>ANOTHER<br>IDEA</strong></button>
+    </nav>
+
+    <p class="visually-hidden" data-machine-announcement aria-live="assertive">Ready. Pull the lever.</p>
+  </main>
+  <script type="module" src="{{BASE}}/assets/tourism-machine.js?v={{ASSET_VERSION}}"></script>
+</body>
+</html>
