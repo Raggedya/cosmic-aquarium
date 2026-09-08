@@ -13,7 +13,7 @@ test('Festival Mode preserves the master cabinet and existing one-reel control s
   assert.match(festival,/data-festival-title/);
   assert.equal((festival.match(/class="reel" data-reel=/g)||[]).length,1);
   for(const action of ['share','play','buy','spin-again','love'])assert.match(festival,new RegExp(`data-action="${action}"`));
-  assert.match(festival,/data-action="spin-again" aria-label="Wake the Festival Music Machine">RE-SPIN<\/button>/);
+  assert.match(festival,/data-action="spin-again" aria-label="Re-spin the festival song reel">RE-SPIN<\/button>/);
   assert.doesNotMatch(festival,/festival-identity-plaque|speaker-label/);
   assert.match(festival,/assets\/discovery-machine\.js/);
   assert.match(artist,/data-machine-mode="artist"/);
@@ -27,7 +27,7 @@ test('Festival Mode feeds the shared catalogue, spin and Bandcamp purchase pipel
   assert.match(runtime,/async function runSpin\(source='lever'\)/);
   assert.match(runtime,/validBandcampUrl\(track\.artistBandcampUrl\)/);
   assert.match(runtime,/festival_machine_catalogue_unavailable/);
-  assert.match(runtime,/const spinPromise=runSpin\('festival_wake'\)/);
+  assert.match(runtime,/setState\('IDLE','Pull the lever or press Re-Spin to discover a festival song\.'/);
 });
 
 test('Festival Mode owns the tall green floral chassis, hero reel and central circular PLAY treatment',async()=>{
@@ -47,26 +47,40 @@ test('Festival Mode owns the tall green floral chassis, hero reel and central ci
   assert.match(css,/#32683a/);
 });
 
-test('Festival Mode sleeps behind one illuminated button and wakes through the existing spin path',async()=>{
+test('Festival Mode wakes automatically after one dormant second and leaves Re-Spin as a spin control',async()=>{
   const [runtime,css,core]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css'),read('github-pages/assets/discovery-machine-core.js')]);
   assert.match(core,/'SLEEPING','WAKING','IDLE'/);
+  assert.match(runtime,/const FESTIVAL_DORMANT_HOLD_MS=1000/);
   assert.match(runtime,/const FESTIVAL_WAKE_DURATION_MS=1800/);
   assert.match(runtime,/function wakeFestivalMachine\(\)/);
   assert.match(runtime,/setState\('WAKING'/);
-  assert.match(runtime,/festivalSleeping\?wakeFestivalMachine\(\):runSpin\('spin_again'\)/);
-  assert.match(css,/data-machine-state="SLEEPING"\] \.machine-controls>\.re-spin-button/);
+  assert.match(runtime,/setTimeout\(\(\)=>\{festivalWakeRequested=true;if\(festivalCatalogueReady\)void wakeFestivalMachine\(\)\},FESTIVAL_DORMANT_HOLD_MS\)/);
+  assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void runSpin\('spin_again'\)\)/);
+  assert.doesNotMatch(runtime,/festivalSleeping\?wakeFestivalMachine\(\):runSpin/);
+  assert.doesNotMatch(css,/data-machine-state="SLEEPING"\] \.machine-controls>\.re-spin-button/);
   assert.match(css,/@keyframes festivalCabinetWake/);
   assert.match(css,/@keyframes festivalComponentWake/);
 });
 
-test('the Festival title holds in the upper ticker for five seconds before festival copy rolls',async()=>{
+test('the Festival ticker starts once and remains independent of spin and winner state',async()=>{
   const [runtime,css,festival]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css'),read('templates/festival-machine.html')]);
-  assert.match(runtime,/const FESTIVAL_TITLE_HOLD_MS=5000/);
+  assert.match(runtime,/let festivalTickerStarted=false/);
   assert.match(runtime,/function showFestivalTitleIntro\(\)/);
   assert.match(runtime,/showInformationTicker\(festivalInformationText\(\)/);
-  assert.match(runtime,/const heading=cleanText\(isFestivalMode\?identity/);
+  assert.match(runtime,/if\(isFestivalMode&&festivalTickerStarted\)return/);
+  assert.match(runtime,/if\(isFestivalMode\)\{showFestivalTitleIntro\(\);return\}/);
+  assert.match(css,/\.artist-information-track\.is-streaming\{animation:artistInformationStream var\(--artist-duration,120s\) linear infinite\}/);
   assert.match(css,/data-machine-content="festival"\] \.machine-title-identity small\{display:none\}/);
   assert.doesNotMatch(festival,/festival-identity-plaque/);
+});
+
+test('the winner splash fully owns the foreground and the celebration sound fires with its reveal',async()=>{
+  const [runtime,css]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+  assert.match(css,/data-machine-content="festival"\]\[data-machine-state="WIN_CELEBRATION"\] \.winner-splash\{z-index:48\}/);
+  assert.match(css,/data-machine-content="festival"\]\[data-machine-state="WIN_CELEBRATION"\] \.winner-splash-artwork\{visibility:hidden\}/);
+  assert.match(runtime,/setState\('WIN_CELEBRATION'\);celebrationSound\(\);recordEvent\('winner_revealed'/);
+  assert.match(runtime,/function celebrationSound\(\)\{\s*ensureMachineSamples\(\);clearTimeout\(winnerAudioTimer\);playSample\(winnerAudio/);
+  assert.match(runtime,/function playSample\(audio,\{volume=\.55,rate=1\}=\{\}\)\{\s*if\(soundOff\|\|!audio\)return/);
 });
 
 test('Festival titles fit the lower forged medallion without hard-coded festival copy',async()=>{

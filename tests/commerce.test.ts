@@ -39,7 +39,7 @@ test('the Melbourne Music Machine separates SHARE, burgundy PLAY, Bandcamp purch
   assert.match(runtime, /navigator\.share/);
   assert.match(runtime, /validBandcampUrl\(track\?\.bandcampUrl\)\|\|validBandcampUrl\(manifest\.bandcampUrl\)/);
   assert.match(runtime, /async function runSpin\(source='lever'\)/);
-  assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void \(isFestivalMode&&festivalSleeping\?wakeFestivalMachine\(\):runSpin\('spin_again'\)\)\)/);
+  assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void runSpin\('spin_again'\)\)/);
   assert.doesNotMatch(runtime,/buyLink\.addEventListener\('click',\(\)=>void runSpin/);
 });
 
