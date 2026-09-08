@@ -432,9 +432,7 @@ function loveCurrentTrack(){
 
 function presentWinner(value,release='',track=null){
   const text=String(value||'MELBOURNE MUSIC').replace(/\s+/g,' ').trim().toUpperCase();
-  winnerName.textContent=text;
-  winnerName.classList.toggle('is-long',text.length>18);
-  winnerName.classList.toggle('is-very-long',text.length>28);
+  if(winnerName){winnerName.textContent=text;winnerName.classList.toggle('is-long',text.length>18);winnerName.classList.toggle('is-very-long',text.length>28)}
   if(winnerRelease)winnerRelease.textContent=String(release||'').toUpperCase();
   if(winnerArtwork){const artwork=safeArtworkUrl(artistConfig,artistManifest,track);winnerArtwork.hidden=!artwork;if(artwork){winnerArtwork.src=artwork;winnerArtwork.alt=`Artwork for ${value}`}else{winnerArtwork.removeAttribute('src');winnerArtwork.alt=''}}
 }
@@ -694,7 +692,7 @@ async function runSpin(source='lever'){
   const promises=outcome.entries.map((entry,index)=>spinReel(index,entry,stopTimes[index]).then(()=>setState(`REEL_${index+1}_STOP`,isSingleReelMode?`The reel stopped on ${reelLabel(entry)}.`:`Reel ${index+1} stopped on ${artistName(entry)}.`)));
   await Promise.all(promises);stopMotor();recordEvent('spin_completed',{source,artist:artistName(prepared.entry),track:prepared.track?.title});setState('EVALUATE');await wait(reducedMotion.matches?100:380);
   if(!isSingleReelMode&&!isThreeArtistMatch(outcome.entries))throw new Error('guaranteed_winner_invariant');
-  presentWinner(isSingleReelMode?prepared.track.title:artistName(winner),isSingleReelMode?prepared.track.albumTitle:'',prepared.track);setState('WIN',isSingleReelMode?`${prepared.track.title} selected.`:`Three matching reels: ${artistName(winner)}.`);showTicker(isSingleReelMode?`★ ${prepared.track.title} ★`:`★★★ ${artistName(winner)} ★★★`);setMeterMode('celebrate');setState('WIN_CELEBRATION');celebrationSound();recordEvent('winner_revealed',{artist:artistName(prepared.entry),track:prepared.track?.title});const revealCompleted=await holdWinnerSplash();if(!revealCompleted)return;await loadWinningTrack(prepared.entry,{prepared});locked=false;
+  presentWinner(isSingleReelMode?prepared.track.title:artistName(winner),isSingleReelMode?prepared.track.albumTitle:'',prepared.track);setState('WIN',isSingleReelMode?`${prepared.track.title} selected.`:`Three matching reels: ${artistName(winner)}.`);showTicker(isSingleReelMode?`★ ${prepared.track.title} ★`:`★★★ ${artistName(winner)} ★★★`);setMeterMode(isFestivalMode?'idle':'celebrate');celebrationSound();recordEvent('winner_revealed',{artist:artistName(prepared.entry),track:prepared.track?.title});if(!isFestivalMode){setState('WIN_CELEBRATION');const revealCompleted=await holdWinnerSplash();if(!revealCompleted)return}await loadWinningTrack(prepared.entry,{prepared});locked=false;
 }
 
 function resetLever(animated=true){leverProgress=0;lever.style.transition=animated?'transform .48s cubic-bezier(.18,.72,.23,1)':'none';lever.style.transform='translateY(0) rotate(0)';setTimeout(()=>lever.style.transition='',500)}

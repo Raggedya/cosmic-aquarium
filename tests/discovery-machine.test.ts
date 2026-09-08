@@ -186,7 +186,7 @@ test('the winner receives four readable seconds in the splash before the player 
   assert.match(runtime,/const WINNER_SPLASH_DURATION_MS=4000/);
   assert.match(runtime,/const WINNER_SPLASH_TRANSITION_MS=260/);
   assert.match(runtime,/function holdWinnerSplash\(\)/);
-  assert.match(runtime,/const revealCompleted=await holdWinnerSplash\(\);if\(!revealCompleted\)return;await loadWinningTrack\(prepared\.entry,\{prepared\}\)/);
+  assert.match(runtime,/if\(!isFestivalMode\)\{setState\('WIN_CELEBRATION'\);const revealCompleted=await holdWinnerSplash\(\);if\(!revealCompleted\)return\}await loadWinningTrack\(prepared\.entry,\{prepared\}\)/);
   assert.match(runtime,/function stopPlayback\(\)\{[\s\S]*?clearWinnerSplashTimer\(\)/);
   assert.match(css,/var\(--winner-splash-total,4\.52s\)/);
   assert.match(css,/5\.75%\{opacity:1[\s\S]*?94\.25%\{opacity:1/);
