@@ -10,6 +10,7 @@
   "festivalDates": null,
   "festivalLocation": null,
   "festivalTickerText": "Welcome to the Port Fairy Folk Festival - a four-day celebration of music, community, culture and curiosity, gathered by the sea on Peek Whurrong Country every Victorian Labour Day long weekend.​ Since 1977, this Festival has grown from humble beginnings into one of Australia’s most loved regional festivals, bringing together extraordinary artists, passionate audiences, families, makers, storytellers and free spirits from across the world. Here, music spills across stages, streets and halls. You might stumble into a once-in-a lifetime collaboration, a late-night song you didn’t know you needed, or a quiet moment that stays with you long after the last note fades.​",
+  "machineHeaderArtwork": null,
   "tickerCopy": [
     "Welcome to the Port Fairy Folk Festival - a four-day celebration of music, community, culture and curiosity, gathered by the sea on Peek Whurrong Country every Victorian Labour Day long weekend.​ Since 1977, this Festival has grown from humble beginnings into one of Australia’s most loved regional festivals, bringing together extraordinary artists, passionate audiences, families, makers, storytellers and free spirits from across the world. Here, music spills across stages, streets and halls. You might stumble into a once-in-a lifetime collaboration, a late-night song you didn’t know you needed, or a quiet moment that stays with you long after the last note fades.​"
   ],
@@ -10351,8 +10352,12 @@
   "accentTheme": "emerald-gold",
   "importFailures": [
     {
+      "bandcampUrl": "https://ordinaryelephant.bandcamp.com/",
+      "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://music.ordinaryelephant.net/album/before-i-go, https://music.ordinaryelephant.net/album/dusty-words-cardboard-boxes, https://music.ordinaryelephant.net/album/honest, https://music.ordina"
+    },
+    {
       "bandcampUrl": "https://themilkcartonkids.bandcamp.com/",
-      "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://themilkcartonkids.bandcamp.com/album/prologue, https://themilkcartonkids.bandcamp.com/album/prologue-10th-anniversary-reissue-audio-only, https://themilkcartonkids.bandcamp.com/album/re"
+      "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://themilkcartonkids.bandcamp.com/album/lost-cause-lover-fool, https://themilkcartonkids.bandcamp.com/album/monterey, https://themilkcartonkids.bandcamp.com/album/prologue, https://themilk"
     },
     {
       "bandcampUrl": "https://thesettlement.bandcamp.com/",
@@ -10363,23 +10368,19 @@
       "reason": "HTTP Error 429: Unknown Error"
     },
     {
-      "bandcampUrl": "https://ordinaryelephant.bandcamp.com/",
-      "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://music.ordinaryelephant.net/album/before-i-go, https://music.ordinaryelephant.net/album/dusty-words-cardboard-boxes, https://music.ordinaryelephant.net/album/honest, https://music.ordina"
+      "bandcampUrl": "https://joshuaburnside.bandcamp.com/",
+      "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://joshuaburnside.bandcamp.com/track/something-else, https://joshuaburnside.bandcamp.com/track/taking-the-wheel, https://joshuaburnside.bandcamp.com/track/the-last-armchair, https://joshua"
     },
     {
       "bandcampUrl": "https://skerryvore.bandcamp.com/",
       "reason": "HTTP Error 429: Unknown Error"
     },
     {
-      "bandcampUrl": "https://sueray.bandcamp.com/",
+      "bandcampUrl": "https://tuckshopladies.bandcamp.com/",
       "reason": "HTTP Error 429: Unknown Error"
     },
     {
-      "bandcampUrl": "https://joshuaburnside.bandcamp.com/",
-      "reason": "The complete Bandcamp catalogue could not be verified. Retry before approval. Unavailable release page(s): https://joshuaburnside.bandcamp.com/track/something-else, https://joshuaburnside.bandcamp.com/track/taking-the-wheel, https://joshuaburnside.bandcamp.com/track/the-last-armchair, https://joshua"
-    },
-    {
-      "bandcampUrl": "https://tuckshopladies.bandcamp.com/",
+      "bandcampUrl": "https://sueray.bandcamp.com/",
       "reason": "HTTP Error 429: Unknown Error"
     },
     {
@@ -10398,6 +10399,6 @@
   "provenance": {
     "method": "festival-selected-bandcamp-catalogues",
     "source": "https://portfairyfolkfestival.com/",
-    "createdAt": "2026-09-08T04:50:05Z"
+    "createdAt": "2026-09-08T07:33:51Z"
   }
 }
