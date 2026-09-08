@@ -12,6 +12,25 @@ export const GO_HOLD_MS = 1500;
 export const DESTRUCTION_MS = 900;
 export const SESSION_HISTORY_LIMIT = 20;
 
+export function formatMachineTitleLines(value, maxLines = 3) {
+  const title=String(value||'FESTIVAL MUSIC MACHINE').replace(/\s+/g,' ').trim().toUpperCase()||'FESTIVAL MUSIC MACHINE';
+  const words=title.split(' '),lineLimit=Math.max(1,Math.min(3,Number(maxLines)||3,words.length));
+  const desiredLines=Math.min(lineLimit,title.length<=14?1:title.length<=31?2:3);
+  if(desiredLines===1)return [title];
+  let best=null;
+  const consider=lines=>{
+    const lengths=lines.map(line=>line.length),target=(title.length-(desiredLines-1))/desiredLines;
+    const score=lengths.reduce((sum,length)=>sum+((length-target)**2)+Math.max(0,length-19)**2*14,0)+lines.reduce((sum,line)=>sum+(line.length<5?80:0),0);
+    if(!best||score<best.score)best={lines,score};
+  };
+  const split=(start,lines)=>{
+    const remaining=desiredLines-lines.length;
+    if(remaining===1){consider([...lines,words.slice(start).join(' ')]);return}
+    for(let end=start+1;end<=words.length-remaining+1;end++)split(end,[...lines,words.slice(start,end).join(' ')]);
+  };
+  split(0,[]);return best?.lines||[title];
+}
+
 export const CRACK_VARIANTS = Object.freeze({
   heavy: ['M49 48L13 10','M49 48L8 51','M49 48L23 91','M49 48L77 12','M49 48L94 58','M49 48L72 94','M31 27L38 45L20 60','M70 29L62 47L88 42','M13 10L27 18L19 31','M8 51L24 57L15 72','M77 12L70 28L86 36','M72 94L62 76L84 81'],
   dreamy: ['M57 43L27 5','M57 43L11 33','M57 43L20 79','M57 43L53 97','M57 43L83 81','M57 43L96 35','M35 18L42 41L18 49','M75 67L66 46L91 55','M27 5L39 17L29 30','M11 33L26 40L14 54','M83 81L71 69L90 63','M96 35L80 39L87 21'],

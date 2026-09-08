@@ -164,6 +164,53 @@ body.artist-machine-page{overflow-y:auto;background:#050302!important}
 @keyframes cabinetKick{0%,100%{transform:translateX(0)}35%{transform:translateX(-2px)}70%{transform:translateX(2px)}}
 .music-machine[data-machine-state="WIN_CELEBRATION"] .aggits-marquee img{animation:marqueeFlash .35s ease-in-out 6}@keyframes marqueeFlash{50%{filter:brightness(1.7) drop-shadow(0 0 13px #ff8b2b) drop-shadow(0 0 22px #fff0b0)}}
 .music-machine[data-machine-state="WIN_CELEBRATION"] .payline{height:3px;box-shadow:0 0 15px #fff,0 0 28px #ff891a}
+.music-machine[data-machine-content="festival"]{--machine-brass:#c68a3c;--machine-dark-brass:#38200d;--machine-green:#1d5a2c;--machine-dark-green:#03140a;--machine-cream:#f8e7b6;--machine-black:#020604;--machine-warm-light:#ffd477;--machine-bevel:inset 0 2px 2px rgba(255,244,197,.48),inset 0 -5px 8px rgba(24,10,2,.72),0 0 0 2px #120a03,0 0 0 4px #8a5d24,0 4px 7px #000}
+.music-machine[data-machine-content="festival"]>.cabinet{width:min(100vw,calc(100dvh * 953 / 1650),560px);height:auto;min-height:0;aspect-ratio:953/1650;filter:drop-shadow(0 12px 30px #000)}
+.music-machine[data-machine-content="festival"] .cabinet-skin{object-fit:fill}
+.music-machine[data-machine-content="festival"] .aggits-marquee{left:22.5%;right:22.5%;top:7.3%;height:10.7%;filter:drop-shadow(0 4px 2px #000) drop-shadow(0 0 8px rgba(255,177,68,.3))}
+.music-machine[data-machine-content="festival"] .aggits-tagline{position:absolute;left:-8%;right:-8%;bottom:-2%;color:#d9b873;font:700 clamp(5px,1.45vw,8px)/1 var(--font-inscription);letter-spacing:.28em;text-align:center;text-shadow:0 1px #000,0 0 5px rgba(255,199,96,.32);white-space:nowrap}
+.music-machine[data-machine-content="festival"] .machine-title{left:19%;right:19%;top:20.45%;height:5.1%;padding:0 2.8%;color:#1d1309;text-shadow:0 1px rgba(255,255,255,.68),0 2px 2px rgba(55,29,8,.12)}
+.music-machine[data-machine-content="festival"] .machine-title-identity strong{max-width:100%;font-size:clamp(11px,3.45vw,19px);letter-spacing:.005em}
+.music-machine[data-machine-content="festival"] .machine-title-identity strong::before,.music-machine[data-machine-content="festival"] .machine-title-identity strong::after{content:"◆";margin:0 .65em;font-size:.7em}
+.music-machine[data-machine-content="festival"] .machine-title-identity strong.is-long{font-size:clamp(9px,2.8vw,16px)}
+.music-machine[data-machine-content="festival"] .machine-title-identity strong.is-very-long{font-size:clamp(7.4px,2.25vw,13px)}
+.music-machine[data-machine-content="festival"] .utility-controls{inset:1.65% 3.15% auto}
+.music-machine[data-machine-content="festival"] .utility-controls button{width:clamp(46px,11.2%,62px);min-width:46px;aspect-ratio:1;border-radius:50%;padding:.35em;font-size:clamp(7px,1.8vw,10px);line-height:1.05;white-space:normal;background:radial-gradient(circle at 44% 28%,#163c22,#031009 72%);box-shadow:inset 0 2px 2px rgba(235,255,181,.25),inset 0 -5px 7px #000,0 0 0 2px #090d07,0 0 0 4px #a87831,0 3px 7px #000}
+.music-machine[data-machine-content="festival"] .meter-bank{left:18.55%;right:18.55%;top:27.15%;height:8.25%;gap:1.4%;padding:1.15% 1.4%;border:0;background:transparent;box-shadow:none}
+.music-machine[data-machine-content="festival"] .meter-bank::before{inset:-2% -1.2%;border:0;background:transparent;box-shadow:none}
+.music-machine[data-machine-content="festival"] .meter-bank::after{inset:.5%;border-color:rgba(255,223,143,.16)}
+.music-machine[data-machine-content="festival"] .meter-inscription{font-size:clamp(6px,1.55vw,9px);border-color:rgba(215,167,74,.68);background:linear-gradient(90deg,#020704,#12311b 48%,#020704)}
+.music-machine[data-machine-content="festival"] .reel-bank{left:17.9%;right:17.9%;top:36.3%;height:17.35%;grid-template-columns:1fr}
+.music-machine[data-machine-content="festival"] .reel-bank::before{inset:-1.5% -1.1%;border-radius:3%/6%;background:rgba(2,7,4,.18);box-shadow:inset 0 6px 9px rgba(0,0,0,.72),0 0 0 1px rgba(186,128,48,.42)}
+.music-machine[data-machine-content="festival"] .reel{border-radius:3%/7%;background-size:112% 142%;box-shadow:inset 0 6px 9px rgba(30,13,3,.38),inset 0 -6px 10px rgba(19,7,2,.35),0 0 0 1px #120805}
+.music-machine[data-machine-content="festival"] .reel-strip{inset:2.5% 14% 3%}
+.music-machine[data-machine-content="festival"] .reel-strip>*{padding:0 2.5%;font-size:clamp(14px,4.7vw,26px)}
+.music-machine[data-machine-content="festival"] .reel-strip>*.is-long{font-size:clamp(10.5px,3.6vw,20px);letter-spacing:-.02em}
+.music-machine[data-machine-content="festival"] .reel-strip>*.is-very-long{font-size:clamp(8px,2.8vw,16px);line-height:.86;letter-spacing:-.034em}
+.music-machine[data-machine-content="festival"] .payline-arrow--left{left:-3.2%}.music-machine[data-machine-content="festival"] .payline-arrow--right{right:-3.2%}
+.music-machine[data-machine-content="festival"] .ticker-panel{left:18.45%;right:18.45%;top:54.65%;height:6.8%;border:0;border-radius:4%/16%;background:transparent;box-shadow:none}
+.music-machine[data-machine-content="festival"] .bandcamp-slot{inset:0 .6%;border-color:rgba(229,190,92,.74);border-radius:10px;background:linear-gradient(180deg,#a27530 0,#14321b 9%,#020805 88%,#64471b 100%)}
+.music-machine[data-machine-content="festival"] .bandcamp-player-shell{grid-template-columns:clamp(42px,10.8vw,58px) minmax(0,1fr) clamp(32px,8.5vw,44px);background:radial-gradient(ellipse at 25% 0,rgba(102,151,60,.3),transparent 52%),linear-gradient(180deg,#14341d,#020805 75%,#0a2111)}
+.music-machine[data-machine-content="festival"] .machine-controls{left:11.6%;right:11.6%;top:62.25%;height:9.5%;grid-template-columns:1fr 1fr 1.36fr 1fr 1fr;gap:2.25%;padding:1.3% 1.1%;overflow:visible}
+.music-machine[data-machine-content="festival"] .machine-controls::before{inset:-3% -.9%;border-color:rgba(213,171,73,.42);border-radius:3%/12%;background:rgba(3,13,7,.22);box-shadow:inset 0 5px 8px rgba(0,0,0,.58),0 0 0 1px rgba(111,75,28,.35)}
+.music-machine[data-machine-content="festival"] .machine-controls>.secondary-button,.music-machine[data-machine-content="festival"] .machine-controls>.buy-button{height:70%;min-height:44px;border-radius:12%/15%;font-size:clamp(6.5px,1.9vw,10.5px);box-shadow:var(--machine-bevel)}
+.music-machine[data-machine-content="festival"] .machine-controls>.play-button{justify-self:center;width:auto;height:116%;min-height:58px;aspect-ratio:1;border-radius:50%;font-size:clamp(13px,4vw,23px);z-index:2;background:radial-gradient(circle at 40% 28%,#4b9b4a 0,#17652b 38%,#062d13 68%,#010a04 100%);box-shadow:inset 0 4px 5px rgba(229,255,192,.48),inset 0 -9px 12px rgba(0,13,5,.78),0 0 0 3px #020704,0 0 0 6px #b78435,0 0 16px rgba(111,255,89,.38),0 5px 7px #000}
+.music-machine[data-machine-content="festival"] .play-button::before{inset:8%;border-radius:50%}
+.music-machine[data-machine-content="festival"] .play-button iframe{width:180px;height:48px;transform:translate(-24px,-50%)}
+.music-machine[data-machine-content="festival"] .love-button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.2em;line-height:.8}
+.music-machine[data-machine-content="festival"] .love-symbol{font:700 1.7em/1 Georgia,serif;color:#4f2912;text-shadow:0 1px rgba(255,255,255,.6)}
+.music-machine[data-machine-content="festival"] .love-button[data-loved="true"]{color:#fff0ba;filter:none;background:radial-gradient(ellipse at 50% 18%,#8c4d39,#4b1719 56%,#180608);box-shadow:inset 0 3px 5px rgba(255,226,190,.34),inset 0 -6px 9px #120205,0 0 0 3px #030805,0 0 0 5px #c3913f,0 0 12px rgba(255,120,80,.34),0 4px 6px #000}
+.music-machine[data-machine-content="festival"] .love-button[data-loved="true"] .love-symbol{color:#ffcf8a;text-shadow:0 0 7px rgba(255,102,61,.72)}
+.music-machine[data-machine-content="festival"] .lever{right:0;top:29.8%;width:20.5%;height:30.5%}
+.music-machine[data-machine-content="festival"] .lever-hint{right:5%;top:44%;max-width:52px;border-radius:8px;text-align:center;line-height:1.02}
+.festival-speaker-title{position:absolute;left:30.5%;right:30.5%;top:76%;height:8.6%;z-index:6;display:grid;place-items:center;padding:3% 7%;box-sizing:border-box;text-align:center;pointer-events:none;filter:drop-shadow(0 3px 2px #000)}
+.festival-speaker-title>[data-festival-speaker-title]{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.12em;width:100%;height:100%;color:#bd8a3e;font:900 clamp(8px,2.35vw,13px)/.91 var(--font-inscription);letter-spacing:.025em;text-transform:uppercase;-webkit-text-stroke:.35px #2b1807;text-shadow:0 -1px rgba(255,232,158,.7),1px 1px #70471b,0 2px #251304,0 3px 3px #000}
+.festival-speaker-title>[data-festival-speaker-title]>span{white-space:nowrap}
+.festival-speaker-title[data-lines="1"]>[data-festival-speaker-title]{font-size:clamp(10px,3vw,17px)}
+.festival-speaker-title[data-lines="2"]>[data-festival-speaker-title]{font-size:clamp(8.5px,2.55vw,14px)}
+.festival-speaker-title.is-very-long>[data-festival-speaker-title]{font-size:clamp(6.5px,2vw,11px);letter-spacing:.006em}
+.music-machine[data-machine-content="festival"][data-machine-state="WAKING"] .aggits-tagline{animation:festivalComponentWake .55s linear .28s both}
+.music-machine[data-machine-content="festival"][data-machine-state="WAKING"] .festival-speaker-title{animation:festivalComponentWake .55s linear 1.08s both}
 .machine-status{position:fixed}
 @media (min-width:561px){.cabinet{height:min(100dvh,920px);aspect-ratio:2/3}.music-machine{padding:10px}}
 @media (max-height:700px){.cabinet{min-height:100dvh}.utility-controls{top:1%}}

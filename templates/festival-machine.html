@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#071108">
   <meta name="description" content="A festival lineup, one mechanical reel, and real Bandcamp catalogues. Pull the lever to discover a song.">
   <link rel="manifest" href="{{BASE}}/discovery.webmanifest">
-  <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-festival-cabinet.webp">
+  <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-festival-cabinet-v2.webp">
   <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-lever.webp">
   <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-marquee-v2.webp">
   <link rel="preload" as="image" href="{{BASE}}/assets/music-machine/aggits-reel-v2.webp">
@@ -18,8 +18,8 @@
 <body>
   <main class="music-machine" data-base="{{BASE}}" data-machine-state="SLEEPING" data-machine-mode="artist" data-machine-content="festival" aria-label="AGGITS Festival Music Machine">
     <div class="cabinet" aria-describedby="machine-instructions">
-      <img class="cabinet-skin" src="{{BASE}}/assets/music-machine/aggits-festival-cabinet.webp" alt="" width="1024" height="1536" fetchpriority="high">
-      <header class="aggits-marquee"><h1 class="visually-hidden">AGGITS</h1><img src="{{BASE}}/assets/music-machine/aggits-marquee-v2.webp" alt="" width="2172" height="724"></header>
+      <img class="cabinet-skin" src="{{BASE}}/assets/music-machine/aggits-festival-cabinet-v2.webp" alt="" width="953" height="1650" fetchpriority="high">
+      <header class="aggits-marquee"><h1 class="visually-hidden">AGGITS</h1><img src="{{BASE}}/assets/music-machine/aggits-marquee-v2.webp" alt="" width="2172" height="724"><span class="aggits-tagline" aria-hidden="true">MUSIC CONNECTS US</span></header>
       <section class="machine-title" aria-label="Festival catalogue" data-title-mode="identity">
         <div class="machine-title-identity">
           <strong data-machine-title data-festival-title>FESTIVAL MUSIC MACHINE</strong>
@@ -50,10 +50,12 @@
       </section>
       <section class="machine-controls" aria-label="Current music controls">
         <button type="button" class="secondary-button" data-action="share" disabled>SHARE</button>
-        <div class="play-button" data-action="play" data-playback-ready="false" aria-disabled="true"><span data-play-label>PLAY</span><iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1"></iframe></div>
         <button type="button" class="buy-button" data-action="buy" data-primary-mode="dormant" aria-disabled="true" disabled><span>VISIT<br>BANDCAMP</span></button>
+        <div class="play-button" data-action="play" data-playback-ready="false" aria-disabled="true"><span data-play-label>PLAY</span><iframe title="Official Bandcamp playback controls" allow="autoplay" loading="eager" referrerpolicy="strict-origin-when-cross-origin" scrolling="no" tabindex="-1"></iframe></div>
         <button type="button" class="secondary-button re-spin-button" data-action="spin-again" aria-label="Wake the Festival Music Machine">RE-SPIN</button>
+        <button type="button" class="secondary-button love-button" data-action="love" aria-pressed="false" disabled><span class="love-symbol" aria-hidden="true">♡</span><span>LOVE THIS</span></button>
       </section>
+      <div class="festival-speaker-title" aria-hidden="true"><span data-festival-speaker-title>FESTIVAL MUSIC MACHINE</span></div>
       <button class="lever" type="button" aria-label="Pull the lever to discover a song" aria-describedby="machine-instructions"><img src="{{BASE}}/assets/music-machine/aggits-lever.webp" alt="" draggable="false"><span class="lever-hint">PULL</span></button>
     </div>
     <p id="machine-instructions" class="visually-hidden">Press the illuminated Re-Spin button to wake the machine. Once awake, the side lever and Re-Spin select a real song from the festival’s reviewed Bandcamp catalogues.</p>
