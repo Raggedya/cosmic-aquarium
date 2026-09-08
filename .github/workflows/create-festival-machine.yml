@@ -1,0 +1,99 @@
+name: Create Festival Music Machine
+
+on:
+  workflow_dispatch:
+    inputs:
+      request_json:
+        description: Reviewed Festivals dashboard configuration
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: cosmic-aquarium-publishing
+  cancel-in-progress: false
+
+jobs:
+  create:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-automation.txt
+      - name: Install QR verification dependencies
+        run: python -m pip install --disable-pip-version-check -r requirements-automation.txt
+      - name: Validate reviewed dashboard request
+        shell: bash
+        env:
+          FESTIVAL_REQUEST: ${{ inputs.request_json }}
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          raw=os.environ["FESTIVAL_REQUEST"]
+          if len(raw)>100000:
+              raise SystemExit("Festival request is too large")
+          value=json.loads(raw)
+          if not isinstance(value,dict):
+              raise SystemExit("Festival request must be an object")
+          Path("festival-request.json").write_text(json.dumps(value),encoding="utf-8")
+          PY
+      - name: Import reviewed Bandcamp catalogues and create QR
+        id: festival
+        shell: bash
+        run: |
+          set -euo pipefail
+          python scripts/create_festival_machine.py --request-json festival-request.json > festival-result.json
+          cat festival-result.json
+          python - <<'PY'
+          import json, os
+          result=json.load(open("festival-result.json",encoding="utf-8"))
+          with open(os.environ["GITHUB_OUTPUT"],"a",encoding="utf-8") as output:
+              for key in ("slug","title","page_url","qr_path","qr_url","artists","tracks"):
+                  print(f"{key}={result[key]}",file=output)
+          PY
+      - name: Refresh shared pages with festival registry
+        run: node --experimental-strip-types scripts/build-github-pages.mjs
+      - name: Verify festival and existing machine behaviour
+        run: |
+          python -m unittest tests.festival_discovery_test tests.create_festival_machine_test
+          npm test
+      - name: Commit generated festival machine
+        shell: bash
+        env:
+          FESTIVAL_TITLE: ${{ steps.festival.outputs.title }}
+        run: |
+          set -euo pipefail
+          git config user.name "AGGITS Festivals"
+          git config user.email "cosmic-aquarium@users.noreply.github.com"
+          git add automation/festival-machines github-pages
+          if git diff --cached --quiet; then
+            echo "Festival machine already current."
+          else
+            git commit -m "Create ${FESTIVAL_TITLE} Festival Music Machine"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: github-pages
+      - name: Publish festival machine
+        id: deployment
+        uses: actions/deploy-pages@v4

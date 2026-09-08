@@ -7,10 +7,14 @@ import {
 const machine=document.querySelector('.music-machine');
 const base=machine?.dataset.base||'';
 const cabinetSkin=document.querySelector('.cabinet-skin');
-const machineMode=machine?.dataset.machineMode==='artist'?'artist':'city';
+const isFestivalMode=machine?.dataset.machineContent==='festival';
+const machineMode=isFestivalMode?'festival':machine?.dataset.machineMode==='artist'?'artist':'city';
 const isArtistMode=machineMode==='artist';
-const requestedArtistSlug=new URLSearchParams(location.search).get('artist')||'workfriend';
-if(isArtistMode)document.body.classList.add('artist-machine-page');
+const isSingleReelMode=isArtistMode||isFestivalMode;
+const requestedParameters=new URLSearchParams(location.search);
+const requestedArtistSlug=requestedParameters.get('artist')||'workfriend';
+const requestedFestivalSlug=requestedParameters.get('festival')||'';
+if(isSingleReelMode)document.body.classList.add('artist-machine-page');
 const reels=[...document.querySelectorAll('.reel')];
 const ticker=document.querySelector('.ticker-copy');
 const lever=document.querySelector('.lever');
@@ -51,7 +55,7 @@ const closeRequestButton=document.querySelector('[data-action="close-request"]')
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const workerBase='https://cosmic-aquaria.andrewharris501.workers.dev';
 const stateSet=new Set(MACHINE_STATES);
-const historyKey=isArtistMode?`aggits:artist-track-history:${requestedArtistSlug}`:'aggits:melbourne-artist-history';
+const historyKey=isFestivalMode?`aggits:festival-track-history:${requestedFestivalSlug}`:isSingleReelMode?`aggits:artist-track-history:${requestedArtistSlug}`:'aggits:melbourne-artist-history';
 const sessionKey='aggits:analytics-session';
 const soundKey='aggits:sound-off';
 const WINNER_SPLASH_DURATION_MS=4000;
@@ -125,7 +129,7 @@ function holdWinnerSplash(){
 }
 
 function recordEvent(eventType,details={}){
-  const machineId=isArtistMode?`artist-machine:${artistConfig?.artistSlug||requestedArtistSlug}`:(currentEntry?.slug||'melbourne-music-machine');
+  const machineId=isFestivalMode?`festival-machine:${artistConfig?.festivalSlug||requestedFestivalSlug}`:isSingleReelMode?`artist-machine:${artistConfig?.artistSlug||requestedArtistSlug}`:(currentEntry?.slug||'melbourne-music-machine');
   const body=JSON.stringify({eventType,aquariumId:machineId,sessionId:sessionId(),trackId:currentTrack?.id||null,metadata:{interface:'aggits-machine',machineMode,...details}});
   try{fetch(`${workerBase}/api/events`,{method:'POST',headers:{'content-type':'application/json'},body,keepalive:true,credentials:'omit'}).catch(()=>{})}catch{}
 }
@@ -142,9 +146,9 @@ function randomEntry(excluded=new Set()){
   return pool[secureRandomIndex(pool.length)]||catalogue[secureRandomIndex(catalogue.length)]||null;
 }
 
-function artistName(entry){return String(entry?.artist||entry?.artistName||artistConfig?.artistName||(isArtistMode?'ARTIST':'MELBOURNE')).trim()}
-function reelLabel(entry){return String(isArtistMode?entry?.title:artistName(entry)).trim()||'MUSIC'}
-function reelIdentity(entry){return String(isArtistMode?(entry?.id||entry?.bandcampEmbedTrackId):artistIdentity(entry)).toLowerCase()}
+function artistName(entry){return String(isFestivalMode?(entry?.artist||currentTrack?.artist||artistConfig?.title||'FESTIVAL'):entry?.artist||entry?.artistName||artistConfig?.artistName||(isSingleReelMode?'ARTIST':'MELBOURNE')).trim()}
+function reelLabel(entry){return String(isSingleReelMode?entry?.title:artistName(entry)).trim()||'MUSIC'}
+function reelIdentity(entry){return String(isSingleReelMode?(entry?.id||entry?.bandcampEmbedTrackId):artistIdentity(entry)).toLowerCase()}
 
 function setReelLabel(node,label){
   const text=String(label||'MELBOURNE').replace(/\s+/g,' ').trim();
@@ -194,7 +198,7 @@ function setPrimaryMode(mode){
   const active=mode==='buy';
   buyLink.disabled=!active;
   buyLink.setAttribute('aria-disabled',String(!active));
-  buyLink.setAttribute('aria-label',active?`Visit ${currentManifest?.artist||'this artist'} on Bandcamp`:'The artist’s Bandcamp becomes available after a winning song is selected');
+  buyLink.setAttribute('aria-label',active?`Visit ${currentTrack?.artist||currentManifest?.artist||'this artist'} on Bandcamp`:'The artist’s Bandcamp becomes available after a winning song is selected');
 }
 
 function artistInitials(value){
@@ -209,7 +213,7 @@ function safeArtworkUrl(entry,manifest,track){
 }
 
 function setPlayerArtwork(entry,manifest,track){
-  const label=manifest?.artist||entry?.artist||'Melbourne artist',url=safeArtworkUrl(entry,manifest,track);
+  const label=track?.artist||manifest?.artist||entry?.artist||'Melbourne artist',url=safeArtworkUrl(entry,manifest,track);
   playerArtworkFallback.textContent=artistInitials(label);playerArtworkImage.hidden=true;playerArtworkImage.removeAttribute('src');playerArtworkImage.alt='';
   if(!url)return;
   playerArtworkImage.onload=()=>{if(playerArtworkImage.src===url){playerArtworkImage.hidden=false;playerArtworkImage.alt=`Artwork for ${label}`}};
@@ -230,13 +234,14 @@ function cleanText(value,max=190){
 }
 
 function artistInformationText(entry,manifest,track){
-  if(isArtistMode){
-    const artist=artistName(entry);
+  if(isSingleReelMode){
+    const artist=isFestivalMode?(track?.artist||'FESTIVAL ARTIST'):artistName(entry);
     const release=track?.albumTitle||manifest?.releaseTitle;
-    const location=artistConfig?.city;
-    const bio=artistConfig?.bio||manifest?.bioShort;
+    const location=isFestivalMode?artistConfig?.festivalLocation:artistConfig?.city;
+    const dates=isFestivalMode?artistConfig?.festivalDates:null;
+    const bio=isFestivalMode?artistConfig?.festivalTickerText:artistConfig?.bio||manifest?.bioShort;
     const custom=[...(artistConfig?.tickerCopy||[])];
-    const facts=[artist,track?.title,release,location,bio,...custom]
+    const facts=[isFestivalMode?artistConfig?.title:null,artist,track?.title,release,location,dates,bio,...custom]
       .map(value=>cleanText(value,240)).filter(Boolean)
       .filter((value,index,list)=>list.findIndex(item=>item.toLowerCase()===value.toLowerCase())===index);
     return (facts.length?facts:[artist,'BANDCAMP CATALOGUE']).join('   ◆   ').toUpperCase();
@@ -251,7 +256,7 @@ function artistInformationText(entry,manifest,track){
 }
 
 function showMachineIdentity(){
-  titleRenderToken++;machineTitle.dataset.titleMode='identity';machineTitle.setAttribute('aria-label',isArtistMode?`${artistConfig?.artistName||'Artist'} catalogue`:'Melbourne catalogue statistics');machineTitleIdentity.setAttribute('aria-hidden','false');artistInformationPanel.setAttribute('aria-hidden','true');artistInformationTrack.classList.remove('is-entering','is-streaming');artistInformationTrack.style.removeProperty('--artist-entry-start');artistInformationTrack.style.removeProperty('--artist-entry-duration');artistInformationTrack.style.removeProperty('--artist-duration');artistInformation.textContent='';artistInformationCopy.textContent='';
+  titleRenderToken++;machineTitle.dataset.titleMode='identity';machineTitle.setAttribute('aria-label',isSingleReelMode?`${artistConfig?.artistName||'Artist'} catalogue`:'Melbourne catalogue statistics');machineTitleIdentity.setAttribute('aria-hidden','false');artistInformationPanel.setAttribute('aria-hidden','true');artistInformationTrack.classList.remove('is-entering','is-streaming');artistInformationTrack.style.removeProperty('--artist-entry-start');artistInformationTrack.style.removeProperty('--artist-entry-duration');artistInformationTrack.style.removeProperty('--artist-duration');artistInformation.textContent='';artistInformationCopy.textContent='';
 }
 
 function showArtistInformation(entry,manifest,track){
@@ -276,13 +281,16 @@ function presentWinner(value,release='',track=null){
 }
 
 function updateStats(){
-  if(isArtistMode){
+  if(isSingleReelMode){
     const tracks=Number(artistConfig?.songCount||catalogue.length||0);
-    const target=document.querySelector('[data-stat="tracks"]');if(target)target.textContent=tracks.toLocaleString('en-AU');
-    if(machineTitleHeading)machineTitleHeading.textContent=`${artistConfig?.artistName||'ARTIST'} MUSIC MACHINE`.toUpperCase();
-    if(speakerLabel)speakerLabel.innerHTML=`${cleanText(artistConfig?.artistName||'ARTIST',34).toUpperCase()}<br>ON BANDCAMP`;
-    document.title=`AGGITS — ${artistConfig?.artistName||'Artist'} Music Machine`;
-    machine.setAttribute('aria-label',`AGGITS ${artistConfig?.artistName||'Artist'} Music Machine`);
+    const artists=Number(artistConfig?.artistCount||1);
+    const trackTarget=document.querySelector('[data-stat="tracks"]');if(trackTarget)trackTarget.textContent=tracks.toLocaleString('en-AU');
+    const artistTarget=document.querySelector('[data-stat="artists"]');if(artistTarget)artistTarget.textContent=artists.toLocaleString('en-AU');
+    const identity=artistConfig?.title||artistConfig?.artistName||'ARTIST';
+    if(machineTitleHeading)machineTitleHeading.textContent=`${identity} MUSIC MACHINE`.toUpperCase();
+    if(speakerLabel)speakerLabel.innerHTML=isFestivalMode?`${artists.toLocaleString('en-AU')} ARTISTS<br>ON BANDCAMP`:`${cleanText(identity,34).toUpperCase()}<br>ON BANDCAMP`;
+    document.title=`AGGITS — ${identity} Music Machine`;
+    machine.setAttribute('aria-label',`AGGITS ${identity} Music Machine`);
     return;
   }
   const artists=Number(stats.canonicalArtistCount||stats.artists||catalogue.length);
@@ -292,7 +300,7 @@ function updateStats(){
 }
 
 function applyArtistSkin(config){
-  if(!isArtistMode||!cabinetSkin)return;
+  if(!isSingleReelMode||!cabinetSkin)return;
   const artwork=String(config?.cabinetArtwork||'');
   const variant=String(config?.skinVariant||'').toLowerCase();
   if(!/^\/assets\/[a-z0-9_./-]+\.(?:avif|jpe?g|png|webp)$/.test(artwork)||!/^[a-z0-9-]+$/.test(variant))return;
@@ -423,10 +431,10 @@ async function prepareWinner(entry){
 }
 
 async function selectPreparedWinner(){
-  if(isArtistMode){
+  if(isSingleReelMode){
     if(!artistTrackDeck.length)artistTrackDeck=createShuffleBag(catalogue,currentTrack?.id||readSession(historyKey,[])[0]||'');
     const track=artistTrackDeck.shift();
-    const purchaseUrl=validBandcampUrl(track?.bandcampUrl)||validBandcampUrl(track?.sourcePage)||validBandcampUrl(artistManifest?.bandcampUrl)||validBandcampUrl(artistConfig?.bandcampArtistUrl);
+    const purchaseUrl=validBandcampUrl(track?.artistBandcampUrl)||validBandcampUrl(track?.bandcampUrl)||validBandcampUrl(track?.sourcePage)||validBandcampUrl(artistManifest?.bandcampUrl)||validBandcampUrl(artistConfig?.bandcampArtistUrl);
     if(!track||!purchaseUrl)throw new Error('no_playable_artist_track');
     return {entry:artistConfig,manifest:artistManifest,track,purchaseUrl};
   }
@@ -460,7 +468,7 @@ function spinReel(index,finalEntry,stopAfter){
 function stopPlayback(){
   selectionToken++;
   clearWinnerSplashTimer();clearTimeout(winnerAudioTimer);winnerAudioTimer=0;winnerAudio?.pause();
-  bandcampEngaged=false;bandcampPlayerShell.dataset.playbackState='ready';playerTrack.textContent='WINNING TRACK';playerArtist.textContent=isArtistMode?(artistConfig?.artistName||'ARTIST'):'MELBOURNE ARTIST';playerStatus.textContent='READY';playerDuration.textContent='BANDCAMP';setPlayerArtwork(null,null,null);setPlaybackReady(false);frame.src='about:blank';currentEntry=null;currentManifest=null;currentTrack=null;currentEmbedUrl='';currentPurchaseUrl='';shareButton.disabled=true;setPrimaryMode('dormant');showMachineIdentity();setMeterMode('idle');
+  bandcampEngaged=false;bandcampPlayerShell.dataset.playbackState='ready';playerTrack.textContent='WINNING TRACK';playerArtist.textContent=isSingleReelMode?(artistConfig?.artistName||'ARTIST'):'MELBOURNE ARTIST';playerStatus.textContent='READY';playerDuration.textContent='BANDCAMP';setPlayerArtwork(null,null,null);setPlaybackReady(false);frame.src='about:blank';currentEntry=null;currentManifest=null;currentTrack=null;currentEmbedUrl='';currentPurchaseUrl='';shareButton.disabled=true;setPrimaryMode('dormant');showMachineIdentity();setMeterMode('idle');
 }
 
 function loadBandcampFrame(url,timeout=5000){
@@ -475,19 +483,19 @@ async function loadWinningTrack(entry,{fromDeepLink=false,prepared=null}={}){
   const token=++selectionToken;
   setState('LOADING_TRACK',`Loading music by ${artistName(entry)}.`);showTicker(`LOADING ${artistName(entry)}...`);
   try{
-    const resolved=prepared?.entry===entry?prepared:await prepareWinner(entry);const {manifest,track,purchaseUrl}=resolved;
+    const resolved=prepared?.entry===entry?prepared:await prepareWinner(entry);const {manifest,track,purchaseUrl}=resolved;const playbackArtist=isFestivalMode?(track.artist||manifest.artist):manifest.artist;
     currentEntry=entry;currentManifest=manifest;currentTrack=track;setMeterMode('idle',track.id||track.bandcampEmbedTrackId);
-    playerTrack.textContent=track.title;playerArtist.textContent=manifest.artist;playerStatus.textContent='READY';playerDuration.textContent=track.duration?`BANDCAMP • ${track.duration}`:'BANDCAMP';setPlayerArtwork(entry,manifest,track);setPlaybackReady(false);bandcampPlayerShell.dataset.playbackState='ready';
+    playerTrack.textContent=track.title;playerArtist.textContent=playbackArtist;playerStatus.textContent='READY';playerDuration.textContent=track.duration?`BANDCAMP • ${track.duration}`:'BANDCAMP';setPlayerArtwork(entry,manifest,track);setPlaybackReady(false);bandcampPlayerShell.dataset.playbackState='ready';
     const embedId=encodeURIComponent(track.bandcampEmbedTrackId);
-    frame.title=`Official Bandcamp playback controls for ${track.title} by ${manifest.artist}`;
+    frame.title=`Official Bandcamp playback controls for ${track.title} by ${playbackArtist}`;
     currentEmbedUrl=`https://bandcamp.com/EmbeddedPlayer/track=${embedId}/size=small/bgcol=1b0808/linkcol=e8c680/tracklist=false/artwork=none/transparent=false/autoplay=false/`;
     currentPurchaseUrl=purchaseUrl;
     bandcampEngaged=false;showTicker(`PREPARING ${track.title} ON BANDCAMP...`);await loadBandcampFrame(currentEmbedUrl);if(token!==selectionToken||currentEntry!==entry)return;
     setPlaybackReady(true);shareButton.disabled=false;spinAgainButton.disabled=false;setPrimaryMode('buy');showArtistInformation(entry,manifest,track);showTicker(`LISTEN TO ${track.title} ON BANDCAMP`);
-    const history=pushHistory(readSession(historyKey,[]),isArtistMode?String(track.id||track.bandcampEmbedTrackId):artistIdentity(entry),SESSION_HISTORY_LIMIT);writeSession(historyKey,history);
-    setState('READY_TO_PLAY',`${track.title} by ${manifest.artist} is ready in the Bandcamp player.`);
+    const history=pushHistory(readSession(historyKey,[]),isSingleReelMode?String(track.id||track.bandcampEmbedTrackId):artistIdentity(entry),SESSION_HISTORY_LIMIT);writeSession(historyKey,history);
+    setState('READY_TO_PLAY',`${track.title} by ${playbackArtist} is ready in the Bandcamp player.`);
     if(!fromDeepLink)historyApi('push',entry);
-    recordEvent('track_selected',{result:'ready',artist:manifest.artist,release:manifest.releaseTitle,source:fromDeepLink?'deep_link':'machine_discovery'});
+    recordEvent('track_selected',{result:'ready',artist:playbackArtist,release:manifest.releaseTitle,source:fromDeepLink?'deep_link':'machine_discovery'});
   }catch(error){
     if(token!==selectionToken)return;
     setState('PLAY_ERROR','That track could not be loaded. Pull again.');showTicker('TRACK UNAVAILABLE — PULL AGAIN');setPrimaryMode('dormant');setMeterMode('idle');locked=false;spinAgainButton.disabled=false;recordEvent('track_selected',{result:'failed',reason:String(error?.message||error)});await wait(1400);setState('IDLE');
@@ -499,8 +507,11 @@ function activatePrimary(){
 }
 
 function historyApi(mode,entry){
-  if(isArtistMode){
-    const url=new URL(`${base.replace(/\/$/,'')}/artist/`,location.origin);url.searchParams.set('artist',artistConfig.artistSlug);if(currentTrack?.id)url.searchParams.set('track',currentTrack.id);history[`${mode}State`]({view:'artist-machine',artist:artistConfig.artistSlug,track:currentTrack?.id||null},'',url);return;
+  if(isSingleReelMode){
+    const route=isFestivalMode?'festival':'artist';
+    const parameter=isFestivalMode?'festival':'artist';
+    const slug=isFestivalMode?artistConfig.festivalSlug:artistConfig.artistSlug;
+    const url=new URL(`${base.replace(/\/$/,'')}/${route}/`,location.origin);url.searchParams.set(parameter,slug);if(currentTrack?.id)url.searchParams.set('track',currentTrack.id);history[`${mode}State`]({view:isFestivalMode?'festival-machine':'artist-machine',slug,track:currentTrack?.id||null},'',url);return;
   }
   const url=new URL(`${base.replace(/\/$/,'')}/`,location.origin);url.searchParams.set('release',entry.slug);url.searchParams.set('universe','melbourne');history[`${mode}State`]({view:'machine',release:entry.slug},'',url);
 }
@@ -508,15 +519,15 @@ function historyApi(mode,entry){
 async function runSpin(source='lever'){
   if(locked||!catalogue.length)return;
   locked=true;spinAgainButton.disabled=true;clearTimeout(tickerTimer);stopPlayback();showMachineIdentity();
-  setState('SPIN_START',isArtistMode?'The song reel is starting.':'The Melbourne artist reels are starting.');showTicker(isArtistMode?'SEARCHING THE CATALOGUE...':'SEARCHING MELBOURNE...');setMeterMode('spin');leverClack();
+  setState('SPIN_START',isSingleReelMode?'The song reel is starting.':'The Melbourne artist reels are starting.');showTicker(isSingleReelMode?'SEARCHING THE CATALOGUE...':'SEARCHING MELBOURNE...');setMeterMode('spin');leverClack();
   let prepared;
-  try{prepared=await selectPreparedWinner()}catch(error){setState('PLAY_ERROR',isArtistMode?'The machine could not prepare a song.':'The machine could not prepare a Melbourne song.');showTicker('MACHINE RESTING — PULL AGAIN');setMeterMode('idle');locked=false;spinAgainButton.disabled=false;recordEvent('track_selected',{result:'failed',reason:String(error?.message||error)});return}
-  const winner=isArtistMode?prepared.track:prepared.entry;const outcome=isArtistMode?{kind:'winner',winner,entries:[winner]}:{kind:'winner',winner,entries:[winner,winner,winner]};startMotor();recordEvent(isArtistMode?'reel_spin':'explore_click',{source});recordEvent(isArtistMode?'track_revealed':'artist_selected',{artist:artistName(prepared.entry),track:prepared.track?.title,source});setState('SPINNING');
-  const stopTimes=isArtistMode?(reducedMotion.matches?[620]:[2350]):(reducedMotion.matches?[520,720,920]:[1550,2200,2950]);
-  const promises=outcome.entries.map((entry,index)=>spinReel(index,entry,stopTimes[index]).then(()=>setState(`REEL_${index+1}_STOP`,isArtistMode?`The reel stopped on ${reelLabel(entry)}.`:`Reel ${index+1} stopped on ${artistName(entry)}.`)));
+  try{prepared=await selectPreparedWinner()}catch(error){setState('PLAY_ERROR',isSingleReelMode?'The machine could not prepare a song.':'The machine could not prepare a Melbourne song.');showTicker('MACHINE RESTING — PULL AGAIN');setMeterMode('idle');locked=false;spinAgainButton.disabled=false;recordEvent('track_selected',{result:'failed',reason:String(error?.message||error)});return}
+  const winner=isSingleReelMode?prepared.track:prepared.entry;const outcome=isSingleReelMode?{kind:'winner',winner,entries:[winner]}:{kind:'winner',winner,entries:[winner,winner,winner]};startMotor();recordEvent(isSingleReelMode?'reel_spin':'explore_click',{source});recordEvent(isSingleReelMode?'track_revealed':'artist_selected',{artist:artistName(prepared.entry),track:prepared.track?.title,source});setState('SPINNING');
+  const stopTimes=isSingleReelMode?(reducedMotion.matches?[620]:[2350]):(reducedMotion.matches?[520,720,920]:[1550,2200,2950]);
+  const promises=outcome.entries.map((entry,index)=>spinReel(index,entry,stopTimes[index]).then(()=>setState(`REEL_${index+1}_STOP`,isSingleReelMode?`The reel stopped on ${reelLabel(entry)}.`:`Reel ${index+1} stopped on ${artistName(entry)}.`)));
   await Promise.all(promises);stopMotor();setState('EVALUATE');await wait(reducedMotion.matches?100:380);
-  if(!isArtistMode&&!isThreeArtistMatch(outcome.entries))throw new Error('guaranteed_winner_invariant');
-  presentWinner(isArtistMode?prepared.track.title:artistName(winner),isArtistMode?prepared.track.albumTitle:'',prepared.track);setState('WIN',isArtistMode?`${prepared.track.title} selected.`:`Three matching reels: ${artistName(winner)}.`);showTicker(isArtistMode?`★ ${prepared.track.title} ★`:`★★★ ${artistName(winner)} ★★★`);setMeterMode('celebrate');celebrationSound();setState('WIN_CELEBRATION');recordEvent('winner_revealed',{artist:artistName(prepared.entry),track:prepared.track?.title});const revealCompleted=await holdWinnerSplash();if(!revealCompleted)return;await loadWinningTrack(prepared.entry,{prepared});locked=false;
+  if(!isSingleReelMode&&!isThreeArtistMatch(outcome.entries))throw new Error('guaranteed_winner_invariant');
+  presentWinner(isSingleReelMode?prepared.track.title:artistName(winner),isSingleReelMode?prepared.track.albumTitle:'',prepared.track);setState('WIN',isSingleReelMode?`${prepared.track.title} selected.`:`Three matching reels: ${artistName(winner)}.`);showTicker(isSingleReelMode?`★ ${prepared.track.title} ★`:`★★★ ${artistName(winner)} ★★★`);setMeterMode('celebrate');celebrationSound();setState('WIN_CELEBRATION');recordEvent('winner_revealed',{artist:artistName(prepared.entry),track:prepared.track?.title});const revealCompleted=await holdWinnerSplash();if(!revealCompleted)return;await loadWinningTrack(prepared.entry,{prepared});locked=false;
 }
 
 function resetLever(animated=true){leverProgress=0;lever.style.transition=animated?'transform .48s cubic-bezier(.18,.72,.23,1)':'none';lever.style.transform='translateY(0) rotate(0)';setTimeout(()=>lever.style.transition='',500)}
@@ -526,9 +537,9 @@ function onLeverDown(event){if(locked)return;ensureAudio();leverPointer=event.po
 function onLeverMove(event){if(event.pointerId!==leverPointer)return;const travel=Math.max(0,event.clientY-leverStartY);leverMoved=leverMoved||travel>7;pullVisual(travel/115);if(leverProgress>=.72&&!leverTriggered){leverTriggered=true;navigator.vibrate?.(8)}}
 function onLeverUp(event){if(event.pointerId!==leverPointer)return;lever.releasePointerCapture?.(event.pointerId);leverPointer=null;if(leverTriggered){void runSpin('lever');resetLever(true)}else if(!leverMoved){animateLeverAndSpin()}else{setState(currentTrack?'READY_TO_PLAY':'IDLE','The lever returned without starting the reels.');resetLever(true)}}
 
-async function shareCurrent(){if(!currentEntry||!currentManifest||!currentTrack)return;const url=location.href,title=`${currentManifest.artist} — ${currentTrack.title}`;const text=isArtistMode?`Found on the ${currentManifest.artist} Music Machine.`:'Found through the AGGITS Melbourne Music Machine.';try{if(navigator.share)await navigator.share({title,text,url});else{await navigator.clipboard.writeText(url);showTicker('DISCOVERY LINK COPIED')}}catch(error){if(error?.name!=='AbortError')showTicker('SHARE UNAVAILABLE')};recordEvent('share_click',{artist:currentManifest.artist})}
-function resetMachine(){stopPlayback();locked=false;spinAgainButton.disabled=false;reels.forEach((_,index)=>setReelRows(index,randomEntry()));setState('IDLE',isArtistMode?'Pull the lever to discover a song.':'Pull the lever to discover Melbourne music.');startTickerRotation(idleMessages());const homeUrl=isArtistMode?`${base.replace(/\/$/,'')}/artist/?artist=${encodeURIComponent(artistConfig.artistSlug)}`:`${base.replace(/\/$/,'')}/`;history.replaceState({view:isArtistMode?'artist-machine':'machine'},'',homeUrl)}
-function idleMessages(){return[isArtistMode?'PULL FOR A SONG':'LET’S PLAY']}
+async function shareCurrent(){if(!currentEntry||!currentManifest||!currentTrack)return;const url=location.href,performer=currentTrack.artist||currentManifest.artist,title=`${performer} — ${currentTrack.title}`;const text=isFestivalMode?`Found on the ${artistConfig?.title||'Festival'} Music Machine.`:isSingleReelMode?`Found on the ${currentManifest.artist} Music Machine.`:'Found through the AGGITS Melbourne Music Machine.';try{if(navigator.share)await navigator.share({title,text,url});else{await navigator.clipboard.writeText(url);showTicker('DISCOVERY LINK COPIED')}}catch(error){if(error?.name!=='AbortError')showTicker('SHARE UNAVAILABLE')};recordEvent('share_click',{artist:performer})}
+function resetMachine(){stopPlayback();locked=false;spinAgainButton.disabled=false;reels.forEach((_,index)=>setReelRows(index,randomEntry()));setState('IDLE',isSingleReelMode?'Pull the lever to discover a song.':'Pull the lever to discover Melbourne music.');startTickerRotation(idleMessages());const homeUrl=isFestivalMode?`${base.replace(/\/$/,'')}/festival/?festival=${encodeURIComponent(artistConfig.festivalSlug)}`:isSingleReelMode?`${base.replace(/\/$/,'')}/artist/?artist=${encodeURIComponent(artistConfig.artistSlug)}`:`${base.replace(/\/$/,'')}/`;history.replaceState({view:isFestivalMode?'festival-machine':isSingleReelMode?'artist-machine':'machine'},'',homeUrl)}
+function idleMessages(){return isFestivalMode?[artistConfig?.festivalTickerText,'PULL FOR A FESTIVAL SONG'].filter(Boolean):[isSingleReelMode?'PULL FOR A SONG':'LET’S PLAY']}
 
 function toggleSound(){soundOff=!soundOff;writeStorage(soundKey,soundOff);soundButton.textContent=soundOff?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!soundOff));if(soundOff){stopMotor();winnerAudio?.pause();reelStopAudio.forEach(audio=>audio.pause());reelRatchetAudio?.pause();audioContext?.suspend()}else{ensureAudio();ensureMachineSamples()}}
 
@@ -560,21 +571,23 @@ async function submitArtistMachineRequest(event){
 }
 
 async function loadData(){
-  if(isArtistMode){
-    const [configResponse]=await Promise.all([fetch(`${base}/artist-machines.json`,{cache:'no-store'})]);
-    if(!configResponse.ok)throw new Error('artist_machine_catalogue_unavailable');
+  if(isSingleReelMode){
+    const registryPath=isFestivalMode?'festival-machines.json':'artist-machines.json';
+    const configResponse=await fetch(`${base}/${registryPath}`,{cache:'no-store'});
+    if(!configResponse.ok)throw new Error(isFestivalMode?'festival_machine_catalogue_unavailable':'artist_machine_catalogue_unavailable');
     const configPayload=await configResponse.json();
-    artistConfig=(configPayload.artists||[]).find(item=>item.artistSlug===requestedArtistSlug)||null;
-    if(!artistConfig)throw new Error('artist_machine_not_found');
+    const sourceConfig=isFestivalMode?(configPayload.festivals||[]).find(item=>item.festivalSlug===requestedFestivalSlug):(configPayload.artists||[]).find(item=>item.artistSlug===requestedArtistSlug);
+    if(!sourceConfig)throw new Error(isFestivalMode?'festival_machine_not_found':'artist_machine_not_found');
+    artistConfig=isFestivalMode?{...sourceConfig,artistName:sourceConfig.title,artistSlug:sourceConfig.festivalSlug,city:sourceConfig.festivalLocation,bio:sourceConfig.festivalTickerText,bandcampArtistUrl:sourceConfig.bandcampUrls?.[0]}:sourceConfig;
     applyArtistSkin(artistConfig);
     const manifestResponse=await fetch(`${base}${artistConfig.cataloguePath}`,{cache:'no-store'});
-    if(!manifestResponse.ok)throw new Error('artist_catalogue_unavailable');
+    if(!manifestResponse.ok)throw new Error(isFestivalMode?'festival_catalogue_unavailable':'artist_catalogue_unavailable');
     artistManifest=await manifestResponse.json();catalogue=playableArtistTracks(artistManifest);
     if(!catalogue.length)throw new Error('no_playable_artist_tracks');
     artistConfig.songCount=catalogue.length;updateStats();reels.forEach((_,index)=>setReelRows(index,randomEntry()));showMachineIdentity();
-    const requestedTrack=new URLSearchParams(location.search).get('track');
-    if(requestedTrack){const track=catalogue.find(item=>String(item.id)===requestedTrack||String(item.bandcampEmbedTrackId)===requestedTrack);if(track){const purchaseUrl=validBandcampUrl(track.bandcampUrl)||validBandcampUrl(track.sourcePage)||validBandcampUrl(artistManifest.bandcampUrl)||validBandcampUrl(artistConfig.bandcampArtistUrl);setReelRows(0,track,false);locked=true;await loadWinningTrack(artistConfig,{fromDeepLink:true,prepared:{entry:artistConfig,manifest:artistManifest,track,purchaseUrl}});locked=false;return}}
-    locked=false;spinAgainButton.disabled=false;setState('IDLE','Pull the lever to discover a song.');startTickerRotation(idleMessages());recordEvent('artist_machine_loaded',{artist:artistConfig.artistName,catalogueSize:catalogue.length});return;
+    const requestedTrack=requestedParameters.get('track');
+    if(requestedTrack){const track=catalogue.find(item=>String(item.id)===requestedTrack||String(item.bandcampEmbedTrackId)===requestedTrack);if(track){const purchaseUrl=validBandcampUrl(track.artistBandcampUrl)||validBandcampUrl(track.bandcampUrl)||validBandcampUrl(track.sourcePage)||validBandcampUrl(artistManifest.bandcampUrl)||validBandcampUrl(artistConfig.bandcampArtistUrl);setReelRows(0,track,false);locked=true;await loadWinningTrack(artistConfig,{fromDeepLink:true,prepared:{entry:artistConfig,manifest:artistManifest,track,purchaseUrl}});locked=false;return}}
+    locked=false;spinAgainButton.disabled=false;setState('IDLE','Pull the lever to discover a song.');startTickerRotation(idleMessages());recordEvent(isFestivalMode?'festival_machine_loaded':'artist_machine_loaded',{artist:artistConfig.artistName,catalogueSize:catalogue.length});return;
   }
   const [catalogueResponse,artistsResponse,statsResponse]=await Promise.all([fetch(`${base}/aquariums.json`,{cache:'no-store'}),fetch(`${base}/artist-search-index.json`,{cache:'no-store'}),fetch(`${base}/universe-stats.json`,{cache:'no-store'})]);
   if(!catalogueResponse.ok)throw new Error('catalogue_unavailable');
@@ -582,7 +595,7 @@ async function loadData(){
   if(!catalogue.length)throw new Error('no_playable_melbourne_artists');
   if(artistsResponse.ok){const data=await artistsResponse.json();artistsById=new Map((data.artists||[]).map(artist=>[artist.id,artist]))}
   if(statsResponse.ok)stats=await statsResponse.json();updateStats();reels.forEach((_,index)=>setReelRows(index,randomEntry()));
-  const requested=new URLSearchParams(location.search).get('release');
+  const requested=requestedParameters.get('release');
   if(requested){const entry=catalogue.find(item=>item.slug===requested);if(entry){reels.forEach((_,index)=>setReelRows(index,entry,false));locked=true;await loadWinningTrack(entry,{fromDeepLink:true});locked=false;return}}
   locked=false;spinAgainButton.disabled=false;setState('IDLE','Pull the lever to discover Melbourne music.');startTickerRotation(idleMessages());recordEvent('doorway_open',{catalogueSize:catalogue.length,universe:'melbourne'});
 }
@@ -594,12 +607,12 @@ lever.addEventListener('pointerdown',onLeverDown);lever.addEventListener('pointe
 lever.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();animateLeverAndSpin()}});
 shareButton.addEventListener('click',()=>void shareCurrent());buyLink.addEventListener('click',activatePrimary);spinAgainButton.addEventListener('click',()=>void runSpin('spin_again'));homeButton.addEventListener('click',resetMachine);soundButton.addEventListener('click',toggleSound);
 requestMachineButton?.addEventListener('click',openArtistMachineRequest);closeRequestButton?.addEventListener('click',closeArtistMachineRequest);requestForm?.addEventListener('submit',submitArtistMachineRequest);requestDialog?.addEventListener('click',event=>{if(event.target===requestDialog)closeArtistMachineRequest()});
-function markBandcampPlayback(){if(!currentTrack||bandcampEngaged)return;bandcampEngaged=true;bandcampPlayerShell.dataset.playbackState='playing';playerStatus.textContent='PLAYING';setState('PLAYING',`Playing ${currentTrack.title} by ${currentManifest.artist} through Bandcamp.`);setMeterMode('playing',currentTrack.id);recordEvent('bandcamp_click',{artist:currentManifest.artist,track:currentTrack.title})}
+function markBandcampPlayback(){if(!currentTrack||bandcampEngaged)return;const performer=currentTrack.artist||currentManifest.artist;bandcampEngaged=true;bandcampPlayerShell.dataset.playbackState='playing';playerStatus.textContent='PLAYING';setState('PLAYING',`Playing ${currentTrack.title} by ${performer} through Bandcamp.`);setMeterMode('playing',currentTrack.id);recordEvent('bandcamp_click',{artist:performer,track:currentTrack.title})}
 frame.addEventListener('focus',markBandcampPlayback);addEventListener('blur',()=>setTimeout(()=>{if(document.activeElement===frame)markBandcampPlayback()},0));addEventListener('popstate',()=>location.reload());
 document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(meterFrame);stopMotor()}else startMeters()});
-loadData().catch(error=>{setState('PLAY_ERROR',isArtistMode?'This artist catalogue could not be opened.':'The Melbourne library could not be opened.');showTicker('MACHINE RESTING — PLEASE REFRESH');console.error(error)});
+loadData().catch(error=>{setState('PLAY_ERROR',isFestivalMode?'This festival catalogue could not be opened.':isSingleReelMode?'This artist catalogue could not be opened.':'The Melbourne library could not be opened.');showTicker('MACHINE RESTING — PLEASE REFRESH');console.error(error)});
 
 window.AggitsMachine=Object.freeze({
   spin:()=>runSpin('api'),
-  getState:()=>({state,locked,machineMode,catalogueSize:catalogue.length,currentArtist:currentEntry?.artist||currentEntry?.artistName||artistConfig?.artistName||null,currentTrack:currentTrack?.title||null,primaryAction,meterSource:'procedural-transport-coupled'}),
+  getState:()=>({state,locked,machineMode,catalogueSize:catalogue.length,currentArtist:currentTrack?.artist||currentEntry?.artist||currentEntry?.artistName||artistConfig?.artistName||null,currentTrack:currentTrack?.title||null,primaryAction,meterSource:'procedural-transport-coupled'}),
 });

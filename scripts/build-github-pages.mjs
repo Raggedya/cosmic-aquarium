@@ -8,6 +8,7 @@ const pages = path.join(root,'github-pages');
 const template = await fs.readFile(path.join(root,'templates','artist-index.html'),'utf8');
 const universeTemplate = await fs.readFile(path.join(root,'templates','universe-index.html'),'utf8');
 const artistMachineTemplate = await fs.readFile(path.join(root,'templates','artist-machine.html'),'utf8');
+const festivalMachineTemplate = await fs.readFile(path.join(root,'templates','festival-machine.html'),'utf8');
 const collectionTemplate = await fs.readFile(path.join(root,'templates','collection-index.html'),'utf8');
 const css = await fs.readFile(path.join(root,'app','cosmic-aquarium.css'),'utf8');
 const doorwayCss = await fs.readFile(path.join(root,'app','doorway.css'),'utf8');
@@ -229,6 +230,28 @@ artistMachineConfigs.sort((a,b)=>a.artistName.localeCompare(b.artistName));
 await fs.mkdir(path.join(pages,'artist'),{recursive:true});
 await fs.writeFile(path.join(pages,'artist-machines.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:artistMachineConfigs},null,2)+'\n');
 await fs.writeFile(path.join(pages,'artist','index.html'),renderArtistMachine());
+const festivalMachineConfigs=[];
+const festivalMachineDirectory=path.join(root,'automation','festival-machines');
+await fs.mkdir(festivalMachineDirectory,{recursive:true});
+await fs.mkdir(path.join(pages,'festival-machine-catalogues'),{recursive:true});
+for(const filename of (await fs.readdir(festivalMachineDirectory)).filter(name=>name.endsWith('.json')).sort()){
+  try{
+    const source=JSON.parse(await fs.readFile(path.join(festivalMachineDirectory,filename),'utf8'));
+    const festivalSlug=machineSlug(source.festivalSlug||source.title||source.festivalName);
+    const bandcampUrls=[...new Set((source.bandcampUrls||[]).filter(isBandcampUrl))];
+    const songs=(source.songs||[]).filter(track=>/^\d+$/.test(String(track?.bandcampEmbedTrackId||''))&&isBandcampUrl(track?.bandcampUrl)&&isBandcampUrl(track?.artistBandcampUrl));
+    if(source.machineMode!=='festival'||!festivalSlug||!source.title||!songs.length||!bandcampUrls.length||bandcampUrls.length>35)throw new Error('invalid_festival_machine_config');
+    const catalogue={schemaVersion:1,slug:`festival-machine-${festivalSlug}`,artist:source.title,releaseTitle:'Festival lineup',bandcampUrl:source.festivalUrl||bandcampUrls[0],commerceAvailable:true,commerceUrl:bandcampUrls[0],bioShort:source.festivalTickerText||null,heroArtwork:source.heroArtwork||null,tracks:songs};
+    await fs.writeFile(path.join(pages,'festival-machine-catalogues',`${festivalSlug}.json`),JSON.stringify(catalogue,null,2)+'\n');
+    const sourceMetadata={...source};delete sourceMetadata.songs;
+    const config={...sourceMetadata,festivalSlug,cataloguePath:`/festival-machine-catalogues/${festivalSlug}.json`,songCount:songs.length,artistCount:bandcampUrls.length,status:'published'};
+    festivalMachineConfigs.push(config);
+  }catch(error){console.warn('Skipped invalid Festival Music Machine config: '+filename,error)}
+}
+festivalMachineConfigs.sort((a,b)=>a.title.localeCompare(b.title));
+await fs.mkdir(path.join(pages,'festival'),{recursive:true});
+await fs.writeFile(path.join(pages,'festival-machines.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),festivals:festivalMachineConfigs},null,2)+'\n');
+await fs.writeFile(path.join(pages,'festival','index.html'),renderFestivalMachine());
 const playableTrackIds=new Set();
 for(const artistId of eligibleArtistIds)for(const trackId of playableTrackIdsByArtist.get(artistId)||[])playableTrackIds.add(trackId);
 await fs.writeFile(path.join(pages,'artists-index.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:canonicalArtists},null,2)+'\n');
@@ -311,7 +334,7 @@ const universeStats={
 };
 await fs.writeFile(path.join(pages,'universe-stats.json'),JSON.stringify(universeStats,null,2)+'\n');
 await fs.writeFile(path.join(pages,'index.html'),renderLanding());
-console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s), '+artistMachineConfigs.length+' Artist Music Machine configuration(s), and '+collectionRegistry.length+' collection(s).');
+console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s), '+artistMachineConfigs.length+' Artist Music Machine configuration(s), '+festivalMachineConfigs.length+' Festival Music Machine configuration(s), and '+collectionRegistry.length+' collection(s).');
 
 async function writeArtist(slug,artist){
   const directory=path.join(pages,slug);
@@ -326,6 +349,9 @@ function renderLanding(){
 }
 function renderArtistMachine(){
   return artistMachineTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
+}
+function renderFestivalMachine(){
+  return festivalMachineTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
 }
 function renderCollection(collection){
   return collectionTemplate.replaceAll('{{SLUG}}',escapeAttribute(collection.slug)).replaceAll('{{NAME}}',escapeHtml(String(collection.name).toUpperCase())).replaceAll('{{INSTRUCTION}}',escapeHtml(collection.instruction||'TOUCH AN ARTIST')).replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);

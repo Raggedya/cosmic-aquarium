@@ -1,0 +1,32 @@
+name: Build Festivals for Windows
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - desktop/festivals.py
+      - desktop/Festivals.spec
+      - desktop/create_festivals_icon.py
+      - desktop/build-festivals.ps1
+      - scripts/festival_discovery_service.py
+      - .github/workflows/build-festivals-windows.yml
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: powershell -ExecutionPolicy Bypass -File desktop/build-festivals.ps1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: festivals-windows
+          path: desktop-dist/Festivals.exe
+          if-no-files-found: error
+          retention-days: 30

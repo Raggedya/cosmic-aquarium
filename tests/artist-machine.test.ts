@@ -25,7 +25,7 @@ test('Artist Mode and Melbourne City Mode share the same cabinet runtime and can
   assert.match(runtime,/async function runSpin\(source='lever'\)/);
   assert.match(runtime,/spinAgainButton\.addEventListener\('click',\(\)=>void runSpin\('spin_again'\)\)/);
   assert.match(runtime,/void runSpin\('lever'\)/);
-  assert.match(runtime,/stopTimes=isArtistMode/);
+  assert.match(runtime,/stopTimes=isSingleReelMode/);
   assert.match(runtime,/entries:\[winner\]/);
 });
 
@@ -60,7 +60,7 @@ test('Artist Mode retains one mechanical stop and the shared four-second winner 
   assert.match(runtime,/const WINNER_SPLASH_DURATION_MS=4000/);
   assert.match(runtime,/\[2350\]/);
   assert.match(runtime,/reelThunk\(index\)/);
-  assert.match(runtime,/presentWinner\(isArtistMode\?prepared\.track\.title/);
+  assert.match(runtime,/presentWinner\(isSingleReelMode\?prepared\.track\.title/);
   assert.match(css,/data-machine-mode="artist"[^}]*\.reel-bank/);
   assert.match(css,/data-machine-mode="artist"[^}]*\.reel-strip>\*/);
   assert.match(css,/grid-template-rows:repeat\(3,1fr\)/);
@@ -79,7 +79,7 @@ test('artist-specific cabinet artwork is applied from validated configuration wi
 
 test('the artist ticker is factual and excludes the Melbourne culture bank',async()=>{
   const runtime=await read('github-pages/assets/discovery-machine.js');
-  assert.match(runtime,/if\(isArtistMode\)\{/);
+  assert.match(runtime,/if\(isSingleReelMode\)\{/);
   assert.match(runtime,/artistConfig\?\.bio\|\|manifest\?\.bioShort/);
   assert.match(runtime,/artistConfig\?\.tickerCopy/);
   assert.match(runtime,/MELBOURNE_CULTURE_SEGMENTS/);
