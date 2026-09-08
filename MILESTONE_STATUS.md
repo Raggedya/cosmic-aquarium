@@ -1,5 +1,19 @@
 # Milestone Status
 
+## Milestone 1A: PIXEL-LEVEL GRAPHICAL CONFORMANCE PASS
+
+Status: **NEEDS REVIEW**
+
+The tourism machine now uses the supplied Bendigo image as its exact canonical cabinet asset. The cabinet is rendered at its native 762:1280 proportion, the photographed permanent title and equal four-button control bank are preserved without replacement UI, the dynamic reel shows five positions within the original brass hardware, and the separate result/status panel follows the approved layout.
+
+Review screenshots:
+
+- `artifacts/tourism-1a-dormant.png`
+- `artifacts/tourism-1a-spinning.png`
+- `artifacts/tourism-1a-result.png`
+
+Browser QA covers 762×1280, 1080×1920, laptop, portrait tablet and 390×844 mobile viewports. Lever, reel, result, Share, Map, More Info, Another Idea, Home and Sound interactions remain functional. The attraction photographs remain Milestone 1 placeholders pending production tourism content.
+
 ## Milestone 1: TOURISM RESTRUCTURE
 
 Status: **NEEDS REVIEW**

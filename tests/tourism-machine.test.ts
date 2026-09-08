@@ -12,6 +12,9 @@ test('tourism machine is an isolated public product with the approved structural
   assert.equal((html.match(/class="tourism-reel"/g)||[]).length,1);
   assert.doesNotMatch(html,/needle|gauge|data-meter/);
   assert.match(html,/data-result-panel/);
+  assert.match(html,/data-title-tagline/);
+  assert.match(html,/data-result-placeholder><span data-ticker/);
+  assert.match(html,/data-result-category/);
   assert.equal((html.match(/data-action="(?:share|map|info|another)"/g)||[]).length,4);
   for(const label of ['SHARE<br>THIS','VIEW<br>ON MAP','MORE<br>INFO','ANOTHER<br>IDEA'])assert.match(html,new RegExp(label));
   assert.doesNotMatch(html,/SAVE|BANDCAMP|PLAYLIST|ALBUM/);
@@ -23,6 +26,8 @@ test('tourism machine uses dedicated runtime, assets, route and persistence name
   assert.match(html,/tourism-machine\.js/);
   assert.match(runtime,/aggits:tourism:bendigo:sound-muted/);
   assert.match(runtime,/tourism-data\/bendigo\.json/);
+  assert.match(runtime,/resultCategory\.textContent/);
+  assert.match(runtime,/km from you/);
   assert.match(build,/renderTourismMachine/);
   assert.match(build,/pages,'tourism','index\.html'/);
   assert.match(build,/validateTourismData\(tourismData\)/);
@@ -54,10 +59,10 @@ test('mock Bendigo configuration validates and contains the milestone examples',
 
 test('tourism presentation is responsive, dormant-first and uses four equal actions',async()=>{
   const css=await read('app/tourism-machine.css');
-  assert.match(css,/aspect-ratio:768\/1280/);
+  assert.match(css,/aspect-ratio:\s*762\/1280/);
   assert.match(css,/data-machine-state="READY"\] \.tourism-reel/);
-  assert.match(css,/grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
-  assert.match(css,/prefers-reduced-motion:reduce/);
+  assert.match(css,/grid-template-columns:\s*repeat\(4,\s*minmax\(0,\s*1fr\)\)/);
+  assert.match(css,/prefers-reduced-motion:\s*reduce/);
   assert.doesNotMatch(css,/\.gauge|\.needle/);
 });
 
