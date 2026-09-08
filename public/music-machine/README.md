@@ -8,6 +8,18 @@ Role: Festival-only 1024 × 1536 cabinet skin. The live machine retains the shar
 
 Final built-in ImageGen prompt summary: preserve the original blank cabinet's exact straight-on geometry; refinish it with the approved reference's luminous apple/olive-green enamel arch and columns, deep black quilted inlays, antique brass trim, restrained botanical vines, leaves, and small cream-gold flowers; use one recessed lower control bank with exactly four evenly spaced, equal rounded-square apertures matching the approved SHARE / PLAY / VISIT BANDCAMP / RE-SPIN proportions; retain blank UI surfaces and lower grille space; add no baked text, lever, meters, album art, interface content, or watermark.
 
+## `aggits-festival-cabinet-v3.webp`
+
+Role: final Festival-only 953 × 1650 operating cabinet. It establishes the restrained aged-timber, brass, black-metal and cream-instrument construction while leaving the festival identity, ticker, reel, now-playing data and control legends available to live HTML/CSS.
+
+Final built-in ImageGen prompt summary: preserve the supplied final cabinet reference and its exact equipment-case composition; remove only variable festival, ticker, reel, player and plaque content, then remove control legends, static meter needles and the baked lever for the live application overlays; preserve the coastal engraving, gauges, reel drums, fixed PULL FOR MUSIC plaque, five round control bodies, AGGITS plaque, lower drawer, brass hardware, leather handle, wear, light and perspective; add no new decoration, text or watermark.
+
+## `aggits-festival-cabinet-doors.webp`
+
+Role: final Festival entrance shell. The two halves are rendered as genuine outer-hinged doors, with the configured festival identity and MUSIC MACHINE legend applied as live gilded lettering across the centre seam.
+
+Final built-in ImageGen prompt summary: preserve the supplied closed antique walnut cabinet, including its two symmetrical doors, centre seam, brass hinges, corner plates, fasteners, knobs, scrollwork, wood grain, wear and perspective; remove only all baked lettering and text dividers so every Festival machine can supply its own live identity; add no controls, ticker, artist content, branding or watermark.
+
 ## `aggits-cabinet.webp`
 
 Role: photographic 1024-pixel-wide cabinet skin behind the live HTML reels, meters, ticker, controls and Bandcamp transport.

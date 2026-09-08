@@ -21,6 +21,7 @@ def request(urls: list[str]) -> dict:
         "festivalDates": "14–15 February 2026",
         "festivalLocation": "Wollongong, NSW",
         "tickerText": "A concise, editable festival ticker.",
+        "machineHeaderArtwork": "https://festival.example/header.webp",
         "bandcampUrls": urls,
     }
 
@@ -56,7 +57,14 @@ class CreateFestivalMachineTests(unittest.TestCase):
         self.assertEqual(config["festivalName"], "Yours & Owls")
         self.assertEqual(config["festivalLocation"], "Wollongong, NSW")
         self.assertEqual(config["festivalTickerText"], "A concise, editable festival ticker.")
+        self.assertEqual(config["machineHeaderArtwork"], "https://festival.example/header.webp")
         self.assertEqual(config["tickerCopy"], ["A concise, editable festival ticker."])
+
+    def test_machine_header_artwork_accepts_published_asset_paths(self) -> None:
+        payload = request(["https://exampleartist.bandcamp.com/"])
+        payload["machineHeaderArtwork"] = "/assets/festivals/example-header.png"
+        normalized = creator.normalise_request(payload)
+        self.assertEqual(normalized["machineHeaderArtwork"], "/assets/festivals/example-header.png")
 
     def test_partial_catalogue_failure_keeps_successful_artist(self) -> None:
         urls = ["https://good.bandcamp.com/", "https://unavailable.bandcamp.com/"]

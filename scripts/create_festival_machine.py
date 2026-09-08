@@ -69,10 +69,17 @@ def normalise_request(value: dict[str, Any]) -> dict[str, Any]:
         year = None
     festival_url = clean_space(value.get("festivalUrl"))
     source_url = clean_space(value.get("festivalSourceUrl"))
+    header_artwork = clean_space(value.get("machineHeaderArtwork") or value.get("festivalPlaqueImage") or value.get("festivalHeroImage"))
     if festival_url:
         festival_url = validate_public_url(festival_url)
     if source_url:
         source_url = validate_public_url(source_url)
+    if header_artwork:
+        if header_artwork.startswith("/"):
+            if not re.fullmatch(r"/assets/[A-Za-z0-9_./-]+\.(?:avif|jpe?g|png|webp)", header_artwork, flags=re.I):
+                raise ValueError("Machine header artwork must be a valid published image path or HTTPS URL")
+        else:
+            header_artwork = validate_public_url(header_artwork)
     return {
         "title": title,
         "festivalSlug": slugify(clean_space(value.get("slug")) or title),
@@ -83,6 +90,7 @@ def normalise_request(value: dict[str, Any]) -> dict[str, Any]:
         "festivalDates": clean_space(value.get("festivalDates")) or None,
         "festivalLocation": clean_space(value.get("festivalLocation")) or None,
         "festivalTickerText": ticker,
+        "machineHeaderArtwork": header_artwork or None,
         "bandcampUrls": urls,
     }
 
@@ -151,6 +159,7 @@ def build_festival_config(
         "festivalDates": normalized["festivalDates"],
         "festivalLocation": normalized["festivalLocation"],
         "festivalTickerText": normalized["festivalTickerText"],
+        "machineHeaderArtwork": normalized["machineHeaderArtwork"],
         "tickerCopy": [normalized["festivalTickerText"]] if normalized["festivalTickerText"] else [],
         "bandcampUrls": normalized["bandcampUrls"],
         "artists": [{key: value for key, value in artist.items() if key != "songs"} for artist in successful],
