@@ -1,5 +1,5 @@
 import{TOURISM_STATES,chooseTourismDiscovery,fitDiscoveryName,pushTourismHistory,validateTourismConfig}from'./tourism-machine-core.js';
-import{MUSIC_MACHINE_REEL_PROFILE,leverResistance,mechanicalCadence,mechanicalReelProgress}from'./machine-mechanics-core.js';
+import{MUSIC_MACHINE_REEL_PROFILE,leverResistance,mechanicalReelProgress}from'./machine-mechanics-core.js';
 
 const machine=document.querySelector('[data-tourism-machine]');
 const base=(document.querySelector('link[href*="tourism-machine.css"]')?.href||location.href).includes('/cosmic-aquarium/')?'/cosmic-aquarium':'';
@@ -15,7 +15,7 @@ const reducedMotion=matchMedia('(prefers-reduced-motion:reduce)'),soundKey='aggi
 let config=null,state='READY',selected=null,locked=false,factIndex=0,tickerTimer=0,pointerId=null,pointerStart=0,pointerTravel=0;
 let currentPosition=0,lastRenderedBase=Number.NaN,spinFrame=0,factTimer=0,reelHeight=0;
 let muted=localStorage.getItem(soundKey)==='true';
-let motor=null,leverSound=null,tickSound=null,slowTickSound=null,lockSound=null,dingSound=null,relaySound=null,buttonSound=null,motorFadeTimer=0;
+let motor=null,leverSound=null,lockSound=null,dingSound=null,buttonSound=null,motorFadeTimer=0,winnerAudioTimer=0,audioState='IDLE',audioRunId=0;
 
 const wait=milliseconds=>new Promise(resolve=>setTimeout(resolve,milliseconds));
 const clamp=(value,min,max)=>Math.max(min,Math.min(max,value));
@@ -27,6 +27,8 @@ function setState(next,message=''){
   if(message)announcement.textContent=message;
   window.dispatchEvent(new CustomEvent('aggits:tourism-state',{detail:{state:next,selectedId:selected?.id||null}}));
 }
+
+function setAudioState(next){audioState=next;machine.dataset.audioState=next}
 
 function setTicker(text){
   clearTimeout(tickerTimer);ticker.style.opacity='0';
@@ -74,7 +76,7 @@ function renderResult(item){
 }
 
 function renderReady(){
-  cancelAnimationFrame(spinFrame);clearInterval(factTimer);stopMotor(true);selected=null;locked=false;currentPosition=0;lastRenderedBase=Number.NaN;reelHeight=Math.max(1,reel.clientHeight);
+  cancelAnimationFrame(spinFrame);clearInterval(factTimer);resetAudioSequence();selected=null;locked=false;currentPosition=0;lastRenderedBase=Number.NaN;reelHeight=Math.max(1,reel.clientHeight);
   setState('READY','Ready. Pull the lever for a new idea.');setTicker('PULL THE LEVER');renderCylinder(0,true);
   for(const button of[shareButton,mapButton,infoButton])button.disabled=true;anotherButton.disabled=false;
 }
@@ -84,27 +86,37 @@ function showNextFact(){if(!config.tickerFacts.length)return;setTicker(config.ti
 function audio(url,{volume=.4,loop=false}={}){const element=new Audio(`${machineAudioBase}/${url}`);element.preload='auto';element.volume=volume;element.loop=loop;return element}
 function ensureAudio(){
   if(motor)return;
-  motor=audio('reel-actual-slotmachine-freesound-261346.mp3',{volume:.2,loop:true});leverSound=audio('reel-ratchet-mixkit-2641.mp3',{volume:.42});
-  tickSound=audio('reel-stop-lock-mixkit-2857.mp3',{volume:.13});slowTickSound=audio('reel-stop-gear-mixkit-2858.mp3',{volume:.19});
-  lockSound=audio('reel-stop-gear-mixkit-2858.mp3',{volume:.5});dingSound=audio('winner-tonal-bloom-mixkit-3109.mp3',{volume:.5});
-  relaySound=audio('reel-stop-lock-mixkit-2857.mp3',{volume:.16});buttonSound=audio('reel-stop-lock-mixkit-2857.mp3',{volume:.12});
+  motor=audio('reel-actual-slotmachine-freesound-261346.mp3',{volume:.1});leverSound=audio('reel-stop-gear-mixkit-2858.mp3',{volume:.4});
+  lockSound=audio('reel-stop-gear-mixkit-2858.mp3',{volume:.5});dingSound=audio('winner-tonal-bloom-mixkit-3109.mp3',{volume:.32});buttonSound=audio('reel-stop-lock-mixkit-2857.mp3',{volume:.1});
 }
 
 function play(audioElement,{rate=1,volume}={}){
-  if(muted||!audioElement)return;
+  if(muted||!audioElement)return null;
   const voice=audioElement.paused&&audioElement.currentTime===0?audioElement:audioElement.cloneNode();voice.playbackRate=rate;
-  if(volume!==undefined)voice.volume=volume;voice.currentTime=0;voice.play().catch(()=>{});
+  if(volume!==undefined)voice.volume=volume;voice.currentTime=0;voice.play().catch(()=>{});return voice;
 }
 
-function startMotor(){ensureAudio();if(muted)return;clearInterval(motorFadeTimer);motor.currentTime=0;motor.volume=.12;motor.playbackRate=.76;motor.play().catch(()=>{});setTimeout(()=>{if(!motor.paused){motor.volume=.22;motor.playbackRate=1}},260)}
+function stopVoice(voice){if(!voice)return;voice.pause();voice.currentTime=0}
+function resetAudioSequence(){audioRunId+=1;clearTimeout(winnerAudioTimer);clearInterval(motorFadeTimer);for(const voice of[motor,leverSound,lockSound,dingSound])stopVoice(voice);if(motor){motor.volume=.1;motor.playbackRate=.62}setAudioState('IDLE')}
+function startMotor(){ensureAudio();if(muted)return;clearInterval(motorFadeTimer);setAudioState('SPINNING');motor.currentTime=.15;motor.volume=.08;motor.playbackRate=.62;motor.play().catch(()=>{})}
+function updateMotor(speed){
+  if(muted||!motor||motor.paused)return;
+  const velocity=clamp(speed/22,0,1),targetRate=.58+velocity*.5,targetVolume=.055+velocity*.17;
+  motor.playbackRate+=clamp(targetRate-motor.playbackRate,-.022,.022);motor.volume+=clamp(targetVolume-motor.volume,-.008,.008);
+}
 function stopMotor(immediate=false){
   if(!motor)return Promise.resolve();clearInterval(motorFadeTimer);
-  const finish=()=>{motor.pause();motor.currentTime=0;motor.volume=.2};
+  const finish=()=>{motor.pause();motor.currentTime=0;motor.volume=.1;motor.playbackRate=.62};
   if(immediate||motor.paused){finish();return Promise.resolve()}
   const startingVolume=motor.volume;let fadeStep=0;
   return new Promise(resolve=>{motorFadeTimer=setInterval(()=>{fadeStep+=1;motor.volume=Math.max(.001,startingVolume*(1-fadeStep/6));if(fadeStep>=6){clearInterval(motorFadeTimer);finish();resolve()}},30)});
 }
-function playTick(speed){if(muted)return;const slow=speed<4.5,fast=speed>18;play(slow?slowTickSound:tickSound,{rate:clamp(.76+speed*.025,.78,1.32),volume:slow?.21:fast?.045:.085})}
+function playWinnerDing(runId){
+  if(muted||runId!==audioRunId){setAudioState('IDLE');return}
+  setAudioState('WINNER_DING');const voice=play(dingSound,{rate:.76,volume:.32});
+  const finish=()=>{if(runId!==audioRunId)return;clearTimeout(winnerAudioTimer);stopVoice(voice);setAudioState('IDLE')};
+  voice?.addEventListener('ended',finish,{once:true});winnerAudioTimer=setTimeout(finish,1250);
+}
 
 function resetLever(animated=true){lever.classList.toggle('is-returning',animated);lever.classList.remove('is-pulled');lever.style.removeProperty('--lever-angle');pointerTravel=0;setTimeout(()=>lever.classList.remove('is-returning'),420)}
 
@@ -112,15 +124,14 @@ function animateReel(winner){
   if(reducedMotion.matches){currentPosition=positionForDiscovery(winner);renderCylinder(currentPosition,true);return Promise.resolve()}
   const count=config.discoveries.length,start=currentPosition,startWhole=Math.ceil(start),startModulo=mod(startWhole,count),winnerIndex=positionForDiscovery(winner);
   const delta=mod(winnerIndex-startModulo,count),target=startWhole+count*4+delta,travel=target-start,duration=2850;
-  let decelerationStarted=false,lastTime=performance.now(),lastPosition=start,lastTickIndex=Math.floor(start),lastTickAt=0;
+  let decelerationStarted=false,lastTime=performance.now(),lastPosition=start;
   return new Promise(resolve=>{
     const began=performance.now();
     const frame=now=>{
       const progress=clamp((now-began)/duration,0,1),distance=travel*mechanicalReelProgress(progress);
       currentPosition=start+distance;
-      const elapsedFrame=Math.max(1,now-lastTime),speed=Math.abs(currentPosition-lastPosition)/(elapsedFrame/1000),tickIndex=Math.floor(currentPosition);
-      if(tickIndex!==lastTickIndex&&now-lastTickAt>=mechanicalCadence(progress)){playTick(speed);lastTickAt=now;lastTickIndex=tickIndex}
-      if(!decelerationStarted&&progress>=MUSIC_MACHINE_REEL_PROFILE.cruiseEnd){decelerationStarted=true;setState('DECELERATION',`The reel is slowing toward ${winner.name}.`);setTicker(`NEXT IDEA — ${winner.name}`)}
+      const elapsedFrame=Math.max(1,now-lastTime),speed=Math.abs(currentPosition-lastPosition)/(elapsedFrame/1000);updateMotor(speed);
+      if(!decelerationStarted&&progress>=MUSIC_MACHINE_REEL_PROFILE.cruiseEnd){decelerationStarted=true;if(!muted&&motor&&!motor.paused)setAudioState('DECELERATING');setState('DECELERATION',`The reel is slowing toward ${winner.name}.`);setTicker(`NEXT IDEA — ${winner.name}`)}
       renderCylinder(currentPosition);lastTime=now;lastPosition=currentPosition;
       if(progress<1){spinFrame=requestAnimationFrame(frame);return}
       currentPosition=target;renderCylinder(target,true);resolve();
@@ -130,31 +141,32 @@ function animateReel(winner){
 }
 
 async function spin(source='lever'){
-  if(locked||!config)return;locked=true;anotherButton.disabled=true;
+  if(locked||!config)return;locked=true;anotherButton.disabled=true;const runId=++audioRunId;clearTimeout(winnerAudioTimer);stopVoice(dingSound);stopVoice(lockSound);
   setState('LEVER_PULLED','The lever has been pulled.');lever.classList.add('is-pulled');lever.style.setProperty('--lever-angle',`${MUSIC_MACHINE_REEL_PROFILE.leverAngle}deg`);
-  ensureAudio();play(leverSound,{rate:.86,volume:.45});await wait(reducedMotion.matches?20:250);resetLever();
+  ensureAudio();setAudioState('LEVER');play(leverSound,{rate:.78,volume:.44});await wait(reducedMotion.matches?20:250);resetLever();
   const winner=chooseTourismDiscovery(config.discoveries,recentIds());if(!winner){locked=false;anotherButton.disabled=false;return}
   setState('SPINNING','Finding a Bendigo discovery.');showNextFact();startMotor();factTimer=setInterval(showNextFact,1050);
-  await animateReel(winner);clearInterval(factTimer);await stopMotor();play(lockSound,{rate:.82,volume:.52});await wait(reducedMotion.matches?15:125);
-  play(dingSound,{rate:1,volume:.5});await wait(reducedMotion.matches?15:95);renderResult(winner);setState('RESULT',`${winner.name} selected.`);play(relaySound,{rate:1.15,volume:.14});
+  await animateReel(winner);clearInterval(factTimer);await stopMotor();
+  if(runId===audioRunId&&!muted){setAudioState('LOCKED');play(lockSound,{rate:.74,volume:.5});await wait(reducedMotion.matches?15:125);playWinnerDing(runId)}else setAudioState('IDLE');
+  renderResult(winner);setState('RESULT',`${winner.name} selected.`);
   locked=false;anotherButton.disabled=false;machine.dataset.lastSource=source;
 }
 
 function pullProgress(progress){const amount=clamp(progress,0,1),resisted=leverResistance(amount);lever.style.setProperty('--lever-angle',`${(resisted*MUSIC_MACHINE_REEL_PROFILE.leverAngle).toFixed(2)}deg`);lever.classList.toggle('is-pulled',amount>.02);return amount}
-function onPointerDown(event){if(locked)return;ensureAudio();play(buttonSound,{rate:.82,volume:.08});pointerId=event.pointerId;pointerStart=event.clientY;pointerTravel=0;lever.setPointerCapture?.(pointerId)}
+function onPointerDown(event){if(locked)return;ensureAudio();pointerId=event.pointerId;pointerStart=event.clientY;pointerTravel=0;lever.setPointerCapture?.(pointerId)}
 function onPointerMove(event){if(event.pointerId!==pointerId)return;pointerTravel=Math.max(0,event.clientY-pointerStart);const progress=pullProgress(pointerTravel/115);if(progress>=MUSIC_MACHINE_REEL_PROFILE.leverTrigger)navigator.vibrate?.(8)}
 function onPointerUp(event){if(event.pointerId!==pointerId)return;lever.releasePointerCapture?.(pointerId);pointerId=null;const trigger=pointerTravel/115>=MUSIC_MACHINE_REEL_PROFILE.leverTrigger;resetLever();if(trigger)void spin('lever')}
 
-function toggleSound(){muted=!muted;localStorage.setItem(soundKey,String(muted));soundLabel.textContent=muted?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!muted));soundButton.setAttribute('aria-label',muted?'Turn sound on':'Turn sound off');if(muted)stopMotor(true);else{ensureAudio();play(buttonSound,{rate:1.1,volume:.12})}}
+function toggleSound(){muted=!muted;localStorage.setItem(soundKey,String(muted));soundLabel.textContent=muted?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!muted));soundButton.setAttribute('aria-label',muted?'Turn sound on':'Turn sound off');if(muted)resetAudioSequence();else{ensureAudio();play(buttonSound,{rate:1.1,volume:.1})}}
 async function share(){if(!selected)return;const data={title:selected.name,text:selected.shortDescription,url:selected.websiteUrl};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(`${data.title} — ${data.url}`);setTicker('DISCOVERY LINK COPIED')}}catch(error){if(error?.name!=='AbortError')setTicker('SHARING IS NOT AVAILABLE HERE')}}
 function openUrl(value){try{window.open(new URL(value).toString(),'_blank','noopener,noreferrer')}catch{setTicker('THIS LINK IS NOT AVAILABLE')}}
 
 lever.addEventListener('pointerdown',onPointerDown);lever.addEventListener('pointermove',onPointerMove);lever.addEventListener('pointerup',onPointerUp);lever.addEventListener('pointercancel',onPointerUp);
 lever.addEventListener('click',event=>{if(event.detail===0||pointerTravel===0)void spin('lever-button')});lever.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();void spin('lever-keyboard')}});
 soundButton.addEventListener('click',toggleSound);document.querySelector('[data-action="home"]').addEventListener('click',renderReady);shareButton.addEventListener('click',()=>void share());mapButton.addEventListener('click',()=>selected&&openUrl(selected.mapUrl));infoButton.addEventListener('click',()=>selected&&openUrl(selected.websiteUrl));anotherButton.addEventListener('click',()=>void spin('another-idea'));
-for(const button of actionButtons)button.addEventListener('pointerdown',()=>{ensureAudio();play(buttonSound,{rate:1.18,volume:.11});navigator.vibrate?.(5)});
+for(const button of actionButtons)button.addEventListener('pointerdown',()=>{ensureAudio();if(button!==anotherButton)play(buttonSound,{rate:1.12,volume:.08});navigator.vibrate?.(5)});
 window.addEventListener('resize',()=>{reelHeight=Math.max(1,reel.clientHeight);renderCylinder(currentPosition,true)},{passive:true});
 
 fetch(`${base}/tourism-data/bendigo.json`).then(response=>{if(!response.ok)throw new Error('Tourism data unavailable.');return response.json()}).then(value=>{config=validateTourismConfig(value);title.textContent=config.destination.machineTitle;tagline.textContent=config.destination.tagline;soundLabel.textContent=muted?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!muted));ensureAudio();renderReady()}).catch(error=>{anotherButton.disabled=true;lever.disabled=true;setTicker('TOURISM MACHINE RESTING — PLEASE REFRESH');announcement.textContent=error.message;console.error(error)});
 
-window.aggitsTourismMachine=Object.freeze({spin:()=>spin('api'),getState:()=>({state,locked,selectedId:selected?.id||null,destination:config?.destination?.name||null,discoveryCount:config?.discoveries?.length||0})});
+window.aggitsTourismMachine=Object.freeze({spin:()=>spin('api'),getState:()=>({state,locked,audioState,selectedId:selected?.id||null,destination:config?.destination?.name||null,discoveryCount:config?.discoveries?.length||0})});

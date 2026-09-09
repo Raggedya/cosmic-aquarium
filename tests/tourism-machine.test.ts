@@ -79,7 +79,7 @@ test('tourism reel uses continuous cylindrical motion and mechanically ordered a
   assert.match(runtime,/from'.\/machine-mechanics-core\.js'/);
   assert.match(musicRuntime,/from '.\/machine-mechanics-core\.js'/);
   assert.match(runtime,/mechanicalReelProgress\(progress\)/);
-  assert.match(runtime,/mechanicalCadence\(progress\)/);
+  assert.doesNotMatch(runtime,/mechanicalCadence|playTick|tickSound|slowTickSound/);
   assert.match(musicRuntime,/mechanicalCadence\(progress,index\)/);
   assert.match(mechanics,/leverResistanceExponent:\.78/);
   assert.match(mechanics,/decelerationRange:190/);
@@ -91,10 +91,14 @@ test('tourism reel uses continuous cylindrical motion and mechanically ordered a
   assert.match(mechanics,/return 1\.003-\.003/);
   assert.match(runtime,/function stopMotor\(immediate=false\)/);
   assert.match(runtime,/startingVolume\*\(1-fadeStep\/6\)/);
-  assert.match(runtime,/fast\?\.045:\.085/);
-  assert.match(runtime,/await animateReel\(winner\);clearInterval\(factTimer\);await stopMotor\(\);play\(lockSound/);
-  assert.match(runtime,/play\(dingSound[\s\S]*renderResult\(winner\);setState\('RESULT'/);
-  for(const asset of ['reel-ratchet-mixkit-2641.mp3','reel-actual-slotmachine-freesound-261346.mp3','reel-stop-lock-mixkit-2857.mp3','reel-stop-gear-mixkit-2858.mp3','winner-tonal-bloom-mixkit-3109.mp3'])assert.match(runtime,new RegExp(asset.replaceAll('.','\\.')));
+  assert.match(runtime,/function updateMotor\(speed\)/);
+  assert.match(runtime,/targetRate=\.58\+velocity\*\.5/);
+  assert.match(runtime,/setAudioState\('DECELERATING'\)/);
+  assert.match(runtime,/await animateReel\(winner\);clearInterval\(factTimer\);await stopMotor\(\);/);
+  assert.match(runtime,/setAudioState\('LOCKED'\);play\(lockSound[\s\S]*playWinnerDing\(runId\)/);
+  assert.match(runtime,/playWinnerDing\(runId\)[\s\S]*renderResult\(winner\);setState\('RESULT'/);
+  assert.doesNotMatch(runtime,/relaySound|play\(relay/);
+  for(const asset of ['reel-actual-slotmachine-freesound-261346.mp3','reel-stop-lock-mixkit-2857.mp3','reel-stop-gear-mixkit-2858.mp3','winner-tonal-bloom-mixkit-3109.mp3'])assert.match(runtime,new RegExp(asset.replaceAll('.','\\.')));
 });
 
 test('existing festival machine remains on its original template and runtime',async()=>{

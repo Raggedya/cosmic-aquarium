@@ -1,5 +1,13 @@
 # Milestone Status
 
+## Tourism audio-only refinement
+
+Status: **NEEDS REVIEW**
+
+The tourism reel now uses one continuous motor recording with smoothly velocity-linked playback rate and level. Item-crossing ticks, ratchet chatter, the post-ding relay click, and overlapping spin-engagement button clicks have been removed. The authoritative completion sequence is: lever clunk → continuous roll → slowing roll → final lock clunk → 125 ms pause → one lowered bell strike → silence.
+
+Automated audio-event QA completed 20 consecutive full-motion spins. Every spin produced exactly the same four-event order, with the bell last. Rapid repeat requests, Sound Off during spin, Sound On after interruption, and repeated mobile Another Idea input also passed without duplicate or stale audio. The tourism CSS, template, cabinet asset, reel geometry, data, and music/festival runtime were not changed in this pass. Full trigger documentation is in `TOURISM_AUDIO_AUDIT.md`.
+
 ## Milestone 1A: PIXEL-LEVEL GRAPHICAL CONFORMANCE PASS
 
 Status: **NEEDS REVIEW**
