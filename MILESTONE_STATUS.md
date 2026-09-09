@@ -4,15 +4,18 @@
 
 Status: **NEEDS REVIEW**
 
-The tourism machine now uses the supplied Bendigo image as its exact canonical cabinet asset. The cabinet is rendered at its native 762:1280 proportion, the photographed permanent title and equal four-button control bank are preserved without replacement UI, the dynamic reel shows five positions within the original brass hardware, and the separate result/status panel follows the approved layout.
+The tourism machine uses the supplied Bendigo image as its canonical cabinet asset at the native 762:1280 proportion. The live layer now adds a perspective-calculated cylindrical reel, continuous acceleration/deceleration, item-indexed ticks, overshoot and recoil, a final lock then ding sequence, a pivoting physical lever, mechanically recessed four-button controls, and a relay-style result reveal. Tourism selection, navigation, persistence and data structures are unchanged.
 
 Review screenshots:
 
-- `artifacts/tourism-1a-dormant.png`
-- `artifacts/tourism-1a-spinning.png`
-- `artifacts/tourism-1a-result.png`
+- `artifacts/tourism-production-dormant.png`
+- `artifacts/tourism-production-spinning.png`
+- `artifacts/tourism-production-deceleration.png`
+- `artifacts/tourism-production-result.png`
+- `artifacts/tourism-production-button-pressed.png`
+- `artifacts/tourism-production-400-*.png`
 
-Browser QA covers 762×1280, 1080×1920, laptop, portrait tablet and 390×844 mobile viewports. Lever, reel, result, Share, Map, More Info, Another Idea, Home and Sound interactions remain functional. The attraction photographs remain Milestone 1 placeholders pending production tourism content.
+Browser QA covers 762×1280, high-DPI 400% crops, 1080×1920, laptop, portrait tablet and 390×844 mobile viewports. Lever, reel, result, Share, Map, More Info, Another Idea, Home and Sound interactions remain functional. The attraction photographs remain Milestone 1 placeholders pending production tourism content.
 
 ## Milestone 1: TOURISM RESTRUCTURE
 

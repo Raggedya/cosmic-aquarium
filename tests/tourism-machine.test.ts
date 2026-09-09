@@ -58,12 +58,30 @@ test('mock Bendigo configuration validates and contains the milestone examples',
 });
 
 test('tourism presentation is responsive, dormant-first and uses four equal actions',async()=>{
-  const css=await read('app/tourism-machine.css');
+  const [css,html]=await Promise.all([read('app/tourism-machine.css'),read('templates/tourism-machine.html')]);
   assert.match(css,/aspect-ratio:\s*762\/1280/);
   assert.match(css,/data-machine-state="READY"\] \.tourism-reel/);
   assert.match(css,/grid-template-columns:\s*repeat\(4,\s*minmax\(0,\s*1fr\)\)/);
   assert.match(css,/prefers-reduced-motion:\s*reduce/);
+  assert.match(css,/perspective:\s*760px/);
+  assert.match(css,/transform-style:\s*preserve-3d/);
+  assert.match(css,/\.tourism-actions button::before/);
+  assert.match(css,/button:active:not\(:disabled\)::before/);
+  assert.match(html,/class="lever-visual"/);
   assert.doesNotMatch(css,/\.gauge|\.needle/);
+});
+
+test('tourism reel uses continuous cylindrical motion and mechanically ordered audio',async()=>{
+  const runtime=await read('github-pages/assets/tourism-machine.js');
+  assert.match(runtime,/function renderCylinder\(/);
+  assert.match(runtime,/Math\.sin\(radians\)\*radius/);
+  assert.match(runtime,/rotateX\(/);
+  assert.match(runtime,/requestAnimationFrame\(frame\)/);
+  assert.match(runtime,/setState\('DECELERATION'/);
+  assert.match(runtime,/distance=travel\*\(1\.003-/);
+  assert.match(runtime,/await animateReel\(winner\);clearInterval\(factTimer\);stopMotor\(\);play\(lockSound/);
+  assert.match(runtime,/play\(dingSound[\s\S]*renderResult\(winner\);setState\('RESULT'/);
+  for(const asset of ['reel-ratchet-mixkit-2641.mp3','reel-actual-slotmachine-freesound-261346.mp3','reel-stop-lock-mixkit-2857.mp3','reel-stop-gear-mixkit-2858.mp3','winner-tonal-bloom-mixkit-3109.mp3'])assert.match(runtime,new RegExp(asset.replaceAll('.','\\.')));
 });
 
 test('existing festival machine remains on its original template and runtime',async()=>{

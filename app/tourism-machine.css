@@ -3,14 +3,15 @@
 :root {
   color-scheme: dark;
   --cabinet-ratio: .5953125;
-  --brass-deep: #5a2d0d;
-  --brass: #b87428;
+  --brass-deep: #4b2309;
+  --brass: #a96825;
   --brass-mid: #d99a46;
-  --brass-light: #ffd58a;
-  --cream: #f4d8a8;
+  --brass-light: #ffe0a0;
+  --cream: #f5ddb0;
   --ink: #100906;
   --plate: #050604;
   --emerald: #064b3b;
+  --metal-edge: linear-gradient(135deg,#4a2109 0%,#f6cb79 15%,#8a4c19 31%,#e7a758 48%,#5b2b0c 67%,#f0c16c 84%,#6b3512 100%);
 }
 
 * { box-sizing: border-box; }
@@ -21,101 +22,50 @@ body {
   height: 100%;
   margin: 0;
   overflow: hidden;
-  background: radial-gradient(ellipse at 50% 45%, #3b190b 0%, #140704 54%, #040201 100%);
+  background: radial-gradient(ellipse at 50% 42%, #42200f 0%, #160805 54%, #040201 100%);
 }
 
-body {
-  display: grid;
-  place-items: center;
-  font-family: "Libre Franklin", "Arial Narrow", Arial, sans-serif;
-}
+body { display: grid; place-items: center; font-family: "Libre Franklin", "Arial Narrow", Arial, sans-serif; }
+button { font: inherit; -webkit-tap-highlight-color: transparent; }
+button:focus-visible { outline: max(2px,.32vw) solid #fff0bd; outline-offset: max(2px,.28vw); }
 
-button { font: inherit; }
-
-button:focus-visible {
-  outline: max(2px, .32vw) solid #fff0bd;
-  outline-offset: max(2px, .28vw);
-}
-
-.visually-hidden {
-  position: fixed;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
+.visually-hidden { position: fixed; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 .tourism-stage {
   position: relative;
-  width: min(100vw, calc(100dvh * var(--cabinet-ratio)));
-  height: min(100dvh, calc(100vw / var(--cabinet-ratio)));
+  width: min(100vw,calc(100dvh * var(--cabinet-ratio)));
+  height: min(100dvh,calc(100vw / var(--cabinet-ratio)));
   aspect-ratio: 762/1280;
   overflow: hidden;
   isolation: isolate;
   background: #241006;
-  box-shadow: 0 1.6vh 4.2vh #000e, 0 0 0 1px #5b3015;
+  box-shadow: 0 1.6vh 4.2vh #000e,0 0 0 1px #5b3015;
   user-select: none;
 }
 
-.cabinet-reference {
+.tourism-stage::after {
+  content: "";
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
+  z-index: 30;
   pointer-events: none;
+  background: linear-gradient(110deg,#fff1c20a 0 18%,transparent 29% 74%,#00000012 88% 100%);
+  mix-blend-mode: soft-light;
 }
 
-.cabinet-hotspot {
-  position: absolute;
-  z-index: 12;
-  border: 0;
-  background: transparent;
-  color: transparent;
-  cursor: pointer;
-  padding: 0;
-}
+.cabinet-reference { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; }
 
-.home-control {
-  left: 6.15%;
-  top: 9.15%;
-  width: 12.1%;
-  height: 8.9%;
-  border-radius: 50%;
-}
-
-.sound-control {
-  right: 6.65%;
-  top: 9.15%;
-  width: 12.1%;
-  height: 8.9%;
-  border-radius: 50%;
-}
-
+.cabinet-hotspot { position: absolute; z-index: 12; border: 0; background: transparent; color: transparent; cursor: pointer; padding: 0; }
+.home-control { left: 6.15%; top: 9.15%; width: 12.1%; height: 8.9%; border-radius: 50%; }
+.sound-control { right: 6.65%; top: 9.15%; width: 12.1%; height: 8.9%; border-radius: 50%; }
 .sound-control span { display: none; }
+.home-control:active,.sound-control:active { box-shadow: inset 0 .5vw 1vw #000c,inset 0 0 0 .25vw #d9a55655; filter: brightness(.82); }
 
-/* The permanent title is already forged into the canonical photographed cabinet. */
-.title-plaque {
-  position: absolute;
-  z-index: 5;
-  left: 7.75%;
-  right: 7.75%;
-  top: 20.25%;
-  height: 6.35%;
-  overflow: hidden;
-  pointer-events: none;
-}
+/* The permanent identity plate is forged into the canonical photograph. */
+.title-plaque { position: absolute; z-index: 5; left: 7.75%; right: 7.75%; top: 20.25%; height: 6.35%; overflow: hidden; pointer-events: none; }
+.title-plaque strong,.title-plaque span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
 
-.title-plaque strong,
-.title-plaque span {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-}
-
+/* The moving surface sits between the photographed brass side housings. */
 .tourism-reel {
   position: absolute;
   z-index: 5;
@@ -124,338 +74,270 @@ button:focus-visible {
   top: 27.85%;
   height: 27.95%;
   overflow: hidden;
-  border-radius: 5% / 6%;
+  border-radius: 7% / 5%;
+  perspective: 760px;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
   background:
-    linear-gradient(90deg, #1a0903 0%, transparent 7%, transparent 93%, #160803 100%),
-    radial-gradient(ellipse at 50% 49%, #fff1bd 0%, #f4d08c 36%, #d9a05b 67%, #6e3917 100%);
+    linear-gradient(90deg,#180803 0%,#51260f 4.5%,transparent 14%,transparent 86%,#4b210c 95.5%,#140602 100%),
+    repeating-linear-gradient(180deg,transparent 0 19.65%,#77502d7a 19.8% 20.15%),
+    radial-gradient(ellipse 92% 64% at 50% 49%,#fff2c1 0%,#f6d695 41%,#d69750 73%,#51240c 100%);
   box-shadow:
-    inset 1.8vw 0 2.8vw #160702e6,
-    inset -1.8vw 0 2.8vw #160702e6,
-    inset 0 1.1vw 2.1vw #351606c9,
-    inset 0 -1.1vw 2.4vw #1a0904e0,
-    0 0 .35vw #d29541;
-  transition: filter .45s ease, opacity .45s ease;
+    inset 2.4vw 0 3.5vw #0e0401e6,
+    inset -2.4vw 0 3.5vw #0e0401e6,
+    inset 0 1.5vw 2.6vw #2b1105e8,
+    inset 0 -1.5vw 2.9vw #160703f0,
+    inset 0 0 0 max(1px,.09vw) #f5ca7b55,
+    0 0 .42vw #c78637;
+  transition: filter .32s ease,opacity .32s ease;
 }
 
 .tourism-reel::before {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 3;
+  z-index: 4;
   pointer-events: none;
   background:
-    linear-gradient(180deg, #160703b8 0%, transparent 13%, transparent 84%, #130602c8 100%),
-    linear-gradient(90deg, #0009 0%, transparent 18%, transparent 82%, #000a 100%),
-    repeating-linear-gradient(180deg, transparent 0 19.6%, #6d421d6b 19.8% 20.2%);
-  box-shadow: inset 0 0 1.8vw #0009, inset 0 .18vw .2vw #ffe4ab66;
+    linear-gradient(180deg,#100402d9 0%,#32130675 9%,transparent 24% 76%,#2c100778 91%,#0d0302e8 100%),
+    linear-gradient(90deg,#000d 0%,#1a08059c 7%,transparent 20% 80%,#160704a8 93%,#000e 100%),
+    radial-gradient(ellipse 38% 100% at 50% 50%,#fff7d51f 0 52%,transparent 76%);
+  box-shadow: inset 0 0 1.9vw #000b,inset 0 .12vw .22vw #ffe8af70;
 }
 
 .tourism-reel::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 5;
+  z-index: 7;
   pointer-events: none;
   background:
-    linear-gradient(105deg, transparent 0 27%, #fff9df45 39%, transparent 48% 100%),
-    radial-gradient(ellipse at 50% 50%, transparent 52%, #35160775 93%);
+    linear-gradient(104deg,transparent 0 24%,#fff9df42 37%,transparent 48% 100%),
+    repeating-linear-gradient(180deg,transparent 0 19.72%,#4d2c137a 19.86% 20.13%);
   mix-blend-mode: soft-light;
 }
 
 .reel-glow {
   position: absolute;
-  inset: 0;
+  inset: 1% 3%;
   z-index: 1;
-  background: radial-gradient(ellipse at 50% 48%, #fff8d5 0%, #ffc768 53%, transparent 78%);
-  opacity: .18;
-  transition: opacity .45s ease;
+  border-radius: 44% / 10%;
+  background: radial-gradient(ellipse at 50% 49%,#fffbe2 0%,#ffd17d 48%,#8f461a70 72%,transparent 83%);
+  opacity: .2;
+  transition: opacity .3s ease;
 }
 
 .reel-rows {
   position: absolute;
-  z-index: 2;
-  inset: 1.3% 4.5%;
-  display: grid;
-  grid-template-rows: repeat(5, 1fr);
+  z-index: 3;
+  inset: 0 3.5%;
+  transform-style: preserve-3d;
   will-change: transform;
-  transition: transform 1.65s cubic-bezier(.12, .72, .16, 1);
 }
 
 .reel-row {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 20%;
   display: grid;
   place-items: center;
-  min-width: 0;
-  padding: 0 4%;
-  color: #47301e;
-  font: 900 clamp(11px, 2.85vw, 25px)/.92 "Roboto Condensed", "Arial Narrow", sans-serif;
-  letter-spacing: -.035em;
+  padding: 0 6%;
+  color: #3f2b1b;
+  font: 900 clamp(11px,2.72vw,24px)/.9 "Roboto Condensed","Arial Narrow",sans-serif;
+  letter-spacing: -.032em;
   text-align: center;
   text-transform: uppercase;
   text-wrap: balance;
-  text-shadow: 0 1px 0 #ffe6b3;
-  opacity: .52;
-  transition: opacity .25s ease, color .25s ease, transform .25s ease;
+  opacity: .5;
+  transform: translate3d(0,-50%,0);
+  transform-origin: 50% 50%;
+  backface-visibility: hidden;
+  text-shadow: 0 1px 0 #ffeabf,0 2px 2px #5c351a3d;
+  will-change: transform,opacity;
 }
 
-.reel-row[data-fit="medium"] { font-size: clamp(10px, 2.55vw, 23px); }
-.reel-row[data-fit="long"] { font-size: clamp(9px, 2.15vw, 19px); }
-.reel-row:nth-child(1),
-.reel-row:nth-child(5) { opacity: .36; }
-
-.reel-row:nth-child(3) {
-  color: #130b07;
-  font-size: clamp(14px, 3.8vw, 34px);
-  line-height: .9;
-  opacity: 1;
-  transform: scale(1.025);
-  text-shadow: 0 1px 0 #ffe6ae, 0 2px 2px #75431b66;
+.reel-row[data-fit="medium"] { font-size: clamp(10px,2.42vw,22px); }
+.reel-row[data-fit="long"] { font-size: clamp(9px,2.06vw,19px); line-height: .86; }
+.reel-row[data-centre="true"] {
+  z-index: 3;
+  color: #120906;
+  font-size: clamp(15px,3.55vw,31px);
+  letter-spacing: -.045em;
+  text-shadow: 0 1px 0 #fff0c6,0 2px 2px #6d3c1766;
 }
-
-.reel-row:nth-child(3)[data-fit="medium"] { font-size: clamp(13px, 3.25vw, 29px); }
-.reel-row:nth-child(3)[data-fit="long"] { font-size: clamp(12px, 2.75vw, 25px); }
+.reel-row[data-centre="true"][data-fit="medium"] { font-size: clamp(13px,3.1vw,28px); }
+.reel-row[data-centre="true"][data-fit="long"] { font-size: clamp(12px,2.62vw,24px); line-height: .84; }
 
 .selection-line {
   position: absolute;
-  z-index: 6;
+  z-index: 8;
   left: -1%;
   right: -1%;
   top: 50%;
-  height: max(1px, .09vw);
-  background: #f2b94f;
-  box-shadow: 0 0 .55vw #ffb127;
+  height: max(1px,.085vw);
+  background: linear-gradient(90deg,#f0a733,#ffe08a 18%,#d79531 50%,#ffe08a 82%,#e99b29);
+  box-shadow: 0 0 .48vw #ffb127b8;
   transform: translateY(-50%);
 }
 
-.selection-line::before,
-.selection-line::after {
-  content: none;
-  position: absolute;
-  top: 50%;
-  width: 0;
-  height: 0;
-  border-top: clamp(8px, 1.75vw, 15px) solid transparent;
-  border-bottom: clamp(8px, 1.75vw, 15px) solid transparent;
-  transform: translateY(-50%);
-}
-
-.selection-line::before { left: -1px; border-left: clamp(11px, 2.2vw, 19px) solid #ffc866; }
-.selection-line::after { right: -1px; border-right: clamp(11px, 2.2vw, 19px) solid #ffc866; }
-
-[data-machine-state="READY"] .tourism-reel { filter: brightness(.19) saturate(.38); }
+[data-machine-state="READY"] .tourism-reel { filter: brightness(.16) saturate(.32); }
 [data-machine-state="READY"] .reel-glow { opacity: 0; }
-[data-machine-state="SPINNING"] .reel-glow,
-[data-machine-state="DECELERATION"] .reel-glow,
-[data-machine-state="RESULT"] .reel-glow { opacity: .48; }
+[data-machine-state="LEVER_PULLED"] .tourism-reel { filter: brightness(.46) saturate(.72); }
+[data-machine-state="SPINNING"] .reel-glow,[data-machine-state="DECELERATION"] .reel-glow,[data-machine-state="RESULT"] .reel-glow { opacity: .58; }
+[data-machine-state="SPINNING"] .reel-row { text-shadow: 0 1px #ffe7b0; }
+[data-machine-state="SPINNING"] .tourism-reel { filter: saturate(1.08) brightness(1.02); }
+[data-machine-state="DECELERATION"] .tourism-reel { filter: saturate(1.04) brightness(1.04); }
+[data-machine-state="RESULT"] .tourism-reel { filter: saturate(1.02) brightness(1.03); }
 
-[data-machine-state="SPINNING"] .reel-rows {
-  animation: tourism-reel-spin .28s linear infinite;
-  filter: blur(.65px);
+/* The existing transparent lever artwork is reused so the photographed control genuinely pivots. */
+.lever-control { right: 3.45%; top: 28.75%; width: 10.8%; height: 32.8%; touch-action: none; overflow: visible; }
+.lever-visual {
+  position: absolute;
+  inset: 0;
+  display: block;
+  background: var(--tourism-lever-image) 50% 0 / 315% 83% no-repeat;
+  filter: drop-shadow(.4vw .55vw .42vw #000a) saturate(.92) brightness(.88);
+  transform: rotate(var(--lever-angle,0deg));
+  transform-origin: 50% 72%;
+  transition: transform .3s cubic-bezier(.18,.82,.22,1),filter .18s ease;
+  will-change: transform;
 }
-
-[data-machine-state="DECELERATION"] .reel-rows {
-  animation: tourism-reel-settle .95s cubic-bezier(.12, .72, .16, 1);
-}
-
-@keyframes tourism-reel-spin { to { transform: translateY(20%); } }
-
-@keyframes tourism-reel-settle {
-  0% { transform: translateY(-12%); }
-  45% { transform: translateY(5%); }
-  75% { transform: translateY(-2%); }
-  to { transform: translateY(0); }
-}
-
-.lever-control {
-  right: 3.45%;
-  top: 29.25%;
-  width: 10.8%;
-  height: 32.8%;
-  transform-origin: 50% 22%;
-  touch-action: none;
-  transition: transform .45s cubic-bezier(.18, .72, .23, 1);
-}
-
-.lever-control.is-pulled { transform: translateY(6%) rotate(8deg); }
+.lever-control.is-pulled .lever-visual { filter: drop-shadow(.65vw .8vw .5vw #000c) saturate(1.08) brightness(1.02); }
+.lever-control.is-returning .lever-visual { transition-duration: .42s; transition-timing-function: cubic-bezier(.2,.88,.3,1.24); }
+.lever-control:focus-visible { border-radius: 48%; }
 
 .result-panel {
   position: absolute;
   z-index: 6;
-  left: 13.9%;
-  right: 14.25%;
-  top: 57.35%;
-  height: 9.35%;
+  left: 13.45%;
+  right: 13.65%;
+  top: 56.75%;
+  height: 10.25%;
   overflow: hidden;
-  background: radial-gradient(ellipse at 56% 42%, #11130f 0%, #060705 66%, #010201 100%);
-  border: max(1px, .16vw) solid #5b3518;
-  box-shadow: inset 0 0 0 max(1px, .12vw) #bd8039, inset 0 0 1.2vw #000, 0 0 .35vw #000;
+  background:
+    radial-gradient(ellipse at 55% 40%,#171812 0%,#070806 58%,#010201 100%),
+    linear-gradient(104deg,#191208,#030403 44% 100%);
+  border: max(1px,.16vw) solid #522b12;
+  box-shadow: inset 0 0 0 max(1px,.12vw) #bc7a32,inset 0 .45vw .9vw #000,inset 0 -.25vw .65vw #000,0 .25vw .4vw #000b;
   color: #f2d8a7;
-  transition: filter .35s ease;
+  transition: filter .22s ease;
 }
 
-.result-panel::before {
-  content: "";
+.result-image-frame {
   position: absolute;
-  left: 2.3%;
-  top: 7%;
-  width: 25.4%;
-  height: 86%;
+  z-index: 2;
+  left: 2.5%;
+  top: 7.8%;
+  width: 25.6%;
+  height: 84.4%;
   display: none;
-  background-image: url('./tourism-machine/bendigo-tourism-cabinet-reference.jpg');
-  background-repeat: no-repeat;
-  background-size: 540% auto;
-  background-position: 20.1% 62.7%;
-  border: max(1px, .12vw) solid #c48a43;
-  box-shadow: inset 0 0 .45vw #0009;
-  filter: sepia(.08) saturate(.9) contrast(1.02);
-}
-
-.result-panel img {
-  position: absolute;
-  width: 1px;
-  height: 1px;
   overflow: hidden;
-  opacity: 0;
+  border: max(1px,.12vw) solid #d39a4e;
+  box-shadow: inset 0 0 .45vw #0009,0 0 0 max(1px,.09vw) #35180a;
 }
 
-.result-copy {
-  position: absolute;
-  left: 31.2%;
-  right: 2.4%;
-  top: 50%;
-  display: none;
-  min-width: 0;
-  transform: translateY(-50%);
-}
-
-.result-copy strong {
-  display: block;
-  overflow: hidden;
-  color: #f5deae;
-  font: 800 clamp(11px, 2.7vw, 23px)/1.02 "Roboto Slab", Georgia, serif;
-  letter-spacing: -.02em;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
-  white-space: nowrap;
-}
-
-.result-category {
-  display: block;
-  margin-top: .3em;
-  color: #d99943;
-  font: 900 clamp(6px, 1.16vw, 10px)/1 "Libre Franklin", sans-serif;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-.result-copy p {
-  max-width: 98%;
-  margin: .35em 0 .4em;
-  color: #eadbc2;
-  font: 500 clamp(7px, 1.48vw, 13px)/1.16 "Roboto Slab", Georgia, serif;
-}
-
-.result-meta {
-  display: flex;
-  align-items: center;
-  gap: 4.2%;
-  color: #f0d3a1;
-  font: 500 clamp(6px, 1.12vw, 10px)/1 "Roboto Slab", Georgia, serif;
-  white-space: nowrap;
-}
-
+.result-panel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; filter: sepia(.08) saturate(.92) contrast(1.04); }
+.result-panel img[data-placeholder="true"] { inset: -661% auto auto -89%; width: 540%; height: auto; max-width: none; }
+.result-copy { position: absolute; left: 32%; right: 2.4%; top: 50%; display: none; min-width: 0; transform: translateY(-50%); }
+.result-copy strong { display: block; overflow: hidden; color: #f7dfae; font: 800 clamp(12px,2.68vw,23px)/1.02 "Roboto Slab",Georgia,serif; letter-spacing: -.025em; text-overflow: ellipsis; text-transform: uppercase; white-space: nowrap; }
+.result-category { display: block; margin-top: .2em; color: #d99a43; font: 900 clamp(7px,1.32vw,11px)/1 "Libre Franklin",sans-serif; letter-spacing: .1em; text-transform: uppercase; }
+.result-copy p { max-width: 98%; margin: .25em 0 .3em; color: #eadbc2; font: 500 clamp(8px,1.58vw,13.5px)/1.12 "Roboto Slab",Georgia,serif; }
+.result-meta { display: flex; align-items: center; gap: 4.2%; color: #f0d3a1; font: 500 clamp(7px,1.24vw,10.5px)/1 "Roboto Slab",Georgia,serif; white-space: nowrap; }
 .result-meta span + span { border-left: 1px solid #9c6c35; padding-left: 4.2%; }
+.result-placeholder { position: absolute; inset: 0; display: grid; place-items: center; padding: 0 8%; color: #d4a45f; font: 900 clamp(9px,1.72vw,16px)/1.05 "Libre Franklin",sans-serif; letter-spacing: .12em; text-align: center; text-transform: uppercase; text-shadow: 0 1px 2px #000; }
+.result-placeholder [data-ticker] { display: block; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: opacity .15s ease; }
 
-.result-placeholder {
-  position: absolute;
-  inset: 0;
-  display: grid;
-  place-items: center;
-  padding: 0 8%;
-  color: #c99a55;
-  font: 900 clamp(8px, 1.7vw, 16px)/1.05 "Libre Franklin", sans-serif;
-  letter-spacing: .12em;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 1px 2px #000;
-}
-
-.result-placeholder [data-ticker] {
-  display: block;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  transition: opacity .18s ease;
-}
-
-[data-machine-state="RESULT"] .result-panel::before,
-[data-machine-state="RESULT"] .result-copy { display: block; }
+[data-machine-state="RESULT"] .result-image-frame,[data-machine-state="RESULT"] .result-copy { display: block; animation: result-relay-on .2s steps(2,end); }
 [data-machine-state="RESULT"] .result-placeholder { display: none; }
-[data-machine-state="READY"] .result-panel { filter: brightness(.42) saturate(.55); }
+[data-machine-state="READY"] .result-panel { filter: brightness(.34) saturate(.48); }
+[data-machine-state="SPINNING"] .result-panel,[data-machine-state="DECELERATION"] .result-panel { filter: brightness(.7) saturate(.75); }
+@keyframes result-relay-on { 0%{opacity:0;filter:brightness(2.2)} 38%{opacity:.4;filter:brightness(.6)} 100%{opacity:1;filter:none} }
 
 .tourism-actions {
   position: absolute;
-  z-index: 7;
-  left: 7.1%;
-  right: 7.1%;
-  top: 68.3%;
+  z-index: 10;
+  left: 7.05%;
+  right: 7.05%;
+  top: 68.95%;
   height: 10.65%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 3.3%;
+  grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 3.25%;
   padding: .65% 4.25%;
 }
 
 .tourism-actions button {
   position: relative;
   min-width: 0;
-  border: 0;
-  border-radius: 2%;
-  padding: 0;
-  background: transparent;
-  box-shadow: none;
-  color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5%;
+  overflow: hidden;
+  border: max(1px,.12vw) solid #2b1207;
+  border-radius: 4% / 4.5%;
+  padding: 8% 7% 7%;
+  background:
+    radial-gradient(circle at 7% 8%,#fff4b8 0 .55%,#c17a30 .8% 1.5%,#3f1b07 2.2% 3.5%,transparent 4.2%),
+    radial-gradient(circle at 93% 8%,#fff4b8 0 .55%,#c17a30 .8% 1.5%,#3f1b07 2.2% 3.5%,transparent 4.2%),
+    radial-gradient(circle at 7% 92%,#fff4b8 0 .55%,#c17a30 .8% 1.5%,#3f1b07 2.2% 3.5%,transparent 4.2%),
+    radial-gradient(circle at 93% 92%,#fff4b8 0 .55%,#c17a30 .8% 1.5%,#3f1b07 2.2% 3.5%,transparent 4.2%),
+    var(--metal-edge);
+  box-shadow: inset 0 .12vw .15vw #ffe0a34f,inset 0 -.22vw .34vw #2c0e05,0 .2vw .34vw #000b;
+  color: #f8e4bd;
   cursor: pointer;
   text-align: center;
   text-transform: uppercase;
-  transition: filter .16s ease, transform .08s ease;
+  transition: filter .13s ease;
 }
 
-.tourism-actions button .action-icon,
-.tourism-actions button strong {
+.tourism-actions button::before {
+  content: "";
   position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
+  z-index: 0;
+  inset: 7.3% 6.4%;
+  border: max(1px,.13vw) solid #b2702e;
+  border-radius: 2.5%;
+  background: radial-gradient(ellipse at 46% 26%,#25231d 0%,#12110e 47%,#050504 100%);
+  box-shadow: inset 0 .42vw .62vw #ffffff0e,inset 0 -.48vw .75vw #000c,inset 0 0 0 max(1px,.09vw) #3c230f,0 .14vw .2vw #000;
+  transition: transform .08s ease,box-shadow .08s ease,filter .13s ease;
 }
 
-.tourism-actions button:disabled {
-  cursor: default;
-  background: #020302a6;
-  box-shadow: inset 0 0 1vw #000;
+.tourism-actions button::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 8.4% 7.5%;
+  pointer-events: none;
+  border-radius: 2%;
+  background: linear-gradient(115deg,#fff5d415 0 20%,transparent 43% 78%,#0004 100%);
 }
 
-.tourism-actions button:not(:disabled):active {
-  transform: translateY(.8%);
-  background: #0002;
-  box-shadow: inset 0 .4vw .8vw #0008;
+.tourism-actions button.more-info::before {
+  border-color: #d09a4b;
+  background: radial-gradient(ellipse at 48% 27%,#138476 0%,#075b4b 39%,#02362d 72%,#011f1a 100%);
+  box-shadow: inset 0 .42vw .72vw #b7fff23d,inset 0 -.55vw .8vw #001912e0,inset 0 0 0 max(1px,.09vw) #2cbd9a70,0 0 .42vw #37d9ac2e,0 .14vw .2vw #000;
 }
 
-@media (max-aspect-ratio: 762/1280) {
-  .tourism-stage { width: 100vw; height: auto; }
-}
+.tourism-actions .action-icon,.tourism-actions strong { position: relative; z-index: 3; transform: translateY(0); transition: transform .08s ease,text-shadow .13s ease; }
+.tourism-actions .action-icon { display: grid; place-items: center; width: clamp(19px,3.9vw,32px); height: clamp(19px,3.9vw,32px); color: #f7dfaf; filter: drop-shadow(0 1px 1px #000); }
+.tourism-actions .action-icon svg { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.tourism-actions .action-icon .icon-fill { fill: currentColor; stroke: none; }
+.tourism-actions strong { color: #f7dfaf; font: 900 clamp(9px,2.15vw,17px)/.9 "Roboto Condensed","Arial Narrow",sans-serif; letter-spacing: -.015em; text-shadow: 0 1px 1px #000; }
 
-@media (min-aspect-ratio: 762/1280) {
-  .tourism-stage { width: auto; height: 100dvh; }
-}
+.tourism-actions button:hover:not(:disabled)::before { filter: brightness(1.1); }
+.tourism-actions button:hover:not(:disabled) strong { text-shadow: 0 1px 1px #000,0 0 .24vw #ffe5a34d; }
+.tourism-actions button:active:not(:disabled)::before { transform: translateY(1.4%); box-shadow: inset 0 .68vw 1vw #000c,inset 0 0 0 max(1px,.09vw) #3b210e,0 .04vw .08vw #000; }
+.tourism-actions button:active:not(:disabled) .action-icon,.tourism-actions button:active:not(:disabled) strong { transform: translateY(max(1px,.13vw)); }
+.tourism-actions button:disabled { cursor: default; filter: brightness(.54) saturate(.42); }
+.tourism-actions button:disabled::before { box-shadow: inset 0 .55vw 1vw #000d,inset 0 0 0 max(1px,.09vw) #2d190b; }
+
+@media (max-aspect-ratio: 762/1280) { .tourism-stage { width: 100vw; height: auto; } }
+@media (min-aspect-ratio: 762/1280) { .tourism-stage { width: auto; height: 100dvh; } }
 
 @media (prefers-reduced-motion: reduce) {
-  .reel-rows,
-  .lever-control,
-  .reel-glow,
-  .tourism-reel {
-    animation: none !important;
-    transition-duration: .01ms !important;
-  }
+  .lever-visual,.reel-glow,.tourism-reel,.tourism-actions button::before,.tourism-actions .action-icon,.tourism-actions strong { animation: none !important; transition-duration: .01ms !important; }
 }
