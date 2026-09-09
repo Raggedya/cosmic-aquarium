@@ -18,7 +18,7 @@ test('Artist Mode is one reusable one-reel machine with the approved controls an
 });
 
 test('Artist Mode and Melbourne City Mode share the same cabinet runtime and canonical spin path',async()=>{
-  const [artistTemplate,cityTemplate,runtime]=await Promise.all([read('templates/artist-machine.html'),read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
+  const [artistTemplate,cityTemplate,runtime,reelEngine]=await Promise.all([read('templates/artist-machine.html'),read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/single-reel-engine.js')]);
   assert.match(artistTemplate,/assets\/discovery-machine\.js/);
   assert.match(cityTemplate,/assets\/discovery-machine\.js/);
   assert.match(runtime,/const isArtistMode=machineMode==='artist'/);
@@ -27,6 +27,9 @@ test('Artist Mode and Melbourne City Mode share the same cabinet runtime and can
   assert.match(runtime,/void runSpin\('lever'\)/);
   assert.match(runtime,/stopTimes=isSingleReelMode/);
   assert.match(runtime,/entries:\[winner\]/);
+  assert.match(runtime,/populateSingleReel,spinSingleReel/);
+  assert.match(runtime,/return spinSingleReel\(/);
+  assert.match(reelEngine,/duration:2350/);
 });
 
 test('the Workfriend reference machine exposes every unique eligible song and a clean permanent URL identity',async()=>{
@@ -59,7 +62,7 @@ test('Artist Mode retains one mechanical stop and the shared four-second winner 
   const [runtime,css]=await Promise.all([read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
   assert.match(runtime,/const WINNER_SPLASH_DURATION_MS=4000/);
   assert.match(runtime,/\[2350\]/);
-  assert.match(runtime,/reelThunk\(index\)/);
+  assert.match(runtime,/onStop:reelThunk/);
   assert.match(runtime,/presentWinner\(isSingleReelMode\?prepared\.track\.title/);
   assert.match(css,/data-machine-mode="artist"[^}]*\.reel-bank/);
   assert.match(css,/data-machine-mode="artist"[^}]*\.reel-strip>\*/);

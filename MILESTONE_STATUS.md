@@ -1,8 +1,18 @@
 # Milestone Status
 
-## Tourism audio-only refinement
+## Artist reel port into Tourism
 
 Status: **NEEDS REVIEW**
+
+The Workfriend Artist Music Machine is now the source of truth for Tourism reel mechanics. Its three fixed reel slots, `mechanicalCadence` timing profile, 2350 ms full-motion duration, 620 ms reduced-motion duration, centre landing, 200/260 ms lock treatment, lever resistance, motor/ratchet/stop ordering, 380 ms evaluation pause, and winner tone were traced and reused.
+
+Both products now call the shared `single-reel-engine.js`; Tourism supplies only `{ id, label }` reel items and maps the landed ID back to the full discovery for the result panel. The prior seven-row perspective renderer, velocity motor modulation, and tourism-only completion sequence have been retired. The approved Bendigo cabinet, outer reel placement, result panel, actions, plaque, lever appearance, data, and persistence namespace remain intact.
+
+Automated browser QA completed 30 consecutive Tourism spins across all ten mock discoveries. Every centre label matched the selected result, every long name fit the fixed slot, no immediate repeat occurred, rapid repeat requests were locked out, and the Artist audio event order was identical on every run. A full-motion side-by-side test measured a 17.3 ms duration difference, within one normal browser frame. The local Workfriend Artist route retained 13 tracks, three fixed slots, and successfully selected a track after the extraction.
+
+## Tourism audio-only refinement
+
+Status: **SUPERSEDED BY ARTIST REEL PORT**
 
 The tourism reel now uses one continuous motor recording with smoothly velocity-linked playback rate and level. Item-crossing ticks, ratchet chatter, the post-ding relay click, and overlapping spin-engagement button clicks have been removed. The authoritative completion sequence is: lever clunk → continuous roll → slowing roll → final lock clunk → 125 ms pause → one lowered bell strike → silence.
 

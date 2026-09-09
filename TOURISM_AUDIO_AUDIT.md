@@ -1,49 +1,39 @@
 # Tourism Machine Audio Audit
 
-## Scope
+## Current authority
 
-This audit covers only the Bendigo tourism machine audio choreography. The cabinet, reel geometry, visual styling, tourism data, and music/festival machine runtimes are unchanged.
+The Workfriend Artist Music Machine audio lifecycle is authoritative. Tourism now uses the same assets, rates, levels, ordering, and stop timing rather than its former velocity-modulated custom sequence.
 
-## Root cause
+## Artist lifecycle ported
 
-The tourism runtime played a discrete sample whenever the calculated reel position crossed an item boundary. Browser frame timing and speed-dependent cadence gating caused those samples to bunch into irregular clusters. A separate relay sample then played after the winner ding, creating the unwanted final click.
+| Phase | Artist/Tourism implementation |
+| --- | --- |
+| Lever engagement | `reel-stop-lock-mixkit-2857.mp3`, volume `.58`, rate `.9` |
+| Motor start | `reel-ratchet-mixkit-2641.mp3`, volume `.66`, rate `.96` |
+| Reel roll | `reel-actual-slotmachine-freesound-261346.mp3`, starts at `.15s`, volume `.42`, rate `1`, not looped |
+| Reel lock | `reel-stop-lock-mixkit-2857.mp3`, volume `.72`, rate `1.04` |
+| Motor fade | Six 30 ms reductions, then pause and reset |
+| Evaluation pause | `380ms` (`100ms` under reduced-motion) |
+| Winner confirmation | `winner-tonal-bloom-mixkit-3109.mp3`, volume `.58`, rate `1`, capped at `1450ms` |
 
-## Authoritative audio flow
+## Retired Tourism audio code
 
-| Audio state | Trigger | Audible output |
-| --- | --- | --- |
-| `IDLE` | Ready/result resting state | Silence |
-| `LEVER` | Accepted lever or Another Idea spin | One low mechanical clunk |
-| `SPINNING` | Reel animation begins | One continuous 1989 machine recording |
-| `DECELERATING` | Reel enters the shared slowdown curve | The same recording, with playback rate and volume following calculated reel velocity |
-| `LOCKED` | Overshoot/recoil completes and the winner is aligned | One low, substantial gear-lock clunk |
-| `WINNER_DING` | 125 ms after the lock | One lowered, restrained bell strike |
-| `IDLE` | Bell ends or its safety timeout fires | Silence |
+- velocity-based motor playback-rate and volume modulation
+- separate Tourism gear-lock treatment and 125 ms pause
+- Tourism-only audio run state machine
+- all historical item-crossing tick or timer-driven click code
+- action-button audio layered into automatic spin completion
 
-## Removed triggers
+## Overlap and sound-toggle behaviour
 
-- item-boundary tick playback
-- high-speed tick sample playback
-- low-speed ratchet sample playback
-- cadence timers used to gate row-crossing clicks
-- post-result relay click
-- lever pointer-down click layered beneath the lever clunk
-- Another Idea button click layered beneath spin engagement
+- One `locked` gate rejects concurrent lever, API, and Another Idea spins.
+- Lever and Another Idea call the same `spin` path.
+- Muting immediately stops the motor, ratchet, stop, and winner samples.
+- The Artist engine emits no item-crossing sample events.
+- A new accepted spin clears the previous winner timeout and stops the prior winner sample.
 
-## Overlap protection
+## Verification
 
-- `locked` continues to reject repeat spin requests.
-- Each audio run has an identifier; stale completion audio cannot fire after mute/reset.
-- Sound Off cancels the active motor, lever, lock, and bell immediately and clears the bell timer.
-- Sound On does not restart a stale motor or completed sound.
-- A new accepted run stops any prior bell or lock before engagement.
-- The winner sequence has one path only: motor stop, lock, 125 ms pause, bell, silence.
+Thirty consecutive Tourism spins produced the same five-play Artist sequence every time: engagement, ratchet, motor, reel lock, winner confirmation. Rapid repeat calls produced only one active sequence. The local Workfriend Artist Machine retained its 13-track catalogue, three-slot reel, and winner resolution after extraction to the shared engine.
 
-## Reused assets
-
-- `reel-actual-slotmachine-freesound-261346.mp3` — continuous physical motor/roll
-- `reel-stop-gear-mixkit-2858.mp3` — lever and final lock, separately instantiated and pitched for weight
-- `winner-tonal-bloom-mixkit-3109.mp3` — lowered in pitch and level, restricted to one short strike
-- `reel-stop-lock-mixkit-2857.mp3` — user-initiated non-spin button presses only
-
-No new audio assets were introduced.
+No new audio assets were added.

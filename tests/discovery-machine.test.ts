@@ -68,14 +68,14 @@ test('loss, near-miss and probability branches are absent from the normal spin p
 });
 
 test('reels use real catalogue names and stop separately with physical lock-in',async()=>{
-  const [template,runtime,css]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+  const [template,runtime,css,reelEngine]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css'),read('github-pages/assets/single-reel-engine.js')]);
   assert.match(runtime,/artistName\(entry\)/);
   assert.equal((template.match(/class="reel-strip"/g)||[]).length,3);
   assert.equal((template.match(/<div class="reel-strip"><span><\/span><strong>[^<]+<\/strong><span><\/span><\/div>/g)||[]).length,3);
-  assert.match(runtime,/\[before,current,after\]\.forEach/);
+  assert.match(reelEngine,/\[before,current,after\]\.forEach/);
   assert.match(runtime,/classList\.toggle\('is-very-long',text\.length>22\)/);
   assert.match(runtime,/\[1550,2200,2950\]/);
-  assert.match(runtime,/reelThunk\(index\)/);
+  assert.match(runtime,/onStop:reelThunk/);
   assert.match(css,/aggits-reel-v2\.webp/);
   assert.match(css,/grid-template-rows:repeat\(3,1fr\)/);
   assert.match(css,/\.payline\{[^}]*top:50%/);

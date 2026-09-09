@@ -63,8 +63,7 @@ test('tourism presentation is responsive, dormant-first and uses four equal acti
   assert.match(css,/data-machine-state="READY"\] \.tourism-reel/);
   assert.match(css,/grid-template-columns:\s*repeat\(4,\s*minmax\(0,\s*1fr\)\)/);
   assert.match(css,/prefers-reduced-motion:\s*reduce/);
-  assert.match(css,/perspective:\s*760px/);
-  assert.match(css,/transform-style:\s*preserve-3d/);
+  assert.match(css,/perspective\(120px\) rotateX\(-5deg\)/);
   assert.match(css,/\.tourism-actions button::before/);
   assert.match(css,/mix-blend-mode:\s*screen/);
   assert.match(css,/button\.more-info::before[\s\S]*#169b83/);
@@ -74,31 +73,37 @@ test('tourism presentation is responsive, dormant-first and uses four equal acti
   assert.doesNotMatch(css,/\.gauge|\.needle/);
 });
 
-test('tourism reel uses continuous cylindrical motion and mechanically ordered audio',async()=>{
-  const [runtime,musicRuntime,mechanics]=await Promise.all([read('github-pages/assets/tourism-machine.js'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/machine-mechanics-core.js')]);
+test('tourism and Artist products use the same extracted three-slot reel engine',async()=>{
+  const [runtime,musicRuntime,mechanics,engine,css,html]=await Promise.all([read('github-pages/assets/tourism-machine.js'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/machine-mechanics-core.js'),read('github-pages/assets/single-reel-engine.js'),read('app/tourism-machine.css'),read('templates/tourism-machine.html')]);
   assert.match(runtime,/from'.\/machine-mechanics-core\.js'/);
   assert.match(musicRuntime,/from '.\/machine-mechanics-core\.js'/);
-  assert.match(runtime,/mechanicalReelProgress\(progress\)/);
-  assert.doesNotMatch(runtime,/mechanicalCadence|playTick|tickSound|slowTickSound/);
-  assert.match(musicRuntime,/mechanicalCadence\(progress,index\)/);
+  assert.match(runtime,/from'.\/single-reel-engine\.js'/);
+  assert.match(musicRuntime,/from '.\/single-reel-engine\.js'/);
+  assert.match(engine,/import\{mechanicalCadence\}from'.\/machine-mechanics-core\.js'/);
+  assert.match(engine,/duration:2350/);
+  assert.match(engine,/reducedMotionDuration:620/);
+  assert.match(engine,/single_reel_requires_three_slots/);
+  assert.match(engine,/const cadence=mechanicalCadence\(progress,reelIndex\)/);
+  assert.match(engine,/strip\.style\.transform=`translate3d/);
+  assert.match(runtime,/spinSingleReel\(/);
+  assert.match(musicRuntime,/spinSingleReel\(/);
   assert.match(mechanics,/leverResistanceExponent:\.78/);
   assert.match(mechanics,/decelerationRange:190/);
-  assert.match(runtime,/function renderCylinder\(/);
-  assert.match(runtime,/Math\.sin\(radians\)\*radius/);
-  assert.match(runtime,/rotateX\(/);
-  assert.match(runtime,/requestAnimationFrame\(frame\)/);
+  assert.doesNotMatch(runtime,/renderCylinder|mechanicalReelProgress|playTick|tickSound|slowTickSound/);
+  assert.match(runtime,/function tourismReelItem\(discovery\)/);
+  assert.match(runtime,/function discoveryForReelItem\(item\)/);
+  assert.match(html,/class="reel-rows reel-strip"[\s\S]*<span><\/span><strong>LOADING PLACES<\/strong><span><\/span>/);
+  assert.match(css,/\.reel-strip > span:first-child[^{]*\{ transform: perspective\(120px\) rotateX\(-5deg\)/);
+  assert.match(css,/grid-template-rows: repeat\(3,1fr\)/);
   assert.match(runtime,/setState\('DECELERATION'/);
-  assert.match(mechanics,/return 1\.003-\.003/);
   assert.match(runtime,/function stopMotor\(immediate=false\)/);
-  assert.match(runtime,/startingVolume\*\(1-fadeStep\/6\)/);
-  assert.match(runtime,/function updateMotor\(speed\)/);
-  assert.match(runtime,/targetRate=\.58\+velocity\*\.5/);
+  assert.match(runtime,/startVolume\*\(1-step\/6\)/);
   assert.match(runtime,/setAudioState\('DECELERATING'\)/);
-  assert.match(runtime,/await animateReel\(winner\);clearInterval\(factTimer\);await stopMotor\(\);/);
-  assert.match(runtime,/setAudioState\('LOCKED'\);play\(lockSound[\s\S]*playWinnerDing\(runId\)/);
-  assert.match(runtime,/playWinnerDing\(runId\)[\s\S]*renderResult\(winner\);setState\('RESULT'/);
-  assert.doesNotMatch(runtime,/relaySound|play\(relay/);
-  for(const asset of ['reel-actual-slotmachine-freesound-261346.mp3','reel-stop-lock-mixkit-2857.mp3','reel-stop-gear-mixkit-2858.mp3','winner-tonal-bloom-mixkit-3109.mp3'])assert.match(runtime,new RegExp(asset.replaceAll('.','\\.')));
+  assert.match(runtime,/playSample\(reelRatchetAudio,\{volume:\.66,rate:\.96\}\)/);
+  assert.match(runtime,/playSample\(reelStopAudio,\{volume:\.72,rate:1\.04\}\)/);
+  assert.match(runtime,/await animateReel\(winnerReelItem\)[\s\S]*stopMotor\(\)[\s\S]*await wait\(reducedMotion\.matches\?100:380\)[\s\S]*celebrationSound\(\)/);
+  assert.doesNotMatch(runtime,/relaySound|rowCrossing/);
+  for(const asset of ['reel-actual-slotmachine-freesound-261346.mp3','reel-ratchet-mixkit-2641.mp3','reel-stop-lock-mixkit-2857.mp3','winner-tonal-bloom-mixkit-3109.mp3'])assert.match(runtime,new RegExp(asset.replaceAll('.','\\.')));
 });
 
 test('existing festival machine remains on its original template and runtime',async()=>{

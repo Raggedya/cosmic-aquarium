@@ -4,7 +4,8 @@ import {
   playableMelbourneEntries, MACHINE_STATES, MELBOURNE_CULTURE_SEGMENTS,
   playableArtistTracks, createShuffleBag, formatMachineTitleLines,
 } from './discovery-machine-core.js?v=festival-master-v2';
-import {leverResistance,mechanicalCadence} from './machine-mechanics-core.js';
+import {leverResistance} from './machine-mechanics-core.js';
+import {populateSingleReel,spinSingleReel} from './single-reel-engine.js';
 const machine=document.querySelector('.music-machine');
 const base=machine?.dataset.base||'';
 const cabinetSkin=document.querySelector('.cabinet-skin');
@@ -266,13 +267,7 @@ function setReelLabel(node,label){
 }
 
 function setReelRows(index,entry,neighbours=true){
-  const strip=reels[index].querySelector('.reel-strip');
-  const current=reelLabel(entry);
-  const used=new Set([reelIdentity(entry)]);
-  const pickNeighbour=()=>{const item=randomEntry(used);if(item)used.add(reelIdentity(item));return reelLabel(item||entry)};
-  const before=neighbours?pickNeighbour():current;
-  const after=neighbours?pickNeighbour():current;
-  [before,current,after].forEach((label,row)=>setReelLabel(strip.children[row],label));
+  populateSingleReel({reel:reels[index],entry,pickRandom:randomEntry,labelFor:reelLabel,identityFor:reelIdentity,setLabel:setReelLabel,neighbours});
 }
 
 function showTicker(text,{hold=7200,onComplete=null}={}){
@@ -613,19 +608,7 @@ async function selectPreparedWinner(){
 }
 
 function spinReel(index,finalEntry,stopAfter){
-  const reel=reels[index],strip=reel.querySelector('.reel-strip');reel.classList.add('is-spinning');
-  const started=performance.now();let lastSwap=0,current=randomEntry();
-  return new Promise(resolve=>{
-    const tick=now=>{
-      const elapsed=now-started,progress=Math.min(1,elapsed/stopAfter);
-      const cadence=mechanicalCadence(progress,index);
-      const rowHeight=Math.max(16,reel.clientHeight/3),phase=((now-lastSwap)/cadence)%1;
-      strip.style.transform=`translate3d(0,${((phase-.5)*rowHeight).toFixed(2)}px,0)`;
-      if(now-lastSwap>cadence){current=randomEntry();setReelRows(index,current);lastSwap=now}
-      if(elapsed>=stopAfter){strip.style.transform='';setReelRows(index,finalEntry);reel.classList.remove('is-spinning');reel.classList.add('is-locking');setTimeout(()=>reel.classList.remove('is-locking'),260);reelThunk(index);resolve();return}
-      requestAnimationFrame(tick);
-    };requestAnimationFrame(tick);
-  });
+  return spinSingleReel({reel:reels[index],finalEntry,stopAfter,pickRandom:randomEntry,renderRows:entry=>setReelRows(index,entry),reelIndex:index,onStop:reelThunk});
 }
 
 function stopPlayback(){
