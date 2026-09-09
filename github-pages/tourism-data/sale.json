@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Sale",
+    "region": "Central Gippsland",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 55,
+    "machineTitle": "Things To Do In Sale",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "Lakes, rivers and a cultural heart."
+  },
+  "tickerFacts": [
+    "Sale’s nineteenth-century canal linked the town with the Gippsland Lakes.",
+    "Wetlands, rivers and lakes surround the city.",
+    "Heritage architecture and a strong arts precinct sit beside the historic port."
+  ],
+  "discoveries": [
+    {
+      "id": "sale-port-of-sale",
+      "name": "Port of Sale",
+      "category": "HISTORY",
+      "shortDescription": "Stroll a historic inland port and canal.",
+      "longDescription": "Boardwalks, boats and cultural venues line the waterway that connected Sale with the Gippsland Lakes and the sea.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "100 Foster Street",
+      "locality": "Sale",
+      "region": "Central Gippsland",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Port%20of%20Sale%2C%20Sale%2C%20Victoria",
+      "distanceKm": 0.6,
+      "hours": "Open public precinct",
+      "tags": [
+        "port",
+        "heritage"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "sale-gippsland-art-gallery",
+      "name": "Gippsland Art Gallery",
+      "category": "SEE",
+      "shortDescription": "Explore regional and Australian art by the water.",
+      "longDescription": "The gallery presents changing exhibitions and a significant collection inside the modern Port of Sale cultural precinct.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "70 Foster Street",
+      "locality": "Sale",
+      "region": "Central Gippsland",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gippsland%20Art%20Gallery%2C%20Sale%2C%20Victoria",
+      "distanceKm": 0.5,
+      "hours": "Check current opening hours",
+      "tags": [
+        "art",
+        "gallery"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "sale-sale-common-wetlands",
+      "name": "Sale Common Wetlands",
+      "category": "NATURE",
+      "shortDescription": "Walk a boardwalk through internationally important wetlands.",
+      "longDescription": "Reed beds, river red gums and open water support abundant birdlife on the edge of town.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "South Gippsland Highway",
+      "locality": "Sale",
+      "region": "Central Gippsland",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sale%20Common%20Wetlands%2C%20Sale%2C%20Victoria",
+      "distanceKm": 3.2,
+      "hours": "Open; seasonal conditions vary",
+      "tags": [
+        "wetlands",
+        "birdlife"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "sale-lake-guthridge",
+      "name": "Lake Guthridge",
+      "category": "NATURE",
+      "shortDescription": "Circle a landscaped lake near central Sale.",
+      "longDescription": "A level path links Lake Guthridge and Lake Guyatt through gardens, lawns and bird habitat.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Foster Street",
+      "locality": "Sale",
+      "region": "Central Gippsland",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lake%20Guthridge%2C%20Sale%2C%20Victoria",
+      "distanceKm": 1.1,
+      "hours": "Open public space",
+      "tags": [
+        "lake",
+        "walk"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "sale-sale-botanic-gardens",
+      "name": "Sale Botanic Gardens",
+      "category": "NATURE",
+      "shortDescription": "Pause among mature trees beside Lake Guthridge.",
+      "longDescription": "Historic plantings, lawns and nearby fauna enclosures make this an easy, accessible city stop.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Guthridge Parade",
+      "locality": "Sale",
+      "region": "Central Gippsland",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sale%20Botanic%20Gardens%2C%20Sale%2C%20Victoria",
+      "distanceKm": 1.4,
+      "hours": "Open public gardens",
+      "tags": [
+        "gardens",
+        "family"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "sale-historic-swing-bridge",
+      "name": "Historic Swing Bridge",
+      "category": "HISTORY",
+      "shortDescription": "See one of Australia’s earliest movable bridges.",
+      "longDescription": "The wrought-iron bridge was engineered to swing open for river traffic travelling between Sale and the Latrobe River.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Swing Bridge Drive",
+      "locality": "Longford",
+      "region": "Central Gippsland",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Historic%20Swing%20Bridge%2C%20Longford%2C%20Victoria",
+      "distanceKm": 6,
+      "hours": "Public site; opening demonstrations vary",
+      "tags": [
+        "bridge",
+        "engineering"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "sale-gippsland-armed-forces-museum",
+      "name": "Gippsland Armed Forces Museum",
+      "category": "HISTORY",
+      "shortDescription": "Discover Gippsland’s military and aviation stories.",
+      "longDescription": "Aircraft models, uniforms, photographs and personal records connect the region with service history and nearby RAAF Base East Sale.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "West Sale Aerodrome",
+      "locality": "Fulham",
+      "region": "Central Gippsland",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gippsland%20Armed%20Forces%20Museum%2C%20Fulham%2C%20Victoria",
+      "distanceKm": 8.5,
+      "hours": "Limited opening days; check first",
+      "tags": [
+        "military",
+        "aviation"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "sale-ninety-mile-beach",
+      "name": "Ninety Mile Beach",
+      "category": "DAY_TRIP",
+      "shortDescription": "Reach an immense ribbon of Gippsland coast.",
+      "longDescription": "Long open beaches, dunes and Bass Strait horizons are accessible from coastal towns south-east of Sale.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Shoreline Drive",
+      "locality": "Golden Beach",
+      "region": "Central Gippsland",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ninety%20Mile%20Beach%2C%20Golden%20Beach%2C%20Victoria",
+      "distanceKm": 40,
+      "hours": "Check beach conditions",
+      "tags": [
+        "beach",
+        "coast"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/sale",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}

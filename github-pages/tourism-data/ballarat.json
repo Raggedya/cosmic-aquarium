@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Ballarat",
+    "region": "Central Highlands",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 45,
+    "machineTitle": "Things To Do In Ballarat",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "Gold stories. Creative spirit."
+  },
+  "tickerFacts": [
+    "Ballarat is one of Victoria’s great gold-rush cities.",
+    "Lake Wendouree has a popular six-kilometre circuit.",
+    "The city combines heritage streets, contemporary art and cool-climate gardens."
+  ],
+  "discoveries": [
+    {
+      "id": "ballarat-sovereign-hill",
+      "name": "Sovereign Hill",
+      "category": "HISTORY",
+      "shortDescription": "Walk into an immersive gold-rush township.",
+      "longDescription": "Pan for gold, explore working trades and descend on a mine tour inside Ballarat’s celebrated living museum.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Bradshaw Street",
+      "locality": "Ballarat",
+      "region": "Central Highlands",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitballarat.com.au/explore",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sovereign%20Hill%2C%20Ballarat%2C%20Victoria",
+      "distanceKm": 3.2,
+      "hours": "Tue–Sun; check session times",
+      "tags": [
+        "gold rush",
+        "living museum"
+      ],
+      "source": "https://www.visitballarat.com.au/explore",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "ballarat-ballarat-wildlife-park",
+      "name": "Ballarat Wildlife Park",
+      "category": "NATURE",
+      "shortDescription": "Meet Australian wildlife among open gum trees.",
+      "longDescription": "See free-roaming kangaroos, koalas, wombats and conservation presentations at this family-run wildlife park.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "250 Fussell Street",
+      "locality": "Ballarat",
+      "region": "Central Highlands",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitballarat.com.au/explore",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ballarat%20Wildlife%20Park%2C%20Ballarat%2C%20Victoria",
+      "distanceKm": 4.1,
+      "hours": "Daily 9am–5pm",
+      "tags": [
+        "wildlife",
+        "family"
+      ],
+      "source": "https://www.visitballarat.com.au/explore",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "ballarat-lake-wendouree",
+      "name": "Lake Wendouree",
+      "category": "NATURE",
+      "shortDescription": "Walk, ride or pause beside Ballarat’s city lake.",
+      "longDescription": "Follow the six-kilometre foreshore circuit past boatsheds, birdlife, playgrounds and waterside places to eat.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Wendouree Parade",
+      "locality": "Lake Wendouree",
+      "region": "Central Highlands",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitballarat.com.au/explore",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lake%20Wendouree%2C%20Lake%20Wendouree%2C%20Victoria",
+      "distanceKm": 2.2,
+      "hours": "Open public space",
+      "tags": [
+        "lake",
+        "walk"
+      ],
+      "source": "https://www.visitballarat.com.au/explore",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "ballarat-ballarat-botanical-gardens",
+      "name": "Ballarat Botanical Gardens",
+      "category": "NATURE",
+      "shortDescription": "Explore one of Australia’s notable cool-climate gardens.",
+      "longDescription": "See mature trees, seasonal displays, the Robert Clark Conservatory and the Prime Ministers Avenue beside Lake Wendouree.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Wendouree Parade",
+      "locality": "Lake Wendouree",
+      "region": "Central Highlands",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitballarat.com.au/explore",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ballarat%20Botanical%20Gardens%2C%20Lake%20Wendouree%2C%20Victoria",
+      "distanceKm": 4,
+      "hours": "Daily; check conservatory hours",
+      "tags": [
+        "gardens",
+        "heritage"
+      ],
+      "source": "https://www.visitballarat.com.au/explore",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "ballarat-eureka-centre",
+      "name": "Eureka Centre",
+      "category": "HISTORY",
+      "shortDescription": "Explore the stories and legacy of Eureka.",
+      "longDescription": "Interactive exhibitions place the 1854 Eureka Stockade in its social, political and cultural context.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "102 Stawell Street South",
+      "locality": "Eureka",
+      "region": "Central Highlands",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitballarat.com.au/explore",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Eureka%20Centre%2C%20Eureka%2C%20Victoria",
+      "distanceKm": 3.2,
+      "hours": "Check current opening hours",
+      "tags": [
+        "history",
+        "democracy"
+      ],
+      "source": "https://www.visitballarat.com.au/explore",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "ballarat-art-gallery-of-ballarat",
+      "name": "Art Gallery of Ballarat",
+      "category": "SEE",
+      "shortDescription": "Visit Australia’s oldest and largest regional art gallery.",
+      "longDescription": "Discover Australian art, changing exhibitions and the creative history of Ballarat in the heart of the city.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "40 Lydiard Street North",
+      "locality": "Ballarat",
+      "region": "Central Highlands",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitballarat.com.au/explore",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Art%20Gallery%20of%20Ballarat%2C%20Ballarat%2C%20Victoria",
+      "distanceKm": 0.4,
+      "hours": "Daily; check exhibition hours",
+      "tags": [
+        "art",
+        "culture"
+      ],
+      "source": "https://www.visitballarat.com.au/explore",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "ballarat-ballarat-tramway-museum",
+      "name": "Ballarat Tramway Museum",
+      "category": "DO",
+      "shortDescription": "Ride a century-old tram beside Lake Wendouree.",
+      "longDescription": "Historic tramcars run through the gardens precinct, with a display hall preserving Ballarat’s tramway story.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Wendouree Parade",
+      "locality": "Lake Wendouree",
+      "region": "Central Highlands",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitballarat.com.au/explore",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ballarat%20Tramway%20Museum%2C%20Lake%20Wendouree%2C%20Victoria",
+      "distanceKm": 4.1,
+      "hours": "Check running days",
+      "tags": [
+        "tram",
+        "heritage"
+      ],
+      "source": "https://www.visitballarat.com.au/explore",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "ballarat-kryal-castle",
+      "name": "Kryal Castle",
+      "category": "WEIRD",
+      "shortDescription": "Enter a theatrical medieval adventure park.",
+      "longDescription": "Explore castle grounds, demonstrations and family experiences inspired by knights, myths and medieval spectacle.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "121 Forbes Road",
+      "locality": "Leigh Creek",
+      "region": "Central Highlands",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitballarat.com.au/explore",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kryal%20Castle%2C%20Leigh%20Creek%2C%20Victoria",
+      "distanceKm": 9.8,
+      "hours": "Check event calendar",
+      "tags": [
+        "family",
+        "medieval"
+      ],
+      "source": "https://www.visitballarat.com.au/explore",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}

@@ -6,11 +6,17 @@
   <meta name="theme-color" content="#1b0d07">
   <title>Things To Do In Bendigo</title>
   <meta name="description" content="Pull the lever and discover something to do around Bendigo, Victoria.">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/tourism-machine.css?v=970b235ff4c8">
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/tourism-machine.css?v=0d12f31f3ad9">
 </head>
 <body>
-  <main class="tourism-stage" data-tourism-machine data-machine-state="READY" aria-label="Things To Do in Bendigo discovery machine">
+  <main class="tourism-stage" data-tourism-machine data-machine-state="READY" data-destination="bendigo" aria-label="Things To Do in Bendigo discovery machine">
     <img class="cabinet-reference" src="/cosmic-aquarium/assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg" alt="" draggable="false">
+
+    <section class="destination-identity" aria-label="Bendigo, Victoria">
+      <strong>BENDIGO</strong>
+      <span>VICTORIA</span>
+      <small>GREATER BENDIGO</small>
+    </section>
 
     <button class="cabinet-hotspot home-control" type="button" data-action="home" aria-label="Reset tourism machine"></button>
     <button class="cabinet-hotspot sound-control" type="button" data-action="sound" aria-label="Turn sound off" aria-pressed="true"><span data-sound-label>SOUND ON</span></button>
@@ -35,6 +41,7 @@
         <strong data-result-name></strong>
         <span class="result-category" data-result-category></span>
         <p data-result-summary></p>
+        <span class="result-location" data-result-location></span>
         <div class="result-meta"><span data-result-distance></span><span data-result-hours></span></div>
       </div>
     </section>
@@ -46,8 +53,13 @@
       <button type="button" data-action="another"><span class="action-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M25 11a11 11 0 1 0 1 9M25 5v7h-7"/></svg></span><strong>ANOTHER<br>IDEA</strong></button>
     </nav>
 
+    <section class="destination-footer-plaque" aria-label="Bendigo destination motto">
+      <strong>BENDIGO</strong>
+      <span>SMALL TOWN. BIG STORIES.</span>
+    </section>
+
     <p class="visually-hidden" data-machine-announcement aria-live="assertive">Ready. Pull the lever.</p>
   </main>
-  <script type="module" src="/cosmic-aquarium/assets/tourism-machine.js?v=970b235ff4c8"></script>
+  <script type="module" src="/cosmic-aquarium/assets/tourism-machine.js?v=0d12f31f3ad9"></script>
 </body>
 </html>

@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Mildura",
+    "region": "Sunraysia",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 120,
+    "machineTitle": "Things To Do In Mildura",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "River life. Outback light."
+  },
+  "tickerFacts": [
+    "Mildura is a Murray River oasis on the edge of the outback.",
+    "The region is known for citrus, grapes, food and long river sunsets.",
+    "Ancient Mungo landscapes lie beyond the irrigated river country."
+  ],
+  "discoveries": [
+    {
+      "id": "mildura-mildura-riverfront",
+      "name": "Mildura Riverfront",
+      "category": "NATURE",
+      "shortDescription": "Walk beside the Murray in the heart of town.",
+      "longDescription": "Riverbank paths connect lawns, water play, historic wharves and sunset views along Mildura’s revitalised waterfront.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Hugh King Drive",
+      "locality": "Mildura",
+      "region": "Sunraysia",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/mildura",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mildura%20Riverfront%2C%20Mildura%2C%20Victoria",
+      "distanceKm": 1,
+      "hours": "Open public space",
+      "tags": [
+        "river",
+        "walk"
+      ],
+      "source": "https://www.visitvictoria.com/mildura",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "mildura-paddle-vessel-rothbury",
+      "name": "Paddle Vessel Rothbury",
+      "category": "DO",
+      "shortDescription": "Cruise the Murray on a historic paddle vessel.",
+      "longDescription": "Depart from Mildura Wharf for a slow river journey shaped by red gums, locks and the rhythm of paddle-wheel travel.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Mildura Wharf",
+      "locality": "Mildura",
+      "region": "Sunraysia",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/mildura",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Paddle%20Vessel%20Rothbury%2C%20Mildura%2C%20Victoria",
+      "distanceKm": 0.8,
+      "hours": "Check cruise schedule",
+      "tags": [
+        "paddle steamer",
+        "river"
+      ],
+      "source": "https://www.visitvictoria.com/mildura",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "mildura-mildura-arts-centre",
+      "name": "Mildura Arts Centre",
+      "category": "SEE",
+      "shortDescription": "Combine gallery, theatre and heritage gardens.",
+      "longDescription": "The precinct brings visual art, performance, Rio Vista Historic House and sculpture into one river-adjacent cultural stop.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "199 Cureton Avenue",
+      "locality": "Mildura",
+      "region": "Sunraysia",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/mildura",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mildura%20Arts%20Centre%2C%20Mildura%2C%20Victoria",
+      "distanceKm": 1.8,
+      "hours": "Check exhibition and performance hours",
+      "tags": [
+        "art",
+        "heritage"
+      ],
+      "source": "https://www.visitvictoria.com/mildura",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "mildura-orange-world",
+      "name": "Orange World",
+      "category": "DO",
+      "shortDescription": "Tour a working citrus property by tractor train.",
+      "longDescription": "Learn how Sunraysia fruit is grown, taste seasonal produce and explore the orchard just across the Murray.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "93 Link Road",
+      "locality": "Mourquong",
+      "region": "Sunraysia",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/mildura",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Orange%20World%2C%20Mourquong%2C%20Victoria",
+      "distanceKm": 8.5,
+      "hours": "Tours scheduled; check before visiting",
+      "tags": [
+        "citrus",
+        "farm"
+      ],
+      "source": "https://www.visitvictoria.com/mildura",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "mildura-australian-inland-botanic-gardens",
+      "name": "Australian Inland Botanic Gardens",
+      "category": "NATURE",
+      "shortDescription": "See plants from dry regions around the world.",
+      "longDescription": "Native and exotic collections thrive in a distinctive inland landscape spanning the New South Wales–Victoria border country.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "1183 River Road",
+      "locality": "Mourquong",
+      "region": "Sunraysia",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/mildura",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Australian%20Inland%20Botanic%20Gardens%2C%20Mourquong%2C%20Victoria",
+      "distanceKm": 12,
+      "hours": "Check seasonal opening hours",
+      "tags": [
+        "gardens",
+        "outback"
+      ],
+      "source": "https://www.visitvictoria.com/mildura",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "mildura-perry-sandhills",
+      "name": "Perry Sandhills",
+      "category": "NATURE",
+      "shortDescription": "Walk across sculpted red sand near Wentworth.",
+      "longDescription": "Wind-shaped dunes reveal layers of natural and cultural history and glow strongly in late-afternoon light.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Old Renmark Road",
+      "locality": "Wentworth",
+      "region": "Sunraysia",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/mildura",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Perry%20Sandhills%2C%20Wentworth%2C%20Victoria",
+      "distanceKm": 34,
+      "hours": "Open public landscape",
+      "tags": [
+        "sandhills",
+        "sunset"
+      ],
+      "source": "https://www.visitvictoria.com/mildura",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "mildura-mungo-national-park",
+      "name": "Mungo National Park",
+      "category": "DAY_TRIP",
+      "shortDescription": "Journey into an ancient World Heritage landscape.",
+      "longDescription": "Lake Mungo’s lunettes preserve exceptional environmental and cultural records; plan carefully and respect access guidance.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Arumpo Road",
+      "locality": "Mungo",
+      "region": "Sunraysia",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/mildura",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mungo%20National%20Park%2C%20Mungo%2C%20Victoria",
+      "distanceKm": 110,
+      "hours": "Plan ahead; road conditions vary",
+      "tags": [
+        "world heritage",
+        "culture"
+      ],
+      "source": "https://www.visitvictoria.com/mildura",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "mildura-pink-lakes",
+      "name": "Pink Lakes",
+      "category": "DAY_TRIP",
+      "shortDescription": "Seek shifting colour in Murray-Sunset country.",
+      "longDescription": "Salt lakes around the remote Pink Lakes precinct can take on vivid tones depending on water, algae, salt and light.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Pink Lakes Road",
+      "locality": "Murray-Sunset",
+      "region": "Sunraysia",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/mildura",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pink%20Lakes%2C%20Murray-Sunset%2C%20Victoria",
+      "distanceKm": 110,
+      "hours": "Remote trip; check park conditions",
+      "tags": [
+        "salt lakes",
+        "outback"
+      ],
+      "source": "https://www.visitvictoria.com/mildura",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}

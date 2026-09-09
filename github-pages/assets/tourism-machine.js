@@ -4,14 +4,16 @@ import{ARTIST_SINGLE_REEL_PROFILE,populateSingleReel,spinSingleReel}from'./singl
 
 const machine=document.querySelector('[data-tourism-machine]');
 const base=(document.querySelector('link[href*="tourism-machine.css"]')?.href||location.href).includes('/cosmic-aquarium/')?'/cosmic-aquarium':'';
+const destinationSlug=String(machine.dataset.destination||'bendigo').toLowerCase().replace(/[^a-z0-9-]/g,'')||'bendigo';
+const configUrl=`${base}/tourism-data/${destinationSlug}.json`;
 const machineAudioBase=base?`${base}/assets/audio/machine`:'/audio/machine';
 machine.style.setProperty('--tourism-lever-image',`url("${base?`${base}/assets/music-machine/aggits-lever.webp`:'/music-machine/aggits-lever.webp'}")`);
 machine.style.setProperty('--artist-reel-skin',`url("${base?`${base}/assets/music-machine/aggits-reel-v2.webp`:'/music-machine/aggits-reel-v2.webp'}")`);
 const rows=document.querySelector('[data-reel-rows]'),reel=document.querySelector('.tourism-reel'),ticker=document.querySelector('[data-ticker]'),announcement=document.querySelector('[data-machine-announcement]');
 const title=document.querySelector('[data-machine-title]'),tagline=document.querySelector('[data-title-tagline]'),lever=document.querySelector('[data-action="lever"]'),soundButton=document.querySelector('[data-action="sound"]'),soundLabel=document.querySelector('[data-sound-label]');
 const shareButton=document.querySelector('[data-action="share"]'),mapButton=document.querySelector('[data-action="map"]'),infoButton=document.querySelector('[data-action="info"]'),anotherButton=document.querySelector('[data-action="another"]');
-const resultImage=document.querySelector('[data-result-image]'),resultName=document.querySelector('[data-result-name]'),resultCategory=document.querySelector('[data-result-category]'),resultSummary=document.querySelector('[data-result-summary]'),resultDistance=document.querySelector('[data-result-distance]'),resultHours=document.querySelector('[data-result-hours]');
-const reducedMotion=matchMedia('(prefers-reduced-motion:reduce)'),soundKey='aggits:tourism:bendigo:sound-muted',historyKey='aggits:tourism:bendigo:recent';
+const resultImage=document.querySelector('[data-result-image]'),resultName=document.querySelector('[data-result-name]'),resultCategory=document.querySelector('[data-result-category]'),resultSummary=document.querySelector('[data-result-summary]'),resultLocation=document.querySelector('[data-result-location]'),resultDistance=document.querySelector('[data-result-distance]'),resultHours=document.querySelector('[data-result-hours]');
+const reducedMotion=matchMedia('(prefers-reduced-motion:reduce)'),soundKey=`aggits:tourism:${destinationSlug}:sound-muted`,historyKey=`aggits:tourism:${destinationSlug}:recent`;
 
 let config=null,reelItems=[],reelItemById=new Map(),state='READY',selected=null,locked=false,factIndex=0,tickerTimer=0,pointerId=null,pointerStart=0,pointerTravel=0,leverProgress=0,leverTriggered=false,leverMoved=false;
 let factTimer=0;
@@ -40,7 +42,8 @@ function remember(id){sessionStorage.setItem(historyKey,JSON.stringify(pushTouri
 
 function tourismReelItem(discovery){return Object.freeze({id:discovery.id,label:discovery.name})}
 function discoveryForReelItem(item){return config.discoveries.find(discovery=>discovery.id===item?.id)||null}
-function reelLabel(item){return String(item?.label||'BENDIGO').trim()||'BENDIGO'}
+function destinationName(){return config?.destination?.name||destinationSlug.replace(/-/g,' ')}
+function reelLabel(item){return String(item?.label||destinationName()).trim()||destinationName()}
 function reelIdentity(item){return String(item?.id||'').toLowerCase()}
 function randomReelItem(excluded=new Set()){
   const pool=reelItems.filter(item=>!excluded.has(reelIdentity(item))),source=pool.length?pool:reelItems;
@@ -54,7 +57,7 @@ function ensureReelNodes(){
 }
 
 function setReelLabel(node,label){
-  const text=String(label||'BENDIGO').replace(/\s+/g,' ').trim();
+  const text=String(label||destinationName()).replace(/\s+/g,' ').trim();
   node.textContent=text;node.classList.toggle('is-long',text.length>13);node.classList.toggle('is-very-long',text.length>22);node.dataset.fit=fitDiscoveryName(text);
 }
 
@@ -63,9 +66,10 @@ function setReelRows(item,neighbours=true){
 }
 
 function renderResult(item){
-  selected=item;resultImage.src=item.image;resultImage.alt=`View associated with ${item.name}`;resultImage.dataset.placeholder=String(item.image.includes('bendigo-tourism-cabinet-reference'));resultName.textContent=item.name;
-  resultCategory.textContent=`${item.category.replace('_',' ')}  •  EXPERIENCE`;resultSummary.textContent=item.shortDescription;
-  resultDistance.textContent=`◆ ${Number(item.distanceKm).toFixed(1)} km from you`;resultHours.textContent=`◷ ${item.hours||'Check details'}`;
+  selected=item;resultImage.src=new URL(item.image,new URL(configUrl,location.origin)).toString();resultImage.alt=`View associated with ${item.name}`;resultImage.dataset.placeholder=String(item.image.includes('bendigo-tourism-cabinet-reference'));resultName.textContent=item.name;
+  resultCategory.textContent=`${item.category.replace('_',' ')}  •  ${item.locality||destinationName()}`;resultSummary.textContent=item.longDescription||item.shortDescription;
+  resultLocation.textContent=`⌖ ${item.address||item.locality||destinationName()}`;
+  resultDistance.textContent=`◆ ${Number(item.distanceKm).toFixed(1)} km from ${destinationName()}`;resultHours.textContent=`◷ ${item.hours||'Check details'}`;
   for(const button of[shareButton,mapButton,infoButton])button.disabled=false;remember(item.id);
 }
 
@@ -119,7 +123,7 @@ async function spin(source='lever'){
   if(locked||!config)return;locked=true;anotherButton.disabled=true;clearTimeout(tickerTimer);clearTimeout(winnerAudioTimer);stopAudio(winnerAudio);
   setState('LEVER_PULLED','The lever has been pulled.');showNextFact();setAudioState('LEVER');leverClack();
   const winner=chooseTourismDiscovery(config.discoveries,recentIds()),winnerReelItem=reelItemById.get(winner?.id);if(!winner||!winnerReelItem){locked=false;anotherButton.disabled=false;return}
-  setState('SPINNING','Finding a Bendigo discovery.');startMotor();factTimer=setInterval(showNextFact,1050);
+  setState('SPINNING',`Finding a ${destinationName()} discovery.`);startMotor();factTimer=setInterval(showNextFact,1050);
   await animateReel(winnerReelItem);clearInterval(factTimer);stopMotor();setAudioState('LOCKED');await wait(reducedMotion.matches?100:380);
   const landed=discoveryForReelItem(winnerReelItem);if(!landed)throw new Error('tourism_reel_winner_mapping_failed');
   renderResult(landed);celebrationSound();setState('RESULT',`${landed.name} selected.`);locked=false;anotherButton.disabled=false;machine.dataset.lastSource=source;
@@ -140,6 +144,6 @@ lever.addEventListener('pointerdown',onPointerDown);lever.addEventListener('poin
 lever.addEventListener('keydown',event=>{if(['Enter',' '].includes(event.key)){event.preventDefault();animateLeverAndSpin()}});
 soundButton.addEventListener('click',toggleSound);document.querySelector('[data-action="home"]').addEventListener('click',renderReady);shareButton.addEventListener('click',()=>void share());mapButton.addEventListener('click',()=>selected&&openUrl(selected.mapUrl));infoButton.addEventListener('click',()=>selected&&openUrl(selected.websiteUrl));anotherButton.addEventListener('click',()=>void spin('another-idea'));
 
-fetch(`${base}/tourism-data/bendigo.json`).then(response=>{if(!response.ok)throw new Error('Tourism data unavailable.');return response.json()}).then(value=>{config=validateTourismConfig(value);reelItems=config.discoveries.map(tourismReelItem);reelItemById=new Map(reelItems.map(item=>[item.id,item]));title.textContent=config.destination.machineTitle;tagline.textContent=config.destination.tagline;soundLabel.textContent=muted?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!muted));ensureMachineSamples();renderReady()}).catch(error=>{anotherButton.disabled=true;lever.disabled=true;setTicker('TOURISM MACHINE RESTING — PLEASE REFRESH');announcement.textContent=error.message;console.error(error)});
+fetch(configUrl).then(response=>{if(!response.ok)throw new Error('Tourism data unavailable.');return response.json()}).then(value=>{config=validateTourismConfig(value);reelItems=config.discoveries.map(tourismReelItem);reelItemById=new Map(reelItems.map(item=>[item.id,item]));title.textContent=config.destination.machineTitle;tagline.textContent=config.destination.tagline;document.title=config.destination.machineTitle;soundLabel.textContent=muted?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!muted));ensureMachineSamples();renderReady()}).catch(error=>{anotherButton.disabled=true;lever.disabled=true;setTicker('TOURISM MACHINE RESTING — PLEASE REFRESH');announcement.textContent=error.message;console.error(error)});
 
 window.aggitsTourismMachine=Object.freeze({spin:()=>spin('api'),getState:()=>({state,locked,audioState,selectedId:selected?.id||null,destination:config?.destination?.name||null,discoveryCount:config?.discoveries?.length||0,reelEngine:'artist-single-reel'})});

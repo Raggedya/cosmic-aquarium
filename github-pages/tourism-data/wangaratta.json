@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Wangaratta",
+    "region": "High Country",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 60,
+    "machineTitle": "Things To Do In Wangaratta",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "River country. High-country flavour."
+  },
+  "tickerFacts": [
+    "The Ovens and King rivers meet near Wangaratta.",
+    "The city is a gateway to the King Valley and Milawa gourmet region.",
+    "Rail trails link Wangaratta with valleys, vineyards and historic towns."
+  ],
+  "discoveries": [
+    {
+      "id": "wangaratta-ovens-river-precinct",
+      "name": "Ovens River Precinct",
+      "category": "NATURE",
+      "shortDescription": "Walk through riverside parkland close to town.",
+      "longDescription": "Paths, lawns and shady riverbanks bring Wangaratta’s outdoor lifestyle into the centre of the city.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Faithfull Street",
+      "locality": "Wangaratta",
+      "region": "High Country",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitwangaratta.com.au/See-Do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ovens%20River%20Precinct%2C%20Wangaratta%2C%20Victoria",
+      "distanceKm": 0.8,
+      "hours": "Open public space",
+      "tags": [
+        "river",
+        "walk"
+      ],
+      "source": "https://www.visitwangaratta.com.au/See-Do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wangaratta-wangaratta-art-gallery",
+      "name": "Wangaratta Art Gallery",
+      "category": "SEE",
+      "shortDescription": "See contemporary exhibitions in a regional gallery.",
+      "longDescription": "The gallery presents visual art, touring shows and work connected to North East Victoria’s creative communities.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "56 Ovens Street",
+      "locality": "Wangaratta",
+      "region": "High Country",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitwangaratta.com.au/See-Do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Wangaratta%20Art%20Gallery%2C%20Wangaratta%2C%20Victoria",
+      "distanceKm": 0.2,
+      "hours": "Check exhibition hours",
+      "tags": [
+        "art",
+        "culture"
+      ],
+      "source": "https://www.visitwangaratta.com.au/See-Do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wangaratta-bullawah-cultural-trail",
+      "name": "Bullawah Cultural Trail",
+      "category": "HISTORY",
+      "shortDescription": "Follow stories of Aboriginal culture and Country.",
+      "longDescription": "A riverside interpretive trail shares cultural knowledge and the continuing connections of local Traditional Owners.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Merriwa Park",
+      "locality": "Wangaratta",
+      "region": "High Country",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitwangaratta.com.au/See-Do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bullawah%20Cultural%20Trail%2C%20Wangaratta%2C%20Victoria",
+      "distanceKm": 0.7,
+      "hours": "Open public trail",
+      "tags": [
+        "First Nations",
+        "walk"
+      ],
+      "source": "https://www.visitwangaratta.com.au/See-Do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wangaratta-murray-to-mountains-rail-trail",
+      "name": "Murray to Mountains Rail Trail",
+      "category": "DO",
+      "shortDescription": "Cycle from Wangaratta into the High Country.",
+      "longDescription": "A sealed regional trail links farmland, food towns and former railway stations on routes toward Bright and Beechworth.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Wangaratta Trailhead",
+      "locality": "Wangaratta",
+      "region": "High Country",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitwangaratta.com.au/See-Do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Murray%20to%20Mountains%20Rail%20Trail%2C%20Wangaratta%2C%20Victoria",
+      "distanceKm": 1,
+      "hours": "Open public trail",
+      "tags": [
+        "cycling",
+        "rail trail"
+      ],
+      "source": "https://www.visitwangaratta.com.au/See-Do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wangaratta-warby-ovens-national-park",
+      "name": "Warby-Ovens National Park",
+      "category": "NATURE",
+      "shortDescription": "Walk granite hills above river red-gum country.",
+      "longDescription": "The park combines rocky ranges, woodland, wetlands and broad views west of Wangaratta.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Booth Road",
+      "locality": "Warby",
+      "region": "High Country",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitwangaratta.com.au/See-Do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Warby-Ovens%20National%20Park%2C%20Warby%2C%20Victoria",
+      "distanceKm": 24,
+      "hours": "Check park conditions",
+      "tags": [
+        "hiking",
+        "national park"
+      ],
+      "source": "https://www.visitwangaratta.com.au/See-Do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wangaratta-milawa-gourmet-region",
+      "name": "Milawa Gourmet Region",
+      "category": "EAT",
+      "shortDescription": "Taste produce at the gateway to the King Valley.",
+      "longDescription": "Cheese, wine, bakeries and farm-gate experiences cluster around a compact village food region.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Milawa-Bobinawarrah Road",
+      "locality": "Milawa",
+      "region": "High Country",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitwangaratta.com.au/See-Do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Milawa%20Gourmet%20Region%2C%20Milawa%2C%20Victoria",
+      "distanceKm": 17,
+      "hours": "Venue hours vary",
+      "tags": [
+        "food",
+        "wine"
+      ],
+      "source": "https://www.visitwangaratta.com.au/See-Do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wangaratta-king-valley",
+      "name": "King Valley",
+      "category": "DRINK",
+      "shortDescription": "Explore a valley shaped by family winemakers.",
+      "longDescription": "Italian heritage, vineyards, mountain scenery and cellar doors make the valley an easy food-and-wine day trip.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Wangaratta-Whitfield Road",
+      "locality": "Whitfield",
+      "region": "High Country",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitwangaratta.com.au/See-Do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=King%20Valley%2C%20Whitfield%2C%20Victoria",
+      "distanceKm": 50,
+      "hours": "Cellar-door hours vary",
+      "tags": [
+        "wine",
+        "valley"
+      ],
+      "source": "https://www.visitwangaratta.com.au/See-Do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wangaratta-ned-kelly-discovery-hub",
+      "name": "Ned Kelly Discovery Hub",
+      "category": "HISTORY",
+      "shortDescription": "Revisit the Kelly story at Glenrowan.",
+      "longDescription": "Interactive interpretation places the final siege within the landscape, people and contested history of the district.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Gladstone Street",
+      "locality": "Glenrowan",
+      "region": "High Country",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitwangaratta.com.au/See-Do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ned%20Kelly%20Discovery%20Hub%2C%20Glenrowan%2C%20Victoria",
+      "distanceKm": 16,
+      "hours": "Daily; check current hours",
+      "tags": [
+        "bushranger",
+        "history"
+      ],
+      "source": "https://www.visitwangaratta.com.au/See-Do",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Horsham",
+    "region": "Wimmera",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 55,
+    "machineTitle": "Things To Do In Horsham",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "Big sky. Ancient country."
+  },
+  "tickerFacts": [
+    "Horsham is known as the Capital of the Wimmera.",
+    "The Wimmera River curves through parks and wetlands in the city.",
+    "Gariwerd and Mount Arapiles rise beyond the surrounding plains."
+  ],
+  "discoveries": [
+    {
+      "id": "horsham-wimmera-river-walk",
+      "name": "Wimmera River Walk",
+      "category": "NATURE",
+      "shortDescription": "Follow the river through parks and wetlands.",
+      "longDescription": "A relaxed urban trail passes river red gums, bridges, bird habitat and picnic areas close to Horsham’s centre.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Barnes Boulevard",
+      "locality": "Horsham",
+      "region": "Wimmera",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Wimmera%20River%20Walk%2C%20Horsham%2C%20Victoria",
+      "distanceKm": 1.2,
+      "hours": "Open public trail",
+      "tags": [
+        "river",
+        "walk"
+      ],
+      "source": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "horsham-horsham-regional-art-gallery",
+      "name": "Horsham Regional Art Gallery",
+      "category": "SEE",
+      "shortDescription": "See Australian photography and regional art.",
+      "longDescription": "The gallery’s collection and changing exhibitions explore photography, place and contemporary creative practice.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "80 Wilson Street",
+      "locality": "Horsham",
+      "region": "Wimmera",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Horsham%20Regional%20Art%20Gallery%2C%20Horsham%2C%20Victoria",
+      "distanceKm": 0.2,
+      "hours": "Check current opening hours",
+      "tags": [
+        "art",
+        "photography"
+      ],
+      "source": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "horsham-horsham-botanic-gardens",
+      "name": "Horsham Botanic Gardens",
+      "category": "NATURE",
+      "shortDescription": "Walk through a Guilfoyle-designed civic garden.",
+      "longDescription": "Curving paths, mature trees and open lawns offer a shady pause near the Wimmera River.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Firebrace Street",
+      "locality": "Horsham",
+      "region": "Wimmera",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Horsham%20Botanic%20Gardens%2C%20Horsham%2C%20Victoria",
+      "distanceKm": 0.8,
+      "hours": "Open public gardens",
+      "tags": [
+        "gardens",
+        "heritage"
+      ],
+      "source": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "horsham-mount-arapiles",
+      "name": "Mount Arapiles",
+      "category": "DO",
+      "shortDescription": "Walk beneath one of Australia’s celebrated climbing cliffs.",
+      "longDescription": "The quartzite escarpment rises sharply from the Wimmera plains, offering lookouts, walking tracks and internationally known climbing.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Centenary Park Road",
+      "locality": "Natimuk",
+      "region": "Wimmera",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Mount%20Arapiles%2C%20Natimuk%2C%20Victoria",
+      "distanceKm": 32,
+      "hours": "Check park and climbing advice",
+      "tags": [
+        "climbing",
+        "views"
+      ],
+      "source": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "horsham-grampians-gariwerd",
+      "name": "Grampians Gariwerd",
+      "category": "DAY_TRIP",
+      "shortDescription": "Explore sandstone ranges and living culture.",
+      "longDescription": "Walking tracks, waterfalls, wildlife and Aboriginal cultural places make Gariwerd a powerful day trip south-east of Horsham.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Northern Grampians Road",
+      "locality": "Halls Gap",
+      "region": "Wimmera",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grampians%20Gariwerd%2C%20Halls%20Gap%2C%20Victoria",
+      "distanceKm": 35,
+      "hours": "Check closures and conditions",
+      "tags": [
+        "national park",
+        "culture"
+      ],
+      "source": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "horsham-little-desert-national-park",
+      "name": "Little Desert National Park",
+      "category": "NATURE",
+      "shortDescription": "Discover heathlands alive with seasonal wildflowers.",
+      "longDescription": "Tracks cross mallee and woodland habitats west of Horsham, rewarding patient walkers and birdwatchers.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Nhill–Harrow Road",
+      "locality": "Dimboola",
+      "region": "Wimmera",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Little%20Desert%20National%20Park%2C%20Dimboola%2C%20Victoria",
+      "distanceKm": 38,
+      "hours": "Check park conditions",
+      "tags": [
+        "wildflowers",
+        "birdlife"
+      ],
+      "source": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "horsham-public-art-and-heritage-trail",
+      "name": "Public Art and Heritage Trail",
+      "category": "HISTORY",
+      "shortDescription": "Read Horsham through buildings, murals and sculpture.",
+      "longDescription": "A self-guided city route links heritage architecture with public artworks and stories of the Wimmera.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Firebrace Street",
+      "locality": "Horsham",
+      "region": "Wimmera",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Public%20Art%20and%20Heritage%20Trail%2C%20Horsham%2C%20Victoria",
+      "distanceKm": 0.3,
+      "hours": "Open public trail",
+      "tags": [
+        "heritage",
+        "public art"
+      ],
+      "source": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "horsham-wimmera-silo-art-trail",
+      "name": "Wimmera Silo Art Trail",
+      "category": "DAY_TRIP",
+      "shortDescription": "Drive through a monumental outdoor gallery.",
+      "longDescription": "Large-scale portraits transform grain silos across north-west Victoria, connecting small towns through art and landscape.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Western Highway",
+      "locality": "Rupanyup",
+      "region": "Wimmera",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Wimmera%20Silo%20Art%20Trail%2C%20Rupanyup%2C%20Victoria",
+      "distanceKm": 48,
+      "hours": "Plan a daylight road trip",
+      "tags": [
+        "silo art",
+        "road trip"
+      ],
+      "source": "https://www.visitvictoria.com/regions/grampians/destinations/horsham.aspx",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}

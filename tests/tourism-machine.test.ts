@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import test from 'node:test';
 import {TOURISM_CATEGORIES,TOURISM_STATES,chooseTourismDiscovery,fitDiscoveryName,reelWindow,validateTourismConfig} from '../github-pages/assets/tourism-machine-core.js';
+import {REGIONAL_TOURISM_MACHINES} from '../data/tourism/regional-centres.mjs';
 
 const read=(file:string)=>readFile(new URL(`../${file}`,import.meta.url),'utf8');
 
@@ -15,6 +16,7 @@ test('tourism machine is an isolated public product with the approved structural
   assert.match(html,/data-title-tagline/);
   assert.match(html,/data-result-placeholder><span data-ticker/);
   assert.match(html,/data-result-category/);
+  assert.match(html,/data-result-location/);
   assert.equal((html.match(/data-action="(?:share|map|info|another)"/g)||[]).length,4);
   for(const label of ['SHARE<br>THIS','VIEW<br>ON MAP','MORE<br>INFO','ANOTHER<br>IDEA'])assert.match(html,new RegExp(label));
   assert.doesNotMatch(html,/SAVE|BANDCAMP|PLAYLIST|ALBUM/);
@@ -24,13 +26,31 @@ test('tourism machine uses dedicated runtime, assets, route and persistence name
   const [html,runtime,build]=await Promise.all([read('templates/tourism-machine.html'),read('github-pages/assets/tourism-machine.js'),read('scripts/build-github-pages.mjs')]);
   assert.match(html,/tourism-machine\.css/);
   assert.match(html,/tourism-machine\.js/);
-  assert.match(runtime,/aggits:tourism:bendigo:sound-muted/);
-  assert.match(runtime,/tourism-data\/bendigo\.json/);
+  assert.match(runtime,/aggits:tourism:\$\{destinationSlug\}:sound-muted/);
+  assert.match(runtime,/tourism-data\/\$\{destinationSlug\}\.json/);
   assert.match(runtime,/resultCategory\.textContent/);
-  assert.match(runtime,/km from you/);
+  assert.match(runtime,/item\.longDescription\|\|item\.shortDescription/);
+  assert.match(runtime,/resultLocation\.textContent/);
   assert.match(build,/renderTourismMachine/);
   assert.match(build,/pages,'tourism','index\.html'/);
-  assert.match(build,/validateTourismData\(tourismData\)/);
+  assert.match(build,/for\(const machine of tourismMachines\)validateTourismData\(machine\.config\)/);
+});
+
+test('ten additional Victorian regional-centre machines have rich winning-detail data',()=>{
+  assert.equal(REGIONAL_TOURISM_MACHINES.length,10);
+  assert.deepEqual(REGIONAL_TOURISM_MACHINES.map(machine=>machine.slug),['ballarat','geelong','warrnambool','mildura','shepparton','wangaratta','wodonga','horsham','sale','traralgon']);
+  for(const machine of REGIONAL_TOURISM_MACHINES){
+    const config=validateTourismConfig(machine.config);
+    assert.equal(config.destination.state,'Victoria');
+    assert.ok(config.discoveries.length>=8,machine.slug);
+    assert.ok(config.tickerFacts.length>=3,machine.slug);
+    for(const discovery of config.discoveries){
+      assert.ok(discovery.longDescription.length>=80,`${machine.slug}:${discovery.name}`);
+      assert.ok(discovery.address&&discovery.locality&&discovery.hours,`${machine.slug}:${discovery.name}`);
+      assert.match(discovery.mapUrl,/google\.com\/maps\/search/);
+      assert.match(discovery.websiteUrl,/^https:\/\//);
+    }
+  }
 });
 
 test('tourism state, selection and long-name fitting are deterministic and generic',()=>{

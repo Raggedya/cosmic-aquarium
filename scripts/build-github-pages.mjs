@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { classifyWaters, validWaters } from './water-classifier.mjs';
+import { REGIONAL_TOURISM_MACHINES } from '../data/tourism/regional-centres.mjs';
 
 const root = path.resolve(import.meta.dirname,'..');
 const pages = path.join(root,'github-pages');
@@ -25,7 +26,8 @@ const machineMechanicsCore = await fs.readFile(path.join(pages,'assets','machine
 const singleReelEngine = await fs.readFile(path.join(pages,'assets','single-reel-engine.js'),'utf8');
 const tourismScript = await fs.readFile(path.join(pages,'assets','tourism-machine.js'),'utf8');
 const tourismCore = await fs.readFile(path.join(pages,'assets','tourism-machine-core.js'),'utf8');
-const tourismData = JSON.parse(await fs.readFile(path.join(root,'data','tourism','bendigo.json'),'utf8'));
+const bendigoTourismData = JSON.parse(await fs.readFile(path.join(root,'data','tourism','bendigo.json'),'utf8'));
+const tourismMachines = [{slug:'bendigo',config:bendigoTourismData},...REGIONAL_TOURISM_MACHINES];
 const tourismCabinet = await fs.readFile(path.join(root,'public','tourism-machine','bendigo-tourism-cabinet-reference.jpg'));
 const doorwayAssetNames = ['cosmic-depth.webp','botanical-crown.webp','botanical-garden.webp','world-anywhere.webp','world-heavy.webp','world-dreamy.webp','world-electronic.webp','world-quiet.webp','world-loud.webp','world-dark.webp','world-strange.webp'];
 const doorwayAssets = await Promise.all(doorwayAssetNames.map((name) => fs.readFile(path.join(root,'public','doorway',name))));
@@ -67,7 +69,7 @@ const glassAudioAssets = await Promise.all(glassAudioSourceNames.map((name) => f
 const glassAudioImpacts = await Promise.all(glassAudioImpactNames.map((name) => fs.readFile(path.join(root,'public','audio','glass',name))));
 const minimumFlowerCount = 10;
 const maximumFlowerCount = 14;
-validateTourismData(tourismData);
+for(const machine of tourismMachines)validateTourismData(machine.config);
 const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore).update(machineMechanicsCore).update(singleReelEngine);
 doorwayAssets.forEach((asset) => assetHash.update(asset));
 discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
@@ -76,7 +78,7 @@ machineAudioAssets.forEach((asset) => assetHash.update(asset));
 glassAudioAssets.forEach((asset) => assetHash.update(asset));
 glassAudioImpacts.forEach((asset) => assetHash.update(asset));
 const assetVersion = assetHash.digest('hex').slice(0,12);
-const tourismAssetVersion = createHash('sha256').update(tourismCss).update(tourismScript).update(tourismCore).update(machineMechanicsCore).update(singleReelEngine).update(tourismCabinet).update(JSON.stringify(tourismData)).digest('hex').slice(0,12);
+const tourismAssetVersion = createHash('sha256').update(tourismCss).update(tourismScript).update(tourismCore).update(machineMechanicsCore).update(singleReelEngine).update(tourismCabinet).update(JSON.stringify(tourismMachines)).digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#001807}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','skulls'),{recursive:true});
@@ -92,6 +94,7 @@ await fs.mkdir(path.join(pages,'collections'),{recursive:true});
 await fs.mkdir(path.join(pages,'tourism'),{recursive:true});
 await fs.mkdir(path.join(pages,'tourism-data'),{recursive:true});
 await fs.mkdir(path.join(root,'public','tourism'),{recursive:true});
+await fs.mkdir(path.join(root,'public','tourism-editions'),{recursive:true});
 await fs.mkdir(path.join(root,'public','tourism-data'),{recursive:true});
 await fs.mkdir(path.join(root,'public','assets','tourism-machine'),{recursive:true});
 await fs.mkdir(path.join(root,'public','assets','music-machine'),{recursive:true});
@@ -101,7 +104,7 @@ await fs.writeFile(path.join(pages,'assets','collection.css'),reset+collectionCs
 await fs.writeFile(path.join(pages,'assets','discovery-machine.css'),reset+discoveryCss);
 await fs.writeFile(path.join(pages,'assets','tourism-machine.css'),reset+tourismCss);
 await fs.copyFile(path.join(root,'public','tourism-machine','bendigo-tourism-cabinet-reference.jpg'),path.join(pages,'assets','tourism-machine','bendigo-tourism-cabinet-reference.jpg'));
-await fs.writeFile(path.join(pages,'tourism-data','bendigo.json'),JSON.stringify(tourismData,null,2)+'\n');
+for(const machine of tourismMachines)await fs.writeFile(path.join(pages,'tourism-data',`${machine.slug}.json`),JSON.stringify(machine.config,null,2)+'\n');
 await fs.writeFile(path.join(root,'public','assets','tourism-machine.css'),reset+tourismCss);
 await fs.copyFile(path.join(pages,'assets','tourism-machine.js'),path.join(root,'public','assets','tourism-machine.js'));
 await fs.copyFile(path.join(pages,'assets','tourism-machine-core.js'),path.join(root,'public','assets','tourism-machine-core.js'));
@@ -109,7 +112,7 @@ await fs.copyFile(path.join(pages,'assets','machine-mechanics-core.js'),path.joi
 await fs.copyFile(path.join(pages,'assets','single-reel-engine.js'),path.join(root,'public','assets','single-reel-engine.js'));
 await fs.copyFile(path.join(root,'public','tourism-machine','bendigo-tourism-cabinet-reference.jpg'),path.join(root,'public','assets','tourism-machine','bendigo-tourism-cabinet-reference.jpg'));
 await fs.copyFile(path.join(root,'public','music-machine','aggits-reel-v2.webp'),path.join(root,'public','assets','music-machine','aggits-reel-v2.webp'));
-await fs.writeFile(path.join(root,'public','tourism-data','bendigo.json'),JSON.stringify(tourismData,null,2)+'\n');
+for(const machine of tourismMachines)await fs.writeFile(path.join(root,'public','tourism-data',`${machine.slug}.json`),JSON.stringify(machine.config,null,2)+'\n');
 for (const name of ['cosmos.png','poppy.png','anemone.png','rose.png','thorn.png']) {
   await fs.copyFile(path.join(root,'public','flowers',name),path.join(pages,'assets','flowers',name));
 }
@@ -362,9 +365,15 @@ const universeStats={
 };
 await fs.writeFile(path.join(pages,'universe-stats.json'),JSON.stringify(universeStats,null,2)+'\n');
 await fs.writeFile(path.join(pages,'index.html'),renderLanding());
-await fs.writeFile(path.join(pages,'tourism','index.html'),renderTourismMachine());
-await fs.writeFile(path.join(root,'public','tourism','index.html'),renderTourismMachine(''));
-console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s), '+artistMachineConfigs.length+' Artist Music Machine configuration(s), '+festivalMachineConfigs.length+' Festival Music Machine configuration(s), '+collectionRegistry.length+' collection(s), and the Bendigo tourism machine.');
+await fs.writeFile(path.join(pages,'tourism','index.html'),renderTourismMachine(tourismMachines[0].config));
+await fs.writeFile(path.join(root,'public','tourism','index.html'),renderTourismMachine(tourismMachines[0].config,''));
+for(const machine of tourismMachines.slice(1)){
+  const pagesDirectory=path.join(pages,'tourism',machine.slug),publicDirectory=path.join(root,'public','tourism-editions',machine.slug);
+  await fs.mkdir(pagesDirectory,{recursive:true});await fs.mkdir(publicDirectory,{recursive:true});
+  await fs.writeFile(path.join(pagesDirectory,'index.html'),renderTourismMachine(machine.config));
+  await fs.writeFile(path.join(publicDirectory,'index.html'),renderTourismMachine(machine.config,''));
+}
+console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s), '+artistMachineConfigs.length+' Artist Music Machine configuration(s), '+festivalMachineConfigs.length+' Festival Music Machine configuration(s), '+collectionRegistry.length+' collection(s), and '+tourismMachines.length+' tourism machine(s).');
 
 async function writeArtist(slug,artist){
   const directory=path.join(pages,slug);
@@ -383,8 +392,17 @@ function renderArtistMachine(){
 function renderFestivalMachine(){
   return festivalMachineTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
 }
-function renderTourismMachine(base='/cosmic-aquarium'){
-  return tourismMachineTemplate.replaceAll('{{BASE}}',base).replaceAll('{{ASSET_VERSION}}',tourismAssetVersion);
+function renderTourismMachine(config,base='/cosmic-aquarium'){
+  const destination=config.destination;
+  return tourismMachineTemplate
+    .replaceAll('{{BASE}}',base)
+    .replaceAll('{{ASSET_VERSION}}',tourismAssetVersion)
+    .replaceAll('{{MACHINE_TITLE}}',escapeHtml(destination.machineTitle))
+    .replaceAll('{{DESTINATION_SLUG}}',escapeAttribute(machineSlug(destination.name)))
+    .replaceAll('{{DESTINATION}}',escapeHtml(destination.name))
+    .replaceAll('{{DESTINATION_UPPER}}',escapeHtml(destination.name.toUpperCase()))
+    .replaceAll('{{REGION_UPPER}}',escapeHtml(String(destination.region||'Victoria').toUpperCase()))
+    .replaceAll('{{SLOGAN_UPPER}}',escapeHtml(String(destination.slogan||'Explore more.').toUpperCase()));
 }
 function renderCollection(collection){
   return collectionTemplate.replaceAll('{{SLUG}}',escapeAttribute(collection.slug)).replaceAll('{{NAME}}',escapeHtml(String(collection.name).toUpperCase())).replaceAll('{{INSTRUCTION}}',escapeHtml(collection.instruction||'TOUCH AN ARTIST')).replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);

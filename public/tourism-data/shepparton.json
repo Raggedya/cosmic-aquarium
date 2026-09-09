@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Shepparton",
+    "region": "Goulburn Valley",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 45,
+    "machineTitle": "Things To Do In Shepparton",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "Big flavours. Colourful culture."
+  },
+  "tickerFacts": [
+    "Shepparton sits in one of Australia’s major food-producing regions.",
+    "Kaiela, the Goulburn River, connects communities across the valley.",
+    "Public art, orchards and multicultural food shape the city’s identity."
+  ],
+  "discoveries": [
+    {
+      "id": "shepparton-shepparton-art-museum",
+      "name": "Shepparton Art Museum",
+      "category": "SEE",
+      "shortDescription": "Explore contemporary art beside Victoria Park Lake.",
+      "longDescription": "SAM’s striking building presents Australian ceramics, First Nations art and changing exhibitions with elevated lake views.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "530 Wyndham Street",
+      "locality": "Shepparton",
+      "region": "Goulburn Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Shepparton%20Art%20Museum%2C%20Shepparton%2C%20Victoria",
+      "distanceKm": 1,
+      "hours": "Check current opening hours",
+      "tags": [
+        "art",
+        "ceramics"
+      ],
+      "source": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "shepparton-moooving-art",
+      "name": "Moooving Art",
+      "category": "WEIRD",
+      "shortDescription": "Find a colourful herd across the city.",
+      "longDescription": "More than ninety life-sized fibreglass cows turn Shepparton’s dairy story into a playful public-art trail.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Wyndham Street",
+      "locality": "Shepparton",
+      "region": "Goulburn Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Moooving%20Art%2C%20Shepparton%2C%20Victoria",
+      "distanceKm": 0.5,
+      "hours": "Free public art",
+      "tags": [
+        "public art",
+        "dairy"
+      ],
+      "source": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "shepparton-victoria-park-lake",
+      "name": "Victoria Park Lake",
+      "category": "NATURE",
+      "shortDescription": "Walk and picnic beside a central urban lake.",
+      "longDescription": "Shared paths, lawns, wetlands and views of SAM create an easy outdoor circuit close to central Shepparton.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Wyndham Street",
+      "locality": "Shepparton",
+      "region": "Goulburn Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Victoria%20Park%20Lake%2C%20Shepparton%2C%20Victoria",
+      "distanceKm": 1.1,
+      "hours": "Open public space",
+      "tags": [
+        "lake",
+        "walk"
+      ],
+      "source": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "shepparton-australian-botanic-gardens-shepparton",
+      "name": "Australian Botanic Gardens Shepparton",
+      "category": "NATURE",
+      "shortDescription": "See native landscapes shaped on a former tip site.",
+      "longDescription": "Distinct gardens, wetlands and lookout paths interpret Australian plants and local environmental renewal.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Botanic Gardens Avenue",
+      "locality": "Kialla",
+      "region": "Goulburn Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Australian%20Botanic%20Gardens%20Shepparton%2C%20Kialla%2C%20Victoria",
+      "distanceKm": 5.4,
+      "hours": "Open public gardens",
+      "tags": [
+        "native plants",
+        "walk"
+      ],
+      "source": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "shepparton-kaiela-arts",
+      "name": "Kaiela Arts",
+      "category": "SEE",
+      "shortDescription": "Connect with Aboriginal art from the Kaiela Dungala region.",
+      "longDescription": "The Aboriginal-owned art centre supports artists and shares contemporary work grounded in culture, Country and community.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "530 Wyndham Street",
+      "locality": "Shepparton",
+      "region": "Goulburn Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kaiela%20Arts%2C%20Shepparton%2C%20Victoria",
+      "distanceKm": 1,
+      "hours": "Check gallery hours",
+      "tags": [
+        "First Nations",
+        "art"
+      ],
+      "source": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "shepparton-move-museum",
+      "name": "MOVE Museum",
+      "category": "HISTORY",
+      "shortDescription": "Discover transport, motoring and local collections.",
+      "longDescription": "The Museum of Vehicle Evolution brings together historic vehicles, bicycles and regional stories in a large modern museum.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "7723 Goulburn Valley Highway",
+      "locality": "Kialla",
+      "region": "Goulburn Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=MOVE%20Museum%2C%20Kialla%2C%20Victoria",
+      "distanceKm": 7,
+      "hours": "Check current opening hours",
+      "tags": [
+        "transport",
+        "museum"
+      ],
+      "source": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "shepparton-aquamoves",
+      "name": "Aquamoves",
+      "category": "DO",
+      "shortDescription": "Swim or unwind beside Victoria Park Lake.",
+      "longDescription": "Indoor and outdoor pools, fitness facilities and family aquatic spaces make this a practical active stop.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "25 Tom Collins Drive",
+      "locality": "Shepparton",
+      "region": "Goulburn Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aquamoves%2C%20Shepparton%2C%20Victoria",
+      "distanceKm": 1.3,
+      "hours": "Session hours vary",
+      "tags": [
+        "swimming",
+        "family"
+      ],
+      "source": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "shepparton-dookie-rail-trail",
+      "name": "Dookie Rail Trail",
+      "category": "DO",
+      "shortDescription": "Ride through open Goulburn Valley farmland.",
+      "longDescription": "A regional shared trail follows the former railway corridor around Dookie with broad views, seasonal crops and big skies.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Mary Street",
+      "locality": "Dookie",
+      "region": "Goulburn Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dookie%20Rail%20Trail%2C%20Dookie%2C%20Victoria",
+      "distanceKm": 30,
+      "hours": "Open public trail",
+      "tags": [
+        "cycling",
+        "rail trail"
+      ],
+      "source": "https://www.visitvictoria.com/regions/the-goulburn/destinations/shepparton",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}

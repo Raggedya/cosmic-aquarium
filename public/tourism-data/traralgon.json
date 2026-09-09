@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Traralgon",
+    "region": "Latrobe Valley",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 55,
+    "machineTitle": "Things To Do In Traralgon",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "Gippsland energy. Forest escapes."
+  },
+  "tickerFacts": [
+    "Traralgon is Gippsland’s largest urban centre.",
+    "Its broad streets preserve gold-rush-era architecture.",
+    "Forests, mountains, lakes and historic towns are within easy day-trip range."
+  ],
+  "discoveries": [
+    {
+      "id": "traralgon-gippsland-performing-arts-centre",
+      "name": "Gippsland Performing Arts Centre",
+      "category": "SEE",
+      "shortDescription": "Catch theatre, music and touring performance.",
+      "longDescription": "A contemporary venue in the city centre anchors Traralgon’s live-performance and community arts calendar.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "32 Kay Street",
+      "locality": "Traralgon",
+      "region": "Latrobe Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gippsland%20Performing%20Arts%20Centre%2C%20Traralgon%2C%20Victoria",
+      "distanceKm": 0.3,
+      "hours": "Check performance schedule",
+      "tags": [
+        "theatre",
+        "music"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "traralgon-victory-park",
+      "name": "Victory Park",
+      "category": "NATURE",
+      "shortDescription": "Pause in a leafy civic park beside the creek.",
+      "longDescription": "Gardens, paths, memorials and mature trees provide a green break close to Traralgon’s shops and heritage streets.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Princes Highway",
+      "locality": "Traralgon",
+      "region": "Latrobe Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Victory%20Park%2C%20Traralgon%2C%20Victoria",
+      "distanceKm": 0.5,
+      "hours": "Open public park",
+      "tags": [
+        "park",
+        "walk"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "traralgon-traralgon-railway-reservoir",
+      "name": "Traralgon Railway Reservoir",
+      "category": "NATURE",
+      "shortDescription": "Walk around a restored wetland reserve.",
+      "longDescription": "A short loop passes open water and revegetated habitat where local birdlife gathers close to town.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Hickox Street",
+      "locality": "Traralgon",
+      "region": "Latrobe Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Traralgon%20Railway%20Reservoir%2C%20Traralgon%2C%20Victoria",
+      "distanceKm": 2.4,
+      "hours": "Open public reserve",
+      "tags": [
+        "wetlands",
+        "birdlife"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "traralgon-traralgon-farmers-market",
+      "name": "Traralgon Farmers Market",
+      "category": "SHOP",
+      "shortDescription": "Taste produce from across Gippsland.",
+      "longDescription": "Regular market days bring growers, bakers and makers together in the heart of the regional city.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Kay Street",
+      "locality": "Traralgon",
+      "region": "Latrobe Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Traralgon%20Farmers%20Market%2C%20Traralgon%2C%20Victoria",
+      "distanceKm": 0.3,
+      "hours": "Selected Saturdays; check calendar",
+      "tags": [
+        "market",
+        "produce"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "traralgon-latrobe-regional-gallery",
+      "name": "Latrobe Regional Gallery",
+      "category": "SEE",
+      "shortDescription": "Explore regional art in nearby Morwell.",
+      "longDescription": "One of eastern Victoria’s major public galleries presents exhibitions, collections and creative programs.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "138 Commercial Road",
+      "locality": "Morwell",
+      "region": "Latrobe Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Latrobe%20Regional%20Gallery%2C%20Morwell%2C%20Victoria",
+      "distanceKm": 13.5,
+      "hours": "Check current opening hours",
+      "tags": [
+        "art",
+        "gallery"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "traralgon-tarra-bulga-national-park",
+      "name": "Tarra-Bulga National Park",
+      "category": "DAY_TRIP",
+      "shortDescription": "Walk beneath cool-temperate rainforest giants.",
+      "longDescription": "Fern gullies, mountain ash and suspension-bridge walks create a lush contrast to the open Latrobe Valley.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Grand Ridge Road",
+      "locality": "Balook",
+      "region": "Latrobe Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tarra-Bulga%20National%20Park%2C%20Balook%2C%20Victoria",
+      "distanceKm": 34,
+      "hours": "Check park conditions",
+      "tags": [
+        "rainforest",
+        "hiking"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "traralgon-walhalla-historic-township",
+      "name": "Walhalla Historic Township",
+      "category": "DAY_TRIP",
+      "shortDescription": "Follow a narrow valley into gold-mining history.",
+      "longDescription": "Heritage buildings, mountain scenery, mine tours and a narrow-gauge railway make Walhalla a memorable Gippsland excursion.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Main Road",
+      "locality": "Walhalla",
+      "region": "Latrobe Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Walhalla%20Historic%20Township%2C%20Walhalla%2C%20Victoria",
+      "distanceKm": 45,
+      "hours": "Attraction times vary",
+      "tags": [
+        "gold rush",
+        "railway"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "traralgon-morwell-centenary-rose-garden",
+      "name": "Morwell Centenary Rose Garden",
+      "category": "NATURE",
+      "shortDescription": "Wander among thousands of roses.",
+      "longDescription": "Formal beds near the town centre create a colourful seasonal display maintained as a major community garden.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Avondale Road",
+      "locality": "Morwell",
+      "region": "Latrobe Valley",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Morwell%20Centenary%20Rose%20Garden%2C%20Morwell%2C%20Victoria",
+      "distanceKm": 13,
+      "hours": "Open public garden",
+      "tags": [
+        "roses",
+        "garden"
+      ],
+      "source": "https://www.visitgippsland.com.au/destinations/central-gippsland/traralgon",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}

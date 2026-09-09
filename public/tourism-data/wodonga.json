@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Wodonga",
+    "region": "Albury Wodonga",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 50,
+    "machineTitle": "Things To Do In Wodonga",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "Two cities. One river country."
+  },
+  "tickerFacts": [
+    "Wodonga shares a cross-border destination with Albury.",
+    "More than eighty kilometres of pathways connect the city and surrounding hills.",
+    "The Murray River, Lake Hume and High Country are all close at hand."
+  ],
+  "discoveries": [
+    {
+      "id": "wodonga-bonegilla-migrant-experience",
+      "name": "Bonegilla Migrant Experience",
+      "category": "HISTORY",
+      "shortDescription": "Walk through Australia’s post-war migration history.",
+      "longDescription": "Block 19 preserves buildings and personal stories from the reception centre that welcomed more than 300,000 migrants.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "132 Bonegilla Road",
+      "locality": "Bonegilla",
+      "region": "Albury Wodonga",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bonegilla%20Migrant%20Experience%2C%20Bonegilla%2C%20Victoria",
+      "distanceKm": 13.5,
+      "hours": "Check current opening hours",
+      "tags": [
+        "migration",
+        "heritage"
+      ],
+      "source": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wodonga-hyphen-wodonga-library-gallery",
+      "name": "Hyphen Wodonga Library Gallery",
+      "category": "SEE",
+      "shortDescription": "Pair contemporary art with a welcoming civic space.",
+      "longDescription": "Exhibitions, collections and creative programs sit inside Wodonga’s central library-gallery building.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "126 Hovell Street",
+      "locality": "Wodonga",
+      "region": "Albury Wodonga",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hyphen%20Wodonga%20Library%20Gallery%2C%20Wodonga%2C%20Victoria",
+      "distanceKm": 0.4,
+      "hours": "Check current opening hours",
+      "tags": [
+        "art",
+        "library"
+      ],
+      "source": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wodonga-gateway-village",
+      "name": "Gateway Village",
+      "category": "SEE",
+      "shortDescription": "Meet artists and makers beside the Murray.",
+      "longDescription": "Studios, galleries, performance spaces and markets occupy a cultural precinct on Gateway Island.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Lincoln Causeway",
+      "locality": "Wodonga",
+      "region": "Albury Wodonga",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gateway%20Village%2C%20Wodonga%2C%20Victoria",
+      "distanceKm": 4,
+      "hours": "Studio hours vary",
+      "tags": [
+        "artists",
+        "markets"
+      ],
+      "source": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wodonga-crossing-place-trail",
+      "name": "Crossing Place Trail",
+      "category": "HISTORY",
+      "shortDescription": "Follow sculpture and stories beside the Murray.",
+      "longDescription": "Public artworks by Aboriginal artists connect river landscape, culture and the historic crossing between two cities.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Gateway Island",
+      "locality": "Wodonga",
+      "region": "Albury Wodonga",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Crossing%20Place%20Trail%2C%20Wodonga%2C%20Victoria",
+      "distanceKm": 4.2,
+      "hours": "Open public trail",
+      "tags": [
+        "First Nations",
+        "sculpture"
+      ],
+      "source": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wodonga-high-country-rail-trail",
+      "name": "High Country Rail Trail",
+      "category": "DO",
+      "shortDescription": "Cycle beside farmland and Lake Hume.",
+      "longDescription": "The trail follows former railway country east of Wodonga, with long water views and links toward Old Tallangatta.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Whytes Road",
+      "locality": "Bandiana",
+      "region": "Albury Wodonga",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=High%20Country%20Rail%20Trail%2C%20Bandiana%2C%20Victoria",
+      "distanceKm": 6.5,
+      "hours": "Open public trail",
+      "tags": [
+        "cycling",
+        "lake"
+      ],
+      "source": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wodonga-lake-hume",
+      "name": "Lake Hume",
+      "category": "NATURE",
+      "shortDescription": "Find wide water and High Country horizons.",
+      "longDescription": "The reservoir supports boating, fishing, swimming and shoreline picnics against a changing mountain backdrop.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Lake Hume Tourist Road",
+      "locality": "Bonegilla",
+      "region": "Albury Wodonga",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lake%20Hume%2C%20Bonegilla%2C%20Victoria",
+      "distanceKm": 14,
+      "hours": "Check water and park conditions",
+      "tags": [
+        "lake",
+        "boating"
+      ],
+      "source": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wodonga-belvoir-park",
+      "name": "Belvoir Park",
+      "category": "DO",
+      "shortDescription": "Enjoy a family park around Sumsion Gardens.",
+      "longDescription": "Playgrounds, paths, lawns and water views create an easy all-ages stop close to central Wodonga.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Huon Street",
+      "locality": "Wodonga",
+      "region": "Albury Wodonga",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Belvoir%20Park%2C%20Wodonga%2C%20Victoria",
+      "distanceKm": 1.1,
+      "hours": "Open public space",
+      "tags": [
+        "family",
+        "park"
+      ],
+      "source": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "wodonga-huon-hill",
+      "name": "Huon Hill",
+      "category": "NATURE",
+      "shortDescription": "Climb for views over Wodonga and the valleys.",
+      "longDescription": "Walking and driving access lead to elevated lookouts across the Murray River, Lake Hume and surrounding ranges.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Kenneth Watson Drive",
+      "locality": "Wodonga",
+      "region": "Albury Wodonga",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Huon%20Hill%2C%20Wodonga%2C%20Victoria",
+      "distanceKm": 8,
+      "hours": "Daylight visit recommended",
+      "tags": [
+        "lookout",
+        "walk"
+      ],
+      "source": "https://www.wodonga.vic.gov.au/Activities-Attractions/See-and-do",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Geelong",
+    "region": "Geelong and The Bellarine",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 45,
+    "machineTitle": "Things To Do In Geelong",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "Bay views. Bold stories."
+  },
+  "tickerFacts": [
+    "Geelong’s north-facing waterfront looks across Corio Bay.",
+    "More than one hundred painted bollards line the waterfront trail.",
+    "The city is a gateway to the Bellarine Peninsula and You Yangs."
+  ],
+  "discoveries": [
+    {
+      "id": "geelong-eastern-beach-reserve",
+      "name": "Eastern Beach Reserve",
+      "category": "NATURE",
+      "shortDescription": "Swim, picnic and promenade on Corio Bay.",
+      "longDescription": "The 1930s waterfront reserve combines lawns, sea baths, a children’s pool and an Art Deco promenade close to the city.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "95 Eastern Beach Road",
+      "locality": "Geelong",
+      "region": "Geelong and The Bellarine",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Eastern%20Beach%20Reserve%2C%20Geelong%2C%20Victoria",
+      "distanceKm": 1.2,
+      "hours": "Open public space",
+      "tags": [
+        "waterfront",
+        "swimming"
+      ],
+      "source": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "geelong-geelong-bollard-trail",
+      "name": "Geelong Bollard Trail",
+      "category": "SEE",
+      "shortDescription": "Meet colourful characters along the waterfront.",
+      "longDescription": "More than one hundred painted timber bollards interpret people and stories from Geelong’s history on a bayside walk.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Eastern Beach Road",
+      "locality": "Geelong",
+      "region": "Geelong and The Bellarine",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Geelong%20Bollard%20Trail%2C%20Geelong%2C%20Victoria",
+      "distanceKm": 0.8,
+      "hours": "Open public trail",
+      "tags": [
+        "public art",
+        "walk"
+      ],
+      "source": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "geelong-national-wool-museum",
+      "name": "National Wool Museum",
+      "category": "HISTORY",
+      "shortDescription": "Discover the fibre that shaped Geelong.",
+      "longDescription": "Inside an 1872 bluestone woolstore, exhibitions explore wool, industry, textiles and the people behind the region’s growth.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "26 Moorabool Street",
+      "locality": "Geelong",
+      "region": "Geelong and The Bellarine",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=National%20Wool%20Museum%2C%20Geelong%2C%20Victoria",
+      "distanceKm": 0.4,
+      "hours": "Check current opening hours",
+      "tags": [
+        "museum",
+        "industry"
+      ],
+      "source": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "geelong-geelong-botanic-gardens",
+      "name": "Geelong Botanic Gardens",
+      "category": "NATURE",
+      "shortDescription": "Wander historic gardens beside Eastern Park.",
+      "longDescription": "Established in 1851, the gardens pair heritage plantings with contemporary Australian collections and sheltered lawns.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Podbury Drive",
+      "locality": "East Geelong",
+      "region": "Geelong and The Bellarine",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Geelong%20Botanic%20Gardens%2C%20East%20Geelong%2C%20Victoria",
+      "distanceKm": 2.1,
+      "hours": "Daily",
+      "tags": [
+        "gardens",
+        "heritage"
+      ],
+      "source": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "geelong-geelong-gallery",
+      "name": "Geelong Gallery",
+      "category": "SEE",
+      "shortDescription": "See Australian art in the cultural precinct.",
+      "longDescription": "The gallery presents significant Australian paintings, works on paper and changing exhibitions near Johnstone Park.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "55 Little Malop Street",
+      "locality": "Geelong",
+      "region": "Geelong and The Bellarine",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Geelong%20Gallery%2C%20Geelong%2C%20Victoria",
+      "distanceKm": 0.3,
+      "hours": "Check current exhibitions",
+      "tags": [
+        "art",
+        "culture"
+      ],
+      "source": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "geelong-little-malop-street",
+      "name": "Little Malop Street",
+      "category": "EAT",
+      "shortDescription": "Follow Geelong’s lively dining and laneway strip.",
+      "longDescription": "Street art, small bars, restaurants and performance spaces make this compact precinct an easy evening discovery.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Little Malop Street",
+      "locality": "Geelong",
+      "region": "Geelong and The Bellarine",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Little%20Malop%20Street%2C%20Geelong%2C%20Victoria",
+      "distanceKm": 0.2,
+      "hours": "Venue hours vary",
+      "tags": [
+        "food",
+        "laneways"
+      ],
+      "source": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "geelong-you-yangs-regional-park",
+      "name": "You Yangs Regional Park",
+      "category": "NATURE",
+      "shortDescription": "Climb granite ridges for broad western views.",
+      "longDescription": "Walking and mountain-bike trails rise through native woodland to viewpoints over the volcanic plains and Corio Bay.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Turntable Drive",
+      "locality": "Little River",
+      "region": "Geelong and The Bellarine",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=You%20Yangs%20Regional%20Park%2C%20Little%20River%2C%20Victoria",
+      "distanceKm": 28,
+      "hours": "Daylight access; check park advice",
+      "tags": [
+        "hiking",
+        "views"
+      ],
+      "source": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "geelong-bellarine-rail-trail",
+      "name": "Bellarine Rail Trail",
+      "category": "DO",
+      "shortDescription": "Cycle from the city toward the Bellarine.",
+      "longDescription": "A shared trail follows the former railway corridor through open country, linking Geelong with towns toward Queenscliff.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Swanston Street",
+      "locality": "South Geelong",
+      "region": "Geelong and The Bellarine",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bellarine%20Rail%20Trail%2C%20South%20Geelong%2C%20Victoria",
+      "distanceKm": 1.5,
+      "hours": "Open public trail",
+      "tags": [
+        "cycling",
+        "rail trail"
+      ],
+      "source": "https://www.visitgeelongbellarine.com.au/things-to-do",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}

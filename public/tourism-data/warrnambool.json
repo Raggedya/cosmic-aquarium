@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "status": "regional-preview",
+  "destination": {
+    "name": "Warrnambool",
+    "region": "Great Ocean Road",
+    "state": "Victoria",
+    "country": "Australia",
+    "radiusKm": 50,
+    "machineTitle": "Things To Do In Warrnambool",
+    "tagline": "Spin • Explore • Be Surprised",
+    "slogan": "Wild coast. Deep stories."
+  },
+  "tickerFacts": [
+    "Warrnambool overlooks the Southern Ocean on Eastern Maar Country.",
+    "Winter visitors may see southern right whales near Logan’s Beach.",
+    "The city’s maritime history is shaped by the dramatic Shipwreck Coast."
+  ],
+  "discoveries": [
+    {
+      "id": "warrnambool-flagstaff-hill-maritime-village",
+      "name": "Flagstaff Hill Maritime Village",
+      "category": "HISTORY",
+      "shortDescription": "Step into Warrnambool’s maritime past.",
+      "longDescription": "A recreated nineteenth-century port and museum tells stories of the Shipwreck Coast, trade, navigation and life by the sea.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "89 Merri Street",
+      "locality": "Warrnambool",
+      "region": "Great Ocean Road",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Flagstaff%20Hill%20Maritime%20Village%2C%20Warrnambool%2C%20Victoria",
+      "distanceKm": 1,
+      "hours": "Check museum and evening-show times",
+      "tags": [
+        "maritime",
+        "museum"
+      ],
+      "source": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "warrnambool-logans-beach-whale-platform",
+      "name": "Logans Beach Whale Platform",
+      "category": "NATURE",
+      "shortDescription": "Scan the winter ocean for southern right whales.",
+      "longDescription": "A purpose-built viewing platform overlooks a recognised calving area; sightings are seasonal and never guaranteed.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Logans Beach Road",
+      "locality": "Warrnambool",
+      "region": "Great Ocean Road",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Logans%20Beach%20Whale%20Platform%2C%20Warrnambool%2C%20Victoria",
+      "distanceKm": 4.4,
+      "hours": "Open; best during whale season",
+      "tags": [
+        "whales",
+        "coast"
+      ],
+      "source": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "warrnambool-tower-hill-wildlife-reserve",
+      "name": "Tower Hill Wildlife Reserve",
+      "category": "NATURE",
+      "shortDescription": "Explore a volcanic crater rich with wildlife.",
+      "longDescription": "Walking tracks cross wetlands and woodland inside an inactive volcano where emus, koalas and kangaroos are often seen.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "105 Lake View Road",
+      "locality": "Tower Hill",
+      "region": "Great Ocean Road",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tower%20Hill%20Wildlife%20Reserve%2C%20Tower%20Hill%2C%20Victoria",
+      "distanceKm": 14,
+      "hours": "Open public reserve",
+      "tags": [
+        "volcano",
+        "wildlife"
+      ],
+      "source": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "warrnambool-deep-blue-hot-springs",
+      "name": "Deep Blue Hot Springs",
+      "category": "DO",
+      "shortDescription": "Soak in geothermal mineral waters by the coast.",
+      "longDescription": "A sequence of open-air bathing pools offers a restorative experience fed by naturally heated mineral water.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Worm Bay Road",
+      "locality": "Warrnambool",
+      "region": "Great Ocean Road",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Deep%20Blue%20Hot%20Springs%2C%20Warrnambool%2C%20Victoria",
+      "distanceKm": 2.2,
+      "hours": "Bookings recommended",
+      "tags": [
+        "hot springs",
+        "wellness"
+      ],
+      "source": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "warrnambool-lake-pertobe-adventure-playground",
+      "name": "Lake Pertobe Adventure Playground",
+      "category": "DO",
+      "shortDescription": "Make room for a lively family stop.",
+      "longDescription": "Playgrounds, lawns, paths and waterways fill a large recreational precinct between the city and the beach.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "Pertobe Road",
+      "locality": "Warrnambool",
+      "region": "Great Ocean Road",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lake%20Pertobe%20Adventure%20Playground%2C%20Warrnambool%2C%20Victoria",
+      "distanceKm": 1.4,
+      "hours": "Open public space",
+      "tags": [
+        "family",
+        "playground"
+      ],
+      "source": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "warrnambool-warrnambool-botanic-gardens",
+      "name": "Warrnambool Botanic Gardens",
+      "category": "NATURE",
+      "shortDescription": "Pause among elegant nineteenth-century gardens.",
+      "longDescription": "Curving paths, lawns, mature trees and a lily pond create a quiet green retreat designed in the Guilfoyle tradition.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "24 Botanic Road",
+      "locality": "Warrnambool",
+      "region": "Great Ocean Road",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Warrnambool%20Botanic%20Gardens%2C%20Warrnambool%2C%20Victoria",
+      "distanceKm": 1.3,
+      "hours": "Daily",
+      "tags": [
+        "gardens",
+        "heritage"
+      ],
+      "source": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "warrnambool-thunder-point-coastal-reserve",
+      "name": "Thunder Point Coastal Reserve",
+      "category": "NATURE",
+      "shortDescription": "Watch the coast from dramatic rocky lookouts.",
+      "longDescription": "Short paths reveal islands, reefs and broad Southern Ocean views, especially atmospheric near sunset.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "MacDonald Street",
+      "locality": "Warrnambool",
+      "region": "Great Ocean Road",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Thunder%20Point%20Coastal%20Reserve%2C%20Warrnambool%2C%20Victoria",
+      "distanceKm": 3,
+      "hours": "Open public reserve",
+      "tags": [
+        "coast",
+        "sunset"
+      ],
+      "source": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "lastVerified": "2026-09-09"
+    },
+    {
+      "id": "warrnambool-warrnambool-art-gallery",
+      "name": "Warrnambool Art Gallery",
+      "category": "SEE",
+      "shortDescription": "Explore art connected to place and community.",
+      "longDescription": "The regional gallery presents historical and contemporary exhibitions in Warrnambool’s central cultural precinct.",
+      "image": "../assets/tourism-machine/bendigo-tourism-cabinet-reference.jpg",
+      "address": "26 Liebig Street",
+      "locality": "Warrnambool",
+      "region": "Great Ocean Road",
+      "latitude": null,
+      "longitude": null,
+      "websiteUrl": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "mapUrl": "https://www.google.com/maps/search/?api=1&query=Warrnambool%20Art%20Gallery%2C%20Warrnambool%2C%20Victoria",
+      "distanceKm": 0.3,
+      "hours": "Check current opening hours",
+      "tags": [
+        "art",
+        "culture"
+      ],
+      "source": "https://www.visitvictoria.com/Regions/Great-Ocean-Road/Destinations/Warrnambool.aspx",
+      "lastVerified": "2026-09-09"
+    }
+  ]
+}
