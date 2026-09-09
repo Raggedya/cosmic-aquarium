@@ -66,6 +66,9 @@ test('tourism presentation is responsive, dormant-first and uses four equal acti
   assert.match(css,/perspective:\s*760px/);
   assert.match(css,/transform-style:\s*preserve-3d/);
   assert.match(css,/\.tourism-actions button::before/);
+  assert.match(css,/mix-blend-mode:\s*screen/);
+  assert.match(css,/button\.more-info::before[\s\S]*#169b83/);
+  assert.match(css,/button:hover:not\(:disabled\)::after/);
   assert.match(css,/button:active:not\(:disabled\)::before/);
   assert.match(html,/class="lever-visual"/);
   assert.doesNotMatch(css,/\.gauge|\.needle/);
@@ -86,7 +89,10 @@ test('tourism reel uses continuous cylindrical motion and mechanically ordered a
   assert.match(runtime,/requestAnimationFrame\(frame\)/);
   assert.match(runtime,/setState\('DECELERATION'/);
   assert.match(mechanics,/return 1\.003-\.003/);
-  assert.match(runtime,/await animateReel\(winner\);clearInterval\(factTimer\);stopMotor\(\);play\(lockSound/);
+  assert.match(runtime,/function stopMotor\(immediate=false\)/);
+  assert.match(runtime,/startingVolume\*\(1-fadeStep\/6\)/);
+  assert.match(runtime,/fast\?\.045:\.085/);
+  assert.match(runtime,/await animateReel\(winner\);clearInterval\(factTimer\);await stopMotor\(\);play\(lockSound/);
   assert.match(runtime,/play\(dingSound[\s\S]*renderResult\(winner\);setState\('RESULT'/);
   for(const asset of ['reel-ratchet-mixkit-2641.mp3','reel-actual-slotmachine-freesound-261346.mp3','reel-stop-lock-mixkit-2857.mp3','reel-stop-gear-mixkit-2858.mp3','winner-tonal-bloom-mixkit-3109.mp3'])assert.match(runtime,new RegExp(asset.replaceAll('.','\\.')));
 });

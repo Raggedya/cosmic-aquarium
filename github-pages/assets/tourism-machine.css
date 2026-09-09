@@ -303,8 +303,17 @@ button:focus-visible { outline: max(2px,.32vw) solid #fff0bd; outline-offset: ma
   inset: 7.3% 6.4%;
   border: max(1px,.13vw) solid #b2702e;
   border-radius: 2.5%;
-  background: radial-gradient(ellipse at 46% 26%,#25231d 0%,#12110e 47%,#050504 100%);
-  box-shadow: inset 0 .42vw .62vw #ffffff0e,inset 0 -.48vw .75vw #000c,inset 0 0 0 max(1px,.09vw) #3c230f,0 .14vw .2vw #000;
+  background:
+    radial-gradient(ellipse 82% 48% at 50% 2%,#fff8d532 0%,#dbb97912 37%,transparent 61%),
+    radial-gradient(circle at 47% 38%,#35332b 0%,#1d1b17 36%,#0c0b09 68%,#020202 100%);
+  box-shadow:
+    inset 0 .16vw .2vw #fff4cf2c,
+    inset .22vw .18vw .55vw #e0b06d12,
+    inset 0 -.58vw .9vw #000e,
+    inset .52vw 0 .72vw #0006,
+    inset -.48vw 0 .78vw #0009,
+    inset 0 0 0 max(1px,.09vw) #69451f,
+    0 .14vw .2vw #000;
   transition: transform .08s ease,box-shadow .08s ease,filter .13s ease;
 }
 
@@ -315,13 +324,29 @@ button:focus-visible { outline: max(2px,.32vw) solid #fff0bd; outline-offset: ma
   inset: 8.4% 7.5%;
   pointer-events: none;
   border-radius: 2%;
-  background: linear-gradient(115deg,#fff5d415 0 20%,transparent 43% 78%,#0004 100%);
+  background:
+    radial-gradient(ellipse 74% 28% at 50% 1%,#fff9df35 0%,#fff5d410 48%,transparent 74%),
+    linear-gradient(112deg,transparent 0 12%,#fff4d52d 21%,#fff5d408 34%,transparent 47% 100%),
+    radial-gradient(ellipse 44% 16% at 50% 97%,#d79d5020,transparent 78%);
+  mix-blend-mode: screen;
+  opacity: .82;
+  transition: opacity .13s ease,transform .08s ease;
 }
 
 .tourism-actions button.more-info::before {
   border-color: #d09a4b;
-  background: radial-gradient(ellipse at 48% 27%,#138476 0%,#075b4b 39%,#02362d 72%,#011f1a 100%);
-  box-shadow: inset 0 .42vw .72vw #b7fff23d,inset 0 -.55vw .8vw #001912e0,inset 0 0 0 max(1px,.09vw) #2cbd9a70,0 0 .42vw #37d9ac2e,0 .14vw .2vw #000;
+  background:
+    radial-gradient(ellipse 84% 51% at 48% 2%,#e0fff267 0%,#5de7cb27 34%,transparent 59%),
+    radial-gradient(circle at 48% 40%,#169b83 0%,#08705c 38%,#034638 68%,#011d18 100%);
+  box-shadow:
+    inset 0 .18vw .24vw #dbfff173,
+    inset .26vw .2vw .58vw #7af5d33b,
+    inset 0 -.6vw .92vw #00150fee,
+    inset .52vw 0 .75vw #003e32a8,
+    inset -.5vw 0 .78vw #001c18cc,
+    inset 0 0 0 max(1px,.09vw) #2cbd9a8a,
+    0 0 .42vw #37d9ac32,
+    0 .14vw .2vw #000;
 }
 
 .tourism-actions .action-icon,.tourism-actions strong { position: relative; z-index: 3; transform: translateY(0); transition: transform .08s ease,text-shadow .13s ease; }
@@ -330,9 +355,11 @@ button:focus-visible { outline: max(2px,.32vw) solid #fff0bd; outline-offset: ma
 .tourism-actions .action-icon .icon-fill { fill: currentColor; stroke: none; }
 .tourism-actions strong { color: #f7dfaf; font: 900 clamp(9px,2.15vw,17px)/.9 "Roboto Condensed","Arial Narrow",sans-serif; letter-spacing: -.015em; text-shadow: 0 1px 1px #000; }
 
-.tourism-actions button:hover:not(:disabled)::before { filter: brightness(1.1); }
+.tourism-actions button:hover:not(:disabled)::before { filter: brightness(1.075); }
+.tourism-actions button:hover:not(:disabled)::after { opacity: 1; }
 .tourism-actions button:hover:not(:disabled) strong { text-shadow: 0 1px 1px #000,0 0 .24vw #ffe5a34d; }
 .tourism-actions button:active:not(:disabled)::before { transform: translateY(1.4%); box-shadow: inset 0 .68vw 1vw #000c,inset 0 0 0 max(1px,.09vw) #3b210e,0 .04vw .08vw #000; }
+.tourism-actions button:active:not(:disabled)::after { opacity: .46; transform: translateY(1.4%); }
 .tourism-actions button:active:not(:disabled) .action-icon,.tourism-actions button:active:not(:disabled) strong { transform: translateY(max(1px,.13vw)); }
 .tourism-actions button:disabled { cursor: default; filter: brightness(.54) saturate(.42); }
 .tourism-actions button:disabled::before { box-shadow: inset 0 .55vw 1vw #000d,inset 0 0 0 max(1px,.09vw) #2d190b; }

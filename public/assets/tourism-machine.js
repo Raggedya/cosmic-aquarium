@@ -15,7 +15,7 @@ const reducedMotion=matchMedia('(prefers-reduced-motion:reduce)'),soundKey='aggi
 let config=null,state='READY',selected=null,locked=false,factIndex=0,tickerTimer=0,pointerId=null,pointerStart=0,pointerTravel=0;
 let currentPosition=0,lastRenderedBase=Number.NaN,spinFrame=0,factTimer=0,reelHeight=0;
 let muted=localStorage.getItem(soundKey)==='true';
-let motor=null,leverSound=null,tickSound=null,slowTickSound=null,lockSound=null,dingSound=null,relaySound=null,buttonSound=null;
+let motor=null,leverSound=null,tickSound=null,slowTickSound=null,lockSound=null,dingSound=null,relaySound=null,buttonSound=null,motorFadeTimer=0;
 
 const wait=milliseconds=>new Promise(resolve=>setTimeout(resolve,milliseconds));
 const clamp=(value,min,max)=>Math.max(min,Math.min(max,value));
@@ -74,7 +74,7 @@ function renderResult(item){
 }
 
 function renderReady(){
-  cancelAnimationFrame(spinFrame);clearInterval(factTimer);stopMotor();selected=null;locked=false;currentPosition=0;lastRenderedBase=Number.NaN;reelHeight=Math.max(1,reel.clientHeight);
+  cancelAnimationFrame(spinFrame);clearInterval(factTimer);stopMotor(true);selected=null;locked=false;currentPosition=0;lastRenderedBase=Number.NaN;reelHeight=Math.max(1,reel.clientHeight);
   setState('READY','Ready. Pull the lever for a new idea.');setTicker('PULL THE LEVER');renderCylinder(0,true);
   for(const button of[shareButton,mapButton,infoButton])button.disabled=true;anotherButton.disabled=false;
 }
@@ -96,9 +96,15 @@ function play(audioElement,{rate=1,volume}={}){
   if(volume!==undefined)voice.volume=volume;voice.currentTime=0;voice.play().catch(()=>{});
 }
 
-function startMotor(){ensureAudio();if(muted)return;motor.currentTime=0;motor.volume=.12;motor.playbackRate=.76;motor.play().catch(()=>{});setTimeout(()=>{if(!motor.paused){motor.volume=.22;motor.playbackRate=1}},260)}
-function stopMotor(){if(!motor)return;motor.pause();motor.currentTime=0}
-function playTick(speed){if(muted)return;const slow=speed<4.5;play(slow?slowTickSound:tickSound,{rate:clamp(.76+speed*.025,.78,1.32),volume:slow?.21:.1})}
+function startMotor(){ensureAudio();if(muted)return;clearInterval(motorFadeTimer);motor.currentTime=0;motor.volume=.12;motor.playbackRate=.76;motor.play().catch(()=>{});setTimeout(()=>{if(!motor.paused){motor.volume=.22;motor.playbackRate=1}},260)}
+function stopMotor(immediate=false){
+  if(!motor)return Promise.resolve();clearInterval(motorFadeTimer);
+  const finish=()=>{motor.pause();motor.currentTime=0;motor.volume=.2};
+  if(immediate||motor.paused){finish();return Promise.resolve()}
+  const startingVolume=motor.volume;let fadeStep=0;
+  return new Promise(resolve=>{motorFadeTimer=setInterval(()=>{fadeStep+=1;motor.volume=Math.max(.001,startingVolume*(1-fadeStep/6));if(fadeStep>=6){clearInterval(motorFadeTimer);finish();resolve()}},30)});
+}
+function playTick(speed){if(muted)return;const slow=speed<4.5,fast=speed>18;play(slow?slowTickSound:tickSound,{rate:clamp(.76+speed*.025,.78,1.32),volume:slow?.21:fast?.045:.085})}
 
 function resetLever(animated=true){lever.classList.toggle('is-returning',animated);lever.classList.remove('is-pulled');lever.style.removeProperty('--lever-angle');pointerTravel=0;setTimeout(()=>lever.classList.remove('is-returning'),420)}
 
@@ -129,7 +135,7 @@ async function spin(source='lever'){
   ensureAudio();play(leverSound,{rate:.86,volume:.45});await wait(reducedMotion.matches?20:250);resetLever();
   const winner=chooseTourismDiscovery(config.discoveries,recentIds());if(!winner){locked=false;anotherButton.disabled=false;return}
   setState('SPINNING','Finding a Bendigo discovery.');showNextFact();startMotor();factTimer=setInterval(showNextFact,1050);
-  await animateReel(winner);clearInterval(factTimer);stopMotor();play(lockSound,{rate:.82,volume:.52});await wait(reducedMotion.matches?15:125);
+  await animateReel(winner);clearInterval(factTimer);await stopMotor();play(lockSound,{rate:.82,volume:.52});await wait(reducedMotion.matches?15:125);
   play(dingSound,{rate:1,volume:.5});await wait(reducedMotion.matches?15:95);renderResult(winner);setState('RESULT',`${winner.name} selected.`);play(relaySound,{rate:1.15,volume:.14});
   locked=false;anotherButton.disabled=false;machine.dataset.lastSource=source;
 }
@@ -139,7 +145,7 @@ function onPointerDown(event){if(locked)return;ensureAudio();play(buttonSound,{r
 function onPointerMove(event){if(event.pointerId!==pointerId)return;pointerTravel=Math.max(0,event.clientY-pointerStart);const progress=pullProgress(pointerTravel/115);if(progress>=MUSIC_MACHINE_REEL_PROFILE.leverTrigger)navigator.vibrate?.(8)}
 function onPointerUp(event){if(event.pointerId!==pointerId)return;lever.releasePointerCapture?.(pointerId);pointerId=null;const trigger=pointerTravel/115>=MUSIC_MACHINE_REEL_PROFILE.leverTrigger;resetLever();if(trigger)void spin('lever')}
 
-function toggleSound(){muted=!muted;localStorage.setItem(soundKey,String(muted));soundLabel.textContent=muted?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!muted));soundButton.setAttribute('aria-label',muted?'Turn sound on':'Turn sound off');if(muted)stopMotor();else{ensureAudio();play(buttonSound,{rate:1.1,volume:.12})}}
+function toggleSound(){muted=!muted;localStorage.setItem(soundKey,String(muted));soundLabel.textContent=muted?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!muted));soundButton.setAttribute('aria-label',muted?'Turn sound on':'Turn sound off');if(muted)stopMotor(true);else{ensureAudio();play(buttonSound,{rate:1.1,volume:.12})}}
 async function share(){if(!selected)return;const data={title:selected.name,text:selected.shortDescription,url:selected.websiteUrl};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(`${data.title} — ${data.url}`);setTicker('DISCOVERY LINK COPIED')}}catch(error){if(error?.name!=='AbortError')setTicker('SHARING IS NOT AVAILABLE HERE')}}
 function openUrl(value){try{window.open(new URL(value).toString(),'_blank','noopener,noreferrer')}catch{setTicker('THIS LINK IS NOT AVAILABLE')}}
 

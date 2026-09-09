@@ -4,7 +4,7 @@
 
 Status: **NEEDS REVIEW**
 
-The tourism machine uses the supplied Bendigo image as its canonical cabinet asset at the native 762:1280 proportion. The live layer now adds a perspective-calculated cylindrical reel, continuous acceleration/deceleration, item-indexed ticks, overshoot and recoil, a final lock then ding sequence, a pivoting physical lever, mechanically recessed four-button controls, and a relay-style result reveal. Tourism selection, navigation, persistence and data structures are unchanged.
+The tourism machine uses the supplied Bendigo image as its canonical cabinet asset at the native 762:1280 proportion. The live layer now adds a perspective-calculated cylindrical reel, continuous acceleration/deceleration, item-indexed ticks, overshoot and recoil, a fully faded motor before the final lock and ding, a pivoting physical lever, black and emerald glass/enamel four-button controls, and a relay-style result reveal. Tourism selection, navigation, persistence and data structures are unchanged.
 
 Review screenshots:
 
@@ -12,10 +12,12 @@ Review screenshots:
 - `artifacts/tourism-production-spinning.png`
 - `artifacts/tourism-production-deceleration.png`
 - `artifacts/tourism-production-result.png`
+- `artifacts/tourism-production-button-hover.png`
 - `artifacts/tourism-production-button-pressed.png`
+- `artifacts/tourism-production-200-result.png`
 - `artifacts/tourism-production-400-*.png`
 
-Browser QA covers 762×1280, high-DPI 400% crops, 1080×1920, laptop, portrait tablet and 390×844 mobile viewports. Lever, reel, result, Share, Map, More Info, Another Idea, Home and Sound interactions remain functional. The attraction photographs remain Milestone 1 placeholders pending production tourism content.
+Browser QA covers 762×1280, 200% and high-DPI 400% crops, 1080×1920, laptop, portrait tablet and 390×844 mobile viewports. Lever, reel, result, Share, Map, More Info, Another Idea, Home and Sound interactions remain functional. The attraction photographs remain Milestone 1 placeholders pending production tourism content.
 
 ## Milestone 1: TOURISM RESTRUCTURE
 
@@ -62,7 +64,7 @@ Output: `desktop-dist/ThingsToDoMachine.exe`.
 
 ### Verification recorded
 
-- 97/97 TypeScript tests pass, including six tourism tests
+- 98/98 TypeScript tests pass, including seven tourism tests
 - 67/67 Python tests pass, including five tourism desktop/schema tests
 - TypeScript typecheck passes
 - Vinext build passes and contains `/tourism`
