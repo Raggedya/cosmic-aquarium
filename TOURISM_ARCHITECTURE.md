@@ -7,6 +7,7 @@ data/tourism/bendigo.json
 templates/tourism-machine.html
         │
         ├── app/tourism-machine.css
+        ├── github-pages/assets/machine-mechanics-core.js
         ├── github-pages/assets/tourism-machine-core.js
         ├── github-pages/assets/tourism-machine.js
         └── public/tourism-machine/bendigo-tourism-cabinet-reference.jpg
@@ -37,9 +38,9 @@ desktop/things_to_do_machine.py
 - The static surface is mirrored into `public/tourism` for the Sites `/tourism` route; both targets use the same template, CSS, runtime and data.
 - The build script validates required destination and discovery fields before emitting the route.
 
-## Shared behaviour, isolated implementation
+## Shared mechanics, isolated products
 
-The existing machine established reliable mechanical timing, lever resistance, lazy audio loading, recent-result avoidance and viewport fitting. Milestone 1 preserves those behaviours in small tourism-specific modules because importing the existing runtime would also import music catalogue, playback and Bandcamp dependencies. Future extraction into a genuinely generic package should occur only after both products have stable contracts and shared tests.
+The music and tourism products keep separate templates, content runtimes, data and persistence namespaces. Their content-neutral cadence and lever-resistance calculations are shared through `machine-mechanics-core.js`, so both machines use the same acceleration, cruise, deceleration, tick and resisted-pull profile without importing music catalogue, playback or Bandcamp dependencies into tourism.
 
 ## Extension points
 

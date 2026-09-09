@@ -72,13 +72,20 @@ test('tourism presentation is responsive, dormant-first and uses four equal acti
 });
 
 test('tourism reel uses continuous cylindrical motion and mechanically ordered audio',async()=>{
-  const runtime=await read('github-pages/assets/tourism-machine.js');
+  const [runtime,musicRuntime,mechanics]=await Promise.all([read('github-pages/assets/tourism-machine.js'),read('github-pages/assets/discovery-machine.js'),read('github-pages/assets/machine-mechanics-core.js')]);
+  assert.match(runtime,/from'.\/machine-mechanics-core\.js'/);
+  assert.match(musicRuntime,/from '.\/machine-mechanics-core\.js'/);
+  assert.match(runtime,/mechanicalReelProgress\(progress\)/);
+  assert.match(runtime,/mechanicalCadence\(progress\)/);
+  assert.match(musicRuntime,/mechanicalCadence\(progress,index\)/);
+  assert.match(mechanics,/leverResistanceExponent:\.78/);
+  assert.match(mechanics,/decelerationRange:190/);
   assert.match(runtime,/function renderCylinder\(/);
   assert.match(runtime,/Math\.sin\(radians\)\*radius/);
   assert.match(runtime,/rotateX\(/);
   assert.match(runtime,/requestAnimationFrame\(frame\)/);
   assert.match(runtime,/setState\('DECELERATION'/);
-  assert.match(runtime,/distance=travel\*\(1\.003-/);
+  assert.match(mechanics,/return 1\.003-\.003/);
   assert.match(runtime,/await animateReel\(winner\);clearInterval\(factTimer\);stopMotor\(\);play\(lockSound/);
   assert.match(runtime,/play\(dingSound[\s\S]*renderResult\(winner\);setState\('RESULT'/);
   for(const asset of ['reel-ratchet-mixkit-2641.mp3','reel-actual-slotmachine-freesound-261346.mp3','reel-stop-lock-mixkit-2857.mp3','reel-stop-gear-mixkit-2858.mp3','winner-tonal-bloom-mixkit-3109.mp3'])assert.match(runtime,new RegExp(asset.replaceAll('.','\\.')));

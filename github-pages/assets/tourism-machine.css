@@ -70,22 +70,22 @@ button:focus-visible { outline: max(2px,.32vw) solid #fff0bd; outline-offset: ma
 .tourism-reel {
   position: absolute;
   z-index: 5;
-  left: 19.3%;
-  right: 20%;
+  left: 23.55%;
+  right: 23.55%;
   top: 27.85%;
   height: 27.95%;
   overflow: hidden;
-  border-radius: 7% / 5%;
+  border-radius: 3% / 5%;
   perspective: 760px;
   perspective-origin: 50% 50%;
   transform-style: preserve-3d;
   background:
-    linear-gradient(90deg,#180803 0%,#51260f 4.5%,transparent 14%,transparent 86%,#4b210c 95.5%,#140602 100%),
+    linear-gradient(90deg,#2a1007 0%,transparent 7.5%,transparent 92.5%,#250d05 100%),
     repeating-linear-gradient(180deg,transparent 0 19.65%,#77502d7a 19.8% 20.15%),
     radial-gradient(ellipse 92% 64% at 50% 49%,#fff2c1 0%,#f6d695 41%,#d69750 73%,#51240c 100%);
   box-shadow:
-    inset 2.4vw 0 3.5vw #0e0401e6,
-    inset -2.4vw 0 3.5vw #0e0401e6,
+    inset 1.15vw 0 1.9vw #0e0401dc,
+    inset -1.15vw 0 1.9vw #0e0401dc,
     inset 0 1.5vw 2.6vw #2b1105e8,
     inset 0 -1.5vw 2.9vw #160703f0,
     inset 0 0 0 max(1px,.09vw) #f5ca7b55,
@@ -101,7 +101,7 @@ button:focus-visible { outline: max(2px,.32vw) solid #fff0bd; outline-offset: ma
   pointer-events: none;
   background:
     linear-gradient(180deg,#100402d9 0%,#32130675 9%,transparent 24% 76%,#2c100778 91%,#0d0302e8 100%),
-    linear-gradient(90deg,#000d 0%,#1a08059c 7%,transparent 20% 80%,#160704a8 93%,#000e 100%),
+    linear-gradient(90deg,#000b 0%,#1a08056e 5%,transparent 15% 85%,#16070479 95%,#000c 100%),
     radial-gradient(ellipse 38% 100% at 50% 50%,#fff7d51f 0 52%,transparent 76%);
   box-shadow: inset 0 0 1.9vw #000b,inset 0 .12vw .22vw #ffe8af70;
 }
@@ -131,7 +131,7 @@ button:focus-visible { outline: max(2px,.32vw) solid #fff0bd; outline-offset: ma
 .reel-rows {
   position: absolute;
   z-index: 3;
-  inset: 0 3.5%;
+  inset: 0 -1.5%;
   transform-style: preserve-3d;
   will-change: transform;
 }
@@ -139,7 +139,7 @@ button:focus-visible { outline: max(2px,.32vw) solid #fff0bd; outline-offset: ma
 .reel-row {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 47.2%;
   width: 100%;
   height: 20%;
   display: grid;
@@ -164,19 +164,20 @@ button:focus-visible { outline: max(2px,.32vw) solid #fff0bd; outline-offset: ma
 .reel-row[data-centre="true"] {
   z-index: 3;
   color: #120906;
-  font-size: clamp(15px,3.55vw,31px);
+  font-size: clamp(15px,3.9vw,32px);
   letter-spacing: -.045em;
   text-shadow: 0 1px 0 #fff0c6,0 2px 2px #6d3c1766;
 }
-.reel-row[data-centre="true"][data-fit="medium"] { font-size: clamp(13px,3.1vw,28px); }
-.reel-row[data-centre="true"][data-fit="long"] { font-size: clamp(12px,2.62vw,24px); line-height: .84; }
+.reel-row[data-centre="true"][data-fit="medium"] { font-size: clamp(13px,3.38vw,29px); }
+.reel-row[data-centre="true"][data-fit="long"] { font-size: clamp(12px,2.88vw,25px); line-height: .84; }
+.reel-row[data-centre="true"][data-fit="medium"],.reel-row[data-centre="true"][data-fit="long"] { left: 8%; width: 84%; }
 
 .selection-line {
   position: absolute;
-  z-index: 8;
+  z-index: 2;
   left: -1%;
   right: -1%;
-  top: 50%;
+  top: 47.2%;
   height: max(1px,.085vw);
   background: linear-gradient(90deg,#f0a733,#ffe08a 18%,#d79531 50%,#ffe08a 82%,#e99b29);
   box-shadow: 0 0 .48vw #ffb127b8;

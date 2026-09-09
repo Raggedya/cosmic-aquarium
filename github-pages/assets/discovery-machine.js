@@ -4,6 +4,7 @@ import {
   playableMelbourneEntries, MACHINE_STATES, MELBOURNE_CULTURE_SEGMENTS,
   playableArtistTracks, createShuffleBag, formatMachineTitleLines,
 } from './discovery-machine-core.js?v=festival-master-v2';
+import {leverResistance,mechanicalCadence} from './machine-mechanics-core.js';
 const machine=document.querySelector('.music-machine');
 const base=machine?.dataset.base||'';
 const cabinetSkin=document.querySelector('.cabinet-skin');
@@ -617,7 +618,7 @@ function spinReel(index,finalEntry,stopAfter){
   return new Promise(resolve=>{
     const tick=now=>{
       const elapsed=now-started,progress=Math.min(1,elapsed/stopAfter);
-      const cadence=progress<.18?124-(progress/.18)*80:progress<.7?44+index*2:44+Math.pow((progress-.7)/.3,2)*190;
+      const cadence=mechanicalCadence(progress,index);
       const rowHeight=Math.max(16,reel.clientHeight/3),phase=((now-lastSwap)/cadence)%1;
       strip.style.transform=`translate3d(0,${((phase-.5)*rowHeight).toFixed(2)}px,0)`;
       if(now-lastSwap>cadence){current=randomEntry();setReelRows(index,current);lastSwap=now}
@@ -695,7 +696,7 @@ async function runSpin(source='lever'){
 }
 
 function resetLever(animated=true){leverProgress=0;lever.style.transition=animated?'transform .48s cubic-bezier(.18,.72,.23,1)':'none';lever.style.transform='translateY(0) rotate(0)';setTimeout(()=>lever.style.transition='',500)}
-function pullVisual(progress){leverProgress=Math.max(0,Math.min(1,progress));const resisted=Math.pow(leverProgress,.78);lever.style.transform=`translateY(${resisted*19}%) rotate(${resisted*11}deg)`}
+function pullVisual(progress){leverProgress=Math.max(0,Math.min(1,progress));const resisted=leverResistance(leverProgress);lever.style.transform=`translateY(${resisted*19}%) rotate(${resisted*11}deg)`}
 function animateLeverAndSpin(){if(locked)return;ensureAudio();lever.style.transition='transform .34s cubic-bezier(.2,.7,.25,1)';pullVisual(1);setTimeout(()=>{void runSpin('lever');resetLever(true)},250)}
 function onLeverDown(event){if(locked)return;ensureAudio();leverPointer=event.pointerId;leverStartY=event.clientY;leverMoved=false;leverTriggered=false;lever.setPointerCapture?.(event.pointerId);setState('LEVER_PULL','Pull the lever down past the resistance point.');lever.style.transition='none'}
 function onLeverMove(event){if(event.pointerId!==leverPointer)return;const travel=Math.max(0,event.clientY-leverStartY);leverMoved=leverMoved||travel>7;pullVisual(travel/115);if(leverProgress>=.72&&!leverTriggered){leverTriggered=true;navigator.vibrate?.(8)}}

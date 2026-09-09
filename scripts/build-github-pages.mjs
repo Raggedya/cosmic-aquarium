@@ -21,6 +21,7 @@ const doorwayScript = await fs.readFile(path.join(pages,'assets','doorway.js'),'
 const collectionScript = await fs.readFile(path.join(pages,'assets','collection.js'),'utf8');
 const discoveryScript = await fs.readFile(path.join(pages,'assets','discovery-machine.js'),'utf8');
 const discoveryCore = await fs.readFile(path.join(pages,'assets','discovery-machine-core.js'),'utf8');
+const machineMechanicsCore = await fs.readFile(path.join(pages,'assets','machine-mechanics-core.js'),'utf8');
 const tourismScript = await fs.readFile(path.join(pages,'assets','tourism-machine.js'),'utf8');
 const tourismCore = await fs.readFile(path.join(pages,'assets','tourism-machine-core.js'),'utf8');
 const tourismData = JSON.parse(await fs.readFile(path.join(root,'data','tourism','bendigo.json'),'utf8'));
@@ -66,7 +67,7 @@ const glassAudioImpacts = await Promise.all(glassAudioImpactNames.map((name) => 
 const minimumFlowerCount = 10;
 const maximumFlowerCount = 14;
 validateTourismData(tourismData);
-const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore);
+const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore).update(machineMechanicsCore);
 doorwayAssets.forEach((asset) => assetHash.update(asset));
 discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
 musicMachineAssets.forEach((asset) => assetHash.update(asset));
@@ -74,7 +75,7 @@ machineAudioAssets.forEach((asset) => assetHash.update(asset));
 glassAudioAssets.forEach((asset) => assetHash.update(asset));
 glassAudioImpacts.forEach((asset) => assetHash.update(asset));
 const assetVersion = assetHash.digest('hex').slice(0,12);
-const tourismAssetVersion = createHash('sha256').update(tourismCss).update(tourismScript).update(tourismCore).update(tourismCabinet).update(JSON.stringify(tourismData)).digest('hex').slice(0,12);
+const tourismAssetVersion = createHash('sha256').update(tourismCss).update(tourismScript).update(tourismCore).update(machineMechanicsCore).update(tourismCabinet).update(JSON.stringify(tourismData)).digest('hex').slice(0,12);
 const reset = `*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#001807}body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.visually-hidden{position:fixed;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}button,a{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid #c8b9ff;outline-offset:4px}\n`;
 await fs.mkdir(path.join(pages,'assets','flowers'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','skulls'),{recursive:true});
@@ -102,6 +103,7 @@ await fs.writeFile(path.join(pages,'tourism-data','bendigo.json'),JSON.stringify
 await fs.writeFile(path.join(root,'public','assets','tourism-machine.css'),reset+tourismCss);
 await fs.copyFile(path.join(pages,'assets','tourism-machine.js'),path.join(root,'public','assets','tourism-machine.js'));
 await fs.copyFile(path.join(pages,'assets','tourism-machine-core.js'),path.join(root,'public','assets','tourism-machine-core.js'));
+await fs.copyFile(path.join(pages,'assets','machine-mechanics-core.js'),path.join(root,'public','assets','machine-mechanics-core.js'));
 await fs.copyFile(path.join(root,'public','tourism-machine','bendigo-tourism-cabinet-reference.jpg'),path.join(root,'public','assets','tourism-machine','bendigo-tourism-cabinet-reference.jpg'));
 await fs.writeFile(path.join(root,'public','tourism-data','bendigo.json'),JSON.stringify(tourismData,null,2)+'\n');
 for (const name of ['cosmos.png','poppy.png','anemone.png','rose.png','thorn.png']) {

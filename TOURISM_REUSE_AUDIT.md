@@ -7,9 +7,9 @@ The existing music and festival products remain the source of proven interaction
 
 | Existing system | Current purpose | Decision | Shared-dependency risk | Tourism implementation |
 |---|---|---|---|---|
-| `discovery-machine.js` reel rendering | Renders and animates music selections | Reusable with adaptation | High: music catalogue and playback are tightly coupled | Tourism runtime uses the same five-row transform pattern and transition timing in a separate module |
-| Lever pointer mechanics | Drag/click lever, threshold, return animation | Reusable with adaptation | Medium: current handlers update music states | Equivalent pointer threshold and resisted movement are isolated in `tourism-machine.js` |
-| Spin timing | Staged start, motion and stop | Reusable with adaptation | Low if expressed as timing constants | Tourism uses a single-reel timing sequence with the established mechanical cadence |
+| `discovery-machine.js` reel rendering | Renders and animates music selections | Reusable with adaptation | High: music catalogue and playback are tightly coupled | Tourism keeps its cylindrical renderer but shares the music reel's content-neutral mechanical profile through `machine-mechanics-core.js` |
+| Lever pointer mechanics | Drag/click lever, threshold, return animation | Reusable with adaptation | Medium: current handlers update music states | Both products now consume the same resisted movement and trigger constants from `machine-mechanics-core.js` |
+| Spin timing | Staged start, motion and stop | Reusable with adaptation | Low if expressed as timing constants | Both runtimes use the shared acceleration, cruise, deceleration and tick-cadence calculations |
 | Easing/deceleration | Cubic-bezier reel stop | Reusable unchanged conceptually | Low | Same progressive deceleration curve, applied only to the tourism reel |
 | Winner selection | Avoid recent artists and choose playable music | Reusable with adaptation | High: artist identity and playability rules are music-only | Generic secure random selection and recent-ID avoidance live in `tourism-machine-core.js` |
 | Ticker component | Rotates machine and catalogue messages | Reusable with adaptation | Medium: message construction is Melbourne/music-specific | Tourism ticker modes are READY, SPINNING and RESULT, driven by destination facts |
@@ -30,4 +30,4 @@ The existing music and festival products remain the source of proven interaction
 
 ## Reuse rule
 
-Pure interaction ideas are reused. Music-specific catalogue, playback, Bandcamp, artist, album, track, festival, and five-button control code is not imported into the tourism surface. This avoids regressions and prevents visible or structural music leakage.
+Content-neutral mechanical calculations are shared. Music-specific catalogue, playback, Bandcamp, artist, album, track, festival, and five-button control code is not imported into the tourism surface. This avoids regressions and prevents visible or structural music leakage.
