@@ -94,7 +94,7 @@ test('anonymous activity is prepared for the 7pm Sydney daily report', async () 
   assert.match(worker, /local\.hour !== 19/);
   assert.match(worker, /activity_report_delivery/);
   assert.match(worker, /Native share menus opened/);
-  assert.match(worker, /Every Aquarium/);
+  assert.match(worker, /Every Artist Aquarium/);
   assert.match(workerConfig, /0,15,30,45 \* \* \* \*/);
   assert.match(schema, /CREATE TABLE IF NOT EXISTS activity_report_delivery/);
 });

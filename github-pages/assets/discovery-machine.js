@@ -14,6 +14,9 @@ const machineMode=isFestivalMode?'festival':machine?.dataset.machineMode==='arti
 const isArtistMode=machineMode==='artist';
 const isSingleReelMode=isArtistMode||isFestivalMode;
 const requestedParameters=new URLSearchParams(location.search);
+const referrerHost=(()=>{try{return document.referrer?new URL(document.referrer).hostname.toLowerCase():''}catch{return''}})();
+const acquisitionSource=requestedParameters.get('source')||(/facebook|fb\.com/.test(referrerHost)?'facebook':/instagram/.test(referrerHost)?'instagram':referrerHost?'referral':'direct');
+const acquisitionCampaign=requestedParameters.get('campaign')||'';
 const requestedArtistSlug=requestedParameters.get('artist')||'workfriend';
 const requestedFestivalSlug=requestedParameters.get('festival')||'';
 if(isSingleReelMode)document.body.classList.add('artist-machine-page');
@@ -222,12 +225,12 @@ const analytics=Object.freeze({
   track(eventType,details={}){
     const machineId=isFestivalMode?`festival-machine:${artistConfig?.festivalSlug||requestedFestivalSlug}`:isSingleReelMode?`artist-machine:${artistConfig?.artistSlug||requestedArtistSlug}`:(currentEntry?.slug||'melbourne-music-machine');
     const activeArtist=currentTrack?.artist||currentManifest?.artist||currentEntry?.artist||currentEntry?.artistName||artistConfig?.artistName||null;
-    const body=JSON.stringify({eventType,aquariumId:machineId,sessionId:sessionId(),trackId:currentTrack?.id||currentTrack?.bandcampEmbedTrackId||null,metadata:{interface:'aggits-machine',machineMode,machineId,festivalId:isFestivalMode?(artistConfig?.festivalSlug||requestedFestivalSlug):null,festivalName:isFestivalMode?(artistConfig?.title||null):null,artistId:currentTrack?.artistId||currentEntry?.canonicalArtistId||null,artistName:activeArtist,trackName:currentTrack?.title||null,timestamp:new Date().toISOString(),interactionSource:details.source||null,...details}});
+    const body=JSON.stringify({eventType,aquariumId:machineId,sessionId:sessionId(),trackId:currentTrack?.id||currentTrack?.bandcampEmbedTrackId||null,metadata:{interface:'aggits-machine',machineMode,machineId,festivalId:isFestivalMode?(artistConfig?.festivalSlug||requestedFestivalSlug):null,festivalName:isFestivalMode?(artistConfig?.title||null):null,artistId:currentTrack?.artistId||currentEntry?.canonicalArtistId||null,artistName:activeArtist,trackName:currentTrack?.title||null,timestamp:new Date().toISOString(),acquisitionSource,campaign:acquisitionCampaign||null,referrerHost:referrerHost||null,interactionSource:details.source||null,...details}});
     try{fetch(`${workerBase}/api/events`,{method:'POST',headers:{'content-type':'application/json'},body,keepalive:true,credentials:'omit'}).catch(()=>{})}catch{}
   },
 });
 function recordEvent(eventType,details={}){analytics.track(eventType,details)}
-function recordSessionStart(){if(sessionStartRecorded)return;sessionStartRecorded=true;recordEvent('session_start',{source:requestedParameters.get('source')||'direct'})}
+function recordSessionStart(){if(sessionStartRecorded)return;sessionStartRecorded=true;recordEvent('session_start',{source:acquisitionSource})}
 
 function setState(next,message=''){
   if(!stateSet.has(next))throw new Error(`Unknown machine state: ${next}`);
@@ -670,7 +673,7 @@ async function runSpin(source='lever'){
   setState('SPIN_START',isSingleReelMode?'The song reel is starting.':'The Melbourne artist reels are starting.');showTicker(isSingleReelMode?'SEARCHING THE CATALOGUE...':'SEARCHING MELBOURNE...');setMeterMode('spin');leverClack();
   let prepared;
   try{prepared=await selectPreparedWinner()}catch(error){setState('PLAY_ERROR',isSingleReelMode?'The machine could not prepare a song.':'The machine could not prepare a Melbourne song.');showTicker('MACHINE RESTING — PULL AGAIN');setMeterMode('idle');locked=false;spinAgainButton.disabled=false;recordEvent('track_selected',{result:'failed',reason:String(error?.message||error)});return}
-  const winner=isSingleReelMode?prepared.track:prepared.entry;const outcome=isSingleReelMode?{kind:'winner',winner,entries:[winner]}:{kind:'winner',winner,entries:[winner,winner,winner]};startMotor();recordEvent(isSingleReelMode?'reel_spin':'explore_click',{source});recordEvent(isSingleReelMode?'track_revealed':'artist_selected',{artist:artistName(prepared.entry),track:prepared.track?.title,source});setState('SPINNING');
+  const winner=isSingleReelMode?prepared.track:prepared.entry;const outcome=isSingleReelMode?{kind:'winner',winner,entries:[winner]}:{kind:'winner',winner,entries:[winner,winner,winner]};startMotor();recordEvent('reel_spin',{source});recordEvent(isSingleReelMode?'track_revealed':'artist_selected',{artist:artistName(prepared.entry),track:prepared.track?.title,source});setState('SPINNING');
   const stopTimes=isSingleReelMode?(reducedMotion.matches?[620]:[2350]):(reducedMotion.matches?[520,720,920]:[1550,2200,2950]);
   const promises=outcome.entries.map((entry,index)=>spinReel(index,entry,stopTimes[index]).then(()=>setState(`REEL_${index+1}_STOP`,isSingleReelMode?`The reel stopped on ${reelLabel(entry)}.`:`Reel ${index+1} stopped on ${artistName(entry)}.`)));
   await Promise.all(promises);stopMotor();recordEvent('spin_completed',{source,artist:artistName(prepared.entry),track:prepared.track?.title});setState('EVALUATE');await wait(reducedMotion.matches?100:380);

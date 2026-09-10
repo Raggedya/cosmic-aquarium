@@ -27,6 +27,15 @@ function secureRandomIndex(length: number) {
   return Math.floor((values[0] / 0x100000000) * length);
 }
 
+function acquisitionMetadata() {
+  if (typeof window === 'undefined') return { acquisitionSource: 'direct', campaign: null, referrerHost: null };
+  const parameters = new URLSearchParams(window.location.search);
+  let referrerHost = '';
+  try { referrerHost = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : ''; } catch {}
+  const acquisitionSource = parameters.get('source') || (/facebook|fb\.com/.test(referrerHost) ? 'facebook' : /instagram/.test(referrerHost) ? 'instagram' : referrerHost ? 'referral' : 'direct');
+  return { acquisitionSource, campaign: parameters.get('campaign'), referrerHost: referrerHost || null };
+}
+
 export function UniverseDoorway() {
   const fieldRef = useRef<HTMLDivElement>(null);
   const sessionId = useRef('');
@@ -108,7 +117,8 @@ export function UniverseDoorway() {
   }, []);
 
   function recordEvent(eventType: string, details: Record<string, unknown> = {}) {
-    const body = JSON.stringify({ eventType, aquariumId: 'universe-doorway', sessionId: sessionId.current || 'doorway-' + Date.now(), ...details });
+    const suppliedMetadata = typeof details.metadata === 'object' && details.metadata ? details.metadata as Record<string, unknown> : {};
+    const body = JSON.stringify({ eventType, aquariumId: 'universe-doorway', sessionId: sessionId.current || 'doorway-' + Date.now(), ...details, metadata: { ...acquisitionMetadata(), ...suppliedMetadata } });
     try {
       if (navigator.sendBeacon) navigator.sendBeacon(serviceBase + '/api/events', new Blob([body], { type: 'application/json' }));
       else void fetch(serviceBase + '/api/events', { method: 'POST', headers: { 'content-type': 'application/json' }, body, keepalive: true });
@@ -155,6 +165,9 @@ export function UniverseDoorway() {
     const targetUrl = new URL(target);
     targetUrl.searchParams.set('water', water);
     targetUrl.searchParams.set('source', 'doorway');
+    const acquisition = acquisitionMetadata();
+    targetUrl.searchParams.set('origin', String(acquisition.acquisitionSource));
+    if (acquisition.campaign) targetUrl.searchParams.set('campaign', acquisition.campaign);
     window.setTimeout(() => window.location.assign(targetUrl.href), 260);
   }
 

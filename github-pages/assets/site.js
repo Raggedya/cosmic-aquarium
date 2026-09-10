@@ -37,6 +37,10 @@
   const version = document.documentElement.dataset.version || 'current';
   const base = location.hostname.endsWith('github.io') ? '/cosmic-aquarium' : '';
   const serviceBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
+  const requestedParameters = new URLSearchParams(location.search);
+  const referrerHost = (() => { try { return document.referrer ? new URL(document.referrer).hostname.toLowerCase() : ''; } catch { return ''; } })();
+  const acquisitionSource = requestedParameters.get('origin') || requestedParameters.get('source') || (/facebook|fb\.com/.test(referrerHost) ? 'facebook' : /instagram/.test(referrerHost) ? 'instagram' : referrerHost ? 'referral' : 'direct');
+  const acquisitionCampaign = requestedParameters.get('campaign') || '';
   const baseSpecies = ['cosmos','anemone','poppy','cosmos','poppy','anemone','anemone','cosmos','poppy','cosmos','anemone','cosmos','poppy','anemone'];
   const styleSpecies = {
     cosmic: baseSpecies,
@@ -226,7 +230,7 @@
   }
 
   function recordEvent(eventType, details = {}) {
-    const payload = JSON.stringify({eventType,aquariumId:slug,batchId:manifest?.dailyBatchId||null,sessionId:analyticsSession,...details});
+    const payload = JSON.stringify({eventType,aquariumId:slug,batchId:manifest?.dailyBatchId||null,sessionId:analyticsSession,...details,metadata:{acquisitionSource,campaign:acquisitionCampaign||null,referrerHost:referrerHost||null,...(details.metadata||{})}});
     try {
       if (navigator.sendBeacon) navigator.sendBeacon(serviceBase + '/api/events',new Blob([payload],{type:'application/json'}));
       else fetch(serviceBase + '/api/events',{method:'POST',headers:{'content-type':'application/json'},body:payload,keepalive:true}).catch(()=>{});
@@ -403,7 +407,7 @@
       }
       try { sessionStorage.setItem(recentKey,JSON.stringify([slug,destination.slug,...recent].filter((value,index,array)=>array.indexOf(value)===index).slice(0,6))); } catch {}
       recordEvent('aquarium_transition',{sourceAquariumId:slug,destinationAquariumId:destination.id||destination.slug,metadata:{water}});
-      const target=new URL(destination.url||destination.aquarium_url,location.href);target.searchParams.set('water',water);target.searchParams.set('source','explore');if(collectionSlug)target.searchParams.set('parent',homeControl.getAttribute('href'));location.assign(target.href);
+      const target=new URL(destination.url||destination.aquarium_url,location.href);target.searchParams.set('water',water);target.searchParams.set('source','explore');target.searchParams.set('origin',acquisitionSource);if(acquisitionCampaign)target.searchParams.set('campaign',acquisitionCampaign);if(collectionSlug)target.searchParams.set('parent',homeControl.getAttribute('href'));location.assign(target.href);
     } catch {
       exploreAction.disabled = false;
       announce('Another Aquarium is not available just now.');

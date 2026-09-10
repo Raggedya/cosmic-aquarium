@@ -58,6 +58,15 @@ const deckKeyPrefix = 'cosmic-aquaria:track-deck:';
 const captureDurationMs = 430;
 const serviceBase = 'https://cosmic-aquaria.andrewharris501.workers.dev';
 
+function acquisitionMetadata() {
+  if (typeof window === 'undefined') return { acquisitionSource: 'direct', campaign: null, referrerHost: null };
+  const parameters = new URLSearchParams(window.location.search);
+  let referrerHost = '';
+  try { referrerHost = document.referrer ? new URL(document.referrer).hostname.toLowerCase() : ''; } catch {}
+  const acquisitionSource = parameters.get('origin') || parameters.get('source') || (/facebook|fb\.com/.test(referrerHost) ? 'facebook' : /instagram/.test(referrerHost) ? 'instagram' : referrerHost ? 'referral' : 'direct');
+  return { acquisitionSource, campaign: parameters.get('campaign'), referrerHost: referrerHost || null };
+}
+
 const themedSpecies: Record<string, Species[]> = {
   violet: ['anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'anemone', 'cosmos', 'cosmos', 'anemone', 'cosmos', 'anemone'],
   chrome: Array<Species>(14).fill('chrome'),
@@ -167,7 +176,8 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
 
   function recordEvent(eventType: string, details: Record<string, unknown> = {}) {
     if (!analyticsSession.current) return;
-    const payload = JSON.stringify({eventType, aquariumId: manifest.slug, batchId: manifest.dailyBatchId ?? null, sessionId: analyticsSession.current, ...details});
+    const suppliedMetadata = typeof details.metadata === 'object' && details.metadata ? details.metadata as Record<string, unknown> : {};
+    const payload = JSON.stringify({eventType, aquariumId: manifest.slug, batchId: manifest.dailyBatchId ?? null, sessionId: analyticsSession.current, ...details, metadata: { ...acquisitionMetadata(), ...suppliedMetadata }});
     try {
       if (navigator.sendBeacon) navigator.sendBeacon(serviceBase + '/api/events', new Blob([payload], { type: 'application/json' }));
       else void fetch(serviceBase + '/api/events', { method: 'POST', headers: { 'content-type': 'application/json' }, body: payload, keepalive: true });
@@ -441,6 +451,9 @@ export function CosmicAquarium({ manifestSlug }: { manifestSlug?: string }) {
       const target = new URL(destination.url ?? destination.aquarium_url ?? '/', window.location.href);
       target.searchParams.set('water', water);
       target.searchParams.set('source', 'explore');
+      const acquisition = acquisitionMetadata();
+      target.searchParams.set('origin', String(acquisition.acquisitionSource));
+      if (acquisition.campaign) target.searchParams.set('campaign', acquisition.campaign);
       if (homeDestination !== '/') target.searchParams.set('parent', homeDestination);
       window.location.assign(target.href);
     } catch {

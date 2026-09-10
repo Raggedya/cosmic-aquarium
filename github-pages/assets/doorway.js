@@ -9,9 +9,13 @@
   const sessionKey = 'cosmic-aquaria:session';
   const sessionId = sessionStorage.getItem(sessionKey) || crypto.randomUUID();
   sessionStorage.setItem(sessionKey, sessionId);
+  const requested = new URLSearchParams(location.search);
+  const referrerHost = (() => { try { return document.referrer ? new URL(document.referrer).hostname.toLowerCase() : ''; } catch { return ''; } })();
+  const acquisitionSource = requested.get('source') || (/facebook|fb\.com/.test(referrerHost) ? 'facebook' : /instagram/.test(referrerHost) ? 'instagram' : referrerHost ? 'referral' : 'direct');
+  const campaign = requested.get('campaign') || '';
 
   function recordEvent(eventType, details = {}) {
-    const body = JSON.stringify({eventType,aquariumId:'universe-doorway',sessionId,...details});
+    const body = JSON.stringify({eventType,aquariumId:'universe-doorway',sessionId,...details,metadata:{acquisitionSource,campaign:campaign||null,referrerHost:referrerHost||null,...(details.metadata||{})}});
     try {
       if (navigator.sendBeacon) navigator.sendBeacon(serviceBase + '/api/events', new Blob([body],{type:'application/json'}));
       else fetch(serviceBase + '/api/events',{method:'POST',headers:{'content-type':'application/json'},body,keepalive:true});
@@ -42,6 +46,6 @@
     if(!destination){const catalogueResponse=await fetch(base+'/aquariums.json',{cache:'no-store'}).catch(()=>null);if(catalogueResponse?.ok){const entries=(await catalogueResponse.json()).aquariums||[];const eligible=entries.filter(item=>item.status==='published'&&item.slug&&!recent.includes(item.slug)&&(water==='anywhere'||item.waters?.includes(water)));const fallback=eligible.length?eligible:entries.filter(item=>item.status==='published'&&item.slug&&!recent.includes(item.slug));if(fallback.length)destination=fallback[Math.floor(crypto.getRandomValues(new Uint32Array(1))[0]/4294967296*fallback.length)]}}
     if(!destination){root.classList.remove('is-entering');button.classList.remove('is-selected');status.textContent='The water is still. Please touch another world.';return}
     const destinationId=destination.id||destination.slug;sessionStorage.setItem('cosmic-aquaria:recent-aquariums',JSON.stringify([destination.slug,...recent].filter((v,i,a)=>a.indexOf(v)===i).slice(0,8)));recordEvent('random_destination_selected',{destinationAquariumId:destinationId,metadata:{water}});recordEvent('doorway_to_aquarium_transition',{destinationAquariumId:destinationId,metadata:{water}});
-    const target=new URL(destination.aquarium_url||destination.url||location.origin+base+'/'+encodeURIComponent(destination.slug)+'/');target.searchParams.set('water',water);target.searchParams.set('source','doorway');setTimeout(()=>location.assign(target.href),260);
+    const target=new URL(destination.aquarium_url||destination.url||location.origin+base+'/'+encodeURIComponent(destination.slug)+'/');target.searchParams.set('water',water);target.searchParams.set('source','doorway');target.searchParams.set('origin',acquisitionSource);if(campaign)target.searchParams.set('campaign',campaign);setTimeout(()=>location.assign(target.href),260);
   }));
 })();
