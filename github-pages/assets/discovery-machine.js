@@ -456,8 +456,8 @@ function updateStats(){
   }
   const artists=Number(stats.canonicalArtistCount||stats.artists||catalogue.length);
   const tracks=Number(stats.playableTrackCount||stats.playableTracks||0);
-  document.querySelector('[data-stat="artists"]').textContent=artists.toLocaleString('en-AU');
-  document.querySelector('[data-stat="tracks"]').textContent=tracks.toLocaleString('en-AU');
+  const artistTarget=document.querySelector('[data-stat="artists"]');if(artistTarget)artistTarget.textContent=artists.toLocaleString('en-AU');
+  const trackTarget=document.querySelector('[data-stat="tracks"]');if(trackTarget)trackTarget.textContent=tracks.toLocaleString('en-AU');
 }
 
 function applyArtistSkin(config){

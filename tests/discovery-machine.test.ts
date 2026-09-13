@@ -212,12 +212,18 @@ test('every live reel artist is Melbourne-scoped and exposes playable Bandcamp m
   }
 });
 
-test('machine statistics are generated instead of hard-coded from the reference artwork',async()=>{
-  const [template,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/assets/discovery-machine.js')]);
+test('the Melbourne header omits catalogue statistics and their updates remain null-safe',async()=>{
+  const [template,production,runtime]=await Promise.all([read('templates/universe-index.html'),read('github-pages/index.html'),read('github-pages/assets/discovery-machine.js')]);
   assert.doesNotMatch(template,/23,?000/);
-  assert.match(template,/data-stat="artists"/);
-  assert.match(template,/data-stat="tracks"/);
+  for(const markup of [template,production]){
+    assert.doesNotMatch(markup,/data-stat="artists"/);
+    assert.doesNotMatch(markup,/data-stat="tracks"/);
+    assert.doesNotMatch(markup,/JUST MUSIC/);
+    assert.match(markup,/MELBOURNE MUSIC MACHINE/);
+  }
   assert.match(runtime,/stats\.playableTrackCount\|\|stats\.playableTracks/);
+  assert.match(runtime,/if\(artistTarget\)artistTarget\.textContent/);
+  assert.match(runtime,/if\(trackTarget\)trackTarget\.textContent/);
 });
 
 test('the cream identity sign transforms into a factual continuous right-to-left Melbourne ticker after a win',async()=>{
