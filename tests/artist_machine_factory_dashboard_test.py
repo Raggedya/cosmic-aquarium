@@ -1,15 +1,36 @@
 from __future__ import annotations
 
 import subprocess
+import tempfile
 import unittest
 from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import call, patch
 
-from desktop.artist_machine_factory_dashboard import refresh_git_workspace, run_process
+from desktop.artist_machine_factory_dashboard import application_data, copy_missing_private_items, refresh_git_workspace, run_process
 
 
 class ArtistMachineFactoryDashboardTests(unittest.TestCase):
+    def test_application_data_uses_non_virtualized_user_profile_location(self) -> None:
+        with patch.dict("os.environ", {"USERPROFILE": "C:/Users/Test", "LOCALAPPDATA": "C:/Users/Test/AppData/Local"}, clear=True):
+            self.assertEqual(application_data(), Path("C:/Users/Test/AGGITS/Artist Machine Factory"))
+
+    def test_private_migration_copies_missing_items_without_overwriting(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            source = root / "legacy"
+            destination = root / "current"
+            source.mkdir()
+            destination.mkdir()
+            (source / "chime.json").write_text("legacy", encoding="utf-8")
+            (source / "new-band.json").write_text("new", encoding="utf-8")
+            (destination / "chime.json").write_text("current", encoding="utf-8")
+
+            copy_missing_private_items(source, destination)
+
+            self.assertEqual((destination / "chime.json").read_text(encoding="utf-8"), "current")
+            self.assertEqual((destination / "new-band.json").read_text(encoding="utf-8"), "new")
+
     @patch("desktop.artist_machine_factory_dashboard.run_process")
     def test_refresh_does_not_checkout_main_when_already_on_main(self, process) -> None:
         process.side_effect = [SimpleNamespace(stdout="main\n"), SimpleNamespace(stdout="Already up to date.\n")]

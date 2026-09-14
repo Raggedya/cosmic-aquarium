@@ -44,8 +44,31 @@ ERROR = "#e89a9f"
 
 
 def application_data() -> Path:
+    override = os.environ.get("AGGITS_FACTORY_HOME")
+    if override:
+        return Path(override).expanduser()
+    profile = Path(os.environ.get("USERPROFILE") or Path.home())
+    return profile / "AGGITS" / "Artist Machine Factory"
+
+
+def legacy_application_data() -> Path:
     base = Path(os.environ.get("LOCALAPPDATA") or Path.home() / "AppData" / "Local")
     return base / "AGGITS" / "Artist Machine Factory"
+
+
+def copy_missing_private_items(source: Path, destination: Path) -> None:
+    """Migrate private files once without replacing newer destination data."""
+    if not source.is_dir() or source.resolve() == destination.resolve():
+        return
+    destination.mkdir(parents=True, exist_ok=True)
+    for item in source.iterdir():
+        target = destination / item.name
+        if target.exists():
+            continue
+        if item.is_dir():
+            shutil.copytree(item, target)
+        elif item.is_file():
+            shutil.copy2(item, target)
 
 
 def creation_flags() -> int:
@@ -95,10 +118,12 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.configure(bg=INK)
 
         self.data_root = application_data()
+        self.legacy_data_root = legacy_application_data()
         self.workspace = self.data_root / "workspace"
         self.drafts = self.data_root / "drafts"
         self.data_root.mkdir(parents=True, exist_ok=True)
         self.drafts.mkdir(parents=True, exist_ok=True)
+        copy_missing_private_items(self.legacy_data_root / "drafts", self.drafts)
 
         self.reference_path = tk.StringVar()
         self.current_slug = ""
@@ -396,6 +421,10 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             run_process([gh, "repo", "clone", REPOSITORY, str(self.workspace), "--", "--depth=1"])
         else:
             refresh_git_workspace(git, self.workspace)
+        copy_missing_private_items(
+            self.legacy_data_root / "workspace" / "automation" / "artist-machine-factory" / "candidates",
+            self.workspace / "automation" / "artist-machine-factory" / "candidates",
+        )
         factory.configure_workspace(self.workspace)
         return self.workspace
 
