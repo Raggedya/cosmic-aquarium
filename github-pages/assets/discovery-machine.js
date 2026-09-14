@@ -443,7 +443,7 @@ function updateStats(){
     const artistTarget=document.querySelector('[data-stat="artists"]');if(artistTarget)artistTarget.textContent=artists.toLocaleString('en-AU');
     const identity=artistConfig?.title||artistConfig?.artistName||'ARTIST';
     if(machineTitleHeading){
-      const heading=cleanText(isFestivalMode?identity:`${identity} MUSIC MACHINE`,96).toUpperCase();
+      const heading=cleanText(identity,96).toUpperCase();
       machineTitleHeading.textContent=heading;
       machineTitleHeading.classList.toggle('is-long',isFestivalMode&&heading.length>28);
       machineTitleHeading.classList.toggle('is-very-long',isFestivalMode&&heading.length>42);

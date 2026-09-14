@@ -9,12 +9,27 @@ test('Artist Mode is one reusable one-reel machine with the approved controls an
   const template=await read('templates/artist-machine.html');
   assert.match(template,/data-machine-mode="artist"/);
   assert.equal((template.match(/class="reel" data-reel=/g)||[]).length,1);
-  assert.match(template,/data-machine-title>ARTIST MUSIC MACHINE/);
+  assert.match(template,/data-machine-title>ARTIST<\/strong>/);
+  assert.doesNotMatch(template,/MUSIC MACHINE<\/strong>|BANDCAMP CATALOGUE|data-stat="tracks"/);
   for(const action of ['share','play','buy','spin-again'])assert.match(template,new RegExp(`data-action="${action}"`));
   assert.match(template,/VISIT<br>BANDCAMP/);
   assert.match(template,/WANT ONE FOR YOUR BAND\?/);
   assert.match(template,/GET YOUR OWN MUSIC MACHINE/);
   for(const field of ['artistName','bandcampUrl','email','city','message','website'])assert.match(template,new RegExp(`name="${field}"`));
+});
+
+test('Artist Mode title contains only the artist name and no catalogue subtitle',async()=>{
+  const [template,published,runtime]=await Promise.all([
+    read('templates/artist-machine.html'),
+    read('github-pages/artist/index.html'),
+    read('github-pages/assets/discovery-machine.js'),
+  ]);
+  for(const page of [template,published]){
+    assert.match(page,/data-machine-title>ARTIST<\/strong>/);
+    assert.doesNotMatch(page,/MUSIC MACHINE<\/strong>|BANDCAMP CATALOGUE|data-stat="tracks"/);
+  }
+  assert.match(runtime,/const heading=cleanText\(identity,96\)\.toUpperCase\(\)/);
+  assert.doesNotMatch(runtime,/`\$\{identity\} MUSIC MACHINE`/);
 });
 
 test('Artist Mode and Melbourne City Mode share the same cabinet runtime and canonical spin path',async()=>{
