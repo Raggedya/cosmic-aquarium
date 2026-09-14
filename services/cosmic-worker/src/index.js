@@ -183,6 +183,34 @@ function syncAuthorized(request, env) {
   return authorized(request,env) || (Boolean(env.SYNC_TOKEN) && header === `Bearer ${env.SYNC_TOKEN}`);
 }
 
+async function syncArtistMachineInventory(request, env) {
+  if(!syncAuthorized(request,env))return json({ok:false,error:'unauthorized'},401,CORS);
+  const body=await readBody(request);
+  const input=Array.isArray(body?.machines)?body.machines:[];
+  if(input.length>100)return json({ok:false,error:'too_many_machines'},400,CORS);
+  const machines=[];
+  for(const item of input){
+    const slug=validArtistMachineSlug(item?.artistSlug);
+    const artistName=clean(item?.artistName,120);
+    const publicUrl=clean(item?.publicUrl,600);
+    const songCount=Number(item?.songCount||0);
+    if(!slug||!artistName||publicUrl!==artistMachinePublicUrl(slug)||!Number.isInteger(songCount)||songCount<0)return json({ok:false,error:'invalid_machine'},400,CORS);
+    machines.push({slug,artistName,publicUrl,songCount});
+  }
+  const now=new Date().toISOString();
+  const statements=[];
+  if(body?.fullReplace===true)statements.push(env.DB.prepare("UPDATE artist_machine_inventory SET status='disabled',updated_at=?").bind(now));
+  for(const machine of machines){
+    statements.push(env.DB.prepare(`INSERT INTO artist_machine_inventory
+      (slug,artist_name,public_url,song_count,status,created_at,updated_at)
+      VALUES (?,?,?,?,?,?,?) ON CONFLICT(slug) DO UPDATE SET artist_name=excluded.artist_name,public_url=excluded.public_url,
+      song_count=excluded.song_count,status='published',updated_at=excluded.updated_at`)
+      .bind(machine.slug,machine.artistName,machine.publicUrl,machine.songCount,'published',now,now));
+  }
+  if(statements.length)await env.DB.batch(statements);
+  return json({ok:true,synced:machines.length},200,CORS);
+}
+
 function systemEventStatement(env, eventType, aquariumId, metadata = null, createdAt = new Date().toISOString()) {
   return env.DB.prepare(`INSERT INTO analytics_event
     (id,event_type,aquarium_id,track_id,batch_id,session_id,source_aquarium_id,destination_aquarium_id,metadata,created_at)
@@ -436,6 +464,35 @@ async function activityReport(env, endValue = Date.now()) {
     WHERE created_at>=? AND created_at<? AND event_type='winner_revealed'
     GROUP BY artist ORDER BY reveals DESC,artist COLLATE NOCASE LIMIT 25`)
     .bind(window.start,window.end).all();
+  const artistMachines = await env.DB.prepare(`SELECT m.slug,m.artist_name,m.public_url,m.song_count,
+    COUNT(CASE WHEN e.event_type='artist_machine_loaded' THEN 1 END) AS opens,
+    COUNT(DISTINCT CASE WHEN e.session_id<>'system' THEN e.session_id END) AS visitors,
+    COUNT(CASE WHEN e.event_type='spin_started' THEN 1 END) AS spins,
+    COUNT(CASE WHEN e.event_type='winner_revealed' THEN 1 END) AS reveals,
+    COUNT(CASE WHEN e.event_type='track_play_started' THEN 1 END) AS plays,
+    COUNT(CASE WHEN e.event_type='bandcamp_click' THEN 1 END) AS bandcamp_clicks,
+    COUNT(CASE WHEN e.event_type='buy_click' THEN 1 END) AS buy_clicks,
+    COUNT(CASE WHEN e.event_type='share_click' THEN 1 END) AS shares,
+    COUNT(CASE WHEN e.event_type='track_love' THEN 1 END) AS loves
+    FROM artist_machine_inventory m
+    LEFT JOIN analytics_event e ON e.aquarium_id=('artist-machine:'||m.slug) AND e.created_at>=? AND e.created_at<?
+    WHERE m.status='published'
+    GROUP BY m.slug,m.artist_name,m.public_url,m.song_count
+    ORDER BY visitors DESC,opens DESC,m.artist_name COLLATE NOCASE`)
+    .bind(window.start,window.end).all();
+  const artistMachineTracks = await env.DB.prepare(`SELECT substr(aquarium_id,16) AS slug,
+    COALESCE(NULLIF(json_extract(metadata,'$.track'),''),NULLIF(json_extract(metadata,'$.trackName'),''),'Unknown track') AS track,
+    COUNT(*) AS reveals,COUNT(DISTINCT session_id) AS visitors
+    FROM analytics_event
+    WHERE created_at>=? AND created_at<? AND aquarium_id LIKE 'artist-machine:%' AND event_type='winner_revealed'
+    GROUP BY slug,track ORDER BY slug,reveals DESC,visitors DESC,track COLLATE NOCASE`)
+    .bind(window.start,window.end).all();
+  const tracksByMachine=new Map();
+  for(const item of artistMachineTracks.results||[]){
+    const tracks=tracksByMachine.get(item.slug)||[];
+    if(tracks.length<3)tracks.push({track:item.track,reveals:Number(item.reveals||0),visitors:Number(item.visitors||0)});
+    tracksByMachine.set(item.slug,tracks);
+  }
   const libraries = await env.DB.prepare(`SELECT a.id,a.artist,a.release_title,a.aquarium_url,a.status,
     COUNT(CASE WHEN e.event_type='aquarium_open' THEN 1 END) AS visits,
     COUNT(CASE WHEN e.event_type='object_touch' THEN 1 END) AS flower_touches,
@@ -453,6 +510,12 @@ async function activityReport(env, endValue = Date.now()) {
     funnel:Object.fromEntries(Object.entries(funnel||{}).map(([key,value])=>[key,Number(value||0)])),
     sources:(sources.results||[]).map(item=>({...item,visitors:Number(item.visitors||0),entries:Number(item.entries||0)})),
     discoveries:(discoveries.results||[]).map(item=>({...item,reveals:Number(item.reveals||0),visitors:Number(item.visitors||0)})),
+    artistMachines:(artistMachines.results||[]).map(item=>({...item,
+      song_count:Number(item.song_count||0),opens:Number(item.opens||0),visitors:Number(item.visitors||0),
+      spins:Number(item.spins||0),reveals:Number(item.reveals||0),plays:Number(item.plays||0),
+      bandcamp_clicks:Number(item.bandcamp_clicks||0),buy_clicks:Number(item.buy_clicks||0),
+      shares:Number(item.shares||0),loves:Number(item.loves||0),topTracks:tracksByMachine.get(item.slug)||[],
+    })),
     libraries:libraries.results||[]};
 }
 
@@ -472,10 +535,17 @@ function activityReportMessage(report) {
   const funnelRows=funnelItems.map(([label,value],index)=>`<tr><td style="padding:9px 10px;border-bottom:1px solid #272940">${index+1}. ${escapeHtml(label)}</td><td style="padding:9px 10px;border-bottom:1px solid #272940;text-align:right">${Number(value||0)}</td><td style="padding:9px 10px;border-bottom:1px solid #272940;text-align:right;color:#aaa4b7">${percent(value)}</td></tr>`).join('');
   const sourceRows=(report.sources||[]).map(item=>`<tr><td style="padding:8px 10px;border-bottom:1px solid #272940">${escapeHtml(String(item.source||'unattributed').replace(/[-_]/g,' '))}</td><td style="padding:8px 10px;border-bottom:1px solid #272940;text-align:right">${Number(item.visitors||0)}</td><td style="padding:8px 10px;border-bottom:1px solid #272940;text-align:right;color:#aaa4b7">${percent(item.visitors)}</td></tr>`).join('');
   const discoveryRows=(report.discoveries||[]).map((item,index)=>`<tr><td style="padding:8px 10px;border-bottom:1px solid #272940">${index+1}. ${escapeHtml(item.artist)}</td><td style="padding:8px 10px;border-bottom:1px solid #272940;text-align:right">${Number(item.reveals||0)}</td><td style="padding:8px 10px;border-bottom:1px solid #272940;text-align:right">${Number(item.visitors||0)}</td></tr>`).join('');
+  const machineMetric=(value,visitors)=>`<strong>${Number(value||0)}</strong><br><span style="color:#777386;font-size:10px">${visitors?percentFor(value,visitors):'0%'}</span>`;
+  const percentFor=(value,base)=>`${Math.round(Number(value||0)*1000/Math.max(1,Number(base||0)))/10}%`;
+  const artistMachineRows=(report.artistMachines||[]).map(item=>{
+    const tracks=(item.topTracks||[]).map(track=>`${escapeHtml(track.track)} (${Number(track.reveals||0)})`).join(' · ');
+    const artist=`<a href="${escapeHtml(item.public_url)}" style="color:#d9ceff;text-decoration:none">${escapeHtml(item.artist_name)}</a><br><span style="color:#777386;font-size:10px">${Number(item.song_count||0)} songs${tracks?` · Top: ${tracks}`:''}</span>`;
+    return `<tr><td style="padding:10px;border-bottom:1px solid #272940">${artist}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.opens||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.visitors||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${machineMetric(item.spins,item.visitors)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${machineMetric(item.plays,item.visitors)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${machineMetric(item.bandcamp_clicks,item.visitors)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${machineMetric(item.buy_clicks,item.visitors)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${machineMetric(item.shares,item.visitors)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${machineMetric(item.loves,item.visitors)}</td></tr>`;
+  }).join('');
   const eventRows = Object.entries(EVENT_LABELS).map(([type,label])=>`<tr><td style="padding:8px 10px;border-bottom:1px solid #272940">${escapeHtml(label)}</td><td style="padding:8px 10px;border-bottom:1px solid #272940;text-align:right">${Number(report.totals[type]||0)}</td></tr>`).join('');
   const libraryRows = report.libraries.map(item=>`<tr><td style="padding:10px;border-bottom:1px solid #272940"><a href="${escapeHtml(item.aquarium_url)}" style="color:#d9ceff;text-decoration:none">${escapeHtml(item.artist)} — ${escapeHtml(item.release_title)}</a><br><span style="color:#777386;font-size:11px">${escapeHtml(item.status)}</span></td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.visits||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.flower_touches||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.songs_revealed||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.native_shares||0)+Number(item.copied_shares||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.buy_clicks||0)}</td><td style="padding:10px;border-bottom:1px solid #272940;text-align:center">${Number(item.explores||0)}</td></tr>`).join('');
-  const html=`<!doctype html><html><body style="margin:0;background:#060814;color:#f1edf8;font-family:Arial,sans-serif"><div style="max-width:760px;margin:auto;padding:38px 20px"><p style="letter-spacing:.35em;font-size:12px;color:#aba5ba">COSMIC AQUARIA</p><h1 style="font-weight:400;font-size:26px">Daily discovery report — ${escapeHtml(report.reportDate)}</h1><p style="color:#aaa4b7">The previous 24 hours ending at 7 p.m. Sydney time. Activity is anonymous; no personal visitor details are collected.</p><div style="display:inline-block;padding:14px 18px;margin:8px 0 24px;background:#11152b;border:1px solid #292d48"><strong style="font-size:24px;font-weight:400">${Number(report.funnel?.visitors||report.uniqueSessions||0)}</strong><br><span style="font-size:12px;color:#aaa4b7">PEOPLE VISITING</span></div><h2 style="font-size:18px;font-weight:400">Discovery funnel</h2><table role="presentation" style="width:100%;border-collapse:collapse;background:#0a0d20">${funnelRows}</table><h2 style="font-size:18px;font-weight:400;margin-top:30px">Where visitors came from</h2><table role="presentation" style="width:100%;border-collapse:collapse;background:#0a0d20">${sourceRows||'<tr><td style="padding:10px">No attributed visits yet.</td></tr>'}</table><h2 style="font-size:18px;font-weight:400;margin-top:30px">Most discovered artists</h2><table role="presentation" style="width:100%;border-collapse:collapse;background:#0a0d20"><thead><tr style="color:#aaa4b7;font-size:11px"><th style="padding:9px;text-align:left">ARTIST</th><th>REVEALS</th><th>PEOPLE</th></tr></thead><tbody>${discoveryRows||'<tr><td colspan="3" style="padding:10px">No completed discoveries yet.</td></tr>'}</tbody></table><h2 style="font-size:18px;font-weight:400;margin-top:30px">All activity types</h2><table role="presentation" style="width:100%;border-collapse:collapse;background:#0a0d20">${eventRows}</table><h2 style="font-size:18px;font-weight:400;margin-top:30px">Every Artist Aquarium</h2><div style="overflow-x:auto"><table role="presentation" style="width:100%;min-width:660px;border-collapse:collapse;background:#0a0d20"><thead><tr style="color:#aaa4b7;font-size:11px"><th style="padding:9px;text-align:left">AQUARIUM</th><th>VISITS</th><th>FLOWERS</th><th>SONGS</th><th>SHARES</th><th>BUY</th><th>EXPLORE</th></tr></thead><tbody>${libraryRows}</tbody></table></div><p style="margin-top:26px;color:#777386;font-size:11px">Traffic sources are taken from campaign links or the referring site when available. Direct visits and older links may be unattributed. Share totals distinguish native share menus and copied links; iPhone does not reveal which app was chosen.</p></div></body></html>`;
-  const text=['COSMIC AQUARIA',`Daily discovery report — ${report.reportDate}`,'Previous 24 hours ending at 7 p.m. Sydney time','',...funnelItems.map(([label,value])=>`${label}: ${Number(value||0)} (${percent(value)})`),'','WHERE VISITORS CAME FROM',...(report.sources||[]).map(item=>`${item.source}: ${item.visitors} (${percent(item.visitors)})`),'','MOST DISCOVERED ARTISTS',...(report.discoveries||[]).map((item,index)=>`${index+1}. ${item.artist}: ${item.reveals} reveals, ${item.visitors} people`),'','ALL ACTIVITY TYPES',...Object.entries(EVENT_LABELS).map(([type,label])=>`${label}: ${Number(report.totals[type]||0)}`),'','EVERY ARTIST AQUARIUM',...report.libraries.map(item=>`${item.artist} — ${item.release_title}: visits ${item.visits||0}, flowers ${item.flower_touches||0}, songs ${item.songs_revealed||0}, Bandcamp ${item.bandcamp_clicks||0}, shares ${Number(item.native_shares||0)+Number(item.copied_shares||0)}, buy ${item.buy_clicks||0}, explore ${item.explores||0}`)].join('\n');
+  const html=`<!doctype html><html><body style="margin:0;background:#060814;color:#f1edf8;font-family:Arial,sans-serif"><div style="max-width:980px;margin:auto;padding:38px 20px"><p style="letter-spacing:.35em;font-size:12px;color:#aba5ba">COSMIC AQUARIA</p><h1 style="font-weight:400;font-size:26px">Daily discovery report — ${escapeHtml(report.reportDate)}</h1><p style="color:#aaa4b7">The previous 24 hours ending at 7 p.m. Sydney time. Activity is anonymous; no personal visitor details are collected.</p><div style="display:inline-block;padding:14px 18px;margin:8px 0 24px;background:#11152b;border:1px solid #292d48"><strong style="font-size:24px;font-weight:400">${Number(report.funnel?.visitors||report.uniqueSessions||0)}</strong><br><span style="font-size:12px;color:#aaa4b7">PEOPLE VISITING</span></div><h2 style="font-size:18px;font-weight:400">Discovery funnel</h2><table role="presentation" style="width:100%;border-collapse:collapse;background:#0a0d20">${funnelRows}</table><h2 style="font-size:18px;font-weight:400;margin-top:30px">Where visitors came from</h2><table role="presentation" style="width:100%;border-collapse:collapse;background:#0a0d20">${sourceRows||'<tr><td style="padding:10px">No attributed visits yet.</td></tr>'}</table><h2 style="font-size:18px;font-weight:400;margin-top:30px">Most discovered artists</h2><table role="presentation" style="width:100%;border-collapse:collapse;background:#0a0d20"><thead><tr style="color:#aaa4b7;font-size:11px"><th style="padding:9px;text-align:left">ARTIST</th><th>REVEALS</th><th>PEOPLE</th></tr></thead><tbody>${discoveryRows||'<tr><td colspan="3" style="padding:10px">No completed discoveries yet.</td></tr>'}</tbody></table><h2 style="font-size:18px;font-weight:400;margin-top:30px">Artist Machine performance</h2><p style="color:#aaa4b7;font-size:12px">Counts are followed by the percentage of that machine’s visitors. Published machines with no activity are included.</p><div style="overflow-x:auto"><table role="presentation" style="width:100%;min-width:940px;border-collapse:collapse;background:#0a0d20"><thead><tr style="color:#aaa4b7;font-size:10px"><th style="padding:9px;text-align:left">ARTIST</th><th>OPENS</th><th>VISITORS</th><th>SPINS</th><th>PLAYS</th><th>BANDCAMP</th><th>BUY</th><th>SHARES</th><th>LOVES</th></tr></thead><tbody>${artistMachineRows||'<tr><td colspan="9" style="padding:10px">No published Artist Machines yet.</td></tr>'}</tbody></table></div><h2 style="font-size:18px;font-weight:400;margin-top:30px">All activity types</h2><table role="presentation" style="width:100%;border-collapse:collapse;background:#0a0d20">${eventRows}</table><h2 style="font-size:18px;font-weight:400;margin-top:30px">Every Artist Aquarium</h2><div style="overflow-x:auto"><table role="presentation" style="width:100%;min-width:660px;border-collapse:collapse;background:#0a0d20"><thead><tr style="color:#aaa4b7;font-size:11px"><th style="padding:9px;text-align:left">AQUARIUM</th><th>VISITS</th><th>FLOWERS</th><th>SONGS</th><th>SHARES</th><th>BUY</th><th>EXPLORE</th></tr></thead><tbody>${libraryRows}</tbody></table></div><p style="margin-top:26px;color:#777386;font-size:11px">Traffic sources are taken from campaign links or the referring site when available. Direct visits and older links may be unattributed. Artist Machine percentages use anonymous visitors to that machine as the baseline. A Bandcamp click records intent; Bandcamp does not disclose completed purchases here.</p></div></body></html>`;
+  const text=['COSMIC AQUARIA',`Daily discovery report — ${report.reportDate}`,'Previous 24 hours ending at 7 p.m. Sydney time','',...funnelItems.map(([label,value])=>`${label}: ${Number(value||0)} (${percent(value)})`),'','WHERE VISITORS CAME FROM',...(report.sources||[]).map(item=>`${item.source}: ${item.visitors} (${percent(item.visitors)})`),'','MOST DISCOVERED ARTISTS',...(report.discoveries||[]).map((item,index)=>`${index+1}. ${item.artist}: ${item.reveals} reveals, ${item.visitors} people`),'','ARTIST MACHINE PERFORMANCE',...(report.artistMachines||[]).map(item=>`${item.artist_name}: opens ${item.opens}, visitors ${item.visitors}, spins ${item.spins} (${percentFor(item.spins,item.visitors)}), plays ${item.plays} (${percentFor(item.plays,item.visitors)}), Bandcamp ${item.bandcamp_clicks} (${percentFor(item.bandcamp_clicks,item.visitors)}), buy ${item.buy_clicks} (${percentFor(item.buy_clicks,item.visitors)}), shares ${item.shares} (${percentFor(item.shares,item.visitors)}), loves ${item.loves} (${percentFor(item.loves,item.visitors)}), top tracks ${(item.topTracks||[]).map(track=>`${track.track} (${track.reveals})`).join('; ')||'none'}`),'','ALL ACTIVITY TYPES',...Object.entries(EVENT_LABELS).map(([type,label])=>`${label}: ${Number(report.totals[type]||0)}`),'','EVERY ARTIST AQUARIUM',...report.libraries.map(item=>`${item.artist} — ${item.release_title}: visits ${item.visits||0}, flowers ${item.flower_touches||0}, songs ${item.songs_revealed||0}, Bandcamp ${item.bandcamp_clicks||0}, shares ${Number(item.native_shares||0)+Number(item.copied_shares||0)}, buy ${item.buy_clicks||0}, explore ${item.explores||0}`)].join('\n');
   return {html,text};
 }
 
@@ -576,8 +646,9 @@ const worker = {
       const collectionRandomMatch = url.pathname.match(/^\/api\/collections\/([^/]+)\/random$/);
       if (collectionRandomMatch && request.method === 'GET') return randomCollectionArtist(url,env,decodeURIComponent(collectionRandomMatch[1]));
       if (url.pathname === '/admin' && request.method === 'GET') return adminPage();
-      if (url.pathname === '/api/admin/sync' && !syncAuthorized(request,env)) return json({error:'unauthorized'},401);
-      if (url.pathname.startsWith('/api/admin/') && url.pathname !== '/api/admin/sync' && !authorized(request,env)) return json({error:'unauthorized'},401);
+      const isSyncPath=url.pathname === '/api/admin/sync'||url.pathname === '/api/admin/artist-machines/sync';
+      if (isSyncPath && !syncAuthorized(request,env)) return json({error:'unauthorized'},401);
+      if (url.pathname.startsWith('/api/admin/') && !isSyncPath && !authorized(request,env)) return json({error:'unauthorized'},401);
       if (url.pathname === '/api/admin/sync' && request.method === 'POST') return syncCatalogue(request,env);
       if (url.pathname === '/api/admin/overview' && request.method === 'GET') return overview(env);
       if (url.pathname === '/api/admin/verify-destinations' && request.method === 'GET') return verifyDestinations(env);
@@ -592,6 +663,7 @@ const worker = {
         return json(await sendActivityReport(env,body?.end ? Date.parse(body.end) : Date.now(),body?.force === true));
       }
       if (url.pathname === '/api/admin/email-delivery' && request.method === 'POST') return recordEmailDelivery(request,env);
+      if (url.pathname === '/api/admin/artist-machines/sync' && request.method === 'POST') return syncArtistMachineInventory(request,env);
       const statusMatch = url.pathname.match(/^\/api\/admin\/aquariums\/([^/]+)\/(disable|republish)$/);
       if (statusMatch && request.method === 'POST') return setAquariumStatus(request,env,decodeURIComponent(statusMatch[1]),statusMatch[2] === 'disable' ? 'disabled' : 'published');
       return json({error:'not_found'},404,CORS);

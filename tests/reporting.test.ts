@@ -8,6 +8,8 @@ const worker = fs.readFileSync(path.join(root, 'services', 'cosmic-worker', 'src
 const machine = fs.readFileSync(path.join(root, 'github-pages', 'assets', 'discovery-machine.js'), 'utf8');
 const doorway = fs.readFileSync(path.join(root, 'github-pages', 'assets', 'doorway.js'), 'utf8');
 const aquarium = fs.readFileSync(path.join(root, 'github-pages', 'assets', 'site.js'), 'utf8');
+const pagesWorkflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'deploy-pages.yml'), 'utf8');
+const factoryWorkflow = fs.readFileSync(path.join(root, '.github', 'workflows', 'publish-artist-machine.yml'), 'utf8');
 
 test('daily discovery report is sent at 7 p.m. Sydney time', () => {
   assert.match(worker, /REPORT_TIME_ZONE = 'Australia\/Sydney'/);
@@ -22,6 +24,18 @@ test('report contains the visitor funnel, source attribution and artist discover
   assert.match(worker, /json_extract\(metadata,'\$\.acquisitionSource'\)/);
   assert.match(worker, /event_type='winner_revealed'/);
   assert.match(worker, /Daily discovery report/);
+});
+
+test('daily report contains a complete per-band Artist Machine scorecard', () => {
+  for (const field of ['opens', 'visitors', 'spins', 'plays', 'bandcamp_clicks', 'buy_clicks', 'shares', 'loves']) {
+    assert.ok(worker.includes(`AS ${field}`), `missing Artist Machine field ${field}`);
+  }
+  assert.match(worker, /FROM artist_machine_inventory m/);
+  assert.match(worker, /Artist Machine performance/);
+  assert.match(worker, /Published machines with no activity are included/);
+  assert.match(worker, /topTracks/);
+  assert.match(pagesWorkflow, /sync-artist-machine-reporting\.mjs/);
+  assert.match(factoryWorkflow, /sync-artist-machine-reporting\.mjs/);
 });
 
 test('public experiences preserve privacy-safe acquisition attribution', () => {

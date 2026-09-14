@@ -30,3 +30,7 @@ jobs:
           path: github-pages
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Sync Artist Machine reporting inventory
+        env:
+          COSMIC_WORKER_SYNC_TOKEN: ${{ secrets.COSMIC_WORKER_SYNC_TOKEN }}
+        run: node scripts/sync-artist-machine-reporting.mjs
