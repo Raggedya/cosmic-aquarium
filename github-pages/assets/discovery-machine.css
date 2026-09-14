@@ -111,7 +111,9 @@ button,a{-webkit-tap-highlight-color:transparent}
 .music-machine[data-machine-content="festival"] .machine-title-identity strong{max-width:92%;overflow:hidden;text-overflow:ellipsis;font-size:clamp(11px,3.25vw,18px);letter-spacing:.012em}
 .music-machine[data-machine-content="festival"] .machine-title-identity strong.is-long{font-size:clamp(9px,2.75vw,15px);letter-spacing:-.005em}
 .music-machine[data-machine-content="festival"] .machine-title-identity strong.is-very-long{font-size:clamp(7px,2.2vw,12px);letter-spacing:-.015em}
-.music-machine[data-machine-mode="artist"] .machine-title-identity strong{max-width:94%;overflow:hidden;text-overflow:ellipsis;font-size:clamp(9px,3vw,17px)}
+.music-machine[data-machine-mode="artist"] .machine-title-identity strong{max-width:94%;overflow:hidden;text-overflow:ellipsis;font-size:clamp(15px,5.1vw,29px)}
+.music-machine[data-machine-mode="artist"] .machine-title-identity strong.is-long{font-size:clamp(12px,3.9vw,22px)}
+.music-machine[data-machine-mode="artist"] .machine-title-identity strong.is-very-long{font-size:clamp(9px,3vw,17px)}
 .music-machine[data-machine-mode="artist"] .machine-title-identity small{font-size:clamp(6px,1.75vw,10px);letter-spacing:.025em}
 .music-machine[data-machine-mode="artist"] .reel-bank{left:22%;right:22%;top:37%;height:20.2%;grid-template-columns:1fr;gap:0}
 .music-machine[data-machine-content="festival"] .reel-bank{left:19.2%;right:19.2%}

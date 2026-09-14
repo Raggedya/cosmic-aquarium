@@ -11,6 +11,10 @@ on:
         description: Canonical Artist Machine slug
         required: true
         type: string
+      delivery_id:
+        description: Private Cloudflare delivery receipt (optional)
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -33,10 +37,12 @@ jobs:
         env:
           CANDIDATE_REF: ${{ inputs.candidate_ref }}
           ARTIST_SLUG: ${{ inputs.artist_slug }}
+          DELIVERY_ID: ${{ inputs.delivery_id }}
         run: |
           set -euo pipefail
           [[ "$CANDIDATE_REF" =~ ^codex/factory-[a-z0-9]+(-[a-z0-9]+)*-[0-9]{14}$ ]]
           [[ "$ARTIST_SLUG" =~ ^[a-z0-9]+(-[a-z0-9]+)*$ ]]
+          [[ -z "$DELIVERY_ID" || "$DELIVERY_ID" =~ ^[0-9a-f-]{36}$ ]]
       - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.candidate_ref }}
@@ -87,3 +93,18 @@ jobs:
       - name: Deploy approved Artist Machine
         id: deployment
         uses: actions/deploy-pages@v4
+      - name: Email the finished machine link
+        if: ${{ inputs.delivery_id != '' }}
+        continue-on-error: true
+        shell: bash
+        env:
+          DELIVERY_ID: ${{ inputs.delivery_id }}
+          PUBLICATION_ID: ${{ github.run_id }}
+          SYNC_TOKEN: ${{ secrets.COSMIC_WORKER_SYNC_TOKEN }}
+        run: |
+          curl --silent --show-error --fail-with-body \
+            --request POST \
+            --header "Authorization: Bearer $SYNC_TOKEN" \
+            --header "Content-Type: application/json" \
+            --data "{\"publicationId\":\"$PUBLICATION_ID\"}" \
+            "https://cosmic-aquaria.andrewharris501.workers.dev/api/artist-machine-deliveries/$DELIVERY_ID/send"

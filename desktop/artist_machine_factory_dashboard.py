@@ -9,6 +9,8 @@ import subprocess
 import sys
 import threading
 import time
+import urllib.error
+import urllib.request
 import webbrowser
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -29,6 +31,7 @@ import artist_machine_factory as factory  # noqa: E402
 REPOSITORY = "Raggedya/cosmic-aquarium"
 PUBLISH_WORKFLOW = "publish-artist-machine.yml"
 PUBLIC_BASE = "https://raggedya.github.io/cosmic-aquarium/artist/?artist="
+DELIVERY_ENDPOINT = "https://cosmic-aquaria.andrewharris501.workers.dev/api/artist-machine-deliveries"
 
 INK = "#100906"
 PANEL = "#1b0f0a"
@@ -102,6 +105,54 @@ def refresh_git_workspace(git: str, workspace: Path) -> None:
     if branch != "main":
         run_process([git, "-C", str(workspace), "checkout", "main"])
     run_process([git, "-C", str(workspace), "pull", "--ff-only", "origin", "main"])
+
+
+def request_json(url: str, payload: dict[str, object] | None = None) -> dict[str, object]:
+    request = urllib.request.Request(
+        url,
+        data=json.dumps(payload).encode("utf-8") if payload is not None else None,
+        headers={"content-type": "application/json", "user-agent": "AGGITS-Artist-Machine-Factory/1"},
+        method="POST" if payload is not None else "GET",
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=30) as response:
+            value = json.loads(response.read().decode("utf-8"))
+    except urllib.error.HTTPError as error:
+        detail = error.read().decode("utf-8", errors="replace").strip()
+        raise RuntimeError(f"Cloudflare could not complete the delivery email operation ({error.code}).\n\n{detail}") from error
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as error:
+        raise RuntimeError("Cloudflare could not complete the delivery email operation. Please check the internet connection and try again.") from error
+    if not isinstance(value, dict) or not value.get("ok"):
+        raise RuntimeError("Cloudflare did not accept the delivery email request.")
+    return value
+
+
+def post_json(url: str, payload: dict[str, object]) -> dict[str, object]:
+    return request_json(url, payload)
+
+
+def register_delivery_email(report: dict[str, object]) -> str:
+    email = str(report.get("deliveryEmail") or "").strip()
+    if not email:
+        return ""
+    slug = str(report["artistSlug"])
+    result = post_json(DELIVERY_ENDPOINT, {
+        "artistSlug": slug,
+        "artistName": str(report["artistName"]),
+        "email": email,
+        "publicUrl": PUBLIC_BASE + slug,
+    })
+    delivery_id = str(result.get("id") or "")
+    if not delivery_id:
+        raise RuntimeError("Cloudflare did not return a delivery email receipt.")
+    return delivery_id
+
+
+def delivery_email_status(delivery_id: str) -> str:
+    if not delivery_id:
+        return "not_requested"
+    result = request_json(f"{DELIVERY_ENDPOINT}/{delivery_id}")
+    return str(result.get("status") or "unknown")
 
 
 class QuietRequestHandler(SimpleHTTPRequestHandler):
@@ -562,6 +613,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         report = factory.approve(self.current_slug, approved_by, skip_quality_commands=True)
         slug = str(report["artistSlug"])
         try:
+            delivery_id = register_delivery_email(report)
             config = workspace / "automation" / "artist-machines" / f"{slug}.json"
             skin_candidates = list((workspace / "public" / "music-machine").glob(f"{slug}-cabinet.*"))
             if len(skin_candidates) != 1:
@@ -596,6 +648,8 @@ class ArtistMachineFactoryDashboard(tk.Tk):
                 f"candidate_ref={branch}",
                 "-f",
                 f"artist_slug={slug}",
+                "-f",
+                f"delivery_id={delivery_id}",
             ])
             run_id = self._find_run(gh, started)
             conclusion = self._watch_run(gh, run_id)
@@ -603,7 +657,22 @@ class ArtistMachineFactoryDashboard(tk.Tk):
                 details = run_process([gh, "run", "view", str(run_id), "--repo", REPOSITORY, "--json", "url"])
                 run_url = json.loads(details.stdout).get("url", "")
                 raise RuntimeError("Production checks stopped the release safely." + (f"\n\nReview: {run_url}" if run_url else ""))
-            return {"url": PUBLIC_BASE + slug, "status": "published"}
+            email_status = "not_requested" if not delivery_id else "unknown"
+            email_error = ""
+            if delivery_id:
+                try:
+                    email_status = delivery_email_status(delivery_id)
+                    if email_status != "sent":
+                        email_error = "Cloudflare recorded the delivery email as " + email_status + "."
+                except RuntimeError as error:
+                    email_error = str(error)
+            return {
+                "url": PUBLIC_BASE + slug,
+                "status": "published",
+                "emailStatus": email_status,
+                "email": str(report.get("deliveryEmail") or ""),
+                "emailError": email_error,
+            }
         except Exception:
             candidate = factory.candidate_paths(slug)
             now = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
@@ -657,9 +726,22 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.update()
         if result["status"] == "already_current":
             self._set_status("ALREADY CURRENT — LIVE LINK COPIED", SUCCESS)
+        elif result.get("emailStatus") in {"sent", "already_sent"}:
+            self._set_status("PUBLISHED — LINK EMAILED + COPIED", SUCCESS)
+        elif result.get("emailStatus") == "failed":
+            self._set_status("PUBLISHED — LINK COPIED — EMAIL NOT SENT", ERROR)
+        elif result.get("emailStatus") not in {None, "not_requested"}:
+            self._set_status("PUBLISHED — LINK COPIED — CHECK EMAIL STATUS", ERROR)
         else:
             self._set_status("PUBLISHED — LIVE LINK COPIED", SUCCESS)
-        messagebox.showinfo("Artist Machine ready", "The machine passed production checks and its live link has been copied to the clipboard.")
+        if result.get("emailStatus") in {"sent", "already_sent"}:
+            messagebox.showinfo("Artist Machine ready", f"The machine is live. Its link was emailed to {result.get('email')} and copied to the clipboard.")
+        elif result.get("emailStatus") == "failed":
+            messagebox.showwarning("Artist Machine published", "The machine is live and its link is on the clipboard, but the delivery email could not be sent.\n\n" + str(result.get("emailError") or ""))
+        elif result.get("emailStatus") not in {None, "not_requested"}:
+            messagebox.showwarning("Artist Machine published", "The machine is live and its link is on the clipboard, but the delivery email status could not be confirmed.\n\n" + str(result.get("emailError") or ""))
+        else:
+            messagebox.showinfo("Artist Machine ready", "The machine passed production checks and its live link has been copied to the clipboard.")
 
     def _open_live(self) -> None:
         if self.latest_url:

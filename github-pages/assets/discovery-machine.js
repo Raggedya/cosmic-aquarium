@@ -445,8 +445,8 @@ function updateStats(){
     if(machineTitleHeading){
       const heading=cleanText(identity,96).toUpperCase();
       machineTitleHeading.textContent=heading;
-      machineTitleHeading.classList.toggle('is-long',isFestivalMode&&heading.length>28);
-      machineTitleHeading.classList.toggle('is-very-long',isFestivalMode&&heading.length>42);
+      machineTitleHeading.classList.toggle('is-long',(isFestivalMode&&heading.length>28)||(isArtistMode&&heading.length>18));
+      machineTitleHeading.classList.toggle('is-very-long',(isFestivalMode&&heading.length>42)||(isArtistMode&&heading.length>28));
     }
     if(isFestivalMode){renderFestivalHeaderIdentity();renderFestivalSpeakerTitle(identity)}
     else if(speakerLabel)speakerLabel.innerHTML=`${cleanText(identity,34).toUpperCase()}<br>ON BANDCAMP`;

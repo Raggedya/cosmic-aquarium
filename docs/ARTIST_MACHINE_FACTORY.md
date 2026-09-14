@@ -57,7 +57,7 @@ python scripts/artist_machine_factory.py approve --slug artist-slug --approved-b
 
 Approval records the engine version, approver, timestamp, source report and skin checksum. It then promotes the configuration and skin, rebuilds the public output and runs the full machine test suite. If a quality check fails, the prior production configuration and skin are restored.
 
-Deployment and the final email remain deliberate post-approval operations. The public link format is:
+The desktop Factory deploys only after explicit approval. When a delivery email is supplied, it registers that address privately with the Cloudflare Worker and sends the permanent link through Resend only after the production deployment succeeds. The address and delivery receipt never enter the public repository. The public link format is:
 
 `https://raggedya.github.io/cosmic-aquarium/artist/?artist=<slug>`
 

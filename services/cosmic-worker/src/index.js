@@ -114,6 +114,70 @@ async function artistMachineRequest(request, env) {
   return json({ok:true,id},202,CORS);
 }
 
+function validArtistMachineSlug(value) {
+  const slug=clean(value,96);
+  return slug&&/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)?slug:null;
+}
+
+function artistMachinePublicUrl(slug) {
+  return `https://raggedya.github.io/cosmic-aquarium/artist/?artist=${encodeURIComponent(slug)}`;
+}
+
+async function createArtistMachineDelivery(request, env) {
+  if(!artistRequestOriginAllowed(request,env))return json({ok:false,error:'origin_not_allowed'},403,CORS);
+  const body=await readBody(request);
+  if(body?.website)return json({ok:true},202,CORS);
+  const artistSlug=validArtistMachineSlug(body?.artistSlug);
+  const artistName=clean(body?.artistName,120);
+  const email=clean(body?.email,320)?.toLowerCase();
+  const publicUrl=clean(body?.publicUrl,600);
+  if(!artistSlug||!artistName||!email||!validEmail(email)||publicUrl!==artistMachinePublicUrl(artistSlug))return json({ok:false,error:'invalid_request'},400,CORS);
+  const ipHash=await requestFingerprint(request);
+  const [recentIp,recentEmail]=await Promise.all([
+    env.DB.prepare("SELECT COUNT(*) AS total FROM artist_machine_delivery WHERE ip_hash=? AND strftime('%s',created_at)>=strftime('%s','now','-1 hour')").bind(ipHash).first(),
+    env.DB.prepare("SELECT COUNT(*) AS total FROM artist_machine_delivery WHERE email=? AND strftime('%s',created_at)>=strftime('%s','now','-1 day')").bind(email).first(),
+  ]);
+  if(Number(recentIp?.total||0)>=5||Number(recentEmail?.total||0)>=10)return json({ok:false,error:'rate_limited'},429,{...CORS,'retry-after':'3600'});
+  const id=crypto.randomUUID(),createdAt=new Date().toISOString();
+  await env.DB.prepare(`INSERT INTO artist_machine_delivery
+    (id,artist_slug,artist_name,email,public_url,ip_hash,status,created_at)
+    VALUES (?,?,?,?,?,?,?,?)`).bind(id,artistSlug,artistName,email,publicUrl,ipHash,'pending',createdAt).run();
+  return json({ok:true,id},201,CORS);
+}
+
+async function sendArtistMachineDelivery(request, env, id) {
+  if(!syncAuthorized(request,env))return json({ok:false,error:'unauthorized'},401,CORS);
+  const deliveryId=clean(id,80);
+  const body=await readBody(request);
+  const publicationId=clean(body?.publicationId,32);
+  if(!deliveryId||!/^[0-9a-f-]{36}$/i.test(deliveryId)||!publicationId||!/^\d+$/.test(publicationId))return json({ok:false,error:'invalid_request'},400,CORS);
+  const delivery=await env.DB.prepare('SELECT * FROM artist_machine_delivery WHERE id=?').bind(deliveryId).first();
+  if(!delivery)return json({ok:false,error:'delivery_not_found'},404,CORS);
+  if(delivery.status==='sent')return json({ok:true,status:'already_sent'},200,CORS);
+  const configResponse=await fetch(`https://raw.githubusercontent.com/Raggedya/cosmic-aquarium/main/automation/artist-machines/${encodeURIComponent(delivery.artist_slug)}.json?publication=${encodeURIComponent(publicationId)}`,{headers:{'user-agent':'cosmic-aquaria-delivery'}});
+  const config=await configResponse.json().catch(()=>({}));
+  if(!configResponse.ok||config?.artistSlug!==delivery.artist_slug||config?.artistName!==delivery.artist_name)return json({ok:false,error:'artist_not_published'},409,CORS);
+  const sender=env.ARTIST_MACHINE_DELIVERY_FROM_EMAIL||env.REPORT_FROM_EMAIL;
+  if(!env.RESEND_API_KEY||!sender)return json({ok:false,error:'delivery_service_unavailable'},503,CORS);
+  const subject=`${delivery.artist_name} Music Machine is live`;
+  const text=`${delivery.artist_name} is now live on AGGITS.\n\nOpen the jukebox: ${delivery.public_url}\n\nThis link is permanent and ready to share.`;
+  const html=`<h1>${escapeHtml(delivery.artist_name)} is live on AGGITS</h1><p><a href="${escapeHtml(delivery.public_url)}">Open the jukebox</a></p><p>This link is permanent and ready to share.</p>`;
+  const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{authorization:`Bearer ${env.RESEND_API_KEY}`,'content-type':'application/json','idempotency-key':`artist-machine-delivery-${deliveryId}`},body:JSON.stringify({from:sender,to:[delivery.email],subject,text,html})});
+  const result=await response.json().catch(()=>({}));
+  const sentAt=response.ok?new Date().toISOString():null;
+  await env.DB.prepare('UPDATE artist_machine_delivery SET publication_id=?,status=?,provider_id=?,failure_reason=?,sent_at=? WHERE id=?').bind(publicationId,response.ok?'sent':'failed',clean(result.id,160),response.ok?null:JSON.stringify(result).slice(0,800),sentAt,deliveryId).run();
+  if(!response.ok)return json({ok:false,error:'delivery_failed'},502,CORS);
+  return json({ok:true,status:'sent'},202,CORS);
+}
+
+async function artistMachineDeliveryStatus(env, id) {
+  const deliveryId=clean(id,80);
+  if(!deliveryId||!/^[0-9a-f-]{36}$/i.test(deliveryId))return json({ok:false,error:'invalid_request'},400,CORS);
+  const delivery=await env.DB.prepare('SELECT status FROM artist_machine_delivery WHERE id=?').bind(deliveryId).first();
+  if(!delivery)return json({ok:false,error:'delivery_not_found'},404,CORS);
+  return json({ok:true,status:clean(delivery.status,32)},200,CORS);
+}
+
 function syncAuthorized(request, env) {
   const header = request.headers.get('authorization') || '';
   return authorized(request,env) || (Boolean(env.SYNC_TOKEN) && header === `Bearer ${env.SYNC_TOKEN}`);
@@ -502,6 +566,11 @@ const worker = {
       if (url.pathname === '/api/health') return json({ok:true,service:'cosmic-aquaria'} ,200,CORS);
       if (url.pathname === '/api/events' && request.method === 'POST') return recordEvent(request,env);
       if (url.pathname === '/api/artist-machine-requests' && request.method === 'POST') return artistMachineRequest(request,env);
+      if (url.pathname === '/api/artist-machine-deliveries' && request.method === 'POST') return createArtistMachineDelivery(request,env);
+      const artistDeliveryStatusMatch=url.pathname.match(/^\/api\/artist-machine-deliveries\/([0-9a-f-]{36})$/i);
+      if (artistDeliveryStatusMatch && request.method === 'GET') return artistMachineDeliveryStatus(env,artistDeliveryStatusMatch[1]);
+      const artistDeliveryMatch=url.pathname.match(/^\/api\/artist-machine-deliveries\/([0-9a-f-]{36})\/send$/i);
+      if (artistDeliveryMatch && request.method === 'POST') return sendArtistMachineDelivery(request,env,artistDeliveryMatch[1]);
       if (url.pathname === '/api/email/open.gif' && request.method === 'GET') return recordEmailOpen(url,env);
       if (url.pathname === '/api/aquariums/random' && request.method === 'GET') return randomAquarium(url,env);
       const collectionRandomMatch = url.pathname.match(/^\/api\/collections\/([^/]+)\/random$/);

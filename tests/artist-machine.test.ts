@@ -19,10 +19,11 @@ test('Artist Mode is one reusable one-reel machine with the approved controls an
 });
 
 test('Artist Mode title contains only the artist name and no catalogue subtitle',async()=>{
-  const [template,published,runtime]=await Promise.all([
+  const [template,published,runtime,css]=await Promise.all([
     read('templates/artist-machine.html'),
     read('github-pages/artist/index.html'),
     read('github-pages/assets/discovery-machine.js'),
+    read('app/discovery-machine.css'),
   ]);
   for(const page of [template,published]){
     assert.match(page,/data-machine-title>ARTIST<\/strong>/);
@@ -30,6 +31,9 @@ test('Artist Mode title contains only the artist name and no catalogue subtitle'
   }
   assert.match(runtime,/const heading=cleanText\(identity,96\)\.toUpperCase\(\)/);
   assert.doesNotMatch(runtime,/`\$\{identity\} MUSIC MACHINE`/);
+  assert.match(runtime,/isArtistMode&&heading\.length>18/);
+  assert.match(css,/data-machine-mode="artist"\] \.machine-title-identity strong\{[^}]*font-size:clamp\(15px,5\.1vw,29px\)/);
+  assert.match(css,/data-machine-mode="artist"\] \.machine-title-identity strong\.is-very-long\{font-size:clamp\(9px,3vw,17px\)/);
 });
 
 test('Artist Mode and Melbourne City Mode share the same cabinet runtime and canonical spin path',async()=>{
@@ -125,4 +129,26 @@ test('the enquiry endpoint validates, rate limits, stores and emails requests wi
   assert.match(migration,/CREATE TABLE IF NOT EXISTS artist_machine_request/);
   assert.match(migration,/idx_artist_machine_request_ip_time/);
   assert.doesNotMatch(template,/RESEND_API_KEY|OWNER_EMAIL|REPORT_FROM_EMAIL/);
+});
+
+test('successful Factory publication sends the private delivery address through Cloudflare',async()=>{
+  const [dashboard,worker,migration,workflow]=await Promise.all([
+    read('desktop/artist_machine_factory_dashboard.py'),
+    read('services/cosmic-worker/src/index.js'),
+    read('services/cosmic-worker/migrations/0007_artist_machine_delivery.sql'),
+    read('.github/workflows/publish-artist-machine.yml'),
+  ]);
+  assert.match(dashboard,/register_delivery_email\(report\)/);
+  assert.match(dashboard,/delivery_email_status\(delivery_id\)/);
+  assert.match(dashboard,/PUBLISHED — LINK EMAILED \+ COPIED/);
+  assert.match(worker,/async function createArtistMachineDelivery/);
+  assert.match(worker,/async function sendArtistMachineDelivery/);
+  assert.match(worker,/syncAuthorized\(request,env\)/);
+  assert.match(worker,/artist-machine-delivery-\$\{deliveryId\}/);
+  assert.match(worker,/ARTIST_MACHINE_DELIVERY_FROM_EMAIL\|\|env\.REPORT_FROM_EMAIL/);
+  assert.match(migration,/CREATE TABLE IF NOT EXISTS artist_machine_delivery/);
+  assert.match(migration,/idx_artist_machine_delivery_email_time/);
+  assert.match(workflow,/Email the finished machine link/);
+  assert.match(workflow,/secrets\.COSMIC_WORKER_SYNC_TOKEN/);
+  assert.match(workflow,/artist-machine-deliveries\/\$DELIVERY_ID\/send/);
 });
