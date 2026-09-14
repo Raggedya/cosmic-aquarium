@@ -33,7 +33,7 @@ test('Cloudflare registers a private one-time artist delivery without sending ea
     headers:{'content-type':'application/json'},
     body:JSON.stringify({
       artistSlug:'chime',artistName:'CHIME',email:'artist@example.com',
-      publicUrl:'https://raggedya.github.io/cosmic-aquarium/artist/?artist=chime',
+      publicUrl:'https://raggedya.github.io/cosmic-aquarium/artist/chime/',
     }),
   }),{DB:db},{});
   const result=await response.json() as {ok:boolean;id:string};
@@ -48,13 +48,14 @@ test('Cloudflare registers a private one-time artist delivery without sending ea
 test('Cloudflare emails the live link only after a successful publication is confirmed',async()=>{
   const db=database({
     id:deliveryId,artist_slug:'chime',artist_name:'CHIME',email:'artist@example.com',
-    public_url:'https://raggedya.github.io/cosmic-aquarium/artist/?artist=chime',status:'pending',
+    public_url:'https://raggedya.github.io/cosmic-aquarium/artist/chime/',status:'pending',
   });
   const requests:Array<{url:string;init?:RequestInit}>=[];
   const originalFetch=globalThis.fetch;
   globalThis.fetch=async(input:RequestInfo|URL,init?:RequestInit)=>{
     const url=String(input);requests.push({url,init});
     if(url.includes('/automation/artist-machines/chime.json'))return Response.json({artistSlug:'chime',artistName:'CHIME'});
+    if(url.includes('/public/artist-machine-media/chime/qr-card.png'))return new Response(new Uint8Array([137,80,78,71]),{status:200});
     if(url==='https://api.resend.com/emails')return Response.json({id:'resend-message-id'},{status:200});
     return Response.json({}, {status:404});
   };
@@ -69,7 +70,9 @@ test('Cloudflare emails the live link only after a successful publication is con
     assert.ok(resend);
     const body=JSON.parse(String(resend.init?.body));
     assert.deepEqual(body.to,['artist@example.com']);
-    assert.match(body.text,/https:\/\/raggedya\.github\.io\/cosmic-aquarium\/artist\/\?artist=chime/);
+    assert.match(body.text,/https:\/\/raggedya\.github\.io\/cosmic-aquarium\/artist\/chime\//);
+    assert.equal(body.attachments[0].filename,'chime-aggits-qr.png');
+    assert.equal(body.attachments[0].content,'iVBORw==');
     assert.ok(db.writes.some(item=>item.sql.includes('UPDATE artist_machine_delivery')&&item.values.includes('sent')));
   }finally{
     globalThis.fetch=originalFetch;

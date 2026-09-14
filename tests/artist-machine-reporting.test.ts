@@ -21,7 +21,7 @@ function reportingDatabase(){
             },
             async all(){
               if(sql.includes('FROM artist_machine_inventory m'))return {results:[{
-                slug:'chime',artist_name:'CHIME',public_url:'https://raggedya.github.io/cosmic-aquarium/artist/?artist=chime',song_count:36,
+                slug:'chime',artist_name:'CHIME',public_url:'https://raggedya.github.io/cosmic-aquarium/artist/chime/',song_count:36,
                 opens:2,visitors:1,spins:3,reveals:3,plays:1,bandcamp_clicks:1,buy_clicks:1,shares:1,loves:1,
               }]};
               if(sql.includes("aquarium_id LIKE 'artist-machine:%'"))return {results:[{slug:'chime',track:'Goretunnel',reveals:2,visitors:1}]};
@@ -42,7 +42,7 @@ test('authenticated catalogue sync registers every published Artist Machine',asy
     headers:{authorization:'Bearer sync-secret','content-type':'application/json'},
     body:JSON.stringify({fullReplace:true,machines:[{
       artistSlug:'chime',artistName:'CHIME',songCount:36,
-      publicUrl:'https://raggedya.github.io/cosmic-aquarium/artist/?artist=chime',
+      publicUrl:'https://raggedya.github.io/cosmic-aquarium/artist/chime/',
     }]}),
   }),{DB:db,SYNC_TOKEN:'sync-secret'},{});
   assert.equal(response.status,200);

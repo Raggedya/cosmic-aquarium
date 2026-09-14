@@ -152,3 +152,19 @@ test('successful Factory publication sends the private delivery address through 
   assert.match(workflow,/secrets\.COSMIC_WORKER_SYNC_TOKEN/);
   assert.match(workflow,/artist-machine-deliveries\/\$DELIVERY_ID\/send/);
 });
+
+test('each Artist Machine has a crawlable band route, branded social card and emailed QR attachment',async()=>{
+  const [template,build,runtime,worker,media]=await Promise.all([
+    read('templates/artist-machine.html'),read('scripts/build-github-pages.mjs'),read('github-pages/assets/discovery-machine.js'),
+    read('services/cosmic-worker/src/index.js'),read('scripts/artist_machine_media.py'),
+  ]);
+  assert.match(template,/property="og:image"/);
+  assert.match(template,/name="twitter:card" content="summary_large_image"/);
+  assert.match(build,/artist\',config\.artistSlug/);
+  assert.match(build,/social-card\.jpg/);
+  assert.match(runtime,/dataset\.artistSlug/);
+  assert.match(runtime,/artist\/\$\{encodeURIComponent\(slug\)\}\//);
+  assert.match(worker,/qr-card\.png/);
+  assert.match(worker,/attachments/);
+  assert.match(media,/Generated Artist Machine QR artwork failed independent decode verification/);
+});

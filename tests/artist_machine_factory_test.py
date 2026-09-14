@@ -35,6 +35,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         self.candidates = self.factory / "candidates"
         self.published = self.root / "published"
         self.public_skins = self.root / "public-skins"
+        self.public_media = self.root / "public-media"
         self.base_jukebox = self.root / "aggits-cabinet.webp"
         self.default_jukebox = self.root / "aggits-artist-default.jpg"
         self.github_pages = self.root / "github-pages"
@@ -47,6 +48,10 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         }), encoding="utf-8")
         Image.new("RGB", (1024, 1536), "#4a2416").save(self.base_jukebox, format="WEBP")
         Image.new("RGB", (747, 1280), "#380008").save(self.default_jukebox, quality=90)
+        self.public_skins.mkdir(parents=True)
+        self.public_media.mkdir(parents=True)
+        Image.new("RGBA", (2172, 724), (0, 0, 0, 0)).save(self.public_skins / "aggits-marquee-v2.webp")
+        Image.new("RGB", (1254, 1254), "#050308").save(self.public_media / "qr-card-template.jpg", quality=90)
         (self.github_pages / "artist").mkdir(parents=True)
         (self.github_pages / "assets" / "music-machine").mkdir(parents=True)
         (self.github_pages / "artist" / "index.html").write_text("<!doctype html><main></main>", encoding="utf-8")
@@ -57,6 +62,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             patch.object(factory, "CANDIDATES", self.candidates),
             patch.object(factory, "PUBLISHED", self.published),
             patch.object(factory, "PUBLIC_SKINS", self.public_skins),
+            patch.object(factory, "PUBLIC_MEDIA", self.public_media),
             patch.object(factory, "SKIN_CONTRACT", self.contract),
             patch.object(factory, "BASE_JUKEBOX", self.base_jukebox),
             patch.object(factory, "DEFAULT_ARTIST_JUKEBOX", self.default_jukebox),
@@ -86,6 +92,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             self.assertEqual(factory.CANDIDATES, expected / "automation" / "artist-machine-factory" / "candidates")
             self.assertEqual(factory.PUBLISHED, expected / "automation" / "artist-machines")
             self.assertEqual(factory.PUBLIC_SKINS, expected / "public" / "music-machine")
+            self.assertEqual(factory.PUBLIC_MEDIA, expected / "public" / "artist-machine-media")
             self.assertEqual(factory.BASE_JUKEBOX, expected / "public" / "music-machine" / "aggits-cabinet.webp")
             self.assertEqual(factory.DEFAULT_ARTIST_JUKEBOX, expected / "public" / "music-machine" / "aggits-artist-default.jpg")
         finally:
@@ -186,6 +193,9 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         self.assertEqual(published["factory"]["engineVersion"], factory.ENGINE_VERSION)
         self.assertEqual(published["cabinetArtwork"], "/assets/music-machine/test-band-cabinet.jpg")
         self.assertTrue((self.public_skins / "test-band-cabinet.jpg").is_file())
+        self.assertTrue((self.public_media / "test-band" / "social-card.jpg").is_file())
+        self.assertTrue((self.public_media / "test-band" / "qr-card.png").is_file())
+        self.assertEqual(published["publicUrl"], "https://raggedya.github.io/cosmic-aquarium/artist/test-band/")
 
     def test_manual_skin_remains_available_as_an_advanced_override(self):
         with patch.object(factory, "discover_complete_catalogue", return_value=self.catalogue()):

@@ -21,6 +21,8 @@ Create dispatches the GitHub Actions workflow. The workflow imports public page 
 
 The Windows build is produced as `desktop-dist/Cosmic Aquaria Studio.exe` by `desktop/build-windows.ps1`. GitHub Actions also offers a downloadable Windows artifact.
 
+Approved Artist Machines also receive two automatic sharing assets: a 1200 × 630 AGGITS jukebox preview card with the band name in the illuminated title panel, and a scan-verified QR card based on the canonical AGGITS floral format. Each artist is published at `/artist/<artist-slug>/` with its own Open Graph and Twitter metadata. The QR card points to that permanent page and is attached to the post-deployment delivery email.
+
 ## Email delivery reuse
 
 The Studio dispatches an isolated delivery workflow in `Raggedya/groove-vultures-deep-cuts-fan-challenge`, where the working Resend credentials already live. No secret value is copied, exposed, or duplicated in this repository.

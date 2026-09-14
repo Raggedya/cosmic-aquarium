@@ -86,6 +86,7 @@ await fs.mkdir(path.join(pages,'assets','glass'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','doorway'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','discovery-fidelity'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','music-machine'),{recursive:true});
+await fs.mkdir(path.join(pages,'assets','artist-machines'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','tourism-machine'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','audio','glass','source'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','audio','machine'),{recursive:true});
@@ -126,6 +127,11 @@ for (const name of discoveryFidelityAssetNames) {
 }
 for (const name of musicMachineAssetNames) {
   await fs.copyFile(path.join(root,'public','music-machine',name),path.join(pages,'assets','music-machine',name));
+}
+try {
+  await fs.cp(path.join(root,'public','artist-machine-media'),path.join(pages,'assets','artist-machines'),{recursive:true,force:true});
+} catch (error) {
+  if (error?.code !== 'ENOENT') throw error;
 }
 for (const name of machineAudioNames) {
   await fs.copyFile(path.join(root,'public','audio','machine',name),path.join(pages,'assets','audio','machine',name));
@@ -251,7 +257,11 @@ for(const filename of (await fs.readdir(explicitArtistMachineDirectory)).filter(
     const catalogue={schemaVersion:1,slug:`artist-machine-${artistSlug}`,artist:source.artistName,releaseTitle:'Bandcamp catalogue',bandcampUrl:source.bandcampArtistUrl,commerceAvailable:true,commerceUrl:source.bandcampArtistUrl,bioShort:source.bio||null,heroArtwork:source.heroArtwork||null,tracks:songs};
     await fs.writeFile(path.join(pages,'artist-machine-catalogues',`${artistSlug}.json`),JSON.stringify(catalogue,null,2)+'\n');
     const sourceMetadata={...source};delete sourceMetadata.songs;
-    const config={...sourceMetadata,artistSlug,cataloguePath:`/artist-machine-catalogues/${artistSlug}.json`,songCount:songs.length,status:'published'};
+    const publicUrl=`https://raggedya.github.io/cosmic-aquarium/artist/${artistSlug}/`;
+    const socialCard=`/assets/artist-machines/${artistSlug}/social-card.jpg`;
+    const qrArtwork=`/assets/artist-machines/${artistSlug}/qr-card.png`;
+    for(const relative of [socialCard,qrArtwork])if(!(await fileExists(path.join(pages,relative))))throw new Error(`missing_artist_machine_media:${relative}`);
+    const config={...sourceMetadata,artistSlug,cataloguePath:`/artist-machine-catalogues/${artistSlug}.json`,songCount:songs.length,status:'published',publicUrl,socialCard,qrArtwork};
     const prior=artistMachineConfigs.findIndex(item=>item.artistSlug===artistSlug);
     if(prior>=0)artistMachineConfigs.splice(prior,1,config);else artistMachineConfigs.push(config);
     artistMachineSlugs.add(artistSlug);
@@ -261,6 +271,10 @@ artistMachineConfigs.sort((a,b)=>a.artistName.localeCompare(b.artistName));
 await fs.mkdir(path.join(pages,'artist'),{recursive:true});
 await fs.writeFile(path.join(pages,'artist-machines.json'),JSON.stringify({schemaVersion:1,generatedAt:new Date().toISOString(),artists:artistMachineConfigs},null,2)+'\n');
 await fs.writeFile(path.join(pages,'artist','index.html'),renderArtistMachine());
+for(const config of artistMachineConfigs){
+  const directory=path.join(pages,'artist',config.artistSlug);await fs.mkdir(directory,{recursive:true});
+  await fs.writeFile(path.join(directory,'index.html'),renderArtistMachine(config));
+}
 const festivalMachineConfigs=[];
 const festivalMachineDirectory=path.join(root,'automation','festival-machines');
 await fs.mkdir(festivalMachineDirectory,{recursive:true});
@@ -386,8 +400,23 @@ function render(slug,artist){
 function renderLanding(){
   return universeTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
 }
-function renderArtistMachine(){
-  return artistMachineTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
+function renderArtistMachine(config=null){
+  const artistName=String(config?.artistName||'AGGITS');
+  const title=config?`${artistName} — AGGITS Bandcamp Discovery`:'AGGITS — Artist Music Machine';
+  const description=config?`Pull the AGGITS single-reel jukebox to discover music by ${artistName} on Bandcamp.`:'One artist, one mechanical reel, and a real Bandcamp catalogue. Pull the lever to discover a song.';
+  const canonical=config?.publicUrl||'https://raggedya.github.io/cosmic-aquarium/artist/';
+  const socialVersion=String(config?.factory?.skinSha256||assetVersion).slice(0,12);
+  const social=config?`https://raggedya.github.io/cosmic-aquarium${config.socialCard}?v=${socialVersion}`:'https://raggedya.github.io/cosmic-aquarium/assets/music-machine/aggits-artist-default.jpg';
+  return artistMachineTemplate
+    .replaceAll('{{BASE}}','/cosmic-aquarium')
+    .replaceAll('{{ASSET_VERSION}}',assetVersion)
+    .replaceAll('{{ARTIST_SLUG}}',escapeAttribute(config?.artistSlug||''))
+    .replaceAll('{{PAGE_TITLE}}',escapeAttribute(title))
+    .replaceAll('{{META_DESCRIPTION}}',escapeAttribute(description))
+    .replaceAll('{{CANONICAL_URL}}',escapeAttribute(canonical))
+    .replaceAll('{{SOCIAL_IMAGE_URL}}',escapeAttribute(social))
+    .replaceAll('{{SOCIAL_IMAGE_ALT}}',escapeAttribute(config?`AGGITS jukebox for ${artistName}`:'AGGITS Artist Music Machine'))
+    .replaceAll('{{MACHINE_LABEL}}',escapeAttribute(config?`${artistName} AGGITS jukebox`:'AGGITS Artist Music Machine'));
 }
 function renderFestivalMachine(){
   return festivalMachineTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
@@ -426,6 +455,7 @@ function canonicalPreference(candidate,current){
 function escapeHtml(value){return String(value).replace(/[&<>]/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[char]));}
 function escapeAttribute(value){return escapeHtml(value).replaceAll('"','&quot;');}
 function machineSlug(value){return String(value||'').normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,72)}
+async function fileExists(value){try{await fs.access(value);return true}catch{return false}}
 function validateTourismData(value){
   const categories=new Set(['SEE','DO','EAT','DRINK','SHOP','NATURE','HISTORY','WEIRD','DAY_TRIP']);
   const ids=new Set();

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-08T07:33:58.015Z",
+  "generatedAt": "2026-09-14T21:47:17.538Z",
   "artists": [
     {
       "machineMode": "artist",
@@ -30,7 +30,76 @@
       },
       "cataloguePath": "/artist-machine-catalogues/cash-savage-the-last-drinks.json",
       "songCount": 63,
-      "status": "published"
+      "status": "published",
+      "publicUrl": "https://raggedya.github.io/cosmic-aquarium/artist/cash-savage-the-last-drinks/",
+      "socialCard": "/assets/artist-machines/cash-savage-the-last-drinks/social-card.jpg",
+      "qrArtwork": "/assets/artist-machines/cash-savage-the-last-drinks/qr-card.png"
+    },
+    {
+      "machineMode": "artist",
+      "artistSlug": "chime",
+      "artistName": "CHIME",
+      "city": null,
+      "bandcampArtistUrl": "https://chimechimechime.bandcamp.com/",
+      "bio": "SOUNDS THROUGH STATIC",
+      "tickerCopy": [
+        "*** CHIME *** SOUNDS THROUGH STATIC *** CHIME *** SOUNDS THROUGH STATIC*** CHIME *** SOUNDS THROUGH STATIC*** CHIME *** SOUNDS THROUGH STATIC*** CHIME *** SOUNDS THROUGH STATIC*** CHIME *** SOUNDS THROUGH STATIC*** CHIME *** SOUNDS THROUGH STATIC*** CHIME *** SOUNDS THROUGH STATIC"
+      ],
+      "heroArtwork": "https://f4.bcbits.com/img/a0731682976_5.jpg",
+      "accentTheme": "artist-custom",
+      "skinVariant": "chime-custom",
+      "provenance": {
+        "source": "https://chimechimechime.bandcamp.com/",
+        "method": "artist-machine-factory-v1",
+        "engineVersion": "artist-machine-v1"
+      },
+      "cabinetArtwork": "/assets/music-machine/chime-cabinet.jpg",
+      "factory": {
+        "engineVersion": "artist-machine-v1",
+        "approvedAt": "2026-09-14T05:03:40Z",
+        "approvedBy": "Andy",
+        "candidateReport": "automation/artist-machine-factory/candidates/chime/report.json",
+        "skinSha256": "cd60ae7d865295524a48c26fdcfc35db2147e600d34141abff9f42768e6aa433"
+      },
+      "cataloguePath": "/artist-machine-catalogues/chime.json",
+      "songCount": 36,
+      "status": "published",
+      "publicUrl": "https://raggedya.github.io/cosmic-aquarium/artist/chime/",
+      "socialCard": "/assets/artist-machines/chime/social-card.jpg",
+      "qrArtwork": "/assets/artist-machines/chime/qr-card.png"
+    },
+    {
+      "machineMode": "artist",
+      "artistSlug": "kaygo-soul",
+      "artistName": "KAYGO SOUL",
+      "city": "South Africa",
+      "bandcampArtistUrl": "https://kaygosoul.bandcamp.com/",
+      "bio": "deep house electronic house afro house lounge music soulful South Africa",
+      "tickerCopy": [
+        "*** kaygo soul *** South African Deep House *** deep house electronic house afro house lounge music soulful South Africa"
+      ],
+      "heroArtwork": "https://f4.bcbits.com/img/a1561316005_5.jpg",
+      "accentTheme": "artist-custom",
+      "skinVariant": "kaygo-soul-custom",
+      "provenance": {
+        "source": "https://kaygosoul.bandcamp.com/album/lebohang",
+        "method": "artist-machine-factory-v1",
+        "engineVersion": "artist-machine-v1"
+      },
+      "cabinetArtwork": "/assets/music-machine/kaygo-soul-cabinet.jpg",
+      "factory": {
+        "engineVersion": "artist-machine-v1",
+        "approvedAt": "2026-09-14T07:22:13Z",
+        "approvedBy": "andy",
+        "candidateReport": "automation/artist-machine-factory/candidates/kaygo-soul/report.json",
+        "skinSha256": "cd60ae7d865295524a48c26fdcfc35db2147e600d34141abff9f42768e6aa433"
+      },
+      "cataloguePath": "/artist-machine-catalogues/kaygo-soul.json",
+      "songCount": 16,
+      "status": "published",
+      "publicUrl": "https://raggedya.github.io/cosmic-aquarium/artist/kaygo-soul/",
+      "socialCard": "/assets/artist-machines/kaygo-soul/social-card.jpg",
+      "qrArtwork": "/assets/artist-machines/kaygo-soul/qr-card.png"
     },
     {
       "machineMode": "artist",
@@ -50,7 +119,43 @@
       },
       "cataloguePath": "/artist-machine-catalogues/workfriend.json",
       "songCount": 13,
-      "status": "published"
+      "status": "published",
+      "publicUrl": "https://raggedya.github.io/cosmic-aquarium/artist/workfriend/",
+      "socialCard": "/assets/artist-machines/workfriend/social-card.jpg",
+      "qrArtwork": "/assets/artist-machines/workfriend/qr-card.png"
+    },
+    {
+      "machineMode": "artist",
+      "artistSlug": "zipper-clone",
+      "artistName": "ZIPPER CLONE",
+      "city": "NEWCASTLE",
+      "bandcampArtistUrl": "https://zipperclone.bandcamp.com/",
+      "bio": "Central Coast heavy electronic punk band Zipper Clone. The clones have landed. Seat belts on all, safety first!Central",
+      "tickerCopy": [
+        "*** ZIPPER CLONE *** CENTRAL COAST HEAVY ELECTRONIC PUNK BAND ZIPPER CLONE. THE CLONES HAVE LANDED. SEAT BELTS ON ALL, SAFETY FIRST!.......YOU GOTTA GO SEE THEM LIVE !! INCREDIBLE ENERGY"
+      ],
+      "heroArtwork": "https://f4.bcbits.com/img/a1228652590_5.jpg",
+      "accentTheme": "artist-custom",
+      "skinVariant": "zipper-clone-custom",
+      "provenance": {
+        "source": "https://zipperclone.bandcamp.com/",
+        "method": "artist-machine-factory-v1",
+        "engineVersion": "artist-machine-v1"
+      },
+      "cabinetArtwork": "/assets/music-machine/zipper-clone-cabinet.jpg",
+      "factory": {
+        "engineVersion": "artist-machine-v1",
+        "approvedAt": "2026-09-14T06:27:47Z",
+        "approvedBy": "andy",
+        "candidateReport": "automation/artist-machine-factory/candidates/zipper-clone/report.json",
+        "skinSha256": "cd60ae7d865295524a48c26fdcfc35db2147e600d34141abff9f42768e6aa433"
+      },
+      "cataloguePath": "/artist-machine-catalogues/zipper-clone.json",
+      "songCount": 8,
+      "status": "published",
+      "publicUrl": "https://raggedya.github.io/cosmic-aquarium/artist/zipper-clone/",
+      "socialCard": "/assets/artist-machines/zipper-clone/social-card.jpg",
+      "qrArtwork": "/assets/artist-machines/zipper-clone/qr-card.png"
     }
   ]
 }

@@ -16,17 +16,19 @@ from typing import Any
 
 from create_artist import artist_store_url, slugify, validate_bandcamp_url
 from create_artist_machine import discover_complete_catalogue
+from artist_machine_media import render_artist_media
 
 ROOT = Path(__file__).resolve().parents[1]
 FACTORY = ROOT / "automation" / "artist-machine-factory"
 CANDIDATES = FACTORY / "candidates"
 PUBLISHED = ROOT / "automation" / "artist-machines"
 PUBLIC_SKINS = ROOT / "public" / "music-machine"
+PUBLIC_MEDIA = ROOT / "public" / "artist-machine-media"
 SKIN_CONTRACT = FACTORY / "skin-contract.json"
 BASE_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-cabinet.webp"
 DEFAULT_ARTIST_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-artist-default.jpg"
 ENGINE_VERSION = "artist-machine-v1"
-PUBLIC_BASE_URL = "https://raggedya.github.io/cosmic-aquarium/artist/?artist="
+PUBLIC_BASE_URL = "https://raggedya.github.io/cosmic-aquarium/artist/"
 SUPPORTED_IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
 PREVIEW_RUNTIME_FILES = (
     "discovery-machine.css",
@@ -48,7 +50,7 @@ def configure_workspace(workspace: Path) -> Path:
     Windows dashboard uses an isolated managed checkout so private reference
     images and candidate reports never enter the public working tree.
     """
-    global ROOT, FACTORY, CANDIDATES, PUBLISHED, PUBLIC_SKINS, SKIN_CONTRACT, BASE_JUKEBOX, DEFAULT_ARTIST_JUKEBOX
+    global ROOT, FACTORY, CANDIDATES, PUBLISHED, PUBLIC_SKINS, PUBLIC_MEDIA, SKIN_CONTRACT, BASE_JUKEBOX, DEFAULT_ARTIST_JUKEBOX
     resolved = Path(workspace).expanduser().resolve()
     if not (resolved / "automation" / "artist-machine-factory" / "skin-contract.json").is_file():
         raise FactoryError("The selected Factory workspace is missing the locked machine contract")
@@ -57,6 +59,7 @@ def configure_workspace(workspace: Path) -> Path:
     CANDIDATES = FACTORY / "candidates"
     PUBLISHED = ROOT / "automation" / "artist-machines"
     PUBLIC_SKINS = ROOT / "public" / "music-machine"
+    PUBLIC_MEDIA = ROOT / "public" / "artist-machine-media"
     SKIN_CONTRACT = FACTORY / "skin-contract.json"
     BASE_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-cabinet.webp"
     DEFAULT_ARTIST_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-artist-default.jpg"
@@ -589,7 +592,7 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
             "skinGeneration": skin_generation,
             "configuration": validation,
             "thirtySpinAudit": spin_audit,
-            "previewUrlAfterApproval": PUBLIC_BASE_URL + intake["artistSlug"],
+            "previewUrlAfterApproval": PUBLIC_BASE_URL + intake["artistSlug"] + "/",
             "deliveryEmail": intake["deliveryEmail"] or None,
         }
         contract = load_json(SKIN_CONTRACT)
@@ -819,6 +822,11 @@ def approve(slug: str, approved_by: str, skip_quality_commands: bool) -> dict[st
     destination = PUBLISHED / f"{slug}.json"
     previous_config = destination.read_bytes() if destination.exists() else None
     previous_skin = public_skin.read_bytes() if public_skin.exists() else None
+    public_media = PUBLIC_MEDIA / slug
+    media_backup = Path(tempfile.mkdtemp(prefix=f".{slug}-media-backup-"))
+    had_previous_media = public_media.is_dir()
+    if had_previous_media:
+        shutil.copytree(public_media, media_backup / slug)
     approved_at = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     config["cabinetArtwork"] = f"/assets/music-machine/{public_skin.name}"
     config["factory"] = {
@@ -828,10 +836,24 @@ def approve(slug: str, approved_by: str, skip_quality_commands: bool) -> dict[st
         "candidateReport": f"automation/artist-machine-factory/candidates/{slug}/report.json",
         "skinSha256": sha256(skin_path),
     }
+    config.update({
+        "publicUrl": PUBLIC_BASE_URL + slug + "/",
+        "socialCard": f"/assets/artist-machines/{slug}/social-card.jpg",
+        "qrArtwork": f"/assets/artist-machines/{slug}/qr-card.png",
+    })
     try:
         PUBLIC_SKINS.mkdir(parents=True, exist_ok=True)
         PUBLISHED.mkdir(parents=True, exist_ok=True)
         shutil.copy2(skin_path, public_skin)
+        if public_media.exists():
+            shutil.rmtree(public_media)
+        render_artist_media(
+            config,
+            skin_path,
+            public_media,
+            template_path=PUBLIC_MEDIA / "qr-card-template.jpg",
+            marquee_path=PUBLIC_SKINS / "aggits-marquee-v2.webp",
+        )
         write_json_atomic(destination, config)
         if not skip_quality_commands:
             run_quality_commands()
@@ -844,10 +866,16 @@ def approve(slug: str, approved_by: str, skip_quality_commands: bool) -> dict[st
             public_skin.unlink(missing_ok=True)
         else:
             public_skin.write_bytes(previous_skin)
+        if public_media.exists():
+            shutil.rmtree(public_media)
+        if had_previous_media:
+            shutil.copytree(media_backup / slug, public_media)
         raise
+    finally:
+        shutil.rmtree(media_backup, ignore_errors=True)
     write_json_atomic(paths["status"], {"status": "approved", "updatedAt": approved_at, "approved": True, "approvedBy": approved_by})
     report = load_json(paths["report"])
-    report.update({"status": "approved", "approvedAt": approved_at, "approvedBy": approved_by, "publicUrl": PUBLIC_BASE_URL + slug})
+    report.update({"status": "approved", "approvedAt": approved_at, "approvedBy": approved_by, "publicUrl": PUBLIC_BASE_URL + slug + "/"})
     write_json_atomic(paths["report"], report)
     return report
 

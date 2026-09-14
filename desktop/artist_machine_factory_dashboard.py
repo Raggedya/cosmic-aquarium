@@ -30,7 +30,7 @@ import artist_machine_factory as factory  # noqa: E402
 
 REPOSITORY = "Raggedya/cosmic-aquarium"
 PUBLISH_WORKFLOW = "publish-artist-machine.yml"
-PUBLIC_BASE = "https://raggedya.github.io/cosmic-aquarium/artist/?artist="
+PUBLIC_BASE = "https://raggedya.github.io/cosmic-aquarium/artist/"
 DELIVERY_ENDPOINT = "https://cosmic-aquaria.andrewharris501.workers.dev/api/artist-machine-deliveries"
 
 INK = "#100906"
@@ -140,7 +140,7 @@ def register_delivery_email(report: dict[str, object]) -> str:
         "artistSlug": slug,
         "artistName": str(report["artistName"]),
         "email": email,
-        "publicUrl": PUBLIC_BASE + slug,
+        "publicUrl": PUBLIC_BASE + slug + "/",
     })
     delivery_id = str(result.get("id") or "")
     if not delivery_id:
@@ -555,7 +555,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             self.report_count.configure(text=f"{count} PLAYABLE SONG{'S' if count != 1 else ''}")
             has_skin = report.get("cabinetSkin") is not None
             self._set_candidate_controls(True, status == "ready_for_approval" and has_skin)
-            self.latest_url = PUBLIC_BASE + slug if status == "approved" else ""
+            self.latest_url = PUBLIC_BASE + slug + "/" if status == "approved" else ""
             self.open_live_button.configure(state="normal" if self.latest_url else "disabled")
         except (OSError, ValueError, json.JSONDecodeError):
             self._set_candidate_controls(False, False)
@@ -628,7 +628,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
                 run_process([git, "-C", str(workspace), "add", str(config.relative_to(workspace)), str(skin.relative_to(workspace))])
                 staged = subprocess.run([git, "-C", str(workspace), "diff", "--cached", "--quiet"], creationflags=creation_flags())
                 if staged.returncode == 0:
-                    return {"url": PUBLIC_BASE + slug, "status": "already_current"}
+                    return {"url": PUBLIC_BASE + slug + "/", "status": "already_current"}
                 run_process([git, "-C", str(workspace), "commit", "-m", f"Publish {report['artistName']} Artist Machine"])
                 run_process([git, "-C", str(workspace), "push", "-u", "origin", branch])
             finally:
@@ -667,7 +667,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
                 except RuntimeError as error:
                     email_error = str(error)
             return {
-                "url": PUBLIC_BASE + slug,
+                "url": PUBLIC_BASE + slug + "/",
                 "status": "published",
                 "emailStatus": email_status,
                 "email": str(report.get("deliveryEmail") or ""),

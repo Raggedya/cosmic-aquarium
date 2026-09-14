@@ -120,7 +120,18 @@ function validArtistMachineSlug(value) {
 }
 
 function artistMachinePublicUrl(slug) {
+  return `https://raggedya.github.io/cosmic-aquarium/artist/${encodeURIComponent(slug)}/`;
+}
+
+function legacyArtistMachinePublicUrl(slug) {
   return `https://raggedya.github.io/cosmic-aquarium/artist/?artist=${encodeURIComponent(slug)}`;
+}
+
+function arrayBufferToBase64(buffer) {
+  const bytes=new Uint8Array(buffer);
+  let encoded='';
+  for(let offset=0;offset<bytes.length;offset+=0x8000)encoded+=String.fromCharCode(...bytes.subarray(offset,offset+0x8000));
+  return btoa(encoded);
 }
 
 async function createArtistMachineDelivery(request, env) {
@@ -131,7 +142,8 @@ async function createArtistMachineDelivery(request, env) {
   const artistName=clean(body?.artistName,120);
   const email=clean(body?.email,320)?.toLowerCase();
   const publicUrl=clean(body?.publicUrl,600);
-  if(!artistSlug||!artistName||!email||!validEmail(email)||publicUrl!==artistMachinePublicUrl(artistSlug))return json({ok:false,error:'invalid_request'},400,CORS);
+  const acceptedUrls=new Set([artistMachinePublicUrl(artistSlug),legacyArtistMachinePublicUrl(artistSlug)]);
+  if(!artistSlug||!artistName||!email||!validEmail(email)||!acceptedUrls.has(publicUrl))return json({ok:false,error:'invalid_request'},400,CORS);
   const ipHash=await requestFingerprint(request);
   const [recentIp,recentEmail]=await Promise.all([
     env.DB.prepare("SELECT COUNT(*) AS total FROM artist_machine_delivery WHERE ip_hash=? AND strftime('%s',created_at)>=strftime('%s','now','-1 hour')").bind(ipHash).first(),
@@ -141,7 +153,7 @@ async function createArtistMachineDelivery(request, env) {
   const id=crypto.randomUUID(),createdAt=new Date().toISOString();
   await env.DB.prepare(`INSERT INTO artist_machine_delivery
     (id,artist_slug,artist_name,email,public_url,ip_hash,status,created_at)
-    VALUES (?,?,?,?,?,?,?,?)`).bind(id,artistSlug,artistName,email,publicUrl,ipHash,'pending',createdAt).run();
+    VALUES (?,?,?,?,?,?,?,?)`).bind(id,artistSlug,artistName,email,artistMachinePublicUrl(artistSlug),ipHash,'pending',createdAt).run();
   return json({ok:true,id},201,CORS);
 }
 
@@ -157,12 +169,18 @@ async function sendArtistMachineDelivery(request, env, id) {
   const configResponse=await fetch(`https://raw.githubusercontent.com/Raggedya/cosmic-aquarium/main/automation/artist-machines/${encodeURIComponent(delivery.artist_slug)}.json?publication=${encodeURIComponent(publicationId)}`,{headers:{'user-agent':'cosmic-aquaria-delivery'}});
   const config=await configResponse.json().catch(()=>({}));
   if(!configResponse.ok||config?.artistSlug!==delivery.artist_slug||config?.artistName!==delivery.artist_name)return json({ok:false,error:'artist_not_published'},409,CORS);
+  const qrResponse=await fetch(`https://raw.githubusercontent.com/Raggedya/cosmic-aquarium/main/public/artist-machine-media/${encodeURIComponent(delivery.artist_slug)}/qr-card.png?publication=${encodeURIComponent(publicationId)}`,{headers:{'user-agent':'cosmic-aquaria-delivery'}});
+  if(!qrResponse.ok)return json({ok:false,error:'qr_not_published'},409,CORS);
+  const qrBuffer=await qrResponse.arrayBuffer();
+  if(!qrBuffer.byteLength||qrBuffer.byteLength>8_000_000)return json({ok:false,error:'qr_invalid'},409,CORS);
+  const publicUrl=artistMachinePublicUrl(delivery.artist_slug);
   const sender=env.ARTIST_MACHINE_DELIVERY_FROM_EMAIL||env.REPORT_FROM_EMAIL;
   if(!env.RESEND_API_KEY||!sender)return json({ok:false,error:'delivery_service_unavailable'},503,CORS);
   const subject=`${delivery.artist_name} Music Machine is live`;
-  const text=`${delivery.artist_name} is now live on AGGITS.\n\nOpen the jukebox: ${delivery.public_url}\n\nThis link is permanent and ready to share.`;
-  const html=`<h1>${escapeHtml(delivery.artist_name)} is live on AGGITS</h1><p><a href="${escapeHtml(delivery.public_url)}">Open the jukebox</a></p><p>This link is permanent and ready to share.</p>`;
-  const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{authorization:`Bearer ${env.RESEND_API_KEY}`,'content-type':'application/json','idempotency-key':`artist-machine-delivery-${deliveryId}`},body:JSON.stringify({from:sender,to:[delivery.email],subject,text,html})});
+  const text=`${delivery.artist_name} is now live on AGGITS.\n\nOpen the jukebox: ${publicUrl}\n\nYour scan-tested AGGITS QR card is attached. The link is permanent and ready to share.`;
+  const html=`<h1>${escapeHtml(delivery.artist_name)} is live on AGGITS</h1><p><a href="${escapeHtml(publicUrl)}">Open the jukebox</a></p><p>Your scan-tested AGGITS QR card is attached. The link is permanent and ready to share.</p>`;
+  const attachments=[{filename:`${delivery.artist_slug}-aggits-qr.png`,content:arrayBufferToBase64(qrBuffer)}];
+  const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{authorization:`Bearer ${env.RESEND_API_KEY}`,'content-type':'application/json','idempotency-key':`artist-machine-delivery-${deliveryId}`},body:JSON.stringify({from:sender,to:[delivery.email],subject,text,html,attachments})});
   const result=await response.json().catch(()=>({}));
   const sentAt=response.ok?new Date().toISOString():null;
   await env.DB.prepare('UPDATE artist_machine_delivery SET publication_id=?,status=?,provider_id=?,failure_reason=?,sent_at=? WHERE id=?').bind(publicationId,response.ok?'sent':'failed',clean(result.id,160),response.ok?null:JSON.stringify(result).slice(0,800),sentAt,deliveryId).run();

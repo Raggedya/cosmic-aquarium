@@ -11,7 +11,7 @@ const artists=Array.isArray(registry.artists)?registry.artists:[];
 const machines=artists.map(item=>({
   artistSlug:item.artistSlug,
   artistName:item.artistName,
-  publicUrl:`https://raggedya.github.io/cosmic-aquarium/artist/?artist=${encodeURIComponent(item.artistSlug)}`,
+  publicUrl:`https://raggedya.github.io/cosmic-aquarium/artist/${encodeURIComponent(item.artistSlug)}/`,
   songCount:Number(item.songCount||0),
 }));
 const response=await fetch(`${endpoint}/api/admin/artist-machines/sync`,{

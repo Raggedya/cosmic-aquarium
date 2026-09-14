@@ -70,6 +70,19 @@ jobs:
         run: python -m pip install --disable-pip-version-check -r requirements-automation.txt
       - name: Validate approved machine
         run: python scripts/artist_machine_factory.py check --slug "${{ inputs.artist_slug }}"
+      - name: Generate the band social card and scan-verified QR
+        shell: bash
+        env:
+          CANDIDATE_REF: ${{ inputs.candidate_ref }}
+          ARTIST_SLUG: ${{ inputs.artist_slug }}
+        run: |
+          set -euo pipefail
+          python scripts/artist_machine_media.py --slug "$ARTIST_SLUG"
+          git add "public/artist-machine-media/$ARTIST_SLUG"
+          if ! git diff --cached --quiet; then
+            git commit -m "Generate $ARTIST_SLUG sharing artwork"
+            git push origin "HEAD:$CANDIDATE_REF"
+          fi
       - name: Build production site
         run: node --experimental-strip-types scripts/build-github-pages.mjs
       - name: Run application tests

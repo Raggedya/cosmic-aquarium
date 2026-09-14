@@ -17,7 +17,9 @@ const requestedParameters=new URLSearchParams(location.search);
 const referrerHost=(()=>{try{return document.referrer?new URL(document.referrer).hostname.toLowerCase():''}catch{return''}})();
 const acquisitionSource=requestedParameters.get('source')||(/facebook|fb\.com/.test(referrerHost)?'facebook':/instagram/.test(referrerHost)?'instagram':referrerHost?'referral':'direct');
 const acquisitionCampaign=requestedParameters.get('campaign')||'';
-const requestedArtistSlug=requestedParameters.get('artist')||'workfriend';
+const embeddedArtistSlug=machine?.dataset.artistSlug||'';
+const pathArtistSlug=location.pathname.match(/\/artist\/([a-z0-9]+(?:-[a-z0-9]+)*)\/?$/)?.[1]||'';
+const requestedArtistSlug=embeddedArtistSlug||requestedParameters.get('artist')||pathArtistSlug||'workfriend';
 const requestedFestivalSlug=requestedParameters.get('festival')||'';
 if(isSingleReelMode)document.body.classList.add('artist-machine-page');
 const festivalIntro=document.querySelector('[data-festival-intro]');
@@ -661,7 +663,8 @@ function historyApi(mode,entry){
     const route=isFestivalMode?'festival':'artist';
     const parameter=isFestivalMode?'festival':'artist';
     const slug=isFestivalMode?artistConfig.festivalSlug:artistConfig.artistSlug;
-    const url=new URL(`${base.replace(/\/$/,'')}/${route}/`,location.origin);url.searchParams.set(parameter,slug);if(currentTrack?.id)url.searchParams.set('track',currentTrack.id);history[`${mode}State`]({view:isFestivalMode?'festival-machine':'artist-machine',slug,track:currentTrack?.id||null},'',url);return;
+    const pathname=isFestivalMode?`${base.replace(/\/$/,'')}/${route}/`:`${base.replace(/\/$/,'')}/artist/${encodeURIComponent(slug)}/`;
+    const url=new URL(pathname,location.origin);if(isFestivalMode)url.searchParams.set(parameter,slug);if(currentTrack?.id)url.searchParams.set('track',currentTrack.id);history[`${mode}State`]({view:isFestivalMode?'festival-machine':'artist-machine',slug,track:currentTrack?.id||null},'',url);return;
   }
   const url=new URL(`${base.replace(/\/$/,'')}/`,location.origin);url.searchParams.set('release',entry.slug);url.searchParams.set('universe','melbourne');history[`${mode}State`]({view:'machine',release:entry.slug},'',url);
 }
@@ -689,7 +692,7 @@ function onLeverMove(event){if(event.pointerId!==leverPointer)return;const trave
 function onLeverUp(event){if(event.pointerId!==leverPointer)return;lever.releasePointerCapture?.(event.pointerId);leverPointer=null;if(leverTriggered){void runSpin('lever');resetLever(true)}else if(!leverMoved){animateLeverAndSpin()}else{setState(currentTrack?'READY_TO_PLAY':'IDLE','The lever returned without starting the reels.');resetLever(true)}}
 
 async function shareCurrent(){if(!currentEntry||!currentManifest||!currentTrack)return;const url=location.href,performer=currentTrack.artist||currentManifest.artist,title=`${performer} — ${currentTrack.title}`;const text=isFestivalMode?`Found on the ${artistConfig?.title||'Festival'} Music Machine.`:isSingleReelMode?`Found on the ${currentManifest.artist} Music Machine.`:'Found through the AGGITS Melbourne Music Machine.';try{if(navigator.share)await navigator.share({title,text,url});else{await navigator.clipboard.writeText(url);showTicker('DISCOVERY LINK COPIED')}}catch(error){if(error?.name!=='AbortError')showTicker('SHARE UNAVAILABLE')};recordEvent('share_click',{artist:performer})}
-function resetMachine(){recordEvent('home_click',{source:'home'});stopPlayback();locked=false;spinAgainButton.disabled=false;reels.forEach((_,index)=>setReelRows(index,randomEntry()));setState('IDLE',isSingleReelMode?'Pull the lever to discover a song.':'Pull the lever to discover Melbourne music.');startTickerRotation(idleMessages());if(isFestivalMode)showFestivalTitleIntro();const homeUrl=isFestivalMode?`${base.replace(/\/$/,'')}/festival/?festival=${encodeURIComponent(artistConfig.festivalSlug)}`:isSingleReelMode?`${base.replace(/\/$/,'')}/artist/?artist=${encodeURIComponent(artistConfig.artistSlug)}`:`${base.replace(/\/$/,'')}/`;history.replaceState({view:isFestivalMode?'festival-machine':isSingleReelMode?'artist-machine':'machine'},'',homeUrl)}
+function resetMachine(){recordEvent('home_click',{source:'home'});stopPlayback();locked=false;spinAgainButton.disabled=false;reels.forEach((_,index)=>setReelRows(index,randomEntry()));setState('IDLE',isSingleReelMode?'Pull the lever to discover a song.':'Pull the lever to discover Melbourne music.');startTickerRotation(idleMessages());if(isFestivalMode)showFestivalTitleIntro();const homeUrl=isFestivalMode?`${base.replace(/\/$/,'')}/festival/?festival=${encodeURIComponent(artistConfig.festivalSlug)}`:isSingleReelMode?`${base.replace(/\/$/,'')}/artist/${encodeURIComponent(artistConfig.artistSlug)}/`:`${base.replace(/\/$/,'')}/`;history.replaceState({view:isFestivalMode?'festival-machine':isSingleReelMode?'artist-machine':'machine'},'',homeUrl)}
 function idleMessages(){return isFestivalMode?[artistConfig?.festivalTickerText,'PULL FOR A FESTIVAL SONG'].filter(Boolean):[isSingleReelMode?'PULL FOR A SONG':'LET’S PLAY']}
 
 function toggleSound(){soundOff=!soundOff;writeStorage(soundKey,soundOff);soundButton.textContent=soundOff?'SOUND OFF':'SOUND ON';soundButton.setAttribute('aria-pressed',String(!soundOff));recordEvent('sound_toggle',{source:'sound_control',soundOn:!soundOff});if(soundOff){stopMotor();winnerAudio?.pause();reelStopAudio.forEach(audio=>audio.pause());reelRatchetAudio?.pause();audioContext?.suspend()}else{ensureAudio();ensureMachineSamples()}}

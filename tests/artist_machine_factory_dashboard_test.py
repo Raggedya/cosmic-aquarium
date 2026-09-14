@@ -35,7 +35,7 @@ class ArtistMachineFactoryDashboardTests(unittest.TestCase):
             "artistSlug": "chime",
             "artistName": "CHIME",
             "email": "artist@example.com",
-            "publicUrl": "https://raggedya.github.io/cosmic-aquarium/artist/?artist=chime",
+            "publicUrl": "https://raggedya.github.io/cosmic-aquarium/artist/chime/",
         })
 
     @patch("desktop.artist_machine_factory_dashboard.request_json")
