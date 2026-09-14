@@ -31,9 +31,9 @@ The reference path may be absolute or relative to the intake file. Credentials n
 python scripts/artist_machine_factory.py prepare --intake C:\intakes\artist.json
 ```
 
-This ingests the public catalogue once, deduplicates it by Bandcamp track identifier, validates playback and purchase destinations, extracts a colour palette from the reference image, generates a complete 747 × 1280 single-reel jukebox skin from the locked AGGITS machine, protects every live control zone and runs 30 deterministic discovery selections. The result is immediately ready for its private preview when all checks pass.
+This ingests the public catalogue once, deduplicates it by Bandcamp track identifier, validates playback and purchase destinations, analyses the reference image's palette, brightness, contrast, saturation, texture and composition, then generates a complete 747 × 1280 single-reel jukebox skin from the locked AGGITS machine. Reference atmosphere and restrained motifs are transferred into decorative areas while every live control zone remains protected. Art-direction notes such as dark, bright, vibrant or gritty tune the treatment. The factory then runs 30 deterministic discovery selections. The result is immediately ready for its private preview when all checks pass.
 
-The process is local and deterministic: it does not require an image API key, does not invent artist text or logos, and never uploads the private reference image. Advanced operators may still replace a generated skin with the `attach-skin` command before approval.
+The automatic process is local and deterministic: it does not require an image API key, does not invent artist text or logos, and never uploads the private reference image. Advanced operators may still replace a generated skin with the `attach-skin` command before approval.
 
 ### 2. Build an isolated approval preview
 
@@ -41,7 +41,7 @@ The process is local and deterministic: it does not require an image API key, do
 python scripts/artist_machine_factory.py preview --slug artist-slug
 ```
 
-The command creates a self-contained local preview bundle under `artifacts/artist-machine-factory/<slug>/preview`. Serve that folder locally and open `/cosmic-aquarium/artist/?artist=<slug>`. It contains only the candidate's catalogue and skin; it does not alter the production registry.
+The command creates and audits a self-contained local preview bundle under `artifacts/artist-machine-factory/<slug>/preview`. The audit requires the artist configuration, complete catalogue, Bandcamp address, generated skin and every single-reel runtime module before the preview may open. Serve that folder locally and open `/cosmic-aquarium/artist/?artist=<slug>`. It does not alter the production registry.
 
 ### 3. Audit without changing anything
 

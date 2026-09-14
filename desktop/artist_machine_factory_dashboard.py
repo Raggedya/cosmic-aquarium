@@ -334,7 +334,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         existing = self.workspace / "automation" / "artist-machine-factory" / "candidates" / slug
         if existing.exists() and not messagebox.askyesno("Update this candidate?", "A private candidate already exists for this artist. Replace it with the details currently in the form?"):
             return
-        self._run_async("READING THE COMPLETE BANDCAMP CATALOGUE…", lambda: self._prepare(intake), self._prepare_complete)
+        self._run_async("READING BANDCAMP + INTERPRETING THE REFERENCE…", lambda: self._prepare(intake), self._prepare_complete)
 
     def _prepare(self, intake: Path) -> dict[str, object]:
         self._ensure_workspace()

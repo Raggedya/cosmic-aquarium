@@ -27,6 +27,13 @@ BASE_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-cabinet.webp"
 ENGINE_VERSION = "artist-machine-v1"
 PUBLIC_BASE_URL = "https://raggedya.github.io/cosmic-aquarium/artist/?artist="
 SUPPORTED_IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
+PREVIEW_RUNTIME_FILES = (
+    "discovery-machine.css",
+    "discovery-machine.js",
+    "discovery-machine-core.js",
+    "machine-mechanics-core.js",
+    "single-reel-engine.js",
+)
 
 
 class FactoryError(ValueError):
@@ -199,9 +206,69 @@ def reference_palette(path: Path) -> list[tuple[int, int, int]]:
     return palette
 
 
-def generate_reference_jukebox_skin(reference_path: Path, destination: Path) -> dict[str, Any]:
+def _reference_visual_profile(image: Any) -> dict[str, float]:
+    from PIL import ImageFilter, ImageStat
+
+    sample = image.copy()
+    sample.thumbnail((160, 160))
+    grayscale = sample.convert("L")
+    hsv = sample.convert("HSV")
+    edges = grayscale.filter(ImageFilter.FIND_EDGES)
+    return {
+        "brightness": round(ImageStat.Stat(grayscale).mean[0] / 255, 3),
+        "contrast": round(ImageStat.Stat(grayscale).stddev[0] / 128, 3),
+        "saturation": round(ImageStat.Stat(hsv).mean[1] / 255, 3),
+        "texture": round(ImageStat.Stat(edges).mean[0] / 255, 3),
+    }
+
+
+def _boost_reference(image: Any) -> Any:
+    from PIL import ImageEnhance, ImageOps
+
+    grayscale = image.convert("L")
+    histogram = grayscale.histogram()
+    target = max(1, round(sum(histogram) * 0.9))
+    running = 0
+    percentile = 1
+    for value, count in enumerate(histogram):
+        running += count
+        if running >= target:
+            percentile = max(1, value)
+            break
+    boosted = image
+    if percentile < 118:
+        boosted = ImageEnhance.Brightness(boosted).enhance(min(3.2, 142 / percentile))
+    boosted = ImageOps.autocontrast(boosted, cutoff=0.5, preserve_tone=True)
+    return ImageEnhance.Color(boosted).enhance(1.18)
+
+
+def _reference_motif(base: Any, reference: Any, box: tuple[int, int, int, int], opacity: float) -> Any:
+    from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageOps, ImageStat
+
+    left, top, right, bottom = box
+    region_size = (right - left, bottom - top)
+    artwork = ImageOps.contain(reference, region_size, Image.Resampling.LANCZOS)
+    field = Image.new("RGB", region_size, (0, 0, 0))
+    offset = ((region_size[0] - artwork.width) // 2, (region_size[1] - artwork.height) // 2)
+    field.paste(artwork, offset)
+    original = base.crop(box)
+    brightness = ImageStat.Stat(field.convert("L")).mean[0]
+    blended = ImageChops.screen(original, field) if brightness < 112 else ImageChops.multiply(original, field)
+    mask = Image.new("L", region_size, 0)
+    ImageDraw.Draw(mask).ellipse((4, 2, region_size[0] - 4, region_size[1] - 2), fill=round(255 * opacity))
+    mask = mask.filter(ImageFilter.GaussianBlur(radius=max(8, region_size[1] // 10)))
+    result = base.copy()
+    result.paste(blended, box, mask)
+    return result
+
+
+def generate_reference_jukebox_skin(
+    reference_path: Path,
+    destination: Path,
+    art_direction: str = "",
+) -> dict[str, Any]:
     try:
-        from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps
+        from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageOps
     except ImportError as error:
         raise FactoryError("Pillow is required to generate the jukebox skin; install requirements-automation.txt") from error
     if not BASE_JUKEBOX.is_file():
@@ -218,10 +285,46 @@ def generate_reference_jukebox_skin(reference_path: Path, destination: Path) -> 
     try:
         with Image.open(BASE_JUKEBOX) as source:
             base = source.convert("RGB").resize((width, height), Image.Resampling.LANCZOS)
+        with Image.open(reference_path) as source:
+            reference = source.convert("RGB")
+        profile = _reference_visual_profile(reference)
+        boosted_reference = _boost_reference(reference)
         greyscale = ImageOps.grayscale(base)
         colour_layer = ImageOps.colorize(greyscale, black=shadow, mid=middle, white=highlight)
         generated = Image.blend(base, colour_layer, 0.72)
-        generated = ImageEnhance.Contrast(generated).enhance(1.06)
+
+        reference_field = ImageOps.fit(boosted_reference, (width, height), Image.Resampling.LANCZOS)
+        atmosphere = reference_field.filter(ImageFilter.GaussianBlur(radius=max(18, width // 18)))
+        atmosphere_transfer = ImageChops.soft_light(generated, atmosphere)
+        generated = Image.blend(generated, atmosphere_transfer, 0.3)
+        generated = _reference_motif(
+            generated,
+            boosted_reference,
+            (round(width * 0.16), round(height * 0.015), round(width * 0.84), round(height * 0.19)),
+            0.42,
+        )
+        generated = _reference_motif(
+            generated,
+            boosted_reference,
+            (round(width * 0.17), round(height * 0.8), round(width * 0.83), round(height * 0.985)),
+            0.3,
+        )
+
+        reference_gray = ImageOps.fit(boosted_reference.convert("L"), (width, height), Image.Resampling.LANCZOS)
+        texture = ImageChops.difference(reference_gray, reference_gray.filter(ImageFilter.GaussianBlur(radius=5)))
+        texture = ImageEnhance.Contrast(texture).enhance(1.8)
+        texture_rgb = Image.merge("RGB", (texture, texture, texture))
+        generated = Image.blend(generated, ImageChops.soft_light(generated, texture_rgb), 0.16)
+        direction = art_direction.lower()
+        if any(word in direction for word in ("dark", "moody", "black", "noir", "deep")):
+            generated = ImageEnhance.Brightness(generated).enhance(0.86)
+        if any(word in direction for word in ("bright", "light", "airy")):
+            generated = ImageEnhance.Brightness(generated).enhance(1.1)
+        if any(word in direction for word in ("vivid", "vibrant", "neon", "saturated")):
+            generated = ImageEnhance.Color(generated).enhance(1.25)
+        if any(word in direction for word in ("gritty", "rough", "distressed", "grain")):
+            generated = Image.blend(generated, ImageChops.overlay(generated, texture_rgb), 0.12)
+        generated = ImageEnhance.Contrast(generated).enhance(1.06 + min(0.1, profile["contrast"] * 0.08))
         protected = Image.new("L", (width, height), 0)
         draw = ImageDraw.Draw(protected)
         for zone in contract.get("protectedZones", []):
@@ -231,7 +334,7 @@ def generate_reference_jukebox_skin(reference_path: Path, destination: Path) -> 
             bottom = round((float(zone["y"]) + float(zone["height"])) * height)
             margin_x = max(4, round(width * 0.012))
             margin_y = max(4, round(height * 0.008))
-            draw.rounded_rectangle((x - margin_x, y - margin_y, right + margin_x, bottom + margin_y), radius=12, fill=205)
+            draw.rounded_rectangle((x - margin_x, y - margin_y, right + margin_x, bottom + margin_y), radius=12, fill=235)
         protected = protected.filter(ImageFilter.GaussianBlur(radius=max(4, width // 120)))
         generated = Image.composite(base, generated, protected)
         generated = ImageEnhance.Sharpness(generated).enhance(1.08)
@@ -243,10 +346,12 @@ def generate_reference_jukebox_skin(reference_path: Path, destination: Path) -> 
         raise FactoryError(f"The reference-driven jukebox skin could not be generated: {error}") from error
     audit = validate_artwork(destination, cabinet_skin=True)
     return {
-        "method": "reference-palette-jukebox-v1",
+        "method": "reference-composition-jukebox-v2",
         "baseArtwork": BASE_JUKEBOX.name,
         "referenceSha256": sha256(reference_path),
         "palette": [_colour_hex(colour) for colour in palette],
+        "visualProfile": profile,
+        "artDirectionApplied": clean_text(art_direction, 500, "artwork.notes") or None,
         "output": audit,
     }
 
@@ -427,7 +532,7 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
             skin_generation = {"method": "operator-supplied", "referenceSha256": sha256(reference_path)}
         else:
             skin_path = paths["skin"].with_suffix(".jpg")
-            skin_generation = generate_reference_jukebox_skin(reference_path, skin_path)
+            skin_generation = generate_reference_jukebox_skin(reference_path, skin_path, intake["artworkNotes"])
         config = {
             "machineMode": "artist",
             "artistSlug": intake["artistSlug"],
@@ -530,7 +635,14 @@ def attach_skin(slug: str, source: Path) -> dict[str, Any]:
     status = "ready_for_approval" if validation["passed"] and spin_audit["passed"] else "blocked"
     now = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     report = load_json(paths["report"])
-    report.update({"status": status, "cabinetSkin": validation["skin"], "configuration": validation, "thirtySpinAudit": spin_audit, "updatedAt": now})
+    report.update({
+        "status": status,
+        "cabinetSkin": validation["skin"],
+        "skinGeneration": {"method": "operator-supplied", "sourceSha256": sha256(source)},
+        "configuration": validation,
+        "thirtySpinAudit": spin_audit,
+        "updatedAt": now,
+    })
     write_json_atomic(paths["report"], report)
     write_json_atomic(paths["status"], {"status": status, "updatedAt": now, "approved": False})
     return report
@@ -582,6 +694,33 @@ def run_quality_commands() -> None:
             raise FactoryError(f"Quality check failed: {' '.join(command)}")
 
 
+def validate_preview_bundle(public_root: Path, slug: str) -> dict[str, Any]:
+    missing = [name for name in PREVIEW_RUNTIME_FILES if not (public_root / "assets" / name).is_file()]
+    if missing:
+        raise FactoryError(f"Private preview is missing runtime file(s): {', '.join(missing)}")
+    registry = load_json(public_root / "artist-machines.json")
+    configs = registry.get("artists") or []
+    config = next((item for item in configs if isinstance(item, dict) and item.get("artistSlug") == slug), None)
+    if not config:
+        raise FactoryError(f"Private preview does not contain the {slug} machine configuration")
+    catalogue_path = str(config.get("cataloguePath") or "").lstrip("/")
+    catalogue = load_json(public_root / catalogue_path)
+    tracks = catalogue.get("tracks") or []
+    if not tracks:
+        raise FactoryError(f"Private preview does not contain playable songs for {slug}")
+    artwork_path = str(config.get("cabinetArtwork") or "").lstrip("/")
+    if not artwork_path or not (public_root / artwork_path).is_file():
+        raise FactoryError(f"Private preview does not contain the generated jukebox skin for {slug}")
+    return {
+        "artistSlug": slug,
+        "artistName": config.get("artistName"),
+        "playableSongCount": len(tracks),
+        "bandcampArtistUrl": config.get("bandcampArtistUrl"),
+        "skin": artwork_path,
+        "runtimeFiles": list(PREVIEW_RUNTIME_FILES),
+    }
+
+
 def build_preview(slug: str, output: Path | None = None) -> dict[str, Any]:
     slug = slugify(slug)
     paths = candidate_paths(slug)
@@ -591,12 +730,7 @@ def build_preview(slug: str, output: Path | None = None) -> dict[str, Any]:
     if not validation["passed"] or skin_path is None:
         raise FactoryError(f"Candidate {slug} needs a passing jukebox skin before preview")
     source_pages = ROOT / "github-pages"
-    required = [
-        source_pages / "artist" / "index.html",
-        source_pages / "assets" / "discovery-machine.css",
-        source_pages / "assets" / "discovery-machine.js",
-        source_pages / "assets" / "discovery-machine-core.js",
-    ]
+    required = [source_pages / "artist" / "index.html"] + [source_pages / "assets" / name for name in PREVIEW_RUNTIME_FILES]
     if any(not path.is_file() for path in required):
         raise FactoryError("Run the normal site build once before creating a factory preview")
     preview_root = (output or (ROOT / "artifacts" / "artist-machine-factory" / slug / "preview")).resolve()
@@ -606,7 +740,7 @@ def build_preview(slug: str, output: Path | None = None) -> dict[str, Any]:
     (public_root / "artist").mkdir(parents=True)
     (public_root / "assets").mkdir(parents=True)
     shutil.copy2(source_pages / "artist" / "index.html", public_root / "artist" / "index.html")
-    for name in ("discovery-machine.css", "discovery-machine.js", "discovery-machine-core.js"):
+    for name in PREVIEW_RUNTIME_FILES:
         shutil.copy2(source_pages / "assets" / name, public_root / "assets" / name)
     for directory in ("music-machine", "audio", "ticker"):
         source = source_pages / "assets" / directory
@@ -638,11 +772,13 @@ def build_preview(slug: str, output: Path | None = None) -> dict[str, Any]:
     }
     write_json_atomic(public_root / "artist-machines.json", {"schemaVersion": 1, "artists": [preview_config]})
     write_json_atomic(public_root / "artist-machine-catalogues" / f"{slug}.json", catalogue)
+    preview_audit = validate_preview_bundle(public_root, slug)
     return {
         "schemaVersion": 1,
         "artistSlug": slug,
         "previewRoot": str(preview_root),
         "previewPath": f"/cosmic-aquarium/artist/?artist={slug}",
+        "previewAudit": preview_audit,
         "passed": True,
     }
 

@@ -36,6 +36,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         self.published = self.root / "published"
         self.public_skins = self.root / "public-skins"
         self.base_jukebox = self.root / "aggits-cabinet.webp"
+        self.github_pages = self.root / "github-pages"
         self.contract = self.factory / "skin-contract.json"
         self.contract.parent.mkdir(parents=True)
         self.contract.write_text(json.dumps({
@@ -44,6 +45,11 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             "rules": [],
         }), encoding="utf-8")
         Image.new("RGB", (1024, 1536), "#4a2416").save(self.base_jukebox, format="WEBP")
+        (self.github_pages / "artist").mkdir(parents=True)
+        (self.github_pages / "assets" / "music-machine").mkdir(parents=True)
+        (self.github_pages / "artist" / "index.html").write_text("<!doctype html><main></main>", encoding="utf-8")
+        for name in factory.PREVIEW_RUNTIME_FILES:
+            (self.github_pages / "assets" / name).write_text(f"/* {name} */\n", encoding="utf-8")
         self.patches = [
             patch.object(factory, "FACTORY", self.factory),
             patch.object(factory, "CANDIDATES", self.candidates),
@@ -133,12 +139,24 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         with patch.object(factory, "discover_complete_catalogue", return_value=self.catalogue()):
             report = factory.prepare(self.make_intake(include_skin=False), replace=False)
         self.assertEqual(report["status"], "ready_for_approval")
-        self.assertEqual(report["skinGeneration"]["method"], "reference-palette-jukebox-v1")
+        self.assertEqual(report["skinGeneration"]["method"], "reference-composition-jukebox-v2")
         generated = self.candidates / "test-band" / "cabinet-skin.jpg"
         self.assertTrue(generated.is_file())
         with Image.open(generated) as image:
             self.assertEqual(image.size, (747, 1280))
         self.assertTrue((self.candidates / "test-band" / "skin-brief.json").is_file())
+
+    def test_preview_contains_every_runtime_dependency_and_artist_data(self):
+        with patch.object(factory, "discover_complete_catalogue", return_value=self.catalogue()):
+            factory.prepare(self.make_intake(include_skin=False), replace=False)
+        with patch.object(factory, "ROOT", self.root):
+            result = factory.build_preview("test-band", self.root / "preview")
+        public_root = self.root / "preview" / "cosmic-aquarium"
+        self.assertEqual(result["previewAudit"]["artistName"], "Test Band")
+        self.assertEqual(result["previewAudit"]["playableSongCount"], 4)
+        self.assertEqual(result["previewAudit"]["bandcampArtistUrl"], "https://test-band.bandcamp.com/")
+        for name in factory.PREVIEW_RUNTIME_FILES:
+            self.assertTrue((public_root / "assets" / name).is_file(), name)
 
     def test_skin_geometry_is_locked(self):
         bad_skin = self.make_image("bad-skin.jpg", (1280, 747))
