@@ -36,6 +36,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         self.published = self.root / "published"
         self.public_skins = self.root / "public-skins"
         self.base_jukebox = self.root / "aggits-cabinet.webp"
+        self.default_jukebox = self.root / "aggits-artist-default.jpg"
         self.github_pages = self.root / "github-pages"
         self.contract = self.factory / "skin-contract.json"
         self.contract.parent.mkdir(parents=True)
@@ -45,6 +46,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             "rules": [],
         }), encoding="utf-8")
         Image.new("RGB", (1024, 1536), "#4a2416").save(self.base_jukebox, format="WEBP")
+        Image.new("RGB", (747, 1280), "#380008").save(self.default_jukebox, quality=90)
         (self.github_pages / "artist").mkdir(parents=True)
         (self.github_pages / "assets" / "music-machine").mkdir(parents=True)
         (self.github_pages / "artist" / "index.html").write_text("<!doctype html><main></main>", encoding="utf-8")
@@ -57,6 +59,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             patch.object(factory, "PUBLIC_SKINS", self.public_skins),
             patch.object(factory, "SKIN_CONTRACT", self.contract),
             patch.object(factory, "BASE_JUKEBOX", self.base_jukebox),
+            patch.object(factory, "DEFAULT_ARTIST_JUKEBOX", self.default_jukebox),
         ]
         for item in self.patches:
             item.start()
@@ -84,6 +87,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             self.assertEqual(factory.PUBLISHED, expected / "automation" / "artist-machines")
             self.assertEqual(factory.PUBLIC_SKINS, expected / "public" / "music-machine")
             self.assertEqual(factory.BASE_JUKEBOX, expected / "public" / "music-machine" / "aggits-cabinet.webp")
+            self.assertEqual(factory.DEFAULT_ARTIST_JUKEBOX, expected / "public" / "music-machine" / "aggits-artist-default.jpg")
         finally:
             factory.configure_workspace(original)
 
@@ -92,7 +96,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         Image.new("RGB", size, "#4b1919").save(path, quality=80)
         return path
 
-    def make_intake(self, include_skin: bool = True) -> Path:
+    def make_intake(self, include_skin: bool = True, include_reference: bool = True) -> Path:
         reference = self.make_image("reference.jpg", (900, 900))
         skin = self.make_image("skin.jpg")
         value = {
@@ -105,10 +109,11 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             },
             "editorial": {"bio": "Approved factual biography.", "tickerCopy": ["Studio note."]},
             "artwork": {
-                "referenceImage": str(reference),
                 "skinVariant": "test-band-custom",
             },
         }
+        if include_reference:
+            value["artwork"]["referenceImage"] = str(reference)
         if include_skin:
             value["artwork"]["cabinetSkin"] = str(skin)
         path = self.root / "intake.json"
@@ -145,6 +150,15 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         with Image.open(generated) as image:
             self.assertEqual(image.size, (747, 1280))
         self.assertTrue((self.candidates / "test-band" / "skin-brief.json").is_file())
+
+    def test_prepare_without_reference_uses_the_standard_red_skin_unchanged(self):
+        with patch.object(factory, "discover_complete_catalogue", return_value=self.catalogue()):
+            report = factory.prepare(self.make_intake(include_skin=False, include_reference=False), replace=False)
+        generated = self.candidates / "test-band" / "cabinet-skin.jpg"
+        self.assertEqual(report["status"], "ready_for_approval")
+        self.assertIsNone(report["referenceImage"])
+        self.assertEqual(report["skinGeneration"]["method"], "standard-red-jukebox-v1")
+        self.assertEqual(generated.read_bytes(), self.default_jukebox.read_bytes())
 
     def test_preview_contains_every_runtime_dependency_and_artist_data(self):
         with patch.object(factory, "discover_complete_catalogue", return_value=self.catalogue()):

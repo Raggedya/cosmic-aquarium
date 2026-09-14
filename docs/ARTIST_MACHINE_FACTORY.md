@@ -10,7 +10,7 @@ Every machine moves through the same states:
 
 Candidate work is isolated under `automation/artist-machine-factory/candidates/`. A candidate cannot enter `automation/artist-machines/` or the public asset directory until the approval command is run and all validation passes.
 
-The factory stops instead of publishing when it cannot verify the complete public catalogue, find playable Bandcamp embed identifiers, decode the reference image, generate the locked skin geometry, or complete the 30-spin no-repeat audit.
+The factory stops instead of publishing when it cannot verify the complete public catalogue, find playable Bandcamp embed identifiers, load the standard skin or a supplied reference image, generate the locked skin geometry, or complete the 30-spin no-repeat audit.
 
 ## Standard intake
 
@@ -18,10 +18,10 @@ Copy `automation/artist-machine-factory/intake.example.json` and supply:
 
 - artist name, artist-owned Bandcamp URL and city;
 - approved biography and optional ticker passages;
-- one visual reference image for colour, tone and surface character;
+- an optional visual reference image for colour, tone and surface character;
 - optional internal request and delivery details.
 
-The reference path may be absolute or relative to the intake file. Credentials never belong in an intake file.
+Leave the reference path blank to use the standard red AGGITS artist jukebox skin. When supplied, the reference path may be absolute or relative to the intake file. Credentials never belong in an intake file.
 
 ## Operator sequence
 
@@ -31,7 +31,7 @@ The reference path may be absolute or relative to the intake file. Credentials n
 python scripts/artist_machine_factory.py prepare --intake C:\intakes\artist.json
 ```
 
-This ingests the public catalogue once, deduplicates it by Bandcamp track identifier, validates playback and purchase destinations, analyses the reference image's palette, brightness, contrast, saturation, texture and composition, then generates a complete 747 × 1280 single-reel jukebox skin from the locked AGGITS machine. Reference atmosphere and restrained motifs are transferred into decorative areas while every live control zone remains protected. Art-direction notes such as dark, bright, vibrant or gritty tune the treatment. The factory then runs 30 deterministic discovery selections. The result is immediately ready for its private preview when all checks pass.
+This ingests the public catalogue once, deduplicates it by Bandcamp track identifier and validates playback and purchase destinations. With no reference image it copies the standard red 747 × 1280 AGGITS artist jukebox skin unchanged. With a reference image it analyses palette, brightness, contrast, saturation, texture and composition, then generates a fresh single-reel skin from the locked AGGITS machine. Reference atmosphere and restrained motifs are transferred into decorative areas while every live control zone remains protected. Art-direction notes such as dark, bright, vibrant or gritty tune the treatment. The factory then runs 30 deterministic discovery selections. The result is immediately ready for its private preview when all checks pass.
 
 The automatic process is local and deterministic: it does not require an image API key, does not invent artist text or logos, and never uploads the private reference image. Advanced operators may still replace a generated skin with the `attach-skin` command before approval.
 

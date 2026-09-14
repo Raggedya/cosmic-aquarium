@@ -24,6 +24,7 @@ PUBLISHED = ROOT / "automation" / "artist-machines"
 PUBLIC_SKINS = ROOT / "public" / "music-machine"
 SKIN_CONTRACT = FACTORY / "skin-contract.json"
 BASE_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-cabinet.webp"
+DEFAULT_ARTIST_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-artist-default.jpg"
 ENGINE_VERSION = "artist-machine-v1"
 PUBLIC_BASE_URL = "https://raggedya.github.io/cosmic-aquarium/artist/?artist="
 SUPPORTED_IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
@@ -47,7 +48,7 @@ def configure_workspace(workspace: Path) -> Path:
     Windows dashboard uses an isolated managed checkout so private reference
     images and candidate reports never enter the public working tree.
     """
-    global ROOT, FACTORY, CANDIDATES, PUBLISHED, PUBLIC_SKINS, SKIN_CONTRACT, BASE_JUKEBOX
+    global ROOT, FACTORY, CANDIDATES, PUBLISHED, PUBLIC_SKINS, SKIN_CONTRACT, BASE_JUKEBOX, DEFAULT_ARTIST_JUKEBOX
     resolved = Path(workspace).expanduser().resolve()
     if not (resolved / "automation" / "artist-machine-factory" / "skin-contract.json").is_file():
         raise FactoryError("The selected Factory workspace is missing the locked machine contract")
@@ -58,6 +59,7 @@ def configure_workspace(workspace: Path) -> Path:
     PUBLIC_SKINS = ROOT / "public" / "music-machine"
     SKIN_CONTRACT = FACTORY / "skin-contract.json"
     BASE_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-cabinet.webp"
+    DEFAULT_ARTIST_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-artist-default.jpg"
     return ROOT
 
 
@@ -382,9 +384,9 @@ def normalise_intake(value: dict[str, Any], intake_path: Path) -> dict[str, Any]
         raise FactoryError("editorial.tickerCopy must contain at most 24 entries")
     ticker = [clean_text(item, 500, "editorial.tickerCopy") for item in ticker]
     ticker = list(dict.fromkeys(item for item in ticker if item))
-    reference_value = clean_text(artwork.get("referenceImage"), 1000, "artwork.referenceImage", True)
+    reference_value = clean_text(artwork.get("referenceImage"), 1000, "artwork.referenceImage")
     skin_value = clean_text(artwork.get("cabinetSkin"), 1000, "artwork.cabinetSkin")
-    reference_path = resolve_input_path(reference_value, intake_path)
+    reference_path = resolve_input_path(reference_value, intake_path) if reference_value else None
     skin_path = resolve_input_path(skin_value, intake_path) if skin_value else None
     skin_variant = clean_text(artwork.get("skinVariant"), 72, "artwork.skinVariant") or f"{slug}-custom"
     if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", skin_variant):
@@ -524,15 +526,27 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
     paths = paths_for_candidate_root(staging_root)
     backup_root = CANDIDATES / f".{intake['artistSlug']}.previous"
     try:
-        reference_path = copy_named_image(intake["referencePath"], paths["reference"])
-        reference_audit = validate_artwork(reference_path, cabinet_skin=False)
+        reference_path = copy_named_image(intake["referencePath"], paths["reference"]) if intake["referencePath"] else None
+        reference_audit = validate_artwork(reference_path, cabinet_skin=False) if reference_path else None
         tracks, metadata = discover_complete_catalogue(intake["bandcampArtistUrl"], intake["artistName"])
         if intake["skinPath"]:
             skin_path = copy_named_image(intake["skinPath"], paths["skin"])
-            skin_generation = {"method": "operator-supplied", "referenceSha256": sha256(reference_path)}
-        else:
+            skin_generation = {
+                "method": "operator-supplied",
+                "referenceSha256": sha256(reference_path) if reference_path else None,
+            }
+        elif reference_path:
             skin_path = paths["skin"].with_suffix(".jpg")
             skin_generation = generate_reference_jukebox_skin(reference_path, skin_path, intake["artworkNotes"])
+        else:
+            if not DEFAULT_ARTIST_JUKEBOX.is_file():
+                raise FactoryError("The standard red AGGITS jukebox skin is missing")
+            skin_path = copy_named_image(DEFAULT_ARTIST_JUKEBOX, paths["skin"])
+            skin_generation = {
+                "method": "standard-red-jukebox-v1",
+                "baseArtwork": DEFAULT_ARTIST_JUKEBOX.name,
+                "output": validate_artwork(skin_path, cabinet_skin=True),
+            }
         config = {
             "machineMode": "artist",
             "artistSlug": intake["artistSlug"],
@@ -582,8 +596,12 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
         brief = {
             "schemaVersion": 1,
             "artistName": intake["artistName"],
-            "referenceImage": reference_path.name,
-            "artDirection": intake["artworkNotes"] or "Use the supplied image for colour, tone and visual character.",
+            "referenceImage": reference_path.name if reference_path else None,
+            "artDirection": intake["artworkNotes"] or (
+                "Use the supplied image for colour, tone and visual character."
+                if reference_path
+                else "Use the standard red AGGITS artist jukebox skin."
+            ),
             "generation": skin_generation,
             "canvas": contract["canvas"],
             "protectedZones": contract["protectedZones"],

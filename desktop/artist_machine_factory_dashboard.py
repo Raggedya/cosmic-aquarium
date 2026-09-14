@@ -166,7 +166,14 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.ticker = self._text(content, 5, "TICKER TEXT — ONE ITEM PER LINE", 4)
 
         tk.Label(content, text="3  VISUALS", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).grid(row=6, column=0, columnspan=2, sticky="w", pady=(26, 0))
-        self._file_row(content, 7, "REFERENCE IMAGE  ·  DRIVES THE AUTOMATIC JUKEBOX SKIN", self.reference_path, self._choose_reference)
+        self._file_row(
+            content,
+            7,
+            "REFERENCE IMAGE  ·  OPTIONAL — LEAVE BLANK FOR THE RED AGGITS SKIN",
+            self.reference_path,
+            self._choose_reference,
+            self._clear_reference,
+        )
         self.art_notes = self._text(content, 8, "COLOUR, TONE AND VIBE NOTES", 3)
 
         tk.Label(content, text="4  DELIVERY", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).grid(row=9, column=0, columnspan=2, sticky="w", pady=(26, 0))
@@ -232,7 +239,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
 
         note = (
             "The locked controls and operating model are never edited here. "
-            "The reference image automatically colours a fresh single-reel jukebox skin."
+            "No image uses the red AGGITS skin; an image creates a fresh reference-driven skin."
         )
         tk.Label(inner, text=note, bg=PANEL, fg="#8e765c", font=("Segoe UI", 8), wraplength=300, justify="left").pack(side="bottom", anchor="w", pady=(22, 0))
         self._set_candidate_controls(False, False)
@@ -253,13 +260,23 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         widget.pack(fill="x", pady=(6, 0))
         return widget
 
-    def _file_row(self, parent: tk.Widget, row: int, label: str, variable: tk.StringVar, action: object) -> None:
+    def _file_row(
+        self,
+        parent: tk.Widget,
+        row: int,
+        label: str,
+        variable: tk.StringVar,
+        action: object,
+        clear_action: object | None = None,
+    ) -> None:
         shell = tk.Frame(parent, bg=PANEL)
         shell.grid(row=row, column=0, columnspan=2, sticky="ew", pady=(12, 0))
         shell.grid_columnconfigure(0, weight=1)
-        tk.Label(shell, text=label, bg=PANEL, fg=MUTED, font=("Segoe UI Semibold", 8)).grid(row=0, column=0, columnspan=2, sticky="w")
+        tk.Label(shell, text=label, bg=PANEL, fg=MUTED, font=("Segoe UI Semibold", 8)).grid(row=0, column=0, columnspan=3, sticky="w")
         tk.Entry(shell, textvariable=variable, state="readonly", readonlybackground="#0d0805", fg=PAPER, relief="flat", bd=0, font=("Segoe UI", 9)).grid(row=1, column=0, sticky="ew", pady=(6, 0), ipady=9)
         tk.Button(shell, text="CHOOSE IMAGE", command=action, bg="#3b2415", fg=CREAM, activebackground="#5a351e", activeforeground=PAPER, relief="flat", bd=0, cursor="hand2", font=("Segoe UI Semibold", 8), padx=14).grid(row=1, column=1, sticky="ns", pady=(6, 0), padx=(8, 0))
+        if clear_action:
+            tk.Button(shell, text="USE RED DEFAULT", command=clear_action, bg="#3b2415", fg=CREAM, activebackground="#5a351e", activeforeground=PAPER, relief="flat", bd=0, cursor="hand2", font=("Segoe UI Semibold", 8), padx=14).grid(row=1, column=2, sticky="ns", pady=(6, 0), padx=(8, 0))
 
     def _button(self, parent: tk.Widget, text: str, command: object, secondary: bool = False) -> tk.Button:
         background = "#3b2415" if secondary else BURGUNDY
@@ -270,6 +287,9 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         selected = self._choose_image("Choose the colour / tone reference image")
         if selected:
             self.reference_path.set(selected)
+
+    def _clear_reference(self) -> None:
+        self.reference_path.set("")
 
     def _choose_image(self, title: str) -> str:
         return filedialog.askopenfilename(title=title, filetypes=(("Image files", "*.jpg *.jpeg *.png *.webp"), ("All files", "*.*")))
@@ -302,13 +322,13 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         value = self._form_value()
         artist = str(value["artist"]["name"])  # type: ignore[index]
         bandcamp = str(value["artist"]["bandcampUrl"])  # type: ignore[index]
-        reference = Path(str(value["artwork"]["referenceImage"]))  # type: ignore[index]
+        reference_value = str(value["artwork"]["referenceImage"]).strip()  # type: ignore[index]
         if not artist:
             raise factory.FactoryError("Enter the band or artist name")
         slug = factory.slugify(artist)
         factory.validate_bandcamp_url(bandcamp)
-        if not reference.is_file():
-            raise factory.FactoryError("Choose a reference image")
+        if reference_value and not Path(reference_value).is_file():
+            raise factory.FactoryError("The selected reference image could not be found")
         return value, slug
 
     def _save_draft(self, announce: bool = True) -> Path | None:
@@ -334,7 +354,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         existing = self.workspace / "automation" / "artist-machine-factory" / "candidates" / slug
         if existing.exists() and not messagebox.askyesno("Update this candidate?", "A private candidate already exists for this artist. Replace it with the details currently in the form?"):
             return
-        self._run_async("READING BANDCAMP + INTERPRETING THE REFERENCE…", lambda: self._prepare(intake), self._prepare_complete)
+        self._run_async("READING BANDCAMP + BUILDING THE JUKEBOX…", lambda: self._prepare(intake), self._prepare_complete)
 
     def _prepare(self, intake: Path) -> dict[str, object]:
         self._ensure_workspace()

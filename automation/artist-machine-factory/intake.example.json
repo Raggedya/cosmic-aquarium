@@ -14,9 +14,9 @@
     ]
   },
   "artwork": {
-    "referenceImage": "C:/path/to/reference-image.jpg",
+    "referenceImage": "",
     "skinVariant": "example-artist-custom",
-    "notes": "Colour, tone and visual references for the automatically generated jukebox skin."
+    "notes": "Leave referenceImage blank for the standard red AGGITS skin, or provide an image for a fresh reference-driven skin."
   },
   "request": {
     "requestedBy": "Internal operator",
