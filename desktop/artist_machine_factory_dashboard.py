@@ -85,7 +85,6 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.drafts.mkdir(parents=True, exist_ok=True)
 
         self.reference_path = tk.StringVar()
-        self.skin_path = tk.StringVar()
         self.current_slug = ""
         self.latest_url = ""
         self.preview_server: ThreadingHTTPServer | None = None
@@ -119,7 +118,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         title = tk.Frame(header, bg="#090503")
         title.pack(side="left", pady=18)
         tk.Label(title, text="ARTIST MACHINE FACTORY", bg="#090503", fg=PAPER, font=("Segoe UI Semibold", 15)).pack(anchor="w")
-        tk.Label(title, text="ONE LOCKED MACHINE  ·  A NEW BAND IN THREE APPROVED CHANGES", bg="#090503", fg=MUTED, font=("Segoe UI", 8)).pack(anchor="w", pady=(3, 0))
+        tk.Label(title, text="BANDCAMP + REFERENCE + WORDS  ·  ONE COMPLETE SINGLE-REEL JUKEBOX", bg="#090503", fg=MUTED, font=("Segoe UI", 8)).pack(anchor="w", pady=(3, 0))
         self.connection = tk.Label(header, text="PRIVATE DESKTOP WORKSPACE", bg="#090503", fg=BRASS, font=("Segoe UI Semibold", 9))
         self.connection.pack(side="right", padx=30)
 
@@ -167,22 +166,21 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.ticker = self._text(content, 5, "TICKER TEXT — ONE ITEM PER LINE", 4)
 
         tk.Label(content, text="3  VISUALS", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).grid(row=6, column=0, columnspan=2, sticky="w", pady=(26, 0))
-        self._file_row(content, 7, "REFERENCE IMAGE  ·  REQUIRED", self.reference_path, self._choose_reference)
-        self._file_row(content, 8, "FINAL CABINET SKIN  ·  OPTIONAL FOR FIRST PASS", self.skin_path, self._choose_skin)
-        self.art_notes = self._text(content, 9, "COLOUR, TONE AND VIBE NOTES", 3)
+        self._file_row(content, 7, "REFERENCE IMAGE  ·  DRIVES THE AUTOMATIC JUKEBOX SKIN", self.reference_path, self._choose_reference)
+        self.art_notes = self._text(content, 8, "COLOUR, TONE AND VIBE NOTES", 3)
 
-        tk.Label(content, text="4  DELIVERY", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).grid(row=10, column=0, columnspan=2, sticky="w", pady=(26, 0))
-        self.requested_by = self._entry(content, 11, 0, "PREPARED / APPROVED BY")
-        self.delivery_email = self._entry(content, 11, 1, "CONTACT / DELIVERY EMAIL")
-        self.request_notes = self._text(content, 12, "PRIVATE REQUEST NOTES", 3)
+        tk.Label(content, text="4  DELIVERY", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).grid(row=9, column=0, columnspan=2, sticky="w", pady=(26, 0))
+        self.requested_by = self._entry(content, 10, 0, "PREPARED / APPROVED BY")
+        self.delivery_email = self._entry(content, 10, 1, "CONTACT / DELIVERY EMAIL")
+        self.request_notes = self._text(content, 11, "PRIVATE REQUEST NOTES", 3)
 
         actions = tk.Frame(content, bg=PANEL)
-        actions.grid(row=13, column=0, columnspan=2, sticky="ew", pady=(28, 12))
+        actions.grid(row=12, column=0, columnspan=2, sticky="ew", pady=(28, 12))
         actions.grid_columnconfigure(0, weight=1)
         actions.grid_columnconfigure(1, weight=1)
         self.save_button = self._button(actions, "SAVE DRAFT", self._save_draft, secondary=True)
         self.save_button.grid(row=0, column=0, sticky="ew", padx=(0, 7))
-        self.process_button = self._button(actions, "PROCESS BANDCAMP CATALOGUE", self._start_prepare)
+        self.process_button = self._button(actions, "GENERATE SINGLE-REEL JUKEBOX", self._start_prepare)
         self.process_button.grid(row=0, column=1, sticky="ew", padx=(7, 0))
 
     def _build_status(self, parent: tk.Frame) -> None:
@@ -224,10 +222,8 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.report_count = tk.Label(report, text="", bg=PANEL_LIGHT, fg=CREAM, font=("Segoe UI Semibold", 11))
         self.report_count.pack(anchor="w", padx=16, pady=(9, 15))
 
-        self.attach_button = self._button(inner, "ATTACH / REPLACE FINAL SKIN", self._attach_skin, secondary=True)
-        self.attach_button.pack(fill="x", pady=(18, 7))
         self.preview_button = self._button(inner, "BUILD + OPEN PRIVATE PREVIEW", self._start_preview, secondary=True)
-        self.preview_button.pack(fill="x", pady=7)
+        self.preview_button.pack(fill="x", pady=(18, 7))
         self.publish_button = self._button(inner, "APPROVE + PUBLISH", self._confirm_publish)
         self.publish_button.pack(fill="x", pady=7)
         self.open_live_button = self._button(inner, "OPEN FINISHED MACHINE", self._open_live, secondary=True)
@@ -236,7 +232,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
 
         note = (
             "The locked controls and operating model are never edited here. "
-            "Only the Bandcamp catalogue, ticker copy and approved cabinet skin change."
+            "The reference image automatically colours a fresh single-reel jukebox skin."
         )
         tk.Label(inner, text=note, bg=PANEL, fg="#8e765c", font=("Segoe UI", 8), wraplength=300, justify="left").pack(side="bottom", anchor="w", pady=(22, 0))
         self._set_candidate_controls(False, False)
@@ -275,11 +271,6 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         if selected:
             self.reference_path.set(selected)
 
-    def _choose_skin(self) -> None:
-        selected = self._choose_image("Choose the final 747 × 1280 cabinet skin")
-        if selected:
-            self.skin_path.set(selected)
-
     def _choose_image(self, title: str) -> str:
         return filedialog.askopenfilename(title=title, filetypes=(("Image files", "*.jpg *.jpeg *.png *.webp"), ("All files", "*.*")))
 
@@ -298,7 +289,6 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             },
             "artwork": {
                 "referenceImage": self.reference_path.get().strip(),
-                "cabinetSkin": self.skin_path.get().strip(),
                 "notes": self.art_notes.get("1.0", "end").strip(),
             },
             "request": {
@@ -356,10 +346,11 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self._refresh_candidates()
         self._select_slug(self.current_slug)
         count = int(report.get("catalogue", {}).get("playableSongCount", 0))  # type: ignore[union-attr]
-        if report.get("status") == "awaiting_skin":
-            self._set_status(f"{count} SONGS FOUND — FINAL SKIN NEEDED", SUCCESS)
+        if report.get("status") == "ready_for_approval":
+            self._set_status(f"JUKEBOX GENERATED — {count} PLAYABLE SONGS — OPENING PREVIEW", SUCCESS)
+            self.after(100, self._start_preview)
         else:
-            self._set_status(f"CANDIDATE READY — {count} PLAYABLE SONGS", SUCCESS)
+            self._set_status("AUTOMATIC CHECKS PAUSED — REVIEW THE CANDIDATE", ERROR)
 
     def _ensure_workspace(self) -> Path:
         gh = self._github_cli()
@@ -441,8 +432,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             count = int(report.get("catalogue", {}).get("playableSongCount") or 0)
             self.report_artist.configure(text=str(report.get("artistName") or slug))
             descriptions = {
-                "awaiting_skin": "Catalogue processed. Add the approved 747 × 1280 cabinet skin.",
-                "ready_for_approval": "All automatic checks passed. Build the private preview before approval.",
+                "ready_for_approval": "Catalogue and reference-driven jukebox skin passed every automatic check.",
                 "blocked": "A safety check needs attention before this can be approved.",
                 "approved": "Approved locally and ready/published through the secure release workflow.",
             }
@@ -456,27 +446,8 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             self._set_candidate_controls(False, False)
 
     def _set_candidate_controls(self, exists: bool, ready: bool) -> None:
-        self.attach_button.configure(state="normal" if exists else "disabled")
         self.preview_button.configure(state="normal" if ready else "disabled")
         self.publish_button.configure(state="normal" if ready else "disabled")
-
-    def _attach_skin(self) -> None:
-        if self.busy or not self.current_slug:
-            return
-        selected = self._choose_image("Choose the approved 747 × 1280 cabinet skin")
-        if not selected:
-            return
-        self.skin_path.set(selected)
-        self._run_async("CHECKING THE CABINET SKIN…", lambda: self._attach_skin_worker(Path(selected)), self._skin_complete)
-
-    def _attach_skin_worker(self, path: Path) -> dict[str, object]:
-        self._ensure_workspace()
-        return factory.attach_skin(self.current_slug, path)
-
-    def _skin_complete(self, report: dict[str, object]) -> None:
-        self._refresh_candidates()
-        self._select_slug(str(report["artistSlug"]))
-        self._set_status("SKIN PASSED — PRIVATE PREVIEW IS READY TO BUILD", SUCCESS)
 
     def _start_preview(self) -> None:
         if self.busy or not self.current_slug:
@@ -530,7 +501,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             config = workspace / "automation" / "artist-machines" / f"{slug}.json"
             skin_candidates = list((workspace / "public" / "music-machine").glob(f"{slug}-cabinet.*"))
             if len(skin_candidates) != 1:
-                raise RuntimeError("The final cabinet skin could not be identified safely.")
+                raise RuntimeError("The generated jukebox skin could not be identified safely.")
             skin = skin_candidates[0]
             stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%d%H%M%S")
             branch = f"codex/factory-{slug}-{stamp}"
@@ -641,7 +612,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             try:
                 result = operation()  # type: ignore[operator]
             except Exception as error:
-                self.after(0, lambda: self._operation_failed(str(error)))
+                self.after(0, lambda message=str(error): self._operation_failed(message))
                 return
             self.after(0, lambda: self._operation_complete(complete, result))
 
@@ -665,7 +636,6 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         if enabled and self.current_slug:
             self._show_candidate(self.current_slug)
         elif not enabled:
-            self.attach_button.configure(state="disabled")
             self.preview_button.configure(state="disabled")
             self.publish_button.configure(state="disabled")
 

@@ -23,6 +23,7 @@ CANDIDATES = FACTORY / "candidates"
 PUBLISHED = ROOT / "automation" / "artist-machines"
 PUBLIC_SKINS = ROOT / "public" / "music-machine"
 SKIN_CONTRACT = FACTORY / "skin-contract.json"
+BASE_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-cabinet.webp"
 ENGINE_VERSION = "artist-machine-v1"
 PUBLIC_BASE_URL = "https://raggedya.github.io/cosmic-aquarium/artist/?artist="
 SUPPORTED_IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
@@ -39,7 +40,7 @@ def configure_workspace(workspace: Path) -> Path:
     Windows dashboard uses an isolated managed checkout so private reference
     images and candidate reports never enter the public working tree.
     """
-    global ROOT, FACTORY, CANDIDATES, PUBLISHED, PUBLIC_SKINS, SKIN_CONTRACT
+    global ROOT, FACTORY, CANDIDATES, PUBLISHED, PUBLIC_SKINS, SKIN_CONTRACT, BASE_JUKEBOX
     resolved = Path(workspace).expanduser().resolve()
     if not (resolved / "automation" / "artist-machine-factory" / "skin-contract.json").is_file():
         raise FactoryError("The selected Factory workspace is missing the locked machine contract")
@@ -49,6 +50,7 @@ def configure_workspace(workspace: Path) -> Path:
     PUBLISHED = ROOT / "automation" / "artist-machines"
     PUBLIC_SKINS = ROOT / "public" / "music-machine"
     SKIN_CONTRACT = FACTORY / "skin-contract.json"
+    BASE_JUKEBOX = ROOT / "public" / "music-machine" / "aggits-cabinet.webp"
     return ROOT
 
 
@@ -125,7 +127,7 @@ def validate_artwork(path: Path, *, cabinet_skin: bool) -> dict[str, Any]:
     ratio = width / height
     target_ratio = float(contract["canvas"]["aspectRatio"])
     if cabinet_skin and (width < 700 or height < 1200 or abs(ratio - target_ratio) > 0.006):
-        raise FactoryError("Cabinet skin must use the locked 747:1280 portrait geometry (minimum 700 by 1200 pixels)")
+        raise FactoryError("Jukebox skin must use the locked 747:1280 portrait geometry (minimum 700 by 1200 pixels)")
     return {
         "file": path.name,
         "width": width,
@@ -133,6 +135,119 @@ def validate_artwork(path: Path, *, cabinet_skin: bool) -> dict[str, Any]:
         "bytes": path.stat().st_size,
         "sha256": sha256(path),
         "geometryCompliant": not cabinet_skin or abs(ratio - target_ratio) <= 0.006,
+    }
+
+
+def _mix_colour(first: tuple[int, int, int], second: tuple[int, int, int], amount: float) -> tuple[int, int, int]:
+    return tuple(round(a * (1 - amount) + b * amount) for a, b in zip(first, second))
+
+
+def _colour_hex(colour: tuple[int, int, int]) -> str:
+    return "#" + "".join(f"{channel:02x}" for channel in colour)
+
+
+def reference_palette(path: Path) -> list[tuple[int, int, int]]:
+    try:
+        from PIL import Image
+
+        with Image.open(path) as source:
+            sample = source.convert("RGB")
+            sample.thumbnail((96, 96))
+            quantized = sample.quantize(colors=12, method=Image.Quantize.MEDIANCUT).convert("RGB")
+            colours = quantized.getcolors(maxcolors=96 * 96) or []
+    except ImportError as error:
+        raise FactoryError("Pillow is required to generate the jukebox skin; install requirements-automation.txt") from error
+    except Exception as error:
+        raise FactoryError(f"Reference image cannot be read: {path.name}") from error
+    ranked = sorted(
+        colours,
+        key=lambda item: item[0]
+        * (1 + ((max(item[1]) - min(item[1])) / 32) ** 1.5)
+        * (0.3 + max(item[1]) / 255),
+        reverse=True,
+    )
+    palette: list[tuple[int, int, int]] = []
+    for _count, colour in ranked:
+        rgb = tuple(int(channel) for channel in colour)
+        value = max(rgb)
+        saturation = value - min(rgb)
+        if value < 8:
+            continue
+        if value < 112 and saturation >= 6:
+            scale = 112 / value
+            rgb = tuple(min(255, round(channel * scale)) for channel in rgb)
+        if all(sum((a - b) ** 2 for a, b in zip(rgb, existing)) >= 32 ** 2 for existing in palette):
+            palette.append(rgb)
+        if len(palette) == 4:
+            break
+    if not palette:
+        dominant = tuple(int(channel) for channel in max(colours, key=lambda item: item[0])[1]) if colours else (0, 0, 0)
+        palette.append(dominant if max(dominant) >= 8 else (28, 28, 28))
+    seed = palette[0]
+    derived = [
+        _mix_colour(seed, (3, 4, 7), 0.68),
+        _mix_colour(seed, (245, 224, 190), 0.48),
+        _mix_colour(seed, (255, 255, 255), 0.7),
+    ]
+    for colour in derived:
+        if len(palette) == 4:
+            break
+        if all(sum((a - b) ** 2 for a, b in zip(colour, existing)) >= 24 ** 2 for existing in palette):
+            palette.append(colour)
+    while len(palette) < 4:
+        palette.append(_mix_colour(seed, (255, 255, 255), len(palette) / 5))
+    return palette
+
+
+def generate_reference_jukebox_skin(reference_path: Path, destination: Path) -> dict[str, Any]:
+    try:
+        from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageOps
+    except ImportError as error:
+        raise FactoryError("Pillow is required to generate the jukebox skin; install requirements-automation.txt") from error
+    if not BASE_JUKEBOX.is_file():
+        raise FactoryError("The locked AGGITS jukebox artwork is missing")
+    contract = load_json(SKIN_CONTRACT)
+    width = int(contract["canvas"].get("width") or 747)
+    height = int(contract["canvas"].get("height") or 1280)
+    palette = reference_palette(reference_path)
+    primary = palette[0]
+    accent = max(palette[1:], key=lambda colour: sum((a - b) ** 2 for a, b in zip(primary, colour)))
+    shadow = _mix_colour(primary, (4, 5, 8), 0.82)
+    middle = _mix_colour(primary, accent, 0.28)
+    highlight = _mix_colour(accent, (248, 225, 174), 0.62)
+    try:
+        with Image.open(BASE_JUKEBOX) as source:
+            base = source.convert("RGB").resize((width, height), Image.Resampling.LANCZOS)
+        greyscale = ImageOps.grayscale(base)
+        colour_layer = ImageOps.colorize(greyscale, black=shadow, mid=middle, white=highlight)
+        generated = Image.blend(base, colour_layer, 0.72)
+        generated = ImageEnhance.Contrast(generated).enhance(1.06)
+        protected = Image.new("L", (width, height), 0)
+        draw = ImageDraw.Draw(protected)
+        for zone in contract.get("protectedZones", []):
+            x = round(float(zone["x"]) * width)
+            y = round(float(zone["y"]) * height)
+            right = round((float(zone["x"]) + float(zone["width"])) * width)
+            bottom = round((float(zone["y"]) + float(zone["height"])) * height)
+            margin_x = max(4, round(width * 0.012))
+            margin_y = max(4, round(height * 0.008))
+            draw.rounded_rectangle((x - margin_x, y - margin_y, right + margin_x, bottom + margin_y), radius=12, fill=205)
+        protected = protected.filter(ImageFilter.GaussianBlur(radius=max(4, width // 120)))
+        generated = Image.composite(base, generated, protected)
+        generated = ImageEnhance.Sharpness(generated).enhance(1.08)
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        generated.save(destination, format="JPEG", quality=93, subsampling=0, optimize=True)
+    except FactoryError:
+        raise
+    except Exception as error:
+        raise FactoryError(f"The reference-driven jukebox skin could not be generated: {error}") from error
+    audit = validate_artwork(destination, cabinet_skin=True)
+    return {
+        "method": "reference-palette-jukebox-v1",
+        "baseArtwork": BASE_JUKEBOX.name,
+        "referenceSha256": sha256(reference_path),
+        "palette": [_colour_hex(colour) for colour in palette],
+        "output": audit,
     }
 
 
@@ -307,7 +422,12 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
         reference_path = copy_named_image(intake["referencePath"], paths["reference"])
         reference_audit = validate_artwork(reference_path, cabinet_skin=False)
         tracks, metadata = discover_complete_catalogue(intake["bandcampArtistUrl"], intake["artistName"])
-        skin_path = copy_named_image(intake["skinPath"], paths["skin"]) if intake["skinPath"] else None
+        if intake["skinPath"]:
+            skin_path = copy_named_image(intake["skinPath"], paths["skin"])
+            skin_generation = {"method": "operator-supplied", "referenceSha256": sha256(reference_path)}
+        else:
+            skin_path = paths["skin"].with_suffix(".jpg")
+            skin_generation = generate_reference_jukebox_skin(reference_path, skin_path)
         config = {
             "machineMode": "artist",
             "artistSlug": intake["artistSlug"],
@@ -328,8 +448,8 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
         }
         validation = validate_machine_config(config, skin_path)
         spin_audit = run_spin_audit(config)
-        ready = validation["passed"] and spin_audit["passed"] and skin_path is not None
-        status = "ready_for_approval" if ready else "awaiting_skin" if skin_path is None else "blocked"
+        ready = validation["passed"] and spin_audit["passed"]
+        status = "ready_for_approval" if ready else "blocked"
         now = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
         report = {
             "schemaVersion": 1,
@@ -347,6 +467,7 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
             },
             "referenceImage": reference_audit,
             "cabinetSkin": validation["skin"],
+            "skinGeneration": skin_generation,
             "configuration": validation,
             "thirtySpinAudit": spin_audit,
             "previewUrlAfterApproval": PUBLIC_BASE_URL + intake["artistSlug"],
@@ -358,6 +479,7 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
             "artistName": intake["artistName"],
             "referenceImage": reference_path.name,
             "artDirection": intake["artworkNotes"] or "Use the supplied image for colour, tone and visual character.",
+            "generation": skin_generation,
             "canvas": contract["canvas"],
             "protectedZones": contract["protectedZones"],
             "rules": contract["rules"],
@@ -467,7 +589,7 @@ def build_preview(slug: str, output: Path | None = None) -> dict[str, Any]:
     skin_path = find_candidate_image(slug, "cabinet-skin")
     validation = validate_machine_config(config, skin_path)
     if not validation["passed"] or skin_path is None:
-        raise FactoryError(f"Candidate {slug} needs a passing cabinet skin before preview")
+        raise FactoryError(f"Candidate {slug} needs a passing jukebox skin before preview")
     source_pages = ROOT / "github-pages"
     required = [
         source_pages / "artist" / "index.html",
@@ -586,7 +708,7 @@ def main() -> None:
     prepare_parser = subparsers.add_parser("prepare", help="Build an isolated candidate from a standard intake file")
     prepare_parser.add_argument("--intake", required=True, type=Path)
     prepare_parser.add_argument("--replace", action="store_true")
-    skin_parser = subparsers.add_parser("attach-skin", help="Attach and validate an approved cabinet skin")
+    skin_parser = subparsers.add_parser("attach-skin", help="Attach and validate an approved jukebox skin")
     skin_parser.add_argument("--slug", required=True)
     skin_parser.add_argument("--skin", required=True, type=Path)
     check_parser = subparsers.add_parser("check", help="Audit a candidate or published machine without changing it")

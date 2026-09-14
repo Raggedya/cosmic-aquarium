@@ -15,9 +15,8 @@
   },
   "artwork": {
     "referenceImage": "C:/path/to/reference-image.jpg",
-    "cabinetSkin": "C:/path/to/approved-cabinet-skin.jpg",
     "skinVariant": "example-artist-custom",
-    "notes": "Colour, tone and visual references for the skin approval pass."
+    "notes": "Colour, tone and visual references for the automatically generated jukebox skin."
   },
   "request": {
     "requestedBy": "Internal operator",

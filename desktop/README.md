@@ -35,11 +35,10 @@ No Bandcamp account credentials or protected audio are stored. When public metad
 
 - band / artist name, official Bandcamp URL and city
 - verified bio and line-by-line ticker copy
-- colour / tone reference image
-- optional final 747 × 1280 cabinet skin
+- one colour / tone reference image that automatically drives a 747 × 1280 jukebox skin
 - visual notes, approver and delivery details
 
-The dashboard keeps reference material and candidates in a private folder under Local AppData. It maintains an isolated working copy of the repository, processes the complete playable Bandcamp catalogue, validates the skin contract, opens a localhost approval preview and submits only the approved machine configuration and final skin to the protected production workflow. The workflow rebases safely, runs the build and full test suite, promotes only a passing candidate, deploys GitHub Pages, and returns the permanent machine link.
+The dashboard keeps reference material and candidates in a private folder under Local AppData. It maintains an isolated working copy of the repository, processes the complete playable Bandcamp catalogue, extracts the reference palette, generates a custom skin over the locked single-reel AGGITS jukebox, validates the skin contract, opens a localhost approval preview and submits only the approved machine configuration and generated skin to the protected production workflow. The workflow rebases safely, runs the build and full test suite, promotes only a passing candidate, deploys GitHub Pages, and returns the permanent machine link.
 
 Build the portable dashboard and its per-user Windows installer with:
 

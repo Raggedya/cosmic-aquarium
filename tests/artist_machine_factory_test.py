@@ -35,19 +35,22 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         self.candidates = self.factory / "candidates"
         self.published = self.root / "published"
         self.public_skins = self.root / "public-skins"
+        self.base_jukebox = self.root / "aggits-cabinet.webp"
         self.contract = self.factory / "skin-contract.json"
         self.contract.parent.mkdir(parents=True)
         self.contract.write_text(json.dumps({
-            "canvas": {"aspectRatio": 747 / 1280, "maximumBytes": 5_000_000},
-            "protectedZones": [],
+            "canvas": {"width": 747, "height": 1280, "aspectRatio": 747 / 1280, "maximumBytes": 5_000_000},
+            "protectedZones": [{"x": 0.2, "y": 0.3, "width": 0.6, "height": 0.2}],
             "rules": [],
         }), encoding="utf-8")
+        Image.new("RGB", (1024, 1536), "#4a2416").save(self.base_jukebox, format="WEBP")
         self.patches = [
             patch.object(factory, "FACTORY", self.factory),
             patch.object(factory, "CANDIDATES", self.candidates),
             patch.object(factory, "PUBLISHED", self.published),
             patch.object(factory, "PUBLIC_SKINS", self.public_skins),
             patch.object(factory, "SKIN_CONTRACT", self.contract),
+            patch.object(factory, "BASE_JUKEBOX", self.base_jukebox),
         ]
         for item in self.patches:
             item.start()
@@ -74,6 +77,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             self.assertEqual(factory.CANDIDATES, expected / "automation" / "artist-machine-factory" / "candidates")
             self.assertEqual(factory.PUBLISHED, expected / "automation" / "artist-machines")
             self.assertEqual(factory.PUBLIC_SKINS, expected / "public" / "music-machine")
+            self.assertEqual(factory.BASE_JUKEBOX, expected / "public" / "music-machine" / "aggits-cabinet.webp")
         finally:
             factory.configure_workspace(original)
 
@@ -116,19 +120,24 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         }
         return songs, metadata
 
-    def test_prepare_is_isolated_and_ready_when_skin_passes(self):
+    def test_prepare_is_isolated_and_ready_when_generated_skin_passes(self):
         with patch.object(factory, "discover_complete_catalogue", return_value=self.catalogue()):
-            report = factory.prepare(self.make_intake(), replace=False)
+            report = factory.prepare(self.make_intake(include_skin=False), replace=False)
         self.assertEqual(report["status"], "ready_for_approval")
         self.assertEqual(report["catalogue"]["playableSongCount"], 4)
         self.assertTrue(report["thirtySpinAudit"]["passed"])
         self.assertFalse((self.published / "test-band.json").exists())
         self.assertTrue((self.candidates / "test-band" / "machine.json").is_file())
 
-    def test_prepare_without_skin_waits_for_skin(self):
+    def test_prepare_without_skin_generates_reference_driven_jukebox(self):
         with patch.object(factory, "discover_complete_catalogue", return_value=self.catalogue()):
             report = factory.prepare(self.make_intake(include_skin=False), replace=False)
-        self.assertEqual(report["status"], "awaiting_skin")
+        self.assertEqual(report["status"], "ready_for_approval")
+        self.assertEqual(report["skinGeneration"]["method"], "reference-palette-jukebox-v1")
+        generated = self.candidates / "test-band" / "cabinet-skin.jpg"
+        self.assertTrue(generated.is_file())
+        with Image.open(generated) as image:
+            self.assertEqual(image.size, (747, 1280))
         self.assertTrue((self.candidates / "test-band" / "skin-brief.json").is_file())
 
     def test_skin_geometry_is_locked(self):
@@ -138,13 +147,25 @@ class ArtistMachineFactoryTests(unittest.TestCase):
 
     def test_approval_promotes_only_a_passing_candidate(self):
         with patch.object(factory, "discover_complete_catalogue", return_value=self.catalogue()):
-            factory.prepare(self.make_intake(), replace=False)
+            factory.prepare(self.make_intake(include_skin=False), replace=False)
         report = factory.approve("test-band", "QA operator", skip_quality_commands=True)
         published = json.loads((self.published / "test-band.json").read_text(encoding="utf-8"))
         self.assertEqual(report["status"], "approved")
         self.assertEqual(published["factory"]["engineVersion"], factory.ENGINE_VERSION)
         self.assertEqual(published["cabinetArtwork"], "/assets/music-machine/test-band-cabinet.jpg")
         self.assertTrue((self.public_skins / "test-band-cabinet.jpg").is_file())
+
+    def test_manual_skin_remains_available_as_an_advanced_override(self):
+        with patch.object(factory, "discover_complete_catalogue", return_value=self.catalogue()):
+            report = factory.prepare(self.make_intake(include_skin=True), replace=False)
+        self.assertEqual(report["skinGeneration"]["method"], "operator-supplied")
+
+    def test_monochrome_black_reference_still_produces_a_usable_palette(self):
+        reference = self.make_image("black-reference.jpg", (900, 900))
+        Image.new("RGB", (900, 900), "#000000").save(reference)
+        palette = factory.reference_palette(reference)
+        self.assertEqual(len(palette), 4)
+        self.assertTrue(any(any(channel > 0 for channel in colour) for colour in palette))
 
     def test_track_validation_and_shuffle_audit_reject_bad_data(self):
         config = {
