@@ -53,16 +53,32 @@ def creation_flags() -> int:
 
 
 def run_process(command: list[str], *, cwd: Path | None = None) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        command,
-        cwd=cwd,
-        check=True,
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        creationflags=creation_flags(),
-    )
+    try:
+        return subprocess.run(
+            command,
+            cwd=cwd,
+            check=True,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            creationflags=creation_flags(),
+        )
+    except subprocess.CalledProcessError as error:
+        detail = (error.stderr or error.stdout or "").strip()
+        program = Path(command[0]).name
+        message = f"{program} could not complete the requested Factory operation."
+        if detail:
+            message += f"\n\n{detail}"
+        raise RuntimeError(message) from error
+
+
+def refresh_git_workspace(git: str, workspace: Path) -> None:
+    """Fast-forward the managed checkout without re-checking out main unnecessarily."""
+    branch = run_process([git, "-C", str(workspace), "branch", "--show-current"]).stdout.strip()
+    if branch != "main":
+        run_process([git, "-C", str(workspace), "checkout", "main"])
+    run_process([git, "-C", str(workspace), "pull", "--ff-only", "origin", "main"])
 
 
 class QuietRequestHandler(SimpleHTTPRequestHandler):
@@ -379,8 +395,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             self.workspace.parent.mkdir(parents=True, exist_ok=True)
             run_process([gh, "repo", "clone", REPOSITORY, str(self.workspace), "--", "--depth=1"])
         else:
-            run_process([git, "-C", str(self.workspace), "checkout", "main"])
-            run_process([git, "-C", str(self.workspace), "pull", "--ff-only", "origin", "main"])
+            refresh_git_workspace(git, self.workspace)
         factory.configure_workspace(self.workspace)
         return self.workspace
 
