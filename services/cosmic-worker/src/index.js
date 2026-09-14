@@ -467,7 +467,7 @@ async function activityReport(env, endValue = Date.now()) {
   const artistMachines = await env.DB.prepare(`SELECT m.slug,m.artist_name,m.public_url,m.song_count,
     COUNT(CASE WHEN e.event_type='artist_machine_loaded' THEN 1 END) AS opens,
     COUNT(DISTINCT CASE WHEN e.session_id<>'system' THEN e.session_id END) AS visitors,
-    COUNT(CASE WHEN e.event_type='spin_started' THEN 1 END) AS spins,
+    COUNT(CASE WHEN e.event_type='reel_spin' THEN 1 END) AS spins,
     COUNT(CASE WHEN e.event_type='winner_revealed' THEN 1 END) AS reveals,
     COUNT(CASE WHEN e.event_type='track_play_started' THEN 1 END) AS plays,
     COUNT(CASE WHEN e.event_type='bandcamp_click' THEN 1 END) AS bandcamp_clicks,
