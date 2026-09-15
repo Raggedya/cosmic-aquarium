@@ -17,7 +17,7 @@ The Windows Studio asks for four things:
 3. delivery email
 4. one of seven independent visual flower worlds
 
-Create dispatches the GitHub Actions workflow. The workflow imports public page metadata when it is available, generates a release manifest, renders and independently decodes the QR artwork, and publishes the catalogue. The Studio then hands the finished link and QR to the existing Resend delivery workflow. A new release becomes eligible in the shared listener without a bespoke UI build.
+Create dispatches the GitHub Actions workflow. The workflow imports public page metadata when it is available, generates a release manifest, renders and independently decodes the QR artwork, and publishes the catalogue. Publishing then adds the finished machine to the Factory's persistent email queue. **Send Email Batch** delivers up to five finished links and scan-tested QR cards together in one email, independently from publication. A new release becomes eligible in the shared listener without a bespoke UI build.
 
 The Windows build is produced as `desktop-dist/Cosmic Aquaria Studio.exe` by `desktop/build-windows.ps1`. GitHub Actions also offers a downloadable Windows artifact.
 

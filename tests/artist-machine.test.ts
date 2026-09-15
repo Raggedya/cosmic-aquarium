@@ -131,26 +131,30 @@ test('the enquiry endpoint validates, rate limits, stores and emails requests wi
   assert.doesNotMatch(template,/RESEND_API_KEY|OWNER_EMAIL|REPORT_FROM_EMAIL/);
 });
 
-test('successful Factory publication sends the private delivery address through Cloudflare',async()=>{
-  const [dashboard,worker,migration,workflow]=await Promise.all([
+test('Factory publication is independent from delivery and finished machines email in batches of five',async()=>{
+  const [dashboard,worker,migration,publishWorkflow,deliveryWorkflow]=await Promise.all([
     read('desktop/artist_machine_factory_dashboard.py'),
     read('services/cosmic-worker/src/index.js'),
-    read('services/cosmic-worker/migrations/0007_artist_machine_delivery.sql'),
+    read('services/cosmic-worker/migrations/0009_artist_machine_delivery_batches.sql'),
     read('.github/workflows/publish-artist-machine.yml'),
+    read('.github/workflows/deliver-artist-machine-batch.yml'),
   ]);
-  assert.match(dashboard,/register_delivery_email\(report\)/);
-  assert.match(dashboard,/delivery_email_status\(delivery_id\)/);
-  assert.match(dashboard,/PUBLISHED — LINK EMAILED \+ COPIED/);
-  assert.match(worker,/async function createArtistMachineDelivery/);
-  assert.match(worker,/async function sendArtistMachineDelivery/);
+  assert.match(dashboard,/MAX_EMAIL_BATCH = 5/);
+  assert.match(dashboard,/queue_published_machine/);
+  assert.match(dashboard,/SEND EMAIL BATCH \(UP TO 5\)/);
+  assert.match(dashboard,/register_delivery_batch/);
+  assert.match(dashboard,/delivery_batch_status/);
+  assert.doesNotMatch(publishWorkflow,/delivery_id|Email the finished machine link/);
+  assert.match(worker,/async function createArtistMachineDeliveryBatch/);
+  assert.match(worker,/async function sendArtistMachineDeliveryBatch/);
   assert.match(worker,/syncAuthorized\(request,env\)/);
-  assert.match(worker,/artist-machine-delivery-\$\{deliveryId\}/);
+  assert.match(worker,/artist-machine-delivery-batch-\$\{batchId\}/);
   assert.match(worker,/ARTIST_MACHINE_DELIVERY_FROM_EMAIL\|\|env\.REPORT_FROM_EMAIL/);
-  assert.match(migration,/CREATE TABLE IF NOT EXISTS artist_machine_delivery/);
-  assert.match(migration,/idx_artist_machine_delivery_email_time/);
-  assert.match(workflow,/Email the finished machine link/);
-  assert.match(workflow,/secrets\.COSMIC_WORKER_SYNC_TOKEN/);
-  assert.match(workflow,/artist-machine-deliveries\/\$DELIVERY_ID\/send/);
+  assert.match(migration,/CREATE TABLE IF NOT EXISTS artist_machine_delivery_batch/);
+  assert.match(migration,/CREATE TABLE IF NOT EXISTS artist_machine_delivery_batch_item/);
+  assert.match(deliveryWorkflow,/Send one email containing the finished links and QR cards/);
+  assert.match(deliveryWorkflow,/secrets\.COSMIC_WORKER_SYNC_TOKEN/);
+  assert.match(deliveryWorkflow,/artist-machine-delivery-batches\/\$BATCH_ID\/send/);
 });
 
 test('each Artist Machine has a crawlable band route, branded social card and emailed QR attachment',async()=>{

@@ -1,0 +1,41 @@
+name: Deliver Artist Machine Email Batch
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch_id:
+        description: Private Cloudflare batch receipt
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: artist-machine-email-${{ inputs.batch_id }}
+  cancel-in-progress: false
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate private batch receipt
+        shell: bash
+        env:
+          BATCH_ID: ${{ inputs.batch_id }}
+        run: |
+          set -euo pipefail
+          [[ "$BATCH_ID" =~ ^[0-9a-f-]{36}$ ]]
+      - name: Send one email containing the finished links and QR cards
+        shell: bash
+        env:
+          BATCH_ID: ${{ inputs.batch_id }}
+          SYNC_TOKEN: ${{ secrets.COSMIC_WORKER_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+          curl --silent --show-error --fail-with-body \
+            --request POST \
+            --header "Authorization: Bearer $SYNC_TOKEN" \
+            --header "Content-Type: application/json" \
+            --data '{}' \
+            "https://cosmic-aquaria.andrewharris501.workers.dev/api/artist-machine-delivery-batches/$BATCH_ID/send"

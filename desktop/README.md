@@ -15,7 +15,7 @@ The interface asks for only:
 
 The Library area exposes the canonical Master Library plus Locations, Labels, Styles, Daily Discovery, Published Aquaria and Themes. Search, filtering and sorting operate over the generated catalogue. Location and Label research run in serialized background workflows, reuse canonical Artist Aquaria and create reviewable Collection drafts before publication.
 
-Create dispatches the repository's `create-artist.yml` workflow using the authenticated GitHub CLI. GitHub builds the artist page, imports public track metadata when available, creates and independently decode-verifies the floral QR, and publishes GitHub Pages. The Studio then hands the finished link and QR to the existing secret-enabled Resend workflow.
+Create dispatches the repository's protected publication workflow using the authenticated GitHub CLI. GitHub builds the artist page, imports public track metadata when available, creates and independently decode-verifies the floral QR, and publishes GitHub Pages. The Factory records each finished machine in a local, restart-safe email queue. **Send Email Batch** delivers the next group of up to five finished links and QR cards in one secret-enabled Resend message; email delivery cannot block publication.
 
 At creation time, the same public Bandcamp response is checked for an artist storefront. Editions with purchasable music or merchandise reveal the restrained Buy Music invitation after the first discovery; editions without a verified storefront do not show it.
 

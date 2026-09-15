@@ -8,44 +8,50 @@ from types import SimpleNamespace
 from unittest.mock import call, patch
 
 from desktop.artist_machine_factory_dashboard import (
-    DELIVERY_ENDPOINT,
+    DELIVERY_BATCH_ENDPOINT,
     application_data,
     copy_missing_private_items,
-    delivery_email_status,
+    delivery_batch_status,
+    load_delivery_queue,
+    queue_published_machine,
     refresh_git_workspace,
-    register_delivery_email,
+    register_delivery_batch,
     run_process,
 )
 
 
 class ArtistMachineFactoryDashboardTests(unittest.TestCase):
     @patch("desktop.artist_machine_factory_dashboard.post_json")
-    def test_delivery_email_is_registered_without_entering_git(self, post) -> None:
+    def test_delivery_batch_is_registered_as_one_cloudflare_request(self, post) -> None:
         post.return_value = {"ok": True, "id": "0f82a95d-a164-4e89-9704-296074f37931"}
-        report = {
-            "artistSlug": "chime",
-            "artistName": "CHIME",
-            "deliveryEmail": "artist@example.com",
-        }
+        items = [{"artistSlug": "chime", "artistName": "CHIME", "publicUrl": "https://raggedya.github.io/cosmic-aquarium/artist/chime/"}]
 
-        receipt = register_delivery_email(report)
+        receipt = register_delivery_batch("artist@example.com", items)
 
         self.assertEqual(receipt, "0f82a95d-a164-4e89-9704-296074f37931")
-        post.assert_called_once_with(DELIVERY_ENDPOINT, {
-            "artistSlug": "chime",
-            "artistName": "CHIME",
-            "email": "artist@example.com",
-            "publicUrl": "https://raggedya.github.io/cosmic-aquarium/artist/chime/",
-        })
+        post.assert_called_once_with(DELIVERY_BATCH_ENDPOINT, {"email": "artist@example.com", "items": items})
 
     @patch("desktop.artist_machine_factory_dashboard.request_json")
-    def test_delivery_email_status_uses_only_the_private_receipt(self, request) -> None:
+    def test_delivery_batch_status_uses_only_the_private_receipt(self, request) -> None:
         request.return_value = {"ok": True, "status": "sent"}
 
-        status = delivery_email_status("0f82a95d-a164-4e89-9704-296074f37931")
+        status = delivery_batch_status("0f82a95d-a164-4e89-9704-296074f37931")
 
         self.assertEqual(status, "sent")
-        request.assert_called_once_with(DELIVERY_ENDPOINT + "/0f82a95d-a164-4e89-9704-296074f37931")
+        request.assert_called_once_with(DELIVERY_BATCH_ENDPOINT + "/0f82a95d-a164-4e89-9704-296074f37931")
+
+    def test_published_machine_is_queued_once_for_batch_delivery(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            path = Path(temporary) / "email-queue.json"
+            report = {"artistSlug": "chime", "artistName": "CHIME", "deliveryEmail": "Artist@Example.com"}
+
+            self.assertTrue(queue_published_machine(path, report))
+            self.assertFalse(queue_published_machine(path, report))
+            items = load_delivery_queue(path)
+
+            self.assertEqual(len(items), 1)
+            self.assertEqual(items[0]["status"], "pending")
+            self.assertEqual(items[0]["email"], "artist@example.com")
 
     def test_application_data_uses_non_virtualized_user_profile_location(self) -> None:
         with patch.dict("os.environ", {"USERPROFILE": "C:/Users/Test", "LOCALAPPDATA": "C:/Users/Test/AppData/Local"}, clear=True):

@@ -196,6 +196,92 @@ async function artistMachineDeliveryStatus(env, id) {
   return json({ok:true,status:clean(delivery.status,32)},200,CORS);
 }
 
+async function createArtistMachineDeliveryBatch(request, env) {
+  if(!artistRequestOriginAllowed(request,env))return json({ok:false,error:'origin_not_allowed'},403,CORS);
+  const body=await readBody(request);
+  const email=clean(body?.email,320)?.toLowerCase();
+  const input=Array.isArray(body?.items)?body.items:[];
+  if(!email||!validEmail(email)||input.length<1||input.length>5)return json({ok:false,error:'invalid_request'},400,CORS);
+  const items=[];
+  const slugs=new Set();
+  for(const [position,item] of input.entries()){
+    const artistSlug=validArtistMachineSlug(item?.artistSlug);
+    const artistName=clean(item?.artistName,120);
+    const publicUrl=clean(item?.publicUrl,600);
+    if(!artistSlug||!artistName||publicUrl!==artistMachinePublicUrl(artistSlug)||slugs.has(artistSlug))return json({ok:false,error:'invalid_item'},400,CORS);
+    slugs.add(artistSlug);
+    items.push({position,artistSlug,artistName,publicUrl});
+  }
+  const ipHash=await requestFingerprint(request);
+  const [recentIp,recentEmail]=await Promise.all([
+    env.DB.prepare("SELECT COUNT(*) AS total FROM artist_machine_delivery_batch WHERE ip_hash=? AND strftime('%s',created_at)>=strftime('%s','now','-1 hour')").bind(ipHash).first(),
+    env.DB.prepare("SELECT COUNT(*) AS total FROM artist_machine_delivery_batch WHERE email=? AND strftime('%s',created_at)>=strftime('%s','now','-1 day')").bind(email).first(),
+  ]);
+  if(Number(recentIp?.total||0)>=12||Number(recentEmail?.total||0)>=30)return json({ok:false,error:'rate_limited'},429,{...CORS,'retry-after':'3600'});
+  const id=crypto.randomUUID(),createdAt=new Date().toISOString();
+  const statements=[
+    env.DB.prepare(`INSERT INTO artist_machine_delivery_batch
+      (id,email,ip_hash,status,item_count,created_at) VALUES (?,?,?,?,?,?)`).bind(id,email,ipHash,'pending',items.length,createdAt),
+    ...items.map(item=>env.DB.prepare(`INSERT INTO artist_machine_delivery_batch_item
+      (batch_id,position,artist_slug,artist_name,public_url,status) VALUES (?,?,?,?,?,?)`)
+      .bind(id,item.position,item.artistSlug,item.artistName,item.publicUrl,'pending')),
+  ];
+  await env.DB.batch(statements);
+  return json({ok:true,id,itemCount:items.length},201,CORS);
+}
+
+async function sendArtistMachineDeliveryBatch(request, env, id) {
+  if(!syncAuthorized(request,env))return json({ok:false,error:'unauthorized'},401,CORS);
+  const batchId=clean(id,80);
+  if(!batchId||!/^[0-9a-f-]{36}$/i.test(batchId))return json({ok:false,error:'invalid_request'},400,CORS);
+  const batch=await env.DB.prepare('SELECT * FROM artist_machine_delivery_batch WHERE id=?').bind(batchId).first();
+  if(!batch)return json({ok:false,error:'delivery_not_found'},404,CORS);
+  if(batch.status==='sent')return json({ok:true,status:'already_sent',itemCount:Number(batch.item_count||0)},200,CORS);
+  const itemResult=await env.DB.prepare('SELECT * FROM artist_machine_delivery_batch_item WHERE batch_id=? ORDER BY position').bind(batchId).all();
+  const items=itemResult.results||[];
+  if(items.length<1||items.length>5||items.length!==Number(batch.item_count))return json({ok:false,error:'invalid_batch'},409,CORS);
+  const attachments=[];
+  const links=[];
+  let totalBytes=0;
+  for(const item of items){
+    const configResponse=await fetch(`https://raw.githubusercontent.com/Raggedya/cosmic-aquarium/main/automation/artist-machines/${encodeURIComponent(item.artist_slug)}.json?delivery=${encodeURIComponent(batchId)}`,{headers:{'user-agent':'cosmic-aquaria-delivery'}});
+    const config=await configResponse.json().catch(()=>({}));
+    if(!configResponse.ok||config?.artistSlug!==item.artist_slug||config?.artistName!==item.artist_name)return json({ok:false,error:'artist_not_published',artistSlug:item.artist_slug},409,CORS);
+    const qrResponse=await fetch(`https://raw.githubusercontent.com/Raggedya/cosmic-aquarium/main/public/artist-machine-media/${encodeURIComponent(item.artist_slug)}/qr-card.png?delivery=${encodeURIComponent(batchId)}`,{headers:{'user-agent':'cosmic-aquaria-delivery'}});
+    if(!qrResponse.ok)return json({ok:false,error:'qr_not_published',artistSlug:item.artist_slug},409,CORS);
+    const qrBuffer=await qrResponse.arrayBuffer();
+    totalBytes+=qrBuffer.byteLength;
+    if(!qrBuffer.byteLength||qrBuffer.byteLength>8_000_000||totalBytes>35_000_000)return json({ok:false,error:'qr_invalid',artistSlug:item.artist_slug},409,CORS);
+    links.push({artistName:item.artist_name,publicUrl:artistMachinePublicUrl(item.artist_slug)});
+    attachments.push({filename:`${item.artist_slug}-aggits-qr.png`,content:arrayBufferToBase64(qrBuffer)});
+  }
+  const sender=env.ARTIST_MACHINE_DELIVERY_FROM_EMAIL||env.REPORT_FROM_EMAIL;
+  if(!env.RESEND_API_KEY||!sender)return json({ok:false,error:'delivery_service_unavailable'},503,CORS);
+  const count=items.length;
+  const subject=count===1?`${links[0].artistName} Music Machine is live`:`${count} AGGITS Music Machines are live`;
+  const text=[`${count} finished AGGITS Music Machine${count===1?' is':'s are'} ready.`,...links.flatMap((item,index)=>['',`${index+1}. ${item.artistName}`,item.publicUrl]),'',`The ${count===1?'scan-tested QR card is':'scan-tested QR cards are'} attached.`].join('\n');
+  const html=`<h1>${count} finished AGGITS Music Machine${count===1?'':'s'}</h1><ol>${links.map(item=>`<li><strong>${escapeHtml(item.artistName)}</strong><br><a href="${escapeHtml(item.publicUrl)}">Open the jukebox</a></li>`).join('')}</ol><p>The scan-tested QR card${count===1?' is':'s are'} attached.</p>`;
+  await env.DB.prepare('UPDATE artist_machine_delivery_batch SET status=?,failure_reason=? WHERE id=?').bind('sending',null,batchId).run();
+  const response=await fetch('https://api.resend.com/emails',{method:'POST',headers:{authorization:`Bearer ${env.RESEND_API_KEY}`,'content-type':'application/json','idempotency-key':`artist-machine-delivery-batch-${batchId}`},body:JSON.stringify({from:sender,to:[batch.email],subject,text,html,attachments})});
+  const result=await response.json().catch(()=>({}));
+  const sentAt=response.ok?new Date().toISOString():null;
+  const status=response.ok?'sent':'failed';
+  await env.DB.batch([
+    env.DB.prepare('UPDATE artist_machine_delivery_batch SET status=?,provider_id=?,failure_reason=?,sent_at=? WHERE id=?').bind(status,clean(result.id,160),response.ok?null:JSON.stringify(result).slice(0,800),sentAt,batchId),
+    env.DB.prepare('UPDATE artist_machine_delivery_batch_item SET status=? WHERE batch_id=?').bind(status,batchId),
+  ]);
+  if(!response.ok)return json({ok:false,error:'delivery_failed'},502,CORS);
+  return json({ok:true,status:'sent',itemCount:count},202,CORS);
+}
+
+async function artistMachineDeliveryBatchStatus(env, id) {
+  const batchId=clean(id,80);
+  if(!batchId||!/^[0-9a-f-]{36}$/i.test(batchId))return json({ok:false,error:'invalid_request'},400,CORS);
+  const batch=await env.DB.prepare('SELECT status,item_count FROM artist_machine_delivery_batch WHERE id=?').bind(batchId).first();
+  if(!batch)return json({ok:false,error:'delivery_not_found'},404,CORS);
+  return json({ok:true,status:clean(batch.status,32),itemCount:Number(batch.item_count||0)},200,CORS);
+}
+
 function syncAuthorized(request, env) {
   const header = request.headers.get('authorization') || '';
   return authorized(request,env) || (Boolean(env.SYNC_TOKEN) && header === `Bearer ${env.SYNC_TOKEN}`);
@@ -659,6 +745,11 @@ const worker = {
       if (artistDeliveryStatusMatch && request.method === 'GET') return artistMachineDeliveryStatus(env,artistDeliveryStatusMatch[1]);
       const artistDeliveryMatch=url.pathname.match(/^\/api\/artist-machine-deliveries\/([0-9a-f-]{36})\/send$/i);
       if (artistDeliveryMatch && request.method === 'POST') return sendArtistMachineDelivery(request,env,artistDeliveryMatch[1]);
+      if (url.pathname === '/api/artist-machine-delivery-batches' && request.method === 'POST') return createArtistMachineDeliveryBatch(request,env);
+      const artistDeliveryBatchStatusMatch=url.pathname.match(/^\/api\/artist-machine-delivery-batches\/([0-9a-f-]{36})$/i);
+      if (artistDeliveryBatchStatusMatch && request.method === 'GET') return artistMachineDeliveryBatchStatus(env,artistDeliveryBatchStatusMatch[1]);
+      const artistDeliveryBatchMatch=url.pathname.match(/^\/api\/artist-machine-delivery-batches\/([0-9a-f-]{36})\/send$/i);
+      if (artistDeliveryBatchMatch && request.method === 'POST') return sendArtistMachineDeliveryBatch(request,env,artistDeliveryBatchMatch[1]);
       if (url.pathname === '/api/email/open.gif' && request.method === 'GET') return recordEmailOpen(url,env);
       if (url.pathname === '/api/aquariums/random' && request.method === 'GET') return randomAquarium(url,env);
       const collectionRandomMatch = url.pathname.match(/^\/api\/collections\/([^/]+)\/random$/);

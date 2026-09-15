@@ -30,8 +30,10 @@ import artist_machine_factory as factory  # noqa: E402
 
 REPOSITORY = "Raggedya/cosmic-aquarium"
 PUBLISH_WORKFLOW = "publish-artist-machine.yml"
+DELIVERY_BATCH_WORKFLOW = "deliver-artist-machine-batch.yml"
 PUBLIC_BASE = "https://raggedya.github.io/cosmic-aquarium/artist/"
-DELIVERY_ENDPOINT = "https://cosmic-aquaria.andrewharris501.workers.dev/api/artist-machine-deliveries"
+DELIVERY_BATCH_ENDPOINT = "https://cosmic-aquaria.andrewharris501.workers.dev/api/artist-machine-delivery-batches"
+MAX_EMAIL_BATCH = 5
 
 INK = "#100906"
 PANEL = "#1b0f0a"
@@ -131,28 +133,56 @@ def post_json(url: str, payload: dict[str, object]) -> dict[str, object]:
     return request_json(url, payload)
 
 
-def register_delivery_email(report: dict[str, object]) -> str:
-    email = str(report.get("deliveryEmail") or "").strip()
-    if not email:
-        return ""
-    slug = str(report["artistSlug"])
-    result = post_json(DELIVERY_ENDPOINT, {
+def register_delivery_batch(email: str, items: list[dict[str, object]]) -> str:
+    result = post_json(DELIVERY_BATCH_ENDPOINT, {"email": email, "items": items})
+    batch_id = str(result.get("id") or "")
+    if not batch_id:
+        raise RuntimeError("Cloudflare did not return an email-batch receipt.")
+    return batch_id
+
+
+def delivery_batch_status(batch_id: str) -> str:
+    if not batch_id:
+        return "not_requested"
+    result = request_json(f"{DELIVERY_BATCH_ENDPOINT}/{batch_id}")
+    return str(result.get("status") or "unknown")
+
+
+def load_delivery_queue(path: Path) -> list[dict[str, object]]:
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    items = value.get("items", []) if isinstance(value, dict) else []
+    return [dict(item) for item in items if isinstance(item, dict)]
+
+
+def save_delivery_queue(path: Path, items: list[dict[str, object]]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(json.dumps({"version": 1, "items": items}, indent=2) + "\n", encoding="utf-8")
+    temporary.replace(path)
+
+
+def queue_published_machine(path: Path, report: dict[str, object]) -> bool:
+    email = str(report.get("deliveryEmail") or "").strip().lower()
+    slug = str(report.get("artistSlug") or "").strip()
+    if not email or not slug:
+        return False
+    items = load_delivery_queue(path)
+    if any(str(item.get("artistSlug")) == slug and str(item.get("email", "")).lower() == email for item in items):
+        return False
+    items.append({
         "artistSlug": slug,
-        "artistName": str(report["artistName"]),
+        "artistName": str(report.get("artistName") or slug),
         "email": email,
         "publicUrl": PUBLIC_BASE + slug + "/",
+        "status": "pending",
+        "batchId": "",
+        "queuedAt": dt.datetime.now(dt.timezone.utc).isoformat(),
     })
-    delivery_id = str(result.get("id") or "")
-    if not delivery_id:
-        raise RuntimeError("Cloudflare did not return a delivery email receipt.")
-    return delivery_id
-
-
-def delivery_email_status(delivery_id: str) -> str:
-    if not delivery_id:
-        return "not_requested"
-    result = request_json(f"{DELIVERY_ENDPOINT}/{delivery_id}")
-    return str(result.get("status") or "unknown")
+    save_delivery_queue(path, items)
+    return True
 
 
 class QuietRequestHandler(SimpleHTTPRequestHandler):
@@ -172,6 +202,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.legacy_data_root = legacy_application_data()
         self.workspace = self.data_root / "workspace"
         self.drafts = self.data_root / "drafts"
+        self.delivery_queue_path = self.data_root / "email-delivery-queue.json"
         self.data_root.mkdir(parents=True, exist_ok=True)
         self.drafts.mkdir(parents=True, exist_ok=True)
         copy_missing_private_items(self.legacy_data_root / "drafts", self.drafts)
@@ -187,6 +218,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
 
         self._configure_styles()
         self._build_interface()
+        self._refresh_delivery_queue()
         self.after(250, self._refresh_candidates_if_ready)
 
     def _configure_styles(self) -> None:
@@ -329,11 +361,34 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.open_live_button.pack(fill="x", pady=7)
         self.open_live_button.configure(state="disabled")
 
+        tk.Label(inner, text="EMAIL DELIVERY QUEUE", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).pack(anchor="w", pady=(22, 0))
+        tk.Label(inner, text="Published machines wait here. Each send contains up to five links and QR cards.", bg=PANEL, fg=MUTED, font=("Segoe UI", 8), wraplength=300, justify="left").pack(anchor="w", pady=(5, 8))
+        delivery_frame = tk.Frame(inner, bg="#0c0705", highlightbackground="#4f2c19", highlightthickness=1)
+        delivery_frame.pack(fill="x")
+        self.delivery_queue = tk.Listbox(
+            delivery_frame,
+            height=5,
+            bg="#0c0705",
+            fg=PAPER,
+            selectbackground=BURGUNDY,
+            selectforeground=PAPER,
+            borderwidth=0,
+            highlightthickness=0,
+            activestyle="none",
+            font=("Segoe UI", 9),
+        )
+        self.delivery_queue.pack(fill="x", padx=7, pady=7)
+        self.delivery_queue_count = tk.Label(inner, text="0 AWAITING EMAIL", bg=PANEL, fg=CREAM, font=("Segoe UI Semibold", 9))
+        self.delivery_queue_count.pack(anchor="w", pady=(7, 0))
+        self.delivery_button = self._button(inner, "SEND EMAIL BATCH (UP TO 5)", self._start_email_batch)
+        self.delivery_button.pack(fill="x", pady=(9, 7))
+        self.delivery_button.configure(state="disabled")
+
         note = (
             "The locked controls and operating model are never edited here. "
             "No image uses the red AGGITS skin; an image creates a fresh reference-driven skin."
         )
-        tk.Label(inner, text=note, bg=PANEL, fg="#8e765c", font=("Segoe UI", 8), wraplength=300, justify="left").pack(side="bottom", anchor="w", pady=(22, 0))
+        tk.Label(inner, text=note, bg=PANEL, fg="#8e765c", font=("Segoe UI", 8), wraplength=300, justify="left").pack(anchor="w", pady=(22, 0))
         self._set_candidate_controls(False, False)
 
     def _entry(self, parent: tk.Widget, row: int, column: int, label: str, span: int = 1) -> tk.Entry:
@@ -523,6 +578,91 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         if selected:
             self._select_slug(selected)
 
+    def _refresh_delivery_queue(self) -> None:
+        items = [item for item in load_delivery_queue(self.delivery_queue_path) if str(item.get("status")) != "sent"]
+        self._delivery_items = items
+        self.delivery_queue.delete(0, "end")
+        for item in items:
+            state = str(item.get("status") or "pending").replace("_", " ").upper()
+            self.delivery_queue.insert("end", f"  {item.get('artistName', item.get('artistSlug', 'Artist'))}   ·   {state}")
+        count = len(items)
+        self.delivery_queue_count.configure(text=f"{count} AWAITING EMAIL")
+        self.delivery_button.configure(state="normal" if count and not self.busy else "disabled")
+
+    def _next_delivery_batch(self) -> list[dict[str, object]]:
+        items = [item for item in load_delivery_queue(self.delivery_queue_path) if str(item.get("status")) != "sent"]
+        if not items:
+            return []
+        first = items[0]
+        batch_id = str(first.get("batchId") or "")
+        email = str(first.get("email") or "").lower()
+        if batch_id:
+            return [item for item in items if str(item.get("batchId") or "") == batch_id][:MAX_EMAIL_BATCH]
+        return [item for item in items if not item.get("batchId") and str(item.get("email") or "").lower() == email][:MAX_EMAIL_BATCH]
+
+    def _start_email_batch(self) -> None:
+        if self.busy:
+            return
+        items = self._next_delivery_batch()
+        if not items:
+            messagebox.showinfo("Email queue", "There are no published machines awaiting email.")
+            return
+        self._run_async("SENDING ONE EMAIL WITH LINKS + QR CARDS…", lambda: self._email_batch_worker(items), self._email_batch_complete)
+
+    def _email_batch_worker(self, selected: list[dict[str, object]]) -> dict[str, object]:
+        gh = self._github_cli()
+        email = str(selected[0].get("email") or "").strip().lower()
+        if not email or any(str(item.get("email") or "").strip().lower() != email for item in selected):
+            raise RuntimeError("The next email batch contains mismatched delivery addresses and was left untouched.")
+        batch_ids = {str(item.get("batchId") or "") for item in selected if item.get("batchId")}
+        if len(batch_ids) > 1:
+            raise RuntimeError("The next email batch contains conflicting receipts and was left untouched.")
+        batch_id = next(iter(batch_ids), "")
+        if not batch_id:
+            payload = [{
+                "artistSlug": str(item["artistSlug"]),
+                "artistName": str(item["artistName"]),
+                "publicUrl": str(item["publicUrl"]),
+            } for item in selected]
+            batch_id = register_delivery_batch(email, payload)
+        identities = {(str(item.get("artistSlug")), str(item.get("email", "")).lower()) for item in selected}
+        queue = load_delivery_queue(self.delivery_queue_path)
+        for item in queue:
+            if (str(item.get("artistSlug")), str(item.get("email", "")).lower()) in identities:
+                item.update({"batchId": batch_id, "status": "sending"})
+        save_delivery_queue(self.delivery_queue_path, queue)
+        started = dt.datetime.now(dt.timezone.utc)
+        try:
+            run_process([
+                gh, "workflow", "run", DELIVERY_BATCH_WORKFLOW, "--repo", REPOSITORY,
+                "--ref", "main", "-f", f"batch_id={batch_id}",
+            ])
+            run_id = self._find_run(gh, started, DELIVERY_BATCH_WORKFLOW)
+            conclusion = self._watch_run(gh, run_id)
+            status = delivery_batch_status(batch_id)
+            if conclusion != "success" or status not in {"sent", "already_sent"}:
+                raise RuntimeError(f"The email batch was retained for safe retry (workflow: {conclusion}; delivery: {status}).")
+        except Exception:
+            queue = load_delivery_queue(self.delivery_queue_path)
+            for item in queue:
+                if (str(item.get("artistSlug")), str(item.get("email", "")).lower()) in identities and str(item.get("status")) != "sent":
+                    item["status"] = "failed_retry_ready"
+            save_delivery_queue(self.delivery_queue_path, queue)
+            raise
+        queue = load_delivery_queue(self.delivery_queue_path)
+        sent_at = dt.datetime.now(dt.timezone.utc).isoformat()
+        for item in queue:
+            if (str(item.get("artistSlug")), str(item.get("email", "")).lower()) in identities:
+                item.update({"status": "sent", "sentAt": sent_at})
+        save_delivery_queue(self.delivery_queue_path, queue)
+        return {"count": len(selected), "email": email}
+
+    def _email_batch_complete(self, result: dict[str, object]) -> None:
+        self._refresh_delivery_queue()
+        count = int(result.get("count") or 0)
+        self._set_status(f"EMAIL SENT — {count} LINK{'S' if count != 1 else ''} + QR CARD{'S' if count != 1 else ''}", SUCCESS)
+        messagebox.showinfo("Email batch sent", f"One email containing {count} finished machine{'s' if count != 1 else ''} and QR card{'s' if count != 1 else ''} was sent to {result.get('email')}.")
+
     def _select_slug(self, slug: str) -> None:
         if slug not in getattr(self, "_candidate_slugs", []):
             return
@@ -613,7 +753,6 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         report = factory.approve(self.current_slug, approved_by, skip_quality_commands=True)
         slug = str(report["artistSlug"])
         try:
-            delivery_id = register_delivery_email(report)
             config = workspace / "automation" / "artist-machines" / f"{slug}.json"
             skin_candidates = list((workspace / "public" / "music-machine").glob(f"{slug}-cabinet.*"))
             if len(skin_candidates) != 1:
@@ -628,7 +767,23 @@ class ArtistMachineFactoryDashboard(tk.Tk):
                 run_process([git, "-C", str(workspace), "add", str(config.relative_to(workspace)), str(skin.relative_to(workspace))])
                 staged = subprocess.run([git, "-C", str(workspace), "diff", "--cached", "--quiet"], creationflags=creation_flags())
                 if staged.returncode == 0:
-                    return {"url": PUBLIC_BASE + slug + "/", "status": "already_current"}
+                    email_status = "not_requested"
+                    email_error = ""
+                    if str(report.get("deliveryEmail") or "").strip():
+                        try:
+                            queued = queue_published_machine(self.delivery_queue_path, report)
+                            email_status = "queued" if queued else "already_queued"
+                        except OSError as error:
+                            email_status = "queue_failed"
+                            email_error = str(error)
+                    return {
+                        "url": PUBLIC_BASE + slug + "/",
+                        "status": "already_current",
+                        "emailStatus": email_status,
+                        "email": str(report.get("deliveryEmail") or ""),
+                        "emailError": email_error,
+                        "artistSlug": slug,
+                    }
                 run_process([git, "-C", str(workspace), "commit", "-m", f"Publish {report['artistName']} Artist Machine"])
                 run_process([git, "-C", str(workspace), "push", "-u", "origin", branch])
             finally:
@@ -648,23 +803,21 @@ class ArtistMachineFactoryDashboard(tk.Tk):
                 f"candidate_ref={branch}",
                 "-f",
                 f"artist_slug={slug}",
-                "-f",
-                f"delivery_id={delivery_id}",
             ])
-            run_id = self._find_run(gh, started)
+            run_id = self._find_run(gh, started, PUBLISH_WORKFLOW)
             conclusion = self._watch_run(gh, run_id)
             if conclusion != "success":
                 details = run_process([gh, "run", "view", str(run_id), "--repo", REPOSITORY, "--json", "url"])
                 run_url = json.loads(details.stdout).get("url", "")
                 raise RuntimeError("Production checks stopped the release safely." + (f"\n\nReview: {run_url}" if run_url else ""))
-            email_status = "not_requested" if not delivery_id else "unknown"
+            email_status = "not_requested"
             email_error = ""
-            if delivery_id:
+            if str(report.get("deliveryEmail") or "").strip():
                 try:
-                    email_status = delivery_email_status(delivery_id)
-                    if email_status != "sent":
-                        email_error = "Cloudflare recorded the delivery email as " + email_status + "."
-                except RuntimeError as error:
+                    queued = queue_published_machine(self.delivery_queue_path, report)
+                    email_status = "queued" if queued else "already_queued"
+                except OSError as error:
+                    email_status = "queue_failed"
                     email_error = str(error)
             return {
                 "url": PUBLIC_BASE + slug + "/",
@@ -672,6 +825,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
                 "emailStatus": email_status,
                 "email": str(report.get("deliveryEmail") or ""),
                 "emailError": email_error,
+                "artistSlug": slug,
             }
         except Exception:
             candidate = factory.candidate_paths(slug)
@@ -685,7 +839,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             factory.write_json_atomic(candidate["report"], local_report)
             raise
 
-    def _find_run(self, gh: str, started: dt.datetime) -> int:
+    def _find_run(self, gh: str, started: dt.datetime, workflow: str) -> int:
         for _ in range(30):
             process = run_process([
                 gh,
@@ -694,7 +848,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
                 "--repo",
                 REPOSITORY,
                 "--workflow",
-                PUBLISH_WORKFLOW,
+                workflow,
                 "--event",
                 "workflow_dispatch",
                 "--limit",
@@ -724,22 +878,21 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.clipboard_clear()
         self.clipboard_append(self.latest_url)
         self.update()
-        if result["status"] == "already_current":
+        if result.get("emailStatus") in {"queued", "already_queued"}:
+            self._set_status("PUBLISHED — AWAITING EMAIL BATCH — LINK COPIED", SUCCESS)
+        elif result.get("emailStatus") == "queue_failed":
+            self._set_status("PUBLISHED — LINK COPIED — COULD NOT ADD TO EMAIL QUEUE", ERROR)
+        elif result["status"] == "already_current":
             self._set_status("ALREADY CURRENT — LIVE LINK COPIED", SUCCESS)
-        elif result.get("emailStatus") in {"sent", "already_sent"}:
-            self._set_status("PUBLISHED — LINK EMAILED + COPIED", SUCCESS)
-        elif result.get("emailStatus") == "failed":
-            self._set_status("PUBLISHED — LINK COPIED — EMAIL NOT SENT", ERROR)
-        elif result.get("emailStatus") not in {None, "not_requested"}:
-            self._set_status("PUBLISHED — LINK COPIED — CHECK EMAIL STATUS", ERROR)
         else:
             self._set_status("PUBLISHED — LIVE LINK COPIED", SUCCESS)
-        if result.get("emailStatus") in {"sent", "already_sent"}:
-            messagebox.showinfo("Artist Machine ready", f"The machine is live. Its link was emailed to {result.get('email')} and copied to the clipboard.")
-        elif result.get("emailStatus") == "failed":
-            messagebox.showwarning("Artist Machine published", "The machine is live and its link is on the clipboard, but the delivery email could not be sent.\n\n" + str(result.get("emailError") or ""))
-        elif result.get("emailStatus") not in {None, "not_requested"}:
-            messagebox.showwarning("Artist Machine published", "The machine is live and its link is on the clipboard, but the delivery email status could not be confirmed.\n\n" + str(result.get("emailError") or ""))
+        self._refresh_candidates()
+        self._select_slug(str(result.get("artistSlug") or self.current_slug))
+        self._refresh_delivery_queue()
+        if result.get("emailStatus") in {"queued", "already_queued"}:
+            messagebox.showinfo("Artist Machine published", "The machine is live and its link has been copied. It is waiting in the email queue; send up to five finished machines together when you are ready.")
+        elif result.get("emailStatus") == "queue_failed":
+            messagebox.showwarning("Artist Machine published", "The machine is live and its link is on the clipboard, but it could not be added to the local email queue.\n\n" + str(result.get("emailError") or ""))
         else:
             messagebox.showinfo("Artist Machine ready", "The machine passed production checks and its live link has been copied to the clipboard.")
 
@@ -772,6 +925,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
     def _operation_failed(self, message: str) -> None:
         self.busy = False
         self._set_form_enabled(True)
+        self._refresh_delivery_queue()
         self._set_status("FACTORY PAUSED SAFELY", ERROR)
         messagebox.showerror("Artist Machine Factory", message)
 
@@ -779,6 +933,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         state = "normal" if enabled else "disabled"
         self.save_button.configure(state=state)
         self.process_button.configure(state=state)
+        self.delivery_button.configure(state="normal" if enabled and getattr(self, "_delivery_items", []) else "disabled")
         if enabled and self.current_slug:
             self._show_candidate(self.current_slug)
         elif not enabled:
