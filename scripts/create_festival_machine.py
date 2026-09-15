@@ -70,6 +70,7 @@ def normalise_request(value: dict[str, Any]) -> dict[str, Any]:
     festival_url = clean_space(value.get("festivalUrl"))
     source_url = clean_space(value.get("festivalSourceUrl"))
     header_artwork = clean_space(value.get("machineHeaderArtwork") or value.get("festivalPlaqueImage") or value.get("festivalHeroImage"))
+    cabinet_artwork = clean_space(value.get("festivalCabinetArtwork") or value.get("cabinetArtwork"))
     if festival_url:
         festival_url = validate_public_url(festival_url)
     if source_url:
@@ -80,6 +81,12 @@ def normalise_request(value: dict[str, Any]) -> dict[str, Any]:
                 raise ValueError("Machine header artwork must be a valid published image path or HTTPS URL")
         else:
             header_artwork = validate_public_url(header_artwork)
+    if cabinet_artwork:
+        if cabinet_artwork.startswith("/"):
+            if not re.fullmatch(r"/assets/festival-machines/[A-Za-z0-9_./-]+\.(?:jpe?g|png|webp)", cabinet_artwork, flags=re.I):
+                raise ValueError("Festival cabinet artwork must be a published Festival skin path")
+        else:
+            cabinet_artwork = validate_public_url(cabinet_artwork)
     return {
         "title": title,
         "festivalSlug": slugify(clean_space(value.get("slug")) or title),
@@ -94,6 +101,8 @@ def normalise_request(value: dict[str, Any]) -> dict[str, Any]:
         "festivalSubtitle": clean_space(value.get("festivalSubtitle")) or "DISCOVERY MACHINE",
         "showFestivalWebsiteButton": bool(value.get("showFestivalWebsiteButton", True)),
         "machineHeaderArtwork": header_artwork or None,
+        "festivalCabinetArtwork": cabinet_artwork or None,
+        "festivalSkinTemplate": clean_space(value.get("festivalSkinTemplate")) or None,
         "bandcampUrls": urls,
     }
 
@@ -166,6 +175,10 @@ def build_festival_config(
         "festivalSubtitle": normalized["festivalSubtitle"],
         "showFestivalWebsiteButton": normalized["showFestivalWebsiteButton"],
         "machineHeaderArtwork": normalized["machineHeaderArtwork"],
+        "festivalCabinetArtwork": normalized["festivalCabinetArtwork"],
+        "cabinetArtwork": normalized["festivalCabinetArtwork"],
+        "skinVariant": "festival-canonical-v1" if normalized["festivalCabinetArtwork"] else None,
+        "festivalSkinTemplate": normalized["festivalSkinTemplate"],
         "tickerCopy": [normalized["festivalTickerText"]] if normalized["festivalTickerText"] else [],
         "bandcampUrls": normalized["bandcampUrls"],
         "artists": [{key: value for key, value in artist.items() if key != "songs"} for artist in successful],

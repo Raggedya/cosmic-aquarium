@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import dataclasses
 import datetime as dt
+import hashlib
 import json
 import os
 import re
@@ -18,7 +19,10 @@ from festival_discovery_service import clean_artist_name, clean_space, normalise
 
 
 SUPPORTED_POSTER_SUFFIXES = {".png", ".jpg", ".jpeg", ".webp"}
-PROJECT_SCHEMA_VERSION = 2
+FESTIVAL_SKIN_WIDTH = 1024
+FESTIVAL_SKIN_HEIGHT = 1536
+FESTIVAL_SKIN_TEMPLATE_ID = "aggits-festival-canonical-1024x1536-v1"
+PROJECT_SCHEMA_VERSION = 3
 
 NON_LINEUP_PHRASES = {
     "tickets", "ticket", "buy tickets", "on sale", "doors open", "all ages", "licensed event",
@@ -67,6 +71,40 @@ def validate_poster(path: Path) -> Path:
     except Exception as error:
         raise ValueError("The selected poster could not be read as an image.") from error
     return path
+
+
+def festival_skin_manifest(path: Path) -> dict[str, Any]:
+    """Validate and describe a cabinet skin made from the canonical Festival template."""
+    path = path.expanduser().resolve()
+    if not path.is_file():
+        raise ValueError("Choose an existing Festival jukebox skin image.")
+    if path.suffix.casefold() not in SUPPORTED_POSTER_SUFFIXES:
+        raise ValueError("Festival skins must be PNG, JPG, JPEG or WEBP images.")
+    try:
+        with Image.open(path) as raw:
+            image = ImageOps.exif_transpose(raw)
+            width, height = image.size
+    except Exception as error:
+        raise ValueError("The selected Festival skin could not be read as an image.") from error
+    if (width, height) != (FESTIVAL_SKIN_WIDTH, FESTIVAL_SKIN_HEIGHT):
+        raise ValueError(
+            f"Festival skins must use the canonical {FESTIVAL_SKIN_WIDTH} × {FESTIVAL_SKIN_HEIGHT} canvas. "
+            f"The selected image is {width} × {height}. Export it again from the canonical skin template."
+        )
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    return {
+        "templateId": FESTIVAL_SKIN_TEMPLATE_ID,
+        "width": width,
+        "height": height,
+        "format": path.suffix.casefold().lstrip("."),
+        "sha256": digest,
+        "originalName": path.name,
+    }
+
+
+def validate_festival_skin(path: Path) -> Path:
+    festival_skin_manifest(path)
+    return path.expanduser().resolve()
 
 
 def _rapidocr_blocks(image_path: Path) -> list[OcrBlock]:
@@ -250,7 +288,11 @@ def empty_project() -> dict[str, Any]:
         "editedLineup": [],
         "rejectedPosterText": [],
         "bandcampMatches": [],
-        "branding": {"logo": "", "headerImage": "", "posterImage": "", "backgroundImage": "", "primaryTitle": "", "subtitle": "", "showWebsiteButton": True},
+        "branding": {
+            "logo": "", "headerImage": "", "posterImage": "", "backgroundImage": "",
+            "jukeboxSkin": "", "jukeboxSkinManifest": None,
+            "primaryTitle": "", "subtitle": "", "showWebsiteButton": True,
+        },
         "festivalLibrary": None,
         "machineSettings": {},
         "publishedUrl": "",
@@ -299,6 +341,9 @@ class FestivalProjectStore:
         value = json.loads(path.read_text(encoding="utf-8"))
         if value.get("mode") != "festival":
             raise ValueError("This is not a Festival Mode project.")
+        branding = value.setdefault("branding", {})
+        branding.setdefault("jukeboxSkin", "")
+        branding.setdefault("jukeboxSkinManifest", None)
         return value
 
     def duplicate(self, project_id: str) -> dict[str, Any]:
@@ -373,6 +418,7 @@ def festival_request(project: dict[str, Any], *, header_artwork: str | None = No
     year = clean_space(festival.get("year"))
     primary = clean_space(branding.get("primaryTitle")) or f"{name} {year}".strip()
     subtitle = clean_space(branding.get("subtitle")) or "DISCOVERY MACHINE"
+    skin_manifest = branding.get("jukeboxSkinManifest") if isinstance(branding.get("jukeboxSkinManifest"), dict) else {}
     return {
         "title": clean_space(f"{primary} {subtitle}"),
         "slug": project.get("projectId") or slugify(f"{name}-{year}"),
@@ -386,5 +432,6 @@ def festival_request(project: dict[str, Any], *, header_artwork: str | None = No
         "festivalSubtitle": subtitle,
         "showFestivalWebsiteButton": bool(branding.get("showWebsiteButton", True)),
         "machineHeaderArtwork": header_artwork,
+        "festivalSkinTemplate": clean_space(skin_manifest.get("templateId")) or None,
         "bandcampUrls": approved_bandcamp_urls(project),
     }

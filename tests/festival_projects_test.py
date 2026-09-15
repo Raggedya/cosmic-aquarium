@@ -15,7 +15,8 @@ if str(SCRIPTS) not in sys.path:
 from create_festival_machine import build_festival_config
 from festival_projects import (
     FestivalProjectStore, OcrBlock, approved_bandcamp_urls, calculate_reporting, classification,
-    empty_project, extract_lineup_from_blocks, festival_request, read_poster,
+    empty_project, extract_lineup_from_blocks, festival_request, festival_skin_manifest, read_poster,
+    validate_festival_skin,
 )
 
 
@@ -89,6 +90,8 @@ class FestivalProjectTest(unittest.TestCase):
         project["bandcampMatches"][1]["decision"] = "pending"
         self.assertEqual(len(approved_bandcamp_urls(project)), 18)
         request = festival_request({**project, "projectId": "harvest-2027"})
+        request["festivalCabinetArtwork"] = "/assets/festival-machines/harvest-2027/cabinet-skin.png"
+        request["festivalSkinTemplate"] = "aggits-festival-canonical-1024x1536-v1"
         config = build_festival_config(request, importer=fake_importer)
         self.assertEqual(config["machineMode"], "festival")
         self.assertEqual(config["festivalSlug"], "harvest-2027")
@@ -96,12 +99,37 @@ class FestivalProjectTest(unittest.TestCase):
         self.assertEqual(len(config["songs"]), 36)
         self.assertEqual(config["festivalPrimaryTitle"], "Harvest Festival 2027")
         self.assertEqual(config["festivalSubtitle"], "DISCOVERY MACHINE")
+        self.assertEqual(config["cabinetArtwork"], "/assets/festival-machines/harvest-2027/cabinet-skin.png")
+        self.assertEqual(config["skinVariant"], "festival-canonical-v1")
 
     def test_coverage_reports_confirmed_manual_and_not_found(self) -> None:
         project = self._project()
         project["bandcampMatches"][0].update({"bandcampUrl": "", "status": "NOT FOUND", "decision": "rejected"})
         report = calculate_reporting(project)
         self.assertEqual(report, {"posterArtistsFound": 20, "confirmed": 18, "manual": 1, "notFound": 1, "coveragePercent": 95})
+
+    def test_canonical_festival_skin_is_versioned_and_persisted(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            skin = root / "harvest-red.png"
+            Image.new("RGB", (1024, 1536), "#5c0710").save(skin)
+            self.assertEqual(validate_festival_skin(skin), skin.resolve())
+            manifest = festival_skin_manifest(skin)
+            self.assertEqual(manifest["templateId"], "aggits-festival-canonical-1024x1536-v1")
+            self.assertEqual((manifest["width"], manifest["height"]), (1024, 1536))
+            project = self._project()
+            project["branding"].update({"jukeboxSkin": str(skin), "jukeboxSkinManifest": manifest})
+            store = FestivalProjectStore(root / "projects")
+            saved, _ = store.save(project, project_id="harvest-2027")
+            reopened = store.load(saved["projectId"])
+            self.assertEqual(reopened["branding"]["jukeboxSkinManifest"]["sha256"], manifest["sha256"])
+
+    def test_wrong_size_festival_skin_is_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            skin = Path(temporary) / "wrong.png"
+            Image.new("RGB", (953, 1650), "black").save(skin)
+            with self.assertRaisesRegex(ValueError, "1024 × 1536"):
+                validate_festival_skin(skin)
 
 
 if __name__ == "__main__":

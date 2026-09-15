@@ -28,7 +28,8 @@ from create_festival_machine import build_festival_config  # noqa: E402
 from festival_discovery_service import FestivalArtist, inspect_bandcamp_artist_url, match_bandcamp_artist, validate_bandcamp_artist_url  # noqa: E402
 from festival_projects import (  # noqa: E402
     FestivalProjectStore, approved_bandcamp_urls, calculate_reporting, classification, empty_project,
-    extract_lineup_from_blocks, festival_request, read_poster, slugify, validate_poster,
+    extract_lineup_from_blocks, festival_request, festival_skin_manifest, read_poster, slugify,
+    validate_festival_skin, validate_poster,
 )
 
 
@@ -72,11 +73,14 @@ class FestivalModeFrame(tk.Frame):
         self.logo_path = tk.StringVar()
         self.header_path = tk.StringVar()
         self.background_path = tk.StringVar()
+        self.skin_path = tk.StringVar()
+        self.skin_manifest: dict[str, object] | None = None
         self.current_project_id = ""
         self.dirty = False
         self.busy = False
         self.loading_project = False
         self._poster_photo: ImageTk.PhotoImage | None = None
+        self._skin_photo: ImageTk.PhotoImage | None = None
         self._build_interface()
         self._refresh_project_label()
 
@@ -127,7 +131,7 @@ class FestivalModeFrame(tk.Frame):
         self.read_button.pack(side="right")
         self.poster_hint = tk.Label(poster_shell, textvariable=self.poster_path, bg="#0d0805", fg=MUTED, font=("Segoe UI", 8), anchor="w", wraplength=560)
         self.poster_hint.grid(row=2, column=0, sticky="ew", padx=10, pady=(0, 10))
-        self._enable_drop(self.poster_preview)
+        self._enable_drop(self.poster_preview, self._poster_dropped)
 
         self._section(7, "3  EXTRACTED LINEUP · REVIEW BEFORE SEARCH")
         lineup_shell = tk.Frame(self.form, bg=PANEL)
@@ -148,14 +152,28 @@ class FestivalModeFrame(tk.Frame):
         self.match_button = self._button(row, "FIND BANDCAMP ARTISTS", self.find_matches)
         self.match_button.pack(side="right")
 
-        self._section(9, "4  FESTIVAL BRANDING")
-        self._file_row(10, "FESTIVAL LOGO · OPTIONAL", self.logo_path)
-        self._file_row(11, "HEADER IMAGE · OPTIONAL · POSTER USED WHEN BLANK", self.header_path)
-        self._file_row(12, "BACKGROUND IMAGE · OPTIONAL", self.background_path)
-        self.primary_title = self._entry(13, 0, "PRIMARY TITLE · DEFAULTS TO FESTIVAL + YEAR")
-        self.subtitle = self._entry(13, 1, "SUBTITLE · DEFAULTS TO DISCOVERY MACHINE")
+        self._section(9, "4  FESTIVAL JUKEBOX SKIN")
+        skin_shell = tk.Frame(self.form, bg="#0d0805", highlightbackground="#58331d", highlightthickness=1)
+        skin_shell.grid(row=10, column=0, columnspan=2, sticky="ew", padx=24, pady=(8, 0))
+        skin_shell.grid_columnconfigure(0, weight=1)
+        self.skin_preview = tk.Label(skin_shell, text="DROP A COMPLETE FESTIVAL SKIN HERE\nCANONICAL 1024 × 1536 · PNG / JPG / JPEG / WEBP", bg="#0d0805", fg=MUTED, height=8, font=("Segoe UI Semibold", 9))
+        self.skin_preview.grid(row=0, column=0, sticky="ew", padx=10, pady=10)
+        skin_controls = tk.Frame(skin_shell, bg="#0d0805")
+        skin_controls.grid(row=1, column=0, sticky="ew", padx=10, pady=(0, 8))
+        self._small_button(skin_controls, "CHOOSE / REPLACE SKIN", self.choose_skin).pack(side="left")
+        self._small_button(skin_controls, "USE STANDARD RED SKIN", self.clear_skin).pack(side="left", padx=(6, 0))
+        self.skin_status = tk.Label(skin_shell, text="STANDARD RED FESTIVAL SKIN · NO CUSTOM SKIN SELECTED", bg="#0d0805", fg=MUTED, font=("Segoe UI", 8), anchor="w", wraplength=560)
+        self.skin_status.grid(row=2, column=0, sticky="ew", padx=10, pady=(0, 10))
+        self._enable_drop(self.skin_preview, self._skin_dropped)
+
+        self._section(11, "5  FESTIVAL BRANDING")
+        self._file_row(12, "FESTIVAL LOGO · OPTIONAL", self.logo_path)
+        self._file_row(13, "HEADER IMAGE · OPTIONAL · POSTER USED WHEN BLANK", self.header_path)
+        self._file_row(14, "BACKGROUND IMAGE · OPTIONAL", self.background_path)
+        self.primary_title = self._entry(15, 0, "PRIMARY TITLE · DEFAULTS TO FESTIVAL + YEAR")
+        self.subtitle = self._entry(15, 1, "SUBTITLE · DEFAULTS TO DISCOVERY MACHINE")
         self.website_button = tk.BooleanVar(value=True)
-        tk.Checkbutton(self.form, text="SHOW FESTIVAL WEBSITE BUTTON", variable=self.website_button, command=self._mark_dirty, bg=PANEL, fg=CREAM, activebackground=PANEL, activeforeground=PAPER, selectcolor=BURGUNDY, bd=0).grid(row=14, column=0, columnspan=2, sticky="w", padx=24, pady=(10, 24))
+        tk.Checkbutton(self.form, text="SHOW FESTIVAL WEBSITE BUTTON", variable=self.website_button, command=self._mark_dirty, bg=PANEL, fg=CREAM, activebackground=PANEL, activeforeground=PAPER, selectcolor=BURGUNDY, bd=0).grid(row=16, column=0, columnspan=2, sticky="w", padx=24, pady=(10, 24))
 
         self._build_review(right_shell)
 
@@ -243,11 +261,11 @@ class FestivalModeFrame(tk.Frame):
     def _small_button(parent: tk.Widget, text: str, command: object) -> tk.Button:
         return tk.Button(parent, text=text, command=command, bg="#3b2415", fg=CREAM, activebackground="#5a351e", activeforeground=PAPER, relief="flat", bd=0, cursor="hand2", font=("Segoe UI Semibold", 7), padx=8, pady=6)
 
-    def _enable_drop(self, widget: tk.Widget) -> None:
+    def _enable_drop(self, widget: tk.Widget, handler: object) -> None:
         try:
             from tkinterdnd2 import DND_FILES
             widget.drop_target_register(DND_FILES)  # type: ignore[attr-defined]
-            widget.dnd_bind("<<Drop>>", self._poster_dropped)  # type: ignore[attr-defined]
+            widget.dnd_bind("<<Drop>>", handler)  # type: ignore[attr-defined]
         except Exception:
             pass
 
@@ -284,6 +302,53 @@ class FestivalModeFrame(tk.Frame):
         if selected:
             variable.set(str(validate_poster(Path(selected))))
             self._mark_dirty()
+
+    def _skin_dropped(self, event: object) -> None:
+        raw = str(getattr(event, "data", "")).strip()
+        values = list(self.tk.splitlist(raw)) if raw else []
+        if values:
+            self.set_skin(values[0])
+
+    def choose_skin(self) -> None:
+        selected = filedialog.askopenfilename(parent=self, title="Choose complete Festival jukebox skin", filetypes=(("Festival skins", "*.png *.jpg *.jpeg *.webp"),))
+        if selected:
+            self.set_skin(selected)
+
+    def set_skin(self, value: str) -> None:
+        try:
+            path = validate_festival_skin(Path(value))
+            manifest = festival_skin_manifest(path)
+        except ValueError as error:
+            messagebox.showerror("Festival jukebox skin", str(error), parent=self)
+            return
+        self.skin_path.set(str(path))
+        self.skin_manifest = manifest
+        try:
+            with Image.open(path) as raw:
+                image = ImageOps.exif_transpose(raw).convert("RGB")
+                image.thumbnail((570, 285), Image.Resampling.LANCZOS)
+                self._skin_photo = ImageTk.PhotoImage(image)
+            self.skin_preview.configure(image=self._skin_photo, text="", height=285)
+        except OSError:
+            self.skin_preview.configure(image="", text="CUSTOM FESTIVAL SKIN SELECTED")
+        self.skin_status.configure(text=f"CUSTOM SKIN READY · {manifest['width']} × {manifest['height']} · {manifest['templateId']}", fg=SUCCESS)
+        self._mark_skin_dirty()
+
+    def clear_skin(self) -> None:
+        self.skin_path.set("")
+        self.skin_manifest = None
+        self._skin_photo = None
+        self.skin_preview.configure(image="", text="DROP A COMPLETE FESTIVAL SKIN HERE\nCANONICAL 1024 × 1536 · PNG / JPG / JPEG / WEBP", height=8)
+        self.skin_status.configure(text="STANDARD RED FESTIVAL SKIN · NO CUSTOM SKIN SELECTED", fg=MUTED)
+        self._mark_skin_dirty()
+
+    def _mark_skin_dirty(self) -> None:
+        if self.loading_project:
+            return
+        self.dirty = True
+        if isinstance(self.project.get("festivalLibrary"), dict):
+            self.machine_status.configure(text="FESTIVAL SKIN CHANGED · OPEN PRIVATE PREVIEW TO VERIFY ALIGNMENT", fg=WARN)
+        self._refresh_project_label()
 
     def _mark_dirty(self, _event: object = None) -> None:
         if self.loading_project:
@@ -531,7 +596,13 @@ class FestivalModeFrame(tk.Frame):
         value["poster"] = {"path": self.poster_path.get(), "originalName": Path(self.poster_path.get()).name if self.poster_path.get() else ""}
         value["editedLineup"] = list(self.lineup)
         value["bandcampMatches"] = list(self.matches)
-        value["branding"] = {"logo": self.logo_path.get(), "headerImage": self.header_path.get(), "posterImage": self.poster_path.get(), "backgroundImage": self.background_path.get(), "primaryTitle": self.primary_title.get().strip(), "subtitle": self.subtitle.get().strip(), "showWebsiteButton": self.website_button.get()}
+        value["branding"] = {
+            "logo": self.logo_path.get(), "headerImage": self.header_path.get(),
+            "posterImage": self.poster_path.get(), "backgroundImage": self.background_path.get(),
+            "jukeboxSkin": self.skin_path.get(), "jukeboxSkinManifest": self.skin_manifest,
+            "primaryTitle": self.primary_title.get().strip(), "subtitle": self.subtitle.get().strip(),
+            "showWebsiteButton": self.website_button.get(),
+        }
         value["reporting"] = calculate_reporting(value)
         return value
 
@@ -544,7 +615,7 @@ class FestivalModeFrame(tk.Frame):
         project_id = self.current_project_id or slugify(f"{name}-{self.festival_year.get().strip()}")
         value, path = self.store.save(value, project_id=project_id)
         self.current_project_id = str(value["projectId"])
-        assets = (("poster", self.poster_path, "poster"), ("logo", self.logo_path, "logo"), ("header", self.header_path, "header"), ("background", self.background_path, "background"))
+        assets = (("poster", self.poster_path, "poster"), ("logo", self.logo_path, "logo"), ("header", self.header_path, "header"), ("background", self.background_path, "background"), ("skin", self.skin_path, "jukebox-skin"))
         for key, variable, role in assets:
             source = variable.get().strip()
             if not source or not Path(source).is_file():
@@ -554,7 +625,9 @@ class FestivalModeFrame(tk.Frame):
             if key == "poster":
                 value["poster"] = {"path": stored, "originalName": Path(source).name}
             else:
-                value.setdefault("branding", {})[{"logo": "logo", "header": "headerImage", "background": "backgroundImage"}[key]] = stored
+                value.setdefault("branding", {})[{"logo": "logo", "header": "headerImage", "background": "backgroundImage", "skin": "jukeboxSkin"}[key]] = stored
+            if key == "skin":
+                value["branding"]["jukeboxSkinManifest"] = self.skin_manifest
         value["branding"]["posterImage"] = self.poster_path.get()
         value, path = self.store.save(value, project_id=self.current_project_id)
         self.project = value
@@ -607,6 +680,14 @@ class FestivalModeFrame(tk.Frame):
         if poster_path and Path(poster_path).is_file(): self.set_poster(poster_path)
         else: self.poster_preview.configure(image="", text="DROP A FESTIVAL POSTER HERE\nOR BROWSE FOR PNG / JPG / JPEG / WEBP", height=10)
         self.logo_path.set(str(branding.get("logo") or "")); self.header_path.set(str(branding.get("headerImage") or "")); self.background_path.set(str(branding.get("backgroundImage") or "")); self.website_button.set(bool(branding.get("showWebsiteButton", True)))
+        skin_path = str(branding.get("jukeboxSkin") or "")
+        if skin_path and Path(skin_path).is_file():
+            self.set_skin(skin_path)
+            stored_manifest = branding.get("jukeboxSkinManifest")
+            if isinstance(stored_manifest, dict):
+                self.skin_manifest = dict(stored_manifest)
+        else:
+            self.clear_skin()
         self.lineup = list(value.get("editedLineup") or [])
         self.matches = list(value.get("bandcampMatches") or [])
         self._render_lineup(); self._render_matches()
@@ -644,7 +725,11 @@ class FestivalModeFrame(tk.Frame):
 
     def _machine_built(self, config: dict[str, object]) -> None:
         self.project = self._collect_project(); self.project["festivalLibrary"] = config
-        self.project["machineSettings"] = {"engine": "shared-discovery-machine", "mode": "festival", "artists": len(config.get("artists") or []), "tracks": len(config.get("songs") or [])}
+        self.project["machineSettings"] = {
+            "engine": "shared-discovery-machine", "mode": "festival",
+            "artists": len(config.get("artists") or []), "tracks": len(config.get("songs") or []),
+            "festivalSkinTemplate": (self.skin_manifest or {}).get("templateId"),
+        }
         self.store.save(self.project, project_id=self.current_project_id)
         self.dirty = False; self._refresh_project_label()
         failures = config.get("importFailures") or []
@@ -673,6 +758,17 @@ class FestivalModeFrame(tk.Frame):
         if background and background.is_file():
             target = media_dir / f"background{background.suffix.casefold()}"; shutil.copy2(background, target)
             preview_config["festivalBackgroundArtwork"] = f"/cosmic-aquarium/assets/festival-machines/{config['festivalSlug']}/{target.name}"
+        skin = Path(self.skin_path.get()) if self.skin_path.get() else None
+        if skin and skin.is_file():
+            validate_festival_skin(skin)
+            target = media_dir / f"cabinet-skin{skin.suffix.casefold()}"; shutil.copy2(skin, target)
+            preview_config["festivalCabinetArtwork"] = f"/cosmic-aquarium/assets/festival-machines/{config['festivalSlug']}/{target.name}"
+            preview_config["cabinetArtwork"] = preview_config["festivalCabinetArtwork"]
+            preview_config["skinVariant"] = "festival-canonical-v1"
+            preview_config["festivalSkinTemplate"] = (self.skin_manifest or festival_skin_manifest(skin))["templateId"]
+        else:
+            for key in ("festivalCabinetArtwork", "cabinetArtwork", "skinVariant", "festivalSkinTemplate"):
+                preview_config.pop(key, None)
         self._write_preview_config(site, preview_config)
         return {"previewRoot": str(preview_root), "previewPath": f"/cosmic-aquarium/festival/?festival={urllib.parse.quote(str(config['festivalSlug']))}"}
 
@@ -728,6 +824,21 @@ class FestivalModeFrame(tk.Frame):
             shutil.copy2(background_art, background)
             config["festivalBackgroundArtwork"] = f"/assets/festival-machines/{slug}/{background.name}"
             paths.append(background)
+        skin_art = Path(self.skin_path.get()) if self.skin_path.get() else None
+        if skin_art and skin_art.is_file():
+            validate_festival_skin(skin_art)
+            media_dir = workspace / "public" / "festival-machine-media" / slug
+            media_dir.mkdir(parents=True, exist_ok=True)
+            skin = media_dir / f"cabinet-skin{skin_art.suffix.casefold()}"
+            shutil.copy2(skin_art, skin)
+            config["festivalCabinetArtwork"] = f"/assets/festival-machines/{slug}/{skin.name}"
+            config["cabinetArtwork"] = config["festivalCabinetArtwork"]
+            config["skinVariant"] = "festival-canonical-v1"
+            config["festivalSkinTemplate"] = (self.skin_manifest or festival_skin_manifest(skin_art))["templateId"]
+            paths.append(skin)
+        else:
+            for key in ("festivalCabinetArtwork", "cabinetArtwork", "skinVariant", "festivalSkinTemplate"):
+                config.pop(key, None)
         config_path.write_text(json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%d%H%M%S")
         branch = f"codex/festival-{slug}-{stamp}"

@@ -179,3 +179,17 @@ test('Festival Mode is embedded in the Factory with poster review, explicit appr
   assert.match(projects,/rawExtractedLineup/);assert.match(projects,/bandcampMatches/);assert.match(projects,/festivalLibrary/);
   assert.match(spec,/festival_mode/);assert.match(spec,/rapidocr_onnxruntime/);assert.doesNotMatch(spec,/Festivals\.exe/);
 });
+
+test('Festival Mode imports a validated canonical full-cabinet skin with a safe red fallback',async()=>{
+  const [mode,projects,builder,runtime,css]=await Promise.all([read('desktop/festival_mode.py'),read('scripts/festival_projects.py'),read('scripts/create_festival_machine.py'),read('github-pages/assets/discovery-machine.js'),read('app/discovery-machine.css')]);
+  for(const control of ['DROP A COMPLETE FESTIVAL SKIN HERE','CHOOSE / REPLACE SKIN','USE STANDARD RED SKIN'])assert.ok(mode.includes(control),control);
+  assert.match(mode,/validate_festival_skin/);
+  assert.match(mode,/cabinet-skin/);
+  assert.match(projects,/FESTIVAL_SKIN_WIDTH = 1024/);
+  assert.match(projects,/FESTIVAL_SKIN_HEIGHT = 1536/);
+  assert.match(projects,/aggits-festival-canonical-1024x1536-v1/);
+  assert.match(projects,/jukeboxSkinManifest/);
+  assert.match(builder,/festivalCabinetArtwork/);
+  assert.match(runtime,/machine\.dataset\.festivalSkin=variant/);
+  assert.match(css,/data-festival-skin="festival-canonical-v1"\]>\.cabinet[^}]*aspect-ratio:2\/3/);
+});

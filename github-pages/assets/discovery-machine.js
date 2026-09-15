@@ -478,12 +478,13 @@ function updateStats(){
 
 function applyArtistSkin(config){
   if(!isSingleReelMode||!cabinetSkin)return;
-  const artwork=String(config?.cabinetArtwork||'');
+  const artwork=String((isFestivalMode?config?.festivalCabinetArtwork:null)||config?.cabinetArtwork||'');
   const variant=String(config?.skinVariant||'').toLowerCase();
   if(!/^\/assets\/[a-z0-9_./-]+\.(?:avif|jpe?g|png|webp)$/.test(artwork)||!/^[a-z0-9-]+$/.test(variant))return;
   const fallback=cabinetSkin.src;
-  cabinetSkin.addEventListener('error',()=>{cabinetSkin.src=fallback;delete machine.dataset.artistSkin},{once:true});
+  cabinetSkin.addEventListener('error',()=>{cabinetSkin.src=fallback;delete machine.dataset.artistSkin;delete machine.dataset.festivalSkin},{once:true});
   machine.dataset.artistSkin=variant;
+  if(isFestivalMode)machine.dataset.festivalSkin=variant;
   cabinetSkin.src=`${base}${artwork}`;
 }
 
