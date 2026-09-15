@@ -9,7 +9,7 @@ import {populateSingleReel,spinSingleReel} from './single-reel-engine.js';
 const machine=document.querySelector('.music-machine');
 const base=machine?.dataset.base||'';
 const cabinetSkin=document.querySelector('.cabinet-skin');
-const isFestivalMode=machine?.dataset.machineContent==='festival';
+const isFestivalMode=machine?.dataset.machineMode==='festival';
 const machineMode=isFestivalMode?'festival':machine?.dataset.machineMode==='artist'?'artist':'city';
 const isArtistMode=machineMode==='artist';
 const isSingleReelMode=isArtistMode||isFestivalMode;
@@ -190,6 +190,7 @@ function renderFestivalHeaderIdentity(){
   const configured=String(artistConfig.machineHeaderArtwork||artistConfig.festivalPlaqueImage||artistConfig.festivalHeroImage||'').trim();
   let artwork='';
   if(configured)try{const url=new URL(configured,location.origin);if(url.protocol==='https:'||url.origin===location.origin)artwork=url.href}catch{}
+  festivalHeaderGraphic.hidden=!artwork;
   if(festivalHeaderArtwork){festivalHeaderArtwork.hidden=!artwork;if(artwork){festivalHeaderArtwork.src=artwork;festivalHeaderArtwork.alt=''}else festivalHeaderArtwork.removeAttribute('src')}
   const configuredBackground=String(artistConfig.festivalBackgroundArtwork||'').trim();let background='';
   if(configuredBackground)try{const url=new URL(configuredBackground,location.origin);if(url.protocol==='https:'||url.origin===location.origin)background=url.href}catch{}
@@ -223,6 +224,7 @@ function onFestivalIntroPointerUp(event){
 function onFestivalIntroPointerCancel(){festivalIntroPointer=null;festivalIntroMultiTouch=false}
 function initialiseFestivalIntro(){
   if(!isFestivalMode)return;
+  if(!festivalIntro){festivalIntroState='complete';setFestivalInteractionLocked(false);return}
   setFestivalInteractionLocked(true);
   setFestivalIntroState('hold');festivalIntroHoldTimer=setTimeout(()=>void beginFestivalIntroOpening(false),FESTIVAL_INTRO_HOLD_MS);
   festivalIntro?.addEventListener('pointerdown',onFestivalIntroPointerDown);
@@ -289,7 +291,6 @@ function setReelRows(index,entry,neighbours=true){
 }
 
 function showTicker(text,{hold=7200,onComplete=null}={}){
-  if(isFestivalMode){syncFestivalMachineStatus();return}
   clearTimeout(tickerTimer);const renderToken=++tickerRenderToken;
   ticker.textContent=String(text||'LET’S PLAY').toUpperCase();
   ticker.classList.remove('is-scrolling');
@@ -307,7 +308,6 @@ function showTicker(text,{hold=7200,onComplete=null}={}){
   });
 }
 function startTickerRotation(items,delay=7200){
-  if(isFestivalMode){clearTimeout(tickerTimer);tickerItems=[];syncFestivalMachineStatus();return}
   clearTimeout(tickerTimer);tickerItems=[...new Set(items.filter(Boolean))];tickerIndex=0;
   const next=()=>{if(!tickerItems.length)return;showTicker(tickerItems[tickerIndex++%tickerItems.length],{hold:delay,onComplete:next})};
   next();
@@ -379,7 +379,6 @@ function artistInformationText(entry,manifest,track){
 }
 
 function showMachineIdentity(){
-  if(isFestivalMode&&festivalTickerStarted)return;
   titleRenderToken++;machineTitle.dataset.titleMode='identity';machineTitle.setAttribute('aria-label',isSingleReelMode?`${artistConfig?.artistName||'Artist'} catalogue`:'Melbourne catalogue statistics');machineTitleIdentity.setAttribute('aria-hidden','false');artistInformationPanel.setAttribute('aria-hidden','true');artistInformationTrack.classList.remove('is-entering','is-streaming');artistInformationTrack.style.removeProperty('--artist-entry-start');artistInformationTrack.style.removeProperty('--artist-entry-duration');artistInformationTrack.style.removeProperty('--artist-duration');artistInformation.textContent='';artistInformationCopy.textContent='';
 }
 
@@ -416,7 +415,7 @@ function festivalInformationText(){
 function showFestivalTitleIntro(){
   if(!isFestivalMode||festivalTickerStarted||!artistConfig)return;
   festivalTickerStarted=true;
-  showInformationTicker(festivalInformationText(),`${artistConfig.title||'Festival'} information`);
+  showMachineIdentity();
 }
 
 function renderFestivalSpeakerTitle(value){
@@ -464,7 +463,7 @@ function updateStats(){
       machineTitleHeading.classList.toggle('is-long',(isFestivalMode&&heading.length>28)||(isArtistMode&&heading.length>18));
       machineTitleHeading.classList.toggle('is-very-long',(isFestivalMode&&heading.length>42)||(isArtistMode&&heading.length>28));
     }
-    if(isFestivalMode){renderFestivalHeaderIdentity();renderFestivalSpeakerTitle(identity)}
+    if(isFestivalMode){renderFestivalHeaderIdentity();if(speakerLabel)speakerLabel.innerHTML=`${cleanText(identity,34).toUpperCase()}<br>ON BANDCAMP`}
     else if(speakerLabel)speakerLabel.innerHTML=`${cleanText(identity,34).toUpperCase()}<br>ON BANDCAMP`;
     document.title=`AGGITS — ${identity}`;
     machine.setAttribute('aria-label',`AGGITS ${identity}`);

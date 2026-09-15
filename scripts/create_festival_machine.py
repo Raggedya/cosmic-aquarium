@@ -162,6 +162,7 @@ def build_festival_config(
     return {
         "schemaVersion": 1,
         "machineMode": "festival",
+        "visualShell": "standard-aggits-single-reel",
         "festivalSlug": normalized["festivalSlug"],
         "title": normalized["title"],
         "festivalName": normalized["festivalName"],
@@ -188,6 +189,7 @@ def build_festival_config(
         "importFailures": failures,
         "provenance": {
             "method": "festival-selected-bandcamp-catalogues",
+            "visualShell": "standard-aggits-single-reel",
             "source": normalized["festivalSourceUrl"] or normalized["festivalUrl"],
             "createdAt": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         },

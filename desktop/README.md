@@ -40,7 +40,8 @@ Festival Mode provides:
 - cautious Bandcamp search with Confirmed, Likely, Ambiguous and Not Found states, confidence, evidence, manual URLs and explicit approve/reject decisions;
 - a festival library built only from approved public Bandcamp profiles using the shared catalogue, single-reel player and purchase-link engine;
 - poster/logo/header/background branding inside the existing Festival Machine visual language;
-- drag-and-drop import of a complete canonical `1024 × 1536` Festival jukebox skin, with strict template validation, private preview, project persistence, publishing and a standard-red fallback;
+- the same standard single-reel AGGITS jukebox shell used by Standard Mode, with no separate wooden cabinet or entrance doors;
+- drag-and-drop import of a complete canonical `1024 × 1536` Festival jukebox skin into that shared shell, with strict template validation, private preview, project persistence, publishing and a standard-red fallback;
 - private preview, protected GitHub Pages publishing and festival-specific analytics;
 - separate New/Open/Save/Save As/Duplicate/Delete projects under `%USERPROFILE%\AGGITS\Artist Machine Factory\festival-projects`.
 

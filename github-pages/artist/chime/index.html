@@ -27,14 +27,19 @@
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/music-machine/aggits-marquee-v2.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/music-machine/aggits-reel-v2.webp">
   <link rel="preload" as="image" href="/cosmic-aquarium/assets/music-machine/winner-splash-frame.png">
-  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=62c032902cf1">
-  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=62c032902cf1"></script>
+  <link rel="stylesheet" href="/cosmic-aquarium/assets/discovery-machine.css?v=0b00abe372c9">
+  <script type="module" src="/cosmic-aquarium/assets/discovery-machine.js?v=0b00abe372c9"></script>
   <title>CHIME — AGGITS Bandcamp Discovery</title>
 </head>
 <body>
-  <main class="music-machine" data-base="/cosmic-aquarium" data-artist-slug="chime" data-machine-state="BOOT" data-machine-mode="artist" aria-label="CHIME AGGITS jukebox">
+  <main class="music-machine" data-base="/cosmic-aquarium" data-artist-slug="chime" data-machine-state="BOOT" data-machine-mode="artist"  aria-label="CHIME AGGITS jukebox">
+    <img class="festival-background-artwork" data-festival-background-artwork alt="" hidden>
     <div class="cabinet" aria-describedby="machine-instructions">
       <img class="cabinet-skin" src="/cosmic-aquarium/assets/music-machine/aggits-cabinet.webp" alt="" width="1024" height="1536" fetchpriority="high">
+      <section class="festival-header-graphic" aria-label="Festival identity" hidden>
+        <img data-festival-header-artwork alt="" hidden>
+        <strong data-festival-header-title><span>FESTIVAL MUSIC MACHINE</span></strong>
+      </section>
       <header class="aggits-marquee"><h1 class="visually-hidden">AGGITS</h1><img src="/cosmic-aquarium/assets/music-machine/aggits-marquee-v2.webp" alt="" width="2172" height="724"></header>
       <section class="machine-title" aria-label="Artist catalogue" data-title-mode="identity">
         <div class="machine-title-identity">
@@ -46,6 +51,7 @@
       </section>
       <nav class="utility-controls" aria-label="Machine controls">
         <button type="button" data-action="home">HOME</button>
+        <button type="button" data-action="festival-website" hidden>FESTIVAL</button>
         <button type="button" data-action="sound" aria-pressed="true">SOUND ON</button>
       </nav>
       <section class="meter-bank" aria-label="Machine activity meters">

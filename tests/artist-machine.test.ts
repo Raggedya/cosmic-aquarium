@@ -32,8 +32,8 @@ test('Artist Mode title contains only the artist name and no catalogue subtitle'
   assert.match(runtime,/const heading=cleanText\(identity,96\)\.toUpperCase\(\)/);
   assert.doesNotMatch(runtime,/`\$\{identity\} MUSIC MACHINE`/);
   assert.match(runtime,/isArtistMode&&heading\.length>18/);
-  assert.match(css,/data-machine-mode="artist"\] \.machine-title-identity strong\{[^}]*font-size:clamp\(15px,5\.1vw,29px\)/);
-  assert.match(css,/data-machine-mode="artist"\] \.machine-title-identity strong\.is-very-long\{font-size:clamp\(9px,3vw,17px\)/);
+  assert.match(css,/:is\(\[data-machine-mode="artist"\],\[data-machine-mode="festival"\]\) \.machine-title-identity strong\{[^}]*font-size:clamp\(15px,5\.1vw,29px\)/);
+  assert.match(css,/:is\(\[data-machine-mode="artist"\],\[data-machine-mode="festival"\]\) \.machine-title-identity strong\.is-very-long\{font-size:clamp\(9px,3vw,17px\)/);
 });
 
 test('Artist Mode and Melbourne City Mode share the same cabinet runtime and canonical spin path',async()=>{

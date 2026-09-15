@@ -9,7 +9,6 @@ const pages = path.join(root,'github-pages');
 const template = await fs.readFile(path.join(root,'templates','artist-index.html'),'utf8');
 const universeTemplate = await fs.readFile(path.join(root,'templates','universe-index.html'),'utf8');
 const artistMachineTemplate = await fs.readFile(path.join(root,'templates','artist-machine.html'),'utf8');
-const festivalMachineTemplate = await fs.readFile(path.join(root,'templates','festival-machine.html'),'utf8');
 const tourismMachineTemplate = await fs.readFile(path.join(root,'templates','tourism-machine.html'),'utf8');
 const collectionTemplate = await fs.readFile(path.join(root,'templates','collection-index.html'),'utf8');
 const css = await fs.readFile(path.join(root,'app','cosmic-aquarium.css'),'utf8');
@@ -421,6 +420,7 @@ function renderArtistMachine(config=null){
     .replaceAll('{{BASE}}','/cosmic-aquarium')
     .replaceAll('{{ASSET_VERSION}}',assetVersion)
     .replaceAll('{{ARTIST_SLUG}}',escapeAttribute(config?.artistSlug||''))
+    .replaceAll('{{MACHINE_DATA}}','')
     .replaceAll('{{PAGE_TITLE}}',escapeAttribute(title))
     .replaceAll('{{META_DESCRIPTION}}',escapeAttribute(description))
     .replaceAll('{{CANONICAL_URL}}',escapeAttribute(canonical))
@@ -429,7 +429,23 @@ function renderArtistMachine(config=null){
     .replaceAll('{{MACHINE_LABEL}}',escapeAttribute(config?`${artistName} AGGITS jukebox`:'AGGITS Artist Music Machine'));
 }
 function renderFestivalMachine(){
-  return festivalMachineTemplate.replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);
+  return artistMachineTemplate
+    .replaceAll('{{BASE}}','/cosmic-aquarium')
+    .replaceAll('{{ASSET_VERSION}}',assetVersion)
+    .replaceAll('{{ARTIST_SLUG}}','')
+    .replaceAll('{{MACHINE_DATA}}','data-festival-shell="standard"')
+    .replace('data-machine-mode="artist"','data-machine-mode="festival"')
+    .replaceAll('{{PAGE_TITLE}}','AGGITS — Festival Music Machine')
+    .replaceAll('{{META_DESCRIPTION}}','A reviewed festival lineup in the standard AGGITS single-reel jukebox, linked to real Bandcamp catalogues.')
+    .replaceAll('{{CANONICAL_URL}}','https://raggedya.github.io/cosmic-aquarium/festival/')
+    .replaceAll('{{SOCIAL_IMAGE_URL}}','https://raggedya.github.io/cosmic-aquarium/assets/music-machine/aggits-artist-default.jpg')
+    .replaceAll('{{SOCIAL_IMAGE_ALT}}','AGGITS Festival Music Machine jukebox')
+    .replaceAll('{{MACHINE_LABEL}}','AGGITS Festival Music Machine')
+    .replace('One artist song reel','Festival song reel')
+    .replace('PULL FOR A SONG','PULL FOR A FESTIVAL SONG')
+    .replace('this artist’s Bandcamp catalogue','the approved festival artists’ Bandcamp catalogues')
+    .replace('Loading the Artist Music Machine.','Loading the Festival Music Machine.')
+    .replace('WANT ONE FOR YOUR BAND?','WANT ONE FOR YOUR FESTIVAL?');
 }
 function renderTourismMachine(config,base='/cosmic-aquarium'){
   const destination=config.destination;

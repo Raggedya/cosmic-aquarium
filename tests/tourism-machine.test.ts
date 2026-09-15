@@ -126,9 +126,9 @@ test('tourism and Artist products use the same extracted three-slot reel engine'
   for(const asset of ['reel-actual-slotmachine-freesound-261346.mp3','reel-ratchet-mixkit-2641.mp3','reel-stop-lock-mixkit-2857.mp3','winner-tonal-bloom-mixkit-3109.mp3'])assert.match(runtime,new RegExp(asset.replaceAll('.','\\.')));
 });
 
-test('existing festival machine remains on its original template and runtime',async()=>{
-  const festival=await read('templates/festival-machine.html');
-  assert.match(festival,/data-machine-content="festival"/);
+test('existing festival machine uses the shared standard jukebox template and runtime',async()=>{
+  const festival=await read('github-pages/festival/index.html');
+  assert.match(festival,/data-machine-mode="festival" data-festival-shell="standard"/);
   assert.match(festival,/assets\/discovery-machine\.js/);
   assert.doesNotMatch(festival,/tourism-machine/);
 });

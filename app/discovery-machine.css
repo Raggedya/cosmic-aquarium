@@ -110,25 +110,25 @@ button,a{-webkit-tap-highlight-color:transparent}
 .music-machine[data-machine-content="festival"] .machine-title-identity strong{max-width:92%;overflow:hidden;text-overflow:ellipsis;font-size:clamp(11px,3.25vw,18px);letter-spacing:.012em}
 .music-machine[data-machine-content="festival"] .machine-title-identity strong.is-long{font-size:clamp(9px,2.75vw,15px);letter-spacing:-.005em}
 .music-machine[data-machine-content="festival"] .machine-title-identity strong.is-very-long{font-size:clamp(7px,2.2vw,12px);letter-spacing:-.015em}
-.music-machine[data-machine-mode="artist"] .machine-title-identity strong{max-width:94%;overflow:hidden;text-overflow:ellipsis;font-size:clamp(15px,5.1vw,29px)}
-.music-machine[data-machine-mode="artist"] .machine-title-identity strong.is-long{font-size:clamp(12px,3.9vw,22px)}
-.music-machine[data-machine-mode="artist"] .machine-title-identity strong.is-very-long{font-size:clamp(9px,3vw,17px)}
-.music-machine[data-machine-mode="artist"] .machine-title-identity small{font-size:clamp(6px,1.75vw,10px);letter-spacing:.025em}
-.music-machine[data-machine-mode="artist"] .reel-bank{left:22%;right:22%;top:37%;height:20.2%;grid-template-columns:1fr;gap:0}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .machine-title-identity strong{max-width:94%;overflow:hidden;text-overflow:ellipsis;font-size:clamp(15px,5.1vw,29px)}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .machine-title-identity strong.is-long{font-size:clamp(12px,3.9vw,22px)}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .machine-title-identity strong.is-very-long{font-size:clamp(9px,3vw,17px)}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .machine-title-identity small{font-size:clamp(6px,1.75vw,10px);letter-spacing:.025em}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .reel-bank{left:22%;right:22%;top:37%;height:20.2%;grid-template-columns:1fr;gap:0}
 .music-machine[data-machine-content="festival"] .reel-bank{left:19.2%;right:19.2%}
-.music-machine[data-machine-mode="artist"] .reel-bank::before{inset:-2.5% -3.2%;border-radius:2.5%/5%}
-.music-machine[data-machine-mode="artist"] .reel{border-radius:4%/6%;background-size:100% 140%}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .reel-bank::before{inset:-2.5% -3.2%;border-radius:2.5%/5%}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .reel{border-radius:4%/6%;background-size:100% 140%}
 .music-machine[data-machine-content="festival"] .reel{background-size:130% 140%}
-.music-machine[data-machine-mode="artist"] .reel-strip{inset:2.5% 8% 3%}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .reel-strip{inset:2.5% 8% 3%}
 .music-machine[data-machine-content="festival"] .reel-strip{inset:2.5% 13% 3%}
-.music-machine[data-machine-mode="artist"] .reel-strip>*{padding:0 5%;font-size:clamp(13px,4.5vw,25px);line-height:.9}
-.music-machine[data-machine-mode="artist"] .reel-strip>*.is-long{font-size:clamp(10px,3.55vw,20px);letter-spacing:-.018em}
-.music-machine[data-machine-mode="artist"] .reel-strip>*.is-very-long{font-size:clamp(8px,2.8vw,16px);line-height:.9;letter-spacing:-.032em}
-.music-machine[data-machine-mode="artist"] .ticker-panel{top:59%;height:7.4%}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .reel-strip>*{padding:0 5%;font-size:clamp(13px,4.5vw,25px);line-height:.9}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .reel-strip>*.is-long{font-size:clamp(10px,3.55vw,20px);letter-spacing:-.018em}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .reel-strip>*.is-very-long{font-size:clamp(8px,2.8vw,16px);line-height:.9;letter-spacing:-.032em}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .ticker-panel{top:59%;height:7.4%}
 .winner-splash-copy em{display:block;max-width:92%;margin-top:.45em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#5d2d11;font-family:Georgia,"Times New Roman",serif;font-size:clamp(6px,1.55vw,9px);font-style:normal;font-weight:700;letter-spacing:.08em;line-height:1;text-transform:uppercase}
 .winner-splash-artwork{position:absolute;left:9.5%;top:14%;width:22%;height:72%;z-index:0;overflow:hidden;border:1px solid rgba(221,166,91,.72);border-radius:7%;background:#160704;box-shadow:inset 0 0 0 2px #080201,0 3px 7px #000}
 .winner-splash-artwork img{width:100%;height:100%;object-fit:cover}
-.music-machine[data-machine-mode="artist"] .winner-splash-copy{left:13%;right:13%}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]) .winner-splash-copy{left:13%;right:13%}
 .music-machine[data-artist-skin="workfriend-western"] .aggits-marquee{display:none}
 .music-machine[data-artist-skin="workfriend-western"] .cabinet::before{background:radial-gradient(ellipse at 50% 47%,transparent 52%,rgba(0,0,0,.11) 82%,rgba(0,0,0,.28) 100%)}
 .music-machine[data-artist-skin="workfriend-western"] .utility-controls button{border-color:#b73535;background:linear-gradient(#251519,#070405);box-shadow:inset 0 1px 0 #dd765e,0 2px 5px #000;color:#f3d7a2}
@@ -141,8 +141,8 @@ button,a{-webkit-tap-highlight-color:transparent}
 .music-machine[data-artist-skin="workfriend-western"] .lever img{filter:sepia(.28) saturate(1.35) hue-rotate(322deg) drop-shadow(0 6px 5px #000)}
 .music-machine[data-artist-skin="workfriend-western"] .artist-machine-request{border-color:rgba(183,53,48,.68);background:linear-gradient(180deg,#103d3c,#0b1717 58%,#260b0a)}
 body.artist-machine-page{overflow-y:auto;background:#050302!important}
-.music-machine[data-machine-mode="artist"]{height:auto;min-height:100dvh;overflow:visible;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
-.music-machine[data-machine-mode="artist"]>.cabinet{flex:none}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"]){height:auto;min-height:100dvh;overflow:visible;display:flex;flex-direction:column;align-items:center;justify-content:flex-start}
+.music-machine:is([data-machine-mode="artist"],[data-machine-mode="festival"])>.cabinet{flex:none}
 .artist-machine-request{width:min(calc(100% - 28px),520px);margin:18px auto max(28px,env(safe-area-inset-bottom));padding:20px 18px;text-align:center;color:#e8c88c;border:1px solid rgba(190,126,58,.55);border-radius:12px;background:linear-gradient(180deg,#241008,#0c0402);box-shadow:inset 0 1px rgba(255,218,155,.1),0 10px 28px rgba(0,0,0,.58)}
 .artist-machine-request strong{display:block;margin-bottom:12px;font-size:clamp(12px,3.6vw,18px);letter-spacing:.13em}
 .artist-machine-request button,.artist-machine-submit{min-height:44px;border:1px solid #d6a867;border-radius:7px;padding:10px 16px;color:#2b1508;background:linear-gradient(#fff0bf,#cf9650);box-shadow:inset 0 2px rgba(255,255,255,.45),0 3px 0 #562910;font:900 clamp(10px,3vw,14px)/1 var(--font-machine);letter-spacing:.04em;cursor:pointer}
@@ -211,6 +211,8 @@ body.artist-machine-page{overflow-y:auto;background:#050302!important}
 .festival-header-graphic[data-lines="1"]>[data-festival-header-title]{font-size:clamp(10px,3vw,17px)}
 .festival-header-graphic.is-long>[data-festival-header-title]{font-size:clamp(7px,2.05vw,12px);letter-spacing:.08em}
 .festival-header-graphic.is-very-long>[data-festival-header-title]{font-size:clamp(6px,1.72vw,10px);letter-spacing:.045em}
+.music-machine[data-machine-mode="festival"] .festival-header-graphic{left:24%;right:24%;top:5.2%;height:12.4%;padding:2.5% 6% 0;z-index:4}
+.music-machine[data-machine-mode="festival"] .festival-header-graphic[hidden]{display:none}
 .music-machine[data-machine-content="festival"] .machine-title{left:10%;right:10%;top:19.45%;height:4.55%;padding:0;color:#e8c98f;text-shadow:0 1px #000,0 0 4px rgba(255,177,74,.18)}
 .music-machine[data-machine-content="festival"] .machine-title-identity{display:none}
 .music-machine[data-machine-content="festival"] .artist-information{opacity:1;filter:none;transform:none;padding:0;background:transparent;box-shadow:none}
