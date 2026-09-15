@@ -101,12 +101,50 @@ def run_process(command: list[str], *, cwd: Path | None = None) -> subprocess.Co
         raise RuntimeError(message) from error
 
 
+def archive_untracked_remote_conflicts(git: str, workspace: Path) -> Path | None:
+    """Preserve untracked files that a newly fetched origin/main now owns."""
+    process = run_process([git, "-C", str(workspace), "ls-files", "--others", "--exclude-standard", "-z"])
+    relative_paths = [value for value in process.stdout.split("\0") if value]
+    conflicts: list[tuple[Path, Path]] = []
+    workspace_resolved = workspace.resolve()
+    for value in relative_paths:
+        relative = Path(value)
+        if relative.is_absolute() or ".." in relative.parts:
+            continue
+        source = (workspace / relative).resolve()
+        try:
+            source.relative_to(workspace_resolved)
+        except ValueError:
+            continue
+        if not source.is_file():
+            continue
+        remote_path = value.replace("\\", "/")
+        tracked = subprocess.run(
+            [git, "-C", str(workspace), "cat-file", "-e", f"origin/main:{remote_path}"],
+            capture_output=True,
+            creationflags=creation_flags(),
+        )
+        if tracked.returncode == 0:
+            conflicts.append((source, relative))
+    if not conflicts:
+        return None
+    stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    archive = workspace.parent / "workspace-conflict-archive" / stamp
+    for source, relative in conflicts:
+        destination = archive / relative
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        shutil.move(str(source), str(destination))
+    return archive
+
+
 def refresh_git_workspace(git: str, workspace: Path) -> None:
-    """Fast-forward the managed checkout without re-checking out main unnecessarily."""
+    """Fast-forward the managed checkout and preserve incoming untracked collisions."""
+    run_process([git, "-C", str(workspace), "fetch", "origin", "main"])
+    archive_untracked_remote_conflicts(git, workspace)
     branch = run_process([git, "-C", str(workspace), "branch", "--show-current"]).stdout.strip()
     if branch != "main":
         run_process([git, "-C", str(workspace), "checkout", "main"])
-    run_process([git, "-C", str(workspace), "pull", "--ff-only", "origin", "main"])
+    run_process([git, "-C", str(workspace), "merge", "--ff-only", "origin/main"])
 
 
 def request_json(url: str, payload: dict[str, object] | None = None) -> dict[str, object]:

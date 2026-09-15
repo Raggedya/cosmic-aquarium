@@ -10,6 +10,7 @@ from unittest.mock import call, patch
 from desktop.artist_machine_factory_dashboard import (
     DELIVERY_BATCH_ENDPOINT,
     application_data,
+    archive_untracked_remote_conflicts,
     copy_missing_private_items,
     delivery_batch_status,
     load_delivery_queue,
@@ -75,26 +76,56 @@ class ArtistMachineFactoryDashboardTests(unittest.TestCase):
 
     @patch("desktop.artist_machine_factory_dashboard.run_process")
     def test_refresh_does_not_checkout_main_when_already_on_main(self, process) -> None:
-        process.side_effect = [SimpleNamespace(stdout="main\n"), SimpleNamespace(stdout="Already up to date.\n")]
+        process.side_effect = [
+            SimpleNamespace(stdout=""),
+            SimpleNamespace(stdout=""),
+            SimpleNamespace(stdout="main\n"),
+            SimpleNamespace(stdout="Already up to date.\n"),
+        ]
 
         refresh_git_workspace("git", Path("C:/Factory/workspace"))
 
         self.assertEqual(
             process.call_args_list,
             [
+                call(["git", "-C", "C:\\Factory\\workspace", "fetch", "origin", "main"]),
+                call(["git", "-C", "C:\\Factory\\workspace", "ls-files", "--others", "--exclude-standard", "-z"]),
                 call(["git", "-C", "C:\\Factory\\workspace", "branch", "--show-current"]),
-                call(["git", "-C", "C:\\Factory\\workspace", "pull", "--ff-only", "origin", "main"]),
+                call(["git", "-C", "C:\\Factory\\workspace", "merge", "--ff-only", "origin/main"]),
             ],
         )
 
     @patch("desktop.artist_machine_factory_dashboard.run_process")
     def test_refresh_returns_to_main_before_pulling_when_needed(self, process) -> None:
-        process.side_effect = [SimpleNamespace(stdout="factory-candidate\n"), SimpleNamespace(stdout=""), SimpleNamespace(stdout="")]
+        process.side_effect = [
+            SimpleNamespace(stdout=""),
+            SimpleNamespace(stdout=""),
+            SimpleNamespace(stdout="factory-candidate\n"),
+            SimpleNamespace(stdout=""),
+            SimpleNamespace(stdout=""),
+        ]
 
         refresh_git_workspace("git", Path("C:/Factory/workspace"))
 
-        self.assertEqual(process.call_args_list[1].args[0][-2:], ["checkout", "main"])
-        self.assertEqual(process.call_args_list[2].args[0][-4:], ["pull", "--ff-only", "origin", "main"])
+        self.assertEqual(process.call_args_list[3].args[0][-2:], ["checkout", "main"])
+        self.assertEqual(process.call_args_list[4].args[0][-3:], ["merge", "--ff-only", "origin/main"])
+
+    @patch("desktop.artist_machine_factory_dashboard.subprocess.run")
+    @patch("desktop.artist_machine_factory_dashboard.run_process")
+    def test_incoming_untracked_files_are_archived_instead_of_deleted(self, process, subprocess_run) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            workspace = Path(temporary) / "workspace"
+            source = workspace / "public" / "artist-machine-media" / "lime-spiders" / "qr-card.png"
+            source.parent.mkdir(parents=True)
+            source.write_bytes(b"private generated copy")
+            process.return_value = SimpleNamespace(stdout="public/artist-machine-media/lime-spiders/qr-card.png\0")
+            subprocess_run.return_value = SimpleNamespace(returncode=0)
+
+            archive = archive_untracked_remote_conflicts("git", workspace)
+
+            self.assertIsNotNone(archive)
+            self.assertFalse(source.exists())
+            self.assertEqual((archive / "public" / "artist-machine-media" / "lime-spiders" / "qr-card.png").read_bytes(), b"private generated copy")
 
     @patch("desktop.artist_machine_factory_dashboard.subprocess.run")
     def test_git_stderr_is_shown_instead_of_only_exit_status(self, process) -> None:
