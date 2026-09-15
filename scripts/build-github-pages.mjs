@@ -254,7 +254,9 @@ for(const filename of (await fs.readdir(explicitArtistMachineDirectory)).filter(
     const artistSlug=machineSlug(source.artistSlug||source.artistName);
     const songs=(source.songs||[]).filter(track=>/^\d+$/.test(String(track?.bandcampEmbedTrackId||''))&&isBandcampUrl(track?.bandcampUrl));
     if(source.machineMode!=='artist'||!artistSlug||!source.artistName||!isBandcampUrl(source.bandcampArtistUrl)||!songs.length)throw new Error('invalid_artist_machine_config');
-    const catalogue={schemaVersion:1,slug:`artist-machine-${artistSlug}`,artist:source.artistName,releaseTitle:'Bandcamp catalogue',bandcampUrl:source.bandcampArtistUrl,commerceAvailable:true,commerceUrl:source.bandcampArtistUrl,bioShort:source.bio||null,heroArtwork:source.heroArtwork||null,tracks:songs};
+    const catalogueKind=source.catalogueKind==='label'?'label':'artist';
+    if(catalogueKind==='label'&&(!source.labelName||!isBandcampUrl(source.labelUrl)||songs.length>35||new Set(songs.map(track=>String(track.artist||'').trim().toLowerCase()).filter(Boolean)).size<2))throw new Error('invalid_label_machine_config');
+    const catalogue={schemaVersion:1,slug:`artist-machine-${artistSlug}`,artist:source.artistName,catalogueKind,labelName:source.labelName||null,labelUrl:source.labelUrl||null,releaseTitle:catalogueKind==='label'?'Label discovery catalogue':'Bandcamp catalogue',bandcampUrl:source.bandcampArtistUrl,commerceAvailable:true,commerceUrl:source.bandcampArtistUrl,bioShort:source.bio||null,heroArtwork:source.heroArtwork||null,tracks:songs};
     await fs.writeFile(path.join(pages,'artist-machine-catalogues',`${artistSlug}.json`),JSON.stringify(catalogue,null,2)+'\n');
     const sourceMetadata={...source};delete sourceMetadata.songs;
     const publicUrl=`https://raggedya.github.io/cosmic-aquarium/artist/${artistSlug}/`;

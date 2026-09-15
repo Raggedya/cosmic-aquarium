@@ -10,6 +10,7 @@ import sys
 import threading
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import webbrowser
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -228,6 +229,92 @@ class QuietRequestHandler(SimpleHTTPRequestHandler):
         return
 
 
+class LabelCatalogueDialog(tk.Toplevel):
+    def __init__(self, parent: "ArtistMachineFactoryDashboard", slug: str, selected_only: bool) -> None:
+        super().__init__(parent)
+        self.parent = parent
+        self.slug = slug
+        self.selected_only = selected_only
+        self.title("Selected Label Tracks" if selected_only else "Full Label Catalogue")
+        self.geometry("1040x650")
+        self.minsize(820, 480)
+        self.configure(bg=INK)
+        self.transient(parent)
+
+        heading = "SELECTED 35-TRACK DISCOVERY LIBRARY" if selected_only else "FULL DISCOVERED LABEL CATALOGUE"
+        tk.Label(self, text=heading, bg=INK, fg=CREAM, font=("Georgia", 16, "bold")).pack(anchor="w", padx=22, pady=(20, 5))
+        self.summary = tk.Label(self, text="", bg=INK, fg=MUTED, font=("Segoe UI", 9))
+        self.summary.pack(anchor="w", padx=22, pady=(0, 12))
+
+        shell = tk.Frame(self, bg=PANEL, highlightbackground="#58331d", highlightthickness=1)
+        shell.pack(fill="both", expand=True, padx=22)
+        self.tree = ttk.Treeview(shell, columns=("artist", "track", "release", "included", "locked"), show="headings", selectmode="browse")
+        widths = {"artist": 210, "track": 260, "release": 260, "included": 80, "locked": 70}
+        for key, title in (("artist", "ARTIST"), ("track", "TRACK"), ("release", "RELEASE"), ("included", "INCLUDED"), ("locked", "LOCKED")):
+            self.tree.heading(key, text=title)
+            self.tree.column(key, width=widths[key], anchor="w" if key not in {"included", "locked"} else "center")
+        scroll = ttk.Scrollbar(shell, orient="vertical", command=self.tree.yview)
+        self.tree.configure(yscrollcommand=scroll.set)
+        self.tree.pack(side="left", fill="both", expand=True, padx=(8, 0), pady=8)
+        scroll.pack(side="right", fill="y", padx=(0, 8), pady=8)
+
+        actions = tk.Frame(self, bg=INK)
+        actions.pack(fill="x", padx=22, pady=18)
+        for label, command in (
+            ("INCLUDE / REMOVE", self._toggle_included),
+            ("REPLACE TRACK", self._replace),
+            ("LOCK / UNLOCK", self._toggle_lock),
+            ("RESHUFFLE UNLOCKED", self._reshuffle),
+        ):
+            parent._button(actions, label, command, secondary=True).pack(side="left", padx=(0, 8))
+        parent._button(actions, "CLOSE", self.destroy).pack(side="right")
+        self._reload()
+
+    def _selected_id(self) -> str:
+        selected = self.tree.selection()
+        if not selected:
+            raise factory.FactoryError("Select a track in the table first")
+        return str(selected[0])
+
+    def _run(self, operation: object) -> None:
+        try:
+            operation()  # type: ignore[operator]
+            self._reload()
+            self.parent._refresh_candidates()
+            self.parent._select_slug(self.slug)
+        except (factory.FactoryError, ValueError, OSError) as error:
+            messagebox.showerror("Label catalogue", str(error), parent=self)
+
+    def _toggle_included(self) -> None:
+        self._run(lambda: factory.set_label_track_included(self.slug, self._selected_id()))
+
+    def _replace(self) -> None:
+        self._run(lambda: factory.replace_label_track(self.slug, self._selected_id()))
+
+    def _toggle_lock(self) -> None:
+        self._run(lambda: factory.set_label_track_lock(self.slug, self._selected_id()))
+
+    def _reshuffle(self) -> None:
+        self._run(lambda: factory.reshuffle_label_selection(self.slug))
+
+    def _reload(self) -> None:
+        catalogue = factory.label_catalogue(self.slug)
+        tracks = list(catalogue.get("tracks") or [])
+        rows = [track for track in tracks if track.get("isSelected")] if self.selected_only else tracks
+        self.tree.delete(*self.tree.get_children())
+        for track in sorted(rows, key=lambda item: (str(item.get("artist") or "").casefold(), str(item.get("title") or "").casefold())):
+            self.tree.insert("", "end", iid=str(track.get("id")), values=(
+                track.get("artist") or "",
+                track.get("title") or "",
+                track.get("releaseTitle") or track.get("albumTitle") or "",
+                "YES" if track.get("isSelected") else "NO",
+                "YES" if track.get("isLocked") else "NO",
+            ))
+        selected = sum(1 for track in tracks if track.get("isSelected"))
+        locked = sum(1 for track in tracks if track.get("isLocked"))
+        self.summary.configure(text=f"{len(tracks)} ELIGIBLE TRACKS  ·  {selected} SELECTED  ·  {locked} LOCKED")
+
+
 class ArtistMachineFactoryDashboard(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
@@ -279,8 +366,8 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         tk.Label(header, text="AGGITS", bg="#090503", fg=CREAM, font=("Georgia", 22, "bold")).pack(side="left", padx=(30, 12))
         title = tk.Frame(header, bg="#090503")
         title.pack(side="left", pady=18)
-        tk.Label(title, text="ARTIST MACHINE FACTORY", bg="#090503", fg=PAPER, font=("Segoe UI Semibold", 15)).pack(anchor="w")
-        tk.Label(title, text="BANDCAMP + REFERENCE + WORDS  ·  ONE COMPLETE SINGLE-REEL JUKEBOX", bg="#090503", fg=MUTED, font=("Segoe UI", 8)).pack(anchor="w", pady=(3, 0))
+        tk.Label(title, text="ARTIST + LABEL MACHINE FACTORY", bg="#090503", fg=PAPER, font=("Segoe UI Semibold", 15)).pack(anchor="w")
+        tk.Label(title, text="PASTE BANDCAMP  ·  AUTOMATIC ARTIST OR 35-TRACK LABEL DISCOVERY MACHINE", bg="#090503", fg=MUTED, font=("Segoe UI", 8)).pack(anchor="w", pady=(3, 0))
         self.connection = tk.Label(header, text="PRIVATE DESKTOP WORKSPACE", bg="#090503", fg=BRASS, font=("Segoe UI Semibold", 9))
         self.connection.pack(side="right", padx=30)
 
@@ -318,8 +405,10 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         content.grid_columnconfigure(0, weight=1)
         content.grid_columnconfigure(1, weight=1)
 
-        tk.Label(content, text="1  BAND", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).grid(row=0, column=0, columnspan=2, sticky="w")
-        self.artist = self._entry(content, 1, 0, "BAND / ARTIST NAME")
+        tk.Label(content, text="1  BAND OR LABEL", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).grid(row=0, column=0, sticky="w")
+        self.mode_detected = tk.Label(content, text="MODE DETECTED: WAITING FOR BANDCAMP URL", bg=PANEL, fg=MUTED, font=("Segoe UI Semibold", 8))
+        self.mode_detected.grid(row=0, column=1, sticky="e")
+        self.artist = self._entry(content, 1, 0, "BAND / ARTIST NAME  ·  OPTIONAL FOR LABELS")
         self.city = self._entry(content, 1, 1, "CITY / LOCATION")
         self.bandcamp = self._entry(content, 2, 0, "OFFICIAL BANDCAMP URL", span=2)
 
@@ -349,7 +438,7 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         actions.grid_columnconfigure(1, weight=1)
         self.save_button = self._button(actions, "SAVE DRAFT", self._save_draft, secondary=True)
         self.save_button.grid(row=0, column=0, sticky="ew", padx=(0, 7))
-        self.process_button = self._button(actions, "GENERATE SINGLE-REEL JUKEBOX", self._start_prepare)
+        self.process_button = self._button(actions, "ANALYSE BANDCAMP + CREATE JUKEBOX", self._start_prepare)
         self.process_button.grid(row=0, column=1, sticky="ew", padx=(7, 0))
 
     def _build_status(self, parent: tk.Frame) -> None:
@@ -399,6 +488,18 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.open_live_button.pack(fill="x", pady=7)
         self.open_live_button.configure(state="disabled")
 
+        tk.Label(inner, text="LABEL DISCOVERY CONTROLS", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).pack(anchor="w", pady=(22, 0))
+        self.reshuffle_label_button = self._button(inner, "RESHUFFLE 35 TRACKS", self._start_label_reshuffle, secondary=True)
+        self.reshuffle_label_button.pack(fill="x", pady=(9, 5))
+        review_row = tk.Frame(inner, bg=PANEL)
+        review_row.pack(fill="x", pady=5)
+        self.view_selected_button = self._button(review_row, "VIEW SELECTED", lambda: self._open_label_catalogue(True), secondary=True)
+        self.view_selected_button.pack(side="left", fill="x", expand=True, padx=(0, 4))
+        self.view_catalogue_button = self._button(review_row, "VIEW FULL CATALOGUE", lambda: self._open_label_catalogue(False), secondary=True)
+        self.view_catalogue_button.pack(side="left", fill="x", expand=True, padx=(4, 0))
+        self.refresh_label_button = self._button(inner, "REFRESH LABEL CATALOGUE", self._start_label_refresh, secondary=True)
+        self.refresh_label_button.pack(fill="x", pady=5)
+
         tk.Label(inner, text="EMAIL DELIVERY QUEUE", bg=PANEL, fg=BRASS, font=("Segoe UI Semibold", 10)).pack(anchor="w", pady=(22, 0))
         tk.Label(inner, text="Published machines wait here. Each send contains up to five links and QR cards.", bg=PANEL, fg=MUTED, font=("Segoe UI", 8), wraplength=300, justify="left").pack(anchor="w", pady=(5, 8))
         delivery_frame = tk.Frame(inner, bg="#0c0705", highlightbackground="#4f2c19", highlightthickness=1)
@@ -423,11 +524,11 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.delivery_button.configure(state="disabled")
 
         note = (
-            "The locked controls and operating model are never edited here. "
-            "No image uses the red AGGITS skin; an image creates a fresh reference-driven skin."
+            "Artist imports keep the existing workflow. Label imports preserve the full catalogue locally, "
+            "select 35 tracks automatically, and retain locked tracks when reshuffling."
         )
         tk.Label(inner, text=note, bg=PANEL, fg="#8e765c", font=("Segoe UI", 8), wraplength=300, justify="left").pack(anchor="w", pady=(22, 0))
-        self._set_candidate_controls(False, False)
+        self._set_candidate_controls(False, False, False)
 
     def _entry(self, parent: tk.Widget, row: int, column: int, label: str, span: int = 1) -> tk.Entry:
         shell = tk.Frame(parent, bg=PANEL)
@@ -508,10 +609,17 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         artist = str(value["artist"]["name"])  # type: ignore[index]
         bandcamp = str(value["artist"]["bandcampUrl"])  # type: ignore[index]
         reference_value = str(value["artwork"]["referenceImage"]).strip()  # type: ignore[index]
+        validated_bandcamp = factory.validate_bandcamp_url(bandcamp)
         if not artist:
-            raise factory.FactoryError("Enter the band or artist name")
+            host = urllib.parse.urlparse(validated_bandcamp).hostname or ""
+            account = host.removesuffix(".bandcamp.com").replace("-", " ").replace("_", " ").strip()
+            artist = account.title()
+            if not artist or account == "bandcamp.com":
+                raise factory.FactoryError("Enter a band, artist or label name for this Bandcamp address")
+            value["artist"]["name"] = artist  # type: ignore[index]
+            self.artist.delete(0, "end")
+            self.artist.insert(0, artist)
         slug = factory.slugify(artist)
-        factory.validate_bandcamp_url(bandcamp)
         if reference_value and not Path(reference_value).is_file():
             raise factory.FactoryError("The selected reference image could not be found")
         return value, slug
@@ -537,9 +645,10 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             return
         slug = intake.stem
         existing = self.workspace / "automation" / "artist-machine-factory" / "candidates" / slug
-        if existing.exists() and not messagebox.askyesno("Update this candidate?", "A private candidate already exists for this artist. Replace it with the details currently in the form?"):
+        if existing.exists() and not messagebox.askyesno("Update this candidate?", "A private candidate already exists for this Bandcamp account. Replace it with the details currently in the form?"):
             return
-        self._run_async("READING BANDCAMP + BUILDING THE JUKEBOX…", lambda: self._prepare(intake), self._prepare_complete)
+        self.mode_detected.configure(text="MODE DETECTED: ANALYSING BANDCAMP…", fg=BRASS)
+        self._run_async("DETECTING MODE + READING BANDCAMP CATALOGUE…", lambda: self._prepare(intake), self._prepare_complete)
 
     def _prepare(self, intake: Path) -> dict[str, object]:
         self._ensure_workspace()
@@ -548,11 +657,22 @@ class ArtistMachineFactoryDashboard(tk.Tk):
 
     def _prepare_complete(self, report: dict[str, object]) -> None:
         self.current_slug = str(report["artistSlug"])
+        detected = str(report.get("detectedMode") or "artist")
+        self.mode_detected.configure(text=f"MODE DETECTED: BANDCAMP {detected.upper()}", fg=SUCCESS)
+        discovered_name = str(report.get("artistName") or "")
+        if detected == "label" and discovered_name:
+            self.artist.delete(0, "end")
+            self.artist.insert(0, discovered_name)
         self._refresh_candidates()
         self._select_slug(self.current_slug)
         count = int(report.get("catalogue", {}).get("playableSongCount", 0))  # type: ignore[union-attr]
         if report.get("status") == "ready_for_approval":
-            self._set_status(f"JUKEBOX GENERATED — {count} PLAYABLE SONGS — OPENING PREVIEW", SUCCESS)
+            label_summary = report.get("labelSummary") if isinstance(report.get("labelSummary"), dict) else None
+            if label_summary:
+                artists = int(label_summary.get("artistsFound") or 0)
+                self._set_status(f"BANDCAMP LABEL DETECTED — {artists} ARTISTS — {count} DISCOVERY TRACKS — OPENING PREVIEW", SUCCESS)
+            else:
+                self._set_status(f"JUKEBOX GENERATED — {count} PLAYABLE SONGS — OPENING PREVIEW", SUCCESS)
             self.after(100, self._start_preview)
         else:
             self._set_status("AUTOMATIC CHECKS PAUSED — REVIEW THE CANDIDATE", ERROR)
@@ -730,17 +850,68 @@ class ArtistMachineFactoryDashboard(tk.Tk):
                 "approved": "Approved locally and ready/published through the secure release workflow.",
             }
             self.report_status.configure(text=descriptions.get(status, status.replace("_", " ").title()), fg=SUCCESS if status in {"ready_for_approval", "approved"} else MUTED)
-            self.report_count.configure(text=f"{count} PLAYABLE SONG{'S' if count != 1 else ''}")
+            label_summary = report.get("labelSummary") if isinstance(report.get("labelSummary"), dict) else None
+            label_mode = str(report.get("catalogueKind") or "") == "label"
+            if label_summary:
+                artists = int(label_summary.get("artistsFound") or 0)
+                releases = int(label_summary.get("releasesFound") or 0)
+                eligible = int(label_summary.get("eligibleTracksFound") or 0)
+                locked = int(label_summary.get("lockedTracks") or 0)
+                self.report_count.configure(text=f"{artists} ARTISTS · {releases} RELEASES\n{eligible} ELIGIBLE · {count} SELECTED · {locked} LOCKED", justify="left")
+                self.mode_detected.configure(text="MODE DETECTED: BANDCAMP LABEL", fg=SUCCESS)
+                warnings = []
+                if int(label_summary.get("unattributedTrackCount") or 0):
+                    warnings.append(f"{int(label_summary['unattributedTrackCount'])} tracks lacked reliable artist attribution")
+                if int(label_summary.get("failedReleaseCount") or 0):
+                    warnings.append(f"{int(label_summary['failedReleaseCount'])} release pages were unavailable")
+                availability = str(label_summary.get("availabilityMessage") or "")
+                detail = "Label catalogue saved locally. " + availability
+                if warnings:
+                    detail += "\n" + "; ".join(warnings) + ". No metadata was invented."
+                self.report_status.configure(text=detail, fg=SUCCESS if status in {"ready_for_approval", "approved"} else MUTED)
+            else:
+                self.report_count.configure(text=f"{count} PLAYABLE SONG{'S' if count != 1 else ''}", justify="left")
             has_skin = report.get("cabinetSkin") is not None
-            self._set_candidate_controls(True, status == "ready_for_approval" and has_skin)
+            self._set_candidate_controls(True, status == "ready_for_approval" and has_skin, label_mode)
             self.latest_url = PUBLIC_BASE + slug + "/" if status == "approved" else ""
             self.open_live_button.configure(state="normal" if self.latest_url else "disabled")
         except (OSError, ValueError, json.JSONDecodeError):
-            self._set_candidate_controls(False, False)
+            self._set_candidate_controls(False, False, False)
 
-    def _set_candidate_controls(self, exists: bool, ready: bool) -> None:
+    def _set_candidate_controls(self, exists: bool, ready: bool, label_mode: bool = False) -> None:
         self.preview_button.configure(state="normal" if ready else "disabled")
         self.publish_button.configure(state="normal" if ready else "disabled")
+        label_state = "normal" if exists and label_mode and not self.busy else "disabled"
+        self.reshuffle_label_button.configure(state=label_state)
+        self.view_selected_button.configure(state=label_state)
+        self.view_catalogue_button.configure(state=label_state)
+        self.refresh_label_button.configure(state=label_state)
+
+    def _open_label_catalogue(self, selected_only: bool) -> None:
+        if self.busy or not self.current_slug:
+            return
+        try:
+            LabelCatalogueDialog(self, self.current_slug, selected_only)
+        except (factory.FactoryError, OSError, ValueError) as error:
+            messagebox.showerror("Label catalogue", str(error))
+
+    def _start_label_reshuffle(self) -> None:
+        if self.busy or not self.current_slug:
+            return
+        self._run_async("RESHUFFLING UNLOCKED LABEL TRACKS…", lambda: factory.reshuffle_label_selection(self.current_slug), self._label_update_complete)
+
+    def _start_label_refresh(self) -> None:
+        if self.busy or not self.current_slug:
+            return
+        if not messagebox.askyesno("Refresh label catalogue?", "Bandcamp will be scanned again. Existing locks are preserved when those tracks still exist; unavailable locked tracks will be reported."):
+            return
+        self._run_async("REFRESHING BANDCAMP LABEL CATALOGUE…", lambda: factory.refresh_label_catalogue(self.current_slug), self._label_update_complete)
+
+    def _label_update_complete(self, report: dict[str, object]) -> None:
+        self._refresh_candidates()
+        self._select_slug(str(report.get("artistSlug") or self.current_slug))
+        summary = report.get("labelSummary") if isinstance(report.get("labelSummary"), dict) else {}
+        self._set_status(f"LABEL LIBRARY UPDATED — {int(summary.get('discoveryTracksSelected') or 0)} TRACKS SELECTED — LOCKS PRESERVED", SUCCESS)
 
     def _start_preview(self) -> None:
         if self.busy or not self.current_slug:
@@ -977,6 +1148,10 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         elif not enabled:
             self.preview_button.configure(state="disabled")
             self.publish_button.configure(state="disabled")
+            self.reshuffle_label_button.configure(state="disabled")
+            self.view_selected_button.configure(state="disabled")
+            self.view_catalogue_button.configure(state="disabled")
+            self.refresh_label_button.configure(state="disabled")
 
     def _set_status(self, text: str, colour: str) -> None:
         self.status.configure(text=text, fg=colour)

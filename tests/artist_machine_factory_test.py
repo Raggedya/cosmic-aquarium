@@ -12,6 +12,7 @@ from PIL import Image
 SCRIPTS = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS))
 import artist_machine_factory as factory
+import bandcamp_label
 
 
 def playable_track(index: int = 1) -> dict:
@@ -24,6 +25,26 @@ def playable_track(index: int = 1) -> dict:
         "bandcampEmbedTrackId": str(1000 + index),
         "sourcePage": "https://test-band.bandcamp.com/album/test-release",
         "artworkUrl": "https://f4.bcbits.com/img/test.jpg",
+    }
+
+
+def label_track(artist: str, index: int, title: str | None = None) -> dict:
+    key = factory.slugify(artist)
+    return {
+        **playable_track(index),
+        "id": f"{key}-{1000 + index}",
+        "artist": artist,
+        "title": title or f"Song {index}",
+        "albumTitle": f"Release {index // 4}",
+        "releaseTitle": f"Release {index // 4}",
+        "bandcampUrl": f"https://test-label.bandcamp.com/track/song-{index}",
+        "trackUrl": f"https://test-label.bandcamp.com/track/song-{index}",
+        "releaseUrl": f"https://test-label.bandcamp.com/album/release-{index // 4}",
+        "sourcePage": f"https://test-label.bandcamp.com/album/release-{index // 4}",
+        "labelName": "Test Label",
+        "labelUrl": "https://test-label.bandcamp.com/",
+        "isLocked": False,
+        "isSelected": False,
     }
 
 
@@ -66,6 +87,7 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             patch.object(factory, "SKIN_CONTRACT", self.contract),
             patch.object(factory, "BASE_JUKEBOX", self.base_jukebox),
             patch.object(factory, "DEFAULT_ARTIST_JUKEBOX", self.default_jukebox),
+            patch.object(factory, "detect_bandcamp_mode", return_value={"mode": "artist"}),
         ]
         for item in self.patches:
             item.start()
@@ -220,6 +242,99 @@ class ArtistMachineFactoryTests(unittest.TestCase):
         validation = factory.validate_machine_config(config)
         self.assertFalse(validation["passed"])
         self.assertTrue(any("Duplicate" in error for error in validation["errors"]))
+
+    def test_label_prepare_saves_full_catalogue_but_builds_only_35_tracks(self):
+        tracks = [label_track(f"Artist {index % 20 + 1}", index) for index in range(1, 81)]
+        metadata = {
+            "labelName": "Test Label",
+            "labelUrl": "https://test-label.bandcamp.com/",
+            "bio": "A public label biography.",
+            "heroArtwork": tracks[0]["artworkUrl"],
+            "artistCount": 20,
+            "artists": [f"Artist {index}" for index in range(1, 21)],
+            "releaseCount": 20,
+            "eligibleTrackCount": 80,
+            "failedReleaseCount": 0,
+            "unattributedTrackCount": 0,
+            "duplicateTrackCount": 0,
+        }
+        factory.detect_bandcamp_mode.return_value = {"mode": "label"}
+        with patch.object(factory, "discover_label_catalogue", return_value=(tracks, metadata)):
+            report = factory.prepare(self.make_intake(include_skin=False, include_reference=False), replace=False)
+        config = json.loads((self.candidates / "test-band" / "machine.json").read_text(encoding="utf-8"))
+        saved = json.loads((self.candidates / "test-band" / "label-catalogue.json").read_text(encoding="utf-8"))
+        self.assertEqual(report["catalogueKind"], "label")
+        self.assertEqual(config["artistName"], "Test Label")
+        self.assertEqual(len(config["songs"]), 35)
+        self.assertEqual(len(saved["tracks"]), 80)
+        self.assertEqual(len({track["artist"] for track in config["songs"]}), 20)
+
+    def test_label_selection_and_locks_persist_across_reshuffles(self):
+        tracks = [label_track(f"Artist {index % 12 + 1}", index) for index in range(1, 61)]
+        selected = bandcamp_label.artist_balanced_selection(tracks, 35)
+        selected_ids = {track["id"] for track in selected}
+        locked_id = selected[0]["id"]
+        for track in tracks:
+            track["isSelected"] = track["id"] in selected_ids
+            track["isLocked"] = track["id"] == locked_id
+        paths = factory.candidate_paths("test-label")
+        paths["root"].mkdir(parents=True)
+        config = {
+            "machineMode": "artist", "catalogueKind": "label", "artistSlug": "test-label",
+            "artistName": "Test Label", "labelName": "Test Label", "labelUrl": "https://test-label.bandcamp.com/",
+            "bandcampArtistUrl": "https://test-label.bandcamp.com/", "songs": selected,
+        }
+        factory.write_json_atomic(paths["config"], config)
+        factory.write_json_atomic(paths["labelCatalogue"], {"tracks": tracks, "summary": {}})
+        factory.write_json_atomic(paths["report"], {"artistSlug": "test-label", "catalogue": {}})
+        factory.write_json_atomic(paths["status"], {"status": "ready_for_approval"})
+        self.make_image("candidate-skin.jpg").replace(paths["skin"].with_suffix(".jpg"))
+        factory.reshuffle_label_selection("test-label")
+        reloaded = factory.label_catalogue("test-label")["tracks"]
+        locked = next(track for track in reloaded if track["id"] == locked_id)
+        self.assertTrue(locked["isLocked"])
+        self.assertTrue(locked["isSelected"])
+        self.assertEqual(sum(bool(track["isSelected"]) for track in reloaded), 35)
+
+
+class BandcampLabelSelectionTests(unittest.TestCase):
+    def test_many_artists_prefers_one_track_per_artist(self):
+        tracks = [label_track(f"Artist {artist}", artist * 10 + song) for artist in range(1, 43) for song in range(2)]
+        selected = bandcamp_label.artist_balanced_selection(tracks, 35, rng=__import__("random").Random(7))
+        self.assertEqual(len(selected), 35)
+        self.assertEqual(len({track["artist"] for track in selected}), 35)
+
+    def test_twenty_artists_receive_coverage_before_second_tracks(self):
+        tracks = [label_track(f"Artist {artist}", artist * 10 + song) for artist in range(1, 21) for song in range(4)]
+        selected = bandcamp_label.artist_balanced_selection(tracks, 35, rng=__import__("random").Random(3))
+        counts = {artist: sum(track["artist"] == artist for track in selected) for artist in {track["artist"] for track in tracks}}
+        self.assertEqual(len(selected), 35)
+        self.assertTrue(all(count >= 1 for count in counts.values()))
+        self.assertLessEqual(max(counts.values()) - min(counts.values()), 1)
+
+    def test_fewer_than_35_tracks_uses_every_valid_track(self):
+        tracks = [label_track(f"Artist {index % 5}", index) for index in range(1, 25)]
+        selected = bandcamp_label.artist_balanced_selection(tracks, 35, rng=__import__("random").Random(2))
+        self.assertEqual({track["id"] for track in selected}, {track["id"] for track in tracks})
+
+    def test_duplicate_reissues_are_removed_but_distinct_versions_survive(self):
+        original = label_track("Artist A", 1, "Hidden Song")
+        reissue = label_track("Artist A", 2, "Hidden Song (2024 Remastered)")
+        live = label_track("Artist A", 3, "Hidden Song (Live)")
+        unique, excluded = bandcamp_label.deduplicate_label_tracks([original, reissue, live])
+        self.assertEqual(excluded, 1)
+        self.assertEqual({track["id"] for track in unique}, {original["id"], live["id"]})
+
+    def test_compilation_tracks_use_real_attribution_or_remain_uninvented(self):
+        self.assertEqual(bandcamp_label.compilation_artist_and_title(None, "Various Artists", "The Mark of Cain - Interloper"), ("The Mark of Cain", "Interloper"))
+        self.assertEqual(bandcamp_label.compilation_artist_and_title(None, "Various Artists", "Unattributed title"), ("", "Unattributed title"))
+
+    def test_one_large_artist_cannot_hide_small_catalogue_artists(self):
+        tracks = [label_track("Large Artist", index) for index in range(1, 101)]
+        tracks.extend(label_track(f"Small Artist {index}", 200 + index) for index in range(1, 5))
+        selected = bandcamp_label.artist_balanced_selection(tracks, 35, rng=__import__("random").Random(1))
+        represented = {track["artist"] for track in selected}
+        self.assertTrue({f"Small Artist {index}" for index in range(1, 5)}.issubset(represented))
 
 
 if __name__ == "__main__":

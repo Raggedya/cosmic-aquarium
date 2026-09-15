@@ -82,12 +82,34 @@ test('Artist Mode retains one mechanical stop and the shared four-second winner 
   assert.match(runtime,/const WINNER_SPLASH_DURATION_MS=4000/);
   assert.match(runtime,/\[2350\]/);
   assert.match(runtime,/onStop:reelThunk/);
-  assert.match(runtime,/presentWinner\(isSingleReelMode\?prepared\.track\.title/);
+  assert.match(runtime,/presentWinner\(winnerHeading,winnerDetail,prepared\.track\)/);
   assert.match(css,/data-machine-mode="artist"[^}]*\.reel-bank/);
   assert.match(css,/data-machine-mode="artist"[^}]*\.reel-strip>\*/);
   assert.match(css,/grid-template-rows:repeat\(3,1fr\)/);
   assert.match(css,/data-machine-mode="artist"[^}]*\.winner-splash-copy\{left:13%;right:13%\}/);
   assert.match(css,/data-artist-skin="workfriend-western"/);
+});
+
+test('Bandcamp Label Mode reuses Artist Mode while preserving per-track identity and commerce',async()=>{
+  const [runtime,build,dashboard,factory]=await Promise.all([
+    read('github-pages/assets/discovery-machine.js'),
+    read('scripts/build-github-pages.mjs'),
+    read('desktop/artist_machine_factory_dashboard.py'),
+    read('scripts/artist_machine_factory.py'),
+  ]);
+  assert.match(runtime,/isLabelMode=!isFestivalMode&&artistConfig\?\.catalogueKind==='label'/);
+  assert.match(runtime,/isLabelMode\?\(entry\?\.artist\|\|'LABEL ARTIST'\)/);
+  assert.match(runtime,/track\?\.artistBandcampUrl/);
+  assert.match(runtime,/isLabelMode\?\(validBandcampUrl\(track\?\.bandcampUrl\)/);
+  assert.match(runtime,/winnerHeading=isLabelMode\?revealedArtist/);
+  assert.match(runtime,/catalogueKind:isLabelMode\?'label'/);
+  assert.match(build,/invalid_label_machine_config/);
+  assert.match(build,/Label discovery catalogue/);
+  assert.match(dashboard,/RESHUFFLE 35 TRACKS/);
+  assert.match(dashboard,/VIEW FULL CATALOGUE/);
+  assert.match(dashboard,/REFRESH LABEL CATALOGUE/);
+  assert.match(factory,/label-catalogue\.json/);
+  assert.match(factory,/def refresh_label_catalogue/);
 });
 
 test('artist-specific cabinet artwork is applied from validated configuration with a safe fallback',async()=>{

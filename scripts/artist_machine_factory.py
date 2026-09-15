@@ -17,6 +17,7 @@ from typing import Any
 from create_artist import artist_store_url, slugify, validate_bandcamp_url
 from create_artist_machine import discover_complete_catalogue
 from artist_machine_media import render_artist_media
+from bandcamp_label import LABEL_TRACK_LIMIT, artist_balanced_selection, detect_bandcamp_mode, discover_label_catalogue
 
 ROOT = Path(__file__).resolve().parents[1]
 FACTORY = ROOT / "automation" / "artist-machine-factory"
@@ -379,7 +380,8 @@ def normalise_intake(value: dict[str, Any], intake_path: Path) -> dict[str, Any]
     slug = slugify(supplied_slug or name)
     if supplied_slug and supplied_slug != slug:
         raise FactoryError("artist.slug must contain lowercase letters, numbers and single hyphens only")
-    bandcamp = artist_store_url(validate_bandcamp_url(clean_text(artist.get("bandcampUrl"), 500, "artist.bandcampUrl", True)))
+    bandcamp_source = validate_bandcamp_url(clean_text(artist.get("bandcampUrl"), 500, "artist.bandcampUrl", True))
+    bandcamp = artist_store_url(bandcamp_source)
     if not bandcamp:
         raise FactoryError("artist.bandcampUrl must be an artist-owned Bandcamp address")
     ticker = editorial.get("tickerCopy") or []
@@ -401,6 +403,7 @@ def normalise_intake(value: dict[str, Any], intake_path: Path) -> dict[str, Any]
         "artistName": name,
         "artistSlug": slug,
         "bandcampArtistUrl": bandcamp,
+        "bandcampSourceUrl": bandcamp_source,
         "city": clean_text(artist.get("city"), 100, "artist.city"),
         "bio": clean_text(editorial.get("bio"), 4000, "editorial.bio"),
         "tickerCopy": ticker,
@@ -457,6 +460,19 @@ def validate_machine_config(config: dict[str, Any], skin_path: Path | None = Non
     except ValueError:
         errors.append("bandcampArtistUrl is invalid")
     errors.extend(track_errors(config))
+    if config.get("catalogueKind") == "label":
+        songs = list(config.get("songs") or [])
+        if len(songs) > LABEL_TRACK_LIMIT:
+            errors.append(f"Label machines may contain no more than {LABEL_TRACK_LIMIT} songs")
+        if not clean_text(config.get("labelName"), 100, "labelName"):
+            errors.append("labelName is missing")
+        try:
+            validate_bandcamp_url(str(config.get("labelUrl") or ""))
+        except ValueError:
+            errors.append("labelUrl is invalid")
+        artists = {str(song.get("artist") or "").strip().casefold() for song in songs if str(song.get("artist") or "").strip()}
+        if len(artists) < 2:
+            errors.append("A label machine must contain reliably attributed tracks from multiple artists")
     skin = None
     if skin_path:
         try:
@@ -504,6 +520,7 @@ def paths_for_candidate_root(root: Path) -> dict[str, Path]:
         "reference": root / "reference",
         "skin": root / "cabinet-skin",
         "brief": root / "skin-brief.json",
+        "labelCatalogue": root / "label-catalogue.json",
     }
 
 
@@ -531,7 +548,37 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
     try:
         reference_path = copy_named_image(intake["referencePath"], paths["reference"]) if intake["referencePath"] else None
         reference_audit = validate_artwork(reference_path, cabinet_skin=False) if reference_path else None
-        tracks, metadata = discover_complete_catalogue(intake["bandcampArtistUrl"], intake["artistName"])
+        detection = detect_bandcamp_mode(intake["bandcampSourceUrl"])
+        catalogue_kind = "label" if detection.get("mode") == "label" else "artist"
+        full_label_catalogue: list[dict[str, Any]] = []
+        if catalogue_kind == "label":
+            full_label_catalogue, label_metadata = discover_label_catalogue(intake["bandcampSourceUrl"], detection=detection)
+            tracks = artist_balanced_selection(full_label_catalogue, LABEL_TRACK_LIMIT)
+            selected_ids = {str(track.get("id")) for track in tracks}
+            for track in full_label_catalogue:
+                track["isSelected"] = str(track.get("id")) in selected_ids
+                track["isLocked"] = False
+            machine_name = str(label_metadata["labelName"])
+            metadata = {
+                "source": label_metadata["labelUrl"],
+                "bio": label_metadata.get("bio"),
+                "heroArtwork": label_metadata.get("heroArtwork"),
+                "location": None,
+                "label": label_metadata,
+                "catalogueAudit": {
+                    "releasePageCount": label_metadata["releaseCount"],
+                    "candidateTrackCount": label_metadata["eligibleTrackCount"] + label_metadata["duplicateTrackCount"],
+                    "playableTrackCount": label_metadata["eligibleTrackCount"],
+                    "excluded": {
+                        "duplicateTrack": label_metadata["duplicateTrackCount"],
+                        "unattributedTrack": label_metadata["unattributedTrackCount"],
+                        "failedReleasePage": label_metadata["failedReleaseCount"],
+                    },
+                },
+            }
+        else:
+            tracks, metadata = discover_complete_catalogue(intake["bandcampArtistUrl"], intake["artistName"])
+            machine_name = intake["artistName"]
         if intake["skinPath"]:
             skin_path = copy_named_image(intake["skinPath"], paths["skin"])
             skin_generation = {
@@ -553,9 +600,10 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
         config = {
             "machineMode": "artist",
             "artistSlug": intake["artistSlug"],
-            "artistName": intake["artistName"],
+            "artistName": machine_name,
+            "catalogueKind": catalogue_kind,
             "city": intake["city"] or metadata.get("location") or None,
-            "bandcampArtistUrl": intake["bandcampArtistUrl"],
+            "bandcampArtistUrl": str(metadata.get("source") or intake["bandcampArtistUrl"]),
             "songs": tracks,
             "bio": intake["bio"] or metadata.get("bio") or None,
             "tickerCopy": intake["tickerCopy"],
@@ -568,6 +616,16 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
                 "engineVersion": ENGINE_VERSION,
             },
         }
+        if catalogue_kind == "label":
+            label_metadata = metadata["label"]
+            config.update({
+                "labelName": label_metadata["labelName"],
+                "labelUrl": label_metadata["labelUrl"],
+                "artistCount": label_metadata["artistCount"],
+                "releaseCount": label_metadata["releaseCount"],
+                "eligibleTrackCount": label_metadata["eligibleTrackCount"],
+                "selectionLimit": LABEL_TRACK_LIMIT,
+            })
         validation = validate_machine_config(config, skin_path)
         spin_audit = run_spin_audit(config)
         ready = validation["passed"] and spin_audit["passed"]
@@ -577,7 +635,9 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
             "schemaVersion": 1,
             "engineVersion": ENGINE_VERSION,
             "artistSlug": intake["artistSlug"],
-            "artistName": intake["artistName"],
+            "artistName": machine_name,
+            "detectedMode": detection.get("mode"),
+            "catalogueKind": catalogue_kind,
             "status": status,
             "createdAt": now,
             "catalogue": {
@@ -595,6 +655,24 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
             "previewUrlAfterApproval": PUBLIC_BASE_URL + intake["artistSlug"] + "/",
             "deliveryEmail": intake["deliveryEmail"] or None,
         }
+        if catalogue_kind == "label":
+            label_metadata = metadata["label"]
+            available = int(label_metadata["eligibleTrackCount"])
+            report["labelSummary"] = {
+                "labelName": label_metadata["labelName"],
+                "labelUrl": label_metadata["labelUrl"],
+                "artistsFound": label_metadata["artistCount"],
+                "releasesFound": label_metadata["releaseCount"],
+                "eligibleTracksFound": available,
+                "discoveryTracksSelected": len(tracks),
+                "availabilityMessage": (
+                    f"{available} OF {LABEL_TRACK_LIMIT} TRACKS AVAILABLE — FULL LABEL CATALOGUE USED."
+                    if available < LABEL_TRACK_LIMIT
+                    else f"{LABEL_TRACK_LIMIT} ARTIST-BALANCED DISCOVERY TRACKS SELECTED."
+                ),
+                "unattributedTrackCount": label_metadata["unattributedTrackCount"],
+                "failedReleaseCount": label_metadata["failedReleaseCount"],
+            }
         contract = load_json(SKIN_CONTRACT)
         brief = {
             "schemaVersion": 1,
@@ -614,6 +692,16 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
         write_json_atomic(paths["status"], {"status": status, "updatedAt": now, "approved": False})
         write_json_atomic(paths["report"], report)
         write_json_atomic(paths["brief"], brief)
+        if catalogue_kind == "label":
+            write_json_atomic(paths["labelCatalogue"], {
+                "schemaVersion": 1,
+                "catalogueKind": "label",
+                "labelName": metadata["label"]["labelName"],
+                "labelUrl": metadata["label"]["labelUrl"],
+                "discoveredAt": now,
+                "summary": report["labelSummary"],
+                "tracks": full_label_catalogue,
+            })
         if backup_root.exists():
             shutil.rmtree(backup_root)
         if target_paths["root"].exists():
@@ -783,7 +871,10 @@ def build_preview(slug: str, output: Path | None = None) -> dict[str, Any]:
         "schemaVersion": 1,
         "slug": f"artist-machine-{slug}",
         "artist": config["artistName"],
-        "releaseTitle": "Bandcamp catalogue",
+        "catalogueKind": config.get("catalogueKind", "artist"),
+        "labelName": config.get("labelName"),
+        "labelUrl": config.get("labelUrl"),
+        "releaseTitle": "Label discovery catalogue" if config.get("catalogueKind") == "label" else "Bandcamp catalogue",
         "bandcampUrl": config["bandcampArtistUrl"],
         "commerceAvailable": True,
         "commerceUrl": config["bandcampArtistUrl"],
@@ -878,6 +969,175 @@ def approve(slug: str, approved_by: str, skip_quality_commands: bool) -> dict[st
     report.update({"status": "approved", "approvedAt": approved_at, "approvedBy": approved_by, "publicUrl": PUBLIC_BASE_URL + slug + "/"})
     write_json_atomic(paths["report"], report)
     return report
+
+
+def _label_state(slug: str) -> tuple[dict[str, Path], dict[str, Any], dict[str, Any]]:
+    slug = slugify(slug)
+    paths = candidate_paths(slug)
+    config = load_json(paths["config"])
+    if config.get("catalogueKind") != "label" or not paths["labelCatalogue"].is_file():
+        raise FactoryError(f"Candidate {slug} is not a Bandcamp label machine")
+    catalogue = load_json(paths["labelCatalogue"])
+    if not isinstance(catalogue.get("tracks"), list):
+        raise FactoryError(f"Candidate {slug} has no saved label catalogue")
+    return paths, config, catalogue
+
+
+def _persist_label_state(
+    slug: str,
+    paths: dict[str, Path],
+    config: dict[str, Any],
+    catalogue: dict[str, Any],
+) -> dict[str, Any]:
+    tracks = list(catalogue.get("tracks") or [])
+    selected = [dict(track) for track in tracks if track.get("isSelected")]
+    if len(selected) > LABEL_TRACK_LIMIT:
+        raise FactoryError(f"Select no more than {LABEL_TRACK_LIMIT} label tracks")
+    config["songs"] = selected
+    config["songCount"] = len(selected)
+    config["artistCount"] = len({str(track.get("artist") or "").strip().casefold() for track in tracks if str(track.get("artist") or "").strip()})
+    config["releaseCount"] = int(config.get("releaseCount") or len({str(track.get("releaseUrl") or track.get("sourcePage") or "") for track in tracks}))
+    config["eligibleTrackCount"] = len(tracks)
+    skin_path = find_candidate_image(slug, "cabinet-skin")
+    validation = validate_machine_config(config, skin_path)
+    spin_audit = run_spin_audit(config)
+    ready = validation["passed"] and spin_audit["passed"]
+    status = "ready_for_approval" if ready else "blocked"
+    now = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    summary = dict(catalogue.get("summary") or {})
+    summary.update({
+        "labelName": config.get("labelName"),
+        "labelUrl": config.get("labelUrl"),
+        "artistsFound": config["artistCount"],
+        "releasesFound": config["releaseCount"],
+        "eligibleTracksFound": len(tracks),
+        "discoveryTracksSelected": len(selected),
+        "lockedTracks": sum(1 for track in tracks if track.get("isLocked")),
+        "availabilityMessage": (
+            f"{len(tracks)} OF {LABEL_TRACK_LIMIT} TRACKS AVAILABLE — FULL LABEL CATALOGUE USED."
+            if len(tracks) < LABEL_TRACK_LIMIT
+            else f"{len(selected)} ARTIST-BALANCED DISCOVERY TRACKS SELECTED."
+        ),
+    })
+    catalogue["summary"] = summary
+    catalogue["updatedAt"] = now
+    report = load_json(paths["report"])
+    report.update({
+        "status": status,
+        "updatedAt": now,
+        "labelSummary": summary,
+        "configuration": validation,
+        "thirtySpinAudit": spin_audit,
+    })
+    report.setdefault("catalogue", {})["playableSongCount"] = len(selected)
+    write_json_atomic(paths["config"], config)
+    write_json_atomic(paths["labelCatalogue"], catalogue)
+    write_json_atomic(paths["report"], report)
+    write_json_atomic(paths["status"], {"status": status, "updatedAt": now, "approved": False})
+    return report
+
+
+def label_catalogue(slug: str) -> dict[str, Any]:
+    _, _, catalogue = _label_state(slug)
+    return catalogue
+
+
+def reshuffle_label_selection(slug: str) -> dict[str, Any]:
+    paths, config, catalogue = _label_state(slug)
+    tracks = list(catalogue["tracks"])
+    locked_ids = {str(track.get("id")) for track in tracks if track.get("isLocked")}
+    selected = artist_balanced_selection(tracks, LABEL_TRACK_LIMIT, locked_ids=locked_ids)
+    selected_ids = {str(track.get("id")) for track in selected}
+    for track in tracks:
+        track["isSelected"] = str(track.get("id")) in selected_ids
+        track["isLocked"] = str(track.get("id")) in locked_ids
+    catalogue["tracks"] = tracks
+    return _persist_label_state(slug, paths, config, catalogue)
+
+
+def set_label_track_lock(slug: str, track_id: str, locked: bool | None = None) -> dict[str, Any]:
+    paths, config, catalogue = _label_state(slug)
+    match = next((track for track in catalogue["tracks"] if str(track.get("id")) == str(track_id)), None)
+    if not match:
+        raise FactoryError("That label track no longer exists in the saved catalogue")
+    next_value = not bool(match.get("isLocked")) if locked is None else bool(locked)
+    if next_value:
+        if not match.get("isSelected") and sum(1 for track in catalogue["tracks"] if track.get("isSelected")) >= LABEL_TRACK_LIMIT:
+            raise FactoryError(f"The selection already contains {LABEL_TRACK_LIMIT} tracks; remove or replace one before locking this track")
+        match["isSelected"] = True
+    match["isLocked"] = next_value
+    return _persist_label_state(slug, paths, config, catalogue)
+
+
+def set_label_track_included(slug: str, track_id: str, included: bool | None = None) -> dict[str, Any]:
+    paths, config, catalogue = _label_state(slug)
+    match = next((track for track in catalogue["tracks"] if str(track.get("id")) == str(track_id)), None)
+    if not match:
+        raise FactoryError("That label track no longer exists in the saved catalogue")
+    next_value = not bool(match.get("isSelected")) if included is None else bool(included)
+    if next_value and sum(1 for track in catalogue["tracks"] if track.get("isSelected")) >= LABEL_TRACK_LIMIT:
+        raise FactoryError(f"The selection already contains {LABEL_TRACK_LIMIT} tracks; remove or replace one first")
+    match["isSelected"] = next_value
+    if not next_value:
+        match["isLocked"] = False
+    return _persist_label_state(slug, paths, config, catalogue)
+
+
+def replace_label_track(slug: str, track_id: str) -> dict[str, Any]:
+    paths, config, catalogue = _label_state(slug)
+    tracks = list(catalogue["tracks"])
+    match = next((track for track in tracks if str(track.get("id")) == str(track_id)), None)
+    if not match or not match.get("isSelected"):
+        raise FactoryError("Select an included track to replace")
+    if match.get("isLocked"):
+        raise FactoryError("Unlock this track before replacing it")
+    actual_locks = {str(track.get("id")) for track in tracks if track.get("isLocked")}
+    retained = {str(track.get("id")) for track in tracks if track.get("isSelected") and str(track.get("id")) != str(track_id)}
+    temporary_locks = actual_locks | retained
+    available = [track for track in tracks if str(track.get("id")) != str(track_id)]
+    selected = artist_balanced_selection(available, min(LABEL_TRACK_LIMIT, len(available)), locked_ids=temporary_locks)
+    selected_ids = {str(track.get("id")) for track in selected}
+    for track in tracks:
+        track["isSelected"] = str(track.get("id")) in selected_ids
+        track["isLocked"] = str(track.get("id")) in actual_locks
+    catalogue["tracks"] = tracks
+    return _persist_label_state(slug, paths, config, catalogue)
+
+
+def refresh_label_catalogue(slug: str) -> dict[str, Any]:
+    paths, config, catalogue = _label_state(slug)
+    old_tracks = list(catalogue["tracks"])
+    locked_ids = {str(track.get("id")) for track in old_tracks if track.get("isLocked")}
+    fresh_tracks, metadata = discover_label_catalogue(str(config.get("labelUrl") or config.get("bandcampArtistUrl")))
+    surviving_locks = locked_ids & {str(track.get("id")) for track in fresh_tracks}
+    selected = artist_balanced_selection(fresh_tracks, LABEL_TRACK_LIMIT, locked_ids=surviving_locks)
+    selected_ids = {str(track.get("id")) for track in selected}
+    for track in fresh_tracks:
+        track["isSelected"] = str(track.get("id")) in selected_ids
+        track["isLocked"] = str(track.get("id")) in surviving_locks
+    config.update({
+        "artistName": metadata["labelName"],
+        "labelName": metadata["labelName"],
+        "labelUrl": metadata["labelUrl"],
+        "bandcampArtistUrl": metadata["labelUrl"],
+        "heroArtwork": metadata.get("heroArtwork"),
+        "artistCount": metadata["artistCount"],
+        "releaseCount": metadata["releaseCount"],
+        "eligibleTrackCount": metadata["eligibleTrackCount"],
+    })
+    now = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    catalogue.update({
+        "labelName": metadata["labelName"],
+        "labelUrl": metadata["labelUrl"],
+        "discoveredAt": now,
+        "tracks": fresh_tracks,
+        "summary": {
+            "unattributedTrackCount": metadata["unattributedTrackCount"],
+            "failedReleaseCount": metadata["failedReleaseCount"],
+            "removedLockedTracks": len(locked_ids - surviving_locks),
+        },
+    })
+    return _persist_label_state(slug, paths, config, catalogue)
 
 
 def print_result(value: dict[str, Any]) -> None:

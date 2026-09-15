@@ -9,7 +9,7 @@ a = Analysis(
     datas=[
         (str(root / "automation" / "artist-machine-factory" / "skin-contract.json"), "automation/artist-machine-factory"),
     ],
-    hiddenimports=["artist_machine_factory", "create_artist_machine", "create_artist", "qr_artwork"],
+    hiddenimports=["artist_machine_factory", "bandcamp_label", "create_artist_machine", "create_artist", "qr_artwork"],
     hookspath=[],
     runtime_hooks=[],
     excludes=[],

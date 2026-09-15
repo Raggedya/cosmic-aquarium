@@ -34,19 +34,29 @@ class BandcampPageParser(HTMLParser):
         super().__init__()
         self.tralbum: list[dict[str, Any]] = []
         self.album_links: set[str] = set()
+        self.client_items: list[dict[str, Any]] = []
         self.has_merch_link = False
         self.og: dict[str, str] = {}
         self.json_ld: list[Any] = []
         self.tags: list[str] = []
+        self.page_title = ""
         self._capture_tag = False
         self._capture_json_ld = False
         self._json_ld_parts: list[str] = []
+        self._capture_title = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         values = dict(attrs)
         if "data-tralbum" in values and values["data-tralbum"]:
             try:
                 self.tralbum.append(json.loads(html.unescape(values["data-tralbum"] or "")))
+            except (json.JSONDecodeError, TypeError):
+                pass
+        if "data-client-items" in values and values["data-client-items"]:
+            try:
+                items = json.loads(html.unescape(values["data-client-items"] or ""))
+                if isinstance(items, list):
+                    self.client_items.extend(item for item in items if isinstance(item, dict))
             except (json.JSONDecodeError, TypeError):
                 pass
         href = values.get("href") or ""
@@ -62,6 +72,8 @@ class BandcampPageParser(HTMLParser):
         if tag == "script" and values.get("type", "").lower() == "application/ld+json":
             self._capture_json_ld = True
             self._json_ld_parts = []
+        if tag == "title":
+            self._capture_title = True
 
     def handle_data(self, data: str) -> None:
         if self._capture_tag:
@@ -70,6 +82,8 @@ class BandcampPageParser(HTMLParser):
                 self.tags.append(value)
         if self._capture_json_ld:
             self._json_ld_parts.append(data)
+        if self._capture_title:
+            self.page_title += data
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "a":
@@ -81,6 +95,9 @@ class BandcampPageParser(HTMLParser):
                 pass
             self._capture_json_ld = False
             self._json_ld_parts = []
+        if tag == "title":
+            self._capture_title = False
+            self.page_title = " ".join(self.page_title.split()).strip()
 
 
 def slugify(value: str) -> str:

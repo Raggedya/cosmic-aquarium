@@ -171,7 +171,7 @@ test('a matching artist raises the physical winner nameplate with the short warm
   assert.match(template,/class="winner-splash"/);
   assert.match(template,/winner-splash-frame\.png/);
   assert.match(template,/data-winner-name/);
-  assert.match(runtime,/presentWinner\(isSingleReelMode\?prepared\.track\.title:artistName\(winner\)/);
+  assert.match(runtime,/presentWinner\(winnerHeading,winnerDetail,prepared\.track\)/);
   assert.match(runtime,/winner-tonal-bloom-mixkit-3109\.mp3/);
   assert.match(runtime,/winnerAudioTimer=setTimeout\([\s\S]*?,1450\)/);
   assert.match(css,/@keyframes winnerSplashRise/);
