@@ -10,12 +10,14 @@ const template = await fs.readFile(path.join(root,'templates','artist-index.html
 const universeTemplate = await fs.readFile(path.join(root,'templates','universe-index.html'),'utf8');
 const artistMachineTemplate = await fs.readFile(path.join(root,'templates','artist-machine.html'),'utf8');
 const tourismMachineTemplate = await fs.readFile(path.join(root,'templates','tourism-machine.html'),'utf8');
+const spotifyMachineTemplate = await fs.readFile(path.join(root,'templates','spotify-machine.html'),'utf8');
 const collectionTemplate = await fs.readFile(path.join(root,'templates','collection-index.html'),'utf8');
 const css = await fs.readFile(path.join(root,'app','cosmic-aquarium.css'),'utf8');
 const doorwayCss = await fs.readFile(path.join(root,'app','doorway.css'),'utf8');
 const collectionCss = await fs.readFile(path.join(root,'app','collection-aquarium.css'),'utf8');
 const discoveryCss = await fs.readFile(path.join(root,'app','discovery-machine.css'),'utf8');
 const tourismCss = await fs.readFile(path.join(root,'app','tourism-machine.css'),'utf8');
+const spotifyCss = await fs.readFile(path.join(root,'app','spotify-machine.css'),'utf8');
 const staticScript = await fs.readFile(path.join(pages,'assets','site.js'),'utf8');
 const doorwayScript = await fs.readFile(path.join(pages,'assets','doorway.js'),'utf8');
 const collectionScript = await fs.readFile(path.join(pages,'assets','collection.js'),'utf8');
@@ -25,6 +27,8 @@ const machineMechanicsCore = await fs.readFile(path.join(pages,'assets','machine
 const singleReelEngine = await fs.readFile(path.join(pages,'assets','single-reel-engine.js'),'utf8');
 const tourismScript = await fs.readFile(path.join(pages,'assets','tourism-machine.js'),'utf8');
 const tourismCore = await fs.readFile(path.join(pages,'assets','tourism-machine-core.js'),'utf8');
+const spotifyScript = await fs.readFile(path.join(pages,'assets','spotify-machine.js'),'utf8');
+const spotifyDiscoveryData = JSON.parse(await fs.readFile(path.join(root,'data','spotify','artist-discovery.json'),'utf8'));
 const bendigoTourismData = JSON.parse(await fs.readFile(path.join(root,'data','tourism','bendigo.json'),'utf8'));
 const tourismMachines = [{slug:'bendigo',config:bendigoTourismData},...REGIONAL_TOURISM_MACHINES];
 const tourismCabinet = await fs.readFile(path.join(root,'public','tourism-machine','bendigo-tourism-cabinet-reference.jpg'));
@@ -70,7 +74,7 @@ const glassAudioImpacts = await Promise.all(glassAudioImpactNames.map((name) => 
 const minimumFlowerCount = 10;
 const maximumFlowerCount = 14;
 for(const machine of tourismMachines)validateTourismData(machine.config);
-const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore).update(machineMechanicsCore).update(singleReelEngine);
+const assetHash = createHash('sha256').update(css).update(staticScript).update(doorwayCss).update(doorwayScript).update(collectionCss).update(collectionScript).update(discoveryCss).update(discoveryScript).update(discoveryCore).update(machineMechanicsCore).update(singleReelEngine).update(spotifyCss).update(spotifyScript).update(JSON.stringify(spotifyDiscoveryData));
 doorwayAssets.forEach((asset) => assetHash.update(asset));
 discoveryFidelityAssets.forEach((asset) => assetHash.update(asset));
 musicMachineAssets.forEach((asset) => assetHash.update(asset));
@@ -95,6 +99,7 @@ await fs.mkdir(path.join(pages,'assets','audio','machine'),{recursive:true});
 await fs.mkdir(path.join(pages,'artists'),{recursive:true});
 await fs.mkdir(path.join(pages,'collections'),{recursive:true});
 await fs.mkdir(path.join(pages,'tourism'),{recursive:true});
+await fs.mkdir(path.join(pages,'spotify'),{recursive:true});
 await fs.mkdir(path.join(pages,'tourism-data'),{recursive:true});
 await fs.mkdir(path.join(root,'public','tourism'),{recursive:true});
 await fs.mkdir(path.join(root,'public','tourism-editions'),{recursive:true});
@@ -106,6 +111,7 @@ await fs.writeFile(path.join(pages,'assets','doorway.css'),reset+doorwayCss);
 await fs.writeFile(path.join(pages,'assets','collection.css'),reset+collectionCss);
 await fs.writeFile(path.join(pages,'assets','discovery-machine.css'),reset+discoveryCss);
 await fs.writeFile(path.join(pages,'assets','tourism-machine.css'),reset+tourismCss);
+await fs.writeFile(path.join(pages,'assets','spotify-machine.css'),spotifyCss);
 await fs.copyFile(path.join(root,'public','tourism-machine','bendigo-tourism-cabinet-reference.jpg'),path.join(pages,'assets','tourism-machine','bendigo-tourism-cabinet-reference.jpg'));
 for(const machine of tourismMachines)await fs.writeFile(path.join(pages,'tourism-data',`${machine.slug}.json`),JSON.stringify(machine.config,null,2)+'\n');
 await fs.writeFile(path.join(root,'public','assets','tourism-machine.css'),reset+tourismCss);
@@ -389,6 +395,8 @@ const universeStats={
 await fs.writeFile(path.join(pages,'universe-stats.json'),JSON.stringify(universeStats,null,2)+'\n');
 await fs.writeFile(path.join(pages,'index.html'),renderLanding());
 await fs.writeFile(path.join(pages,'tourism','index.html'),renderTourismMachine(tourismMachines[0].config));
+await fs.writeFile(path.join(pages,'spotify','index.html'),renderSpotifyMachine());
+await fs.writeFile(path.join(pages,'spotify','artist-discovery.json'),JSON.stringify(spotifyDiscoveryData,null,2)+'\n');
 await fs.writeFile(path.join(root,'public','tourism','index.html'),renderTourismMachine(tourismMachines[0].config,''));
 for(const machine of tourismMachines.slice(1)){
   const pagesDirectory=path.join(pages,'tourism',machine.slug),publicDirectory=path.join(root,'public','tourism-editions',machine.slug);
@@ -396,7 +404,7 @@ for(const machine of tourismMachines.slice(1)){
   await fs.writeFile(path.join(pagesDirectory,'index.html'),renderTourismMachine(machine.config));
   await fs.writeFile(path.join(publicDirectory,'index.html'),renderTourismMachine(machine.config,''));
 }
-console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s), '+artistMachineConfigs.length+' Artist Music Machine configuration(s), '+festivalMachineConfigs.length+' Festival Music Machine configuration(s), '+collectionRegistry.length+' collection(s), and '+tourismMachines.length+' tourism machine(s).');
+console.log('GitHub Pages shell refreshed for ' + artistManifestFiles.length + ' artist edition(s), '+artistMachineConfigs.length+' Artist Music Machine configuration(s), '+festivalMachineConfigs.length+' Festival Music Machine configuration(s), '+collectionRegistry.length+' collection(s), '+tourismMachines.length+' tourism machine(s), and the Spotify + Bandcamp proof of concept.');
 
 async function writeArtist(slug,artist){
   const directory=path.join(pages,slug);
@@ -458,6 +466,11 @@ function renderTourismMachine(config,base='/cosmic-aquarium'){
     .replaceAll('{{DESTINATION_UPPER}}',escapeHtml(destination.name.toUpperCase()))
     .replaceAll('{{REGION_UPPER}}',escapeHtml(String(destination.region||'Victoria').toUpperCase()))
     .replaceAll('{{SLOGAN_UPPER}}',escapeHtml(String(destination.slogan||'Explore more.').toUpperCase()));
+}
+function renderSpotifyMachine(){
+  return spotifyMachineTemplate
+    .replaceAll('{{BASE}}','/cosmic-aquarium')
+    .replaceAll('{{ASSET_VERSION}}',assetVersion);
 }
 function renderCollection(collection){
   return collectionTemplate.replaceAll('{{SLUG}}',escapeAttribute(collection.slug)).replaceAll('{{NAME}}',escapeHtml(String(collection.name).toUpperCase())).replaceAll('{{INSTRUCTION}}',escapeHtml(collection.instruction||'TOUCH AN ARTIST')).replaceAll('{{BASE}}','/cosmic-aquarium').replaceAll('{{ASSET_VERSION}}',assetVersion);

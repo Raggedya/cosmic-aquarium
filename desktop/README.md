@@ -52,7 +52,7 @@ Standard Mode presents one guided form for:
 - an optional colour / tone reference image; blank uses the standard red AGGITS skin
 - visual notes, approver and delivery details
 
-The dashboard keeps reference material, festival posters, projects and candidates in a private folder under the user profile. It maintains an isolated working copy of the repository and processes complete playable Bandcamp catalogues. With no reference image Standard Mode uses the standard red AGGITS jukebox skin unchanged. With a reference image it analyses the palette, light, contrast, texture and composition and transfers that visual character into a fresh skin while protecting the live controls. Both modes validate and preview privately before protected production workflows can deploy them.
+The dashboard keeps reference material, festival posters, projects and candidates in a private folder under the user profile. It maintains an isolated working copy of the repository and processes complete playable Bandcamp catalogues. With no reference image Standard Mode uses the standard red AGGITS jukebox skin unchanged. With a reference image it analyses the palette, light, contrast, texture and composition and transfers that visual character into a fresh skin while protecting the live controls. Standard and Festival modes validate and preview privately before protected production workflows can deploy them. The same executable also includes a `SPOTIFY + BANDCAMP` proof-of-concept mode: it opens the frozen-layout discovery jukebox, using the official Spotify player while keeping Bandcamp as a separate discovery and purchase action.
 
 Build the portable dashboard and its per-user Windows installer with:
 

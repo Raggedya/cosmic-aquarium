@@ -8,6 +8,8 @@ const EVENT_TYPES = new Set([
   'track_revealed','artist_selected','winner_revealed','track_love','track_play_started','track_play_paused',
   'home_click','sound_toggle','intro_shown','intro_open_started','intro_skipped','intro_open_completed',
   'artist_machine_request_opened','artist_machine_request_submitted',
+  'spotify_machine_loaded','lever_pull','panel_opened','spotify_embed_shown','spotify_player_interacted',
+  'open_spotify_clicked','bandcamp_clicked','spin_again_clicked','panel_closed',
 ]);
 const WATERS = new Set(['heavy','dreamy','electronic','quiet','loud','dark','strange']);
 
@@ -29,6 +31,9 @@ const EVENT_LABELS = {
   home_click:'Home clicks',sound_toggle:'Sound toggles',intro_shown:'Intro screens shown',
   intro_open_started:'Intro openings started',intro_skipped:'Intro screens skipped',intro_open_completed:'Intro openings completed',
   artist_machine_request_opened:'Artist machine request forms opened',artist_machine_request_submitted:'Artist machine requests submitted',
+  spotify_machine_loaded:'Spotify + Bandcamp machines opened',lever_pull:'Discovery levers pulled',
+  panel_opened:'Spotify panels opened',spotify_embed_shown:'Spotify embeds shown',spotify_player_interacted:'Spotify embeds interacted with',
+  open_spotify_clicked:'Open in Spotify clicks',bandcamp_clicked:'Spotify-machine Bandcamp clicks',spin_again_clicked:'Spotify-machine repeat spins',panel_closed:'Spotify panels closed',
 };
 
 const CORS = {
@@ -545,8 +550,8 @@ async function activityReport(env, endValue = Date.now()) {
     COUNT(DISTINCT CASE WHEN event_type='spin_started' THEN session_id END) AS spinners,
     COUNT(DISTINCT CASE WHEN event_type='winner_revealed' THEN session_id END) AS discoverers,
     COUNT(DISTINCT CASE WHEN event_type='aquarium_open' THEN session_id END) AS aquarium_visitors,
-    COUNT(DISTINCT CASE WHEN event_type IN ('object_touch','track_selected','track_play','track_play_started') THEN session_id END) AS listeners,
-    COUNT(DISTINCT CASE WHEN event_type='bandcamp_click' THEN session_id END) AS bandcamp_visitors,
+    COUNT(DISTINCT CASE WHEN event_type IN ('object_touch','track_selected','track_play','track_play_started','spotify_embed_shown','spotify_player_interacted') THEN session_id END) AS listeners,
+    COUNT(DISTINCT CASE WHEN event_type IN ('bandcamp_click','bandcamp_clicked') THEN session_id END) AS bandcamp_visitors,
     COUNT(DISTINCT CASE WHEN event_type='buy_click' THEN session_id END) AS buyers,
     COUNT(DISTINCT CASE WHEN event_type LIKE 'share_%' THEN session_id END) AS sharers
     FROM analytics_event WHERE created_at>=? AND created_at<?`)

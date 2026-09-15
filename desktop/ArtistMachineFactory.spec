@@ -9,8 +9,9 @@ a = Analysis(
     binaries=collect_dynamic_libs("onnxruntime"),
     datas=[
         (str(root / "automation" / "artist-machine-factory" / "skin-contract.json"), "automation/artist-machine-factory"),
+        (str(root / "data" / "spotify" / "artist-discovery.json"), "data/spotify"),
     ] + collect_data_files("rapidocr_onnxruntime") + collect_data_files("tkinterdnd2"),
-    hiddenimports=["artist_machine_factory", "bandcamp_label", "create_artist_machine", "create_artist", "qr_artwork", "festival_mode", "festival_projects", "festival_discovery_service", "create_festival_machine", "rapidocr_onnxruntime", "tkinterdnd2"],
+    hiddenimports=["artist_machine_factory", "bandcamp_label", "create_artist_machine", "create_artist", "qr_artwork", "festival_mode", "festival_projects", "festival_discovery_service", "create_festival_machine", "spotify_mode", "rapidocr_onnxruntime", "tkinterdnd2"],
     hookspath=[],
     runtime_hooks=[],
     excludes=[],

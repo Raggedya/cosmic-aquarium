@@ -49,7 +49,7 @@ test('public experiences preserve privacy-safe acquisition attribution', () => {
 });
 
 test('all live machine events are accepted by the reporting service', () => {
-  for (const event of ['artist_selected', 'spin_started', 'spin_completed', 'track_play_started', 'festival_machine_loaded', 'festival_website_click', 'artist_link_click']) {
+  for (const event of ['artist_selected', 'spin_started', 'spin_completed', 'track_play_started', 'festival_machine_loaded', 'festival_website_click', 'artist_link_click', 'spotify_machine_loaded', 'lever_pull', 'panel_opened', 'spotify_embed_shown', 'open_spotify_clicked', 'bandcamp_clicked', 'spin_again_clicked', 'panel_closed']) {
     assert.ok(worker.includes(`'${event}'`), `worker rejects ${event}`);
   }
 });

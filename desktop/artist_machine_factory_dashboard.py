@@ -31,6 +31,7 @@ if str(DESKTOP_ROOT) not in sys.path:
 
 import artist_machine_factory as factory  # noqa: E402
 from festival_mode import FestivalModeFrame  # noqa: E402
+from spotify_mode import SpotifyBandcampModeFrame  # noqa: E402
 
 
 REPOSITORY = "Raggedya/cosmic-aquarium"
@@ -389,11 +390,14 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self.standard_tab.pack(side="left", padx=(22, 4), pady=7)
         self.festival_tab = tk.Button(tabs, text="FESTIVAL MODE", command=lambda: self._show_primary_mode("festival"), bg="#3b2415", fg=CREAM, activebackground="#5a351e", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 10), padx=34, pady=11)
         self.festival_tab.pack(side="left", padx=4, pady=7)
+        self.spotify_tab = tk.Button(tabs, text="SPOTIFY + BANDCAMP", command=lambda: self._show_primary_mode("spotify"), bg="#3b2415", fg=CREAM, activebackground="#5a351e", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 10), padx=34, pady=11)
+        self.spotify_tab.pack(side="left", padx=4, pady=7)
 
         self.mode_container = tk.Frame(self, bg=INK)
         self.mode_container.pack(fill="both", expand=True)
         self.standard_surface = tk.Frame(self.mode_container, bg=INK)
         self.festival_surface = FestivalModeFrame(self.mode_container, self, self.data_root)
+        self.spotify_surface = SpotifyBandcampModeFrame(self.mode_container, self)
 
         body = tk.PanedWindow(self.standard_surface, orient="horizontal", bg=INK, sashwidth=8, sashrelief="flat", bd=0)
         body.pack(fill="both", expand=True, padx=22, pady=(20, 16))
@@ -416,15 +420,24 @@ class ArtistMachineFactoryDashboard(tk.Tk):
     def _show_primary_mode(self, mode: str) -> None:
         self.standard_surface.pack_forget()
         self.festival_surface.pack_forget()
+        self.spotify_surface.pack_forget()
         if mode == "festival":
             self.festival_surface.pack(fill="both", expand=True)
             self.standard_tab.configure(bg="#3b2415", fg=CREAM)
             self.festival_tab.configure(bg=BURGUNDY, fg=PAPER)
+            self.spotify_tab.configure(bg="#3b2415", fg=CREAM)
             self.connection.configure(text="PRIVATE FESTIVAL WORKSPACE")
+        elif mode == "spotify":
+            self.spotify_surface.pack(fill="both", expand=True)
+            self.standard_tab.configure(bg="#3b2415", fg=CREAM)
+            self.festival_tab.configure(bg="#3b2415", fg=CREAM)
+            self.spotify_tab.configure(bg=BURGUNDY, fg=PAPER)
+            self.connection.configure(text="SPOTIFY + BANDCAMP MACHINE")
         else:
             self.standard_surface.pack(fill="both", expand=True)
             self.standard_tab.configure(bg=BURGUNDY, fg=PAPER)
             self.festival_tab.configure(bg="#3b2415", fg=CREAM)
+            self.spotify_tab.configure(bg="#3b2415", fg=CREAM)
             self.connection.configure(text="PRIVATE DESKTOP WORKSPACE")
 
     def _build_form(self, parent: tk.Frame) -> None:
