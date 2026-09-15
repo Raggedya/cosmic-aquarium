@@ -47,6 +47,7 @@ const musicMachineAssetNames = (await fs.readdir(path.join(root,'public','music-
   .filter((name) => /\.(?:avif|jpe?g|png|webp)$/i.test(name))
   .sort();
 const musicMachineAssets = await Promise.all(musicMachineAssetNames.map((name) => fs.readFile(path.join(root,'public','music-machine',name))));
+const festivalMachineMediaDirectory=path.join(root,'public','festival-machine-media');
 const machineAudioNames = [
   'reel-actual-slotmachine-freesound-261346.mp3',
   'reel-ratchet-mixkit-2641.mp3',
@@ -87,6 +88,8 @@ await fs.mkdir(path.join(pages,'assets','doorway'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','discovery-fidelity'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','music-machine'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','artist-machines'),{recursive:true});
+await fs.rm(path.join(pages,'assets','festival-machines'),{recursive:true,force:true});
+await fs.mkdir(path.join(pages,'assets','festival-machines'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','tourism-machine'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','audio','glass','source'),{recursive:true});
 await fs.mkdir(path.join(pages,'assets','audio','machine'),{recursive:true});
@@ -127,6 +130,11 @@ for (const name of discoveryFidelityAssetNames) {
 }
 for (const name of musicMachineAssetNames) {
   await fs.copyFile(path.join(root,'public','music-machine',name),path.join(pages,'assets','music-machine',name));
+}
+try {
+  await fs.cp(festivalMachineMediaDirectory,path.join(pages,'assets','festival-machines'),{recursive:true});
+} catch (error) {
+  if (error?.code!=='ENOENT') throw error;
 }
 try {
   await fs.cp(path.join(root,'public','artist-machine-media'),path.join(pages,'assets','artist-machines'),{recursive:true,force:true});

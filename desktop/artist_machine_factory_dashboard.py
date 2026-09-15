@@ -25,8 +25,12 @@ SOURCE_ROOT = Path(__file__).resolve().parents[1]
 SCRIPTS_ROOT = SOURCE_ROOT / "scripts"
 if str(SCRIPTS_ROOT) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_ROOT))
+DESKTOP_ROOT = SOURCE_ROOT / "desktop"
+if str(DESKTOP_ROOT) not in sys.path:
+    sys.path.insert(0, str(DESKTOP_ROOT))
 
 import artist_machine_factory as factory  # noqa: E402
+from festival_mode import FestivalModeFrame  # noqa: E402
 
 
 REPOSITORY = "Raggedya/cosmic-aquarium"
@@ -318,6 +322,11 @@ class LabelCatalogueDialog(tk.Toplevel):
 class ArtistMachineFactoryDashboard(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
+        try:
+            from tkinterdnd2 import TkinterDnD
+            TkinterDnD._require(self)
+        except Exception:
+            pass
         self.title("AGGITS Artist Machine Factory")
         self.geometry("1240x840")
         self.minsize(1040, 720)
@@ -358,6 +367,9 @@ class ArtistMachineFactoryDashboard(tk.Tk):
             lightcolor=BRASS,
             darkcolor=BRASS,
         )
+        style.configure("Festival.Treeview", background="#0d0805", fieldbackground="#0d0805", foreground=PAPER, bordercolor="#58331d", rowheight=27, font=("Segoe UI", 9))
+        style.map("Festival.Treeview", background=[("selected", BURGUNDY)], foreground=[("selected", PAPER)])
+        style.configure("Festival.Treeview.Heading", background="#3b2415", foreground=CREAM, relief="flat", font=("Segoe UI Semibold", 8))
 
     def _build_interface(self) -> None:
         header = tk.Frame(self, bg="#090503", height=88, highlightbackground="#4a2b17", highlightthickness=1)
@@ -366,12 +378,24 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         tk.Label(header, text="AGGITS", bg="#090503", fg=CREAM, font=("Georgia", 22, "bold")).pack(side="left", padx=(30, 12))
         title = tk.Frame(header, bg="#090503")
         title.pack(side="left", pady=18)
-        tk.Label(title, text="ARTIST + LABEL MACHINE FACTORY", bg="#090503", fg=PAPER, font=("Segoe UI Semibold", 15)).pack(anchor="w")
-        tk.Label(title, text="PASTE BANDCAMP  ·  AUTOMATIC ARTIST OR 35-TRACK LABEL DISCOVERY MACHINE", bg="#090503", fg=MUTED, font=("Segoe UI", 8)).pack(anchor="w", pady=(3, 0))
+        tk.Label(title, text="MUSIC MACHINE FACTORY", bg="#090503", fg=PAPER, font=("Segoe UI Semibold", 15)).pack(anchor="w")
+        tk.Label(title, text="ARTISTS · LABELS · FESTIVALS · ONE SHARED MACHINE ENGINE", bg="#090503", fg=MUTED, font=("Segoe UI", 8)).pack(anchor="w", pady=(3, 0))
         self.connection = tk.Label(header, text="PRIVATE DESKTOP WORKSPACE", bg="#090503", fg=BRASS, font=("Segoe UI Semibold", 9))
         self.connection.pack(side="right", padx=30)
 
-        body = tk.PanedWindow(self, orient="horizontal", bg=INK, sashwidth=8, sashrelief="flat", bd=0)
+        tabs = tk.Frame(self, bg="#090503", highlightbackground="#4a2b17", highlightthickness=1)
+        tabs.pack(fill="x")
+        self.standard_tab = tk.Button(tabs, text="STANDARD MODE", command=lambda: self._show_primary_mode("standard"), bg=BURGUNDY, fg=PAPER, activebackground=BURGUNDY_LIGHT, activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 10), padx=34, pady=11)
+        self.standard_tab.pack(side="left", padx=(22, 4), pady=7)
+        self.festival_tab = tk.Button(tabs, text="FESTIVAL MODE", command=lambda: self._show_primary_mode("festival"), bg="#3b2415", fg=CREAM, activebackground="#5a351e", activeforeground=PAPER, relief="flat", bd=0, font=("Segoe UI Semibold", 10), padx=34, pady=11)
+        self.festival_tab.pack(side="left", padx=4, pady=7)
+
+        self.mode_container = tk.Frame(self, bg=INK)
+        self.mode_container.pack(fill="both", expand=True)
+        self.standard_surface = tk.Frame(self.mode_container, bg=INK)
+        self.festival_surface = FestivalModeFrame(self.mode_container, self, self.data_root)
+
+        body = tk.PanedWindow(self.standard_surface, orient="horizontal", bg=INK, sashwidth=8, sashrelief="flat", bd=0)
         body.pack(fill="both", expand=True, padx=22, pady=(20, 16))
 
         form_shell = tk.Frame(body, bg=PANEL, highlightbackground="#58331d", highlightthickness=1)
@@ -381,12 +405,27 @@ class ArtistMachineFactoryDashboard(tk.Tk):
         self._build_form(form_shell)
         self._build_status(status_shell)
 
-        footer = tk.Frame(self, bg="#090503", height=52)
+        footer = tk.Frame(self.standard_surface, bg="#090503", height=52)
         footer.pack(fill="x")
         footer.pack_propagate(False)
         self.status = tk.Label(footer, text="READY — ENTER THE BAND DETAILS", bg="#090503", fg=MUTED, font=("Segoe UI Semibold", 9))
         self.status.pack(side="left", padx=28)
         tk.Label(footer, text="Reference images and drafts stay on this computer.", bg="#090503", fg="#7f6a52", font=("Segoe UI", 8)).pack(side="right", padx=28)
+        self._show_primary_mode("standard")
+
+    def _show_primary_mode(self, mode: str) -> None:
+        self.standard_surface.pack_forget()
+        self.festival_surface.pack_forget()
+        if mode == "festival":
+            self.festival_surface.pack(fill="both", expand=True)
+            self.standard_tab.configure(bg="#3b2415", fg=CREAM)
+            self.festival_tab.configure(bg=BURGUNDY, fg=PAPER)
+            self.connection.configure(text="PRIVATE FESTIVAL WORKSPACE")
+        else:
+            self.standard_surface.pack(fill="both", expand=True)
+            self.standard_tab.configure(bg=BURGUNDY, fg=PAPER)
+            self.festival_tab.configure(bg="#3b2415", fg=CREAM)
+            self.connection.configure(text="PRIVATE DESKTOP WORKSPACE")
 
     def _build_form(self, parent: tk.Frame) -> None:
         canvas = tk.Canvas(parent, bg=PANEL, highlightthickness=0)

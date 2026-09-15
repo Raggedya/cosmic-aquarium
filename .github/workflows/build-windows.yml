@@ -6,6 +6,9 @@ on:
     branches: [main]
     paths:
       - desktop/**
+      - scripts/festival_*.py
+      - scripts/create_festival_machine.py
+      - requirements-automation.txt
       - public/flowers/**
       - public/skulls/**
       - public/glass/**

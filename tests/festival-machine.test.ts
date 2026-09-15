@@ -171,14 +171,11 @@ test('the publisher enforces 35 URLs and keeps track data out of the festival re
   assert.match(build,/renderFestivalMachine/);
 });
 
-test('the Festivals dashboard retains manual editing, explicit replacement and dirty ticker protection',async()=>{
-  const source=await read('desktop/festivals.py');
-  assert.match(source,/range\(MAX_FESTIVAL_ARTISTS\)/);
-  assert.match(source,/askyesno/);
-  assert.match(source,/self\._ticker_dirty/);
-  assert.match(source,/CLEAR FESTIVAL IMPORT/);
-  assert.match(source,/CONFIGURE SEARCH/);
-  assert.match(source,/BRAVE_SEARCH_API_KEY/);
-  assert.match(source,/check_failed/);
-  assert.match(source,/deliver_artist/);
+test('Festival Mode is embedded in the Factory with poster review, explicit approvals and private projects',async()=>{
+  const [factory,mode,projects,spec]=await Promise.all([read('desktop/artist_machine_factory_dashboard.py'),read('desktop/festival_mode.py'),read('scripts/festival_projects.py'),read('desktop/ArtistMachineFactory.spec')]);
+  assert.match(factory,/STANDARD MODE/);assert.match(factory,/FESTIVAL MODE/);assert.match(factory,/FestivalModeFrame/);
+  for(const control of ['READ FESTIVAL LINEUP','FIND BANDCAMP ARTISTS','APPROVE ALL CONFIRMED','RECHECK UNRESOLVED','BUILD FESTIVAL MACHINE','OPEN PRIVATE PREVIEW','APPROVE + PUBLISH'])assert.ok(mode.includes(control),control);
+  for(const action of ['NEW','OPEN','SAVE','SAVE AS','DUPLICATE','DELETE'])assert.match(mode,new RegExp(`"${action}"`));
+  assert.match(projects,/rawExtractedLineup/);assert.match(projects,/bandcampMatches/);assert.match(projects,/festivalLibrary/);
+  assert.match(spec,/festival_mode/);assert.match(spec,/rapidocr_onnxruntime/);assert.doesNotMatch(spec,/Festivals\.exe/);
 });

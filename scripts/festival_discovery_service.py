@@ -57,6 +57,9 @@ class FestivalArtistMatch:
     confidence: float
     evidence: tuple[str, ...]
     playable: bool = False
+    location: str | None = None
+    preview: str | None = None
+    candidates: tuple[dict[str, Any], ...] = ()
 
 
 @dataclasses.dataclass(frozen=True)
@@ -91,6 +94,9 @@ class FestivalImportResult:
                     "confidence": item.confidence,
                     "evidence": list(item.evidence),
                     "playable": item.playable,
+                    "location": item.location,
+                    "preview": item.preview,
+                    "candidates": list(item.candidates),
                 }
                 for item in self.artists
             ],
@@ -592,6 +598,21 @@ def _profile_artist_name(snapshot: PageSnapshot) -> str:
     return clean_artist_name(title.split("|")[0])
 
 
+def inspect_bandcamp_artist_url(value: str) -> dict[str, Any]:
+    """Validate a manual artist URL against public Bandcamp catalogue evidence."""
+    url = validate_bandcamp_artist_url(value)
+    try:
+        profile = fetch_page(urllib.parse.urljoin(url, "music"))
+    except Exception:
+        profile = fetch_page(url)
+    playable = bool(profile.bandcamp_payloads or any("/album/" in link.url or "/track/" in link.url for link in profile.links))
+    if not playable:
+        raise ValueError("That Bandcamp profile does not expose a playable public catalogue.")
+    location = next((clean_space(payload.get("location")) for payload in profile.bandcamp_payloads if clean_space(payload.get("location"))), None)
+    preview = next((clean_space(link.text) for link in profile.links if "/album/" in link.url or "/track/" in link.url), None)
+    return {"url": url, "artistName": _profile_artist_name(profile), "location": location, "preview": preview, "playable": True}
+
+
 def _direct_bandcamp_url_guesses(artist_name: str) -> list[str]:
     variants = [clean_space(artist_name)]
     primary = re.split(r"\s+(?:&|\+|and|with|featuring|feat\.?)\s+", artist_name, maxsplit=1, flags=re.I)[0]
@@ -639,6 +660,7 @@ def match_bandcamp_artist(artist: FestivalArtist) -> FestivalArtistMatch:
     if not candidates:
         candidates.extend((url, False) for url in _direct_bandcamp_url_guesses(artist.artist_name))
     best: FestivalArtistMatch | None = None
+    viable_candidates: list[dict[str, Any]] = []
     expected = normalise_name(artist.artist_name)
     primary_identity = normalise_name(re.split(r"\s+(?:&|\+|and|with|featuring|feat\.?)\s+", artist.artist_name, maxsplit=1, flags=re.I)[0])
     expected_variants = {value for value in (expected, primary_identity) if value}
@@ -663,7 +685,12 @@ def match_bandcamp_artist(artist: FestivalArtist) -> FestivalArtistMatch:
         if playable:
             evidence.append("Public Bandcamp catalogue content is present")
         status = "matched" if playable and (exact or (direct and similarity >= 0.86)) else "possible_match" if playable and similarity >= 0.74 else "not_found"
-        return FestivalArtistMatch(artist.artist_name, artist.source_url, url if status != "not_found" else None, status, round(confidence, 3), tuple(evidence), playable)
+        location = next((clean_space(payload.get("location")) for payload in profile.bandcamp_payloads if clean_space(payload.get("location"))), None)
+        release = next((clean_space(link.text) for link in profile.links if "/album/" in link.url or "/track/" in link.url), None)
+        return FestivalArtistMatch(
+            artist.artist_name, artist.source_url, url if status != "not_found" else None, status,
+            round(confidence, 3), tuple(evidence), playable, location, release,
+        )
 
     inspected_urls: set[str] = set()
     for url, direct in candidates:
@@ -671,10 +698,12 @@ def match_bandcamp_artist(artist: FestivalArtist) -> FestivalArtistMatch:
         candidate = inspect_candidate(url, direct)
         if candidate is None:
             continue
+        if candidate.bandcamp_url:
+            viable_candidates.append({"url": candidate.bandcamp_url, "confidence": candidate.confidence, "location": candidate.location, "preview": candidate.preview})
         if best is None or candidate.confidence > best.confidence:
             best = candidate
         if candidate.match_status == "matched":
-            return candidate
+            return dataclasses.replace(candidate, candidates=tuple(viable_candidates))
 
     if not used_direct_festival_link:
         discovered, lookup_notes = _candidate_bandcamp_urls(artist.artist_name)
@@ -684,12 +713,14 @@ def match_bandcamp_artist(artist: FestivalArtist) -> FestivalArtistMatch:
             candidate = inspect_candidate(url, False)
             if candidate is None:
                 continue
+            if candidate.bandcamp_url:
+                viable_candidates.append({"url": candidate.bandcamp_url, "confidence": candidate.confidence, "location": candidate.location, "preview": candidate.preview})
             if best is None or candidate.confidence > best.confidence:
                 best = candidate
             if candidate.match_status == "matched":
-                return candidate
+                return dataclasses.replace(candidate, candidates=tuple(viable_candidates))
     if best and best.match_status != "not_found":
-        return best
+        return dataclasses.replace(best, candidates=tuple(viable_candidates))
     if lookup_notes:
         return FestivalArtistMatch(
             artist.artist_name, artist.source_url, None, "check_failed", 0.0,
@@ -748,6 +779,9 @@ def festival_result_from_dict(value: dict[str, Any]) -> FestivalImportResult:
             confidence=float(item.get("confidence", 0)),
             evidence=tuple(item.get("evidence") or []),
             playable=bool(item.get("playable")),
+            location=item.get("location"),
+            preview=item.get("preview"),
+            candidates=tuple(item.get("candidates") or []),
         )
         for item in value.get("artists", [])
     )

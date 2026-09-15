@@ -30,6 +30,7 @@ const festivalIntroAccessible=document.querySelector('[data-festival-intro-acces
 const festivalHeaderGraphic=document.querySelector('.festival-header-graphic');
 const festivalHeaderTitle=document.querySelector('[data-festival-header-title]');
 const festivalHeaderArtwork=document.querySelector('[data-festival-header-artwork]');
+const festivalBackgroundArtwork=document.querySelector('[data-festival-background-artwork]');
 const cabinet=document.querySelector('.cabinet');
 const machineRequest=document.querySelector('.artist-machine-request');
 const reels=[...document.querySelectorAll('.reel')];
@@ -42,6 +43,7 @@ const spinAgainButton=document.querySelector('[data-action="spin-again"]');
 const loveButton=document.querySelector('[data-action="love"]');
 const homeButton=document.querySelector('[data-action="home"]');
 const soundButton=document.querySelector('[data-action="sound"]');
+const festivalWebsiteButton=document.querySelector('[data-action="festival-website"]');
 const playControl=document.querySelector('[data-action="play"]');
 const frame=playControl.querySelector('iframe');
 const bandcampPlayerShell=document.querySelector('.bandcamp-player-shell');
@@ -166,11 +168,11 @@ function setFestivalIntroState(next){festivalIntroState=next;if(festivalIntro)fe
 function recordFestivalIntroShown(){if(!festivalIntroShownRecorded&&festivalIntroState==='hold'){festivalIntroShownRecorded=true;recordEvent('intro_shown',{source:'festival_entrance'})}}
 function renderFestivalIntroIdentity(){
   if(!artistConfig||!festivalIntroIdentities.length)return;
-  const rawTitle=cleanText(artistConfig.title||artistConfig.festivalName||'FESTIVAL',120);
+  const rawTitle=cleanText(artistConfig.festivalPrimaryTitle||artistConfig.festivalName||artistConfig.title||'FESTIVAL',120);
   const explicitYear=String(artistConfig.festivalYear||'').match(/\b(?:19|20)\d{2}\b/)?.[0]||'';
   const titleYear=rawTitle.match(/\b(?:19|20)\d{2}\b(?=\s*$)/)?.[0]||'';
   const year=explicitYear||titleYear;
-  const name=(year?rawTitle.replace(new RegExp(`\\s*${year}\\s*$`),''):rawTitle).trim()||'FESTIVAL';
+  const name=(year?rawTitle.replace(year,''):rawTitle).trim()||'FESTIVAL';
   const lines=formatMachineTitleLines(name,3),longest=Math.max(...lines.map(line=>line.length));
   festivalIntroTitles.forEach(node=>node.replaceChildren(...lines.map(line=>{const span=document.createElement('span');span.textContent=line;return span})));
   festivalIntroYears.forEach(node=>{node.textContent=year;node.hidden=!year});
@@ -179,7 +181,7 @@ function renderFestivalIntroIdentity(){
 }
 function renderFestivalHeaderIdentity(){
   if(!artistConfig||!festivalHeaderGraphic||!festivalHeaderTitle)return;
-  const title=cleanText(artistConfig.title||artistConfig.festivalName||'FESTIVAL MUSIC MACHINE',120).toUpperCase();
+  const title=cleanText([artistConfig.festivalPrimaryTitle||artistConfig.festivalName,artistConfig.festivalSubtitle||'DISCOVERY MACHINE'].filter(Boolean).join(' ')||artistConfig.title||'FESTIVAL MUSIC MACHINE',120).toUpperCase();
   const lines=formatMachineTitleLines(title,3),longest=Math.max(...lines.map(line=>line.length));
   festivalHeaderTitle.replaceChildren(...lines.map(text=>{const line=document.createElement('span');line.textContent=text;return line}));
   festivalHeaderGraphic.dataset.lines=String(lines.length);
@@ -189,6 +191,16 @@ function renderFestivalHeaderIdentity(){
   let artwork='';
   if(configured)try{const url=new URL(configured,location.origin);if(url.protocol==='https:'||url.origin===location.origin)artwork=url.href}catch{}
   if(festivalHeaderArtwork){festivalHeaderArtwork.hidden=!artwork;if(artwork){festivalHeaderArtwork.src=artwork;festivalHeaderArtwork.alt=''}else festivalHeaderArtwork.removeAttribute('src')}
+  const configuredBackground=String(artistConfig.festivalBackgroundArtwork||'').trim();let background='';
+  if(configuredBackground)try{const url=new URL(configuredBackground,location.origin);if(url.protocol==='https:'||url.origin===location.origin)background=url.href}catch{}
+  if(festivalBackgroundArtwork){festivalBackgroundArtwork.hidden=!background;if(background)festivalBackgroundArtwork.src=background;else festivalBackgroundArtwork.removeAttribute('src')}
+}
+function configureFestivalWebsite(){
+  if(!festivalWebsiteButton||!isFestivalMode)return;
+  let configured='';
+  if(artistConfig?.showFestivalWebsiteButton!==false&&artistConfig?.festivalUrl)try{const url=new URL(artistConfig.festivalUrl);if(url.protocol==='https:')configured=url.href}catch{}
+  festivalWebsiteButton.hidden=!configured;
+  if(configured)festivalWebsiteButton.addEventListener('click',()=>{recordEvent('festival_website_click',{source:'festival_website',url:configured});window.open(configured,'_blank','noopener,noreferrer')},{once:false});
 }
 async function beginFestivalIntroOpening(skipped=false){
   if(festivalIntroState!=='hold')return;
@@ -657,7 +669,7 @@ async function loadWinningTrack(entry,{fromDeepLink=false,prepared=null}={}){
 }
 
 function activatePrimary(){
-  if(primaryAction==='buy'&&currentPurchaseUrl){const performer=currentTrack?.artist||currentManifest?.artist;recordEvent('bandcamp_click',{source:'visit_bandcamp',url:currentPurchaseUrl,artist:performer});recordEvent('buy_click',{source:'visit_bandcamp',url:currentPurchaseUrl,artist:performer});window.open(currentPurchaseUrl,'_blank','noopener,noreferrer')}
+  if(primaryAction==='buy'&&currentPurchaseUrl){const performer=currentTrack?.artist||currentManifest?.artist;recordEvent('bandcamp_click',{source:'visit_bandcamp',url:currentPurchaseUrl,artist:performer});recordEvent('buy_click',{source:'visit_bandcamp',url:currentPurchaseUrl,artist:performer});if(isFestivalMode)recordEvent('artist_link_click',{source:'visit_bandcamp',url:currentPurchaseUrl,artist:performer});window.open(currentPurchaseUrl,'_blank','noopener,noreferrer')}
 }
 
 function historyApi(mode,entry){
@@ -737,7 +749,7 @@ async function loadData(){
     artistConfig=isFestivalMode?{...sourceConfig,artistName:sourceConfig.title,artistSlug:sourceConfig.festivalSlug,city:sourceConfig.festivalLocation,bio:sourceConfig.festivalTickerText,bandcampArtistUrl:sourceConfig.bandcampUrls?.[0]}:sourceConfig;
     isLabelMode=!isFestivalMode&&artistConfig?.catalogueKind==='label';if(isLabelMode)document.body.classList.add('label-machine-page');
     applyArtistSkin(artistConfig);
-    if(isFestivalMode){renderFestivalIntroIdentity();renderFestivalHeaderIdentity();showFestivalTitleIntro()}
+    if(isFestivalMode){renderFestivalIntroIdentity();renderFestivalHeaderIdentity();configureFestivalWebsite();showFestivalTitleIntro()}
     const manifestResponse=await fetch(`${base}${artistConfig.cataloguePath}`,{cache:'no-store'});
     if(!manifestResponse.ok)throw new Error(isFestivalMode?'festival_catalogue_unavailable':'artist_catalogue_unavailable');
     artistManifest=await manifestResponse.json();catalogue=playableArtistTracks(artistManifest);

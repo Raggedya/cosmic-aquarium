@@ -72,3 +72,17 @@ The desktop Factory deploys only after explicit approval. When a delivery email 
 - the city machine and Melbourne library.
 
 New artist work is limited to catalogue data, approved editorial copy and the automatically generated geometry-compliant jukebox skin.
+
+## Integrated Festival Mode
+
+The Factory now has `STANDARD MODE` and `FESTIVAL MODE` tabs. Standard Mode remains the existing artist/label pipeline. Festival Mode uses the same managed Git workspace, catalogue importer, festival single-reel runtime, Bandcamp player, preview server, protected publisher and reporting transport.
+
+Festival projects are stored separately under `%USERPROFILE%\AGGITS\Artist Machine Factory\festival-projects\<festival-id>\project.json`. Each record preserves festival identity, copied poster/branding files, raw OCR candidates, the corrected lineup, automatic and manual Bandcamp match evidence, approval decisions, the imported music library, machine settings, reporting coverage and the published URL.
+
+Poster reading runs locally. The packaged RapidOCR models inspect both the original and a contrast-enhanced image; an installed Tesseract is a fallback. Results are reconciled across passes, obvious festival/date/ticket/sponsor text is removed, duplicates and joined column readings are reduced, and the operator reviews the remaining names. OCR is deliberately not trusted as final editorial data.
+
+Bandcamp matching checks name similarity, public profile identity, direct festival links when available, catalogue playability and search candidates. Results are labelled Confirmed, Likely, Ambiguous or Not Found. A manually entered URL is fetched and must expose public catalogue material before it can be approved. Only rows explicitly marked approved are imported.
+
+The generated festival config continues to use `machineMode: festival` and the existing `/festival/?festival=<slug>` route. The current Festival Machine template and `discovery-machine.js` retain the reel, lever, Bandcamp player, buy, re-spin, share and event paths. Festival-specific title, year, header/background artwork and optional website control are configuration rather than a forked player.
+
+The analytics Worker uses its existing generic event table; no D1 schema migration is required. Festival events carry the festival slug/name and surfaced artist. The daily report now aggregates Festival Machine opens, visitors, spins, artists surfaced, tracks played, Bandcamp and artist-link clicks, buy intent, shares and leading artists.

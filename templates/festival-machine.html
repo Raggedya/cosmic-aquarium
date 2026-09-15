@@ -17,6 +17,7 @@
 </head>
 <body>
   <main class="music-machine" data-base="{{BASE}}" data-machine-state="BOOT" data-machine-mode="artist" data-machine-content="festival" aria-label="AGGITS Festival Music Machine">
+    <img class="festival-background-artwork" data-festival-background-artwork alt="" hidden>
     <section class="festival-intro" data-festival-intro data-intro-state="hold" aria-label="Closed Festival Music Machine cabinet. Tap to open early.">
       <p class="visually-hidden" data-festival-intro-accessible>Closed Festival Music Machine cabinet. It will open automatically after five seconds, or tap to open it now.</p>
       <div class="festival-intro-door festival-intro-door--left" aria-hidden="true">
@@ -58,6 +59,7 @@
       </section>
       <nav class="utility-controls" aria-label="Machine controls">
         <button type="button" data-action="home">HOME</button>
+        <button type="button" data-action="festival-website" hidden>FESTIVAL</button>
         <button type="button" data-action="sound" aria-pressed="true">SOUND ON</button>
       </nav>
       <section class="meter-bank" aria-label="Machine activity meters">

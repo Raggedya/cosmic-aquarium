@@ -49,7 +49,15 @@ test('public experiences preserve privacy-safe acquisition attribution', () => {
 });
 
 test('all live machine events are accepted by the reporting service', () => {
-  for (const event of ['artist_selected', 'spin_started', 'spin_completed', 'track_play_started', 'festival_machine_loaded']) {
+  for (const event of ['artist_selected', 'spin_started', 'spin_completed', 'track_play_started', 'festival_machine_loaded', 'festival_website_click', 'artist_link_click']) {
     assert.ok(worker.includes(`'${event}'`), `worker rejects ${event}`);
   }
+});
+
+test('daily reporting includes a per-festival scorecard and leading artists', () => {
+  for (const field of ['artists_surfaced', 'tracks_played', 'artist_link_clicks']) assert.ok(worker.includes(`AS ${field}`), field);
+  assert.match(worker, /aquarium_id LIKE 'festival-machine:%'/);
+  assert.match(worker, /festivalMachines:/);
+  assert.match(worker, /topArtists:/);
+  assert.match(worker, /festivalMachineRows/);
 });

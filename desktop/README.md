@@ -31,14 +31,26 @@ No Bandcamp account credentials or protected audio are stored. When public metad
 
 ## AGGITS Artist Machine Factory dashboard
 
-`artist_machine_factory_dashboard.py` is the private Windows front end for the locked Artist Machine pipeline. It presents one guided form for:
+`artist_machine_factory_dashboard.py` is the private Windows front end for the locked music-machine pipeline. The same EXE opens in Standard Mode and keeps the existing artist/label form unchanged. A second top-level Festival Mode is integrated into that window; there is no separate Festivals executable.
+
+Festival Mode provides:
+
+- drag-and-drop or file browsing for PNG, JPG, JPEG and WEBP posters;
+- bundled local OCR, poster-text filtering, and an editable/addable/removable/mergeable/reorderable lineup;
+- cautious Bandcamp search with Confirmed, Likely, Ambiguous and Not Found states, confidence, evidence, manual URLs and explicit approve/reject decisions;
+- a festival library built only from approved public Bandcamp profiles using the shared catalogue, single-reel player and purchase-link engine;
+- poster/logo/header/background branding inside the existing Festival Machine visual language;
+- private preview, protected GitHub Pages publishing and festival-specific analytics;
+- separate New/Open/Save/Save As/Duplicate/Delete projects under `%USERPROFILE%\AGGITS\Artist Machine Factory\festival-projects`.
+
+Standard Mode presents one guided form for:
 
 - band / artist name, official Bandcamp URL and city
 - verified bio and line-by-line ticker copy
 - an optional colour / tone reference image; blank uses the standard red AGGITS skin
 - visual notes, approver and delivery details
 
-The dashboard keeps reference material and candidates in a private folder under Local AppData. It maintains an isolated working copy of the repository and processes the complete playable Bandcamp catalogue. With no reference image it uses the standard red AGGITS jukebox skin unchanged. With a reference image it analyses the palette, light, contrast, texture and composition and transfers that visual character into a fresh skin while protecting the live controls. It validates the skin contract, audits a complete localhost approval bundle and submits only the approved machine configuration and skin to the protected production workflow. The workflow rebases safely, runs the build and full test suite, promotes only a passing candidate, deploys GitHub Pages, and returns the permanent machine link.
+The dashboard keeps reference material, festival posters, projects and candidates in a private folder under the user profile. It maintains an isolated working copy of the repository and processes complete playable Bandcamp catalogues. With no reference image Standard Mode uses the standard red AGGITS jukebox skin unchanged. With a reference image it analyses the palette, light, contrast, texture and composition and transfers that visual character into a fresh skin while protecting the live controls. Both modes validate and preview privately before protected production workflows can deploy them.
 
 Build the portable dashboard and its per-user Windows installer with:
 
@@ -51,4 +63,4 @@ Outputs:
 - `desktop-dist\AGGITS Artist Machine Factory.exe`
 - `desktop-dist\Install AGGITS Artist Machine Factory.exe`
 
-The installed dashboard uses the existing authenticated GitHub CLI connection. Source/reference images are never pushed to the public repository.
+The installed dashboard uses the existing authenticated GitHub CLI connection. Standard source/reference images remain private. For a published festival, only the explicitly selected festival branding artwork is copied into that festival's public asset folder.
