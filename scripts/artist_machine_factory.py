@@ -538,6 +538,11 @@ def copy_named_image(source: Path, stem: Path) -> Path:
 def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
     intake_path = intake_path.resolve()
     intake = normalise_intake(load_json(intake_path), intake_path)
+    detection = detect_bandcamp_mode(intake["bandcampSourceUrl"])
+    if detection.get("mode") == "label":
+        detected_label = clean_text(detection.get("name"), 100, "detected label name", True)
+        intake["artistName"] = detected_label
+        intake["artistSlug"] = slugify(detected_label)
     target_paths = candidate_paths(intake["artistSlug"])
     if target_paths["root"].exists() and not replace:
         raise FactoryError(f"Candidate {intake['artistSlug']} already exists; use --replace to rebuild it")
@@ -548,7 +553,6 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
     try:
         reference_path = copy_named_image(intake["referencePath"], paths["reference"]) if intake["referencePath"] else None
         reference_audit = validate_artwork(reference_path, cabinet_skin=False) if reference_path else None
-        detection = detect_bandcamp_mode(intake["bandcampSourceUrl"])
         catalogue_kind = "label" if detection.get("mode") == "label" else "artist"
         full_label_catalogue: list[dict[str, Any]] = []
         if catalogue_kind == "label":
@@ -676,7 +680,7 @@ def prepare(intake_path: Path, replace: bool) -> dict[str, Any]:
         contract = load_json(SKIN_CONTRACT)
         brief = {
             "schemaVersion": 1,
-            "artistName": intake["artistName"],
+            "artistName": machine_name,
             "referenceImage": reference_path.name if reference_path else None,
             "artDirection": intake["artworkNotes"] or (
                 "Use the supplied image for colour, tone and visual character."

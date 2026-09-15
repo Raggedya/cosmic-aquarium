@@ -258,11 +258,11 @@ class ArtistMachineFactoryTests(unittest.TestCase):
             "unattributedTrackCount": 0,
             "duplicateTrackCount": 0,
         }
-        factory.detect_bandcamp_mode.return_value = {"mode": "label"}
+        factory.detect_bandcamp_mode.return_value = {"mode": "label", "name": "Test Label"}
         with patch.object(factory, "discover_label_catalogue", return_value=(tracks, metadata)):
             report = factory.prepare(self.make_intake(include_skin=False, include_reference=False), replace=False)
-        config = json.loads((self.candidates / "test-band" / "machine.json").read_text(encoding="utf-8"))
-        saved = json.loads((self.candidates / "test-band" / "label-catalogue.json").read_text(encoding="utf-8"))
+        config = json.loads((self.candidates / "test-label" / "machine.json").read_text(encoding="utf-8"))
+        saved = json.loads((self.candidates / "test-label" / "label-catalogue.json").read_text(encoding="utf-8"))
         self.assertEqual(report["catalogueKind"], "label")
         self.assertEqual(config["artistName"], "Test Label")
         self.assertEqual(len(config["songs"]), 35)
